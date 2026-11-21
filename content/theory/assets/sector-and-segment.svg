@@ -1,0 +1,16 @@
+<svg preserveAspectRatio="xMidYMid meet" height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320" width="100%" style="max-width:100%;height:auto" role="img" aria-labelledby="sector-and-segment-t sector-and-segment-d"><title id="sector-and-segment-t">Sector AOB and the minor segment bounded by chord AB and arc AB</title><desc id="sector-and-segment-d">A sector of a circle centre O with angle theta, and the segment between the chord AB and the minor arc AB.</desc>
+<circle cx="200" cy="180" r="120" fill="none" stroke="#bbb" stroke-width="1"/>
+<path d="M200 180 L200 60 A120 120 0 0 1 303.923 120 Z" fill="#f5d5d0" stroke="#c0392b" stroke-width="1.6"/>
+<path d="M200 60 A120 120 0 0 1 303.923 120 L200 60" fill="#e8a598" stroke="#922b21" stroke-width="1.6"/>
+<line x1="200" y1="180" x2="200" y2="60" stroke="#333" stroke-width="1.5"/>
+<line x1="200" y1="180" x2="303.923" y2="120" stroke="#333" stroke-width="1.5"/>
+<line x1="200" y1="60" x2="303.923" y2="120" stroke="#333" stroke-width="1.2"/>
+<path d="M200 150 A30 30 0 0 1 226 165" fill="none" stroke="#333"/>
+<g fill="#111" font-family="serif" font-size="16">
+<text x="192" y="204">O</text>
+<text x="192" y="50">A</text>
+<text x="312" y="126">B</text>
+<text x="222" y="158">θ</text>
+<text x="250" y="80" font-size="13">segment</text>
+</g>
+</svg>

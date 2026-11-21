@@ -1,0 +1,72 @@
+<section class="theory" data-section="P1-1.2">
+<h2>1.2 Completing the square</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 1 Coursebook (Sue Pemberton), Chapter 1 Quadratics, printed pp.6–9 (Key point 1.1 and Worked examples 1.5–1.7). Printed pages were read from P1.pdf (PDF pages 18–21). Own wording and new numbers.</p>
+<p class="key-words"><strong>Key words:</strong> <em>completing the square</em></p>
+<h3>Rewriting a quadratic with one occurrence of the variable</h3>
+<p>Another method for solving quadratic equations is completing the square. <strong>Completing the square</strong> rewrites a quadratic expression so that the variable appears only inside a squared bracket. Expanding \((x+d)^2\) and \((x-d)^2\) and rearranging gives the identities in Key point 1.1:</p>
+<p>\[
+x^2+2dx=(x+d)^2-d^2,\qquad x^2-2dx=(x-d)^2-d^2.
+\]</p>
+<p>For a monic expression \(x^2+bx\), take half of \(b\) as the number inside the bracket, and subtract its square. If the quadratic has a leading coefficient other than 1, first take that coefficient out of the \(x^2\) and \(x\) terms, complete the square for the monic part, and then expand the factor through the constant term as well.</p>
+<div class="worked-example">
+<h4>Worked example 1: Completing the square with a leading coefficient</h4>
+<p class="src">Book: Worked example 1.5 and the \(2x^2-12x+5\) illustration, printed pp.7–8. New coefficients.</p>
+<p>Express \(2x^2-8x+7\) in the form \(p(x-q)^2+r\).</p>
+<ol class="steps">
+<li>Take out the factor 2 from the first two terms: \(2x^2-8x+7=2(x^2-4x)+7\) <span class="mark">M1</span></li>
+<li>Complete the square: \(x^2-4x=(x-2)^2-4\), so the expression is \(2\bigl((x-2)^2-4\bigr)+7=2(x-2)^2-8+7\) <span class="mark">M1</span></li>
+<li>Hence \(2x^2-8x+7=2(x-2)^2-1\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(2(x-2)^2-1\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: Solving by completing the square</h4>
+<p class="src">Book: Worked examples 1.6–1.7 style (solve after completing the square), printed pp.8–9. New equation.</p>
+<p>Solve \(x^2-6x-2=0\) by completing the square. Leave your answers in exact form.</p>
+<ol class="steps">
+<li>\(x^2-6x-2=(x-3)^2-9-2=(x-3)^2-11\) <span class="mark">M1</span></li>
+<li>\((x-3)^2=11\), so \(x-3=\pm\sqrt{11}\) <span class="mark">M1</span></li>
+<li>Hence \(x=3+\sqrt{11}\) or \(x=3-\sqrt{11}\) <span class="mark">A1</span> <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(x=3\pm\sqrt{11}\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul>
+<li>Forgetting to multiply the \(-d^2\) term by the leading coefficient when that coefficient is not 1.</li>
+<li>Using \(b\) instead of \(\dfrac{b}{2}\) inside the bracket.</li>
+<li>Dropping the \(\pm\) when taking the square-root, and so finding only one root.</li>
+</ul>
+<h3>Quick checks</h3>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>The expression \(x^2+14x\) can be written as \((x+7)^2+k\). Find the value of \(k\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(x^2+14x=(x+7)^2-49\), so \(k=-49\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(-49\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>The expression \(2x^2-16x+7\) can be written as \(2(x-4)^2+k\). Find the value of \(k\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(2x^2-16x+7=2(x^2-8x)+7=2\bigl((x-4)^2-16\bigr)+7=2(x-4)^2-32+7\), so \(k=-25\) <span class="mark">M1</span> <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(-25\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>Solve \(x^2-8x-9=0\) by completing the square. Write down the positive root.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(x^2-8x-9=(x-4)^2-16-9=(x-4)^2-25\) <span class="mark">M1</span></li>
+<li>\((x-4)^2=25\), so \(x-4=\pm 5\) and \(x=9\) or \(x=-1\). The positive root is \(9\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(9\)</p>
+</details>
+</div>
+<p class="marks-key"><strong>Marks:</strong> M = method, A = accurate answer (depends on M), B = independent mark. Halve the coefficient of \(x\) to complete the square, and remember to multiply \(-d^2\) by the leading coefficient when that coefficient is not 1.</p>
+</section>

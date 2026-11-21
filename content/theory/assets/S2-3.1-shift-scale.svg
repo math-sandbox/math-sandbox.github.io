@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 200" width="420" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:420px;height:auto" role="img" aria-label="A number line showing the effect of scaling and shifting a random variable">
+  <style>text{font-family:system-ui,Segoe UI,sans-serif;font-size:13px;fill:#222}</style>
+  <line x1="30" y1="120" x2="400" y2="120" stroke="#333" stroke-width="1.5"/>
+  <circle cx="80" cy="120" r="4" fill="#888"/>
+  <circle cx="140" cy="120" r="5" fill="#1d4f91"/>
+  <circle cx="200" cy="120" r="4" fill="#888"/>
+  <text x="120" y="150">X</text>
+  <circle cx="250" cy="80" r="4" fill="#888"/>
+  <circle cx="310" cy="80" r="5" fill="#b42318"/>
+  <circle cx="370" cy="80" r="4" fill="#888"/>
+  <text x="260" y="60">aX + b</text>
+</svg>

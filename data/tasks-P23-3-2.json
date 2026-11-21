@@ -1,0 +1,199 @@
+[
+  {
+    "id": "P23-3.2-QC1-gen",
+    "section": "P23-3.2",
+    "kind": "generated",
+    "title": "Sine of 30 plus 60",
+    "marks": 1,
+    "source": "Theory P23-3.2 Quick check 1 (sin 90=1); constant",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 2,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "1"
+    },
+    "constraints": [],
+    "original": {
+      "k": 1
+    },
+    "stem": "Find the exact value of \\(\\sin(30^\\circ+60^\\circ)\\).",
+    "answer": {
+      "expression": "1",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\sin 90^\\circ=1\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is 1. Dummy k unused. The engine does not evaluate a sine."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P23-3.2-QC2-gen",
+    "section": "P23-3.2",
+    "kind": "generated",
+    "title": "Number of terms in sin(A+B)",
+    "marks": 1,
+    "source": "Theory P23-3.2 Quick check 2 (2 terms); constant",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 2,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "2"
+    },
+    "constraints": [],
+    "original": {
+      "k": 1
+    },
+    "stem": "How many terms are there on the right-hand side of the formula for \\(\\sin(A+B)\\)?",
+    "answer": {
+      "expression": "2",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "There are 2 terms.",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is 2. Dummy k unused."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P23-3.2-QC3-gen",
+    "section": "P23-3.2",
+    "kind": "generated",
+    "title": "Cosine of 0 plus 0",
+    "marks": 1,
+    "source": "Theory P23-3.2 Quick check 3 (cos 0=1); constant",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 2,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "1"
+    },
+    "constraints": [],
+    "original": {
+      "k": 1
+    },
+    "stem": "Find the exact value of \\(\\cos(0^\\circ+0^\\circ)\\).",
+    "answer": {
+      "expression": "1",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\cos 0^\\circ=1\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is 1. Dummy k unused."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P23-3.2-PP-9709-21-ON11-Q8i",
+    "section": "P23-3.2",
+    "kind": "pastpaper",
+    "title": "Expand cos(2x+x) to obtain the triple-angle formula",
+    "marks": 5,
+    "source": {
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w11_qp_21.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w11_ms_21.pdf",
+      "note": "9709/21/O/N/11 Question 8(i) only [5]. Official QP and official MS. Part (ii) omitted."
+    },
+    "marking": "manual",
+    "stem": "This question is 9709/21/O/N/11 Question 8(i) only, taken from the official QP.\n\n(i) By first expanding cos(2x + x), show that\n\ncos 3x ≡ 4 cos³ x − 3 cos x. [5]",
+    "steps": [
+      {
+        "name": "M1",
+        "text_tex": "Make relevant use of the \\(\\cos(A+B)\\) formula: \\(\\cos 3x=\\cos(2x+x)=\\cos 2x\\cos x-\\sin 2x\\sin x\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1*, make relevant use of the cos(A+B) formula. The D-dependency of a later mark is recorded in that later note."
+      },
+      {
+        "name": "M2",
+        "text_tex": "Make relevant use of \\(\\cos 2x=2\\cos^2 x-1\\) (or an equivalent) and \\(\\sin 2x=2\\sin x\\cos x\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1*, make relevant use of the cos 2A and sin 2A formulae."
+      },
+      {
+        "name": "A1",
+        "text_tex": "A correct expression in terms of \\(\\cos x\\) and \\(\\sin x\\) is obtained, for example \\( (2\\cos^2 x-1)\\cos x-(2\\sin x\\cos x)\\sin x\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, obtain a correct expression in terms of cos x and sin x."
+      },
+      {
+        "name": "M3",
+        "text_tex": "Use \\(\\sin^2 x=1-\\cos^2 x\\) to obtain an expression in terms of \\(\\cos x\\) only.",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1(dep*), dependent on the starred method marks. The D prefix is recorded here; the mark field is M1."
+      },
+      {
+        "name": "A2",
+        "text_tex": "The given answer \\(\\cos 3x\\equiv 4\\cos^3 x-3\\cos x\\) is obtained correctly.",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, obtain the given answer correctly. Independent: (2c^2-1)c-2s^2 c=2c^3-c-2(1-c^2)c=2c^3-c-2c+2c^3=4c^3-3c."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Stem taken from the official QP PDF (UCLES 2011), Question 8(i) only. Official MS reproduced mark by mark, including the starred M marks and the dependent M1. Paper/self-mark."
+      }
+    ]
+  }
+]

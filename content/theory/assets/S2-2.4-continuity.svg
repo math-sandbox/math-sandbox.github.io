@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 250" width="440" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:440px;height:auto" role="img" aria-labelledby="S2-2-4-continuity-t S2-2-4-continuity-d">
+<title id="S2-2-4-continuity-t">Continuity correction: P of X less than 36 is approximated by P of Y less than 35.5</title>
+<desc id="S2-2-4-continuity-d">If X is Poisson with mean 30, the normal approximating variable Y has mean 30 and variance 30. The event X less than 36 is replaced by Y less than 35.5.</desc>
+<rect x="0" y="0" width="440" height="250" fill="#fff"/>
+<g font-family="Source Sans 3, DejaVu Sans, sans-serif" font-size="13" fill="#333">
+  <line x1="40" y1="200" x2="410" y2="200" stroke="#333" stroke-width="1.6"/>
+  <text x="400" y="218">x</text>
+  <!-- schematic normal -->
+  <path d="M 50 200 C 90 200 110 40 200 40 C 290 40 310 200 360 200" fill="#eef5fb" stroke="#1b5e8a" stroke-width="2"/>
+  <line x1="200" y1="40" x2="200" y2="200" stroke="#1b5e8a" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <text x="186" y="218">30</text>
+  <!-- 35.5 marker -->
+  <line x1="310" y1="70" x2="310" y2="200" stroke="#c0392b" stroke-width="1.6"/>
+  <text x="286" y="218" fill="#c0392b">35.5</text>
+  <text x="250" y="30" fill="#c0392b">P(X &lt; 36) &#8776; P(Y &lt; 35.5)</text>
+  <text x="60" y="30" fill="#1b5e8a">N(30, 30)</text>
+</g>
+</svg>

@@ -1,0 +1,187 @@
+[
+  {
+    "id": "P1-1.8-QC1-gen",
+    "section": "P1-1.8",
+    "kind": "generated",
+    "title": "Value of the discriminant",
+    "marks": 1,
+    "source": "Theory P1-1.8 Quick check 1 (discriminant of x^2-8x+7 is 36); book Key point 1.5 p.24, new numbers",
+    "params": [
+      {
+        "name": "p",
+        "min": 2,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 1,
+        "max": 7,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "B": "p+q",
+      "C": "p*q",
+      "D": "(p-q)*(p-q)"
+    },
+    "constraints": [
+      "p>=q+1"
+    ],
+    "original": {
+      "p": 7,
+      "q": 1
+    },
+    "stem": "What is the discriminant of \\(x^2-{B|int}x+{C|int}=0\\)?",
+    "answer": {
+      "expression": "(p-q)*(p-q)",
+      "format": "{D|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The discriminant is \\({B|int}^2-4\\times {C|int}={D|int}\\).",
+        "result": "(p-q)*(p-q)",
+        "format": "int",
+        "mark": "A1",
+        "note": "For (x-p)(x-q)=x^2-(p+q)x+pq, the discriminant is (p-q)^2. Original p=7, q=1 gives x^2-8x+7 and D=36."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original p=7, q=1, giving x^2-8x+7 and discriminant 36"
+      }
+    ]
+  },
+  {
+    "id": "P1-1.8-QC2-gen",
+    "section": "P1-1.8",
+    "kind": "generated",
+    "title": "Parameter for a repeated root",
+    "marks": 1,
+    "source": "Theory P1-1.8 Quick check 2 (x^2-8x+k=0 has a repeated root when k=16); book Worked example 1.18 style p.25, new numbers",
+    "params": [
+      {
+        "name": "h",
+        "min": 2,
+        "max": 9,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "B": "2*h",
+      "K": "h*h"
+    },
+    "constraints": [
+      "h>=2"
+    ],
+    "original": {
+      "h": 4
+    },
+    "stem": "Find the value of \\(k\\) for which \\(x^2-{B|int}x+k=0\\) has a repeated root.",
+    "answer": {
+      "expression": "h*h",
+      "format": "{K|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The discriminant is \\({B|int}^2-4k=0\\), so \\(k={K|int}\\).",
+        "result": "h*h",
+        "format": "int",
+        "mark": "A1",
+        "note": "B=2h, so (2h)^2-4k=0 gives k=h^2. Original h=4, B=8, K=16."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original h=4, k=16"
+      }
+    ]
+  },
+  {
+    "id": "P1-1.8-QC3-gen",
+    "section": "P1-1.8",
+    "kind": "generated",
+    "title": "Positive parameter for a repeated root",
+    "marks": 1,
+    "source": "Theory P1-1.8 Quick check 3 (x^2+kx+9=0 has a repeated root at k=6 or k=-6; the positive value is 6); book Worked example 1.19 style, new numbers",
+    "params": [
+      {
+        "name": "s",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "C": "s*s",
+      "K": "2*s"
+    },
+    "constraints": [
+      "s>=2"
+    ],
+    "original": {
+      "s": 3
+    },
+    "stem": "The equation \\(x^2+kx+{C|int}=0\\) has a repeated root. What is the positive value of \\(k\\)?",
+    "answer": {
+      "expression": "2*s",
+      "format": "{K|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(k^2-4\\times {C|int}=0\\), so the positive value of \\(k\\) is \\({K|int}\\).",
+        "result": "2*s",
+        "format": "int",
+        "mark": "A1",
+        "note": "C=s^2, so k=+-2s. The positive value is 2s. Original s=3, C=9, K=6."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original s=3, C=9, K=6"
+      }
+    ]
+  },
+  {
+    "id": "P1-1.8-PP-9709-12-ON22-Q3a",
+    "section": "P1-1.8",
+    "kind": "pastpaper",
+    "title": "Values of k for no real roots",
+    "marks": 2,
+    "source": {
+      "paper": "9709/12/O/N/22 Q3(a)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w22_qp_12.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w22_ms_12.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2022), Question 3(a) only. Official answer and mark allocation from the MS PDF. The item is paper/self-mark. Part (b) is a trigonometric equation and is omitted."
+    },
+    "stem": "This question is 9709/12/O/N/22 Question 3(a), taken from the official QP.\n\nFind the set of values of \\(k\\) for which the equation \\(8x^2+kx+2=0\\) has no real roots.  [2]",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "The discriminant is \\(k^2-4\\times 8\\times 2=k^2-64\\). For no real roots, \\(k^2-64&lt;0\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: M1 for use of b^2-4ac but not just in the quadratic formula."
+      },
+      {
+        "name": "A",
+        "text_tex": "Hence \\(-8&lt;k&lt;8\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: -8 < k < 8, or equivalent open-interval notation. Independent check: k^2 < 64 iff -8 < k < 8."
+      }
+    ]
+  }
+]

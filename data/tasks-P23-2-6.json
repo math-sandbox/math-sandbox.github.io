@@ -1,0 +1,235 @@
+[
+  {
+    "id": "P23-2.6-QC1-gen",
+    "section": "P23-2.6",
+    "kind": "generated",
+    "title": "An exponential inequality with base greater than 1",
+    "marks": 2,
+    "source": "P23 Ch2 theory P23-2.6 Quick check 1 (3^x>20, k=2.73 to 3 s.f.)",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "N",
+        "min": 10,
+        "max": 30,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "E": "math.log(N)/math.log(a)"
+    },
+    "constraints": [
+      "N>a",
+      "a>=2"
+    ],
+    "original": {
+      "a": 3,
+      "N": 20
+    },
+    "stem": "The inequality {a|int} to the power x is greater than {N|int} can be written as x greater than k. What is k, correct to 3 significant figures?",
+    "answer": {
+      "expression": "math.log(N)/math.log(a)",
+      "format": "{E|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "Taking logarithms to base 10, x times the logarithm of {a|int} is greater than the logarithm of {N|int}. The logarithm of {a|int} is positive, so the symbol is unchanged.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Take logs; keep the inequality symbol."
+      },
+      {
+        "name": "E",
+        "text_tex": "The critical value k is {E|sf3z} to 3 significant figures.",
+        "result": "math.log(N)/math.log(a)",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct to 3 s.f."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "bound",
+        "stem": "Solve the inequality {a|int} to the power x is greater than {N|int}. The solution is x greater than k. Find k to 3 significant figures.",
+        "note": "bound frame"
+      },
+      {
+        "id": "value",
+        "stem": "The inequality {a|int} to the power x is greater than {N|int} has the form x greater than k. What is k to 3 significant figures?",
+        "note": "value frame"
+      }
+    ]
+  },
+  {
+    "id": "P23-2.6-QC2-gen",
+    "section": "P23-2.6",
+    "kind": "generated",
+    "title": "An exponential inequality with base between 0 and 1",
+    "marks": 2,
+    "source": "P23 Ch2 theory P23-2.6 Quick check 2 (0.4^x<0.1, k=2.51 to 3 s.f.)",
+    "params": [
+      {
+        "name": "p",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 1,
+        "max": 3,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "p/10",
+      "B": "q/10",
+      "E": "math.log(q/10)/math.log(p/10)"
+    },
+    "constraints": [
+      "p>q",
+      "q>=1",
+      "p<=6"
+    ],
+    "original": {
+      "p": 4,
+      "q": 1
+    },
+    "stem": "The inequality 0.{p|int} to the power x is less than 0.{q|int} can be written as x greater than k. What is k, correct to 3 significant figures?",
+    "answer": {
+      "expression": "math.log(q/10)/math.log(p/10)",
+      "format": "{E|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "Taking logarithms, x times the logarithm of 0.{p|int} is less than the logarithm of 0.{q|int}. The logarithm of 0.{p|int} is negative, so the inequality symbol is reversed.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Take logs and reverse when dividing by a negative logarithm."
+      },
+      {
+        "name": "E",
+        "text_tex": "The critical value k is {E|sf3z} to 3 significant figures.",
+        "result": "math.log(q/10)/math.log(p/10)",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct to 3 s.f."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "bound",
+        "stem": "Solve the inequality 0.{p|int} to the power x is less than 0.{q|int}. The solution is x greater than k. Find k to 3 significant figures.",
+        "note": "bound frame"
+      },
+      {
+        "id": "value",
+        "stem": "The inequality 0.{p|int} to the power x is less than 0.{q|int} has the form x greater than k. What is k to 3 significant figures?",
+        "note": "value frame"
+      }
+    ]
+  },
+  {
+    "id": "P23-2.6-QC3-gen",
+    "section": "P23-2.6",
+    "kind": "generated",
+    "title": "An exponential inequality with a constant factor",
+    "marks": 2,
+    "source": "P23 Ch2 theory P23-2.6 Quick check 3 (4 times 3^x>20, k=1.46 to 3 s.f.)",
+    "params": [
+      {
+        "name": "c",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "a",
+        "min": 2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "N",
+        "min": 10,
+        "max": 30,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "R": "N/c",
+      "E": "math.log(N/c)/math.log(a)"
+    },
+    "constraints": [
+      "N>c",
+      "a>=2"
+    ],
+    "original": {
+      "c": 4,
+      "a": 3,
+      "N": 20
+    },
+    "stem": "The inequality {c|int} times {a|int} to the power x is greater than {N|int} can be written as x greater than k. What is k, correct to 3 significant figures?",
+    "answer": {
+      "expression": "math.log(N/c)/math.log(a)",
+      "format": "{E|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "Dividing by {c|int} gives {a|int} to the power x greater than {R|num2}. Taking logarithms, k is the logarithm of that value divided by the logarithm of {a|int}.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Divide by the constant, then take logs."
+      },
+      {
+        "name": "E",
+        "text_tex": "The critical value k is {E|sf3z} to 3 significant figures.",
+        "result": "math.log(N/c)/math.log(a)",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct to 3 s.f."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "bound",
+        "stem": "Solve {c|int} times {a|int} to the power x is greater than {N|int}. The solution is x greater than k. Find k to 3 significant figures.",
+        "note": "bound frame"
+      },
+      {
+        "id": "value",
+        "stem": "The inequality {c|int} times {a|int} to the power x is greater than {N|int} has the form x greater than k. What is k to 3 significant figures?",
+        "note": "value frame"
+      }
+    ]
+  }
+]

@@ -1,0 +1,400 @@
+[
+    {
+        "id": "P1-6.4-QC1-gen",
+        "section": "P1-6.4",
+        "kind": "generated",
+        "title": "A term of a geometric progression",
+        "marks": 2,
+        "source": "Theory P1-6.4 Quick check 1; a r to the power n - 1",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "r",
+                "min": 2,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "n",
+                "min": 5,
+                "max": 8,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "m": "n-1",
+            "P": "math.pow(r,n-1)",
+            "A": "a*math.pow(r,n-1)"
+        },
+        "constraints": [
+            "n>=5"
+        ],
+        "original": {
+            "a": 4,
+            "r": 3,
+            "n": 5
+        },
+        "stem": "A geometric progression has first term {a|int} and common ratio {r|int}. Find the {n|int}th term.",
+        "answer": {
+            "expression": "a*P",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(u_{{n|int}}=ar^{{m|int}}={a|int}\\times{r|int}^{{m|int}}\\)",
+                "result": "P",
+                "format": "int",
+                "mark": "M1",
+                "note": "The nth term is a r to the power n - 1."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(={A|int}\\)",
+                "result": "a*P",
+                "format": "int",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original first term 4, common ratio 3, 5th term 324"
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-6.4"
+            ],
+            "topic": "Series",
+            "chapter": "P1-6",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-6-4.json",
+                "locator": "P1-6.4-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-6.4-QC2-gen",
+        "section": "P1-6.4",
+        "kind": "generated",
+        "title": "Sum of the first n terms of a geometric progression",
+        "marks": 2,
+        "source": "Theory P1-6.4 Quick check 2; a(r to the n - 1)/(r - 1)",
+        "params": [
+            {
+                "name": "a",
+                "min": 1,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "r",
+                "min": 2,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "n",
+                "min": 4,
+                "max": 7,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "P": "math.pow(r,n)",
+            "Pm": "math.pow(r,n)-1",
+            "r1": "r-1",
+            "A": "a*(math.pow(r,n)-1)/(r-1)"
+        },
+        "constraints": [
+            "n>=4"
+        ],
+        "original": {
+            "a": 2,
+            "r": 3,
+            "n": 5
+        },
+        "stem": "A geometric progression has first term {a|int} and common ratio {r|int}. Find the sum of the first {n|int} terms.",
+        "answer": {
+            "expression": "a*(P-1)/(r-1)",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(S_{{n|int}}=\\dfrac{a(r^{{n|int}}-1)}{r-1}=\\dfrac{{a|int}\\times{Pm|int}}{{r1|int}}\\)",
+                "result": "P",
+                "format": "int",
+                "mark": "M1",
+                "note": "Use S = a(r to the n - 1)/(r - 1) for r greater than 1."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(={A|int}\\)",
+                "result": "a*(P-1)/(r-1)",
+                "format": "int",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original first term 2, common ratio 3, sum of 5 terms 242"
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-6.4"
+            ],
+            "topic": "Series",
+            "chapter": "P1-6",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-6-4.json",
+                "locator": "P1-6.4-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-6.4-QC3-gen",
+        "section": "P1-6.4",
+        "kind": "generated",
+        "title": "First term from the second and fifth terms",
+        "marks": 2,
+        "source": "Theory P1-6.4 Quick check 3; r cubed = u5/u2, a = u2/r",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "r",
+                "min": 2,
+                "max": 3,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "T2": "a*r",
+            "T5": "a*r*r*r*r",
+            "R3": "r*r*r"
+        },
+        "constraints": [
+            "a>=2"
+        ],
+        "original": {
+            "a": 5,
+            "r": 2
+        },
+        "stem": "The second term of a geometric progression is {T2|int} and the fifth term is {T5|int}. Find the first term.",
+        "answer": {
+            "expression": "a",
+            "format": "{F|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(ar={T2|int}\\) and \\(ar^4={T5|int}\\), so \\(r^3={R3|int}\\) and \\(r={r|int}\\).",
+                "result": "r",
+                "format": "int",
+                "mark": "M1",
+                "note": "Divide the two terms to eliminate a."
+            },
+            {
+                "name": "F",
+                "text_tex": "\\(a=\\dfrac{{T2|int}}{{r|int}}={a|int}\\)",
+                "result": "a",
+                "format": "int",
+                "mark": "A1",
+                "note": "Substitute r back."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original second term 10, fifth term 80, first term 5"
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-6.4"
+            ],
+            "topic": "Series",
+            "chapter": "P1-6",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-6-4.json",
+                "locator": "P1-6.4-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-6.4-PP-9709-12-ON22-Q4",
+        "section": "P1-6.4",
+        "kind": "pastpaper",
+        "title": "Fiftieth term of a geometric progression",
+        "marks": 4,
+        "source": {
+            "paper": "9709/12/O/N/22 Q4",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w22_qp_12.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w22_ms_12.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>A geometric progression is such that the third term is 1764 and the sum of the second and third terms is 3444. Find the 50th term. [4]</p>",
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-6.4"
+            ],
+            "topic": "Series",
+            "chapter": "P1-6",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-6-4.json",
+                "locator": "P1-6.4-PP-9709-12-ON22-Q4"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(ar^2=1764\\) and \\(ar+ar^2=3444\\), so \\(ar=1680\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, two correct algebraic statements: ar² = 1764 and ar + ar² = 3444 or ar = 1680 or a(1 − r³)/(1 − r) − a = 3444."
+            },
+            {
+                "name": "s2",
+                "text_tex": "Solve as far as \\(r=\\) or \\(a=\\): \\(r=\\dfrac{1764}{1680}\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, attempt to solve as far as r = or a =. Any valid method, e.g. 1764 ÷ 1680 or from 20r² − 41r + 21 OE (condone solving using a calculator)."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(r=\\dfrac{21}{20}=1.05\\) and \\(a=1600\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, r = 1764/1680 = 21/20 or 1.05 [a = 1600]. Note: r = 1764/(3444 − 1764) www implies B1 and M1."
+            },
+            {
+                "name": "s4",
+                "text_tex": "50th term \\(=1600\\times1.05^{49}=17\\,500\\) (3 s.f.)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 17 500, AWRT e.g. 17 474.1…."
+            }
+        ]
+    },
+    {
+        "id": "P1-6.4-PP-9709-12-FM23-Q4",
+        "section": "P1-6.4",
+        "kind": "pastpaper",
+        "title": "Circumference of a tree as an arithmetic and as a geometric progression",
+        "marks": 5,
+        "source": {
+            "paper": "9709/12/F/M/23 Q4",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m23_qp_12.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m23_ms_12.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>The circumference round the trunk of a large tree is measured and found to be 5.00 m. After one year the circumference is measured again and found to be 5.02 m.</p><p>(a) Given that the circumferences at yearly intervals form an arithmetic progression, find the circumference 20 years after the first measurement. [2]</p><p>(b) Given instead that the circumferences at yearly intervals form a geometric progression, find the circumference 20 years after the first measurement. [3]</p>",
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-6.4"
+            ],
+            "topic": "Series",
+            "chapter": "P1-6",
+            "marks": 5,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-6-4.json",
+                "locator": "P1-6.4-PP-9709-12-FM23-Q4"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) \\(5.00+20\\times0.02\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, 5.00 + 20 × 0.02 or 5.02 + 19 × 0.02. Allow for a = 5, n = 20 with d = 0.02 only. a = 5, n = 21 (OE) with d = 0.2 gets M1 only."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(a) \\(5.40\\) m",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 5.40."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(b) \\(r=\\dfrac{5.02}{5}=1.004\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, r = 5.02/5 = 1.004 or 251/250."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(b) \\(5.00\\times1.004^{20}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, 5.00 × (their 1.004)²⁰ or 5.02 × (their 1.004)¹⁹. Allow a = 5, n = 20."
+            },
+            {
+                "name": "s5",
+                "text_tex": "(b) \\(5.42\\) m",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 5.42. Any correct rounding of 5.41557108."
+            }
+        ]
+    }
+]

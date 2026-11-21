@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" width="420" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:420px;height:auto" role="img" aria-label="Official 0580/43/O/N/20 Question 6 cuboid ABCDEFGH, with AB 8 cm, BC 5 cm and CG 11 cm">
+  <style>text{font-family:system-ui,Segoe UI,sans-serif;font-size:13px;fill:#222}</style>
+  <g fill="none" stroke="#222" stroke-width="1.6">
+    <path d="M70,220 L230,220 L280,170 L120,170 Z"/>
+    <path d="M70,220 L70,80 L120,30 L120,170"/>
+    <path d="M230,220 L230,80 L280,30 L280,170"/>
+    <path d="M70,80 L230,80 L280,30 L120,30 Z"/>
+    <path d="M70,220 L120,170" stroke-dasharray="4 3"/>
+    <path d="M70,80 L120,30" stroke-dasharray="4 3"/>
+    <path d="M120,30 L120,170" stroke-dasharray="4 3"/>
+  </g>
+  <text x="58" y="236">A</text>
+  <text x="236" y="236">B</text>
+  <text x="286" y="184">C</text>
+  <text x="104" y="188">D</text>
+  <text x="54" y="78">E</text>
+  <text x="236" y="74">F</text>
+  <text x="286" y="24">G</text>
+  <text x="104" y="24">H</text>
+  <text x="130" y="238">8 cm</text>
+  <text x="258" y="200">5 cm</text>
+  <text x="288" y="110">11 cm</text>
+  <text x="310" y="50" font-size="11">NOT TO</text>
+  <text x="310" y="64" font-size="11">SCALE</text>
+</svg>

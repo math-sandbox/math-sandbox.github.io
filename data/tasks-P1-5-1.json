@@ -1,0 +1,253 @@
+[
+  {
+    "id": "P1-5.1-QC1-gen",
+    "section": "P1-5.1",
+    "kind": "generated",
+    "title": "An integer multiple of sin 30 degrees",
+    "marks": 1,
+    "source": "Theory P1-5.1 Quick check 1; n sin 30 with n even",
+    "params": [
+      {
+        "name": "n",
+        "min": 2,
+        "max": 12,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "A": "n/2"
+    },
+    "constraints": [
+      "n%2==0"
+    ],
+    "original": {
+      "n": 2
+    },
+    "stem": "Find the exact value of \\({n|int}\\sin 30^\\circ\\).",
+    "answer": {
+      "expression": "n/2",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\sin 30^\\circ=\\dfrac{{1}}{{2}}\\), so \\({n|int}\\times\\dfrac{{1}}{{2}}={A|int}\\).",
+        "result": "n/2",
+        "format": "int",
+        "mark": "A1",
+        "note": "Use the exact value of sin 30 degrees."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original 2 sin 30"
+      }
+    ],
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.1"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-1.json",
+        "locator": "P1-5.1-QC1-gen"
+      }
+    }
+  },
+  {
+    "id": "P1-5.1-QC2-gen",
+    "section": "P1-5.1",
+    "kind": "generated",
+    "title": "An integer multiple of tan 45 degrees",
+    "marks": 1,
+    "source": "Theory P1-5.1 Quick check 2; n tan 45",
+    "params": [
+      {
+        "name": "n",
+        "min": 2,
+        "max": 9,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "n"
+    },
+    "constraints": [
+      "1==1"
+    ],
+    "original": {
+      "n": 2
+    },
+    "stem": "Find the exact value of \\({n|int}\\tan 45^\\circ\\).",
+    "answer": {
+      "expression": "n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\tan 45^\\circ=1\\), so the value is \\({A|int}\\).",
+        "result": "n",
+        "format": "int",
+        "mark": "A1",
+        "note": "Use the exact value of tan 45 degrees."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original tan 45"
+      }
+    ],
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.1"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-1.json",
+        "locator": "P1-5.1-QC2-gen"
+      }
+    }
+  },
+  {
+    "id": "P1-5.1-QC3-gen",
+    "section": "P1-5.1",
+    "kind": "generated",
+    "title": "Adjacent side times cosine, 3-4-5 family",
+    "marks": 1,
+    "source": "Theory P1-5.1 Quick check 3; 5s cos theta for a 3-4-5 triangle",
+    "params": [
+      {
+        "name": "s",
+        "min": 1,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "hyp": "5*s",
+      "A": "4*s"
+    },
+    "constraints": [
+      "s>0"
+    ],
+    "original": {
+      "s": 1
+    },
+    "stem": "Given that \\(\\sin\\theta=\\dfrac{{3}}{{5}}\\) and that \\(\\theta\\) is acute, find the value of \\({hyp|int}\\cos\\theta\\).",
+    "answer": {
+      "expression": "4*s",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The adjacent side is \\({A|int}\\) when the hypotenuse is \\({hyp|int}\\), so \\({hyp|int}\\cos\\theta={A|int}\\).",
+        "result": "4*s",
+        "format": "int",
+        "mark": "A1",
+        "note": "A 3-4-5 triangle, scaled by s, with cosine positive because the angle is acute."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original 5 cos theta = 4"
+      }
+    ],
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.1"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-1.json",
+        "locator": "P1-5.1-QC3-gen"
+      }
+    }
+  },
+  {
+    "id": "P1-5.1-PP-9709-12-ON13-Q1",
+    "section": "P1-5.1",
+    "kind": "pastpaper",
+    "title": "Sine, tangent and a complementary angle in terms of p",
+    "marks": 3,
+    "source": {
+      "paper": "9709/12/O/N/13 Q1",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w13_qp_12.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w13_ms_12.pdf",
+      "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+    },
+    "stem": "<p>Given that \\(\\cos x=p\\), where \\(x\\) is an acute angle in degrees, find, in terms of \\(p\\),</p><p>(i) \\(\\sin x\\), [1]</p><p>(ii) \\(\\tan x\\), [1]</p><p>(iii) \\(\\tan(90^\\circ-x)\\). [1]</p>",
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.1"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 3,
+      "difficulty": "hard",
+      "type": "pp",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-1.json",
+        "locator": "P1-5.1-PP-9709-12-ON13-Q1"
+      }
+    },
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "(i) \\(\\sin x=\\sqrt{{1-p^2}}\\) (positive, since \\(x\\) is acute). A plus-or-minus sign is B0.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1. Allow 1-p if following √(1-p²). ± is B0."
+      },
+      {
+        "name": "s2",
+        "text_tex": "(ii) \\(\\tan x=\\dfrac{{\\sqrt{{1-p^2}}}}{{p}}\\), using the answer to (i).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1, for the answer to (i) used."
+      },
+      {
+        "name": "s3",
+        "text_tex": "(iii) \\(\\tan(90^\\circ-x)=\\dfrac{{p}}{{\\sqrt{{1-p^2}}}}\\), the reciprocal of (ii).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1, for the reciprocal of (ii)."
+      }
+    ]
+  }
+]

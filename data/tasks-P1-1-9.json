@@ -1,0 +1,215 @@
+[
+  {
+    "id": "P1-1.9-QC1-gen",
+    "section": "P1-1.9",
+    "kind": "generated",
+    "title": "Parameter for a line that just meets a parabola",
+    "marks": 1,
+    "source": "Theory P1-1.9 Quick check 1 (y=2x+k meets y=x^2 at one point when k=-1); book Worked example 1.20 style p.28, new numbers",
+    "params": [
+      {
+        "name": "m",
+        "min": 2,
+        "max": 8,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "K": "-m*m/4"
+    },
+    "constraints": [
+      "m>=2"
+    ],
+    "original": {
+      "m": 2
+    },
+    "stem": "Find the value of \\(k\\) for which the line \\(y={m|int}x+k\\) meets the curve \\(y=x^2\\) at exactly one point.",
+    "answer": {
+      "expression": "-m*m/4",
+      "format": "{K|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(x^2-{m|int}x-k=0\\) has discriminant \\({m|int}^2+4k=0\\), so \\(k={K|int}\\).",
+        "result": "-m*m/4",
+        "format": "int",
+        "mark": "A1",
+        "note": "disc = m^2 + 4k = 0 gives k=-m^2/4. m is even so k is an integer. Original m=2, k=-1."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original m=2, k=-1"
+      }
+    ]
+  },
+  {
+    "id": "P1-1.9-QC2-gen",
+    "section": "P1-1.9",
+    "kind": "generated",
+    "title": "How many meeting points",
+    "marks": 1,
+    "source": "Theory P1-1.9 Quick check 2 (y=x+2 meets y=x^2 twice); book substitution method p.27, new numbers",
+    "params": [
+      {
+        "name": "c",
+        "min": 1,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {},
+    "constraints": [
+      "c>=1"
+    ],
+    "original": {
+      "c": 2
+    },
+    "stem": "How many times do the line \\(y=x+{c|int}\\) and the curve \\(y=x^2\\) meet?",
+    "answer": {
+      "expression": "2",
+      "format": "2",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(x^2-x-{c|int}=0\\) has discriminant \\(1+4\\times {c|int}&gt;0\\), so they meet twice.",
+        "result": "2",
+        "format": "int",
+        "mark": "A1",
+        "note": "For every c>=1 the discriminant 1+4c is positive, so the count is always 2."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original c=2"
+      }
+    ]
+  },
+  {
+    "id": "P1-1.9-QC3-gen",
+    "section": "P1-1.9",
+    "kind": "generated",
+    "title": "x-coordinate of the unique meeting point",
+    "marks": 1,
+    "source": "Theory P1-1.9 Quick check 3 (y=2x-1 meets y=x^2 at x=1); book Worked example 1.20 style p.28, new numbers",
+    "params": [
+      {
+        "name": "m",
+        "min": 2,
+        "max": 8,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "H": "m/2",
+      "K": "-m*m/4"
+    },
+    "constraints": [
+      "m>=2"
+    ],
+    "original": {
+      "m": 2
+    },
+    "stem": "The line \\(y={m|int}x+({K|int})\\) meets \\(y=x^2\\) at exactly one point. What is the \\(x\\)-coordinate of that point?",
+    "answer": {
+      "expression": "m/2",
+      "format": "{H|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(x^2-{m|int}x-{K|int}=0\\) is a perfect square, so \\(x={H|int}\\).",
+        "result": "m/2",
+        "format": "int",
+        "mark": "A1",
+        "note": "The unique root is x=m/2. Original m=2, K=-1, H=1. K in the stem is the already-computed intercept, written as an integer (negative)."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original m=2, K=-1, H=1"
+      }
+    ]
+  },
+  {
+    "id": "P1-1.9-PP-9709-12-ON10-Q6",
+    "section": "P1-1.9",
+    "kind": "pastpaper",
+    "title": "A line and a parabola: no common points, or a unique meeting point",
+    "marks": 7,
+    "source": {
+      "paper": "9709/12/O/N/10 Q6",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w10_qp_12.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w10_ms_12.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2010), Question 6 both parts. Official answers and mark allocation from the MS PDF. The item is paper/self-mark."
+    },
+    "stem": "This question is 9709/12/O/N/10 Question 6, taken from the official QP.\n\nA curve has equation \\(y=kx^2+1\\) and a line has equation \\(y=kx\\), where \\(k\\) is a non-zero constant.\n\n(i) Find the set of values of \\(k\\) for which the curve and the line have no common points.  [3]\n\n(ii) State the value of \\(k\\) for which the line is a tangent to the curve and, for this case, find the coordinates of the point where the line touches the curve.  [4]",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "M0",
+        "text_tex": "Set \\(kx^2+1=kx\\), so \\(kx^2-kx+1=0\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "First mark of (i): form the quadratic in x. The printed scheme groups (i) as [3]."
+      },
+      {
+        "name": "M1",
+        "text_tex": "The discriminant is \\(k^2-4k\\). For no common points, \\(k^2-4k&lt;0\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS (i): M1 for applying b^2-4ac with an inequality."
+      },
+      {
+        "name": "A1",
+        "text_tex": "Hence \\(0&lt;k&lt;4\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS (i): 0<k<4 A1 co. Independent check: k(k-4)<0 iff 0<k<4. Together these three marks are the official [3] for part (i)."
+      },
+      {
+        "name": "B1",
+        "text_tex": "The line meets the curve at exactly one point when the discriminant is zero and \\(k\\neq 0\\), so \\(k=4\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS (ii): k=4 only, B1 follow-through from their k^2-4k=0, not k=0. The official stem uses the word tangent; that wording is kept verbatim in the stem only."
+      },
+      {
+        "name": "M2",
+        "text_tex": "When \\(k=4\\), \\(4x^2-4x+1=0\\), so \\((2x-1)^2=0\\) and \\(x=\\dfrac{1}{2}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS (ii): M1 for (2x-1)^2=0, follow-through from their k."
+      },
+      {
+        "name": "A2",
+        "text_tex": "The corresponding \\(y\\)-coordinate is \\(y=4\\times \\dfrac{1}{2}=2\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS (ii): A1 for x=1/2."
+      },
+      {
+        "name": "A",
+        "text_tex": "The point is \\(\\bigl(\\dfrac{1}{2},2\\bigr)\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS (ii): A1 for y=2, or for the point (1/2, 2). Part (ii) is B1 M1 A1 A1, totalling 4. The whole item is 7 marks. Independent check: at k=4, x=1/2 and y=kx=2, and also y=kx^2+1=2."
+      }
+    ]
+  }
+]

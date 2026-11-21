@@ -1,0 +1,94 @@
+<section class="theory" data-section="P23-4-review">
+<h2>End-of-chapter review exercise 4</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 2 &amp; 3 Coursebook (Sue Pemberton and Julianne Hughes), Chapter 4 Differentiation, printed pp.108–110 (End-of-chapter review exercise 4). This is mixed practice across the live sections 4.1–4.7 (product and quotient rules, exponential and logarithmic derivatives, trigonometric derivatives, implicit differentiation and parametric differentiation). Own wording and new numbers; official mixed questions appear in the practice set.</p>
+<p class="key-words"><strong>Key words:</strong> <em>product rule</em>, <em>quotient rule</em>, <em>chain rule</em>, <em>implicit differentiation</em>, <em>parametric differentiation</em></p>
+<h3>What this review is for</h3>
+<p>Chapter 4 collected several techniques for differentiating. A review question may use more than one of them in the same item: for example a product that includes a logarithm, or a parametric curve whose components are trigonometric. The methods themselves are not new; the skill is to choose the right rule, differentiate carefully, and only then substitute a value or form a tangent.</p>
+<ul>
+<li><strong>Product rule</strong> (4.1): if \(y=uv\) then \(\dfrac{\mathrm{d}y}{\mathrm{d}x}=u\dfrac{\mathrm{d}v}{\mathrm{d}x}+v\dfrac{\mathrm{d}u}{\mathrm{d}x}\).</li>
+<li><strong>Quotient rule</strong> (4.2): if \(y=\dfrac{u}{v}\) then \(\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{v\frac{\mathrm{d}u}{\mathrm{d}x}-u\frac{\mathrm{d}v}{\mathrm{d}x}}{v^2}\).</li>
+<li><strong>Standard derivatives</strong> (4.3–4.5): \(\dfrac{\mathrm{d}}{\mathrm{d}x}(\mathrm{e}^{kx})=k\mathrm{e}^{kx}\), \(\dfrac{\mathrm{d}}{\mathrm{d}x}\bigl(\ln(ax+b)\bigr)=\dfrac{a}{ax+b}\), and the trigonometric rules (radians), including the chain rule for a linear argument.</li>
+<li><strong>Implicit differentiation</strong> (4.6): differentiate both sides with respect to \(x\), treating \(y\) as a function of \(x\), then collect terms in \(\dfrac{\mathrm{d}y}{\mathrm{d}x}\).</li>
+<li><strong>Parametric differentiation</strong> (4.7): \(\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{\mathrm{d}y/\mathrm{d}t}{\mathrm{d}x/\mathrm{d}t}\), provided \(\dfrac{\mathrm{d}x}{\mathrm{d}t}\neq 0\).</li>
+</ul>
+<div class="worked-example">
+<h4>Worked example 1: A product with a logarithm</h4>
+<p class="src">Mixed practice in the style of the chapter review (product rule with Section 4.4)</p>
+<p>Find the gradient of the curve \(y=(x+2)\ln(x+1)\) at the point where \(x=0\).</p>
+<ol class="steps">
+<li>Product rule: \(\dfrac{\mathrm{d}y}{\mathrm{d}x}=1\cdot\ln(x+1)+(x+2)\cdot\dfrac{1}{x+1}\) <span class="mark">M1 A1</span></li>
+<li>At \(x=0\): \(\ln 1+2\cdot\dfrac{1}{1}=0+2=2\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(2\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: Trigonometric derivatives at the origin</h4>
+<p class="src">Mixed practice in the style of the chapter review (Section 4.5)</p>
+<p>Find the gradient of the curve \(y=4\sin x+\tan 2x\) at the point where \(x=0\).</p>
+<ol class="steps">
+<li>\(\dfrac{\mathrm{d}y}{\mathrm{d}x}=4\cos x+2\sec^2 2x\) <span class="mark">M1 A1</span></li>
+<li>At \(x=0\): \(4\cos 0+2\sec^2 0=4\cdot 1+2\cdot 1=6\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(6\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 3: A parametric gradient</h4>
+<p class="src">Mixed practice in the style of the chapter review (Section 4.7)</p>
+<p>A curve has parametric equations \(x=t^2\), \(y=4t^3\), for \(t\gt 0\). Find \(\dfrac{\mathrm{d}y}{\mathrm{d}x}\) at the point where \(t=1\).</p>
+<ol class="steps">
+<li>\(\dfrac{\mathrm{d}x}{\mathrm{d}t}=2t\) and \(\dfrac{\mathrm{d}y}{\mathrm{d}t}=12t^2\), so \(\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{12t^2}{2t}=6t\) (for \(t\neq 0\)). <span class="mark">M1 A1</span></li>
+<li>At \(t=1\), the gradient is \(6\). <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(6\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul>
+<li>Substituting the given value before differentiating.</li>
+<li>Using the product rule as if it were the quotient rule, or forgetting the chain-rule factor on \(\tan 2x\) or \(\ln(ax+b)\).</li>
+<li>For parametric equations, computing \(\dfrac{\mathrm{d}x}{\mathrm{d}y}\) by mistake, or cancelling a factor of \(t\) that would exclude the required point.</li>
+<li>In an implicit question, forgetting to apply the product rule to a term such as \(xy\).</li>
+</ul>
+<h3>Quick checks</h3>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>Find the gradient of the curve \(y=5\sin x+\tan 3x\) at the point where \(x=0\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(\dfrac{\mathrm{d}y}{\mathrm{d}x}=5\cos x+3\sec^2 3x\); at \(x=0\) this is \(5+3=8\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(8\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>Find the gradient of the curve \(y=\ln(2x+1)\) at the point where \(x=0\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{2}{2x+1}\); at \(x=0\) this is \(2\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(2\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>Find the gradient of the curve \(y=\dfrac{x-1}{x+3}\) at the point where \(x=0\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>Quotient rule: \(\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{(x+3)-(x-1)}{(x+3)^2}=\dfrac{4}{(x+3)^2}\)</li>
+<li>At \(x=0\) the gradient is \(\dfrac{4}{9}\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{4}{9}\approx0.444\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 4</h4>
+<p>A curve is given parametrically by \(x=t^2\), \(y=t^3+t\), for \(t\neq 0\). Find \(\dfrac{\mathrm{d}y}{\mathrm{d}x}\) in terms of \(t\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{3t^2+1}{2t}\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{3t^2+1}{2t}\)</p>
+</details>
+</div>
+<p class="marks-key"><strong>Marks:</strong> M = method, A = accurate answer (depends on M), B = independent mark. Marks on worked examples are illustrative, not official. Give exact answers unless a question asks for a decimal. Differentiate first, then substitute. In calculus, angles are in radians unless a question says otherwise.</p>
+</section>

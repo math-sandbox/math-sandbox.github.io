@@ -1,0 +1,195 @@
+[
+  {
+    "id": "IGCSE-19.2-QC1-gen",
+    "section": "IGCSE-19.2",
+    "kind": "generated",
+    "title": "Planes of symmetry of a regular-polygon-based pyramid",
+    "marks": 1,
+    "source": "Theory IGCSE-19.2 Quick check 1; a regular n-gon based pyramid with congruent triangular faces has n planes of symmetry",
+    "params": [
+      {
+        "name": "n",
+        "min": 3,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "n"
+    },
+    "constraints": [
+      "n>=3"
+    ],
+    "original": {
+      "n": 4
+    },
+    "stem": "How many planes of symmetry does a pyramid have if its base is a regular {n|int}-sided polygon and the triangular faces are congruent?",
+    "answer": {
+      "expression": "n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Each plane contains the apex and a line of symmetry of the base, so there are \\({A|int}\\) planes.",
+        "result": "n",
+        "format": "int",
+        "mark": "A1",
+        "note": "A regular n-gon based pyramid with congruent triangular faces has n planes of symmetry."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original square-based pyramid, 4 planes"
+      }
+    ],
+    "tags": {
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-19.2"
+      ],
+      "topic": "Symmetry",
+      "chapter": "IGCSE-19",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-19-2.json",
+        "locator": "IGCSE-19.2-QC1-gen"
+      }
+    }
+  },
+  {
+    "id": "IGCSE-19.2-QC2-gen",
+    "section": "IGCSE-19.2",
+    "kind": "generated",
+    "title": "Planes of symmetry that contain the axis of a regular-polygon prism",
+    "marks": 1,
+    "source": "Theory IGCSE-19.2 Quick check 2; a right prism with a regular n-gon cross-section has n planes containing the axis",
+    "params": [
+      {
+        "name": "n",
+        "min": 3,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "n"
+    },
+    "constraints": [
+      "n>=3",
+      "n!=4"
+    ],
+    "original": {
+      "n": 3
+    },
+    "stem": "How many planes of symmetry of a right prism with a regular {n|int}-sided cross-section contain the axis of the prism?",
+    "answer": {
+      "expression": "n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "There is one such plane for each line of symmetry of the cross-section, so there are \\({A|int}\\) planes.",
+        "result": "n",
+        "format": "int",
+        "mark": "A1",
+        "note": "Planes containing the axis match the lines of symmetry of the regular n-gon."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original equilateral triangular prism, 3 axial planes"
+      }
+    ],
+    "tags": {
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-19.2"
+      ],
+      "topic": "Symmetry",
+      "chapter": "IGCSE-19",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-19-2.json",
+        "locator": "IGCSE-19.2-QC2-gen"
+      }
+    }
+  },
+  {
+    "id": "IGCSE-19.2-QC3-gen",
+    "section": "IGCSE-19.2",
+    "kind": "generated",
+    "title": "Planes of symmetry of a regular polygonal prism",
+    "marks": 1,
+    "source": "Theory IGCSE-19.2 Quick check 3; an n-gonal prism has n+1 planes",
+    "params": [
+      {
+        "name": "n",
+        "min": 3,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "n+1"
+    },
+    "constraints": [
+      "n!=4"
+    ],
+    "original": {
+      "n": 5
+    },
+    "stem": "A right prism has a regular \\({n|int}\\)-sided cross-section and is not a cube. How many planes of symmetry does it have?",
+    "answer": {
+      "expression": "n+1",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "There are \\({n|int}\\) planes containing the axis and one plane parallel to the ends, so the total is \\({A|int}\\).",
+        "result": "n+1",
+        "format": "int",
+        "mark": "A1",
+        "note": "n planes through the axis plus the mid-plane."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original regular pentagonal prism"
+      }
+    ],
+    "tags": {
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-19.2"
+      ],
+      "topic": "Symmetry",
+      "chapter": "IGCSE-19",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-19-2.json",
+        "locator": "IGCSE-19.2-QC3-gen"
+      }
+    }
+  }
+]

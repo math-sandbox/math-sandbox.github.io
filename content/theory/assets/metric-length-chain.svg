@@ -1,0 +1,30 @@
+<svg preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 140" width="100%" height="auto" role="img" aria-label="Metric length conversion chain">
+  <rect x="1" y="1" width="518" height="138" fill="#fff" stroke="#ccc"/>
+  <g font-family="Source Sans 3, DejaVu Sans, sans-serif" font-size="16" text-anchor="middle">
+    <rect x="16" y="48" width="88" height="36" rx="4" fill="#e8f4fc" stroke="#3a6d8c"/>
+    <text x="60" y="71">km</text>
+    <rect x="148" y="48" width="88" height="36" rx="4" fill="#e8f4fc" stroke="#3a6d8c"/>
+    <text x="192" y="71">m</text>
+    <rect x="280" y="48" width="88" height="36" rx="4" fill="#e8f4fc" stroke="#3a6d8c"/>
+    <text x="324" y="71">cm</text>
+    <rect x="412" y="48" width="88" height="36" rx="4" fill="#e8f4fc" stroke="#3a6d8c"/>
+    <text x="456" y="71">mm</text>
+    <text x="118" y="36" font-size="13">×1000</text>
+    <text x="250" y="36" font-size="13">×100</text>
+    <text x="382" y="36" font-size="13">×10</text>
+    <text x="118" y="118" font-size="13">÷1000</text>
+    <text x="250" y="118" font-size="13">÷100</text>
+    <text x="382" y="118" font-size="13">÷10</text>
+    <path d="M104 66 H148" stroke="#333" marker-end="url(#a)" fill="none"/>
+    <path d="M236 66 H280" stroke="#333" marker-end="url(#a)" fill="none"/>
+    <path d="M368 66 H412" stroke="#333" marker-end="url(#a)" fill="none"/>
+    <path d="M412 76 H368" stroke="#666" marker-end="url(#a)" fill="none" stroke-dasharray="3 2"/>
+    <path d="M280 76 H236" stroke="#666" marker-end="url(#a)" fill="none" stroke-dasharray="3 2"/>
+    <path d="M148 76 H104" stroke="#666" marker-end="url(#a)" fill="none" stroke-dasharray="3 2"/>
+  </g>
+  <defs>
+    <marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0 0 L8 4 L0 8 z" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

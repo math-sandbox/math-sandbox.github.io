@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" width="360" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:360px;height:auto" role="img" aria-label="A labelled triangle ABC used to state the sine and cosine rules">
+  <style>text{font-family:system-ui,Segoe UI,sans-serif;font-size:13px;fill:#222}</style>
+  <polygon points="60,200 300,200 140,40" fill="#eef6ff" stroke="#1d4f91" stroke-width="2"/>
+  <text x="140" y="28" text-anchor="middle">A</text>
+  <text x="40" y="216">C</text>
+  <text x="308" y="216">B</text>
+  <text x="90" y="130">b</text>
+  <text x="230" y="130">c</text>
+  <text x="170" y="222">a</text>
+</svg>

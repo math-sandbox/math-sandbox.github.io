@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:400px;height:auto" role="img" aria-labelledby="P1-2-4-self-inverse-t P1-2-4-self-inverse-d">
+<title id="P1-2-4-self-inverse-t">A self-inverse linear graph is symmetric about y = x</title>
+<desc id="P1-2-4-self-inverse-d">The graph of y equals 6 minus x is a straight line at right angles to y equals x and is unchanged when reflected in y equals x, so the function is self-inverse. The points (2, 4) and (4, 2) both lie on the graph.</desc>
+<rect x="0" y="0" width="400" height="300" fill="#fff"/>
+<g font-family="Source Sans 3, DejaVu Sans, sans-serif" font-size="13" fill="#333">
+  <line x1="50.00" y1="243.11" x2="370.00" y2="243.11" stroke="#333" stroke-width="1.6"/>
+  <line x1="85.56" y1="270.00" x2="85.56" y2="28.00" stroke="#333" stroke-width="1.6"/>
+  <polygon points="370.00,243.11 360.00,239.11 360.00,247.11" fill="#333"/>
+  <polygon points="85.56,28.00 81.56,38.00 89.56,38.00" fill="#333"/>
+  <text x="358.00" y="261.11" >x</text>
+  <text x="95.56" y="32.00" >y</text>
+  <line x1="85.56" y1="243.11" x2="352.22" y2="41.44" stroke="#888" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="313.11" y="61.02" fill="#666" font-size="12">y = x</text>
+  <line x1="78.44" y1="76.40" x2="334.44" y2="270.00" stroke="#1b5e8a" stroke-width="2.3"/>
+  <text x="99.78" y="80.53" fill="#1b5e8a" font-size="12">y = 6 − x</text>
+  <circle cx="156.67" cy="135.56" r="3.6" fill="#1b5e8a"/>
+  <circle cx="227.78" cy="189.33" r="3.6" fill="#c0392b"/>
+  <line x1="156.67" y1="135.56" x2="227.78" y2="189.33" stroke="#7a4a16" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <text x="150.67" y="127.56" text-anchor="end" fill="#1b5e8a" font-size="12">(2, 4)</text>
+  <text x="233.78" y="203.33" fill="#c0392b" font-size="12">(4, 2)</text>
+</g>
+</svg>

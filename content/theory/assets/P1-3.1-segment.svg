@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="400" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:400px;height:auto" role="img" aria-label="A line segment PQ with its midpoint M marked on a coordinate grid">
+  <style>text{font-family:system-ui,Segoe UI,sans-serif;font-size:13px;fill:#222}</style>
+  <line x1="40" y1="220" x2="380" y2="220" stroke="#444" stroke-width="1.2"/>
+  <line x1="50" y1="20" x2="50" y2="230" stroke="#444" stroke-width="1.2"/>
+  <circle cx="90" cy="180" r="4" fill="#1d4f91"/>
+  <circle cx="290" cy="60" r="4" fill="#1d4f91"/>
+  <circle cx="190" cy="120" r="4" fill="#b42318"/>
+  <line x1="90" y1="180" x2="290" y2="60" stroke="#1d4f91" stroke-width="2"/>
+  <text x="70" y="198">P(x1, y1)</text>
+  <text x="300" y="55">Q(x2, y2)</text>
+  <text x="200" y="114">M</text>
+</svg>

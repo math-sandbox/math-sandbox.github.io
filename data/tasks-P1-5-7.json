@@ -1,0 +1,300 @@
+[
+  {
+    "id": "P1-5.7-QC1-gen",
+    "section": "P1-5.7",
+    "kind": "generated",
+    "title": "Cosine from a known sine in a 5-12-13 triangle",
+    "marks": 1,
+    "source": "Theory P1-5.7 Quick check 1",
+    "params": [
+      {
+        "name": "m",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "n",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "a": "m*m-n*n",
+      "b": "2*m*n",
+      "c": "m*m+n*n",
+      "A": "2*m*n"
+    },
+    "constraints": [
+      "m>n",
+      "n>=1",
+      "(m-n)%2==1",
+      "m*n!=18"
+    ],
+    "original": {
+      "m": 3,
+      "n": 2
+    },
+    "stem": "Given that \\(\\sin\\theta={a|int}/{c|int}\\) and \\(\\theta\\) is acute, find the value of \\({c|int}\\cos\\theta\\).",
+    "answer": {
+      "expression": "2*m*n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\cos^2\\theta=1-\\sin^2\\theta=1-({a|int}/{c|int})^2\\), and \\(\\theta\\) is acute, so \\({c|int}\\cos\\theta={A|int}\\).",
+        "result": "2*m*n",
+        "format": "int",
+        "mark": "A1",
+        "note": "Use sin squared plus cos squared equals 1."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original sin = 5/13, answer 12"
+      }
+    ],
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.7"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-7.json",
+        "locator": "P1-5.7-QC1-gen"
+      }
+    }
+  },
+  {
+    "id": "P1-5.7-QC2-gen",
+    "section": "P1-5.7",
+    "kind": "generated",
+    "title": "Sine from a known tangent in a 5-12-13 triangle",
+    "marks": 1,
+    "source": "Theory P1-5.7 Quick check 2",
+    "params": [
+      {
+        "name": "m",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "n",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "a": "m*m-n*n",
+      "b": "2*m*n",
+      "c": "m*m+n*n",
+      "A": "m*m-n*n"
+    },
+    "constraints": [
+      "m>n",
+      "n>=1",
+      "(m-n)%2==1",
+      "m*n!=18",
+      "m*m+n*n!=5"
+    ],
+    "original": {
+      "m": 3,
+      "n": 2
+    },
+    "stem": "Given that \\(\\tan\\theta={a|int}/{b|int}\\) and \\(\\theta\\) is acute, find the value of \\({c|int}\\sin\\theta\\).",
+    "answer": {
+      "expression": "m*m-n*n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "A right-angled triangle with opposite \\({a|int}\\) and adjacent \\({b|int}\\) has hypotenuse \\({c|int}\\), so \\({c|int}\\sin\\theta={A|int}\\).",
+        "result": "m*m-n*n",
+        "format": "int",
+        "mark": "A1",
+        "note": "tan equals opposite over adjacent."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original tan = 5/12, answer 5"
+      }
+    ],
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.7"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-7.json",
+        "locator": "P1-5.7-QC2-gen"
+      }
+    }
+  },
+  {
+    "id": "P1-5.7-QC3-gen",
+    "section": "P1-5.7",
+    "kind": "generated",
+    "title": "Sine squared from a known cosine in an 8-15-17 triangle",
+    "marks": 1,
+    "source": "Theory P1-5.7 Quick check 3",
+    "params": [
+      {
+        "name": "m",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "n",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "a": "m*m-n*n",
+      "b": "2*m*n",
+      "c": "m*m+n*n",
+      "A": "(m*m-n*n)*(m*m-n*n)"
+    },
+    "constraints": [
+      "m>n",
+      "n>=1",
+      "(m-n)%2==1",
+      "m*n!=18"
+    ],
+    "original": {
+      "m": 4,
+      "n": 1
+    },
+    "stem": "Given that \\(\\cos\\theta={b|int}/{c|int}\\) and \\(\\theta\\) is acute, find the value of \\({c|int}^2\\sin^2\\theta\\).",
+    "answer": {
+      "expression": "(m*m-n*n)*(m*m-n*n)",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\sin^2\\theta=1-\\cos^2\\theta=1-({b|int}/{c|int})^2\\), so \\({c|int}^2\\sin^2\\theta={A|int}\\).",
+        "result": "(m*m-n*n)*(m*m-n*n)",
+        "format": "int",
+        "mark": "A1",
+        "note": "Use sin squared plus cos squared equals 1."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original cos = 8/17, answer 225"
+      }
+    ],
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.7"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-7.json",
+        "locator": "P1-5.7-QC3-gen"
+      }
+    }
+  },
+  {
+    "id": "P1-5.7-PP-9709-12-ON10-Q2",
+    "section": "P1-5.7",
+    "kind": "pastpaper",
+    "title": "Prove an identity connecting tan squared x and sin squared x",
+    "marks": 4,
+    "source": {
+      "paper": "9709/12/O/N/10 Q2",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w10_qp_12.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w10_ms_12.pdf",
+      "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+    },
+    "stem": "<p>Prove the identity \\(\\tan^2 x-\\sin^2 x\\equiv\\tan^2 x\\sin^2 x\\). [4]</p>",
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.7"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 4,
+      "difficulty": "hard",
+      "type": "pp",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-7.json",
+        "locator": "P1-5.7-PP-9709-12-ON10-Q2"
+      }
+    },
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "The left-hand side is rewritten by replacing \\(\\tan^2 x\\) by \\(\\dfrac{\\sin^2 x}{\\cos^2 x}\\), or by \\(\\sec^2 x-1\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1, replace t² by s²/c² or sec² − 1."
+      },
+      {
+        "name": "s2",
+        "text_tex": "The factor \\(1-\\cos^2 x=\\sin^2 x\\) is used, to reach a form such as \\(\\dfrac{\\sin^2 x(1-\\cos^2 x)}{\\cos^2 x}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1, use of 1 − cos²x = sin²x."
+      },
+      {
+        "name": "s3",
+        "text_tex": "A valid overall method is completed, reaching \\(\\dfrac{\\sin^2 x\\sin^2 x}{\\cos^2 x}\\) or an equivalent.",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1, valid overall method."
+      },
+      {
+        "name": "s4",
+        "text_tex": "The left-hand side is shown to be \\(\\tan^2 x\\sin^2 x\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, AG. An equivalent sequence starting from the right-hand side is also given in the official MS."
+      }
+    ]
+  }
+]

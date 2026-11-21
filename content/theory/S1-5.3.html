@@ -1,0 +1,90 @@
+<section class="theory" data-section="S1-5.3">
+<h2>5.3 Combinations</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Probability &amp; Statistics 1 Coursebook (Dean Chalmers), Chapter 5 Permutations and combinations, printed pp.135–137. Own wording and new numbers, following the coursebook definition of \({}^{n}C_{r}\), its link with \({}^{n}P_{r}\), and selections from several groups.</p>
+<p class="key-words"><strong>Key words:</strong> <em>combination</em></p>
+<h3>Selections where order does not matter</h3>
+<p>A <strong>combination</strong> is a selection of objects in which the order does not matter. Each selection of \(r\) different objects can be arranged in \(r!\) ways, so the number of selections is the number of permutations divided by \(r!\):</p>
+<p>\[{}^{n}C_{r}=\dfrac{{}^{n}P_{r}}{r!}=\dfrac{n!}{r!\,(n-r)!}.\]</p>
+<p>Choosing the \(r\) objects to take is the same as choosing the \(n-r\) objects to leave, so \({}^{n}C_{r}={}^{n}C_{n-r}\). Also \({}^{n}C_{0}={}^{n}C_{n}=1\).</p>
+<div class="ms-widget" data-widget="perm-comb-counter"></div>
+<script src="../../assets/widget-kinds-pkg15.js"></script>
+<h3>Selections from several groups</h3>
+<ul>
+<li>When a fixed number must come from each group, multiply the numbers of ways for the separate groups.</li>
+<li>When a condition says &ldquo;at least&rdquo; or &ldquo;more than&rdquo;, list every scenario that satisfies it, count each one, and add.</li>
+<li>When particular objects must be included, put them in first and choose the rest from what is left.</li>
+</ul>
+<div class="worked-example">
+<h4>Worked example 1: A single selection</h4>
+<p class="src">Coursebook, 5.3, evaluating \({}^{n}C_{r}\). New numbers.</p>
+<p>In how many ways can 4 students be chosen from a class of 9 students?</p>
+<ol class="steps">
+<li>Order does not matter: \({}^{9}C_{4}=\dfrac{9!}{4!\,5!}\). <span class="mark">M1</span></li>
+<li>\(=126\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(126\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: Scenarios for &ldquo;at least&rdquo;</h4>
+<p class="src">Coursebook, 5.3, selections with conditions. New numbers.</p>
+<p>A group of 4 is chosen from 6 boys and 4 girls. How many different groups contain at least 3 girls?</p>
+<ol class="steps">
+<li>The scenarios are 3 girls and 1 boy, or 4 girls. <span class="mark">M1</span></li>
+<li>3G 1B: \({}^{4}C_{3}\times{}^{6}C_{1}=24\); 4G: \({}^{4}C_{4}=1\). <span class="mark">A1</span></li>
+<li>Total \(24+1=25\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(25\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul>
+<li>Using \({}^{n}P_{r}\) for a selection. If the order of the chosen objects does not matter, use \({}^{n}C_{r}\).</li>
+<li>Adding when you should multiply: choices from different groups that are made together are multiplied; separate scenarios are added.</li>
+<li>Missing or double-counting a scenario when the condition is &ldquo;at least&rdquo;.</li>
+</ul>
+<h3>Past paper</h3>
+<p class="src">9709/51/M/J/20 Q4, official QP and official MS.</p>
+<p>In a music competition, there are 8 pianists, 4 guitarists and 6 violinists. 7 of these musicians will be selected to go through to the final.</p><p>How many different selections of 7 finalists can be made if there must be at least 2 pianists, at least 1 guitarist and more violinists than guitarists? [4]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>The possible scenarios are 2P 3V 2G, 2P 4V 1G, 3P 3V 1G and 4P 2V 1G, each counted by a product of three combinations, for example \({}^{8}C_{2}\times{}^{4}C_{2}\times{}^{6}C_{3}\). <span class="mark">M1</span> Official MS: M1 for 8Cr × 4Cr × 6Cr with ∑ = 7.</li>
+<li>2P 3V 2G: \({}^{8}C_{2}\times{}^{4}C_{2}\times{}^{6}C_{3}=28\times6\times20=3360\); 2P 4V 1G: \({}^{8}C_{2}\times{}^{4}C_{1}\times{}^{6}C_{4}=28\times4\times15=1680\). <span class="mark">B1</span> Official MS: B1, two unsimplified products correct.</li>
+<li>3P 3V 1G: \({}^{8}C_{3}\times{}^{4}C_{1}\times{}^{6}C_{3}=56\times4\times20=4480\); 4P 2V 1G: \({}^{8}C_{4}\times{}^{4}C_{1}\times{}^{6}C_{2}=70\times4\times15=4200\). Add the four scenarios. <span class="mark">M1</span> Official MS: M1, summing the number of ways for 3 or 4 correct scenarios.</li>
+<li>Total: \(13\,720\) <span class="mark">A1</span> Official MS: A1, total 13 720.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/51/M/J/21 Q1, official QP and official MS.</p>
+<p>A bag contains 12 marbles, each of a different size. 8 of the marbles are red and 4 of the marbles are blue.</p><p>How many different selections of 5 marbles contain at least 4 marbles of the same colour? [4]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>The scenarios are 4 red and 1 blue, 4 blue and 1 red, and 5 red. For example, 4 red and 1 blue gives \({}^{8}C_{4}\times{}^{4}C_{1}\). <span class="mark">M1</span> Official MS: M1, 8Cx × 4Cy with x + y = 5, x, y both integers, 1 ⩽ x ⩽ 5, 0 ⩽ y ⩽ 4; condone 8C1 × 1.</li>
+<li>RRRRB: \({}^{8}C_{4}\times{}^{4}C_{1}=280\); BBBBR: \({}^{8}C_{1}\times{}^{4}C_{4}=8\); RRRRR: \({}^{8}C_{5}=56\). <span class="mark">A1</span> Official MS: A1, two correct outcomes evaluated.</li>
+<li>Add the three scenarios: \(280+8+56\). <span class="mark">M1</span> Official MS: M1, add 2 or 3 identified correct scenarios only (no additional terms, not probabilities).</li>
+<li>\(344\) <span class="mark">A1</span> Official MS: A1, [Total =] 344, WWW, only dependent on 2nd M mark. SC if not all (or no) scenarios identified: B1 for 280 + 8 + 56, DB1 for 344.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>How many different selections of 3 books can be made from 10 different books?</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\({}^{10}C_{3}=\dfrac{10\times9\times8}{3!}=120\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(120\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>A committee of 2 men and 3 women is to be chosen from 6 men and 5 women. How many different committees are possible?</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>Men: \({}^{6}C_{2}=15\); women: \({}^{5}C_{3}=10\).</li><li>Total \(15\times10=150\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(150\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>A team of 5 players is to be chosen from 11 players, one of whom is the captain. The captain must be in the team. How many different teams are possible?</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>Choose the other 4 players from the remaining 10: \({}^{10}C_{4}=210\).</li></ol>
+<p class="final"><strong>Answer:</strong> \(210\)</p>
+</details>
+</div>
+</section>

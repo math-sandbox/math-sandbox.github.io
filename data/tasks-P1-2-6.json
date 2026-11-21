@@ -1,0 +1,175 @@
+[
+  {
+    "id": "P1-2.6-QC1-gen",
+    "section": "P1-2.6",
+    "kind": "generated",
+    "title": "Y-coordinate of a turning point after reflection in the x-axis",
+    "marks": 1,
+    "source": "Theory P1-2.6 Quick check 1 ((3,-4) maps to (3,4)); book Worked example 2.13 style, new numbers",
+    "params": [
+      {
+        "name": "p",
+        "min": 1,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 1,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "K": "q"
+    },
+    "constraints": [
+      "q>=1"
+    ],
+    "original": {
+      "p": 3,
+      "q": 4
+    },
+    "stem": "The graph of \\(y=f(x)\\) has a turning point at \\(({p|int},-{q|int})\\). The graph of \\(y=-f(x)\\) has a turning point at \\(({p|int},k)\\). What is the value of \\(k\\)?",
+    "answer": {
+      "expression": "K",
+      "format": "{K|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "A reflection in the \\(x\\)-axis sends \\(({p|int},-{q|int})\\) to \\(({p|int}, {K|int})\\), so \\(k={K|int}\\).",
+        "result": "K",
+        "format": "int",
+        "mark": "A1",
+        "note": "K equals q. Original: k=4."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P1-2.6-QC2-gen",
+    "section": "P1-2.6",
+    "kind": "generated",
+    "title": "X-coordinate of a turning point after reflection in the y-axis",
+    "marks": 1,
+    "source": "Theory P1-2.6 Quick check 2 ((5,-2) maps to (-5,-2)); book Worked example 2.13 style, new numbers",
+    "params": [
+      {
+        "name": "p",
+        "min": 2,
+        "max": 9,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "K": "-p"
+    },
+    "constraints": [
+      "p>=2"
+    ],
+    "original": {
+      "p": 5
+    },
+    "stem": "The graph of \\(y=f(x)\\) has a turning point at \\(({p|int},-2)\\). The graph of \\(y=f(-x)\\) has a turning point at \\((k,-2)\\). What is the value of \\(k\\)?",
+    "answer": {
+      "expression": "K",
+      "format": "{K|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "A reflection in the \\(y\\)-axis sends \\(({p|int},-2)\\) to \\(({K|int},-2)\\), so \\(k={K|int}\\).",
+        "result": "K",
+        "format": "int",
+        "mark": "A1",
+        "note": "K is -p. Original: k=-5."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P1-2.6-QC3-gen",
+    "section": "P1-2.6",
+    "kind": "generated",
+    "title": "Y-intercept after a reflection of y=x squared plus c in the x-axis",
+    "marks": 1,
+    "source": "Theory P1-2.6 Quick check 3 (y=x^2+7 reflects to y-intercept -7); book Key point 2.9, new numbers",
+    "params": [
+      {
+        "name": "c",
+        "min": 2,
+        "max": 12,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "Y": "-c"
+    },
+    "constraints": [
+      "c>=2"
+    ],
+    "original": {
+      "c": 7
+    },
+    "stem": "The graph of \\(y=x^2+{c|int}\\) is reflected in the \\(x\\)-axis. What is the \\(y\\)-intercept of the resulting graph?",
+    "answer": {
+      "expression": "Y",
+      "format": "{Y|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The new equation is \\(y=-x^2-{c|int}\\). When \\(x=0\\), \\(y={Y|int}\\).",
+        "result": "Y",
+        "format": "int",
+        "mark": "A1",
+        "note": "Y is -c. Original: -7."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P1-2.6-PP-9709-11-MJ20-Q4c",
+    "section": "P1-2.6",
+    "kind": "pastpaper",
+    "title": "Equation of the reflection of y=f(x) in the x-axis",
+    "marks": 1,
+    "source": {
+      "paper": "9709/11/M/J/20 Q4(c)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s20_qp_11.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s20_ms_11.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2020), Question 4(c) only, including the sentence that defines f. Official answer and mark allocation from the MS PDF. The item is paper/self-mark. Parts 4(a) and 4(b) are omitted (the range of f, and a vertical translation). The official diagram is not needed for part (c)."
+    },
+    "stem": "This question is 9709/11/M/J/20 Question 4(c), taken from the official QP.\n\nThe function \\(f\\) is defined by \\(f(x)=\\dfrac{3}{2}\\cos 2x+\\dfrac{1}{2}\\) for \\(0\\leqslant x\\leqslant \\pi\\).\n\n(c) State the equation of the curve which is the reflection of \\(y=f(x)\\) in the \\(x\\)-axis. Give your answer in the form \\(y=a\\cos 2x+b\\), where \\(a\\) and \\(b\\) are constants.  [1]",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "B",
+        "text_tex": "The reflection in the \\(x\\)-axis is \\(y=-f(x)=-\\dfrac{3}{2}\\cos 2x-\\dfrac{1}{2}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS 4(c): B1 for y=-(3/2)cos 2x - 1/2. Independent: -((3/2)cos 2x + 1/2) = -(3/2)cos 2x - 1/2."
+      }
+    ]
+  }
+]

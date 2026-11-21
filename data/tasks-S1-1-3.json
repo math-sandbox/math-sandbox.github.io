@@ -1,0 +1,308 @@
+[
+  {
+    "id": "S1-1.3-QC1-gen",
+    "section": "S1-1.3",
+    "kind": "generated",
+    "title": "Frequency density from a class frequency and width",
+    "marks": 2,
+    "source": "S1 Ch1 theory S1-1.3 Quick check 1 (class width 8, frequency 24, frequency density 3)",
+    "params": [
+      {
+        "name": "w",
+        "min": 2,
+        "max": 12,
+        "step": 2
+      },
+      {
+        "name": "k",
+        "min": 2,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "f": "k*w",
+      "E": "k"
+    },
+    "constraints": [
+      "w>=2",
+      "k>=2",
+      "k<=8",
+      "w<=12"
+    ],
+    "original": {
+      "w": 8,
+      "k": 3
+    },
+    "stem": "A class of width {w|int} contains {f|int} observations. Find the frequency density.",
+    "answer": {
+      "expression": "k",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "Frequency density \\(=\\) class frequency \\(\\div\\) class width \\(=\\dfrac{{f|int}}{{w|int}}\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Use fd = f / width."
+      },
+      {
+        "name": "E",
+        "text_tex": "The frequency density is \\({E|int}\\).",
+        "result": "k",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct frequency density."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "masses",
+        "stem": "The masses in a class of width {w|int} kg have frequency {f|int}. What is the frequency density, in observations per kilogram?",
+        "note": "masses frame"
+      },
+      {
+        "id": "times",
+        "stem": "A class of times has width {w|int} minutes and contains {f|int} recorded times. Find the frequency density, in times per minute.",
+        "note": "times frame"
+      }
+    ]
+  },
+  {
+    "id": "S1-1.3-QC2-gen",
+    "section": "S1-1.3",
+    "kind": "generated",
+    "title": "Class frequency from frequency density and width",
+    "marks": 2,
+    "source": "S1 Ch1 theory S1-1.3 Quick check 2 (fd 3, width 10, frequency 30)",
+    "params": [
+      {
+        "name": "d",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "w",
+        "min": 4,
+        "max": 16,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "E": "d*w"
+    },
+    "constraints": [
+      "d>=2",
+      "w>=4",
+      "d*w<=96"
+    ],
+    "original": {
+      "d": 3,
+      "w": 10
+    },
+    "stem": "A histogram column has frequency density {d|int} and class width {w|int}. How many observations does the column represent?",
+    "answer": {
+      "expression": "d*w",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "Class frequency \\(=\\) class width \\(\\times\\) frequency density \\(={w|int}\\times{d|int}\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Use f = width x fd."
+      },
+      {
+        "name": "E",
+        "text_tex": "The column represents \\({E|int}\\) observations.",
+        "result": "d*w",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct frequency."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "heights",
+        "stem": "On a histogram of heights, one column has frequency density {d|int} and width {w|int} cm. Find the frequency of that class.",
+        "note": "heights frame"
+      },
+      {
+        "id": "parcels",
+        "stem": "A histogram of parcel masses has a column of width {w|int} kg and frequency density {d|int} parcels per kilogram. How many parcels are in that class?",
+        "note": "parcels frame"
+      }
+    ]
+  },
+  {
+    "id": "S1-1.3-QC3-gen",
+    "section": "S1-1.3",
+    "kind": "generated",
+    "title": "Estimate a frequency from part of a class, assuming even spread",
+    "marks": 2,
+    "source": "S1 Ch1 theory S1-1.3 Quick check 3 (class width 20, frequency 48, first 5 units, estimate 12)",
+    "params": [
+      {
+        "name": "w",
+        "min": 8,
+        "max": 24,
+        "step": 4
+      },
+      {
+        "name": "f",
+        "min": 16,
+        "max": 72,
+        "step": 4
+      },
+      {
+        "name": "p",
+        "min": 2,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "E": "f*p/w"
+    },
+    "constraints": [
+      "w>=8",
+      "p>=2",
+      "p<w",
+      "f*p % w == 0"
+    ],
+    "original": {
+      "w": 20,
+      "f": 48,
+      "p": 5
+    },
+    "stem": "A class of width {w|int} contains {f|int} observations, assumed spread evenly through the class. Estimate the number of observations in a sub-interval of width {p|int} at one end of the class.",
+    "answer": {
+      "expression": "f*p/w",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The sub-interval is a fraction \\(\\dfrac{{p|int}}{{w|int}}\\) of the class, so the estimate is \\(\\dfrac{{p|int}}{{w|int}}\\times{f|int}\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Scale the class frequency by the width fraction."
+      },
+      {
+        "name": "E",
+        "text_tex": "The estimate is \\({E|int}\\).",
+        "result": "f*p/w",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct estimate."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "times",
+        "stem": "A class of times of width {w|int} minutes contains {f|int} observations, assumed evenly spread. Estimate how many of the times lie in the first {p|int} minutes of the class.",
+        "note": "times frame"
+      },
+      {
+        "id": "masses",
+        "stem": "A class of masses of width {w|int} kg contains {f|int} parcels, assumed evenly spread. Estimate the number of parcels in a {p|int} kg strip at one end of the class.",
+        "note": "masses frame"
+      }
+    ]
+  },
+  {
+    "id": "S1-1.3-PP-9709-61-ON15-Q3i",
+    "section": "S1-1.3",
+    "kind": "pastpaper",
+    "marking": "manual",
+    "title": "Find a and b in a frequency-density table of delivery times",
+    "marks": 3,
+    "source": {
+      "paper": "9709/61/O/N/15 Q3(i)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w15_qp_61.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w15_ms_61.pdf",
+      "note": "Stem verbatim from the QP PDF (the times are correct to the nearest minute). Steps and marks from the official MS PDF. Independently: class widths from the boundaries are 3, 2, 3 and 4, so a=9/2=4.5 and b=1.5*4=6. Part (ii), drawing the histogram, is omitted. Fully manual, because the official part asks for two values and the engine has one auto-marked number per part."
+    },
+    "stem": "Robert has a part-time job delivering newspapers. On a number of days he noted the time, correct to the nearest minute, that it took him to do his job. Robert used his results to draw up the following table; two of the values in the table are denoted by \\(a\\) and \\(b\\).\nTime (\\(t\\) minutes): \\(60-62\\), \\(63-64\\), \\(65-67\\), \\(68-71\\).\nFrequency (number of days): \\(3\\), \\(9\\), \\(6\\), \\(b\\).\nFrequency density: \\(1\\), \\(a\\), \\(2\\), \\(1.5\\).\nFind the values of \\(a\\) and \\(b\\).",
+    "steps": [
+      {
+        "name": "fd",
+        "text_tex": "The times are to the nearest minute, so the class widths from the boundaries are \\(3\\), \\(2\\), \\(3\\) and \\(4\\). Frequency density \\(=\\) frequency \\(\\div\\) class width, so \\(a=9\\div 2\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: M1 Using fd = f/cw."
+      },
+      {
+        "name": "a",
+        "text_tex": "Hence \\(a=4.5\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: A1 Correct a, a=9/2=4.5."
+      },
+      {
+        "name": "b",
+        "text_tex": "Also \\(1.5=b/4\\), so \\(b=6\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: A1 Correct b, 1.5=b/4 so b=6."
+      }
+    ]
+  },
+  {
+    "id": "S1-1.3-PP-9709-63-ON13-Q1",
+    "section": "S1-1.3",
+    "kind": "pastpaper",
+    "marking": "manual",
+    "title": "Two reasons why Dominic’s diagram is not a correct histogram",
+    "marks": 2,
+    "source": {
+      "paper": "9709/63/O/N/13 Q1",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w13_qp_63.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w13_ms_63.pdf",
+      "note": "Stem verbatim from the QP PDF, including the table. The official diagram is described from the rendered QP page (vertical axis labelled Number of students; bars of heights 18, 13, 8, 12 and 4 over 1–3, 4–5, 6–8, 9–11 and 12–16, with gaps). A reconstruction of that official figure is in assets/S1-1.3-pp-9709-63-ON13-Q1-dominic.svg for optional display. Steps and marks from the official MS PDF. Fully manual."
+    },
+    "stem": "The distance of a student’s home from college, correct to the nearest kilometre, was recorded for each of 55 students. The distances are summarised in the following table.\nDistance from college (km): \\(1-3\\), \\(4-5\\), \\(6-8\\), \\(9-11\\), \\(12-16\\).\nNumber of students: \\(18\\), \\(13\\), \\(8\\), \\(12\\), \\(4\\).\nDominic is asked to draw a histogram to illustrate the data. Dominic’s diagram has the vertical axis labelled “Number of students”. Separate bars of heights 18, 13, 8, 12 and 4 stand over the intervals 1 to 3, 4 to 5, 6 to 8, 9 to 11 and 12 to 16, with gaps between neighbouring bars.\nGive two reasons why this is not a correct histogram.",
+    "steps": [
+      {
+        "name": "gaps",
+        "text_tex": "The bars are not touching. In a histogram there are no gaps between classes unless a class has frequency zero; the classes should meet at the class boundaries (for data to the nearest kilometre, at \\(0.5\\), \\(3.5\\), and so on).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 bars are not touching oe. Sensible reason involving not touching, no gaps, class boundaries, group data not continuous (may be the negative)."
+      },
+      {
+        "name": "fd",
+        "text_tex": "The vertical axis is labelled “Number of students”, and the bar heights are the frequencies. In a histogram the vertical axis must be frequency density, so that area represents frequency.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 Area not rep by frequency, not used fd, not labelled fd. Must be frequency density oe. Wrong height not sufficient. (Best 2 reasons awarded)."
+      }
+    ]
+  }
+]

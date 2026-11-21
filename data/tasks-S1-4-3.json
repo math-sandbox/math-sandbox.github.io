@@ -1,0 +1,442 @@
+[
+  {
+    "id": "S1-4.3-QC1-gen",
+    "section": "S1-4.3",
+    "kind": "generated",
+    "title": "Multiplication law for independent events",
+    "marks": 2,
+    "source": "S1 Ch4 theory S1-4.3 Quick check 1 (P(A)=0.4, P(B)=0.5 independent: 0.2)",
+    "params": [
+      {
+        "name": "a",
+        "min": 0.1,
+        "max": 0.6,
+        "step": 0.05
+      },
+      {
+        "name": "b",
+        "min": 0.1,
+        "max": 0.6,
+        "step": 0.05
+      }
+    ],
+    "derived": {},
+    "constraints": [
+      "a*b<=0.95"
+    ],
+    "original": {
+      "a": 0.4,
+      "b": 0.5
+    },
+    "stem": "Events \\(A\\) and \\(B\\) are independent, with \\(\\mathrm{P}(A)={a|raw}\\) and \\(\\mathrm{P}(B)={b|raw}\\). Find \\(\\mathrm{P}(A\\cap B)\\).",
+    "answer": {
+      "expression": "a*b",
+      "format": "{Pr|raw}",
+      "tolerance": 0
+    },
+    "steps": [
+      {
+        "name": "I",
+        "text_tex": "\\(\\mathrm{P}(A\\cap B)=\\mathrm{P}(A)\\times\\mathrm{P}(B)={a|raw}\\times{b|raw}\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Independent, so multiply."
+      },
+      {
+        "name": "Pr",
+        "text_tex": "\\(\\mathrm{P}(A\\cap B)={Pr|raw}\\)",
+        "result": "a*b",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Independent, so multiply."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "faults",
+        "stem": "The probability that a new machine develops a mechanical fault in a year is {a|raw} and, independently, the probability that it develops an electrical fault is {b|raw}. Find the probability that it develops both types of fault in a year.",
+        "step_text": {
+          "I": "\\(\\mathrm{P}(A\\cap B)={a|raw}\\times{b|raw}\\)",
+          "Pr": "\\(={Pr|raw}\\)"
+        }
+      },
+      {
+        "id": "weather",
+        "stem": "The probability that it rains on Saturday is {a|raw} and, independently, the probability that it rains on Sunday is {b|raw}. Find the probability that it rains on both days.",
+        "step_text": {
+          "I": "\\(\\mathrm{P}(A\\cap B)={a|raw}\\times{b|raw}\\)",
+          "Pr": "\\(={Pr|raw}\\)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "S1-4.3-QC2-gen",
+    "section": "S1-4.3",
+    "kind": "generated",
+    "title": "Exactly one success in two independent trials",
+    "marks": 3,
+    "source": "S1 Ch4 theory S1-4.3 Quick check 2 (P(late)=0.2, exactly one of two mornings: 0.32)",
+    "params": [
+      {
+        "name": "p",
+        "min": 0.1,
+        "max": 0.4,
+        "step": 0.05
+      }
+    ],
+    "derived": {
+      "q": "1-p"
+    },
+    "constraints": [],
+    "original": {
+      "p": 0.2
+    },
+    "stem": "The probability that a train is late on any morning is {p|raw}, independently of other mornings. Find the probability that the train is late on exactly one of two mornings.",
+    "answer": {
+      "expression": "2*p*(1-p)",
+      "format": "{E|raw}",
+      "tolerance": 0
+    },
+    "steps": [
+      {
+        "name": "q",
+        "text_tex": "\\(\\mathrm{P}(\\text{not late})={q|raw}\\)",
+        "result": "1-p",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Complement."
+      },
+      {
+        "name": "m",
+        "text_tex": "\\({p|raw}\\times{q|raw}+{q|raw}\\times{p|raw}\\)",
+        "result": "2*p*q",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Late then not, or not then late."
+      },
+      {
+        "name": "E",
+        "text_tex": "\\(={E|raw}\\)",
+        "result": "m",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct probability."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "bus",
+        "stem": "The probability that the school bus is late on any morning is {p|raw}, independently of other mornings. Find the probability that it is late on exactly one of two mornings.",
+        "step_text": {}
+      },
+      {
+        "id": "email",
+        "stem": "The probability that a particular email is marked as spam is {p|raw}, independently of other emails. Two emails are sent. Find the probability that exactly one of them is marked as spam.",
+        "step_text": {}
+      }
+    ]
+  },
+  {
+    "id": "S1-4.3-QC3-gen",
+    "section": "S1-4.3",
+    "kind": "generated",
+    "title": "Testing independence: the product P(A)P(B)",
+    "marks": 2,
+    "source": "S1 Ch4 theory S1-4.3 Quick check 3 (P(A)=0.5, P(B)=0.4, P(A∩B)=0.2: product 0.2, independent)",
+    "params": [
+      {
+        "name": "a",
+        "min": 0.2,
+        "max": 0.8,
+        "step": 0.05
+      },
+      {
+        "name": "b",
+        "min": 0.2,
+        "max": 0.8,
+        "step": 0.05
+      },
+      {
+        "name": "i",
+        "min": 0.05,
+        "max": 0.5,
+        "step": 0.05
+      }
+    ],
+    "derived": {},
+    "constraints": [
+      "a*b<=0.9",
+      "i<=a",
+      "i<=b"
+    ],
+    "original": {
+      "a": 0.5,
+      "b": 0.4,
+      "i": 0.2
+    },
+    "stem": "Events \\(A\\) and \\(B\\) are such that \\(\\mathrm{P}(A)={a|raw}\\), \\(\\mathrm{P}(B)={b|raw}\\) and \\(\\mathrm{P}(A\\cap B)={i|raw}\\). Find \\(\\mathrm{P}(A)\\times\\mathrm{P}(B)\\). Hence decide whether \\(A\\) and \\(B\\) are independent.",
+    "answer": {
+      "expression": "a*b",
+      "format": "{Pr|raw}",
+      "tolerance": 0
+    },
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "\\(\\mathrm{P}(A)\\times\\mathrm{P}(B)={a|raw}\\times{b|raw}\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Compare this with P(A∩B) to decide independence. The verbal conclusion is self-marked from the worked solution."
+      },
+      {
+        "name": "Pr",
+        "text_tex": "\\(={Pr|raw}\\)",
+        "result": "a*b",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Compare this with P(A∩B) to decide independence. The verbal conclusion is self-marked from the worked solution."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "club",
+        "stem": "In a club, the probability that a randomly chosen member is a junior is {a|raw} and the probability that a member plays tennis is {b|raw}. The probability that a member is a junior and plays tennis is {i|raw}. Find the product of the first two probabilities, and hence decide whether the events are independent.",
+        "step_text": {
+          "M": "\\({a|raw}\\times{b|raw}\\)",
+          "Pr": "\\(={Pr|raw}\\)"
+        }
+      },
+      {
+        "id": "survey",
+        "stem": "In a survey, \\(\\mathrm{P}(A)={a|raw}\\), \\(\\mathrm{P}(B)={b|raw}\\) and \\(\\mathrm{P}(A\\cap B)={i|raw}\\). Find \\(\\mathrm{P}(A)\\times\\mathrm{P}(B)\\), and hence decide whether \\(A\\) and \\(B\\) are independent.",
+        "step_text": {}
+      }
+    ]
+  },
+  {
+    "id": "S1-4.3-QC4-gen",
+    "section": "S1-4.3",
+    "kind": "generated",
+    "title": "Two independent identical trials",
+    "marks": 2,
+    "source": "S1 Ch4 theory S1-4.3 Quick check 4 (two fair coins, two heads: 1/4)",
+    "params": [
+      {
+        "name": "n",
+        "min": 2,
+        "max": 12,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "n2": "n*n"
+    },
+    "constraints": [],
+    "original": {
+      "n": 2
+    },
+    "stem": "A fair \\({n|int}\\)-sided spinner, with sides numbered \\(1\\) to \\({n|int}\\), is spun twice. The spins are independent. Find the probability that both spins show a 1.",
+    "answer": {
+      "expression": "1/(n*n)",
+      "format": "\\(\\dfrac{1}{{n2|int}}={E|raw}\\)",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "m",
+        "text_tex": "Each spin shows 1 with probability \\(\\dfrac{1}{{n|int}}\\). The spins are independent.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Independent, so multiply."
+      },
+      {
+        "name": "E",
+        "text_tex": "\\(\\dfrac{1}{{n|int}}\\times\\dfrac{1}{{n|int}}=\\dfrac{1}{{n2|int}}\\)",
+        "result": "1/(n*n)",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct probability."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "dice",
+        "stem": "A fair \\({n|int}\\)-sided die is rolled twice. The rolls are independent. Find the probability that both rolls show a 1.",
+        "step_text": {}
+      },
+      {
+        "id": "cards",
+        "stem": "A card is drawn at random from \\({n|int}\\) cards numbered \\(1\\) to \\({n|int}\\), replaced, and a second card is drawn. Find the probability that both cards show a 1.",
+        "step_text": {}
+      }
+    ]
+  },
+  {
+    "id": "S1-4.3-PP-9709-63-ON11-Q2ii",
+    "section": "S1-4.3",
+    "kind": "pastpaper",
+    "title": "Teenagers and a TV programme: independence",
+    "marks": 2,
+    "source": {
+      "paper": "9709/63/O/N/11 Q2(ii)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w11_qp_63.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w11_ms_63.pdf",
+      "note": "Stem text verbatim from the QP PDF; steps and marks from the official MS PDF (UCLES 2011). Part (i) (union of ‘female’ and ‘watches Kops are Kids’) is outside this section and is omitted. The official MS also allows a conditional-probability comparison; that alternative is recorded, but the primary method here is the product P(M)P(W)."
+    },
+    "stem": "In a group of 30 teenagers, 13 of the 18 males watch ‘Kops are Kids’ on television and 3 of the 12 females watch ‘Kops are Kids’.",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "prod",
+        "text_tex": "\\(\\mathrm{P}(M)=\\dfrac{18}{30}\\), \\(\\mathrm{P}(W)=\\dfrac{16}{30}\\), so \\(\\mathrm{P}(M)\\times\\mathrm{P}(W)=\\dfrac{8}{25}\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: M1 valid attempt to find P(M), P(W) and P(M)×P(W)."
+      },
+      {
+        "name": "cmp",
+        "text_tex": "\\(\\mathrm{P}(M\\text{ and }W)=\\dfrac{13}{30}\\neq\\dfrac{8}{25}\\), so the events are not independent.",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: A1 P(M and W)=13/30 ≠ 8/25 and correct conclusion. Alternative (official): P(M|W)=(13/30)/(16/30)=13/16 ≠ 18/30=P(M), not independent."
+      }
+    ]
+  },
+  {
+    "id": "S1-4.3-PP-9709-63-MJ13-Q1",
+    "section": "S1-4.3",
+    "kind": "pastpaper",
+    "title": "Two dice: total 5 and low/high scores, independence",
+    "marks": 4,
+    "source": {
+      "paper": "9709/63/M/J/13 Q1",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s13_qp_63.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s13_ms_63.pdf",
+      "note": "Stem text verbatim from the QP PDF; steps and marks from the official MS PDF (UCLES 2013). Official alternatives include P(S|Q)=P(S) or P(Q|S)=P(Q); the primary method taught in this section is the product comparison. Official MS final answer: independent, since P(Q∩S)=2/36 = P(Q)×P(S)."
+    },
+    "stem": "\\(Q\\) is the event ‘Nicola throws two fair dice and gets a total of 5’. \\(S\\) is the event ‘Nicola throws two fair dice and gets one low score (1, 2 or 3) and one high score (4, 5 or 6)’. Are events \\(Q\\) and \\(S\\) independent? Justify your answer.",
+    "steps": [
+      {
+        "name": "pq",
+        "text_tex": "Outcomes for a total of 5: \\((1,4),\\,(2,3),\\,(3,2),\\,(4,1)\\), so \\(\\mathrm{P}(Q)=\\dfrac{4}{36}\\). Outcomes for one low and one high: \\(3\\times3\\times2=18\\), so \\(\\mathrm{P}(S)=\\dfrac{18}{36}=\\dfrac12\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 P(Q)=4/36 or P(S)=1/2 (oe)."
+      },
+      {
+        "name": "int",
+        "text_tex": "\\(Q\\cap S\\): \\((1,4)\\) and \\((4,1)\\) only, so \\(\\mathrm{P}(Q\\cap S)=\\dfrac{2}{36}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 P(Q∩S)=2/36 or P(S|Q)=1/2 or P(Q|S)=2/18 (oe)."
+      },
+      {
+        "name": "cmp",
+        "text_tex": "\\(\\mathrm{P}(Q)\\times\\mathrm{P}(S)=\\dfrac{4}{36}\\times\\dfrac12=\\dfrac{2}{36}=\\mathrm{P}(Q\\cap S)\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: M1 comparing a correct pair of terms (product, or a conditional with the marginal), with all probabilities in [0,1)."
+      },
+      {
+        "name": "con",
+        "text_tex": "The events are independent.",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: A1 Independent, provided all the probabilities used are correct."
+      }
+    ],
+    "marking": "manual"
+  },
+  {
+    "id": "S1-4.3-PP-9709-61-MJ15-Q3",
+    "section": "S1-4.3",
+    "kind": "pastpaper",
+    "title": "Two dice: independence and mutually exclusive",
+    "marks": 6,
+    "source": {
+      "paper": "9709/61/M/J/15 Q3(i)(ii)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s15_qp_61.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s15_ms_61.pdf",
+      "note": "Stem text verbatim from the QP PDF; steps and marks from the official MS PDF (UCLES 2015). Part (i) is the independence test for this section. Part (ii) is mutually exclusive (taught in S1-4.2) and is kept because it is the official remainder of the same question."
+    },
+    "stem": "Jason throws two fair dice, each with faces numbered 1 to 6. Event \\(A\\) is ‘one of the numbers obtained is divisible by 3 and the other number is not divisible by 3’. Event \\(B\\) is ‘the product of the two numbers obtained is even’.",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "PA",
+        "text_tex": "(i) \\(\\mathrm{P}(A)=\\dfrac13\\times\\dfrac23+\\dfrac23\\times\\dfrac13=\\dfrac49\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: M1 sensible attempt at P(A)."
+      },
+      {
+        "name": "PB",
+        "text_tex": "\\(\\mathrm{P}(B)=\\dfrac{27}{36}=\\dfrac34\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: M1 sensible attempt at P(B)."
+      },
+      {
+        "name": "PAB",
+        "text_tex": "\\(\\mathrm{P}(A\\cap B)=\\dfrac{12}{36}=\\dfrac13\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 correct P(A∩B)."
+      },
+      {
+        "name": "cmp",
+        "text_tex": "\\(\\mathrm{P}(A)\\times\\mathrm{P}(B)=\\dfrac49\\times\\dfrac34=\\dfrac13=\\mathrm{P}(A\\cap B)\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: M1 compare P(A∩B) with P(A)×P(B); need at least one of these correct."
+      },
+      {
+        "name": "con",
+        "text_tex": "The events are independent, since \\(\\mathrm{P}(A\\cap B)=\\mathrm{P}(A)\\times\\mathrm{P}(B)\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: A1 correct conclusion following all correct working."
+      },
+      {
+        "name": "mex",
+        "text_tex": "(ii) Not mutually exclusive, because \\(\\mathrm{P}(A\\cap B)\\neq0\\) (for example, the outcome \\((1,6)\\) belongs to both events).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 [1] ft their P(A∩B). Or give a counter-example, e.g. 1 and 6."
+      }
+    ]
+  }
+]

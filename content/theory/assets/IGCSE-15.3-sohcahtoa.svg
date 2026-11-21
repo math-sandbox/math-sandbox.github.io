@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 200" width="440" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:440px;height:auto" role="img" aria-labelledby="IGCSE-15-3-sohcahtoa-t IGCSE-15-3-sohcahtoa-d">
+<title id="IGCSE-15-3-sohcahtoa-t">SOH CAH TOA letter triangles</title>
+<desc id="IGCSE-15-3-sohcahtoa-d">SOH means sine is opposite over hypotenuse. CAH means cosine is adjacent over hypotenuse. TOA means tan is opposite over adjacent.</desc>
+<rect x="0" y="0" width="440" height="200" fill="#fff"/>
+<g font-family="Source Sans 3, DejaVu Sans, sans-serif" font-size="13" fill="#333">
+  <polygon points="40.00,140.00 130.00,140.00 85.00,50.00" fill="#f7f3ea" stroke="#333" stroke-width="1.6"/>
+  <text x="50.00" y="132.00" font-size="16">O</text>
+  <text x="48.00" y="132.00" font-size="16">S</text>
+  <text x="114.00" y="132.00" font-size="16">H</text>
+  <text x="85.00" y="70.00" text-anchor="middle" font-size="16">O</text>
+  <text x="85.00" y="168.00" text-anchor="middle" font-size="13">sin = O / H</text>
+  <polygon points="175.00,140.00 265.00,140.00 220.00,50.00" fill="#f7f3ea" stroke="#333" stroke-width="1.6"/>
+  <text x="185.00" y="132.00" font-size="16">A</text>
+  <text x="183.00" y="132.00" font-size="16">C</text>
+  <text x="249.00" y="132.00" font-size="16">H</text>
+  <text x="220.00" y="70.00" text-anchor="middle" font-size="16">A</text>
+  <text x="220.00" y="168.00" text-anchor="middle" font-size="13">cos = A / H</text>
+  <polygon points="310.00,140.00 400.00,140.00 355.00,50.00" fill="#f7f3ea" stroke="#333" stroke-width="1.6"/>
+  <text x="320.00" y="132.00" font-size="16">O</text>
+  <text x="318.00" y="132.00" font-size="16">T</text>
+  <text x="384.00" y="132.00" font-size="16">A</text>
+  <text x="355.00" y="70.00" text-anchor="middle" font-size="16">O</text>
+  <text x="355.00" y="168.00" text-anchor="middle" font-size="13">tan = O / A</text>
+</g>
+</svg>

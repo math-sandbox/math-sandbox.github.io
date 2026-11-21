@@ -1,0 +1,24 @@
+[
+  {
+    "section": "P23-5.4",
+    "q": "QC1",
+    "marking": "manual"
+  },
+  {
+    "section": "P23-5.4",
+    "q": "QC2",
+    "answer": 3,
+    "accept_as": "integer"
+  },
+  {
+    "section": "P23-5.4",
+    "q": "QC3",
+    "answer": 4,
+    "accept_as": "integer"
+  },
+  {
+    "section": "P23-5.4",
+    "q": "QC4",
+    "marking": "manual"
+  }
+]

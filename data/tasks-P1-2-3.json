@@ -1,0 +1,213 @@
+[
+  {
+    "id": "P1-2.3-QC1-gen",
+    "section": "P1-2.3",
+    "kind": "generated",
+    "title": "Evaluate the inverse of a linear function",
+    "marks": 1,
+    "source": "Theory P1-2.3 Quick check 1 (f(x)=3x-1, f^{-1}(8)=3); book three-step method on printed p.44, new numbers",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "y",
+        "min": 4,
+        "max": 20,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "V": "(y-b)/a"
+    },
+    "constraints": [
+      "a>=2",
+      "(y-b)%a==0"
+    ],
+    "original": {
+      "a": 3,
+      "b": -1,
+      "y": 8
+    },
+    "stem": "If \\(f(x)={a|int}x+{b|int}\\), what is the value of \\(f^{-1}({y|int})\\)?",
+    "answer": {
+      "expression": "V",
+      "format": "{V|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Solve \\({a|int}x+{b|int}={y|int}\\), or use \\(f^{-1}(x)=(x-{b|int})/{a|int}\\). Then \\(f^{-1}({y|int})={V|int}\\).",
+        "result": "V",
+        "format": "int",
+        "mark": "A1",
+        "note": "V is (y-b)/a and is an integer by the constraint. Original: (8-(-1))/3=3."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P1-2.3-QC2-gen",
+    "section": "P1-2.3",
+    "kind": "generated",
+    "title": "Evaluate a self-inverse linear function",
+    "marks": 1,
+    "source": "Theory P1-2.3 Quick check 2 (f(x)=5-x is self-inverse, f^{-1}(2)=3); book self-inverse remark on printed p.44, new numbers",
+    "params": [
+      {
+        "name": "k",
+        "min": 3,
+        "max": 9,
+        "step": 1
+      },
+      {
+        "name": "n",
+        "min": 0,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "V": "k-n"
+    },
+    "constraints": [
+      "k>=n+1"
+    ],
+    "original": {
+      "k": 5,
+      "n": 2
+    },
+    "stem": "The function \\(f(x)={k|int}-x\\) is self-inverse. What is the value of \\(f^{-1}({n|int})\\)?",
+    "answer": {
+      "expression": "V",
+      "format": "{V|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Because \\(f\\) is self-inverse, \\(f^{-1}({n|int})=f({n|int})={k|int}-{n|int}={V|int}\\).",
+        "result": "V",
+        "format": "int",
+        "mark": "A1",
+        "note": "V is k-n. Original: 5-2=3."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P1-2.3-QC3-gen",
+    "section": "P1-2.3",
+    "kind": "generated",
+    "title": "Lower end of the domain of an inverse",
+    "marks": 1,
+    "source": "Theory P1-2.3 Quick check 3 (f(x)=sqrt(x+2)-7 for x>=-2, domain of inverse is x>=-7); book Worked example 2.7 style, new numbers",
+    "params": [
+      {
+        "name": "p",
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 3,
+        "max": 9,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "K": "-q"
+    },
+    "constraints": [
+      "q>=3"
+    ],
+    "original": {
+      "p": 2,
+      "q": 7
+    },
+    "stem": "The function \\(f\\) is given by \\(f(x)=\\sqrt{(x+{p|int})}-{q|int}\\) for \\(x\\geqslant -{p|int}\\). The domain of \\(f^{-1}\\) is \\(x\\geqslant k\\). What is the value of \\(k\\)?",
+    "answer": {
+      "expression": "K",
+      "format": "{K|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The range of \\(f\\) is \\(f(x)\\geqslant -{q|int}\\), so the domain of \\(f^{-1}\\) is \\(x\\geqslant -{q|int}\\). Thus \\(k={K|int}\\).",
+        "result": "K",
+        "format": "int",
+        "mark": "A1",
+        "note": "K is -q. Original: k=-7."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P1-2.3-PP-9709-12-FM20-Q9b",
+    "section": "P1-2.3",
+    "kind": "pastpaper",
+    "title": "Inverse of a restricted quadratic, and the domain of the inverse",
+    "marks": 3,
+    "source": {
+      "paper": "9709/12/F/M/20 Q9(b)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m20_qp_12.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m20_ms_12.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2020), Question 9(b) only, including the sentence that defines f. Official answer and mark allocation from the MS PDF. The item is paper/self-mark. Parts 9(a), 9(c) and 9(d) are omitted."
+    },
+    "stem": "This question is 9709/12/F/M/20 Question 9(b), taken from the official QP.\n\nThe function \\(f\\) is defined by \\(f(x)=2x^2+12x+11\\) for \\(x\\leqslant -4\\).\n\n(b) Find an expression for \\(f^{-1}(x)\\) and state the domain of \\(f^{-1}\\).  [3]",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "Complete the square, or rearrange \\(y=2(x+3)^2-7\\), to obtain \\(x+3=\\pm\\sqrt{(y+7)/2}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS 9(b): M1 for the first two operations correct (condone a sign error, or with x/y already interchanged). Independent: 2x^2+12x+11=2(x+3)^2-7."
+      },
+      {
+        "name": "B1",
+        "text_tex": "The given domain \\(x\\leqslant -4\\) selects the negative square root, so \\(f^{-1}(x)=-3-\\sqrt{(x+7)/2}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS 9(b): A1FT for the inverse equal to minus the square root of (x+7)/2, minus 3 (FT on their completed-square constants)."
+      },
+      {
+        "name": "A",
+        "text_tex": "When \\(x=-4\\), \\(f(-4)=-5\\), and as \\(x\\to-\\infty\\), \\(f(x)\\to\\infty\\). The range of \\(f\\) is therefore \\(f(x)\\geqslant -5\\), so the domain of \\(f^{-1}\\) is \\(x\\geqslant -5\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS 9(b): domain x >= -5, or equivalent interval notation. Do not accept y=... or f(x)=... or the inverse-function formula in place of the domain."
+      }
+    ]
+  }
+]

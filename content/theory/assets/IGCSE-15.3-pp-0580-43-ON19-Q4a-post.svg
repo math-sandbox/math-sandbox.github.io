@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:420px;height:auto" role="img" aria-labelledby="IGCSE-15-3-pp-0580-43-ON19-Q4a-post-t IGCSE-15-3-pp-0580-43-ON19-Q4a-post-d">
+<title id="IGCSE-15-3-pp-0580-43-ON19-Q4a-post-t">Elevation of a vertical post from B, official 0580/43/O/N/19 Q4(a)</title>
+<desc id="IGCSE-15-3-pp-0580-43-ON19-Q4a-post-d">B and C lie on horizontal ground, 107 metres apart. A vertical post stands at C. From B the angle of elevation of the top of the post is 19 degrees. The height is 107 tan 19 degrees, which is 36.8 metres to 3 significant figures.</desc>
+<rect x="0" y="0" width="420" height="280" fill="#fff"/>
+<g font-family="Source Sans 3, DejaVu Sans, sans-serif" font-size="13" fill="#333">
+  <line x1="50.00" y1="220.00" x2="360.00" y2="220.00" stroke="#333" stroke-width="1.5"/>
+  <text x="200.00" y="248.00" text-anchor="middle" fill="#666" font-size="12">horizontal ground</text>
+  <line x1="320.00" y1="220.00" x2="320.00" y2="70.00" stroke="#555" stroke-width="3.2"/>
+  <line x1="308.00" y1="220.00" x2="332.00" y2="220.00" stroke="#555" stroke-width="2"/>
+  <line x1="70.00" y1="220.00" x2="320.00" y2="70.00" stroke="#1b5e8a" stroke-width="1.8"/>
+  <circle cx="70.00" cy="220.00" r="3.4" fill="#333"/>
+  <text x="66.00" y="238.00" >B</text>
+  <circle cx="320.00" cy="220.00" r="3.4" fill="#333"/>
+  <text x="330.00" y="238.00" >C</text>
+  <circle cx="320.00" cy="70.00" r="3.4" fill="#c0392b"/>
+  <text x="330.00" y="74.00" fill="#c0392b" font-size="12">top of post</text>
+  <text x="195.00" y="236.00" text-anchor="middle" >107 m</text>
+  <path d="M 110,220 A 40,40 0 0 0 107.8,207.0" fill="none" stroke="#1e7a46" stroke-width="1.6"/>
+  <text x="116.00" y="210.00" fill="#1e7a46">19°</text>
+  <text x="336.00" y="145.00" fill="#b45f06">h</text>
+  <text x="40.00" y="32.00" font-size="12" fill="#666">NOT TO SCALE</text>
+</g>
+</svg>

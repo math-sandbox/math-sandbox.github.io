@@ -1,0 +1,202 @@
+[
+  {
+    "id": "P23-2.1-QC1-gen",
+    "section": "P23-2.1",
+    "kind": "generated",
+    "title": "Exact logarithm to base 10 of a power of 10",
+    "marks": 2,
+    "source": "P23 Ch2 theory P23-2.1 Quick check 1 (log10 10000 = 4)",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "N": "math.pow(10,k)",
+      "E": "k"
+    },
+    "constraints": [
+      "k>=1",
+      "k<=5"
+    ],
+    "original": {
+      "k": 4
+    },
+    "stem": "Find the exact value of \\(\\log_{10}{N|int}\\).",
+    "answer": {
+      "expression": "k",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "Write the argument as a power of \\(10\\): \\({N|int}=10^{{k|int}}\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Express as a power of 10."
+      },
+      {
+        "name": "E",
+        "text_tex": "Hence \\(\\log_{10}{N|int}={k|int}\\).",
+        "result": "k",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct exact value."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "power",
+        "stem": "Evaluate \\(\\log_{10}(10^{{k|int}})\\).",
+        "note": "power frame"
+      },
+      {
+        "id": "exact",
+        "stem": "Find \\(\\log_{10}{N|int}\\) exactly, without a calculator approximation.",
+        "note": "exact frame"
+      }
+    ]
+  },
+  {
+    "id": "P23-2.1-QC2-gen",
+    "section": "P23-2.1",
+    "kind": "generated",
+    "title": "Solve 10^x = n to 3 significant figures",
+    "marks": 2,
+    "source": "P23 Ch2 theory P23-2.1 Quick check 2 (10^x=50, x=1.70 to 3 s.f.)",
+    "params": [
+      {
+        "name": "n",
+        "min": 20,
+        "max": 80,
+        "step": 10
+      }
+    ],
+    "derived": {
+      "E": "math.log(n)/math.log(10)"
+    },
+    "constraints": [
+      "n>=20",
+      "n<=80"
+    ],
+    "original": {
+      "n": 50
+    },
+    "stem": "Solve \\(10^x={n|int}\\), giving \\(x\\) correct to 3 significant figures.",
+    "answer": {
+      "expression": "math.log(n)/math.log(10)",
+      "format": "{E|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The equation is equivalent to \\(x=\\log_{10}{n|int}\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Convert to a base-10 logarithm."
+      },
+      {
+        "name": "E",
+        "text_tex": "The value is \\({E|sf3z}\\) to 3 significant figures.",
+        "result": "math.log(n)/math.log(10)",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct 3 s.f. value."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "logform",
+        "stem": "Given that \\(10^x={n|int}\\), find \\(x\\) correct to 3 significant figures.",
+        "note": "logform frame"
+      },
+      {
+        "id": "calculator",
+        "stem": "Use a calculator to solve \\(10^x={n|int}\\), giving the answer correct to 3 significant figures.",
+        "note": "calculator frame"
+      }
+    ]
+  },
+  {
+    "id": "P23-2.1-QC3-gen",
+    "section": "P23-2.1",
+    "kind": "generated",
+    "title": "Solve log10 x = m exactly as a power of 10",
+    "marks": 2,
+    "source": "P23 Ch2 theory P23-2.1 Quick check 3 (log10 x=-2, x=0.01)",
+    "params": [
+      {
+        "name": "m",
+        "min": -3,
+        "max": 3,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "E": "math.pow(10,m)"
+    },
+    "constraints": [
+      "m!=0"
+    ],
+    "original": {
+      "m": -2
+    },
+    "stem": "Solve \\(\\log_{10} x={m|int}\\).",
+    "answer": {
+      "expression": "math.pow(10,m)",
+      "format": "{E|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The equation is equivalent to \\(x=10^{{m|int}}\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Convert to exponential form."
+      },
+      {
+        "name": "E",
+        "text_tex": "Hence \\(x={E|sf3z}\\).",
+        "result": "math.pow(10,m)",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct exact power of 10."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "exp",
+        "stem": "Convert \\(\\log_{10} x={m|int}\\) to exponential form and find \\(x\\).",
+        "note": "exp frame"
+      },
+      {
+        "id": "value",
+        "stem": "Find the value of \\(x\\) for which \\(\\log_{10} x={m|int}\\).",
+        "note": "value frame"
+      }
+    ]
+  }
+]

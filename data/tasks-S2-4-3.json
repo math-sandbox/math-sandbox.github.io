@@ -1,0 +1,411 @@
+[
+ {
+  "id": "S2-4.3-QC1-gen",
+  "section": "S2-4.3",
+  "kind": "generated",
+  "title": "Mean of a linear PDF",
+  "marks": 3,
+  "source": "S2 Ch4 theory S2-4.3 Quick check 1 (f=2x/16 on [0,4], E=8/3)",
+  "params": [
+   {
+    "name": "a",
+    "min": 2,
+    "max": 8,
+    "step": 2
+   }
+  ],
+  "derived": {
+   "a2": "a*a",
+   "den": "a*a"
+  },
+  "constraints": [
+   "a>=2",
+   "a%2==0"
+  ],
+  "original": {
+   "a": 4
+  },
+  "stem": "The continuous random variable \\(X\\) has probability density function \\(\\mathrm{f}(x)=\\dfrac{2x}{{den|int}}\\) for \\(0\\le x\\le{a|int}\\), and \\(\\mathrm{f}(x)=0\\) otherwise. Find \\(\\mathrm{E}(X)\\), giving your answer correct to 3 significant figures.",
+  "answer": {
+   "expression": "2*a/3",
+   "format": "{E|sf3z}",
+   "accept_as": "sf",
+   "sf": 3
+  },
+  "steps": [
+   {
+    "name": "int",
+    "text_tex": "\\(\\mathrm{E}(X)=\\displaystyle\\int_0^{{a|int}} x\\cdot\\dfrac{2x}{{den|int}}\\,\\mathrm{d}x\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Integral of x f(x)."
+   },
+   {
+    "name": "eval",
+    "text_tex": "Evaluate the integral over the support of \\(X\\).",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Correct antiderivative and limits."
+   },
+   {
+    "name": "E",
+    "text_tex": "The mean.",
+    "result": "2*a/3",
+    "format": "raw",
+    "mark": "A1",
+    "note": "Correct mean."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem"
+   },
+   {
+    "id": "wait",
+    "stem": "The waiting time \\(X\\) minutes has probability density function \\(\\mathrm{f}(x)=\\dfrac{2x}{{den|int}}\\) for \\(0\\le x\\le{a|int}\\), and \\(\\mathrm{f}(x)=0\\) otherwise. Find the mean waiting time, giving your answer correct to 3 significant figures.",
+    "note": "waiting time"
+   },
+   {
+    "id": "mass",
+    "stem": "The mass \\(X\\) kg has probability density function \\(\\mathrm{f}(x)=\\dfrac{2x}{{den|int}}\\) for \\(0\\le x\\le{a|int}\\), and \\(\\mathrm{f}(x)=0\\) otherwise. Find \\(\\mathrm{E}(X)\\), giving your answer correct to 3 significant figures.",
+    "note": "mass"
+   }
+  ]
+ },
+ {
+  "id": "S2-4.3-QC2-gen",
+  "section": "S2-4.3",
+  "kind": "generated",
+  "title": "Variance of a linear PDF",
+  "marks": 3,
+  "source": "S2 Ch4 theory S2-4.3 Quick check 2 (same PDF, Var=8/9)",
+  "params": [
+   {
+    "name": "a",
+    "min": 2,
+    "max": 8,
+    "step": 2
+   }
+  ],
+  "derived": {
+   "den": "a*a"
+  },
+  "constraints": [
+   "a>=2",
+   "a%2==0"
+  ],
+  "original": {
+   "a": 4
+  },
+  "stem": "The continuous random variable \\(X\\) has probability density function \\(\\mathrm{f}(x)=\\dfrac{2x}{{den|int}}\\) for \\(0\\le x\\le{a|int}\\), and \\(\\mathrm{f}(x)=0\\) otherwise. Find \\(\\mathrm{Var}(X)\\), giving your answer correct to 3 significant figures.",
+  "answer": {
+   "expression": "a*a/18",
+   "format": "{E|sf3z}",
+   "accept_as": "sf",
+   "sf": 3
+  },
+  "steps": [
+   {
+    "name": "ex2",
+    "text_tex": "\\(\\mathrm{E}(X^2)=\\displaystyle\\int_0^{{a|int}} x^2\\cdot\\dfrac{2x}{{den|int}}\\,\\mathrm{d}x\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Integral of x^2 f(x)."
+   },
+   {
+    "name": "sub",
+    "text_tex": "\\(\\mathrm{Var}(X)=\\mathrm{E}(X^2)-\\{\\mathrm{E}(X)\\}^2\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Subtract the square of the mean."
+   },
+   {
+    "name": "E",
+    "text_tex": "The variance.",
+    "result": "a*a/18",
+    "format": "raw",
+    "mark": "A1",
+    "note": "Correct variance."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem"
+   },
+   {
+    "id": "wait",
+    "stem": "The waiting time \\(X\\) minutes has probability density function \\(\\mathrm{f}(x)=\\dfrac{2x}{{den|int}}\\) for \\(0\\le x\\le{a|int}\\), and \\(\\mathrm{f}(x)=0\\) otherwise. Find \\(\\mathrm{Var}(X)\\), giving your answer correct to 3 significant figures.",
+    "note": "waiting time"
+   },
+   {
+    "id": "mass",
+    "stem": "The mass \\(X\\) kg has probability density function \\(\\mathrm{f}(x)=\\dfrac{2x}{{den|int}}\\) for \\(0\\le x\\le{a|int}\\), and \\(\\mathrm{f}(x)=0\\) otherwise. Find \\(\\mathrm{Var}(X)\\), giving your answer correct to 3 significant figures.",
+    "note": "mass"
+   }
+  ]
+ },
+ {
+  "id": "S2-4.3-QC3-gen",
+  "section": "S2-4.3",
+  "kind": "generated",
+  "title": "Mean of a quadratic PDF",
+  "marks": 3,
+  "source": "S2 Ch4 theory S2-4.3 Quick check 3 (f=3x^2/8 on [0,2], E=3/2)",
+  "params": [
+   {
+    "name": "a",
+    "min": 2,
+    "max": 6,
+    "step": 1
+   }
+  ],
+  "derived": {
+   "a3": "a*a*a"
+  },
+  "constraints": [
+   "a>=2"
+  ],
+  "original": {
+   "a": 2
+  },
+  "stem": "The continuous random variable \\(X\\) has probability density function \\(\\mathrm{f}(x)=\\dfrac{3x^2}{{a3|int}}\\) for \\(0\\le x\\le{a|int}\\), and \\(\\mathrm{f}(x)=0\\) otherwise. Find \\(\\mathrm{E}(X)\\).",
+  "answer": {
+   "expression": "3*a/4",
+   "format": "{E|sf3z}",
+   "accept_as": "sf",
+   "sf": 3
+  },
+  "steps": [
+   {
+    "name": "int",
+    "text_tex": "\\(\\mathrm{E}(X)=\\displaystyle\\int_0^{{a|int}} x\\cdot\\dfrac{3x^2}{{a3|int}}\\,\\mathrm{d}x\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Integral of x f(x)."
+   },
+   {
+    "name": "eval",
+    "text_tex": "Evaluate the integral over the support of \\(X\\).",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Correct antiderivative and limits."
+   },
+   {
+    "name": "E",
+    "text_tex": "The mean.",
+    "result": "3*a/4",
+    "format": "raw",
+    "mark": "A1",
+    "note": "Correct mean."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem"
+   },
+   {
+    "id": "time",
+    "stem": "The time \\(X\\) minutes has probability density function \\(\\mathrm{f}(x)=\\dfrac{3x^2}{{a3|int}}\\) for \\(0\\le x\\le{a|int}\\), and \\(\\mathrm{f}(x)=0\\) otherwise. Find \\(\\mathrm{E}(X)\\).",
+    "note": "time"
+   },
+   {
+    "id": "length",
+    "stem": "The length \\(X\\) m has probability density function \\(\\mathrm{f}(x)=\\dfrac{3x^2}{{a3|int}}\\) for \\(0\\le x\\le{a|int}\\), and \\(\\mathrm{f}(x)=0\\) otherwise. Find \\(\\mathrm{E}(X)\\).",
+    "note": "length"
+   }
+  ]
+ },
+ {
+  "id": "S2-4.3-QC4-gen",
+  "section": "S2-4.3",
+  "kind": "generated",
+  "title": "Variance of a quadratic PDF",
+  "marks": 3,
+  "source": "S2 Ch4 theory S2-4.3 Quick check 4 (same PDF, Var=3/20)",
+  "params": [
+   {
+    "name": "a",
+    "min": 2,
+    "max": 6,
+    "step": 1
+   }
+  ],
+  "derived": {
+   "a3": "a*a*a"
+  },
+  "constraints": [
+   "a>=2"
+  ],
+  "original": {
+   "a": 2
+  },
+  "stem": "The continuous random variable \\(X\\) has probability density function \\(\\mathrm{f}(x)=\\dfrac{3x^2}{{a3|int}}\\) for \\(0\\le x\\le{a|int}\\), and \\(\\mathrm{f}(x)=0\\) otherwise. Find \\(\\mathrm{Var}(X)\\).",
+  "answer": {
+   "expression": "3*a*a/80",
+   "format": "{E|sf3z}",
+   "accept_as": "sf",
+   "sf": 3
+  },
+  "steps": [
+   {
+    "name": "ex2",
+    "text_tex": "\\(\\mathrm{E}(X^2)=\\displaystyle\\int_0^{{a|int}} x^2\\cdot\\dfrac{3x^2}{{a3|int}}\\,\\mathrm{d}x\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Integral of x^2 f(x)."
+   },
+   {
+    "name": "sub",
+    "text_tex": "\\(\\mathrm{Var}(X)=\\mathrm{E}(X^2)-\\{\\mathrm{E}(X)\\}^2\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Subtract the square of the mean."
+   },
+   {
+    "name": "E",
+    "text_tex": "The variance.",
+    "result": "3*a*a/80",
+    "format": "raw",
+    "mark": "A1",
+    "note": "Correct variance."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem"
+   },
+   {
+    "id": "time",
+    "stem": "The time \\(X\\) minutes has probability density function \\(\\mathrm{f}(x)=\\dfrac{3x^2}{{a3|int}}\\) for \\(0\\le x\\le{a|int}\\), and \\(\\mathrm{f}(x)=0\\) otherwise. Find \\(\\mathrm{Var}(X)\\).",
+    "note": "time"
+   },
+   {
+    "id": "length",
+    "stem": "The length \\(X\\) m has probability density function \\(\\mathrm{f}(x)=\\dfrac{3x^2}{{a3|int}}\\) for \\(0\\le x\\le{a|int}\\), and \\(\\mathrm{f}(x)=0\\) otherwise. Find \\(\\mathrm{Var}(X)\\).",
+    "note": "length"
+   }
+  ]
+ },
+ {
+  "id": "S2-4.3-PP-9709-71-ON16-Q6ii",
+  "section": "S2-4.3",
+  "kind": "pastpaper",
+  "title": "PDF 4x^3/81 on 0 to 3: mean and related probabilities",
+  "marks": 7,
+  "source": {
+   "paper": "9709/71/O/N/16 Q6(ii)",
+   "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w16_qp_71.pdf",
+   "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w16_ms_71.pdf",
+   "note": "Stem verbatim from the QP PDF; steps and marks from the official MS PDF. Part (i) compares medians from four diagrams and is omitted (no diagram widget; it is a 4.2 skill). The PDF in (ii) is self-contained. (ii)(a) is Show that, AG."
+  },
+  "stem": "The probability density function of \\(X\\) is given by \\(\\mathrm{f}(x)=\\dfrac{4}{81}x^3\\) for \\(0\\le x\\le 3\\), and \\(\\mathrm{f}(x)=0\\) otherwise.",
+  "parts": [
+   {
+    "part": "(ii)(a)",
+    "stem": "Show that \\(\\mathrm{E}(X)=\\dfrac{12}{5}\\).",
+    "marks": 3,
+    "answer": {
+     "expression": "12/5",
+     "format": "{E|sf3z}",
+     "accept_as": "sf",
+     "sf": 3
+    },
+    "steps": [
+     {
+      "name": "p0_int",
+      "text_tex": "\\(\\mathrm{E}(X)=\\displaystyle\\int_0^3 x\\cdot\\dfrac{4}{81}x^3\\,\\mathrm{d}x=\\dfrac{4}{81}\\displaystyle\\int_0^3 x^4\\,\\mathrm{d}x\\)",
+      "result": "None",
+      "format": "num",
+      "mark": "M1",
+      "note": "MS: M1 attempt to integrate x f(x). Ignore limits."
+     },
+     {
+      "name": "p0_eval",
+      "text_tex": "\\(=\\dfrac{4}{81}\\Bigl[\\dfrac{x^5}{5}\\Bigr]_0^3=\\dfrac{4}{81}\\cdot\\dfrac{243}{5}\\)",
+      "result": "None",
+      "format": "num",
+      "mark": "A1",
+      "note": "MS: A1 correct integration and limits (condone missing 4/81)."
+     },
+     {
+      "name": "p0_E",
+      "text_tex": "\\(=\\dfrac{12}{5}\\) (or 2.4)",
+      "result": "12/5",
+      "format": "raw",
+      "mark": "A1",
+      "note": "MS: A1 12/5 or 2.4 AG, no errors seen. Must see a correct expression as well as 12/5 or 2.4."
+     }
+    ]
+   },
+   {
+    "part": "(ii)(b)",
+    "stem": "Calculate \\(\\mathrm{P}\\bigl(X\\gt\\mathrm{E}(X)\\bigr)\\).",
+    "marks": 3,
+    "answer": {
+     "expression": "369/625",
+     "format": "{E|sf3z}",
+     "accept_as": "sf",
+     "sf": 3
+    },
+    "steps": [
+     {
+      "name": "p1_int",
+      "text_tex": "\\(\\mathrm{P}\\bigl(X\\gt 2.4\\bigr)=\\displaystyle\\int_{2.4}^3 \\dfrac{4}{81}x^3\\,\\mathrm{d}x\\) (or \\(1\\) minus the integral from 0 to 2.4)",
+      "result": "None",
+      "format": "num",
+      "mark": "M1",
+      "note": "MS: M1 attempt to integrate f(x), ignore limits."
+     },
+     {
+      "name": "p1_eval",
+      "text_tex": "Evaluate with the correct limits.",
+      "result": "None",
+      "format": "num",
+      "mark": "A1",
+      "note": "MS: A1 correct integration and limits (condone missing 4/81)."
+     },
+     {
+      "name": "p1_E",
+      "text_tex": "\\(\\dfrac{369}{625}\\) (or 0.590 to 3 significant figures)",
+      "result": "369/625",
+      "format": "raw",
+      "mark": "A1",
+      "note": "MS: A1 369/625 or 0.59(0) (3 s.f.) as the final answer."
+     }
+    ]
+   },
+   {
+    "part": "(ii)(c)",
+    "stem": "Write down the value of \\(\\mathrm{P}\\bigl(X\\lt 2\\mathrm{E}(X)\\bigr)\\).",
+    "marks": 1,
+    "answer": {
+     "expression": "1",
+     "format": "{E|int}",
+     "accept_as": "integer"
+    },
+    "steps": [
+     {
+      "name": "p2_E",
+      "text_tex": "\\(2\\mathrm{E}(X)=4.8\\), which is greater than 3, so the probability is 1.",
+      "result": "1",
+      "format": "int",
+      "mark": "B1",
+      "note": "MS: B1 1."
+     }
+    ]
+   }
+  ]
+ }
+]

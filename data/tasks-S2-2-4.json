@@ -1,0 +1,201 @@
+[
+  {
+    "id": "S2-2.4-QC1-gen",
+    "section": "S2-2.4",
+    "kind": "generated",
+    "title": "Mean of the normal approximation to a Poisson variable",
+    "marks": 1,
+    "source": "Theory S2-2.4 Quick check 1 (Po(50) is approximated by N(50, 50), mean 50); new large integer means",
+    "params": [
+      {
+        "name": "n",
+        "min": 20,
+        "max": 80,
+        "step": 5
+      }
+    ],
+    "derived": {
+      "A": "n"
+    },
+    "constraints": [
+      "n>=20"
+    ],
+    "original": {
+      "n": 50
+    },
+    "stem": "The random variable \\(X\\) has the distribution \\(\\mathrm{Po}({n|int})\\). A normal distribution is used as an approximation to this Poisson distribution. What is the mean of the approximating normal distribution?",
+    "answer": {
+      "expression": "n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The approximating distribution is \\(\\mathrm{N}({n|int}, {n|int})\\), so the mean is {A|int}.",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A equals n. Original n=50 gives mean 50."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "S2-2.4-QC2-gen",
+    "section": "S2-2.4",
+    "kind": "generated",
+    "title": "Variance of the normal approximation to a Poisson variable",
+    "marks": 1,
+    "source": "Theory S2-2.4 Quick check 2 (the variance of the approximating N(50, 50) is 50); new large integer means",
+    "params": [
+      {
+        "name": "n",
+        "min": 20,
+        "max": 80,
+        "step": 5
+      }
+    ],
+    "derived": {
+      "A": "n"
+    },
+    "constraints": [
+      "n>=20"
+    ],
+    "original": {
+      "n": 50
+    },
+    "stem": "The random variable \\(X\\) has the distribution \\(\\mathrm{Po}({n|int})\\). A normal distribution is used as an approximation. What is the variance of the approximating normal distribution?",
+    "answer": {
+      "expression": "n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "For a Poisson distribution the variance equals the mean, so the approximating distribution is \\(\\mathrm{N}({n|int}, {n|int})\\) and the variance is {A|int}.",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A equals n. Original n=50 gives variance 50."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "S2-2.4-QC3-gen",
+    "section": "S2-2.4",
+    "kind": "generated",
+    "title": "Continuity-corrected boundary for P(X less than k)",
+    "marks": 1,
+    "source": "Theory S2-2.4 Quick check 3 (P(X<36) is approximated by P(Y<35.5)); new integer cut-offs",
+    "params": [
+      {
+        "name": "k",
+        "min": 20,
+        "max": 50,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "k-0.5"
+    },
+    "constraints": [
+      "k>=20"
+    ],
+    "original": {
+      "k": 36
+    },
+    "stem": "The Poisson random variable \\(X\\) is approximated by a continuous normal random variable \\(Y\\). The probability \\(\\mathrm{P}(X\\lt {k|int})\\) is approximated by \\(\\mathrm{P}(Y\\lt c)\\). What is the value of \\(c\\)?",
+    "answer": {
+      "expression": "k-0.5",
+      "format": "{A|dp1}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "With a continuity correction, \\(X\\lt {k|int}\\) is replaced by \\(Y\\lt {k|int}-0.5\\), so \\(c={A|dp1}\\).",
+        "result": "A",
+        "format": "dp1",
+        "mark": "A1",
+        "note": "A is k-0.5. Original k=36 gives 35.5."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "S2-2.4-PP-9709-73-ON16-Q7ii",
+    "section": "S2-2.4",
+    "kind": "pastpaper",
+    "title": "Normal approximation to the number of people arriving in one hour",
+    "marks": 5,
+    "source": {
+      "paper": "9709/73/O/N/16 Q7(ii)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w16_qp_73.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w16_ms_73.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2016), the opening sentence of Question 7 together with part (ii) only. Official answer and mark allocation from the MS PDF. The item is paper/self-mark. Part (i) is an exact Poisson calculation for a 5-minute period and is omitted (it is not the normal approximation)."
+    },
+    "stem": "This question is 9709/73/O/N/16 Question 7(ii), taken from the official QP.\n\nMen arrive at a clinic independently and at random, at a constant mean rate of 0.2 per minute. Women arrive at the same clinic independently and at random, at a constant mean rate of 0.3 per minute.\n\n(ii) Find the probability that fewer than 36 people arrive at the clinic during a 1-hour period.  [5]",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "L",
+        "text_tex": "The combined mean rate is \\(0.5\\) people per minute, so in 60 minutes the mean is \\(\\lambda=30\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS 7(ii): B1 for lambda=30."
+      },
+      {
+        "name": "N",
+        "text_tex": "The normal approximating distribution is \\(\\mathrm{N}(30, 30)\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS 7(ii): B1, seen or implied, need N(lambda, lambda)."
+      },
+      {
+        "name": "Z",
+        "text_tex": "With a continuity correction, \\(\\mathrm{P}(X\\lt 36)=\\mathrm{P}(Y\\lt 35.5)\\), and the standardised value is \\((35.5-30)/\\sqrt{30}=1.004\\ldots\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS 7(ii): M1 for (35.5-30)/sqrt(30), allow with wrong or no continuity correction or no square root. Independent: 5.5/sqrt(30)=1.004158..."
+      },
+      {
+        "name": "F",
+        "text_tex": "The required probability is \\(\\Phi(1.004\\ldots)\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS 7(ii): M1 for Phi of their standardised value, consistent with their working."
+      },
+      {
+        "name": "A",
+        "text_tex": "This equals \\(0.842\\) to 3 significant figures.",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS 7(ii): A1 for 0.842 (3 s.f.). Independent: Phi(1.004158...)=0.8424..., which is 0.842 to 3 s.f."
+      }
+    ]
+  }
+]

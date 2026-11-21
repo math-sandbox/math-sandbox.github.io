@@ -1,0 +1,193 @@
+[
+  {
+    "id": "IGCSE-15.1-QC1-gen",
+    "section": "IGCSE-15.1",
+    "kind": "generated",
+    "title": "Write a scale of 1 cm to k km in the form 1 to n",
+    "marks": 1,
+    "source": "Theory IGCSE-15.1 Quick check 1 (1 cm to 8 km gives n=800000); book scale-ratio work on printed pp.472–473, new numbers",
+    "params": [
+      {
+        "name": "k",
+        "min": 5,
+        "max": 20,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "N": "k*100000"
+    },
+    "constraints": [
+      "k>=5"
+    ],
+    "original": {
+      "k": 8
+    },
+    "stem": "A map uses a scale of 1 cm to {k|int} km. When this scale of the map is written as \\(1:n\\), what is the value of \\(n\\)?",
+    "answer": {
+      "expression": "N",
+      "format": "{N|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "{k|int} km = {N|int} cm, so \\(n={N|int}\\).",
+        "result": "N",
+        "format": "int",
+        "mark": "A1",
+        "note": "N is k times 100000. Original: 8 km = 800000 cm."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-15.1-QC2-gen",
+    "section": "IGCSE-15.1",
+    "kind": "generated",
+    "title": "Convert a real length to a length on a scale drawing",
+    "marks": 1,
+    "source": "Theory IGCSE-15.1 Quick check 2 (40 m at 1 cm to 4 m gives 10 cm); book Worked example 1 style, new numbers",
+    "params": [
+      {
+        "name": "L",
+        "min": 20,
+        "max": 80,
+        "step": 4
+      },
+      {
+        "name": "s",
+        "min": 2,
+        "max": 8,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "D": "L/s"
+    },
+    "constraints": [
+      "L%s==0",
+      "L/s>=4",
+      "L/s<=20"
+    ],
+    "original": {
+      "L": 40,
+      "s": 4
+    },
+    "stem": "A path is {L|int} m long. It is shown on a scale drawing that uses a scale of 1 cm to {s|int} m. What is the length, in centimetres, of the path on the drawing?",
+    "answer": {
+      "expression": "D",
+      "format": "{D|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Divide the real length by the number of metres represented by 1 cm: \\({L|int}\\div {s|int}={D|int}\\).",
+        "result": "D",
+        "format": "int",
+        "mark": "A1",
+        "note": "D is L/s and is an integer by the constraint. Original: 40/4=10."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-15.1-QC3-gen",
+    "section": "IGCSE-15.1",
+    "kind": "generated",
+    "title": "Convert a length on a scale drawing to a real length",
+    "marks": 1,
+    "source": "Theory IGCSE-15.1 Quick check 3 (12 cm at 1 cm to 5 m gives 60 m); book conversion work on printed pp.472–473, new numbers",
+    "params": [
+      {
+        "name": "c",
+        "min": 4,
+        "max": 20,
+        "step": 1
+      },
+      {
+        "name": "s",
+        "min": 2,
+        "max": 10,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "H": "c*s"
+    },
+    "constraints": [
+      "c>=4",
+      "s>=2"
+    ],
+    "original": {
+      "c": 12,
+      "s": 5
+    },
+    "stem": "The height of a tower is {c|int} cm on a scale drawing that uses a scale of 1 cm to {s|int} m. What is the actual height of the tower, in metres?",
+    "answer": {
+      "expression": "H",
+      "format": "{H|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Multiply the length on the drawing by the number of metres represented by 1 cm: \\({c|int}\\times {s|int}={H|int}\\).",
+        "result": "H",
+        "format": "int",
+        "mark": "A1",
+        "note": "H is c times s. Original: 12 times 5 = 60."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-15.1-PP-0580-32-ON23-Q8b",
+    "section": "IGCSE-15.1",
+    "kind": "pastpaper",
+    "title": "Actual distance from a map length and a scale 1 to 50000",
+    "marks": 2,
+    "source": {
+      "paper": "0580/32/O/N/23 Q8(b)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w23_qp_32.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w23_ms_32.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2023), Question 8(b) only. Official answer and mark allocation from the MS PDF. The item is paper/self-mark. Parts 8(a) and 8(c)–(d) are omitted (construction, a measurement, angle chasing, and Pythagoras)."
+    },
+    "stem": "This question is 0580/32/O/N/23 Question 8(b), taken from the official QP.\n\n(b) Town \\(A\\) is 8.5 cm from town \\(B\\) on a map.\nThe scale of the map is \\(1 : 50\\,000\\).\n\nCalculate the actual distance from town \\(A\\) to town \\(B\\).\nGive your answer in kilometres.  [2]",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "8.5 cm represents \\(8.5\\times 50000=425000\\) cm, which is 4250 m, or 4.25 km. Equivalently, 1 cm represents 0.5 km, so the distance is \\(8.5\\times 0.5=4.25\\) km.",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS 8(b): 4.25 for 2 marks, with B1 for figures 425 as the answer or 1 cm = 0.5 km seen, or M1 for 8.5 x 50000 oe. This step records the official M1 route, which is the method written here. Independent: 8.5 times 50000 cm = 425000 cm = 4.25 km."
+      },
+      {
+        "name": "A",
+        "text_tex": "The actual distance is 4.25 km.",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS 8(b): 4.25 for 2 marks. Independent confirmation: 4.25 km."
+      }
+    ]
+  }
+]

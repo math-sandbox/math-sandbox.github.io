@@ -1,0 +1,223 @@
+[
+  {
+    "id": "P23-2.8-QC1-gen",
+    "section": "P23-2.8",
+    "kind": "generated",
+    "title": "The constant A from the intercept of lg y against x",
+    "marks": 1,
+    "source": "Theory P23-2.8 Quick check 1 (intercept 2, A=100); new intercept 1 or 2",
+    "params": [
+      {
+        "name": "c",
+        "min": 1,
+        "max": 2,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "10**c"
+    },
+    "constraints": [],
+    "original": {
+      "c": 2
+    },
+    "stem": "The variables \\(x\\) and \\(y\\) satisfy \\(y=A\\times 10^{px}\\). The graph of \\(\\lg y\\) against \\(x\\) is a straight line passing through the point \\((0, {c|int})\\). What is the value of \\(A\\)?",
+    "answer": {
+      "expression": "10**c",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "When \\(x=0\\), \\(\\lg y=\\lg A={c|int}\\), so \\(A=10^{{c|int}}={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is 10 to the power c. Original c=2 gives A=100."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P23-2.8-QC2-gen",
+    "section": "P23-2.8",
+    "kind": "generated",
+    "title": "Gradient of ln y against x",
+    "marks": 1,
+    "source": "Theory P23-2.8 Quick check 2 (points (1, 2) and (5, 10), gradient 2); new integer gradients",
+    "params": [
+      {
+        "name": "x1",
+        "min": 1,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "name": "y1",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "w",
+        "min": 2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "p",
+        "min": 1,
+        "max": 4,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "X2": "x1+w",
+      "Y2": "y1+p*w",
+      "A": "p"
+    },
+    "constraints": [
+      "w>=2",
+      "p>=1"
+    ],
+    "original": {
+      "x1": 1,
+      "y1": 2,
+      "w": 4,
+      "p": 2
+    },
+    "stem": "The graph of \\(\\ln y\\) against \\(x\\) is a straight line passing through the points \\(({x1|int}, {y1|int})\\) and \\(({X2|int}, {Y2|int})\\). What is the gradient of the line?",
+    "answer": {
+      "expression": "p",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The gradient is \\(({Y2|int}-{y1|int})/({X2|int}-{x1|int})={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A equals p. Original points (1, 2) and (5, 10) give gradient 2."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P23-2.8-QC3-gen",
+    "section": "P23-2.8",
+    "kind": "generated",
+    "title": "The parameter p from two points on ln y against x",
+    "marks": 1,
+    "source": "Theory P23-2.8 Quick check 3 (points (2, 2.6) and (6, 6.6), p=1); new integer p",
+    "params": [
+      {
+        "name": "p",
+        "min": 1,
+        "max": 4,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "Y2": "2.6+4*p",
+      "A": "p"
+    },
+    "constraints": [
+      "p>=1"
+    ],
+    "original": {
+      "p": 1
+    },
+    "stem": "The graph of \\(\\ln y\\) against \\(x\\) is a straight line through \\((2, 2.6)\\) and \\((6, {Y2|dp1})\\). If \\(y=Ae^{px}\\), what is the value of \\(p\\)?",
+    "answer": {
+      "expression": "p",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Here \\(p\\) is the gradient: \\(({Y2|dp1}-2.6)/(6-2)={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A equals p. Original p=1 gives the second point (6, 6.6)."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P23-2.8-PP-9709-22-FM19-Q3",
+    "section": "P23-2.8",
+    "kind": "pastpaper",
+    "title": "Find A and p from a straight-line graph of ln y against x",
+    "marks": 5,
+    "source": {
+      "paper": "9709/22/F/M/19 Q3",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m19_qp_22.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m19_ms_22.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2019), Question 3, including the official points (1, 2.835) and (6, 6.585) labelled on the diagram. Official answer and mark allocation from the MS PDF. The item is paper/self-mark. A reconstructed SVG of the official line is provided in the teaching page."
+    },
+    "stem": "This question is 9709/22/F/M/19 Question 3, taken from the official QP.\n\nThe variables \\(x\\) and \\(y\\) satisfy the equation \\(y=Ae^{px+p}\\), where \\(A\\) and \\(p\\) are constants. The graph of \\(\\ln y\\) against \\(x\\) is a straight line passing through the points \\((1, 2.835)\\) and \\((6, 6.585)\\), as shown in the diagram. Find the values of \\(A\\) and \\(p\\).  [5]",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "B",
+        "text_tex": "Taking natural logarithms gives \\(\\ln y=\\ln A+px+p\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS Q3: B1 for stating or implying the equation ln y = ln A + px + p."
+      },
+      {
+        "name": "M1",
+        "text_tex": "The gradient of the line is \\(p\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS Q3: M1 for equating the gradient of the line to p."
+      },
+      {
+        "name": "A1",
+        "text_tex": "\\(p=(6.585-2.835)/(6-1)=3.75/5=0.75\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS Q3: A1 for p=0.75. Independent: 3.75/5=0.75."
+      },
+      {
+        "name": "M2",
+        "text_tex": "Substituting the point \\((1, 2.835)\\) into \\(\\ln y=\\ln A+px+p\\) gives \\(2.835=\\ln A+0.75+0.75\\), so \\(\\ln A=1.335\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS Q3: M1 for substituting appropriate values to find ln A."
+      },
+      {
+        "name": "A2",
+        "text_tex": "Hence \\(A=e^{1.335}=3.7999\\ldots\\), so \\(A=3.8\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS Q3: A1 for ln A=1.335... and hence A=3.8. Independent: exp(1.335)=3.79997... which is 3.8 to 2 significant figures, matching the official value."
+      }
+    ]
+  }
+]

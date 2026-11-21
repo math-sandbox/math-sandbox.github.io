@@ -1,0 +1,350 @@
+[
+  {
+    "id": "P1-5.6-QC1-gen",
+    "section": "P1-5.6",
+    "kind": "generated",
+    "title": "Number of solutions of sin n theta = 1/2 in a full turn",
+    "marks": 1,
+    "source": "Theory P1-5.6 Quick check 1; 2n solutions of sin(n theta)=1/2 for 0 to 360 degrees",
+    "params": [
+      {
+        "name": "n",
+        "min": 1,
+        "max": 4,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "2*n"
+    },
+    "constraints": [
+      "n>=1"
+    ],
+    "original": {
+      "n": 2
+    },
+    "stem": "How many solutions of \\(\\sin({n|int}\\theta)=\\dfrac{1}{2}\\) are there for \\(0^\\circ\\le\\theta\\le 360^\\circ\\)?",
+    "answer": {
+      "expression": "2*n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The equation \\(\\sin\\phi=\\dfrac{1}{2}\\) has two solutions in each interval of \\(360^\\circ\\). Here \\(\\phi={n|int}\\theta\\) runs through \\({n|int}\\) such intervals, so there are \\({A|int}\\) solutions.",
+        "result": "2*n",
+        "format": "int",
+        "mark": "A1",
+        "note": "Two solutions of sin phi = 1/2 in each 360 degrees."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original sin 2 theta, four solutions"
+      }
+    ],
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.6"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-6.json",
+        "locator": "P1-5.6-QC1-gen"
+      }
+    }
+  },
+  {
+    "id": "P1-5.6-QC2-gen",
+    "section": "P1-5.6",
+    "kind": "generated",
+    "title": "Number of solutions of cos theta = 1/2 in n full turns",
+    "marks": 1,
+    "source": "Theory P1-5.6 Quick check 2; 2n solutions of cos theta = 1/2 for 0 to 360 n degrees",
+    "params": [
+      {
+        "name": "n",
+        "min": 1,
+        "max": 4,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "2*n"
+    },
+    "original": {
+      "n": 2
+    },
+    "stem": "How many solutions of \\(\\cos\\theta=\\dfrac{1}{2}\\) are there for \\(0^\\circ\\le\\theta\\le {n|int}\\times 360^\\circ\\)?",
+    "answer": {
+      "expression": "2*n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\cos\\theta=\\dfrac{1}{2}\\) has two solutions in each interval of \\(360^\\circ\\), and the given interval is \\({n|int}\\) such intervals, so there are \\({A|int}\\) solutions.",
+        "result": "2*n",
+        "format": "int",
+        "mark": "A1",
+        "note": "Two solutions in each full turn."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original 720 degrees, four solutions"
+      }
+    ],
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.6"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-6.json",
+        "locator": "P1-5.6-QC2-gen"
+      }
+    },
+    "constraints": [
+      "n>=1"
+    ]
+  },
+  {
+    "id": "P1-5.6-QC3-gen",
+    "section": "P1-5.6",
+    "kind": "generated",
+    "title": "Number of solutions of tan theta = 1 in n full turns",
+    "marks": 1,
+    "source": "Theory P1-5.6 Quick check 3; 2n solutions of tan theta = 1 for 0 to 360 n degrees",
+    "params": [
+      {
+        "name": "n",
+        "min": 1,
+        "max": 4,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "2*n"
+    },
+    "constraints": [
+      "n>=1"
+    ],
+    "original": {
+      "n": 1
+    },
+    "stem": "How many solutions of \\(\\tan\\theta=1\\) are there for \\(0^\\circ\\le\\theta\\le {n|int}\\times 360^\\circ\\)?",
+    "answer": {
+      "expression": "2*n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Tangent has period \\(180^\\circ\\) and one solution of \\(\\tan\\theta=1\\) in each period. The given interval covers \\({A|int}\\) such periods, so there are \\({A|int}\\) solutions.",
+        "result": "2*n",
+        "format": "int",
+        "mark": "A1",
+        "note": "One solution of tan theta = 1 in each 180 degrees."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original 360 degrees, two solutions"
+      }
+    ],
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.6"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-6.json",
+        "locator": "P1-5.6-QC3-gen"
+      }
+    }
+  },
+  {
+    "id": "P1-5.6-PP-9709-13-ON22-Q1",
+    "section": "P1-5.6",
+    "kind": "pastpaper",
+    "title": "A quadratic trigonometric equation in a given interval",
+    "marks": 3,
+    "source": {
+      "paper": "9709/13/O/N/22 Q1",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w22_qp_13.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w22_ms_13.pdf",
+      "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+    },
+    "stem": "<p>Solve the equation \\(8\\sin^2\\theta+6\\cos\\theta+1=0\\) for \\(0^\\circ&lt;\\theta&lt;180^\\circ\\). [3]</p>",
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.6"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 3,
+      "difficulty": "hard",
+      "type": "pp",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-6.json",
+        "locator": "P1-5.6-PP-9709-13-ON22-Q1"
+      }
+    },
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "The identity \\(\\sin^2\\theta=1-\\cos^2\\theta\\) is used, to obtain \\(8(1-\\cos^2\\theta)+6\\cos\\theta+1=0\\), which rearranges to \\(8\\cos^2\\theta-6\\cos\\theta-9=0\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1, expect 8 cos²θ − 6 cosθ − 9 = 0."
+      },
+      {
+        "name": "s2",
+        "text_tex": "The quadratic is solved by factors, the formula, or completing the square, and the method is shown: \\((4\\cos\\theta+3)(2\\cos\\theta-3)=0\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, factors or formula or completing square must be shown."
+      },
+      {
+        "name": "s3",
+        "text_tex": "\\(\\cos\\theta=-0.75\\), so \\(\\theta=138.6^\\circ\\) only.",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: AWRT, ignore solutions outside the given range; answer in radians scores A0."
+      }
+    ]
+  },
+  {
+    "id": "P1-5.6-PP-9709-12-MJ18-Q10",
+    "section": "P1-5.6",
+    "kind": "pastpaper",
+    "title": "A mixed sine-cosine equation, a sketch, and an inequality",
+    "marks": 8,
+    "source": {
+      "paper": "9709/12/M/J/18 Q10",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s18_qp_12.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s18_ms_12.pdf",
+      "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+    },
+    "stem": "<p>(i) Solve the equation \\(2\\cos x+3\\sin x=0\\), for \\(0^\\circ\\le x\\le 360^\\circ\\). [3]</p><p>(ii) Sketch, on the same diagram, the graphs of \\(y=2\\cos x\\) and \\(y=-3\\sin x\\) for \\(0^\\circ\\le x\\le 360^\\circ\\). [3]</p><p>(iii) Use your answers to parts (i) and (ii) to find the set of values of \\(x\\) for \\(0^\\circ\\le x\\le 360^\\circ\\) for which \\(2\\cos x+3\\sin x&gt;0\\). [2]</p>",
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.6"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 8,
+      "difficulty": "hard",
+      "type": "pp",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-6.json",
+        "locator": "P1-5.6-PP-9709-12-MJ18-Q10"
+      }
+    },
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "(i) \\(2\\cos x=-3\\sin x\\), so \\(\\tan x=-\\dfrac{{2}}{{3}}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1, use of tan = sin/cos to get tan =, or other valid method to find sin or cos =. M0 for tan x = +/- 3/2."
+      },
+      {
+        "name": "s2",
+        "text_tex": "(i) \\(x=146.3^\\circ\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, 146.3 degrees awrt."
+      },
+      {
+        "name": "s3",
+        "text_tex": "(i) \\(x=326.3^\\circ\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1FT, 326.3 degrees awrt. FT for 180 added to an incorrect first answer in the given range. The second A1 is withheld if any further values in the range 0 to 360 are given. Answers in radians score A0, A0."
+      },
+      {
+        "name": "s4",
+        "text_tex": "(ii) A sketch of \\(y=2\\cos x\\): one complete cycle, starting and finishing at the top of the curve at roughly the same positive y-value and going below the x-axis by roughly the same distance.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1, sketch of y = 2 cos x. One complete cycle; start and finish at top of curve at roughly the same positive y value and go below the x axis by roughly the same distance. (Can be a poor curve but not straight lines.)"
+      },
+      {
+        "name": "s5",
+        "text_tex": "(ii) A sketch of \\(y=-3\\sin x\\): one complete cycle, starting and finishing on the x-axis, inverted, and going below and then above the x-axis by roughly the same distance.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1, sketch of y = -3 sin x. One complete cycle; start and finish on the x axis, must be inverted and go below and then above the x axis by roughly the same distance. (Can be a poor curve but not straight lines.)"
+      },
+      {
+        "name": "s6",
+        "text_tex": "(ii) The two sketches are fully correct, with the sine curve of clearly larger amplitude than the cosine curve, and with reasonable curves.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1, fully correct answer including the sine curve with clearly larger amplitude than cosine curve. Must now be reasonable curves. Note: separate diagrams can score 2/3."
+      },
+      {
+        "name": "s7",
+        "text_tex": "(iii) \\(x&lt;146.3^\\circ\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1FT, x < 146.3 degrees. Does not need to include 0 degrees, 360 degrees. Follow through from their answers in (i)."
+      },
+      {
+        "name": "s8",
+        "text_tex": "(iii) \\(x&gt;326.3^\\circ\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1FT, x > 326.3 degrees. Allow a combined statement as long as the inequalities are correct if taken separately. SC: for two correct values including follow-through but with less-than-or-equal and greater-than-or-equal, B1."
+      }
+    ]
+  }
+]

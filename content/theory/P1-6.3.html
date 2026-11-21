@@ -1,0 +1,90 @@
+<section class="theory" data-section="P1-6.3">
+<h2>6.3 Arithmetic progressions</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 1 Coursebook (Sue Pemberton, series editor Julian Gilbey), Chapter 6 Series, printed pp.166–171. Own wording and new numbers, following the coursebook formulae for the \(n\)th term and the sum of the first \(n\) terms of an arithmetic progression.</p>
+<p class="key-words"><strong>Key words:</strong> <em>arithmetic progression</em>, <em>common difference</em></p>
+<h3>The \(n\)th term</h3>
+<p>An arithmetic progression is a sequence in which each term is found by adding the same number to the term before. That number is the common difference, \(d\). With first term \(a\), the terms are \(a,\ a+d,\ a+2d,\ \ldots\), so</p>
+<p>\[u_n=a+(n-1)d.\]</p>
+<h3>The sum of the first \(n\) terms</h3>
+<p>Writing the sum forwards and backwards and adding pairs of terms gives</p>
+<p>\[S_n=\dfrac{n}{2}\bigl(2a+(n-1)d\bigr)=\dfrac{n}{2}(a+l),\]</p>
+<p>where \(l=a+(n-1)d\) is the last term. For example, the sum of the first \(n\) positive integers is \(\dfrac{n}{2}(n+1)\).</p>
+<div class="ms-widget" data-widget="ap-gp-sequence"></div>
+<script src="../../assets/widget-kinds-pkg15.js"></script>
+<p>Two facts about a progression, such as two terms or two sums, give two equations in \(a\) and \(d\), which can be solved simultaneously.</p>
+<div class="worked-example">
+<h4>Worked example 1: A term and a sum</h4>
+<p class="src">Coursebook, 6.3, \(n\)th term and sum formulae. New numbers.</p>
+<p>The arithmetic progression \(7, 11, 15, \ldots\) is given. Find the 20th term and the sum of the first 20 terms.</p>
+<ol class="steps">
+<li>\(a=7\), \(d=4\), so \(u_{20}=7+19\times4=83\). <span class="mark">B1</span></li>
+<li>\(S_{20}=\dfrac{20}{2}(7+83)\) <span class="mark">M1</span></li>
+<li>\(=900\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(u_{20}=83\), \(S_{20}=900\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: Two terms given</h4>
+<p class="src">Coursebook, 6.3, simultaneous equations for \(a\) and \(d\). New numbers.</p>
+<p>The 3rd term of an arithmetic progression is 12 and the 8th term is 37. Find the sum of the first 10 terms.</p>
+<ol class="steps">
+<li>\(a+2d=12\) and \(a+7d=37\), so \(5d=25\), \(d=5\) and \(a=2\). <span class="mark">M1</span></li>
+<li>\(S_{10}=\dfrac{10}{2}(2\times2+9\times5)\) <span class="mark">M1</span></li>
+<li>\(=245\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(245\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul>
+<li>Using \(a+nd\) for the \(n\)th term; the correct formula is \(a+(n-1)d\).</li>
+<li>Using \(n(2a+(n-1)d)\) without the factor \(\dfrac{1}{2}\).</li>
+<li>For an inequality such as \(S_n\gt k\), giving a non-integer value of \(n\); the number of terms must be a whole number.</li>
+</ul>
+<h3>Past paper</h3>
+<p class="src">9709/11/M/J/21 Q2, official QP and official MS.</p>
+<p>The sum of the first 20 terms of an arithmetic progression is 405 and the sum of the first 40 terms is 1410. Find the 60th term of the progression. [5]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>\(10(2a+19d)=405\) <span class="mark">B1</span> Official MS: B1, 10(2a + 19d) = 405.</li>
+<li>\(20(2a+39d)=1410\) <span class="mark">B1</span> Official MS: B1, 20(2a + 39d) = 1410.</li>
+<li>Solving simultaneously: \(a=6\), \(d=1.5\). <span class="mark">M1</span> Official MS: M1, solving simultaneously two equations obtained from using the correct sum formulae [a = 6, d = 1.5]. Reach a = or d =.</li>
+<li>60th term \(=a+59d=6+59\times1.5\) <span class="mark">M1</span> Official MS: M1, using the correct formula for 60th term with their a and d.</li>
+<li>\(=94.5\) <span class="mark">A1</span> Official MS: A1, 60th term = 94.5, OE, e.g. 189/2.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/13/O/N/17 Q1, official QP and official MS.</p>
+<p>An arithmetic progression has first term \(-12\) and common difference 6. The sum of the first \(n\) terms exceeds 3000. Calculate the least possible value of \(n\). [4]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>\(\dfrac{1}{2}n\left[-24+(n-1)6\right]&gt;3000\) <span class="mark">M1</span> Official MS: M1, ½n[−24 + (n − 1)6] ~ 3000, where ~ denotes any inequality or equality. Use correct formula with RHS ≈ 3000 (e.g. 3010).</li>
+<li>\(3(n^2-5n-1000)&gt;0\) <span class="mark">A1</span> Official MS: A1, (3)(n² − 5n − 1000) (~ 0). Rearrange into a 3-term quadratic.</li>
+<li>The roots are \(n\approx34.2\) and \(n\approx-29.2\). <span class="mark">A1</span> Official MS: A1, n ~ 34.2 (&amp; −29.2).</li>
+<li>\(n=35\) <span class="mark">A1</span> Official MS: A1, 35. Allow n ⩾ 35.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>An arithmetic progression has first term 5 and common difference 3. Find the 15th term.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(u_{15}=5+14\times3=47\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(47\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>An arithmetic progression has first term 4 and common difference 6. Find the sum of the first 12 terms.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(S_{12}=\dfrac{12}{2}(8+11\times6)=6\times74\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(444\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>The first term of an arithmetic progression is 5 and the 10th term is 50. Find the common difference.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(5+9d=50\), so \(9d=45\).</li></ol>
+<p class="final"><strong>Answer:</strong> \(d=5\)</p>
+</details>
+</div>
+</section>

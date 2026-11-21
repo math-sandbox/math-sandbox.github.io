@@ -1,0 +1,242 @@
+[
+  {
+    "id": "P23-2.3-QC1-gen",
+    "section": "P23-2.3",
+    "kind": "generated",
+    "title": "A sum of logarithms of powers of 2",
+    "marks": 2,
+    "source": "P23 Ch2 theory P23-2.3 Quick check 1 (log_2 8 + log_2 4 = 5)",
+    "params": [
+      {
+        "name": "p",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "math.pow(2,p)",
+      "B": "math.pow(2,q)",
+      "E": "p+q"
+    },
+    "constraints": [
+      "p>=1",
+      "q>=1"
+    ],
+    "original": {
+      "p": 3,
+      "q": 2
+    },
+    "stem": "Simplify \\(\\log_2 {A|int}+\\log_2 {B|int}\\).",
+    "answer": {
+      "expression": "p+q",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The multiplication law of logarithms gives \\(\\log_2({A|int}\\times{B|int})=\\log_2(2^{{p|int}+{q|int}})\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Combine the logs and write as a power of 2."
+      },
+      {
+        "name": "E",
+        "text_tex": "The value is \\({E|int}\\).",
+        "result": "p+q",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct value."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "sum",
+        "stem": "Use the laws of logarithms to simplify \\(\\log_2 {A|int}+\\log_2 {B|int}\\).",
+        "note": "laws frame"
+      },
+      {
+        "id": "value",
+        "stem": "What is the value of \\(\\log_2 {A|int}+\\log_2 {B|int}\\)?",
+        "note": "value frame"
+      }
+    ]
+  },
+  {
+    "id": "P23-2.3-QC2-gen",
+    "section": "P23-2.3",
+    "kind": "generated",
+    "title": "A difference of logarithms that simplifies to an integer",
+    "marks": 2,
+    "source": "P23 Ch2 theory P23-2.3 Quick check 2 (log_3 36 - log_3 4 = 2)",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "k",
+        "min": 2,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "name": "m",
+        "min": 2,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "N": "m*math.pow(a,k)",
+      "D": "m",
+      "E": "k"
+    },
+    "constraints": [
+      "a>=2",
+      "k>=2",
+      "m>=2"
+    ],
+    "original": {
+      "a": 3,
+      "k": 2,
+      "m": 4
+    },
+    "stem": "Simplify \\(\\log_{{a|int}} {N|int}-\\log_{{a|int}} {D|int}\\).",
+    "answer": {
+      "expression": "k",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The division law of logarithms gives the logarithm to base {a|int} of {N|int}/{D|int}, which is the logarithm of {a|int} to the power {k|int}.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Combine as a quotient."
+      },
+      {
+        "name": "E",
+        "text_tex": "The value is \\({k|int}\\).",
+        "result": "k",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct value."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "diff",
+        "stem": "Use the laws of logarithms to simplify \\(\\log_{{a|int}} {N|int}-\\log_{{a|int}} {D|int}\\).",
+        "note": "laws frame"
+      },
+      {
+        "id": "value",
+        "stem": "What is the value of \\(\\log_{{a|int}} {N|int}-\\log_{{a|int}} {D|int}\\)?",
+        "note": "value frame"
+      }
+    ]
+  },
+  {
+    "id": "P23-2.3-QC3-gen",
+    "section": "P23-2.3",
+    "kind": "generated",
+    "title": "A power law combined with a second logarithm",
+    "marks": 2,
+    "source": "P23 Ch2 theory P23-2.3 Quick check 3 (3 log_5 5 + log_5 25 = 5)",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "p",
+        "min": 1,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 1,
+        "max": 4,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "N": "math.pow(a,q)",
+      "E": "p+q"
+    },
+    "constraints": [
+      "a>=2",
+      "p>=1",
+      "q>=1"
+    ],
+    "original": {
+      "a": 5,
+      "p": 3,
+      "q": 2
+    },
+    "stem": "Simplify \\({p|int}\\log_{{a|int}} {a|int}+\\log_{{a|int}} {N|int}\\).",
+    "answer": {
+      "expression": "p+q",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "\\({p|int}\\log_{{a|int}}{a|int}={p|int}\\), and \\(\\log_{{a|int}}{N|int}={q|int}\\), so the sum is \\({E|int}\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Use the power law and log_a(a^q)=q."
+      },
+      {
+        "name": "E",
+        "text_tex": "The value is \\({E|int}\\).",
+        "result": "p+q",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct value."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "power",
+        "stem": "Use the power law of logarithms to simplify \\({p|int}\\log_{{a|int}} {a|int}+\\log_{{a|int}} {N|int}\\).",
+        "note": "power frame"
+      },
+      {
+        "id": "value",
+        "stem": "What is the value of \\({p|int}\\log_{{a|int}} {a|int}+\\log_{{a|int}} {N|int}\\)?",
+        "note": "value frame"
+      }
+    ]
+  }
+]

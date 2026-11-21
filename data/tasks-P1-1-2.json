@@ -1,0 +1,264 @@
+[
+  {
+    "id": "P1-1.2-QC1-gen",
+    "section": "P1-1.2",
+    "kind": "generated",
+    "title": "Constant term after completing the square for a monic expression",
+    "marks": 1,
+    "source": "Theory P1-1.2 Quick check 1 (x^2+14x=(x+7)^2-49); book Key point 1.1, printed p.7. New numbers (the book illustration uses x^2+10x).",
+    "params": [
+      {
+        "name": "h",
+        "min": 3,
+        "max": 12,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "B": "2*h",
+      "K": "0-h*h"
+    },
+    "constraints": [
+      "h>=3"
+    ],
+    "original": {
+      "h": 7
+    },
+    "stem": "The expression \\(x^2+{B|int}x\\) can be written as \\((x+{h|int})^2+k\\). Find the value of \\(k\\).",
+    "answer": {
+      "expression": "0-h*h",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(x^2+{B|int}x=(x+{h|int})^2-{h|int}^2\\), so \\(k={A|int}\\)",
+        "result": "0-h*h",
+        "format": "int",
+        "mark": "A1",
+        "note": "Subtract the square of half the coefficient of x."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original h=7"
+      },
+      {
+        "id": "written",
+        "stem": "Write \\(x^2+{B|int}x\\) in the form \\((x+{h|int})^2+k\\) and give the value of \\(k\\)."
+      }
+    ]
+  },
+  {
+    "id": "P1-1.2-QC2-gen",
+    "section": "P1-1.2",
+    "kind": "generated",
+    "title": "Constant term after completing the square with a leading coefficient",
+    "marks": 2,
+    "source": "Theory P1-1.2 Quick check 2 (2x^2-16x+7=2(x-4)^2-25); book illustration 2x^2-12x+5 on p.7 uses different numbers.",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "h",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": 3,
+        "max": 15,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "B": "2*a*h",
+      "K": "c-a*h*h"
+    },
+    "constraints": [
+      "a>=2",
+      "h>=2",
+      "c-a*h*h!=0"
+    ],
+    "original": {
+      "a": 2,
+      "h": 4,
+      "c": 7
+    },
+    "stem": "The expression \\({a|int}x^2-{B|int}x+{c|int}\\) can be written as \\({a|int}(x-{h|int})^2+k\\). Find the value of \\(k\\).",
+    "answer": {
+      "expression": "c-a*h*h",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "\\({a|int}x^2-{B|int}x+{c|int}={a|int}(x^2-{h|int}\\times 2\\,x)+{c|int}={a|int}\\bigl((x-{h|int})^2-{h|int}^2\\bigr)+{c|int}\\)",
+        "result": "2*a*h",
+        "format": "int",
+        "mark": "M1",
+        "note": "Take out the leading coefficient and complete the square."
+      },
+      {
+        "name": "A",
+        "text_tex": "This is \\({a|int}(x-{h|int})^2+({c|int}-{a|int}\\times{h|int}^2)\\), so \\(k={A|int}\\)",
+        "result": "c-a*h*h",
+        "format": "int",
+        "mark": "A1",
+        "note": "Multiply -h squared by the leading coefficient, then add c."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original a=2, h=4, c=7"
+      },
+      {
+        "id": "written",
+        "stem": "Express \\({a|int}x^2-{B|int}x+{c|int}\\) in the form \\({a|int}(x-{h|int})^2+k\\) and give the value of \\(k\\)."
+      }
+    ]
+  },
+  {
+    "id": "P1-1.2-QC3-gen",
+    "section": "P1-1.2",
+    "kind": "generated",
+    "title": "Positive root by completing the square",
+    "marks": 2,
+    "source": "Theory P1-1.2 Quick check 3 (x^2-8x-9=0, positive root 9); book Worked examples 1.6–1.7 style, printed pp.8–9",
+    "params": [
+      {
+        "name": "h",
+        "min": 2,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "name": "d",
+        "min": 3,
+        "max": 10,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "B": "2*h",
+      "C": "d*d-h*h"
+    },
+    "constraints": [
+      "d-h>=1",
+      "h>=2",
+      "d*d-h*h>=1"
+    ],
+    "original": {
+      "h": 4,
+      "d": 5
+    },
+    "stem": "Solve \\(x^2-{B|int}x-{C|int}=0\\) by completing the square. Write down the positive root.",
+    "answer": {
+      "expression": "h+d",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "\\(x^2-{B|int}x-{C|int}=(x-{h|int})^2-{h|int}^2-{C|int}=(x-{h|int})^2-{d|int}^2\\)",
+        "result": "d*d-h*h",
+        "format": "int",
+        "mark": "M1",
+        "note": "Complete the square and collect the constant."
+      },
+      {
+        "name": "A",
+        "text_tex": "\\((x-{h|int})^2={d|int}^2\\), so \\(x={h|int}+{d|int}\\) or \\(x={h|int}-{d|int}\\). The positive root is \\({A|int}\\)",
+        "result": "h+d",
+        "format": "int",
+        "mark": "A1",
+        "note": "d is greater than h, so only h+d is positive."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original h=4, d=5"
+      },
+      {
+        "id": "written",
+        "stem": "By completing the square, find the positive root of \\(x^2-{B|int}x-{C|int}=0\\)."
+      }
+    ]
+  },
+  {
+    "id": "P1-1.2-PP-9709-12-ON22-Q6ab",
+    "section": "P1-1.2",
+    "kind": "pastpaper",
+    "title": "Completed-square form of a quadratic curve, then solve",
+    "marks": 6,
+    "source": {
+      "paper": "9709/12/O/N/22 Q6(a)(b)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w22_qp_12.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w22_ms_12.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2022), Question 6(a) and (b) only. Official answers and mark allocation from the MS PDF. Part (c) (sketch and vertex) is omitted because it belongs with later skills in Chapter 1. The item is paper/self-mark."
+    },
+    "stem": "This question is 9709/12/O/N/22 Question 6(a) and (b), taken from the official QP.\n\nThe equation of a curve is \\(y=4x^2+20x+6\\).\n\n(a) Express the equation in the form \\(y=a(x+b)^2+c\\), where \\(a\\), \\(b\\) and \\(c\\) are constants.  [3]\n\n(b) Hence solve the equation \\(4x^2+20x+6=45\\).  [3]",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "Ba",
+        "text_tex": "(a) \\(y=4\\left(x+\\dfrac{5}{2}\\right)^2-19\\), so \\(a=4\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 for a=4. There is no requirement to list a, b and c separately; look at values in the final expression."
+      },
+      {
+        "name": "Bb",
+        "text_tex": "\\(b=\\dfrac{5}{2}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 for b=5/2 or equivalent."
+      },
+      {
+        "name": "Bc",
+        "text_tex": "\\(c=-19\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 for c=-19."
+      },
+      {
+        "name": "M",
+        "text_tex": "(b) Equating the completed square form to 45 gives \\(4\\left(x+\\dfrac{5}{2}\\right)^2-19=45\\), so \\(\\left(x+\\dfrac{5}{2}\\right)^2=16\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: *M1 for equating their completed square form from 6(a) to 45, or restarting and using completing the square."
+      },
+      {
+        "name": "DM",
+        "text_tex": "Then \\(x+\\dfrac{5}{2}=\\pm 4\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: DM1 for any valid method leading to two answers."
+      },
+      {
+        "name": "A",
+        "text_tex": "Hence \\(x=\\dfrac{3}{2}\\) or \\(x=-\\dfrac{13}{2}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: A1 for x=3/2 and x=-13/2. SC: if M0 or M1 DM0, B1 is available for the correct final answers."
+      }
+    ]
+  }
+]

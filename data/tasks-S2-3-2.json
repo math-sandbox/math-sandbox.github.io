@@ -1,0 +1,196 @@
+[
+  {
+    "id": "S2-3.2-QC1-gen",
+    "section": "S2-3.2",
+    "kind": "generated",
+    "title": "Mean of a sum of two random variables",
+    "marks": 1,
+    "source": "Theory S2-3.2 Quick check 1 (8); E(X+Y)=E(X)+E(Y)",
+    "params": [
+      {
+        "name": "a",
+        "min": 3,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "a+c"
+    },
+    "constraints": [],
+    "original": {
+      "a": 5,
+      "c": 3
+    },
+    "stem": "\\(X\\) has mean \\({a|int}\\) and variance 4. \\(Y\\) is independent of \\(X\\) and has mean \\({c|int}\\) and variance 2. Find \\(\\operatorname{E}(X+Y)\\).",
+    "answer": {
+      "expression": "a+c",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\operatorname{E}(X+Y)={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is a+c. Original means 5 and 3 give 8."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "S2-3.2-QC2-gen",
+    "section": "S2-3.2",
+    "kind": "generated",
+    "title": "Variance of a sum of independent random variables",
+    "marks": 1,
+    "source": "Theory S2-3.2 Quick check 2 (6); Var(X+Y)=Var(X)+Var(Y) when independent",
+    "params": [
+      {
+        "name": "b",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "d",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "b+d"
+    },
+    "constraints": [],
+    "original": {
+      "b": 4,
+      "d": 2
+    },
+    "stem": "\\(X\\) has variance \\({b|int}\\) and \\(Y\\) is independent of \\(X\\) with variance \\({d|int}\\). Find \\(\\operatorname{Var}(X+Y)\\).",
+    "answer": {
+      "expression": "b+d",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\operatorname{Var}(X+Y)={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is b+d. Original variances 4 and 2 give 6."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "S2-3.2-QC3-gen",
+    "section": "S2-3.2",
+    "kind": "generated",
+    "title": "Variance of a linear combination of independent random variables",
+    "marks": 1,
+    "source": "Theory S2-3.2 Quick check 3 (18); Var(2X-Y)=4 Var(X)+Var(Y)",
+    "params": [
+      {
+        "name": "b",
+        "min": 2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "d",
+        "min": 1,
+        "max": 4,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "4*b+d"
+    },
+    "constraints": [],
+    "original": {
+      "b": 4,
+      "d": 2
+    },
+    "stem": "\\(X\\) has variance \\({b|int}\\) and \\(Y\\) is independent of \\(X\\) with variance \\({d|int}\\). Find \\(\\operatorname{Var}(2X-Y)\\).",
+    "answer": {
+      "expression": "4*b+d",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\operatorname{Var}(2X-Y)=4\\times{b|int}+{d|int}={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is 4b+d. Original variances 4 and 2 give 18."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "S2-3.2-PP-9709-73-ON19-Q1i",
+    "section": "S2-3.2",
+    "kind": "pastpaper",
+    "title": "Mean and variance of the sum of four independent values",
+    "marks": 2,
+    "source": {
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w19_qp_73.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w19_ms_73.pdf",
+      "note": "9709/73/O/N/19 Question 1(i) only [2], with the official opening sentence. Official QP and official MS. Part (ii) omitted (already used in S2-3.1)."
+    },
+    "marking": "manual",
+    "stem": "This question is 9709/73/O/N/19 Question 1(i) only, taken from the official QP. The official opening sentence is included so that the part is self-contained.\n\nThe random variable X has mean 2.4 and variance 3.1.\n\n(i) The random variable Y is the sum of four independent values of X. Find the mean and variance of Y. [2]",
+    "steps": [
+      {
+        "name": "B",
+        "text_tex": "Mean of \\(Y\\) is \\(9.6\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1, 9.6. Independent: 4 times 2.4 = 9.6."
+      },
+      {
+        "name": "C",
+        "text_tex": "Variance of \\(Y\\) is \\(12.4\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1, 12.4. Independent: 4 times 3.1 = 12.4, because the four values are independent."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Stem taken from the official QP PDF, Question 1(i) only, with the official opening. Official MS reproduced mark by mark. Paper/self-mark."
+      }
+    ]
+  }
+]

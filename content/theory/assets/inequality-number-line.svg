@@ -1,0 +1,13 @@
+<svg preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 140" width="100%" height="auto" role="img" aria-label="Number line showing x greater than or equal to minus 2 and less than 3">
+  <rect x="1" y="1" width="558" height="138" fill="#fff" stroke="#ccc"/>
+  <g font-family="Source Sans 3, DejaVu Sans, sans-serif" font-size="13" fill="#333">
+    <line x1="28" y1="80" x2="532" y2="80" stroke="#333" stroke-width="1.8"/>
+    <polygon points="532,80 520,74 520,86" fill="#333"/>
+    <text x="548" y="85" text-anchor="middle">x</text>
+    <line x1="40" y1="72" x2="40" y2="88" stroke="#333" stroke-width="1.5"/><text x="40" y="104" text-anchor="middle">-5</text><line x1="88" y1="72" x2="88" y2="88" stroke="#333" stroke-width="1.5"/><text x="88" y="104" text-anchor="middle">-4</text><line x1="136" y1="72" x2="136" y2="88" stroke="#333" stroke-width="1.5"/><text x="136" y="104" text-anchor="middle">-3</text><line x1="184" y1="72" x2="184" y2="88" stroke="#333" stroke-width="1.5"/><text x="184" y="104" text-anchor="middle">-2</text><line x1="232" y1="72" x2="232" y2="88" stroke="#333" stroke-width="1.5"/><text x="232" y="104" text-anchor="middle">-1</text><line x1="280" y1="72" x2="280" y2="88" stroke="#333" stroke-width="1.5"/><text x="280" y="104" text-anchor="middle">0</text><line x1="328" y1="72" x2="328" y2="88" stroke="#333" stroke-width="1.5"/><text x="328" y="104" text-anchor="middle">1</text><line x1="376" y1="72" x2="376" y2="88" stroke="#333" stroke-width="1.5"/><text x="376" y="104" text-anchor="middle">2</text><line x1="424" y1="72" x2="424" y2="88" stroke="#333" stroke-width="1.5"/><text x="424" y="104" text-anchor="middle">3</text><line x1="472" y1="72" x2="472" y2="88" stroke="#333" stroke-width="1.5"/><text x="472" y="104" text-anchor="middle">4</text><line x1="520" y1="72" x2="520" y2="88" stroke="#333" stroke-width="1.5"/><text x="520" y="104" text-anchor="middle">5</text>
+    <line x1="184" y1="80" x2="424" y2="80" stroke="#c0392b" stroke-width="6"/>
+    <circle cx="184" cy="80" r="7" fill="#c0392b" stroke="#c0392b" stroke-width="2"/>
+    <circle cx="424" cy="80" r="7" fill="#fff" stroke="#c0392b" stroke-width="2.5"/>
+    <text x="304.0" y="48" text-anchor="middle" fill="#c0392b">−2 ≤ x &lt; 3</text>
+  </g>
+</svg>

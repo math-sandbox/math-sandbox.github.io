@@ -1,0 +1,175 @@
+[
+  {
+    "id": "P23-3.3-QC1-gen",
+    "section": "P23-3.3",
+    "kind": "generated",
+    "title": "Double-angle sine at 45 degrees",
+    "marks": 1,
+    "source": "Theory P23-3.3 Quick check 1 (1); 2 sin 45 cos 45",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 1,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "1"
+    },
+    "constraints": [],
+    "original": {
+      "k": 1
+    },
+    "stem": "Find the value of \\(2\\sin 45^\\circ\\cos 45^\\circ\\).",
+    "answer": {
+      "expression": "1",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(2\\sin 45^\\circ\\cos 45^\\circ=1\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is 1. The parameter k is unused; the generator requires a parameter."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P23-3.3-QC2-gen",
+    "section": "P23-3.3",
+    "kind": "generated",
+    "title": "Double-angle cosine related value at 0 degrees",
+    "marks": 1,
+    "source": "Theory P23-3.3 Quick check 2 (2); 2 cos squared of 0",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 1,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "2"
+    },
+    "constraints": [],
+    "original": {
+      "k": 1
+    },
+    "stem": "Find the value of \\(2\\cos^2 0^\\circ\\).",
+    "answer": {
+      "expression": "2",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(2\\cos^2 0^\\circ=2\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is 2. The parameter k is unused; the generator requires a parameter."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P23-3.3-QC3-gen",
+    "section": "P23-3.3",
+    "kind": "generated",
+    "title": "Cosine double-angle at 45 degrees",
+    "marks": 1,
+    "source": "Theory P23-3.3 Quick check 3 (0); 2 cos squared 45 minus 1",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 1,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "0"
+    },
+    "constraints": [],
+    "original": {
+      "k": 1
+    },
+    "stem": "Find the value of \\(2\\cos^2 45^\\circ-1\\).",
+    "answer": {
+      "expression": "0",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(2\\cos^2 45^\\circ-1=0\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is 0. The parameter k is unused; the generator requires a parameter."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P23-3.3-PP-9709-22-FM16-Q8i",
+    "section": "P23-3.3",
+    "kind": "pastpaper",
+    "title": "Show a double-angle identity",
+    "marks": 2,
+    "source": {
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m16_qp_22.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m16_ms_22.pdf",
+      "note": "9709/22/F/M/16 Question 8(i) only [2]. Official QP and official MS. Part (ii) omitted."
+    },
+    "marking": "manual",
+    "stem": "This question is 9709/22/F/M/16 Question 8(i) only, taken from the official QP.\n\nShow that sin 2x cot x ≡ 2 cos² x. [2]",
+    "steps": [
+      {
+        "name": "B",
+        "text_tex": "State \\(2\\sin x\\cos x\\cdot\\dfrac{\\cos x}{\\sin x}\\) (or a similar unsimplified form).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1, state 2 sin x cos x times cos x over sin x (or similar)."
+      },
+      {
+        "name": "C",
+        "text_tex": "Simplify to confirm \\(2\\cos^2 x\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1, simplify to confirm 2 cos^2 x."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Stem taken from the official QP PDF, Question 8(i) only, verified on the rendered official page. Official MS reproduced mark by mark. Paper/self-mark."
+      }
+    ]
+  }
+]

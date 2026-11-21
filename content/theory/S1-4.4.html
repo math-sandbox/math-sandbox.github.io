@@ -1,0 +1,121 @@
+<section class="theory" data-section="S1-4.4">
+<h2>4.4 Conditional probability</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Probability &amp; Statistics 1 Coursebook (Dean Chalmers), Chapter 4 Probability, pp.108–111 (Worked examples 4.9–4.11, Exercise 4E). Own wording and new numbers. The formal formula \(\mathrm{P}(A\mid B)=\mathrm{P}(A\cap B)/\mathrm{P}(B)\) is not introduced on these pages; this section uses a reduced sample space.</p>
+<p class="key-words"><strong>Key words:</strong> <em>conditional probability</em>, <em>given that</em></p>
+<h3>Probabilities that depend on extra information</h3>
+<p>The word <strong>conditional</strong> is used for a probability that depends on additional information about an outcome or event. We write \(\mathrm{P}(A\mid B)\) for the <strong>conditional probability</strong> of \(A\) <strong>given that</strong> \(B\) has occurred, and we read the symbol \(\mid\) as &ldquo;given that&rdquo;.</p>
+<p>The extra information reduces the set of possible outcomes. If the remaining outcomes are equally likely,</p>
+$$\mathrm{P}(A\mid B)=\frac{n(A\cap B)}{n(B)}.$$
+<p>In other words, we only count inside the event \(B\): the new denominator is the number of outcomes in \(B\), and the new numerator is the number of those outcomes that are also in \(A\). A two-way table or a Venn diagram is often the clearest way to read off the two counts.</p>
+<p>The same idea applies to a second selection when we are told the result of the first: the bag (or the group of people) is reduced by that first outcome, and we work with what is left.</p>
+<div class="worked-example">
+<h4>Worked example 1: A reduced sample space</h4>
+<p class="src">Book: Worked example 4.9, p.108; Exercise 4E Q1, p.110</p>
+<p>A letter is selected at random from the eight letters in the word PARALLEL. Find the probability that an L is selected, given that a vowel is not selected.</p>
+<ol class="steps">
+<li>The word has 8 letters: A, A, E (vowels) and P, R, L, L, L (not vowels), so 5 letters are not vowels <span class="mark">B1</span></li>
+<li>Of those 5 letters, 3 are L, so \(\mathrm{P}(\text{L}\mid\text{not a vowel})=\dfrac{3}{5}=0.6\) <span class="mark">M1 A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{3}{5}=0.6\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: A two-way table and a Venn diagram</h4>
+<p class="src">Book: Worked example 4.10, p.109; Exercise 4E Q2, p.110</p>
+<p>The table shows the numbers of students in a class of 24 who study Art (\(A\)) and who study Drama (\(D\)).</p>
+<table>
+<thead><tr><th></th><th>\(A\)</th><th>\(A'\)</th><th>Totals</th></tr></thead>
+<tbody>
+<tr><th>\(D\)</th><td>8</td><td>4</td><td>12</td></tr>
+<tr><th>\(D'\)</th><td>6</td><td>6</td><td>12</td></tr>
+<tr><th>Totals</th><td>14</td><td>10</td><td>24</td></tr>
+</tbody>
+</table>
+<figure class="venn-static">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 240" width="420" style="display:block;width:100%;max-width:420px;height:auto" role="img" aria-labelledby="s1-44-title s1-44-desc"><title id="s1-44-title">Art and Drama Venn diagram</title><desc id="s1-44-desc">A rectangle represents 24 students. The Art circle contains 6 only and 8 in the overlap. The Drama circle contains 4 only in addition to the overlap. Outside both circles is 6.</desc>
+<rect x="8" y="8" width="404" height="224" rx="5" fill="white" stroke="#334155" stroke-width="2"/>
+<text x="20" y="32" font-family="Arial,sans-serif" font-size="15" fill="#334155">24 students</text>
+<circle cx="170" cy="120" r="78" fill="none" stroke="#1B3A6B" stroke-width="2"/>
+<circle cx="250" cy="120" r="78" fill="none" stroke="#1B3A6B" stroke-width="2"/>
+<g font-family="Arial,sans-serif" text-anchor="middle" fill="#1B3A6B">
+<text x="145" y="58" font-size="16">Art</text>
+<text x="275" y="58" font-size="16">Drama</text>
+<text x="140" y="126" font-size="20">6</text>
+<text x="210" y="126" font-size="20">8</text>
+<text x="280" y="126" font-size="20">4</text>
+<text x="360" y="200" font-size="20">6</text>
+</g>
+</svg>
+<figcaption>The four regions are Art only 6, both 8, Drama only 4, and neither 6.</figcaption>
+</figure>
+<p>One student is chosen at random. Find the probability that the student (a) studies Drama, given that they study Art (b) does not study Art, given that they do not study Drama.</p>
+<ol class="steps">
+<li>(a) 14 study Art, and 8 of these study Drama, so \(\mathrm{P}(D\mid A)=\dfrac{8}{14}=\dfrac{4}{7}\) <span class="mark">M1 A1</span></li>
+<li>(b) 12 do not study Drama, and 6 of these do not study Art, so \(\mathrm{P}(A'\mid D')=\dfrac{6}{12}=\dfrac12\) <span class="mark">M1 A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> (a) \(\dfrac{4}{7}\approx0.571\) (b) \(\dfrac12=0.5\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 3: A second selection, given the first</h4>
+<p class="src">Book: Worked example 4.11, p.109; Exercise 4E Q3, p.110</p>
+<p>Two children are selected at random from a group of 6 girls and 4 boys. Find the probability that the second child selected is a girl, given that the first child selected is (a) a girl (b) a boy.</p>
+<ol class="steps">
+<li>(a) If the first is a girl, 5 girls and 4 boys remain, so \(\mathrm{P}(\text{second is a girl}\mid\text{first is a girl})=\dfrac{5}{9}\) <span class="mark">B1</span></li>
+<li>(b) If the first is a boy, 6 girls and 3 boys remain, so \(\mathrm{P}(\text{second is a girl}\mid\text{first is a boy})=\dfrac{6}{9}=\dfrac23\) <span class="mark">B1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> (a) \(\dfrac{5}{9}\approx0.556\) (b) \(\dfrac23\approx0.667\)</p>
+</div>
+<h3>Independence, seen through a conditional probability</h3>
+<p>Section 4.3 defined independent events by the multiplication law. A matching description is that each event is unaffected by the occurrence of the other: the probability that \(X\) occurs is the same when \(Y\) occurs and when \(Y\) does not occur, that is \(\mathrm{P}(X\mid Y)=\mathrm{P}(X\mid Y')\). (This formal statement begins at the end of p.111 and is completed at the top of p.112, immediately before the heading of Section 4.5.)</p>
+<h3>Quick checks</h3>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>A letter is selected at random from the word BANANA. Find the probability that an N is selected, given that an A is not selected.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>BANANA has 6 letters, of which 3 are not A (B, N, N)</li>
+<li>Of those 3 letters, 2 are N, so the probability is \(\dfrac{2}{3}\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{2}{3}\approx0.667\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>In a group of 20 students, 12 study French and 8 of those 12 also study Spanish. One student is chosen at random. Find the probability that the student studies Spanish, given that the student studies French.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>12 study French, and 8 of these study Spanish, so the probability is \(\dfrac{8}{12}=\dfrac{2}{3}\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{2}{3}\approx0.667\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>Two counters are selected at random from a bag containing 5 red counters and 3 blue counters. Find the probability that the second counter is red, given that the first counter is red.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>If the first is red, 4 red and 3 blue remain, so the probability is \(\dfrac{4}{7}\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{4}{7}\approx0.571\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 4</h4>
+<p>The following table shows the numbers of members of a club.</p>
+<table>
+<thead><tr><th></th><th>Junior</th><th>Senior</th><th>Totals</th></tr></thead>
+<tbody>
+<tr><th>Female</th><td>7</td><td>8</td><td>15</td></tr>
+<tr><th>Male</th><td>5</td><td>10</td><td>15</td></tr>
+<tr><th>Totals</th><td>12</td><td>18</td><td>30</td></tr>
+</tbody>
+</table>
+<p>One member is chosen at random. Find the probability that the member is female, given that the member is a senior.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>18 members are seniors, and 8 of these are female, so the probability is \(\dfrac{8}{18}=\dfrac{4}{9}\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{4}{9}\approx0.444\)</p>
+</details>
+</div>
+<p class="marks-key"><strong>Marks:</strong> M = method, A = accurate answer (depends on M), B = independent mark. Marks on worked examples are illustrative, not official. Give exact fractions or answers correct to 3 significant figures. The denominator of a conditional probability is the number of outcomes in the given event, not the size of the original sample space.</p>
+</section>

@@ -1,0 +1,663 @@
+[
+ {
+  "id": "P23-4.2-QC1-gen",
+  "section": "P23-4.2",
+  "kind": "generated",
+  "title": "Quotient rule: gradient of (ax+b)/(x−c)",
+  "marks": 4,
+  "source": "P23 Ch4 theory P23-4.2 Quick check 1 (y = (3x+1)/(x−2) at x = 3, gradient −7)",
+  "params": [
+   {
+    "name": "a",
+    "min": 2,
+    "max": 5,
+    "step": 1
+   },
+   {
+    "name": "b",
+    "min": 1,
+    "max": 9,
+    "step": 1
+   },
+   {
+    "name": "c",
+    "min": 1,
+    "max": 5,
+    "step": 1
+   },
+   {
+    "name": "d",
+    "min": -2,
+    "max": 2,
+    "step": 1
+   }
+  ],
+  "derived": {
+   "k": "c+d",
+   "N": "a*c+b"
+  },
+  "constraints": [
+   "d!=0"
+  ],
+  "original": {
+   "a": 3,
+   "b": 1,
+   "c": 2,
+   "d": 1
+  },
+  "stem": "Find the gradient of the curve \\(y=\\dfrac{{{a|int}x+{b|int}}}{{x-{c|int}}}\\) at the point where \\(x={k|int}\\).",
+  "answer": {
+   "expression": "-(a*c+b)/d**2",
+   "format": "{G|num}",
+   "tolerance": 0.005
+  },
+  "steps": [
+   {
+    "name": "m1",
+    "text_tex": "\\(\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}=\\dfrac{{{a|int}(x-{c|int})-({a|int}x+{b|int})\\times1}}{{(x-{c|int})^2}}\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Quotient rule (vu′ − uv′)/v², correct order."
+   },
+   {
+    "name": "a1",
+    "text_tex": "\\(=-\\dfrac{{{N|int}}}{{(x-{c|int})^2}}\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "A1",
+    "note": "Numerator simplified correctly."
+   },
+   {
+    "name": "m2",
+    "text_tex": "\\(x={k|int}\\): \\(-\\dfrac{{{N|int}}}{{({d|int})^2}}\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Substitute the x-value."
+   },
+   {
+    "name": "G",
+    "text_tex": "\\(={G|num}\\)",
+    "result": "-N/d**2",
+    "format": "num",
+    "mark": "A1",
+    "note": "Correct gradient."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem, params and step texts above"
+   },
+   {
+    "id": "tangent",
+    "stem": "Find the gradient of the tangent to the curve \\(y=\\dfrac{{{a|int}x+{b|int}}}{{x-{c|int}}}\\) at the point where \\(x={k|int}\\).",
+    "params": [
+     {
+      "name": "a",
+      "min": 2,
+      "max": 4,
+      "step": 1
+     },
+     {
+      "name": "b",
+      "min": 1,
+      "max": 6,
+      "step": 1
+     },
+     {
+      "name": "c",
+      "min": 1,
+      "max": 4,
+      "step": 1
+     }
+    ]
+   },
+   {
+    "id": "value",
+    "stem": "Given that \\(y=\\dfrac{{{a|int}x+{b|int}}}{{x-{c|int}}}\\), find the value of \\(\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}\\) when \\(x={k|int}\\).",
+    "params": [
+     {
+      "name": "a",
+      "min": 2,
+      "max": 7,
+      "step": 1
+     },
+     {
+      "name": "b",
+      "min": 1,
+      "max": 12,
+      "step": 1
+     },
+     {
+      "name": "c",
+      "min": 2,
+      "max": 6,
+      "step": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "P23-4.2-QC2-gen",
+  "section": "P23-4.2",
+  "kind": "generated",
+  "title": "Quotient rule: stationary point of x²/(ax−b)",
+  "marks": 5,
+  "source": "P23 Ch4 theory P23-4.2 Quick check 2 (y = x²/(2x−1): x = 1, y = 1)",
+  "params": [
+   {
+    "name": "a",
+    "min": 2,
+    "max": 5,
+    "step": 1
+   },
+   {
+    "name": "b",
+    "min": 1,
+    "max": 6,
+    "step": 1
+   }
+  ],
+  "derived": {
+   "tb": "2*b",
+   "X0": "2*b/a"
+  },
+  "constraints": [
+   "abs((2*b/a)*100-round((2*b/a)*100))<1e-6",
+   "abs((4*b/a**2)*100-round((4*b/a**2)*100))<1e-6  # exact coordinates"
+  ],
+  "original": {
+   "a": 2,
+   "b": 1
+  },
+  "stem": "The curve \\(y=\\dfrac{{x^2}}{{{a|int}x-{b|int}}}\\) has a stationary point where \\(x\\neq0\\). Find (a) its \\(x\\)-coordinate, (b) its \\(y\\)-coordinate.",
+  "answer": {
+   "parts": [
+    {
+     "part": "a",
+     "expression": "2*b/a",
+     "format": "{X|num}",
+     "tolerance": 0.005
+    },
+    {
+     "part": "b",
+     "expression": "4*b/a**2",
+     "format": "{Y|num}",
+     "tolerance": 0.005
+    }
+   ]
+  },
+  "steps": [
+   {
+    "name": "m1",
+    "text_tex": "\\(\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}=\\dfrac{{({a|int}x-{b|int})(2x)-x^2({a|int})}}{{({a|int}x-{b|int})^2}}\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Quotient rule, correct order."
+   },
+   {
+    "name": "a1",
+    "text_tex": "\\(=\\dfrac{{x({a|int}x-{tb|int})}}{{({a|int}x-{b|int})^2}}\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "A1",
+    "note": "Numerator ax² − 2bx, factorised."
+   },
+   {
+    "name": "X",
+    "text_tex": "(a) \\({a|int}x-{tb|int}=0\\Rightarrow x={X|num}\\)",
+    "result": "2*b/a",
+    "format": "num",
+    "mark": "A1",
+    "note": "Non-zero root."
+   },
+   {
+    "name": "m2",
+    "text_tex": "(b) \\(y=\\dfrac{{({X|num})^2}}{{{a|int}\\times{X|num}-{b|int}}}\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Substitute their x into y."
+   },
+   {
+    "name": "Y",
+    "text_tex": "\\(={Y|num}\\)",
+    "result": "X**2/(a*X-b)",
+    "format": "num",
+    "mark": "A1",
+    "note": "Correct y-coordinate."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem, params and step texts above"
+   },
+   {
+    "id": "turning",
+    "stem": "The curve \\(y=\\dfrac{{x^2}}{{{a|int}x-{b|int}}}\\) has two turning points, one of which is the origin. Find (a) the \\(x\\)-coordinate, (b) the \\(y\\)-coordinate of the other turning point.",
+    "params": [
+     {
+      "name": "a",
+      "min": 2,
+      "max": 4,
+      "step": 1
+     },
+     {
+      "name": "b",
+      "min": 1,
+      "max": 8,
+      "step": 1
+     }
+    ]
+   },
+   {
+    "id": "gradient-zero",
+    "stem": "Find the coordinates of the point, other than the origin, where the curve \\(y=\\dfrac{{x^2}}{{{a|int}x-{b|int}}}\\) has gradient zero: (a) the \\(x\\)-coordinate, (b) the \\(y\\)-coordinate.",
+    "params": [
+     {
+      "name": "a",
+      "min": 2,
+      "max": 5,
+      "step": 1
+     },
+     {
+      "name": "b",
+      "min": 2,
+      "max": 10,
+      "step": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "P23-4.2-QC3-gen",
+  "section": "P23-4.2",
+  "kind": "generated",
+  "title": "Quotient rule: gradient of (x²+p)/(x+q)",
+  "marks": 4,
+  "source": "P23 Ch4 theory P23-4.2 Quick check 3 (y = (x²+5)/(x+2) at x = 0, gradient −1.25)",
+  "params": [
+   {
+    "name": "p",
+    "min": 1,
+    "max": 9,
+    "step": 1
+   },
+   {
+    "name": "q",
+    "min": 1,
+    "max": 4,
+    "step": 1
+   },
+   {
+    "name": "k",
+    "min": 0,
+    "max": 3,
+    "step": 1
+   }
+  ],
+  "derived": {
+   "r": "k+q",
+   "N": "k*k+2*k*q-p",
+   "tq": "2*q"
+  },
+  "constraints": [
+   "abs(((k*k+2*k*q-p)/(k+q)**2)*100-round(((k*k+2*k*q-p)/(k+q)**2)*100))<1e-6"
+  ],
+  "original": {
+   "p": 5,
+   "q": 2,
+   "k": 0
+  },
+  "stem": "Find the gradient of the curve \\(y=\\dfrac{{x^2+{p|int}}}{{x+{q|int}}}\\) at the point where \\(x={k|int}\\).",
+  "answer": {
+   "expression": "(k*k+2*k*q-p)/(k+q)**2",
+   "format": "{G|num}",
+   "tolerance": 0.005
+  },
+  "steps": [
+   {
+    "name": "m1",
+    "text_tex": "\\(\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}=\\dfrac{{(x+{q|int})(2x)-(x^2+{p|int})(1)}}{{(x+{q|int})^2}}\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Quotient rule, correct order."
+   },
+   {
+    "name": "a1",
+    "text_tex": "\\(=\\dfrac{{x^2+{tq|int}x-{p|int}}}{{(x+{q|int})^2}}\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "A1",
+    "note": "Numerator simplified."
+   },
+   {
+    "name": "m2",
+    "text_tex": "\\(x={k|int}\\): \\(\\dfrac{{{N|int}}}{{{r|int}^2}}\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Substitute the x-value."
+   },
+   {
+    "name": "G",
+    "text_tex": "\\(={G|num}\\)",
+    "result": "N/r**2",
+    "format": "num",
+    "mark": "A1",
+    "note": "Correct gradient."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem, params and step texts above"
+   },
+   {
+    "id": "tangent",
+    "stem": "Find the gradient of the tangent to the curve \\(y=\\dfrac{{x^2+{p|int}}}{{x+{q|int}}}\\) at the point where \\(x={k|int}\\).",
+    "params": [
+     {
+      "name": "p",
+      "min": 1,
+      "max": 12,
+      "step": 1
+     },
+     {
+      "name": "q",
+      "min": 1,
+      "max": 3,
+      "step": 1
+     },
+     {
+      "name": "k",
+      "min": 0,
+      "max": 4,
+      "step": 1
+     }
+    ]
+   },
+   {
+    "id": "value",
+    "stem": "Given that \\(y=\\dfrac{{x^2+{p|int}}}{{x+{q|int}}}\\), find the value of \\(\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}\\) when \\(x={k|int}\\).",
+    "params": [
+     {
+      "name": "p",
+      "min": 2,
+      "max": 15,
+      "step": 1
+     },
+     {
+      "name": "q",
+      "min": 1,
+      "max": 5,
+      "step": 1
+     },
+     {
+      "name": "k",
+      "min": 1,
+      "max": 5,
+      "step": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "P23-4.2-PP-9709-21-ON20-Q8a",
+  "section": "P23-4.2",
+  "kind": "pastpaper",
+  "title": "Stationary points of (4x³+8x−4)/(2x−1) (quotient rule)",
+  "marks": 5,
+  "source": {
+   "paper": "9709/21/O/N/20 Q8(a)",
+   "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w20_qp_21.pdf",
+   "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w20_ms_21.pdf",
+   "note": "Text taken from the QP and MS PDFs (UCLES 2020). Only part (a) is used (part (b) is division and integration). The engine takes one number per part; the question asks for coordinates, so the y-coordinates of the two stationary points are entered (the x-coordinates are shown in the worked steps)."
+  },
+  "stem": "A curve has equation \\(y=\\mathrm{f}(x)\\) where \\(\\mathrm{f}(x)=\\dfrac{4x^3+8x-4}{2x-1}\\).\n(a) Find an expression for \\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\) and hence find the coordinates of each of the stationary points of the curve \\(y=\\mathrm{f}(x)\\).",
+  "parts": [
+   {
+    "part": "(a)(i)",
+    "stem": "Enter the y-coordinate of the stationary point with the smaller x-coordinate.",
+    "marks": 4,
+    "answer": {
+     "expression": "4",
+     "official": "(0, 4)",
+     "tolerance": 0,
+     "tolerance_range": [
+      4,
+      4
+     ]
+    },
+    "steps": [
+     {
+      "name": "m1",
+      "text_tex": "Quotient rule (or product rule)",
+      "result": "None",
+      "format": "num",
+      "mark": "M1",
+      "note": "MS: *M1 Differentiate using the quotient rule (or product rule)."
+     },
+     {
+      "name": "a1",
+      "text_tex": "\\(\\dfrac{(2x-1)(12x^2+8)-2(4x^3+8x-4)}{(2x-1)^2}\\)",
+      "result": "None",
+      "format": "num",
+      "mark": "A1",
+      "note": "MS: A1 Obtain (2x − 1)(12x² + 8) − 2(4x³ + 8x − 4) over (2x − 1)² OE."
+     },
+     {
+      "name": "m2",
+      "text_tex": "\\(16x^3-12x^2=0\\Rightarrow4x^2(4x-3)=0\\), \\(x=0\\) or \\(x=\\frac34\\)",
+      "result": "None",
+      "format": "num",
+      "mark": "M1",
+      "note": "MS: DM1 Equate first derivative to zero and attempt solution (dependent on *M1)."
+     },
+     {
+      "name": "y1",
+      "text_tex": "\\((0,\\ 4)\\)",
+      "result": "4",
+      "format": "int",
+      "mark": "A1",
+      "note": "MS: A1 Obtain (0, 4). Allow if given separately."
+     }
+    ]
+   },
+   {
+    "part": "(a)(ii)",
+    "stem": "Enter the y-coordinate of the other stationary point.",
+    "marks": 1,
+    "answer": {
+     "expression": "59/8",
+     "official": "(3/4, 59/8)",
+     "tolerance": 0.01,
+     "tolerance_range": [
+      7.37,
+      7.385
+     ],
+     "also": [7.38, 7.375]
+    },
+    "steps": [
+     {
+      "name": "y2",
+      "text_tex": "\\(\\left(\\frac34,\\ \\frac{59}{8}\\right)\\)",
+      "result": "59/8",
+      "format": "num",
+      "mark": "A1",
+      "note": "MS: A1 Obtain (3/4, 59/8). Allow A1 if both x-coordinates are given but y-coordinates omitted."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "P23-4.2-PP-ON20-Q8a-similar",
+  "section": "P23-4.2",
+  "kind": "generated",
+  "title": "Stationary points of (ax³ + kqx − q)/(kx − 1)",
+  "marks": 5,
+  "source": "Similar to 9709/21/O/N/20 Q8(a); same mark structure (M1 A1 M1 A1 A1)",
+  "params": [
+   {
+    "name": "a",
+    "min": 1,
+    "max": 12,
+    "step": 1
+   },
+   {
+    "name": "k",
+    "min": 2,
+    "max": 3,
+    "step": 1
+   },
+   {
+    "name": "q",
+    "min": 1,
+    "max": 9,
+    "step": 1
+   }
+  ],
+  "derived": {
+   "kq": "k*q",
+   "X0": "3/(2*k)",
+   "tak": "2*a*k",
+   "ta": "3*a"
+  },
+  "constraints": [
+   "abs((27*a/(4*k**3))*100-round((27*a/(4*k**3))*100))<1e-6  # exact y-coordinate"
+  ],
+  "original": {
+   "a": 8,
+   "k": 2,
+   "q": 4
+  },
+  "stem": "A curve has equation \\(y=\\dfrac{{{a|int}x^3+{kq|int}x-{q|int}}}{{{k|int}x-1}}\\). Find \\(\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}\\) and hence find the coordinates of the stationary points: (a) the \\(y\\)-coordinate of the stationary point on the \\(y\\)-axis, (b) the \\(x\\)-coordinate and (c) the \\(y\\)-coordinate of the other stationary point.",
+  "answer": {
+   "parts": [
+    {
+     "part": "a",
+     "expression": "q",
+     "format": "{Y1|num}",
+     "tolerance": 0.005
+    },
+    {
+     "part": "b",
+     "expression": "3/(2*k)",
+     "format": "{X2|num}",
+     "tolerance": 0.005
+    },
+    {
+     "part": "c",
+     "expression": "27*a/(4*k**3)+q",
+     "format": "{Y2|num}",
+     "tolerance": 0.005
+    }
+   ]
+  },
+  "steps": [
+   {
+    "name": "m1",
+    "text_tex": "\\(\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}=\\dfrac{{({k|int}x-1)(3{a|int}x^2+{kq|int})-{k|int}({a|int}x^3+{kq|int}x-{q|int})}}{{({k|int}x-1)^2}}\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Quotient (or product) rule."
+   },
+   {
+    "name": "a1",
+    "text_tex": "\\(=\\dfrac{{x^2\\left({tak|int}x-{ta|int}\\right)}}{{({k|int}x-1)^2}}\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "A1",
+    "note": "Correct derivative OE."
+   },
+   {
+    "name": "X2",
+    "text_tex": "\\(x=0\\) or \\(x={X2|num}\\)",
+    "result": "3/(2*k)",
+    "format": "num",
+    "mark": "M1",
+    "note": "Equate to zero and solve (dependent on M1)."
+   },
+   {
+    "name": "Y1",
+    "text_tex": "(a) \\(x=0\\): \\(y={Y1|num}\\)",
+    "result": "(a*0+kq*0-q)/(k*0-1)",
+    "format": "num",
+    "mark": "A1",
+    "note": "Correct point on the y-axis (0, q)."
+   },
+   {
+    "name": "Y2",
+    "text_tex": "(c) \\(y={Y2|num}\\)",
+    "result": "(a*X2**3+kq*X2-q)/(k*X2-1)",
+    "format": "num",
+    "mark": "A1",
+    "note": "Correct second point."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem, params and step texts above"
+   },
+   {
+    "id": "turning",
+    "stem": "The curve \\(y=\\dfrac{{{a|int}x^3+{kq|int}x-{q|int}}}{{{k|int}x-1}}\\) has two stationary points. Find (a) the \\(y\\)-coordinate of the one where \\(x=0\\), (b) the \\(x\\)-coordinate and (c) the \\(y\\)-coordinate of the other one.",
+    "params": [
+     {
+      "name": "a",
+      "min": 1,
+      "max": 8,
+      "step": 1
+     },
+     {
+      "name": "k",
+      "min": 2,
+      "max": 3,
+      "step": 1
+     },
+     {
+      "name": "q",
+      "min": 1,
+      "max": 6,
+      "step": 1
+     }
+    ]
+   },
+   {
+    "id": "fx",
+    "stem": "It is given that \\(\\mathrm{{f}}(x)=\\dfrac{{{a|int}x^3+{kq|int}x-{q|int}}}{{{k|int}x-1}}\\). Find (a) \\(\\mathrm{{f}}(0)\\), which is a stationary value, (b) the \\(x\\)-coordinate and (c) the \\(y\\)-coordinate of the other stationary point of \\(y=\\mathrm{{f}}(x)\\).",
+    "params": [
+     {
+      "name": "a",
+      "min": 2,
+      "max": 16,
+      "step": 1
+     },
+     {
+      "name": "k",
+      "min": 2,
+      "max": 3,
+      "step": 1
+     },
+     {
+      "name": "q",
+      "min": 2,
+      "max": 12,
+      "step": 1
+     }
+    ]
+   }
+  ]
+ }
+]

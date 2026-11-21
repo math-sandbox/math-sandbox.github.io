@@ -1,0 +1,86 @@
+<section class="theory" data-section="P1-6.1">
+<h2>6.1 Binomial expansion of \((a+b)^n\)</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 1 Coursebook (Sue Pemberton, series editor Julian Gilbey), Chapter 6 Series, printed pp.156–160. Own wording and new numbers, following the coursebook expansion of \((a+b)^n\) for small positive integers \(n\) using Pascal’s triangle.</p>
+<p class="key-words"><strong>Key words:</strong> <em>binomial expansion</em>, <em>Pascal’s triangle</em></p>
+<h3>Expanding \((a+b)^n\)</h3>
+<p>Multiplying out \((a+b)^n\) for a positive integer \(n\) gives a binomial expansion with \(n+1\) terms:</p>
+<p>\[(a+b)^2=a^2+2ab+b^2,\qquad (a+b)^3=a^3+3a^2b+3ab^2+b^3.\]</p>
+<p>In each term the powers of \(a\) and \(b\) add up to \(n\). Reading from left to right, the power of \(a\) falls by one each time and the power of \(b\) rises by one.</p>
+<h3>Pascal’s triangle</h3>
+<p>The coefficients form a pattern called Pascal’s triangle. Each row starts and ends with 1, and every other number is the sum of the two numbers above it. Row \(n\) gives the coefficients of \((a+b)^n\).</p>
+<p>\[\begin{array}{c} 1\\ 1\quad 1\\ 1\quad 2\quad 1\\ 1\quad 3\quad 3\quad 1\\ 1\quad 4\quad 6\quad 4\quad 1\\ 1\quad 5\quad 10\quad 10\quad 5\quad 1\end{array}\]</p>
+<div class="ms-widget" data-widget="pascal-triangle"></div>
+<script src="../../assets/widget-kinds-pkg15.js"></script>
+<p>When a term such as \(-2x\) or \(3x^2\) takes the place of \(b\), put it in brackets so that the whole term is raised to each power. To find a coefficient in a product such as \((2+x)(1-x)^4\), only the products of terms that give the required power are needed.</p>
+<div class="worked-example">
+<h4>Worked example 1: A full expansion</h4>
+<p class="src">Coursebook, 6.1, expansion with Pascal’s triangle. New numbers.</p>
+<p>Expand \((2+x)^4\).</p>
+<ol class="steps">
+<li>Row 4 of Pascal’s triangle is 1, 4, 6, 4, 1, so \((2+x)^4=2^4+4(2^3)x+6(2^2)x^2+4(2)x^3+x^4\). <span class="mark">M1</span></li>
+<li>\(=16+32x+24x^2+8x^3+x^4\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(16+32x+24x^2+8x^3+x^4\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: A coefficient in a product</h4>
+<p class="src">Coursebook, 6.1, coefficients in products of expansions. New numbers.</p>
+<p>Find the coefficient of \(x\) in the expansion of \((2+x)(1-x)^4\).</p>
+<ol class="steps">
+<li>\((1-x)^4=1-4x+6x^2-\cdots\) <span class="mark">B1</span></li>
+<li>The terms in \(x\) come from \(2\times(-4x)\) and \(x\times1\). <span class="mark">M1</span></li>
+<li>Coefficient \(=-8+1=-7\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(-7\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul>
+<li>Writing \(3x^2\) instead of \((3x)^2=9x^2\): the whole term must be squared.</li>
+<li>Losing a minus sign: with \((1-2x)\), the odd powers of \(x\) have negative coefficients.</li>
+<li>In a product, missing one of the pairs of terms that give the required power.</li>
+</ul>
+<h3>Past paper</h3>
+<p class="src">9709/11/O/N/23 Q1, official QP and official MS.</p>
+<p>(a) Expand \((1+3x)^6\) in ascending powers of \(x\) up to, and including, the term in \(x^2\). [2]</p><p>(b) Hence find the coefficient of \(x^2\) in the expansion of \((1-7x+x^2)(1+3x)^6\). [2]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(a) \(1+18x+135x^2\) <span class="mark">B2</span> Official MS: B2, 1, 0 for 1 + 18x + 135x². Accept 1, 18x, 135x² listed horizontally or vertically or 1x⁰ + 18x + 135x².</li>
+<li>(b) The coefficient of \(x^2\) is \(135-7\times18+1\). <span class="mark">M1</span> Official MS: M1, 3 products. If full expansion given, like terms must be collected for M1.</li>
+<li>(b) \(=10\) <span class="mark">A1</span> Official MS: A1, 10; allow 10x².</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/12/O/N/10 Q1, official QP and official MS.</p>
+<p>(i) Find the first 3 terms in the expansion, in ascending powers of \(x\), of \((1-2x^2)^8\). [2]</p><p>(ii) Find the coefficient of \(x^4\) in the expansion of \((2-x^2)(1-2x^2)^8\). [2]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(i) \(1+8(-2x^2)+{}^{8}C_{2}(-2x^2)^2=1-16x^2+112x^4\) <span class="mark">B2</span> Official MS: B2, 1. Loses 1 for each error.</li>
+<li>(ii) \((2-x^2)(1-16x^2+112x^4)\): exactly two products give \(x^4\), namely \(2\times112x^4\) and \(-x^2\times(-16x^2)\). <span class="mark">M1</span> Official MS: M1, (2 − x²) × their (1 − 16x² + 112x⁴). Must consider exactly 2 terms.</li>
+<li>(ii) Coefficient \(=2\times112+16=240\) <span class="mark">A1</span> Official MS: A1 ft, (2 × their 112) − their (−16) = 240.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>Find the coefficient of \(x\) in the expansion of \((1+2x)^5\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>The term in \(x\) is \(5\times2x\), so the coefficient is \(10\).</li></ol>
+<p class="final"><strong>Answer:</strong> \(10\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>Find the coefficient of \(x^2\) in the expansion of \((1+3x)^4\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>Row 4 is 1, 4, 6, 4, 1, so the term is \(6(3x)^2\).</li><li>\(6\times9=54\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(54\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>Find the coefficient of \(x\) in the expansion of \((2+x)^5\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>The term in \(x\) is \(5\times2^4\times x\).</li><li>\(5\times16=80\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(80\)</p>
+</details>
+</div>
+</section>

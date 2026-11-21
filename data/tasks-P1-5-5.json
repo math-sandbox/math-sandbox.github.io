@@ -1,0 +1,389 @@
+[
+  {
+    "id": "P1-5.5-QC1-gen",
+    "section": "P1-5.5",
+    "kind": "generated",
+    "title": "Adjacent side from an inverse sine in a 5-12-13 triangle",
+    "marks": 1,
+    "source": "Theory P1-5.5 Quick check 1",
+    "params": [
+      {
+        "name": "m",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "n",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "a": "m*m-n*n",
+      "b": "2*m*n",
+      "c": "m*m+n*n",
+      "A": "2*m*n"
+    },
+    "constraints": [
+      "m>n",
+      "n>=1",
+      "(m-n)%2==1",
+      "m*n!=18"
+    ],
+    "original": {
+      "m": 3,
+      "n": 2
+    },
+    "stem": "Given that \\(\\theta=\\sin^{{-1}}({a|int}/{c|int})\\) and \\(\\theta\\) is acute, find the value of \\({c|int}\\cos\\theta\\).",
+    "answer": {
+      "expression": "2*m*n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "A right-angled triangle with opposite \\({a|int}\\) and hypotenuse \\({c|int}\\) has adjacent side \\({A|int}\\), so \\({c|int}\\cos\\theta={A|int}\\).",
+        "result": "2*m*n",
+        "format": "int",
+        "mark": "A1",
+        "note": "Pythagoras; theta is acute."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original opposite 5, hypotenuse 13, adjacent 12"
+      }
+    ],
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.5"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-5.json",
+        "locator": "P1-5.5-QC1-gen"
+      }
+    }
+  },
+  {
+    "id": "P1-5.5-QC2-gen",
+    "section": "P1-5.5",
+    "kind": "generated",
+    "title": "Opposite side from an inverse cosine in a 7-24-25 triangle",
+    "marks": 1,
+    "source": "Theory P1-5.5 Quick check 2",
+    "params": [
+      {
+        "name": "m",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "n",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "a": "m*m-n*n",
+      "b": "2*m*n",
+      "c": "m*m+n*n",
+      "A": "2*m*n"
+    },
+    "constraints": [
+      "m>n",
+      "n>=1",
+      "(m-n)%2==1",
+      "m*n!=18"
+    ],
+    "original": {
+      "m": 4,
+      "n": 3
+    },
+    "stem": "Given that \\(\\theta=\\cos^{{-1}}({a|int}/{c|int})\\) and \\(\\theta\\) is acute, find the value of \\({c|int}\\sin\\theta\\).",
+    "answer": {
+      "expression": "2*m*n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "A right-angled triangle with adjacent \\({a|int}\\) and hypotenuse \\({c|int}\\) has opposite side \\({A|int}\\), so \\({c|int}\\sin\\theta={A|int}\\).",
+        "result": "2*m*n",
+        "format": "int",
+        "mark": "A1",
+        "note": "Pythagoras; theta is acute."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original adjacent 7, hypotenuse 25, opposite 24"
+      }
+    ],
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.5"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-5.json",
+        "locator": "P1-5.5-QC2-gen"
+      }
+    }
+  },
+  {
+    "id": "P1-5.5-QC3-gen",
+    "section": "P1-5.5",
+    "kind": "generated",
+    "title": "Opposite side from an inverse tangent in an 8-15-17 triangle",
+    "marks": 1,
+    "source": "Theory P1-5.5 Quick check 3",
+    "params": [
+      {
+        "name": "m",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "n",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "a": "m*m-n*n",
+      "b": "2*m*n",
+      "c": "m*m+n*n",
+      "A": "2*m*n"
+    },
+    "constraints": [
+      "m>n",
+      "n>=1",
+      "(m-n)%2==1",
+      "m*n!=18"
+    ],
+    "original": {
+      "m": 4,
+      "n": 1
+    },
+    "stem": "Given that \\(\\theta=\\tan^{{-1}}({b|int}/{a|int})\\) and \\(\\theta\\) is acute, find the value of \\({c|int}\\sin\\theta\\).",
+    "answer": {
+      "expression": "2*m*n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "A right-angled triangle with opposite \\({b|int}\\) and adjacent \\({a|int}\\) has hypotenuse \\({c|int}\\), so \\({c|int}\\sin\\theta={A|int}\\).",
+        "result": "2*m*n",
+        "format": "int",
+        "mark": "A1",
+        "note": "sin theta equals opposite over hypotenuse."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original opposite 8, adjacent 15, hypotenuse 17"
+      }
+    ],
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.5"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-5.json",
+        "locator": "P1-5.5-QC3-gen"
+      }
+    }
+  },
+  {
+    "id": "P1-5.5-PP-9709-13-ON22-Q6",
+    "section": "P1-5.5",
+    "kind": "pastpaper",
+    "title": "Exact value of 1 over sin alpha plus 1 over tan alpha, given inverse cosine",
+    "marks": 5,
+    "source": {
+      "paper": "9709/13/O/N/22 Q6",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w22_qp_13.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w22_ms_13.pdf",
+      "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+    },
+    "stem": "<p>It is given that \\(\\alpha=\\cos^{{-1}}\\bigl(\\dfrac{{8}}{{17}}\\bigr)\\).</p><p>Find, without using the trigonometric functions on your calculator, the exact value of \\(\\dfrac{{1}}{{\\sin\\alpha}}+\\dfrac{{1}}{{\\tan\\alpha}}\\). [5]</p>",
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.5"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 5,
+      "difficulty": "hard",
+      "type": "pp",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-5.json",
+        "locator": "P1-5.5-PP-9709-13-ON22-Q6"
+      }
+    },
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "Use of \\(\\sin^2\\alpha+\\cos^2\\alpha=1\\), or Pythagoras with the \\(8\\), \\(15\\), \\(17\\) triple, is seen.",
+        "result": "None",
+        "format": "raw",
+        "mark": "*M1",
+        "note": "Official MS: *M1, use of sin² + cos² = 1 e.g. sin α = ±√(1 − (8/17)²), or Pythagoras seen (may quote 8, 15, 17 triple)."
+      },
+      {
+        "name": "s2",
+        "text_tex": "\\(\\sin\\alpha=\\dfrac{15}{17}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, sin α = 15/17."
+      },
+      {
+        "name": "s3",
+        "text_tex": "\\(\\tan\\alpha=\\dfrac{15}{8}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, tan α = 15/8."
+      },
+      {
+        "name": "s4",
+        "text_tex": "The reciprocals are formed and added: \\(\\dfrac{17}{15}+\\dfrac{8}{15}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: DM1, dealing with reciprocals and addition of fractions correctly."
+      },
+      {
+        "name": "s5",
+        "text_tex": "The exact value is \\(\\dfrac{5}{3}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: 5/3 or equivalent. Correct answer with no working shown scores 0. Extra answers from sin α = −15/17 are allowed."
+      }
+    ]
+  },
+  {
+    "id": "P1-5.5-PP-9709-12-FM16-Q4",
+    "section": "P1-5.5",
+    "kind": "pastpaper",
+    "title": "An inverse-sine equation and a factorised trigonometric equation",
+    "marks": 6,
+    "source": {
+      "paper": "9709/12/F/M/16 Q4",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m16_qp_12.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m16_ms_12.pdf",
+      "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+    },
+    "stem": "<p>(a) Solve the equation \\(\\sin^{{-1}}(3x)=-\\dfrac{{\\pi}}{{3}}\\), giving the solution in an exact form. [2]</p><p>(b) Solve, by factorising, the equation</p><p>\\(2\\cos\\theta\\sin\\theta-2\\cos\\theta\\) \\(-\\sin\\theta+1=0\\)</p><p>for \\(0\\le\\theta\\le\\pi\\). [4]</p>",
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.5"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 6,
+      "difficulty": "hard",
+      "type": "pp",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-5.json",
+        "locator": "P1-5.5-PP-9709-12-FM16-Q4"
+      }
+    },
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "(a) \\(3x=-\\dfrac{{\\sqrt{{3}}}}{{2}}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1, 3x = -sqrt(3)/2. Accept -0.866 at this stage."
+      },
+      {
+        "name": "s2",
+        "text_tex": "(a) \\(x=-\\dfrac{{\\sqrt{{3}}}}{{6}}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, x = -sqrt(3)/6 oe, or -3/(6 sqrt 3) or -1/(2 sqrt 3)."
+      },
+      {
+        "name": "s3",
+        "text_tex": "(b) \\((2\\cos\\theta-1)(\\sin\\theta-1)=0\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1, reasonable attempt to factorise and solve."
+      },
+      {
+        "name": "s4",
+        "text_tex": "(b) \\(\\cos\\theta=\\dfrac{{1}}{{2}}\\) or \\(\\sin\\theta=1\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, cos theta = 1/2 or sin theta = 1. Award B1B1 www."
+      },
+      {
+        "name": "s5",
+        "text_tex": "(b) \\(\\theta=\\dfrac{{\\pi}}{{3}}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, pi/3. Allow 1.05. SCA1 for both 60 degrees, 90 degrees."
+      },
+      {
+        "name": "s6",
+        "text_tex": "(b) \\(\\theta=\\dfrac{{\\pi}}{{2}}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, pi/2. Allow 1.57."
+      }
+    ]
+  }
+]

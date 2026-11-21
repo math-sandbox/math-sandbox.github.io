@@ -1,0 +1,179 @@
+[
+  {
+    "id": "IGCSE-15.3-QC1-gen",
+    "section": "IGCSE-15.3",
+    "kind": "generated",
+    "title": "Find an opposite side from the sine ratio in a 3-5 family",
+    "marks": 1,
+    "source": "Theory IGCSE-15.3 Quick check 1 (sin A=3/5, hyp=20, opp=12); book sine-ratio work on printed pp.489–490, new numbers",
+    "params": [
+      {
+        "name": "k",
+        "min": 2,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "H": "5*k",
+      "O": "3*k"
+    },
+    "constraints": [
+      "k>=2"
+    ],
+    "original": {
+      "k": 4
+    },
+    "stem": "In a right-angled triangle, \\(\\sin A=3/5\\) and the hypotenuse is {H|int} cm. What is the length, in centimetres, of the opposite side to \\(A\\)?",
+    "answer": {
+      "expression": "O",
+      "format": "{O|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The opposite side is \\({H|int}\\times 3/5={O|int}\\).",
+        "result": "O",
+        "format": "int",
+        "mark": "A1",
+        "note": "O is 3k and H is 5k. Original k=4 gives hyp 20 and opp 12."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-15.3-QC2-gen",
+    "section": "IGCSE-15.3",
+    "kind": "generated",
+    "title": "Find an opposite side using tan of 45 degrees",
+    "marks": 1,
+    "source": "Theory IGCSE-15.3 Quick check 2 (adj=9, angle 45, opp=9); book tan-ratio work on printed p.481, new numbers",
+    "params": [
+      {
+        "name": "a",
+        "min": 3,
+        "max": 20,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "O": "a"
+    },
+    "constraints": [
+      "a>=3"
+    ],
+    "original": {
+      "a": 9
+    },
+    "stem": "In a right-angled triangle the adjacent side to a \\(45^\\circ\\) angle is {a|int} cm. What is the length, in centimetres, of the opposite side?",
+    "answer": {
+      "expression": "O",
+      "format": "{O|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\tan 45^\\circ=1\\), so the opposite side equals the adjacent side and is {O|int} cm.",
+        "result": "O",
+        "format": "int",
+        "mark": "A1",
+        "note": "O equals a. Original: 9."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-15.3-QC3-gen",
+    "section": "IGCSE-15.3",
+    "kind": "generated",
+    "title": "Find an adjacent side from the cosine ratio 1/2",
+    "marks": 1,
+    "source": "Theory IGCSE-15.3 Quick check 3 (cos A=1/2, hyp=10, adj=5); book cosine-ratio work on printed pp.489–490, new numbers",
+    "params": [
+      {
+        "name": "k",
+        "min": 2,
+        "max": 12,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "H": "k",
+      "ADJ": "k/2"
+    },
+    "constraints": [
+      "k%2==0",
+      "k>=2"
+    ],
+    "original": {
+      "k": 10
+    },
+    "stem": "In a right-angled triangle, \\(\\cos A=1/2\\) and the hypotenuse is {H|int} cm. What is the length, in centimetres, of the adjacent side to \\(A\\)?",
+    "answer": {
+      "expression": "ADJ",
+      "format": "{ADJ|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The adjacent side is \\({H|int}\\times 1/2={ADJ|int}\\).",
+        "result": "ADJ",
+        "format": "int",
+        "mark": "A1",
+        "note": "ADJ is k/2 and H is k. Original: 10/2=5."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-15.3-PP-0580-43-ON19-Q4a",
+    "section": "IGCSE-15.3",
+    "kind": "pastpaper",
+    "title": "Height of a post from an angle of elevation of 19 degrees",
+    "marks": 2,
+    "source": {
+      "paper": "0580/43/O/N/19 Q4(a)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w19_qp_43.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w19_ms_43.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2019), Question 4(a) only, including the length BC=107 m which is labelled on the official diagram. Official answer and mark allocation from the MS PDF. The item is paper/self-mark. Parts 4(b) to 4(e) are omitted (cosine rule, sine rule, area, and a bearing)."
+    },
+    "stem": "This question is 0580/43/O/N/19 Question 4(a), taken from the official QP.\n\nThe diagram shows a field, \\(ABCD\\), on horizontal ground, with \\(BC=107\\) m.\n\n(a) There is a vertical post at \\(C\\).\nFrom \\(B\\), the angle of elevation of the top of the post is \\(19^\\circ\\).\n\nFind the height of the post.  [2]",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "The horizontal distance from \\(B\\) to the post is 107 m, so if \\(h\\) is the height of the post then \\(h/107=\\tan 19^\\circ\\), or equivalently \\(h/\\sin 19^\\circ=107/\\sin 71^\\circ\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS 4(a): M1 for h/107=tan 19 or h/sin 19 = 107/sin 71, or better. Independent: h=107 tan 19."
+      },
+      {
+        "name": "A",
+        "text_tex": "\\(h=107\\tan 19^\\circ=36.843\\ldots\\), so the height is 36.8 m, to 3 significant figures.",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS 4(a): 36.8 or 36.84 to 36.84... for 2 marks. Independent: 107 tan 19 degrees = 36.84305... = 36.8 to 3 s.f."
+      }
+    ]
+  }
+]

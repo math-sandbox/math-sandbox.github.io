@@ -1,0 +1,1014 @@
+[
+  {
+    "id": "S1-4.1-QC1-gen",
+    "section": "S1-4.1",
+    "kind": "generated",
+    "title": "Equally likely outcomes: one random selection",
+    "marks": 2,
+    "source": "S1 Ch4 theory S1-4.1 Quick check 1 (14 boys, 21 girls: P(girl) = 21/35 = 0.6)",
+    "params": [
+      {
+        "name": "b",
+        "min": 8,
+        "max": 30,
+        "step": 1
+      },
+      {
+        "name": "g",
+        "min": 8,
+        "max": 30,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "N": "b+g"
+    },
+    "constraints": [],
+    "original": {
+      "b": 14,
+      "g": 21
+    },
+    "stem": "One student is chosen at random from a class of {b|int} boys and {g|int} girls. Find the probability that the student chosen is a girl.",
+    "answer": {
+      "expression": "g/N",
+      "format": "{E|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "Pf",
+        "text_tex": "\\({b|int}+{g|int}={N|int}\\) equally likely outcomes, \\({g|int}\\) favourable: \\(\\dfrac{{g|int}}{{N|int}}\\)",
+        "result": "g/N",
+        "format": "num",
+        "mark": "M1",
+        "note": "Favourable outcomes ÷ total number of equally likely outcomes."
+      },
+      {
+        "name": "E",
+        "text_tex": "\\(\\mathrm{P(girl)}=\\dfrac{{g|int}}{{N|int}}\\approx{E|sf3z}\\)",
+        "result": "Pf",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Exact fraction or 3 s.f."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "counters",
+        "stem": "A bag contains {b|int} red counters and {g|int} blue counters. One counter is taken from the bag at random. Find the probability that it is blue.",
+        "step_text": {
+          "E": "\\(\\mathrm{P(blue)}=\\dfrac{{g|int}}{{N|int}}\\approx{E|sf3z}\\)"
+        }
+      },
+      {
+        "id": "raffle",
+        "stem": "In a raffle, {b|int} tickets are sold to adults and {g|int} tickets are sold to children. One winning ticket is drawn at random. Find the probability that the winning ticket belongs to a child.",
+        "params": [
+          {
+            "name": "b",
+            "min": 20,
+            "max": 80,
+            "step": 1
+          },
+          {
+            "name": "g",
+            "min": 10,
+            "max": 60,
+            "step": 1
+          }
+        ],
+        "step_text": {
+          "E": "\\(\\mathrm{P(child)}=\\dfrac{{g|int}}{{N|int}}\\approx{E|sf3z}\\)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "S1-4.1-QC2-gen",
+    "section": "S1-4.1",
+    "kind": "generated",
+    "title": "Complement and expected frequency",
+    "marks": 3,
+    "source": "S1 Ch4 theory S1-4.1 Quick check 2 (P(rain) = 0.35, 80 days: 52 days without rain)",
+    "params": [
+      {
+        "name": "p",
+        "min": 0.05,
+        "max": 0.6,
+        "step": 0.05
+      },
+      {
+        "name": "n",
+        "min": 30,
+        "max": 365,
+        "step": 1
+      }
+    ],
+    "derived": {},
+    "constraints": [
+      "abs(n*(1-p)-round(n*(1-p)))<1e-6  # whole-number expectation"
+    ],
+    "original": {
+      "p": 0.35,
+      "n": 80
+    },
+    "stem": "The probability of rain on any particular day in a town is {p|raw}. On how many days is rain not expected in a period of {n|int} days?",
+    "answer": {
+      "expression": "round(n*(1-p))",
+      "format": "{E|int} days",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "q",
+        "text_tex": "\\(\\mathrm{P(no\\ rain)}=1-{p|raw}={q|raw}\\)",
+        "result": "1-p",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Complement: P(A′) = 1 − P(A)."
+      },
+      {
+        "name": "Em",
+        "text_tex": "\\({n|int}\\times{q|raw}\\)",
+        "result": "n*q",
+        "format": "num",
+        "mark": "M1",
+        "note": "Expected frequency = number of trials × probability."
+      },
+      {
+        "name": "E",
+        "text_tex": "\\(={E|int}\\) days",
+        "result": "Em",
+        "format": "int",
+        "mark": "A1",
+        "note": "Whole number of days."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "bus",
+        "stem": "The probability that a school bus is late on any particular day is {p|raw}. Find the number of days, out of {n|int} school days, on which the bus is expected not to be late.",
+        "params": [
+          {
+            "name": "p",
+            "min": 0.05,
+            "max": 0.3,
+            "step": 0.05
+          },
+          {
+            "name": "n",
+            "min": 100,
+            "max": 200,
+            "step": 1
+          }
+        ],
+        "step_text": {
+          "q": "\\(\\mathrm{P(not\\ late)}=1-{p|raw}={q|raw}\\)"
+        }
+      },
+      {
+        "id": "seeds",
+        "stem": "The probability that a seed of a certain type does not germinate is {p|raw}. A gardener plants {n|int} of these seeds. Find the number of seeds that are expected to germinate.",
+        "params": [
+          {
+            "name": "p",
+            "min": 0.05,
+            "max": 0.4,
+            "step": 0.05
+          },
+          {
+            "name": "n",
+            "min": 40,
+            "max": 500,
+            "step": 20
+          }
+        ],
+        "answer_format": "{E|int} seeds",
+        "step_text": {
+          "q": "\\(\\mathrm{P(germinates)}=1-{p|raw}={q|raw}\\)",
+          "E": "\\(={E|int}\\) seeds"
+        }
+      }
+    ]
+  },
+  {
+    "id": "S1-4.1-QC3-gen",
+    "section": "S1-4.1",
+    "kind": "generated",
+    "title": "Sample space for two dice: at least one",
+    "marks": 3,
+    "source": "S1 Ch4 theory S1-4.1 Quick check 3 (two fair six-sided dice: P(at least one 6) = 11/36 ≈ 0.306)",
+    "params": [
+      {
+        "name": "n",
+        "min": 4,
+        "max": 12,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "N": "n*n",
+      "m": "n-1",
+      "c": "2*n-1"
+    },
+    "constraints": [],
+    "original": {
+      "n": 6
+    },
+    "stem": "Two fair {n|int}-sided dice, each with faces numbered 1 to {n|int}, are thrown. Find the probability that at least one of the dice shows {n|int}.",
+    "answer": {
+      "expression": "c/N",
+      "format": "\\(\\dfrac{{c|int}}{{N|int}}\\approx{E|sf3z}\\)",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "N",
+        "text_tex": "Sample space: \\({n|int}\\times{n|int}={N|int}\\) equally likely outcomes",
+        "result": "n*n",
+        "format": "int",
+        "mark": "B1",
+        "note": "Size of the possibility space."
+      },
+      {
+        "name": "c",
+        "text_tex": "Neither die shows {n|int}: \\({m|int}\\times{m|int}\\) outcomes, so \\({N|int}-{m|int}^2={c|int}\\) favourable outcomes",
+        "result": "N-m*m",
+        "format": "int",
+        "mark": "M1",
+        "note": "Count the favourable outcomes (directly or with the complement)."
+      },
+      {
+        "name": "E",
+        "text_tex": "\\(\\dfrac{{c|int}}{{N|int}}\\approx{E|sf3z}\\)",
+        "result": "c/N",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Exact fraction or 3 s.f."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "spinners",
+        "stem": "Two fair spinners are each numbered 1 to {n|int}. Both spinners are spun once. Find the probability that at least one of the spinners lands on {n|int}.",
+        "params": [
+          {
+            "name": "n",
+            "min": 4,
+            "max": 10,
+            "step": 1
+          }
+        ]
+      },
+      {
+        "id": "cards",
+        "stem": "A card is taken at random from {n|int} cards numbered 1 to {n|int}. It is replaced and a second card is taken at random. Find the probability that at least one of the two cards taken shows {n|int}.",
+        "params": [
+          {
+            "name": "n",
+            "min": 5,
+            "max": 12,
+            "step": 1
+          }
+        ],
+        "step_text": {
+          "c": "Neither card shows {n|int}: \\({m|int}\\times{m|int}\\) outcomes, so \\({N|int}-{m|int}^2={c|int}\\) favourable outcomes"
+        }
+      }
+    ]
+  },
+  {
+    "id": "S1-4.1-QC4-gen",
+    "section": "S1-4.1",
+    "kind": "generated",
+    "title": "Probabilities of exhaustive outcomes sum to 1",
+    "marks": 3,
+    "source": "S1 Ch4 theory S1-4.1 Quick check 4 (P(1) = 0.2, P(2) = 0.35, P(4) = 2P(3): P(4) = 0.3)",
+    "params": [
+      {
+        "name": "a",
+        "min": 0.1,
+        "max": 0.4,
+        "step": 0.05
+      },
+      {
+        "name": "b",
+        "min": 0.1,
+        "max": 0.5,
+        "step": 0.05
+      }
+    ],
+    "derived": {},
+    "constraints": [
+      "1-a-b>=0.149",
+      "abs((1-a-b)/3*100-round((1-a-b)/3*100))<1e-6  # x exact to 2 d.p."
+    ],
+    "original": {
+      "a": 0.2,
+      "b": 0.35
+    },
+    "stem": "A biased spinner has four sections labelled 1, 2, 3 and 4. The probability that it lands on 1 is {a|raw} and the probability that it lands on 2 is {b|raw}. Landing on 4 is twice as likely as landing on 3. Find the probability that the spinner lands on 4.",
+    "answer": {
+      "expression": "2*(1-a-b)/3",
+      "format": "{E|raw}",
+      "tolerance": 0
+    },
+    "steps": [
+      {
+        "name": "T",
+        "text_tex": "\\({a|raw}+{b|raw}+x+2x=1\\), so \\(3x={T|raw}\\)",
+        "result": "1-a-b",
+        "format": "raw",
+        "mark": "M1",
+        "note": "The four outcomes are exhaustive and mutually exclusive, so their probabilities sum to 1."
+      },
+      {
+        "name": "X",
+        "text_tex": "\\(x=\\mathrm{P}(3)={X|raw}\\)",
+        "result": "T/3",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct P(3)."
+      },
+      {
+        "name": "E",
+        "text_tex": "\\(\\mathrm{P}(4)=2x={E|raw}\\)",
+        "result": "2*X",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct P(4)."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "tetra",
+        "stem": "A biased four-sided die has faces numbered 1, 2, 3 and 4. The probability of throwing a 1 is {a|raw} and the probability of throwing a 2 is {b|raw}. A 4 is twice as likely to be thrown as a 3. Find the probability of throwing a 4."
+      },
+      {
+        "id": "sweets",
+        "stem": "A sweet is taken at random from a jar of red, green, yellow and orange sweets. The probability that it is red is {a|raw} and the probability that it is green is {b|raw}. An orange sweet is twice as likely to be taken as a yellow sweet. Find the probability that the sweet taken is orange.",
+        "step_text": {
+          "X": "\\(x=\\mathrm{P(yellow)}={X|raw}\\)",
+          "E": "\\(\\mathrm{P(orange)}=2x={E|raw}\\)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "S1-4.1-PP-9709-62-FM16-Q3",
+    "section": "S1-4.1",
+    "kind": "pastpaper",
+    "title": "Two throws of an eight-sided die: counting outcomes",
+    "marks": 4,
+    "source": {
+      "paper": "9709/62/F/M/16 Q3(i)(ii)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m16_qp_62.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m16_ms_62.pdf",
+      "note": "Stem text verbatim from the QP PDF; steps and marks from the official MS PDF (UCLES)."
+    },
+    "stem": "A fair eight-sided die has faces marked 1, 2, 3, 4, 5, 6, 7, 8. The score when the die is thrown is the\nnumber on the face the die lands on. The die is thrown twice.\n• Event \\(R\\) is ‘one of the scores is exactly 3 greater than the other score’.\n• Event \\(S\\) is ‘the product of the scores is more than 19’.",
+    "parts": [
+      {
+        "part": "(i)",
+        "stem": "Find the probability of \\(R\\).",
+        "marks": 2,
+        "answer": {
+          "expression": "10/64",
+          "official": "10/64",
+          "accept_as": "sf",
+          "sf": 3
+        },
+        "steps": [
+          {
+            "name": "cR",
+            "text_tex": "\\(R\\): (1, 4), (2, 5), (3, 6), (4, 7), (5, 8) and the same pairs in reverse order: \\(10\\) of the \\(64\\) outcomes",
+            "result": "10",
+            "format": "int",
+            "mark": "M1",
+            "note": "MS: M1 list of at least 4 different options or possibility space diagram."
+          },
+          {
+            "name": "PR",
+            "text_tex": "\\(\\mathrm{P}(R)=\\dfrac{10}{64}\\)",
+            "result": "cR/64",
+            "format": "num",
+            "mark": "A1",
+            "note": "MS: A1 10/64."
+          }
+        ]
+      },
+      {
+        "part": "(ii)",
+        "stem": "Find the probability of \\(S\\).",
+        "marks": 2,
+        "answer": {
+          "expression": "28/64",
+          "official": "28/64",
+          "accept_as": "sf",
+          "sf": 3
+        },
+        "steps": [
+          {
+            "name": "cS",
+            "text_tex": "(3, 7), (3, 8), (4, 5), (4, 6), (4, 7), (4, 8), (5, 6), (5, 7), (5, 8), (6, 7), (6, 8), (7, 8) in either order (\\(24\\)), plus (5, 5), (6, 6), (7, 7), (8, 8): \\(28\\) outcomes",
+            "result": "28",
+            "format": "int",
+            "mark": "M1",
+            "note": "MS: M1 list of at least 14 different options or ticks oe from possibility space."
+          },
+          {
+            "name": "PS",
+            "text_tex": "\\(\\mathrm{P}(S)=\\dfrac{28}{64}\\)",
+            "result": "cS/64",
+            "format": "num",
+            "mark": "A1",
+            "note": "MS: A1 28/64."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "S1-4.1-PP-9709-61-ON15-Q7i",
+    "section": "S1-4.1",
+    "kind": "pastpaper",
+    "title": "Biased die: probabilities sum to 1",
+    "marks": 3,
+    "source": {
+      "paper": "9709/61/O/N/15 Q7(i)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w15_qp_61.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w15_ms_61.pdf",
+      "note": "Stem text verbatim from the QP PDF; steps and marks from the official MS PDF (UCLES). Only part (i) is used; parts (ii) and (iii) need later sections."
+    },
+    "stem": "The faces of a biased die are numbered 1, 2, 3, 4, 5 and 6. The probabilities of throwing odd numbers\nare all the same. The probabilities of throwing even numbers are all the same. The probability of\nthrowing an odd number is twice the probability of throwing an even number.",
+    "parts": [
+      {
+        "part": "(i)",
+        "stem": "Find the probability of throwing a 3.",
+        "marks": 3,
+        "answer": {
+          "expression": "2/9",
+          "official": "2/9 (0.222)",
+          "accept_as": "sf",
+          "sf": 3
+        },
+        "steps": [
+          {
+            "name": "pe",
+            "text_tex": "Let \\(\\mathrm{P}(2)=\\mathrm{P}(4)=\\mathrm{P}(6)=p\\); then \\(\\mathrm{P}(1)=\\mathrm{P}(3)=\\mathrm{P}(5)=2p\\)",
+            "result": "None",
+            "format": "num",
+            "mark": "M1",
+            "note": "MS: M1 using P(odd) = 2 × P(even) or vice versa oe."
+          },
+          {
+            "name": "p",
+            "text_tex": "\\(3p+6p=1\\), so \\(p=\\dfrac19\\)",
+            "result": "1/9",
+            "format": "num",
+            "mark": "M1",
+            "note": "MS: M1 summing P(odd + even) or P(1, 2, 3, 4, 5, 6) = 1."
+          },
+          {
+            "name": "P3",
+            "text_tex": "\\(\\mathrm{P}(3)=2p=\\dfrac29\\approx0.222\\)",
+            "result": "2*p",
+            "format": "num",
+            "mark": "A1",
+            "note": "MS: A1 2/9 (0.222)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "S1-4.1-PP-9709-62-MJ10-Q5",
+    "section": "S1-4.1",
+    "kind": "pastpaper",
+    "title": "Two twelve-sided dice: counting outcomes",
+    "marks": 4,
+    "source": {
+      "paper": "9709/62/M/J/10 Q5(i)(ii)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s10_qp_62.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s10_ms_62.pdf",
+      "note": "Stem text verbatim from the QP PDF; steps and marks from the official MS PDF (UCLES). Parts (iii) and (iv) are not used: (iv) is independence (later section); (iii) has a yes/no answer (see NOTES)."
+    },
+    "stem": "Two fair twelve-sided dice with sides marked 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 are thrown, and the\nnumbers on the sides which land face down are noted. Events \\(Q\\) and \\(R\\) are defined as follows.\n\\(Q\\) : the product of the two numbers is 24.\n\\(R\\) : both of the numbers are greater than 8.",
+    "parts": [
+      {
+        "part": "(i)",
+        "stem": "Find \\(\\mathrm{P}(Q)\\).",
+        "marks": 2,
+        "answer": {
+          "expression": "6/144",
+          "official": "6/144 (1/24) (0.0417)",
+          "accept_as": "sf",
+          "sf": 3
+        },
+        "steps": [
+          {
+            "name": "cQ",
+            "text_tex": "(2, 12), (3, 8), (4, 6), (6, 4), (8, 3), (12, 2): \\(6\\) of the \\(144\\) outcomes",
+            "result": "6",
+            "format": "int",
+            "mark": "M1",
+            "note": "MS: M1 listing or picking out at least 3 different options from a 12 by 12 (mult) table, or seeing 3, 4, 5 or 6 out of 144."
+          },
+          {
+            "name": "PQ",
+            "text_tex": "\\(\\mathrm{P}(Q)=\\dfrac{6}{144}=\\dfrac{1}{24}\\approx0.0417\\)",
+            "result": "cQ/144",
+            "format": "num",
+            "mark": "A1",
+            "note": "MS: A1 6/144 (1/24) (0.0417)."
+          }
+        ]
+      },
+      {
+        "part": "(ii)",
+        "stem": "Find \\(\\mathrm{P}(R)\\).",
+        "marks": 2,
+        "answer": {
+          "expression": "16/144",
+          "official": "1/9 (16/144)",
+          "accept_as": "sf",
+          "sf": 3
+        },
+        "steps": [
+          {
+            "name": "cR2",
+            "text_tex": "Each number is 9, 10, 11 or 12: \\(4\\times4=16\\) of the \\(144\\) outcomes",
+            "result": "16",
+            "format": "int",
+            "mark": "M1",
+            "note": "MS: M1 squaring a sensible probability or picking out 12–25 options."
+          },
+          {
+            "name": "PR2",
+            "text_tex": "\\(\\mathrm{P}(R)=\\dfrac{16}{144}=\\dfrac19\\)",
+            "result": "cR2/144",
+            "format": "num",
+            "mark": "A1",
+            "note": "MS: A1 1/9 (16/144)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "S1-4.1-PP-FM16-Q3-similar",
+    "section": "S1-4.1",
+    "kind": "generated",
+    "title": "Two throws: counting outcomes in a possibility space",
+    "marks": 4,
+    "source": "Similar to 9709/62/F/M/16 Q3(i)(ii); authored marks M1 A1 M1 A1 follow that MS pattern",
+    "params": [
+      {
+        "name": "n",
+        "min": 6,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "name": "d",
+        "min": 1,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "name": "k",
+        "min": 7,
+        "max": 22,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "N": "n*n",
+      "nd": "n-d",
+      "cR": "2*(n-d)",
+      "m": "2*n-k",
+      "k1": "k+1",
+      "n2": "2*n",
+      "cS": "(2*n-k)*(2*n-k+1)/2"
+    },
+    "constraints": [
+      "d<=n-2",
+      "k>=n+1",
+      "k<=2*n-2"
+    ],
+    "original": {
+      "n": 8,
+      "d": 3,
+      "k": 12
+    },
+    "stem": "A fair {n|int}-sided die has faces marked 1 to {n|int}. The die is thrown twice.\nEvent \\(R\\) is ‘one of the scores is exactly {d|int} greater than the other score’.\nEvent \\(S\\) is ‘the sum of the two scores is more than {k|int}’.\n(i) Find the probability of \\(R\\).\n(ii) Find the probability of \\(S\\).",
+    "answer": {
+      "parts": [
+        {
+          "expression": "cR/N",
+          "format": "(i) \\(\\dfrac{{cR|int}}{{N|int}}\\approx{PR|sf3z}\\)",
+          "part": "(i)",
+          "accept_as": "sf",
+          "sf": 3
+        },
+        {
+          "expression": "cS/N",
+          "format": "(ii) \\(\\dfrac{{cS|int}}{{N|int}}\\approx{PS|sf3z}\\)",
+          "part": "(ii)",
+          "accept_as": "sf",
+          "sf": 3
+        }
+      ]
+    },
+    "steps": [
+      {
+        "name": "cR",
+        "text_tex": "\\(R\\): \\((x,\\ x+{d|int})\\) for \\(x=1\\) to \\({nd|int}\\), and each pair reversed: \\(2\\times{nd|int}={cR|int}\\) of the \\({N|int}\\) outcomes",
+        "result": "2*nd",
+        "format": "int",
+        "mark": "M1",
+        "note": "List or count the favourable outcomes in the possibility space."
+      },
+      {
+        "name": "PR",
+        "text_tex": "\\(\\mathrm{P}(R)=\\dfrac{{cR|int}}{{N|int}}\\approx{PR|sf3z}\\)",
+        "result": "cR/N",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Exact fraction or 3 s.f."
+      },
+      {
+        "name": "cS",
+        "text_tex": "Sums \\({k1|int}\\) to \\({n2|int}\\) occur in \\({m|int},\\ \\ldots,\\ 2,\\ 1\\) ways: \\(1+2+\\cdots+{m|int}={cS|int}\\) outcomes",
+        "result": "m*(m+1)/2",
+        "format": "int",
+        "mark": "M1",
+        "note": "Count outcomes with sum more than k (a sum s > n occurs in 2n − s + 1 ways)."
+      },
+      {
+        "name": "PS",
+        "text_tex": "\\(\\mathrm{P}(S)=\\dfrac{{cS|int}}{{N|int}}\\approx{PS|sf3z}\\)",
+        "result": "cS/N",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Exact fraction or 3 s.f."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "spinners",
+        "stem": "Two fair spinners are each numbered 1 to {n|int}. Both spinners are spun once.\nEvent \\(R\\) is ‘one of the numbers is exactly {d|int} greater than the other number’.\nEvent \\(S\\) is ‘the sum of the two numbers is more than {k|int}’.\n(i) Find the probability of \\(R\\).\n(ii) Find the probability of \\(S\\).",
+        "params": [
+          {
+            "name": "n",
+            "min": 6,
+            "max": 10,
+            "step": 1
+          },
+          {
+            "name": "d",
+            "min": 1,
+            "max": 4,
+            "step": 1
+          },
+          {
+            "name": "k",
+            "min": 7,
+            "max": 18,
+            "step": 1
+          }
+        ]
+      },
+      {
+        "id": "cards",
+        "stem": "{n|int} cards are numbered 1 to {n|int}. A card is taken at random and replaced, then a second card is taken at random.\nEvent \\(R\\) is ‘one of the two numbers is exactly {d|int} greater than the other’.\nEvent \\(S\\) is ‘the sum of the two numbers is more than {k|int}’.\n(i) Find the probability of \\(R\\).\n(ii) Find the probability of \\(S\\).",
+        "params": [
+          {
+            "name": "n",
+            "min": 8,
+            "max": 12,
+            "step": 1
+          },
+          {
+            "name": "d",
+            "min": 2,
+            "max": 5,
+            "step": 1
+          },
+          {
+            "name": "k",
+            "min": 9,
+            "max": 22,
+            "step": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "S1-4.1-PP-ON15-Q7i-similar",
+    "section": "S1-4.1",
+    "kind": "generated",
+    "title": "Biased die or spinner: probabilities sum to 1",
+    "marks": 3,
+    "source": "Similar to 9709/61/O/N/15 Q7(i); authored marks M1 M1 A1 follow that MS",
+    "params": [
+      {
+        "name": "a",
+        "min": 3,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 3,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "name": "r",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "T": "b+a*r"
+    },
+    "constraints": [],
+    "original": {
+      "a": 3,
+      "b": 3,
+      "r": 2
+    },
+    "stem": "The faces of a biased die are numbered 1, 2, 3, 4, 5 and 6. The probabilities of throwing odd numbers are all the same. The probabilities of throwing even numbers are all the same. Each odd number is {r|int} times as likely to be thrown as each even number. Find the probability of throwing a 5.",
+    "answer": {
+      "expression": "r/T",
+      "format": "\\(\\dfrac{{r|int}}{{T|int}}\\approx{E|sf3z}\\)",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "T",
+        "text_tex": "Each even number \\(p\\), each odd number \\({r|int}p\\): \\({b|int}p+{a|int}\\times{r|int}p={T|int}p=1\\)",
+        "result": "b+a*r",
+        "format": "int",
+        "mark": "M1",
+        "note": "Set up the probabilities in the given ratio and use the fact that they sum to 1."
+      },
+      {
+        "name": "p",
+        "text_tex": "\\(p=\\dfrac{1}{{T|int}}\\)",
+        "result": "1/T",
+        "format": "sf3z",
+        "mark": "M1",
+        "note": "Solve for p."
+      },
+      {
+        "name": "E",
+        "text_tex": "\\(\\mathrm{P}(5)={r|int}p=\\dfrac{{r|int}}{{T|int}}\\approx{E|sf3z}\\)",
+        "result": "r*p",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Exact fraction or 3 s.f."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "spinner8",
+        "stem": "A biased spinner has eight sections numbered 1 to 8. Sections 4 and 8 are equally likely. The other six sections are equally likely. Landing on 4 is {r|int} times as likely as landing on 1. Find the probability that the spinner lands on 8.",
+        "params": [
+          {
+            "name": "a",
+            "min": 2,
+            "max": 2,
+            "step": 1
+          },
+          {
+            "name": "b",
+            "min": 6,
+            "max": 6,
+            "step": 1
+          },
+          {
+            "name": "r",
+            "min": 2,
+            "max": 6,
+            "step": 1
+          }
+        ],
+        "step_text": {
+          "T": "Each of the six other sections \\(p\\), sections 4 and 8 \\({r|int}p\\): \\({b|int}p+{a|int}\\times{r|int}p={T|int}p=1\\)",
+          "E": "\\(\\mathrm{P}(8)={r|int}p=\\dfrac{{r|int}}{{T|int}}\\approx{E|sf3z}\\)"
+        }
+      },
+      {
+        "id": "die10",
+        "stem": "A biased ten-sided die has faces numbered 1 to 10. The prime numbers 2, 3, 5 and 7 are equally likely. The other six numbers are equally likely. Each prime number is {r|int} times as likely to be thrown as each other number. Find the probability of throwing a 7.",
+        "params": [
+          {
+            "name": "a",
+            "min": 4,
+            "max": 4,
+            "step": 1
+          },
+          {
+            "name": "b",
+            "min": 6,
+            "max": 6,
+            "step": 1
+          },
+          {
+            "name": "r",
+            "min": 2,
+            "max": 5,
+            "step": 1
+          }
+        ],
+        "step_text": {
+          "T": "Each non-prime \\(p\\), each prime \\({r|int}p\\): \\({b|int}p+{a|int}\\times{r|int}p={T|int}p=1\\)",
+          "E": "\\(\\mathrm{P}(7)={r|int}p=\\dfrac{{r|int}}{{T|int}}\\approx{E|sf3z}\\)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "S1-4.1-PP-MJ10-Q5-similar",
+    "section": "S1-4.1",
+    "kind": "generated",
+    "title": "Two dice: counting outcomes for two events",
+    "marks": 4,
+    "source": "Similar to 9709/62/M/J/10 Q5(i)(ii); authored marks M1 A1 M1 A1 follow that MS pattern",
+    "params": [
+      {
+        "name": "n",
+        "min": 8,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "name": "m",
+        "min": 3,
+        "max": 13,
+        "step": 1
+      },
+      {
+        "name": "t",
+        "min": 2,
+        "max": 10,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "N": "n*n",
+      "cQ": "m-1",
+      "u": "n-t",
+      "t1": "t+1",
+      "cR": "(n-t)*(n-t)",
+      "m2": "m-2"
+    },
+    "constraints": [
+      "m<=n+1",
+      "t<=n-2"
+    ],
+    "original": {
+      "n": 12,
+      "m": 9,
+      "t": 8
+    },
+    "stem": "Two fair {n|int}-sided dice with sides marked 1 to {n|int} are thrown, and the numbers on the sides which land face down are noted. Events \\(Q\\) and \\(R\\) are defined as follows.\n\\(Q\\): the sum of the two numbers is {m|int}.\n\\(R\\): both of the numbers are greater than {t|int}.\n(i) Find \\(\\mathrm{P}(Q)\\).\n(ii) Find \\(\\mathrm{P}(R)\\).",
+    "answer": {
+      "parts": [
+        {
+          "expression": "cQ/N",
+          "format": "(i) \\(\\dfrac{{cQ|int}}{{N|int}}\\approx{PQ|sf3z}\\)",
+          "part": "(i)",
+          "accept_as": "sf",
+          "sf": 3
+        },
+        {
+          "expression": "cR/N",
+          "format": "(ii) \\(\\dfrac{{cR|int}}{{N|int}}\\approx{PR|sf3z}\\)",
+          "part": "(ii)",
+          "accept_as": "sf",
+          "sf": 3
+        }
+      ]
+    },
+    "steps": [
+      {
+        "name": "cQ",
+        "text_tex": "\\(Q\\): \\((1,\\ {cQ|int}),\\ (2,\\ {m2|int}),\\ \\ldots,\\ ({cQ|int},\\ 1)\\): \\({cQ|int}\\) of the \\({N|int}\\) outcomes",
+        "result": "m-1",
+        "format": "int",
+        "mark": "M1",
+        "note": "List or count the pairs with the given sum."
+      },
+      {
+        "name": "PQ",
+        "text_tex": "\\(\\mathrm{P}(Q)=\\dfrac{{cQ|int}}{{N|int}}\\approx{PQ|sf3z}\\)",
+        "result": "cQ/N",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Exact fraction or 3 s.f."
+      },
+      {
+        "name": "cR",
+        "text_tex": "Each number from \\({t1|int}\\) to \\({n|int}\\): \\({u|int}\\times{u|int}={cR|int}\\) outcomes",
+        "result": "u*u",
+        "format": "int",
+        "mark": "M1",
+        "note": "Count the outcomes in the possibility space."
+      },
+      {
+        "name": "PR",
+        "text_tex": "\\(\\mathrm{P}(R)=\\dfrac{{cR|int}}{{N|int}}\\approx{PR|sf3z}\\)",
+        "result": "cR/N",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Exact fraction or 3 s.f."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "spinners",
+        "stem": "Two fair spinners each have sides numbered 1 to {n|int}. Both are spun and the numbers they land on are noted. Events \\(Q\\) and \\(R\\) are defined as follows.\n\\(Q\\): the sum of the two numbers is {m|int}.\n\\(R\\): both of the numbers are greater than {t|int}.\n(i) Find \\(\\mathrm{P}(Q)\\).\n(ii) Find \\(\\mathrm{P}(R)\\).",
+        "params": [
+          {
+            "name": "n",
+            "min": 6,
+            "max": 10,
+            "step": 1
+          },
+          {
+            "name": "m",
+            "min": 3,
+            "max": 11,
+            "step": 1
+          },
+          {
+            "name": "t",
+            "min": 2,
+            "max": 8,
+            "step": 1
+          }
+        ]
+      },
+      {
+        "id": "cards",
+        "stem": "A card is taken at random from {n|int} cards numbered 1 to {n|int}. It is replaced and a second card is taken at random. Events \\(Q\\) and \\(R\\) are defined as follows.\n\\(Q\\): the sum of the two numbers is {m|int}.\n\\(R\\): both of the numbers are greater than {t|int}.\n(i) Find \\(\\mathrm{P}(Q)\\).\n(ii) Find \\(\\mathrm{P}(R)\\).",
+        "params": [
+          {
+            "name": "n",
+            "min": 8,
+            "max": 12,
+            "step": 1
+          },
+          {
+            "name": "m",
+            "min": 3,
+            "max": 13,
+            "step": 1
+          },
+          {
+            "name": "t",
+            "min": 3,
+            "max": 10,
+            "step": 1
+          }
+        ]
+      }
+    ]
+  }
+]

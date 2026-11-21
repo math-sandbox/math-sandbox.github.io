@@ -1,0 +1,12 @@
+<svg preserveAspectRatio="xMidYMid meet" height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 400" width="100%" style="max-width:100%;height:auto" role="img" aria-labelledby="t d">
+<title id="t">Metal plate formed from a circular disc with two semicircular pieces removed</title>
+<desc id="d">A symmetrical metal plate with centre C. The boundary consists of arc PS and arc QR of a circle of radius 4 cm, and inward semicircles with diameters PQ and RS, each of length 4 cm. Points P and Q are at the top, S and R at the bottom.</desc>
+<path d="M 154.0,103.0 A 112.0 112.0 0 0 0 98.0,200.0 A 112.0 112.0 0 0 0 154.0,297.0 A 56.0 56.0 0 0 1 210.0,241.0 A 56.0 56.0 0 0 1 266.0,297.0 A 112.0 112.0 0 0 0 322.0,200.0 A 112.0 112.0 0 0 0 266.0,103.0 A 56.0 56.0 0 0 1 210.0,159.0 A 56.0 56.0 0 0 1 154.0,103.0 Z" fill="#fdebd0" stroke="#1a1a1a" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="210.0" cy="200.0" r="2.5" fill="#111"/>
+<text x="220.0" y="205.0" font-family="serif" font-size="16">C</text>
+<text x="136.0" y="95.0" font-family="serif" font-size="16">P</text>
+<text x="272.0" y="95.0" font-family="serif" font-size="16">Q</text>
+<text x="136.0" y="315.0" font-family="serif" font-size="16">S</text>
+<text x="272.0" y="315.0" font-family="serif" font-size="16">R</text>
+<text x="20" y="24" font-family="serif" font-size="13">A symmetrical metal plate (not to scale)</text>
+</svg>

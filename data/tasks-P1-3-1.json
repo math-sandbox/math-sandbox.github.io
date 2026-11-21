@@ -1,0 +1,189 @@
+[
+  {
+    "id": "P1-3.1-QC1-gen",
+    "section": "P1-3.1",
+    "kind": "generated",
+    "title": "Length of a 6-8-10 segment",
+    "marks": 1,
+    "source": "Theory P1-3.1 Quick check 1 (length 10); new 6k-8k-10k segments",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "c": "10*k",
+      "x": "6*k",
+      "y": "8*k"
+    },
+    "constraints": [],
+    "original": {
+      "k": 1
+    },
+    "stem": "Find the length of the line segment joining \\(A(0, 0)\\) and \\(B({x|int}, {y|int})\\).",
+    "answer": {
+      "expression": "10*k",
+      "format": "{c|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "c",
+        "text_tex": "Length \\(=\\sqrt{{x|int}^2+{y|int}^2}={c|int}\\).",
+        "result": "c",
+        "format": "int",
+        "mark": "A1",
+        "note": "c is 10k. Original k=1 gives 10."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P1-3.1-QC2-gen",
+    "section": "P1-3.1",
+    "kind": "generated",
+    "title": "x-coordinate of a midpoint",
+    "marks": 1,
+    "source": "Theory P1-3.1 Quick check 2 (midpoint x=3); new even endpoints",
+    "params": [
+      {
+        "name": "x",
+        "min": 4,
+        "max": 16,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "m": "x/2"
+    },
+    "constraints": [
+      "x%2==0"
+    ],
+    "original": {
+      "x": 6
+    },
+    "stem": "The midpoint of the segment joining \\(A(0, 0)\\) and \\(B({x|int}, 8)\\) is found. What is the \\(x\\)-coordinate of the midpoint?",
+    "answer": {
+      "expression": "x/2",
+      "format": "{m|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "m",
+        "text_tex": "The \\(x\\)-coordinate is \\(\\dfrac{{x|int}}{2}={m|int}\\).",
+        "result": "m",
+        "format": "int",
+        "mark": "A1",
+        "note": "m is x/2. Original x=6 gives 3."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P1-3.1-QC3-gen",
+    "section": "P1-3.1",
+    "kind": "generated",
+    "title": "Length of a 9-12-15 segment",
+    "marks": 1,
+    "source": "Theory P1-3.1 Quick check 3 (length 15); new 9k-12k-15k segments",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 4,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "c": "15*k",
+      "x": "9*k",
+      "y": "12*k"
+    },
+    "constraints": [],
+    "original": {
+      "k": 1
+    },
+    "stem": "Find the length of the line segment joining \\(A(0, 0)\\) and \\(B({x|int}, {y|int})\\).",
+    "answer": {
+      "expression": "15*k",
+      "format": "{c|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "c",
+        "text_tex": "Length \\(=\\sqrt{{x|int}^2+{y|int}^2}={c|int}\\).",
+        "result": "c",
+        "format": "int",
+        "mark": "A1",
+        "note": "c is 15k. Original k=1 gives 15."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P1-3.1-PP-9709-13-MJ15-Q7i",
+    "section": "P1-3.1",
+    "kind": "pastpaper",
+    "title": "Distance 13 with a parameter p",
+    "marks": 3,
+    "source": {
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s15_qp_13.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s15_ms_13.pdf",
+      "note": "9709/13/M/J/15 Question 7(i) only [3]. Official QP and official MS. Part (ii) is taught in P1-3.2."
+    },
+    "marking": "manual",
+    "stem": "This question is 9709/13/M/J/15 Question 7(i) only, taken from the official QP.\n\nThe point A has coordinates (p, 1) and the point B has coordinates (9, 3p + 1), where p is a constant.\n\n(i) For the case where the distance AB is 13 units, find the possible values of p. [3]",
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "\\((9-p)^2+(3p)^2=169\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1, or equals 13."
+      },
+      {
+        "name": "Q",
+        "text_tex": "\\(10p^2-18p-88=0\\) or equivalent.",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, a 3-term quadratic."
+      },
+      {
+        "name": "A",
+        "text_tex": "\\(p=4\\) or \\(p=-\\dfrac{11}{5}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1. Independent: p=4 gives AB from (4, 1) to (9, 13), a 5-12-13 triangle. p=-11/5 gives 11.2^2+6.6^2=169."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Stem taken from the official QP PDF (UCLES 2015), Question 7(i) only. Official MS reproduced mark by mark. Paper/self-mark."
+      }
+    ]
+  }
+]

@@ -1,0 +1,194 @@
+[
+  {
+    "id": "IGCSE-19.1-QC1-gen",
+    "section": "IGCSE-19.1",
+    "kind": "generated",
+    "title": "Order of rotational symmetry of a regular polygon",
+    "marks": 1,
+    "source": "Theory IGCSE-19.1 Quick check 1; order n of a regular n-gon",
+    "params": [
+      {
+        "name": "n",
+        "min": 3,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "n"
+    },
+    "constraints": [
+      "n>=3"
+    ],
+    "original": {
+      "n": 4
+    },
+    "stem": "State the order of rotational symmetry of a regular polygon with {n|int} sides.",
+    "answer": {
+      "expression": "n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "A regular polygon with \\({n|int}\\) sides looks the same in \\({A|int}\\) positions in a full turn, so the order is \\({A|int}\\).",
+        "result": "n",
+        "format": "int",
+        "mark": "A1",
+        "note": "The order equals the number of sides of a regular polygon."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original regular quadrilateral (a square)"
+      }
+    ],
+    "tags": {
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-19.1"
+      ],
+      "topic": "Symmetry",
+      "chapter": "IGCSE-19",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-19-1.json",
+        "locator": "IGCSE-19.1-QC1-gen"
+      }
+    }
+  },
+  {
+    "id": "IGCSE-19.1-QC2-gen",
+    "section": "IGCSE-19.1",
+    "kind": "generated",
+    "title": "Lines of symmetry of a regular polygon",
+    "marks": 1,
+    "source": "Theory IGCSE-19.1 Quick check 2; a regular n-gon has n lines of symmetry",
+    "params": [
+      {
+        "name": "n",
+        "min": 3,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "n"
+    },
+    "constraints": [
+      "n>=3"
+    ],
+    "original": {
+      "n": 6
+    },
+    "stem": "How many lines of symmetry does a regular \\({n|int}\\)-sided polygon have?",
+    "answer": {
+      "expression": "n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "A regular \\({n|int}\\)-sided polygon has \\({A|int}\\) lines of symmetry.",
+        "result": "n",
+        "format": "int",
+        "mark": "A1",
+        "note": "A regular n-gon has n lines of symmetry."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original regular hexagon"
+      }
+    ],
+    "tags": {
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-19.1"
+      ],
+      "topic": "Symmetry",
+      "chapter": "IGCSE-19",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-19-1.json",
+        "locator": "IGCSE-19.1-QC2-gen"
+      }
+    }
+  },
+  {
+    "id": "IGCSE-19.1-QC3-gen",
+    "section": "IGCSE-19.1",
+    "kind": "generated",
+    "title": "Smallest angle of rotational symmetry",
+    "marks": 1,
+    "source": "Theory IGCSE-19.1 Quick check 3; 360/n for a regular n-gon",
+    "params": [
+      {
+        "name": "n",
+        "min": 3,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "360/n"
+    },
+    "constraints": [
+      "360%n==0"
+    ],
+    "original": {
+      "n": 8
+    },
+    "stem": "What is the smallest angle of rotation, in degrees, that maps a regular \\({n|int}\\)-sided polygon onto itself?",
+    "answer": {
+      "expression": "360/n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The smallest angle is \\(\\dfrac{{360^\\circ}}{{{n|int}}}={A|int}^\\circ\\).",
+        "result": "360/n",
+        "format": "int",
+        "mark": "A1",
+        "note": "Divide 360 degrees by the order."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original regular octagon"
+      }
+    ],
+    "tags": {
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-19.1"
+      ],
+      "topic": "Symmetry",
+      "chapter": "IGCSE-19",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-19-1.json",
+        "locator": "IGCSE-19.1-QC3-gen"
+      }
+    }
+  }
+]

@@ -1,0 +1,84 @@
+<section class="theory" data-section="P23-7.4">
+<h2>7.4 Binomial expansion of \((a+x)^n\) for values of \(n\) that are not positive integers</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 2 and 3 Coursebook (Sue Pemberton, Julian Gilbey), Chapter 7, printed pp.177–178. Own wording and new numbers, following the coursebook method of taking out a factor \(a^n\) so that the bracket begins with 1, and the resulting range of validity.</p>
+<p class="key-words"><strong>Key words:</strong> <em>binomial expansion</em></p>
+<h3>Taking out a factor</h3>
+<p>The binomial expansion for a value of \(n\) that is not a positive integer applies to a bracket of the form \((1+y)^n\). For \((a+x)^n\), first take out the factor \(a^n\):</p>
+<p>\[(a+x)^n=a^n\left(1+\dfrac{x}{a}\right)^n=a^n\left(1+n\left(\dfrac{x}{a}\right)+\dfrac{n(n-1)}{2!}\left(\dfrac{x}{a}\right)^2+\cdots\right).\]</p>
+<p>Remember that the whole bracket is raised to the power, so the factor taken out is \(a^n\), not \(a\). For example, \((4+x)^{1/2}=4^{1/2}\left(1+\dfrac{x}{4}\right)^{1/2}=2\left(1+\dfrac{x}{4}\right)^{1/2}\).</p>
+<h3>Range of validity</h3>
+<p>The expansion of \(\left(1+\dfrac{x}{a}\right)^n\) is valid for \(\left\lvert\dfrac{x}{a}\right\rvert&lt;1\), that is \(\lvert x\rvert&lt;\lvert a\rvert\). More generally, the expansion of \((a+bx)^n\) is valid for \(\lvert x\rvert&lt;\left\lvert\dfrac{a}{b}\right\rvert\).</p>
+<div class="worked-example">
+<h4>Worked example 1: A square root</h4>
+<p class="src">Coursebook, 7.4, expanding \((a+x)^n\) for a fractional \(n\). New numbers.</p>
+<p>Expand \(\sqrt{4+x}\) in ascending powers of \(x\) up to and including the term in \(x^2\), and state the set of values of \(x\) for which the expansion is valid.</p>
+<ol class="steps">
+<li>\(\sqrt{4+x}=2\left(1+\dfrac{x}{4}\right)^{1/2}=2\left(1+\dfrac{1}{2}\cdot\dfrac{x}{4}+\dfrac{\frac{1}{2}\left(-\frac{1}{2}\right)}{2}\left(\dfrac{x}{4}\right)^2+\cdots\right)\) <span class="mark">M1</span></li>
+<li>\(=2+\dfrac{x}{4}-\dfrac{x^2}{64}\) <span class="mark">A1</span></li>
+<li>Valid for \(\lvert x\rvert&lt;4\). <span class="mark">B1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(2+\dfrac{1}{4}x-\dfrac{1}{64}x^2\), valid for \(\lvert x\rvert&lt;4\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: A negative power</h4>
+<p class="src">Coursebook, 7.4, expanding \((a+bx)^n\) for a negative integer \(n\). New numbers.</p>
+<p>Expand \((2-x)^{-2}\) in ascending powers of \(x\) up to and including the term in \(x^2\).</p>
+<ol class="steps">
+<li>\((2-x)^{-2}=\dfrac{1}{4}\left(1-\dfrac{x}{2}\right)^{-2}=\dfrac{1}{4}\left(1+(-2)\left(-\dfrac{x}{2}\right)+\dfrac{(-2)(-3)}{2}\left(-\dfrac{x}{2}\right)^2+\cdots\right)\) <span class="mark">M1</span></li>
+<li>\(=\dfrac{1}{4}\left(1+x+\dfrac{3}{4}x^2\right)=\dfrac{1}{4}+\dfrac{1}{4}x+\dfrac{3}{16}x^2\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{1}{4}+\dfrac{1}{4}x+\dfrac{3}{16}x^2\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul>
+<li>Taking out \(a\) instead of \(a^n\), for example writing \((9+x)^{1/2}=9\left(1+\dfrac{x}{9}\right)^{1/2}\) instead of \(3\left(1+\dfrac{x}{9}\right)^{1/2}\).</li>
+<li>Forgetting to divide the \(x\) term inside the bracket by \(a\).</li>
+<li>Stating the range of validity as \(\lvert x\rvert&lt;1\) for \((a+bx)^n\), instead of \(\lvert x\rvert&lt;\left\lvert\dfrac{a}{b}\right\rvert\).</li>
+</ul>
+<h3>Past paper</h3>
+<p class="src">9709/33/M/J/12 Q1, official QP and official MS.</p>
+<p>Expand \(\dfrac{1}{\sqrt{(4+3x)}\,}\) in ascending powers of \(x\), up to and including the term in \(x^2\), simplifying the coefficients. [4]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>A correct unsimplified version of the \(x\) or \(x^2\) term of the expansion of \((4+3x)^{-\frac12}\) or \(\left(1+\frac{3}{4}x\right)^{-\frac12}\) is obtained. <span class="mark">M1</span> Official MS: M1 (EITHER). OR: differentiate and evaluate f(0) and f′(0), where f′(x) = k(4 + 3x) to the power −3/2. Symbolic coefficients, e.g. (−½ over 2) in binomial form, are not sufficient for the M or B mark.</li>
+<li>The first term is \(\dfrac{1}{2}\). <span class="mark">B1</span> Official MS: B1, state correct first term 1/2.</li>
+<li>The next term is \(-\dfrac{3}{16}x\). <span class="mark">A1</span> Official MS: A1 + A1, obtain the next two terms −(3/16)x + (27/256)x².</li>
+<li>The term in \(x^2\) is \(+\dfrac{27}{256}x^2\). <span class="mark">A1</span> Official MS: second A1 of A1 + A1. The expansion is 1/2 − (3/16)x + (27/256)x².</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/33/M/J/17 Q2, official QP and official MS.</p>
+<p>Expand \((3+2x)^{-3}\) in ascending powers of \(x\) up to and including the term in \(x^2\), simplifying the coefficients. [4]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>A correct unsimplified version of the \(x\) or \(x^2\) term in the expansion of \(\left(1+\frac{2}{3}x\right)^{-3}\) or \((3+2x)^{-3}\) is stated. <span class="mark">M1</span> Official MS: M1 (EITHER). Symbolic binomial coefficients, e.g. (−3 over 2) in binomial form, are not sufficient for M1. OR: differentiate and evaluate f(0) and f′(0), where f′(x) = k(3 + 2x) to the power −4.</li>
+<li>The first term is \(\dfrac{1}{27}\). <span class="mark">B1</span> Official MS: B1, state correct first term 1/27.</li>
+<li>The term in \(x\) is \(-\dfrac{2}{27}x\). <span class="mark">A1</span> Official MS: A1, obtain term −(2/27)x.</li>
+<li>The term in \(x^2\) is \(\dfrac{8}{81}x^2\). <span class="mark">A1</span> Official MS: A1, obtain term (8/81)x².</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>The expansion of \((6+2x)^{-2}\) in ascending powers of \(x\) is valid for \(\lvert x\rvert&lt;k\). Find the value of \(k\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\((6+2x)^{-2}=6^{-2}\left(1+\dfrac{x}{3}\right)^{-2}\), valid for \(\left\lvert\dfrac{x}{3}\right\rvert&lt;1\).</li></ol>
+<p class="final"><strong>Answer:</strong> \(k=3\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>Find the coefficient of \(x\) in the expansion of \(\sqrt{9+4x}\) in ascending powers of \(x\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\sqrt{9+4x}=3\left(1+\dfrac{4x}{9}\right)^{1/2}=3\left(1+\dfrac{2x}{9}+\cdots\right)\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{2}{3}\approx0.667\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>Find the coefficient of \(x^2\) in the expansion of \(\dfrac{1}{3+2x}\) in ascending powers of \(x\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\((3+2x)^{-1}=\dfrac{1}{3}\left(1-\dfrac{2x}{3}+\dfrac{4x^2}{9}-\cdots\right)\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{4}{27}\approx0.148\)</p>
+</details>
+</div>
+</section>

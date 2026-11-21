@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" width="420" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:420px;height:auto" role="img" aria-labelledby="IGCSE-14-5-parabola-x2-plus-6x-plus-5-t IGCSE-14-5-parabola-x2-plus-6x-plus-5-d">
+<title id="IGCSE-14-5-parabola-x2-plus-6x-plus-5-t">Graph of y = x squared plus 6x plus 5</title>
+<desc id="IGCSE-14-5-parabola-x2-plus-6x-plus-5-d">A valley parabola crossing the x-axis at negative 5 and negative 1, with turning point at (negative 3, negative 4) and y-intercept 5.</desc>
+<rect x="0" y="0" width="420" height="300" fill="#fff"/>
+<g font-family="Source Sans 3, DejaVu Sans, sans-serif" font-size="13" fill="#333">
+  <line x1="36.00" y1="165.20" x2="384.00" y2="165.20" stroke="#333" stroke-width="1.6"/>
+  <line x1="302.55" y1="264.00" x2="302.55" y2="36.00" stroke="#333" stroke-width="1.6"/>
+  <polygon points="384.00,165.20 374.00,161.20 374.00,169.20" fill="#333"/>
+  <polygon points="302.55,36.00 298.55,46.00 306.55,46.00" fill="#333"/>
+  <text x="372.00" y="183.20" >x</text>
+  <text x="312.55" y="40.00" >y</text>
+  <line x1="191.49" y1="264.00" x2="191.49" y2="36.00" stroke="#c9a227" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <polyline points="62.10,40.33 66.45,52.61 70.80,64.46 75.15,75.90 79.50,86.91 83.85,97.51 88.20,107.68 92.55,117.44 96.90,126.77 101.25,135.69 105.60,144.19 109.95,152.26 114.30,159.92 118.65,167.16 123.00,173.98 127.35,180.38 131.70,186.35 136.05,191.91 140.40,197.05 144.75,201.77 149.10,206.07 153.45,209.95 157.80,213.41 162.15,216.45 166.50,219.07 170.85,221.28 175.20,223.06 179.55,224.42 183.90,225.36 188.25,225.88 192.60,225.99 196.95,225.67 201.30,224.93 205.65,223.78 210.00,222.20 214.35,220.20 218.70,217.79 223.05,214.95 227.40,211.70 231.75,208.02 236.10,203.93 240.45,199.42 244.80,194.48 249.15,189.13 253.50,183.35 257.85,177.16 262.20,170.55 266.55,163.52 270.90,156.06 275.25,148.19 279.60,139.90 283.95,131.19 288.30,122.06 292.65,112.51 297.00,102.54 301.35,92.15 305.70,81.34 310.05,70.11 314.40,58.46 318.75,46.39 323.10,36.00" fill="none" stroke="#1b5e8a" stroke-width="2.4"/>
+  <text x="317.36" y="55.76" fill="#1b5e8a">y = x² + 6x + 5</text>
+  <circle cx="265.53" cy="165.20" r="3.5" fill="#c0392b"/>
+  <circle cx="117.45" cy="165.20" r="3.5" fill="#c0392b"/>
+  <circle cx="302.55" cy="89.20" r="3.5" fill="#1b7a3a"/>
+  <circle cx="191.49" cy="226.00" r="4" fill="#1b5e8a"/>
+  <text x="117.45" y="183.20" text-anchor="middle" >−5</text>
+  <text x="265.53" y="183.20" text-anchor="middle" >−1</text>
+  <text x="310.55" y="81.20" >5</text>
+  <text x="183.49" y="218.00" text-anchor="end" >(−3, −4)</text>
+  <text x="191.49" y="50.00" text-anchor="middle" fill="#8a6d12" font-size="12">x = −3</text>
+</g>
+</svg>

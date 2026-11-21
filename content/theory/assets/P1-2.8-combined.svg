@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 300" width="440" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:440px;height:auto" role="img" aria-labelledby="P1-2-8-combined-t P1-2-8-combined-d">
+<title id="P1-2-8-combined-t">The graph y equals 12 x squared after a stretch of factor one half parallel to the x-axis and then a stretch of factor 3 parallel to the y-axis</title>
+<desc id="P1-2-8-combined-d">Starting from y equals x squared, replacing x by 2x and then multiplying by 3 gives y equals 12 x squared. That is a stretch of scale factor 1/2 parallel to the x-axis followed by a stretch of scale factor 3 parallel to the y-axis.</desc>
+<rect x="0" y="0" width="440" height="300" fill="#fff"/>
+<g font-family="Source Sans 3, DejaVu Sans, sans-serif" font-size="13" fill="#333">
+  <line x1="40" y1="250" x2="400" y2="250" stroke="#333" stroke-width="1.5"/>
+  <line x1="220" y1="280" x2="220" y2="20" stroke="#333" stroke-width="1.5"/>
+  <polygon points="400,250 390,246 390,254" fill="#333"/>
+  <polygon points="220,20 216,30 224,30" fill="#333"/>
+  <text x="390" y="268">x</text>
+  <text x="228" y="28">y</text>
+  <polyline points="100.00,203.92 105.00,207.68 110.00,211.28 115.00,214.72 120.00,218.00 125.00,221.12 130.00,224.08 135.00,226.88 140.00,229.52 145.00,232.00 150.00,234.32 155.00,236.48 160.00,238.48 165.00,240.32 170.00,242.00 175.00,243.52 180.00,244.88 185.00,246.08 190.00,247.12 195.00,248.00 200.00,248.72 205.00,249.28 210.00,249.68 215.00,249.92 220.00,250.00 225.00,249.92 230.00,249.68 235.00,249.28 240.00,248.72 245.00,248.00 250.00,247.12 255.00,246.08 260.00,244.88 265.00,243.52 270.00,242.00 275.00,240.32 280.00,238.48 285.00,236.48 290.00,234.32 295.00,232.00 300.00,229.52 305.00,226.88 310.00,224.08 315.00,221.12 320.00,218.00 325.00,214.72 330.00,211.28 335.00,207.68 340.00,203.92" fill="none" stroke="#1b5e8a" stroke-width="2.2"/>
+  <polyline points="175.00,172.24 176.88,178.58 178.75,184.66 180.62,190.47 182.50,196.00 184.38,201.26 186.25,206.26 188.12,210.99 190.00,215.44 191.88,219.62 193.75,223.54 195.62,227.19 197.50,230.56 199.38,233.66 201.25,236.50 203.12,239.06 205.00,241.36 206.88,243.38 208.75,245.14 210.62,246.62 212.50,247.84 214.38,248.78 216.25,249.46 218.12,249.87 220.00,250.00 221.88,249.87 223.75,249.46 225.62,248.78 227.50,247.84 229.38,246.62 231.25,245.14 233.12,243.38 235.00,241.36 236.88,239.06 238.75,236.50 240.62,233.66 242.50,230.56 244.38,227.19 246.25,223.54 248.12,219.62 250.00,215.44 251.88,210.99 253.75,206.26 255.62,201.26 257.50,196.00 259.38,190.47 261.25,184.66 263.12,178.58 265.00,172.24" fill="none" stroke="#c0392b" stroke-width="2.2"/>
+  <text x="48" y="60" fill="#1b5e8a">y = x&#178;</text>
+  <text x="290" y="60" fill="#c0392b">y = 12x&#178;</text>
+</g>
+</svg>

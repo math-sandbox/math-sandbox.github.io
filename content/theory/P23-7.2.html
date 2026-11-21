@@ -1,0 +1,64 @@
+<section class="theory" data-section="P23-7.2">
+<h2>7.2 Partial fractions</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 2 and 3 Coursebook (Sue Pemberton, Julian Gilbey), Chapter 7, printed pp.168–173. Own wording and new numbers, following the coursebook decomposition of a proper rational expression into partial fractions, including a repeated linear factor and an irreducible quadratic factor.</p>
+<p class="key-words"><strong>Key words:</strong> <em>partial fractions</em></p>
+<h3>The standard forms</h3>
+<p>Once a rational expression is proper, it can be written as a sum of simpler fractions whose denominators are the factors of the original denominator. The usual cases are as follows.</p>
+<ul>
+<li>A product of distinct linear factors, \((ax+b)(cx+d)\), gives \(\dfrac{A}{ax+b}+\dfrac{B}{cx+d}\).</li>
+<li>A repeated linear factor, \((ax+b)^2\), gives \(\dfrac{A}{ax+b}+\dfrac{B}{(ax+b)^2}\).</li>
+<li>An irreducible quadratic factor, \(x^2+px+q\), gives a numerator of the form \(Cx+D\) over that quadratic.</li>
+</ul>
+<p>The constants are found by clearing the denominator and either substituting convenient values of \(x\) (the cover-up method, when the factor is linear and not repeated) or equating coefficients. An improper fraction must first be reduced, as in 7.1, before this decomposition begins.</p>
+<div class="worked-example">
+<h4>Worked example 1: Distinct linear factors</h4>
+<p class="src">Coursebook, 7.2, two-linear-factor style. New expression \(\dfrac{x+5}{(x+1)(x+2)}\).</p>
+<p>Express \(\dfrac{x+5}{(x+1)(x+2)}\) in partial fractions.</p>
+<ol class="steps">
+<li>Write \(\dfrac{x+5}{(x+1)(x+2)}=\dfrac{A}{x+1}+\dfrac{B}{x+2}\), so \(x+5=A(x+2)+B(x+1)\). <span class="mark">M1</span></li>
+<li>Putting \(x=-1\) gives \(A=4\); putting \(x=-2\) gives \(B=-3\). Hence \(\dfrac{4}{x+1}-\dfrac{3}{x+2}\). <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{4}{x+1}-\dfrac{3}{x+2}\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: A repeated linear factor</h4>
+<p class="src">Coursebook, 7.2, repeated-factor style. New expression \(\dfrac{3x+1}{(x+1)^2}\).</p>
+<p>Express \(\dfrac{3x+1}{(x+1)^2}\) in partial fractions.</p>
+<ol class="steps">
+<li>Write \(\dfrac{3x+1}{(x+1)^2}=\dfrac{A}{x+1}+\dfrac{B}{(x+1)^2}\), so \(3x+1=A(x+1)+B\). <span class="mark">M1</span></li>
+<li>Putting \(x=-1\) gives \(B=-2\); equating coefficients of \(x\) gives \(A=3\). Hence \(\dfrac{3}{x+1}-\dfrac{2}{(x+1)^2}\). <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{3}{x+1}-\dfrac{2}{(x+1)^2}\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul>
+<li>Omitting the term \(\dfrac{B}{(ax+b)^2}\) when a linear factor is repeated, or using a constant numerator over an irreducible quadratic.</li>
+<li>Starting the decomposition on an improper fraction.</li>
+</ul>
+<h3>Past paper</h3>
+<p>There is no whole past-paper question on this subsection alone. Questions that begin with partial fractions and then ask for a binomial expansion belong to 7.5.</p>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>Express \(\dfrac{x+7}{(x+1)(x+3)}\) in partial fractions. Give the numerator of the term with denominator \(x+1\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{x+7}{(x+1)(x+3)}=\dfrac{A}{x+1}+\dfrac{B}{x+3}\). Putting \(x=-1\) gives \(A=3\).</li></ol>
+<p class="final"><strong>Answer:</strong> \(3\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>Express \(\dfrac{x+7}{(x+1)(x+3)}\) in partial fractions. Give the numerator of the term with denominator \(x+3\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>Putting \(x=-3\) gives \(B=-2\).</li></ol>
+<p class="final"><strong>Answer:</strong> \(-2\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>Express \(\dfrac{2x+3}{(x+1)^2}\) in partial fractions. Give the numerator of the term with denominator \((x+1)^2\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{2x+3}{(x+1)^2}=\dfrac{A}{x+1}+\dfrac{B}{(x+1)^2}\). Putting \(x=-1\) gives \(B=1\).</li></ol>
+<p class="final"><strong>Answer:</strong> \(1\)</p>
+</details>
+</div>
+</section>

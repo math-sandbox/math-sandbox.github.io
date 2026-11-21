@@ -1,0 +1,64 @@
+<section class="theory" data-section="P23-1.6">
+<h2>1.6 The remainder theorem</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 2 &amp; 3 Coursebook (Hugh Neill, Douglas Quadling and Julian Gilbey), Chapter 1 Algebra, printed pp.18–21 (Key points 1.5–1.6, Worked examples 1.12–1.13, Exercise 1F). Own wording and new numbers. Long division itself was taught in P23-1.4; the method here is substitution.</p>
+<p class="key-words"><strong>Key words:</strong> <em>remainder theorem</em>, <em>remainder</em>, <em>polynomial</em></p>
+<p>If a polynomial \(P(x)\) is divided by \(x-c\) to give a polynomial \(Q(x)\) and a remainder \(R\), then
+\[
+P(x)=(x-c)Q(x)+R.
+\]
+Substituting \(x=c\) gives \(P(c)=R\). This is the remainder theorem.</p>
+<p>A common error is substituting the wrong point for a remainder, for example using \(P(c)\) when the divisor is \(x+c\).</p>
+<p><strong>Key point.</strong> If a polynomial \(P(x)\) is divided by \(x-c\), the remainder is \(P(c)\).</p>
+<p>The remainder theorem can be extended. If a polynomial \(P(x)\) is divided by \(ax-b\), the remainder is \(P\bigl(\dfrac{b}{a}\bigr)\).</p>
+<p>When the remainder is \(0\), the divisor is a factor, which recovers the factor theorem of the previous subsection. The remainder can be found by substitution, without carrying out the long division.</p>
+<div class="worked-example">
+<h4>Worked example 1: A remainder by substitution</h4>
+<p class="src">Book: Worked example 1.12, p.19; new cubic</p>
+<p>Use the remainder theorem to find the remainder when \(x^3-5x+7\) is divided by \(x+2\).</p>
+<ol class="steps">
+<li>Let \(f(x)=x^3-5x+7\). Division is by \(x-(-2)\), so the remainder is \(f(-2)\). <span class="mark">M1</span></li>
+<li>\(f(-2)=(-2)^3-5(-2)+7=-8+10+7=9\). <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(9\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: Two remainder conditions</h4>
+<p class="src">Book: Worked example 1.13, pp.19–20; new cubic</p>
+<p>The function \(f(x)=x^3+ax^2+bx-6\) is such that, when \(f(x)\) is divided by \(x-1\), the remainder is \(4\), and when \(f(x)\) is divided by \(x+2\), the remainder is \(-2\). Find the value of \(a\) and the value of \(b\).</p>
+<ol class="steps">
+<li>By the remainder theorem, \(f(1)=4\) and \(f(-2)=-2\). <span class="mark">M1</span></li>
+<li>\(f(1)=1+a+b-6=4\), so \(a+b=9\). \(f(-2)=-8+4a-2b-6=-2\), so \(4a-2b=12\), or \(2a-b=6\). <span class="mark">M1</span></li>
+<li>Adding \(a+b=9\) and \(2a-b=6\) gives \(3a=15\), so \(a=5\). Then \(b=9-5=4\). <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(a=5\), \(b=4\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul>
+<li>For division by \(x+c\), substituting \(x=c\) instead of \(x=-c\).</li>
+<li>For division by \(ax-b\), substituting \(x=a/b\) instead of \(x=b/a\).</li>
+<li>Carrying out a full long division when the question only asks for the remainder, which the remainder theorem gives directly.</li>
+</ul>
+<h3>Quick checks</h3>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>Find the remainder when \(x^3-5x+7\) is divided by \(x+2\).</p>
+<details><summary>Worked solution</summary>
+<p>The remainder is \(f(-2)=(-2)^3-5(-2)+7=9\).</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>Find the remainder when \(x^3-5x+7\) is divided by \(x-2\).</p>
+<details><summary>Worked solution</summary>
+<p>The remainder is \(f(2)=8-10+7=5\).</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>When \(x^3+ax^2+bx-6\) is divided by \(x-1\) the remainder is \(4\), and when it is divided by \(x+2\) the remainder is \(-2\). What is the value of \(a\)?</p>
+<details><summary>Worked solution</summary>
+<p>As in Worked example 2, \(a=5\).</p>
+</details>
+</div>
+<p class="marks-key">B marks are for a correct statement; M marks are for a correct method; A marks are for an accurate result.</p>
+</section>

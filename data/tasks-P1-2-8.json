@@ -1,0 +1,200 @@
+[
+  {
+    "id": "P1-2.8-QC1-gen",
+    "section": "P1-2.8",
+    "kind": "generated",
+    "title": "Y-coordinate after a y-stretch then a vertical translation",
+    "marks": 1,
+    "source": "Theory P1-2.8 Quick check 1 (point (0, 1) maps to (0, 5) after stretch factor 3 then translation +2); new positive factors and translations",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 1,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "a+b"
+    },
+    "constraints": [
+      "a>=2",
+      "b>=1"
+    ],
+    "original": {
+      "a": 3,
+      "b": 2
+    },
+    "stem": "The point \\((0, 1)\\) lies on the graph of \\(y=f(x)\\). A stretch of scale factor {a|int} parallel to the \\(y\\)-axis is applied, then a translation of {b|int} units in the positive \\(y\\)-direction. What is the \\(y\\)-coordinate of the image of this point?",
+    "answer": {
+      "expression": "a+b",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The stretch sends \\((0, 1)\\) to \\((0, {a|int})\\). The translation then adds {b|int}, giving \\(y\\)-coordinate \\({a|int}+{b|int}={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is a+b. Original a=3, b=2 gives 5."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P1-2.8-QC2-gen",
+    "section": "P1-2.8",
+    "kind": "generated",
+    "title": "Coefficient after an x-stretch of y=x squared then a y-stretch",
+    "marks": 1,
+    "source": "Theory P1-2.8 Quick check 2 (stretch x-factor 1/2 then y-factor 3 on y=x^2 gives y=12x^2); new y-stretch factors",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "4*a"
+    },
+    "constraints": [
+      "a>=2"
+    ],
+    "original": {
+      "a": 3
+    },
+    "stem": "The graph of \\(y=x^2\\) is stretched by scale factor \\(\\dfrac{1}{2}\\) parallel to the \\(x\\)-axis and then by scale factor {a|int} parallel to the \\(y\\)-axis. The resulting graph has equation \\(y=cx^2\\). What is the value of \\(c\\)?",
+    "answer": {
+      "expression": "4*a",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Replacing \\(x\\) by \\(2x\\) gives \\(y=(2x)^2=4x^2\\). Multiplying by {a|int} then gives \\(y={A|int}x^2\\), so \\(c={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is 4a. Original a=3 gives c=12."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P1-2.8-QC3-gen",
+    "section": "P1-2.8",
+    "kind": "generated",
+    "title": "Y-stretch factor from a combined equation y=a f(x-1)",
+    "marks": 1,
+    "source": "Theory P1-2.8 Quick check 3 (in y=2f(x-1) the y-stretch factor is 2); new positive factors",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 9,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "a"
+    },
+    "constraints": [
+      "a>=2"
+    ],
+    "original": {
+      "a": 2
+    },
+    "stem": "The graph of \\(y=f(x)\\) is translated by 1 unit in the positive \\(x\\)-direction and then stretched by scale factor {a|int} parallel to the \\(y\\)-axis, giving \\(y={a|int}f(x-1)\\). What is the scale factor of the stretch parallel to the \\(y\\)-axis?",
+    "answer": {
+      "expression": "a",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The factor multiplying the function is {A|int}, which is the scale factor of the stretch parallel to the \\(y\\)-axis.",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A equals a. Original a=2 gives 2."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P1-2.8-PP-9709-12-FM23-Q2",
+    "section": "P1-2.8",
+    "kind": "pastpaper",
+    "title": "Equation after a stretch, a reflection and a second stretch",
+    "marks": 4,
+    "source": {
+      "paper": "9709/12/F/M/23 Q2",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m23_qp_12.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m23_ms_12.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2023), Question 2, including the scale factor 1/2 verified on the official page. Official answer and mark allocation from the MS PDF. The item is paper/self-mark."
+    },
+    "stem": "This question is 9709/12/F/M/23 Question 2, taken from the official QP.\n\nA function \\(f\\) is defined by \\(f(x)=x^2-2x+5\\) for \\(x\\in\\mathbb{R}\\). A sequence of transformations is applied in the following order to the graph of \\(y=f(x)\\) to give the graph of \\(y=g(x)\\).\n\nStretch parallel to the \\(x\\)-axis with scale factor \\(\\dfrac{1}{2}\\)\n\nReflection in the \\(y\\)-axis\n\nStretch parallel to the \\(y\\)-axis with scale factor 3\n\nFind \\(g(x)\\), giving your answer in the form \\(ax^2+bx+c\\), where \\(a\\), \\(b\\) and \\(c\\) are constants.  [4]",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "S",
+        "text_tex": "The stretch of scale factor \\(\\dfrac{1}{2}\\) parallel to the \\(x\\)-axis replaces \\(x\\) by \\(2x\\): \\((2x)^2-2(2x)+5=4x^2-4x+5\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS Q2: M1 for replacing x by 2x, or the completed-square form leading to (2x-1)^2+4."
+      },
+      {
+        "name": "R",
+        "text_tex": "The reflection in the \\(y\\)-axis then replaces \\(x\\) by \\(-x\\): \\(4(-x)^2-4(-x)+5=4x^2+4x+5\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS Q2: M1 for replacing x by -x, follow through on their stretch."
+      },
+      {
+        "name": "Y",
+        "text_tex": "The stretch of scale factor 3 parallel to the \\(y\\)-axis multiplies the whole function by 3: \\(g(x)=3(4x^2+4x+5)\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS Q2: M1 for multiplying the whole function by 3, follow through on their stretch plus reflection."
+      },
+      {
+        "name": "A",
+        "text_tex": "So \\(g(x)=12x^2+12x+15\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS Q2: A1 for 12x^2+12x+15. Independent: 3(4x^2+4x+5)=12x^2+12x+15."
+      }
+    ]
+  }
+]

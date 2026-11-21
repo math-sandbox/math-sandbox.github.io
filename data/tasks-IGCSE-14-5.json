@@ -1,0 +1,223 @@
+[
+  {
+    "id": "IGCSE-14.5-QC1-gen",
+    "section": "IGCSE-14.5",
+    "kind": "generated",
+    "title": "Discriminant of a monic quadratic",
+    "marks": 1,
+    "source": "Theory IGCSE-14.5 Quick check 1 (b^2-4ac for x^2+4x+3 is 4); book Worked example 19 style, new numbers",
+    "params": [
+      {
+        "name": "b",
+        "min": 2,
+        "max": 9,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": 1,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "D": "b*b-4*c"
+    },
+    "constraints": [
+      "b*b-4*c>=1"
+    ],
+    "original": {
+      "b": 4,
+      "c": 3
+    },
+    "stem": "For the equation \\(x^2+{b|int}x+{c|int}=0\\), what is the value of \\(b^2-4ac\\)?",
+    "answer": {
+      "expression": "D",
+      "format": "{D|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(a=1\\), \\(b={b|int}\\), \\(c={c|int}\\), so \\(b^2-4ac={D|int}\\).",
+        "result": "D",
+        "format": "int",
+        "mark": "A1",
+        "note": "D is b squared minus 4c, since a is 1."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-14.5-QC2-gen",
+    "section": "IGCSE-14.5",
+    "kind": "generated",
+    "title": "Larger root of a monic quadratic",
+    "marks": 1,
+    "source": "Theory IGCSE-14.5 Quick check 2 (larger root of x^2+4x+3=0 is -1); book Worked example 19 style, new numbers",
+    "params": [
+      {
+        "name": "r",
+        "min": -6,
+        "max": -1,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": -5,
+        "max": 4,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "S": "-(r+q)",
+      "P": "r*q"
+    },
+    "constraints": [
+      "q>=r+1"
+    ],
+    "original": {
+      "r": -3,
+      "q": -1
+    },
+    "stem": "The equation \\(x^2+{S|int}x+{P|int}=0\\) has two roots. What is the larger root?",
+    "answer": {
+      "expression": "q",
+      "format": "{q|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The roots are \\({r|int}\\) and \\({q|int}\\), so the larger root is \\({q|int}\\).",
+        "result": "q",
+        "format": "int",
+        "mark": "A1",
+        "note": "q is chosen strictly larger than r. Original: roots -3 and -1."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-14.5-QC3-gen",
+    "section": "IGCSE-14.5",
+    "kind": "generated",
+    "title": "Discriminant with a not equal to 1",
+    "marks": 1,
+    "source": "Theory IGCSE-14.5 Quick check 3 (b^2-4ac for 3x^2-2x-1 is 16); book Worked example 19(c) style, new numbers",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": -6,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": -5,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "D": "b*b-4*a*c"
+    },
+    "constraints": [
+      "c!=0",
+      "b!=0",
+      "b*b-4*a*c>=1"
+    ],
+    "original": {
+      "a": 3,
+      "b": -2,
+      "c": -1
+    },
+    "stem": "For the equation \\({a|int}x^2+{b|int}x+{c|int}=0\\), what is the value of \\(b^2-4ac\\)?",
+    "answer": {
+      "expression": "D",
+      "format": "{D|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(a={a|int}\\), \\(b={b|int}\\), \\(c={c|int}\\), so \\(b^2-4ac={D|int}\\).",
+        "result": "D",
+        "format": "int",
+        "mark": "A1",
+        "note": "Keep the signs of a, b and c when computing the discriminant."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-14.5-PP-0580-42-ON19-Q6bii",
+    "section": "IGCSE-14.5",
+    "kind": "pastpaper",
+    "title": "Use the quadratic formula, answers to 2 decimal places",
+    "marks": 4,
+    "source": {
+      "paper": "0580/42/O/N/19 Q6(b)(ii)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w19_qp_42.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w19_ms_42.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2019), Question 6(b)(ii) only. Official answer and mark allocation from the MS PDF. The item is paper/self-mark. Parts 6(a), 6(b)(i) and 6(b)(iii) are omitted."
+    },
+    "stem": "This question is 0580/42/O/N/19 Question 6(b)(ii), taken from the official QP.\n\nUse the quadratic formula to solve \\(4x^2+11x-300=0\\).\nShow all your working and give your answers correct to 2 decimal places.  [4]",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "B1",
+        "text_tex": "The discriminant is \\(11^2-4\\times 4\\times(-300)=121+4800=4921\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 for 11^2-4(4)(-300) or better, as part of the B2 for a correct substitution into the formula."
+      },
+      {
+        "name": "B2",
+        "text_tex": "So \\(x=(-11\\pm\\sqrt{4921})/8\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B2 for the full substitution (-11 plus or minus the square root) over 2 times 4. The two B1s together make this B2."
+      },
+      {
+        "name": "B3",
+        "text_tex": "The roots, to 2 decimal places, are \\(-10.14\\) and \\(7.39\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B2 for -10.14 and 7.39, B1 for each; SC1 for rounded or truncated nearby values listed in the MS."
+      },
+      {
+        "name": "A",
+        "text_tex": "Independent check: \\(\\sqrt{4921}=70.1498\\ldots\\), so \\((-11+70.1498\\ldots)/8=7.3937\\ldots=7.39\\) and \\((-11-70.1498\\ldots)/8=-10.1437\\ldots=-10.14\\), both to 2 decimal places.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "The official roots are -10.14 and 7.39. The last mark completes the official B2 for the two rounded answers."
+      }
+    ]
+  }
+]

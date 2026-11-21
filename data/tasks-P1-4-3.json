@@ -1,0 +1,123 @@
+[
+  {
+    "id": "P1-4.3-QC2-gen",
+    "section": "P1-4.3",
+    "kind": "generated",
+    "title": "Numerical sector area, 3 significant figures",
+    "marks": 2,
+    "source": "Theory P1-4.3 Quick check 2 / Worked example 4.6a (sector of radius 6 cm, angle 1.2 rad, area 21.6 cm^2); book pp.107–108",
+    "params": [
+      {
+        "name": "r",
+        "min": 3,
+        "max": 20,
+        "step": 1
+      },
+      {
+        "name": "t",
+        "min": 4,
+        "max": 28,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "th": "t/10",
+      "S": "r*r*t/20"
+    },
+    "constraints": [
+      "t!=10"
+    ],
+    "original": {
+      "r": 6,
+      "t": 12
+    },
+    "stem": "Find the area of a sector of radius \\({r|int}\\,\\mathrm{cm}\\) and angle \\({th|raw}\\) radians, correct to 3 significant figures.",
+    "answer": {
+      "expression": "r*r*t/20",
+      "format": "{S|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "Sm",
+        "text_tex": "Area \\(=\\dfrac12 r^2\\theta=\\dfrac12\\times{r|int}^2\\times{th|raw}={Sm|num5}\\ldots\\)",
+        "result": "r*r*t/20",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Use (1/2) r^2 theta with theta in radians."
+      },
+      {
+        "name": "S",
+        "text_tex": "\\(\\approx {S|sf3z}\\,\\mathrm{cm}^2\\) (3 s.f.)",
+        "result": "Sm",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Correct to 3 significant figures, including significant trailing zeros."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "theta = t/10 radians"
+      },
+      {
+        "id": "slice",
+        "stem": "A slice of a circle of radius \\({r|int}\\,\\mathrm{cm}\\) has angle \\({th|raw}\\) radians at the centre. Find the area of this sector, correct to 3 significant figures."
+      },
+      {
+        "id": "plate",
+        "stem": "A sector of a circular plate has radius \\({r|int}\\,\\mathrm{cm}\\) and angle \\({th|raw}\\) radians. Find its area, correct to 3 significant figures."
+      }
+    ]
+  },
+  {
+    "id": "P1-4.3-PP-9709-11-MJ19-Q3",
+    "section": "P1-4.3",
+    "kind": "pastpaper",
+    "title": "Perimeter of a sector in terms of r and A",
+    "marks": 4,
+    "source": {
+      "paper": "9709/11/M/J/19 Q3",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s19_qp_11.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s19_ms_11.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2019). Official MS (4 marks): M1 uses A=1/2 r^2 theta; A1 theta=2A/r^2; B1 P=r+r+r theta; A1 correct simplified P=2r+2A/r. The answer is symbolic, so the part is paper/self-mark."
+    },
+    "stem": "This question is 9709/11/M/J/19 Question 3, taken from the official QP.\n\nA sector of a circle of radius \\(r\\,\\mathrm{cm}\\) has an area of \\(A\\,\\mathrm{cm}^2\\). Express the perimeter of the sector in terms of \\(r\\) and \\(A\\).",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "Use \\(A=\\dfrac12 r^2\\theta\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: M1 uses area formula."
+      },
+      {
+        "name": "TH",
+        "text_tex": "\\(\\theta=\\dfrac{2A}{r^2}\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: A1, theta=2A/r^2."
+      },
+      {
+        "name": "B",
+        "text_tex": "\\(P=r+r+r\\theta\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1, P=r+r+r theta."
+      },
+      {
+        "name": "A",
+        "text_tex": "\\(P=2r+\\dfrac{2A}{r}\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: A1, correct simplified expression for P. Official answer: 2r + 2A/r."
+      }
+    ]
+  }
+]

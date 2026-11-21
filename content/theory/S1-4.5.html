@@ -1,0 +1,121 @@
+<section class="theory" data-section="S1-4.5">
+<h2>4.5 Dependent events and conditional probability</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Probability &amp; Statistics 1 Coursebook (Dean Chalmers), Chapter 4 Probability, printed pp.112–117 (Key points 4.9–4.10, Worked examples 4.12–4.16, Exercise 4F), together with the formal test for independence on pp.111–112 that continues Section 4.4. Own wording and new numbers.</p>
+<p class="key-words"><strong>Key words:</strong> <em>dependent events</em>, <em>conditional probability</em>, <em>multiplication law</em>, <em>tree diagram</em>, <em>independent</em></p>
+<h3>Independence, now using conditional probability</h3>
+<p>Section 4.3 used the multiplication law \(\mathrm{P}(X\cap Y)=\mathrm{P}(X)\mathrm{P}(Y)\) as a definition of independence. A more formal statement, completed at the top of the pages for this section, is that \(X\) and \(Y\) are <strong>independent</strong> if and only if
+$$\mathrm{P}(X\mid Y)=\mathrm{P}(X\mid Y').$$
+In words: the probability that \(X\) occurs is the same whether or not \(Y\) has occurred, so \(X\) is unaffected by \(Y\). When this holds, it is also true that \(\mathrm{P}(X\mid Y)=\mathrm{P}(X)\). Events can be independent without being mutually exclusive.</p>
+<div class="worked-example">
+<h4>Worked example 1: Testing independence with conditionals</h4>
+<p class="src">Book: pages 111–112 (Explore 4.3 style, new numbers)</p>
+<p>A fair six-sided die is rolled. Let \(A\) be the event “the score is a multiple of 3” and \(B\) the event “the score is even”. Determine whether \(A\) and \(B\) are mutually exclusive, and whether they are independent.</p>
+<ol class="steps">
+<li>\(A=\{3,6\}\) and \(B=\{2,4,6\}\) share the outcome 6, so the events are not mutually exclusive. <span class="mark">B1</span></li>
+<li>Given \(B\), the outcomes are 2, 4, 6, of which one is a multiple of 3, so \(\mathrm{P}(A\mid B)=\dfrac{1}{3}\). <span class="mark">M1</span></li>
+<li>Given \(B'\), the outcomes are 1, 3, 5, of which one is a multiple of 3, so \(\mathrm{P}(A\mid B')=\dfrac{1}{3}\). <span class="mark">A1</span></li>
+<li>\(\mathrm{P}(A\mid B)=\mathrm{P}(A\mid B')\), so \(A\) and \(B\) are independent. (Also \(\mathrm{P}(A)=\dfrac{2}{6}=\dfrac{1}{3}\).) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> not mutually exclusive; independent</p>
+</div>
+<h3>Dependent events and the general multiplication law</h3>
+<p>Two events are <strong>dependent</strong> when the occurrence of one affects the probability of the other. Selections <strong>without replacement</strong> are a typical case: the probability for the second selection depends on what was drawn first.</p>
+<p>The multiplication law for independent events is a special case of the general multiplication law, which uses a <strong>conditional probability</strong>.</p>
+<p><strong>Key point.</strong> For any two events \(A\) and \(B\),
+$$\mathrm{P}(A\cap B)=\mathrm{P}(A)\,\mathrm{P}(B\mid A)=\mathrm{P}(B)\,\mathrm{P}(A\mid B).$$
+These two products are identical. If \(A\) and \(B\) are independent then \(\mathrm{P}(B\mid A)=\mathrm{P}(B)\) and the law reduces to the product of the two ordinary probabilities.</p>
+<div class="worked-example">
+<h4>Worked example 2: Selections without replacement</h4>
+<p class="src">Book: Worked example 4.12, p.113; Exercise 4F Q1–3</p>
+<p>Two children are selected at random from a group of 8 boys and 10 girls. Find the probability that the selection consists of two girls.</p>
+<ol class="steps">
+<li>The first child is selected from 18 and the second from the remaining 17, so the selections are dependent. <span class="mark">B1</span></li>
+<li>\(\mathrm{P}(\text{two girls})=\mathrm{P}(G_1)\times\mathrm{P}(G_2\mid G_1)=\dfrac{10}{18}\times\dfrac{9}{17}=\dfrac{5}{17}\) <span class="mark">M1 A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{5}{17}\approx0.294\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 3: A tree diagram and a total probability</h4>
+<p class="src">Book: Worked example 4.13, p.113; Exercise 4F Q4</p>
+<p>A student travels by bus on 65% of school mornings and walks on the other mornings. The student is late on 8% of the mornings that they travel by bus, and late on 20% of the mornings that they walk. Find the probability that the student is late on a randomly chosen morning.</p>
+<ol class="steps">
+<li>From a tree diagram, \(\mathrm{P}(\text{bus and late})=0.65\times0.08=0.052\) and \(\mathrm{P}(\text{walk and late})=0.35\times0.20=0.070\). <span class="mark">M1 A1</span></li>
+<li>\(\mathrm{P}(\text{late})=0.052+0.070=0.122\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(0.122\)</p>
+</div>
+<h3>Rearranging to find a conditional probability</h3>
+<p>The same identity can be rearranged when \(\mathrm{P}(A\cap B)\) and \(\mathrm{P}(A)\) are known.</p>
+<p><strong>Key point.</strong> Provided \(\mathrm{P}(A)\neq0\) and \(\mathrm{P}(B)\neq0\),
+$$\mathrm{P}(B\mid A)=\frac{\mathrm{P}(A\cap B)}{\mathrm{P}(A)},\qquad\mathrm{P}(A\mid B)=\frac{\mathrm{P}(A\cap B)}{\mathrm{P}(B)}.$$
+This is the formal formula for <strong>conditional probability</strong>. It agrees with the reduced-sample-space counts of Section 4.4, because dividing two probabilities that share the same denominator is the same as dividing the corresponding counts. On a tree diagram the same formula is used “backwards”: first find the probability of the given end, then divide the relevant combined probability by that total.</p>
+<div class="worked-example">
+<h4>Worked example 4: Using the formal formula</h4>
+<p class="src">Book: Worked example 4.14, p.114; Exercise 4F Q9</p>
+<p>Given that \(\mathrm{P}(A\cap B)=0.28\) and \(\mathrm{P}(B)=0.7\), find \(\mathrm{P}(A\mid B)\).</p>
+<ol class="steps">
+<li>\(\mathrm{P}(A\mid B)=\dfrac{\mathrm{P}(A\cap B)}{\mathrm{P}(B)}=\dfrac{0.28}{0.7}=0.4\) <span class="mark">M1 A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(0.4\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 5: A conditional probability from a tree</h4>
+<p class="src">Book: Worked example 4.16, pp.114–115; Exercise 4F Q8, Q13–14</p>
+<p>A messenger cycles on 40% of deliveries and walks on the other 60%. The messenger is delayed on 2% of the deliveries made by bicycle and on 5% of the deliveries made on foot. Given that a delivery is delayed, find the probability that the messenger cycled.</p>
+<ol class="steps">
+<li>\(\mathrm{P}(\text{cycle and delayed})=0.40\times0.02=0.008\) and \(\mathrm{P}(\text{walk and delayed})=0.60\times0.05=0.030\), so \(\mathrm{P}(\text{delayed})=0.038\). <span class="mark">M1 A1</span></li>
+<li>\(\mathrm{P}(\text{cycled}\mid\text{delayed})=\dfrac{0.008}{0.038}=\dfrac{4}{19}\approx0.211\) <span class="mark">M1 A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{4}{19}\approx0.211\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul>
+<li>Using \(\mathrm{P}(A)\mathrm{P}(B)\) when the events are dependent (for example, after drawing without replacement).</li>
+<li>Dividing by the wrong probability in the formal formula: the denominator is the probability of the given event.</li>
+<li>Forgetting both orders when two different types are selected “in any order”.</li>
+<li>Treating “independent” as if it meant “mutually exclusive”.</li>
+</ul>
+<h3>Quick checks</h3>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>Given that \(\mathrm{P}(A\cap B)=0.24\) and \(\mathrm{P}(B)=0.6\), find \(\mathrm{P}(A\mid B)\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(\mathrm{P}(A\mid B)=\dfrac{0.24}{0.6}=0.4\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(0.4\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>Two counters are selected at random, without replacement, from a bag containing 4 red counters and 6 blue counters. Find the probability that both counters are red.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(\dfrac{4}{10}\times\dfrac{3}{9}=\dfrac{2}{15}\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{2}{15}\approx0.133\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>A shopper pays by card on 40% of visits and by cash on the other visits. The shopper is offered a receipt on 8% of card payments and on 3% of cash payments. Find the probability that the shopper is offered a receipt on a randomly chosen visit.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(0.40\times0.08+0.60\times0.03=0.032+0.018=0.05\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(0.05\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 4</h4>
+<p>A student walks to college on 70% of mornings and cycles on the other mornings. The student is late on 10% of the mornings that they walk and on 2% of the mornings that they cycle. Given that the student is late, find the probability that the student walked.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(\mathrm{P}(\text{late})=0.70\times0.10+0.30\times0.02=0.070+0.006=0.076\)</li>
+<li>\(\mathrm{P}(\text{walked}\mid\text{late})=\dfrac{0.070}{0.076}=\dfrac{35}{38}\approx0.921\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{35}{38}\approx0.921\)</p>
+</details>
+</div>
+<p class="marks-key"><strong>Marks:</strong> M = method, A = accurate answer (depends on M), B = independent mark. Marks on worked examples are illustrative, not official. Give exact fractions or answers correct to 3 significant figures. If events are dependent, use a conditional probability in the product; the denominator of \(\mathrm{P}(A\mid B)\) is \(\mathrm{P}(B)\).</p>
+</section>

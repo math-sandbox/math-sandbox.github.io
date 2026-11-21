@@ -1,0 +1,213 @@
+[
+  {
+    "id": "S2-3.3-QC1-gen",
+    "section": "S2-3.3",
+    "kind": "generated",
+    "title": "Mean of a linear combination of normals",
+    "marks": 1,
+    "source": "Theory S2-3.3 Quick check 1 (16); E(3X-Y)",
+    "params": [
+      {
+        "name": "m",
+        "min": 4,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "name": "n",
+        "min": 1,
+        "max": 4,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "3*m-n"
+    },
+    "constraints": [],
+    "original": {
+      "m": 6,
+      "n": 2
+    },
+    "stem": "\\(X\\sim\\operatorname{N}({m|int}, 4)\\) and \\(Y\\sim\\operatorname{N}({n|int}, 5)\\) are independent. Find \\(\\operatorname{E}(3X-Y)\\).",
+    "answer": {
+      "expression": "3*m-n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\operatorname{E}(3X-Y)=3\\times{m|int}-{n|int}={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is 3m-n. Original means 6 and 2 give 16."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "S2-3.3-QC2-gen",
+    "section": "S2-3.3",
+    "kind": "generated",
+    "title": "Variance of a scaled normal",
+    "marks": 1,
+    "source": "Theory S2-3.3 Quick check 2 (36); Var(3X)=9 Var(X)",
+    "params": [
+      {
+        "name": "v",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "9*v"
+    },
+    "constraints": [],
+    "original": {
+      "v": 4
+    },
+    "stem": "\\(X\\sim\\operatorname{N}(6, {v|int})\\). Find \\(\\operatorname{Var}(3X)\\).",
+    "answer": {
+      "expression": "9*v",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\operatorname{Var}(3X)=9\\times{v|int}={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is 9v. Original variance 4 gives 36."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "S2-3.3-QC3-gen",
+    "section": "S2-3.3",
+    "kind": "generated",
+    "title": "Variance of a linear combination of independent normals",
+    "marks": 1,
+    "source": "Theory S2-3.3 Quick check 3 (41); Var(3X-Y)",
+    "params": [
+      {
+        "name": "v",
+        "min": 2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "w",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "9*v+w"
+    },
+    "constraints": [],
+    "original": {
+      "v": 4,
+      "w": 5
+    },
+    "stem": "\\(X\\sim\\operatorname{N}(6, {v|int})\\) and \\(Y\\sim\\operatorname{N}(2, {w|int})\\) are independent. Find \\(\\operatorname{Var}(3X-Y)\\).",
+    "answer": {
+      "expression": "9*v+w",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\operatorname{Var}(3X-Y)=9\\times{v|int}+{w|int}={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is 9v+w. Original variances 4 and 5 give 41."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "S2-3.3-PP-9709-73-MJ12-Q2",
+    "section": "S2-3.3",
+    "kind": "pastpaper",
+    "title": "Probability for a linear combination of independent normals",
+    "marks": 5,
+    "source": {
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s12_qp_73.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s12_ms_73.pdf",
+      "note": "9709/73/M/J/12 Question 2 [5]. Official QP and official MS. Fully manual (standard normal table)."
+    },
+    "marking": "manual",
+    "stem": "This question is 9709/73/M/J/12 Question 2, taken from the official QP.\n\nThe independent random variables X and Y have the distributions N(6.5, 14) and N(7.4, 15) respectively. Find P(3X − Y < 20). [5]",
+    "steps": [
+      {
+        "name": "B",
+        "text_tex": "\\(\\operatorname{E}(3X-Y)=12.1\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1, E(3X-Y)=12.1. Independent: 3*6.5-7.4=12.1."
+      },
+      {
+        "name": "C",
+        "text_tex": "\\(\\operatorname{Var}(3X-Y)=9\\times 14+15=141\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1, Var=9*14+15=141."
+      },
+      {
+        "name": "M",
+        "text_tex": "\\((20-12.1)/\\sqrt{141}\\) \\(=0.665\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1, (20-12.1)/sqrt(141) (=0.665). Allow without the square root. No continuity correction."
+      },
+      {
+        "name": "N",
+        "text_tex": "\\(\\Phi(\\)their \\(0.665)\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1, Phi of their 0.665, correct area consistent with their working."
+      },
+      {
+        "name": "A",
+        "text_tex": "\\(0.747\\) (3 s.f.).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, 0.747 (3 s.f.). Independent agrees. Fully manual because of Phi."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Stem taken from the official QP PDF, Question 2. Official MS reproduced mark by mark. Paper/self-mark."
+      }
+    ]
+  }
+]

@@ -1,0 +1,413 @@
+[
+ {
+  "id": "P23-4-review-QC1-gen",
+  "section": "P23-4-review",
+  "kind": "generated",
+  "title": "Gradient of k sin x plus tan of ax at the origin",
+  "marks": 3,
+  "source": "P23 Ch4 review theory Quick check 1 (5 sin x + tan 3x at 0 equals 8)",
+  "params": [
+   {
+    "name": "k",
+    "min": 2,
+    "max": 9,
+    "step": 1
+   },
+   {
+    "name": "a",
+    "min": 1,
+    "max": 5,
+    "step": 1
+   }
+  ],
+  "constraints": [
+   "k>=2",
+   "a>=1"
+  ],
+  "original": {
+   "k": 5,
+   "a": 3
+  },
+  "stem": "Find the gradient of the curve \\(y={k|int}\\sin x+\\tan {a|int}x\\) at the point where \\(x=0\\).",
+  "answer": {
+   "expression": "k+a",
+   "format": "{E|int}",
+   "accept_as": "integer"
+  },
+  "steps": [
+   {
+    "name": "diff",
+    "text_tex": "\\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}={k|int}\\cos x+{a|int}\\sec^2 {a|int}x\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Differentiate, including the chain rule."
+   },
+   {
+    "name": "form",
+    "text_tex": "The derivative is of this form.",
+    "result": "None",
+    "format": "num",
+    "mark": "A1",
+    "note": "Correct derivative."
+   },
+   {
+    "name": "E",
+    "text_tex": "At \\(x=0\\) the gradient is {k|int}+{a|int}.",
+    "result": "k+a",
+    "format": "int",
+    "mark": "A1",
+    "note": "cos 0 = 1 and sec 0 = 1."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem"
+   },
+   {
+    "id": "order",
+    "stem": "Find the gradient of the curve \\(y=\\tan {a|int}x+{k|int}\\sin x\\) at the point where \\(x=0\\).",
+    "note": "terms swapped"
+   },
+   {
+    "id": "point",
+    "stem": "A curve has equation \\(y={k|int}\\sin x+\\tan {a|int}x\\). Find the value of \\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\) at \\(x=0\\).",
+    "note": "dy/dx wording"
+   }
+  ],
+  "derived": {}
+ },
+ {
+  "id": "P23-4-review-QC2-gen",
+  "section": "P23-4-review",
+  "kind": "generated",
+  "title": "Gradient of ln(ax+1) at the origin",
+  "marks": 2,
+  "source": "P23 Ch4 review theory Quick check 2 (ln(2x+1) at 0 equals 2)",
+  "params": [
+   {
+    "name": "a",
+    "min": 2,
+    "max": 9,
+    "step": 1
+   }
+  ],
+  "constraints": [
+   "a>=2"
+  ],
+  "original": {
+   "a": 2
+  },
+  "stem": "Find the gradient of the curve \\(y=\\ln({a|int}x+1)\\) at the point where \\(x=0\\).",
+  "answer": {
+   "expression": "a",
+   "format": "{E|int}",
+   "accept_as": "integer"
+  },
+  "steps": [
+   {
+    "name": "diff",
+    "text_tex": "\\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}=\\dfrac{{a|int}}{{a|int}x+1}\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Derivative of ln(ax+1)."
+   },
+   {
+    "name": "E",
+    "text_tex": "At \\(x=0\\) the gradient is {a|int}.",
+    "result": "a",
+    "format": "int",
+    "mark": "A1",
+    "note": "Substitute x=0."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem"
+   },
+   {
+    "id": "point",
+    "stem": "A curve has equation \\(y=\\ln(1+{a|int}x)\\). Find the value of \\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\) at \\(x=0\\).",
+    "note": "1+ax order"
+   },
+   {
+    "id": "word",
+    "stem": "Find \\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\) when \\(x=0\\) for the curve \\(y=\\ln({a|int}x+1)\\).",
+    "note": "when x=0 wording"
+   }
+  ],
+  "derived": {}
+ },
+ {
+  "id": "P23-4-review-QC3-gen",
+  "section": "P23-4-review",
+  "kind": "generated",
+  "title": "Gradient of a quotient at the origin",
+  "marks": 3,
+  "source": "P23 Ch4 review theory Quick check 3 ((x-1)/(x+3) at 0 equals 4/9)",
+  "params": [
+   {
+    "name": "b",
+    "min": 1,
+    "max": 5,
+    "step": 1
+   },
+   {
+    "name": "c",
+    "min": 2,
+    "max": 6,
+    "step": 1
+   }
+  ],
+  "derived": {
+   "den": "c*c",
+   "num": "b+c"
+  },
+  "constraints": [
+   "c>=2",
+   "b>=1",
+   "c!=b"
+  ],
+  "original": {
+   "b": 1,
+   "c": 3
+  },
+  "stem": "Find the gradient of the curve \\(y=\\dfrac{x-{b|int}}{x+{c|int}}\\) at the point where \\(x=0\\).",
+  "answer": {
+   "expression": "(b+c)/(c*c)",
+   "format": "{E|sf3z}",
+   "accept_as": "sf",
+   "sf": 3
+  },
+  "steps": [
+   {
+    "name": "diff",
+    "text_tex": "By the quotient rule, \\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}=\\dfrac{(x+{c|int})-(x-{b|int})}{(x+{c|int})^2}=\\dfrac{{num|int}}{(x+{c|int})^2}\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Quotient rule."
+   },
+   {
+    "name": "form",
+    "text_tex": "The simplified derivative is of this form.",
+    "result": "None",
+    "format": "num",
+    "mark": "A1",
+    "note": "Correct simplified derivative."
+   },
+   {
+    "name": "E",
+    "text_tex": "At \\(x=0\\) the gradient is \\(\\dfrac{{num|int}}{{den|int}}\\).",
+    "result": "(b+c)/(c*c)",
+    "format": "raw",
+    "mark": "A1",
+    "note": "Substitute x=0."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem"
+   },
+   {
+    "id": "point",
+    "stem": "A curve has equation \\(y=\\dfrac{x-{b|int}}{x+{c|int}}\\). Find the value of \\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\) at \\(x=0\\).",
+    "note": "dy/dx wording"
+   },
+   {
+    "id": "word",
+    "stem": "Find \\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\) when \\(x=0\\) for the curve \\(y=\\dfrac{x-{b|int}}{x+{c|int}}\\).",
+    "note": "when x=0 wording"
+   }
+  ]
+ },
+ {
+  "id": "P23-4-review-PP-9709-21-MJ14-Q2",
+  "section": "P23-4-review",
+  "kind": "pastpaper",
+  "title": "Gradients at x=0 of a trigonometric curve and an exponential quotient",
+  "marks": 6,
+  "source": {
+   "paper": "9709/21/M/J/14 Q2",
+   "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s14_qp_21.pdf",
+   "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s14_ms_21.pdf",
+   "note": "Stem verbatim from the QP PDF; steps and marks from the official MS PDF. Both parts are numeric (gradients 5 and -3). Mixed skills from sections 4.5 and 4.3."
+  },
+  "stem": "Find the gradient of each of the following curves at the point for which \\(x=0\\).",
+  "parts": [
+   {
+    "part": "(i)",
+    "stem": "\\(y=3\\sin x+\\tan 2x\\)",
+    "marks": 3,
+    "answer": {
+     "expression": "5",
+     "format": "{E|int}",
+     "accept_as": "integer"
+    },
+    "steps": [
+     {
+      "name": "p0_form",
+      "text_tex": "Differentiate to obtain a form \\(k_1\\cos x+k_2\\sec^2 2x\\).",
+      "result": "None",
+      "format": "num",
+      "mark": "M1",
+      "note": "MS: M1 differentiate to obtain form k cos x + k sec^2 2x."
+     },
+     {
+      "name": "p0_term",
+      "text_tex": "The second term is \\(2\\sec^2 2x\\).",
+      "result": "None",
+      "format": "num",
+      "mark": "A1",
+      "note": "MS: A1 obtain correct second term 2 sec^2 2x."
+     },
+     {
+      "name": "p0_E",
+      "text_tex": "\\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}=3\\cos x+2\\sec^2 2x\\), so at \\(x=0\\) the gradient is 5.",
+      "result": "5",
+      "format": "int",
+      "mark": "A1",
+      "note": "MS: A1 obtain 3 cos x + 2 sec^2 2x and hence answer 5."
+     }
+    ]
+   },
+   {
+    "part": "(ii)",
+    "stem": "\\(y=6/(1+\\exp(2x))\\)",
+    "marks": 3,
+    "answer": {
+     "expression": "-3",
+     "format": "{E|int}",
+     "accept_as": "integer"
+    },
+    "steps": [
+     {
+      "name": "p1_form",
+      "text_tex": "Differentiate to obtain a form \\((k\\exp(2x))/((1+\\exp(2x))^2)\\).",
+      "result": "None",
+      "format": "num",
+      "mark": "M1",
+      "note": "MS: M1 differentiate to obtain form k exp(2x) / (1+exp(2x))^2."
+     },
+     {
+      "name": "p1_der",
+      "text_tex": "The derivative is \\((-12\\exp(2x))/((1+\\exp(2x))^2)\\) (or an equivalent).",
+      "result": "None",
+      "format": "num",
+      "mark": "A1",
+      "note": "MS: A1 obtain correct -12 exp(2x)/(1+exp(2x))^2 or equivalent (may be implied)."
+     },
+     {
+      "name": "p1_E",
+      "text_tex": "At \\(x=0\\) the gradient is \\(-3\\).",
+      "result": "-3",
+      "format": "int",
+      "mark": "A1",
+      "note": "MS: A1 obtain -3."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "P23-4-review-PP-9709-21-MJ11-Q5",
+  "section": "P23-4-review",
+  "kind": "pastpaper",
+  "title": "Derivatives at x=4 of a product with a logarithm and of a quotient",
+  "marks": 7,
+  "source": {
+   "paper": "9709/21/M/J/11 Q5",
+   "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s11_qp_21.pdf",
+   "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s11_ms_21.pdf",
+   "note": "Stem verbatim from the QP PDF; steps and marks from the official MS PDF. Both parts are numeric (4 and 2/25). Mixed skills from sections 4.1, 4.4 and 4.2."
+  },
+  "stem": "Find the value of \\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\) when \\(x=4\\) in each of the following cases.",
+  "parts": [
+   {
+    "part": "(i)",
+    "stem": "\\(y=x\\ln(x-3)\\)",
+    "marks": 4,
+    "answer": {
+     "expression": "4",
+     "format": "{E|int}",
+     "accept_as": "integer"
+    },
+    "steps": [
+     {
+      "name": "p0_ln",
+      "text_tex": "The derivative of \\(\\ln(x-3)\\) is \\(\\dfrac{1}{x-3}\\).",
+      "result": "None",
+      "format": "num",
+      "mark": "B1",
+      "note": "MS: B1 differentiate ln(x-3) to obtain 1/(x-3)."
+     },
+     {
+      "name": "p0_prod",
+      "text_tex": "Use the product rule.",
+      "result": "None",
+      "format": "num",
+      "mark": "M1",
+      "note": "MS: M1 attempt to use the product rule."
+     },
+     {
+      "name": "p0_form",
+      "text_tex": "\\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}=\\ln(x-3)+\\dfrac{x}{x-3}\\) (or an equivalent).",
+      "result": "None",
+      "format": "num",
+      "mark": "A1",
+      "note": "MS: A1 obtain ln(x-3)+x/(x-3) or equivalent."
+     },
+     {
+      "name": "p0_E",
+      "text_tex": "Substitute \\(x=4\\) to obtain 4.",
+      "result": "4",
+      "format": "int",
+      "mark": "A1",
+      "note": "MS: A1 substitute 4 to obtain 4."
+     }
+    ]
+   },
+   {
+    "part": "(ii)",
+    "stem": "\\(y=\\dfrac{x-1}{x+1}\\)",
+    "marks": 3,
+    "answer": {
+     "expression": "2/25",
+     "format": "{E|sf3z}",
+     "accept_as": "sf",
+     "sf": 3
+    },
+    "steps": [
+     {
+      "name": "p1_rule",
+      "text_tex": "Use the quotient rule (or the product rule after writing a reciprocal).",
+      "result": "None",
+      "format": "num",
+      "mark": "M1",
+      "note": "MS: M1 use correct quotient or product rule."
+     },
+     {
+      "name": "p1_form",
+      "text_tex": "\\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}=\\dfrac{(x+1)-(x-1)}{(x+1)^2}=\\dfrac{2}{(x+1)^2}\\) (or an equivalent).",
+      "result": "None",
+      "format": "num",
+      "mark": "A1",
+      "note": "MS: A1 obtain correct derivative in any form, e.g. [(x+1)-(x-1)]/(x+1)^2."
+     },
+     {
+      "name": "p1_E",
+      "text_tex": "Substitute \\(x=4\\) to obtain \\(\\dfrac{2}{25}\\).",
+      "result": "2/25",
+      "format": "raw",
+      "mark": "A1",
+      "note": "MS: A1 substitute 4 to obtain 2/25."
+     }
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,194 @@
+[
+  {
+    "id": "IGCSE-14.6-QC1-gen",
+    "section": "IGCSE-14.6",
+    "kind": "generated",
+    "title": "Missing factor in (2x+p)(x+1)",
+    "marks": 1,
+    "source": "Theory IGCSE-14.6 Quick check 1 (2x^2+3x+1=(2x+1)(x+1), so p=1); book Worked example 21 style, new numbers",
+    "params": [
+      {
+        "name": "p",
+        "min": 1,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "B": "2+p",
+      "C": "p"
+    },
+    "constraints": [
+      "p>=1"
+    ],
+    "original": {
+      "p": 1
+    },
+    "stem": "\\(2x^2+{B|int}x+{C|int}=(2x+p)(x+1)\\). What is the value of \\(p\\)?",
+    "answer": {
+      "expression": "p",
+      "format": "{p|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The constant term is \\(p\\), and \\((2x+{p|int})(x+1)=2x^2+{B|int}x+{C|int}\\), so \\(p={p|int}\\).",
+        "result": "p",
+        "format": "int",
+        "mark": "A1",
+        "note": "p is the constant in the first bracket and equals the constant term."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-14.6-QC2-gen",
+    "section": "IGCSE-14.6",
+    "kind": "generated",
+    "title": "Larger root after factorising a non-monic quadratic",
+    "marks": 1,
+    "source": "Theory IGCSE-14.6 Quick check 2 (larger root of 3x^2-14x+8=0 is 4); book Worked example 21 style, new numbers",
+    "params": [
+      {
+        "name": "p",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 3,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "B": "3*q+p",
+      "C": "p*q"
+    },
+    "constraints": [
+      "q>=p+1",
+      "3*q>p"
+    ],
+    "original": {
+      "p": 2,
+      "q": 4
+    },
+    "stem": "The equation \\(3x^2-{B|int}x+{C|int}=0\\) factorises. What is the larger root?",
+    "answer": {
+      "expression": "q",
+      "format": "{q|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(3x^2-{B|int}x+{C|int}=(3x-{p|int})(x-{q|int})\\), so the roots are \\(({p|int})/3\\) and \\({q|int}\\). The larger root is \\({q|int}\\).",
+        "result": "q",
+        "format": "int",
+        "mark": "A1",
+        "note": "q is chosen larger than p/3, so it is the larger root. Original: (3x-2)(x-4)."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-14.6-QC3-gen",
+    "section": "IGCSE-14.6",
+    "kind": "generated",
+    "title": "Product ac in the grouping method",
+    "marks": 1,
+    "source": "Theory IGCSE-14.6 Quick check 3 (ac for 10x^2+11x-8 is -80); book Worked example 22 style, new numbers",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": -12,
+        "max": -2,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "AC": "a*c"
+    },
+    "constraints": [
+      "c<=-2",
+      "a>=2"
+    ],
+    "original": {
+      "a": 10,
+      "c": -8
+    },
+    "stem": "To factorise \\({a|int}x^2+11x+{c|int}\\) by grouping, you first compute the product of the coefficient of \\(x^2\\) and the constant term. What is that product?",
+    "answer": {
+      "expression": "AC",
+      "format": "{AC|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The product is \\({a|int}\\times({c|int})={AC|int}\\).",
+        "result": "AC",
+        "format": "int",
+        "mark": "A1",
+        "note": "This is the product ac used to search for a factor pair that adds to the middle coefficient."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-14.6-PP-0580-41-ON19-Q7cii",
+    "section": "IGCSE-14.6",
+    "kind": "pastpaper",
+    "title": "Factorise a quadratic with leading coefficient not 1",
+    "marks": 2,
+    "source": {
+      "paper": "0580/41/O/N/19 Q7(c)(ii)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w19_qp_41.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w19_ms_41.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2019), Question 7(c)(ii) only. Official answer and mark allocation from the MS PDF. The item is paper/self-mark. Parts 7(c)(i), (iii) and (iv) are omitted."
+    },
+    "stem": "This question is 0580/41/O/N/19 Question 7(c)(ii), taken from the official QP.\n\nFactorise \\(5x^2-23x+12\\).  [2]",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "B1",
+        "text_tex": "A correct pair of brackets with the same product of constants, or a correct grouping such as \\(5x(x-4)-3(x-4)\\), earns the first mark.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 for (5x+a)(x+b) with ab=12 or a+5b=-23, or for 5x(x-4)-3(x-4) or x(5x-3)-4(5x-3)."
+      },
+      {
+        "name": "A",
+        "text_tex": "The factorisation is \\((5x-3)(x-4)\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: (5x-3)(x-4) final answer, 2 marks. Independent check: (5x-3)(x-4)=5x^2-20x-3x+12=5x^2-23x+12."
+      }
+    ]
+  }
+]

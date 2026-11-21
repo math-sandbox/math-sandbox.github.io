@@ -1,0 +1,200 @@
+[
+  {
+    "id": "IGCSE-15.9-QC1-gen",
+    "section": "IGCSE-15.9",
+    "kind": "generated",
+    "title": "Space diagonal of a 3-4-12 cuboid",
+    "marks": 1,
+    "source": "Theory IGCSE-15.9 Quick check 1 (13); scaled integer sides",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 3,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "13*k",
+      "a": "3*k",
+      "b": "4*k",
+      "c": "12*k"
+    },
+    "constraints": [],
+    "original": {
+      "k": 1
+    },
+    "stem": "A cuboid has sides \\({a|int}\\) cm, \\({b|int}\\) cm and \\({c|int}\\) cm. Find the length of a space diagonal.",
+    "answer": {
+      "expression": "13*k",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(d^2={a|int}^2+{b|int}^2+{c|int}^2\\), so \\(d={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is 13k. Original 3,4,12 give 13."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-15.9-QC2-gen",
+    "section": "IGCSE-15.9",
+    "kind": "generated",
+    "title": "Space diagonal of a 6-8-24 cuboid",
+    "marks": 1,
+    "source": "Theory IGCSE-15.9 Quick check 2 (26); scaled integer sides",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 3,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "26*k",
+      "a": "6*k",
+      "b": "8*k",
+      "c": "24*k"
+    },
+    "constraints": [],
+    "original": {
+      "k": 1
+    },
+    "stem": "A cuboid has a rectangular base \\({a|int}\\) cm by \\({b|int}\\) cm and height \\({c|int}\\) cm. Find the length of a space diagonal.",
+    "answer": {
+      "expression": "26*k",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(d^2={a|int}^2+{b|int}^2+{c|int}^2\\), so \\(d={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is 26k. Original 6,8,24 give 26."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-15.9-QC3-gen",
+    "section": "IGCSE-15.9",
+    "kind": "generated",
+    "title": "Space diagonal of a 5-12-84 cuboid",
+    "marks": 1,
+    "source": "Theory IGCSE-15.9 Quick check 3 (85); scaled integer sides",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 2,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "85*k",
+      "a": "5*k",
+      "b": "12*k",
+      "c": "84*k"
+    },
+    "constraints": [],
+    "original": {
+      "k": 1
+    },
+    "stem": "A cuboid has sides \\({a|int}\\) cm, \\({b|int}\\) cm and \\({c|int}\\) cm. Find the length of a space diagonal.",
+    "answer": {
+      "expression": "85*k",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(d^2={a|int}^2+{b|int}^2+{c|int}^2\\), so \\(d={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is 85k. Original 5,12,84 give 85."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-15.9-PP-0580-43-ON20-Q6c",
+    "section": "IGCSE-15.9",
+    "kind": "pastpaper",
+    "title": "Angles CAB and GAC in a cuboid",
+    "marks": 4,
+    "source": {
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w20_qp_43.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w20_ms_43.pdf",
+      "note": "0580/43/O/N/20 Question 6(c) only [4], with the opening sentences. Official QP and official MS. Parts (a) and (b) omitted."
+    },
+    "marking": "manual",
+    "stem": "This question is 0580/43/O/N/20 Question 6(c) only, taken from the official QP. The opening sentences of the question are included so that the part is self-contained.\n\nABCDEFGH is a cuboid.\nAB = 8 cm, BC = 5 cm and CG = 11 cm.\n\n(c) (i) Calculate angle CAB. [2]\n\n(ii) Calculate angle GAC. [2]",
+    "steps": [
+      {
+        "name": "P",
+        "text_tex": "Angle \\(CAB=32.0^\\circ\\) (to 3 s.f.).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: 32.0[...], M1 for tan = 5/8 oe. Independent: tan CAB = 5/8, CAB = 32.005... degrees."
+      },
+      {
+        "name": "A",
+        "text_tex": "(completes the value of angle \\(CAB\\)).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS A1 for 32.0[...]."
+      },
+      {
+        "name": "Q",
+        "text_tex": "Angle \\(GAC=49.4^\\circ\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: 49.4 or 49.38 to 49.39, M1 for sin = 11 / their AG oe. Independent: AG = sqrt(210), sin GAC = 11/sqrt(210), GAC = 49.385... degrees."
+      },
+      {
+        "name": "B",
+        "text_tex": "(completes the value of angle \\(GAC\\)).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS A1 for 49.4 or 49.38 to 49.39."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Stem taken from the official QP PDF, Question 6(c) only, with the opening sentences. Official MS reproduced mark by mark. Paper/self-mark."
+      }
+    ]
+  }
+]

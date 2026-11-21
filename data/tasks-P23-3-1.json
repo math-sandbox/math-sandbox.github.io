@@ -1,0 +1,207 @@
+[
+  {
+    "id": "P23-3.1-QC1-gen",
+    "section": "P23-3.1",
+    "kind": "generated",
+    "title": "Exact value of cosec 30 degrees",
+    "marks": 1,
+    "source": "Theory P23-3.1 Quick check 1 (cosec 30=2); constant exact value",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 2,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "2"
+    },
+    "constraints": [],
+    "original": {
+      "k": 1
+    },
+    "stem": "Write down the value of \\(\\operatorname{cosec}30^\\circ\\).",
+    "answer": {
+      "expression": "2",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\operatorname{cosec}30^\\circ=2\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is 2. Dummy k unused. The engine does not evaluate a sine."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P23-3.1-QC2-gen",
+    "section": "P23-3.1",
+    "kind": "generated",
+    "title": "Exact value of sec 60 degrees",
+    "marks": 1,
+    "source": "Theory P23-3.1 Quick check 2 (sec 60=2); constant exact value",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 2,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "2"
+    },
+    "constraints": [],
+    "original": {
+      "k": 1
+    },
+    "stem": "Write down the value of \\(\\sec 60^\\circ\\).",
+    "answer": {
+      "expression": "2",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\sec 60^\\circ=2\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is 2. Dummy k unused."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P23-3.1-QC3-gen",
+    "section": "P23-3.1",
+    "kind": "generated",
+    "title": "Identity cot squared plus one",
+    "marks": 1,
+    "source": "Theory P23-3.1 Quick check 3 (cosec squared 45=2); constant",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 2,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "2"
+    },
+    "constraints": [],
+    "original": {
+      "k": 1
+    },
+    "stem": "Given that \\(\\cot 45^\\circ=1\\), find \\(\\operatorname{cosec}^2 45^\\circ\\).",
+    "answer": {
+      "expression": "2",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\operatorname{cosec}^2 45^\\circ=1+1=2\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is 1+1=2 from the identity. Dummy k unused."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P23-3.1-PP-9709-21-ON10-Q5",
+    "section": "P23-3.1",
+    "kind": "pastpaper",
+    "title": "Solve 8 + cot theta = 2 cosec squared theta",
+    "marks": 6,
+    "source": {
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w10_qp_21.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w10_ms_21.pdf",
+      "note": "9709/21/O/N/10 Question 5 [6]. Official QP and official MS."
+    },
+    "marking": "manual",
+    "stem": "This question is 9709/21/O/N/10 Question 5, taken from the official QP.\n\nSolve the equation 8 + cot θ = 2 cosec² θ, giving all solutions in the interval 0° ≤ θ ≤ 360°. [6]",
+    "steps": [
+      {
+        "name": "M1",
+        "text_tex": "Use \\(\\operatorname{cosec}^2\\theta=1+\\cot^2\\theta\\) (or an equivalent identity) to obtain a quadratic in \\(\\cot\\theta\\) or \\(\\tan\\theta\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1, use a correct trig identity to obtain a quadratic in cot or tan."
+      },
+      {
+        "name": "A1",
+        "text_tex": "The quadratic is solved correctly.",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, solve the quadratic correctly. One route: 8+cot θ=2(1+cot^2 θ), 2cot^2 θ-cot θ-6=0, (2cot θ+3)(cot θ-2)=0."
+      },
+      {
+        "name": "A2",
+        "text_tex": "\\(\\tan\\theta=\\dfrac{1}{2}\\) or \\(\\tan\\theta=-\\dfrac{2}{3}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1 follow through. Independent: cot θ=2 or cot θ=-3/2, so tan θ=1/2 or tan θ=-2/3."
+      },
+      {
+        "name": "A3",
+        "text_tex": "One of 26.6° or 146.3°.",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, obtain 26.6° or 146.3°. Independent: arctan(0.5)=26.565…°, arctan(-2/3)+180°=146.310…°."
+      },
+      {
+        "name": "M2",
+        "text_tex": "A correct method is used to find a second angle from either root.",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1, carry out a correct method for a second answer from either root."
+      },
+      {
+        "name": "A4",
+        "text_tex": "The four solutions in the interval are 26.6°, 146.3°, 206.6° and 326.3°, and no others.",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, remaining 3 answers from 26.6, 146.3, 206.6, 326.3 and no others in the range. Independent: 26.565+180=206.565…, 146.310+180=326.310… ."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Stem taken from the official QP PDF (UCLES 2010), Question 5. Official MS reproduced mark by mark. Paper/self-mark. Questions 2 and 7 of this paper were used in earlier packages."
+      }
+    ]
+  }
+]

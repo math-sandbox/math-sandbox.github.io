@@ -1,0 +1,346 @@
+[
+  {
+    "id": "P23-1.6-QC1-gen",
+    "section": "P23-1.6",
+    "kind": "generated",
+    "title": "Remainder when a cubic is divided by x+c",
+    "marks": 2,
+    "source": "P23 Ch1 theory P23-1.6 Quick check 1 (x^3-5x+7 divided by x+2, remainder 9)",
+    "params": [
+      {
+        "name": "p",
+        "min": -8,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": -8,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": 1,
+        "max": 4,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "E": "-math.pow(c,3)-p*c+q"
+    },
+    "constraints": [
+      "c>=1"
+    ],
+    "original": {
+      "p": -5,
+      "q": 7,
+      "c": 2
+    },
+    "stem": "Use the remainder theorem to find the remainder when \\(x^3+({p|int})x+({q|int})\\) is divided by \\(x+{c|int}\\).",
+    "answer": {
+      "expression": "-math.pow(c,3)-p*c+q",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The remainder is the value of the cubic at \\(x=-{c|int}\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Apply the remainder theorem with x=-c."
+      },
+      {
+        "name": "E",
+        "text_tex": "The remainder is \\({E|int}\\).",
+        "result": "-math.pow(c,3)-p*c+q",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct remainder."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "theorem",
+        "stem": "By the remainder theorem, what is the remainder when \\(x^3+({p|int})x+({q|int})\\) is divided by \\(x+{c|int}\\)?",
+        "note": "theorem frame"
+      },
+      {
+        "id": "sub",
+        "stem": "A cubic \\(x^3+({p|int})x+({q|int})\\) is divided by \\(x+{c|int}\\). Find the remainder by substitution.",
+        "note": "sub frame"
+      }
+    ]
+  },
+  {
+    "id": "P23-1.6-QC2-gen",
+    "section": "P23-1.6",
+    "kind": "generated",
+    "title": "Remainder when a cubic is divided by x-c",
+    "marks": 2,
+    "source": "P23 Ch1 theory P23-1.6 Quick check 2 (x^3-5x+7 divided by x-2, remainder 5)",
+    "params": [
+      {
+        "name": "p",
+        "min": -8,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": -8,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": 1,
+        "max": 4,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "E": "math.pow(c,3)+p*c+q"
+    },
+    "constraints": [
+      "c>=1"
+    ],
+    "original": {
+      "p": -5,
+      "q": 7,
+      "c": 2
+    },
+    "stem": "Use the remainder theorem to find the remainder when \\(x^3+({p|int})x+({q|int})\\) is divided by \\(x-{c|int}\\).",
+    "answer": {
+      "expression": "math.pow(c,3)+p*c+q",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The remainder is the value of the cubic at \\(x={c|int}\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Apply the remainder theorem."
+      },
+      {
+        "name": "E",
+        "text_tex": "The remainder is \\({E|int}\\).",
+        "result": "math.pow(c,3)+p*c+q",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct remainder."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "theorem",
+        "stem": "By the remainder theorem, what is the remainder when \\(x^3+({p|int})x+({q|int})\\) is divided by \\(x-{c|int}\\)?",
+        "note": "theorem frame"
+      },
+      {
+        "id": "sub",
+        "stem": "A cubic \\(x^3+({p|int})x+({q|int})\\) is divided by \\(x-{c|int}\\). Find the remainder by substitution.",
+        "note": "sub frame"
+      }
+    ]
+  },
+  {
+    "id": "P23-1.6-QC3-gen",
+    "section": "P23-1.6",
+    "kind": "generated",
+    "title": "Unknown leading linear coefficient from two remainders",
+    "marks": 2,
+    "source": "P23 Ch1 theory P23-1.6 Quick check 3 (a=5 from remainders 4 and -2)",
+    "params": [
+      {
+        "name": "r",
+        "min": 2,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "name": "s",
+        "min": -6,
+        "max": -1,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "E": "(2*r+s+24)/6"
+    },
+    "constraints": [
+      "(2*r+s+24) % 6 == 0"
+    ],
+    "original": {
+      "r": 4,
+      "s": -2
+    },
+    "stem": "The function \\(f(x)=x^3+ax^2+bx-6\\) is such that, when \\(f(x)\\) is divided by \\(x-1\\), the remainder is \\({r|int}\\), and when \\(f(x)\\) is divided by \\(x+2\\), the remainder is \\({s|int}\\). Find the value of \\(a\\).",
+    "answer": {
+      "expression": "(2*r+s+24)/6",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The remainder theorem gives \\(f(1)={r|int}\\) and \\(f(-2)={s|int}\\), so \\(a+b={r|int}+5\\) and \\(4a-2b={s|int}+14\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Set up the two remainder equations. The worked values use a+b=r+5 and 2a-b=(s+14)/2, then 3a=2r-s-3."
+      },
+      {
+        "name": "E",
+        "text_tex": "Adding twice the first equation to the second gives \\(6a=2{r|int}+{s|int}+24\\), so \\(a={E|int}\\).",
+        "result": "(2*r+s+24)/6",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct value of a."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "two",
+        "stem": "When \\(x^3+ax^2+bx-6\\) is divided by \\(x-1\\) the remainder is {r|int}, and when it is divided by \\(x+2\\) the remainder is {s|int}. What is the value of \\(a\\)?",
+        "note": "two frame"
+      },
+      {
+        "id": "solve",
+        "stem": "Given \\(f(1)={r|int}\\) and \\(f(-2)={s|int}\\) for \\(f(x)=x^3+ax^2+bx-6\\), find \\(a\\).",
+        "note": "solve frame"
+      }
+    ]
+  },
+  {
+    "id": "P23-1.6-PP-9709-21-ON10-Q7i",
+    "section": "P23-1.6",
+    "kind": "pastpaper",
+    "marking": "manual",
+    "title": "Find a and b given a factor and a remainder 10",
+    "marks": 5,
+    "source": {
+      "paper": "9709/21/O/N/10 Q7(i)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w10_qp_21.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w10_ms_21.pdf",
+      "note": "Stem verbatim from the QP PDF, part (i) only. Part (ii) (solving p(x)=0) is omitted. Fully manual, two unknowns. Independently a=-17, b=12. Steps from the official MS PDF."
+    },
+    "stem": "The polynomial \\(3x^3+2x^2+ax+b\\), where \\(a\\) and \\(b\\) are constants, is denoted by \\(p(x)\\). It is given that \\((x-1)\\) is a factor of \\(p(x)\\), and that when \\(p(x)\\) is divided by \\((x-2)\\) the remainder is \\(10\\). Find the values of \\(a\\) and \\(b\\).",
+    "steps": [
+      {
+        "name": "f1",
+        "text_tex": "Since \\(x-1\\) is a factor, \\(p(1)=0\\), so \\(3+2+a+b=0\\), or \\(a+b=-5\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: Correct equation in any form from p(1)=0."
+      },
+      {
+        "name": "f2",
+        "text_tex": "By the remainder theorem, \\(p(2)=10\\), so \\(24+8+2a+b=10\\), or \\(2a+b=-22\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: Substitute x=2 and equate to 10; obtain a correct equation."
+      },
+      {
+        "name": "f2A1",
+        "text_tex": "By the remainder theorem, \\(p(2)=10\\), so \\(24+8+2a+b=10\\), or \\(2a+b=-22\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: Substitute x=2 and equate to 10; obtain a correct equation."
+      },
+      {
+        "name": "ab",
+        "text_tex": "Solving \\(a+b=-5\\) and \\(2a+b=-22\\) gives \\(a=-17\\) and \\(b=12\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: Solve a relevant pair; obtain a=-17 and b=12."
+      },
+      {
+        "name": "abA1",
+        "text_tex": "Solving \\(a+b=-5\\) and \\(2a+b=-22\\) gives \\(a=-17\\) and \\(b=12\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: Solve a relevant pair; obtain a=-17 and b=12."
+      }
+    ]
+  },
+  {
+    "id": "P23-1.6-PP-9709-21-MJ19-Q5i",
+    "section": "P23-1.6",
+    "kind": "pastpaper",
+    "marking": "manual",
+    "title": "Find a and b given a factor and a remainder 27",
+    "marks": 5,
+    "source": {
+      "paper": "9709/21/M/J/19 Q5(i)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s19_qp_21.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s19_ms_21.pdf",
+      "note": "Stem verbatim from the QP PDF, part (i) only. Part (ii) (complete factorisation) is omitted. Fully manual. Independently a=12, b=-36. Steps from the official MS PDF."
+    },
+    "stem": "The polynomial \\(p(x)\\) is defined by \\(p(x)=5x^3+ax^2+bx-16\\), where \\(a\\) and \\(b\\) are constants. It is given that \\(x-2\\) is a factor of \\(p(x)\\) and that the remainder is \\(27\\) when \\(p(x)\\) is divided by \\(x+1\\). Find the values of \\(a\\) and \\(b\\).",
+    "steps": [
+      {
+        "name": "factor",
+        "text_tex": "Since \\(x-2\\) is a factor, \\(p(2)=0\\), so \\(40+4a+2b-16=0\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: Use p(2)=0 (the first substitution; the printed scheme also awards method for the remainder substitution)."
+      },
+      {
+        "name": "eqs",
+        "text_tex": "\\(p(2)=0\\) gives \\(40+4a+2b-16=0\\), and \\(p(-1)=27\\) gives \\(-5+a-b-16=27\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: Substitute and obtain a pair of correct (or nearly correct) linear equations."
+      },
+      {
+        "name": "eqsA1",
+        "text_tex": "\\(p(2)=0\\) gives \\(40+4a+2b-16=0\\), and \\(p(-1)=27\\) gives \\(-5+a-b-16=27\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: Substitute and obtain a pair of correct (or nearly correct) linear equations."
+      },
+      {
+        "name": "ab",
+        "text_tex": "The equations simplify to \\(2a+b=-12\\) and \\(a-b=48\\). Solving gives \\(a=12\\) and \\(b=-36\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: Solve a relevant pair; obtain a=12, b=-36. (Five marks in total with the substitutions.)"
+      },
+      {
+        "name": "abA1",
+        "text_tex": "The equations simplify to \\(2a+b=-12\\) and \\(a-b=48\\). Solving gives \\(a=12\\) and \\(b=-36\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: Solve a relevant pair; obtain a=12, b=-36. (Five marks in total with the substitutions.)"
+      }
+    ]
+  }
+]

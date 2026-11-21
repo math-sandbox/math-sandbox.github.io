@@ -1,0 +1,23 @@
+[
+  {
+    "section": "P23-2.6",
+    "q": "QC1",
+    "answer": 2.73,
+    "accept_as": "sf",
+    "sf": 3
+  },
+  {
+    "section": "P23-2.6",
+    "q": "QC2",
+    "answer": 2.51,
+    "accept_as": "sf",
+    "sf": 3
+  },
+  {
+    "section": "P23-2.6",
+    "q": "QC3",
+    "answer": 1.46,
+    "accept_as": "sf",
+    "sf": 3
+  }
+]

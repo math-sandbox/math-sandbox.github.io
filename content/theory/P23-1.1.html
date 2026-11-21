@@ -1,0 +1,86 @@
+<section class="theory" data-section="P23-1.1">
+<h2>1.1 The modulus function</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 2 &amp; 3 Coursebook (Sue Pemberton and Julianne Hughes), Chapter 1 Algebra, printed pp.2–6 (Key point 1.1, Worked examples 1.1–1.3, Exercise 1A). Own wording and new numbers. Graphs of \(y=\lvert f(x)\rvert\) are left to Section 1.2.</p>
+<p class="key-words"><strong>Key words:</strong> <em>modulus function</em>, <em>absolute value</em></p>
+<h3>The definition</h3>
+<p>The <strong>modulus</strong> of a number is its magnitude without a sign attached. It is also called the <strong>absolute value</strong>. The modulus of 5 is written \(\lvert 5\rvert\), and \(\lvert 5\rvert=5\), \(\lvert -5\rvert=5\). The modulus of any real number is never negative.</p>
+<p>The <strong>modulus function</strong> is defined by
+$$\lvert x\rvert=\begin{cases}x &amp; \text{if }x\geqslant 0,\\ -x &amp; \text{if }x\lt 0.\end{cases}$$</p>
+<p>The statement \(\lvert x\rvert=k\), where \(k\geqslant 0\), means that \(x=k\) or \(x=-k\). This is the starting point for solving equations that involve a modulus.</p>
+<h3>Solving modulus equations</h3>
+<p>To solve an equation of the form \(\lvert ax+b\rvert=k\) with \(k\geqslant 0\), solve the two ordinary equations \(ax+b=k\) and \(ax+b=-k\). To solve an equation of the form \(\lvert ax+b\rvert=\lvert cx+d\rvert\), solve \(ax+b=cx+d\) and \(ax+b=-(cx+d)\). When the right-hand side is not itself a modulus (for example \(\lvert ax+b\rvert=cx+d\)), you must always check each candidate in the original equation, because a candidate can fail to satisfy it.</p>
+<p><strong>Key point.</strong> \(\lvert a\rvert=\lvert b\rvert\) if and only if \(a^2=b^2\). This identity gives an alternative method for equations of the form \(\lvert ax+b\rvert=\lvert cx+d\rvert\): square both sides and solve the resulting quadratic, then check.</p>
+<div class="worked-example">
+<h4>Worked example 1: A modulus equal to a constant</h4>
+<p class="src">Book: Worked example 1.1(a), p.4; new numbers</p>
+<p>Solve \(\lvert 3x-2\rvert=7\).</p>
+<ol class="steps">
+<li>\(3x-2=7\) or \(3x-2=-7\). <span class="mark">M1</span></li>
+<li>\(3x=9\) so \(x=3\), or \(3x=-5\) so \(x=-\dfrac{5}{3}\). <span class="mark">A1</span></li>
+<li>Check: \(\lvert 3\times 3-2\rvert=\lvert 7\rvert=7\) and \(\lvert 3\times(-\frac{5}{3})-2\rvert=\lvert -5-2\rvert=7\). Both values satisfy the original equation. <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(x=3\) or \(x=-\dfrac{5}{3}\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: A modulus equal to a linear expression</h4>
+<p class="src">Book: Worked example 1.1(b), p.4; new numbers</p>
+<p>Solve \(\lvert x-5\rvert=2x+1\).</p>
+<ol class="steps">
+<li>\(x-5=2x+1\) or \(x-5=-(2x+1)\). <span class="mark">M1</span></li>
+<li>The first equation gives \(x=-6\). The second gives \(x-5=-2x-1\), so \(3x=4\) and \(x=\dfrac{4}{3}\). <span class="mark">A1</span></li>
+<li>Check: if \(x=-6\), then \(\lvert -6-5\rvert=11\) but \(2\times(-6)+1=-11\), so \(x=-6\) is not a solution. If \(x=\dfrac{4}{3}\), then \(\lvert \dfrac{4}{3}-5\rvert=\dfrac{11}{3}\) and \(2\times\dfrac{4}{3}+1=\dfrac{11}{3}\). The only solution is \(x=\dfrac{4}{3}\). <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(x=\dfrac{4}{3}\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 3: Two moduli</h4>
+<p class="src">Book: Worked example 1.2, p.5; new numbers</p>
+<p>Solve \(\lvert 2x+3\rvert=\lvert x-6\rvert\).</p>
+<ol class="steps">
+<li>Method 1: \(2x+3=x-6\) or \(2x+3=-(x-6)\). The first equation gives \(x=-9\). The second gives \(2x+3=-x+6\), so \(3x=3\) and \(x=1\). <span class="mark">M1</span></li>
+<li>Check: \(\lvert 2\times(-9)+3\rvert=\lvert -15\rvert=15\) and \(\lvert -9-6\rvert=15\). Also \(\lvert 2\times 1+3\rvert=5\) and \(\lvert 1-6\rvert=5\). Both values satisfy the original equation. <span class="mark">A1</span></li>
+<li>Method 2 (optional): \(\lvert 2x+3\rvert=\lvert x-6\rvert\) if and only if \((2x+3)^2=(x-6)^2\). Then \((2x+3)^2-(x-6)^2=0=(2x+3-(x-6))(2x+3+(x-6))=(x+9)(3x-3)\), so \(x=-9\) or \(x=1\), as before. <span class="mark">B1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(x=-9\) or \(x=1\)</p>
+</div>
+<p>The difference-of-squares step in Method 2 is the identity \(a^2=b^2\Leftrightarrow a=b\) or \(a=-b\), which is the same as \(\lvert a\rvert=\lvert b\rvert\).</p>
+<h3>Common mistakes</h3>
+<ul>
+<li>Solving only the positive case \(ax+b=k\) and dropping the case \(ax+b=-k\).</li>
+<li>Forgetting to check candidate solutions when the right-hand side is not itself a modulus.</li>
+<li>Writing \(\lvert x\rvert=-3\), which has no solution because a modulus is never negative.</li>
+</ul>
+<h3>Quick checks</h3>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>Solve \(\lvert 2x-5\rvert=9\). Give the larger root.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(2x-5=9\) or \(2x-5=-9\), so \(x=7\) or \(x=-2\). The larger root is 7.</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(7\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>Solve \(\lvert 3x+1\rvert=\lvert x-5\rvert\). Give the sum of the two roots.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(3x+1=x-5\) gives \(x=-3\). \(3x+1=-(x-5)\) gives \(4x=4\), so \(x=1\). Both values check, and the sum is \(-2\).</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(-2\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>Solve \(\lvert x-4\rvert=3x-2\). Give the only valid root.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(x-4=3x-2\) gives \(x=-1\). Check: \(\lvert -1-4\rvert=5\) but \(3\times(-1)-2=-5\), so \(x=-1\) is not a solution.</li>
+<li>\(x-4=-(3x-2)\) gives \(x-4=-3x+2\), so \(4x=6\) and \(x=\dfrac{3}{2}\). Check: \(\lvert \dfrac{3}{2}-4\rvert=\dfrac{5}{2}\) and \(3\times\dfrac{3}{2}-2=\dfrac{5}{2}\). The only root is \(\dfrac{3}{2}\).</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{3}{2}\)</p>
+</details>
+</div>
+<p class="marks-key"><strong>Marks:</strong> M = method, A = accurate answer (depends on M), B = independent mark. Marks on worked examples are illustrative, not official. Give exact fractions. Always check candidate solutions of a modulus equation against the original equation when the right-hand side is not itself a modulus.</p>
+</section>

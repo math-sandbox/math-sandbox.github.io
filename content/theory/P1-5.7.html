@@ -1,0 +1,70 @@
+<section class="theory" data-section="P1-5.7">
+<h2>5.7 Trigonometric identities</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 1 Coursebook (Sue Pemberton, series editor Julian Gilbey), Chapter 5 Trigonometry, printed pp.145–148 (physical PDF page = printed page + 12). Own wording and new numbers, following the coursebook identities \(\sin^2\theta+\cos^2\theta=1\) and \(\tan\theta=\dfrac{\sin\theta}{\cos\theta}\), which are the identities required for Paper 1.</p>
+<p class="key-words"><strong>Key words:</strong> <em>trigonometric identity</em></p>
+<h3>The standard identities</h3>
+<p>An identity is an equation that holds for every value of the variable for which both sides are defined. The identities used in this subsection are</p>
+<p>\[\sin^2\theta+\cos^2\theta=1,\]</p>
+<p>\[\tan\theta=\dfrac{\sin\theta}{\cos\theta}.\]</p>
+<p>Each of these is a trigonometric identity. To prove an identity, one side is rewritten, using these facts, until it matches the other side. Substituting a single numerical value of \(\theta\) is not a proof.</p>
+<div class="worked-example">
+<h4>Worked example 1: A short proof</h4>
+<p class="src">Coursebook, 5.7, identity-proof style. New identity \(\cos^2\theta\tan^2\theta+\cos^2\theta=1\).</p>
+<p>Prove the identity \(\cos^2\theta\tan^2\theta+\cos^2\theta=1\).</p>
+<ol class="steps">
+<li>The left-hand side is \(\cos^2\theta(\tan^2\theta+1)\). Replace \(\tan\theta\) by \(\dfrac{\sin\theta}{\cos\theta}\), to obtain \(\cos^2\theta\left(\dfrac{\sin^2\theta}{\cos^2\theta}+1\right)=\sin^2\theta+\cos^2\theta\). <span class="mark">M1</span></li>
+<li>Hence the left-hand side is \(1\), which is the right-hand side. <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\cos^2\theta\tan^2\theta+\cos^2\theta=\sin^2\theta+\cos^2\theta=1\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: Using a known tangent</h4>
+<p class="src">Coursebook, 5.7, numerical-identity style. New value \(\tan\theta=\dfrac{3}{4}\).</p>
+<p>Given that \(\tan\theta=\dfrac{3}{4}\) and \(\theta\) is acute, find the value of \(5\sin\theta\).</p>
+<ol class="steps">
+<li>A right-angled triangle with opposite \(3\) and adjacent \(4\) has hypotenuse \(5\), so \(\sin\theta=\dfrac{3}{5}\). <span class="mark">M1</span></li>
+<li>Hence \(5\sin\theta=3\). <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(3\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul>
+<li>Treating a proof as if it were an equation to be solved, for example by starting with the identity and cancelling from both sides without a clear starting expression.</li>
+<li>Using \(\sin^2\theta+\cos^2\theta=1\) as if it were \(\sin\theta+\cos\theta=1\).</li>
+</ul>
+<h3>Past paper</h3>
+<p class="src">9709/12/O/N/10 Q2, official QP and official MS.</p>
+<p>Prove the identity \(\tan^2 x-\sin^2 x\equiv\tan^2 x\sin^2 x\). [4]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>The left-hand side is rewritten by replacing \(\tan^2 x\) by \(\dfrac{\sin^2 x}{\cos^2 x}\), or by \(\sec^2 x-1\). <span class="mark">M1</span> Official MS: M1, replace \(t^2\) by \(s^2/c^2\) or \(\sec^2-1\).</li>
+<li>The factor \(1-\cos^2 x=\sin^2 x\) is used, to reach a form such as \(\dfrac{\sin^2 x(1-\cos^2 x)}{\cos^2 x}\). <span class="mark">M1</span> Official MS: M1, use of \(1-\cos^2 x=\sin^2 x\).</li>
+<li>A valid overall method is completed, reaching \(\dfrac{\sin^2 x\sin^2 x}{\cos^2 x}\) or an equivalent. <span class="mark">M1</span> Official MS: M1, valid overall method.</li>
+<li>The left-hand side is shown to be \(\tan^2 x\sin^2 x\). <span class="mark">A1</span> Official MS: A1, AG. An equivalent sequence starting from the right-hand side is also given in the official MS.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>Given that \(\sin\theta=\dfrac{5}{13}\) and \(\theta\) is acute, find the value of \(13\cos\theta\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\cos^2\theta=1-\sin^2\theta=1-\dfrac{25}{169}=\dfrac{144}{169}\), and \(\theta\) is acute, so \(13\cos\theta=12\).</li></ol>
+<p class="final"><strong>Answer:</strong> \(12\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>Given that \(\tan\theta=\dfrac{5}{12}\) and \(\theta\) is acute, find the value of \(13\sin\theta\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>A right-angled triangle with opposite \(5\) and adjacent \(12\) has hypotenuse \(13\), so \(13\sin\theta=5\).</li></ol>
+<p class="final"><strong>Answer:</strong> \(5\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>Given that \(\cos\theta=\dfrac{8}{17}\) and \(\theta\) is acute, find the value of \(289\sin^2\theta\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\sin^2\theta=1-\cos^2\theta=1-\dfrac{64}{289}=\dfrac{225}{289}\), so \(289\sin^2\theta=225\).</li></ol>
+<p class="final"><strong>Answer:</strong> \(225\)</p>
+</details>
+</div>
+</section>

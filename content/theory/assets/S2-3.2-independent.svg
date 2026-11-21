@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 180" width="420" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:420px;height:auto" role="img" aria-label="Two independent random variables combined into a sum">
+  <style>text{font-family:system-ui,Segoe UI,sans-serif;font-size:13px;fill:#222}</style>
+  <rect x="40" y="60" width="70" height="44" fill="none" stroke="#222" stroke-width="1.5"/>
+  <text x="64" y="88">X</text>
+  <rect x="40" y="120" width="70" height="44" fill="none" stroke="#222" stroke-width="1.5"/>
+  <text x="64" y="148">Y</text>
+  <line x1="110" y1="82" x2="200" y2="104" stroke="#222" stroke-width="1.3"/>
+  <line x1="110" y1="142" x2="200" y2="120" stroke="#222" stroke-width="1.3"/>
+  <rect x="200" y="86" width="110" height="52" fill="none" stroke="#222" stroke-width="1.5"/>
+  <text x="218" y="118">X + Y</text>
+</svg>

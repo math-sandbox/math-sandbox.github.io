@@ -1,0 +1,351 @@
+[
+  {
+    "id": "P1-4-review-QC1-gen",
+    "section": "P1-4-review",
+    "kind": "generated",
+    "title": "Arc length s=r theta with integer radian angle",
+    "marks": 1,
+    "source": "Theory P1-4-review Quick check 1 (r=5, theta=2, s=10); recap of P1-4.2",
+    "params": [
+      {
+        "name": "r",
+        "min": 2,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "name": "k",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "L": "r*k",
+      "A": "r*k"
+    },
+    "constraints": [
+      "r!=0",
+      "k!=0"
+    ],
+    "original": {
+      "r": 5,
+      "k": 2
+    },
+    "stem": "A circle has radius \\(({r|int})\\). Find the arc length that subtends an angle of \\(({k|int})\\) radians at the centre.",
+    "answer": {
+      "expression": "r*k",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(s=r\\theta=({r|int})\\times({k|int})={A|int}\\)",
+        "result": "r*k",
+        "format": "int",
+        "mark": "A1",
+        "note": "theta is the integer k radians."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original r=5, k=2"
+      },
+      {
+        "id": "worded",
+        "stem": "Find the length of an arc of a circle of radius \\(({r|int})\\) that subtends an angle of \\(({k|int})\\) radians at the centre."
+      }
+    ]
+  },
+  {
+    "id": "P1-4-review-QC2-gen",
+    "section": "P1-4-review",
+    "kind": "generated",
+    "title": "Area of a sector with integer radian angle",
+    "marks": 1,
+    "source": "Theory P1-4-review Quick check 2 (r=5, theta=2, area=25); recap of P1-4.3",
+    "params": [
+      {
+        "name": "r",
+        "min": 2,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "name": "k",
+        "min": 2,
+        "max": 6,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "S": "0.5*r*r*k",
+      "A": "0.5*r*r*k"
+    },
+    "constraints": [
+      "k%2==0",
+      "r!=0"
+    ],
+    "original": {
+      "r": 5,
+      "k": 2
+    },
+    "stem": "A circle has radius \\(({r|int})\\). Find the area of a sector with angle \\(({k|int})\\) radians.",
+    "answer": {
+      "expression": "0.5*r*r*k",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\dfrac12 r^2\\theta=\\dfrac12\\times({r|int})^2\\times({k|int})={A|int}\\)",
+        "result": "0.5*r*r*k",
+        "format": "int",
+        "mark": "A1",
+        "note": "k is even so the area is an integer for integer r."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original r=5, k=2"
+      },
+      {
+        "id": "worded",
+        "stem": "Find the area of a sector of radius \\(({r|int})\\) and angle \\(({k|int})\\) radians."
+      }
+    ]
+  },
+  {
+    "id": "P1-4-review-QC3-gen",
+    "section": "P1-4-review",
+    "kind": "generated",
+    "title": "Perimeter of a sector",
+    "marks": 1,
+    "source": "Theory P1-4-review Quick check 3 (r=6, theta=1, perimeter=18); recap of P1-4.2",
+    "params": [
+      {
+        "name": "r",
+        "min": 2,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "name": "k",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "P": "r*(2+k)",
+      "A": "r*(2+k)"
+    },
+    "constraints": [
+      "r!=0"
+    ],
+    "original": {
+      "r": 6,
+      "k": 1
+    },
+    "stem": "A sector has radius \\(({r|int})\\) and angle \\(({k|int})\\) radians. Find the perimeter of the sector.",
+    "answer": {
+      "expression": "r*(2+k)",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Perimeter \\(=2r+r\\theta=({r|int})(2+({k|int}))={A|int}\\)",
+        "result": "r*(2+k)",
+        "format": "int",
+        "mark": "A1",
+        "note": "Two radii plus the arc r*k."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original r=6, k=1"
+      },
+      {
+        "id": "worded",
+        "stem": "Find the perimeter of a sector of radius \\(({r|int})\\) and angle \\(({k|int})\\) radians."
+      }
+    ]
+  },
+  {
+    "id": "P1-4-review-PP-9709-11-MJ21-Q8",
+    "section": "P1-4-review",
+    "kind": "pastpaper",
+    "title": "Metal plate: angle in radians, exact perimeter and area",
+    "marks": 10,
+    "source": {
+      "paper": "9709/11/M/J/21 Q8",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s21_qp_11.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s21_ms_11.pdf",
+      "note": "Replaces 9709/12/M/J/12 Q6, which is already live in P1-4.2. Stem taken from the QP PDF (UCLES 2021). Official answers and mark allocation from the MS PDF. A source-faithful static redraw is embedded. Fully manual steps-only; no auto-credit and no parts array."
+    },
+    "stem": "This question is 9709/11/M/J/21 Question 8, taken from the official QP.\n\n<figure><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 400\" width=\"420\" style=\"max-width:100%;height:auto\" role=\"img\" aria-labelledby=\"pp-9709-s21-11-q8-t pp-9709-s21-11-q8-d\"><title id=\"pp-9709-s21-11-q8-t\">Metal plate formed from a circular disc with two semicircular pieces removed</title><desc id=\"pp-9709-s21-11-q8-d\">A symmetrical metal plate with centre C. The boundary consists of arc PS and arc QR of a circle of radius 4 cm, and inward semicircles with diameters PQ and RS, each of length 4 cm. Points P and Q are at the top, S and R at the bottom.</desc><path d=\"M 154.0,103.0 A 112.0 112.0 0 0 0 98.0,200.0 A 112.0 112.0 0 0 0 154.0,297.0 A 56.0 56.0 0 0 1 210.0,241.0 A 56.0 56.0 0 0 1 266.0,297.0 A 112.0 112.0 0 0 0 322.0,200.0 A 112.0 112.0 0 0 0 266.0,103.0 A 56.0 56.0 0 0 1 210.0,159.0 A 56.0 56.0 0 0 1 154.0,103.0 Z\" fill=\"#fdebd0\" stroke=\"#1a1a1a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"210.0\" cy=\"200.0\" r=\"2.5\" fill=\"#111\"/><text x=\"220.0\" y=\"205.0\" font-family=\"serif\" font-size=\"16\">C</text><text x=\"136.0\" y=\"95.0\" font-family=\"serif\" font-size=\"16\">P</text><text x=\"272.0\" y=\"95.0\" font-family=\"serif\" font-size=\"16\">Q</text><text x=\"136.0\" y=\"315.0\" font-family=\"serif\" font-size=\"16\">S</text><text x=\"272.0\" y=\"315.0\" font-family=\"serif\" font-size=\"16\">R</text><text x=\"20\" y=\"24\" font-family=\"serif\" font-size=\"13\">A symmetrical metal plate (not to scale)</text></svg><figcaption>Static redraw of the source diagram (not to scale). The printed diagram is also in the official QP.</figcaption></figure>\n\nThe diagram shows a symmetrical metal plate. The plate is made by removing two identical pieces from a circular disc with centre \\(C\\). The boundary of the plate consists of two arcs \\(PS\\) and \\(QR\\) of the original circle and two semicircles with \\(PQ\\) and \\(RS\\) as diameters. The radius of the circle with centre \\(C\\) is \\(4\\) cm, and \\(PQ=RS=4\\) cm also.\n\n(a) Show that angle \\(PCS=\\dfrac{2}{3}\\pi\\) radians.\n\n(b) Find the exact perimeter of the plate.\n\n(c) Show that the area of the plate is \\(\\dfrac{20}{3}\\pi+8\\sqrt{3}\\) cm\\(^2\\).",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "A1",
+        "text_tex": "(a) In triangle \\(CPQ\\), \\(CP=CQ=PQ=4\\), so the triangle is equilateral and angle \\(PCQ=\\dfrac{\\pi}{3}\\). Equivalently, if \\(H\\) is the midpoint of \\(PQ\\), then \\(\\sin(\\angle HCP)=\\dfrac{2}{4}\\) and \\(\\angle HCP=\\dfrac{\\pi}{6}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS 8(a): M1 for a correct method (midpoint, sine, cosine rule, or recognising that triangle PCQ is equilateral)."
+      },
+      {
+        "name": "A2",
+        "text_tex": "Angle \\(PCS=\\pi-\\dfrac{\\pi}{6}-\\dfrac{\\pi}{6}=\\dfrac{2}{3}\\pi\\) radians.",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS 8(a): A1, answer given. Official result (a): (2/3)π radians."
+      },
+      {
+        "name": "B1",
+        "text_tex": "(b) The two original-circle arcs \\(PS\\) and \\(QR\\) each subtend angle \\(\\dfrac{2}{3}\\pi\\) at \\(C\\), so their total length is \\(2\\times 4\\times\\dfrac{2}{3}\\pi=\\dfrac{16}{3}\\pi\\) (or equivalently \\(8\\pi-\\dfrac{8}{3}\\pi\\)).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS 8(b): M1 for the length of the two arcs PS and QR."
+      },
+      {
+        "name": "B2",
+        "text_tex": "Each inward boundary is a semicircle of radius \\(2\\), so the two semicircles have total length \\(2\\times\\pi\\times 2=4\\pi\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS 8(b): M1 for adding the circumference of the two semicircles."
+      },
+      {
+        "name": "B3",
+        "text_tex": "The exact perimeter of the plate is \\(\\dfrac{16}{3}\\pi+4\\pi=\\dfrac{28}{3}\\pi\\) cm.",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS 8(b): 28π/3 A1, must be a single term. Official answer (b): 28π/3 cm."
+      },
+      {
+        "name": "C1",
+        "text_tex": "(c) Area of sector \\(CPQ=\\dfrac12\\times 4^2\\times\\dfrac{\\pi}{3}=\\dfrac{8\\pi}{3}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS 8(c) first method: M1 uses the correct sector formula (sector CPQ)."
+      },
+      {
+        "name": "C2",
+        "text_tex": "The segment of the large circle beyond \\(PQ\\) has area \\(\\dfrac{8\\pi}{3}-\\dfrac12\\times 4^2\\sin\\dfrac{\\pi}{3}=\\dfrac{8\\pi}{3}-4\\sqrt{3}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS 8(c): M1 attempts to find the area of that segment."
+      },
+      {
+        "name": "C3",
+        "text_tex": "The area of a small semicircle of radius \\(2\\) is \\(\\dfrac12\\pi\\times 2^2=2\\pi\\) (two of them together make \\(4\\pi\\)).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS 8(c): M1 for the area of a small semicircle or of the small circle."
+      },
+      {
+        "name": "C4",
+        "text_tex": "The area of the plate is the area of the large circle, minus two small semicircles, minus two such segments.",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS 8(c): M1 for the correct combination. An official alternative is 2×(large sector PCS)+2×(triangle PCQ)−2×(small semicircle)."
+      },
+      {
+        "name": "C5",
+        "text_tex": "Hence the area is \\(\\pi\\times 4^2-\\pi\\times 2^2-2\\left(\\dfrac{8\\pi}{3}-4\\sqrt{3}\\right)=\\dfrac{20}{3}\\pi+8\\sqrt{3}\\) cm\\(^2\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS 8(c): A1, answer given. Official result (c): (20/3)π + 8√3 cm²."
+      }
+    ]
+  },
+  {
+    "id": "P1-4-review-PP-9709-11-MJ18-Q6",
+    "section": "P1-4-review",
+    "kind": "pastpaper",
+    "title": "Tangent AT, area and perimeter of the shaded region",
+    "marks": 7,
+    "source": {
+      "paper": "9709/11/M/J/18 Q6",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s18_qp_11.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s18_ms_11.pdf",
+      "note": "Replaces 9709/12/O/N/10 Q4, whose part (i) is already live in P1-4.1. Stem taken from the QP PDF (UCLES 2018). Official answers and mark allocation from the MS PDF. A source-faithful static redraw is embedded. Fully manual steps-only; no auto-credit and no parts array."
+    },
+    "stem": "This question is 9709/11/M/J/18 Question 6, taken from the official QP.\n\n<figure><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 340\" width=\"480\" style=\"max-width:100%;height:auto\" role=\"img\" aria-labelledby=\"pp-9709-s18-11-q6-t pp-9709-s18-11-q6-d\"><title id=\"pp-9709-s18-11-q6-t\">Circle with tangent AT and line OBT, showing a shaded region</title><desc id=\"pp-9709-s18-11-q6-d\">Circle centre O radius r centimetres. Point A is at the top of the circle and AT is a horizontal tangent meeting the line through O and B at T. Angle AOB is marked theta radians. The shaded region is bounded by the tangent AT, the line TB and the minor arc AB.</desc><circle cx=\"170\" cy=\"210\" r=\"90\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"2\"/><path d=\"M 170.00,120.00 L 346.83,120.00 L 250.21,169.18 A 90 90 0 0 1 170.00,120.00 Z\" fill=\"#c5c5c5\" stroke=\"#111\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"170\" y1=\"210\" x2=\"346.83\" y2=\"120.00\" stroke=\"#111\" stroke-width=\"2\"/><line x1=\"170\" y1=\"210\" x2=\"170.00\" y2=\"120.00\" stroke=\"#111\" stroke-width=\"2\"/><circle cx=\"170\" cy=\"210\" r=\"2.5\" fill=\"#111\"/><path d=\"M 170.00,188.00 A 22 22 0 0 1 189.61,200.02\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.4\"/><text x=\"118\" y=\"170.0\" font-family=\"serif\" font-size=\"15\" font-style=\"italic\">r cm</text><text x=\"188\" y=\"182.0\" font-family=\"serif\" font-size=\"15\" font-style=\"italic\">θ rad</text><text x=\"154.0\" y=\"112.0\" font-family=\"serif\" font-size=\"16\">A</text><text x=\"352.8\" y=\"125.0\" font-family=\"serif\" font-size=\"16\">T</text><text x=\"258.2\" y=\"183.2\" font-family=\"serif\" font-size=\"16\">B</text><text x=\"154.0\" y=\"228.0\" font-family=\"serif\" font-size=\"16\">O</text><text x=\"16\" y=\"22\" font-family=\"serif\" font-size=\"13\">A circle with tangent AT (not to scale)</text></svg><figcaption>Static redraw of the source diagram (not to scale). The printed diagram is also in the official QP.</figcaption></figure>\n\nThe diagram shows a circle with centre \\(O\\) and radius \\(r\\) cm. The points \\(A\\) and \\(B\\) lie on the circle and \\(AT\\) is a tangent to the circle. Angle \\(AOB=\\theta\\) radians and \\(OBT\\) is a straight line.\n\n(i) Express the area of the shaded region in terms of \\(r\\) and \\(\\theta\\).\n\n(ii) In the case where \\(r=3\\) and \\(\\theta=1.2\\), find the perimeter of the shaded region.",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "I1",
+        "text_tex": "(i) Since \\(AT\\) is a tangent, angle \\(OAT=90^\\circ\\). Hence \\(\\tan\\theta=\\dfrac{AT}{r}\\) so \\(AT=r\\tan\\theta\\), or equivalently \\(OT=\\dfrac{r}{\\cos\\theta}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS 6(i): B1 CAO/SOI for AT=r tanθ or OT=r/cosθ."
+      },
+      {
+        "name": "I2",
+        "text_tex": "The area of triangle \\(OAT\\) is \\(\\dfrac12 r\\times AT=\\dfrac12 r^{2}\\tan\\theta\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS 6(i): B1 for ½r²tanθ. An official alternative uses Pythagoras or ½(r)(r/cosθ)sinθ."
+      },
+      {
+        "name": "I3",
+        "text_tex": "The area of sector \\(AOB\\) is \\(\\dfrac12 r^{2}\\theta\\). The area of the shaded region is therefore \\(\\dfrac12 r^{2}\\tan\\theta-\\dfrac12 r^{2}\\theta\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS 6(i): B1 for “−½r²θ”. Official answer (i): ½r²tanθ − ½r²θ."
+      },
+      {
+        "name": "II1",
+        "text_tex": "(ii) With \\(r=3\\) and \\(\\theta=1.2\\), \\(\\tan 1.2=\\dfrac{AT}{3}\\), so \\(AT=3\\tan 1.2=7.716\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS 6(ii): M1 for correct use of trigonometry and radians in the right-angled triangle; AT=7.716."
+      },
+      {
+        "name": "II2",
+        "text_tex": "The arc \\(AB\\) has length \\(r\\theta=3\\times 1.2=3.6\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS 6(ii): B1 arc length rθ=3.6 (accept 3×1.2)."
+      },
+      {
+        "name": "II3",
+        "text_tex": "By Pythagoras, or from \\(\\cos 1.2=\\dfrac{3}{OT}\\), \\(OT=\\dfrac{3}{\\cos 1.2}=8.279\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS 6(ii): M1 correct method for OT; OT=8.279."
+      },
+      {
+        "name": "II4",
+        "text_tex": "The perimeter of the shaded region is \\(AT\\) plus arc \\(AB\\) plus \\(OT\\) minus the radius \\(OA\\): \\(7.716+3.6+8.279-3=16.6\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS 6(ii): perimeter = AT + arc + OT − radius = 16.6 A1 CAO, www. Official answer (ii): 16.6."
+      }
+    ]
+  }
+]

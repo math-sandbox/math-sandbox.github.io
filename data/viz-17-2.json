@@ -1,0 +1,329 @@
+{
+ "section": "IGCSE-17.2",
+ "source": "Cambridge IGCSE Mathematics Core & Extended Coursebook (Morrison & Hamshaw), Ch17, pp.564–570",
+ "hp_bar": {
+  "caption": "Simple interest: the same interest is added every year",
+  "defaults": {
+   "P": 2400,
+   "r": 3.5,
+   "n": 4
+  },
+  "labels": {
+   "principal": "Principal \\(P\\)",
+   "interest": "Interest \\(I\\)",
+   "total": "Amount \\(P+I\\)",
+   "per_year": "Interest per year",
+   "x_axis": "Year",
+   "y_axis": "Amount ($)"
+  },
+  "values": {
+   "interest_per_year": 84.0,
+   "I": 336.0,
+   "amount": 2736.0
+  },
+  "explanation": [
+   "Each year the interest is \\(\\frac{r}{100}\\times P\\), always worked out on the original principal, so every bar segment is the same size.",
+   "Total interest \\(I=\\frac{PRT}{100}=\\frac{2400\\times3.5\\times4}{100}=336\\), so the amount after 4 years is $2,736.00."
+  ]
+ },
+ "compound_ladder": {
+  "caption": "Compound vs simple interest, year by year",
+  "defaults": {
+   "P": 3200,
+   "r": 5,
+   "n": 5
+  },
+  "columns": [
+   "Year \\(n\\)",
+   "Simple interest amount ($)",
+   "Compound interest amount ($)",
+   "Difference ($)"
+  ],
+  "rows": [
+   {
+    "year": 0,
+    "simple": 3200.0,
+    "compound": 3200.0,
+    "compound_unrounded": "3200",
+    "difference": 0.0
+   },
+   {
+    "year": 1,
+    "simple": 3360.0,
+    "compound": 3360.0,
+    "compound_unrounded": "3360.00",
+    "difference": 0.0
+   },
+   {
+    "year": 2,
+    "simple": 3520.0,
+    "compound": 3528.0,
+    "compound_unrounded": "3528.0000",
+    "difference": 8.0
+   },
+   {
+    "year": 3,
+    "simple": 3680.0,
+    "compound": 3704.4,
+    "compound_unrounded": "3704.400000",
+    "difference": 24.4
+   },
+   {
+    "year": 4,
+    "simple": 3840.0,
+    "compound": 3889.62,
+    "compound_unrounded": "3889.62000000",
+    "difference": 49.62
+   },
+   {
+    "year": 5,
+    "simple": 4000.0,
+    "compound": 4084.1,
+    "compound_unrounded": "4084.1010000000",
+    "difference": 84.1
+   }
+  ],
+  "explanation": [
+   "Simple interest adds \\(\\frac{5}{100}\\times3200=160\\) every year, so the simple amounts go up in equal steps.",
+   "Compound interest multiplies by \\(1.05\\) each year, so the interest is also earned on earlier interest: \\(V=3200\\times1.05^n\\).",
+   "After 5 years: simple $4,000.00, compound $4,084.10; the gap grows every year."
+  ]
+ },
+ "depreciation_curve": {
+  "caption": "Depreciation: a car loses 15% of its value each year",
+  "formula": "\\(V=24\\,000\\times0.85^n\\)",
+  "defaults": {
+   "a": 24000,
+   "r_percent": 15,
+   "multiplier": 0.85,
+   "n_max": 10
+  },
+  "threshold": {
+   "value": 10000,
+   "label": "$10,000"
+  },
+  "highlight": {
+   "n": 6,
+   "V": 9051.588375,
+   "label": "first worth less than $10,000"
+  },
+  "points": [
+   {
+    "n": 0,
+    "V": 24000.0
+   },
+   {
+    "n": 1,
+    "V": 20400.0
+   },
+   {
+    "n": 2,
+    "V": 17340.0
+   },
+   {
+    "n": 3,
+    "V": 14739.0
+   },
+   {
+    "n": 4,
+    "V": 12528.15
+   },
+   {
+    "n": 5,
+    "V": 10648.9275
+   },
+   {
+    "n": 6,
+    "V": 9051.588375
+   },
+   {
+    "n": 7,
+    "V": 7693.85011875
+   },
+   {
+    "n": 8,
+    "V": 6539.7726009375
+   },
+   {
+    "n": 9,
+    "V": 5558.806710796875
+   },
+   {
+    "n": 10,
+    "V": 4724.985704177344
+   }
+  ],
+  "axis_labels": {
+   "x": "Number of years \\(n\\)",
+   "y": "Value \\(V\\) ($)"
+  },
+  "explanation": [
+   "Each year the value is multiplied by \\(1-0.15=0.85\\), so it falls by a smaller amount each year: this is exponential decay, not a straight line.",
+   "\\(n=5\\): \\(24\\,000\\times0.85^5=10\\,648.9275\\) (still above $10,000); \\(n=6\\): \\(24\\,000\\times0.85^6=9051.588375\\) (below), so the car is first worth less than $10,000 after 6 years."
+  ],
+  "quick_check": {
+   "question": "A machine costs $18,500 and depreciates by 12% per year. (a) Find its value after 4 years. (b) After how many whole years is it first worth less than $9000?",
+   "solution": [
+    "Decay multiplier \\(=1-\\frac{12}{100}=0.88\\)",
+    "(a) \\(V=18\\,500\\times0.88^4=11\\,094.36416\\)",
+    "so the value is $11,094.36",
+    "(b) \\(n=5\\): \\(18\\,500\\times0.88^5=9763.0404608\\) (above $9000)",
+    "\\(n=6\\): \\(18\\,500\\times0.88^6=8591.475605504\\) (below $9000)",
+    "so it is first worth less than $9000 after 6 years"
+   ],
+   "answer": {
+    "a": 11094.36,
+    "b": 6
+   }
+  }
+ },
+ "decision_flowchart": {
+  "caption": "Which method and which multiplier?",
+  "nodes": [
+   {
+    "id": "start",
+    "label": "What does the question describe?",
+    "kind": "start"
+   },
+   {
+    "id": "q_type",
+    "label": "Is interest worked out on the original principal only?",
+    "kind": "decision"
+   },
+   {
+    "id": "simple",
+    "label": "Simple interest: \\(I=\\frac{PRT}{100}\\), amount \\(=P+I\\)",
+    "kind": "result"
+   },
+   {
+    "id": "q_dir",
+    "label": "Is the value increasing or decreasing?",
+    "kind": "decision"
+   },
+   {
+    "id": "growth",
+    "label": "Growth (compound interest, appreciation): multiplier \\(1+\\frac{r}{100}\\)",
+    "kind": "result"
+   },
+   {
+    "id": "decay",
+    "label": "Decay (depreciation): multiplier \\(1-\\frac{r}{100}\\)",
+    "kind": "result"
+   },
+   {
+    "id": "formula",
+    "label": "Value after \\(n\\) years: \\(V=P\\times(\\text{multiplier})^n\\)",
+    "kind": "result"
+   },
+   {
+    "id": "q_ask",
+    "label": "Does the question ask for interest earned?",
+    "kind": "decision"
+   },
+   {
+    "id": "subtract",
+    "label": "Interest earned \\(=V-P\\)",
+    "kind": "result"
+   },
+   {
+    "id": "final",
+    "label": "Round only the final answer (money to 2 d.p., otherwise 3 s.f.)",
+    "kind": "end"
+   }
+  ],
+  "edges": [
+   {
+    "from": "start",
+    "to": "q_type",
+    "label": ""
+   },
+   {
+    "from": "q_type",
+    "to": "simple",
+    "label": "Yes (simple interest, flat rate)"
+   },
+   {
+    "from": "q_type",
+    "to": "q_dir",
+    "label": "No (compound: interest on interest)"
+   },
+   {
+    "from": "q_dir",
+    "to": "growth",
+    "label": "Increasing"
+   },
+   {
+    "from": "q_dir",
+    "to": "decay",
+    "label": "Decreasing"
+   },
+   {
+    "from": "growth",
+    "to": "formula",
+    "label": ""
+   },
+   {
+    "from": "decay",
+    "to": "formula",
+    "label": ""
+   },
+   {
+    "from": "formula",
+    "to": "q_ask",
+    "label": ""
+   },
+   {
+    "from": "q_ask",
+    "to": "subtract",
+    "label": "Yes"
+   },
+   {
+    "from": "q_ask",
+    "to": "final",
+    "label": "No, final value"
+   },
+   {
+    "from": "subtract",
+    "to": "final",
+    "label": ""
+   },
+   {
+    "from": "simple",
+    "to": "final",
+    "label": ""
+   }
+  ]
+ },
+ "common_mistakes": [
+  {
+   "mistake": "Using \\(0.15\\) as the multiplier for a 15% decrease: \\(24\\,000\\times0.15^6\\)",
+   "why": "\\(0.15\\) keeps only 15% of the value each year; a 15% fall keeps 85%.",
+   "correct": "Use \\(1-0.15=0.85\\): \\(24\\,000\\times0.85^6=9051.588375\\), i.e. $9,051.59."
+  },
+  {
+   "mistake": "Using \\(2.8\\) instead of \\(1.028\\) for 2.8% growth",
+   "why": "Multiplying by 2.8 almost triples the value each year.",
+   "correct": "Multiplier \\(=1+\\frac{2.8}{100}=1.028\\): \\(6000\\times1.028^5=6888.375662\\ldots\\), i.e. $6,888.38."
+  },
+  {
+   "mistake": "Adding the interest only once: \\(3200+3\\times0.05\\times3200=3680\\) for 3 years compound",
+   "why": "That is simple interest; compound interest is added every year and then earns interest itself.",
+   "correct": "\\(3200\\times1.05^3=3704.4\\), i.e. $3,704.40."
+  },
+  {
+   "mistake": "Using the wrong \\(n\\), e.g. 18 for 18 months, or counting the starting year as \\(n=1\\)",
+   "why": "\\(n\\) is the number of complete years (periods) of growth or decay; the starting value is \\(n=0\\).",
+   "correct": "18 months at an annual rate means \\(n=1.5\\) for simple interest; for 'first worth less than', test whole years and give the first one below."
+  },
+  {
+   "mistake": "Giving the final value when the question asks for the interest earned",
+   "why": "Interest is only the increase, not the whole amount.",
+   "correct": "Interest \\(=V-P=3704.40-3200=504.40\\), i.e. $504.40."
+  },
+  {
+   "mistake": "Rounding mid-way, e.g. \\(1.05^3\\approx1.16\\)",
+   "why": "Early rounding changes the final answer: \\(3200\\times1.16=3712\\).",
+   "correct": "Keep full values: \\(3200\\times1.157625=3704.4\\), then round the final answer."
+  }
+ ]
+}

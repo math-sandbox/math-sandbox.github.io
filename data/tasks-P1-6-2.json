@@ -1,0 +1,351 @@
+[
+    {
+        "id": "P1-6.2-QC1-gen",
+        "section": "P1-6.2",
+        "kind": "generated",
+        "title": "Evaluate a binomial coefficient",
+        "marks": 1,
+        "source": "Theory P1-6.2 Quick check 1; nCr",
+        "params": [
+            {
+                "name": "n",
+                "min": 6,
+                "max": 12,
+                "step": 1
+            },
+            {
+                "name": "r",
+                "min": 2,
+                "max": 4,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "m": "n-r",
+            "A": "[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][n]/([1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][r]*[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][(n)-(r)])"
+        },
+        "constraints": [
+            "r<n"
+        ],
+        "original": {
+            "n": 7,
+            "r": 3
+        },
+        "stem": "Evaluate \\(\\dbinom{{n|int}}{{r|int}}\\).",
+        "answer": {
+            "expression": "[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][n]/([1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][r]*[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][(n)-(r)])",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "A",
+                "text_tex": "\\(\\dbinom{{n|int}}{{r|int}}=\\dfrac{{n|int}!}{{r|int}!\\,{m|int}!}={A|int}\\)",
+                "result": "[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][n]/([1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][r]*[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][(n)-(r)])",
+                "format": "int",
+                "mark": "A1",
+                "note": "Use the formula n! divided by r! (n - r)!."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 7C3 = 35"
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-6.2"
+            ],
+            "topic": "Series",
+            "chapter": "P1-6",
+            "marks": 1,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-6-2.json",
+                "locator": "P1-6.2-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-6.2-QC2-gen",
+        "section": "P1-6.2",
+        "kind": "generated",
+        "title": "Coefficient of x cubed in (1 - kx) to the power n",
+        "marks": 2,
+        "source": "Theory P1-6.2 Quick check 2; -nC3 k cubed",
+        "params": [
+            {
+                "name": "n",
+                "min": 4,
+                "max": 8,
+                "step": 1
+            },
+            {
+                "name": "k",
+                "min": 2,
+                "max": 3,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "B": "n*(n-1)*(n-2)/6",
+            "K3": "k*k*k",
+            "A": "-n*(n-1)*(n-2)/6*k*k*k"
+        },
+        "constraints": [
+            "n>=4"
+        ],
+        "original": {
+            "n": 6,
+            "k": 2
+        },
+        "stem": "Find the coefficient of \\(x^3\\) in the expansion of \\((1-{k|int}x)^{{n|int}}\\).",
+        "answer": {
+            "expression": "-B*K3",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "The term in \\(x^3\\) is \\(\\dbinom{{n|int}}{3}(-{k|int}x)^3\\), and \\(\\dbinom{{n|int}}{3}={B|int}\\).",
+                "result": "B",
+                "format": "int",
+                "mark": "M1",
+                "note": "General term nCr times (-kx) to the power r with r = 3."
+            },
+            {
+                "name": "A",
+                "text_tex": "Coefficient \\(={B|int}\\times(-{K3|int})={A|int}\\)",
+                "result": "-B*K3",
+                "format": "int",
+                "mark": "A1",
+                "note": "An odd power of a negative term is negative."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original (1-2x) to the power 6, coefficient -160"
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-6.2"
+            ],
+            "topic": "Series",
+            "chapter": "P1-6",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-6-2.json",
+                "locator": "P1-6.2-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-6.2-QC3-gen",
+        "section": "P1-6.2",
+        "kind": "generated",
+        "title": "Find n from the coefficient of x squared in (1 + x) to the power n",
+        "marks": 2,
+        "source": "Theory P1-6.2 Quick check 3; nC2 = V",
+        "params": [
+            {
+                "name": "n",
+                "min": 5,
+                "max": 15,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "V": "n*(n-1)/2"
+        },
+        "constraints": [
+            "n>=5"
+        ],
+        "original": {
+            "n": 8
+        },
+        "stem": "The coefficient of \\(x^2\\) in the expansion of \\((1+x)^n\\), where \\(n\\) is a positive integer, is {V|int}. Find \\(n\\).",
+        "answer": {
+            "expression": "n",
+            "format": "{N|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\dbinom{n}{2}=\\dfrac{n(n-1)}{2}={V|int}\\)",
+                "result": "V",
+                "format": "int",
+                "mark": "M1",
+                "note": "Set nC2 equal to the given coefficient."
+            },
+            {
+                "name": "N",
+                "text_tex": "\\(n={n|int}\\), the positive root.",
+                "result": "n",
+                "format": "int",
+                "mark": "A1",
+                "note": "Solve the quadratic and reject the negative root."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original coefficient 28, n = 8"
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-6.2"
+            ],
+            "topic": "Series",
+            "chapter": "P1-6",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-6-2.json",
+                "locator": "P1-6.2-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-6.2-PP-9709-11-ON10-Q2",
+        "section": "P1-6.2",
+        "kind": "pastpaper",
+        "title": "Unknown constant in (1 + ax) to the power 6",
+        "marks": 4,
+        "source": {
+            "paper": "9709/11/O/N/10 Q2",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w10_qp_11.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w10_ms_11.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>In the expansion of \\((1+ax)^6\\), where \\(a\\) is a constant, the coefficient of \\(x\\) is \\(-30\\). Find the coefficient of \\(x^3\\). [4]</p>",
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-6.2"
+            ],
+            "topic": "Series",
+            "chapter": "P1-6",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-6-2.json",
+                "locator": "P1-6.2-PP-9709-11-ON10-Q2"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "The term in \\(x\\) is \\(6ax\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, term in x = 6ax, correct only."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(6a=-30\\), so \\(a=-5\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 ft, equate with −30 to give a = −5; ft from his answer for 6ax."
+            },
+            {
+                "name": "s3",
+                "text_tex": "The term in \\(x^3\\) is \\(\\dfrac{6\\times5\\times4}{3!}a^3x^3=20a^3x^3\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, term in x³ = (6.5.4/3!) a³, correct only."
+            },
+            {
+                "name": "s4",
+                "text_tex": "Coefficient of \\(x^3\\) \\(=20\\times(-5)^3=-2500\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 ft, −2500; ft for 20 × a³."
+            }
+        ]
+    },
+    {
+        "id": "P1-6.2-PP-9709-12-FM19-Q1",
+        "section": "P1-6.2",
+        "kind": "pastpaper",
+        "title": "Unknown constant from the coefficient of x cubed",
+        "marks": 3,
+        "source": {
+            "paper": "9709/12/F/M/19 Q1",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m19_qp_12.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m19_ms_12.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>The coefficient of \\(x^3\\) in the expansion of \\((1-px)^5\\) is \\(-2160\\). Find the value of the constant \\(p\\). [3]</p>",
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-6.2"
+            ],
+            "topic": "Series",
+            "chapter": "P1-6",
+            "marks": 3,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-6-2.json",
+                "locator": "P1-6.2-PP-9709-12-FM19-Q1"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "The term in \\(x^3\\) is \\({}^{5}C_{3}(-px)^3=-10p^3x^3\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, 5C3 [(−)(px)³] soi. Can be part of expansion. Condone omission of − sign."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(-10p^3=-2160\\), so \\(p^3=216\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, (−1)10p³ = −2160 then ÷ and cube root. Condone omission of − sign."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(p=6\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, p = 6."
+            }
+        ]
+    }
+]

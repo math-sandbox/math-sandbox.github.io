@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Term 1 Review · Math Sandbox</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    window.MathJax = { tex: { inlineMath: [["\\(", "\\)"]], displayMath: [["$$", "$$"]] }, options: { ignoreHtmlClass: "fig|tex2jax_ignore" } };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Term 1 Review</h1>
+    <nav class="topnav">
+      <a href="index.html">Home</a>
+      <a href="index.html?class=10P">10P</a>
+      <a href="index.html?class=10T">10T</a>
+      <a href="index.html?class=11AS">11AS</a>
+      <a href="index.html?class=12AS">12AS</a>
+      <a href="index.html?class=12A2">12A2</a>
+      <a href="generator.html">Generator</a>
+      <a href="worksheet.html">Worksheet builder</a>
+      <a href="vocabulary.html">Vocabulary</a>
+    </nav>
+  </header>
+  <main>
+    <nav class="tabs" id="tabs"></nav>
+    <div id="app"></div>
+  </main>
+  <script src="assets/nav.js"></script>
+  <script src="assets/review-t1-fallback.js"></script>
+  <script src="assets/review-render.js"></script>
+  <script src="assets/generators.js"></script>
+  <script>
+    const app = document.getElementById("app");
+    const tabs = document.getElementById("tabs");
+    let data, cls;
+    function coursesFor(id) {
+      return data.filter((c) => c.classes.includes(id));
+    }
+    function draw() {
+      const courses = coursesFor(cls);
+      tabs.innerHTML = [...new Set(data.flatMap((c) => c.classes))]
+        .map((id) => `<button class="tab ${id === cls ? "active" : ""}" data-id="${id}">${id}</button>`)
+        .join("");
+      app.innerHTML = courses
+        .map((c) =>
+          c.blocks
+            .map(
+              (b, bi) =>
+                `<div class="panel" id="topic-${c.course}-${bi}"><h2>${topicHeading(bi + 1, b.title)} <small class="badge">${b.section}</small></h2>${b.method}${b.tasks
+                  .map((t, ti) => {
+                    const id = c.course + "-" + bi + "-" + ti;
+                    const extra = msNav.taskNav(id, cls);
+                    return "<h3 id=\"t-" + id + "\" title=\"" + id + "\">" + taskLabel(t, ti + 1) + "</h3>" + taskCard(t, id, extra);
+                  })
+                  .join("")}</div>`
+            )
+            .join("")
+        )
+        .join("");
+      if (typeof msNav !== "undefined") msNav.setClass(cls);
+      if (window.MathJax?.typesetPromise) MathJax.typesetPromise([app]);
+      const hash = location.hash.slice(1);
+      if (hash) {
+        const el = document.getElementById(hash);
+        if (el && el.scrollIntoView) el.scrollIntoView({ block: "start" });
+      }
+    }
+    tabs.onclick = (e) => {
+      const id = e.target.dataset.id;
+      if (!id) return;
+      cls = id;
+      localStorage.setItem("ms-class", cls);
+      history.replaceState(null, "", "?class=" + encodeURIComponent(cls) + location.hash);
+      draw();
+    };
+    bindReveal(app);
+    (async () => {
+      try {
+        const r = await fetch("data/review-t1.json", { cache: "no-store" });
+        if (r.ok) data = await r.json();
+      } catch (e) {}
+      if (!data) data = window.REVIEW_T1_FALLBACK;
+      cls = new URLSearchParams(location.search).get("class") || localStorage.getItem("ms-class") || "11AS";
+      if (!data.some((c) => c.classes.includes(cls))) cls = data[0].classes[0];
+      draw();
+    })();
+  </script>
+  <script src="assets/analytics.js"></script>
+  <script data-goatcounter="https://xomjak.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

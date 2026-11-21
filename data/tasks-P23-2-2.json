@@ -1,0 +1,224 @@
+[
+  {
+    "id": "P23-2.2-QC1-gen",
+    "section": "P23-2.2",
+    "kind": "generated",
+    "title": "An exact logarithm of a power",
+    "marks": 2,
+    "source": "S1? P23 Ch2 theory P23-2.2 Quick check 1 (log_3 81 = 4)",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "k",
+        "min": 2,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "N": "math.pow(a,k)",
+      "E": "k"
+    },
+    "constraints": [
+      "a>=2",
+      "k>=2"
+    ],
+    "original": {
+      "a": 3,
+      "k": 4
+    },
+    "stem": "Find the value of \\(\\log_{{a|int}} {N|int}\\).",
+    "answer": {
+      "expression": "k",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "\\({N|int}={a|int}^{{k|int}}\\), so \\(\\log_{{a|int}}{N|int}={k|int}\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Write the argument as a power of the base."
+      },
+      {
+        "name": "E",
+        "text_tex": "The value is \\({k|int}\\).",
+        "result": "k",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct value."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "power",
+        "stem": "Given that \\({N|int}={a|int}^{{k|int}}\\), find \\(\\log_{{a|int}} {N|int}\\).",
+        "note": "power given"
+      },
+      {
+        "id": "exact",
+        "stem": "Without listing intermediate powers, find \\(\\log_{{a|int}} {N|int}\\).",
+        "note": "exact frame"
+      }
+    ]
+  },
+  {
+    "id": "P23-2.2-QC2-gen",
+    "section": "P23-2.2",
+    "kind": "generated",
+    "title": "Convert a logarithm to a power",
+    "marks": 2,
+    "source": "P23 Ch2 theory P23-2.2 Quick check 2 (log_2 x = 6, so x = 64)",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "name": "k",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "E": "math.pow(a,k)"
+    },
+    "constraints": [
+      "a>=2",
+      "k>=2",
+      "math.pow(a,k)<=1024"
+    ],
+    "original": {
+      "a": 2,
+      "k": 6
+    },
+    "stem": "Solve \\(\\log_{{a|int}} x={k|int}\\).",
+    "answer": {
+      "expression": "math.pow(a,k)",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "Converting to exponential form gives \\(x={a|int}^{{k|int}}\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Use the inverse relation."
+      },
+      {
+        "name": "E",
+        "text_tex": "So \\(x={E|int}\\).",
+        "result": "math.pow(a,k)",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct value."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "exp",
+        "stem": "Rewrite \\(\\log_{{a|int}} x={k|int}\\) in exponential form and hence find \\(x\\).",
+        "note": "exp frame"
+      },
+      {
+        "id": "value",
+        "stem": "If \\(\\log_{{a|int}} x={k|int}\\), what is the value of \\(x\\)?",
+        "note": "value frame"
+      }
+    ]
+  },
+  {
+    "id": "P23-2.2-QC3-gen",
+    "section": "P23-2.2",
+    "kind": "generated",
+    "title": "The logarithm of a reciprocal power",
+    "marks": 2,
+    "source": "P23 Ch2 theory P23-2.2 Quick check 3 (log_5(1/25) = -2)",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "k",
+        "min": 2,
+        "max": 4,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "N": "math.pow(a,k)",
+      "E": "-k"
+    },
+    "constraints": [
+      "a>=2",
+      "k>=2"
+    ],
+    "original": {
+      "a": 5,
+      "k": 2
+    },
+    "stem": "Find the value of the logarithm to base {a|int} of 1/{N|int}.",
+    "answer": {
+      "expression": "-k",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "1/{N|int} is {a|int} to the power -{k|int}, so the logarithm is -{k|int}.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Write the argument as a power of the base."
+      },
+      {
+        "name": "E",
+        "text_tex": "The value is \\({E|int}\\).",
+        "result": "-k",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct value."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "recip",
+        "stem": "Evaluate the logarithm to base {a|int} of 1/{N|int}.",
+        "note": "reciprocal frame"
+      },
+      {
+        "id": "neg",
+        "stem": "What is the value of the logarithm to base {a|int} of {a|int} to the power -{k|int}?",
+        "note": "negative index frame"
+      }
+    ]
+  }
+]

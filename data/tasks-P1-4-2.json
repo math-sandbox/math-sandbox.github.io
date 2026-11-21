@@ -1,0 +1,230 @@
+[
+  {
+    "id": "P1-4.2-QC2-gen",
+    "section": "P1-4.2",
+    "kind": "generated",
+    "title": "Radius from arc length and angle",
+    "marks": 2,
+    "source": "Theory P1-4.2 Quick check 2 / Worked example 4.3 (12 = r x 1.5, r=8); book p.105",
+    "params": [
+      {
+        "name": "r",
+        "min": 2,
+        "max": 30,
+        "step": 1
+      },
+      {
+        "name": "k",
+        "min": 2,
+        "max": 20,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "s": "r*k/2"
+    },
+    "constraints": [
+      "(r*k)%2==0",
+      "r*k/2!=0",
+      "k%2==1"
+    ],
+    "original": {
+      "r": 8,
+      "k": 3
+    },
+    "stem": "A sector has an angle of \\(\\dfrac{{k|int}}{2}\\) radians and an arc length of \\({s|int}\\,\\mathrm{cm}\\). Find the radius of the sector.",
+    "answer": {
+      "expression": "r",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "Arc length \\(=r\\theta\\), so \\({s|int}=r\\times\\dfrac{{k|int}}{2}\\)",
+        "result": "s",
+        "format": "int",
+        "mark": "M1",
+        "note": "Use s=r theta with theta in radians."
+      },
+      {
+        "name": "A",
+        "text_tex": "\\(r=\\dfrac{{s|int}}{{k|int}/2}={A|int}\\,\\mathrm{cm}\\)",
+        "result": "r",
+        "format": "int",
+        "mark": "A1",
+        "note": "Exact integer radius."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "angle written as k/2 so 1.5 appears as 3/2"
+      },
+      {
+        "id": "arc-word",
+        "stem": "An arc of length \\({s|int}\\,\\mathrm{cm}\\) subtends an angle of \\(\\dfrac{{k|int}}{2}\\) radians at the centre. Find the radius of the circle."
+      },
+      {
+        "id": "sector-word",
+        "stem": "A sector of a circle has arc length \\({s|int}\\,\\mathrm{cm}\\) and angle \\(\\dfrac{{k|int}}{2}\\) radians. Find the radius."
+      }
+    ]
+  },
+  {
+    "id": "P1-4.2-QC3-gen",
+    "section": "P1-4.2",
+    "kind": "generated",
+    "title": "Numerical arc length, 3 significant figures",
+    "marks": 2,
+    "source": "Theory P1-4.2 Quick check 3 (arc of radius 8 cm and angle 2.4 rad is 19.2 cm); book Exercise 4B style, pp.105–106",
+    "params": [
+      {
+        "name": "r",
+        "min": 3,
+        "max": 25,
+        "step": 1
+      },
+      {
+        "name": "t",
+        "min": 3,
+        "max": 29,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "th": "t/10",
+      "L": "r*t/10"
+    },
+    "constraints": [
+      "t!=10"
+    ],
+    "original": {
+      "r": 8,
+      "t": 24
+    },
+    "stem": "Find the length of an arc of radius \\({r|int}\\,\\mathrm{cm}\\) that subtends an angle of \\({th|raw}\\) radians at the centre, correct to 3 significant figures.",
+    "answer": {
+      "expression": "r*t/10",
+      "format": "{L|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "Lm",
+        "text_tex": "Arc length \\(=r\\theta={r|int}\\times{th|raw}={Lm|num5}\\ldots\\)",
+        "result": "r*t/10",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Use s=r theta."
+      },
+      {
+        "name": "L",
+        "text_tex": "\\(\\approx {L|sf3z}\\,\\mathrm{cm}\\) (3 s.f.)",
+        "result": "Lm",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Correct to 3 significant figures, including significant trailing zeros."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "theta given as a one-decimal-place radian measure t/10; t=10 (1 radian) excluded only to avoid a trivial r x 1"
+      },
+      {
+        "id": "sector",
+        "stem": "A sector has radius \\({r|int}\\,\\mathrm{cm}\\) and angle \\({th|raw}\\) radians. Find the length of the arc, correct to 3 significant figures."
+      },
+      {
+        "id": "wheel",
+        "stem": "A wheel of radius \\({r|int}\\,\\mathrm{cm}\\) turns through \\({th|raw}\\) radians. Find the length of the arc travelled by a point on the rim, correct to 3 significant figures."
+      }
+    ]
+  },
+  {
+    "id": "P1-4.2-PP-9709-12-MJ12-Q6",
+    "section": "P1-4.2",
+    "kind": "pastpaper",
+    "title": "Metal plate formed by removing a segment",
+    "marks": 5,
+    "source": {
+      "paper": "9709/12/M/J/12 Q6(i)(ii)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s12_qp_12.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s12_ms_12.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2012). Official MS for (i): cosine rule or 2 r sin(theta/2), 14.9 cm (A1). For (ii): M1 uses s=r theta with 2.4 or with pi-2.4? MS: Perimeter=(i)+r theta, theta=2 pi-2.4 (B1), 46.0 cm (A1). Part (iii) (area) is P1-4.3 content and is omitted. A source-faithful static redraw is embedded; no figure field or renderer was added. Expressions are numeric literals equal to 16 sin(1.2) and that plus 8(2 pi-2.4), because the practice engine's math object has no sin."
+    },
+    "stem": "<figure><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"64 118 276 186\" width=\"360\" style=\"max-width:100%;height:auto\" role=\"img\" aria-labelledby=\"pp-9709-s12-12-q6-t pp-9709-s12-12-q6-d\"><title id=\"pp-9709-s12-12-q6-t\">Metal plate formed by removing a segment from a circle</title><desc id=\"pp-9709-s12-12-q6-d\">Circle centre O radius 8 cm. Chord AB subtends 2.4 radians at O. The minor segment has been removed, leaving a plate bounded by the chord AB and the major arc AB. A solid radius is drawn from O to the major arc and labelled 8 cm. Angle AOB is marked 2.4 rad just below the small arc at O.</desc><path d=\"M 302.52 140.14 A 110 110 0 1 1 97.48 140.14 L 302.52 140.14 Z\" fill=\"#d5e8f0\" stroke=\"#1a5276\" stroke-width=\"2\"/><line x1=\"200\" y1=\"180\" x2=\"302.52\" y2=\"140.14\" stroke=\"#888\" stroke-dasharray=\"4 3\"/><line x1=\"200\" y1=\"180\" x2=\"97.48\" y2=\"140.14\" stroke=\"#888\" stroke-dasharray=\"4 3\"/><line x1=\"200\" y1=\"180\" x2=\"200\" y2=\"290\" stroke=\"#1a5276\" stroke-width=\"1.6\"/><circle cx=\"200\" cy=\"180\" r=\"3\" fill=\"#111\"/><path d=\"M 241.91 163.86 A 45 45 0 0 0 158.09 163.86\" fill=\"none\" stroke=\"#333\"/><g fill=\"#111\" font-family=\"serif\"><text x=\"212\" y=\"198\" font-size=\"15\">O</text><text x=\"308\" y=\"136\" font-size=\"15\">A</text><text x=\"80\" y=\"136\" font-size=\"15\">B</text><text x=\"200\" y=\"164\" text-anchor=\"middle\" font-size=\"10\">2.4 rad</text><text x=\"208\" y=\"250\" font-size=\"15\">8 cm</text></g></svg></figure>\nThe diagram shows a metal plate made by removing a segment from a circle with centre \\(O\\) and radius \\(8\\,\\mathrm{cm}\\). The line \\(AB\\) is a chord of the circle and angle \\(AOB=2.4\\) radians.\nFind\n(i) the length of \\(AB\\),\n(ii) the perimeter of the plate.",
+    "parts": [
+      {
+        "part": "(i)",
+        "stem": "Find the length of \\(AB\\).",
+        "marks": 2,
+        "answer": {
+          "expression": "14.91262537547562",
+          "official": "14.9 cm",
+          "format": "{AB|sf3z}",
+          "accept_as": "sf",
+          "sf": 3
+        },
+        "steps": [
+          {
+            "name": "M",
+            "text_tex": "Length of the chord: \\(AB=2\\times 8\\times\\sin(1.2)\\) (or the cosine rule in triangle \\(AOB\\)).",
+            "result": "14.91262537547562",
+            "format": "raw",
+            "mark": "M1",
+            "note": "MS: cosine rule or 2 r sin(1/2 * 2.4); any complete valid method."
+          },
+          {
+            "name": "AB",
+            "text_tex": "\\(AB=14.9\\,\\mathrm{cm}\\) (3 s.f.)",
+            "result": "14.91262537547562",
+            "format": "sf3z",
+            "mark": "A1",
+            "note": "MS: 14.9 cm, cao."
+          }
+        ]
+      },
+      {
+        "part": "(ii)",
+        "stem": "Find the perimeter of the plate.",
+        "marks": 3,
+        "answer": {
+          "expression": "45.978107832912315",
+          "official": "46.0 cm",
+          "format": "{P|sf3z}",
+          "accept_as": "sf",
+          "sf": 3
+        },
+        "steps": [
+          {
+            "name": "M",
+            "text_tex": "The remaining perimeter is the chord plus the major arc: \\((i)+r\\theta\\) with \\(\\theta=2\\pi-2.4\\).",
+            "result": "8*(2*3.141592653589793-2.4)",
+            "format": "raw",
+            "mark": "M1",
+            "note": "MS: M1 uses s=r theta with 2.4, or pi-2.4."
+          },
+          {
+            "name": "TH",
+            "text_tex": "\\(\\theta=2\\pi-2.4\\)",
+            "result": "2*3.141592653589793-2.4",
+            "format": "raw",
+            "mark": "B1",
+            "note": "MS: B1, theta=2 pi-2.4 (or 2 pi-2.4)."
+          },
+          {
+            "name": "P",
+            "text_tex": "Perimeter \\(=46.0\\,\\mathrm{cm}\\) (3 s.f.)",
+            "result": "45.978107832912315",
+            "format": "sf3z",
+            "mark": "A1",
+            "note": "MS: 46.0 cm. (Anywhere in parts (ii) or (iii). Adds 31.1 to (i).)"
+          }
+        ]
+      }
+    ]
+  }
+]

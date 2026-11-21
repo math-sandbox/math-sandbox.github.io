@@ -1,0 +1,204 @@
+[
+  {
+    "id": "IGCSE-14.3-QC1-gen",
+    "section": "IGCSE-14.3",
+    "kind": "generated",
+    "title": "y-intercept of a boundary line",
+    "marks": 1,
+    "source": "Theory IGCSE-14.3 Quick check 1 (2x+y=10 meets the y-axis at (0,10)); book intercept method p.447, new numbers",
+    "params": [
+      {
+        "name": "a",
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": 4,
+        "max": 18,
+        "step": 1
+      }
+    ],
+    "derived": {},
+    "constraints": [
+      "c>=4"
+    ],
+    "original": {
+      "a": 2,
+      "c": 10
+    },
+    "stem": "The line \\({a|int}x+y={c|int}\\) meets the \\(y\\)-axis at \\((0,k)\\). What is the value of \\(k\\)?",
+    "answer": {
+      "expression": "c",
+      "format": "{c|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "When \\(x=0\\), \\(y={c|int}\\), so \\(k={c|int}\\).",
+        "result": "c",
+        "format": "int",
+        "mark": "A1",
+        "note": "The y-intercept of ax+y=c is c."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original a=2, c=10"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-14.3-QC2-gen",
+    "section": "IGCSE-14.3",
+    "kind": "generated",
+    "title": "x-intercept of a boundary line",
+    "marks": 1,
+    "source": "Theory IGCSE-14.3 Quick check 2 (3x+2y=12 meets the x-axis at (4,0)); book intercept method p.447, new numbers",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "r",
+        "min": 2,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "C": "a*r"
+    },
+    "constraints": [
+      "a>=2",
+      "r>=2"
+    ],
+    "original": {
+      "a": 3,
+      "r": 4,
+      "b": 2
+    },
+    "stem": "The line \\({a|int}x+{b|int}y={C|int}\\) meets the \\(x\\)-axis at \\((k,0)\\). What is the value of \\(k\\)?",
+    "answer": {
+      "expression": "r",
+      "format": "{r|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "When \\(y=0\\), \\({a|int}x={C|int}\\), so \\(k={r|int}\\).",
+        "result": "r",
+        "format": "int",
+        "mark": "A1",
+        "note": "C = a r, so the x-intercept is r. The coefficient b of y does not affect the x-intercept."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original a=3, b=2, r=4, C=12"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-14.3-QC3-gen",
+    "section": "IGCSE-14.3",
+    "kind": "generated",
+    "title": "How many listed points lie above a line",
+    "marks": 1,
+    "source": "Theory IGCSE-14.3 Quick check 3 (2 of the three listed points satisfy y>x); book test-point method p.447, new numbers",
+    "params": [
+      {
+        "name": "h",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "H": "h+2"
+    },
+    "constraints": [
+      "h>=1"
+    ],
+    "original": {
+      "h": 1
+    },
+    "stem": "How many of the points (0, {h|int}), (1, {H|int}) and (2, 2) satisfy \\(y&gt;x\\)?",
+    "answer": {
+      "expression": "2",
+      "format": "2",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "(0, {h|int}) and (1, {H|int}) satisfy \\(y&gt;x\\). The point (2, 2) does not. So \\(2\\) of the points satisfy the inequality.",
+        "result": "2",
+        "format": "int",
+        "mark": "A1",
+        "note": "For every allowed h>=1, 0<h is true and 1<h+2 is true, while 2>2 is false, so the count is always 2."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original h=1, giving the points (0,1), (1,3) and (2,2)"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-14.3-PP-0580-41-ON19-Q9a",
+    "section": "IGCSE-14.3",
+    "kind": "pastpaper",
+    "title": "Write inequalities that describe a region",
+    "marks": 3,
+    "source": {
+      "paper": "0580/41/O/N/19 Q9(a)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w19_qp_41.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w19_ms_41.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2019), Question 9(a) only. Official answers and mark allocation from the MS PDF. The item is paper/self-mark. Parts (b)-(d), including the official grid in (c), are omitted so that a printed diagram is not required."
+    },
+    "stem": "This question is 0580/41/O/N/19 Question 9(a), taken from the official QP.\n\nA car hire company has \\(x\\) small cars and \\(y\\) large cars.\nThe company has at least 6 cars in total.\nThe number of large cars is less than or equal to the number of small cars.\nThe largest number of small cars is 8.\n\nWrite down three inequalities, in terms of \\(x\\) and/or \\(y\\), to show this information.  [3]",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "B1",
+        "text_tex": "At least 6 cars in total: \\(x+y\\geqslant 6\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 for x+y >= 6 oe."
+      },
+      {
+        "name": "B2",
+        "text_tex": "The number of large cars is less than or equal to the number of small cars: \\(y\\leqslant x\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 for y <= x oe."
+      },
+      {
+        "name": "B3",
+        "text_tex": "The largest number of small cars is 8: \\(x\\leqslant 8\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 for x <= 8. Three independent B1 marks. The official wording of the stem is used verbatim from the QP (checked on the rendered page)."
+      }
+    ]
+  }
+]

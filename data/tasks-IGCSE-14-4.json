@@ -1,0 +1,201 @@
+[
+  {
+    "id": "IGCSE-14.4-QC1-gen",
+    "section": "IGCSE-14.4",
+    "kind": "generated",
+    "title": "Constant after completing the square",
+    "marks": 1,
+    "source": "Theory IGCSE-14.4 Quick check 1 (x^2+10x+28=(x+5)^2+3); book Worked example 16 style p.453, new numbers",
+    "params": [
+      {
+        "name": "p",
+        "min": 2,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "name": "k",
+        "min": 1,
+        "max": 12,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "B": "2*p",
+      "C": "p*p+k"
+    },
+    "constraints": [
+      "p>=2",
+      "k>=1"
+    ],
+    "original": {
+      "p": 5,
+      "k": 3
+    },
+    "stem": "Write \\(x^2+{B|int}x+{C|int}\\) in the form \\(\\bigl(x+{p|int}\\bigr)^2+k\\). What is the value of \\(k\\)?",
+    "answer": {
+      "expression": "k",
+      "format": "{k|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\bigl(x+{p|int}\\bigr)^2=x^2+{B|int}x+{p|int}^2\\), so \\(k={C|int}-{p|int}^2={k|int}\\).",
+        "result": "k",
+        "format": "int",
+        "mark": "A1",
+        "note": "C = p^2 + k, so the constant after completing the square is k. Spaces avoid adjacent braces."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original p=5, k=3, giving x^2+10x+28"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-14.4-QC2-gen",
+    "section": "IGCSE-14.4",
+    "kind": "generated",
+    "title": "Constant for a completed square with a minus",
+    "marks": 1,
+    "source": "Theory IGCSE-14.4 Quick check 2 (x^2-8x+20=(x-4)^2+4); book Worked example 16 style p.453, new numbers",
+    "params": [
+      {
+        "name": "p",
+        "min": 2,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "name": "k",
+        "min": 1,
+        "max": 12,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "B": "2*p",
+      "C": "p*p+k"
+    },
+    "constraints": [
+      "p>=2",
+      "k>=1"
+    ],
+    "original": {
+      "p": 4,
+      "k": 4
+    },
+    "stem": "Write \\(x^2-{B|int}x+{C|int}\\) in the form \\(\\bigl(x-{p|int}\\bigr)^2+k\\). What is the value of \\(k\\)?",
+    "answer": {
+      "expression": "k",
+      "format": "{k|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\bigl(x-{p|int}\\bigr)^2=x^2-{B|int}x+{p|int}^2\\), so \\(k={C|int}-{p|int}^2={k|int}\\).",
+        "result": "k",
+        "format": "int",
+        "mark": "A1",
+        "note": "C = p^2 + k. Spaces avoid adjacent braces."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original p=4, k=4, giving x^2-8x+20"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-14.4-QC3-gen",
+    "section": "IGCSE-14.4",
+    "kind": "generated",
+    "title": "The shift in a completed square",
+    "marks": 1,
+    "source": "Theory IGCSE-14.4 Quick check 3 (x^2+12x-5 has p=6); book key observation p.453, new numbers",
+    "params": [
+      {
+        "name": "p",
+        "min": 2,
+        "max": 9,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": 1,
+        "max": 20,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "B": "2*p"
+    },
+    "constraints": [
+      "p>=2"
+    ],
+    "original": {
+      "p": 6,
+      "c": 5
+    },
+    "stem": "When \\(x^2+{B|int}x-{c|int}\\) is written as \\((x+p)^2+q\\), what is the value of \\(p\\)?",
+    "answer": {
+      "expression": "p",
+      "format": "{p|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Half of \\({B|int}\\) is \\({p|int}\\), so \\(p={p|int}\\).",
+        "result": "p",
+        "format": "int",
+        "mark": "A1",
+        "note": "The number in the bracket is half the coefficient of x."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original p=6, c=5, giving x^2+12x-5"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-14.4-PP-0580-42-MJ20-Q9ai",
+    "section": "IGCSE-14.4",
+    "kind": "pastpaper",
+    "title": "Write a quadratic in completed-square form",
+    "marks": 2,
+    "source": {
+      "paper": "0580/42/M/J/20 Q9(a)(i)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s20_qp_42.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s20_ms_42.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2020), Question 9(a)(i) only. Official answer and mark allocation from the MS PDF. The item is paper/self-mark. The later parts of Question 9 are omitted."
+    },
+    "stem": "This question is 0580/42/M/J/20 Question 9(a)(i), taken from the official QP.\n\nWrite \\(x^2+8x-9\\) in the form \\((x+k)^2+h\\).  [2]",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "B1",
+        "text_tex": "Half of \\(8\\) is \\(4\\), so the squared bracket is \\((x+4)^2\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 for (x+k)^2 - 9 - (their k)^2 or (x+4)^2 - h, or k=4."
+      },
+      {
+        "name": "B2",
+        "text_tex": "\\((x+4)^2-16-9=(x+4)^2-25\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: the completed form is (x+4)^2-25. Independent check: (x+4)^2-25=x^2+8x+16-25=x^2+8x-9."
+      }
+    ]
+  }
+]

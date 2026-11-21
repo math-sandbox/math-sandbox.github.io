@@ -1,0 +1,151 @@
+[
+  {
+    "id": "IGCSE-13.4-QC1-gen",
+    "section": "IGCSE-13.4",
+    "kind": "generated",
+    "title": "Change miles into kilometres from a conversion graph",
+    "marks": 1,
+    "source": "Theory IGCSE-13.4 Quick check 1 (10 miles = 16 km); book style pp.418-419, new numbers, rate 8 km for every 5 miles",
+    "params": [
+      {
+        "name": "m",
+        "min": 5,
+        "max": 50,
+        "step": 5
+      }
+    ],
+    "derived": {
+      "K": "8*m/5"
+    },
+    "constraints": [
+      "m>=5",
+      "m<=50"
+    ],
+    "original": {
+      "m": 10
+    },
+    "stem": "A conversion graph is a straight line through \\(0\\) miles \\(=0\\) km and \\(50\\) miles \\(=80\\) km. Change \\(({m|int})\\) miles into kilometres.",
+    "answer": {
+      "expression": "8*m/5",
+      "format": "{K|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(1\\) mile \\(=\\dfrac{8}{5}\\) km, so \\(({m|int})\\) miles \\(=({m|int})\\times\\dfrac{8}{5}={K|int}\\) km",
+        "result": "8*m/5",
+        "format": "int",
+        "mark": "A1",
+        "note": "The line through the origin and 50 miles = 80 km has gradient 8/5."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original m=10"
+      },
+      {
+        "id": "how-many",
+        "stem": "A conversion graph is a straight line through \\(0\\) miles \\(=0\\) km and \\(50\\) miles \\(=80\\) km. How many kilometres are equal to \\(({m|int})\\) miles?"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-13.4-QC2-gen",
+    "section": "IGCSE-13.4",
+    "kind": "generated",
+    "title": "Change kilometres into miles from a conversion graph",
+    "marks": 1,
+    "source": "Theory IGCSE-13.4 Quick check 2 (40 km = 25 miles); book style p.420, new numbers",
+    "params": [
+      {
+        "name": "k",
+        "min": 8,
+        "max": 80,
+        "step": 8
+      }
+    ],
+    "derived": {
+      "M": "5*k/8"
+    },
+    "constraints": [
+      "k>=8",
+      "k<=80"
+    ],
+    "original": {
+      "k": 40
+    },
+    "stem": "A conversion graph is a straight line through \\(0\\) miles \\(=0\\) km and \\(50\\) miles \\(=80\\) km. Change \\(({k|int})\\) km into miles.",
+    "answer": {
+      "expression": "5*k/8",
+      "format": "{M|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(1\\) km \\(=\\dfrac{5}{8}\\) of a mile, so \\(({k|int})\\) km \\(=({k|int})\\times\\dfrac{5}{8}={M|int}\\) miles",
+        "result": "5*k/8",
+        "format": "int",
+        "mark": "A1",
+        "note": "Invert the rate 8/5."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original k=40"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-13.4-QC3-gen",
+    "section": "IGCSE-13.4",
+    "kind": "generated",
+    "title": "Change a larger mile reading into kilometres",
+    "marks": 1,
+    "source": "Theory IGCSE-13.4 Quick check 3 (45 miles = 72 km); book style pp.418-419, new numbers",
+    "params": [
+      {
+        "name": "m",
+        "min": 5,
+        "max": 50,
+        "step": 5
+      }
+    ],
+    "derived": {
+      "K": "8*m/5"
+    },
+    "constraints": [
+      "m>=5",
+      "m<=50",
+      "m!=10"
+    ],
+    "original": {
+      "m": 45
+    },
+    "stem": "A conversion graph is a straight line through \\(0\\) miles \\(=0\\) km and \\(50\\) miles \\(=80\\) km. Change \\(({m|int})\\) miles into kilometres.",
+    "answer": {
+      "expression": "8*m/5",
+      "format": "{K|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(1\\) mile \\(=\\dfrac{8}{5}\\) km, so \\(({m|int})\\) miles \\(=({m|int})\\times\\dfrac{8}{5}={K|int}\\) km",
+        "result": "8*m/5",
+        "format": "int",
+        "mark": "A1",
+        "note": "The line through the origin and 50 miles = 80 km has gradient 8/5."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original m=45; m=10 is reserved for QC1"
+      }
+    ]
+  }
+]

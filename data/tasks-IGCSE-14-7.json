@@ -1,0 +1,224 @@
+[
+  {
+    "id": "IGCSE-14.7-QC1-gen",
+    "section": "IGCSE-14.7",
+    "kind": "generated",
+    "title": "Exponent left in the denominator after simplifying a power",
+    "marks": 1,
+    "source": "Theory IGCSE-14.7 Quick check 1 (p^2/p^6=1/p^4, so k=4); book Worked example 23(c) style, new numbers",
+    "params": [
+      {
+        "name": "m",
+        "min": 1,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "name": "n",
+        "min": 5,
+        "max": 9,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "K": "n-m"
+    },
+    "constraints": [
+      "n>=m+2"
+    ],
+    "original": {
+      "m": 2,
+      "n": 6
+    },
+    "stem": "The fraction \\((p^{m|int})/(p^{n|int})\\) simplifies to \\(1/p^k\\). What is the value of \\(k\\)?",
+    "answer": {
+      "expression": "K",
+      "format": "{K|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Dividing the powers gives an exponent of {m|int}-{n|int}=-{K|int}, so k={K|int}.",
+        "result": "K",
+        "format": "int",
+        "mark": "A1",
+        "note": "K is n minus m. Original: p^2/p^6, k=4."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-14.7-QC2-gen",
+    "section": "IGCSE-14.7",
+    "kind": "generated",
+    "title": "Constant remaining in a cancelled denominator",
+    "marks": 1,
+    "source": "Theory IGCSE-14.7 Quick check 2 ((x^2-4x+3)/(x^2-7x+12)=(x-1)/(x-4), so d=4); book Worked example 23(d) style, new numbers",
+    "params": [
+      {
+        "name": "r",
+        "min": 1,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "name": "s",
+        "min": 3,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "d",
+        "min": 4,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "B1": "r+s",
+      "C1": "r*s",
+      "B2": "s+d",
+      "C2": "s*d"
+    },
+    "constraints": [
+      "s>=r+1",
+      "d>=s+1"
+    ],
+    "original": {
+      "r": 1,
+      "s": 3,
+      "d": 4
+    },
+    "stem": "After cancelling, \\((x^2-{B1|int}x+{C1|int})/(x^2-{B2|int}x+{C2|int})=(x-{r|int})/(x-d)\\). What is the value of \\(d\\)?",
+    "answer": {
+      "expression": "d",
+      "format": "{d|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The numerator is \\((x-{r|int})(x-{s|int})\\) and the denominator is \\((x-{s|int})(x-{d|int})\\). Cancelling \\(x-{s|int}\\) leaves denominator \\(x-{d|int}\\), so \\(d={d|int}\\).",
+        "result": "d",
+        "format": "int",
+        "mark": "A1",
+        "note": "Original: (x-1)(x-3) over (x-3)(x-4), so d=4."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-14.7-QC3-gen",
+    "section": "IGCSE-14.7",
+    "kind": "generated",
+    "title": "Constant in the numerator of a sum of unit fractions",
+    "marks": 1,
+    "source": "Theory IGCSE-14.7 Quick check 3 (1/(x+1)+1/(x+2)=(2x+3)/((x+1)(x+2)), so n=3); book Worked example 26 style, new numbers",
+    "params": [
+      {
+        "name": "p",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 2,
+        "max": 7,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "N": "p+q"
+    },
+    "constraints": [
+      "q>=p+1"
+    ],
+    "original": {
+      "p": 1,
+      "q": 2
+    },
+    "stem": "\\(1/(x+{p|int})+1/(x+{q|int})=(2x+n)/((x+{p|int})(x+{q|int}))\\). What is the value of \\(n\\)?",
+    "answer": {
+      "expression": "N",
+      "format": "{N|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The numerator is \\((x+{q|int})+(x+{p|int})=2x+{N|int}\\), so \\(n={N|int}\\).",
+        "result": "N",
+        "format": "int",
+        "mark": "A1",
+        "note": "N is p+q. Original: 1+2=3."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-14.7-PP-0580-43-ON21-Q4e",
+    "section": "IGCSE-14.7",
+    "kind": "pastpaper",
+    "title": "Write algebraic fractions as a single fraction",
+    "marks": 4,
+    "source": {
+      "paper": "0580/43/O/N/21 Q4(e)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w21_qp_43.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w21_ms_43.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2021), Question 4(e) only, both parts. Official answers and mark allocation from the MS PDF. The item is paper/self-mark. Parts 4(a)–(d) are omitted."
+    },
+    "stem": "This question is 0580/43/O/N/21 Question 4(e), taken from the official QP.\n\nWrite each of the following as a single fraction, in its simplest form.\n\n(i) \\(\\dfrac{1}{2a}\\div\\dfrac{3}{4b}\\)  [2]\n\n(ii) \\(2-\\dfrac{x}{x-1}\\)  [2]",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "For (i), multiplying by the reciprocal gives \\(\\dfrac{1}{2a}\\times\\dfrac{4b}{3}=\\dfrac{4b}{6a}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS 4(e)(i): M1 for (1/(2a)) times (4b/3) or better."
+      },
+      {
+        "name": "B1",
+        "text_tex": "This simplifies to \\(\\dfrac{2b}{3a}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS 4(e)(i): 2b/(3a) final answer. Independent check: (1/(2a))/(3/(4b))=4b/(6a)=2b/(3a)."
+      },
+      {
+        "name": "B2",
+        "text_tex": "For (ii), over the common denominator: \\(2-\\dfrac{x}{x-1}=\\dfrac{2(x-1)-x}{x-1}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS 4(e)(ii): B1 for 2(x-1)-x or equivalent seen."
+      },
+      {
+        "name": "A",
+        "text_tex": "This simplifies to \\(\\dfrac{x-2}{x-1}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS 4(e)(ii): (x-2)/(x-1) final answer, nfww. Independent check: (2x-2-x)/(x-1)=(x-2)/(x-1)."
+      }
+    ]
+  }
+]

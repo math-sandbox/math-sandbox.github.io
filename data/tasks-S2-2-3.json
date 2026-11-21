@@ -1,0 +1,277 @@
+[
+  {
+    "id": "S2-2.3-QC1-gen",
+    "section": "S2-2.3",
+    "kind": "generated",
+    "title": "The Poisson parameter np (hundredths)",
+    "marks": 2,
+    "source": "S2 Ch2 theory S2-2.3 Quick check 1 (B(80,0.04), lambda=3.2)",
+    "params": [
+      {
+        "name": "n",
+        "min": 60,
+        "max": 200,
+        "step": 10
+      },
+      {
+        "name": "k",
+        "min": 1,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "P": "k/100",
+      "E": "n*k/100"
+    },
+    "constraints": [
+      "n>50",
+      "n*k<500",
+      "(n*k)%10==0"
+    ],
+    "original": {
+      "n": 80,
+      "k": 4
+    },
+    "stem": "The random variable \\(X\\) has the distribution \\(\\mathrm{B}({n|int}{,}{P|num2})\\). What is the Poisson parameter of a suitable approximating distribution?",
+    "answer": {
+      "expression": "n*k/100",
+      "format": "{E|dp1}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The Poisson parameter is n times p, which is {n|int} times {P|num2}.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Use lambda=np."
+      },
+      {
+        "name": "E",
+        "text_tex": "The Poisson parameter is {E|dp1}.",
+        "result": "n*k/100",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct parameter."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "items",
+        "stem": "A batch of {n|int} items each has probability {P|num2} of being imperfect, independently. What is the Poisson parameter of a suitable approximating distribution for the number of imperfect items?",
+        "note": "items frame"
+      },
+      {
+        "id": "write",
+        "stem": "Write down the Poisson parameter used to approximate \\(\\mathrm{B}({n|int}{,}{P|num2})\\).",
+        "note": "write frame"
+      }
+    ]
+  },
+  {
+    "id": "S2-2.3-QC2-gen",
+    "section": "S2-2.3",
+    "kind": "generated",
+    "title": "The Poisson parameter np (thousandths)",
+    "marks": 2,
+    "source": "S2 Ch2 theory S2-2.3 Quick check 2 (B(200,0.015), lambda=3)",
+    "params": [
+      {
+        "name": "n",
+        "min": 100,
+        "max": 400,
+        "step": 20
+      },
+      {
+        "name": "m",
+        "min": 5,
+        "max": 20,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "P": "m/1000",
+      "E": "n*m/1000"
+    },
+    "constraints": [
+      "n>50",
+      "n*m<5000",
+      "(n*m)%1000==0"
+    ],
+    "original": {
+      "n": 200,
+      "m": 15
+    },
+    "stem": "The random variable \\(X\\) has the distribution \\(\\mathrm{B}({n|int}{,}{P|num3})\\). What is the Poisson parameter of a suitable approximating distribution?",
+    "answer": {
+      "expression": "n*m/1000",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The Poisson parameter is n times p, which is {n|int} times {P|num3}.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Use lambda=np."
+      },
+      {
+        "name": "E",
+        "text_tex": "The Poisson parameter is {E|int}.",
+        "result": "n*m/1000",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct parameter."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "trial",
+        "stem": "In {n|int} independent trials the success probability is {P|num3}. What is the Poisson parameter of a suitable approximating distribution for the number of successes?",
+        "note": "trial frame"
+      },
+      {
+        "id": "write",
+        "stem": "Write down the Poisson parameter used to approximate \\(\\mathrm{B}({n|int}{,}{P|num3})\\).",
+        "note": "write frame"
+      }
+    ]
+  },
+  {
+    "id": "S2-2.3-QC3-gen",
+    "section": "S2-2.3",
+    "kind": "generated",
+    "title": "The Poisson parameter np (integer mean)",
+    "marks": 2,
+    "source": "S2 Ch2 theory S2-2.3 Quick check 3 (B(100,0.04), lambda=4)",
+    "params": [
+      {
+        "name": "n",
+        "min": 80,
+        "max": 200,
+        "step": 10
+      },
+      {
+        "name": "k",
+        "min": 2,
+        "max": 4,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "P": "k/100",
+      "E": "n*k/100"
+    },
+    "constraints": [
+      "n>50",
+      "n*k<500",
+      "(n*k)%100==0"
+    ],
+    "original": {
+      "n": 100,
+      "k": 4
+    },
+    "stem": "The random variable \\(X\\) has the distribution \\(\\mathrm{B}({n|int}{,}{P|num2})\\). What is the Poisson parameter of a suitable approximating distribution?",
+    "answer": {
+      "expression": "n*k/100",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The Poisson parameter is n times p, which is {n|int} times {P|num2}.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Use lambda=np."
+      },
+      {
+        "name": "E",
+        "text_tex": "The Poisson parameter is {E|int}.",
+        "result": "n*k/100",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct parameter."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "batch",
+        "stem": "Each of {n|int} components has probability {P|num2} of a defect, independently. What is the Poisson parameter of a suitable approximating distribution for the number of defects?",
+        "note": "batch frame"
+      },
+      {
+        "id": "write",
+        "stem": "Write down the Poisson parameter used to approximate \\(\\mathrm{B}({n|int}{,}{P|num2})\\).",
+        "note": "write frame"
+      }
+    ]
+  },
+  {
+    "id": "S2-2.3-PP-9709-73-MJ18-Q1",
+    "section": "S2-2.3",
+    "kind": "pastpaper",
+    "marking": "manual",
+    "title": "9709/73/M/J/18 Q1: Poisson approximation to B(75, 0.03)",
+    "marks": 4,
+    "source": {
+      "paper": "9709/73/M/J/18 Q1",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s18_qp_73.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s18_ms_73.pdf",
+      "note": "Stem verbatim from the QP PDF, parts (i) and (ii). Later questions on the paper are omitted. Fully manual: (i) is a Poisson probability and (ii) is a justification. Official MS: Po(2.25) (B1), exp(-2.25) times (1 + 2.25 + 2.25 squared over 2) (M1), 0.609 to 3 s.f. (A1), special credit B1 for the exact binomial 0.608; (ii) mean 2.25 is less than 5 and n is large (B1). Independently, the Poisson probability is 0.609339..., which is 0.609 to 3 s.f."
+    },
+    "stem": "A random variable \\(X\\) has the distribution \\(\\mathrm{B}(75,0.03)\\).\n\n(i) Use the Poisson approximation to the binomial distribution to calculate \\(\\mathrm{P}(X\\lt 3)\\).\n\n(ii) Justify the use of the Poisson approximation.",
+    "steps": [
+      {
+        "name": "po",
+        "text_tex": "The approximating distribution is \\(\\mathrm{Po}(2.25)\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "B1",
+        "note": "Official MS: Po(2.25), stated or implied."
+      },
+      {
+        "name": "form",
+        "text_tex": "\\(\\mathrm{P}(X\\lt 3)=\\mathrm{e}^{-2.25}(1+2.25+2.25^2/2)\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Official MS: the Poisson sum, any lambda, one end error allowed."
+      },
+      {
+        "name": "val",
+        "text_tex": "The probability is \\(0.609\\) to 3 significant figures.",
+        "result": "None",
+        "format": "num",
+        "mark": "A1",
+        "note": "Official MS: 0.609 (3 s.f.). Independently 0.609339..."
+      },
+      {
+        "name": "just",
+        "text_tex": "Here \\(n=75\\) is large and the mean \\(2.25\\) is less than \\(5\\), so the Poisson approximation is suitable.",
+        "result": "None",
+        "format": "num",
+        "mark": "B1",
+        "note": "Official MS: mu=2.25 which is less than 5, and n large."
+      }
+    ]
+  }
+]

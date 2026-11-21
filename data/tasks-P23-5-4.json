@@ -1,0 +1,245 @@
+[
+ {
+  "id": "P23-5.4-QC2-gen",
+  "section": "P23-5.4",
+  "kind": "generated",
+  "title": "Coefficient of x after integrating k sin squared of ax",
+  "marks": 3,
+  "source": "P23 Ch5 theory P23-5.4 Quick check 2 (int 6 sin^2 2x, coefficient of x is 3)",
+  "params": [
+   {
+    "name": "k",
+    "min": 2,
+    "max": 12,
+    "step": 2
+   },
+   {
+    "name": "a",
+    "min": 1,
+    "max": 5,
+    "step": 1
+   }
+  ],
+  "derived": {
+   "twoa": "2*a"
+  },
+  "constraints": [
+   "k%2==0",
+   "k>=2",
+   "a>=1"
+  ],
+  "original": {
+   "k": 6,
+   "a": 2
+  },
+  "stem": "The indefinite integral \\(\\displaystyle\\int {k|int}\\sin^2 {a|int}x\\,\\mathrm{d}x\\) can be written in the form \\(px+q\\sin {twoa|int}x+c\\). Find the value of \\(p\\).",
+  "answer": {
+   "expression": "k/2",
+   "format": "{E|int}",
+   "accept_as": "integer"
+  },
+  "steps": [
+   {
+    "name": "id",
+    "text_tex": "\\({k|int}\\sin^2 {a|int}x={k|int}\\cdot\\dfrac{1}{2}\\bigl(1-\\cos {twoa|int}x\\bigr)\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Double-angle identity."
+   },
+   {
+    "name": "int",
+    "text_tex": "Integrate to obtain a multiple of \\(x\\) plus a sine term and a constant.",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Integrate the rewritten integrand."
+   },
+   {
+    "name": "E",
+    "text_tex": "The coefficient of \\(x\\) is \\(\\dfrac{{k|int}}{2}\\).",
+    "result": "k/2",
+    "format": "int",
+    "mark": "A1",
+    "note": "Correct coefficient."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem"
+   },
+   {
+    "id": "cos",
+    "stem": "The indefinite integral \\(\\displaystyle\\int {k|int}\\cos^2 {a|int}x\\,\\mathrm{d}x\\) can be written in the form \\(px+q\\sin {twoa|int}x+c\\). Find the value of \\(p\\).",
+    "note": "cosine square, same coefficient k/2"
+   },
+   {
+    "id": "plain",
+    "stem": "By first using a double-angle identity, find the coefficient of \\(x\\) in \\(\\displaystyle\\int {k|int}\\sin^2 {a|int}x\\,\\mathrm{d}x\\).",
+    "note": "wording variant"
+   }
+  ]
+ },
+ {
+  "id": "P23-5.4-QC3-gen",
+  "section": "P23-5.4",
+  "kind": "generated",
+  "title": "Definite integral of k tan squared plus k",
+  "marks": 3,
+  "source": "P23 Ch5 theory P23-5.4 Quick check 3 (int_0^{pi/4} (4 tan^2 x + 4) dx = 4)",
+  "params": [
+   {
+    "name": "k",
+    "min": 2,
+    "max": 9,
+    "step": 1
+   }
+  ],
+  "constraints": [
+   "k>=2"
+  ],
+  "original": {
+   "k": 4
+  },
+  "stem": "Find the exact value of \\(\\displaystyle\\int_0^{\\pi/4}({k|int}\\tan^2 x+{k|int})\\,\\mathrm{d}x\\).",
+  "answer": {
+   "expression": "k",
+   "format": "{E|int}",
+   "accept_as": "integer"
+  },
+  "steps": [
+   {
+    "name": "id",
+    "text_tex": "\\({k|int}\\tan^2 x+{k|int}={k|int}(\\sec^2 x-1)+{k|int}={k|int}\\sec^2 x\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Identity tan^2 x = sec^2 x - 1."
+   },
+   {
+    "name": "int",
+    "text_tex": "\\(\\displaystyle\\int_0^{\\pi/4} {k|int}\\sec^2 x\\,\\mathrm{d}x=\\bigl[{k|int}\\tan x\\bigr]_0^{\\pi/4}\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Integrate and substitute limits."
+   },
+   {
+    "name": "E",
+    "text_tex": "The value of the definite integral is {k|int}.",
+    "result": "k",
+    "format": "int",
+    "mark": "A1",
+    "note": "tan(pi/4)=1."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem"
+   },
+   {
+    "id": "rewrite",
+    "stem": "By first rewriting the integrand using \\(\\tan^2 x\\equiv\\sec^2 x-1\\), find the exact value of \\(\\displaystyle\\int_0^{\\pi/4}({k|int}\\tan^2 x+{k|int})\\,\\mathrm{d}x\\).",
+    "note": "hint wording"
+   },
+   {
+    "id": "ksec",
+    "stem": "Show, and use, the fact that \\({k|int}\\tan^2 x+{k|int}={k|int}\\sec^2 x\\) to find the exact value of \\(\\displaystyle\\int_0^{\\pi/4}({k|int}\\tan^2 x+{k|int})\\,\\mathrm{d}x\\).",
+    "note": "show-and-use wording"
+   }
+  ],
+  "derived": {}
+ },
+ {
+  "id": "P23-5.4-PP-9709-21-MJ19-Q4a",
+  "section": "P23-5.4",
+  "kind": "pastpaper",
+  "marking": "manual",
+  "title": "Indefinite integral of tan squared of 3x",
+  "marks": 3,
+  "source": {
+   "paper": "9709/21/M/J/19 Q4(a)",
+   "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s19_qp_21.pdf",
+   "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s19_ms_21.pdf",
+   "note": "Stem verbatim from the QP PDF; steps and marks from the official MS PDF. Part (b) is an exponential integral from P23-5.1 and is omitted. Fully manual, steps only: the official answer is symbolic and includes plus c."
+  },
+  "stem": "Find \\(\\displaystyle\\int\\tan^2 3x\\,\\mathrm{d}x\\).",
+  "steps": [
+   {
+    "name": "id",
+    "text_tex": "Use the identity \\(\\tan^2 3x=\\sec^2 3x-1\\).",
+    "result": "None",
+    "format": "raw",
+    "mark": "B1",
+    "note": "MS: B1 use identity tan^2 3x = sec^2 3x - 1."
+   },
+   {
+    "name": "form",
+    "text_tex": "Integrate to obtain a form \\(k_1\\tan 3x+k_2 x\\).",
+    "result": "None",
+    "format": "raw",
+    "mark": "M1",
+    "note": "MS: M1 integrate to obtain form k1 tan 3x + k2 x."
+   },
+   {
+    "name": "ans",
+    "text_tex": "\\(\\dfrac{1}{3}\\tan 3x-x+c\\)",
+    "result": "None",
+    "format": "raw",
+    "mark": "A1",
+    "note": "MS: A1 obtain correct (1/3) tan 3x - x + c."
+   }
+  ]
+ },
+ {
+  "id": "P23-5.4-PP-9709-21-ON17-Q4a",
+  "section": "P23-5.4",
+  "kind": "pastpaper",
+  "marking": "manual",
+  "title": "Indefinite integral of (4 + sin squared theta) over (1 - sin squared theta)",
+  "marks": 4,
+  "source": {
+   "paper": "9709/21/O/N/17 Q4(a)",
+   "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w17_qp_21.pdf",
+   "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w17_ms_21.pdf",
+   "note": "Stem verbatim from the QP PDF (the integrand uses theta, which pdftotext had flattened). Steps and marks from the official MS PDF. Part (b) is a logarithmic integral from P23-5.2 and is omitted. Fully manual, steps only."
+  },
+  "stem": "Find \\(\\displaystyle\\int\\dfrac{4+\\sin^2\\theta}{1-\\sin^2\\theta}\\,\\mathrm{d}\\theta\\).",
+  "steps": [
+   {
+    "name": "form",
+    "text_tex": "Rewrite the integrand in a form \\(a\\sec^2\\theta+b\\).",
+    "result": "None",
+    "format": "raw",
+    "mark": "M1",
+    "note": "MS: M1 obtain integrand of form a sec^2 theta + b."
+   },
+   {
+    "name": "id",
+    "text_tex": "\\(\\dfrac{4+\\sin^2\\theta}{1-\\sin^2\\theta}=\\dfrac{4+\\sin^2\\theta}{\\cos^2\\theta}=5\\sec^2\\theta-1\\)",
+    "result": "None",
+    "format": "raw",
+    "mark": "A1",
+    "note": "MS: A1 obtain correct 5 sec^2 theta - 1."
+   },
+   {
+    "name": "int",
+    "text_tex": "Integrate to obtain a form \\(a\\tan\\theta+b\\theta\\).",
+    "result": "None",
+    "format": "raw",
+    "mark": "M1",
+    "note": "MS: M1 integrate to obtain form a tan theta + b theta."
+   },
+   {
+    "name": "ans",
+    "text_tex": "\\(5\\tan\\theta-\\theta+c\\)",
+    "result": "None",
+    "format": "raw",
+    "mark": "A1",
+    "note": "MS: A1 obtain 5 tan theta - theta + c."
+   }
+  ]
+ }
+]

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" preserveAspectRatio="xMidYMid meet" style="width:100%;max-width:320px;height:auto" role="img" aria-labelledby="p1-5-1-half-eq-t p1-5-1-half-eq-d"><title id="p1-5-1-half-eq-t">Half of an equilateral triangle of side 2, drawn to scale</title><desc id="p1-5-1-half-eq-d">Right-angled triangle with horizontal side 1, vertical side root 3 and hypotenuse 2. The angle at the top is 30 degrees and the angle at the right is 60 degrees.</desc>
+<polygon points="70.000,260.000 190.000,260.000 70.000,52.154" fill="#f0fdf4" stroke="#14532d" stroke-width="2"/>
+<path d="M88.000,260.000 L88.000,242.000 L70.000,242.000" fill="none" stroke="#14532d" stroke-width="1.4"/>
+<text x="130.000" y="282.000" text-anchor="middle" font-size="18" font-family="Times,serif">1</text>
+<text x="42.000" y="156.077" text-anchor="middle" font-size="18" font-family="Times,serif">√3</text>
+<text x="148.000" y="150.077" text-anchor="middle" font-size="18" font-family="Times,serif">2</text>
+<text x="98.000" y="80.154" font-size="16" font-family="Times,serif">30°</text>
+<text x="142.000" y="244.000" font-size="16" font-family="Times,serif">60°</text>
+</svg>

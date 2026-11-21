@@ -1,0 +1,390 @@
+[
+    {
+        "id": "S1-5.3-QC1-gen",
+        "section": "S1-5.3",
+        "kind": "generated",
+        "title": "Number of selections of r objects from n",
+        "marks": 2,
+        "source": "Theory S1-5.3 Quick check 1; nCr",
+        "params": [
+            {
+                "name": "n",
+                "min": 7,
+                "max": 15,
+                "step": 1
+            },
+            {
+                "name": "r",
+                "min": 2,
+                "max": 5,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "A": "[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][n]/([1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][r]*[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][(n)-(r)])"
+        },
+        "constraints": [
+            "r<n-1"
+        ],
+        "original": {
+            "n": 10,
+            "r": 3
+        },
+        "stem": "How many different selections of {r|int} books can be made from {n|int} different books?",
+        "answer": {
+            "expression": "[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][n]/([1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][r]*[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][(n)-(r)])",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "Order does not matter, so the number of selections is \\({}^{{n|int}}C_{{r|int}}\\).",
+                "result": "[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][n]/([1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][r]*[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][(n)-(r)])",
+                "format": "int",
+                "mark": "M1",
+                "note": "A selection is a combination, not an arrangement."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\({}^{{n|int}}C_{{r|int}}={A|int}\\)",
+                "result": "[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][n]/([1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][r]*[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][(n)-(r)])",
+                "format": "int",
+                "mark": "A1",
+                "note": "Use the nCr formula or the calculator key."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 3 books from 10, 120 selections"
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-5.3"
+            ],
+            "topic": "Permutations and combinations",
+            "chapter": "S1-5",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-5-3.json",
+                "locator": "S1-5.3-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-5.3-QC2-gen",
+        "section": "S1-5.3",
+        "kind": "generated",
+        "title": "Committee with a fixed number from each group",
+        "marks": 2,
+        "source": "Theory S1-5.3 Quick check 2; product of two combinations",
+        "params": [
+            {
+                "name": "M",
+                "min": 5,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "W",
+                "min": 4,
+                "max": 8,
+                "step": 1
+            },
+            {
+                "name": "a",
+                "min": 2,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 2,
+                "max": 3,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "P": "[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][M]/([1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][a]*[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][(M)-(a)])",
+            "Q": "[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][W]/([1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][b]*[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][(W)-(b)])",
+            "A": "[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][M]/([1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][a]*[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][(M)-(a)])*[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][W]/([1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][b]*[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][(W)-(b)])"
+        },
+        "constraints": [
+            "a<M",
+            "b<W"
+        ],
+        "original": {
+            "M": 6,
+            "W": 5,
+            "a": 2,
+            "b": 3
+        },
+        "stem": "A committee of {a|int} men and {b|int} women is to be chosen from {M|int} men and {W|int} women. How many different committees are possible?",
+        "answer": {
+            "expression": "P*Q",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "Men: \\({}^{{M|int}}C_{{a|int}}={P|int}\\) ways; women: \\({}^{{W|int}}C_{{b|int}}={Q|int}\\) ways.",
+                "result": "P",
+                "format": "int",
+                "mark": "M1",
+                "note": "Choose from each group separately."
+            },
+            {
+                "name": "A",
+                "text_tex": "Total \\({P|int}\\times{Q|int}={A|int}\\)",
+                "result": "P*Q",
+                "format": "int",
+                "mark": "A1",
+                "note": "Multiply, because every choice of men goes with every choice of women."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 2 men from 6 and 3 women from 5, 150 committees"
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-5.3"
+            ],
+            "topic": "Permutations and combinations",
+            "chapter": "S1-5",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-5-3.json",
+                "locator": "S1-5.3-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-5.3-QC3-gen",
+        "section": "S1-5.3",
+        "kind": "generated",
+        "title": "Selection that must include a particular person",
+        "marks": 2,
+        "source": "Theory S1-5.3 Quick check 3; (n-1)C(r-1)",
+        "params": [
+            {
+                "name": "n",
+                "min": 8,
+                "max": 14,
+                "step": 1
+            },
+            {
+                "name": "r",
+                "min": 3,
+                "max": 6,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "n1": "n-1",
+            "r1": "r-1",
+            "A": "[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][n-1]/([1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][r-1]*[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][(n-1)-(r-1)])"
+        },
+        "constraints": [
+            "r<n-2"
+        ],
+        "original": {
+            "n": 11,
+            "r": 5
+        },
+        "stem": "A team of {r|int} players is to be chosen from {n|int} players, one of whom is the captain. The captain must be in the team. How many different teams are possible?",
+        "answer": {
+            "expression": "[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][n-1]/([1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][r-1]*[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][(n-1)-(r-1)])",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "The captain is in, so choose the other {r1|int} players from the remaining {n1|int}: \\({}^{{n1|int}}C_{{r1|int}}\\).",
+                "result": "[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][n-1]/([1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][r-1]*[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][(n-1)-(r-1)])",
+                "format": "int",
+                "mark": "M1",
+                "note": "Remove the captain from both the team places and the pool."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\({}^{{n1|int}}C_{{r1|int}}={A|int}\\)",
+                "result": "[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][n-1]/([1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][r-1]*[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][(n-1)-(r-1)])",
+                "format": "int",
+                "mark": "A1",
+                "note": "Evaluate the combination."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original team of 5 from 11 with the captain, 210 teams"
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-5.3"
+            ],
+            "topic": "Permutations and combinations",
+            "chapter": "S1-5",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-5-3.json",
+                "locator": "S1-5.3-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-5.3-PP-9709-51-MJ20-Q4",
+        "section": "S1-5.3",
+        "kind": "pastpaper",
+        "title": "Selections of finalists from three groups of musicians",
+        "marks": 4,
+        "source": {
+            "paper": "9709/51/M/J/20 Q4",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s20_qp_51.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s20_ms_51.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>In a music competition, there are 8 pianists, 4 guitarists and 6 violinists. 7 of these musicians will be selected to go through to the final.</p><p>How many different selections of 7 finalists can be made if there must be at least 2 pianists, at least 1 guitarist and more violinists than guitarists? [4]</p>",
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-5.3"
+            ],
+            "topic": "Permutations and combinations",
+            "chapter": "S1-5",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-5-3.json",
+                "locator": "S1-5.3-PP-9709-51-MJ20-Q4"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "The possible scenarios are 2P 3V 2G, 2P 4V 1G, 3P 3V 1G and 4P 2V 1G, each counted by a product of three combinations, for example \\({}^{8}C_{2}\\times{}^{4}C_{2}\\times{}^{6}C_{3}\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1 for 8Cr × 4Cr × 6Cr with ∑ = 7."
+            },
+            {
+                "name": "s2",
+                "text_tex": "2P 3V 2G: \\({}^{8}C_{2}\\times{}^{4}C_{2}\\times{}^{6}C_{3}=28\\times6\\times20=3360\\); 2P 4V 1G: \\({}^{8}C_{2}\\times{}^{4}C_{1}\\times{}^{6}C_{4}=28\\times4\\times15=1680\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, two unsimplified products correct."
+            },
+            {
+                "name": "s3",
+                "text_tex": "3P 3V 1G: \\({}^{8}C_{3}\\times{}^{4}C_{1}\\times{}^{6}C_{3}=56\\times4\\times20=4480\\); 4P 2V 1G: \\({}^{8}C_{4}\\times{}^{4}C_{1}\\times{}^{6}C_{2}=70\\times4\\times15=4200\\). Add the four scenarios.",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, summing the number of ways for 3 or 4 correct scenarios."
+            },
+            {
+                "name": "s4",
+                "text_tex": "Total: \\(13\\,720\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, total 13 720."
+            }
+        ]
+    },
+    {
+        "id": "S1-5.3-PP-9709-51-MJ21-Q1",
+        "section": "S1-5.3",
+        "kind": "pastpaper",
+        "title": "Selections of marbles with at least four of one colour",
+        "marks": 4,
+        "source": {
+            "paper": "9709/51/M/J/21 Q1",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s21_qp_51.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s21_ms_51.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>A bag contains 12 marbles, each of a different size. 8 of the marbles are red and 4 of the marbles are blue.</p><p>How many different selections of 5 marbles contain at least 4 marbles of the same colour? [4]</p>",
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-5.3"
+            ],
+            "topic": "Permutations and combinations",
+            "chapter": "S1-5",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-5-3.json",
+                "locator": "S1-5.3-PP-9709-51-MJ21-Q1"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "The scenarios are 4 red and 1 blue, 4 blue and 1 red, and 5 red. For example, 4 red and 1 blue gives \\({}^{8}C_{4}\\times{}^{4}C_{1}\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, 8Cx × 4Cy with x + y = 5, x, y both integers, 1 ⩽ x ⩽ 5, 0 ⩽ y ⩽ 4; condone 8C1 × 1."
+            },
+            {
+                "name": "s2",
+                "text_tex": "RRRRB: \\({}^{8}C_{4}\\times{}^{4}C_{1}=280\\); BBBBR: \\({}^{8}C_{1}\\times{}^{4}C_{4}=8\\); RRRRR: \\({}^{8}C_{5}=56\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, two correct outcomes evaluated."
+            },
+            {
+                "name": "s3",
+                "text_tex": "Add the three scenarios: \\(280+8+56\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, add 2 or 3 identified correct scenarios only (no additional terms, not probabilities)."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(344\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, [Total =] 344, WWW, only dependent on 2nd M mark. SC if not all (or no) scenarios identified: B1 for 280 + 8 + 56, DB1 for 344."
+            }
+        ]
+    }
+]

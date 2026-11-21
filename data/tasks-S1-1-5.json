@@ -1,0 +1,207 @@
+[
+  {
+    "id": "S1-1.5-QC1-gen",
+    "section": "S1-1.5",
+    "kind": "generated",
+    "title": "Raw values still visible on a stem-and-leaf diagram",
+    "marks": 2,
+    "source": "S1 Ch1 theory S1-1.5 Quick check 1 (14 ungrouped discrete readings, all 14 still visible)",
+    "params": [
+      {
+        "name": "n",
+        "min": 8,
+        "max": 20,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "E": "n"
+    },
+    "constraints": [
+      "n>=8",
+      "n<=20"
+    ],
+    "original": {
+      "n": 14
+    },
+    "stem": "A stem-and-leaf diagram is drawn for {n|int} ungrouped discrete readings. How many of those raw readings can still be read from the diagram?",
+    "answer": {
+      "expression": "n",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "A stem-and-leaf diagram keeps every raw value.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Use the fact that raw values remain visible."
+      },
+      {
+        "name": "E",
+        "text_tex": "All \\({n|int}\\) readings can still be read.",
+        "result": "n",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct count."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "times",
+        "stem": "A coach records {n|int} ungrouped sprint times and displays them in a stem-and-leaf diagram. How many of the original times can still be read from the diagram?",
+        "note": "times frame"
+      },
+      {
+        "id": "scores",
+        "stem": "{n|int} ungrouped test scores are shown in a stem-and-leaf diagram. How many of those raw scores remain visible?",
+        "note": "scores frame"
+      }
+    ]
+  },
+  {
+    "id": "S1-1.5-QC2-gen",
+    "section": "S1-1.5",
+    "kind": "generated",
+    "title": "Individual recordings hidden by a histogram",
+    "marks": 2,
+    "source": "S1 Ch1 theory S1-1.5 Quick check 2 (grouped continuous data in a histogram, 0 raw values readable exactly)",
+    "params": [
+      {
+        "name": "n",
+        "min": 40,
+        "max": 200,
+        "step": 10
+      }
+    ],
+    "derived": {
+      "E": "0"
+    },
+    "constraints": [
+      "n>=40"
+    ],
+    "original": {
+      "n": 80
+    },
+    "stem": "A histogram is drawn from {n|int} grouped continuous observations. How many of the original individual recordings can be read exactly from the histogram?",
+    "answer": {
+      "expression": "0",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "Grouping for a histogram hides the individual recordings.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Use the fact that a histogram does not show raw values."
+      },
+      {
+        "name": "E",
+        "text_tex": "The number that can be read exactly is \\(0\\).",
+        "result": "0",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct count."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "parcels",
+        "stem": "The masses of {n|int} parcels are grouped and displayed in a histogram. How many of the original individual masses can be read exactly from the histogram?",
+        "note": "parcels frame"
+      },
+      {
+        "id": "heights",
+        "stem": "A histogram is drawn for the grouped heights of {n|int} trees. How many of the original individual heights can be read exactly from the histogram?",
+        "note": "heights frame"
+      }
+    ]
+  },
+  {
+    "id": "S1-1.5-QC3-gen",
+    "section": "S1-1.5",
+    "kind": "generated",
+    "title": "How many listed representations suit large grouped continuous data",
+    "marks": 2,
+    "source": "S1 Ch1 theory S1-1.5 Quick check 3 (2 of 4 representations appropriate)",
+    "params": [
+      {
+        "name": "m",
+        "min": 2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "name": "k",
+        "min": 2,
+        "max": 2,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "total": "m+k",
+      "E": "m"
+    },
+    "constraints": [
+      "m==2",
+      "k==2"
+    ],
+    "original": {
+      "m": 2,
+      "k": 2
+    },
+    "stem": "A large set of grouped continuous measurements is to be displayed. A list of {total|int} representations is considered: a histogram and a cumulative frequency graph (appropriate), and a stem-and-leaf diagram and a pie chart (not appropriate). How many of the representations in the list are appropriate for this type and quantity of data?",
+    "answer": {
+      "expression": "m",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "A histogram and a cumulative frequency graph are appropriate; a stem-and-leaf diagram and a pie chart are not.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Identify the suitable representations."
+      },
+      {
+        "name": "E",
+        "text_tex": "The number of appropriate representations is \\({E|int}\\).",
+        "result": "m",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct count."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "choice",
+        "stem": "For a large set of grouped continuous measurements, {m|int} representations in a list of {total|int} are appropriate (a histogram and a cumulative frequency graph) and the other {k|int} are not (a stem-and-leaf diagram and a pie chart). How many of the representations in the list are appropriate?",
+        "note": "choice frame"
+      },
+      {
+        "id": "audience",
+        "stem": "An audience is to be shown a large set of grouped continuous data. Of the {total|int} representations considered, only a histogram and a cumulative frequency graph are appropriate. How many of those representations are appropriate?",
+        "note": "audience frame"
+      }
+    ]
+  }
+]

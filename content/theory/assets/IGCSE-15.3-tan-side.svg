@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:420px;height:auto" role="img" aria-labelledby="IGCSE-15-3-tan-side-t IGCSE-15-3-tan-side-d">
+<title id="IGCSE-15-3-tan-side-t">Finding an opposite side with the tan ratio</title>
+<desc id="IGCSE-15-3-tan-side-d">In a right-angled triangle the adjacent side is 15 centimetres and the angle is 35 degrees. The opposite side is 15 tan 35 degrees, which is 10.5 centimetres to 1 decimal place.</desc>
+<rect x="0" y="0" width="420" height="280" fill="#fff"/>
+<g font-family="Source Sans 3, DejaVu Sans, sans-serif" font-size="13" fill="#333">
+  <polygon points="70.00,230.00 280.00,230.00 70.00,83.00" fill="#eaf4fb" stroke="#1b5e8a" stroke-width="2"/>
+  <line x1="82.00" y1="230.00" x2="82.00" y2="218.00" stroke="#333" stroke-width="1.2"/>
+  <line x1="82.00" y1="218.00" x2="70.00" y2="218.00" stroke="#333" stroke-width="1.2"/>
+  <text x="288.00" y="246.00" fill="#c0392b">35°</text>
+  <path d="M 250,230 A 30,30 0 0 0 255.43,212.79" fill="none" stroke="#c0392b" stroke-width="1.6"/>
+  <text x="175.00" y="252.00" text-anchor="middle" >15 cm</text>
+  <text x="60.00" y="156.50" text-anchor="end" fill="#b45f06">10.5 cm</text>
+  <text x="70.00" y="36.00" font-size="14">opp = 15 tan 35° = 10.5 cm (1 d.p.)</text>
+</g>
+</svg>

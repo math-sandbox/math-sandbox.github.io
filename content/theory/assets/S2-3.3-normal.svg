@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:400px;height:auto" role="img" aria-label="A normal curve with its mean marked, used for a linear combination of normal distributions">
+  <style>text{font-family:system-ui,Segoe UI,sans-serif;font-size:13px;fill:#222}</style>
+  <path d="M40,180 C80,180 100,40 200,40 C300,40 320,180 360,180" fill="none" stroke="#222" stroke-width="1.6"/>
+  <line x1="30" y1="180" x2="370" y2="180" stroke="#222" stroke-width="1.2"/>
+  <line x1="200" y1="40" x2="200" y2="180" stroke="#b03" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="186" y="204">mean</text>
+</svg>

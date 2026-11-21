@@ -1,0 +1,15 @@
+<svg preserveAspectRatio="xMidYMid meet" height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 340" width="100%" style="max-width:100%;height:auto" role="img" aria-labelledby="pp-9709-s12-12-q6-t pp-9709-s12-12-q6-d"><title id="pp-9709-s12-12-q6-t">9709/12/M/J/12 question 6 official examination diagram</title><desc id="pp-9709-s12-12-q6-d">Circle centre O radius 8 cm. Chord AB subtends 2.4 radians at O. The minor segment has been removed, leaving a plate bounded by the chord AB and the major arc AB.</desc>
+<!-- remaining plate: major piece -->
+<path d="M 302.52 140.14 A 110 110 0 1 1 97.48 140.14 L 302.52 140.14 Z" fill="#d5e8f0" stroke="#1a5276" stroke-width="2"/>
+<line x1="200" y1="180" x2="302.52" y2="140.14" stroke="#888" stroke-dasharray="4 3"/>
+<line x1="200" y1="180" x2="97.48" y2="140.14" stroke="#888" stroke-dasharray="4 3"/>
+<circle cx="200" cy="180" r="3" fill="#111"/>
+<path d="M 218.0 174.0 A 20 20 0 0 0 182.0 174.0" fill="none" stroke="#333"/>
+<g fill="#111" font-family="serif" font-size="16">
+<text x="192" y="202">O</text>
+<text x="308.5" y="144.1">A</text>
+<text x="79.5" y="144.1">B</text>
+<text x="178" y="164">2.4 rad</text>
+<text x="208" y="230">8 cm</text>
+</g>
+</svg>

@@ -1,0 +1,217 @@
+[
+  {
+    "id": "P1-1.6-QC1-gen",
+    "section": "P1-1.6",
+    "kind": "generated",
+    "title": "Minimum value by completing the square",
+    "marks": 1,
+    "source": "Theory P1-1.6 Quick check 1 (min of x^2-8x+7 is -9); book Worked example 1.13 style pp.18-19, new numbers",
+    "params": [
+      {
+        "name": "h",
+        "min": 2,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": 1,
+        "max": 12,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "B": "2*h",
+      "V": "c-h*h"
+    },
+    "constraints": [
+      "h>=2",
+      "c-h*h!=0"
+    ],
+    "original": {
+      "h": 4,
+      "c": 7
+    },
+    "stem": "By completing the square, find the minimum value of \\(x^2-{B|int}x+{c|int}\\).",
+    "answer": {
+      "expression": "c-h*h",
+      "format": "{V|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(x^2-{B|int}x+{c|int}=\\bigl(x-{h|int}\\bigr)^2-{h|int}^2+{c|int}\\). The minimum value is \\({c|int}-{h|int}^2={V|int}\\).",
+        "result": "c-h*h",
+        "format": "int",
+        "mark": "A1",
+        "note": "The square is at least 0, so the minimum is c-h^2. Derived key is V, not M, so it does not clash with a method step name."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original h=4, c=7, min=-9"
+      }
+    ]
+  },
+  {
+    "id": "P1-1.6-QC2-gen",
+    "section": "P1-1.6",
+    "kind": "generated",
+    "title": "x-coordinate of a turning point",
+    "marks": 1,
+    "source": "Theory P1-1.6 Quick check 2 (turning point of 2x^2-12x+5 has x=3); book Key point 1.3 style p.20, new numbers",
+    "params": [
+      {
+        "name": "a",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "h",
+        "min": 1,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "name": "d",
+        "min": 1,
+        "max": 20,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "B": "2*a*h"
+    },
+    "constraints": [
+      "a>=1",
+      "h>=1"
+    ],
+    "original": {
+      "a": 2,
+      "h": 3,
+      "d": 5
+    },
+    "stem": "Find the \\(x\\)-coordinate of the turning point of \\(y={a|int}x^2-{B|int}x+{d|int}\\).",
+    "answer": {
+      "expression": "h",
+      "format": "{h|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The axis of symmetry is \\(x=\\dfrac{ {B|int} }{ 2\\times {a|int} }={h|int}\\), so the \\(x\\)-coordinate of the turning point is \\({h|int}\\).",
+        "result": "h",
+        "format": "int",
+        "mark": "A1",
+        "note": "x = -b/(2a) = (2ah)/(2a) = h. Spaces avoid adjacent {{."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original a=2, h=3, d=5, matching 2x^2-12x+5"
+      }
+    ]
+  },
+  {
+    "id": "P1-1.6-QC3-gen",
+    "section": "P1-1.6",
+    "kind": "generated",
+    "title": "Maximum value by completing the square",
+    "marks": 1,
+    "source": "Theory P1-1.6 Quick check 3 (max of 15-2x-x^2 is 16); book Worked example 1.14 style p.20, new numbers",
+    "params": [
+      {
+        "name": "c",
+        "min": 4,
+        "max": 20,
+        "step": 1
+      },
+      {
+        "name": "m",
+        "min": 1,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "B": "2*m",
+      "V": "c+m*m"
+    },
+    "constraints": [
+      "m>=1",
+      "c>=4"
+    ],
+    "original": {
+      "c": 15,
+      "m": 1
+    },
+    "stem": "By completing the square, find the maximum value of \\({c|int}-{B|int}x-x^2\\).",
+    "answer": {
+      "expression": "c+m*m",
+      "format": "{V|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\({c|int}-{B|int}x-x^2={c|int}-\\bigl(x^2+{B|int}x\\bigr)={V|int}-\\bigl(x+{m|int}\\bigr)^2\\). The maximum value is \\({V|int}\\).",
+        "result": "c+m*m",
+        "format": "int",
+        "mark": "A1",
+        "note": "The square is at least 0, so the maximum is c+m^2. Derived key is V, not M."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original c=15, m=1, max=16"
+      }
+    ]
+  },
+  {
+    "id": "P1-1.6-PP-9709-13-MJ15-Q1",
+    "section": "P1-1.6",
+    "kind": "pastpaper",
+    "title": "Express a quadratic in completed-square form",
+    "marks": 3,
+    "source": {
+      "paper": "9709/13/M/J/15 Q1",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s15_qp_13.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s15_ms_13.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2015), Question 1. Official answer and mark allocation from the MS PDF. The item is paper/self-mark."
+    },
+    "stem": "This question is 9709/13/M/J/15 Question 1, taken from the official QP.\n\nExpress \\(2x^2-12x+7\\) in the form \\(a(x+b)^2+c\\), where \\(a\\), \\(b\\) and \\(c\\) are constants.  [3]",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "B1",
+        "text_tex": "\\(2x^2-12x+7=2\\bigl(x^2-6x\\bigr)+7=2\\bigl((x-3)^2-9\\bigr)+7\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 B1 B1 for 2, (x-3), and -11 (3 marks). The factor 2 is the value of a."
+      },
+      {
+        "name": "B2",
+        "text_tex": "So \\(2(x-3)^2-18+7=2(x-3)^2-11\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 for the (x-3) bracket, equivalent to b=-3 in the form a(x+b)^2+c."
+      },
+      {
+        "name": "B3",
+        "text_tex": "Hence \\(a=2\\), \\(b=-3\\) and \\(c=-11\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 for -11. The printed scheme also lists the equivalent reading a=2, together with the values from 2(x-3)^2-11. Independent check: 2(x-3)^2-11=2(x^2-6x+9)-11=2x^2-12x+18-11=2x^2-12x+7."
+      }
+    ]
+  }
+]

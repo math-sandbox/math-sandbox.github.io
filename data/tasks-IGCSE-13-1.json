@@ -1,0 +1,189 @@
+[
+  {
+    "id": "IGCSE-13.1-QC1-gen",
+    "section": "IGCSE-13.1",
+    "kind": "generated",
+    "title": "Change kilometres into metres",
+    "marks": 1,
+    "source": "Theory IGCSE-13.1 Quick check 1 (6 km = 6000 m); book p.402 length conversions and Worked example 1 style, p.403",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 9,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "M": "1000*k"
+    },
+    "constraints": [
+      "k!=0"
+    ],
+    "original": {
+      "k": 6
+    },
+    "stem": "Change \\(({k|int})\\,\\mathrm{km}\\) into metres.",
+    "answer": {
+      "expression": "1000*k",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(1\\,\\mathrm{km}=1000\\,\\mathrm{m}\\), so \\(({k|int})\\,\\mathrm{km}=({k|int})\\times 1000={A|int}\\,\\mathrm{m}\\)",
+        "result": "1000*k",
+        "format": "int",
+        "mark": "A1",
+        "note": "Multiply by 1000 to change km into m."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original k=6"
+      },
+      {
+        "id": "how-many",
+        "stem": "How many metres are there in \\(({k|int})\\,\\mathrm{km}\\)?"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-13.1-QC2-gen",
+    "section": "IGCSE-13.1",
+    "kind": "generated",
+    "title": "Change square metres into square centimetres",
+    "marks": 1,
+    "source": "Theory IGCSE-13.1 Quick check 2 (3 m^2 = 30000 cm^2); book p.402 area conversions",
+    "params": [
+      {
+        "name": "n",
+        "min": 1,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "10000*n"
+    },
+    "constraints": [
+      "n!=0"
+    ],
+    "original": {
+      "n": 3
+    },
+    "stem": "Change \\(({n|int})\\,\\mathrm{m}^2\\) into square centimetres.",
+    "answer": {
+      "expression": "10000*n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(1\\,\\mathrm{m}^2=100\\times 100=10\\,000\\,\\mathrm{cm}^2\\), so \\(({n|int})\\,\\mathrm{m}^2=({n|int})\\times 10\\,000={A|int}\\,\\mathrm{cm}^2\\)",
+        "result": "10000*n",
+        "format": "int",
+        "mark": "A1",
+        "note": "Use the length factor twice for area."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original n=3"
+      },
+      {
+        "id": "written",
+        "stem": "Write \\(({n|int})\\,\\mathrm{m}^2\\) in \\(\\mathrm{cm}^2\\)."
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-13.1-QC3-gen",
+    "section": "IGCSE-13.1",
+    "kind": "generated",
+    "title": "Change cubic centimetres into litres",
+    "marks": 1,
+    "source": "Theory IGCSE-13.1 Quick check 3 (5000 cm^3 = 5 litres); book p.402, 1 l = 1000 cm^3",
+    "params": [
+      {
+        "name": "c",
+        "min": 1000,
+        "max": 9000,
+        "step": 1000
+      }
+    ],
+    "derived": {
+      "L": "c/1000"
+    },
+    "constraints": [
+      "c%1000==0",
+      "c!=0"
+    ],
+    "original": {
+      "c": 5000
+    },
+    "stem": "Change \\(({c|int})\\,\\mathrm{cm}^3\\) into litres.",
+    "answer": {
+      "expression": "c/1000",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(1\\,\\mathrm{l}=1000\\,\\mathrm{cm}^3\\), so \\(({c|int})\\,\\mathrm{cm}^3=({c|int})\\div 1000={A|int}\\) litres",
+        "result": "c/1000",
+        "format": "int",
+        "mark": "A1",
+        "note": "One litre is 1000 cubic centimetres."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "c is a multiple of 1000 so the answer is an integer"
+      },
+      {
+        "id": "how-many",
+        "stem": "How many litres are equal to \\(({c|int})\\,\\mathrm{cm}^3\\)?"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-13.1-PP-0580-32-FM22-Q5c",
+    "section": "IGCSE-13.1",
+    "kind": "pastpaper",
+    "title": "Change 75 cm^3 into litres, in standard form",
+    "marks": 2,
+    "source": {
+      "paper": "0580/32/F/M/22 Q5(c)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_m22_qp_32.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_m22_ms_32.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2022), Question 5 part (c) only. Official answer and mark allocation from the MS PDF. Parts (a) and (b) are currency and mass questions and are not included. The item is paper/self-mark."
+    },
+    "stem": "This question is 0580/32/F/M/22 Question 5(c), taken from the official QP.\n\n(c) Change \\(75\\,\\mathrm{cm}^3\\) into litres.\nGive your answer in standard form.",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "\\(1\\,\\mathrm{l}=1000\\,\\mathrm{cm}^3\\), so \\(75\\,\\mathrm{cm}^3=\\dfrac{75}{1000}=0.075\\) litres.",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: M1 for 75/1000 oe."
+      },
+      {
+        "name": "A",
+        "text_tex": "In standard form this is \\(7.5\\times 10^{-2}\\) litres.",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: 7.5 × 10^-2 cao. If 0 scored, SC1 for correctly converting their number to standard form, provided their number is less than 1."
+      }
+    ]
+  }
+]

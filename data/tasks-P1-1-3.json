@@ -1,0 +1,188 @@
+[
+  {
+    "id": "P1-1.3-QC1-gen",
+    "section": "P1-1.3",
+    "kind": "generated",
+    "title": "Value of b squared minus 4ac",
+    "marks": 1,
+    "source": "Theory P1-1.3 Quick check 1 (2x^2+5x-3=0, b^2-4ac=49); book Key point 1.2, printed p.10",
+    "params": [
+      {
+        "name": "a",
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 3,
+        "max": 9,
+        "step": 1
+      },
+      {
+        "name": "n",
+        "min": 1,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "D": "b*b+4*a*n"
+    },
+    "constraints": [
+      "a>=1",
+      "b>=3",
+      "n>=1"
+    ],
+    "original": {
+      "a": 2,
+      "b": 5,
+      "n": 3
+    },
+    "stem": "For the equation \\({a|int}x^2+{b|int}x-{n|int}=0\\), find the value of \\(b^2-4ac\\).",
+    "answer": {
+      "expression": "b*b+4*a*n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Here \\(c=-{n|int}\\), so \\(b^2-4ac={b|int}^2-4\\times{a|int}\\times(-{n|int})={A|int}\\)",
+        "result": "b*b+4*a*n",
+        "format": "int",
+        "mark": "A1",
+        "note": "c is negative, so -4ac is positive."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original a=2, b=5, n=3"
+      },
+      {
+        "id": "written",
+        "stem": "Work out \\(b^2-4ac\\) for \\({a|int}x^2+{b|int}x-{n|int}=0\\)."
+      }
+    ]
+  },
+  {
+    "id": "P1-1.3-QC2-gen",
+    "section": "P1-1.3",
+    "kind": "generated",
+    "title": "The value of 2a in the quadratic formula",
+    "marks": 1,
+    "source": "Theory P1-1.3 Quick check 2 (5x^2+7x-2=0, 2a=10); book Key point 1.2, printed p.10",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 12,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "D": "2*a"
+    },
+    "constraints": [
+      "a>=2"
+    ],
+    "original": {
+      "a": 5
+    },
+    "stem": "The equation \\({a|int}x^2+7x-2=0\\) is solved using the quadratic formula. Write down the value of \\(2a\\) used in the formula.",
+    "answer": {
+      "expression": "2*a",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Here \\(a={a|int}\\), so \\(2a={A|int}\\)",
+        "result": "2*a",
+        "format": "int",
+        "mark": "A1",
+        "note": "The denominator of the quadratic formula is 2a."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original a=5"
+      },
+      {
+        "id": "written",
+        "stem": "For \\({a|int}x^2+7x-2=0\\), write down the value of \\(2a\\) in the quadratic formula."
+      }
+    ]
+  },
+  {
+    "id": "P1-1.3-QC3-gen",
+    "section": "P1-1.3",
+    "kind": "generated",
+    "title": "Smaller root using the quadratic formula",
+    "marks": 2,
+    "source": "Theory P1-1.3 Quick check 3 (x^2-6x+5=0, smaller root 1); book Worked example 1.8 style, printed p.11",
+    "params": [
+      {
+        "name": "p",
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 3,
+        "max": 10,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "B": "p+q",
+      "C": "p*q"
+    },
+    "constraints": [
+      "q-p>=2",
+      "p>=1"
+    ],
+    "original": {
+      "p": 1,
+      "q": 5
+    },
+    "stem": "Solve \\(x^2-{B|int}x+{C|int}=0\\) using the quadratic formula. Write down the smaller root.",
+    "answer": {
+      "expression": "p",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "\\(x=\\bigl( {B|int}\\pm\\sqrt{ {B|int}^2-4\\times{C|int} }\\bigr)/2\\)",
+        "result": "p+q",
+        "format": "int",
+        "mark": "M1",
+        "note": "Substitute a=1, b=-(p+q) and c=pq into the formula."
+      },
+      {
+        "name": "A",
+        "text_tex": "This gives the roots \\({q|int}\\) and \\({p|int}\\). The smaller root is \\({A|int}\\)",
+        "result": "p",
+        "format": "int",
+        "mark": "A1",
+        "note": "p is smaller than q."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original p=1, q=5"
+      },
+      {
+        "id": "written",
+        "stem": "Using the quadratic formula, find the smaller root of \\(x^2-{B|int}x+{C|int}=0\\)."
+      }
+    ]
+  }
+]

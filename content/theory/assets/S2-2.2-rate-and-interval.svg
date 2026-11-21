@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 200" width="420" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:420px;height:auto" role="img" aria-labelledby="s222-t s222-d">
+<title id="s222-t">The Poisson mean scales with the length of the interval</title>
+<desc id="s222-d">A five-minute interval labelled mean 2 sits beside a fifteen-minute interval, three times as long, labelled mean 6.</desc>
+<rect x="30" y="70" width="80" height="40" fill="#aed6f1" stroke="#1a5276" stroke-width="1.6"/>
+<rect x="160" y="70" width="240" height="40" fill="#aed6f1" stroke="#1a5276" stroke-width="1.6"/>
+<text x="70" y="95" text-anchor="middle" font-family="serif" font-size="14" fill="#111">5 min</text>
+<text x="280" y="95" text-anchor="middle" font-family="serif" font-size="14" fill="#111">15 min</text>
+<text x="70" y="50" text-anchor="middle" font-family="serif" font-size="14" fill="#1a5276">λ = 2</text>
+<text x="280" y="50" text-anchor="middle" font-family="serif" font-size="14" fill="#1a5276">λ = 6</text>
+<text x="70" y="140" text-anchor="middle" font-family="serif" font-size="13" fill="#111">mean 2</text>
+<text x="280" y="140" text-anchor="middle" font-family="serif" font-size="13" fill="#111">mean 6 = 3 × 2</text>
+<text x="210" y="180" text-anchor="middle" font-family="serif" font-size="13" fill="#111">The mean is proportional to the length of the interval.</text>
+</svg>

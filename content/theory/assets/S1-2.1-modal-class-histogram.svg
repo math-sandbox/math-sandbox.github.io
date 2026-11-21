@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" width="420" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:420px;height:auto" role="img" aria-labelledby="s121-t s121-d">
+<title id="s121-t">Histogram of 104 lengths with the tallest column on the narrowest class</title>
+<desc id="s121-d">A histogram with no gaps. The first column, from 0 to 10, has frequency density 4. The second column, from 10 to 16, has frequency density 6. The third column, from 16 to 20, has frequency density 7 and is the tallest, so it is the modal class, even though it has the smallest frequency.</desc>
+<line x1="50" y1="70" x2="50" y2="230" stroke="#e5e8e8" stroke-width="0.8"/>
+<line x1="50" y1="70" x2="370" y2="70" stroke="#e5e8e8" stroke-width="0.8"/>
+<line x1="50" y1="110" x2="370" y2="110" stroke="#e5e8e8" stroke-width="0.8"/>
+<line x1="50" y1="150" x2="370" y2="150" stroke="#e5e8e8" stroke-width="0.8"/>
+<line x1="50" y1="190" x2="370" y2="190" stroke="#e5e8e8" stroke-width="0.8"/>
+<line x1="42" y1="230" x2="378" y2="230" stroke="#333" stroke-width="1.2"/>
+<line x1="50" y1="46" x2="50" y2="238" stroke="#333" stroke-width="1.2"/>
+<polygon points="378,230 366,225 366,235" fill="#333"/>
+<polygon points="50,46 45,58 55,58" fill="#333"/>
+<rect x="50" y="150" width="160" height="80" fill="#aed6f1" stroke="#1a5276" stroke-width="1.6"/>
+<rect x="210" y="110" width="96" height="120" fill="#aed6f1" stroke="#1a5276" stroke-width="1.6"/>
+<rect x="306" y="90" width="64" height="140" fill="#1a5276" stroke="#0e2f44" stroke-width="1.6"/>
+<text x="50" y="246" text-anchor="middle" font-family="serif" font-size="13" fill="#111">0</text>
+<text x="210" y="246" text-anchor="middle" font-family="serif" font-size="13" fill="#111">10</text>
+<text x="306" y="246" text-anchor="middle" font-family="serif" font-size="13" fill="#111">16</text>
+<text x="370" y="246" text-anchor="middle" font-family="serif" font-size="13" fill="#111">20</text>
+<text x="36" y="234" text-anchor="end" font-family="serif" font-size="12" fill="#111">0</text>
+<text x="36" y="194" text-anchor="end" font-family="serif" font-size="12" fill="#111">2</text>
+<text x="36" y="154" text-anchor="end" font-family="serif" font-size="12" fill="#111">4</text>
+<text x="36" y="114" text-anchor="end" font-family="serif" font-size="12" fill="#111">6</text>
+<text x="36" y="74" text-anchor="end" font-family="serif" font-size="12" fill="#111">8</text>
+<text x="130" y="142" text-anchor="middle" font-family="serif" font-size="13" fill="#1a5276">4</text>
+<text x="258" y="102" text-anchor="middle" font-family="serif" font-size="13" fill="#1a5276">6</text>
+<text x="338" y="82" text-anchor="middle" font-family="serif" font-size="13" fill="#fff">7</text>
+<text x="360" y="268" text-anchor="middle" font-family="serif" font-size="14" fill="#111">length</text>
+<text x="50" y="38" text-anchor="middle" font-family="serif" font-size="14" fill="#111">Frequency density</text>
+</svg>

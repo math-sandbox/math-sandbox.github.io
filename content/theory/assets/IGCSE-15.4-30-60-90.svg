@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 280" width="360" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:360px;height:auto" role="img" aria-labelledby="IGCSE-15-4-30-60-90-t IGCSE-15-4-30-60-90-d">
+<title id="IGCSE-15-4-30-60-90-t">A 30-60-90 triangle with sides 1, root 3 and 2</title>
+<desc id="IGCSE-15-4-30-60-90-d">A right-angled triangle with the side opposite 30 degrees of length 1, the side opposite 60 degrees of length root 3, and hypotenuse 2.</desc>
+<rect x="0" y="0" width="360" height="280" fill="#fff"/>
+<g font-family="Source Sans 3, DejaVu Sans, sans-serif" font-size="15" fill="#333">
+  <polygon points="80.00,230.00 235.88,230.00 235.88,140.00" fill="#eef5fb" stroke="#1b5e8a" stroke-width="2.2"/>
+  <rect x="221.88" y="216.00" width="14" height="14" fill="none" stroke="#1b5e8a" stroke-width="1.4"/>
+  <text x="157.94" y="252.00" text-anchor="middle">&#8730;3</text>
+  <text x="247.88" y="185.00">1</text>
+  <text x="149.94" y="179.00" fill="#1b5e8a">2</text>
+  <text x="88.00" y="222.00">30&#176;</text>
+  <text x="197.88" y="158.00">60&#176;</text>
+</g>
+</svg>

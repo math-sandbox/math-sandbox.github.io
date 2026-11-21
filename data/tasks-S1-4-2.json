@@ -1,0 +1,701 @@
+[
+  {
+    "id": "S1-4.2-QC1-gen",
+    "section": "S1-4.2",
+    "kind": "generated",
+    "title": "Addition law for mutually exclusive events",
+    "marks": 3,
+    "source": "S1 Ch4 theory S1-4.2 Quick check 1 (P(A) = 0.42, P(B) = 0.35: 0.77 and 0.23)",
+    "params": [
+      {
+        "name": "a",
+        "min": 0.1,
+        "max": 0.6,
+        "step": 0.01
+      },
+      {
+        "name": "b",
+        "min": 0.1,
+        "max": 0.6,
+        "step": 0.01
+      }
+    ],
+    "derived": {},
+    "constraints": [
+      "a+b<=0.95"
+    ],
+    "original": {
+      "a": 0.42,
+      "b": 0.35
+    },
+    "stem": "Events \\(A\\) and \\(B\\) are mutually exclusive, with \\(\\mathrm{P}(A)={a|raw}\\) and \\(\\mathrm{P}(B)={b|raw}\\).\n(a) Find \\(\\mathrm{P}(A\\cup B)\\).\n(b) Find the probability that neither \\(A\\) nor \\(B\\) occurs.",
+    "answer": {
+      "parts": [
+        {
+          "expression": "a+b",
+          "format": "(a) {U|raw}",
+          "part": "(a)",
+          "tolerance": 0
+        },
+        {
+          "expression": "1-a-b",
+          "format": "(b) {Nn|raw}",
+          "part": "(b)",
+          "tolerance": 0
+        }
+      ]
+    },
+    "steps": [
+      {
+        "name": "U",
+        "text_tex": "(a) \\(\\mathrm{P}(A\\cup B)={a|raw}+{b|raw}={U|raw}\\)",
+        "result": "a+b",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Mutually exclusive, so add: P(A ∪ B) = P(A) + P(B)."
+      },
+      {
+        "name": "Nm",
+        "text_tex": "(b) \\(1-{U|raw}\\)",
+        "result": "1-U",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Neither = complement of (A or B)."
+      },
+      {
+        "name": "Nn",
+        "text_tex": "\\(={Nn|raw}\\)",
+        "result": "Nm",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct probability."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "travel",
+        "stem": "Each day Mina travels to school in exactly one way. The probability that she walks is {a|raw} and the probability that she takes the bus is {b|raw}.\n(a) Find the probability that she walks or takes the bus.\n(b) Find the probability that she does neither.",
+        "step_text": {
+          "U": "(a) \\({a|raw}+{b|raw}={U|raw}\\)"
+        }
+      },
+      {
+        "id": "balls",
+        "stem": "A ball is taken at random from a bag of coloured balls. The probability that it is red is {a|raw} and the probability that it is green is {b|raw}.\n(a) Find the probability that the ball is red or green.\n(b) Find the probability that the ball is neither red nor green.",
+        "step_text": {
+          "U": "(a) \\({a|raw}+{b|raw}={U|raw}\\)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "S1-4.2-QC2-gen",
+    "section": "S1-4.2",
+    "kind": "generated",
+    "title": "General addition law: finding P(A and B)",
+    "marks": 2,
+    "source": "S1 Ch4 theory S1-4.2 Quick check 2 (P(A) = 0.6, P(B) = 0.5, P(A ∪ B) = 0.8: 0.3)",
+    "params": [
+      {
+        "name": "a",
+        "min": 0.3,
+        "max": 0.8,
+        "step": 0.05
+      },
+      {
+        "name": "b",
+        "min": 0.2,
+        "max": 0.7,
+        "step": 0.05
+      },
+      {
+        "name": "u",
+        "min": 0.5,
+        "max": 0.95,
+        "step": 0.05
+      }
+    ],
+    "derived": {},
+    "constraints": [
+      "u>=a",
+      "u>=b",
+      "a+b-u>=0.049"
+    ],
+    "original": {
+      "a": 0.6,
+      "b": 0.5,
+      "u": 0.8
+    },
+    "stem": "Events \\(A\\) and \\(B\\) are such that \\(\\mathrm{P}(A)={a|raw}\\), \\(\\mathrm{P}(B)={b|raw}\\) and \\(\\mathrm{P}(A\\cup B)={u|raw}\\). Find \\(\\mathrm{P}(A\\cap B)\\).",
+    "answer": {
+      "expression": "a+b-u",
+      "format": "{I|raw}",
+      "tolerance": 0
+    },
+    "steps": [
+      {
+        "name": "Im",
+        "text_tex": "\\(\\mathrm{P}(A\\cap B)=\\mathrm{P}(A)+\\mathrm{P}(B)-\\mathrm{P}(A\\cup B)={a|raw}+{b|raw}-{u|raw}\\)",
+        "result": "a+b-u",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Rearrange P(A ∪ B) = P(A) + P(B) − P(A ∩ B)."
+      },
+      {
+        "name": "I",
+        "text_tex": "\\(={I|raw}\\)",
+        "result": "Im",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct probability."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "survey",
+        "stem": "In a survey, the proportion of people who own a bicycle is {a|raw}, the proportion who own a car is {b|raw}, and the proportion who own a bicycle or a car or both is {u|raw}. Find the proportion who own both a bicycle and a car.",
+        "step_text": {
+          "Im": "\\(\\mathrm{P(both)}={a|raw}+{b|raw}-{u|raw}\\)"
+        }
+      },
+      {
+        "id": "languages",
+        "stem": "One student is chosen at random from a school. The probability that the student studies French is {a|raw}, the probability that the student studies Spanish is {b|raw}, and the probability that the student studies French or Spanish or both is {u|raw}. Find the probability that the student studies both languages.",
+        "step_text": {
+          "Im": "\\(\\mathrm{P(both)}={a|raw}+{b|raw}-{u|raw}\\)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "S1-4.2-QC3-gen",
+    "section": "S1-4.2",
+    "kind": "generated",
+    "title": "Overlapping events: multiples of two numbers",
+    "marks": 3,
+    "source": "S1 Ch4 theory S1-4.2 Quick check 3 (1 to 6, multiple of 2 or 3: 4/6 ≈ 0.667)",
+    "params": [
+      {
+        "name": "n",
+        "min": 6,
+        "max": 60,
+        "step": 6
+      },
+      {
+        "name": "a",
+        "min": 2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 3,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "name": "l",
+        "min": 6,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "cA": "n/a",
+      "cB": "n/b",
+      "cAB": "n/l",
+      "c": "n/a+n/b-n/l"
+    },
+    "constraints": [
+      "abs(n/l-round(n/l))<1e-9"
+    ],
+    "original": {
+      "n": 6,
+      "a": 2,
+      "b": 3,
+      "l": 6
+    },
+    "stem": "A whole number is chosen at random from 1 to {n|int}. Find the probability that it is a multiple of 2 or a multiple of 3.",
+    "answer": {
+      "expression": "c/n",
+      "format": "\\(\\dfrac{{c|int}}{{n|int}}\\approx{E|sf3z}\\)",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "cAB",
+        "text_tex": "Multiples of both {a|int} and {b|int} are the multiples of {l|int}: \\({cAB|int}\\)",
+        "result": "n/l",
+        "format": "int",
+        "mark": "B1",
+        "note": "Count the overlap A ∩ B."
+      },
+      {
+        "name": "c",
+        "text_tex": "\\(n(A\\cup B)={cA|int}+{cB|int}-{cAB|int}={c|int}\\)",
+        "result": "cA+cB-cAB",
+        "format": "int",
+        "mark": "M1",
+        "note": "n(A ∪ B) = n(A) + n(B) − n(A ∩ B): do not count the overlap twice."
+      },
+      {
+        "name": "E",
+        "text_tex": "\\(\\dfrac{{c|int}}{{n|int}}\\approx{E|sf3z}\\)",
+        "result": "c/n",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Exact fraction or 3 s.f."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "cards",
+        "stem": "A card is taken at random from {n|int} cards numbered 1 to {n|int}. Find the probability that the number on the card is a multiple of 3 or a multiple of 4.",
+        "params": [
+          {
+            "name": "n",
+            "min": 24,
+            "max": 96,
+            "step": 12
+          },
+          {
+            "name": "a",
+            "min": 3,
+            "max": 3,
+            "step": 1
+          },
+          {
+            "name": "b",
+            "min": 4,
+            "max": 4,
+            "step": 1
+          },
+          {
+            "name": "l",
+            "min": 12,
+            "max": 12,
+            "step": 1
+          }
+        ]
+      },
+      {
+        "id": "raffle",
+        "stem": "Raffle tickets are numbered 1 to {n|int}. One ticket is drawn at random. A prize is given if the number is a multiple of 2 or a multiple of 5. Find the probability that the ticket drawn wins a prize.",
+        "params": [
+          {
+            "name": "n",
+            "min": 20,
+            "max": 100,
+            "step": 10
+          },
+          {
+            "name": "a",
+            "min": 2,
+            "max": 2,
+            "step": 1
+          },
+          {
+            "name": "b",
+            "min": 5,
+            "max": 5,
+            "step": 1
+          },
+          {
+            "name": "l",
+            "min": 10,
+            "max": 10,
+            "step": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "S1-4.2-QC4-gen",
+    "section": "S1-4.2",
+    "kind": "generated",
+    "title": "Venn diagram counts: both and exactly one",
+    "marks": 4,
+    "source": "S1 Ch4 theory S1-4.2 Quick check 4 (30 students, choir 12, band 15, neither 7: both 4, P(exactly one) = 19/30)",
+    "params": [
+      {
+        "name": "N",
+        "min": 20,
+        "max": 40,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": 8,
+        "max": 20,
+        "step": 1
+      },
+      {
+        "name": "d",
+        "min": 8,
+        "max": 20,
+        "step": 1
+      },
+      {
+        "name": "z",
+        "min": 2,
+        "max": 10,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "x": "c+d+z-N",
+      "e1": "c+d-2*(c+d+z-N)",
+      "cx": "c-(c+d+z-N)",
+      "dx": "d-(c+d+z-N)"
+    },
+    "constraints": [
+      "x>=1",
+      "x<=c-1",
+      "x<=d-1"
+    ],
+    "original": {
+      "N": 30,
+      "c": 12,
+      "d": 15,
+      "z": 7
+    },
+    "stem": "In a group of {N|int} students, {c|int} sing in the choir, {d|int} play in the band and {z|int} do neither.\n(a) Find the number of students who do both.\n(b) One student is chosen at random. Find the probability that the student does exactly one of these activities.",
+    "answer": {
+      "parts": [
+        {
+          "expression": "c+d+z-N",
+          "format": "(a) {X|int}",
+          "part": "(a)",
+          "accept_as": "integer"
+        },
+        {
+          "expression": "(c+d-2*(c+d+z-N))/N",
+          "format": "(b) \\(\\dfrac{{e1|int}}{{N|int}}\\approx{E|sf3z}\\)",
+          "part": "(b)",
+          "accept_as": "sf",
+          "sf": 3
+        }
+      ]
+    },
+    "steps": [
+      {
+        "name": "Xm",
+        "text_tex": "(a) \\(n(C\\cap D)={c|int}+{d|int}+{z|int}-{N|int}\\)",
+        "result": "c+d+z-N",
+        "format": "int",
+        "mark": "M1",
+        "note": "n(C) + n(D) counts the overlap twice; total = n(C) + n(D) − n(C ∩ D) + neither."
+      },
+      {
+        "name": "X",
+        "text_tex": "\\(={X|int}\\)",
+        "result": "Xm",
+        "format": "int",
+        "mark": "A1",
+        "note": "Correct number in both."
+      },
+      {
+        "name": "Ex",
+        "text_tex": "(b) Exactly one: \\(({c|int}-{X|int})+({d|int}-{X|int})={e1|int}\\)",
+        "result": "(c-X)+(d-X)",
+        "format": "int",
+        "mark": "M1",
+        "note": "Only C plus only D."
+      },
+      {
+        "name": "E",
+        "text_tex": "\\(\\dfrac{{e1|int}}{{N|int}}\\approx{E|sf3z}\\)",
+        "result": "Ex/N",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Exact fraction or 3 s.f."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "sports",
+        "stem": "In a club of {N|int} members, {c|int} play football, {d|int} play basketball and {z|int} play neither.\n(a) Find the number of members who play both.\n(b) One member is chosen at random. Find the probability that the member plays exactly one of these sports.",
+        "params": [
+          {
+            "name": "N",
+            "min": 25,
+            "max": 50,
+            "step": 1
+          },
+          {
+            "name": "c",
+            "min": 10,
+            "max": 25,
+            "step": 1
+          },
+          {
+            "name": "d",
+            "min": 10,
+            "max": 25,
+            "step": 1
+          },
+          {
+            "name": "z",
+            "min": 2,
+            "max": 12,
+            "step": 1
+          }
+        ],
+        "step_text": {
+          "Xm": "(a) \\(n(F\\cap B)={c|int}+{d|int}+{z|int}-{N|int}\\)"
+        }
+      },
+      {
+        "id": "pets",
+        "stem": "In a survey of {N|int} families, {c|int} have a cat, {d|int} have a dog and {z|int} have neither.\n(a) Find the number of families that have both.\n(b) One family is chosen at random. Find the probability that the family has exactly one of these pets.",
+        "params": [
+          {
+            "name": "N",
+            "min": 30,
+            "max": 60,
+            "step": 1
+          },
+          {
+            "name": "c",
+            "min": 10,
+            "max": 30,
+            "step": 1
+          },
+          {
+            "name": "d",
+            "min": 10,
+            "max": 30,
+            "step": 1
+          },
+          {
+            "name": "z",
+            "min": 3,
+            "max": 15,
+            "step": 1
+          }
+        ],
+        "step_text": {
+          "Xm": "(a) \\(n(C\\cap D)={c|int}+{d|int}+{z|int}-{N|int}\\)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "S1-4.2-PP-9709-63-ON11-Q2i",
+    "section": "S1-4.2",
+    "kind": "pastpaper",
+    "title": "Two-way information: either one event or the other or both",
+    "marks": 4,
+    "source": {
+      "paper": "9709/63/O/N/11 Q2(i)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w11_qp_63.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w11_ms_63.pdf",
+      "note": "Stem text verbatim from the QP PDF; steps and marks from the official MS PDF (UCLES). Only part (i) is used; part (ii) is independence (later section)."
+    },
+    "stem": "In a group of 30 teenagers, 13 of the 18 males watch ‘Kops are Kids’ on television and 3 of the 12\nfemales watch ‘Kops are Kids’.",
+    "parts": [
+      {
+        "part": "(i)",
+        "stem": "Find the probability that a person chosen at random from the group is either female or watches\n‘Kops are Kids’ or both.",
+        "marks": 4,
+        "answer": {
+          "expression": "5/6",
+          "official": "5/6 (0.833)",
+          "accept_as": "sf",
+          "sf": 3
+        },
+        "steps": [
+          {
+            "name": "PF",
+            "text_tex": "\\(\\mathrm{P}(F)=\\dfrac{12}{30}\\)",
+            "result": "12/30",
+            "format": "num",
+            "mark": "B1",
+            "note": "MS: B1 12/30 or 16/30 or 5/30 seen."
+          },
+          {
+            "name": "m",
+            "text_tex": "Females: 12; males who watch: 13. These groups do not overlap.",
+            "result": "None",
+            "format": "num",
+            "mark": "M1",
+            "note": "MS: M1 valid attempt to find P(F or W)."
+          },
+          {
+            "name": "ex",
+            "text_tex": "\\(\\mathrm{P}(F\\text{ or }W)=\\dfrac{13}{30}+\\dfrac{3}{30}+\\dfrac{9}{30}\\)",
+            "result": "13/30+3/30+9/30",
+            "format": "num",
+            "mark": "A1",
+            "note": "MS: A1 correct unsimplified expression; also accepted: 1 − 5/30, or 12/30 + 16/30 − 3/30."
+          },
+          {
+            "name": "ans",
+            "text_tex": "\\(=\\dfrac56\\approx0.833\\)",
+            "result": "ex",
+            "format": "num",
+            "mark": "A1",
+            "note": "MS: A1 5/6 (0.833)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "S1-4.2-PP-ON11-Q2i-similar",
+    "section": "S1-4.2",
+    "kind": "generated",
+    "title": "Two groups: either one event or the other or both",
+    "marks": 4,
+    "source": "Similar to 9709/63/O/N/11 Q2(i); authored marks B1 M1 A1 A1 follow that MS",
+    "params": [
+      {
+        "name": "M",
+        "min": 10,
+        "max": 30,
+        "step": 1
+      },
+      {
+        "name": "F",
+        "min": 10,
+        "max": 30,
+        "step": 1
+      },
+      {
+        "name": "m",
+        "min": 1,
+        "max": 29,
+        "step": 1
+      },
+      {
+        "name": "f",
+        "min": 1,
+        "max": 29,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "N": "M+F",
+      "Fn": "F-f",
+      "Mn": "M-m",
+      "c": "F+m"
+    },
+    "constraints": [
+      "m<=M-1",
+      "f<=F-1"
+    ],
+    "original": {
+      "M": 18,
+      "F": 12,
+      "m": 13,
+      "f": 3
+    },
+    "stem": "In a group of {N|int} teenagers, {m|int} of the {M|int} males watch a certain television programme and {f|int} of the {F|int} females watch it. Find the probability that a person chosen at random from the group is either female or watches the programme or both.",
+    "answer": {
+      "expression": "(F+m)/N",
+      "format": "\\(\\dfrac{{c|int}}{{N|int}}\\approx{E|sf3z}\\)",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "PF",
+        "text_tex": "\\(\\mathrm{P(female)}=\\dfrac{{F|int}}{{N|int}}\\)",
+        "result": "F/N",
+        "format": "sf3z",
+        "mark": "B1",
+        "note": "Correct probability for one of the groups."
+      },
+      {
+        "name": "cm",
+        "text_tex": "Females: \\({F|int}\\); males who watch: \\({m|int}\\). These groups do not overlap.",
+        "result": "F+m",
+        "format": "int",
+        "mark": "M1",
+        "note": "Count every favourable person once."
+      },
+      {
+        "name": "ex",
+        "text_tex": "\\(\\dfrac{{m|int}}{{N|int}}+\\dfrac{{f|int}}{{N|int}}+\\dfrac{{Fn|int}}{{N|int}}\\)",
+        "result": "(m+f+Fn)/N",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Correct unsimplified expression (or 1 − non-watching males ÷ total)."
+      },
+      {
+        "name": "E",
+        "text_tex": "\\(=\\dfrac{{c|int}}{{N|int}}\\approx{E|sf3z}\\)",
+        "result": "ex",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Exact fraction or 3 s.f."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "club",
+        "stem": "A club has {N|int} members: {M|int} adults and {F|int} children. {m|int} of the adults and {f|int} of the children play chess. Find the probability that a member chosen at random is either a child or plays chess or both.",
+        "step_text": {
+          "PF": "\\(\\mathrm{P(child)}=\\dfrac{{F|int}}{{N|int}}\\)",
+          "cm": "Children: \\({F|int}\\); adults who play chess: \\({m|int}\\). These groups do not overlap."
+        }
+      },
+      {
+        "id": "company",
+        "stem": "A company has {M|int} office staff and {F|int} factory staff. {m|int} of the office staff and {f|int} of the factory staff cycle to work. One of the {N|int} employees is chosen at random. Find the probability that the employee chosen either works in the factory or cycles to work or both.",
+        "params": [
+          {
+            "name": "M",
+            "min": 20,
+            "max": 60,
+            "step": 1
+          },
+          {
+            "name": "F",
+            "min": 20,
+            "max": 80,
+            "step": 1
+          },
+          {
+            "name": "m",
+            "min": 2,
+            "max": 40,
+            "step": 1
+          },
+          {
+            "name": "f",
+            "min": 2,
+            "max": 60,
+            "step": 1
+          }
+        ],
+        "step_text": {
+          "PF": "\\(\\mathrm{P(factory)}=\\dfrac{{F|int}}{{N|int}}\\)",
+          "cm": "Factory staff: \\({F|int}\\); office staff who cycle: \\({m|int}\\). These groups do not overlap."
+        }
+      }
+    ]
+  }
+]

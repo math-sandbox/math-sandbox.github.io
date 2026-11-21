@@ -1,0 +1,358 @@
+[
+  {
+    "id": "IGCSE-18.1-QC1-gen",
+    "section": "IGCSE-18.1",
+    "kind": "generated",
+    "title": "Axis of symmetry of a parabola",
+    "marks": 2,
+    "source": "Theory IGCSE-18.1 Quick check 1 (axis of y=2x^2-8x+3 is x=2); book pp.584–595, Exercise 18.3 Q2 style",
+    "params": [
+      {
+        "name": "a",
+        "min": -8,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "name": "h",
+        "min": -10,
+        "max": 10,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "b": "-2*a*h"
+    },
+    "constraints": [
+      "a!=0",
+      "h!=0"
+    ],
+    "original": {
+      "a": 2,
+      "h": 2
+    },
+    "stem": "The curve \\(y=ax^2+bx+c\\) has \\(a={a|int}\\), \\(b={b|int}\\) and \\(c=3\\). Find the \\(x\\)-coordinate of its axis of symmetry.",
+    "answer": {
+      "expression": "h",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "\\(x=-\\dfrac{b}{2a}=-\\dfrac{{b|int}}{2\\times({a|int})}\\)",
+        "result": "-b/(2*a)",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Use x = -b/(2a)."
+      },
+      {
+        "name": "A",
+        "text_tex": "\\(x={A|int}\\)",
+        "result": "h",
+        "format": "int",
+        "mark": "A1",
+        "note": "Exact x-coordinate of the axis."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "constant term fixed at 3; the axis depends only on a and b"
+      },
+      {
+        "id": "equation",
+        "stem": "Find the \\(x\\)-coordinate of the axis of symmetry of the quadratic with \\(a={a|int}\\), \\(b={b|int}\\) and \\(c=-5\\)."
+      },
+      {
+        "id": "words",
+        "stem": "A parabola is given by \\(y=ax^2+bx+c\\) where \\(a={a|int}\\) and \\(b={b|int}\\). Find the \\(x\\)-coordinate of its axis of symmetry."
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-18.1-QC2-gen",
+    "section": "IGCSE-18.1",
+    "kind": "generated",
+    "title": "Y-coordinate of the turning point",
+    "marks": 2,
+    "source": "Theory IGCSE-18.1 Quick check 2 (turning point of y=2x^2-8x+3 has y=-5); book pp.584–595",
+    "params": [
+      {
+        "name": "a",
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "h",
+        "min": -6,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "k",
+        "min": -12,
+        "max": 12,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "b": "-2*a*h",
+      "c": "k+a*h*h"
+    },
+    "constraints": [
+      "a!=0",
+      "h!=0",
+      "k!=0",
+      "k+a*h*h!=0"
+    ],
+    "original": {
+      "a": 2,
+      "h": 2,
+      "k": -5
+    },
+    "stem": "The curve \\(y=ax^2+bx+c\\) has \\(a={a|int}\\), \\(b={b|int}\\) and \\(c={c|int}\\). Find the \\(y\\)-coordinate of the turning point.",
+    "answer": {
+      "expression": "k",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "X",
+        "text_tex": "Axis \\(x=-\\dfrac{b}{2a}={h|int}\\)",
+        "result": "h",
+        "format": "int",
+        "mark": "M1",
+        "note": "x-coordinate from x=-b/(2a)."
+      },
+      {
+        "name": "A",
+        "text_tex": "Substitute \\(x={h|int}\\): \\(y={A|int}\\)",
+        "result": "k",
+        "format": "int",
+        "mark": "A1",
+        "note": "Y-coordinate of the turning point."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "integer turning point (h, k)"
+      },
+      {
+        "id": "vertex-word",
+        "stem": "A parabola has coefficients \\(a={a|int}\\), \\(b={b|int}\\) and \\(c={c|int}\\). Find the \\(y\\)-coordinate of its vertex."
+      },
+      {
+        "id": "tp-word",
+        "stem": "Find the \\(y\\)-coordinate of the turning point of the quadratic with \\(a={a|int}\\), \\(b={b|int}\\) and \\(c={c|int}\\)."
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-18.1-QC3-gen",
+    "section": "IGCSE-18.1",
+    "kind": "generated",
+    "title": "Y-intercept of a quadratic",
+    "marks": 1,
+    "source": "Theory IGCSE-18.1 Quick check 3 (y-intercept of y=-3x^2+5x-7 is -7); book pp.584–595",
+    "params": [
+      {
+        "name": "a",
+        "min": -6,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": -9,
+        "max": 9,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": -12,
+        "max": 12,
+        "step": 1
+      }
+    ],
+    "derived": {},
+    "constraints": [
+      "a!=0",
+      "b!=0",
+      "c!=0"
+    ],
+    "original": {
+      "a": -3,
+      "b": 5,
+      "c": -7
+    },
+    "stem": "The curve \\(y=ax^2+bx+c\\) has \\(a={a|int}\\), \\(b={b|int}\\) and \\(c={c|int}\\). Write down the \\(y\\)-coordinate of the y-intercept.",
+    "answer": {
+      "expression": "c",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Put \\(x=0\\): \\(y={c|int}\\)",
+        "result": "c",
+        "format": "int",
+        "mark": "A1",
+        "note": "The y-intercept is c."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "ask for the y-coordinate"
+      },
+      {
+        "id": "point-word",
+        "stem": "The curve with \\(a={a|int}\\), \\(b={b|int}\\) and \\(c={c|int}\\) meets the \\(y\\)-axis at \\(P\\). Find the \\(y\\)-coordinate of \\(P\\)."
+      },
+      {
+        "id": "c-word",
+        "stem": "For \\(y=ax^2+bx+c\\) with \\(a={a|int}\\), \\(b={b|int}\\) and \\(c={c|int}\\), find the value of \\(y\\) when \\(x=0\\)."
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-18.1-QC4-gen",
+    "section": "IGCSE-18.1",
+    "kind": "generated",
+    "title": "Table value for a quadratic",
+    "marks": 1,
+    "source": "Theory IGCSE-18.1 Quick check 4 (y=x^2-5x+3 at x=-1 is 9); book table work pp.584–595",
+    "params": [
+      {
+        "name": "p",
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": -8,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "name": "r",
+        "min": -6,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "x",
+        "min": -6,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "y": "p*x*x+q*x+r"
+    },
+    "constraints": [
+      "q!=0",
+      "x!=0",
+      "p*x*x+q*x+r!=0"
+    ],
+    "original": {
+      "p": 1,
+      "q": -5,
+      "r": 3,
+      "x": -1
+    },
+    "stem": "The curve \\(y=ax^2+bx+c\\) has \\(a={p|int}\\), \\(b={q|int}\\) and \\(c={r|int}\\). Find the value of \\(y\\) when \\(x={x|int}\\).",
+    "answer": {
+      "expression": "p*x*x+q*x+r",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(y={p|int}\\times({x|int})^2+({q|int})\\times({x|int})+({r|int})={A|int}\\)",
+        "result": "p*x*x+q*x+r",
+        "format": "int",
+        "mark": "A1",
+        "note": "Substitute the given x."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "direct substitution"
+      },
+      {
+        "id": "table",
+        "stem": "A table of values for the quadratic with \\(a={p|int}\\), \\(b={q|int}\\) and \\(c={r|int}\\) is being completed. Find \\(y\\) when \\(x={x|int}\\)."
+      },
+      {
+        "id": "point",
+        "stem": "A point on the curve with \\(a={p|int}\\), \\(b={q|int}\\) and \\(c={r|int}\\) has \\(x\\)-coordinate \\({x|int}\\). Find the \\(y\\)-coordinate."
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-18.1-PP-0580-32-ON19-Q6",
+    "section": "IGCSE-18.1",
+    "kind": "pastpaper",
+    "title": "Table, graph and roots for y = x^2 - 5x + 3",
+    "marks": 8,
+    "source": {
+      "paper": "0580/32/O/N/19 Q6",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w19_qp_32.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w19_ms_32.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2019). In part (b) the printed inequality is the closed interval from -1 to 6 inclusive. Official answers and mark allocation from the MS PDF. The printed grid is not reproduced. All three parts are paper/self-mark: (a) is a set of three table values (MS: 2 marks, B1 for two correct); (b) requires a drawn curve; (c) is a graph reading, FT the curve, official ranges 0.6 to 0.8 and 4.2 to 4.4."
+    },
+    "stem": "This question is 0580/32/O/N/19 Question 6, taken from the official QP.\n\n(a) Complete the table of values for \\(y=x^2-5x+3\\).\n\nThe \\(x\\)-values are \\(-1\\), \\(0\\), \\(1\\), \\(2\\), \\(3\\), \\(4\\), \\(5\\), \\(6\\). The given \\(y\\)-values are: when \\(x=1\\), \\(y=-1\\); when \\(x=2\\), \\(y=-3\\); when \\(x=3\\), \\(y=-3\\); when \\(x=4\\), \\(y=-1\\); when \\(x=5\\), \\(y=3\\). The missing values are those for \\(x=-1\\), \\(x=0\\) and \\(x=6\\).\n\n(b) On a grid, draw the graph of \\(y=x^2-5x+3\\) for \\(-1\\leqslant x\\leqslant 6\\).\n\n(c) Use your graph to solve the equation \\(x^2-5x+3=0\\).",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "T1",
+        "text_tex": "(a) When \\(x=-1\\), \\(y=1+5+3=9\\). When \\(x=0\\), \\(y=3\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: 9, 3, 9; B1 for two correct."
+      },
+      {
+        "name": "T2",
+        "text_tex": "When \\(x=6\\), \\(y=36-30+3=9\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "The third table value; official scheme awards B1 if two of the three are correct, and 2 marks if all three are correct. Official answer (a): 9, 3, 9."
+      },
+      {
+        "name": "C",
+        "text_tex": "(b) Plot the points from the completed table and join them with a smooth symmetrical curve.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B4",
+        "note": "MS: Correct curve, 4 marks; B3FT for 7 or 8 correctly plotted points, or B2FT for 5 or 6, or B1FT for 3 or 4. Official answer (b): Correct curve."
+      },
+      {
+        "name": "R1",
+        "text_tex": "(c) The smaller root from the graph is between \\(0.6\\) and \\(0.8\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: 0.6 to 0.8, FT their curve, B1 for each."
+      },
+      {
+        "name": "R2",
+        "text_tex": "The larger root from the graph is between \\(4.2\\) and \\(4.4\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: 4.2 to 4.4, FT their curve, B1 for each. Official answer (c): 0.6 to 0.8, 4.2 to 4.4."
+      }
+    ]
+  }
+]

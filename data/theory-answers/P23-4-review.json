@@ -1,0 +1,26 @@
+[
+  {
+    "section": "P23-4-review",
+    "q": "QC1",
+    "answer": 8,
+    "accept_as": "integer"
+  },
+  {
+    "section": "P23-4-review",
+    "q": "QC2",
+    "answer": 2,
+    "accept_as": "integer"
+  },
+  {
+    "section": "P23-4-review",
+    "q": "QC3",
+    "answer": 0.4444444444444444,
+    "accept_as": "sf",
+    "sf": 3
+  },
+  {
+    "section": "P23-4-review",
+    "q": "QC4",
+    "marking": "manual"
+  }
+]

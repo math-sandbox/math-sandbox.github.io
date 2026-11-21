@@ -1,0 +1,195 @@
+[
+  {
+    "id": "P23-7.1-QC1-gen",
+    "section": "P23-7.1",
+    "kind": "generated",
+    "title": "Constant term in an improper quadratic over a linear factor",
+    "marks": 1,
+    "source": "Theory P23-7.1 Quick check 1; remainder of (x^2+n x+2)/(x+2)",
+    "params": [
+      {
+        "name": "n",
+        "min": 3,
+        "max": 9,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "A": "6-2*n"
+    },
+    "constraints": [
+      "n>=3"
+    ],
+    "original": {
+      "n": 5
+    },
+    "stem": "Express \\(\\dfrac{x^2+{n|int}x+2}{x+2}\\) in the form \\(ax+b+\\dfrac{c}{x+2}\\). Give the value of \\(c\\).",
+    "answer": {
+      "expression": "6-2*n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Substituting \\(x=-2\\) gives the remainder \\({A|int}\\), so \\(c={A|int}\\).",
+        "result": "6-2*n",
+        "format": "int",
+        "mark": "A1",
+        "note": "The remainder is the value of the numerator at x = -2."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original n = 5, c = -4"
+      }
+    ],
+    "tags": {
+      "course": "P23",
+      "subsections": [
+        "P23-7.1"
+      ],
+      "topic": "Algebra",
+      "chapter": "P23-7",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-7-1.json",
+        "locator": "P23-7.1-QC1-gen"
+      }
+    }
+  },
+  {
+    "id": "P23-7.1-QC2-gen",
+    "section": "P23-7.1",
+    "kind": "generated",
+    "title": "Remainder on dividing a quadratic by x+2",
+    "marks": 1,
+    "source": "Theory P23-7.1 Quick check 2; remainder of x^2+n x+5 divided by x+2",
+    "params": [
+      {
+        "name": "n",
+        "min": 3,
+        "max": 9,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "A": "9-2*n"
+    },
+    "constraints": [
+      "n>=3"
+    ],
+    "original": {
+      "n": 7
+    },
+    "stem": "Find the remainder when \\(x^2+{n|int}x+5\\) is divided by \\(x+2\\).",
+    "answer": {
+      "expression": "9-2*n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The remainder is \\((-2)^2+{n|int}(-2)+5={A|int}\\).",
+        "result": "9-2*n",
+        "format": "int",
+        "mark": "A1",
+        "note": "Evaluate the quadratic at x = -2."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original n = 7, remainder -5"
+      }
+    ],
+    "tags": {
+      "course": "P23",
+      "subsections": [
+        "P23-7.1"
+      ],
+      "topic": "Algebra",
+      "chapter": "P23-7",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-7-1.json",
+        "locator": "P23-7.1-QC2-gen"
+      }
+    }
+  },
+  {
+    "id": "P23-7.1-QC3-gen",
+    "section": "P23-7.1",
+    "kind": "generated",
+    "title": "Linear coefficient in the quotient of an improper fraction",
+    "marks": 1,
+    "source": "Theory P23-7.1 Quick check 3; the quotient is x+n",
+    "params": [
+      {
+        "name": "n",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "p": "n+2",
+      "A": "n"
+    },
+    "constraints": [
+      "n>=2"
+    ],
+    "original": {
+      "n": 3
+    },
+    "stem": "When \\(\\dfrac{x^2+{p|int}x+2}{x+2}\\) is written as \\(x+b+\\dfrac{c}{x+2}\\), what is the value of \\(b\\)?",
+    "answer": {
+      "expression": "n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The quotient is \\(x+{A|int}\\), so \\(b={A|int}\\).",
+        "result": "n",
+        "format": "int",
+        "mark": "A1",
+        "note": "Divide x^2+(n+2)x+2 by x+2."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original b = 3"
+      }
+    ],
+    "tags": {
+      "course": "P23",
+      "subsections": [
+        "P23-7.1"
+      ],
+      "topic": "Algebra",
+      "chapter": "P23-7",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-7-1.json",
+        "locator": "P23-7.1-QC3-gen"
+      }
+    }
+  }
+]

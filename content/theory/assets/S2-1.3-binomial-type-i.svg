@@ -1,0 +1,16 @@
+<svg preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 320" width="100%" height="auto" role="img" aria-label="Binomial distribution B of 8 trials with probability 0.5, with 7 and 8 shaded as the critical region.">
+  <style>
+    .t { font-family: "DejaVu Sans", sans-serif; font-size:12px; fill:#1a1a1a; }
+    .lab { font-family: "DejaVu Sans", sans-serif; font-size:13px; fill:#1a1a1a; }
+    .ax { stroke:#222; stroke-width:1.2; }
+  </style>
+  <line x1="50" y1="260" x2="490" y2="260" class="ax"/>
+  <line x1="50" y1="260" x2="50" y2="40" class="ax"/>
+  <rect x="60.0" y="257.4" width="36" height="2.6" fill="#5b8fc7" stroke="#1a1a1a" stroke-width="0.8"/><text x="78.0" y="276.0" text-anchor="middle" class="t">0</text><rect x="106.0" y="239.2" width="36" height="20.8" fill="#5b8fc7" stroke="#1a1a1a" stroke-width="0.8"/><text x="124.0" y="276.0" text-anchor="middle" class="t">1</text><rect x="152.0" y="187.1" width="36" height="72.9" fill="#5b8fc7" stroke="#1a1a1a" stroke-width="0.8"/><text x="170.0" y="276.0" text-anchor="middle" class="t">2</text><rect x="198.0" y="114.2" width="36" height="145.8" fill="#5b8fc7" stroke="#1a1a1a" stroke-width="0.8"/><text x="216.0" y="276.0" text-anchor="middle" class="t">3</text><rect x="244.0" y="77.7" width="36" height="182.3" fill="#5b8fc7" stroke="#1a1a1a" stroke-width="0.8"/><text x="262.0" y="276.0" text-anchor="middle" class="t">4</text><rect x="290.0" y="114.2" width="36" height="145.8" fill="#5b8fc7" stroke="#1a1a1a" stroke-width="0.8"/><text x="308.0" y="276.0" text-anchor="middle" class="t">5</text><rect x="336.0" y="187.1" width="36" height="72.9" fill="#5b8fc7" stroke="#1a1a1a" stroke-width="0.8"/><text x="354.0" y="276.0" text-anchor="middle" class="t">6</text><rect x="382.0" y="239.2" width="36" height="20.8" fill="#c0392b" stroke="#1a1a1a" stroke-width="0.8"/><text x="400.0" y="276.0" text-anchor="middle" class="t">7</text><rect x="428.0" y="257.4" width="36" height="2.6" fill="#c0392b" stroke="#1a1a1a" stroke-width="0.8"/><text x="446.0" y="276.0" text-anchor="middle" class="t">8</text>
+  <text x="270" y="300" text-anchor="middle" class="lab">Number of defectives, x</text>
+  <text x="18" y="150" text-anchor="middle" class="lab" transform="rotate(-90 18 150)">Probability</text>
+  <rect x="60" y="16" width="14" height="12" fill="#5b8fc7" stroke="#1a1a1a" stroke-width="0.8"/>
+  <text x="80" y="26" class="t">Not in the critical region</text>
+  <rect x="300" y="16" width="14" height="12" fill="#c0392b" stroke="#1a1a1a" stroke-width="0.8"/>
+  <text x="320" y="26" class="t">Critical region X ≥ 7</text>
+</svg>

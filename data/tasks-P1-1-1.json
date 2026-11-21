@@ -1,0 +1,217 @@
+[
+  {
+    "id": "P1-1.1-QC1-gen",
+    "section": "P1-1.1",
+    "kind": "generated",
+    "title": "Larger root of a monic quadratic, by factorisation",
+    "marks": 2,
+    "source": "Theory P1-1.1 Quick check 1 (x^2-5x-14=0, larger root 7); book Worked example 1.1 style, printed p.3",
+    "params": [
+      {
+        "name": "p",
+        "min": 3,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 1,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "B": "p-q",
+      "C": "p*q"
+    },
+    "constraints": [
+      "p-q>=1",
+      "q>=1",
+      "p!=0"
+    ],
+    "original": {
+      "p": 7,
+      "q": 2
+    },
+    "stem": "Solve \\(x^2-{B|int}x-{C|int}=0\\) by factorisation. Write down the larger root.",
+    "answer": {
+      "expression": "p",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "\\(x^2-{B|int}x-{C|int}=(x-{p|int})(x+{q|int})\\)",
+        "result": "p-q",
+        "format": "int",
+        "mark": "M1",
+        "note": "Factorise into (x-p)(x+q)."
+      },
+      {
+        "name": "A",
+        "text_tex": "The roots are \\(x={p|int}\\) and \\(x=-{q|int}\\). The larger root is \\({A|int}\\)",
+        "result": "p",
+        "format": "int",
+        "mark": "A1",
+        "note": "p is positive and larger than -q."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original p=7, q=2"
+      },
+      {
+        "id": "written",
+        "stem": "Find the larger root of \\(x^2-{B|int}x-{C|int}=0\\)."
+      }
+    ]
+  },
+  {
+    "id": "P1-1.1-QC2-gen",
+    "section": "P1-1.1",
+    "kind": "generated",
+    "title": "Positive root of a quadratic with leading coefficient greater than 1",
+    "marks": 2,
+    "source": "Theory P1-1.1 Quick check 2 (3x^2-5x-2=0, positive root 2); book Worked example 1.1 style, printed p.3",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": 2,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "B": "a*c-b",
+      "C": "b*c"
+    },
+    "constraints": [
+      "a*c-b>=1",
+      "a>=2",
+      "b>=1",
+      "c>=2"
+    ],
+    "original": {
+      "a": 3,
+      "b": 1,
+      "c": 2
+    },
+    "stem": "Solve \\({a|int}x^2-{B|int}x-{C|int}=0\\) by factorisation. Write down the positive root.",
+    "answer": {
+      "expression": "c",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "\\({a|int}x^2-{B|int}x-{C|int}=({a|int}x+{b|int})(x-{c|int})\\)",
+        "result": "a*c-b",
+        "format": "int",
+        "mark": "M1",
+        "note": "Factorise as (a x + b)(x - c)."
+      },
+      {
+        "name": "A",
+        "text_tex": "The roots are \\(x=-{b|int}/{a|int}\\) and \\(x={c|int}\\). The positive root is \\({A|int}\\)",
+        "result": "c",
+        "format": "int",
+        "mark": "A1",
+        "note": "The other root is negative."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original a=3, b=1, c=2"
+      },
+      {
+        "id": "written",
+        "stem": "Find the positive root of \\({a|int}x^2-{B|int}x-{C|int}=0\\)."
+      }
+    ]
+  },
+  {
+    "id": "P1-1.1-QC3-gen",
+    "section": "P1-1.1",
+    "kind": "generated",
+    "title": "Positive root of a monic quadratic with a positive linear term",
+    "marks": 2,
+    "source": "Theory P1-1.1 Quick check 3 (x^2+x-12=0, positive root 3); book Worked example 1.1 style, printed p.3",
+    "params": [
+      {
+        "name": "p",
+        "min": 2,
+        "max": 10,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 1,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "B": "p-q",
+      "C": "p*q"
+    },
+    "constraints": [
+      "p-q>=1",
+      "q>=1",
+      "p!=0"
+    ],
+    "original": {
+      "p": 4,
+      "q": 3
+    },
+    "stem": "Solve \\(x^2+{B|int}x-{C|int}=0\\) by factorisation. Write down the positive root.",
+    "answer": {
+      "expression": "q",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "\\(x^2+{B|int}x-{C|int}=(x+{p|int})(x-{q|int})\\)",
+        "result": "p-q",
+        "format": "int",
+        "mark": "M1",
+        "note": "Factorise into (x+p)(x-q)."
+      },
+      {
+        "name": "A",
+        "text_tex": "The roots are \\(x=-{p|int}\\) and \\(x={q|int}\\). The positive root is \\({A|int}\\)",
+        "result": "q",
+        "format": "int",
+        "mark": "A1",
+        "note": "q is the positive root."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original p=4, q=3"
+      },
+      {
+        "id": "written",
+        "stem": "Find the positive root of \\(x^2+{B|int}x-{C|int}=0\\)."
+      }
+    ]
+  }
+]

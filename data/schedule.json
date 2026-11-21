@@ -1,0 +1,2230 @@
+{
+ "courses": {
+  "IGCSE": {
+   "weeks": [
+    {
+     "week": 1,
+     "start": "2026-08-17",
+     "refs": []
+    },
+    {
+     "week": 2,
+     "start": "2026-08-24",
+     "refs": [
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-13",
+       "section": "IGCSE-13.1"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-13",
+       "section": "IGCSE-13.2"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-13",
+       "section": "IGCSE-13.3"
+      }
+     ]
+    },
+    {
+     "week": 3,
+     "start": "2026-08-31",
+     "refs": [
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-13",
+       "section": "IGCSE-13.4"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-13",
+       "section": "IGCSE-13.5"
+      }
+     ]
+    },
+    {
+     "week": 4,
+     "start": "2026-09-07",
+     "refs": [
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-14",
+       "section": "IGCSE-14.1"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-14",
+       "section": "IGCSE-14.2"
+      }
+     ]
+    },
+    {
+     "week": 5,
+     "start": "2026-09-14",
+     "refs": [
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-14",
+       "section": "IGCSE-14.3"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-14",
+       "section": "IGCSE-14.4"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-14",
+       "section": "IGCSE-14.5"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-14",
+       "section": "IGCSE-14.6"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-14",
+       "section": "IGCSE-14.7"
+      }
+     ]
+    },
+    {
+     "week": 6,
+     "start": "2026-09-21",
+     "refs": [
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-15",
+       "section": "IGCSE-15.1"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-15",
+       "section": "IGCSE-15.2"
+      }
+     ]
+    },
+    {
+     "week": 7,
+     "start": "2026-09-28",
+     "refs": [
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-15",
+       "section": "IGCSE-15.3"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-15",
+       "section": "IGCSE-15.4"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-15",
+       "section": "IGCSE-15.5"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-15",
+       "section": "IGCSE-15.6"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-15",
+       "section": "IGCSE-15.7"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-15",
+       "section": "IGCSE-15.8"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-15",
+       "section": "IGCSE-15.9"
+      }
+     ]
+    },
+    {
+     "week": 8,
+     "start": "2026-10-05",
+     "refs": [
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-16",
+       "section": "IGCSE-16.1"
+      }
+     ]
+    },
+    {
+     "week": 9,
+     "start": "2026-10-12",
+     "refs": [
+      {
+       "book": "IGCSE",
+       "extra": "IGCSE-cross-4"
+      }
+     ]
+    },
+    {
+     "week": 10,
+     "start": "2026-10-19",
+     "refs": [
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-16",
+       "section": "IGCSE-16.1"
+      }
+     ]
+    },
+    {
+     "week": 11,
+     "start": "2026-10-26",
+     "refs": []
+    },
+    {
+     "week": 12,
+     "start": "2026-11-02",
+     "refs": []
+    },
+    {
+     "week": 13,
+     "start": "2026-11-09",
+     "refs": [
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-17",
+       "section": "IGCSE-17.1"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-17",
+       "section": "IGCSE-17.2"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-17",
+       "section": "IGCSE-17.3"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-18",
+       "section": "IGCSE-18.1"
+      }
+     ],
+     "lessons": [
+      {
+       "date": "2026-11-09",
+       "refs": [
+        "IGCSE-17.1",
+        "IGCSE-17.2"
+       ],
+       "chapter": "IGCSE-17",
+       "lesson_pages": [
+        551,
+        563
+       ]
+      },
+      {
+       "date": "2026-11-10",
+       "refs": [
+        "IGCSE-17.2"
+       ],
+       "chapter": "IGCSE-17",
+       "lesson_pages": [
+        564,
+        570
+       ]
+      },
+      {
+       "date": "2026-11-11",
+       "refs": [
+        "IGCSE-17.3"
+       ],
+       "chapter": "IGCSE-17",
+       "lesson_pages": [
+        571,
+        580
+       ]
+      },
+      {
+       "date": "2026-11-12",
+       "refs": [
+        "IGCSE-17"
+       ],
+       "chapter": "IGCSE-17",
+       "lesson_pages": [
+        551,
+        580
+       ]
+      },
+      {
+       "date": "2026-11-13",
+       "refs": [
+        "IGCSE-18.1"
+       ],
+       "chapter": "IGCSE-18",
+       "lesson_pages": [
+        584,
+        595
+       ]
+      }
+     ]
+    },
+    {
+     "week": 14,
+     "start": "2026-11-16",
+     "refs": [
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-18",
+       "section": "IGCSE-18.1"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-18",
+       "section": "IGCSE-18.2"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-18",
+       "section": "IGCSE-18.3"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-18",
+       "section": "IGCSE-18.4"
+      }
+     ]
+    },
+    {
+     "week": 15,
+     "start": "2026-11-23",
+     "refs": [
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-18",
+       "section": "IGCSE-18.5"
+      }
+     ]
+    },
+    {
+     "week": 16,
+     "start": "2026-11-30",
+     "refs": [
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-18",
+       "section": "IGCSE-18.6"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-18",
+       "section": "IGCSE-18.7"
+      }
+     ]
+    },
+    {
+     "week": 17,
+     "start": "2026-12-07",
+     "refs": [
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-18",
+       "section": "IGCSE-18.7"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-19",
+       "section": "IGCSE-19.1"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-19",
+       "section": "IGCSE-19.2"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-19",
+       "section": "IGCSE-19.3"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-19",
+       "section": "IGCSE-19.4"
+      }
+     ]
+    },
+    {
+     "week": 18,
+     "start": "2026-12-14",
+     "refs": [
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-19",
+       "section": "IGCSE-19.4"
+      }
+     ]
+    },
+    {
+     "week": 19,
+     "start": "2027-01-04",
+     "refs": [
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-20",
+       "section": "IGCSE-20.1"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-20",
+       "section": "IGCSE-20.2"
+      },
+      {
+       "book": "IGCSE",
+       "extra": "IGCSE-cross-5"
+      }
+     ]
+    },
+    {
+     "week": 20,
+     "start": "2027-01-11",
+     "refs": [
+      {
+       "book": "IGCSE",
+       "extra": "IGCSE-cross-5"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-21",
+       "section": "IGCSE-21.1"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-21",
+       "section": "IGCSE-21.2"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-21",
+       "section": "IGCSE-21.3"
+      }
+     ]
+    },
+    {
+     "week": 21,
+     "start": "2027-01-18",
+     "refs": [
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-21",
+       "section": "IGCSE-21.4"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-21",
+       "section": "IGCSE-21.5"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-21",
+       "section": "IGCSE-21.6"
+      }
+     ]
+    },
+    {
+     "week": 22,
+     "start": "2027-01-25",
+     "refs": [
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-21",
+       "section": "IGCSE-21.6"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-22",
+       "section": "IGCSE-22.1"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-22",
+       "section": "IGCSE-22.2"
+      }
+     ]
+    },
+    {
+     "week": 23,
+     "start": "2027-02-01",
+     "refs": [
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-22",
+       "section": "IGCSE-22.3"
+      }
+     ]
+    },
+    {
+     "week": 24,
+     "start": "2027-02-08",
+     "refs": []
+    },
+    {
+     "week": 25,
+     "start": "2027-02-15",
+     "refs": [
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-23",
+       "section": "IGCSE-23.1"
+      }
+     ]
+    },
+    {
+     "week": 26,
+     "start": "2027-02-22",
+     "refs": [
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-23",
+       "section": "IGCSE-23.2"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-23",
+       "section": "IGCSE-23.3"
+      }
+     ]
+    },
+    {
+     "week": 27,
+     "start": "2027-03-01",
+     "refs": [
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-23",
+       "section": "IGCSE-23.3"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-24",
+       "section": "IGCSE-24.1"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-24",
+       "section": "IGCSE-24.2"
+      },
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-24",
+       "section": "IGCSE-24.3"
+      }
+     ]
+    },
+    {
+     "week": 28,
+     "start": "2027-03-08",
+     "refs": [
+      {
+       "book": "IGCSE",
+       "chapter": "IGCSE-24",
+       "section": "IGCSE-24.4"
+      },
+      {
+       "book": "IGCSE",
+       "extra": "IGCSE-cross-6"
+      }
+     ]
+    },
+    {
+     "week": 29,
+     "start": "2027-03-15",
+     "refs": []
+    },
+    {
+     "week": 30,
+     "start": "2027-03-22",
+     "refs": []
+    },
+    {
+     "week": 31,
+     "start": "2027-03-29",
+     "refs": []
+    },
+    {
+     "week": 32,
+     "start": "2027-04-05",
+     "refs": []
+    },
+    {
+     "week": 33,
+     "start": "2027-04-12",
+     "refs": []
+    },
+    {
+     "week": 34,
+     "start": "2027-04-19",
+     "refs": []
+    },
+    {
+     "week": 35,
+     "start": "2027-04-26",
+     "refs": []
+    },
+    {
+     "week": 36,
+     "start": "2027-05-03",
+     "refs": []
+    },
+    {
+     "week": 37,
+     "start": "2027-05-10",
+     "refs": []
+    },
+    {
+     "week": 38,
+     "start": "2027-05-17",
+     "refs": []
+    },
+    {
+     "week": 39,
+     "start": "2027-05-24",
+     "refs": []
+    },
+    {
+     "week": 40,
+     "start": "2027-05-31",
+     "refs": []
+    }
+   ]
+  },
+  "AS": {
+   "weeks": [
+    {
+     "week": 1,
+     "start": "2026-08-17",
+     "refs": [
+      {
+       "book": "P1",
+       "chapter": "P1-1",
+       "section": "P1-1.1"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-1",
+       "section": "P1-1.2"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-1",
+       "section": "S1-1.1"
+      }
+     ]
+    },
+    {
+     "week": 2,
+     "start": "2026-08-24",
+     "refs": [
+      {
+       "book": "P1",
+       "chapter": "P1-1",
+       "section": "P1-1.3"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-1",
+       "section": "P1-1.4"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-1",
+       "section": "P1-1.5"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-1",
+       "section": "S1-1.2"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-1",
+       "section": "S1-1.3"
+      }
+     ]
+    },
+    {
+     "week": 3,
+     "start": "2026-08-31",
+     "refs": [
+      {
+       "book": "P1",
+       "chapter": "P1-1",
+       "section": "P1-1.6"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-1",
+       "section": "P1-1.7"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-1",
+       "section": "S1-1.4"
+      }
+     ]
+    },
+    {
+     "week": 4,
+     "start": "2026-09-07",
+     "refs": [
+      {
+       "book": "P1",
+       "chapter": "P1-1",
+       "section": "P1-1.8"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-1",
+       "section": "P1-1.9"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-1",
+       "section": "S1-1.5"
+      }
+     ]
+    },
+    {
+     "week": 5,
+     "start": "2026-09-14",
+     "refs": [
+      {
+       "book": "P1",
+       "chapter": "P1-1",
+       "section": "P1-1-review"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-2",
+       "section": "P1-2.1"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-2",
+       "section": "P1-2.2"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-1",
+       "section": "S1-1-review"
+      }
+     ]
+    },
+    {
+     "week": 6,
+     "start": "2026-09-21",
+     "refs": [
+      {
+       "book": "P1",
+       "chapter": "P1-2",
+       "section": "P1-2.3"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-2",
+       "section": "P1-2.4"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-2",
+       "section": "S1-2.1"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-2",
+       "section": "S1-2.2"
+      }
+     ]
+    },
+    {
+     "week": 7,
+     "start": "2026-09-28",
+     "refs": [
+      {
+       "book": "P1",
+       "chapter": "P1-2",
+       "section": "P1-2.5"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-2",
+       "section": "P1-2.6"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-2",
+       "section": "S1-2.3"
+      }
+     ]
+    },
+    {
+     "week": 8,
+     "start": "2026-10-05",
+     "refs": [
+      {
+       "book": "P1",
+       "chapter": "P1-2",
+       "section": "P1-2.7"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-2",
+       "section": "P1-2.8"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-2",
+       "section": "S1-2-review"
+      }
+     ]
+    },
+    {
+     "week": 9,
+     "start": "2026-10-12",
+     "refs": [
+      {
+       "book": "P1",
+       "chapter": "P1-2",
+       "section": "P1-2-review"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-3",
+       "section": "P1-3.1"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-3",
+       "section": "P1-3.2"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-3",
+       "section": "S1-3.1"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-3",
+       "section": "S1-3.2"
+      }
+     ]
+    },
+    {
+     "week": 10,
+     "start": "2026-10-19",
+     "refs": [
+      {
+       "book": "P1",
+       "chapter": "P1-3",
+       "section": "P1-3.3"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-3",
+       "section": "P1-3.4"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-3",
+       "section": "S1-3.3"
+      }
+     ]
+    },
+    {
+     "week": 11,
+     "start": "2026-10-26",
+     "refs": []
+    },
+    {
+     "week": 12,
+     "start": "2026-11-02",
+     "refs": []
+    },
+    {
+     "week": 13,
+     "start": "2026-11-09",
+     "refs": [
+      {
+       "book": "P1",
+       "chapter": "P1-3",
+       "section": "P1-3.5"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-3",
+       "section": "P1-3-review"
+      },
+      {
+       "book": "P1",
+       "extra": "P1-cross-1"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-4",
+       "section": "P1-4.1"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-3",
+       "section": "S1-3-review"
+      },
+      {
+       "book": "S1",
+       "extra": "S1-cross-1"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-4",
+       "section": "S1-4.1"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-4",
+       "section": "S1-4.2"
+      }
+     ]
+    },
+    {
+     "week": 14,
+     "start": "2026-11-16",
+     "refs": [
+      {
+       "book": "P1",
+       "chapter": "P1-4",
+       "section": "P1-4.1"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-4",
+       "section": "P1-4.2"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-4",
+       "section": "P1-4.3"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-4",
+       "section": "P1-4-review"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-4",
+       "section": "S1-4.2"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-4",
+       "section": "S1-4.3"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-4",
+       "section": "S1-4.4"
+      }
+     ]
+    },
+    {
+     "week": 15,
+     "start": "2026-11-23",
+     "refs": [
+      {
+       "book": "P1",
+       "chapter": "P1-5",
+       "section": "P1-5.1"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-5",
+       "section": "P1-5.2"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-5",
+       "section": "P1-5.3"
+      }
+     ]
+    },
+    {
+     "week": 16,
+     "start": "2026-11-30",
+     "refs": [
+      {
+       "book": "P1",
+       "chapter": "P1-5",
+       "section": "P1-5.4"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-5",
+       "section": "P1-5.5"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-5",
+       "section": "P1-5.6"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-4",
+       "section": "S1-4.4"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-4",
+       "section": "S1-4.5"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-4",
+       "section": "S1-4-review"
+      }
+     ]
+    },
+    {
+     "week": 17,
+     "start": "2026-12-07",
+     "refs": [
+      {
+       "book": "P1",
+       "chapter": "P1-5",
+       "section": "P1-5.6"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-5",
+       "section": "P1-5.7"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-5",
+       "section": "P1-5.8"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-5",
+       "section": "S1-5.1"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-5",
+       "section": "S1-5.2"
+      }
+     ]
+    },
+    {
+     "week": 18,
+     "start": "2026-12-14",
+     "refs": [
+      {
+       "book": "P1",
+       "chapter": "P1-5",
+       "section": "P1-5-review"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-6",
+       "section": "P1-6.1"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-6",
+       "section": "P1-6.2"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-6",
+       "section": "P1-6.3"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-5",
+       "section": "S1-5.3"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-5",
+       "section": "S1-5.4"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-5",
+       "section": "S1-5-review"
+      },
+      {
+       "book": "S1",
+       "extra": "S1-cross-2"
+      }
+     ]
+    },
+    {
+     "week": 19,
+     "start": "2027-01-04",
+     "refs": [
+      {
+       "book": "P1",
+       "chapter": "P1-6",
+       "section": "P1-6.3"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-6",
+       "section": "P1-6.4"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-6",
+       "section": "P1-6.5"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-6",
+       "section": "P1-6.6"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-6",
+       "section": "S1-6.1"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-6",
+       "section": "S1-6.2"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-6",
+       "section": "S1-6.3"
+      }
+     ]
+    },
+    {
+     "week": 20,
+     "start": "2027-01-11",
+     "refs": [
+      {
+       "book": "P1",
+       "chapter": "P1-6",
+       "section": "P1-6-review"
+      },
+      {
+       "book": "P1",
+       "extra": "P1-cross-2"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-7",
+       "section": "P1-7.1"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-6",
+       "section": "S1-6.3"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-6",
+       "section": "S1-6-review"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-7",
+       "section": "S1-7.1"
+      }
+     ]
+    },
+    {
+     "week": 21,
+     "start": "2027-01-18",
+     "refs": [
+      {
+       "book": "P1",
+       "chapter": "P1-7",
+       "section": "P1-7.1"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-7",
+       "section": "P1-7.2"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-7",
+       "section": "P1-7.3"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-7",
+       "section": "P1-7.4"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-7",
+       "section": "P1-7-review"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-7",
+       "section": "S1-7.1"
+      }
+     ]
+    },
+    {
+     "week": 22,
+     "start": "2027-01-25",
+     "refs": [
+      {
+       "book": "P1",
+       "chapter": "P1-7",
+       "section": "P1-7-review"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-8",
+       "section": "P1-8.1"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-8",
+       "section": "P1-8.2"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-8",
+       "section": "P1-8.3"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-7",
+       "section": "S1-7.1"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-7",
+       "section": "S1-7.2"
+      }
+     ]
+    },
+    {
+     "week": 23,
+     "start": "2027-02-01",
+     "refs": [
+      {
+       "book": "P1",
+       "chapter": "P1-8",
+       "section": "P1-8.3"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-8",
+       "section": "P1-8.4"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-8",
+       "section": "P1-8.5"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-8",
+       "section": "P1-8-review"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-7",
+       "section": "S1-7.2"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-7",
+       "section": "S1-7-review"
+      }
+     ]
+    },
+    {
+     "week": 24,
+     "start": "2027-02-08",
+     "refs": []
+    },
+    {
+     "week": 25,
+     "start": "2027-02-15",
+     "refs": [
+      {
+       "book": "P1",
+       "chapter": "P1-9",
+       "section": "P1-9.1"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-9",
+       "section": "P1-9.2"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-9",
+       "section": "P1-9.3"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-8",
+       "section": "S1-8.1"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-8",
+       "section": "S1-8.2"
+      }
+     ]
+    },
+    {
+     "week": 26,
+     "start": "2027-02-22",
+     "refs": [
+      {
+       "book": "P1",
+       "chapter": "P1-9",
+       "section": "P1-9.4"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-9",
+       "section": "P1-9.5"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-9",
+       "section": "P1-9.6"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-8",
+       "section": "S1-8.3"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-8",
+       "section": "S1-8.4"
+      }
+     ]
+    },
+    {
+     "week": 27,
+     "start": "2027-03-01",
+     "refs": [
+      {
+       "book": "P1",
+       "chapter": "P1-9",
+       "section": "P1-9.7"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-9",
+       "section": "P1-9.8"
+      },
+      {
+       "book": "S1",
+       "chapter": "S1-8",
+       "section": "S1-8-review"
+      },
+      {
+       "book": "S1",
+       "extra": "S1-cross-3"
+      }
+     ]
+    },
+    {
+     "week": 28,
+     "start": "2027-03-08",
+     "refs": [
+      {
+       "book": "P1",
+       "chapter": "P1-9",
+       "section": "P1-9.9"
+      },
+      {
+       "book": "P1",
+       "chapter": "P1-9",
+       "section": "P1-9-review"
+      },
+      {
+       "book": "P1",
+       "extra": "P1-cross-3"
+      }
+     ]
+    },
+    {
+     "week": 29,
+     "start": "2027-03-15",
+     "refs": []
+    },
+    {
+     "week": 30,
+     "start": "2027-03-22",
+     "refs": []
+    },
+    {
+     "week": 31,
+     "start": "2027-03-29",
+     "refs": []
+    },
+    {
+     "week": 32,
+     "start": "2027-04-05",
+     "refs": []
+    },
+    {
+     "week": 33,
+     "start": "2027-04-12",
+     "refs": []
+    },
+    {
+     "week": 34,
+     "start": "2027-04-19",
+     "refs": []
+    },
+    {
+     "week": 35,
+     "start": "2027-04-26",
+     "refs": []
+    },
+    {
+     "week": 36,
+     "start": "2027-05-03",
+     "refs": []
+    },
+    {
+     "week": 37,
+     "start": "2027-05-10",
+     "refs": []
+    },
+    {
+     "week": 38,
+     "start": "2027-05-17",
+     "refs": []
+    },
+    {
+     "week": 39,
+     "start": "2027-05-24",
+     "refs": []
+    },
+    {
+     "week": 40,
+     "start": "2027-05-31",
+     "refs": []
+    }
+   ]
+  },
+  "A2": {
+   "weeks": [
+    {
+     "week": 1,
+     "start": "2026-08-17",
+     "refs": [
+      {
+       "book": "P23",
+       "chapter": "P23-1",
+       "section": "P23-1.1"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-1",
+       "section": "P23-1.2"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-1",
+       "section": "P23-1.3"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-1",
+       "section": "S2-1.1"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-1",
+       "section": "S2-1.2"
+      }
+     ]
+    },
+    {
+     "week": 2,
+     "start": "2026-08-24",
+     "refs": [
+      {
+       "book": "P23",
+       "chapter": "P23-1",
+       "section": "P23-1.4"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-1",
+       "section": "P23-1.5"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-1",
+       "section": "P23-1.6"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-1",
+       "section": "S2-1.3"
+      }
+     ]
+    },
+    {
+     "week": 3,
+     "start": "2026-08-31",
+     "refs": [
+      {
+       "book": "P23",
+       "chapter": "P23-1",
+       "section": "P23-1-review"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-2",
+       "section": "P23-2.1"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-2",
+       "section": "P23-2.2"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-1",
+       "section": "S2-1-review"
+      }
+     ]
+    },
+    {
+     "week": 4,
+     "start": "2026-09-07",
+     "refs": [
+      {
+       "book": "P23",
+       "chapter": "P23-2",
+       "section": "P23-2.3"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-2",
+       "section": "P23-2.4"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-2",
+       "section": "P23-2.5"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-2",
+       "section": "S2-2.1"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-2",
+       "section": "S2-2.2"
+      }
+     ]
+    },
+    {
+     "week": 5,
+     "start": "2026-09-14",
+     "refs": [
+      {
+       "book": "P23",
+       "chapter": "P23-2",
+       "section": "P23-2.6"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-2",
+       "section": "P23-2.7"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-2",
+       "section": "P23-2.8"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-2",
+       "section": "S2-2.3"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-2",
+       "section": "S2-2.4"
+      }
+     ]
+    },
+    {
+     "week": 6,
+     "start": "2026-09-21",
+     "refs": [
+      {
+       "book": "P23",
+       "chapter": "P23-2",
+       "section": "P23-2-review"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-3",
+       "section": "P23-3.1"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-3",
+       "section": "P23-3.2"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-2",
+       "section": "S2-2.5"
+      }
+     ]
+    },
+    {
+     "week": 7,
+     "start": "2026-09-28",
+     "refs": [
+      {
+       "book": "P23",
+       "chapter": "P23-3",
+       "section": "P23-3.3"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-3",
+       "section": "P23-3.4"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-3",
+       "section": "P23-3.5"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-2",
+       "section": "S2-2-review"
+      }
+     ]
+    },
+    {
+     "week": 8,
+     "start": "2026-10-05",
+     "refs": [
+      {
+       "book": "P23",
+       "chapter": "P23-3",
+       "section": "P23-3-review"
+      },
+      {
+       "book": "P23",
+       "extra": "P23-cross-1"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-4",
+       "section": "P23-4.1"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-3",
+       "section": "S2-3.1"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-3",
+       "section": "S2-3.2"
+      }
+     ]
+    },
+    {
+     "week": 9,
+     "start": "2026-10-12",
+     "refs": [
+      {
+       "book": "P23",
+       "chapter": "P23-4",
+       "section": "P23-4.2"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-4",
+       "section": "P23-4.3"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-4",
+       "section": "P23-4.4"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-3",
+       "section": "S2-3.3"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-3",
+       "section": "S2-3.4"
+      }
+     ]
+    },
+    {
+     "week": 10,
+     "start": "2026-10-19",
+     "refs": [
+      {
+       "book": "P23",
+       "chapter": "P23-4",
+       "section": "P23-4.5"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-4",
+       "section": "P23-4.6"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-4",
+       "section": "P23-4.7"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-3",
+       "section": "S2-3-review"
+      }
+     ]
+    },
+    {
+     "week": 11,
+     "start": "2026-10-26",
+     "refs": []
+    },
+    {
+     "week": 12,
+     "start": "2026-11-02",
+     "refs": []
+    },
+    {
+     "week": 13,
+     "start": "2026-11-09",
+     "refs": [
+      {
+       "book": "P23",
+       "chapter": "P23-4",
+       "section": "P23-4-review"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-5",
+       "section": "P23-5.1"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-5",
+       "section": "P23-5.2"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-5",
+       "section": "P23-5.3"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-5",
+       "section": "P23-5.4"
+      },
+      {
+       "book": "S2",
+       "extra": "S2-cross-1"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-4",
+       "section": "S2-4.1"
+      }
+     ]
+    },
+    {
+     "week": 14,
+     "start": "2026-11-16",
+     "refs": [
+      {
+       "book": "P23",
+       "chapter": "P23-5",
+       "section": "P23-5.4"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-5",
+       "section": "P23-5.5"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-5",
+       "section": "P23-5-review"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-4",
+       "section": "S2-4.1"
+      }
+     ]
+    },
+    {
+     "week": 15,
+     "start": "2026-11-23",
+     "refs": [
+      {
+       "book": "P23",
+       "chapter": "P23-6",
+       "section": "P23-6.1"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-6",
+       "section": "P23-6.2"
+      }
+     ]
+    },
+    {
+     "week": 16,
+     "start": "2026-11-30",
+     "refs": [
+      {
+       "book": "P23",
+       "chapter": "P23-6",
+       "section": "P23-6.2"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-6",
+       "section": "P23-6.3"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-6",
+       "section": "P23-6-review"
+      },
+      {
+       "book": "P23",
+       "extra": "P23-cross-2"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-4",
+       "section": "S2-4.1"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-4",
+       "section": "S2-4.2"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-4",
+       "section": "S2-4.3"
+      }
+     ]
+    },
+    {
+     "week": 17,
+     "start": "2026-12-07",
+     "refs": [
+      {
+       "book": "P23",
+       "extra": "P23-cross-2"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-7",
+       "section": "P23-7.1"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-7",
+       "section": "P23-7.2"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-4",
+       "section": "S2-4.3"
+      }
+     ]
+    },
+    {
+     "week": 18,
+     "start": "2026-12-14",
+     "refs": [
+      {
+       "book": "P23",
+       "chapter": "P23-7",
+       "section": "P23-7.2"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-7",
+       "section": "P23-7.3"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-7",
+       "section": "P23-7.4"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-7",
+       "section": "P23-7.5"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-7",
+       "section": "P23-7-review"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-4",
+       "section": "S2-4-review"
+      }
+     ]
+    },
+    {
+     "week": 19,
+     "start": "2027-01-04",
+     "refs": [
+      {
+       "book": "P23",
+       "chapter": "P23-8",
+       "section": "P23-8.1"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-8",
+       "section": "P23-8.2"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-8",
+       "section": "P23-8.3"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-8",
+       "section": "P23-8.4"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-8",
+       "section": "P23-8.5"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-8",
+       "section": "P23-8.6"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-5",
+       "section": "S2-5.1"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-5",
+       "section": "S2-5.2"
+      }
+     ]
+    },
+    {
+     "week": 20,
+     "start": "2027-01-11",
+     "refs": [
+      {
+       "book": "P23",
+       "chapter": "P23-8",
+       "section": "P23-8.7"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-8",
+       "section": "P23-8-review"
+      },
+      {
+       "book": "P23",
+       "extra": "P23-cross-3"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-9",
+       "section": "P23-9.1"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-5",
+       "section": "S2-5.2"
+      }
+     ]
+    },
+    {
+     "week": 21,
+     "start": "2027-01-18",
+     "refs": [
+      {
+       "book": "P23",
+       "chapter": "P23-9",
+       "section": "P23-9.1"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-9",
+       "section": "P23-9.2"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-9",
+       "section": "P23-9.3"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-9",
+       "section": "P23-9.4"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-5",
+       "section": "S2-5.2"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-5",
+       "section": "S2-5-review"
+      }
+     ]
+    },
+    {
+     "week": 22,
+     "start": "2027-01-25",
+     "refs": [
+      {
+       "book": "P23",
+       "chapter": "P23-9",
+       "section": "P23-9.4"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-9",
+       "section": "P23-9.5"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-9",
+       "section": "P23-9-review"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-10",
+       "section": "P23-10.1"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-6",
+       "section": "S2-6.1"
+      }
+     ]
+    },
+    {
+     "week": 23,
+     "start": "2027-02-01",
+     "refs": [
+      {
+       "book": "P23",
+       "chapter": "P23-10",
+       "section": "P23-10.1"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-10",
+       "section": "P23-10.2"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-10",
+       "section": "P23-10-review"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-6",
+       "section": "S2-6.2"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-6",
+       "section": "S2-6.3"
+      }
+     ]
+    },
+    {
+     "week": 24,
+     "start": "2027-02-08",
+     "refs": []
+    },
+    {
+     "week": 25,
+     "start": "2027-02-15",
+     "refs": [
+      {
+       "book": "P23",
+       "chapter": "P23-11",
+       "section": "P23-11.1"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-11",
+       "section": "P23-11.2"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-6",
+       "section": "S2-6.4"
+      }
+     ]
+    },
+    {
+     "week": 26,
+     "start": "2027-02-22",
+     "refs": [
+      {
+       "book": "P23",
+       "chapter": "P23-11",
+       "section": "P23-11.3"
+      },
+      {
+       "book": "P23",
+       "chapter": "P23-11",
+       "section": "P23-11.4"
+      },
+      {
+       "book": "S2",
+       "chapter": "S2-6",
+       "section": "S2-6-review"
+      }
+     ]
+    },
+    {
+     "week": 27,
+     "start": "2027-03-01",
+     "refs": [
+      {
+       "book": "P23",
+       "chapter": "P23-11",
+       "section": "P23-11.5"
+      }
+     ]
+    },
+    {
+     "week": 28,
+     "start": "2027-03-08",
+     "refs": [
+      {
+       "book": "P23",
+       "chapter": "P23-11",
+       "section": "P23-11-review"
+      },
+      {
+       "book": "P23",
+       "extra": "P23-cross-4"
+      },
+      {
+       "book": "S2",
+       "extra": "S2-cross-2"
+      }
+     ]
+    },
+    {
+     "week": 29,
+     "start": "2027-03-15",
+     "refs": []
+    },
+    {
+     "week": 30,
+     "start": "2027-03-22",
+     "refs": []
+    },
+    {
+     "week": 31,
+     "start": "2027-03-29",
+     "refs": []
+    },
+    {
+     "week": 32,
+     "start": "2027-04-05",
+     "refs": []
+    },
+    {
+     "week": 33,
+     "start": "2027-04-12",
+     "refs": []
+    },
+    {
+     "week": 34,
+     "start": "2027-04-19",
+     "refs": []
+    },
+    {
+     "week": 35,
+     "start": "2027-04-26",
+     "refs": []
+    },
+    {
+     "week": 36,
+     "start": "2027-05-03",
+     "refs": []
+    },
+    {
+     "week": 37,
+     "start": "2027-05-10",
+     "refs": []
+    },
+    {
+     "week": 38,
+     "start": "2027-05-17",
+     "refs": []
+    },
+    {
+     "week": 39,
+     "start": "2027-05-24",
+     "refs": []
+    },
+    {
+     "week": 40,
+     "start": "2027-05-31",
+     "refs": []
+    }
+   ]
+  },
+  "Y1": {
+   "weeks": [],
+   "archive": true
+  }
+ }
+}

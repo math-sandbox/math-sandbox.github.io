@@ -1,0 +1,146 @@
+[
+  {
+    "id": "P23-4.5-QC2-gen",
+    "section": "P23-4.5",
+    "kind": "generated",
+    "title": "Gradient of k sin(ax) at x=0",
+    "marks": 2,
+    "source": "Theory P23-4.5 Quick check 2 (y=5 sin 3x at x=0: 15)",
+    "params": [
+      {
+        "name": "k",
+        "min": 2,
+        "max": 9,
+        "step": 1
+      },
+      {
+        "name": "a",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "ka": "k*a"
+    },
+    "constraints": [],
+    "original": {
+      "k": 5,
+      "a": 3
+    },
+    "stem": "Find the gradient of the curve \\(y={k|int}\\sin({a|int}x)\\) at the point where \\(x=0\\).",
+    "answer": {
+      "expression": "k*a",
+      "format": "{G|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "F",
+        "text_tex": "\\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}={k|int}\\times{a|int}\\cos({a|int}x)={ka|int}\\cos({a|int}x)\\)",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Chain rule. Need derived ka."
+      },
+      {
+        "name": "G",
+        "text_tex": "At \\(x=0\\): \\({ka|int}\\cos0={G|int}\\)",
+        "result": "k*a",
+        "format": "int",
+        "mark": "A1",
+        "note": "cos 0 = 1."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "function",
+        "stem": "Find the value of \\(\\mathrm{f}'(0)\\) where \\(\\mathrm{f}(x)={k|int}\\sin({a|int}x)\\).",
+        "step_text": {
+          "F": "\\(\\mathrm{f}'(x)={ka|int}\\cos({a|int}x)\\)"
+        }
+      },
+      {
+        "id": "tangent",
+        "stem": "A curve has equation \\(y={k|int}\\sin({a|int}x)\\). Find the gradient of the tangent at the point where \\(x=0\\).",
+        "step_text": {}
+      }
+    ]
+  },
+  {
+    "id": "P23-4.5-QC3-gen",
+    "section": "P23-4.5",
+    "kind": "generated",
+    "title": "Gradient of k tan(ax) at x=0",
+    "marks": 2,
+    "source": "Theory P23-4.5 Quick check 3 (y=2 tan x at x=0: 2)",
+    "params": [
+      {
+        "name": "k",
+        "min": 2,
+        "max": 9,
+        "step": 1
+      },
+      {
+        "name": "a",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "ka": "k*a"
+    },
+    "constraints": [],
+    "original": {
+      "k": 2,
+      "a": 1
+    },
+    "stem": "Find the gradient of the curve \\(y={k|int}\\tan({a|int}x)\\) at the point where \\(x=0\\).",
+    "answer": {
+      "expression": "k*a",
+      "format": "{G|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "F",
+        "text_tex": "\\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}={k|int}\\times{a|int}\\sec^2({a|int}x)={ka|int}\\sec^2({a|int}x)\\)",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Chain rule."
+      },
+      {
+        "name": "G",
+        "text_tex": "At \\(x=0\\): \\({ka|int}\\sec^20={G|int}\\)",
+        "result": "k*a",
+        "format": "int",
+        "mark": "A1",
+        "note": "sec 0 = 1."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "function",
+        "stem": "Find the value of \\(\\mathrm{f}'(0)\\) where \\(\\mathrm{f}(x)={k|int}\\tan({a|int}x)\\).",
+        "step_text": {
+          "F": "\\(\\mathrm{f}'(x)={ka|int}\\sec^2({a|int}x)\\)"
+        }
+      },
+      {
+        "id": "tangent",
+        "stem": "A curve has equation \\(y={k|int}\\tan({a|int}x)\\). Find the gradient of the tangent at the point where \\(x=0\\).",
+        "step_text": {}
+      }
+    ]
+  }
+]

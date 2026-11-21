@@ -1,0 +1,177 @@
+[
+  {
+    "id": "IGCSE-16.1-QC1-gen",
+    "section": "IGCSE-16.1",
+    "kind": "generated",
+    "title": "Type of correlation (positive coded as 1)",
+    "marks": 1,
+    "source": "Theory IGCSE-16.1 Quick check 1 (1); coding of the type of correlation",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 1,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "1"
+    },
+    "constraints": [],
+    "original": {
+      "k": 1
+    },
+    "stem": "On a scatter diagram the points rise from left to right. Take the type of correlation to be 1 if it is positive, 0 if there is no correlation, and \\(-1\\) if it is negative. What number should be recorded?",
+    "answer": {
+      "expression": "1",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The points rise from left to right, so the correlation is positive, and the number is \\(1\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is 1. The dummy parameter k is unused."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-16.1-QC2-gen",
+    "section": "IGCSE-16.1",
+    "kind": "generated",
+    "title": "Mid-point estimate from a line of best fit",
+    "marks": 1,
+    "source": "Theory IGCSE-16.1 Quick check 2 (14); midpoint of a straight line",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 4,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "10+2*k",
+      "x1": "2*k",
+      "x2": "2*k+4",
+      "y1": "6+2*k",
+      "y2": "14+2*k",
+      "xm": "2*k+2"
+    },
+    "constraints": [],
+    "original": {
+      "k": 2
+    },
+    "stem": "On a straight line of best fit, when \\(x={x1|int}\\) the value of \\(y\\) is \\({y1|int}\\), and when \\(x={x2|int}\\) the value of \\(y\\) is \\({y2|int}\\). Estimate \\(y\\) when \\(x={xm|int}\\).",
+    "answer": {
+      "expression": "10+2*k",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(x={xm|int}\\) is halfway from \\({x1|int}\\) to \\({x2|int}\\), so \\(y={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is the midpoint of y, 10+2k. Original k=2 gives x=4 and 8, y=10 and 18, estimate 14."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-16.1-QC3-gen",
+    "section": "IGCSE-16.1",
+    "kind": "generated",
+    "title": "Mid-point estimate from a line of best fit",
+    "marks": 1,
+    "source": "Theory IGCSE-16.1 Quick check 3 (11); midpoint of a straight line",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 4,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "2*k+7",
+      "x1": "k",
+      "x2": "k+4",
+      "y1": "2*k+1",
+      "y2": "2*k+13",
+      "xm": "k+2"
+    },
+    "constraints": [],
+    "original": {
+      "k": 2
+    },
+    "stem": "On a straight line of best fit, when \\(x={x1|int}\\) the value of \\(y\\) is \\({y1|int}\\), and when \\(x={x2|int}\\) the value of \\(y\\) is \\({y2|int}\\). Estimate \\(y\\) when \\(x={xm|int}\\).",
+    "answer": {
+      "expression": "2*k+7",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(x={xm|int}\\) is halfway from \\({x1|int}\\) to \\({x2|int}\\), so \\(y={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is 2k+7. Original k=2 gives x=2 and 6, y=5 and 17, estimate 11."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-16.1-PP-0580-32-MJ20-Q3b",
+    "section": "IGCSE-16.1",
+    "kind": "pastpaper",
+    "title": "Type of correlation on a scatter diagram",
+    "marks": 1,
+    "source": {
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s20_qp_32.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s20_ms_32.pdf",
+      "note": "0580/32/M/J/20 Question 3(b) only [1], with the official opening sentences and the official scatter diagram. Official QP and official MS. Parts (a), (c) and (d) omitted."
+    },
+    "marking": "manual",
+    "stem": "This question is 0580/32/M/J/20 Question 3(b) only, taken from the official QP.\n\nBelle records the height, in centimetres, and the mass, in kilograms, of some goats.\nSome of her results are shown in the scatter diagram.\n\n<figure><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 320\" width=\"420\" height=\"auto\" preserveAspectRatio=\"xMinYMin meet\" style=\"max-width:420px;height:auto\" role=\"img\" aria-label=\"Official 0580/32/M/J/20 Question 3 scatter diagram of height in centimetres and mass in kilograms of some goats\">\n  <line x1=\"70\" y1=\"250\" x2=\"385\" y2=\"250\" stroke=\"#222\" stroke-width=\"1.4\"/>\n  <line x1=\"70\" y1=\"250\" x2=\"70\" y2=\"28\" stroke=\"#222\" stroke-width=\"1.4\"/>\n  <polygon points=\"385,250 377,246 377,254\" fill=\"#222\"/>\n  <polygon points=\"70,28 66,36 74,36\" fill=\"#222\"/>\n  <text x=\"175\" y=\"292\" font-size=\"12\">Height (cm)</text>\n  <text x=\"8\" y=\"150\" font-size=\"12\" transform=\"rotate(-90 14 150)\">Mass (kg)</text>\n    <line x1=\"70.0\" y1=\"250\" x2=\"70.0\" y2=\"255\" stroke=\"#222\"/>\n    <text x=\"60.0\" y=\"270\" font-size=\"11\">20</text>\n    <line x1=\"145.0\" y1=\"250\" x2=\"145.0\" y2=\"255\" stroke=\"#222\"/>\n    <text x=\"135.0\" y=\"270\" font-size=\"11\">25</text>\n    <line x1=\"220.0\" y1=\"250\" x2=\"220.0\" y2=\"255\" stroke=\"#222\"/>\n    <text x=\"210.0\" y=\"270\" font-size=\"11\">30</text>\n    <line x1=\"295.0\" y1=\"250\" x2=\"295.0\" y2=\"255\" stroke=\"#222\"/>\n    <text x=\"285.0\" y=\"270\" font-size=\"11\">35</text>\n    <line x1=\"370.0\" y1=\"250\" x2=\"370.0\" y2=\"255\" stroke=\"#222\"/>\n    <text x=\"360.0\" y=\"270\" font-size=\"11\">40</text>\n    <line x1=\"65\" y1=\"250.0\" x2=\"70\" y2=\"250.0\" stroke=\"#222\"/>\n    <text x=\"38\" y=\"254.0\" font-size=\"11\">30</text>\n    <line x1=\"65\" y1=\"215.0\" x2=\"70\" y2=\"215.0\" stroke=\"#222\"/>\n    <text x=\"38\" y=\"219.0\" font-size=\"11\">31</text>\n    <line x1=\"65\" y1=\"180.0\" x2=\"70\" y2=\"180.0\" stroke=\"#222\"/>\n    <text x=\"38\" y=\"184.0\" font-size=\"11\">32</text>\n    <line x1=\"65\" y1=\"145.0\" x2=\"70\" y2=\"145.0\" stroke=\"#222\"/>\n    <text x=\"38\" y=\"149.0\" font-size=\"11\">33</text>\n    <line x1=\"65\" y1=\"110.0\" x2=\"70\" y2=\"110.0\" stroke=\"#222\"/>\n    <text x=\"38\" y=\"114.0\" font-size=\"11\">34</text>\n    <line x1=\"65\" y1=\"75.0\" x2=\"70\" y2=\"75.0\" stroke=\"#222\"/>\n    <text x=\"38\" y=\"79.0\" font-size=\"11\">35</text>\n    <line x1=\"65\" y1=\"40.0\" x2=\"70\" y2=\"40.0\" stroke=\"#222\"/>\n    <text x=\"38\" y=\"44.0\" font-size=\"11\">36</text>\n    <rect x=\"78.80000000000001\" y=\"234.54999999999995\" width=\"6.4\" height=\"6.4\" transform=\"rotate(45 82.00000000000001 237.74999999999994)\" fill=\"#111\"/>\n    <rect x=\"131.3\" y=\"180.30000000000007\" width=\"6.4\" height=\"6.4\" transform=\"rotate(45 134.5 183.50000000000006)\" fill=\"#111\"/>\n    <rect x=\"146.3\" y=\"216.00000000000006\" width=\"6.4\" height=\"6.4\" transform=\"rotate(45 149.5 219.20000000000005)\" fill=\"#111\"/>\n    <rect x=\"174.8\" y=\"127.80000000000005\" width=\"6.4\" height=\"6.4\" transform=\"rotate(45 178.0 131.00000000000006)\" fill=\"#111\"/>\n    <rect x=\"195.80000000000004\" y=\"148.10000000000002\" width=\"6.4\" height=\"6.4\" transform=\"rotate(45 199.00000000000003 151.3)\" fill=\"#111\"/>\n    <rect x=\"201.8\" y=\"88.5999999999999\" width=\"6.4\" height=\"6.4\" transform=\"rotate(45 205.0 91.7999999999999)\" fill=\"#111\"/>\n    <rect x=\"251.29999999999998\" y=\"110.99999999999993\" width=\"6.4\" height=\"6.4\" transform=\"rotate(45 254.49999999999997 114.19999999999993)\" fill=\"#111\"/>\n    <rect x=\"324.80000000000007\" y=\"55.00000000000013\" width=\"6.4\" height=\"6.4\" transform=\"rotate(45 328.00000000000006 58.20000000000013)\" fill=\"#111\"/>\n</svg></figure>\n\n(b) What type of correlation is shown in this scatter diagram? [1]",
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Positive.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: Positive, B1. The official diagram shows a clear upward trend."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Stem taken from the official QP PDF, Question 3(b) only, with the official opening sentences and the official diagram. Official MS reproduced mark by mark. Paper/self-mark."
+      }
+    ]
+  }
+]

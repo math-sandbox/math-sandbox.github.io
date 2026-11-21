@@ -1,0 +1,22 @@
+.ms-w{display:flex;flex-direction:column;gap:10px;margin:12px 0;max-width:100%;min-width:0}
+.ms-w-stage{background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px;min-width:0;overflow:visible}
+.ms-w-caption{margin:0 0 6px;font-size:.88rem;color:var(--mute)}
+.ms-w-stage svg{display:block;width:100%;height:auto;max-width:100%;overflow:visible}
+.ms-w-controls{display:flex;flex-direction:column;gap:8px;min-width:0}
+.ms-w-row{display:flex;flex-direction:column;gap:2px;min-width:0}
+.ms-w-row-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.ms-w-row label{font-size:.9rem;color:var(--ink)}
+.ms-w-row input[type=range]{width:100%;min-height:44px;accent-color:var(--acc)}
+.ms-w-val{font-variant-numeric:tabular-nums;color:var(--mute);font-size:.85rem;text-align:right;flex:0 0 auto}
+.ms-w-formula{display:flex;flex-wrap:wrap;align-items:baseline;gap:.35em .9em;min-height:2.4em;padding:8px 10px;background:#f8fafc;border-radius:8px;border:1px solid var(--line);overflow:visible;font-size:.95rem;max-width:100%}
+.ms-w-formula-item{min-width:0;max-width:100%}
+.ms-w-formula mjx-container{max-width:100%;display:inline-block;overflow-x:auto;overflow-y:hidden}
+.ms-w-actions{display:flex;flex-wrap:wrap;gap:8px}
+.ms-w-actions button{min-height:44px;min-width:44px;padding:0 14px;border-radius:8px;border:1px solid var(--line);background:#fff;color:var(--ink);font-weight:600;cursor:pointer}
+.ms-w-actions button:hover{border-color:var(--acc)}
+.ms-w-actions button[aria-pressed=true]{background:var(--accs);border-color:var(--acc)}
+.ms-widget-fallback[hidden]{display:none}
+@media (min-width:768px){
+  .ms-w{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(11rem,0.9fr);align-items:start}
+  .ms-w-formula,.ms-w-actions{grid-column:1/-1}
+}

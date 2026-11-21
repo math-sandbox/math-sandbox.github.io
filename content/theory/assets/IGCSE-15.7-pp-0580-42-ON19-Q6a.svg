@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="400" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:400px;height:auto" role="img" aria-label="Official 0580/42/O/N/19 Question 6(a) triangle: angle A is 79 degrees, AC is 8 m, AB is 13 m">
+  <style>text{font-family:system-ui,Segoe UI,sans-serif;font-size:13px;fill:#222}</style>
+  <polygon points="200,36 60,220 340,220" fill="#eef6ff" stroke="#1d4f91" stroke-width="2"/>
+  <text x="194" y="26">A</text>
+  <text x="40" y="236">C</text>
+  <text x="348" y="236">B</text>
+  <text x="188" y="70">79°</text>
+  <text x="100" y="140">8 m</text>
+  <text x="280" y="140">13 m</text>
+  <text x="188" y="244">BC</text>
+</svg>

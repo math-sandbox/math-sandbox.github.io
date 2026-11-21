@@ -1,0 +1,335 @@
+[
+  {
+    "id": "P1-5.8-QC1-gen",
+    "section": "P1-5.8",
+    "kind": "generated",
+    "title": "Rewrite n sin theta = (n-1) cos theta as tan theta = k and give n k",
+    "marks": 1,
+    "source": "Theory P1-5.8 Quick check 1",
+    "params": [
+      {
+        "name": "n",
+        "min": 3,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "m": "n-1",
+      "A": "n-1"
+    },
+    "constraints": [
+      "n>=3"
+    ],
+    "original": {
+      "n": 5
+    },
+    "stem": "Express \\({n|int}\\sin\\theta={m|int}\\cos\\theta\\) in the form \\(\\tan\\theta=k\\). Give the value of \\({n|int}k\\).",
+    "answer": {
+      "expression": "n-1",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\tan\\theta={m|int}/{n|int}\\), so \\({n|int}k={A|int}\\).",
+        "result": "n-1",
+        "format": "int",
+        "mark": "A1",
+        "note": "Divide both sides by n cos theta, provided cos theta is not zero."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original 5 sin = 4 cos, 5k = 4"
+      }
+    ],
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.8"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-8.json",
+        "locator": "P1-5.8-QC1-gen"
+      }
+    }
+  },
+  {
+    "id": "P1-5.8-QC2-gen",
+    "section": "P1-5.8",
+    "kind": "generated",
+    "title": "Number of solutions of tan n x = 1 in 0 to 180 degrees",
+    "marks": 1,
+    "source": "Theory P1-5.8 Quick check 2; n solutions of tan n x = 1 for 0 < x < 180",
+    "params": [
+      {
+        "name": "n",
+        "min": 2,
+        "max": 4,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "n"
+    },
+    "constraints": [
+      "n>=2"
+    ],
+    "original": {
+      "n": 3
+    },
+    "stem": "How many solutions of \\(\\tan({n|int}x)=1\\) are there for \\(0^\\circ&lt;x&lt;180^\\circ\\)?",
+    "answer": {
+      "expression": "n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\({n|int}x\\) runs through an open interval of length \\({n|int}\\times 180^\\circ\\), and \\(\\tan\\phi=1\\) has one solution in each interval of \\(180^\\circ\\), so there are \\({A|int}\\) solutions.",
+        "result": "n",
+        "format": "int",
+        "mark": "A1",
+        "note": "One solution of tan phi = 1 in each 180 degrees."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original tan 3x = 1, three solutions"
+      }
+    ],
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.8"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-8.json",
+        "locator": "P1-5.8-QC2-gen"
+      }
+    }
+  },
+  {
+    "id": "P1-5.8-QC3-gen",
+    "section": "P1-5.8",
+    "kind": "generated",
+    "title": "Number of solutions of tan n x = sqrt 3 in 0 to 180 degrees",
+    "marks": 1,
+    "source": "Theory P1-5.8 Quick check 3; n solutions of tan n x = sqrt 3 for 0 < x < 180",
+    "params": [
+      {
+        "name": "n",
+        "min": 2,
+        "max": 4,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "n"
+    },
+    "constraints": [
+      "n>=2"
+    ],
+    "original": {
+      "n": 2
+    },
+    "stem": "How many solutions of \\(\\tan({n|int}x)=\\sqrt{{3}}\\) are there for \\(0^\\circ&lt;x&lt;180^\\circ\\)?",
+    "answer": {
+      "expression": "n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\({n|int}x\\) runs through an open interval of length \\({n|int}\\times 180^\\circ\\), and \\(\\tan\\phi=\\sqrt{{3}}\\) has one solution in each interval of \\(180^\\circ\\), so there are \\({A|int}\\) solutions.",
+        "result": "n",
+        "format": "int",
+        "mark": "A1",
+        "note": "One solution of tan phi = sqrt 3 in each 180 degrees."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original tan 2x = sqrt 3, two solutions"
+      }
+    ],
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.8"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-8.json",
+        "locator": "P1-5.8-QC3-gen"
+      }
+    }
+  },
+  {
+    "id": "P1-5.8-PP-9709-13-MJ15-Q4",
+    "section": "P1-5.8",
+    "kind": "pastpaper",
+    "title": "A tangent equation and a further equation in 2x",
+    "marks": 6,
+    "source": {
+      "paper": "9709/13/M/J/15 Q4",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s15_qp_13.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s15_ms_13.pdf",
+      "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+    },
+    "stem": "<p>(i) Express the equation \\(3\\sin\\theta=\\cos\\theta\\) in the form \\(\\tan\\theta=k\\) and solve the equation for \\(0^\\circ&lt;\\theta&lt;180^\\circ\\). [2]</p><p>(ii) Solve the equation \\(3\\sin^2 2x=\\cos^2 2x\\) for \\(0^\\circ&lt;x&lt;180^\\circ\\). [4]</p>",
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.8"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 6,
+      "difficulty": "hard",
+      "type": "pp",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-8.json",
+        "locator": "P1-5.8-PP-9709-13-MJ15-Q4"
+      }
+    },
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "(i) \\(\\tan\\theta=\\dfrac{1}{3}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1."
+      },
+      {
+        "name": "s2",
+        "text_tex": "(i) \\(\\theta=18.4^\\circ\\) only.",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, ignore solutions outside the range 0 → 180."
+      },
+      {
+        "name": "s3",
+        "text_tex": "(ii) \\(\\tan 2x=\\pm\\dfrac{{1}}{{\\sqrt{{3}}}}\\), or an equivalent statement that a square root is needed.",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: Must be sq. root soi; sin 2x = (+/-)1/2 or cos 2x = (+/-)sqrt(3)/2 using c^2+s^2=1; Not tan x = (+/-)1/sqrt(3)."
+      },
+      {
+        "name": "s4",
+        "text_tex": "(ii) One correct value, such as \\(x=15^\\circ\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, x = 15°."
+      },
+      {
+        "name": "s5",
+        "text_tex": "(ii) Any correct second value from \\(75^\\circ\\), \\(105^\\circ\\), \\(165^\\circ\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, any correct second value (75, 105, 165)."
+      },
+      {
+        "name": "s6",
+        "text_tex": "(ii) The complete set \\(x=15^\\circ,75^\\circ,105^\\circ,165^\\circ\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, cao. All four correct. Extra solns in range -1."
+      }
+    ]
+  },
+  {
+    "id": "P1-5.8-PP-9709-11-MJ23-Q1",
+    "section": "P1-5.8",
+    "kind": "pastpaper",
+    "title": "An equation involving sine and tangent",
+    "marks": 3,
+    "source": {
+      "paper": "9709/11/M/J/23 Q1",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s23_qp_11.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s23_ms_11.pdf",
+      "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+    },
+    "stem": "<p>Solve the equation \\(4\\sin\\theta+\\tan\\theta=0\\) for \\(0^\\circ&lt;\\theta&lt;180^\\circ\\). [3]</p>",
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.8"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 3,
+      "difficulty": "hard",
+      "type": "pp",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-8.json",
+        "locator": "P1-5.8-PP-9709-11-MJ23-Q1"
+      }
+    },
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "\\(4\\sin\\theta+\\dfrac{\\sin\\theta}{\\cos\\theta}=0\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1, for use of tan theta = sin theta / cos theta. BOD if theta missing."
+      },
+      {
+        "name": "s2",
+        "text_tex": "\\(\\sin\\theta(4\\cos\\theta+1)=0\\), so \\(\\sin\\theta=0\\) or \\(\\cos\\theta=-\\dfrac{{1}}{{4}}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1 WWW. Factorise, not divide by sin theta or tan theta. May see tan theta (4 cos theta + 1) or sin theta (4 + sec theta)."
+      },
+      {
+        "name": "s3",
+        "text_tex": "\\(\\theta=104.5^\\circ\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, AWRT 104.5 degrees (1.82 rads A0). Ignore answers outside (0, 180). If M1 M0, SC B1 for 104.5, max 2/3."
+      }
+    ]
+  }
+]

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:420px;height:auto" role="img" aria-labelledby="p226-t p226-d">
+<title id="p226-t">The inequality 0.5 to the x is less than 0.2 holds to the right of x=2.32</title>
+<desc id="p226-d">The decreasing curve y=0.5 to the x and the line y=0.2 meet at x=2.32. The region x greater than 2.32 is shaded along the axis.</desc>
+<line x1="48.0" y1="234.7" x2="400.0" y2="234.7" stroke="#9ca3af" stroke-width="1"/>
+<line x1="61.5" y1="244.0" x2="61.5" y2="20.0" stroke="#9ca3af" stroke-width="1"/>
+<text x="392.0" y="250.7" font-family="serif" font-size="12" fill="#333">x</text>
+<text x="69.5" y="32.0" font-family="serif" font-size="12" fill="#333">y</text>
+<line x1="129.2" y1="230.7" x2="129.2" y2="238.7" stroke="#6b7280" stroke-width="1"/>
+<text x="129.2" y="250.7" text-anchor="middle" font-family="serif" font-size="11" fill="#111">1</text>
+<line x1="196.9" y1="230.7" x2="196.9" y2="238.7" stroke="#6b7280" stroke-width="1"/>
+<text x="196.9" y="250.7" text-anchor="middle" font-family="serif" font-size="11" fill="#111">2</text>
+<line x1="264.6" y1="230.7" x2="264.6" y2="238.7" stroke="#6b7280" stroke-width="1"/>
+<text x="264.6" y="250.7" text-anchor="middle" font-family="serif" font-size="11" fill="#111">3</text>
+<line x1="332.3" y1="230.7" x2="332.3" y2="238.7" stroke="#6b7280" stroke-width="1"/>
+<text x="332.3" y="250.7" text-anchor="middle" font-family="serif" font-size="11" fill="#111">4</text>
+<line x1="57.5" y1="197.3" x2="65.5" y2="197.3" stroke="#6b7280" stroke-width="1"/>
+<text x="53.5" y="201.3" text-anchor="end" font-family="serif" font-size="11" fill="#111">0.2</text>
+<line x1="57.5" y1="160.0" x2="65.5" y2="160.0" stroke="#6b7280" stroke-width="1"/>
+<text x="53.5" y="164.0" text-anchor="end" font-family="serif" font-size="11" fill="#111">0.4</text>
+<line x1="57.5" y1="122.7" x2="65.5" y2="122.7" stroke="#6b7280" stroke-width="1"/>
+<text x="53.5" y="126.7" text-anchor="end" font-family="serif" font-size="11" fill="#111">0.6</text>
+<line x1="57.5" y1="85.3" x2="65.5" y2="85.3" stroke="#6b7280" stroke-width="1"/>
+<text x="53.5" y="89.3" text-anchor="end" font-family="serif" font-size="11" fill="#111">0.8</text>
+<line x1="57.5" y1="48.0" x2="65.5" y2="48.0" stroke="#6b7280" stroke-width="1"/>
+<text x="53.5" y="52.0" text-anchor="end" font-family="serif" font-size="11" fill="#111">1</text>
+<polyline points="48.00,20.24 52.40,29.69 56.80,38.72 61.20,47.35 65.60,55.60 70.00,63.49 74.40,71.03 78.80,78.24 83.20,85.13 87.60,91.72 92.00,98.02 96.40,104.04 100.80,109.79 105.20,115.29 109.60,120.55 114.00,125.58 118.40,130.39 122.80,134.98 127.20,139.37 131.60,143.57 136.00,147.58 140.40,151.42 144.80,155.09 149.20,158.59 153.60,161.94 158.00,165.15 162.40,168.21 166.80,171.14 171.20,173.94 175.60,176.61 180.00,179.17 184.40,181.62 188.80,183.95 193.20,186.19 197.60,188.32 202.00,190.36 206.40,192.32 210.80,194.18 215.20,195.97 219.60,197.67 224.00,199.30 228.40,200.86 232.80,202.35 237.20,203.77 241.60,205.13 246.00,206.43 250.40,207.68 254.80,208.87 259.20,210.00 263.60,211.09 268.00,212.13 272.40,213.12 276.80,214.07 281.20,214.98 285.60,215.85 290.00,216.67 294.40,217.47 298.80,218.22 303.20,218.95 307.60,219.64 312.00,220.30 316.40,220.94 320.80,221.54 325.20,222.12 329.60,222.67 334.00,223.20 338.40,223.71 342.80,224.19 347.20,224.65 351.60,225.09 356.00,225.51 360.40,225.92 364.80,226.30 369.20,226.67 373.60,227.02 378.00,227.36 382.40,227.68 386.80,227.99 391.20,228.28 395.60,228.56" fill="none" stroke="#2563eb" stroke-width="2"/>
+<line x1="48.0" y1="197.3" x2="400.0" y2="197.3" stroke="#b91c1c" stroke-width="1.6"/>
+<rect x="218.7" y="224.7" width="181.3" height="10" fill="#86efac" opacity="0.8"/>
+<circle cx="218.7" cy="197.3" r="5" fill="#16a34a"/>
+<line x1="218.7" y1="197.3" x2="218.7" y2="234.7" stroke="#16a34a" stroke-width="1.2" stroke-dasharray="4 3"/>
+<text x="218.7" y="262.7" text-anchor="middle" font-family="serif" font-size="12" fill="#15803d">2.32</text>
+<text x="284.9" y="205.7" font-family="serif" font-size="13" fill="#1d4ed8">y=0.5^x</text>
+<text x="71.7" y="189.3" font-family="serif" font-size="13" fill="#b91c1c">y=0.2</text>
+<text x="305.2" y="216.7" font-family="serif" font-size="12" fill="#15803d">x &gt; 2.32</text>
+</svg>

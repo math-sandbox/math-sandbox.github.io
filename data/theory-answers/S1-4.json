@@ -1,0 +1,118 @@
+[
+  {
+    "section": "S1-4.1",
+    "q": "QC1",
+    "answer": 0.6,
+    "accept_as": "sf",
+    "sf": 3
+  },
+  {
+    "section": "S1-4.1",
+    "q": "QC2",
+    "answer": 52,
+    "accept_as": "integer"
+  },
+  {
+    "section": "S1-4.1",
+    "q": "QC3",
+    "answer": 0.3055555555555556,
+    "accept_as": "sf",
+    "sf": 3
+  },
+  {
+    "section": "S1-4.1",
+    "q": "QC4",
+    "answer": 0.3,
+    "tolerance": 0
+  },
+  {
+    "section": "S1-4.2",
+    "q": "QC1a",
+    "answer": 0.77,
+    "tolerance": 0
+  },
+  {
+    "section": "S1-4.2",
+    "q": "QC1b",
+    "answer": 0.23,
+    "tolerance": 0
+  },
+  {
+    "section": "S1-4.2",
+    "q": "QC2",
+    "answer": 0.3,
+    "tolerance": 0
+  },
+  {
+    "section": "S1-4.2",
+    "q": "QC3",
+    "answer": 0.6666666666666666,
+    "accept_as": "sf",
+    "sf": 3
+  },
+  {
+    "section": "S1-4.2",
+    "q": "QC4a",
+    "answer": 4,
+    "accept_as": "integer"
+  },
+  {
+    "section": "S1-4.2",
+    "q": "QC4b",
+    "answer": 0.6333333333333333,
+    "accept_as": "sf",
+    "sf": 3
+  },
+  {
+    "section": "S1-4.3",
+    "q": "QC1",
+    "answer": 0.2,
+    "tolerance": 0
+  },
+  {
+    "section": "S1-4.3",
+    "q": "QC2",
+    "answer": 0.32,
+    "tolerance": 0
+  },
+  {
+    "section": "S1-4.3",
+    "q": "QC3",
+    "answer": 0.2,
+    "tolerance": 0
+  },
+  {
+    "section": "S1-4.3",
+    "q": "QC4",
+    "answer": 0.25,
+    "tolerance": 0
+  },
+  {
+    "section": "S1-4.4",
+    "q": "QC1",
+    "answer": 0.6666666666666666,
+    "accept_as": "sf",
+    "sf": 3
+  },
+  {
+    "section": "S1-4.4",
+    "q": "QC2",
+    "answer": 0.6666666666666666,
+    "accept_as": "sf",
+    "sf": 3
+  },
+  {
+    "section": "S1-4.4",
+    "q": "QC3",
+    "answer": 0.5714285714285714,
+    "accept_as": "sf",
+    "sf": 3
+  },
+  {
+    "section": "S1-4.4",
+    "q": "QC4",
+    "answer": 0.4444444444444444,
+    "accept_as": "sf",
+    "sf": 3
+  }
+]

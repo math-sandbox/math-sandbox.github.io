@@ -1,0 +1,244 @@
+[
+  {
+    "id": "P23-2.4-QC1-gen",
+    "section": "P23-2.4",
+    "kind": "generated",
+    "title": "Combining two logarithms",
+    "marks": 2,
+    "source": "P23 Ch2 theory P23-2.4 Quick check 1 (log2 x + log2 5 = log2 40, x=8)",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 2,
+        "max": 9,
+        "step": 1
+      },
+      {
+        "name": "k",
+        "min": 3,
+        "max": 12,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "N": "b*k",
+      "E": "k"
+    },
+    "constraints": [
+      "a>=2",
+      "b>=2",
+      "k>=3"
+    ],
+    "original": {
+      "a": 2,
+      "b": 5,
+      "k": 8
+    },
+    "stem": "Solve the equation given by the logarithm to base {a|int} of x, plus the logarithm to base {a|int} of {b|int}, equals the logarithm to base {a|int} of {N|int}.",
+    "answer": {
+      "expression": "k",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The multiplication law of logarithms gives the logarithm of {b|int} times x, so {b|int}x={N|int}.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Combine and equate."
+      },
+      {
+        "name": "E",
+        "text_tex": "Hence x={k|int}. This value is positive, so the logarithms are defined.",
+        "result": "k",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct solution."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "sum",
+        "stem": "Solve log base {a|int} of x plus log base {a|int} of {b|int} equals log base {a|int} of {N|int}.",
+        "note": "sum frame"
+      },
+      {
+        "id": "value",
+        "stem": "Find x if the logarithm to base {a|int} of x plus the logarithm to base {a|int} of {b|int} is the logarithm to base {a|int} of {N|int}.",
+        "note": "value frame"
+      }
+    ]
+  },
+  {
+    "id": "P23-2.4-QC2-gen",
+    "section": "P23-2.4",
+    "kind": "generated",
+    "title": "A logarithm equal to an integer",
+    "marks": 2,
+    "source": "P23 Ch2 theory P23-2.4 Quick check 2 (log3(x+2)=2, x=7)",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "k",
+        "min": 2,
+        "max": 3,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "E": "math.pow(a,k)-c"
+    },
+    "constraints": [
+      "math.pow(a,k)-c>0"
+    ],
+    "original": {
+      "a": 3,
+      "c": 2,
+      "k": 2
+    },
+    "stem": "Solve the equation given by the logarithm to base {a|int} of (x+{c|int}) equals {k|int}.",
+    "answer": {
+      "expression": "math.pow(a,k)-c",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "In exponential form, x+{c|int} is {a|int} to the power {k|int}.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Convert to exponential form."
+      },
+      {
+        "name": "E",
+        "text_tex": "Hence x={E|int}. The argument is positive, so the logarithm is defined.",
+        "result": "math.pow(a,k)-c",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct solution."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "shift",
+        "stem": "Solve log base {a|int} of (x+{c|int}) = {k|int}.",
+        "note": "shift frame"
+      },
+      {
+        "id": "value",
+        "stem": "Find x if the logarithm to base {a|int} of x+{c|int} is {k|int}.",
+        "note": "value frame"
+      }
+    ]
+  },
+  {
+    "id": "P23-2.4-QC3-gen",
+    "section": "P23-2.4",
+    "kind": "generated",
+    "title": "A power law and a rejected root",
+    "marks": 2,
+    "source": "P23 Ch2 theory P23-2.4 Quick check 3 (2 log5(x-1)=log5 36, x=7; x=-5 rejected)",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": 1,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "name": "s",
+        "min": 3,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "M": "s*s",
+      "E": "c+s"
+    },
+    "constraints": [
+      "c-s<=0",
+      "c+s>c"
+    ],
+    "original": {
+      "a": 5,
+      "c": 1,
+      "s": 6
+    },
+    "stem": "Solve the equation 2 times the logarithm to base {a|int} of (x-{c|int}) equals the logarithm to base {a|int} of {M|int}.",
+    "answer": {
+      "expression": "c+s",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The power law gives (x-{c|int}) squared equals {M|int}, so x-{c|int} is {s|int} or -{s|int}.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Use the power law and square roots."
+      },
+      {
+        "name": "E",
+        "text_tex": "The value x={c|int}-{s|int} makes the argument zero or negative, so it is rejected. The solution is x={E|int}.",
+        "result": "c+s",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Keep only the defined root."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "power",
+        "stem": "Solve 2 log base {a|int} of (x-{c|int}) = log base {a|int} of {M|int}.",
+        "note": "power frame"
+      },
+      {
+        "id": "value",
+        "stem": "Find the value of x satisfying 2 times the logarithm to base {a|int} of x-{c|int} equals the logarithm to base {a|int} of {M|int}.",
+        "note": "value frame"
+      }
+    ]
+  }
+]

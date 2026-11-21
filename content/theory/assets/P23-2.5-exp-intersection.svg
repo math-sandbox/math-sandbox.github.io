@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:420px;height:auto" role="img" aria-labelledby="p225-t p225-d">
+<title id="p225-t">The graphs of y=2 to the x and y=3 meet at the solution of 2 to the x equals 3</title>
+<desc id="p225-d">Coordinate axes with the exponential curve y=2 to the x and the horizontal line y=3. They meet at about x=1.58, y=3.</desc>
+<line x1="48.0" y1="235.4" x2="400.0" y2="235.4" stroke="#9ca3af" stroke-width="1"/>
+<line x1="87.1" y1="244.0" x2="87.1" y2="20.0" stroke="#9ca3af" stroke-width="1"/>
+<text x="392.0" y="251.4" font-family="serif" font-size="12" fill="#333">x</text>
+<text x="95.1" y="32.0" font-family="serif" font-size="12" fill="#333">y</text>
+<line x1="184.9" y1="231.4" x2="184.9" y2="239.4" stroke="#6b7280" stroke-width="1"/>
+<text x="184.9" y="251.4" text-anchor="middle" font-family="serif" font-size="11" fill="#111">1</text>
+<line x1="282.7" y1="231.4" x2="282.7" y2="239.4" stroke="#6b7280" stroke-width="1"/>
+<text x="282.7" y="251.4" text-anchor="middle" font-family="serif" font-size="11" fill="#111">2</text>
+<line x1="380.4" y1="231.4" x2="380.4" y2="239.4" stroke="#6b7280" stroke-width="1"/>
+<text x="380.4" y="251.4" text-anchor="middle" font-family="serif" font-size="11" fill="#111">3</text>
+<line x1="83.1" y1="192.3" x2="91.1" y2="192.3" stroke="#6b7280" stroke-width="1"/>
+<text x="77.1" y="196.3" text-anchor="end" font-family="serif" font-size="11" fill="#111">1</text>
+<line x1="83.1" y1="149.2" x2="91.1" y2="149.2" stroke="#6b7280" stroke-width="1"/>
+<text x="77.1" y="153.2" text-anchor="end" font-family="serif" font-size="11" fill="#111">2</text>
+<line x1="83.1" y1="106.2" x2="91.1" y2="106.2" stroke="#6b7280" stroke-width="1"/>
+<text x="77.1" y="110.2" text-anchor="end" font-family="serif" font-size="11" fill="#111">3</text>
+<line x1="83.1" y1="63.1" x2="91.1" y2="63.1" stroke="#6b7280" stroke-width="1"/>
+<text x="77.1" y="67.1" text-anchor="end" font-family="serif" font-size="11" fill="#111">4</text>
+<polyline points="48.00,202.74 52.40,201.70 56.80,200.64 61.20,199.54 65.60,198.40 70.00,197.23 74.40,196.02 78.80,194.77 83.20,193.49 87.60,192.16 92.00,190.79 96.40,189.38 100.80,187.92 105.20,186.41 109.60,184.86 114.00,183.26 118.40,181.61 122.80,179.91 127.20,178.15 131.60,176.34 136.00,174.46 140.40,172.53 144.80,170.54 149.20,168.49 153.60,166.37 158.00,164.18 162.40,161.93 166.80,159.60 171.20,157.20 175.60,154.72 180.00,152.17 184.40,149.53 188.80,146.81 193.20,144.00 197.60,141.11 202.00,138.12 206.40,135.04 210.80,131.86 215.20,128.58 219.60,125.20 224.00,121.70 228.40,118.10 232.80,114.39 237.20,110.55 241.60,106.60 246.00,102.52 250.40,98.31 254.80,93.96 259.20,89.48 263.60,84.86 268.00,80.09 272.40,75.17 276.80,70.10 281.20,64.86 285.60,59.46 290.00,53.88 294.40,48.13 298.80,42.20 303.20,36.08 307.60,29.76 312.00,23.25 316.40,16.53" fill="none" stroke="#2563eb" stroke-width="2"/>
+<line x1="48.0" y1="106.2" x2="400.0" y2="106.2" stroke="#b91c1c" stroke-width="1.6"/>
+<circle cx="242.1" cy="106.2" r="5" fill="#16a34a"/>
+<line x1="242.1" y1="106.2" x2="242.1" y2="235.4" stroke="#16a34a" stroke-width="1.2" stroke-dasharray="4 3"/>
+<text x="242.1" y="263.4" text-anchor="middle" font-family="serif" font-size="12" fill="#15803d">1.58</text>
+<text x="312.0" y="15.2" font-family="serif" font-size="13" fill="#1d4ed8">y=2^x</text>
+<text x="101.8" y="98.2" font-family="serif" font-size="13" fill="#b91c1c">y=3</text>
+</svg>

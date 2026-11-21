@@ -1,0 +1,368 @@
+[
+  {
+    "id": "S2-1.1-QC1-gen",
+    "section": "S2-1.1",
+    "kind": "generated",
+    "title": "Lower tail P(X is at most 1) for a binomial distribution",
+    "marks": 2,
+    "source": "S2 Ch1 theory S2-1.1 Quick check 1 (B(10,0.3), P(X<=1)=0.149 to 3 s.f.)",
+    "params": [
+      {
+        "name": "n",
+        "min": 8,
+        "max": 14,
+        "step": 1
+      },
+      {
+        "name": "a",
+        "min": 2,
+        "max": 4,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "p": "a/10",
+      "q": "1-a/10",
+      "n1": "n-1",
+      "E": "math.pow(1-a/10,n)+n*(a/10)*math.pow(1-a/10,n-1)"
+    },
+    "constraints": [
+      "n>=8",
+      "a>=2",
+      "a<=4"
+    ],
+    "original": {
+      "n": 10,
+      "a": 3
+    },
+    "stem": "Given that \\(X\\sim\\mathrm{B}({n|int},\\,{p|raw})\\), find \\(\\mathrm{P}(X\\leqslant 1)\\), correct to 3 significant figures.",
+    "answer": {
+      "expression": "math.pow(1-a/10,n)+n*(a/10)*math.pow(1-a/10,n-1)",
+      "format": "{E|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "\\(\\mathrm{P}(X\\leqslant 1)=\\mathrm{P}(X=0)+\\mathrm{P}(X=1)=({q|raw})^{{n|int}}+{n|int}({p|raw})({q|raw})^{{n1|int}}\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Write the two binomial terms for a short lower tail."
+      },
+      {
+        "name": "E",
+        "text_tex": "The value is \\({E|sf3z}\\) to 3 significant figures.",
+        "result": "math.pow(1-a/10,n)+n*(a/10)*math.pow(1-a/10,n-1)",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct tail probability."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "trials",
+        "stem": "A trial is repeated independently {n|int} times, and the probability of success on each trial is {p|raw}. If \\(X\\) is the number of successes, find \\(\\mathrm{P}(X\\leqslant 1)\\), correct to 3 significant figures.",
+        "note": "trials frame"
+      },
+      {
+        "id": "components",
+        "stem": "A machine makes {n|int} components. The probability that a component is faulty is {p|raw}, independently of the others. Find the probability that at most one component is faulty, correct to 3 significant figures.",
+        "note": "components frame"
+      }
+    ]
+  },
+  {
+    "id": "S2-1.1-QC3-gen",
+    "section": "S2-1.1",
+    "kind": "generated",
+    "title": "Continuity-corrected z-value for a lower binomial tail",
+    "marks": 2,
+    "source": "S2 Ch1 theory S2-1.1 Quick check 3 (B(80,0.4) approximated, z for P(X<=24) is -1.71 to 3 s.f.)",
+    "params": [
+      {
+        "name": "n",
+        "min": 60,
+        "max": 120,
+        "step": 10
+      },
+      {
+        "name": "a",
+        "min": 3,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "k",
+        "min": 6,
+        "max": 16,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "p": "a/10",
+      "mu": "n*a/10",
+      "x": "n*a/10-k",
+      "E": "1*((n*a/10-k)+0.5-n*a/10)/math.pow(n*(a/10)*(1-a/10),0.5)",
+      "num": "(n*a/10-k)+0.5-n*a/10",
+      "sd": "math.pow(n*(a/10)*(1-a/10),0.5)",
+      "npq": "n*(a/10)*(1-a/10)"
+    },
+    "constraints": [
+      "n>=60",
+      "a>=3",
+      "a<=5",
+      "k>=6",
+      "n*a/10-k>=1"
+    ],
+    "original": {
+      "n": 80,
+      "a": 4,
+      "k": 8
+    },
+    "stem": "\\(X\\sim\\mathrm{B}({n|int},\\,{p|raw})\\) is approximated by a normal distribution. Using a continuity correction, find the standardised \\(z\\)-value used to approximate \\(\\mathrm{P}(X\\leqslant {x|int})\\), correct to 3 significant figures.",
+    "answer": {
+      "expression": "1*((n*a/10-k)+0.5-n*a/10)/math.pow(n*(a/10)*(1-a/10),0.5)",
+      "format": "{E|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The approximating normal has mean \\({mu|raw}\\) and variance \\({npq|raw}\\). With a continuity correction, \\(z=\\dfrac{{{num|raw}}}{{{sd|raw}}}\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Standardise with a continuity correction for a less-than-or-equal tail."
+      },
+      {
+        "name": "E",
+        "text_tex": "\\(z={E|sf3z}\\) to 3 significant figures.",
+        "result": "1*((n*a/10-k)+0.5-n*a/10)/math.pow(n*(a/10)*(1-a/10),0.5)",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct z-value."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "count",
+        "stem": "A binomial count \\(X\\sim\\mathrm{B}({n|int},\\,{p|raw})\\) is approximated by a normal distribution. Using a continuity correction, find the standardised \\(z\\)-value used to approximate \\(\\mathrm{P}(X\\leqslant {x|int})\\), correct to 3 significant figures.",
+        "note": "count wording"
+      },
+      {
+        "id": "sample",
+        "stem": "A sample of {n|int} independent trials, each with success probability {p|raw}, is modelled by \\(X\\sim\\mathrm{B}({n|int},\\,{p|raw})\\) and then approximated by a normal distribution. Using a continuity correction, find the standardised \\(z\\)-value used to approximate \\(\\mathrm{P}(X\\leqslant {x|int})\\), correct to 3 significant figures.",
+        "note": "sample wording"
+      }
+    ]
+  },
+  {
+    "id": "S2-1.1-QC4-gen",
+    "section": "S2-1.1",
+    "kind": "generated",
+    "title": "Mean of the normal approximation to a binomial distribution",
+    "marks": 2,
+    "source": "S2 Ch1 theory S2-1.1 Quick check 4 (B(120,0.55) has approximating mean 66)",
+    "params": [
+      {
+        "name": "n",
+        "min": 80,
+        "max": 200,
+        "step": 20
+      },
+      {
+        "name": "k",
+        "min": 40,
+        "max": 70,
+        "step": 5
+      }
+    ],
+    "derived": {
+      "p": "k/100",
+      "E": "n*k/100"
+    },
+    "constraints": [
+      "n>=80",
+      "k>=40",
+      "k<=70",
+      "(n*k)%100==0"
+    ],
+    "original": {
+      "n": 120,
+      "k": 55
+    },
+    "stem": "A binomial random variable \\(X\\sim\\mathrm{B}({n|int},\\,{p|raw})\\) is to be approximated by a normal distribution. Write down the mean of the approximating distribution.",
+    "answer": {
+      "expression": "n*k/100",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The mean of the approximating normal distribution is \\(np\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Use the binomial mean for the normal approximation."
+      },
+      {
+        "name": "E",
+        "text_tex": "\\(np={n|int}\\times{p|raw}={E|int}\\)",
+        "result": "n*k/100",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Integer mean."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "np",
+        "stem": "\\(X\\sim\\mathrm{B}({n|int},\\,{p|raw})\\) is approximated by a normal distribution. Write down the value of the mean \\(np\\).",
+        "note": "np wording"
+      },
+      {
+        "id": "model",
+        "stem": "A normal approximation is used for \\(X\\sim\\mathrm{B}({n|int},\\,{p|raw})\\). Write down the mean of this approximating distribution.",
+        "note": "model wording"
+      }
+    ]
+  },
+  {
+    "id": "S2-1.1-PP-9709-73-ON19-Q4",
+    "section": "S2-1.1",
+    "kind": "pastpaper",
+    "marking": "manual",
+    "title": "One-tailed binomial test of a train company's 92% claim",
+    "marks": 6,
+    "source": {
+      "paper": "9709/73/O/N/19 Q4",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w19_qp_73.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w19_ms_73.pdf",
+      "note": "Stem verbatim from the QP PDF. Steps and marks from the official MS PDF. The item is a one-tailed binomial test at the 5% level, with an assumption and a contextual conclusion; it does not ask for a two-tailed test or for Type I/II errors. Fully manual, steps only, because hypotheses, the assumption and the conclusion are verbal. Official tail P(X<=16)=0.0706 was independently confirmed. A normal-approximation route is allowed in the official scheme after the first two B marks."
+    },
+    "stem": "A train company claims that 92% of trains on a particular line arrive on time. Sanjeep suspects that the true percentage is less than 92%. He chooses a random sample of 20 trains on this line and finds that exactly 16 of them arrive on time. Making an assumption that should be stated, test at the 5% significance level whether Sanjeep's suspicion is justified.",
+    "steps": [
+      {
+        "name": "assump",
+        "text_tex": "State an assumption in context: the trains are independent, or the probability of a train being on time is constant.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 Assume trains are independent OR probability of being on time is constant. Must be in context."
+      },
+      {
+        "name": "hyp",
+        "text_tex": "State both hypotheses: H0: P(on time) = 0.92 and H1: P(on time) < 0.92. The letter p or pi may be used.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 Both. Allow p or pi."
+      },
+      {
+        "name": "tail",
+        "text_tex": "Evaluate a tail probability of the form 1 minus a sum of binomial terms for X greater than or equal to 17 (one end error allowed). The official scheme requires the complementary form 1 minus a sum.",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: M1 Allow one end error. Must have 1 minus a sum of binomial terms."
+      },
+      {
+        "name": "val",
+        "text_tex": "Obtain 0.0706 to 3 significant figures.",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: A1 0.0706 (3 sf)."
+      },
+      {
+        "name": "comp",
+        "text_tex": "Compare 0.0706 with 0.05. A valid comparison is required.",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: M1 Compare with 0.05. Valid comparison needed."
+      },
+      {
+        "name": "conc",
+        "text_tex": "Conclude that there is no evidence that the percentage is less than 92%, in context, with no contradictions. (Official alternative after the first two B marks: a continuity-corrected normal comparison of 1.566 with 1.645, or 1.978 without a continuity correction, leading to a corresponding conclusion and SC2 after the B marks.)",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: A1FT OE. No evidence that percentage less than 92%. No contradictions. Normal-approximation alternative as in the official guidance."
+      }
+    ]
+  },
+  {
+    "id": "S2-1.1-PP-9709-71-MJ16-Q1",
+    "section": "S2-1.1",
+    "kind": "pastpaper",
+    "marking": "manual",
+    "title": "One-tailed test of P(throwing a six)=1/6, using a normal approximation",
+    "marks": 5,
+    "source": {
+      "paper": "9709/71/M/J/16 Q1",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s16_qp_71.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s16_ms_71.pdf",
+      "note": "Stem verbatim from the QP PDF (the printed fractions 1/6 were flattened by pdftotext as 16; they were checked on the rendered page). Steps and marks from the official MS PDF. The item is a one-tailed test at the 10% level and does not ask for Type I/II errors. Fully manual, steps only, because the hypotheses and the conclusion are verbal. The standardised value z=-1.486 was independently confirmed from N(100/3, 250/9) with a continuity correction."
+    },
+    "stem": "A six-sided die shows a six on 25 throws out of 200 throws. Test at the 10% significance level the null hypothesis: \\(\\mathrm{P}(\\text{throwing a six})=\\dfrac{1}{6}\\), against the alternative hypothesis: \\(\\mathrm{P}(\\text{throwing a six})\\lt \\dfrac{1}{6}\\).",
+    "steps": [
+      {
+        "name": "approx",
+        "text_tex": "Use the normal approximation \\(\\mathrm{B}(200,\\dfrac{1}{6})\\to\\mathrm{N}(\\dfrac{100}{3},\\dfrac{250}{9})\\), seen or implied.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 B(200, 1/6) to N(100/3, 250/9), seen or implied."
+      },
+      {
+        "name": "zform",
+        "text_tex": "Standardise with a continuity correction, for example \\((25.5-100/3)/\\sqrt{250/9}\\). A wrong continuity correction, or none, is allowed at this mark.",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: M1 allow with wrong or no cc."
+      },
+      {
+        "name": "zval",
+        "text_tex": "Obtain z = -1.486. Alternative correct methods are accepted.",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: A1 = -1.486. Accept alternative correct methods."
+      },
+      {
+        "name": "comp",
+        "text_tex": "Compare 1.486 with 1.282, or compare the corresponding probability with 0.1.",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: M1 comp 1.486 with 1.282, or comp with 0.1."
+      },
+      {
+        "name": "conc",
+        "text_tex": "Give evidence to reject H0, in context and without contradictions: there is some evidence that p < 1/6, or it is likely that p < 1/6.",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: A1 ft. Evidence to reject H0. There is some evidence that p < 1/6, or e.g. it is likely that p < 1/6, oe. No contradictions."
+      }
+    ]
+  }
+]

@@ -1,0 +1,207 @@
+[
+  {
+    "id": "S1-3.2-QC1-gen",
+    "section": "S1-3.2",
+    "kind": "generated",
+    "title": "IQR of a short odd list",
+    "marks": 1,
+    "source": "Theory S1-3.2 Quick check 1 (IQR 8); new even IQR from Q3-Q1",
+    "params": [
+      {
+        "name": "q1",
+        "min": 2,
+        "max": 8,
+        "step": 2
+      },
+      {
+        "name": "gap",
+        "min": 6,
+        "max": 14,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "q3": "q1+gap",
+      "A": "gap"
+    },
+    "constraints": [],
+    "original": {
+      "q1": 4,
+      "gap": 8
+    },
+    "stem": "An ordered data set has lower quartile {q1|int} and upper quartile {q3|int}. What is the interquartile range of this data set?",
+    "answer": {
+      "expression": "gap",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The interquartile range of a data set is {q3|int}-{q1|int}={A|int}.",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is Q3-Q1. Original 12-4=8."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "S1-3.2-QC2-gen",
+    "section": "S1-3.2",
+    "kind": "generated",
+    "title": "IQR of an even list, from the quartiles",
+    "marks": 1,
+    "source": "Theory S1-3.2 Quick check 2 (IQR 8); new even gaps",
+    "params": [
+      {
+        "name": "q1",
+        "min": 2,
+        "max": 8,
+        "step": 2
+      },
+      {
+        "name": "gap",
+        "min": 6,
+        "max": 14,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "q3": "q1+gap",
+      "A": "gap"
+    },
+    "constraints": [],
+    "original": {
+      "q1": 4,
+      "gap": 8
+    },
+    "stem": "An ordered data set has lower quartile {q1|int} and upper quartile {q3|int}. What is the interquartile range of this data set?",
+    "answer": {
+      "expression": "gap",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The interquartile range of a data set is {q3|int}-{q1|int}={A|int}.",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "Original 12-4=8. The list in the theory page is one illustration of these quartiles."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "S1-3.2-QC3-gen",
+    "section": "S1-3.2",
+    "kind": "generated",
+    "title": "IQR from two stated quartiles",
+    "marks": 1,
+    "source": "Theory S1-3.2 Quick check 3 (IQR 12); new integer quartiles",
+    "params": [
+      {
+        "name": "q1",
+        "min": 6,
+        "max": 14,
+        "step": 2
+      },
+      {
+        "name": "gap",
+        "min": 8,
+        "max": 16,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "q3": "q1+gap",
+      "A": "gap"
+    },
+    "constraints": [],
+    "original": {
+      "q1": 10,
+      "gap": 12
+    },
+    "stem": "An ordered data set has lower quartile {q1|int} and upper quartile {q3|int}. What is the interquartile range of this data set?",
+    "answer": {
+      "expression": "gap",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The interquartile range of a data set is {q3|int}-{q1|int}={A|int}.",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "Original 22-10=12."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "S1-3.2-PP-9709-61-MJ14-Q7iii",
+    "section": "S1-3.2",
+    "kind": "pastpaper",
+    "title": "Least possible interquartile range from a grouped table",
+    "marks": 3,
+    "source": {
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s14_qp_61.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s14_ms_61.pdf",
+      "note": "9709/61/M/J/14 Question 7(iii) only [3], with the opening table. Official QP and official MS. Parts (i) and (ii) omitted."
+    },
+    "marking": "manual",
+    "stem": "This question is 9709/61/M/J/14 Question 7(iii) only, taken from the official QP. The opening table is included so that the part is self-contained.\n\nA typing test is taken by 111 people. The numbers of typing errors they make in the test are summarised in the table below.\n\nNumber of typing errors: 1-5, 6-20, 21-35, 36-60, 61-80.\nFrequency: 24, 9, 21, 15, 42.\n\n(iii) State which class contains the lower quartile and which class contains the upper quartile. Hence find the least possible value of the interquartile range. [3]",
+    "steps": [
+      {
+        "name": "L",
+        "text_tex": "The lower quartile is in the class 6–20.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1, LQ in 6-20. Cumulative frequencies 24, 33, 54, 69, 111. The 28th value (about n/4) is in 6-20."
+      },
+      {
+        "name": "U",
+        "text_tex": "The upper quartile is in the class 61–80.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1, UQ in 61-80. The 84th value (about 3n/4) is in 61-80."
+      },
+      {
+        "name": "A",
+        "text_tex": "The least possible value of the interquartile range is \\(61-20=41\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1, 61-20=41, follow through any or both wrong quartile classes if sensible. Independent: the largest possible Q1 in 6-20 is 20 and the smallest possible Q3 in 61-80 is 61."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Stem taken from the official QP PDF (UCLES 2014), Question 7(iii) only, with the opening table. Official MS reproduced mark by mark. Paper/self-mark."
+      }
+    ]
+  }
+]

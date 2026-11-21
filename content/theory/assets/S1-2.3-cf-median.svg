@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 290" width="420" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:420px;height:auto" role="img" aria-labelledby="S1-2-3-cf-median-t S1-2-3-cf-median-d">
+<title id="S1-2-3-cf-median-t">Estimating the median from a cumulative frequency graph when n is 40</title>
+<desc id="S1-2-3-cf-median-d">With 40 observations the median is read at cumulative frequency 20. On this graph that height meets the curve at 25.</desc>
+<rect x="0" y="0" width="420" height="290" fill="#fff"/>
+<g font-family="Source Sans 3, DejaVu Sans, sans-serif" font-size="12" fill="#333">
+  <line x1="70" y1="250" x2="370" y2="250" stroke="#333" stroke-width="1.5"/>
+  <line x1="70" y1="250" x2="70" y2="30" stroke="#333" stroke-width="1.5"/>
+  <polygon points="370,250 360,246 360,254" fill="#333"/>
+  <polygon points="70,30 66,40 74,40" fill="#333"/>
+  <text x="360" y="268">value</text>
+  <text x="16" y="40">cf</text>
+  <polyline points="70.00,250.00 140.00,220.00 210.00,180.00 280.00,120.00 350.00,50.00" fill="none" stroke="#1b5e8a" stroke-width="2.2"/>
+  <line x1="70" y1="150" x2="245" y2="150" stroke="#c0392b" stroke-width="1.3" stroke-dasharray="4 3"/>
+  <line x1="245" y1="150" x2="245" y2="250" stroke="#c0392b" stroke-width="1.3" stroke-dasharray="4 3"/>
+  <circle cx="245" cy="150" r="3.2" fill="#c0392b"/>
+  <text x="18" y="154" fill="#c0392b">20</text>
+  <text x="237" y="268" fill="#c0392b">25</text>
+  <text x="80" y="20" fill="#c0392b">median (n = 40)</text>
+</g>
+</svg>

@@ -1,0 +1,20 @@
+[
+  {
+    "section": "IGCSE-13.4",
+    "q": "QC1",
+    "answer": 16,
+    "accept_as": "integer"
+  },
+  {
+    "section": "IGCSE-13.4",
+    "q": "QC2",
+    "answer": 25,
+    "accept_as": "integer"
+  },
+  {
+    "section": "IGCSE-13.4",
+    "q": "QC3",
+    "answer": 72,
+    "accept_as": "integer"
+  }
+]

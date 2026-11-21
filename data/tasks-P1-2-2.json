@@ -1,0 +1,235 @@
+[
+  {
+    "id": "P1-2.2-QC1-gen",
+    "section": "P1-2.2",
+    "kind": "generated",
+    "title": "Evaluate a composite fg at a given input",
+    "marks": 1,
+    "source": "Theory P1-2.2 Quick check 1 (f=2x+3, g=x^2-1, fg(2)=9); book Worked examples 2.3–2.4 style, new numbers",
+    "params": [
+      {
+        "name": "a",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": -4,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "name": "n",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "G": "n*n+c",
+      "V": "a*(n*n+c)+b"
+    },
+    "constraints": [
+      "n>=1"
+    ],
+    "original": {
+      "a": 2,
+      "b": 3,
+      "c": -1,
+      "n": 2
+    },
+    "stem": "\\(f(x)={a|int}x+{b|int}\\) and \\(g(x)=x^2+{c|int}\\). What is the value of \\(fg({n|int})\\)?",
+    "answer": {
+      "expression": "V",
+      "format": "{V|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(g({n|int})={G|int}\\), so \\(fg({n|int})=f({G|int})={a|int}\\times{G|int}+{b|int}={V|int}\\).",
+        "result": "V",
+        "format": "int",
+        "mark": "A1",
+        "note": "g acts first. Original: g(2)=3, f(3)=9."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P1-2.2-QC2-gen",
+    "section": "P1-2.2",
+    "kind": "generated",
+    "title": "Evaluate a composite gf at a given input",
+    "marks": 1,
+    "source": "Theory P1-2.2 Quick check 2 (f=2x+3, g=x^2-1, gf(2)=48); book Worked example 2.4 style, new numbers",
+    "params": [
+      {
+        "name": "a",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": -4,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "name": "n",
+        "min": 1,
+        "max": 4,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "F": "a*n+b",
+      "V": "(a*n+b)*(a*n+b)+c"
+    },
+    "constraints": [
+      "n>=1"
+    ],
+    "original": {
+      "a": 2,
+      "b": 3,
+      "c": -1,
+      "n": 2
+    },
+    "stem": "\\(f(x)={a|int}x+{b|int}\\) and \\(g(x)=x^2+{c|int}\\). What is the value of \\(gf({n|int})\\)?",
+    "answer": {
+      "expression": "V",
+      "format": "{V|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(f({n|int})={F|int}\\), so \\(gf({n|int})=g({F|int})={F|int}^2+{c|int}={V|int}\\).",
+        "result": "V",
+        "format": "int",
+        "mark": "A1",
+        "note": "f acts first. Original: f(2)=7, g(7)=48."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P1-2.2-QC3-gen",
+    "section": "P1-2.2",
+    "kind": "generated",
+    "title": "Evaluate a repeated composite ff at a given input",
+    "marks": 1,
+    "source": "Theory P1-2.2 Quick check 3 (f=2x+3, ff(2)=17); book Worked example 2.4(c) style, new numbers",
+    "params": [
+      {
+        "name": "a",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "n",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "F": "a*n+b",
+      "V": "a*(a*n+b)+b"
+    },
+    "constraints": [
+      "n>=1"
+    ],
+    "original": {
+      "a": 2,
+      "b": 3,
+      "n": 2
+    },
+    "stem": "\\(f(x)={a|int}x+{b|int}\\). What is the value of \\(ff({n|int})\\)?",
+    "answer": {
+      "expression": "V",
+      "format": "{V|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(f({n|int})={F|int}\\), so \\(ff({n|int})=f({F|int})={a|int}\\times{F|int}+{b|int}={V|int}\\).",
+        "result": "V",
+        "format": "int",
+        "mark": "A1",
+        "note": "Apply f twice. Original: f(2)=7, f(7)=17."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P1-2.2-PP-9709-12-MJ21-Q5a",
+    "section": "P1-2.2",
+    "kind": "pastpaper",
+    "title": "Simplify the composite ff",
+    "marks": 2,
+    "source": {
+      "paper": "9709/12/M/J/21 Q5(a)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s21_qp_12.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s21_ms_12.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2021), Question 5(a) only. Official answer and mark allocation from the MS PDF. The item is paper/self-mark. Part 5(b) is omitted."
+    },
+    "stem": "This question is 9709/12/M/J/21 Question 5(a), taken from the official QP.\n\nThe function \\(f\\) is defined by \\(f(x)=2x^2+3\\) for \\(x\\geqslant 0\\).\n\n(a) Find and simplify an expression for \\(\\mathrm{ff}(x)\\).  [2]",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "\\(\\mathrm{ff}(x)=f(2x^2+3)=2(2x^2+3)^2+3\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS 5(a): M1 for 2(2x^2+3)^2+3. Condone a trailing =0."
+      },
+      {
+        "name": "A",
+        "text_tex": "This expands to \\(2(4x^4+12x^2+9)+3=8x^4+24x^2+21\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS 5(a): 8x^4+24x^2+21, ISW if the correct answer is seen. Independent expansion agrees."
+      }
+    ]
+  }
+]

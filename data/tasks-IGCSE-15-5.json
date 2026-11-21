@@ -1,0 +1,177 @@
+[
+  {
+    "id": "IGCSE-15.5-QC1-gen",
+    "section": "IGCSE-15.5",
+    "kind": "generated",
+    "title": "Height from an angle of elevation of 45 degrees",
+    "marks": 1,
+    "source": "Theory IGCSE-15.5 Quick check 1 (elevation 45, distance 20, height 20); tan 45 = 1, new distances",
+    "params": [
+      {
+        "name": "d",
+        "min": 8,
+        "max": 30,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "d"
+    },
+    "constraints": [
+      "d>=8"
+    ],
+    "original": {
+      "d": 20
+    },
+    "stem": "From a point on horizontal ground {d|int} m from the foot of a vertical tower, the angle of elevation of the top of the tower is \\(45^\\circ\\). What is the height of the tower, in metres?",
+    "answer": {
+      "expression": "d",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\tan 45^\\circ=1\\), so the height equals the horizontal distance and is {A|int} m.",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A equals d. Original d=20 gives height 20."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-15.5-QC2-gen",
+    "section": "IGCSE-15.5",
+    "kind": "generated",
+    "title": "Height of a kite string at 30 degrees",
+    "marks": 1,
+    "source": "Theory IGCSE-15.5 Quick check 2 (string 50 m at 30 degrees, height 25); sin 30 = 1/2, new even string lengths",
+    "params": [
+      {
+        "name": "k",
+        "min": 10,
+        "max": 40,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "S": "2*k",
+      "A": "k"
+    },
+    "constraints": [
+      "k>=10"
+    ],
+    "original": {
+      "k": 25
+    },
+    "stem": "A kite string of length {S|int} m makes a \\(30^\\circ\\) angle with the horizontal ground. What is the height of the kite above the ground, in metres?",
+    "answer": {
+      "expression": "k",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The height is the opposite side to \\(30^\\circ\\), so it is \\({S|int}\\sin 30^\\circ={S|int}\\times 1/2={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is k and S is 2k. Original k=25 gives string 50 and height 25."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-15.5-QC3-gen",
+    "section": "IGCSE-15.5",
+    "kind": "generated",
+    "title": "Horizontal distance from an angle of depression of 45 degrees",
+    "marks": 1,
+    "source": "Theory IGCSE-15.5 Quick check 3 (depression 45, height 12, distance 12); tan 45 = 1, new heights",
+    "params": [
+      {
+        "name": "h",
+        "min": 6,
+        "max": 24,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "h"
+    },
+    "constraints": [
+      "h>=6"
+    ],
+    "original": {
+      "h": 12
+    },
+    "stem": "From the top of a vertical cliff {h|int} m high, the angle of depression of a boat is \\(45^\\circ\\). How far is the boat from the foot of the cliff, in metres?",
+    "answer": {
+      "expression": "h",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The angle of depression from the horizontal equals the angle of elevation from the boat, which is \\(45^\\circ\\). \\(\\tan 45^\\circ=1\\), so the horizontal distance equals the height and is {A|int} m.",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A equals h. Original h=12 gives distance 12."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-15.5-PP-0580-41-ON19-Q4d",
+    "section": "IGCSE-15.5",
+    "kind": "pastpaper",
+    "title": "Angle between a sloping edge and the base of a square pyramid",
+    "marks": 3,
+    "source": {
+      "paper": "0580/41/O/N/19 Q4(d)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w19_qp_41.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w19_ms_41.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2019), Question 4(d) only, including the labelled lengths DB=8 cm and PX=5 cm from the official diagram. Official answer and mark allocation from the MS PDF. The item is paper/self-mark. Parts 4(a) to 4(c) are omitted (unrelated surface area and similar cones)."
+    },
+    "stem": "This question is 0580/41/O/N/19 Question 4(d), taken from the official QP.\n\nThe diagram shows a pyramid with a square base \\(ABCD\\).\n\\(DB=8\\) cm.\n\\(P\\) is vertically above the centre, \\(X\\), of the base and \\(PX=5\\) cm.\n\nCalculate the angle between \\(PB\\) and the base \\(ABCD\\).  [3]",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "\\(X\\) is the midpoint of the diagonal \\(DB\\), so \\(XB=4\\) cm. The required angle is \\(\\angle PBX\\), and \\(\\tan\\angle PBX=5/4\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M2",
+        "note": "Official MS 4(d): M2 for tan = 5/4 oe; or M1 for recognition of angle PBX. Independent: XB = 8/2 = 4 and PX is perpendicular to the base."
+      },
+      {
+        "name": "A",
+        "text_tex": "The angle is \\(\\tan^{-1}(5/4)=51.340\\ldots^\\circ\\), which is \\(51.3^\\circ\\) to 3 significant figures.",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS 4(d): 51.3 or 51.34... for 3 marks. Independent: arctan(1.25) = 51.34019175... degrees."
+      }
+    ]
+  }
+]

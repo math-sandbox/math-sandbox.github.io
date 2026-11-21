@@ -1,0 +1,242 @@
+[
+  {
+    "id": "S1-1.1-QC1-gen",
+    "section": "S1-1.1",
+    "kind": "generated",
+    "title": "Count how many of a mixed list of variables are quantitative",
+    "marks": 2,
+    "source": "S1 Ch1 theory S1-1.1 Quick check 1 (2 quantitative out of 4 named variables)",
+    "params": [
+      {
+        "name": "q",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "d",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "n": "q+d+c",
+      "E": "d+c"
+    },
+    "constraints": [
+      "q>=1",
+      "d>=1",
+      "c>=1",
+      "q+d+c>=4"
+    ],
+    "original": {
+      "q": 2,
+      "d": 1,
+      "c": 1
+    },
+    "stem": "A list of {n|int} variables consists of {q|int} qualitative, {d|int} discrete and {c|int} continuous variables. How many of these {n|int} variables are quantitative?",
+    "answer": {
+      "expression": "d+c",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The {d|int} discrete counts and the {c|int} continuous measurements are quantitative, and the {q|int} qualitative categories are not.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Separate quantitative from qualitative."
+      },
+      {
+        "name": "E",
+        "text_tex": "\\({d|int}+{c|int}={E|int}\\)",
+        "result": "d+c",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Count of quantitative variables."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "survey",
+        "stem": "In a survey, {n|int} variables are recorded: {q|int} are word-based categories, {d|int} are counts and {c|int} are measured lengths. How many of these {n|int} variables are quantitative?",
+        "note": "survey frame"
+      },
+      {
+        "id": "lab",
+        "stem": "A laboratory records {n|int} variables: {q|int} colour labels, {d|int} item counts and {c|int} temperatures. How many of these {n|int} variables are quantitative?",
+        "note": "laboratory frame"
+      }
+    ]
+  },
+  {
+    "id": "S1-1.1-QC2-gen",
+    "section": "S1-1.1",
+    "kind": "generated",
+    "title": "Count how many of a mixed list of quantitative variables are discrete",
+    "marks": 2,
+    "source": "S1 Ch1 theory S1-1.1 Quick check 2 (2 discrete out of 4 variables)",
+    "params": [
+      {
+        "name": "d",
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": 1,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "n": "d+c",
+      "E": "d"
+    },
+    "constraints": [
+      "d>=1",
+      "c>=1",
+      "d+c>=3"
+    ],
+    "original": {
+      "d": 2,
+      "c": 2
+    },
+    "stem": "A list of {n|int} quantitative variables consists of {d|int} discrete variables and {c|int} continuous variables. How many of these {n|int} variables are discrete?",
+    "answer": {
+      "expression": "d",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The {d|int} counts are discrete and the {c|int} measurements are continuous.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Separate discrete from continuous."
+      },
+      {
+        "name": "E",
+        "text_tex": "\\({E|int}\\) of the variables are discrete.",
+        "result": "d",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Count of discrete variables."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "sport",
+        "stem": "A sports club records {n|int} quantitative variables: {d|int} are scores counted in whole numbers and {c|int} are timed measurements. How many of these {n|int} variables are discrete?",
+        "note": "sports frame"
+      },
+      {
+        "id": "shop",
+        "stem": "A shop records {n|int} quantitative variables: {d|int} are stock counts and {c|int} are measured masses. How many of these {n|int} variables are discrete?",
+        "note": "shop frame"
+      }
+    ]
+  },
+  {
+    "id": "S1-1.1-QC3-gen",
+    "section": "S1-1.1",
+    "kind": "generated",
+    "title": "Count how many recorded values in a mixed list are quantitative",
+    "marks": 2,
+    "source": "S1 Ch1 theory S1-1.1 Quick check 3 (5 colours, 4 door-counts, 3 lengths, 7 quantitative)",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 2,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": 2,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "n": "a+b+c",
+      "E": "b+c"
+    },
+    "constraints": [
+      "a>=2",
+      "b>=2",
+      "c>=2"
+    ],
+    "original": {
+      "a": 5,
+      "b": 4,
+      "c": 3
+    },
+    "stem": "A list of {n|int} recorded values consists of {a|int} car colours, {b|int} counts of the number of doors and {c|int} lengths in metres. How many of these {n|int} recorded values are quantitative?",
+    "answer": {
+      "expression": "b+c",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The {a|int} colours are qualitative. The {b|int} door-counts and the {c|int} lengths are quantitative.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Classify each group."
+      },
+      {
+        "name": "E",
+        "text_tex": "\\({b|int}+{c|int}={E|int}\\)",
+        "result": "b+c",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Count of quantitative recorded values."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "clothes",
+        "stem": "A list of {n|int} recorded values consists of {a|int} fabric colours, {b|int} counts of the number of pockets and {c|int} sleeve lengths in centimetres. How many of these {n|int} recorded values are quantitative?",
+        "note": "clothes frame"
+      },
+      {
+        "id": "library",
+        "stem": "A list of {n|int} recorded values consists of {a|int} book genres, {b|int} counts of the number of chapters and {c|int} page-widths in millimetres. How many of these {n|int} recorded values are quantitative?",
+        "note": "library frame"
+      }
+    ]
+  }
+]

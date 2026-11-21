@@ -1,0 +1,1201 @@
+[
+  {
+    "id": "S2-4.1-QC1-gen",
+    "section": "S2-4.1",
+    "kind": "generated",
+    "title": "Normalising constant of a linear PDF",
+    "marks": 3,
+    "source": "S2 Ch4 theory S2-4.1 Quick check 1 (f(x) = kx, 0 ≤ x ≤ 4: k = 1/8)",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 10,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "a2": "a*a",
+      "h": "a*a/2"
+    },
+    "constraints": [],
+    "original": {
+      "a": 4
+    },
+    "stem": "The continuous random variable \\(X\\) has probability density function \\(\\mathrm{f}(x)=kx\\) for \\(0\\le x\\le{a|int}\\), and \\(\\mathrm{f}(x)=0\\) otherwise. Find the value of the constant \\(k\\).",
+    "answer": {
+      "expression": "2/a2",
+      "format": "\\(k=\\dfrac{2}{{a2|int}}\\approx{K|sf3z}\\)",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "m",
+        "text_tex": "\\(\\displaystyle\\int_0^{{a|int}}kx\\,\\mathrm{d}x=1\\)",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Total area under the PDF is 1."
+      },
+      {
+        "name": "H",
+        "text_tex": "\\(k\\left[\\dfrac{x^2}{2}\\right]_0^{{a|int}}=\\dfrac{{a2|int}}{2}k=1\\)",
+        "result": "h",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct integration and limits (or triangle area ½ × base × height)."
+      },
+      {
+        "name": "K",
+        "text_tex": "\\(k=\\dfrac{2}{{a2|int}}\\approx{K|sf3z}\\)",
+        "result": "1/H",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Exact or 3 s.f."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "length",
+        "stem": "The length, \\(X\\) cm, of a piece of wire cut by a machine has probability density function \\(\\mathrm{f}(x)=kx\\) for \\(0\\le x\\le{a|int}\\), and \\(\\mathrm{f}(x)=0\\) otherwise. Find the value of the constant \\(k\\).",
+        "params": [
+          {
+            "name": "a",
+            "min": 3,
+            "max": 12,
+            "step": 1
+          }
+        ]
+      },
+      {
+        "id": "waiting",
+        "stem": "The waiting time, \\(T\\) minutes, at a ticket office has probability density function \\(\\mathrm{f}(t)=kt\\) for \\(0\\le t\\le{a|int}\\), and \\(\\mathrm{f}(t)=0\\) otherwise. Find the value of the constant \\(k\\).",
+        "params": [
+          {
+            "name": "a",
+            "min": 5,
+            "max": 20,
+            "step": 1
+          }
+        ],
+        "step_text": {
+          "m": "\\(\\displaystyle\\int_0^{{a|int}}kt\\,\\mathrm{d}t=1\\)",
+          "H": "\\(k\\left[\\dfrac{t^2}{2}\\right]_0^{{a|int}}=\\dfrac{{a2|int}}{2}k=1\\)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "S2-4.1-QC2-gen",
+    "section": "S2-4.1",
+    "kind": "generated",
+    "title": "Constant and interval probability for f(x) = kx²",
+    "marks": 4,
+    "source": "S2 Ch4 theory S2-4.1 Quick check 2 (f(x) = kx², 0 ≤ x ≤ 3: k = 1/9, P(X < 2) = 8/27)",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "a3": "a*a*a",
+      "b3": "b*b*b"
+    },
+    "constraints": [
+      "b<=a-1"
+    ],
+    "original": {
+      "a": 3,
+      "b": 2
+    },
+    "stem": "The continuous random variable \\(X\\) has probability density function \\(\\mathrm{f}(x)=kx^2\\) for \\(0\\le x\\le{a|int}\\), and \\(\\mathrm{f}(x)=0\\) otherwise.\n(a) Find the value of \\(k\\).\n(b) Find \\(\\mathrm{P}(X<{b|int})\\).",
+    "answer": {
+      "parts": [
+        {
+          "expression": "3/a3",
+          "format": "(a) \\(k=\\dfrac{3}{{a3|int}}\\approx{K|sf3z}\\)",
+          "part": "(a)",
+          "accept_as": "sf",
+          "sf": 3
+        },
+        {
+          "expression": "b3/a3",
+          "format": "(b) \\(\\dfrac{{b3|int}}{{a3|int}}\\approx{P|sf3z}\\)",
+          "part": "(b)",
+          "accept_as": "sf",
+          "sf": 3
+        }
+      ]
+    },
+    "steps": [
+      {
+        "name": "H",
+        "text_tex": "(a) \\(\\displaystyle\\int_0^{{a|int}}kx^2\\,\\mathrm{d}x=k\\left[\\dfrac{x^3}{3}\\right]_0^{{a|int}}=\\dfrac{{a3|int}}{3}k=1\\)",
+        "result": "a3/3",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Integrate f(x) over the whole range and set equal to 1."
+      },
+      {
+        "name": "K",
+        "text_tex": "\\(k=\\dfrac{3}{{a3|int}}\\approx{K|sf3z}\\)",
+        "result": "1/H",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Exact or 3 s.f."
+      },
+      {
+        "name": "Pm",
+        "text_tex": "(b) \\(\\displaystyle\\int_0^{{b|int}}kx^2\\,\\mathrm{d}x=k\\times\\dfrac{{b3|int}}{3}\\)",
+        "result": "K*b3/3",
+        "format": "sf3z",
+        "mark": "M1",
+        "note": "Integrate f(x) between the correct limits."
+      },
+      {
+        "name": "P",
+        "text_tex": "\\(=\\dfrac{{b3|int}}{{a3|int}}\\approx{P|sf3z}\\)",
+        "result": "Pm",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Exact or 3 s.f."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "mass",
+        "stem": "The mass, \\(X\\) kg, of sand in a bag has probability density function \\(\\mathrm{f}(x)=kx^2\\) for \\(0\\le x\\le{a|int}\\), and \\(\\mathrm{f}(x)=0\\) otherwise.\n(a) Find the value of \\(k\\).\n(b) Find the probability that a bag contains less than {b|int} kg of sand.",
+        "params": [
+          {
+            "name": "a",
+            "min": 3,
+            "max": 8,
+            "step": 1
+          },
+          {
+            "name": "b",
+            "min": 1,
+            "max": 7,
+            "step": 1
+          }
+        ]
+      },
+      {
+        "id": "distance",
+        "stem": "The distance, \\(X\\) km, that a delivery driver travels between two stops has probability density function \\(\\mathrm{f}(x)=kx^2\\) for \\(0\\le x\\le{a|int}\\), and \\(\\mathrm{f}(x)=0\\) otherwise.\n(a) Find the value of \\(k\\).\n(b) Find the probability that the distance is less than {b|int} km.",
+        "params": [
+          {
+            "name": "a",
+            "min": 4,
+            "max": 10,
+            "step": 1
+          },
+          {
+            "name": "b",
+            "min": 1,
+            "max": 9,
+            "step": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "S2-4.1-QC3-gen",
+    "section": "S2-4.1",
+    "kind": "generated",
+    "title": "Decreasing linear PDF: probability above a value",
+    "marks": 4,
+    "source": "S2 Ch4 theory S2-4.1 Quick check 3 (f(x) = k(4 − x), 0 ≤ x ≤ 4: P(X > 1) = 9/16)",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 10,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 1,
+        "max": 9,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "a2": "a*a",
+      "d": "a-b",
+      "d2": "(a-b)*(a-b)"
+    },
+    "constraints": [
+      "b<=a-1"
+    ],
+    "original": {
+      "a": 4,
+      "b": 1
+    },
+    "stem": "The continuous random variable \\(X\\) has probability density function \\(\\mathrm{f}(x)=k({a|int}-x)\\) for \\(0\\le x\\le{a|int}\\), and \\(\\mathrm{f}(x)=0\\) otherwise. Find \\(\\mathrm{P}(X>{b|int})\\).",
+    "answer": {
+      "expression": "d2/a2",
+      "format": "\\(\\dfrac{{d2|int}}{{a2|int}}\\approx{P|sf3z}\\)",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "H",
+        "text_tex": "Triangle area: \\(\\dfrac12\\times{a|int}\\times{a|int}k=1\\)",
+        "result": "a2/2",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Total area 1 (by geometry or integration)."
+      },
+      {
+        "name": "K",
+        "text_tex": "\\(k=\\dfrac{2}{{a2|int}}\\)",
+        "result": "1/H",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Correct k."
+      },
+      {
+        "name": "Pm",
+        "text_tex": "\\(\\mathrm{P}(X>{b|int})=\\dfrac12\\times{d|int}\\times{d|int}k\\)",
+        "result": "d2*K/2",
+        "format": "sf3z",
+        "mark": "M1",
+        "note": "Area of the triangle from b to the end of the range (or integrate)."
+      },
+      {
+        "name": "P",
+        "text_tex": "\\(=\\dfrac{{d2|int}}{{a2|int}}\\approx{P|sf3z}\\)",
+        "result": "Pm",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Exact or 3 s.f."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "repair",
+        "stem": "The time, \\(T\\) hours, taken to repair a machine has probability density function \\(\\mathrm{f}(t)=k({a|int}-t)\\) for \\(0\\le t\\le{a|int}\\), and \\(\\mathrm{f}(t)=0\\) otherwise. Find the probability that a repair takes more than {b|int} hours.",
+        "params": [
+          {
+            "name": "a",
+            "min": 3,
+            "max": 8,
+            "step": 1
+          },
+          {
+            "name": "b",
+            "min": 2,
+            "max": 7,
+            "step": 1
+          }
+        ],
+        "step_text": {
+          "Pm": "\\(\\mathrm{P}(T>{b|int})=\\dfrac12\\times{d|int}\\times{d|int}k\\)"
+        }
+      },
+      {
+        "id": "rope",
+        "stem": "The length, \\(X\\) m, of rope left on a reel has probability density function \\(\\mathrm{f}(x)=k({a|int}-x)\\) for \\(0\\le x\\le{a|int}\\), and \\(\\mathrm{f}(x)=0\\) otherwise. Find the probability that more than {b|int} m of rope is left.",
+        "params": [
+          {
+            "name": "a",
+            "min": 5,
+            "max": 12,
+            "step": 1
+          },
+          {
+            "name": "b",
+            "min": 2,
+            "max": 10,
+            "step": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "S2-4.1-QC4-gen",
+    "section": "S2-4.1",
+    "kind": "generated",
+    "title": "Reciprocal PDF: constant and probability",
+    "marks": 4,
+    "source": "S2 Ch4 theory S2-4.1 Quick check 4 (f(x) = k/x², 1 ≤ x ≤ 2: k = 2, P(X > 1.5) = 1/3)",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 10,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 1.5,
+        "max": 9.5,
+        "step": 0.5
+      }
+    ],
+    "derived": {
+      "am1": "a-1",
+      "bm": "b"
+    },
+    "constraints": [
+      "b<=a-0.5"
+    ],
+    "original": {
+      "a": 2,
+      "b": 1.5
+    },
+    "stem": "The continuous random variable \\(X\\) has probability density function \\(\\mathrm{f}(x)=\\dfrac{k}{x^2}\\) for \\(1\\le x\\le{a|int}\\), and \\(\\mathrm{f}(x)=0\\) otherwise.\n(a) Find the value of \\(k\\).\n(b) Find \\(\\mathrm{P}(X>{b|raw})\\).",
+    "answer": {
+      "parts": [
+        {
+          "expression": "a/(a-1)",
+          "format": "(a) \\(k=\\dfrac{{a|int}}{{am1|int}}\\approx{K|sf3z}\\)",
+          "part": "(a)",
+          "accept_as": "sf",
+          "sf": 3
+        },
+        {
+          "expression": "a/(a-1)*(1/b-1/a)",
+          "format": "(b) {P|sf3z}",
+          "part": "(b)",
+          "accept_as": "sf",
+          "sf": 3
+        }
+      ]
+    },
+    "steps": [
+      {
+        "name": "H",
+        "text_tex": "(a) \\(\\displaystyle\\int_1^{{a|int}}\\dfrac{k}{x^2}\\,\\mathrm{d}x=k\\left[-\\dfrac1x\\right]_1^{{a|int}}=k\\left(1-\\dfrac{1}{{a|int}}\\right)=1\\)",
+        "result": "1-1/a",
+        "format": "sf3z",
+        "mark": "M1",
+        "note": "Integrate f(x) over the whole range and set equal to 1."
+      },
+      {
+        "name": "K",
+        "text_tex": "\\(k=\\dfrac{{a|int}}{{am1|int}}\\approx{K|sf3z}\\)",
+        "result": "1/H",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Exact or 3 s.f."
+      },
+      {
+        "name": "Pm",
+        "text_tex": "(b) \\(k\\left[-\\dfrac1x\\right]_{{b|raw}}^{{a|int}}=k\\left(\\dfrac{1}{{b|raw}}-\\dfrac{1}{{a|int}}\\right)\\)",
+        "result": "K*(1/b-1/a)",
+        "format": "sf3z",
+        "mark": "M1",
+        "note": "Integrate f(x) between the correct limits."
+      },
+      {
+        "name": "P",
+        "text_tex": "\\(\\approx{P|sf3z}\\)",
+        "result": "Pm",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Exact or 3 s.f."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "journey",
+        "stem": "The journey time, \\(T\\) hours, of a ferry has probability density function \\(\\mathrm{f}(t)=\\dfrac{k}{t^2}\\) for \\(1\\le t\\le{a|int}\\), and \\(\\mathrm{f}(t)=0\\) otherwise.\n(a) Find the value of \\(k\\).\n(b) Find the probability that a journey takes more than {b|raw} hours.",
+        "params": [
+          {
+            "name": "a",
+            "min": 2,
+            "max": 6,
+            "step": 1
+          },
+          {
+            "name": "b",
+            "min": 1.5,
+            "max": 5.5,
+            "step": 0.5
+          }
+        ],
+        "step_text": {
+          "H": "(a) \\(\\displaystyle\\int_1^{{a|int}}\\dfrac{k}{t^2}\\,\\mathrm{d}t=k\\left[-\\dfrac1t\\right]_1^{{a|int}}=k\\left(1-\\dfrac{1}{{a|int}}\\right)=1\\)",
+          "Pm": "(b) \\(k\\left[-\\dfrac1t\\right]_{{b|raw}}^{{a|int}}=k\\left(\\dfrac{1}{{b|raw}}-\\dfrac{1}{{a|int}}\\right)\\)"
+        }
+      },
+      {
+        "id": "call",
+        "stem": "The length, \\(X\\) minutes, of a telephone call to a help line has probability density function \\(\\mathrm{f}(x)=\\dfrac{k}{x^2}\\) for \\(1\\le x\\le{a|int}\\), and \\(\\mathrm{f}(x)=0\\) otherwise.\n(a) Find the value of \\(k\\).\n(b) Find the probability that a call lasts more than {b|raw} minutes.",
+        "params": [
+          {
+            "name": "a",
+            "min": 3,
+            "max": 10,
+            "step": 1
+          },
+          {
+            "name": "b",
+            "min": 1.5,
+            "max": 9.5,
+            "step": 0.5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "S2-4.1-PP-9709-72-MJ15-Q6",
+    "section": "S2-4.1",
+    "kind": "pastpaper",
+    "title": "Waiting time: constant and probability",
+    "marks": 6,
+    "source": {
+      "paper": "9709/72/M/J/15 Q6(i)(ii)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s15_qp_72.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s15_ms_72.pdf",
+      "note": "Stem text verbatim from the QP PDF; steps and marks from the official MS PDF (UCLES). Part (iii) (mean) is outside this section."
+    },
+    "stem": "The waiting time, \\(T\\) minutes, for patients at a doctor’s surgery has probability density function given\nby\n\\(\\mathrm{f}(t)=\\begin{cases}k(225-t^2) & 0\\leqslant t\\leqslant15,\\\\ 0 & \\text{otherwise,}\\end{cases}\\)\nwhere \\(k\\) is a constant.",
+    "parts": [
+      {
+        "part": "(i)",
+        "stem": "Show that \\(k=\\frac{1}{2250}\\).",
+        "marks": 3,
+        "answer": {
+          "expression": "1/2250",
+          "official": "k = 1/2250 (AG)",
+          "accept_as": "sf",
+          "sf": 3
+        },
+        "steps": [
+          {
+            "name": "m1",
+            "text_tex": "\\(\\displaystyle\\int_0^{15}k(225-t^2)\\,\\mathrm{d}t=1\\)",
+            "result": "None",
+            "format": "num",
+            "mark": "M1",
+            "note": "MS: M1 attempt to integrate f(t) and = 1; ignore limits."
+          },
+          {
+            "name": "I1",
+            "text_tex": "\\(k\\left[225t-\\dfrac{t^3}{3}\\right]_0^{15}=1\\)",
+            "result": "None",
+            "format": "num",
+            "mark": "A1",
+            "note": "MS: A1 correct integration and limits."
+          },
+          {
+            "name": "k",
+            "text_tex": "\\(k(3375-1125)=1\\), so \\(2250k=1\\), \\(k=\\dfrac{1}{2250}\\)",
+            "result": "1/2250",
+            "format": "num",
+            "mark": "A1",
+            "note": "MS: A1 no errors seen (answer given)."
+          }
+        ]
+      },
+      {
+        "part": "(ii)",
+        "stem": "Find the probability that a patient has to wait for more than 10 minutes.",
+        "marks": 3,
+        "answer": {
+          "expression": "4/27",
+          "official": "4/27 or 0.148 (3 sf)",
+          "accept_as": "sf",
+          "sf": 3
+        },
+        "steps": [
+          {
+            "name": "m2",
+            "text_tex": "\\(\\dfrac{1}{2250}\\displaystyle\\int_{10}^{15}(225-t^2)\\,\\mathrm{d}t\\)",
+            "result": "None",
+            "format": "num",
+            "mark": "M1",
+            "note": "MS: M1 attempt to integrate, ignore limits; or 1 − integral from 0 to 10."
+          },
+          {
+            "name": "I2",
+            "text_tex": "\\(=\\dfrac{1}{2250}\\left[225t-\\dfrac{t^3}{3}\\right]_{10}^{15}\\)",
+            "result": "None",
+            "format": "num",
+            "mark": "A1",
+            "note": "MS: A1 correct integration and limits; condone missing k."
+          },
+          {
+            "name": "p",
+            "text_tex": "\\(=\\dfrac{1}{2250}\\left[2250-\\left(2250-\\dfrac{1000}{3}\\right)\\right]=\\dfrac{4}{27}\\approx0.148\\)",
+            "result": "4/27",
+            "format": "num",
+            "mark": "A1",
+            "note": "MS: A1 4/27 or 0.148 (3 sf)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "S2-4.1-PP-9709-73-ON19-Q6",
+    "section": "S2-4.1",
+    "kind": "pastpaper",
+    "title": "Quadratic PDF: constant and probability",
+    "marks": 5,
+    "source": {
+      "paper": "9709/73/O/N/19 Q6(i)(ii)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w19_qp_73.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w19_ms_73.pdf",
+      "note": "Stem text verbatim from the QP PDF; steps and marks from the official MS PDF (UCLES). Part (iii) (mean and variance) is outside this section."
+    },
+    "stem": "A random variable \\(X\\) has probability density function given by\n\\(\\mathrm{f}(x)=\\begin{cases}k(3x-x^2) & 0\\leqslant x\\leqslant3,\\\\ 0 & \\text{otherwise.}\\end{cases}\\)",
+    "parts": [
+      {
+        "part": "(i)",
+        "stem": "Show that \\(k=\\frac{2}{9}\\).",
+        "marks": 3,
+        "answer": {
+          "expression": "2/9",
+          "official": "k = 2/9 (AG)",
+          "accept_as": "sf",
+          "sf": 3
+        },
+        "steps": [
+          {
+            "name": "m1",
+            "text_tex": "\\(k\\displaystyle\\int_0^3(3x-x^2)\\,\\mathrm{d}x=1\\)",
+            "result": "None",
+            "format": "num",
+            "mark": "M1",
+            "note": "MS: M1 attempt to integrate f(x) and = 1."
+          },
+          {
+            "name": "I1",
+            "text_tex": "\\(k\\left[\\dfrac{3x^2}{2}-\\dfrac{x^3}{3}\\right]_0^3=1\\), \\(k\\left(\\dfrac{27}{2}-\\dfrac{27}{3}\\right)=1\\)",
+            "result": "None",
+            "format": "num",
+            "mark": "A1",
+            "note": "MS: A1 correct integral and limits."
+          },
+          {
+            "name": "k",
+            "text_tex": "\\(\\dfrac92k=1\\), so \\(k=\\dfrac29\\)",
+            "result": "2/9",
+            "format": "num",
+            "mark": "A1",
+            "note": "MS: A1 AG, no errors seen."
+          }
+        ]
+      },
+      {
+        "part": "(ii)",
+        "stem": "Find \\(\\mathrm{P}(1\\leqslant X\\leqslant2)\\).",
+        "marks": 2,
+        "answer": {
+          "expression": "13/27",
+          "official": "13/27 or 0.481 (3 sf)",
+          "accept_as": "sf",
+          "sf": 3
+        },
+        "steps": [
+          {
+            "name": "m2",
+            "text_tex": "\\(\\dfrac29\\displaystyle\\int_1^2(3x-x^2)\\,\\mathrm{d}x=\\dfrac29\\left[\\dfrac{3x^2}{2}-\\dfrac{x^3}{3}\\right]_1^2=\\dfrac29\\left(6-\\dfrac83-\\dfrac32+\\dfrac13\\right)\\)",
+            "result": "None",
+            "format": "num",
+            "mark": "M1",
+            "note": "MS: M1 attempt to integrate f(x) with limits 1 and 2, OE."
+          },
+          {
+            "name": "p",
+            "text_tex": "\\(=\\dfrac{13}{27}\\approx0.481\\)",
+            "result": "13/27",
+            "format": "num",
+            "mark": "A1",
+            "note": "MS: A1 13/27 or 0.481 (3 sf)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "S2-4.1-PP-9709-71-MJ18-Q6",
+    "section": "S2-4.1",
+    "kind": "pastpaper",
+    "title": "Test time: reciprocal-square PDF",
+    "marks": 6,
+    "source": {
+      "paper": "9709/71/M/J/18 Q6(i)(iii)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s18_qp_71.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s18_ms_71.pdf",
+      "note": "Stem text verbatim from the QP PDF; steps and marks from the official MS PDF (UCLES). Parts (ii) (mean) and (iv) (percentile) are outside this section."
+    },
+    "stem": "The time, in minutes, taken by people to complete a test is modelled by the continuous random variable\n\\(X\\) with probability density function given by\n\\(\\mathrm{f}(x)=\\begin{cases}\\dfrac{k}{x^2} & 5\\leqslant x\\leqslant10,\\\\ 0 & \\text{otherwise,}\\end{cases}\\)\nwhere \\(k\\) is a constant.",
+    "parts": [
+      {
+        "part": "(i)",
+        "stem": "Show that \\(k=10\\).",
+        "marks": 3,
+        "answer": {
+          "expression": "10",
+          "official": "k = 10 (AG)",
+          "accept_as": "integer"
+        },
+        "steps": [
+          {
+            "name": "m1",
+            "text_tex": "\\(\\displaystyle\\int_5^{10}\\dfrac{k}{x^2}\\,\\mathrm{d}x=1\\)",
+            "result": "None",
+            "format": "num",
+            "mark": "M1",
+            "note": "MS: M1 attempt integration of f(x) and = 1; ignore limits."
+          },
+          {
+            "name": "I1",
+            "text_tex": "\\(\\left[-\\dfrac{k}{x}\\right]_5^{10}=1\\), that is \\(\\dfrac{k}{5}-\\dfrac{k}{10}=1\\)",
+            "result": "None",
+            "format": "num",
+            "mark": "A1",
+            "note": "MS: A1 correct integration and limits and = 1 oe."
+          },
+          {
+            "name": "k",
+            "text_tex": "\\(k=10\\)",
+            "result": "10",
+            "format": "int",
+            "mark": "A1",
+            "note": "MS: A1 no errors seen (answer given)."
+          }
+        ]
+      },
+      {
+        "part": "(iii)",
+        "stem": "Find \\(\\mathrm{P}(X>9)\\).",
+        "marks": 3,
+        "answer": {
+          "expression": "1/9",
+          "official": "1/9 or 0.111 (3 sf)",
+          "accept_as": "sf",
+          "sf": 3
+        },
+        "steps": [
+          {
+            "name": "m3",
+            "text_tex": "\\(10\\displaystyle\\int_9^{10}\\dfrac{1}{x^2}\\,\\mathrm{d}x=10\\left[-\\dfrac1x\\right]_9^{10}\\)",
+            "result": "None",
+            "format": "num",
+            "mark": "M1",
+            "note": "MS: M1 attempt integration of f(x) with correct limits."
+          },
+          {
+            "name": "I3",
+            "text_tex": "\\(=10\\left(-\\dfrac{1}{10}+\\dfrac19\\right)\\)",
+            "result": "None",
+            "format": "num",
+            "mark": "A1",
+            "note": "MS: A1 substitute correct limits in correct integration."
+          },
+          {
+            "name": "p",
+            "text_tex": "\\(=\\dfrac19\\approx0.111\\)",
+            "result": "1/9",
+            "format": "num",
+            "mark": "A1",
+            "note": "MS: A1 1/9 or 0.111 (3 sf)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "S2-4.1-PP-MJ15-Q6-similar",
+    "section": "S2-4.1",
+    "kind": "generated",
+    "title": "Quadratic PDF k(c² − t²): constant and probability",
+    "marks": 6,
+    "source": "Similar to 9709/72/M/J/15 Q6(i)(ii); authored marks M1 A1 A1 M1 A1 A1 follow that MS",
+    "params": [
+      {
+        "name": "c",
+        "min": 6,
+        "max": 20,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 1,
+        "max": 19,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "c2": "c*c",
+      "c3": "c*c*c",
+      "D": "2*c*c*c/3",
+      "Q": "2*c*c*c/3-(c*c*b-b*b*b/3)"
+    },
+    "constraints": [
+      "b<=c-1"
+    ],
+    "original": {
+      "c": 15,
+      "b": 10
+    },
+    "stem": "The waiting time, \\(T\\) minutes, at a bus stop has probability density function given by\n\\(\\mathrm{f}(t)=\\begin{cases}k({c2|int}-t^2) & 0\\leqslant t\\leqslant{c|int},\\\\ 0 & \\text{otherwise,}\\end{cases}\\)\nwhere \\(k\\) is a constant.\n(i) Find the value of \\(k\\).\n(ii) Find the probability that a passenger waits for more than {b|int} minutes.",
+    "answer": {
+      "parts": [
+        {
+          "expression": "3/(2*c3)",
+          "format": "(i) \\(k\\approx{K|sf3z}\\)",
+          "part": "(i)",
+          "accept_as": "sf",
+          "sf": 3
+        },
+        {
+          "expression": "3/(2*c3)*(2*c3/3-(c2*b-b*b*b/3))",
+          "format": "(ii) {P|sf3z}",
+          "part": "(ii)",
+          "accept_as": "sf",
+          "sf": 3
+        }
+      ]
+    },
+    "steps": [
+      {
+        "name": "m1",
+        "text_tex": "(i) \\(\\displaystyle\\int_0^{{c|int}}k({c2|int}-t^2)\\,\\mathrm{d}t=1\\)",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Integrate f(t) over the whole range and set equal to 1."
+      },
+      {
+        "name": "D",
+        "text_tex": "\\(k\\left[{c2|int}t-\\dfrac{t^3}{3}\\right]_0^{{c|int}}=k\\left({c3|int}-\\dfrac{{c3|int}}{3}\\right)=1\\)",
+        "result": "2*c3/3",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Correct integration and limits."
+      },
+      {
+        "name": "K",
+        "text_tex": "\\(k=\\dfrac{3}{2\\times{c3|int}}\\approx{K|sf3z}\\)",
+        "result": "1/D",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Exact or 3 s.f."
+      },
+      {
+        "name": "m2",
+        "text_tex": "(ii) \\(\\displaystyle k\\int_{{b|int}}^{{c|int}}({c2|int}-t^2)\\,\\mathrm{d}t\\)",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Integrate f(t) between b and c (or 1 − integral from 0 to b)."
+      },
+      {
+        "name": "Q",
+        "text_tex": "\\(=k\\left[{c2|int}t-\\dfrac{t^3}{3}\\right]_{{b|int}}^{{c|int}}\\)",
+        "result": "Q",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Correct integration and limits."
+      },
+      {
+        "name": "P",
+        "text_tex": "\\(\\approx{P|sf3z}\\)",
+        "result": "K*Q",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Exact or 3 s.f."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "service",
+        "stem": "The time, \\(T\\) minutes, taken to serve a customer at a bank has probability density function given by\n\\(\\mathrm{f}(t)=\\begin{cases}k({c2|int}-t^2) & 0\\leqslant t\\leqslant{c|int},\\\\ 0 & \\text{otherwise,}\\end{cases}\\)\nwhere \\(k\\) is a constant.\n(i) Find the value of \\(k\\).\n(ii) Find the probability that serving a customer takes more than {b|int} minutes.",
+        "params": [
+          {
+            "name": "c",
+            "min": 5,
+            "max": 12,
+            "step": 1
+          },
+          {
+            "name": "b",
+            "min": 1,
+            "max": 11,
+            "step": 1
+          }
+        ]
+      },
+      {
+        "id": "depth",
+        "stem": "The depth, \\(T\\) m, of water in a tank has probability density function given by\n\\(\\mathrm{f}(t)=\\begin{cases}k({c2|int}-t^2) & 0\\leqslant t\\leqslant{c|int},\\\\ 0 & \\text{otherwise,}\\end{cases}\\)\nwhere \\(k\\) is a constant.\n(i) Find the value of \\(k\\).\n(ii) Find the probability that the depth is more than {b|int} m.",
+        "params": [
+          {
+            "name": "c",
+            "min": 3,
+            "max": 8,
+            "step": 1
+          },
+          {
+            "name": "b",
+            "min": 1,
+            "max": 7,
+            "step": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "S2-4.1-PP-ON19-Q6-similar",
+    "section": "S2-4.1",
+    "kind": "generated",
+    "title": "Quadratic PDF k(ax − x²): constant and probability",
+    "marks": 5,
+    "source": "Similar to 9709/73/O/N/19 Q6(i)(ii); authored marks M1 A1 A1 M1 A1 follow that MS",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "p",
+        "min": 0,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 1,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "a3": "a*a*a",
+      "W": "a*(q*q-p*p)/2-(q*q*q-p*p*p)/3"
+    },
+    "constraints": [
+      "q<=a",
+      "p<=q-1"
+    ],
+    "original": {
+      "a": 3,
+      "p": 1,
+      "q": 2
+    },
+    "stem": "A random variable \\(X\\) has probability density function given by\n\\(\\mathrm{f}(x)=\\begin{cases}k({a|int}x-x^2) & 0\\leqslant x\\leqslant{a|int},\\\\ 0 & \\text{otherwise.}\\end{cases}\\)\n(i) Find the value of \\(k\\).\n(ii) Find \\(\\mathrm{P}({p|int}\\leqslant X\\leqslant{q|int})\\).",
+    "answer": {
+      "parts": [
+        {
+          "expression": "6/a3",
+          "format": "(i) \\(k=\\dfrac{6}{{a3|int}}\\approx{K|sf3z}\\)",
+          "part": "(i)",
+          "accept_as": "sf",
+          "sf": 3
+        },
+        {
+          "expression": "6/a3*(a*(q*q-p*p)/2-(q*q*q-p*p*p)/3)",
+          "format": "(ii) {P|sf3z}",
+          "part": "(ii)",
+          "accept_as": "sf",
+          "sf": 3
+        }
+      ]
+    },
+    "steps": [
+      {
+        "name": "m1",
+        "text_tex": "(i) \\(\\displaystyle k\\int_0^{{a|int}}({a|int}x-x^2)\\,\\mathrm{d}x=1\\)",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Integrate f(x) over the whole range and set equal to 1."
+      },
+      {
+        "name": "D",
+        "text_tex": "\\(k\\left[\\dfrac{{a|int}x^2}{2}-\\dfrac{x^3}{3}\\right]_0^{{a|int}}=\\dfrac{{a3|int}}{6}k=1\\)",
+        "result": "a3/6",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Correct integral and limits."
+      },
+      {
+        "name": "K",
+        "text_tex": "\\(k=\\dfrac{6}{{a3|int}}\\approx{K|sf3z}\\)",
+        "result": "1/D",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Exact or 3 s.f."
+      },
+      {
+        "name": "W",
+        "text_tex": "(ii) \\(\\displaystyle k\\int_{{p|int}}^{{q|int}}({a|int}x-x^2)\\,\\mathrm{d}x=k\\left[\\dfrac{{a|int}x^2}{2}-\\dfrac{x^3}{3}\\right]_{{p|int}}^{{q|int}}\\)",
+        "result": "W",
+        "format": "sf3z",
+        "mark": "M1",
+        "note": "Integrate f(x) with limits p and q."
+      },
+      {
+        "name": "P",
+        "text_tex": "\\(\\approx{P|sf3z}\\)",
+        "result": "K*W",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Exact or 3 s.f."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "time",
+        "stem": "The time, \\(X\\) hours, that a battery lasts in a test is modelled by a random variable with probability density function\n\\(\\mathrm{f}(x)=\\begin{cases}k({a|int}x-x^2) & 0\\leqslant x\\leqslant{a|int},\\\\ 0 & \\text{otherwise.}\\end{cases}\\)\n(i) Find the value of \\(k\\).\n(ii) Find \\(\\mathrm{P}({p|int}\\leqslant X\\leqslant{q|int})\\).",
+        "params": [
+          {
+            "name": "a",
+            "min": 2,
+            "max": 5,
+            "step": 1
+          },
+          {
+            "name": "p",
+            "min": 0,
+            "max": 4,
+            "step": 1
+          },
+          {
+            "name": "q",
+            "min": 1,
+            "max": 5,
+            "step": 1
+          }
+        ]
+      },
+      {
+        "id": "height",
+        "stem": "The height, \\(X\\) m, reached by a ball is modelled by a random variable with probability density function\n\\(\\mathrm{f}(x)=\\begin{cases}k({a|int}x-x^2) & 0\\leqslant x\\leqslant{a|int},\\\\ 0 & \\text{otherwise.}\\end{cases}\\)\n(i) Find the value of \\(k\\).\n(ii) Find the probability that the height is between {p|int} m and {q|int} m.",
+        "params": [
+          {
+            "name": "a",
+            "min": 4,
+            "max": 8,
+            "step": 1
+          },
+          {
+            "name": "p",
+            "min": 1,
+            "max": 6,
+            "step": 1
+          },
+          {
+            "name": "q",
+            "min": 2,
+            "max": 7,
+            "step": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "S2-4.1-PP-MJ18-Q6-similar",
+    "section": "S2-4.1",
+    "kind": "generated",
+    "title": "Reciprocal-square PDF k/x² on an interval",
+    "marks": 6,
+    "source": "Similar to 9709/71/M/J/18 Q6(i)(iii); authored marks M1 A1 A1 M1 A1 A1 follow that MS",
+    "params": [
+      {
+        "name": "m",
+        "min": 1,
+        "max": 10,
+        "step": 1
+      },
+      {
+        "name": "n",
+        "min": 2,
+        "max": 30,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 2,
+        "max": 29,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "mn": "m*n",
+      "nm": "n-m"
+    },
+    "constraints": [
+      "n>=m+1",
+      "b>=m+1",
+      "b<=n-1"
+    ],
+    "original": {
+      "m": 5,
+      "n": 10,
+      "b": 9
+    },
+    "stem": "The time, in minutes, taken by people to complete a task is modelled by the continuous random variable \\(X\\) with probability density function given by\n\\(\\mathrm{f}(x)=\\begin{cases}\\dfrac{k}{x^2} & {m|int}\\leqslant x\\leqslant{n|int},\\\\ 0 & \\text{otherwise,}\\end{cases}\\)\nwhere \\(k\\) is a constant.\n(i) Find the value of \\(k\\).\n(ii) Find \\(\\mathrm{P}(X>{b|int})\\).",
+    "answer": {
+      "parts": [
+        {
+          "expression": "m*n/(n-m)",
+          "format": "(i) \\(k=\\dfrac{{mn|int}}{{nm|int}}\\approx{K|sf3z}\\)",
+          "part": "(i)",
+          "accept_as": "sf",
+          "sf": 3
+        },
+        {
+          "expression": "m*n/(n-m)*(1/b-1/n)",
+          "format": "(ii) {P|sf3z}",
+          "part": "(ii)",
+          "accept_as": "sf",
+          "sf": 3
+        }
+      ]
+    },
+    "steps": [
+      {
+        "name": "m1",
+        "text_tex": "(i) \\(\\displaystyle\\int_{{m|int}}^{{n|int}}\\dfrac{k}{x^2}\\,\\mathrm{d}x=1\\)",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Integrate f(x) over the whole range and set equal to 1."
+      },
+      {
+        "name": "D",
+        "text_tex": "\\(\\left[-\\dfrac{k}{x}\\right]_{{m|int}}^{{n|int}}=\\dfrac{k}{{m|int}}-\\dfrac{k}{{n|int}}=1\\)",
+        "result": "1/m-1/n",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Correct integration and limits."
+      },
+      {
+        "name": "K",
+        "text_tex": "\\(k=\\dfrac{{mn|int}}{{nm|int}}\\approx{K|sf3z}\\)",
+        "result": "1/D",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Exact or 3 s.f."
+      },
+      {
+        "name": "m2",
+        "text_tex": "(ii) \\(\\displaystyle\\int_{{b|int}}^{{n|int}}\\dfrac{k}{x^2}\\,\\mathrm{d}x=\\left[-\\dfrac{k}{x}\\right]_{{b|int}}^{{n|int}}\\)",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Integrate f(x) with correct limits."
+      },
+      {
+        "name": "Q",
+        "text_tex": "\\(=k\\left(\\dfrac{1}{{b|int}}-\\dfrac{1}{{n|int}}\\right)\\)",
+        "result": "K*(1/b-1/n)",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Correct limits substituted."
+      },
+      {
+        "name": "P",
+        "text_tex": "\\(\\approx{P|sf3z}\\)",
+        "result": "Q",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Exact or 3 s.f."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "bulbs",
+        "stem": "The lifetime, \\(X\\) years, of a light bulb is modelled by a random variable with probability density function given by\n\\(\\mathrm{f}(x)=\\begin{cases}\\dfrac{k}{x^2} & {m|int}\\leqslant x\\leqslant{n|int},\\\\ 0 & \\text{otherwise,}\\end{cases}\\)\nwhere \\(k\\) is a constant.\n(i) Find the value of \\(k\\).\n(ii) Find the probability that a bulb lasts more than {b|int} years.",
+        "params": [
+          {
+            "name": "m",
+            "min": 1,
+            "max": 4,
+            "step": 1
+          },
+          {
+            "name": "n",
+            "min": 2,
+            "max": 10,
+            "step": 1
+          },
+          {
+            "name": "b",
+            "min": 2,
+            "max": 9,
+            "step": 1
+          }
+        ]
+      },
+      {
+        "id": "distance",
+        "stem": "The distance, \\(X\\) km, that a taxi travels on a journey is modelled by a random variable with probability density function given by\n\\(\\mathrm{f}(x)=\\begin{cases}\\dfrac{k}{x^2} & {m|int}\\leqslant x\\leqslant{n|int},\\\\ 0 & \\text{otherwise,}\\end{cases}\\)\nwhere \\(k\\) is a constant.\n(i) Find the value of \\(k\\).\n(ii) Find the probability that a journey is longer than {b|int} km.",
+        "params": [
+          {
+            "name": "m",
+            "min": 2,
+            "max": 8,
+            "step": 1
+          },
+          {
+            "name": "n",
+            "min": 5,
+            "max": 25,
+            "step": 1
+          },
+          {
+            "name": "b",
+            "min": 3,
+            "max": 24,
+            "step": 1
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 200" width="360" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:360px;height:auto" role="img" aria-labelledby="p123a-t p123a-d">
+<title id="p123a-t">A function and its inverse</title>
+<desc id="p123a-d">Two ovals labelled x and y. An arrow f goes from x to y and an arrow f to the minus one returns from y to x.</desc>
+
+<rect x="0" y="0" width="360" height="200" fill="#fff"/>
+<g font-family="Source Sans 3, DejaVu Sans, sans-serif" font-size="14" fill="#333">
+  <ellipse cx="90" cy="100" rx="50" ry="40" fill="#eef6fb" stroke="#1b5e8a" stroke-width="1.8"/>
+  <ellipse cx="270" cy="100" rx="50" ry="40" fill="#eef6fb" stroke="#1b5e8a" stroke-width="1.8"/>
+  <text x="90" y="105" text-anchor="middle">x</text>
+  <text x="270" y="105" text-anchor="middle">y</text>
+  <path d="M 130,78 C 180,50 180,50 230,78" fill="none" stroke="#1b5e8a" stroke-width="1.7"/>
+  <polygon points="230,78 220,76 224,86" fill="#1b5e8a"/>
+  <text x="180" y="48" text-anchor="middle" fill="#1b5e8a">f</text>
+  <path d="M 230,122 C 180,150 180,150 130,122" fill="none" stroke="#c0392b" stroke-width="1.7"/>
+  <polygon points="130,122 140,124 136,114" fill="#c0392b"/>
+  <text x="180" y="172" text-anchor="middle" fill="#c0392b">f⁻¹</text>
+</g>
+
+</svg>

@@ -1,0 +1,118 @@
+<section class="theory" data-section="S1-4.3">
+<h2>4.3 Independent events and the multiplication law</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Probability &amp; Statistics 1 Coursebook (Dean Chalmers), Chapter 4 Probability, pp.100–107 (Key point 4.8, Worked examples 4.5–4.8, Exercises 4C and 4D). Own wording and new numbers.</p>
+<p class="key-words"><strong>Key words:</strong> <em>independent</em>, <em>multiplication law</em>, <em>tree diagram</em>, <em>with replacement</em></p>
+<h3>Independent events</h3>
+<p>Two events are <strong>independent</strong> if either can occur without being affected by the occurrence of the other. Selections <strong>with replacement</strong>, and separate actions such as rolling two dice, give independent events. (Selections without replacement are not independent, and are studied later.)</p>
+<p>For independent events the <strong>multiplication law</strong> holds:</p>
+$$\mathrm{P}(A\text{ and }B)=\mathrm{P}(A\cap B)=\mathrm{P}(A)\times\mathrm{P}(B).$$
+<p>The same law extends to any number of independent events: \(\mathrm{P}(A\cap B\cap C\cap\ldots)=\mathrm{P}(A)\times\mathrm{P}(B)\times\mathrm{P}(C)\times\cdots\).</p>
+<p>The multiplication law can also be used in reverse, as a test: if \(\mathrm{P}(A\cap B)=\mathrm{P}(A)\times\mathrm{P}(B)\), then \(A\) and \(B\) are independent, and if the two sides are not equal then the events are not independent.</p>
+<h3>Tree diagrams</h3>
+<p>A <strong>tree diagram</strong> shows the outcomes of successive selections, with a probability on each branch. For independent events, multiply from left to right along a path. Mutually exclusive paths are then added vertically. The set of all complete paths is exhaustive, so their probabilities sum to 1.</p>
+<figure class="tree-static">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" style="display:block;width:100%;max-width:640px;height:auto" role="img" aria-labelledby="s1-43-title s1-43-desc"><title id="s1-43-title">Tree diagram for two draws with replacement</title><desc id="s1-43-desc">From a starting point the first draw branches to red with probability 3 over 8 and green with probability 5 over 8. From each of those, the second draw again branches to red 3 over 8 and green 5 over 8. The four path probabilities are 9/64, 15/64, 15/64 and 25/64.</desc>
+<rect x="0" y="0" width="640" height="320" fill="white"/>
+<g stroke="#1B3A6B" stroke-width="2" fill="none">
+<line x1="40" y1="160" x2="200" y2="70"/>
+<line x1="40" y1="160" x2="200" y2="250"/>
+<line x1="230" y1="70" x2="390" y2="30"/>
+<line x1="230" y1="70" x2="390" y2="110"/>
+<line x1="230" y1="250" x2="390" y2="210"/>
+<line x1="230" y1="250" x2="390" y2="290"/>
+</g>
+<g font-family="Arial,sans-serif" font-size="18" fill="#1B3A6B">
+<text x="8" y="156">start</text>
+<text x="108" y="96">3/8</text><text x="200" y="66">R</text>
+<text x="108" y="230">5/8</text><text x="200" y="270">G</text>
+<text x="280" y="36">3/8</text><text x="400" y="26">R</text>
+<text x="280" y="108">5/8</text><text x="400" y="106">G</text>
+<text x="280" y="216">3/8</text><text x="400" y="206">R</text>
+<text x="280" y="296">5/8</text><text x="400" y="286">G</text>
+<text x="470" y="26">P(RR)=9/64</text>
+<text x="470" y="106">P(RG)=15/64</text>
+<text x="470" y="206">P(GR)=15/64</text>
+<text x="470" y="286">P(GG)=25/64</text>
+<text x="200" y="28" text-anchor="middle">1st</text>
+<text x="390" y="28" text-anchor="middle">2nd</text>
+</g>
+</svg>
+<figcaption>Two balls drawn with replacement from a bag of 3 red and 5 green balls. The probabilities on the second set of branches are the same as on the first, because the draws are independent.</figcaption>
+</figure>
+<p>As an alternative to a tree, a possibility diagram (or list of equally likely outcomes) can be used when every combined outcome is equally likely.</p>
+<div class="worked-example">
+<h4>Worked example 1: A tree diagram, with replacement</h4>
+<p class="src">Book: Key point 4.8 and the tree on pp.100–101; Exercise 4C Q1–2</p>
+<p>A bag contains 3 red balls and 5 green balls. One ball is selected at random, replaced, and then a second ball is selected. Find the probability that the two balls are (a) both red (b) different colours.</p>
+<ol class="steps">
+<li>(a) \(\mathrm{P}(RR)=\dfrac38\times\dfrac38=\dfrac{9}{64}\) <span class="mark">M1 A1</span></li>
+<li>(b) \(\mathrm{P}(RG\text{ or }GR)=\dfrac38\times\dfrac58+\dfrac58\times\dfrac38=\dfrac{15}{64}+\dfrac{15}{64}=\dfrac{30}{64}=\dfrac{15}{32}\) <span class="mark">M1 A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> (a) \(\dfrac{9}{64}=0.141\) (3 s.f.) (b) \(\dfrac{15}{32}=0.469\) (3 s.f.)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: Independent repeated trials</h4>
+<p class="src">Book: Worked example 4.6, p.102; Exercise 4C Q4–6</p>
+<p>Each morning the probability that the school bus is late is \(0.3\), independently of other mornings. Find the probability that, on two mornings, the bus is late on (a) the second morning only (b) exactly one of the two mornings (c) at least one of the two mornings.</p>
+<ol class="steps">
+<li>(a) \(\mathrm{P}(NL)=0.7\times0.3=0.21\) <span class="mark">B1</span></li>
+<li>(b) \(\mathrm{P}(LN\text{ or }NL)=0.3\times0.7+0.7\times0.3=0.42\) <span class="mark">M1 A1</span></li>
+<li>(c) \(1-\mathrm{P}(NN)=1-0.7^2=1-0.49=0.51\) <span class="mark">M1 A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> (a) \(0.21\) (b) \(0.42\) (c) \(0.51\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 3: Testing for independence</h4>
+<p class="src">Book: Worked examples 4.7–4.8, pp.105–106; Exercise 4D</p>
+<p>In a group of 80 students, 40 are male and 30 study music. Of the males, 15 study music. One student is selected at random. Show that the events &ldquo;the student is male&rdquo; and &ldquo;the student studies music&rdquo; are independent.</p>
+<ol class="steps">
+<li>\(\mathrm{P}(M)=\dfrac{40}{80}=\dfrac12\), \(\mathrm{P}(S)=\dfrac{30}{80}=\dfrac{3}{8}\), \(\mathrm{P}(M\cap S)=\dfrac{15}{80}=\dfrac{3}{16}\) <span class="mark">B1</span></li>
+<li>\(\mathrm{P}(M)\times\mathrm{P}(S)=\dfrac12\times\dfrac38=\dfrac{3}{16}=\mathrm{P}(M\cap S)\) <span class="mark">M1 A1</span></li>
+<li>The multiplication law holds, so the events are independent <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> independent, because \(\mathrm{P}(M\cap S)=\mathrm{P}(M)\mathrm{P}(S)=\dfrac{3}{16}\)</p>
+</div>
+<h3>Quick checks</h3>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>Events \(A\) and \(B\) are independent, with \(\mathrm{P}(A)=0.4\) and \(\mathrm{P}(B)=0.5\). Find \(\mathrm{P}(A\cap B)\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(\mathrm{P}(A\cap B)=0.4\times0.5=0.2\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(0.2\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>The probability that a train is late on any morning is \(0.2\), independently of other mornings. Find the probability that the train is late on exactly one of two mornings.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(\mathrm{P}(LN)+\mathrm{P}(NL)=0.2\times0.8+0.8\times0.2=0.32\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(0.32\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>Events \(A\) and \(B\) are such that \(\mathrm{P}(A)=0.5\), \(\mathrm{P}(B)=0.4\) and \(\mathrm{P}(A\cap B)=0.2\). Find \(\mathrm{P}(A)\times\mathrm{P}(B)\), and hence decide whether \(A\) and \(B\) are independent.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(\mathrm{P}(A)\times\mathrm{P}(B)=0.5\times0.4=0.2\)</li>
+<li>This equals \(\mathrm{P}(A\cap B)\), so the events are independent</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(0.2\); yes, they are independent</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 4</h4>
+<p>A fair coin is tossed twice. Find the probability of obtaining two heads.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>The tosses are independent: \(\dfrac12\times\dfrac12=\dfrac14\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac14=0.25\)</p>
+</details>
+</div>
+<p class="marks-key"><strong>Marks:</strong> M = method, A = accurate answer (depends on M), B = independent mark. Marks on worked examples are illustrative, not official. Give exact fractions or answers correct to 3 significant figures. Independent is not the same as mutually exclusive: mutually exclusive events with positive probabilities cannot be independent, because then \(\mathrm{P}(A\cap B)=0\) but \(\mathrm{P}(A)\mathrm{P}(B)\gt 0\).</p>
+</section>

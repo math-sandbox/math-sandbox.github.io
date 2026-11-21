@@ -1,0 +1,336 @@
+[
+  {
+    "id": "P23-1.2-QC1-gen",
+    "section": "P23-1.2",
+    "kind": "generated",
+    "title": "x-coordinate of the vertex of y = |ax-b|",
+    "marks": 2,
+    "source": "P23 Ch1 theory P23-1.2 Quick check 1 (vertex of y=|2x-6| has x-coordinate 3)",
+    "params": [
+      {
+        "name": "a",
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 2,
+        "max": 24,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "E": "b/a"
+    },
+    "constraints": [
+      "a>=1",
+      "b>=2",
+      "b%a==0"
+    ],
+    "original": {
+      "a": 2,
+      "b": 6
+    },
+    "stem": "The graph of \\(y=\\lvert {a|int}x-{b|int}\\rvert\\) has a vertex on the \\(x\\)-axis. Write down the \\(x\\)-coordinate of the vertex.",
+    "answer": {
+      "expression": "b/a",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The vertex is where \\({a|int}x-{b|int}=0\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "The V-shape meets the x-axis where the inside is zero."
+      },
+      {
+        "name": "E",
+        "text_tex": "\\(x=\\dfrac{{b|int}}{{a|int}}\\)",
+        "result": "b/a",
+        "format": "raw",
+        "mark": "A1",
+        "note": "x-coordinate of the vertex."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "sketch",
+        "stem": "On a sketch of \\(y=\\lvert {a|int}x-{b|int}\\rvert\\), the vertex lies on the \\(x\\)-axis. Write down the \\(x\\)-coordinate of the vertex.",
+        "note": "sketch wording"
+      },
+      {
+        "id": "point",
+        "stem": "The point where the graph of \\(y=\\lvert {a|int}x-{b|int}\\rvert\\) meets the \\(x\\)-axis is the vertex. Write down the \\(x\\)-coordinate of this point.",
+        "note": "meets the x-axis wording"
+      }
+    ]
+  },
+  {
+    "id": "P23-1.2-QC2-gen",
+    "section": "P23-1.2",
+    "kind": "generated",
+    "title": "y-intercept of y = |ax-b|",
+    "marks": 2,
+    "source": "P23 Ch1 theory P23-1.2 Quick check 2 (y-intercept of y=|3x-8| is 8)",
+    "params": [
+      {
+        "name": "a",
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 2,
+        "max": 12,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "E": "b"
+    },
+    "constraints": [
+      "a>=1",
+      "b>=2"
+    ],
+    "original": {
+      "a": 3,
+      "b": 8
+    },
+    "stem": "Find the \\(y\\)-intercept of \\(y=\\lvert {a|int}x-{b|int}\\rvert\\).",
+    "answer": {
+      "expression": "b",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "When \\(x=0\\), \\(y=\\lvert -{b|int}\\rvert\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Substitute x=0."
+      },
+      {
+        "name": "E",
+        "text_tex": "\\(y={b|int}\\)",
+        "result": "b",
+        "format": "raw",
+        "mark": "A1",
+        "note": "The y-intercept is the modulus of the constant term."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "axis",
+        "stem": "The graph of \\(y=\\lvert {a|int}x-{b|int}\\rvert\\) meets the \\(y\\)-axis at \\((0,k)\\). Find the value of \\(k\\).",
+        "note": "meets the y-axis wording"
+      },
+      {
+        "id": "value",
+        "stem": "Write down the value of \\(y=\\lvert {a|int}x-{b|int}\\rvert\\) at \\(x=0\\).",
+        "note": "evaluate at 0"
+      }
+    ]
+  },
+  {
+    "id": "P23-1.2-QC3-gen",
+    "section": "P23-1.2",
+    "kind": "generated",
+    "title": "Value of |ax-b| at a given x",
+    "marks": 2,
+    "source": "P23 Ch1 theory P23-1.2 Quick check 3 (|2x-5| at x=1 equals 3)",
+    "params": [
+      {
+        "name": "a",
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 1,
+        "max": 9,
+        "step": 1
+      },
+      {
+        "name": "n",
+        "min": -3,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "E": "abs(a*n-b)"
+    },
+    "constraints": [
+      "a>=1",
+      "b>=1",
+      "n!=0"
+    ],
+    "original": {
+      "a": 2,
+      "b": 5,
+      "n": 1
+    },
+    "stem": "Evaluate \\(\\lvert {a|int}x-{b|int}\\rvert\\) at \\(x={n|int}\\).",
+    "answer": {
+      "expression": "abs(a*n-b)",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "Substitute \\(x={n|int}\\) to obtain \\(\\lvert {a|int}\\times{n|int}-{b|int}\\rvert\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Substitute the given x-value."
+      },
+      {
+        "name": "E",
+        "text_tex": "\\(\\lvert {a|int}\\times{n|int}-{b|int}\\rvert={E|int}\\)",
+        "result": "abs(a*n-b)",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Value of the modulus."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "point",
+        "stem": "The graph of \\(y=\\lvert {a|int}x-{b|int}\\rvert\\) is to be read at \\(x={n|int}\\). Find the corresponding y-value.",
+        "note": "graph reading wording"
+      },
+      {
+        "id": "letter",
+        "stem": "Evaluate \\(\\lvert {a|int}u-{b|int}\\rvert\\) at \\(u={n|int}\\).",
+        "note": "unknown u"
+      }
+    ]
+  },
+  {
+    "id": "P23-1.2-PP-9709-22-FM21-Q1",
+    "section": "P23-1.2",
+    "kind": "pastpaper",
+    "marking": "manual",
+    "title": "Sketch y=|3x-5| and y=x+2, and solve |3x-5|=x+2",
+    "marks": 5,
+    "source": {
+      "paper": "9709/22/F/M/21 Q1",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m21_qp_22.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m21_ms_22.pdf",
+      "note": "Stem verbatim from the QP PDF (modulus bars checked on the rendered page). Steps and marks from the official MS PDF. Both (a) and (b) are kept: the sketch and the equation (no inequality). Fully manual, steps only, because (a) is a sketch and (b) has two official roots in one part."
+    },
+    "stem": "(a) Sketch, on the same diagram, the graphs of \\(y=\\lvert 3x-5\\rvert\\) and \\(y=x+2\\).\n\n(b) Solve the equation \\(\\lvert 3x-5\\rvert=x+2\\).",
+    "steps": [
+      {
+        "name": "vshape",
+        "text_tex": "(a) Draw a V-shaped graph with its vertex on the positive x-axis.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 Draw V-shaped graph with vertex on positive x-axis."
+      },
+      {
+        "name": "line",
+        "text_tex": "(a) Draw a correct graph of y = x+2 with a smaller positive gradient, crossing the y-axis between 0 and the y-intercept of the V-shaped graph.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 Draw correct graph of y=x+2 with smaller positive gradient. Crossing y-axis between 0 and y-intercept of first graph."
+      },
+      {
+        "name": "same",
+        "text_tex": "(b) Solve 3x-5 = x+2 to obtain x = 7/2.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 Solve 3x-5 = x+2 to obtain x=7/2."
+      },
+      {
+        "name": "opp",
+        "text_tex": "(b) Attempt the solution of a linear equation in which the signs of 3x and x are different.",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: M1 Attempt solution of linear equation where signs of 3x and x are different."
+      },
+      {
+        "name": "ans",
+        "text_tex": "(b) Obtain x = 3/4. (The two roots are 7/2 and 3/4. Alternative: state or imply (3x-5)^2 = (x+2)^2, attempt the 3-term quadratic, and obtain both roots.)",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: A1 Obtain x=3/4. Alternative method: B1 non-modulus equation (3x-5)^2=(x+2)^2; M1 attempt 3-term quadratic; A1 obtain both roots."
+      }
+    ]
+  },
+  {
+    "id": "P23-1.2-PP-9709-22-MJ22-Q2",
+    "section": "P23-1.2",
+    "kind": "pastpaper",
+    "marking": "manual",
+    "title": "Sketch y=|2x-9| and y=5x-3, and solve |2x-9|=5x-3",
+    "marks": 4,
+    "source": {
+      "paper": "9709/22/M/J/22 Q2",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s22_qp_22.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s22_ms_22.pdf",
+      "note": "Stem verbatim from the QP PDF (modulus bars checked on the rendered page). Steps and marks from the official MS PDF. Both (a) and (b) are kept: the sketch and the equation (no inequality). Fully manual, steps only, because (a) is a sketch. The only valid root is 12/7; x=2 is not a solution."
+    },
+    "stem": "(a) Sketch, on the same diagram, the graphs of \\(y=\\lvert 2x-9\\rvert\\) and \\(y=5x-3\\).\n\n(b) Solve the equation \\(\\lvert 2x-9\\rvert=5x-3\\).",
+    "steps": [
+      {
+        "name": "vshape",
+        "text_tex": "(a) Draw a V-shaped graph with its vertex on the positive x-axis.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: *B1 Draw V-shaped graph with vertex on positive x-axis."
+      },
+      {
+        "name": "line",
+        "text_tex": "(a) Draw a more or less correct graph of y = 5x-3 with a greater gradient, crossing the x-axis between the origin and the vertex of the V-shaped graph.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: DB1 Draw (more or less) correct graph of y=5x-3 with greater gradient, crossing x-axis between origin and vertex of first graph."
+      },
+      {
+        "name": "opp",
+        "text_tex": "(b) Attempt the solution of a linear equation in which the signs of 2x and 5x are different.",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: M1 Attempt solution of linear equation where signs of 2x and 5x are different."
+      },
+      {
+        "name": "ans",
+        "text_tex": "(b) Solve -2x+9 = 5x-3 to obtain 12/7, or 1.71 or better, and give no second answer. (Alternative: attempt the 3-term quadratic (2x-9)^2 = (5x-3)^2, which is 7x^2+2x-24=0, and obtain 12/7 with no second answer. The candidate x=2 does not satisfy the original equation.)",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: A1 and no second answer. Obtain 12/7, 1.71 or better. Alternative: M1 attempt 3-term quadratic to obtain at least one value of x; A1 obtain 12/7, 1.71 or better, and no second answer."
+      }
+    ]
+  }
+]

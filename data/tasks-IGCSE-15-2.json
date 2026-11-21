@@ -1,0 +1,179 @@
+[
+  {
+    "id": "IGCSE-15.2-QC1-gen",
+    "section": "IGCSE-15.2",
+    "kind": "generated",
+    "title": "Three-figure bearing of a cardinal or intercardinal direction",
+    "marks": 1,
+    "source": "Theory IGCSE-15.2 Quick check 1 (west is 270); book three-figure bearings on printed p.476, new numbers",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 3,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "B": "k*90"
+    },
+    "constraints": [
+      "k>=1",
+      "k<=3"
+    ],
+    "original": {
+      "k": 3
+    },
+    "stem": "A direction is \\({k|int}\\times 90^\\circ\\) clockwise from north. What is the three-figure bearing of this direction, in degrees?",
+    "answer": {
+      "expression": "B",
+      "format": "{B|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The bearing is \\({B|int}^\\circ\\) clockwise from north.",
+        "result": "B",
+        "format": "int",
+        "mark": "A1",
+        "note": "B is 90k. Original k=3 is due west, bearing 270. k=1 east 90, k=2 south 180."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-15.2-QC2-gen",
+    "section": "IGCSE-15.2",
+    "kind": "generated",
+    "title": "Back bearing when the given bearing is less than 180 degrees",
+    "marks": 1,
+    "source": "Theory IGCSE-15.2 Quick check 2 (070 gives 250); book Worked example 2 style, printed p.477, new numbers",
+    "params": [
+      {
+        "name": "a",
+        "min": 10,
+        "max": 170,
+        "step": 10
+      }
+    ],
+    "derived": {
+      "B": "a+180"
+    },
+    "constraints": [
+      "a>=10",
+      "a<=170"
+    ],
+    "original": {
+      "a": 70
+    },
+    "stem": "The bearing of \\(B\\) from \\(A\\) is \\({a|int}^\\circ\\). What is the bearing of \\(A\\) from \\(B\\), in degrees?",
+    "answer": {
+      "expression": "B",
+      "format": "{B|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Add \\(180^\\circ\\): \\({a|int}+180={B|int}\\).",
+        "result": "B",
+        "format": "int",
+        "mark": "A1",
+        "note": "B is a+180. Original: 70+180=250."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-15.2-QC3-gen",
+    "section": "IGCSE-15.2",
+    "kind": "generated",
+    "title": "Back bearing when the given bearing is greater than 180 degrees",
+    "marks": 1,
+    "source": "Theory IGCSE-15.2 Quick check 3 (215 gives 35); book tip on printed p.477, new numbers",
+    "params": [
+      {
+        "name": "a",
+        "min": 190,
+        "max": 350,
+        "step": 10
+      }
+    ],
+    "derived": {
+      "B": "a-180"
+    },
+    "constraints": [
+      "a>=190",
+      "a<=350"
+    ],
+    "original": {
+      "a": 215
+    },
+    "stem": "The bearing of \\(B\\) from \\(A\\) is \\({a|int}^\\circ\\). What is the bearing of \\(A\\) from \\(B\\), in degrees? (If the three-figure bearing starts with a zero, give the number of degrees only.)",
+    "answer": {
+      "expression": "B",
+      "format": "{B|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Subtract \\(180^\\circ\\): \\({a|int}-180={B|int}\\).",
+        "result": "B",
+        "format": "int",
+        "mark": "A1",
+        "note": "B is a-180. Original: 215-180=35, written 035 as a three-figure bearing."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-15.2-PP-0580-22-ON19-Q8",
+    "section": "IGCSE-15.2",
+    "kind": "pastpaper",
+    "title": "Back bearing of 102 degrees",
+    "marks": 2,
+    "source": {
+      "paper": "0580/22/O/N/19 Q8",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w19_qp_22.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w19_ms_22.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2019), Question 8, including the official wording of the diagram. Official answer and mark allocation from the MS PDF. The item is paper/self-mark."
+    },
+    "stem": "This question is 0580/22/O/N/19 Question 8, taken from the official QP.\n\nThe diagram (NOT TO SCALE) shows a north line at \\(B\\), and a line from \\(B\\) to \\(P\\). The angle from north clockwise to \\(BP\\) is marked \\(102^\\circ\\).\n\nThe bearing of \\(P\\) from \\(B\\) is \\(102^\\circ\\).\n\nFind the bearing of \\(B\\) from \\(P\\).  [2]",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "The back bearing is \\(102^\\circ+180^\\circ=282^\\circ\\), or equivalently \\(360^\\circ-(180^\\circ-102^\\circ)\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS Q8: M1 for 180+102 or 360-(180-102). Independent: 102+180=282."
+      },
+      {
+        "name": "A",
+        "text_tex": "The bearing of \\(B\\) from \\(P\\) is \\(282^\\circ\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS Q8: 282 for 2 marks. Independent confirmation: 282."
+      }
+    ]
+  }
+]

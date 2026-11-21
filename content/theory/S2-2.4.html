@@ -1,0 +1,64 @@
+<section class="theory" data-section="S2-2.4">
+<h2>2.4 Using the normal distribution as an approximation to the Poisson distribution</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Probability &amp; Statistics 2 Coursebook, Chapter 2, printed pp.40–42 (the normal approximation when the Poisson parameter is large, and the continuity correction). Printed pages were read from S2.pdf (printed 40–42 = PDF 52–54). Own wording and new numbers. Teaching stops before 2.5 Hypothesis testing with the Poisson distribution on printed p.43.</p>
+<p class="key-words"><strong>Key words:</strong> <em>normal approximation to the Poisson distribution</em>, <em>continuity correction</em>, <em>Poisson distribution</em></p>
+<p>A <strong>Poisson distribution</strong> with a large parameter \(\lambda\) is well approximated by a normal distribution with the same mean and the same variance. This is the <strong>normal approximation to the Poisson distribution</strong>: if \(X\sim\mathrm{Po}(\lambda)\) and \(\lambda\) is large, then \(X\) is approximately \(\mathrm{N}(\lambda,\lambda)\).</p>
+<p>Because a Poisson variable is discrete and a normal variable is continuous, a <strong>continuity correction</strong> is used. The event \(X\lt k\) is replaced by \(Y\lt k-0.5\), and the event \(X\leqslant k\) is replaced by \(Y\lt k+0.5\), where \(Y\) is the approximating normal variable.</p>
+<figure>
+<img src="assets/S2-2.4-continuity.svg" alt="A normal curve with mean 30, and the continuity-corrected boundary 35.5 for the event X less than 36"/>
+<figcaption>If \(\lambda=30\), then \(X\) is approximated by \(Y\sim\mathrm{N}(30, 30)\), and \(\mathrm{P}(X\lt 36)\) is approximated by \(\mathrm{P}(Y\lt 35.5)\).</figcaption>
+</figure>
+<div class="worked-example">
+<h4>Worked example 1</h4>
+<p class="src">Book: identifying the approximating normal distribution, printed pp.40–41. New numbers.</p>
+<p>The random variable \(X\) has the distribution \(\mathrm{Po}(50)\). Write down the mean and the variance of a suitable approximating normal distribution.</p>
+<ol class="steps">
+<li>The approximating distribution is \(\mathrm{N}(50, 50)\), so the mean is 50 and the variance is 50. <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> mean 50, variance 50</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2</h4>
+<p class="src">Book: a continuity correction, printed pp.41–42. New numbers matching the official-paper cut-off used later in this section.</p>
+<p>The Poisson random variable \(X\) is approximated by a continuous normal random variable \(Y\). Write down the continuity-corrected probability that approximates \(\mathrm{P}(X\lt 36)\).</p>
+<ol class="steps">
+<li>\(\mathrm{P}(X\lt 36)\) is approximated by \(\mathrm{P}(Y\lt 35.5)\). <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\mathrm{P}(Y\lt 35.5)\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul>
+<li>Using \(\mathrm{N}(\lambda,\sqrt{\lambda})\) or \(\mathrm{N}(\lambda,\lambda^2)\) instead of \(\mathrm{N}(\lambda,\lambda)\).</li>
+<li>Omitting the continuity correction, or applying it the wrong way (for example using 36.5 for \(\mathrm{P}(X\lt 36)\)).</li>
+<li>Using the approximation when \(\lambda\) is small, so that the Poisson distribution is still strongly skewed.</li>
+</ul>
+<h3>Quick checks</h3>
+<div class="quick-check" data-q="QC1">
+<h4>Quick check 1</h4>
+<p>The random variable \(X\) has the distribution \(\mathrm{Po}(50)\). A normal distribution is used as an approximation to this Poisson distribution. What is the mean of the approximating normal distribution?</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>The approximating distribution is \(\mathrm{N}(50, 50)\), so the mean is 50. <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(50\)</p>
+</details>
+</div><div class="quick-check" data-q="QC2">
+<h4>Quick check 2</h4>
+<p>The random variable \(X\) has the distribution \(\mathrm{Po}(50)\). A normal distribution is used as an approximation. What is the variance of the approximating normal distribution?</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>For a Poisson distribution the variance equals the mean, so the approximating distribution is \(\mathrm{N}(50, 50)\) and the variance is 50. <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(50\)</p>
+</details>
+</div><div class="quick-check" data-q="QC3">
+<h4>Quick check 3</h4>
+<p>The Poisson random variable \(X\) is approximated by a continuous normal random variable \(Y\). The probability \(\mathrm{P}(X\lt 36)\) is approximated by \(\mathrm{P}(Y\lt c)\). What is the value of \(c\)?</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>With a continuity correction, \(X\lt 36\) is replaced by \(Y\lt 36-0.5\), so \(c=35.5\). <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(35.5\)</p>
+</details>
+</div>
+</section>

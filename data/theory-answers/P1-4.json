@@ -1,0 +1,63 @@
+[
+  {
+    "section": "P1-4.1",
+    "q": "QC1",
+    "marking": "manual"
+  },
+  {
+    "section": "P1-4.1",
+    "q": "QC2",
+    "answer": 105,
+    "accept_as": "integer"
+  },
+  {
+    "section": "P1-4.1",
+    "q": "QC3",
+    "answer": 0.8203047484373349,
+    "accept_as": "sf",
+    "sf": 3
+  },
+  {
+    "section": "P1-4.1",
+    "q": "QC4",
+    "answer": 74.48451336700703,
+    "tolerance": 0.05
+  },
+  {
+    "section": "P1-4.2",
+    "q": "QC1",
+    "marking": "manual"
+  },
+  {
+    "section": "P1-4.2",
+    "q": "QC2",
+    "answer": 8,
+    "accept_as": "integer"
+  },
+  {
+    "section": "P1-4.2",
+    "q": "QC3",
+    "answer": 19.2,
+    "accept_as": "sf",
+    "sf": 3
+  },
+  {
+    "section": "P1-4.3",
+    "q": "QC1",
+    "marking": "manual"
+  },
+  {
+    "section": "P1-4.3",
+    "q": "QC2",
+    "answer": 21.6,
+    "accept_as": "sf",
+    "sf": 3
+  },
+  {
+    "section": "P1-4.3",
+    "q": "QC3",
+    "answer": 4.823296452589929,
+    "accept_as": "sf",
+    "sf": 3
+  }
+]

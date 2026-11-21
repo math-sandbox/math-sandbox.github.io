@@ -1,0 +1,75 @@
+<section class="theory" data-section="P1-2.3">
+<h2>2.3 Inverse functions</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 1 Coursebook (Sue Pemberton), Chapter 2, printed pp.43–47 (Key points 2.3–2.4, the inverse method, Worked examples 2.7–2.8 style, Exercise 2C). Printed pages were read from P1.pdf (printed 43–47 = PDF 55–59). Own wording and new numbers. Page 43 overlaps the end of Exercise 2B.</p>
+<p class="key-words"><strong>Key words:</strong> <em>inverse function</em>, <em>self-inverse function</em>, <em>one-one function</em></p>
+<p>The <strong>inverse function</strong> \(f^{-1}\) is the function that undoes what \(f\) has done. The domain of the function \(f^{-1}\) is the range of the function \(f\), and the range of the function \(f^{-1}\) is the domain of the function \(f\). An inverse exists if, and only if, \(f\) is a one-one mapping. If a many-one rule is restricted to a one-one part of its domain, an inverse can then be found on that restricted domain.</p>
+<figure>
+<img src="assets/P1-2.3-inverse-map.svg" alt="Two ovals labelled x and y, with an arrow f from x to y and a returning arrow f to the minus one"/>
+<figcaption>\(f^{-1}f(x)=x\) and \(ff^{-1}(x)=x\).</figcaption>
+</figure>
+<p>To find a formula for \(f^{-1}(x)\), write \(y=f(x)\), interchange \(x\) and \(y\), and rearrange to make \(y\) the subject. The resulting expression is \(f^{-1}(x)\). If \(f\) and \(f^{-1}\) are the same function, \(f\) is called a <strong>self-inverse function</strong>. For example, \(f(x)=\dfrac{1}{x}\) for \(x\neq 0\) is self-inverse.</p>
+<p>Interchanging \(x\) and \(y\) is the same as reflecting the graph of \(y=f(x)\) in the line \(y=x\). The image is the graph of \(y=f^{-1}(x)\).</p>
+<figure>
+<img src="assets/P1-2.3-inverse-reflection.svg" alt="The line y equals 4x plus 5 and the line y equals (x minus 5) over 4, reflections of one another in the dashed line y equals x, with the point (0, 5) paired with (5, 0)"/>
+<figcaption>The graphs of \(y=4x+5\) and \(y=\dfrac{x-5}{4}\) (Worked example 1) are reflections of one another in \(y=x\). The point \((0,5)\) is paired with \((5,0)\).</figcaption>
+</figure>
+<div class="worked-example">
+<h4>Worked example 1</h4>
+<p class="src">Book: the three-step method on printed p.44. New numbers.</p>
+<p>The function \(f\) is given by \(f(x)=4x+5\) for \(x\in\mathbb{R}\). Find an expression for \(f^{-1}(x)\).</p>
+<ol class="steps">
+<li>Write \(y=4x+5\). Interchange \(x\) and \(y\) to obtain \(x=4y+5\). <span class="mark">M1</span></li>
+<li>Rearrange: \(y=\dfrac{x-5}{4}\), so \(f^{-1}(x)=\dfrac{x-5}{4}\). <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(f^{-1}(x)=\dfrac{x-5}{4}\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2</h4>
+<p class="src">Book: Worked example 2.7 style, printed pp.44–45. New numbers.</p>
+<p>\(f(x)=\sqrt{x-1}+2\) for \(x\in\mathbb{R}\), \(x\geqslant 1\). Find an expression for \(f^{-1}(x)\) and state the domain of \(f^{-1}\).</p>
+<ol class="steps">
+<li>Write \(y=\sqrt{x-1}+2\). Interchange: \(x=\sqrt{y-1}+2\), so \(x-2=\sqrt{y-1}\). <span class="mark">M1</span></li>
+<li>Square both sides: \((x-2)^2=y-1\), hence \(y=(x-2)^2+1\). So \(f^{-1}(x)=(x-2)^2+1\). <span class="mark">A1</span></li>
+<li>The range of \(f\) is \(f(x)\geqslant 2\), so the domain of \(f^{-1}\) is \(x\geqslant 2\). <span class="mark">B1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(f^{-1}(x)=(x-2)^2+1\) for \(x\geqslant 2\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul>
+<li>Writing down an inverse for a many-one function without first restricting the domain so that the function is one-one.</li>
+<li>Forgetting that the domain of \(f^{-1}\) is the range of \(f\), and so including values that \(f\) never takes.</li>
+<li>Keeping both signs of a square root when the original function, and its restricted domain, select only one of them.</li>
+</ul>
+<h3>Quick checks</h3>
+<div class="quick-check" data-q="QC1">
+<h4>Quick check 1</h4>
+<p>If \(f(x)=3x-1\), what is the value of \(f^{-1}(8)\)?</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(f^{-1}(x)=\dfrac{x+1}{3}\), so \(f^{-1}(8)=\dfrac{9}{3}=3\). Alternatively, solve \(3x-1=8\). <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(3\)</p>
+</details>
+</div>
+<div class="quick-check" data-q="QC2">
+<h4>Quick check 2</h4>
+<p>The function \(f(x)=5-x\) is self-inverse. What is the value of \(f^{-1}(2)\)?</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>Because \(f\) is self-inverse, \(f^{-1}(2)=f(2)=5-2=3\). <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(3\)</p>
+</details>
+</div>
+<div class="quick-check" data-q="QC3">
+<h4>Quick check 3</h4>
+<p>The function \(f\) is given by \(f(x)=\sqrt{x+2}-7\) for \(x\geqslant -2\). The domain of \(f^{-1}\) is \(x\geqslant k\). What is the value of \(k\)?</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>The range of \(f\) is \(f(x)\geqslant -7\), so the domain of \(f^{-1}\) is \(x\geqslant -7\). Thus \(k=-7\). <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(-7\)</p>
+</details>
+</div>
+<p class="marks-key"><strong>Marks:</strong> M = method, A = accurate answer (depends on M), B = independent mark. Leave exact values exact.</p>
+</section>

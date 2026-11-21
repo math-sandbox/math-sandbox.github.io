@@ -1,0 +1,203 @@
+[
+  {
+    "id": "S2-3.1-QC1-gen",
+    "section": "S2-3.1",
+    "kind": "generated",
+    "title": "Expectation of aX+b",
+    "marks": 1,
+    "source": "Theory S2-3.1 Quick check 1 (E=16); new integer a, mu, b",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "mu",
+        "min": 3,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 1,
+        "max": 4,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "a*mu+b"
+    },
+    "constraints": [],
+    "original": {
+      "a": 3,
+      "mu": 5,
+      "b": 1
+    },
+    "stem": "The random variable \\(X\\) has expectation {mu|int}. Find \\(\\operatorname{E}({a|int}X+{b|int})\\).",
+    "answer": {
+      "expression": "a*mu+b",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\operatorname{E}({a|int}X+{b|int})={a|int}\\times{mu|int}+{b|int}={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is a*mu+b. Original 3*5+1=16."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "S2-3.1-QC2-gen",
+    "section": "S2-3.1",
+    "kind": "generated",
+    "title": "Variance of aX+b",
+    "marks": 1,
+    "source": "Theory S2-3.1 Quick check 2 (Var=36); new integer a and variance",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "v",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "a*a*v"
+    },
+    "constraints": [],
+    "original": {
+      "a": 3,
+      "v": 4
+    },
+    "stem": "The random variable \\(X\\) has variance {v|int}. Find \\(\\operatorname{Var}({a|int}X+1)\\).",
+    "answer": {
+      "expression": "a*a*v",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\operatorname{Var}({a|int}X+1)={a|int}^2\\times{v|int}={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is a^2 * v. Original 9*4=36. The shift does not change the variance."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "S2-3.1-QC3-gen",
+    "section": "S2-3.1",
+    "kind": "generated",
+    "title": "Variance of 2X minus a constant",
+    "marks": 1,
+    "source": "Theory S2-3.1 Quick check 3 (Var=12); new integer scale and variance",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "name": "v",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "a*a*v"
+    },
+    "constraints": [],
+    "original": {
+      "a": 2,
+      "v": 3
+    },
+    "stem": "The random variable \\(X\\) has expectation 2 and variance {v|int}. Find \\(\\operatorname{Var}({a|int}X-5)\\).",
+    "answer": {
+      "expression": "a*a*v",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\operatorname{Var}({a|int}X-5)={a|int}^2\\times{v|int}={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is a^2 * v. Original 4*3=12. The given expectation is unused, as a shift does not change the variance."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "S2-3.1-PP-9709-73-ON19-Q1ii",
+    "section": "S2-3.1",
+    "kind": "pastpaper",
+    "title": "Mean and variance of 4X-3",
+    "marks": 2,
+    "source": {
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w19_qp_73.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w19_ms_73.pdf",
+      "note": "9709/73/O/N/19 Question 1(ii) only [2], with the relevant part of the opening stem. Official QP and official MS. Part (i) omitted."
+    },
+    "marking": "manual",
+    "stem": "This question is 9709/73/O/N/19 Question 1(ii) only, taken from the official QP. The relevant part of the opening stem is included so that the part is self-contained.\n\nThe random variable X has mean 2.4 and variance 3.1.\n\n(ii) The random variable Z is defined by Z = 4X − 3. Find the mean and variance of Z. [2]",
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "The mean of \\(Z\\) is \\(4\\times 2.4-3=6.6\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1, 6.6. Independent: 4*2.4-3=9.6-3=6.6."
+      },
+      {
+        "name": "A",
+        "text_tex": "The variance of \\(Z\\) is \\(4^2\\times 3.1=49.6\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1, 49.6. Independent: 16*3.1=49.6."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Stem taken from the official QP PDF (UCLES 2019), Question 1(ii) only, with the relevant part of the opening stem. Official MS reproduced mark by mark. Paper/self-mark. Part (i) is a sum of four independent values and is omitted. Questions 4 and 6 of this paper were used in earlier packages."
+      }
+    ]
+  }
+]

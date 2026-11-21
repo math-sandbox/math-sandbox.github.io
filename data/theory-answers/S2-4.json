@@ -1,0 +1,69 @@
+[
+  {
+    "section": "S2-4.1",
+    "q": "QC1",
+    "answer": 0.125,
+    "accept_as": "sf",
+    "sf": 3
+  },
+  {
+    "section": "S2-4.1",
+    "q": "QC2a",
+    "answer": 0.1111111111111111,
+    "accept_as": "sf",
+    "sf": 3
+  },
+  {
+    "section": "S2-4.1",
+    "q": "QC2b",
+    "answer": 0.2962962962962963,
+    "accept_as": "sf",
+    "sf": 3
+  },
+  {
+    "section": "S2-4.1",
+    "q": "QC3",
+    "answer": 0.5625,
+    "accept_as": "sf",
+    "sf": 3
+  },
+  {
+    "section": "S2-4.1",
+    "q": "QC4a",
+    "answer": 2,
+    "accept_as": "integer"
+  },
+  {
+    "section": "S2-4.1",
+    "q": "QC4b",
+    "answer": 0.3333333333333333,
+    "accept_as": "sf",
+    "sf": 3
+  },
+  {
+    "section": "S2-4.2",
+    "q": "QC1",
+    "answer": 2.8284271247461903,
+    "accept_as": "sf",
+    "sf": 3
+  },
+  {
+    "section": "S2-4.2",
+    "q": "QC2",
+    "answer": 1.5874010519681994,
+    "accept_as": "sf",
+    "sf": 3
+  },
+  {
+    "section": "S2-4.2",
+    "q": "QC3",
+    "answer": 2,
+    "accept_as": "integer"
+  },
+  {
+    "section": "S2-4.2",
+    "q": "QC4",
+    "answer": 2.5,
+    "tolerance": 0
+  }
+]

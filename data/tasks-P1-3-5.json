@@ -1,0 +1,243 @@
+[
+  {
+    "id": "P1-3.5-QC1-gen",
+    "section": "P1-3.5",
+    "kind": "generated",
+    "title": "Horizontal line meeting a circle centre the origin",
+    "marks": 2,
+    "source": "Theory P1-3.5 Quick check 1 (y=3 meets x^2+y^2=25 with positive x=4); book method of section 3.5, pp.88–91",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 20,
+        "step": 1
+      },
+      {
+        "name": "p",
+        "min": 1,
+        "max": 20,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "R": "p*p+k*k"
+    },
+    "constraints": [],
+    "original": {
+      "k": 3,
+      "p": 4
+    },
+    "stem": "The line \\(y={k|int}\\) intersects the circle \\(x^2+y^2={R|int}\\) at two points. Find the positive \\(x\\)-coordinate of an intersection.",
+    "answer": {
+      "expression": "p",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "Substitute \\(y={k|int}\\): \\(x^2+({k|int})^2={R|int}\\Rightarrow x^2={p|int}^2\\)",
+        "result": "p*p",
+        "format": "int",
+        "mark": "M1",
+        "note": "Substitute the line into the circle."
+      },
+      {
+        "name": "A",
+        "text_tex": "The positive \\(x\\)-coordinate is \\({A|int}\\)",
+        "result": "p",
+        "format": "int",
+        "mark": "A1",
+        "note": "x = ±p; the question asks for the positive value."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "horizontal line y=k and circle centre the origin"
+      },
+      {
+        "id": "axis-like",
+        "stem": "Find the positive \\(x\\)-coordinate of a point where the line \\(y={k|int}\\) meets \\(x^2+y^2={R|int}\\)."
+      },
+      {
+        "id": "words",
+        "stem": "A horizontal line at height \\({k|int}\\) cuts the circle \\(x^2+y^2={R|int}\\). Find the positive \\(x\\)-coordinate of an intersection."
+      }
+    ]
+  },
+  {
+    "id": "P1-3.5-QC2-gen",
+    "section": "P1-3.5",
+    "kind": "generated",
+    "title": "Discriminant after substituting a line into a circle",
+    "marks": 1,
+    "source": "Theory P1-3.5 Quick check 2 (discriminant of x^2-14x+49 is 0); book p.88 and Worked example 3.15",
+    "params": [
+      {
+        "name": "b",
+        "min": -20,
+        "max": 20,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": -50,
+        "max": 50,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "D": "b*b-4*c"
+    },
+    "constraints": [
+      "c!=0"
+    ],
+    "original": {
+      "b": -14,
+      "c": 49
+    },
+    "stem": "A line is substituted into a circle, giving the quadratic \\(x^2+({b|int})x+({c|int})=0\\). Find the discriminant of this quadratic.",
+    "answer": {
+      "expression": "b*b-4*c",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\Delta=({b|int})^2-4(1)({c|int})={A|int}\\)",
+        "result": "b*b-4*c",
+        "format": "int",
+        "mark": "A1",
+        "note": "Discriminant of the quadratic obtained after substitution."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "monic quadratic after substitution"
+      },
+      {
+        "id": "delta-word",
+        "stem": "After substitution, the intersection quadratic is \\(x^2+({b|int})x+({c|int})=0\\). Find \\(\\Delta=b^2-4ac\\)."
+      },
+      {
+        "id": "repeat-word",
+        "stem": "The quadratic obtained by substituting a line into a circle is \\(x^2+({b|int})x+({c|int})=0\\). Find its discriminant."
+      }
+    ]
+  },
+  {
+    "id": "P1-3.5-QC3-gen",
+    "section": "P1-3.5",
+    "kind": "generated",
+    "title": "Number of intersection points from the discriminant",
+    "marks": 2,
+    "source": "Theory P1-3.5 Quick check 3 (x^2-6x+8=0 has two intersections); book discriminant table p.88",
+    "params": [
+      {
+        "name": "A",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "B",
+        "min": -12,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "name": "C",
+        "min": -12,
+        "max": 12,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "D": "B*B-4*A*C",
+      "N": "((B*B-4*A*C)>0)*2+((B*B-4*A*C)==0)*1"
+    },
+    "constraints": [
+      "C!=0"
+    ],
+    "original": {
+      "A": 1,
+      "B": -6,
+      "C": 8
+    },
+    "stem": "A line is substituted into a circle, giving the quadratic \\(({A|int})x^2+({B|int})x+({C|int})=0\\). How many distinct points of intersection are there?",
+    "answer": {
+      "expression": "((B*B-4*A*C)>0)*2+((B*B-4*A*C)==0)*1",
+      "format": "{N|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "D",
+        "text_tex": "\\(\\Delta=({B|int})^2-4({A|int})({C|int})={D|int}\\)",
+        "result": "B*B-4*A*C",
+        "format": "int",
+        "mark": "M1",
+        "note": "Compute the discriminant."
+      },
+      {
+        "name": "N",
+        "text_tex": "Number of distinct intersections is \\({N|int}\\)",
+        "result": "((B*B-4*A*C)>0)*2+((B*B-4*A*C)==0)*1",
+        "format": "int",
+        "mark": "A1",
+        "note": "Two if Delta>0, one (tangent) if Delta=0, none if Delta<0."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "number of intersections 0, 1 or 2"
+      },
+      {
+        "id": "nature",
+        "stem": "The intersection quadratic of a line and a circle is \\(({A|int})x^2+({B|int})x+({C|int})=0\\). Find the number of distinct intersection points."
+      },
+      {
+        "id": "how-many",
+        "stem": "How many distinct points does the line meet the circle at, if substitution gives \\(({A|int})x^2+({B|int})x+({C|int})=0\\)?"
+      }
+    ]
+  },
+  {
+    "id": "P1-3.5-PP-9709-11-MJ21-Q10a",
+    "section": "P1-3.5",
+    "kind": "pastpaper",
+    "title": "Circle meeting the x-axis",
+    "marks": 2,
+    "source": {
+      "paper": "9709/11/M/J/21 Q10(a)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s21_qp_11.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s21_ms_11.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2021). Official MS: M1 substituting y=0, A1 x-coordinates -7 and 11. Part (b) (intersection of the tangents at A and B) is omitted: it is mainly tangent-equation work rather than the line-circle substitution of this subsection. The two x-coordinates are paper/self-mark as a pair (the checker has no list-of-roots acceptance mode)."
+    },
+    "stem": "This question is 9709/11/M/J/21 Question 10(a), taken from the official QP.\n\nThe equation of a circle is \\(x^2+y^2-4x+6y-77=0\\).\n\n(a) Find the \\(x\\)-coordinates of the points \\(A\\) and \\(B\\) where the circle intersects the \\(x\\)-axis.",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "When \\(y=0\\), \\(x^2-4x-77=0\\). This factorises as \\((x+7)(x-11)=0\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: M1 substituting y=0 (the displayed quadratic or (x-2)^2=81 is also accepted in the scheme)."
+      },
+      {
+        "name": "A",
+        "text_tex": "The \\(x\\)-coordinates are \\(-7\\) and \\(11\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: A1, so x-coordinates are -7 and 11. Official answer (a): -7 and 11."
+      }
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+<svg preserveAspectRatio="xMidYMid meet" height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320" width="100%" style="max-width:100%;height:auto" role="img" aria-labelledby="arc-sector-t arc-sector-d"><title id="arc-sector-t">Minor arc AB of a circle centre O, radius r, angle AOB = theta radians</title><desc id="arc-sector-d">Two radii OA and OB with angle theta at the centre, and the minor arc AB of length r theta.</desc>
+<circle cx="200" cy="180" r="120" fill="none" stroke="#bbb" stroke-width="1" stroke-dasharray="3 3"/>
+<path d="M200 180 L200 60 A120 120 0 0 1 303.923 120 Z" fill="#f5d5d0" stroke="#c0392b" stroke-width="2"/>
+<line x1="200" y1="180" x2="200" y2="60" stroke="#333" stroke-width="1.5"/>
+<line x1="200" y1="180" x2="303.923" y2="120" stroke="#333" stroke-width="1.5"/>
+<path d="M200 150 A30 30 0 0 1 226 165" fill="none" stroke="#333"/>
+<g fill="#111" font-family="serif" font-size="16">
+<text x="192" y="204">O</text>
+<text x="192" y="50">A</text>
+<text x="312" y="126">B</text>
+<text x="222" y="158">θ</text>
+<text x="168" y="120">r</text>
+</g>
+</svg>

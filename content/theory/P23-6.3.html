@@ -1,0 +1,94 @@
+<section class="theory" data-section="P23-6.3">
+<h2>6.3 Using iterative processes to solve problems involving other areas of mathematics</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 2 &amp; 3 Coursebook (Sue Pemberton and Julianne Hughes, series editor Julian Gilbey), Chapter 6 Numerical solutions of equations, printed pp.149–154 (physical PDF page = printed page + 12). Own wording. The method is the same iterative process as in 6.2; the new work is to obtain the equation first from another topic (here, a derivative), and only then to locate and improve the root.</p>
+<p class="key-words"><strong>Key words:</strong> <em>iterative process</em>, <em>change of sign</em></p>
+<h3>Iteration after other mathematics</h3>
+<p>In 6.1 and 6.2 the equation to be solved was usually given. In this section the equation itself often comes from another piece of work: a derivative set equal to a given gradient, a volume or area condition, a trigonometric identity, or the intersection of a curve with a line.</p>
+<p>The numerical part is unchanged:</p>
+<ol>
+<li>Obtain an equation for the unknown, and rearrange it into a form \(x=\mathrm{F}(x)\) if an iterative formula is to be used.</li>
+<li>Show, by a change of sign, that the required root lies in a stated interval (the 6.1 test).</li>
+<li>Apply an iterative formula based on that rearrangement, and justify the final accuracy (the 6.2 process).</li>
+</ol>
+<p>The first of those steps is the “other area of mathematics”. The last two steps are the iterative process you already have.</p>
+<div class="worked-example">
+<h4>Worked example 1: A gradient condition leading to an iteration</h4>
+<p class="src">6.3 style: a derivative is used to obtain a transcendental equation, then a starting interval is checked and the root is improved by iteration. New curve, y equals e to the x plus x squared, gradient 6 at x equals p.</p>
+<p>The curve \(y=\mathrm{e}^x+x^2\) has gradient \(6\) at the point where \(x=p\).</p>
+<p>(i) Show that \(p=\ln(6-2p)\).</p>
+<p>(ii) Show by calculation that \(1.2&lt;p&lt;1.4\).</p>
+<p>(iii) Use the iterative formula \(p_{n+1}=\ln(6-2p_n)\) with \(p_1=1.3\) to find \(p\) correct to 3 decimal places. Give each iterate to 5 decimal places.</p>
+<ol class="steps">
+<li>(i) \(\dfrac{\mathrm{d}y}{\mathrm{d}x}=\mathrm{e}^x+2x\). At \(x=p\) this equals \(6\), so \(\mathrm{e}^p=6-2p\), hence \(p=\ln(6-2p)\) <span class="mark">M1</span></li>
+<li>(i) The rearrangement is confirmed. <span class="mark">A1</span></li>
+<li>(ii) Let \(g(p)=\ln(6-2p)-p\). Then \(g(1.2)=0.081\) and \(g(1.4)=-0.237\) (3 s.f.). There is a change of sign, so \(1.2&lt;p&lt;1.4\) <span class="mark">M1</span></li>
+<li>(ii) The argument is complete. <span class="mark">A1</span></li>
+<li>(iii) \(p_2=\ln(6-2\times 1.3)=\ln 3.4\)<br>
+\(=1.22378\).<br>
+\(p_3=1.26764\), \(p_4=1.24263\),<br>
+\(p_5=1.25696\), \(p_6=1.24878\).<br>
+\(p_7=1.25346\), \(p_8=1.25078\),<br>
+\(p_9=1.25232\), \(p_{10}=1.25144\).<br>
+\(p_{11}=1.25194\), \(p_{12}=1.25165\).<br>
+Later terms lie in \((1.2515,1.2525)\), so \(p=1.252\) to 3 decimal places <span class="mark">M1</span></li>
+<li>(iii) The value is \(1.252\), justified by the bounding interval. <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(p=\ln(6-2p)\); \(1.2&lt;p&lt;1.4\); \(p=1.252\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul>
+<li>Differentiating incorrectly, or forgetting to set the derivative equal to the given gradient, so the later iteration is applied to the wrong equation.</li>
+<li>Treating the sign-change check or the iteration as a new method, rather than the 6.1 and 6.2 process already met.</li>
+<li>Using a starting value that has not been justified by a calculation or a sketch.</li>
+</ul>
+<h3>Past paper</h3>
+<p class="src">9709/22/M/J/16 Q5, official QP and official MS.</p>
+<p>The equation of a curve is \(y=6x\mathrm{e}^{x/3}\). At the point on the curve with \(x\)-coordinate \(p\), the gradient of the curve is \(40\).</p>
+<p>(i) Show that \(p=3\ln\left(\dfrac{20}{p+3}\right)\). [4]</p>
+<p>(ii) Show by calculation that \(3.3&lt;p&lt;3.5\). [2]</p>
+<p>(iii) Use an iterative formula based on the equation in part (i) to find the value of \(p\) correct to 3 decimal places. Give the result of each iteration to 5 decimal places. [3]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(i) Use the product rule to obtain a form \(k_1\mathrm{e}^{x/3}+k_2 x\mathrm{e}^{x/3}\). <span class="mark">M1</span></li>
+<li>(i) Obtain the correct derivative \(6\mathrm{e}^{x/3}+2x\mathrm{e}^{x/3}\). <span class="mark">A1</span></li>
+<li>(i) Equate the first derivative to \(40\) and obtain an equation without \(\mathrm{e}\) present (dependent on the previous method mark). <span class="mark">M1</span></li>
+<li>(i) Confirm \(p=3\ln\dfrac{20}{p+3}\), or the same with \(x\) in place of \(p\). <span class="mark">A1</span></li>
+<li>(ii) Consider the sign of \(3\ln\dfrac{20}{p+3}-p\) at \(3.3\) and at \(3.5\), or equivalent. <span class="mark">M1</span></li>
+<li>(ii) Complete the argument correctly with appropriate calculations. <span class="mark">A1</span></li>
+<li>(iii) Carry out the iterative process correctly at least once. <span class="mark">M1</span></li>
+<li>(iii) Obtain the final answer \(3.412\). <span class="mark">A1</span></li>
+<li>(iii) Show sufficient iterations to justify accuracy to 3 decimal places, or show a sign change in the interval \((3.4115,3.4125)\). <span class="mark">B1</span></li>
+</ol>
+</details>
+<h3>Quick checks</h3>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>The gradient of \(y=x^3+2x\) is \(14\) when \(x=p\). Find \(p^2\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(\dfrac{\mathrm{d}y}{\mathrm{d}x}=3x^2+2=14\), so \(3p^2=12\) and \(p^2=4\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(4\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>The iterative formula \(p_{n+1}=\dfrac{10-p_n}{3}\) is used with \(p_1=1\). Find \(p_2\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(p_2=\dfrac{10-1}{3}=3\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(3\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>The same formula is used, and \(p_2=3\). Find \(3p_3\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(p_3=\dfrac{10-3}{3}=\dfrac{7}{3}\), so \(3p_3=7\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(7\)</p>
+</details>
+</div>
+</section>

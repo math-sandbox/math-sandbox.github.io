@@ -1,0 +1,58 @@
+[
+  {
+    "section": "IGCSE-17.1",
+    "q": "QC1",
+    "answer": 544.0,
+    "tolerance": 0.005
+  },
+  {
+    "section": "IGCSE-17.1",
+    "q": "QC2a",
+    "answer": 2626.25,
+    "tolerance": 0.005
+  },
+  {
+    "section": "IGCSE-17.1",
+    "q": "QC2b",
+    "answer": 80.8,
+    "tolerance": 0.05
+  },
+  {
+    "section": "IGCSE-17.1",
+    "q": "QC3",
+    "answer": 900.0,
+    "tolerance": 0.005
+  },
+  {
+    "section": "IGCSE-17.1",
+    "q": "QC4",
+    "answer": 2850.0,
+    "tolerance": 0.005
+  },
+  {
+    "section": "IGCSE-17.3",
+    "q": "QC1",
+    "answer": 315.0,
+    "tolerance": 0.005
+  },
+  {
+    "section": "IGCSE-17.3",
+    "q": "QC2",
+    "answer": 40.0,
+    "tolerance": 0.005
+  },
+  {
+    "section": "IGCSE-17.3",
+    "q": "QC3",
+    "answer": 15.0,
+    "accept_as": "sf",
+    "sf": 3
+  },
+  {
+    "section": "IGCSE-17.3",
+    "q": "QC4",
+    "answer": 36.0,
+    "accept_as": "sf",
+    "sf": 3
+  }
+]

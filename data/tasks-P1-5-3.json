@@ -1,0 +1,401 @@
+[
+  {
+    "id": "P1-5.3-QC1-gen",
+    "section": "P1-5.3",
+    "kind": "generated",
+    "title": "An integer multiple of sin 150 degrees",
+    "marks": 1,
+    "source": "Theory P1-5.3 Quick check 1; n sin 150 with n even",
+    "params": [
+      {
+        "name": "n",
+        "min": 2,
+        "max": 12,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "A": "n/2"
+    },
+    "constraints": [
+      "n%2==0"
+    ],
+    "original": {
+      "n": 2
+    },
+    "stem": "Find the exact value of \\({n|int}\\sin 150^\\circ\\).",
+    "answer": {
+      "expression": "n/2",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\sin 150^\\circ=\\sin 30^\\circ=\\dfrac{{1}}{{2}}\\), so the value is \\({A|int}\\).",
+        "result": "n/2",
+        "format": "int",
+        "mark": "A1",
+        "note": "Sine is positive in the second quadrant, and the basic angle is 30 degrees."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original 2 sin 150"
+      }
+    ],
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.3"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-3.json",
+        "locator": "P1-5.3-QC1-gen"
+      }
+    }
+  },
+  {
+    "id": "P1-5.3-QC2-gen",
+    "section": "P1-5.3",
+    "kind": "generated",
+    "title": "An integer multiple of tan 315 degrees",
+    "marks": 1,
+    "source": "Theory P1-5.3 Quick check 2; n tan 315",
+    "params": [
+      {
+        "name": "n",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "-n"
+    },
+    "constraints": [
+      "1==1"
+    ],
+    "original": {
+      "n": 2
+    },
+    "stem": "Find the exact value of \\({n|int}\\tan 315^\\circ\\).",
+    "answer": {
+      "expression": "-n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\tan 315^\\circ=-\\tan 45^\\circ=-1\\), so the value is \\({A|int}\\).",
+        "result": "-n",
+        "format": "int",
+        "mark": "A1",
+        "note": "Tangent is negative in the fourth quadrant, and the basic angle is 45 degrees."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original tan 315"
+      }
+    ],
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.3"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-3.json",
+        "locator": "P1-5.3-QC2-gen"
+      }
+    }
+  },
+  {
+    "id": "P1-5.3-QC3-gen",
+    "section": "P1-5.3",
+    "kind": "generated",
+    "title": "Obtuse cosine in the 8-15-17 family",
+    "marks": 1,
+    "source": "Theory P1-5.3 Quick check 3; 17s cos theta for an obtuse angle with sin=8/17",
+    "params": [
+      {
+        "name": "s",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "hyp": "17*s",
+      "A": "-15*s"
+    },
+    "constraints": [
+      "s>0"
+    ],
+    "original": {
+      "s": 1
+    },
+    "stem": "Given that \\(\\sin\\theta=\\dfrac{{8}}{{17}}\\) and that \\(\\theta\\) is obtuse, find the value of \\({hyp|int}\\cos\\theta\\).",
+    "answer": {
+      "expression": "-15*s",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The related adjacent side is \\(15\\times{s|int}\\). Cosine is negative in the second quadrant, so \\({hyp|int}\\cos\\theta={A|int}\\).",
+        "result": "-15*s",
+        "format": "int",
+        "mark": "A1",
+        "note": "An 8-15-17 triangle, scaled by s, with cosine negative because the angle is obtuse."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original 17 cos theta = -15"
+      }
+    ],
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.3"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-3.json",
+        "locator": "P1-5.3-QC3-gen"
+      }
+    }
+  },
+  {
+    "id": "P1-5.3-PP-9709-11-MJ10-Q1",
+    "section": "P1-5.3",
+    "kind": "pastpaper",
+    "title": "Related-angle tangents and sine in terms of k",
+    "marks": 4,
+    "source": {
+      "paper": "9709/11/M/J/10 Q1",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s10_qp_11.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s10_ms_11.pdf",
+      "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+    },
+    "stem": "<p>The acute angle \\(x\\) radians is such that \\(\\tan x=k\\), where \\(k\\) is a positive constant. Express, in terms of \\(k\\),</p><p>(i) \\(\\tan(\\pi-x)\\), [1]</p><p>(ii) \\(\\tan\\bigl(\\tfrac{{1}}{{2}}\\pi-x\\bigr)\\), [1]</p><p>(iii) \\(\\sin x\\). [2]</p>",
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.3"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 4,
+      "difficulty": "hard",
+      "type": "pp",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-3.json",
+        "locator": "P1-5.3-PP-9709-11-MJ10-Q1"
+      }
+    },
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "(i) \\(\\tan(\\pi-x)=-k\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1, correct answer only."
+      },
+      {
+        "name": "s2",
+        "text_tex": "(ii) \\(\\tan\\bigl(\\tfrac{{1}}{{2}}\\pi-x\\bigr)=\\dfrac{{1}}{{k}}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1, correct answer only."
+      },
+      {
+        "name": "s3",
+        "text_tex": "(iii) From a right-angled triangle, or from the identity \\(1+\\tan^2 x=\\sec^2 x\\), a method for \\(\\sin x\\) is used.",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1, any valid method — a right-angled triangle or formulae."
+      },
+      {
+        "name": "s4",
+        "text_tex": "(iii) \\(\\sin x=\\dfrac{{k}}{{\\sqrt{{1+k^2}}}}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1."
+      }
+    ]
+  },
+  {
+    "id": "P1-5.3-PP-9709-11-MJ15-Q1",
+    "section": "P1-5.3",
+    "kind": "pastpaper",
+    "title": "Cosine, tangent and sine of an obtuse angle in terms of k",
+    "marks": 4,
+    "source": {
+      "paper": "9709/11/M/J/15 Q1",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s15_qp_11.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s15_ms_11.pdf",
+      "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+    },
+    "stem": "<p>Given that \\(\\theta\\) is an obtuse angle measured in radians and that \\(\\sin\\theta=k\\), find, in terms of \\(k\\), an expression for</p><p>(i) \\(\\cos\\theta\\), [1]</p><p>(ii) \\(\\tan\\theta\\), [2]</p><p>(iii) \\(\\sin(\\theta+\\pi)\\). [1]</p>",
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.3"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 4,
+      "difficulty": "hard",
+      "type": "pp",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-3.json",
+        "locator": "P1-5.3-PP-9709-11-MJ15-Q1"
+      }
+    },
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "(i) \\(\\cos\\theta=-\\sqrt{{1-k^2}}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1, correct answer only."
+      },
+      {
+        "name": "s2",
+        "text_tex": "(ii) \\(\\tan\\theta=\\dfrac{{\\sin\\theta}}{{\\cos\\theta}}\\) is used, with an attempt at the cosine from (i).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1. Used, attempt at cosine seen in (i)."
+      },
+      {
+        "name": "s3",
+        "text_tex": "(ii) \\(\\tan\\theta=-\\dfrac{{k}}{{\\sqrt{{1-k^2}}}}\\), or an equivalent form.",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, follow through their cosine as a function of k only, from part (i)."
+      },
+      {
+        "name": "s4",
+        "text_tex": "(iii) \\(\\sin(\\theta+\\pi)=-k\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1, correct answer only."
+      }
+    ]
+  },
+  {
+    "id": "P1-5.3-PP-9709-12-MJ14-Q3",
+    "section": "P1-5.3",
+    "kind": "pastpaper",
+    "title": "Sine and tangent of a reflex angle, and the sign of sine of twice the angle",
+    "marks": 5,
+    "source": {
+      "paper": "9709/12/M/J/14 Q3",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s14_qp_12.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s14_ms_12.pdf",
+      "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+    },
+    "stem": "<p>The reflex angle \\(\\theta\\) is such that \\(\\cos\\theta=k\\), where \\(0&lt;k&lt;1\\).</p><p>(i) Find an expression, in terms of \\(k\\), for</p><p>(a) \\(\\sin\\theta\\), [2]</p><p>(b) \\(\\tan\\theta\\). [1]</p><p>(ii) Explain why \\(\\sin 2\\theta\\) is negative for \\(0&lt;k&lt;1\\). [2]</p>",
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.3"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 5,
+      "difficulty": "hard",
+      "type": "pp",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-3.json",
+        "locator": "P1-5.3-PP-9709-12-MJ14-Q3"
+      }
+    },
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "(i)(a) The minus sign: \\(\\sin\\theta\\) is negative because \\(\\theta\\) is reflex (fourth quadrant).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1 for the minus sign."
+      },
+      {
+        "name": "s2",
+        "text_tex": "(i)(a) \\(\\sin\\theta=-\\sqrt{{1-k^2}}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1 for the remaining expression."
+      },
+      {
+        "name": "s3",
+        "text_tex": "(i)(b) Using \\(\\tan\\theta=\\dfrac{{\\sin\\theta}}{{\\cos\\theta}}\\) gives \\(\\tan\\theta=-\\dfrac{{\\sqrt{{1-k^2}}}}{{k}}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1, for (i) divided by k."
+      },
+      {
+        "name": "s4",
+        "text_tex": "(ii) \\(\\theta\\) is in the fourth quadrant, so \\(2\\theta\\) lies between \\(540^\\circ\\) and \\(720^\\circ\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1, correct answer only."
+      },
+      {
+        "name": "s5",
+        "text_tex": "(ii) Sine is negative in both of those quadrants, so \\(\\sin 2\\theta\\) is negative.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1, correct answer only."
+      }
+    ]
+  }
+]

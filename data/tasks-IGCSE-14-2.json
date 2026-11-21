@@ -1,0 +1,212 @@
+[
+  {
+    "id": "IGCSE-14.2-QC1-gen",
+    "section": "IGCSE-14.2",
+    "kind": "generated",
+    "title": "Bound of a linear inequality",
+    "marks": 1,
+    "source": "Theory IGCSE-14.2 Quick check 1 (4x-7<=13 gives x<=5); book Worked example 10 style pp.442-443, new numbers",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "r",
+        "min": 2,
+        "max": 9,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 1,
+        "max": 12,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "C": "a*r-b"
+    },
+    "constraints": [
+      "a>=2",
+      "r>=2",
+      "a*r-b!=0"
+    ],
+    "original": {
+      "a": 4,
+      "r": 5,
+      "b": 7
+    },
+    "stem": "Solve \\({a|int}x-{b|int}\\leqslant {C|int}\\). The solution is \\(x\\leqslant k\\). What is the value of \\(k\\)?",
+    "answer": {
+      "expression": "r",
+      "format": "{r|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\({a|int}x\\leqslant {a|int}\\times {r|int}\\), so \\(x\\leqslant {r|int}\\) and \\(k={r|int}\\).",
+        "result": "r",
+        "format": "int",
+        "mark": "A1",
+        "note": "Adding b to both sides leaves a x <= a r."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original a=4, r=5, b=7, C=13"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-14.2-QC2-gen",
+    "section": "IGCSE-14.2",
+    "kind": "generated",
+    "title": "Largest integer in a half-open interval",
+    "marks": 1,
+    "source": "Theory IGCSE-14.2 Quick check 2 (largest integer with 2<x<=7 is 7); book Worked example 9(b) style p.441, new numbers",
+    "params": [
+      {
+        "name": "p",
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 4,
+        "max": 12,
+        "step": 1
+      }
+    ],
+    "derived": {},
+    "constraints": [
+      "q>=p+2"
+    ],
+    "original": {
+      "p": 2,
+      "q": 7
+    },
+    "stem": "What is the largest integer \\(x\\) that satisfies \\({p|int}&lt;x\\leqslant {q|int}\\)?",
+    "answer": {
+      "expression": "q",
+      "format": "{q|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The right-hand end-point is included, so the largest integer is \\({q|int}\\).",
+        "result": "q",
+        "format": "int",
+        "mark": "A1",
+        "note": "p and q are integers and p < x <= q, so the largest integer is q."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original p=2, q=7"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-14.2-QC3-gen",
+    "section": "IGCSE-14.2",
+    "kind": "generated",
+    "title": "Reversing the inequality",
+    "marks": 1,
+    "source": "Theory IGCSE-14.2 Quick check 3 (5-2x>11 gives x<-3); book warning pp.443-444, new numbers",
+    "params": [
+      {
+        "name": "t",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "r",
+        "min": -8,
+        "max": -1,
+        "step": 1
+      },
+      {
+        "name": "s",
+        "min": 3,
+        "max": 12,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "U": "s-t*r"
+    },
+    "constraints": [
+      "t>=1",
+      "r<=-1"
+    ],
+    "original": {
+      "t": 2,
+      "r": -3,
+      "s": 5
+    },
+    "stem": "Solve \\({s|int}-{t|int}x&gt;{U|int}\\). The solution is \\(x&lt;k\\). What is the value of \\(k\\)?",
+    "answer": {
+      "expression": "r",
+      "format": "{r|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(-{t|int}x&gt;{U|int}-{s|int}\\). Dividing by the negative coefficient reverses the inequality, so \\(x&lt;{r|int}\\) and \\(k={r|int}\\).",
+        "result": "r",
+        "format": "int",
+        "mark": "A1",
+        "note": "U = s - t r, so the critical value is r. The derived key is U."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original s=5, t=2, r=-3, U=11"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-14.2-PP-0580-43-MJ20-Q4a",
+    "section": "IGCSE-14.2",
+    "kind": "pastpaper",
+    "title": "Solve a linear inequality",
+    "marks": 2,
+    "source": {
+      "paper": "0580/43/M/J/20 Q4(a)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s20_qp_43.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s20_ms_43.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2020), Question 4(a) only. Official answer and mark allocation from the MS PDF. The item is paper/self-mark. Parts (b) and (c) are omitted: they are an equation and a pair of simultaneous equations, outside this section."
+    },
+    "stem": "This question is 0580/43/M/J/20 Question 4(a), taken from the official QP.\n\nSolve the inequality.\n\n\\(3m+12\\leqslant 8m-5\\)  [2]",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "Collect like terms: \\(12+5\\leqslant 8m-3m\\), so \\(17\\leqslant 5m\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: M1 for 12+5 <= 8m-3m or better, or for 3m-8m <= -5-12 or better."
+      },
+      {
+        "name": "A",
+        "text_tex": "Hence \\(m\\geqslant 3.4\\) (or \\(m\\geqslant \\dfrac{17}{5}\\)).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: m >= 3.4 oe final answer. Independent check: 3m+12 = 8m-5 gives 17=5m, so m=17/5=3.4, and the inequality direction is m greater than or equal to this value."
+      }
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+<svg preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 130" width="100%" height="auto" role="img" aria-label="Error interval of 8.6 metres to 1 decimal place">
+  <rect x="1" y="1" width="518" height="128" fill="#fff" stroke="#ccc"/>
+  <g font-family="Source Sans 3, DejaVu Sans, sans-serif" font-size="13" text-anchor="middle">
+    <line x1="40" y1="70" x2="480" y2="70" stroke="#333" stroke-width="2"/>
+    <polygon points="480,70 468,64 468,76" fill="#333"/>
+    <!-- 8.50, 8.55, 8.60, 8.65, 8.70 at x=60,150,240,330,420 -->
+    <line x1="60" y1="62" x2="60" y2="78" stroke="#333"/>
+    <line x1="150" y1="58" x2="150" y2="82" stroke="#1b5e8a" stroke-width="2"/>
+    <line x1="240" y1="62" x2="240" y2="78" stroke="#333"/>
+    <line x1="330" y1="58" x2="330" y2="82" stroke="#1b5e8a" stroke-width="2"/>
+    <line x1="420" y1="62" x2="420" y2="78" stroke="#333"/>
+    <text x="60" y="98">8.50</text>
+    <text x="150" y="98">8.55</text>
+    <text x="240" y="98">8.60</text>
+    <text x="330" y="98">8.65</text>
+    <text x="420" y="98">8.70</text>
+    <rect x="150" y="48" width="180" height="12" fill="#8ec6e8" opacity="0.85"/>
+    <text x="240" y="28" font-size="14">error interval for 8.6 m (1 d.p.)</text>
+    <text x="150" y="42" font-size="11">lower bound</text>
+    <text x="330" y="42" font-size="11">upper bound</text>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 500" width="100%" height="auto" role="img" aria-label="The broken line 2x plus 3y equals 12, with intercepts 6, 0 and 0, 4. The origin lies in the region 2x plus 3y is less than 12.">
+  <rect x="1" y="1" width="558" height="498" fill="#fff" stroke="#ccc"/>
+  <g font-family="Source Sans 3, DejaVu Sans, sans-serif" font-size="13" fill="#333">
+    <line x1="70" y1="420" x2="70" y2="-30" stroke="#eee" stroke-width="1"/><line x1="125" y1="420" x2="125" y2="-30" stroke="#eee" stroke-width="1"/><line x1="180" y1="420" x2="180" y2="-30" stroke="#eee" stroke-width="1"/><line x1="235" y1="420" x2="235" y2="-30" stroke="#eee" stroke-width="1"/><line x1="290" y1="420" x2="290" y2="-30" stroke="#eee" stroke-width="1"/><line x1="345" y1="420" x2="345" y2="-30" stroke="#eee" stroke-width="1"/><line x1="400" y1="420" x2="400" y2="-30" stroke="#eee" stroke-width="1"/><line x1="455" y1="420" x2="455" y2="-30" stroke="#eee" stroke-width="1"/><line x1="510" y1="420" x2="510" y2="-30" stroke="#eee" stroke-width="1"/><line x1="565" y1="420" x2="565" y2="-30" stroke="#eee" stroke-width="1"/>
+    <line x1="70" y1="420" x2="565" y2="420" stroke="#eee" stroke-width="1"/><line x1="70" y1="370" x2="565" y2="370" stroke="#eee" stroke-width="1"/><line x1="70" y1="320" x2="565" y2="320" stroke="#eee" stroke-width="1"/><line x1="70" y1="270" x2="565" y2="270" stroke="#eee" stroke-width="1"/><line x1="70" y1="220" x2="565" y2="220" stroke="#eee" stroke-width="1"/><line x1="70" y1="170" x2="565" y2="170" stroke="#eee" stroke-width="1"/><line x1="70" y1="120" x2="565" y2="120" stroke="#eee" stroke-width="1"/><line x1="70" y1="70" x2="565" y2="70" stroke="#eee" stroke-width="1"/><line x1="70" y1="20" x2="565" y2="20" stroke="#eee" stroke-width="1"/><line x1="70" y1="-30" x2="565" y2="-30" stroke="#eee" stroke-width="1"/>
+    <line x1="70" y1="320" x2="565" y2="320" stroke="#333" stroke-width="1.6"/>
+    <line x1="125" y1="420" x2="125" y2="-30" stroke="#333" stroke-width="1.6"/>
+    <text x="557" y="312" text-anchor="end">x</text>
+    <text x="133" y="-18">y</text>
+    <text x="70" y="336" text-anchor="middle">-1</text><text x="180" y="336" text-anchor="middle">1</text><text x="235" y="336" text-anchor="middle">2</text><text x="290" y="336" text-anchor="middle">3</text><text x="345" y="336" text-anchor="middle">4</text><text x="400" y="336" text-anchor="middle">5</text><text x="455" y="336" text-anchor="middle">6</text><text x="510" y="336" text-anchor="middle">7</text><text x="565" y="336" text-anchor="middle">8</text>
+    <text x="115" y="424" text-anchor="end">-2</text><text x="115" y="374" text-anchor="end">-1</text><text x="115" y="274" text-anchor="end">1</text><text x="115" y="224" text-anchor="end">2</text><text x="115" y="174" text-anchor="end">3</text><text x="115" y="124" text-anchor="end">4</text><text x="115" y="74" text-anchor="end">5</text><text x="115" y="24" text-anchor="end">6</text><text x="115" y="-26" text-anchor="end">7</text>
+    <text x="115" y="336" text-anchor="end">0</text>
+    <line x1="97.5" y1="103.33333333333337" x2="537.5" y2="370" stroke="#1b5e8a" stroke-width="2.6" stroke-dasharray="8 5"/>
+    <circle cx="455" cy="320" r="4" fill="#1b5e8a"/>
+    <circle cx="125" cy="120" r="4" fill="#1b5e8a"/>
+    <text x="461" y="312" fill="#1b5e8a">(6, 0)</text>
+    <text x="133" y="112" fill="#1b5e8a">(0, 4)</text>
+    <text x="301.0" y="280.0" fill="#1b5e8a">2x+3y=12</text>
+    <circle cx="125" cy="320" r="4.5" fill="#c0392b"/>
+    <text x="135" y="340" fill="#c0392b">(0, 0) lies in 2x+3y&lt;12</text>
+  </g>
+</svg>

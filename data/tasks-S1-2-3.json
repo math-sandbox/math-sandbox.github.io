@@ -1,0 +1,154 @@
+[
+  {
+    "id": "S1-2.3-QC1-gen",
+    "section": "S1-2.3",
+    "kind": "generated",
+    "title": "Position of the median in an odd-sized ordered list",
+    "marks": 1,
+    "source": "Theory S1-2.3 Quick check 1 (9 ordered values, median is the 5th); new odd sizes",
+    "params": [
+      {
+        "name": "k",
+        "min": 3,
+        "max": 12,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "N": "2*k+1",
+      "A": "k+1"
+    },
+    "constraints": [
+      "k>=3"
+    ],
+    "original": {
+      "k": 4
+    },
+    "stem": "A data set has {N|int} values arranged in order. The median is the \\(m\\)th value. What is the value of \\(m\\)?",
+    "answer": {
+      "expression": "k+1",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "There are {N|int} values, so the median is in position \\(({N|int}+1)/2={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is k+1 and N is 2k+1. Original k=4 gives n=9 and m=5."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "S1-2.3-QC2-gen",
+    "section": "S1-2.3",
+    "kind": "generated",
+    "title": "Median of an even-sized ordered list",
+    "marks": 1,
+    "source": "Theory S1-2.3 Quick check 2 (4th value 10 and 5th value 16, median 13); new even-sum neighbouring values",
+    "params": [
+      {
+        "name": "a",
+        "min": 4,
+        "max": 20,
+        "step": 1
+      },
+      {
+        "name": "d",
+        "min": 2,
+        "max": 10,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "B": "a+d",
+      "A": "a+d/2"
+    },
+    "constraints": [
+      "d%2==0",
+      "d>=2"
+    ],
+    "original": {
+      "a": 10,
+      "d": 6
+    },
+    "stem": "A data set has 8 values arranged in order. The 4th value is {a|int} and the 5th value is {B|int}. What is the median?",
+    "answer": {
+      "expression": "a+d/2",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "With an even number of values the median is the mid-point of the two middle values: \\(({a|int}+{B|int})/2={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is a+d/2 and B is a+d. Original a=10, d=6 gives 5th value 16 and median 13."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "S1-2.3-QC3-gen",
+    "section": "S1-2.3",
+    "kind": "generated",
+    "title": "Cumulative-frequency height at which the median is read",
+    "marks": 1,
+    "source": "Theory S1-2.3 Quick check 3 (n=40, read the median at cf=20); new even sample sizes",
+    "params": [
+      {
+        "name": "m",
+        "min": 10,
+        "max": 40,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "N": "2*m",
+      "A": "m"
+    },
+    "constraints": [
+      "m>=10"
+    ],
+    "original": {
+      "m": 20
+    },
+    "stem": "A cumulative frequency graph illustrates {N|int} observations. The median is read from the graph at a cumulative frequency of \\(k\\). What is the value of \\(k\\)?",
+    "answer": {
+      "expression": "m",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The median is read at half of {N|int}, so \\(k={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is m and N is 2m. Original m=20 gives n=40 and k=20. (Some texts use (n+1)/2; for a cf graph with large n the conventional reading is n/2.)"
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  }
+]

@@ -1,0 +1,1081 @@
+[
+ {
+  "id": "17.1-QC1-gen",
+  "section": "17.1",
+  "kind": "generated",
+  "title": "Piece work: earnings from a rate per item",
+  "marks": 2,
+  "source": "Ch17 theory IGCSE-17.1 Quick check 1 ($0.85 per box, 640 boxes, $544.00)",
+  "params": [
+   {
+    "name": "p",
+    "min": 0.2,
+    "max": 2,
+    "step": 0.05
+   },
+   {
+    "name": "n",
+    "min": 200,
+    "max": 1500,
+    "step": 10
+   }
+  ],
+  "derived": {},
+  "constraints": [
+   "abs(p*n*100-round(p*n*100))<1e-6  # exact cents"
+  ],
+  "original": {
+   "p": 0.85,
+   "n": 640
+  },
+  "stem": "A worker is paid ${p|money} for each box packed. She packs {n|cnt} boxes in a week. Calculate her earnings.",
+  "answer": {
+   "expression": "n*p",
+   "format": "${E|money}",
+   "tolerance": 0.005
+  },
+  "steps": [
+   {
+    "name": "Em",
+    "text_tex": "\\({n|int}\\times{p|num2}\\)",
+    "result": "n*p",
+    "format": "num",
+    "mark": "M1",
+    "note": "Number of items × rate per item."
+   },
+   {
+    "name": "E",
+    "text_tex": "\\(={Em|num}\\), so ${Em|money}",
+    "result": "Em",
+    "format": "money",
+    "mark": "A1",
+    "note": "Correct earnings to 2 d.p.; dependent on M1."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem, params and step texts above"
+   },
+   {
+    "id": "shirts",
+    "stem": "A tailor is paid ${p|money} for each shirt she sews. She sews {n|cnt} shirts in a week. Calculate her earnings.",
+    "params": [
+     {
+      "name": "p",
+      "min": 1.5,
+      "max": 6,
+      "step": 0.25
+     },
+     {
+      "name": "n",
+      "min": 20,
+      "max": 150,
+      "step": 1
+     }
+    ]
+   },
+   {
+    "id": "parcels",
+    "stem": "A courier is paid ${p|money} for each parcel he delivers. He delivers {n|cnt} parcels in a week. Calculate his earnings.",
+    "params": [
+     {
+      "name": "p",
+      "min": 0.5,
+      "max": 2.5,
+      "step": 0.05
+     },
+     {
+      "name": "n",
+      "min": 80,
+      "max": 500,
+      "step": 5
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "17.1-QC2-gen",
+  "section": "17.1",
+  "kind": "generated",
+  "title": "Deductions: net income and net as a percentage of gross",
+  "marks": 4,
+  "source": "Ch17 theory IGCSE-17.1 Quick check 2 ($3250 gross; $412.50, $162.50, $48.75; $2626.25, 80.8%)",
+  "params": [
+   {
+    "name": "G",
+    "min": 1500,
+    "max": 6000,
+    "step": 50
+   },
+   {
+    "name": "x",
+    "min": 100,
+    "max": 1200,
+    "step": 2.5
+   },
+   {
+    "name": "y",
+    "min": 50,
+    "max": 400,
+    "step": 2.5
+   },
+   {
+    "name": "z",
+    "min": 10,
+    "max": 150,
+    "step": 0.25
+   }
+  ],
+  "derived": {
+   "D": "x+y+z"
+  },
+  "constraints": [
+   "D>=0.08*G",
+   "D<=0.4*G  # realistic deductions"
+  ],
+  "original": {
+   "G": 3250,
+   "x": 412.5,
+   "y": 162.5,
+   "z": 48.75
+  },
+  "stem": "Kai's gross monthly income is ${G|money}. Deductions are income tax ${x|money}, pension ${y|money} and insurance ${z|money}. Find (a) his net income, (b) net income as a percentage of gross income.",
+  "answer": {
+   "parts": [
+    {
+     "part": "a",
+     "expression": "G-(x+y+z)",
+     "format": "${N|money}",
+     "tolerance": 0.005
+    },
+    {
+     "part": "b",
+     "expression": "(G-(x+y+z))/G*100",
+     "format": "{Q|sf3}%",
+     "tolerance_sf": 3,
+     "tolerance_note": "±half a unit in the 3rd significant figure (80.8 ± 0.05, as in answers.json)"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "name": "Ds",
+    "text_tex": "Deductions = {x|num2} + {y|num2} + {z|num2} = {Ds|num2}",
+    "result": "x+y+z",
+    "format": "num",
+    "mark": "M1",
+    "note": "(a) Total of all deductions subtracted from gross income."
+   },
+   {
+    "name": "N",
+    "text_tex": "(a) Net \\(={G|num2}-{Ds|num2}={N|num2}\\), so ${N|money}",
+    "result": "G-Ds",
+    "format": "money",
+    "mark": "A1",
+    "note": "(a) Correct net income; dependent on M1."
+   },
+   {
+    "name": "Qm",
+    "text_tex": "(b) \\(\\dfrac{{{N|num2}}}{{{G|num2}}}\\times100\\)",
+    "result": "N/G*100",
+    "format": "num",
+    "mark": "M1",
+    "note": "(b) Their net ÷ gross × 100 (ft their (a))."
+   },
+   {
+    "name": "Q",
+    "text_tex": "\\(={Qm|num4}\\ldots\\%\\), so {Qm|sf3}%",
+    "result": "Qm",
+    "format": "sf3",
+    "mark": "A1",
+    "note": "(b) Correct to 3 s.f."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem, params and step texts above"
+   },
+   {
+    "id": "weekly",
+    "stem": "A nurse's gross weekly pay is ${G|money}. Deductions are income tax ${x|money}, pension ${y|money} and insurance ${z|money}. Find (a) her net pay, (b) net pay as a percentage of gross pay.",
+    "params": [
+     {
+      "name": "G",
+      "min": 400,
+      "max": 1500,
+      "step": 10
+     },
+     {
+      "name": "x",
+      "min": 20,
+      "max": 300,
+      "step": 0.5
+     },
+     {
+      "name": "y",
+      "min": 10,
+      "max": 100,
+      "step": 0.5
+     },
+     {
+      "name": "z",
+      "min": 5,
+      "max": 40,
+      "step": 0.25
+     }
+    ]
+   },
+   {
+    "id": "annual",
+    "stem": "An engineer's gross annual salary is ${G|money}. Deductions are income tax ${x|money}, pension ${y|money} and union fees ${z|money}. Find (a) his net income, (b) net income as a percentage of gross income.",
+    "params": [
+     {
+      "name": "G",
+      "min": 25000,
+      "max": 95000,
+      "step": 500
+     },
+     {
+      "name": "x",
+      "min": 2000,
+      "max": 20000,
+      "step": 50
+     },
+     {
+      "name": "y",
+      "min": 1000,
+      "max": 6000,
+      "step": 25
+     },
+     {
+      "name": "z",
+      "min": 100,
+      "max": 900,
+      "step": 5
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "17.1-QC3-gen",
+  "section": "17.1",
+  "kind": "generated",
+  "title": "Salary: equal payments from an annual amount",
+  "marks": 2,
+  "source": "Ch17 theory IGCSE-17.1 Quick check 3 ($46 800 per year, 52 weeks, $900.00)",
+  "params": [
+   {
+    "name": "W",
+    "min": 250,
+    "max": 2000,
+    "step": 5
+   },
+   {
+    "name": "d",
+    "min": 52,
+    "max": 52,
+    "step": 1
+   }
+  ],
+  "derived": {
+   "S": "d*W"
+  },
+  "constraints": [],
+  "original": {
+   "W": 900,
+   "d": 52
+  },
+  "stem": "A salary of ${S|money} per year is paid in {d|int} equal weekly amounts. How much is paid each week?",
+  "answer": {
+   "expression": "S/d",
+   "format": "${A|money}",
+   "tolerance": 0.005
+  },
+  "steps": [
+   {
+    "name": "Am",
+    "text_tex": "{S|cnt} ÷ {d|int}",
+    "result": "S/d",
+    "format": "num",
+    "mark": "M1",
+    "note": "Annual salary ÷ number of payments."
+   },
+   {
+    "name": "A",
+    "text_tex": "\\(={Am|num}\\), so ${Am|money}",
+    "result": "Am",
+    "format": "money",
+    "mark": "A1",
+    "note": "Correct amount to 2 d.p."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem, params and step texts above"
+   },
+   {
+    "id": "monthly",
+    "stem": "A teacher's salary of ${S|money} per year is paid in {d|int} equal monthly amounts. How much is paid each month?",
+    "params": [
+     {
+      "name": "W",
+      "min": 1500,
+      "max": 8000,
+      "step": 10
+     },
+     {
+      "name": "d",
+      "min": 12,
+      "max": 12,
+      "step": 1
+     }
+    ]
+   },
+   {
+    "id": "parttime",
+    "stem": "A part-time assistant is paid a salary of ${S|money} per year in {d|int} equal weekly amounts. How much is paid each week?",
+    "params": [
+     {
+      "name": "W",
+      "min": 120,
+      "max": 600,
+      "step": 2
+     },
+     {
+      "name": "d",
+      "min": 52,
+      "max": 52,
+      "step": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "17.1-QC4-gen",
+  "section": "17.1",
+  "kind": "generated",
+  "title": "Income tax from a tax table",
+  "marks": 3,
+  "source": "Ch17 theory IGCSE-17.1 Quick check 4 (Worked example 3 table, $31 000, $2850.00)",
+  "params": [
+   {
+    "name": "X",
+    "min": 13000,
+    "max": 39900,
+    "step": 100
+   },
+   {
+    "name": "L",
+    "min": 12000,
+    "max": 12000,
+    "step": 1000
+   },
+   {
+    "name": "U",
+    "min": 40000,
+    "max": 40000,
+    "step": 1000
+   },
+   {
+    "name": "p",
+    "min": 15,
+    "max": 15,
+    "step": 1
+   }
+  ],
+  "derived": {
+   "L0": "0",
+   "pd": "p/100"
+  },
+  "constraints": [
+   "X>=L+1000",
+   "X<=U-100  # inside the percentage band"
+  ],
+  "original": {
+   "X": 31000,
+   "L": 12000,
+   "U": 40000,
+   "p": 15
+  },
+  "stem": "Tax table: ${L0|money} to ${L|money}: 0%; over ${L|money} up to ${U|money}: {p|raw}% of the amount over ${L|money}. Use the tax table to find the tax on a taxable income of ${X|money}.",
+  "answer": {
+   "expression": "p/100*(X-L)",
+   "format": "${Tx|money}",
+   "tolerance": 0.005
+  },
+  "steps": [
+   {
+    "name": "O",
+    "text_tex": "${X|money} is in the {p|raw}% band; amount over ${L|money}: {X|cnt} − {L|cnt} = {O|cnt}",
+    "result": "X-L",
+    "format": "int",
+    "mark": "M1",
+    "note": "Find the band, then subtract the start of the band."
+   },
+   {
+    "name": "Tm",
+    "text_tex": "\\({p|raw}\\%\\) of {O|cnt}: {pd|raw} × {O|cnt}",
+    "result": "p/100*O",
+    "format": "num",
+    "mark": "M1",
+    "note": "Band percentage of the amount over (ft their amount)."
+   },
+   {
+    "name": "Tx",
+    "text_tex": "\\(={Tm|num2}\\), so the tax is ${Tm|money}",
+    "result": "Tm",
+    "format": "money",
+    "mark": "A1",
+    "note": "Correct tax to 2 d.p."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base table (Worked example 3)"
+   },
+   {
+    "id": "countryB",
+    "stem": "Tax table: ${L0|money} to ${L|money}: 0%; over ${L|money} up to ${U|money}: {p|raw}% of the amount over ${L|money}. Use the tax table to find the tax on a taxable income of ${X|money}.",
+    "params": [
+     {
+      "name": "X",
+      "min": 11000,
+      "max": 34900,
+      "step": 100
+     },
+     {
+      "name": "L",
+      "min": 10000,
+      "max": 10000,
+      "step": 1000
+     },
+     {
+      "name": "U",
+      "min": 35000,
+      "max": 35000,
+      "step": 1000
+     },
+     {
+      "name": "p",
+      "min": 20,
+      "max": 20,
+      "step": 1
+     }
+    ]
+   },
+   {
+    "id": "countryC",
+    "stem": "Tax table: ${L0|money} to ${L|money}: 0%; over ${L|money} up to ${U|money}: {p|raw}% of the amount over ${L|money}. Use the tax table to find the tax on a taxable income of ${X|money}.",
+    "params": [
+     {
+      "name": "X",
+      "min": 9000,
+      "max": 29900,
+      "step": 100
+     },
+     {
+      "name": "L",
+      "min": 8000,
+      "max": 8000,
+      "step": 1000
+     },
+     {
+      "name": "U",
+      "min": 30000,
+      "max": 30000,
+      "step": 1000
+     },
+     {
+      "name": "p",
+      "min": 12,
+      "max": 12,
+      "step": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "17.1-PP-0580-33-MJ22-Q9a1",
+  "section": "17.1",
+  "kind": "pastpaper",
+  "title": "Earnings: fixed amount plus a percentage of profit",
+  "marks": 2,
+  "source": {
+   "paper": "0580/33/M/J/22 Q9(a)(i)",
+   "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s22_qp_33.pdf",
+   "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s22_ms_33.pdf",
+   "note": "Text taken from the QP and MS PDFs (UCLES 2022)."
+  },
+  "stem": "Ahmed owns a company.\nEach year he earns $56 000 plus 3% of the year’s profit.\nCalculate the amount he earns in a year when the profit is $320 600.",
+  "answer": {
+   "expression": "56000+3/100*320600",
+   "official": "65 618",
+   "tolerance_range": [
+    65618,
+    65618
+   ]
+  },
+  "steps": [
+   {
+    "name": "c",
+    "text_tex": "\\(\\frac{3}{100}\\times320\\,600=9618\\)",
+    "result": "3/100*320600",
+    "format": "num",
+    "mark": "M1",
+    "note": "MS: M1 for \\(\\frac{3}{100}\\times320\\,600\\) oe."
+   },
+   {
+    "name": "E",
+    "text_tex": "\\(56\\,000+9618=65\\,618\\), so $65 618",
+    "result": "56000+c",
+    "format": "int",
+    "mark": "A1",
+    "note": "MS: 65 618."
+   }
+  ]
+ },
+ {
+  "id": "17.1-PP-0580-42-FM21-Q1bc",
+  "section": "17.1",
+  "kind": "pastpaper",
+  "title": "Hourly rates: find the number of hours worked",
+  "marks": 4,
+  "source": {
+   "paper": "0580/42/F/M/21 Q1(b)(c)",
+   "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_m21_qp_42.pdf",
+   "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_m21_ms_42.pdf",
+   "note": "Text taken from the QP and MS PDFs (UCLES 2021). The QP shows the three rates as a table; its cells are given here line by line in the QP's order."
+  },
+  "stem": "Painter: $35 per hour\nPlumber: Fixed charge $40 plus $26.50 per hour\nElectrician: $48 per hour for the first 2 hours then $32 per hour\nThese are the rates charged by a painter, a plumber and an electrician who do some work for Mr Sharma.",
+  "parts": [
+   {
+    "part": "(b)",
+    "stem": "Mr Sharma pays the plumber $252.\nCalculate how many hours the plumber works.",
+    "marks": 2,
+    "answer": {
+     "expression": "(252-40)/26.5",
+     "official": "8",
+     "tolerance": 0,
+     "tolerance_range": [
+      8,
+      8
+     ]
+    },
+    "steps": [
+     {
+      "name": "pb",
+      "text_tex": "\\(40+26.5x=252\\)",
+      "result": "(252-40)/26.5",
+      "format": "num",
+      "mark": "M1",
+      "note": "MS: M1 for \\(40+26.5x=252\\) oe or B1 for 212 seen."
+     },
+     {
+      "name": "hb",
+      "text_tex": "\\(x=\\dfrac{212}{26.5}=8\\) hours",
+      "result": "pb",
+      "format": "int",
+      "mark": "A1",
+      "note": "MS: 8."
+     }
+    ]
+   },
+   {
+    "part": "(c)",
+    "stem": "Mr Sharma pays the electrician $224.\nCalculate how many hours the electrician works.",
+    "marks": 2,
+    "answer": {
+     "expression": "2+(224-2*48)/32",
+     "official": "6",
+     "tolerance": 0,
+     "tolerance_range": [
+      6,
+      6
+     ]
+    },
+    "steps": [
+     {
+      "name": "pc",
+      "text_tex": "\\((224-2\\times48)\\div32=4\\)",
+      "result": "(224-2*48)/32",
+      "format": "num",
+      "mark": "M1",
+      "note": "MS: M1 for \\((224-2\\times48)\\div32\\) oe or \\(2\\times48+32(x-2)=224\\) soi."
+     },
+     {
+      "name": "hc",
+      "text_tex": "\\(2+4=6\\) hours",
+      "result": "2+pc",
+      "format": "int",
+      "mark": "A1",
+      "note": "MS: 6."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "17.1-PP-0580-42-MJ23-Q2b1",
+  "section": "17.1",
+  "kind": "pastpaper",
+  "title": "Earnings: percentage spent",
+  "marks": 2,
+  "source": {
+   "paper": "0580/42/M/J/23 Q2(b)(i)",
+   "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s23_qp_42.pdf",
+   "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s23_ms_42.pdf",
+   "note": "Text taken from the QP and MS PDFs (UCLES 2023)."
+  },
+  "stem": "In 2021, Anil earns $37 000.\nHe spends $12 400 on bills in 2021.\nCalculate the percentage of his earnings he spends on bills.",
+  "answer": {
+   "expression": "12400/37000*100",
+   "official": "33.5 or 33.51…",
+   "tolerance_range": [
+    33.5,
+    33.52
+   ]
+  },
+  "steps": [
+   {
+    "name": "m",
+    "text_tex": "\\(\\dfrac{12\\,400}{37\\,000}\\times100\\)",
+    "result": "12400/37000*100",
+    "format": "num",
+    "mark": "M1",
+    "note": "MS: M1 for \\(\\frac{12\\,400}{37\\,000}\\,[\\times100]\\) oe. If 0 scored, SC1 for answer 66.5 or 66.48 to 66.49."
+   },
+   {
+    "name": "q",
+    "text_tex": "\\(=33.513\\ldots\\), so 33.5%",
+    "result": "m",
+    "format": "sf3",
+    "mark": "A1",
+    "note": "MS: 33.5 or 33.51…"
+   }
+  ]
+ },
+ {
+  "id": "17.1-PP-MJ22-Q9a1-similar",
+  "section": "17.1",
+  "kind": "generated",
+  "title": "Earnings: fixed amount plus a percentage",
+  "marks": 2,
+  "source": "Similar to 0580/33/M/J/22 Q9(a)(i); same mark structure",
+  "params": [
+   {
+    "name": "B",
+    "min": 20000,
+    "max": 90000,
+    "step": 1000
+   },
+   {
+    "name": "c",
+    "min": 1,
+    "max": 6,
+    "step": 0.5
+   },
+   {
+    "name": "Q",
+    "min": 50000,
+    "max": 800000,
+    "step": 100
+   }
+  ],
+  "derived": {},
+  "constraints": [
+   "abs(c*Q/100*100-round(c*Q/100*100))<1e-6  # exact cents",
+   "c*Q/100<=3*B  # percentage part not much larger than the fixed part"
+  ],
+  "original": {
+   "B": 56000,
+   "c": 3,
+   "Q": 320600
+  },
+  "stem": "Mira owns a company. Each year she earns ${B|money} plus {c|raw}% of the year’s profit. Calculate the amount she earns in a year when the profit is ${Q|money}.",
+  "answer": {
+   "expression": "B+c/100*Q",
+   "format": "${E|money}",
+   "tolerance": 0.005
+  },
+  "steps": [
+   {
+    "name": "cm",
+    "text_tex": "\\(\\frac{{{c|raw}}}{{100}}\\) × {Q|cnt} = {cm|num2}",
+    "result": "c/100*Q",
+    "format": "num",
+    "mark": "M1",
+    "note": "Percentage of the profit (or sales) oe."
+   },
+   {
+    "name": "E",
+    "text_tex": "{B|cnt} + {cm|num2} = {E|num2}, so ${E|money}",
+    "result": "B+cm",
+    "format": "money",
+    "mark": "A1",
+    "note": "Correct total."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem, params and step texts above"
+   },
+   {
+    "id": "sales",
+    "stem": "A sales representative is paid a retainer of ${B|money} per year plus {c|raw}% commission on her sales. Calculate her earnings in a year when her sales are ${Q|money}.",
+    "params": [
+     {
+      "name": "B",
+      "min": 8000,
+      "max": 30000,
+      "step": 500
+     },
+     {
+      "name": "c",
+      "min": 2,
+      "max": 10,
+      "step": 0.5
+     },
+     {
+      "name": "Q",
+      "min": 40000,
+      "max": 400000,
+      "step": 100
+     }
+    ]
+   },
+   {
+    "id": "agent",
+    "stem": "An estate agent is paid ${B|money} per month plus {c|raw}% commission on the value of the houses he sells. One month he sells houses worth ${Q|money}. Calculate his earnings for that month.",
+    "params": [
+     {
+      "name": "B",
+      "min": 800,
+      "max": 3000,
+      "step": 50
+     },
+     {
+      "name": "c",
+      "min": 0.5,
+      "max": 2,
+      "step": 0.25
+     },
+     {
+      "name": "Q",
+      "min": 150000,
+      "max": 900000,
+      "step": 1000
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "17.1-PP-FM21-Q1bc-similar",
+  "section": "17.1",
+  "kind": "generated",
+  "title": "Hourly rates: find the number of hours worked",
+  "marks": 4,
+  "source": "Similar to 0580/42/F/M/21 Q1(b)(c); same mark structure",
+  "params": [
+   {
+    "name": "F",
+    "min": 20,
+    "max": 80,
+    "step": 5
+   },
+   {
+    "name": "h",
+    "min": 15,
+    "max": 45,
+    "step": 0.5
+   },
+   {
+    "name": "x",
+    "min": 2,
+    "max": 10,
+    "step": 1
+   },
+   {
+    "name": "a",
+    "min": 30,
+    "max": 70,
+    "step": 1
+   },
+   {
+    "name": "b",
+    "min": 20,
+    "max": 60,
+    "step": 1
+   },
+   {
+    "name": "y",
+    "min": 3,
+    "max": 10,
+    "step": 1
+   }
+  ],
+  "derived": {
+   "X": "F+h*x",
+   "Y": "2*a+b*(y-2)",
+   "Xd": "X-F"
+  },
+  "constraints": [
+   "b<a  # lower rate after the first 2 hours"
+  ],
+  "original": {
+   "F": 40,
+   "h": 26.5,
+   "x": 8,
+   "a": 48,
+   "b": 32,
+   "y": 6
+  },
+  "stem": "A gardener charges a fixed charge of ${F|money} plus ${h|money} per hour. A tiler charges ${a|money} per hour for the first 2 hours then ${b|money} per hour.\n(b) Mrs Lim pays the gardener ${X|money}. Calculate how many hours the gardener works.\n(c) Mrs Lim pays the tiler ${Y|money}. Calculate how many hours the tiler works.",
+  "answer": {
+   "parts": [
+    {
+     "part": "(b)",
+     "expression": "(X-F)/h",
+     "format": "{x|int} hours",
+     "tolerance": 0
+    },
+    {
+     "part": "(c)",
+     "expression": "2+(Y-2*a)/b",
+     "format": "{y|int} hours",
+     "tolerance": 0
+    }
+   ]
+  },
+  "steps": [
+   {
+    "name": "pb",
+    "text_tex": "(b) \\({F|num}+{h|raw}x={X|num}\\)",
+    "result": "(X-F)/h",
+    "format": "num",
+    "mark": "M1",
+    "note": "(b) Fixed charge + rate × hours = amount paid oe, or B1 for (amount paid − fixed charge) seen."
+   },
+   {
+    "name": "hb",
+    "text_tex": "\\(x=\\dfrac{{{Xd|num}}}{{{h|raw}}}={pb|int}\\) hours",
+    "result": "pb",
+    "format": "int",
+    "mark": "A1",
+    "note": "(b) Correct number of hours."
+   },
+   {
+    "name": "pc",
+    "text_tex": "(c) \\(({Y|num}-2\\times{a|int})\\div{b|int}={pc|int}\\)",
+    "result": "(Y-2*a)/b",
+    "format": "num",
+    "mark": "M1",
+    "note": "(c) (amount − 2 × first rate) ÷ second rate oe, or \\(2\\times{a|int}+{b|int}(x-2)={Y|num}\\) soi."
+   },
+   {
+    "name": "hc",
+    "text_tex": "\\(2+{pc|int}={hc|int}\\) hours",
+    "result": "2+pc",
+    "format": "int",
+    "mark": "A1",
+    "note": "(c) Correct number of hours."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem, params and step texts above"
+   },
+   {
+    "id": "cleaner",
+    "stem": "A cleaner charges a fixed charge of ${F|money} plus ${h|money} per hour. A mechanic charges ${a|money} per hour for the first 2 hours then ${b|money} per hour.\n(b) Mr Diaz pays the cleaner ${X|money}. Calculate how many hours the cleaner works.\n(c) Mr Diaz pays the mechanic ${Y|money}. Calculate how many hours the mechanic works.",
+    "params": [
+     {
+      "name": "F",
+      "min": 10,
+      "max": 40,
+      "step": 5
+     },
+     {
+      "name": "h",
+      "min": 12,
+      "max": 25,
+      "step": 0.5
+     },
+     {
+      "name": "x",
+      "min": 2,
+      "max": 8,
+      "step": 1
+     },
+     {
+      "name": "a",
+      "min": 50,
+      "max": 90,
+      "step": 1
+     },
+     {
+      "name": "b",
+      "min": 35,
+      "max": 80,
+      "step": 1
+     },
+     {
+      "name": "y",
+      "min": 3,
+      "max": 8,
+      "step": 1
+     }
+    ]
+   },
+   {
+    "id": "tutor",
+    "stem": "A tutor charges a fixed booking fee of ${F|money} plus ${h|money} per hour. An IT technician charges ${a|money} per hour for the first 2 hours then ${b|money} per hour.\n(b) A family pays the tutor ${X|money}. Calculate how many hours the tutor works.\n(c) The family pays the IT technician ${Y|money}. Calculate how many hours the IT technician works.",
+    "params": [
+     {
+      "name": "F",
+      "min": 5,
+      "max": 30,
+      "step": 5
+     },
+     {
+      "name": "h",
+      "min": 20,
+      "max": 60,
+      "step": 0.5
+     },
+     {
+      "name": "x",
+      "min": 2,
+      "max": 12,
+      "step": 1
+     },
+     {
+      "name": "a",
+      "min": 40,
+      "max": 100,
+      "step": 1
+     },
+     {
+      "name": "b",
+      "min": 25,
+      "max": 90,
+      "step": 1
+     },
+     {
+      "name": "y",
+      "min": 3,
+      "max": 9,
+      "step": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "17.1-PP-MJ23-Q2b1-similar",
+  "section": "17.1",
+  "kind": "generated",
+  "title": "Earnings: percentage spent",
+  "marks": 2,
+  "source": "Similar to 0580/42/M/J/23 Q2(b)(i); same mark structure",
+  "params": [
+   {
+    "name": "E",
+    "min": 15000,
+    "max": 90000,
+    "step": 100
+   },
+   {
+    "name": "S",
+    "min": 2000,
+    "max": 50000,
+    "step": 50
+   }
+  ],
+  "derived": {},
+  "constraints": [
+   "S>=0.1*E",
+   "S<=0.6*E  # realistic share"
+  ],
+  "original": {
+   "E": 37000,
+   "S": 12400
+  },
+  "stem": "In 2024, Priya earns ${E|money}. She spends ${S|money} on bills in 2024. Calculate the percentage of her earnings she spends on bills.",
+  "answer": {
+   "expression": "S/E*100",
+   "format": "{q|sf3}%",
+   "tolerance_sf": 3
+  },
+  "steps": [
+   {
+    "name": "m",
+    "text_tex": "{S|cnt} ÷ {E|cnt} × 100",
+    "result": "S/E*100",
+    "format": "num",
+    "mark": "M1",
+    "note": "Amount spent ÷ earnings × 100 oe."
+   },
+   {
+    "name": "q",
+    "text_tex": "\\(={m|num4}\\ldots\\), so {m|sf3}%",
+    "result": "m",
+    "format": "sf3",
+    "mark": "A1",
+    "note": "Correct to 3 s.f."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem, params and step texts above"
+   },
+   {
+    "id": "rent",
+    "stem": "Tom earns ${E|money} per year. He pays ${S|money} per year in rent. Calculate the percentage of his earnings he pays in rent.",
+    "params": [
+     {
+      "name": "E",
+      "min": 18000,
+      "max": 80000,
+      "step": 100
+     },
+     {
+      "name": "S",
+      "min": 4000,
+      "max": 30000,
+      "step": 50
+     }
+    ]
+   },
+   {
+    "id": "weekly",
+    "stem": "Sara earns ${E|money} per week. She spends ${S|money} per week on food. Calculate the percentage of her earnings she spends on food.",
+    "params": [
+     {
+      "name": "E",
+      "min": 300,
+      "max": 1500,
+      "step": 5
+     },
+     {
+      "name": "S",
+      "min": 40,
+      "max": 500,
+      "step": 1
+     }
+    ]
+   }
+  ]
+ }
+]

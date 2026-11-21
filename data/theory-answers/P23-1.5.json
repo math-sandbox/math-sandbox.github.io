@@ -1,0 +1,20 @@
+[
+  {
+    "section": "P23-1.5",
+    "q": "QC1",
+    "answer": 0,
+    "accept_as": "integer"
+  },
+  {
+    "section": "P23-1.5",
+    "q": "QC2",
+    "answer": -5,
+    "accept_as": "integer"
+  },
+  {
+    "section": "P23-1.5",
+    "q": "QC3",
+    "answer": 3,
+    "accept_as": "integer"
+  }
+]

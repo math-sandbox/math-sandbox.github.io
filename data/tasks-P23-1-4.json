@@ -1,0 +1,330 @@
+[
+  {
+    "id": "P23-1.4-QC1-gen",
+    "section": "P23-1.4",
+    "kind": "generated",
+    "title": "Remainder when a cubic with a missing square term is divided by x-c",
+    "marks": 2,
+    "source": "P23 Ch1 theory P23-1.4 Quick check 1 (2x^3+x-5 divided by x-1, remainder -2)",
+    "params": [
+      {
+        "name": "a",
+        "min": 1,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "d",
+        "min": -9,
+        "max": 9,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": -3,
+        "max": 3,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "E": "a*math.pow(c,3)+b*c+d"
+    },
+    "constraints": [
+      "c!=0",
+      "a>=1",
+      "E!=0",
+      "E>=-20",
+      "E<=20"
+    ],
+    "original": {
+      "a": 2,
+      "b": 1,
+      "d": -5,
+      "c": 1
+    },
+    "stem": "Find the remainder when the cubic with coefficients {a|int} (of \\(x^3\\)), 0 (of \\(x^2\\)), {b|int} (of \\(x\\)) and constant term {d|int} is divided by \\(x-c\\), where \\(c={c|int}\\).",
+    "answer": {
+      "expression": "a*math.pow(c,3)+b*c+d",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "Write the dividend as \\({a|int}x^3+0x^2+{b|int}x+{d|int}\\) and divide by \\(x-{c|int}\\) until a constant remainder remains. (The remainder is the value of the dividend at \\(x={c|int}\\), but the method of this subsection is the division itself.)",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Set out the long division, including a 0x^2 placeholder."
+      },
+      {
+        "name": "E",
+        "text_tex": "The remainder is \\({E|int}\\).",
+        "result": "a*math.pow(c,3)+b*c+d",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct remainder."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "algorithm",
+        "stem": "Using algebraic long division, find the remainder when \\({a|int}x^3+{b|int}x+{d|int}\\) is divided by \\(x-c\\), where \\(c={c|int}\\).",
+        "note": "algorithm frame"
+      },
+      {
+        "id": "missing",
+        "stem": "The cubic \\({a|int}x^3+{b|int}x+{d|int}\\) has no square term. Find the remainder when it is divided by \\(x-c\\), where \\(c={c|int}\\).",
+        "note": "missing-term frame"
+      }
+    ]
+  },
+  {
+    "id": "P23-1.4-QC2-gen",
+    "section": "P23-1.4",
+    "kind": "generated",
+    "title": "Leading coefficient of the quotient of a cubic divided by a linear polynomial",
+    "marks": 2,
+    "source": "P23 Ch1 theory P23-1.4 Quick check 2 (6x^3 divided by 2x+1, leading coefficient 3)",
+    "params": [
+      {
+        "name": "q",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "s",
+        "min": 2,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "q*s",
+      "E": "q"
+    },
+    "constraints": [
+      "q>=2",
+      "s>=2"
+    ],
+    "original": {
+      "q": 3,
+      "s": 2
+    },
+    "stem": "The cubic \\({A|int}x^3-x^2+x+4\\) is divided by \\({s|int}x+1\\). What is the leading coefficient of the quotient?",
+    "answer": {
+      "expression": "q",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The first term of the quotient is \\({A|int}x^3\\div {s|int}x={q|int}x^2\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Divide the leading terms."
+      },
+      {
+        "name": "E",
+        "text_tex": "The leading coefficient of the quotient is \\({E|int}\\).",
+        "result": "q",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct leading coefficient."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "first-term",
+        "stem": "In the long division of \\({A|int}x^3-x^2+x+4\\) by \\({s|int}x+1\\), what is the leading coefficient of the quotient?",
+        "note": "first-term frame"
+      },
+      {
+        "id": "degree",
+        "stem": "A cubic beginning \\({A|int}x^3\\) is divided by a linear factor beginning \\({s|int}x\\). Write down the leading coefficient of the quotient.",
+        "note": "degree frame"
+      }
+    ]
+  },
+  {
+    "id": "P23-1.4-QC3-gen",
+    "section": "P23-1.4",
+    "kind": "generated",
+    "title": "Remainder when x^3+px+q is divided by x-c",
+    "marks": 2,
+    "source": "P23 Ch1 theory P23-1.4 Quick check 3 (x^3-4x+7 divided by x+2, remainder 7)",
+    "params": [
+      {
+        "name": "p",
+        "min": -6,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": -9,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": -3,
+        "max": 3,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "E": "math.pow(c,3)+p*c+q"
+    },
+    "constraints": [
+      "c!=0",
+      "E!=0",
+      "E>=-30",
+      "E<=30"
+    ],
+    "original": {
+      "p": -4,
+      "q": 7,
+      "c": -2
+    },
+    "stem": "Find the remainder when \\(x^3+({p|int})x+({q|int})\\) is divided by \\(x-c\\), where \\(c={c|int}\\).",
+    "answer": {
+      "expression": "math.pow(c,3)+p*c+q",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "Write the dividend as \\(x^3+0x^2+{p|int}x+{q|int}\\) and divide by \\(x-{c|int}\\) until a constant remainder remains.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Set out the long division, including a 0x^2 placeholder."
+      },
+      {
+        "name": "E",
+        "text_tex": "The remainder is \\({E|int}\\).",
+        "result": "math.pow(c,3)+p*c+q",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct remainder."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "algorithm",
+        "stem": "Using algebraic long division, find the remainder when \\(x^3+({p|int})x+({q|int})\\) is divided by \\(x-c\\), where \\(c={c|int}\\).",
+        "note": "algorithm frame"
+      },
+      {
+        "id": "missing",
+        "stem": "The cubic \\(x^3+({p|int})x+({q|int})\\) has no square term. Find the remainder when it is divided by \\(x-c\\), where \\(c={c|int}\\).",
+        "note": "missing-term frame"
+      }
+    ]
+  },
+  {
+    "id": "P23-1.4-PP-9709-22-FM16-Q1",
+    "section": "P23-1.4",
+    "kind": "pastpaper",
+    "marking": "manual",
+    "title": "Quotient and remainder when 2x^3+3x^2+10 is divided by (x+2)",
+    "marks": 3,
+    "source": {
+      "paper": "9709/22/F/M/16 Q1",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m16_qp_22.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m16_ms_22.pdf",
+      "note": "Stem verbatim from the QP PDF. Steps and marks from the official MS PDF. Independently: writing 2x^3+3x^2+0x+10 and dividing by (x+2) gives quotient 2x^2-x+2 and remainder 6, because (x+2)(2x^2-x+2)+6=2x^3+3x^2+10. Fully manual, because the official part asks for a quotient and a remainder. The official special case awarding B1 only for using the remainder theorem to give 6 is noted, but the method of this subsection is algebraic division."
+    },
+    "stem": "Find the quotient and the remainder when \\(2x^3+3x^2+10\\) is divided by \\((x+2)\\).",
+    "steps": [
+      {
+        "name": "div",
+        "text_tex": "Write the dividend as \\(2x^3+3x^2+0x+10\\) and divide by \\(x+2\\). The first two terms of the quotient have the form \\(2x^2+kx\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: M1 Divide and obtain a quotient as far as 2x^2+kx."
+      },
+      {
+        "name": "q",
+        "text_tex": "The quotient is \\(2x^2-x+2\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: A1 Obtain quotient 2x^2-x+2."
+      },
+      {
+        "name": "r",
+        "text_tex": "The remainder is \\(6\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: A1 Obtain remainder 6. Special case: use of the remainder theorem to give 6 is B1 only."
+      }
+    ]
+  },
+  {
+    "id": "P23-1.4-PP-9709-22-FM22-Q6a",
+    "section": "P23-1.4",
+    "kind": "pastpaper",
+    "marking": "manual",
+    "title": "Quotient when p(x)=4x^3+16x^2+9x-15 is divided by (2x+3), remainder -6",
+    "marks": 3,
+    "source": {
+      "paper": "9709/22/F/M/22 Q6(a)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m22_qp_22.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m22_ms_22.pdf",
+      "note": "Stem verbatim from the QP PDF for part (a) only. Later parts of Q6 (integration and a trigonometric equation) are omitted because they lie outside this subsection. Independently: (2x+3)(2x^2+5x-3)-6=4x^3+16x^2+9x-15. Fully manual. Note that 9709/22/F/M/22 Q2 was used in P23-1.2; this is a different question from the same paper."
+    },
+    "stem": "The polynomial \\(p(x)\\) is given by \\(p(x)=4x^3+16x^2+9x-15\\).\n(a) Find the quotient when \\(p(x)\\) is divided by \\((2x+3)\\), and show that the remainder is \\(-6\\).",
+    "steps": [
+      {
+        "name": "div",
+        "text_tex": "Divide \\(4x^3+16x^2+9x-15\\) by \\(2x+3\\), obtaining a quotient that begins \\(2x^2+kx\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: M1 Divide and obtain a quotient as far as 2x^2+kx."
+      },
+      {
+        "name": "q",
+        "text_tex": "The quotient is \\(2x^2+5x-3\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: A1 Obtain quotient 2x^2+5x-3."
+      },
+      {
+        "name": "r",
+        "text_tex": "The remainder is \\(-6\\), as required. (The official scheme requires enough detail to confirm the given remainder.)",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: A1 Confirm remainder is -6. AG — necessary detail needed."
+      }
+    ]
+  }
+]

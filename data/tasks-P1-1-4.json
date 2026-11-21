@@ -1,0 +1,194 @@
+[
+  {
+    "id": "P1-1.4-QC1-gen",
+    "section": "P1-1.4",
+    "kind": "generated",
+    "title": "Greater x-value where a line meets a quadratic",
+    "marks": 1,
+    "source": "Theory P1-1.4 Quick check 1 (y=x+1, x^2+y=7, greater x=2); book Worked example 1.9 style pp.11-12, new numbers",
+    "params": [
+      {
+        "name": "p",
+        "min": 1,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "Q": "-1-p",
+      "N": "p*p+p+1",
+      "C": "p*p+p"
+    },
+    "constraints": [
+      "p>=1",
+      "p<=8"
+    ],
+    "original": {
+      "p": 2
+    },
+    "stem": "Solve the simultaneous equations \\(y=x+1\\) and \\(x^2+y={N|int}\\). What is the greater of the two \\(x\\)-values?",
+    "answer": {
+      "expression": "p",
+      "format": "{p|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Substitute \\(y=x+1\\) into \\(x^2+y={N|int}\\): \\(x^2+x-{C|int}=0\\). The roots are \\(x={p|int}\\) and \\(x={Q|int}\\). The greater \\(x\\)-value is \\({p|int}\\).",
+        "result": "p",
+        "format": "int",
+        "mark": "A1",
+        "note": "The constant term is N-1 = p(p+1). p is positive, and Q=-1-p is negative, so p is the greater root."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original p=2"
+      }
+    ]
+  },
+  {
+    "id": "P1-1.4-QC2-gen",
+    "section": "P1-1.4",
+    "kind": "generated",
+    "title": "Smaller x-value where a line meets a quadratic",
+    "marks": 1,
+    "source": "Theory P1-1.4 Quick check 2 (same system as QC1, smaller x=-3); book style pp.11-14, new numbers",
+    "params": [
+      {
+        "name": "p",
+        "min": 1,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "Q": "-1-p",
+      "N": "p*p+p+1",
+      "C": "p*p+p"
+    },
+    "constraints": [
+      "p>=1",
+      "p<=8"
+    ],
+    "original": {
+      "p": 2
+    },
+    "stem": "Solve the simultaneous equations \\(y=x+1\\) and \\(x^2+y={N|int}\\). What is the smaller of the two \\(x\\)-values?",
+    "answer": {
+      "expression": "-1-p",
+      "format": "{Q|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Substitute \\(y=x+1\\) into \\(x^2+y={N|int}\\): \\(x^2+x-{C|int}=0\\). The roots are \\(x={p|int}\\) and \\(x={Q|int}\\). The smaller \\(x\\)-value is \\({Q|int}\\).",
+        "result": "-1-p",
+        "format": "int",
+        "mark": "A1",
+        "note": "Same substitution as Quick check 1. Q=-1-p."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original p=2, Q=-3"
+      }
+    ]
+  },
+  {
+    "id": "P1-1.4-QC3-gen",
+    "section": "P1-1.4",
+    "kind": "generated",
+    "title": "y-coordinate of the point with the greater x-value",
+    "marks": 1,
+    "source": "Theory P1-1.4 Quick check 3 (same system, y=3 at the greater x); book style pp.11-14, new numbers",
+    "params": [
+      {
+        "name": "p",
+        "min": 1,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "Q": "-1-p",
+      "N": "p*p+p+1",
+      "C": "p*p+p",
+      "Y": "p+1"
+    },
+    "constraints": [
+      "p>=1",
+      "p<=8"
+    ],
+    "original": {
+      "p": 2
+    },
+    "stem": "Solve the simultaneous equations \\(y=x+1\\) and \\(x^2+y={N|int}\\). What is the \\(y\\)-coordinate of the point with the greater \\(x\\)-value?",
+    "answer": {
+      "expression": "p+1",
+      "format": "{Y|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The greater \\(x\\)-value is \\({p|int}\\). Then \\(y={p|int}+1={Y|int}\\).",
+        "result": "p+1",
+        "format": "int",
+        "mark": "A1",
+        "note": "As in Quick check 1. Use the linear equation."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original p=2, Y=3"
+      }
+    ]
+  },
+  {
+    "id": "P1-1.4-PP-9709-11-MJ18-Q9i",
+    "section": "P1-1.4",
+    "kind": "pastpaper",
+    "title": "Points of intersection of a linear function and a quadratic function",
+    "marks": 3,
+    "source": {
+      "paper": "9709/11/M/J/18 Q9(i)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s18_qp_11.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s18_ms_11.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2018), Question 9(i) only. Official answers and mark allocation from the MS PDF. Parts (ii) and (iii) are an inequality and a composite function and are omitted. The item is paper/self-mark."
+    },
+    "stem": "This question is 9709/11/M/J/18 Question 9(i), taken from the official QP.\n\nFunctions \\(f\\) and \\(g\\) are defined for \\(x\\in\\mathbb{R}\\) by\n\n\\(f:x\\mapsto \\dfrac{1}{2}x-2\\),\n\n\\(g:x\\mapsto 4+x-\\dfrac{1}{2}x^2\\).\n\n(i) Find the points of intersection of the graphs of \\(y=f(x)\\) and \\(y=g(x)\\).  [3]",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "Equate \\(4+x-\\dfrac{1}{2}x^2=\\dfrac{1}{2}x-2\\). Rearrange to obtain the quadratic \\(x^2-x-12=0\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: M1 for equating and forming a 3-term quadratic."
+      },
+      {
+        "name": "A1",
+        "text_tex": "The roots are \\(x=4\\) and \\(x=-3\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: A1 for both x values or a correct pair."
+      },
+      {
+        "name": "A2",
+        "text_tex": "The points are \\((4,0)\\) and \\(\\bigl(-3,-\\dfrac{7}{2}\\bigr)\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: A1 all, giving (4, 0) and (-3, -3.5). Trial and improvement: B3 all correct or B0. Independent check: 4/2-2=0 and 4+4-8=0; -3/2-2=-3.5 and 4-3-9/2=1-4.5=-3.5."
+      }
+    ]
+  }
+]

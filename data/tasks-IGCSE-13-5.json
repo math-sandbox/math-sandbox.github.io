@@ -1,0 +1,171 @@
+[
+  {
+    "id": "IGCSE-13.5-QC1-gen",
+    "section": "IGCSE-13.5",
+    "kind": "generated",
+    "title": "Change dollars into rand",
+    "marks": 1,
+    "source": "Theory IGCSE-13.5 Quick check 1 ($75 at $1=4 rand gives 300 rand); book Worked example 9 style p.421, new numbers",
+    "params": [
+      {
+        "name": "d",
+        "min": 10,
+        "max": 90,
+        "step": 5
+      }
+    ],
+    "derived": {
+      "R": "4*d"
+    },
+    "constraints": [
+      "d>=10",
+      "d<=90"
+    ],
+    "original": {
+      "d": 75
+    },
+    "stem": "The exchange rate is \\(1\\) dollar \\(=4\\) rand. Change \\(({d|int})\\) dollars into rand.",
+    "answer": {
+      "expression": "4*d",
+      "format": "{R|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(1\\) dollar \\(=4\\) rand, so \\(({d|int})\\) dollars \\(=({d|int})\\times 4={R|int}\\) rand",
+        "result": "4*d",
+        "format": "int",
+        "mark": "A1",
+        "note": "Multiply by the rate when changing from the currency written as 1."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original d=75"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-13.5-QC2-gen",
+    "section": "IGCSE-13.5",
+    "kind": "generated",
+    "title": "Change dollars into euros",
+    "marks": 1,
+    "source": "Theory IGCSE-13.5 Quick check 2 ($500 at 1 euro=$1.25 gives 400 euros); book style pp.422-425, new numbers",
+    "params": [
+      {
+        "name": "d",
+        "min": 125,
+        "max": 875,
+        "step": 125
+      }
+    ],
+    "derived": {
+      "E": "d/1.25"
+    },
+    "constraints": [
+      "d>=125",
+      "d<=875"
+    ],
+    "original": {
+      "d": 500
+    },
+    "stem": "The exchange rate is \\(1\\) euro \\(=1.25\\) dollars. Change \\(({d|int})\\) dollars into euros.",
+    "answer": {
+      "expression": "d/1.25",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(1\\) euro \\(=1.25\\) dollars, so to change dollars into euros, divide by \\(1.25\\). \\( {d|int}\\div 1.25={E|int}\\) euros",
+        "result": "d/1.25",
+        "format": "int",
+        "mark": "A1",
+        "note": "Divide when changing into the currency written as 1."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original d=500"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-13.5-QC3-gen",
+    "section": "IGCSE-13.5",
+    "kind": "generated",
+    "title": "Change yen into pounds",
+    "marks": 1,
+    "source": "Theory IGCSE-13.5 Quick check 3 (4800 yen at £1=160 yen gives 30 pounds); book style pp.422-425, new numbers",
+    "params": [
+      {
+        "name": "n",
+        "min": 1600,
+        "max": 8000,
+        "step": 160
+      }
+    ],
+    "derived": {
+      "P": "n/160"
+    },
+    "constraints": [
+      "n>=1600",
+      "n<=8000"
+    ],
+    "original": {
+      "n": 4800
+    },
+    "stem": "The exchange rate is \\(£1=160\\) yen. Change \\(({n|int})\\) yen into pounds.",
+    "answer": {
+      "expression": "n/160",
+      "format": "{P|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(£1=160\\) yen, so to change yen into pounds, divide by \\(160\\). \\( {n|int}\\div 160={P|int}\\) pounds",
+        "result": "n/160",
+        "format": "int",
+        "mark": "A1",
+        "note": "Divide by 160."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original n=4800"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-13.5-PP-0580-23-ON21-Q5",
+    "section": "IGCSE-13.5",
+    "kind": "pastpaper",
+    "title": "Change euros into dollars at a given exchange rate",
+    "marks": 1,
+    "source": {
+      "paper": "0580/23/O/N/21 Q5",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w21_qp_23.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w21_ms_23.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2021), Question 5. Official answer and mark allocation from the MS PDF. The item is paper/self-mark."
+    },
+    "stem": "This question is 0580/23/O/N/21 Question 5, taken from the official QP.\n\nNina changes 153 euros into dollars when the exchange rate is $1 = 0.9 euros.\n\nCalculate the amount Nina receives.",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The rate is 1 dollar \\(=0.9\\) euros, so the number of dollars is \\(153\\div 0.9=170\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: 170, 1 mark. Independent check: 153/0.9 = 170."
+      }
+    ]
+  }
+]

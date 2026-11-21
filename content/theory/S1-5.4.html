@@ -1,0 +1,101 @@
+<section class="theory" data-section="S1-5.4">
+<h2>5.4 Problem solving with permutations and combinations</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Probability &amp; Statistics 1 Coursebook (Dean Chalmers), Chapter 5 Permutations and combinations, printed pp.138–142. Own wording and new numbers, following the coursebook use of equally likely permutations or combinations to find probabilities.</p>
+<p class="key-words"><strong>Key words:</strong> <em>permutation</em>, <em>combination</em></p>
+<h3>Probabilities from counting</h3>
+<p>When all the possible arrangements, or all the possible selections, are equally likely, a probability can be found by counting:</p>
+<p>\[\mathrm{P}(\text{event})=\dfrac{\text{number of favourable permutations}}{\text{number of possible permutations}}\quad\text{or}\quad\mathrm{P}(\text{event})=\dfrac{\text{number of favourable combinations}}{\text{number of possible combinations}}.\]</p>
+<p>Use permutations when the order matters (people in a line, letters in a word) and combinations when it does not (a team, a hand of cards, letters taken from a bag). The numerator and the denominator must be counted in the same way.</p>
+<h3>Choosing a method</h3>
+<ul>
+<li>Many questions combine both ideas: choose the members of a group with combinations, then arrange them with permutations.</li>
+<li>For &ldquo;at least one&rdquo;, the complement is often quicker: \(\mathrm{P}(\text{at least one})=1-\mathrm{P}(\text{none})\).</li>
+<li>For several conditions together, list the scenarios that satisfy all of them, count each one, and add.</li>
+</ul>
+<div class="worked-example">
+<h4>Worked example 1: Seats at the ends</h4>
+<p class="src">Coursebook, 5.4, probability from equally likely permutations. New numbers.</p>
+<p>Five friends, including Dev and Eva, sit in a row of five seats in a random order. Find the probability that Dev and Eva sit in the two end seats.</p>
+<ol class="steps">
+<li>Possible arrangements: \(5!=120\). <span class="mark">B1</span></li>
+<li>Favourable: Dev and Eva at the ends in \(2\) ways, the other three in between in \(3!\) ways, so \(2\times3!=12\). <span class="mark">M1</span></li>
+<li>\(\mathrm{P}=\dfrac{12}{120}=\dfrac{1}{10}\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{1}{10}\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: A random selection</h4>
+<p class="src">Coursebook, 5.4, probability from equally likely combinations. New numbers.</p>
+<p>Three people are chosen at random from 5 boys and 4 girls. Find the probability that exactly two girls are chosen.</p>
+<ol class="steps">
+<li>Possible selections: \({}^{9}C_{3}=84\). <span class="mark">B1</span></li>
+<li>Favourable: \({}^{4}C_{2}\times{}^{5}C_{1}=6\times5=30\). <span class="mark">M1</span></li>
+<li>\(\mathrm{P}=\dfrac{30}{84}=\dfrac{5}{14}\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{5}{14}\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul>
+<li>Counting the favourable outcomes as permutations but the possible outcomes as combinations, or the other way round.</li>
+<li>For letters taken from a word with repeated letters, forgetting that identical letters give the same selection.</li>
+<li>Adding probabilities of scenarios that overlap, so that some outcomes are counted twice.</li>
+</ul>
+<h3>Past paper</h3>
+<p class="src">9709/52/F/M/22 Q5, official QP and official MS.</p>
+<p>A group of 12 people consists of 3 boys, 4 girls and 5 adults.</p><p>(a) In how many ways can a team of 5 people be chosen from the group if exactly one adult is included? [2]</p><p>(b) In how many ways can a team of 5 people be chosen from the group if the team includes at least 2 boys and at least 1 girl? [4]</p><p>The same group of 12 people stand in a line.</p><p>(c) How many different arrangements are there in which the 3 boys stand together and an adult is at each end of the line? [4]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(a) One adult from 5 and four others from the 7 children: \({}^{5}C_{1}\times{}^{7}C_{4}\). <span class="mark">M1</span> Official MS: M1, 7C4 × k, k integer ⩾ 1. Condone 5P1 for M1 only.</li>
+<li>(a) \(175\) <span class="mark">A1</span> Official MS: A1, 175.</li>
+<li>(b) The scenarios are 2B 1G 2A, 2B 2G 1A, 2B 3G, 3B 1G 1A and 3B 2G, each counted by a product such as \({}^{3}C_{2}\times{}^{4}C_{1}\times{}^{5}C_{2}\). <span class="mark">M1</span> Official MS: M1, 3Cx × 4Cy × 5Cz, x + y + z = 5, x, y, z integers ⩾ 1. Condone use of permutations for this mark.</li>
+<li>(b) 2B 1G 2A: \(3\times4\times10=120\); 2B 2G 1A: \(3\times6\times5=90\); 2B 3G: \(3\times4=12\); 3B 1G 1A: \(1\times4\times5=20\); 3B 2G: \(1\times6=6\). <span class="mark">B1</span> Official MS: B1, 2 appropriate identified outcomes correct, allow unsimplified.</li>
+<li>(b) Sum: \(120+90+12+20+6\). <span class="mark">M1</span> Official MS: M1, summing their values for 4 or 5 correct identified scenarios only (no repeats or additional scenarios), condone identification by unsimplified expressions.</li>
+<li>(b) \(248\) <span class="mark">A1</span> Official MS: A1, [Total =] 248. Note: only dependent upon M marks.</li>
+<li>(c) Treat the 3 boys as one unit. With an adult at each end, the boys’ unit, the 4 girls and the other 3 adults make 8 units in between: \(8!\). <span class="mark">M1</span> Official MS: M1, 8! × m, m an integer ⩾ 1. Accept 8 × 7! for 8!.</li>
+<li>(c) The boys can be arranged inside their unit in \(3!\) ways. <span class="mark">M1</span> Official MS: M1, 3! × n, n an integer &gt; 1.</li>
+<li>(c) The two end adults can be chosen and placed in \({}^{5}P_{2}\) ways, giving \(8!\times3!\times{}^{5}P_{2}\). <span class="mark">M1</span> Official MS: M1, p × 5P2, p × 5C2 × 2, p × 20, p an integer &gt; 1. If extra terms present, maximum 2/3 M marks available.</li>
+<li>(c) \(4\,838\,400\) <span class="mark">A1</span> Official MS: A1, 4 838 400, exact value required.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/52/M/J/21 Q6, official QP and official MS.</p>
+<p>(a) Find the total number of different arrangements of the 8 letters in the word TOMORROW. [2]</p><p>(b) Find the total number of different arrangements of the 8 letters in the word TOMORROW that have an R at the beginning and an R at the end, and in which the three Os are not all together. [3]</p><p>Four letters are selected at random from the 8 letters of the word TOMORROW.</p><p>(c) Find the probability that the selection contains at least one O and at least one R. [5]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(a) TOMORROW has 2 Rs and 3 Os: \(\dfrac{8!}{2!\,3!}\). <span class="mark">M1</span> Official MS: M1, 8!/(k! × m!), k = 1 or 2, m = 1 or 3, not k = m = 1, no additional terms.</li>
+<li>(a) \(3360\) <span class="mark">A1</span> Official MS: A1, 3360.</li>
+<li>(b) With an R at each end, the letters T, O, M, O, O, W are arranged in between: \(\dfrac{6!}{3!}\). Subtract the arrangements in which the three Os are together, \(4!\). <span class="mark">M1</span> Official MS (Method 1): M1, 6!/k! − m, 1 ⩽ k ⩽ 3, m an integer, condone 2 × 6!/k! − m.</li>
+<li>(b) \(\dfrac{6!}{3!}-4!=120-24\) <span class="mark">M1</span> Official MS: M1, w – 4! or w – 24, w an integer. Condone w – 2 × 4!.</li>
+<li>(b) \(96\) <span class="mark">A1</span> Official MS: A1, 96. Method 2: 4C3 × 3! + 4C2 × 2 × 3! = 24 + 72 = 96, with M1 for 4C3 × 3! + r and M1 for q + 4C2 × 3! × k.</li>
+<li>(c) The letters are 3 Os, 2 Rs and 3 other different letters. Scenarios: OORR \({}^{3}C_{2}\times{}^{2}C_{2}=3\); ORR_ \({}^{3}C_{1}\times{}^{2}C_{2}\times{}^{3}C_{1}=9\); OOR_ \({}^{3}C_{2}\times{}^{2}C_{1}\times{}^{3}C_{1}=18\); OR__ \({}^{3}C_{1}\times{}^{2}C_{1}\times{}^{3}C_{2}=18\); OOOR \({}^{3}C_{3}\times{}^{2}C_{1}=2\). <span class="mark">B1</span> Official MS: B1, outcomes for 2 identifiable scenarios correct, accept unsimplified.</li>
+<li>(c) Add the scenarios: \(3+9+18+18+2\). <span class="mark">M1</span> Official MS: M1, add 4 or 5 identified correct scenarios only values, no additional incorrect scenarios, no repeated scenarios, accept unsimplified, condone use of permutations.</li>
+<li>(c) Total \(50\) <span class="mark">A1</span> Official MS: A1, all correct and added.</li>
+<li>(c) Probability \(=\dfrac{50}{\,{}^{8}C_4}\) <span class="mark">M1</span> Official MS: M1, their 50 / 8C4, accept numerator unevaluated.</li>
+<li>(c) \(\dfrac{50}{70}\) or \(0.714\) <span class="mark">A1</span> Official MS: A1, 50/70 or 0.714. Method 2 lists identified outcomes such as ORTM and ORTW, with B1 for 5 identifiable scenarios correct and the same remaining marks.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>6 people, including Ali and Ben, sit in a row of 6 seats in a random order. Find the probability that Ali and Ben sit next to each other.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>Favourable: \(2\times5!=240\); possible: \(6!=720\).</li><li>\(\dfrac{240}{720}=\dfrac{1}{3}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{1}{3}\approx0.333\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>4 people are chosen at random from a group of 5 men and 6 women. Find the probability that all 4 people chosen are women.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>Favourable: \({}^{6}C_{4}=15\); possible: \({}^{11}C_{4}=330\).</li><li>\(\dfrac{15}{330}=\dfrac{1}{22}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{1}{22}\approx0.0455\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>3 people are chosen at random from a group of 6 men and 4 women. Find the probability that at least one woman is chosen.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>No woman: \(\dfrac{{}^{6}C_{3}}{{}^{10}C_{3}}=\dfrac{20}{120}=\dfrac{1}{6}\).</li><li>\(1-\dfrac{1}{6}=\dfrac{5}{6}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{5}{6}\approx0.833\)</p>
+</details>
+</div>
+</section>

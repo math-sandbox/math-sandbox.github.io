@@ -1,0 +1,325 @@
+[
+  {
+    "id": "P23-5.1-QC2-gen",
+    "section": "P23-5.1",
+    "kind": "generated",
+    "title": "Finding the constant of integration",
+    "marks": 3,
+    "source": "Theory P23-5.1 Quick check 2 (gradient 6e^(3x), point (0, 7), c = 5); book Key point 5.1 p.112",
+    "params": [
+      {
+        "name": "k",
+        "min": 2,
+        "max": 24,
+        "step": 1
+      },
+      {
+        "name": "m",
+        "min": 2,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "name": "s",
+        "min": -1,
+        "max": 1,
+        "step": 2
+      },
+      {
+        "name": "y0",
+        "min": -10,
+        "max": 10,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "a": "s*m",
+      "q": "k/(s*m)"
+    },
+    "constraints": [
+      "abs(k/a*2-round(k/a*2))<1e-9"
+    ],
+    "original": {
+      "k": 6,
+      "m": 3,
+      "s": 1,
+      "y0": 7
+    },
+    "stem": "A curve has gradient \\(\\frac{\\mathrm{d}y}{\\mathrm{d}x}={k|int}\\mathrm{e}^{{a|int}x}\\) and passes through the point \\((0,\\,{y0|int})\\). The equation of the curve is \\(y=p\\mathrm{e}^{{a|int}x}+c\\). Find the value of the constant \\(c\\).",
+    "answer": {
+      "expression": "y0-k/a",
+      "format": "{c|raw}",
+      "tolerance": 0
+    },
+    "steps": [
+      {
+        "name": "p1",
+        "text_tex": "\\(y=\\int{k|int}\\mathrm{e}^{{a|int}x}\\,\\mathrm{d}x={q|raw}\\mathrm{e}^{{a|int}x}+c\\)",
+        "result": "k/a",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Divide by the coefficient of x in the power."
+      },
+      {
+        "name": "m1",
+        "text_tex": "At \\((0,\\,{y0|int})\\): \\({y0|int}={q|raw}\\mathrm{e}^{0}+c={q|raw}+c\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Substitute the known point; e to the power 0 is 1."
+      },
+      {
+        "name": "c",
+        "text_tex": "\\(c={c|raw}\\)",
+        "result": "y0-p1",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Exact value of the constant."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem; a = s*m with m at least 2 so the power never shows 1x; k/a is a whole number or a half"
+      },
+      {
+        "id": "quantity",
+        "stem": "A quantity \\(V\\) changes with time \\(t\\) so that \\(\\frac{\\mathrm{d}V}{\\mathrm{d}t}={k|int}\\mathrm{e}^{{a|int}t}\\), and \\(V={y0|int}\\) when \\(t=0\\). Writing \\(V=p\\mathrm{e}^{{a|int}t}+c\\), find the value of the constant \\(c\\).",
+        "params": [
+          {
+            "name": "k",
+            "min": 2,
+            "max": 24,
+            "step": 1
+          },
+          {
+            "name": "m",
+            "min": 2,
+            "max": 4,
+            "step": 1
+          },
+          {
+            "name": "s",
+            "min": -1,
+            "max": 1,
+            "step": 2
+          },
+          {
+            "name": "y0",
+            "min": 0,
+            "max": 30,
+            "step": 1
+          }
+        ],
+        "step_text": {
+          "p1": "\\(V=\\int{k|int}\\mathrm{e}^{{a|int}t}\\,\\mathrm{d}t={q|raw}\\mathrm{e}^{{a|int}t}+c\\)",
+          "m1": "At \\(t=0\\): \\({y0|int}={q|raw}+c\\)"
+        }
+      },
+      {
+        "id": "function",
+        "stem": "A function f is such that \\(\\mathrm{f}'(x)={k|int}\\mathrm{e}^{{a|int}x}\\) and \\(\\mathrm{f}(0)={y0|int}\\). Writing \\(\\mathrm{f}(x)=p\\mathrm{e}^{{a|int}x}+c\\), find the value of the constant \\(c\\).",
+        "step_text": {
+          "p1": "\\(\\mathrm{f}(x)={q|raw}\\mathrm{e}^{{a|int}x}+c\\)",
+          "m1": "\\(\\mathrm{f}(0)={q|raw}+c={y0|int}\\)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "P23-5.1-QC3-gen",
+    "section": "P23-5.1",
+    "kind": "generated",
+    "title": "Using the constant of integration to find a value",
+    "marks": 4,
+    "source": "Theory P23-5.1 Quick check 3 (y = 2e^(3x) + 5 at x = 0.4 gives 11.6); book Key point 5.1 p.112",
+    "params": [
+      {
+        "name": "k",
+        "min": 2,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "name": "m",
+        "min": 2,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "name": "s",
+        "min": -1,
+        "max": 1,
+        "step": 2
+      },
+      {
+        "name": "y0",
+        "min": -5,
+        "max": 10,
+        "step": 1
+      },
+      {
+        "name": "x1",
+        "min": 0.1,
+        "max": 1,
+        "step": 0.1
+      }
+    ],
+    "derived": {
+      "a": "s*m",
+      "q": "k/(s*m)"
+    },
+    "constraints": [
+      "abs(k/a*2-round(k/a*2))<1e-9"
+    ],
+    "original": {
+      "k": 6,
+      "m": 3,
+      "s": 1,
+      "y0": 7,
+      "x1": 0.4
+    },
+    "stem": "A curve has gradient \\(\\frac{\\mathrm{d}y}{\\mathrm{d}x}={k|int}\\mathrm{e}^{{a|int}x}\\) and passes through the point \\((0,\\,{y0|int})\\). Find the value of \\(y\\) when \\(x={x1|raw}\\), giving your answer correct to 3 significant figures.",
+    "answer": {
+      "expression": "k/a*math.pow(2.718281828459045,a*x1)+y0-k/a",
+      "format": "{Y|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "p1",
+        "text_tex": "\\(y={q|raw}\\mathrm{e}^{{a|int}x}+c\\)",
+        "result": "k/a",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Reverse chain rule."
+      },
+      {
+        "name": "c",
+        "text_tex": "\\({y0|int}={q|raw}+c\\), so \\(c={c|raw}\\)",
+        "result": "y0-p1",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Use the known value at 0 to find c."
+      },
+      {
+        "name": "Ym",
+        "text_tex": "\\(y={q|raw}\\mathrm{e}^{{a|int}\\times{x1|raw}}+\\left({c|raw}\\right)\\approx{Ym|raw}\\)",
+        "result": "p1*math.pow(2.718281828459045,a*x1)+c",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Substitute the x value into the full equation."
+      },
+      {
+        "name": "Y",
+        "text_tex": "\\(y={Y|sf3z}\\) (3 s.f.)",
+        "result": "Ym",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Correct to 3 significant figures."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "quantity",
+        "stem": "A quantity \\(V\\) changes with time \\(t\\) hours so that \\(\\frac{\\mathrm{d}V}{\\mathrm{d}t}={k|int}\\mathrm{e}^{{a|int}t}\\), and \\(V={y0|int}\\) when \\(t=0\\). Find \\(V\\) when \\(t={x1|raw}\\), correct to 3 significant figures.",
+        "params": [
+          {
+            "name": "k",
+            "min": 2,
+            "max": 12,
+            "step": 1
+          },
+          {
+            "name": "m",
+            "min": 2,
+            "max": 3,
+            "step": 1
+          },
+          {
+            "name": "s",
+            "min": -1,
+            "max": 1,
+            "step": 2
+          },
+          {
+            "name": "y0",
+            "min": 5,
+            "max": 40,
+            "step": 1
+          },
+          {
+            "name": "x1",
+            "min": 0.2,
+            "max": 1,
+            "step": 0.1
+          }
+        ],
+        "step_text": {
+          "p1": "\\(V={q|raw}\\mathrm{e}^{{a|int}t}+c\\)",
+          "c": "\\({y0|int}={q|raw}+c\\), so \\(c={c|raw}\\)",
+          "Ym": "\\(V={q|raw}\\mathrm{e}^{{a|int}\\times{x1|raw}}+\\left({c|raw}\\right)\\approx{Ym|raw}\\)",
+          "Y": "\\(V={Y|sf3z}\\) (3 s.f.)"
+        },
+        "note": "V and t replace y and x throughout the worked steps"
+      },
+      {
+        "id": "function",
+        "stem": "A function f is such that \\(\\mathrm{f}'(x)={k|int}\\mathrm{e}^{{a|int}x}\\) and \\(\\mathrm{f}(0)={y0|int}\\). Find \\(\\mathrm{f}({x1|raw})\\), correct to 3 significant figures.",
+        "step_text": {
+          "p1": "\\(\\mathrm{f}(x)={q|raw}\\mathrm{e}^{{a|int}x}+c\\)",
+          "c": "\\(\\mathrm{f}(0)={q|raw}+c={y0|int}\\), so \\(c={c|raw}\\)",
+          "Ym": "\\(\\mathrm{f}({x1|raw})={q|raw}\\mathrm{e}^{{a|int}\\times{x1|raw}}+\\left({c|raw}\\right)\\approx{Ym|raw}\\)",
+          "Y": "\\(\\mathrm{f}({x1|raw})={Y|sf3z}\\) (3 s.f.)"
+        },
+        "note": "f(x) replaces y throughout the worked steps"
+      }
+    ]
+  },
+  {
+    "id": "P23-5.1-PP-9709-22-MJ16-Q6a",
+    "section": "P23-5.1",
+    "kind": "pastpaper",
+    "title": "Indefinite integral after simplifying",
+    "marks": 3,
+    "source": {
+      "paper": "9709/22/M/J/16 Q6(a)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s16_qp_22.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s16_ms_22.pdf",
+      "note": "Text taken from the QP and MS PDFs (UCLES 2016). Approved narrow exception: indefinite, algebraic split into a sum of linear exponentials, then the reverse chain rule."
+    },
+    "stem": "Find \\(\\int\\frac{4+\\mathrm{e}^{x} }{2\\mathrm{e}^{2x} }\\,\\mathrm{d}x\\).",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "\\(\\frac{4+\\mathrm{e}^{x} }{2\\mathrm{e}^{2x} }=\\frac{4}{2\\mathrm{e}^{2x} }+\\frac{\\mathrm{e}^{x} }{2\\mathrm{e}^{2x} }=2\\mathrm{e}^{-2x}+\\frac12\\mathrm{e}^{-x}\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS B1: obtain the integrand 2e^(-2x) + (1/2)e^(-x)."
+      },
+      {
+        "name": "s2",
+        "text_tex": "\\(\\int\\left(2\\mathrm{e}^{-2x}+\\frac12\\mathrm{e}^{-x}\\right)\\,\\mathrm{d}x=\\frac{2}{-2}\\mathrm{e}^{-2x}+\\frac{\\frac12}{-1}\\mathrm{e}^{-x}+c\\), of the form \\(k_1\\mathrm{e}^{-2x}+k_2\\mathrm{e}^{-x}\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS M1: obtain an integral of the form k1 e^(-2x) + k2 e^(-x)."
+      },
+      {
+        "name": "s3",
+        "text_tex": "\\(=-\\mathrm{e}^{-2x}-\\frac12\\mathrm{e}^{-x}+c\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS A1: obtain -e^(-2x) - (1/2)e^(-x). The MS condones a missing + c; the model answer still shows + c, as the teaching rule requires."
+      }
+    ],
+    "marking": "manual"
+  }
+]

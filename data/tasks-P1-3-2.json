@@ -1,0 +1,191 @@
+[
+  {
+    "id": "P1-3.2-QC1-gen",
+    "section": "P1-3.2",
+    "kind": "generated",
+    "title": "Gradient of a parallel line",
+    "marks": 1,
+    "source": "Theory P1-3.2 Quick check 1 (parallel to y=5x-3); new integer gradients",
+    "params": [
+      {
+        "name": "m",
+        "min": 2,
+        "max": 9,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "m"
+    },
+    "constraints": [],
+    "original": {
+      "m": 5
+    },
+    "stem": "Find the gradient of a straight line parallel to \\(y={m|int}x-3\\).",
+    "answer": {
+      "expression": "m",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Parallel lines have equal gradients, so the gradient of a straight line is {A|int}.",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A equals m. Original m=5 gives 5."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P1-3.2-QC2-gen",
+    "section": "P1-3.2",
+    "kind": "generated",
+    "title": "Product of perpendicular gradients",
+    "marks": 1,
+    "source": "Theory P1-3.2 Quick check 2 (product -1); constant identity",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 3,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "-1"
+    },
+    "constraints": [],
+    "original": {
+      "k": 1
+    },
+    "stem": "The product of the gradients of two perpendicular lines is required. What is that product?",
+    "answer": {
+      "expression": "-1",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The product is \\(-1\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is -1 for every seed. The dummy parameter k is unused in the answer."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P1-3.2-QC3-gen",
+    "section": "P1-3.2",
+    "kind": "generated",
+    "title": "Perpendicular to a line of gradient 1",
+    "marks": 1,
+    "source": "Theory P1-3.2 Quick check 3 (perpendicular gradient -1); constant",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 3,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "-1"
+    },
+    "constraints": [],
+    "original": {
+      "k": 1
+    },
+    "stem": "A line has gradient \\(1\\). What is the gradient of a straight line perpendicular to it?",
+    "answer": {
+      "expression": "-1",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The perpendicular gradient is \\(-1\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is -1. Dummy k unused."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P1-3.2-PP-9709-13-MJ15-Q7ii",
+    "section": "P1-3.2",
+    "kind": "pastpaper",
+    "title": "A given line is perpendicular to AB",
+    "marks": 4,
+    "source": {
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s15_qp_13.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s15_ms_13.pdf",
+      "note": "9709/13/M/J/15 Question 7(ii) only [4]. Official QP and official MS. The opening sentence of Q7 is included so that the part is self-contained."
+    },
+    "marking": "manual",
+    "stem": "This question is 9709/13/M/J/15 Question 7(ii) only, taken from the official QP.\n\nThe point A has coordinates (p, 1) and the point B has coordinates (9, 3p + 1), where p is a constant.\n\n(ii) For the case in which the line with equation 2x + 3y = 9 is perpendicular to AB, find the value of p. [4]",
+    "steps": [
+      {
+        "name": "B",
+        "text_tex": "The gradient of the given line is \\(-\\dfrac{2}{3}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1."
+      },
+      {
+        "name": "M1",
+        "text_tex": "Hence the gradient of \\(AB\\) is \\(\\dfrac{3}{2}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1, attempt using m1 m2 = -1."
+      },
+      {
+        "name": "M2",
+        "text_tex": "\\(\\dfrac{3}{2}=\\dfrac{3p}{9-p}\\) or an equivalent form.",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1 (includes previous M1); or a vector dot product equal to 0."
+      },
+      {
+        "name": "A",
+        "text_tex": "\\(p=3\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1. Independent: gradient of AB is 3p/(9-p); set equal to 3/2 gives 2*3p=3(9-p), 6p=27-3p, 9p=27, p=3. Last step is A."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Stem taken from the official QP PDF (UCLES 2015), Question 7(ii) only. Official MS reproduced mark by mark. Paper/self-mark."
+      }
+    ]
+  }
+]

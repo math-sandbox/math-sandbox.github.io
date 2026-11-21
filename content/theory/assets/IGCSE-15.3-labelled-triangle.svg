@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:420px;height:auto" role="img" aria-labelledby="IGCSE-15-3-labelled-triangle-t IGCSE-15-3-labelled-triangle-d">
+<title id="IGCSE-15-3-labelled-triangle-t">Opposite, adjacent and hypotenuse relative to an angle</title>
+<desc id="IGCSE-15-3-labelled-triangle-d">In a right-angled triangle, the hypotenuse is the side opposite the right angle. Relative to angle A, the opposite side faces A and the adjacent side meets A and is not the hypotenuse.</desc>
+<rect x="0" y="0" width="420" height="280" fill="#fff"/>
+<g font-family="Source Sans 3, DejaVu Sans, sans-serif" font-size="13" fill="#333">
+  <polygon points="80.00,220.00 320.00,220.00 80.00,80.00" fill="#eaf4fb" stroke="#1b5e8a" stroke-width="2"/>
+  <line x1="92.00" y1="220.00" x2="92.00" y2="208.00" stroke="#333" stroke-width="1.2"/>
+  <line x1="92.00" y1="208.00" x2="80.00" y2="208.00" stroke="#333" stroke-width="1.2"/>
+  <circle cx="320.00" cy="220.00" r="3" fill="#c0392b"/>
+  <text x="330.00" y="236.00" fill="#c0392b" font-size="16">A</text>
+  <path d="M 292,220 A 28,28 0 0 0 295.8,206.0" fill="none" stroke="#c0392b" stroke-width="1.6"/>
+  <text x="200.00" y="242.00" text-anchor="middle" fill="#1e7a46">adjacent</text>
+  <text x="66.00" y="150.00" text-anchor="end" fill="#b45f06">opposite</text>
+  <text x="216.00" y="150.00" fill="#1b5e8a">hypotenuse</text>
+</g>
+</svg>

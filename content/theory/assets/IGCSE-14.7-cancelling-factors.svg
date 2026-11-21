@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 200" width="420" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:420px;height:auto" role="img" aria-labelledby="IGCSE-14-7-cancelling-factors-t IGCSE-14-7-cancelling-factors-d">
+<title id="IGCSE-14-7-cancelling-factors-t">Cancelling a common factor in an algebraic fraction</title>
+<desc id="IGCSE-14-7-cancelling-factors-d">The fraction (x minus 2)(x minus 3) over (x minus 3)(x plus 3) cancels the common factor (x minus 3), leaving (x minus 2) over (x plus 3).</desc>
+<rect x="0" y="0" width="420" height="200" fill="#fff"/>
+<g font-family="Source Sans 3, DejaVu Sans, sans-serif" font-size="13" fill="#333">
+  <text x="86.30" y="78.00" text-anchor="middle" font-size="16">(x − 2)</text>
+  <text x="153.70" y="78.00" text-anchor="middle" font-size="16">(x − 3)</text>
+  <line x1="123.00" y1="80.00" x2="186.40" y2="64.00" stroke="#c0392b" stroke-width="2"/>
+  <text x="86.30" y="128.00" text-anchor="middle" font-size="16">(x − 3)</text>
+  <text x="153.70" y="128.00" text-anchor="middle" font-size="16">(x + 3)</text>
+  <line x1="55.60" y1="130.00" x2="119.00" y2="114.00" stroke="#c0392b" stroke-width="2"/>
+  <line x1="49.60" y1="92.00" x2="190.40" y2="92.00" stroke="#333" stroke-width="1.8"/>
+  <text x="230.00" y="108.00" text-anchor="middle" font-size="22">=</text>
+  <text x="320.00" y="78.00" text-anchor="middle" font-size="16">(x − 2)</text>
+  <text x="320.00" y="128.00" text-anchor="middle" font-size="16">(x + 3)</text>
+  <line x1="283.30" y1="92.00" x2="356.70" y2="92.00" stroke="#333" stroke-width="1.8"/>
+  <text x="210.00" y="175.00" text-anchor="middle" font-size="13">The common factor (x − 3) cancels, provided x ≠ 3.</text>
+</g>
+</svg>

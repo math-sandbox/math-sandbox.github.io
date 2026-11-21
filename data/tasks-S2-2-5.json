@@ -1,0 +1,256 @@
+[
+  {
+    "id": "S2-2.5-QC1-gen",
+    "section": "S2-2.5",
+    "kind": "generated",
+    "title": "Poisson mean under H0 for a longer interval",
+    "marks": 1,
+    "source": "Theory S2-2.5 Quick check 1 (mean 0.8 per week over 5 weeks gives lambda=4); new integer products",
+    "params": [
+      {
+        "name": "n",
+        "min": 4,
+        "max": 10,
+        "step": 1
+      },
+      {
+        "name": "k",
+        "min": 2,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "n*k"
+    },
+    "constraints": [
+      "n>=4",
+      "k>=2"
+    ],
+    "original": {
+      "n": 5,
+      "k": 4
+    },
+    "stem": "Under the null hypothesis the number of events per week has mean {k|int}. A test uses a period of {n|int} weeks. What is the value of \\(\\lambda\\) under \\(H_0\\) for the total number of events in that period?",
+    "answer": {
+      "expression": "n*k",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The means add, so \\(\\lambda={n|int}\\times{k|int}={A|int}\\) under \\(H_0\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is n k. Original n=5, k=4 gives 20. (The teaching example 0.8 x 5 = 4 is a different illustration in the page, not this original.)"
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "S2-2.5-QC2-gen",
+    "section": "S2-2.5",
+    "kind": "generated",
+    "title": "Null-hypothesis mean over several months",
+    "marks": 1,
+    "source": "Theory S2-2.5 Quick check 2 (monthly mean 3 over 4 months gives lambda=12); new positive integers",
+    "params": [
+      {
+        "name": "m",
+        "min": 2,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "name": "t",
+        "min": 2,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "m*t"
+    },
+    "constraints": [
+      "m>=2",
+      "t>=2"
+    ],
+    "original": {
+      "m": 3,
+      "t": 4
+    },
+    "stem": "Under \\(H_0\\) the monthly mean is {m|int}. A test is based on a period of {t|int} months. What is the value of \\(\\lambda\\) under \\(H_0\\)?",
+    "answer": {
+      "expression": "m*t",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\lambda={m|int}\\times{t|int}={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is m t. Original m=3, t=4 gives 12."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "S2-2.5-QC3-gen",
+    "section": "S2-2.5",
+    "kind": "generated",
+    "title": "The integer significance level as a percentage",
+    "marks": 1,
+    "source": "Theory S2-2.5 Quick check 3 (a 5% test uses significance level 5); new conventional levels 1, 2, 5, 10",
+    "params": [
+      {
+        "name": "s",
+        "min": 1,
+        "max": 10,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "s"
+    },
+    "constraints": [
+      "(s-1)*(s-2)*(s-5)*(s-10)==0"
+    ],
+    "original": {
+      "s": 5
+    },
+    "stem": "A hypothesis test is to be carried out at the {s|int}% significance level. What number, as a percentage, is the significance level?",
+    "answer": {
+      "expression": "s",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The significance level is {A|int}%.",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A equals s. Original s=5 gives 5. The constraint (s-1)*(s-2)*(s-5)*(s-10)==0 restricts s to the usual textbook levels 1, 2, 5 and 10."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "S2-2.5-PP-9709-71-MJ17-Q6",
+    "section": "S2-2.5",
+    "kind": "pastpaper",
+    "title": "Poisson test of a reduced mean number of sports injuries",
+    "marks": 10,
+    "source": {
+      "paper": "9709/71/M/J/17 Q6(i)(ii)(iii)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s17_qp_71.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s17_ms_71.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2017), Question 6 parts (i), (ii) and (iii) only, including the opening context. Official answers and mark allocation from the MS PDF. The item is paper/self-mark. Part (iv) is a normal approximation for a 36-month period and is omitted (that skill is section S2-2.4)."
+    },
+    "stem": "This question is 9709/71/M/J/17 Question 6(i), (ii) and (iii), taken from the official QP.\n\nThe number of sports injuries per month at a certain college has a Poisson distribution. In the past the mean has been 1.1 injuries per month. The principal recently introduced new safety guidelines and she decides to test, at the 2% significance level, whether the mean number of sports injuries has been reduced. She notes the number of sports injuries during a 6-month period.\n\n(i) Find the critical region for the test and state the probability of a Type I error.  [6]\n\n(ii) State what is meant by a Type I error in this context.  [1]\n\n(iii) During the 6-month period there are a total of 2 sports injuries. Carry out the test.  [3]",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "L",
+        "text_tex": "Under \\(H_0\\) the 6-month mean is \\(\\lambda=6\\times 1.1=6.6\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS 6(i): B1 for 6.6 (could also be scored in (iii))."
+      },
+      {
+        "name": "P1",
+        "text_tex": "\\(\\mathrm{P}(X\\leqslant 1)=e^{-6.6}(1+6.6)=0.0103\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS 6(i): M1, allow an incorrect lambda in both probabilities. Independent: exp(-6.6)*7.6=0.010336... which is 0.0103 to 3 s.f."
+      },
+      {
+        "name": "P2",
+        "text_tex": "\\(\\mathrm{P}(X\\leqslant 2)=e^{-6.6}(1+6.6+6.6^2/2)=0.0400\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS 6(i): M1 for the P(X<=2) expression. Independent: exp(-6.6)*29.38=0.039973... which is 0.0400 to 3 s.f. (or 4 d.p.)."
+      },
+      {
+        "name": "Both",
+        "text_tex": "Both probabilities are 0.0103 and 0.0400, to the accuracy required.",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS 6(i): A1 for both values."
+      },
+      {
+        "name": "CR",
+        "text_tex": "Since \\(0.0103\\lt 0.02\\) and \\(0.0400\\gt 0.02\\), the critical region is \\(X\\leqslant 1\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS 6(i): DA1 for CR is X<=1, dependent on at least one M. The mark field records A1; the official D (dependent) prefix is noted here."
+      },
+      {
+        "name": "TI",
+        "text_tex": "The probability of a Type I error is \\(\\mathrm{P}(X\\leqslant 1)=0.0103\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS 6(i): B1FT, follow through their P(X<=1)."
+      },
+      {
+        "name": "CTX",
+        "text_tex": "A Type I error would be wrongly concluding that the mean number of sports injuries has decreased.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS 6(ii): B1, must be in context."
+      },
+      {
+        "name": "H",
+        "text_tex": "The hypotheses are \\(H_0\\colon\\lambda=6.6\\) and \\(H_1\\colon\\lambda\\lt 6.6\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS 6(iii): B1, can be scored in (i). Allow mu or lambda / 1.1 or 6.6."
+      },
+      {
+        "name": "IN",
+        "text_tex": "The observed total 2 is not in the critical region (equivalently, \\(\\mathrm{P}(X\\leqslant 2)=0.0400\\gt 0.02\\)).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS 6(iii): M1 for 2 not in the critical region, or for comparing P(X<=2)=0.0400 with 0.02."
+      },
+      {
+        "name": "CON",
+        "text_tex": "There is no evidence that the mean number of injuries has decreased.",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS 6(iii): A1FT."
+      }
+    ]
+  }
+]

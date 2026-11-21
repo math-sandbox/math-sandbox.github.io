@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160" width="400" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:400px;height:auto" role="img" aria-label="A number line of a data set with the mean marked, used to describe deviations from the mean">
+  <style>text{font-family:system-ui,Segoe UI,sans-serif;font-size:13px;fill:#222}</style>
+  <line x1="30" y1="80" x2="370" y2="80" stroke="#222" stroke-width="1.5"/>
+  <g fill="#222">
+    <circle cx="80" cy="80" r="3.5"/>
+    <circle cx="130" cy="80" r="3.5"/>
+    <circle cx="200" cy="80" r="3.5"/>
+    <circle cx="260" cy="80" r="3.5"/>
+    <circle cx="320" cy="80" r="3.5"/>
+  </g>
+  <line x1="200" y1="60" x2="200" y2="100" stroke="#b03" stroke-width="1.5"/>
+  <text x="188" y="118">mean</text>
+</svg>

@@ -1,0 +1,207 @@
+[
+  {
+    "id": "IGCSE-13.3-QC1-gen",
+    "section": "IGCSE-13.3",
+    "kind": "generated",
+    "title": "Lower bound of a length given to the nearest 10",
+    "marks": 1,
+    "source": "Theory IGCSE-13.3 Quick check 1 (80 cm to the nearest 10 cm has lower bound 75 cm); book p.410 half-unit rule",
+    "params": [
+      {
+        "name": "n",
+        "min": 20,
+        "max": 90,
+        "step": 10
+      }
+    ],
+    "derived": {
+      "L": "n-5"
+    },
+    "constraints": [
+      "n%10==0",
+      "n!=0"
+    ],
+    "original": {
+      "n": 80
+    },
+    "stem": "A length is \\(({n|int})\\,\\mathrm{cm}\\), correct to the nearest \\(10\\,\\mathrm{cm}\\). Write down the lower bound, in centimetres.",
+    "answer": {
+      "expression": "n-5",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Half of 10 is 5, so the lower bound is \\(({n|int})-5={A|int}\\)",
+        "result": "n-5",
+        "format": "int",
+        "mark": "A1",
+        "note": "Subtract half a unit of the given accuracy."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original n=80"
+      },
+      {
+        "id": "written",
+        "stem": "A measurement of \\(({n|int})\\,\\mathrm{cm}\\) is given to the nearest 10 cm. Write down its lower bound."
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-13.3-QC2-gen",
+    "section": "IGCSE-13.3",
+    "kind": "generated",
+    "title": "Upper bound of a mass given to the nearest 10",
+    "marks": 1,
+    "source": "Theory IGCSE-13.3 Quick check 2 (200 kg to the nearest 10 kg has upper bound 205 kg); book p.410 half-unit rule",
+    "params": [
+      {
+        "name": "n",
+        "min": 100,
+        "max": 300,
+        "step": 10
+      }
+    ],
+    "derived": {
+      "U": "n+5"
+    },
+    "constraints": [
+      "n%10==0"
+    ],
+    "original": {
+      "n": 200
+    },
+    "stem": "A mass is \\(({n|int})\\,\\mathrm{kg}\\), correct to the nearest \\(10\\,\\mathrm{kg}\\). Write down the upper bound, in kilograms.",
+    "answer": {
+      "expression": "n+5",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Half of 10 is 5, so the upper bound is \\(({n|int})+5={A|int}\\)",
+        "result": "n+5",
+        "format": "int",
+        "mark": "A1",
+        "note": "Add half a unit of the given accuracy."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original n=200"
+      },
+      {
+        "id": "written",
+        "stem": "A mass of \\(({n|int})\\,\\mathrm{kg}\\) is given to the nearest 10 kg. Write down its upper bound."
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-13.3-QC3-gen",
+    "section": "IGCSE-13.3",
+    "kind": "generated",
+    "title": "Lower bound of a total mass of several bags",
+    "marks": 2,
+    "source": "Theory IGCSE-13.3 Quick check 3 (4 bags of 12 kg to the nearest kilogram have total lower bound 46 kg); book calculated bounds in 13.3",
+    "params": [
+      {
+        "name": "k",
+        "min": 2,
+        "max": 10,
+        "step": 2
+      },
+      {
+        "name": "m",
+        "min": 5,
+        "max": 20,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "B": "m-0.5",
+      "T": "k*(m-0.5)"
+    },
+    "constraints": [
+      "k%2==0",
+      "k!=0",
+      "m!=0"
+    ],
+    "original": {
+      "k": 4,
+      "m": 12
+    },
+    "stem": "Each of ({k|int}) bags has a mass of \\(({m|int})\\,\\mathrm{kg}\\), correct to the nearest kilogram. Find the lower bound of the total mass, in kilograms.",
+    "answer": {
+      "expression": "k*(m-0.5)",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "The lower bound of one bag is \\(({m|int})-0.5={B|num}\\,\\mathrm{kg}\\)",
+        "result": "m-0.5",
+        "format": "num",
+        "mark": "M1",
+        "note": "Half a kilogram either side of a value given to the nearest kilogram."
+      },
+      {
+        "name": "A",
+        "text_tex": "The lower bound of the total is \\(({k|int})\\times({B|num})={A|int}\\,\\mathrm{kg}\\)",
+        "result": "k*(m-0.5)",
+        "format": "int",
+        "mark": "A1",
+        "note": "k is even, so the total is an integer."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original k=4, m=12"
+      },
+      {
+        "id": "written",
+        "stem": "({k|int}) identical boxes each have mass \\(({m|int})\\,\\mathrm{kg}\\), correct to the nearest kilogram. Work out the lower bound of their total mass."
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-13.3-PP-0580-22-FM20-Q18",
+    "section": "IGCSE-13.3",
+    "kind": "pastpaper",
+    "title": "Upper bound of a speed from rounded distance and time",
+    "marks": 3,
+    "source": {
+      "paper": "0580/22/F/M/20 Q18",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_m20_qp_22.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_m20_ms_22.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2020), Question 18. Official answer and mark allocation from the MS PDF. The item is paper/self-mark."
+    },
+    "stem": "This question is 0580/22/F/M/20 Question 18, taken from the official QP.\n\nA car travels at a constant speed.\nIt travels a distance of \\(146.2\\) m, correct to 1 decimal place.\nThis takes 7 seconds, correct to the nearest second.\n\nCalculate the upper bound for the speed of the car.",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "The upper bound of the distance is \\(146.2+0.05=146.25\\) m, and the lower bound of the time is \\(7-0.5=6.5\\) s.",
+        "result": "None",
+        "format": "raw",
+        "mark": "M2",
+        "note": "MS: M2 for (146.2+0.05)/(7-0.5), or M1 for 146.2+0.05 or 7-0.5 or better seen."
+      },
+      {
+        "name": "A",
+        "text_tex": "The upper bound of the speed is \\(146.25\\div 6.5=22.5\\) m/s.",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: 22.5 nfww, 3 marks in total. Official answer: 22.5."
+      }
+    ]
+  }
+]

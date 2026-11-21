@@ -1,0 +1,637 @@
+[
+ {
+  "id": "P23-4.1-QC1-gen",
+  "section": "P23-4.1",
+  "kind": "generated",
+  "title": "Product rule: gradient of x² × a power",
+  "marks": 4,
+  "source": "P23 Ch4 theory P23-4.1 Quick check 1 (y = x²(3x−1)⁴ at x = 1, gradient 128)",
+  "params": [
+   {
+    "name": "a",
+    "min": 2,
+    "max": 4,
+    "step": 1
+   },
+   {
+    "name": "b",
+    "min": 1,
+    "max": 5,
+    "step": 1
+   },
+   {
+    "name": "k",
+    "min": 1,
+    "max": 3,
+    "step": 1
+   }
+  ],
+  "derived": {
+   "w": "a*k-b",
+   "a4": "4*a"
+  },
+  "constraints": [
+   "w!=0",
+   "abs(2*k*w**4+4*a*k**2*w**3)<=3000  # keep numbers moderate"
+  ],
+  "original": {
+   "a": 3,
+   "b": 1,
+   "k": 1
+  },
+  "stem": "Find the gradient of the curve \\(y=x^2({a|int}x-{b|int})^4\\) at the point where \\(x={k|int}\\).",
+  "answer": {
+   "expression": "2*k*(a*k-b)**4+4*a*k**2*(a*k-b)**3",
+   "format": "{G|num}",
+   "tolerance": 0.005
+  },
+  "steps": [
+   {
+    "name": "m1",
+    "text_tex": "\\(\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}=2x({a|int}x-{b|int})^4+x^2\\times4({a|int}x-{b|int})^3\\times{a|int}\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Product rule: u′v + uv′ with u = x², v = (ax − b)⁴."
+   },
+   {
+    "name": "a1",
+    "text_tex": "\\(=2x({a|int}x-{b|int})^4+{a4|int}x^2({a|int}x-{b|int})^3\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "A1",
+    "note": "Correct derivative (chain rule factor a included)."
+   },
+   {
+    "name": "m2",
+    "text_tex": "\\(x={k|int}\\): \\(2({k|int})({w|int})^4+{a4|int}({k|int})^2({w|int})^3\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Substitute the x-value into their derivative."
+   },
+   {
+    "name": "G",
+    "text_tex": "\\(={G|int}\\)",
+    "result": "2*k*w**4+a4*k**2*w**3",
+    "format": "int",
+    "mark": "A1",
+    "note": "Correct gradient."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem, params and step texts above"
+   },
+   {
+    "id": "tangent",
+    "stem": "A curve has equation \\(y=x^2({a|int}x-{b|int})^4\\). Find the gradient of the tangent to the curve at the point where \\(x={k|int}\\).",
+    "params": [
+     {
+      "name": "a",
+      "min": 2,
+      "max": 3,
+      "step": 1
+     },
+     {
+      "name": "b",
+      "min": 1,
+      "max": 4,
+      "step": 1
+     },
+     {
+      "name": "k",
+      "min": 1,
+      "max": 2,
+      "step": 1
+     }
+    ]
+   },
+   {
+    "id": "rate",
+    "stem": "Given that \\(y=x^2({a|int}x-{b|int})^4\\), find the value of \\(\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}\\) when \\(x={k|int}\\).",
+    "params": [
+     {
+      "name": "a",
+      "min": 2,
+      "max": 4,
+      "step": 1
+     },
+     {
+      "name": "b",
+      "min": 2,
+      "max": 7,
+      "step": 1
+     },
+     {
+      "name": "k",
+      "min": 1,
+      "max": 3,
+      "step": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "P23-4.1-QC2-gen",
+  "section": "P23-4.1",
+  "kind": "generated",
+  "title": "Product rule with a square root",
+  "marks": 4,
+  "source": "P23 Ch4 theory P23-4.1 Quick check 2 (y = (2x+1)√(x+3) at x = 1, gradient 4.75)",
+  "params": [
+   {
+    "name": "p",
+    "min": 2,
+    "max": 4,
+    "step": 1
+   },
+   {
+    "name": "q",
+    "min": 1,
+    "max": 6,
+    "step": 1
+   },
+   {
+    "name": "s",
+    "min": 2,
+    "max": 5,
+    "step": 1
+   },
+   {
+    "name": "k",
+    "min": 0,
+    "max": 6,
+    "step": 1
+   }
+  ],
+  "derived": {
+   "c": "s*s-k",
+   "n": "p*k+q"
+  },
+  "constraints": [
+   "c>=1",
+   "abs((n/(2*s))*100-round((n/(2*s))*100))<1e-6  # gradient exact to 2 d.p."
+  ],
+  "original": {
+   "p": 2,
+   "q": 1,
+   "s": 2,
+   "k": 1
+  },
+  "stem": "Find the gradient of the curve \\(y=({p|int}x+{q|int})\\sqrt{{x+{c|int}}}\\) at the point where \\(x={k|int}\\).",
+  "answer": {
+   "expression": "p*s+(p*k+q)/(2*s)",
+   "format": "{G|num}",
+   "tolerance": 0.005
+  },
+  "steps": [
+   {
+    "name": "m1",
+    "text_tex": "\\(\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}={p|int}\\sqrt{{x+{c|int}}}+({p|int}x+{q|int})\\times\\dfrac{{1}}{{2\\sqrt{{x+{c|int}}}}}\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Product rule with v = (x + c)^½."
+   },
+   {
+    "name": "a1",
+    "text_tex": "Correct derivative, with \\(\\dfrac{{\\mathrm{{d}}}}{{\\mathrm{{d}}x}}\\sqrt{{x+{c|int}}}=\\dfrac{{1}}{{2\\sqrt{{x+{c|int}}}}}\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "A1",
+    "note": "Both terms correct."
+   },
+   {
+    "name": "m2",
+    "text_tex": "\\(x={k|int}\\): \\({p|int}\\times{s|int}+\\dfrac{{{n|int}}}{{2\\times{s|int}}}\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Substitute; √(k + c) = s."
+   },
+   {
+    "name": "G",
+    "text_tex": "\\(={G|num}\\)",
+    "result": "p*s+n/(2*s)",
+    "format": "num",
+    "mark": "A1",
+    "note": "Correct gradient."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem, params and step texts above"
+   },
+   {
+    "id": "tangent",
+    "stem": "Find the gradient of the tangent to the curve \\(y=({p|int}x+{q|int})\\sqrt{{x+{c|int}}}\\) at the point on the curve where \\(x={k|int}\\).",
+    "params": [
+     {
+      "name": "p",
+      "min": 2,
+      "max": 3,
+      "step": 1
+     },
+     {
+      "name": "q",
+      "min": 1,
+      "max": 5,
+      "step": 1
+     },
+     {
+      "name": "s",
+      "min": 2,
+      "max": 4,
+      "step": 1
+     },
+     {
+      "name": "k",
+      "min": 0,
+      "max": 4,
+      "step": 1
+     }
+    ]
+   },
+   {
+    "id": "value",
+    "stem": "Given that \\(y=({p|int}x+{q|int})\\sqrt{{x+{c|int}}}\\), find the value of \\(\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}\\) when \\(x={k|int}\\).",
+    "params": [
+     {
+      "name": "p",
+      "min": 2,
+      "max": 5,
+      "step": 1
+     },
+     {
+      "name": "q",
+      "min": 1,
+      "max": 8,
+      "step": 1
+     },
+     {
+      "name": "s",
+      "min": 2,
+      "max": 6,
+      "step": 1
+     },
+     {
+      "name": "k",
+      "min": 0,
+      "max": 8,
+      "step": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "P23-4.1-QC3-gen",
+  "section": "P23-4.1",
+  "kind": "generated",
+  "title": "Product rule: x-coordinates of stationary points",
+  "marks": 4,
+  "source": "P23 Ch4 theory P23-4.1 Quick check 3 (y = (x−2)²(x+1): x = 0 and x = 2)",
+  "params": [
+   {
+    "name": "a",
+    "min": 1,
+    "max": 9,
+    "step": 1
+   },
+   {
+    "name": "b",
+    "min": 1,
+    "max": 9,
+    "step": 1
+   }
+  ],
+  "derived": {
+   "t": "(a-2*b)/3",
+   "tb": "2*b"
+  },
+  "constraints": [
+   "abs((t)*100-round((t)*100))<1e-6  # exact x-coordinate",
+   "abs(t-round(t))<1e-9  # whole-number roots"
+  ],
+  "original": {
+   "a": 2,
+   "b": 1
+  },
+  "stem": "The curve \\(y=(x-{a|int})^2(x+{b|int})\\) has two stationary points. Find the \\(x\\)-coordinate of (a) the stationary point with the smaller \\(x\\)-coordinate, (b) the other stationary point.",
+  "answer": {
+   "parts": [
+    {
+     "part": "a",
+     "expression": "(a-2*b)/3",
+     "format": "{X1|num}",
+     "tolerance": 0.005
+    },
+    {
+     "part": "b",
+     "expression": "a",
+     "format": "{X2|num}",
+     "tolerance": 0.005
+    }
+   ]
+  },
+  "steps": [
+   {
+    "name": "m1",
+    "text_tex": "\\(\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}=2(x-{a|int})(x+{b|int})+(x-{a|int})^2\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Product rule with u = (x − a)², v = x + b."
+   },
+   {
+    "name": "m2",
+    "text_tex": "\\((x-{a|int})\\left[2(x+{b|int})+(x-{a|int})\\right]=0\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Set dy/dx = 0 and take out the common factor (x − a)."
+   },
+   {
+    "name": "X1",
+    "text_tex": "(a) \\(3x={a|int}-{tb|int}\\Rightarrow x={X1|num}\\)",
+    "result": "t",
+    "format": "num",
+    "mark": "A1",
+    "note": "Smaller root (a − 2b)/3."
+   },
+   {
+    "name": "X2",
+    "text_tex": "(b) \\(x={X2|num}\\)",
+    "result": "a",
+    "format": "num",
+    "mark": "A1",
+    "note": "Root from the factor x − a."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem, params and step texts above"
+   },
+   {
+    "id": "gradient-zero",
+    "stem": "Find the \\(x\\)-coordinates of the points on the curve \\(y=(x-{a|int})^2(x+{b|int})\\) where the gradient is zero: (a) the smaller value, (b) the larger value.",
+    "params": [
+     {
+      "name": "a",
+      "min": 1,
+      "max": 6,
+      "step": 1
+     },
+     {
+      "name": "b",
+      "min": 1,
+      "max": 6,
+      "step": 1
+     }
+    ]
+   },
+   {
+    "id": "turning",
+    "stem": "The curve \\(y=(x-{a|int})^2(x+{b|int})\\) has two turning points. Find (a) the smaller \\(x\\)-coordinate, (b) the larger \\(x\\)-coordinate.",
+    "params": [
+     {
+      "name": "a",
+      "min": 3,
+      "max": 12,
+      "step": 1
+     },
+     {
+      "name": "b",
+      "min": 1,
+      "max": 9,
+      "step": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "P23-4.1-PP-9709-22-MJ20-Q2",
+  "section": "P23-4.1",
+  "kind": "pastpaper",
+  "title": "Stationary point of 5x e^(x/2) (product rule)",
+  "marks": 5,
+  "source": {
+   "paper": "9709/22/M/J/20 Q2",
+   "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s20_qp_22.pdf",
+   "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s20_ms_22.pdf",
+   "note": "Text taken from the QP and MS PDFs (UCLES 2020). The question needs the product rule with an exponential factor (4.1 with 4.3); 9709 P2/P3 product-rule questions always combine it with e^x, ln x or trig. The engine takes one number per part, so the coordinates are entered as two parts."
+  },
+  "stem": "Find the exact coordinates of the stationary point on the curve with equation \\(y=5x\\mathrm{e}^{\\frac{1}{2}x}\\).",
+  "parts": [
+   {
+    "part": "(x)",
+    "stem": "Enter the x-coordinate.",
+    "marks": 4,
+    "answer": {
+     "expression": "-2",
+     "official": "–2",
+     "tolerance": 0,
+     "tolerance_range": [
+      -2,
+      -2
+     ]
+    },
+    "steps": [
+     {
+      "name": "m1",
+      "text_tex": "\\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}=a\\mathrm{e}^{\\frac12x}+bx\\mathrm{e}^{\\frac12x}\\)",
+      "result": "None",
+      "format": "num",
+      "mark": "M1",
+      "note": "MS: *M1 Differentiate using product rule to obtain ae^(½x) + bxe^(½x)."
+     },
+     {
+      "name": "a1",
+      "text_tex": "\\(5\\mathrm{e}^{\\frac12x}+\\frac52x\\mathrm{e}^{\\frac12x}\\)",
+      "result": "None",
+      "format": "num",
+      "mark": "A1",
+      "note": "MS: A1 Obtain correct 5e^(½x) + (5/2)xe^(½x) OE."
+     },
+     {
+      "name": "m2",
+      "text_tex": "\\(5+\\frac52x=0\\)",
+      "result": "None",
+      "format": "num",
+      "mark": "M1",
+      "note": "MS: DM1 Equate first derivative to zero and solve for x (dependent on *M1)."
+     },
+     {
+      "name": "x",
+      "text_tex": "\\(x=-2\\)",
+      "result": "-2",
+      "format": "int",
+      "mark": "A1",
+      "note": "MS: A1 Obtain x-coordinate –2."
+     }
+    ]
+   },
+   {
+    "part": "(y)",
+    "stem": "Enter the y-coordinate (exact value \\(-10\\mathrm{{e}}^{{-1}}\\); 3 s.f. accepted).",
+    "marks": 1,
+    "answer": {
+     "expression": "-10*2.718281828459045**-1",
+     "official": "−10e^−1",
+     "tolerance": 0.005,
+     "tolerance_range": [
+      -3.685,
+      -3.675
+     ]
+    },
+    "steps": [
+     {
+      "name": "y",
+      "text_tex": "\\(y=5(-2)\\mathrm{e}^{-1}=-10\\mathrm{e}^{-1}\\)",
+      "result": "-10*2.718281828459045**-1",
+      "format": "num",
+      "mark": "A1",
+      "note": "MS: A1 Obtain y-coordinate −10e^−1."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "P23-4.1-PP-MJ20-Q2-similar",
+  "section": "P23-4.1",
+  "kind": "generated",
+  "title": "Stationary point of ax e^(x/k)",
+  "marks": 5,
+  "source": "Similar to 9709/22/M/J/20 Q2; same mark structure (M1 A1 M1 A1 A1)",
+  "params": [
+   {
+    "name": "a",
+    "min": 2,
+    "max": 9,
+    "step": 1
+   },
+   {
+    "name": "k",
+    "min": 2,
+    "max": 6,
+    "step": 1
+   }
+  ],
+  "derived": {
+   "ak": "a*k"
+  },
+  "constraints": [],
+  "original": {
+   "a": 5,
+   "k": 2
+  },
+  "stem": "Find the coordinates of the stationary point on the curve with equation \\(y={a|int}x\\mathrm{{e}}^{{\\frac{{1}}{{{k|int}}}x}}\\). Give the \\(y\\)-coordinate correct to 3 significant figures.",
+  "answer": {
+   "parts": [
+    {
+     "part": "x",
+     "expression": "-k",
+     "format": "{X|num}",
+     "tolerance": 0.005
+    },
+    {
+     "part": "y",
+     "expression": "-a*k*2.718281828459045**-1",
+     "format": "{Y|sf3}",
+     "tolerance_sf": 3
+    }
+   ]
+  },
+  "steps": [
+   {
+    "name": "m1",
+    "text_tex": "\\(\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}=p\\mathrm{{e}}^{{\\frac{{1}}{{{k|int}}}x}}+qx\\mathrm{{e}}^{{\\frac{{1}}{{{k|int}}}x}}\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Product rule: form p e^(x/k) + q x e^(x/k)."
+   },
+   {
+    "name": "a1",
+    "text_tex": "\\(={a|int}\\mathrm{{e}}^{{\\frac{{1}}{{{k|int}}}x}}+\\frac{{{a|int}}}{{{k|int}}}x\\mathrm{{e}}^{{\\frac{{1}}{{{k|int}}}x}}\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "A1",
+    "note": "Correct derivative OE."
+   },
+   {
+    "name": "m2",
+    "text_tex": "\\({a|int}+\\frac{{{a|int}}}{{{k|int}}}x=0\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Equate to zero and solve (dependent on M1); e^(x/k) ≠ 0."
+   },
+   {
+    "name": "X",
+    "text_tex": "\\(x={X|num}\\)",
+    "result": "-k",
+    "format": "num",
+    "mark": "A1",
+    "note": "Correct x-coordinate."
+   },
+   {
+    "name": "Y",
+    "text_tex": "\\(y=-{ak|int}\\mathrm{{e}}^{{-1}}\\approx{Y|sf3}\\)",
+    "result": "-ak*2.718281828459045**-1",
+    "format": "sf3",
+    "mark": "A1",
+    "note": "Correct y-coordinate (exact −ak e^(−1))."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem, params and step texts above"
+   },
+   {
+    "id": "turning",
+    "stem": "The curve \\(y={a|int}x\\mathrm{{e}}^{{\\frac{{1}}{{{k|int}}}x}}\\) has one turning point. Find its coordinates, giving the \\(y\\)-coordinate correct to 3 significant figures.",
+    "params": [
+     {
+      "name": "a",
+      "min": 2,
+      "max": 6,
+      "step": 1
+     },
+     {
+      "name": "k",
+      "min": 2,
+      "max": 4,
+      "step": 1
+     }
+    ]
+   },
+   {
+    "id": "minimum",
+    "stem": "The curve with equation \\(y={a|int}x\\mathrm{{e}}^{{\\frac{{1}}{{{k|int}}}x}}\\) has a minimum point. Find its coordinates, giving the \\(y\\)-coordinate correct to 3 significant figures.",
+    "params": [
+     {
+      "name": "a",
+      "min": 3,
+      "max": 12,
+      "step": 1
+     },
+     {
+      "name": "k",
+      "min": 2,
+      "max": 8,
+      "step": 1
+     }
+    ]
+   }
+  ]
+ }
+]

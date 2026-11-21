@@ -1,0 +1,178 @@
+[
+  {
+    "id": "IGCSE-15.6-QC1-gen",
+    "section": "IGCSE-15.6",
+    "kind": "generated",
+    "title": "Integer multiple of sin 150 degrees",
+    "marks": 1,
+    "source": "Theory IGCSE-15.6 Quick check 1 (10 sin 150 = 5); sin 150 = sin 30 = 1/2, new even multipliers",
+    "params": [
+      {
+        "name": "k",
+        "min": 6,
+        "max": 20,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "A": "k/2"
+    },
+    "constraints": [
+      "k%2==0"
+    ],
+    "original": {
+      "k": 10
+    },
+    "stem": "What is the value of \\({k|int}\\sin 150^\\circ\\)?",
+    "answer": {
+      "expression": "k/2",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\sin 150^\\circ=\\sin 30^\\circ=1/2\\), so \\({k|int}\\times 1/2={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is k/2. Original k=10 gives 5."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-15.6-QC2-gen",
+    "section": "IGCSE-15.6",
+    "kind": "generated",
+    "title": "The obtuse angle with the same sine as a given acute angle",
+    "marks": 1,
+    "source": "Theory IGCSE-15.6 Quick check 2 (obtuse angle with sine equal to sin 30 is 150); related angle 180 minus acute, new special angles",
+    "params": [
+      {
+        "name": "p",
+        "min": 20,
+        "max": 70,
+        "step": 5
+      }
+    ],
+    "derived": {
+      "A": "180-p"
+    },
+    "constraints": [
+      "p>=20",
+      "p<=70",
+      "p%5==0"
+    ],
+    "original": {
+      "p": 30
+    },
+    "stem": "Find the obtuse angle, in degrees, whose sine is equal to \\(\\sin {p|int}^\\circ\\).",
+    "answer": {
+      "expression": "180-p",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Sine is also positive in the second quadrant, so the obtuse angle is \\(180^\\circ-{p|int}^\\circ={A|int}^\\circ\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is 180-p. Original p=30 gives 150."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-15.6-QC3-gen",
+    "section": "IGCSE-15.6",
+    "kind": "generated",
+    "title": "Integer multiple of cos 120 degrees",
+    "marks": 1,
+    "source": "Theory IGCSE-15.6 Quick check 3 (8 cos 120 = -4); cos 120 = -1/2, new even multipliers",
+    "params": [
+      {
+        "name": "k",
+        "min": 6,
+        "max": 20,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "A": "-k/2"
+    },
+    "constraints": [
+      "k%2==0"
+    ],
+    "original": {
+      "k": 8
+    },
+    "stem": "What is the value of \\({k|int}\\cos 120^\\circ\\)?",
+    "answer": {
+      "expression": "-k/2",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\cos 120^\\circ=-\\cos 60^\\circ=-1/2\\), so \\({k|int}\\times(-1/2)={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is -k/2. Original k=8 gives -4."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-15.6-PP-0580-23-ON21-Q24",
+    "section": "IGCSE-15.6",
+    "kind": "pastpaper",
+    "title": "Solve tan x = root 3 for 0 to 360 degrees",
+    "marks": 2,
+    "source": {
+      "paper": "0580/23/O/N/21 Q24",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w21_qp_23.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w21_ms_23.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2021), Question 24, including the exact equation tan x = root 3 (verified on the official page, not the garbled pdftotext form). Official answer and mark allocation from the MS PDF. The item is paper/self-mark."
+    },
+    "stem": "This question is 0580/23/O/N/21 Question 24, taken from the official QP.\n\n\\(\\tan x=\\sqrt{3}\\) and \\(0^\\circ\\leqslant x\\leqslant 360^\\circ\\).\n\nFind all the possible values of \\(x\\).  [2]",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "B1",
+        "text_tex": "The acute solution is \\(x=60^\\circ\\), because \\(\\tan 60^\\circ=\\sqrt{3}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS 24: 60 and 240, 2 marks, B1 for 60 or 240. If 0 scored, SC1 for two answers with a difference of 180 degrees."
+      },
+      {
+        "name": "B2",
+        "text_tex": "Tangent is also positive in the third quadrant, so the other solution in the interval is \\(x=180^\\circ+60^\\circ=240^\\circ\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS 24: the second value is 240. Independent: 180+60=240, and tan(240)=tan 60=root 3."
+      }
+    ]
+  }
+]

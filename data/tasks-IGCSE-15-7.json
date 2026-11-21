@@ -1,0 +1,201 @@
+[
+  {
+    "id": "IGCSE-15.7-QC1-gen",
+    "section": "IGCSE-15.7",
+    "kind": "generated",
+    "title": "Sine rule in a 30-90 triangle",
+    "marks": 1,
+    "source": "Theory IGCSE-15.7 Quick check 1 (a=5, c=10); new even values of a",
+    "params": [
+      {
+        "name": "a",
+        "min": 4,
+        "max": 12,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "c": "2*a"
+    },
+    "constraints": [],
+    "original": {
+      "a": 5
+    },
+    "stem": "In triangle \\(ABC\\), angle \\(A=30^\\circ\\), angle \\(C=90^\\circ\\) and side \\(a={a|int}\\). What is the length of side \\(c\\)?",
+    "answer": {
+      "expression": "2*a",
+      "format": "{c|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "c",
+        "text_tex": "The sine rule gives \\(\\dfrac{c}{\\sin 90^\\circ}=\\dfrac{{a|int}}{\\sin 30^\\circ}\\), so \\(c=2\\times{a|int}={c|int}\\).",
+        "result": "c",
+        "format": "int",
+        "mark": "A1",
+        "note": "c is 2a. Original a=5 gives c=10. The 30-90 pair is used so that the answer is an integer and the engine does not evaluate a sine."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-15.7-QC2-gen",
+    "section": "IGCSE-15.7",
+    "kind": "generated",
+    "title": "Cosine rule at a right angle (Pythagoras)",
+    "marks": 1,
+    "source": "Theory IGCSE-15.7 Quick check 2 (9-12-15); new integer Pythagorean sides",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "p": "9*k",
+      "q": "12*k",
+      "c": "15*k"
+    },
+    "constraints": [],
+    "original": {
+      "k": 1
+    },
+    "stem": "In triangle \\(PQR\\), angle \\(Q=90^\\circ\\), \\(PQ={p|int}\\) and \\(QR={q|int}\\). What is the length of \\(PR\\)?",
+    "answer": {
+      "expression": "15*k",
+      "format": "{c|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "c",
+        "text_tex": "The cosine rule at the right angle reduces to Pythagoras: \\(PR^2={p|int}^2+{q|int}^2\\), so \\(PR={c|int}\\).",
+        "result": "c",
+        "format": "int",
+        "mark": "A1",
+        "note": "c is 15k. Original k=1 gives 15."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-15.7-QC3-gen",
+    "section": "IGCSE-15.7",
+    "kind": "generated",
+    "title": "Sine rule again in a 30-90 triangle",
+    "marks": 1,
+    "source": "Theory IGCSE-15.7 Quick check 3 (a=8, c=16); new even values of a",
+    "params": [
+      {
+        "name": "a",
+        "min": 6,
+        "max": 16,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "c": "2*a"
+    },
+    "constraints": [],
+    "original": {
+      "a": 8
+    },
+    "stem": "In triangle \\(ABC\\), angle \\(A=30^\\circ\\), angle \\(C=90^\\circ\\) and side \\(a={a|int}\\). What is the length of side \\(c\\)?",
+    "answer": {
+      "expression": "2*a",
+      "format": "{c|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "c",
+        "text_tex": "As before, \\(c=2\\times{a|int}={c|int}\\).",
+        "result": "c",
+        "format": "int",
+        "mark": "A1",
+        "note": "c is 2a. Original a=8 gives 16."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-15.7-PP-0580-42-ON19-Q6a",
+    "section": "IGCSE-15.7",
+    "kind": "pastpaper",
+    "title": "Cosine rule and sine rule in triangle ABC",
+    "marks": 7,
+    "source": {
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w19_qp_42.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w19_ms_42.pdf",
+      "note": "0580/42/O/N/19 Question 6(a) only [7]. Official QP page 12 and official MS."
+    },
+    "marking": "manual",
+    "stem": "This question is 0580/42/O/N/19 Question 6(a) only, taken from the official QP.\n\nThe diagram shows triangle ABC.\nOn the official diagram, angle A is 79°, AC = 8 m and AB = 13 m.\n\n(i) Use the cosine rule to calculate BC. [4]\n\n(ii) Use the sine rule to calculate angle ACB. [3]",
+    "steps": [
+      {
+        "name": "C",
+        "text_tex": "\\(BC^2=8^2+13^2-2\\times 8\\times 13\\cos 79^\\circ=193.31\\ldots\\), so \\(BC=13.9\\) (to 3 s.f.).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M2",
+        "note": "Official MS: 13.9[0…] from cosine rule. M2 for 8^2+13^2-2*8*13*cos79, or M1 for the implicit cosine form, A1 for 193… . Independent: 64+169-208*cos(79°)=193.311…, sqrt=13.9036…=13.9 to 3 s.f."
+      },
+      {
+        "name": "A1",
+        "text_tex": "\\(BC=13.9\\) m (to 3 s.f.).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "The official MS also awards A1 for the intermediate 193… under the M2 line; the two A marks of the 4-mark part are recorded here and in the previous step together with M2, totalling 4 for (i) when the remaining A1 below is counted with the M2 line as set out in MARK-AUDIT. This step is the final length."
+      },
+      {
+        "name": "A1b",
+        "text_tex": "The official 4-mark scheme for (i) is M2 + A1 (for 193…) + A1 (for 13.9). The second A1 for 13.9 is this accuracy mark.",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Completes the 4 marks of (i)."
+      },
+      {
+        "name": "S",
+        "text_tex": "\\(\\sin ACB=\\dfrac{13\\sin 79^\\circ}{13.9}\\), so angle \\(ACB=66.6^\\circ\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M2",
+        "note": "Official MS: 66.6 or 66.60 to 66.65 from sine rule. M2 for sin ACB=13 sin79 / their (a)(i), or M1 for the sine-rule form. Independent: 13*sin(79°)/13.9036…=0.91755…, arcsin=66.604…°."
+      },
+      {
+        "name": "A2",
+        "text_tex": "Angle \\(ACB=66.6^\\circ\\) (to 3 s.f.).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Completes the 3 marks of (ii). Total 7."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Stem taken from the official QP PDF (UCLES 2019), Question 6(a) only, with the side and angle values confirmed on official page 12. Official MS reproduced mark by mark. Paper/self-mark."
+      }
+    ]
+  }
+]

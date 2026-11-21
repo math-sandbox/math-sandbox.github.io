@@ -1,0 +1,224 @@
+[
+  {
+    "id": "IGCSE-14.1-QC1-gen",
+    "section": "IGCSE-14.1",
+    "kind": "generated",
+    "title": "Find x from a sum-and-difference pair",
+    "marks": 1,
+    "source": "Theory IGCSE-14.1 Quick check 1 (x+y=10, x-y=4 gives x=7); book elimination style pp.431-435, new numbers",
+    "params": [
+      {
+        "name": "s",
+        "min": 6,
+        "max": 20,
+        "step": 2
+      },
+      {
+        "name": "d",
+        "min": 2,
+        "max": 10,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "X": "(s+d)/2",
+      "Y": "(s-d)/2",
+      "S2": "s+d"
+    },
+    "constraints": [
+      "s>d",
+      "d>=2",
+      "(s+d)%2==0",
+      "(s-d)%2==0",
+      "s-d!=0"
+    ],
+    "original": {
+      "s": 10,
+      "d": 4
+    },
+    "stem": "Solve the simultaneous equations \\(x+y={s|int}\\) and \\(x-y={d|int}\\). What is the value of \\(x\\)?",
+    "answer": {
+      "expression": "(s+d)/2",
+      "format": "{X|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Adding the equations eliminates \\(y\\): \\(2x={S2|int}\\), so \\(x={X|int}\\)",
+        "result": "(s+d)/2",
+        "format": "int",
+        "mark": "A1",
+        "note": "x is half the sum of the two right-hand sides."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original s=10, d=4"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-14.1-QC2-gen",
+    "section": "IGCSE-14.1",
+    "kind": "generated",
+    "title": "Find y by subtracting two linear equations",
+    "marks": 1,
+    "source": "Theory IGCSE-14.1 Quick check 2 (2x+y=11, x+y=7 gives y=3); book substitution/elimination style, new numbers",
+    "params": [
+      {
+        "name": "p",
+        "min": 2,
+        "max": 9,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 1,
+        "max": 9,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "R1": "2*p+q",
+      "R2": "p+q"
+    },
+    "constraints": [
+      "p!=q",
+      "p>=2"
+    ],
+    "original": {
+      "p": 4,
+      "q": 3
+    },
+    "stem": "Solve the simultaneous equations \\(2x+y={R1|int}\\) and \\(x+y={R2|int}\\). What is the value of \\(y\\)?",
+    "answer": {
+      "expression": "q",
+      "format": "{q|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Subtracting the second equation from the first gives \\(x={p|int}\\). Then \\({p|int}+y={R2|int}\\), so \\(y={q|int}\\).",
+        "result": "q",
+        "format": "int",
+        "mark": "A1",
+        "note": "(2x+y)-(x+y)=x. Last step is the y-value asked for."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original p=4, q=3"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-14.1-QC3-gen",
+    "section": "IGCSE-14.1",
+    "kind": "generated",
+    "title": "Find x by adding to eliminate y",
+    "marks": 1,
+    "source": "Theory IGCSE-14.1 Quick check 3 (4x+y=14, 2x-y=4 gives x=3); book elimination style, new numbers",
+    "params": [
+      {
+        "name": "p",
+        "min": 2,
+        "max": 9,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 1,
+        "max": 9,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "R1": "4*p+q",
+      "R2": "2*p-q",
+      "S": "6*p"
+    },
+    "constraints": [
+      "p!=q",
+      "2*p-q>=1"
+    ],
+    "original": {
+      "p": 3,
+      "q": 2
+    },
+    "stem": "Solve the simultaneous equations \\(4x+y={R1|int}\\) and \\(2x-y={R2|int}\\). What is the value of \\(x\\)?",
+    "answer": {
+      "expression": "p",
+      "format": "{p|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Adding the equations eliminates \\(y\\): \\(6x={S|int}\\), so \\(x={p|int}\\).",
+        "result": "p",
+        "format": "int",
+        "mark": "A1",
+        "note": "The y terms cancel."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original p=3, q=2"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-14.1-PP-0580-32-MJ20-Q10b",
+    "section": "IGCSE-14.1",
+    "kind": "pastpaper",
+    "title": "Solve a pair of linear simultaneous equations",
+    "marks": 4,
+    "source": {
+      "paper": "0580/32/M/J/20 Q10(b)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s20_qp_32.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s20_ms_32.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2020), Question 10(b) only. Official answers and mark allocation from the MS PDF. Part (a) is single-equation solving and is omitted. The item is paper/self-mark."
+    },
+    "stem": "This question is 0580/32/M/J/20 Question 10(b), taken from the official QP.\n\nSolve the simultaneous equations.\nYou must show all your working.\n\n\\(5x-2y=44\\)\n\\(2x+3y=10\\)",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "M1",
+        "text_tex": "Multiply the first equation by \\(3\\) and the second by \\(2\\): \\(15x-6y=132\\) and \\(4x+6y=20\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: M1 for equating coefficients of one variable by multiplying the equations by scalars, e.g. 15x-6y=132 and 4x+6y=20. Substitution is also accepted: M1 for rearranging one equation to make either x or y the subject."
+      },
+      {
+        "name": "M2",
+        "text_tex": "Add to eliminate \\(y\\): \\(19x=152\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: M1 for adding or subtracting to eliminate one variable, e.g. 19x=152. If substitution is used, M1 for substituting the rearranged equation into the other equation."
+      },
+      {
+        "name": "A1",
+        "text_tex": "So \\(x=8\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: A1 for x=8."
+      },
+      {
+        "name": "A2",
+        "text_tex": "Then \\(2\\times 8+3y=10\\), so \\(16+3y=10\\), \\(y=-2\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: A1 for y=-2. If 0 scored, SC1 for two values that satisfy one equation or SC1 for two correct answers without any correct working. Independent check: 5*8-2*(-2)=40+4=44 and 2*8+3*(-2)=16-6=10."
+      }
+    ]
+  }
+]

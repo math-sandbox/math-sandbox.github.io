@@ -1,0 +1,88 @@
+<section class="theory" data-section="P23-1.4">
+<h2>1.4 Division of polynomials</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 2 &amp; 3 Coursebook (Hugh Neill, Douglas Quadling and Julian Gilbey), Chapter 1 Algebra, printed pp.11–13 (Key point 1.2, Worked examples 1.7–1.8, Exercise 1D). Own wording and new numbers. The factor theorem and the remainder theorem are left to the next subsections.</p>
+<p class="key-words"><strong>Key words:</strong> <em>polynomial</em>, <em>degree of a polynomial</em>, <em>leading coefficient</em>, <em>constant term</em>, <em>dividend</em>, <em>divisor</em>, <em>quotient of a polynomial</em>, <em>remainder</em>, <em>division algorithm</em></p>
+<p>A <strong>polynomial</strong> is an expression of the form
+\[
+a_n x^n+a_{n-1}x^{n-1}+\cdots+a_2x^2+a_1x+a_0,
+\]
+where \(x\) is a variable, \(n\) is a non-negative integer, and the coefficients \(a_n,a_{n-1},\ldots,a_0\) are constants, with \(a_n\neq 0\). The coefficient \(a_n\) is the <strong>leading coefficient</strong> and \(a_0\) is the <strong>constant term</strong>. The highest power of \(x\) that appears is the <strong>degree of the polynomial</strong>. For example, \(5x^3-6x^2+2x-6\) is a polynomial of degree \(3\).</p>
+<p>A polynomial can be divided by another polynomial using long division, in the same spirit as the long division of whole numbers. At each stage the leading term of what remains is divided by the leading term of the divisor, the result is multiplied back through the divisor, and the product is subtracted. Missing powers should be written in with coefficient \(0\), so that like terms stay in columns.</p>
+<p>Each part of the calculation has a name. In
+\[
+(\text{dividend})\div(\text{divisor})=(\text{quotient of a polynomial}),
+\]
+or, when the division is not exact,
+\[
+\text{dividend}=\text{divisor}\times(\text{quotient of a polynomial})+\text{remainder}.
+\]</p>
+<p>The result of the division, before the remainder, is the quotient of a polynomial. <strong>Key point.</strong> The division algorithm for polynomials is
+\[\text{dividend}=\text{divisor}\times(\text{quotient of a polynomial})+\text{remainder}.\]
+The degree of the remainder is less than the degree of the divisor. If the remainder is \(0\), the divisor is a factor of the dividend.</p>
+<div class="worked-example">
+<h4>Worked example 1: An exact division</h4>
+<p class="src">Book: Worked example 1.7, pp.11–12; new cubic</p>
+<p>Divide \(x^3+3x^2-x-3\) by \(x+3\).</p>
+<ol class="steps">
+<li>The first term of the dividend divided by \(x\) is \(x^2\). Then \(x^2(x+3)=x^3+3x^2\), and subtracting from \(x^3+3x^2-x-3\) leaves \(-x-3\). <span class="mark">M1</span></li>
+<li>The next term is \(-1\), because \((-x)\div x=-1\). Then \((-1)(x+3)=-x-3\), and subtracting leaves remainder \(0\). The quotient of the polynomial is \(x^2-1\). <span class="mark">A1</span></li>
+<li>So \(x^3+3x^2-x-3=(x+3)(x^2-1)\). The remainder is \(0\), and therefore \(x+3\) is a factor of \(x^3+3x^2-x-3\). <span class="mark">A1</span></li>
+</ol>
+<p>In long-division layout:
+\[
+\begin{array}{r}
+x^2-1\\[-0.2em]
+x+3\,\overline{\smash{)}x^3+3x^2-x-3}\\[-0.2em]
+\underline{x^3+3x^2}\\[-0.2em]
+-x-3\\[-0.2em]
+\underline{-x-3}\\[-0.2em]
+0
+\end{array}
+\]</p>
+<p class="final"><strong>Answer:</strong> \(x^2-1\), remainder \(0\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: A division with a remainder</h4>
+<p class="src">Book: Worked example 1.8, pp.12–13; new cubic, missing \(x^2\) term</p>
+<p>Find the quotient and the remainder when \(2x^3+5x-9\) is divided by \(x-1\).</p>
+<ol class="steps">
+<li>There is no \(x^2\) term, so write the dividend as \(2x^3+0x^2+5x-9\). The first term of the quotient is \(2x^2\), and \(2x^2(x-1)=2x^3-2x^2\). Subtracting leaves \(2x^2+5x-9\). <span class="mark">M1</span></li>
+<li>The next term is \(2x\), and \(2x(x-1)=2x^2-2x\). Subtracting leaves \(7x-9\). The last term is \(7\), and \(7(x-1)=7x-7\). Subtracting leaves remainder \(-2\). The quotient is \(2x^2+2x+7\). <span class="mark">A1</span></li>
+<li>The division algorithm gives \(2x^3+5x-9=(x-1)(2x^2+2x+7)+(-2)\). <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> quotient \(2x^2+2x+7\), remainder \(-2\)</p>
+</div>
+<p>The identity can be checked by expanding the right-hand side. For Worked example 2,
+\[
+(x-1)(2x^2+2x+7)-2=2x^3+2x^2+7x-2x^2-2x-7-2=2x^3+5x-9.
+\]</p>
+<h3>Common mistakes</h3>
+<ul>
+<li>Forgetting to insert a \(0x^2\) (or similar) placeholder when a power is missing, and then subtracting from the wrong column.</li>
+<li>Making a sign error when subtracting a product such as \(2x^2(x-1)=2x^3-2x^2\).</li>
+<li>Stopping when a remainder of smaller degree than the divisor has not yet been reached.</li>
+</ul>
+<h3>Quick checks</h3>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>Find the remainder when \(2x^3+x-5\) is divided by \(x-1\).</p>
+<details><summary>Worked solution</summary>
+<p>Write \(2x^3+0x^2+x-5\). Long division gives quotient \(2x^2+2x+3\) and remainder \(2(1)^3+1-5=-2\). Directly: after the last subtraction the remainder is \(-2\). (As a check, substituting \(x=1\) into the dividend also gives \(-2\), but the method of this subsection is the division itself.)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>The cubic \(6x^3-x^2+x+4\) is divided by \(2x+1\). What is the leading coefficient of the quotient?</p>
+<details><summary>Worked solution</summary>
+<p>The first term of the quotient is \(6x^3\div 2x=3x^2\), so the leading coefficient is \(3\).</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>Find the remainder when \(x^3-4x+7\) is divided by \(x+2\).</p>
+<details><summary>Worked solution</summary>
+<p>Write \(x^3+0x^2-4x+7\). The first term of the quotient is \(x^2\), and \(x^2(x+2)=x^3+2x^2\). Subtracting leaves \(-2x^2-4x+7\). The next term is \(-2x\), and \(-2x(x+2)=-2x^2-4x\). Subtracting leaves remainder \(7\). The quotient is \(x^2-2x\).</p>
+</details>
+</div>
+<p class="marks-key">B marks are for a correct statement; M marks are for a correct method; A marks are for an accurate result.</p>
+</section>

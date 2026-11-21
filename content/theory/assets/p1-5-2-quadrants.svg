@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340" preserveAspectRatio="xMinYMin meet" style="width:100%;max-width:340px;height:auto" role="img" aria-label="The four quadrants, with a rotating line OP in the first quadrant">
+<line x1="30" y1="170" x2="310" y2="170" stroke="#111827" stroke-width="1.4"/>
+<line x1="170" y1="310" x2="170" y2="30" stroke="#111827" stroke-width="1.4"/>
+<polygon points="310,170 300,165 300,175" fill="#111827"/>
+<polygon points="170,30 165,40 175,40" fill="#111827"/>
+<text x="314" y="174" font-size="14" font-family="Times,serif" font-style="italic">x</text>
+<text x="178" y="28" font-size="14" font-family="Times,serif" font-style="italic">y</text>
+<text x="162" y="186" font-size="13" font-family="Times,serif" font-style="italic">O</text>
+<text x="206" y="130" font-size="13" font-family="Times,serif">first</text>
+<text x="206" y="146" font-size="13" font-family="Times,serif">quadrant</text>
+<text x="50" y="130" font-size="13" font-family="Times,serif">second</text>
+<text x="50" y="146" font-size="13" font-family="Times,serif">quadrant</text>
+<text x="50" y="210" font-size="13" font-family="Times,serif">third</text>
+<text x="50" y="226" font-size="13" font-family="Times,serif">quadrant</text>
+<text x="206" y="210" font-size="13" font-family="Times,serif">fourth</text>
+<text x="206" y="226" font-size="13" font-family="Times,serif">quadrant</text>
+<line x1="170" y1="170" x2="247.1" y2="78.1" stroke="#1d4ed8" stroke-width="2"/>
+<circle cx="247.1" cy="78.1" r="3" fill="#1d4ed8"/>
+<text x="253.1" y="74.1" font-size="13" font-family="Times,serif" font-style="italic">P</text>
+<path d="M 206 170 A 36 36 0 0 0 193.1 142.4" fill="none" stroke="#1d4ed8" stroke-width="1.3"/>
+<text x="212" y="160" font-size="13" font-family="Times,serif" font-style="italic">θ</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 180" width="420" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:420px;height:auto" role="img" aria-label="Two independent Poisson random variables and their sum, which is also Poisson">
+  <style>text{font-family:system-ui,Segoe UI,sans-serif;font-size:13px;fill:#222}</style>
+  <rect x="30" y="60" width="100" height="50" fill="none" stroke="#222" stroke-width="1.5"/>
+  <text x="48" y="90">Po(λ)</text>
+  <rect x="30" y="120" width="100" height="50" fill="none" stroke="#222" stroke-width="1.5"/>
+  <text x="48" y="150">Po(μ)</text>
+  <line x1="130" y1="85" x2="210" y2="110" stroke="#222" stroke-width="1.3"/>
+  <line x1="130" y1="145" x2="210" y2="120" stroke="#222" stroke-width="1.3"/>
+  <rect x="210" y="85" width="150" height="50" fill="none" stroke="#222" stroke-width="1.5"/>
+  <text x="228" y="116">Po(λ + μ)</text>
+</svg>

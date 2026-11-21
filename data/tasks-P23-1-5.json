@@ -1,0 +1,292 @@
+[
+  {
+    "id": "P23-1.5-QC1-gen",
+    "section": "P23-1.5",
+    "kind": "generated",
+    "title": "Evaluate a cubic at an integer (factor theorem test)",
+    "marks": 2,
+    "source": "P23 Ch1 theory P23-1.5 Quick check 1 (f(4)=0 for x^3-6x^2+5x+12)",
+    "params": [
+      {
+        "name": "p",
+        "min": -8,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": -8,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "name": "r",
+        "min": -16,
+        "max": 16,
+        "step": 2
+      },
+      {
+        "name": "c",
+        "min": -5,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "E": "math.pow(c,3)+p*c*c+q*c+r"
+    },
+    "constraints": [
+      "c!=0"
+    ],
+    "original": {
+      "p": -6,
+      "q": 5,
+      "r": 12,
+      "c": 4
+    },
+    "stem": "Let \\(f(x)=x^3+({p|int})x^2+({q|int})x+({r|int})\\). Evaluate \\(f({c|int})\\).",
+    "answer": {
+      "expression": "math.pow(c,3)+p*c*c+q*c+r",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "Substitute \\(x={c|int}\\) into the cubic.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Use substitution."
+      },
+      {
+        "name": "E",
+        "text_tex": "The value is \\({E|int}\\).",
+        "result": "math.pow(c,3)+p*c*c+q*c+r",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct value."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "test",
+        "stem": "To test a possible factor of \\(x^3+({p|int})x^2+({q|int})x+({r|int})\\) by the factor theorem, evaluate the cubic at \\(x={c|int}\\).",
+        "note": "test frame"
+      },
+      {
+        "id": "poly",
+        "stem": "The polynomial \\(x^3+({p|int})x^2+({q|int})x+({r|int})\\) is denoted by \\(f(x)\\). Find \\(f({c|int})\\).",
+        "note": "poly frame"
+      }
+    ]
+  },
+  {
+    "id": "P23-1.5-QC2-gen",
+    "section": "P23-1.5",
+    "kind": "generated",
+    "title": "The value of c when f(c)=0 for the factor x-c",
+    "marks": 2,
+    "source": "P23 Ch1 theory P23-1.5 Quick check 2 (f(-5)=0 so c=-5 in the factor x-c)",
+    "params": [
+      {
+        "name": "c",
+        "min": -6,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "E": "c"
+    },
+    "constraints": [
+      "c!=0"
+    ],
+    "original": {
+      "c": -5
+    },
+    "stem": "It is given that \\(f({c|int})=0\\). In the linear factor \\(x-c\\) of \\(f(x)\\), what is the value of \\(c\\)?",
+    "answer": {
+      "expression": "c",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "By the factor theorem, \\(x-c\\) is a factor when \\(f(c)=0\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Apply the factor theorem."
+      },
+      {
+        "name": "E",
+        "text_tex": "The value of \\(c\\) is \\({c|int}\\).",
+        "result": "c",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct value of c."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "root",
+        "stem": "A polynomial satisfies \\(f({c|int})=0\\). What value of \\(c\\) appears in the monic linear factor \\(x-c\\)?",
+        "note": "root frame"
+      },
+      {
+        "id": "theorem",
+        "stem": "The factor theorem is to be applied to a polynomial with \\(f({c|int})=0\\). What is the value of \\(c\\) in the factor \\(x-c\\)?",
+        "note": "theorem frame"
+      }
+    ]
+  },
+  {
+    "id": "P23-1.5-QC3-gen",
+    "section": "P23-1.5",
+    "kind": "generated",
+    "title": "Coefficient of x in the factor ax-b when f(b/a)=0",
+    "marks": 2,
+    "source": "P23 Ch1 theory P23-1.5 Quick check 3 (f(2/3)=0, factor 3x-2, coefficient 3)",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 1,
+        "max": 4,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "E": "a"
+    },
+    "constraints": [
+      "a>b",
+      "b>=1"
+    ],
+    "original": {
+      "a": 3,
+      "b": 2
+    },
+    "stem": "It is given that \\(f\\bigl(\\dfrac{{{b|int}}}{{{a|int}}}\\bigr)=0\\). What is the coefficient of \\(x\\) in the linear factor \\(ax-b\\) of \\(f(x)\\), where \\(a\\) and \\(b\\) are coprime positive integers?",
+    "answer": {
+      "expression": "a",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The extended factor theorem gives the factor \\({a|int}x-{b|int}\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Use P(b/a)=0 implies ax-b is a factor."
+      },
+      {
+        "name": "E",
+        "text_tex": "The coefficient of \\(x\\) is \\({a|int}\\).",
+        "result": "a",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct coefficient."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "extended",
+        "stem": "A polynomial satisfies \\(f({b|int}/{a|int})=0\\). In the factor \\(ax-b\\) with coprime positive integers \\(a\\) and \\(b\\), what is the value of \\(a\\)?",
+        "note": "extended frame"
+      },
+      {
+        "id": "linear",
+        "stem": "By the extended factor theorem, \\(f\\bigl(\\dfrac{{{b|int}}}{{{a|int}}}\\bigr)=0\\) gives a factor \\(ax-b\\). What is the coefficient of \\(x\\)?",
+        "note": "linear frame"
+      }
+    ]
+  },
+  {
+    "id": "P23-1.5-PP-9709-22-ON18-Q7i",
+    "section": "P23-1.5",
+    "kind": "pastpaper",
+    "marking": "manual",
+    "title": "Show that 2x+3 is a factor of 8x^3+4x^2-10x+3",
+    "marks": 2,
+    "source": {
+      "paper": "9709/22/O/N/18 Q7(i)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w18_qp_22.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w18_ms_22.pdf",
+      "note": "Stem verbatim from the QP PDF, part (i) only. Later parts of Q7 are omitted. Fully manual show-that. Independently, substituting x=-3/2 gives 0, so 2x+3 is a factor. Steps from the official MS PDF."
+    },
+    "stem": "Use the factor theorem to show that \\(2x+3\\) is a factor of \\(8x^3+4x^2-10x+3\\).",
+    "steps": [
+      {
+        "name": "sub",
+        "text_tex": "Substitute \\(x=-\\dfrac{3}{2}\\) into \\(8x^3+4x^2-10x+3\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: Substitute -3/2 and simplify."
+      },
+      {
+        "name": "conc",
+        "text_tex": "The value is \\(8\\bigl(-\\dfrac{27}{8}\\bigr)+4\\bigl(\\dfrac{9}{4}\\bigr)-10\\bigl(-\\dfrac{3}{2}\\bigr)+3=-27+9+15+3=0\\). Hence \\(2x+3\\) is a factor.",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: conclusion that it is a factor."
+      }
+    ]
+  },
+  {
+    "id": "P23-1.5-PP-9709-22-FM18-Q4i",
+    "section": "P23-1.5",
+    "kind": "pastpaper",
+    "marking": "manual",
+    "title": "Show that x+3 is a factor of 4x^3+4x^2-29x-15",
+    "marks": 2,
+    "source": {
+      "paper": "9709/22/F/M/18 Q4(i)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m18_qp_22.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m18_ms_22.pdf",
+      "note": "Stem verbatim from the QP PDF, part (i) only. Part (ii) (complete factorisation) is omitted so that this item stays with the factor theorem test. Fully manual show-that. Independently, f(-3)=-108+36+87-15=0. Steps from the official MS PDF."
+    },
+    "stem": "The polynomial \\(p(x)\\) is defined by \\(p(x)=4x^3+4x^2-29x-15\\). Use the factor theorem to show that \\(x+3\\) is a factor of \\(p(x)\\).",
+    "steps": [
+      {
+        "name": "sub",
+        "text_tex": "Substitute \\(x=-3\\) into \\(p(x)\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: Substitute x=-3 and simplify."
+      },
+      {
+        "name": "conc",
+        "text_tex": "\\(p(-3)=4(-27)+4(9)-29(-3)-15=-108+36+87-15=0\\). Hence \\(x+3\\) is a factor of \\(p(x)\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: Obtain -108+36+87-15=0 or equivalent and conclude."
+      }
+    ]
+  }
+]

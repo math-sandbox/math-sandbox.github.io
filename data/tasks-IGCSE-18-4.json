@@ -1,0 +1,248 @@
+[
+  {
+    "id": "IGCSE-18.4-QC1-gen",
+    "section": "IGCSE-18.4",
+    "kind": "generated",
+    "title": "Larger x-coordinate where a line meets a parabola",
+    "marks": 2,
+    "source": "Theory IGCSE-18.4 Quick check 1 (y=x^2-4x+5 and y=x+1; larger x is 4); book Worked example 11-12 style, pp.605-606",
+    "params": [
+      {
+        "name": "r",
+        "min": 2,
+        "max": 9,
+        "step": 1
+      },
+      {
+        "name": "s",
+        "min": -6,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "k",
+        "min": -4,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "B": "1-(r+s)",
+      "C": "k+r*s",
+      "A": "r"
+    },
+    "constraints": [
+      "r>s",
+      "r!=s"
+    ],
+    "original": {
+      "r": 4,
+      "s": 1,
+      "k": 1
+    },
+    "stem": "The graphs of \\(y=x^2+({B|int})x+({C|int})\\) and \\(y=x+({k|int})\\) meet at two points. Write down the larger of the two \\(x\\)-coordinates of those points.",
+    "answer": {
+      "expression": "r",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "Substitute \\(y=x+({k|int})\\) into the curve and rearrange: the roots are \\(x=({r|int})\\) and \\(x=({s|int})\\)",
+        "result": "0",
+        "format": "int",
+        "mark": "M1",
+        "note": "The constructed quadratic is (x-r)(x-s)=0."
+      },
+      {
+        "name": "A",
+        "text_tex": "The larger \\(x\\)-coordinate is \\({A|int}\\)",
+        "result": "r",
+        "format": "int",
+        "mark": "A1",
+        "note": "r is larger than s by the constraint r>s."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original r=4, s=1, k=1, which is y=x^2-4x+5 and y=x+1"
+      },
+      {
+        "id": "from-equation",
+        "stem": "Solve \\(x+({k|int})=x^2+({B|int})x+({C|int})\\) and write down the larger root."
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-18.4-QC2-gen",
+    "section": "IGCSE-18.4",
+    "kind": "generated",
+    "title": "Positive meeting point of y=n^2/x and y=x",
+    "marks": 1,
+    "source": "Theory IGCSE-18.4 Quick check 2 (y=9/x and y=x; positive x is 3); book Exercise 18.6 style, pp.606-607",
+    "params": [
+      {
+        "name": "n",
+        "min": 2,
+        "max": 9,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "n",
+      "Q": "n*n"
+    },
+    "constraints": [
+      "n!=0"
+    ],
+    "original": {
+      "n": 3
+    },
+    "stem": "The graphs of \\(y=\\dfrac{({Q|int})}{x}\\) and \\(y=x\\) meet at two points. Write down the positive \\(x\\)-coordinate of a meeting point.",
+    "answer": {
+      "expression": "n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(x=({Q|int})/x\\) gives \\(x^2={Q|int}\\), so the positive \\(x\\)-coordinate is \\({A|int}\\)",
+        "result": "n",
+        "format": "int",
+        "mark": "A1",
+        "note": "n is positive in the parameter range."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original n=3, y=9/x"
+      },
+      {
+        "id": "worded",
+        "stem": "A hyperbola \\(y=({Q|int})/x\\) meets the line \\(y=x\\). Find the positive \\(x\\)-coordinate of a meeting point."
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-18.4-QC3-gen",
+    "section": "IGCSE-18.4",
+    "kind": "generated",
+    "title": "Product of the x-coordinates of the meeting points",
+    "marks": 1,
+    "source": "Theory IGCSE-18.4 Quick check 3 (product of x-coordinates 1 and 4 is 4); same graphs as Quick check 1",
+    "params": [
+      {
+        "name": "r",
+        "min": 2,
+        "max": 9,
+        "step": 1
+      },
+      {
+        "name": "s",
+        "min": -6,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "k",
+        "min": -4,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "B": "1-(r+s)",
+      "C": "k+r*s",
+      "A": "r*s"
+    },
+    "constraints": [
+      "r>s",
+      "r!=s",
+      "r*s!=0"
+    ],
+    "original": {
+      "r": 4,
+      "s": 1,
+      "k": 1
+    },
+    "stem": "The graphs of \\(y=x^2+({B|int})x+({C|int})\\) and \\(y=x+({k|int})\\) meet at two points. Find the product of the two \\(x\\)-coordinates of those points.",
+    "answer": {
+      "expression": "r*s",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The \\(x\\)-coordinates are \\(({r|int})\\) and \\(({s|int})\\), and their product is \\({A|int}\\)",
+        "result": "r*s",
+        "format": "int",
+        "mark": "A1",
+        "note": "For the monic quadratic obtained after substitution, the product of the roots is the constant term."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original r=4, s=1, k=1"
+      },
+      {
+        "id": "product-only",
+        "stem": "After substituting \\(y=x+({k|int})\\) into \\(y=x^2+({B|int})x+({C|int})\\), a quadratic in \\(x\\) is obtained. Write down the product of its roots."
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-18.4-PP-0580-23-ON21-Q22",
+    "section": "IGCSE-18.4",
+    "kind": "pastpaper",
+    "title": "Solve y=x^2-3x-13 and y=x-1",
+    "marks": 5,
+    "source": {
+      "paper": "0580/23/O/N/21 Q22",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w21_qp_23.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w21_ms_23.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2021). Official answers and mark allocation from the MS PDF. Fully manual; no auto-credit."
+    },
+    "stem": "This question is 0580/23/O/N/21 Question 22, taken from the official QP.\n\nSolve the simultaneous equations.\nYou must show all your working.\n\n\\(y=x^2-3x-13\\)\n\n\\(y=x-1\\)",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "EQ",
+        "text_tex": "Equate (or substitute): \\(x^2-3x-13=x-1\\), which rearranges to \\(x^2-4x-12=0\\). (The equivalent quadratic in \\(y\\) is \\(y^2-2y-15=0\\).)",
+        "result": "None",
+        "format": "raw",
+        "mark": "M2",
+        "note": "MS: x^2-4x-12 [=0] M2; M1 for x^2-3x-13=x-1, or for y=(y+1)^2-3(y+1)-13; or y^2-2y-15 [=0]."
+      },
+      {
+        "name": "FAC",
+        "text_tex": "Factorise: \\((x-6)(x+2)=0\\) (or \\((y-5)(y+3)=0\\)).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: (x-6)(x+2) [=0] M1, or correct factors for their quadratic, or correct use of the quadratic formula or completing the square for their equation."
+      },
+      {
+        "name": "P1",
+        "text_tex": "One solution is \\(x=6\\), \\(y=5\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B2 for both pairs; B1 for one correct pair, or two correct x values, or two correct y values."
+      },
+      {
+        "name": "P2",
+        "text_tex": "The other solution is \\(x=-2\\), \\(y=-3\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official answers: (6, 5) and (-2, -3). If B0 is scored and at least 2 method marks are scored, SC1 is available for correct substitution of both of their x values or their y values."
+      }
+    ]
+  }
+]

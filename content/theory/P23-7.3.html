@@ -1,0 +1,91 @@
+<section class="theory" data-section="P23-7.3">
+<h2>7.3 Binomial expansion of \((1+x)^n\) for values of \(n\) that are not positive integers</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 2 and 3 Coursebook (Sue Pemberton, Julian Gilbey), Chapter 7, printed pp.174–176. Own wording and new numbers, following the coursebook expansion of \((1+x)^n\) for a rational index that is not a positive integer, and the condition \(\lvert x\rvert&lt;1\) for validity.</p>
+<p class="key-words"><strong>Key words:</strong> <em>binomial expansion</em></p>
+<h3>The expansion and its range of validity</h3>
+<p>For any rational number \(n\) that is not a positive integer, and for \(\lvert x\rvert&lt;1\),</p>
+<p>\[(1+x)^n=1+nx+\dfrac{n(n-1)}{2!}x^2+\dfrac{n(n-1)(n-2)}{3!}x^3+\cdots.\]</p>
+<p>The binomial expansion of \((1+x)^n\), when \(n\) is not a positive integer, is an infinite series. The same pattern continues for as many terms as are required. If the given expression is \((1+ax)^n\), the expansion is valid for \(\lvert ax\rvert&lt;1\). Coefficients are usually asked for in simplified form.</p>
+<div class="worked-example">
+<h4>Worked example 1: A square-root expansion</h4>
+<p class="src">Coursebook, 7.3, square-root style. New expansion of \(\sqrt{1+4x}\) up to the term in \(x^2\).</p>
+<p>Expand \(\sqrt{1+4x}\) in ascending powers of \(x\) up to and including the term in \(x^2\), and state the range of values of \(x\) for which the expansion is valid.</p>
+<ol class="steps">
+<li>\((1+4x)^{1/2}=1+\dfrac{1}{2}(4x)+\dfrac{\bigl(\frac{1}{2}\bigr)\bigl(-\frac{1}{2}\bigr)}{2}(4x)^2+\cdots=1+2x-2x^2+\cdots\). <span class="mark">M1</span></li>
+<li>The expansion is valid for \(\lvert 4x\rvert&lt;1\), that is \(-\dfrac{1}{4}&lt;x&lt;\dfrac{1}{4}\). <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(1+2x-2x^2\); \(-\dfrac{1}{4}&lt;x&lt;\dfrac{1}{4}\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: A cube-root expansion</h4>
+<p class="src">Coursebook, 7.3, cube-root style, in the same family as the official past paper on this page but stopping at the term in \(x^2\) and using a new coefficient inside the bracket.</p>
+<p>Expand \(\sqrt[3]{1-3x}\) in ascending powers of \(x\) up to and including the term in \(x^2\).</p>
+<ol class="steps">
+<li>\((1-3x)^{1/3}=1+\dfrac{1}{3}(-3x)+\dfrac{\bigl(\frac{1}{3}\bigr)\bigl(-\frac{2}{3}\bigr)}{2}(-3x)^2+\cdots\). <span class="mark">M1</span></li>
+<li>This simplifies to \(1-x-x^2\). <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(1-x-x^2\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul>
+<li>Using the expansion without the condition \(\lvert ax\rvert&lt;1\), or writing a closed inequality when the series is valid only for a strict inequality.</li>
+<li>Leaving binomial coefficients unsimplified when the question asks for simplified coefficients.</li>
+</ul>
+<h3>Past paper</h3>
+<p class="src">9709/31/M/J/11 Q1, official QP and official MS.</p>
+<p>Expand \(\sqrt[3]{1-6x}\) in ascending powers of \(x\) up to and including the term in \(x^3\), simplifying the coefficients. [4]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>A first-order term of the form \(1+kx\), with \(k=\pm 6\) or \(k=\pm\dfrac{1}{3}\), is obtained. <span class="mark">M1</span> Official MS: M1, obtain \(1+kx\), where \(k=\pm 6\) or \(\pm\frac{1}{3}\).</li>
+<li>The first two terms are \(1-2x\). <span class="mark">A1</span> Official MS: A1. (The official alternative method differentiates to obtain \(f'(x)=-2(1-6x)^{-2/3}\) and hence the same first two terms.)</li>
+<li>The term in \(x^2\) is \(-4x^2\). <span class="mark">A1</span></li>
+<li>The term in \(x^3\) is \(-\dfrac{40}{3}x^3\), or an equivalent. <span class="mark">A1</span> Official MS: A1, \(-\dfrac{40}{3}x^3\) or equivalent. An equivalent four-mark alternative method using successive derivatives at the origin is given in the official MS.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/32/M/J/16 Q2, official QP and official MS.</p>
+<p>Expand \(\dfrac{1}{\sqrt{1-2x}}\) in ascending powers of \(x\), up to and including the term in \(x^3\), simplifying the coefficients. [4]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>A correct unsimplified version of the \(x\) or \(x^2\) or \(x^3\) term is stated. <span class="mark">M1</span> Official MS: M1. Symbolic binomial coefficients are not sufficient for the M mark.</li>
+<li>The first two terms are \(1+x\). <span class="mark">A1</span> Official MS: A1, \(1+x\).</li>
+<li>The term in \(x^2\) is \(\dfrac{3}{2}x^2\). <span class="mark">A1</span> Official MS: A1, \(\dfrac{3}{2}x^2\).</li>
+<li>The term in \(x^3\) is \(\dfrac{5}{2}x^3\). <span class="mark">A1</span> Official MS: A1, \(\dfrac{5}{2}x^3\). The expansion is \(1+x+\dfrac{3}{2}x^2+\dfrac{5}{2}x^3\).</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/31/M/J/17 Q2, official QP and official MS.</p>
+<p>Expand \(\dfrac{1}{\sqrt[3]{1+6x}}\) in ascending powers of \(x\), up to and including the term in \(x^3\), simplifying the coefficients. [4]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>A correct unsimplified version of the \(x\) or \(x^2\) or \(x^3\) term in the expansion of \((1+6x)^{-1/3}\) is stated. <span class="mark">M1</span> Official MS: M1 (EITHER). Or differentiate and evaluate \(f(0)\) and \(f'(0)\).</li>
+<li>The first two terms are \(1-2x\). <span class="mark">A1</span> Official MS: A1, \(1-2x\).</li>
+<li>The term in \(x^2\) is \(8x^2\). <span class="mark">A1</span> Official MS: A1, \(8x^2\).</li>
+<li>The term in \(x^3\) is \(-\dfrac{112}{3}x^3\). <span class="mark">A1</span> Official MS: A1, \(-\dfrac{112}{3}x^3\) in the final answer.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>Find the coefficient of \(x\) in the expansion of \((1+3x)^{-1}\) in ascending powers of \(x\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>The coefficient is \((-1)\times 3=-3\).</li></ol>
+<p class="final"><strong>Answer:</strong> \(-3\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>Find the coefficient of \(x^2\) in the expansion of \((1+3x)^{-1}\) in ascending powers of \(x\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>The coefficient is \(\dfrac{(-1)(-2)}{2}\times 9=9\).</li></ol>
+<p class="final"><strong>Answer:</strong> \(9\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>Find the coefficient of \(x\) in the expansion of \(\sqrt{1-2x}\) in ascending powers of \(x\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>The coefficient is \(\dfrac{1}{2}\times(-2)=-1\).</li></ol>
+<p class="final"><strong>Answer:</strong> \(-1\)</p>
+</details>
+</div>
+</section>

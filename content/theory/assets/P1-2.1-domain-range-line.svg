@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 320" width="440" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:440px;height:auto" role="img" aria-labelledby="p121c-t p121c-d">
+<title id="p121c-t">Domain and range of a linear function on a closed interval</title>
+<desc id="p121c-d">The segment of y equals 5 minus 2x from the point (−4, 13) to the point (5, −5). A brace under the x-axis marks the domain and a brace at the side marks the range.</desc>
+
+<rect x="0" y="0" width="440" height="320" fill="#fff"/>
+<g font-family="Source Sans 3, DejaVu Sans, sans-serif" font-size="13" fill="#333">
+  <line x1="40" y1="170" x2="400" y2="170" stroke="#333" stroke-width="1.6"/>
+  <line x1="150" y1="300" x2="150" y2="20" stroke="#333" stroke-width="1.6"/>
+  <polygon points="400,170 390,166 390,174" fill="#333"/>
+  <polygon points="150,20 146,30 154,30" fill="#333"/>
+  <text x="388" y="188">x</text>
+  <text x="158" y="32">f(x)</text>
+  <line x1="78" y1="40" x2="240" y2="220" stroke="#1b5e8a" stroke-width="2.6"/>
+  <circle cx="78" cy="40" r="4" fill="#1b5e8a"/>
+  <circle cx="240" cy="220" r="4" fill="#1b5e8a"/>
+  <text x="72" y="32" text-anchor="end">(−4, 13)</text>
+  <text x="248" y="224">(5, −5)</text>
+  <!-- domain brace under the x-interval -->
+  <path d="M 78,198 C 78,212 159.0,212 159.0,220 C 159.0,212 240,212 240,198" fill="none" stroke="#2c6f4a" stroke-width="1.6"/>
+  <text x="159.0" y="236" text-anchor="middle" fill="#2c6f4a">domain</text>
+  <!-- range brace to the right of the y-interval -->
+  <path d="M 276,40 C 290,40 290,130 298,130 C 290,130 290,220 276,220" fill="none" stroke="#8a4b12" stroke-width="1.6"/>
+  <text x="304" y="130" fill="#8a4b12">range</text>
+</g>
+
+</svg>

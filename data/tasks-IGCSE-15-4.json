@@ -1,0 +1,144 @@
+[
+  {
+    "id": "IGCSE-15.4-QC1-gen",
+    "section": "IGCSE-15.4",
+    "kind": "generated",
+    "title": "Integer multiple of sin 30 degrees",
+    "marks": 1,
+    "source": "Theory IGCSE-15.4 Quick check 1 (8 sin 30 = 4); exact ratio sin 30 = 1/2, new even multipliers",
+    "params": [
+      {
+        "name": "k",
+        "min": 6,
+        "max": 20,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "A": "k/2"
+    },
+    "constraints": [
+      "k%2==0"
+    ],
+    "original": {
+      "k": 8
+    },
+    "stem": "What is the value of \\({k|int}\\sin 30^\\circ\\)?",
+    "answer": {
+      "expression": "k/2",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\sin 30^\\circ=1/2\\), so \\({k|int}\\times 1/2={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is k/2. Original k=8 gives 4."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-15.4-QC2-gen",
+    "section": "IGCSE-15.4",
+    "kind": "generated",
+    "title": "Integer multiple of tan 45 degrees",
+    "marks": 1,
+    "source": "Theory IGCSE-15.4 Quick check 2 (7 tan 45 = 7); exact ratio tan 45 = 1, new positive integers",
+    "params": [
+      {
+        "name": "n",
+        "min": 3,
+        "max": 15,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "n"
+    },
+    "constraints": [
+      "n>=3"
+    ],
+    "original": {
+      "n": 7
+    },
+    "stem": "What is the value of \\({n|int}\\tan 45^\\circ\\)?",
+    "answer": {
+      "expression": "n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\tan 45^\\circ=1\\), so \\({n|int}\\times 1={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A equals n. Original n=7 gives 7."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-15.4-QC3-gen",
+    "section": "IGCSE-15.4",
+    "kind": "generated",
+    "title": "Shorter leg of a 30-60-90 triangle from the hypotenuse",
+    "marks": 1,
+    "source": "Theory IGCSE-15.4 Quick check 3 (hypotenuse 10, side opposite 30 is 5); sides in the ratio 1 : root 3 : 2, new even hypotenuses",
+    "params": [
+      {
+        "name": "k",
+        "min": 3,
+        "max": 12,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "H": "2*k",
+      "A": "k"
+    },
+    "constraints": [
+      "k>=3"
+    ],
+    "original": {
+      "k": 5
+    },
+    "stem": "A right-angled triangle has a \\(30^\\circ\\) angle and hypotenuse {H|int} cm. What is the length, in centimetres, of the side opposite the \\(30^\\circ\\) angle?",
+    "answer": {
+      "expression": "k",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The sides are in the ratio \\(1:\\sqrt{3}:2\\), so the side opposite \\(30^\\circ\\) is half the hypotenuse: \\({H|int}/2={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is k and H is 2k. Original k=5 gives hypotenuse 10 and opposite 5."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  }
+]

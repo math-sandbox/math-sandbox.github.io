@@ -1,0 +1,397 @@
+[
+    {
+        "id": "P1-6.3-QC1-gen",
+        "section": "P1-6.3",
+        "kind": "generated",
+        "title": "A term of an arithmetic progression",
+        "marks": 2,
+        "source": "Theory P1-6.3 Quick check 1; a + (n - 1)d",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 15,
+                "step": 1
+            },
+            {
+                "name": "d",
+                "min": 2,
+                "max": 7,
+                "step": 1
+            },
+            {
+                "name": "n",
+                "min": 10,
+                "max": 20,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "m": "n-1",
+            "A": "a+(n-1)*d"
+        },
+        "constraints": [
+            "n>=10"
+        ],
+        "original": {
+            "a": 5,
+            "d": 3,
+            "n": 15
+        },
+        "stem": "An arithmetic progression has first term {a|int} and common difference {d|int}. Find the {n|int}th term.",
+        "answer": {
+            "expression": "a+(n-1)*d",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(u_{{n|int}}=a+{m|int}d\\)",
+                "result": "m",
+                "format": "int",
+                "mark": "M1",
+                "note": "The nth term is a + (n - 1)d."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(={a|int}+{m|int}\\times{d|int}={A|int}\\)",
+                "result": "a+(n-1)*d",
+                "format": "int",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original first term 5, common difference 3, 15th term 47"
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-6.3"
+            ],
+            "topic": "Series",
+            "chapter": "P1-6",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-6-3.json",
+                "locator": "P1-6.3-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-6.3-QC2-gen",
+        "section": "P1-6.3",
+        "kind": "generated",
+        "title": "Sum of the first n terms of an arithmetic progression",
+        "marks": 2,
+        "source": "Theory P1-6.3 Quick check 2; n/2 (2a + (n - 1)d)",
+        "params": [
+            {
+                "name": "a",
+                "min": 1,
+                "max": 10,
+                "step": 1
+            },
+            {
+                "name": "d",
+                "min": 2,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "n",
+                "min": 10,
+                "max": 25,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "m": "n-1",
+            "a2": "2*a",
+            "A": "n*(2*a+(n-1)*d)/2"
+        },
+        "constraints": [
+            "n>=10"
+        ],
+        "original": {
+            "a": 4,
+            "d": 6,
+            "n": 12
+        },
+        "stem": "An arithmetic progression has first term {a|int} and common difference {d|int}. Find the sum of the first {n|int} terms.",
+        "answer": {
+            "expression": "n*(2*a+(n-1)*d)/2",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(S_{{n|int}}=\\dfrac{{n|int}}{2}\\left({a2|int}+{m|int}\\times{d|int}\\right)\\)",
+                "result": "n*(2*a+(n-1)*d)/2",
+                "format": "int",
+                "mark": "M1",
+                "note": "Use S = n/2 (2a + (n - 1)d)."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(={A|int}\\)",
+                "result": "n*(2*a+(n-1)*d)/2",
+                "format": "int",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original first term 4, common difference 6, sum of 12 terms 444"
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-6.3"
+            ],
+            "topic": "Series",
+            "chapter": "P1-6",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-6-3.json",
+                "locator": "P1-6.3-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-6.3-QC3-gen",
+        "section": "P1-6.3",
+        "kind": "generated",
+        "title": "Common difference from two terms",
+        "marks": 2,
+        "source": "Theory P1-6.3 Quick check 3; (u10 - a)/9",
+        "params": [
+            {
+                "name": "a",
+                "min": 3,
+                "max": 20,
+                "step": 1
+            },
+            {
+                "name": "d",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "T": "a+9*d",
+            "G": "9*d"
+        },
+        "constraints": [
+            "d>=2"
+        ],
+        "original": {
+            "a": 5,
+            "d": 5
+        },
+        "stem": "The first term of an arithmetic progression is {a|int} and the 10th term is {T|int}. Find the common difference.",
+        "answer": {
+            "expression": "d",
+            "format": "{D|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(a+9d={T|int}\\), so \\(9d={G|int}\\).",
+                "result": "G",
+                "format": "int",
+                "mark": "M1",
+                "note": "The 10th term is a + 9d."
+            },
+            {
+                "name": "D",
+                "text_tex": "\\(d={d|int}\\)",
+                "result": "d",
+                "format": "int",
+                "mark": "A1",
+                "note": "Divide by 9."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original first term 5, 10th term 50, common difference 5"
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-6.3"
+            ],
+            "topic": "Series",
+            "chapter": "P1-6",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-6-3.json",
+                "locator": "P1-6.3-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-6.3-PP-9709-11-MJ21-Q2",
+        "section": "P1-6.3",
+        "kind": "pastpaper",
+        "title": "Arithmetic progression from two sums",
+        "marks": 5,
+        "source": {
+            "paper": "9709/11/M/J/21 Q2",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s21_qp_11.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s21_ms_11.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>The sum of the first 20 terms of an arithmetic progression is 405 and the sum of the first 40 terms is 1410. Find the 60th term of the progression. [5]</p>",
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-6.3"
+            ],
+            "topic": "Series",
+            "chapter": "P1-6",
+            "marks": 5,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-6-3.json",
+                "locator": "P1-6.3-PP-9709-11-MJ21-Q2"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(10(2a+19d)=405\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, 10(2a + 19d) = 405."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(20(2a+39d)=1410\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, 20(2a + 39d) = 1410."
+            },
+            {
+                "name": "s3",
+                "text_tex": "Solving simultaneously: \\(a=6\\), \\(d=1.5\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, solving simultaneously two equations obtained from using the correct sum formulae [a = 6, d = 1.5]. Reach a = or d =."
+            },
+            {
+                "name": "s4",
+                "text_tex": "60th term \\(=a+59d=6+59\\times1.5\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, using the correct formula for 60th term with their a and d."
+            },
+            {
+                "name": "s5",
+                "text_tex": "\\(=94.5\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 60th term = 94.5, OE, e.g. 189/2."
+            }
+        ]
+    },
+    {
+        "id": "P1-6.3-PP-9709-13-ON17-Q1",
+        "section": "P1-6.3",
+        "kind": "pastpaper",
+        "title": "Least number of terms for a sum to exceed 3000",
+        "marks": 4,
+        "source": {
+            "paper": "9709/13/O/N/17 Q1",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w17_qp_13.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w17_ms_13.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>An arithmetic progression has first term \\(-12\\) and common difference 6. The sum of the first \\(n\\) terms exceeds 3000. Calculate the least possible value of \\(n\\). [4]</p>",
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-6.3"
+            ],
+            "topic": "Series",
+            "chapter": "P1-6",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-6-3.json",
+                "locator": "P1-6.3-PP-9709-13-ON17-Q1"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(\\dfrac{1}{2}n\\left[-24+(n-1)6\\right]\\gt 3000\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, ½n[−24 + (n − 1)6] ~ 3000, where ~ denotes any inequality or equality. Use correct formula with RHS ≈ 3000 (e.g. 3010)."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(3(n^2-5n-1000)\\gt 0\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, (3)(n² − 5n − 1000) (~ 0). Rearrange into a 3-term quadratic."
+            },
+            {
+                "name": "s3",
+                "text_tex": "The roots are \\(n\\approx34.2\\) and \\(n\\approx-29.2\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, n ~ 34.2 (& −29.2)."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(n=35\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 35. Allow n ⩾ 35."
+            }
+        ]
+    }
+]

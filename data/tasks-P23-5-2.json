@@ -1,0 +1,923 @@
+[
+  {
+    "id": "P23-5.2-QC2-gen",
+    "section": "P23-5.2",
+    "kind": "generated",
+    "title": "Definite integral of k/(ax+b)",
+    "marks": 4,
+    "source": "Theory P23-5.2 Quick check 2 (integral of 2/(x+1) from 0 to 3 = 2.77); book Key points 5.2-5.3 pp.115-117, Exercise 5B Q2 p.117",
+    "params": [
+      {
+        "name": "k",
+        "min": 2,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "name": "a",
+        "min": 1,
+        "max": 1,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 1,
+        "max": 9,
+        "step": 1
+      },
+      {
+        "name": "p",
+        "min": 0,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 1,
+        "max": 10,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "Uq": "abs(a*q+b)",
+      "Up": "abs(a*p+b)"
+    },
+    "constraints": [
+      "q>p",
+      "(a*p+b)*(a*q+b)>0",
+      "k!=a"
+    ],
+    "original": {
+      "k": 2,
+      "a": 1,
+      "b": 1,
+      "p": 0,
+      "q": 3
+    },
+    "stem": "Evaluate \\(\\int_{{p|int}}^{{q|int}}\\frac{{k|int}}{x+{b|int}}\\,\\mathrm{d}x\\), giving your answer correct to 3 significant figures.",
+    "answer": {
+      "expression": "k/a*math.log(abs((a*q+b)/(a*p+b)))",
+      "format": "{V|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "F",
+        "text_tex": "\\(\\left[{k|int}\\ln\\lvert x+{b|int}\\rvert\\right]_{{p|int}}^{{q|int}}\\)",
+        "result": "k/a",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Form (k/a) ln of the modulus of ax + b; here a = 1."
+      },
+      {
+        "name": "Fa",
+        "text_tex": "Coefficient \\(\\frac{{k|int}}{{a|int}}={k|int}\\) is correct",
+        "result": "F",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct coefficient."
+      },
+      {
+        "name": "Vm",
+        "text_tex": "\\({k|int}\\left(\\ln{Uq|raw}-\\ln{Up|raw}\\right)\\approx{Vm|raw}\\)",
+        "result": "F*math.log(abs(a*q+b))-F*math.log(abs(a*p+b))",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Substitute both limits, upper minus lower."
+      },
+      {
+        "name": "V",
+        "text_tex": "\\(={V|sf3z}\\) (3 s.f.)",
+        "result": "Vm",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Correct to 3 significant figures."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem: coefficient of x is 1"
+      },
+      {
+        "id": "linear",
+        "stem": "Evaluate \\(\\int_{{p|int}}^{{q|int}}\\frac{{k|int}}{{a|int}x+{b|int}}\\,\\mathrm{d}x\\), giving your answer correct to 3 significant figures.",
+        "params": [
+          {
+            "name": "k",
+            "min": 2,
+            "max": 12,
+            "step": 1
+          },
+          {
+            "name": "a",
+            "min": 2,
+            "max": 6,
+            "step": 1
+          },
+          {
+            "name": "b",
+            "min": 1,
+            "max": 9,
+            "step": 1
+          },
+          {
+            "name": "p",
+            "min": 0,
+            "max": 4,
+            "step": 1
+          },
+          {
+            "name": "q",
+            "min": 1,
+            "max": 10,
+            "step": 1
+          }
+        ],
+        "step_text": {
+          "F": "\\(\\left[\\frac{{k|int}}{{a|int}}\\ln\\lvert {a|int}x+{b|int}\\rvert\\right]_{{p|int}}^{{q|int}}\\)",
+          "Fa": "Coefficient \\(\\frac{{k|int}}{{a|int}}\\) (kept as an exact fraction) is correct",
+          "Vm": "\\(\\frac{{k|int}}{{a|int}}\\left(\\ln{Uq|raw}-\\ln{Up|raw}\\right)\\approx{Vm|raw}\\)"
+        }
+      },
+      {
+        "id": "negative-x",
+        "stem": "Evaluate \\(\\int_{{p|int}}^{{q|int}}\\frac{{k|int}}{x}\\,\\mathrm{d}x\\), giving your answer correct to 3 significant figures.",
+        "params": [
+          {
+            "name": "k",
+            "min": 2,
+            "max": 12,
+            "step": 1
+          },
+          {
+            "name": "a",
+            "min": 1,
+            "max": 1,
+            "step": 1
+          },
+          {
+            "name": "b",
+            "min": 0,
+            "max": 0,
+            "step": 1
+          },
+          {
+            "name": "p",
+            "min": -9,
+            "max": -2,
+            "step": 1
+          },
+          {
+            "name": "q",
+            "min": -8,
+            "max": -1,
+            "step": 1
+          }
+        ],
+        "step_text": {
+          "F": "\\(\\left[{k|int}\\ln\\lvert x\\rvert\\right]_{{p|int}}^{{q|int}}\\) (modulus: \\(x<0\\) here)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "P23-5.2-QC3-gen",
+    "section": "P23-5.2",
+    "kind": "generated",
+    "title": "Definite integral with a negative coefficient of x",
+    "marks": 4,
+    "source": "Theory P23-5.2 Quick check 3 (integral of 3/(6-x) from 2 to 4 = 2.08); book Worked example 5.4c p.116, Exercise 5B Q2 p.117",
+    "params": [
+      {
+        "name": "k",
+        "min": 2,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "name": "m",
+        "min": 1,
+        "max": 1,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 5,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "name": "p",
+        "min": 0,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 1,
+        "max": 10,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "Uq": "abs(b-m*q)",
+      "Up": "abs(b-m*p)"
+    },
+    "constraints": [
+      "q>p",
+      "b-m*q>0",
+      "k!=m"
+    ],
+    "original": {
+      "k": 3,
+      "m": 1,
+      "b": 6,
+      "p": 2,
+      "q": 4
+    },
+    "stem": "Evaluate \\(\\int_{{p|int}}^{{q|int}}\\frac{{k|int}}{{b|int}-x}\\,\\mathrm{d}x\\), giving your answer correct to 3 significant figures.",
+    "answer": {
+      "expression": "k/(-m)*(math.log(b-m*q)-math.log(b-m*p))",
+      "format": "{V|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "F",
+        "text_tex": "\\(\\left[-{k|int}\\ln({b|int}-x)\\right]_{{p|int}}^{{q|int}}\\)",
+        "result": "-k/m",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Divide by the coefficient of x, which is negative."
+      },
+      {
+        "name": "Fa",
+        "text_tex": "The coefficient is \\(\\frac{{k|int}}{-1}=-{k|int}\\) (negative)",
+        "result": "F",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct sign and size."
+      },
+      {
+        "name": "Vm",
+        "text_tex": "\\(-{k|int}\\left(\\ln{Uq|raw}-\\ln{Up|raw}\\right)\\approx{Vm|raw}\\)",
+        "result": "F*math.log(Uq)-F*math.log(Up)",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Upper limit minus lower limit."
+      },
+      {
+        "name": "V",
+        "text_tex": "\\(={V|sf3z}\\) (3 s.f.)",
+        "result": "Vm",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Correct to 3 significant figures."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem: coefficient of x is -1"
+      },
+      {
+        "id": "general",
+        "stem": "Evaluate \\(\\int_{{p|int}}^{{q|int}}\\frac{{k|int}}{{b|int}-{m|int}x}\\,\\mathrm{d}x\\), giving your answer correct to 3 significant figures.",
+        "params": [
+          {
+            "name": "k",
+            "min": 2,
+            "max": 12,
+            "step": 1
+          },
+          {
+            "name": "m",
+            "min": 2,
+            "max": 4,
+            "step": 1
+          },
+          {
+            "name": "b",
+            "min": 5,
+            "max": 30,
+            "step": 1
+          },
+          {
+            "name": "p",
+            "min": 0,
+            "max": 3,
+            "step": 1
+          },
+          {
+            "name": "q",
+            "min": 1,
+            "max": 6,
+            "step": 1
+          }
+        ],
+        "step_text": {
+          "F": "\\(\\left[-\\frac{{k|int}}{{m|int}}\\ln({b|int}-{m|int}x)\\right]_{{p|int}}^{{q|int}}\\)",
+          "Fa": "The coefficient is \\(-\\frac{{k|int}}{{m|int}}\\), kept exact (negative)",
+          "Vm": "\\(-\\frac{{k|int}}{{m|int}}\\left(\\ln{Uq|raw}-\\ln{Up|raw}\\right)\\approx{Vm|raw}\\)"
+        }
+      },
+      {
+        "id": "area",
+        "stem": "Find the area of the region bounded by the curve \\(y=\\frac{{k|int}}{{b|int}-x}\\), the \\(x\\)-axis and the lines \\(x={p|int}\\) and \\(x={q|int}\\). Give your answer correct to 3 significant figures."
+      }
+    ]
+  },
+  {
+    "id": "P23-5.2-PP-ON18-Q2-similar",
+    "section": "P23-5.2",
+    "kind": "generated",
+    "title": "Definite integral of k/(ax+b)",
+    "marks": 4,
+    "source": "Similar to 9709/21/O/N/18 Q2 and 9709/22/O/N/18 Q6(a) (review file): new values; a decimal answer replaces the show-that, which the engine cannot mark",
+    "params": [
+      {
+        "name": "k",
+        "min": 2,
+        "max": 12,
+        "step": 2
+      },
+      {
+        "name": "a",
+        "min": 2,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "p",
+        "min": 0,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 2,
+        "max": 9,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "Uq": "a*q+b",
+      "Up": "a*p+b"
+    },
+    "constraints": [
+      "q>p",
+      "k!=a"
+    ],
+    "original": {
+      "k": 6,
+      "a": 2,
+      "b": 1,
+      "p": 1,
+      "q": 7
+    },
+    "stem": "Evaluate \\(\\int_{{p|int}}^{{q|int}}\\frac{{k|int}}{{a|int}x+{b|int}}\\,\\mathrm{d}x\\), giving your answer correct to 3 significant figures.",
+    "answer": {
+      "expression": "k/a*(math.log(a*q+b)-math.log(a*p+b))",
+      "format": "{V|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "F",
+        "text_tex": "\\(\\left[\\frac{{k|int}}{{a|int}}\\ln({a|int}x+{b|int})\\right]_{{p|int}}^{{q|int}}\\)",
+        "result": "k/a",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Form (k/a) ln(ax + b): divide the numerator k by a."
+      },
+      {
+        "name": "Fa",
+        "text_tex": "The coefficient is \\(\\frac{{k|int}}{{a|int}}\\), kept exact",
+        "result": "F",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct coefficient k/a."
+      },
+      {
+        "name": "Vm",
+        "text_tex": "\\(\\frac{{k|int}}{{a|int}}\\left(\\ln{Uq|raw}-\\ln{Up|raw}\\right)\\approx{Vm|raw}\\)",
+        "result": "F*math.log(Uq)-F*math.log(Up)",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Substitute limits."
+      },
+      {
+        "name": "V",
+        "text_tex": "\\(={V|sf3z}\\) (3 s.f.)",
+        "result": "Vm",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Correct to 3 significant figures."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "area",
+        "stem": "Find the area of the region under the curve \\(y=\\frac{{k|int}}{{a|int}x+{b|int}}\\) between \\(x={p|int}\\) and \\(x={q|int}\\), correct to 3 significant figures."
+      },
+      {
+        "id": "rate",
+        "stem": "Water flows into a tank at a rate of \\(\\frac{{k|int}}{{a|int}t+{b|int}}\\) litres per minute, where \\(t\\) is the time in minutes. Find the volume of water that flows in between \\(t={p|int}\\) and \\(t={q|int}\\), correct to 3 significant figures.",
+        "step_text": {
+          "F": "\\(\\left[\\frac{{k|int}}{{a|int}}\\ln({a|int}t+{b|int})\\right]_{{p|int}}^{{q|int}}\\)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "P23-5.2-PP-FM19-Q6a-similar",
+    "section": "P23-5.2",
+    "kind": "generated",
+    "title": "Definite integral of a sum of reciprocal terms",
+    "marks": 4,
+    "source": "Similar to 9709/22/F/M/19 Q6(a) (review file): new values; decimal answer replaces the show-that",
+    "params": [
+      {
+        "name": "r",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "s",
+        "min": 2,
+        "max": 8,
+        "step": 2
+      },
+      {
+        "name": "p",
+        "min": 1,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 2,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "h": "s/2",
+      "Tq": "2*q+1",
+      "Tp": "2*p+1"
+    },
+    "constraints": [
+      "q>p"
+    ],
+    "original": {
+      "r": 2,
+      "s": 2,
+      "p": 1,
+      "q": 4
+    },
+    "stem": "Evaluate \\(\\int_{{p|int}}^{{q|int}}\\left(\\frac{{r|int}}{x}+\\frac{{s|int}}{2x+1}\\right)\\,\\mathrm{d}x\\), giving your answer correct to 3 significant figures.",
+    "answer": {
+      "expression": "r*math.log(q/p)+s/2*(math.log(2*q+1)-math.log(2*p+1))",
+      "format": "{V|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "F",
+        "text_tex": "\\(\\left[{r|int}\\ln x+\\frac{{s|int}}{2}\\ln(2x+1)\\right]_{{p|int}}^{{q|int}}\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Form k1 ln x + k2 ln(2x + 1)."
+      },
+      {
+        "name": "G",
+        "text_tex": "Coefficients \\({r|int}\\) and \\(\\frac{{s|int}}{2}={h|raw}\\) are correct",
+        "result": "h",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Both coefficients correct."
+      },
+      {
+        "name": "Vm",
+        "text_tex": "\\({r|int}\\ln\\frac{{q|int}}{{p|int}}+\\frac{{s|int}}{2}\\left(\\ln{Tq|int}-\\ln{Tp|int}\\right)\\approx{Vm|raw}\\)",
+        "result": "r*math.log(q/p)+h*(math.log(2*q+1)-math.log(2*p+1))",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Substitute limits in both terms."
+      },
+      {
+        "name": "V",
+        "text_tex": "\\(={V|sf3z}\\) (3 s.f.)",
+        "result": "Vm",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Correct to 3 significant figures."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "area",
+        "stem": "Find the area of the region under the curve \\(y=\\frac{{r|int}}{x}+\\frac{{s|int}}{2x+1}\\) between \\(x={p|int}\\) and \\(x={q|int}\\), correct to 3 significant figures."
+      },
+      {
+        "id": "velocity",
+        "stem": "A particle moves in a straight line with velocity \\(v=\\frac{{r|int}}{t}+\\frac{{s|int}}{2t+1}\\) metres per second at time \\(t\\) seconds. Find the distance travelled between \\(t={p|int}\\) and \\(t={q|int}\\), correct to 3 significant figures.",
+        "step_text": {
+          "F": "\\(\\left[{r|int}\\ln t+\\frac{{s|int}}{2}\\ln(2t+1)\\right]_{{p|int}}^{{q|int}}\\)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "P23-5.2-PP-ON19-Q6a-similar",
+    "section": "P23-5.2",
+    "kind": "generated",
+    "title": "Definite integral of k/(cx)",
+    "marks": 4,
+    "source": "Similar to 9709/22/O/N/19 Q6(a) (review file): new values; decimal answer replaces the show-that",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 9,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": 2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "p",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 2,
+        "max": 30,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "f": "k/c"
+    },
+    "constraints": [
+      "q>p",
+      "k!=c"
+    ],
+    "original": {
+      "k": 3,
+      "c": 2,
+      "p": 2,
+      "q": 18
+    },
+    "stem": "Evaluate \\(\\int_{{p|int}}^{{q|int}}\\frac{{k|int}}{{c|int}x}\\,\\mathrm{d}x\\), giving your answer correct to 3 significant figures.",
+    "answer": {
+      "expression": "k/c*math.log(q/p)",
+      "format": "{V|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "F",
+        "text_tex": "\\(\\left[\\frac{{k|int}}{{c|int}}\\ln x\\right]_{{p|int}}^{{q|int}}\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Take out the constant k over c; the integral of 1/x is ln x."
+      },
+      {
+        "name": "G",
+        "text_tex": "Coefficient \\(\\frac{{k|int}}{{c|int}}\\), kept exact",
+        "result": "f",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct coefficient."
+      },
+      {
+        "name": "Vm",
+        "text_tex": "\\(\\frac{{k|int}}{{c|int}}\\left(\\ln{q|int}-\\ln{p|int}\\right)=\\frac{{k|int}}{{c|int}}\\ln\\frac{{q|int}}{{p|int}}\\approx{Vm|raw}\\)",
+        "result": "f*math.log(q/p)",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Subtraction law of logarithms."
+      },
+      {
+        "name": "V",
+        "text_tex": "\\(={V|sf3z}\\) (3 s.f.)",
+        "result": "Vm",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Correct to 3 significant figures."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "area",
+        "stem": "Find the area under the curve \\(y=\\frac{{k|int}}{{c|int}x}\\) between \\(x={p|int}\\) and \\(x={q|int}\\), correct to 3 significant figures."
+      },
+      {
+        "id": "work",
+        "stem": "The force on a piston is \\(\\frac{{k|int}}{{c|int}x}\\) newtons when it is \\(x\\) metres from the end of a cylinder. The work done in moving it from \\(x={p|int}\\) to \\(x={q|int}\\) is \\(\\int_{{p|int}}^{{q|int}}\\frac{{k|int}}{{c|int}x}\\,\\mathrm{d}x\\) joules. Find this work done, correct to 3 significant figures."
+      }
+    ]
+  },
+  {
+    "id": "P23-5.2-PP-9709-21-ON18-Q2",
+    "section": "P23-5.2",
+    "kind": "pastpaper",
+    "title": "Show that a definite integral equals a logarithm",
+    "marks": 5,
+    "source": {
+      "paper": "9709/21/O/N/18 Q2",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w18_qp_21.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w18_ms_21.pdf",
+      "note": "Text taken from the QP and MS PDFs (UCLES 2018)."
+    },
+    "stem": "Show that \\(\\int_1^7\\frac{6}{2x+1}\\,\\mathrm{d}x=\\ln125\\).",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "\\(\\int\\frac{6}{2x+1}\\,\\mathrm{d}x=6\\times\\frac12\\ln(2x+1)\\), which is of the form \\(k\\ln(2x+1)\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS M1: integrate to obtain the form k ln(2x + 1)."
+      },
+      {
+        "name": "s2",
+        "text_tex": "\\(\\left[3\\ln(2x+1)\\right]_1^7=3\\ln15-3\\ln3\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS A1: obtain correct 3 ln(2x + 1)."
+      },
+      {
+        "name": "s3",
+        "text_tex": "\\(3\\ln15-3\\ln3=3\\ln\\frac{15}{3}=3\\ln5\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS M1, dependent on the first M1: use the subtraction law of logarithms correctly."
+      },
+      {
+        "name": "s4",
+        "text_tex": "\\(3\\ln5=\\ln5^{3}\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS M1, dependent on the first M1: use the power law of logarithms correctly. The two laws may be used in either order."
+      },
+      {
+        "name": "s5",
+        "text_tex": "\\(=\\ln125\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS A1: confirm ln 125. Answer given, so every step must be shown."
+      }
+    ],
+    "marking": "manual"
+  },
+  {
+    "id": "P23-5.2-PP-9709-22-ON18-Q6a",
+    "section": "P23-5.2",
+    "kind": "pastpaper",
+    "title": "Show that a definite integral equals a logarithm",
+    "marks": 5,
+    "source": {
+      "paper": "9709/22/O/N/18 Q6(a)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w18_qp_22.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w18_ms_22.pdf",
+      "note": "Text taken from the QP and MS PDFs (UCLES 2018)."
+    },
+    "stem": "Show that \\(\\int_1^6\\frac{12}{3x+2}\\,\\mathrm{d}x=\\ln256\\).",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "\\(\\int\\frac{12}{3x+2}\\,\\mathrm{d}x=12\\times\\frac13\\ln(3x+2)\\), of the form \\(k\\ln(3x+2)\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "*M1",
+        "note": "MS *M1: integrate to obtain the form k ln(3x + 2). Condone poor use of brackets if recovered later."
+      },
+      {
+        "name": "s2",
+        "text_tex": "\\(=4\\ln(3x+2)\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS A1: obtain correct 4 ln(3x + 2)."
+      },
+      {
+        "name": "s3",
+        "text_tex": "\\(\\left[4\\ln(3x+2)\\right]_1^6=4\\ln20-4\\ln5\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS M1, dependent on *M: substitute limits correctly; must see k ln 20 minus k ln 5 or equivalent."
+      },
+      {
+        "name": "s4",
+        "text_tex": "\\(4\\ln20-4\\ln5=4\\ln\\frac{20}{5}=4\\ln4=\\ln4^{4}\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS M1, dependent on *M: apply logarithm properties correctly, using both the subtraction and power laws. Do not allow 4 ln 20 divided by 4 ln 5 or equivalent."
+      },
+      {
+        "name": "s5",
+        "text_tex": "\\(=\\ln256\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS A1: obtain ln 256 with no errors seen. Answer given; necessary detail needed."
+      }
+    ],
+    "marking": "manual"
+  },
+  {
+    "id": "P23-5.2-PP-9709-22-ON19-Q6a",
+    "section": "P23-5.2",
+    "kind": "pastpaper",
+    "title": "Show that a definite integral equals a logarithm",
+    "marks": 4,
+    "source": {
+      "paper": "9709/22/O/N/19 Q6(a)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w19_qp_22.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w19_ms_22.pdf",
+      "note": "Text taken from the QP and MS PDFs (UCLES 2019)."
+    },
+    "stem": "Show that \\(\\int_2^{18}\\frac{3}{2x}\\,\\mathrm{d}x=\\ln27\\).",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "\\(\\int_2^{18}\\frac{3}{2x}\\,\\mathrm{d}x=\\left[\\frac32\\ln x\\right]_2^{18}\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS B1: obtain (3/2) ln x, or (3/2) ln(2x), or (3/2) ln(kx). All three are credited."
+      },
+      {
+        "name": "s2",
+        "text_tex": "\\(\\frac32\\ln18-\\frac32\\ln2=\\frac32\\ln\\frac{18}{2}=\\frac32\\ln9\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS M1: use the subtraction law correctly, showing sufficient detail (the MS example is ln 216 minus ln 8 = ln(216/8))."
+      },
+      {
+        "name": "s3",
+        "text_tex": "\\(\\frac32\\ln9=\\ln9^{\\frac32}\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS M1: use the power law correctly, n ln(kx) = ln of (kx) to the power n. Either order of the two laws is credited."
+      },
+      {
+        "name": "s4",
+        "text_tex": "\\(9^{\\frac32}=27\\), so the integral equals \\(\\ln27\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS A1: confirm ln 27 with sufficient working and no incorrect working. Answer given."
+      }
+    ],
+    "marking": "manual"
+  },
+  {
+    "id": "P23-5.2-PP-9709-22-FM19-Q6a",
+    "section": "P23-5.2",
+    "kind": "pastpaper",
+    "title": "Show that a definite integral equals a logarithm",
+    "marks": 5,
+    "source": {
+      "paper": "9709/22/F/M/19 Q6(a)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m19_qp_22.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m19_ms_22.pdf",
+      "note": "Text taken from the QP and MS PDFs (UCLES 2019)."
+    },
+    "stem": "Show that \\(\\int_1^4\\left(\\frac{2}{x}+\\frac{2}{2x+1}\\right)\\,\\mathrm{d}x=\\ln48\\).",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "\\(\\int\\left(\\frac{2}{x}+\\frac{2}{2x+1}\\right)\\mathrm{d}x\\) has the form \\(k_1\\ln x+k_2\\ln(2x+1)\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS M1: integrate to obtain the form k1 ln x + k2 ln(2x + 1)."
+      },
+      {
+        "name": "s2",
+        "text_tex": "\\(\\left[2\\ln x+\\ln(2x+1)\\right]_1^4=(2\\ln4+\\ln9)-(2\\ln1+\\ln3)=2\\ln4+\\ln9-\\ln3\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS A1: obtain correct 2 ln x + ln(2x + 1)."
+      },
+      {
+        "name": "s3",
+        "text_tex": "\\(2\\ln4+\\ln9-\\ln3=2\\ln4+\\ln\\frac93=2\\ln4+\\ln3\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS M1: use the logarithm addition/subtraction property correctly."
+      },
+      {
+        "name": "s4",
+        "text_tex": "\\(2\\ln4=\\ln4^{2}=\\ln16\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS M1: use the logarithm power property correctly."
+      },
+      {
+        "name": "s5",
+        "text_tex": "\\(\\ln16+\\ln3=\\ln(16\\times3)=\\ln48\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS A1: confirm ln 48 with no errors seen. Answer given; necessary detail needed."
+      }
+    ],
+    "marking": "manual"
+  },
+  {
+    "id": "P23-5.2-PP-9709-22-MJ16-Q6b",
+    "section": "P23-5.2",
+    "kind": "pastpaper",
+    "title": "Exact value of a definite integral in the form ln k",
+    "marks": 4,
+    "source": {
+      "paper": "9709/22/M/J/16 Q6(b)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s16_qp_22.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s16_ms_22.pdf",
+      "note": "Text taken from the QP and MS PDFs (UCLES 2016)."
+    },
+    "stem": "Without using a calculator, find \\(\\int_2^{10}\\frac{1}{2x+5}\\,\\mathrm{d}x\\), giving your answer in the form \\(\\ln k\\).",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "\\(\\left[\\frac12\\ln(2x+5)\\right]_2^{10}=\\frac12\\ln25-\\frac12\\ln9\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS B1: integrate to obtain (1/2) ln(2x + 5)."
+      },
+      {
+        "name": "s2",
+        "text_tex": "\\(\\frac12\\ln25=\\ln25^{\\frac12}=\\ln5\\) and \\(\\frac12\\ln9=\\ln9^{\\frac12}=\\ln3\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS M1: show correct use of the law p ln k = ln of k to the power p at least once."
+      },
+      {
+        "name": "s3",
+        "text_tex": "\\(\\ln5-\\ln3=\\ln\\frac53\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS M1: show correct use of the law ln m minus ln n = ln(m/n)."
+      },
+      {
+        "name": "s4",
+        "text_tex": "\\(\\ln\\frac53\\), so \\(k=\\frac53\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS A1: obtain ln(5/3)."
+      }
+    ],
+    "marking": "manual"
+  }
+]

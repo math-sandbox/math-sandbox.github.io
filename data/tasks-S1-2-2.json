@@ -1,0 +1,328 @@
+[
+  {
+    "id": "S1-2.2-QC1-gen",
+    "section": "S1-2.2",
+    "kind": "generated",
+    "title": "The sum from the mean",
+    "marks": 2,
+    "source": "S1 Ch2 theory S1-2.2 Quick check 1 (16 values, mean 7.5, sum 120)",
+    "params": [
+      {
+        "name": "n",
+        "min": 10,
+        "max": 24,
+        "step": 1
+      },
+      {
+        "name": "k",
+        "min": 11,
+        "max": 25,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "M": "k/2",
+      "E": "n*k/2"
+    },
+    "constraints": [
+      "n>=10",
+      "k>=11",
+      "(n*k)%2==0"
+    ],
+    "original": {
+      "n": 16,
+      "k": 15
+    },
+    "stem": "There are {n|int} values with mean {M|dp1}. What is the sum of the values?",
+    "answer": {
+      "expression": "n*k/2",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The sum is the number of values times the mean, which is {n|int} times {M|dp1}.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Use sum = n times the mean."
+      },
+      {
+        "name": "E",
+        "text_tex": "The sum is {E|int}.",
+        "result": "n*k/2",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct sum."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "masses",
+        "stem": "The masses of {n|int} objects have mean {M|dp1} kilograms. What is the total mass, in kilograms?",
+        "note": "masses frame"
+      },
+      {
+        "id": "scores",
+        "stem": "{n|int} scores have mean {M|dp1}. What is the sum of the scores?",
+        "note": "scores frame"
+      }
+    ]
+  },
+  {
+    "id": "S1-2.2-QC2-gen",
+    "section": "S1-2.2",
+    "kind": "generated",
+    "title": "The mean from a frequency table",
+    "marks": 2,
+    "source": "S1 Ch2 theory S1-2.2 Quick check 2 (values 2, 5, 8 with frequencies 6, 4, 2; mean 4)",
+    "params": [
+      {
+        "name": "x",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "k",
+        "min": 2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "p",
+        "min": 3,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 2,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "name": "r",
+        "min": 2,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "x+k",
+      "B": "x+2*k",
+      "S": "p+q+r",
+      "T": "p*x+q*(x+k)+r*(x+2*k)",
+      "E": "(p*x+q*(x+k)+r*(x+2*k))/(p+q+r)"
+    },
+    "constraints": [
+      "k>=2",
+      "(p*x+q*(x+k)+r*(x+2*k))%(p+q+r)==0"
+    ],
+    "original": {
+      "x": 2,
+      "k": 3,
+      "p": 6,
+      "q": 4,
+      "r": 2
+    },
+    "stem": "The values {x|int}, {A|int} and {B|int} occur with frequencies {p|int}, {q|int} and {r|int} respectively. What is the mean?",
+    "answer": {
+      "expression": "(p*x+q*(x+k)+r*(x+2*k))/(p+q+r)",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The sum of the products of value and frequency is {T|int}, and the total frequency is {S|int}.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Form Sigma xf and Sigma f."
+      },
+      {
+        "name": "E",
+        "text_tex": "The mean is {E|int}.",
+        "result": "(p*x+q*(x+k)+r*(x+2*k))/(p+q+r)",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct mean."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "lengths",
+        "stem": "Lengths of {x|int}, {A|int} and {B|int} centimetres occur with frequencies {p|int}, {q|int} and {r|int}. What is the mean length?",
+        "note": "lengths frame"
+      },
+      {
+        "id": "counts",
+        "stem": "A frequency table has values {x|int}, {A|int} and {B|int} with frequencies {p|int}, {q|int} and {r|int}. What is the mean?",
+        "note": "counts frame"
+      }
+    ]
+  },
+  {
+    "id": "S1-2.2-QC3-gen",
+    "section": "S1-2.2",
+    "kind": "generated",
+    "title": "The mean of two combined sets",
+    "marks": 2,
+    "source": "S1 Ch2 theory S1-2.2 Quick check 3 (8 values mean 5 and 12 values mean 10; combined mean 8)",
+    "params": [
+      {
+        "name": "n",
+        "min": 6,
+        "max": 16,
+        "step": 2
+      },
+      {
+        "name": "m",
+        "min": 4,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "name": "p",
+        "min": 6,
+        "max": 16,
+        "step": 2
+      },
+      {
+        "name": "q",
+        "min": 6,
+        "max": 16,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "S": "n+p",
+      "T": "n*m+p*q",
+      "E": "(n*m+p*q)/(n+p)"
+    },
+    "constraints": [
+      "n!=p",
+      "(n*m+p*q)%(n+p)==0"
+    ],
+    "original": {
+      "n": 8,
+      "m": 5,
+      "p": 12,
+      "q": 10
+    },
+    "stem": "One set of {n|int} values has mean {m|int} and another set of {p|int} values has mean {q|int}. What is the mean of the combined set of {S|int} values?",
+    "answer": {
+      "expression": "(n*m+p*q)/(n+p)",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The combined sum is {n|int} times {m|int} plus {p|int} times {q|int}, which is {T|int}.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Add the two sums."
+      },
+      {
+        "name": "E",
+        "text_tex": "The combined mean is {E|int}.",
+        "result": "(n*m+p*q)/(n+p)",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct combined mean."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "teams",
+        "stem": "A team of {n|int} people has mean score {m|int} and a team of {p|int} people has mean score {q|int}. What is the mean score of all {S|int} people together?",
+        "note": "teams frame"
+      },
+      {
+        "id": "bags",
+        "stem": "{n|int} bags have mean mass {m|int} kilograms and {p|int} bags have mean mass {q|int} kilograms. What is the mean mass of all {S|int} bags?",
+        "note": "bags frame"
+      }
+    ]
+  },
+  {
+    "id": "S1-2.2-PP-9709-62-FM16-Q1",
+    "section": "S1-2.2",
+    "kind": "pastpaper",
+    "title": "9709/62/F/M/16 Q1: a coded total and the mean",
+    "marks": 3,
+    "source": {
+      "paper": "9709/62/F/M/16 Q1",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m16_qp_62.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m16_ms_62.pdf",
+      "note": "Stem verbatim from the QP PDF, both parts. Official MS: Sigma x=862 (B1); 362/10 + a = 86.2 (M1), a=50 (A1). Independently, 10 times 86.2=862 and 862-10a=362 so a=50. Both parts are official numeric answers, auto-marked as integers. No mixed marking."
+    },
+    "stem": "For 10 values of \\(x\\) the mean is 86.2 and \\(\\Sigma(x-a)=362\\). Find the value of\n\n(i) \\(\\Sigma x\\),\n\n(ii) the constant \\(a\\).",
+    "parts": [
+      {
+        "part": "(i)",
+        "stem": "Find the value of \\(\\Sigma x\\).",
+        "marks": 1,
+        "answer": {
+          "expression": "862",
+          "format": "{E|int}",
+          "accept_as": "integer"
+        },
+        "steps": [
+          {
+            "name": "Sx",
+            "text_tex": "The sum is 10 times the mean, so \\(\\Sigma x=10\\times 86.2=862\\).",
+            "result": "862",
+            "format": "raw",
+            "mark": "B1",
+            "note": "Official MS: 862."
+          }
+        ]
+      },
+      {
+        "part": "(ii)",
+        "stem": "Find the value of the constant \\(a\\).",
+        "marks": 2,
+        "answer": {
+          "expression": "50",
+          "format": "{E|int}",
+          "accept_as": "integer"
+        },
+        "steps": [
+          {
+            "name": "form",
+            "text_tex": "\\(\\Sigma(x-a)=\\Sigma x-10a=362\\), so \\(862-10a=362\\).",
+            "result": "None",
+            "format": "num",
+            "mark": "M1",
+            "note": "Official MS: 362/10 + a = 86.2, or equivalent."
+          },
+          {
+            "name": "Aval",
+            "text_tex": "Hence \\(a=50\\).",
+            "result": "50",
+            "format": "raw",
+            "mark": "A1",
+            "note": "Official MS: a=50."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" width="400" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:400px;height:auto" role="img" aria-label="A cuboid ABCDEFGH used to identify a right-angled triangle in three dimensions">
+  <style>text{font-family:system-ui,Segoe UI,sans-serif;font-size:13px;fill:#222}</style>
+  <g fill="none" stroke="#222" stroke-width="1.5">
+    <path d="M80,200 L240,200 L300,140 L140,140 Z"/>
+    <path d="M80,200 L80,80 L140,20 L140,140"/>
+    <path d="M240,200 L240,80 L300,20 L300,140"/>
+    <path d="M80,80 L240,80 L300,20 L140,20 Z"/>
+    <path d="M80,200 L140,140" stroke-dasharray="4 3"/>
+  </g>
+  <text x="70" y="218">A</text>
+  <text x="246" y="218">B</text>
+  <text x="308" y="154">C</text>
+  <text x="128" y="158">D</text>
+  <text x="66" y="78">E</text>
+  <text x="246" y="74">F</text>
+  <text x="308" y="18">G</text>
+  <text x="128" y="16">H</text>
+</svg>

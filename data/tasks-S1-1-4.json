@@ -1,0 +1,358 @@
+[
+  {
+    "id": "S1-1.4-QC1-gen",
+    "section": "S1-1.4",
+    "kind": "generated",
+    "title": "Cumulative frequency at the last upper class boundary",
+    "marks": 2,
+    "source": "S1 Ch1 theory S1-1.4 Quick check 1 (frequencies 6, 10, 15, 9, total 40)",
+    "params": [
+      {
+        "name": "a",
+        "min": 4,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 6,
+        "max": 16,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": 8,
+        "max": 20,
+        "step": 1
+      },
+      {
+        "name": "d",
+        "min": 4,
+        "max": 14,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "E": "a+b+c+d"
+    },
+    "constraints": [
+      "a>=4",
+      "b>=6",
+      "c>=8",
+      "d>=4"
+    ],
+    "original": {
+      "a": 6,
+      "b": 10,
+      "c": 15,
+      "d": 9
+    },
+    "stem": "Four classes have frequencies {a|int}, {b|int}, {c|int} and {d|int}. What is the cumulative frequency at the upper boundary of the last class?",
+    "answer": {
+      "expression": "a+b+c+d",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The cumulative frequency at the last upper boundary is the total of all four frequencies, \\({a|int}+{b|int}+{c|int}+{d|int}\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Add the class frequencies."
+      },
+      {
+        "name": "E",
+        "text_tex": "The cumulative frequency is \\({E|int}\\).",
+        "result": "a+b+c+d",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct total."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "leaves",
+        "stem": "The lengths of a sample of leaves are grouped into four classes of frequencies {a|int}, {b|int}, {c|int} and {d|int}. Find the cumulative frequency plotted at the upper boundary of the last class.",
+        "note": "leaves frame"
+      },
+      {
+        "id": "cables",
+        "stem": "A grouped table of cable lengths has class frequencies {a|int}, {b|int}, {c|int} and {d|int}. What cumulative frequency should be plotted at the final upper class boundary?",
+        "note": "cables frame"
+      }
+    ]
+  },
+  {
+    "id": "S1-1.4-QC2-gen",
+    "section": "S1-1.4",
+    "kind": "generated",
+    "title": "Estimate a count from a cumulative frequency polygon by linear interpolation",
+    "marks": 2,
+    "source": "S1 Ch1 theory S1-1.4 Quick check 2 (points (2,0), (8,12), (14,30); reading at 11 is 21)",
+    "params": [
+      {
+        "name": "L",
+        "min": 4,
+        "max": 12,
+        "step": 2
+      },
+      {
+        "name": "W",
+        "min": 4,
+        "max": 12,
+        "step": 2
+      },
+      {
+        "name": "cfL",
+        "min": 8,
+        "max": 20,
+        "step": 2
+      },
+      {
+        "name": "F",
+        "min": 8,
+        "max": 24,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "U": "L+W",
+      "x": "L+W/2",
+      "cfU": "cfL+F",
+      "E": "cfL+F/2"
+    },
+    "constraints": [
+      "W>=4",
+      "F>=8",
+      "F/2==F*0.5"
+    ],
+    "original": {
+      "L": 8,
+      "W": 6,
+      "cfL": 12,
+      "F": 18
+    },
+    "stem": "A cumulative frequency polygon passes through \\(({L|int},\\,{cfL|int})\\) and \\(({U|int},\\,{cfU|int})\\). Estimate the number of values less than {x|int}.",
+    "answer": {
+      "expression": "cfL+F/2",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The value {x|int} is halfway from {L|int} to {U|int}, so the estimate is halfway from {cfL|int} to {cfU|int}.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Linear interpolation on the polygon."
+      },
+      {
+        "name": "E",
+        "text_tex": "The estimate is \\({E|int}\\).",
+        "result": "cfL+F/2",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct interpolated cumulative frequency."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "lengths",
+        "stem": "On a cumulative frequency polygon of lengths, the points \\(({L|int},\\,{cfL|int})\\) and \\(({U|int},\\,{cfU|int})\\) have been plotted at upper class boundaries. Estimate how many of the lengths are less than {x|int}.",
+        "note": "lengths frame"
+      },
+      {
+        "id": "masses",
+        "stem": "A cumulative frequency polygon of masses goes through \\(({L|int},\\,{cfL|int})\\) and \\(({U|int},\\,{cfU|int})\\). Estimate the number of masses less than {x|int}.",
+        "note": "masses frame"
+      }
+    ]
+  },
+  {
+    "id": "S1-1.4-QC3-gen",
+    "section": "S1-1.4",
+    "kind": "generated",
+    "title": "Estimate a value from a given cumulative frequency on a polygon",
+    "marks": 2,
+    "source": "S1 Ch1 theory S1-1.4 Quick check 3 (same polygon, cumulative frequency 21 occurs at 11)",
+    "params": [
+      {
+        "name": "L",
+        "min": 4,
+        "max": 12,
+        "step": 2
+      },
+      {
+        "name": "W",
+        "min": 4,
+        "max": 12,
+        "step": 2
+      },
+      {
+        "name": "cfL",
+        "min": 8,
+        "max": 20,
+        "step": 2
+      },
+      {
+        "name": "F",
+        "min": 8,
+        "max": 24,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "U": "L+W",
+      "cfU": "cfL+F",
+      "T": "cfL+F/2",
+      "E": "L+W/2"
+    },
+    "constraints": [
+      "W>=4",
+      "F>=8"
+    ],
+    "original": {
+      "L": 8,
+      "W": 6,
+      "cfL": 12,
+      "F": 18
+    },
+    "stem": "A cumulative frequency polygon passes through \\(({L|int},\\,{cfL|int})\\) and \\(({U|int},\\,{cfU|int})\\). Estimate the value that has cumulative frequency {T|int}.",
+    "answer": {
+      "expression": "L+W/2",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "A cumulative frequency of {T|int} is halfway from {cfL|int} to {cfU|int}, so the estimate is halfway from {L|int} to {U|int}.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Inverse linear interpolation on the polygon."
+      },
+      {
+        "name": "E",
+        "text_tex": "The estimate is \\({E|int}\\).",
+        "result": "L+W/2",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct interpolated value."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "lengths",
+        "stem": "On a cumulative frequency polygon of lengths, the plotted points \\(({L|int},\\,{cfL|int})\\) and \\(({U|int},\\,{cfU|int})\\) are at upper class boundaries. Estimate the length that has cumulative frequency {T|int}.",
+        "note": "lengths frame"
+      },
+      {
+        "id": "masses",
+        "stem": "A cumulative frequency polygon of masses goes through \\(({L|int},\\,{cfL|int})\\) and \\(({U|int},\\,{cfU|int})\\). Estimate the mass that corresponds to a cumulative frequency of {T|int}.",
+        "note": "masses frame"
+      }
+    ]
+  },
+  {
+    "id": "S1-1.4-PP-9709-63-MJ13-Q6i-ii",
+    "section": "S1-1.4",
+    "kind": "pastpaper",
+    "marking": "manual",
+    "title": "Draw a cumulative frequency graph and estimate c",
+    "marks": 4,
+    "source": {
+      "paper": "9709/63/M/J/13 Q6(i)(ii)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s13_qp_63.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s13_ms_63.pdf",
+      "note": "Stem verbatim from the QP PDF for parts (i) and (ii) only. Part (iii), estimates of the mean and standard deviation, is omitted because those skills belong to a later chapter. Steps and marks from the official MS PDF. Independently, 64 people weigh more than c kg, so 80 weigh less than c kg; the official accepted reading is 67 to 68, with printed value 67.2. Fully manual, because part (i) is a graph and part (ii) is a graph reading with an accepted interval."
+    },
+    "stem": "The weights, \\(x\\) kilograms, of 144 people were recorded. The results are summarised in the cumulative frequency table below.\nWeight (\\(x\\) kilograms): \\(x\\lt 40\\), \\(x\\lt 50\\), \\(x\\lt 60\\), \\(x\\lt 65\\), \\(x\\lt 70\\), \\(x\\lt 90\\).\nCumulative frequency: \\(0\\), \\(12\\), \\(34\\), \\(64\\), \\(92\\), \\(144\\).\n(i) On graph paper, draw a cumulative frequency graph to represent these results.\n(ii) 64 people weigh more than \\(c\\) kg. Use your graph to find the value of \\(c\\).",
+    "steps": [
+      {
+        "name": "plot",
+        "text_tex": "Plot the points \\((40,0)\\), \\((50,12)\\), \\((60,34)\\), \\((65,64)\\), \\((70,92)\\) and \\((90,144)\\) at the upper boundaries, on uniform axes labelled for cumulative frequency and weight in kilograms, and join them with a polygon or a smooth curve.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 Axes, (cf) and labels (kg), uniform scales from at least 0–140 and 40.5–69.5 either way round. (Second B1 of the part is all points correct, sensible scale (not 12), polygon or smooth curve.)"
+      },
+      {
+        "name": "pts",
+        "text_tex": "All six points must be correctly plotted and joined.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 All points correct, sensible scale (not 12), polygon or smooth curve."
+      },
+      {
+        "name": "cf",
+        "text_tex": "The 64 people who weigh more than \\(c\\) kg correspond to a cumulative frequency of \\(144-64=80\\), so 80 people weigh less than \\(c\\) kg.",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: M1 Subt 64 from 144."
+      },
+      {
+        "name": "c",
+        "text_tex": "A reading from the graph at cumulative frequency 80 gives \\(c=67.2\\). (The official scheme accepts any value between 67 and 68, or a follow-through from an incorrect graph.)",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: A1 ft c=67.2. Accept anything between 67 and 68. ft from incorrect graph."
+      }
+    ]
+  },
+  {
+    "id": "S1-1.4-PP-9709-63-MJ11-Q3ii",
+    "section": "S1-1.4",
+    "kind": "pastpaper",
+    "title": "Number of candidates in country A scoring 20 to 34 marks inclusive",
+    "marks": 1,
+    "source": {
+      "paper": "9709/63/M/J/11 Q3(ii)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s11_qp_63.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s11_ms_63.pdf",
+      "note": "Stem verbatim from the QP PDF, including the table needed to answer part (ii). Parts (i) (a comparison of medians) and (iii) (the mean for country A) are omitted: the book postpones named median, quartile and mean calculations from a cumulative frequency graph or table to a later chapter. Independently, 159-68=91. A single official numeric part, so it is auto-marked with accept_as integer. No mixed marking."
+    },
+    "stem": "The following cumulative frequency table shows the examination marks for 300 candidates in country A and 300 candidates in country B.\nMark: \\(\\lt 10\\), \\(\\lt 20\\), \\(\\lt 35\\), \\(\\lt 50\\), \\(\\lt 70\\), \\(\\lt 100\\).\nCumulative frequency, A: \\(25\\), \\(68\\), \\(159\\), \\(234\\), \\(260\\), \\(300\\).\nCumulative frequency, B: \\(10\\), \\(46\\), \\(72\\), \\(144\\), \\(198\\), \\(300\\).\nFind the number of candidates in country A who scored between 20 and 34 marks inclusive.",
+    "parts": [
+      {
+        "part": "(ii)",
+        "stem": "Find the number of candidates in country A who scored between 20 and 34 marks inclusive.",
+        "marks": 1,
+        "answer": {
+          "expression": "159-68",
+          "official": "91",
+          "accept_as": "integer",
+          "format": "{E|int}"
+        },
+        "steps": [
+          {
+            "name": "E",
+            "text_tex": "The candidates in country A with marks less than 35 number 159, and those with marks less than 20 number 68, so the number with marks from 20 to 34 inclusive is \\(159-68=91\\).",
+            "result": "159-68",
+            "format": "raw",
+            "mark": "B1",
+            "note": "MS: B1 Correct final answer 159-68=91."
+          }
+        ]
+      }
+    ]
+  }
+]

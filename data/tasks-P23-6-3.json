@@ -1,0 +1,337 @@
+[
+  {
+    "id": "P23-6.3-QC1-gen",
+    "section": "P23-6.3",
+    "kind": "generated",
+    "title": "A square coming from a gradient condition",
+    "marks": 1,
+    "source": "Theory P23-6.3 Quick check 1; gradient of y=x^3+b x equal to g",
+    "params": [
+      {
+        "name": "b",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "s",
+        "min": 1,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "g": "3*s*s+b",
+      "A": "s*s"
+    },
+    "constraints": [
+      "s>0"
+    ],
+    "original": {
+      "b": 2,
+      "s": 2
+    },
+    "stem": "The gradient of \\(y=x^3+{b|int}x\\) is \\({g|int}\\) when \\(x=p\\). Find \\(p^2\\).",
+    "answer": {
+      "expression": "s*s",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}=3x^2+{b|int}={g|int}\\), so \\(p^2={A|int}\\).",
+        "result": "s*s",
+        "format": "int",
+        "mark": "A1",
+        "note": "Set the derived function equal to the given gradient and rearrange."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original y=x^3+2x with gradient 14"
+      }
+    ],
+    "tags": {
+      "course": "P23",
+      "subsections": [
+        "P23-6.3"
+      ],
+      "topic": "Numerical solutions of equations",
+      "chapter": "P23-6",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-6-3.json",
+        "locator": "P23-6.3-QC1-gen"
+      }
+    }
+  },
+  {
+    "id": "P23-6.3-QC2-gen",
+    "section": "P23-6.3",
+    "kind": "generated",
+    "title": "First iterate of a linear formula for p",
+    "marks": 1,
+    "source": "Theory P23-6.3 Quick check 2; p_{n+1}=(k-p_n)/m",
+    "params": [
+      {
+        "name": "p1",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "k",
+        "min": 8,
+        "max": 16,
+        "step": 1
+      },
+      {
+        "name": "m",
+        "min": 2,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "(k-p1)/m"
+    },
+    "constraints": [
+      "(k-p1)%m==0",
+      "m!=0"
+    ],
+    "original": {
+      "p1": 1,
+      "k": 10,
+      "m": 3
+    },
+    "stem": "The iterative formula \\(p_{{n+1}}=\\dfrac{{{k|int}-p_n}}{{{m|int}}}\\) is used with \\(p_1={p1|int}\\). Find \\(p_2\\).",
+    "answer": {
+      "expression": "(k-p1)/m",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(p_2=\\dfrac{{{k|int}-{p1|int}}}{{{m|int}}}={A|int}\\).",
+        "result": "(k-p1)/m",
+        "format": "int",
+        "mark": "A1",
+        "note": "Apply the iterative formula once."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original p1=1, k=10, m=3"
+      }
+    ],
+    "tags": {
+      "course": "P23",
+      "subsections": [
+        "P23-6.3"
+      ],
+      "topic": "Numerical solutions of equations",
+      "chapter": "P23-6",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-6-3.json",
+        "locator": "P23-6.3-QC2-gen"
+      }
+    }
+  },
+  {
+    "id": "P23-6.3-QC3-gen",
+    "section": "P23-6.3",
+    "kind": "generated",
+    "title": "A cleared next iterate",
+    "marks": 1,
+    "source": "Theory P23-6.3 Quick check 3; m p3 from p2",
+    "params": [
+      {
+        "name": "p2",
+        "min": 1,
+        "max": 7,
+        "step": 1
+      },
+      {
+        "name": "k",
+        "min": 8,
+        "max": 16,
+        "step": 1
+      },
+      {
+        "name": "m",
+        "min": 2,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "k-p2"
+    },
+    "constraints": [
+      "1==1"
+    ],
+    "original": {
+      "p2": 3,
+      "k": 10,
+      "m": 3
+    },
+    "stem": "The iterative formula \\(p_{{n+1}}=\\dfrac{{{k|int}-p_n}}{{{m|int}}}\\) is used, and \\(p_2={p2|int}\\). Find \\({m|int}p_3\\).",
+    "answer": {
+      "expression": "k-p2",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\({m|int}p_3={k|int}-{p2|int}={A|int}\\).",
+        "result": "k-p2",
+        "format": "int",
+        "mark": "A1",
+        "note": "Clear the denominator after one application of the formula."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original p2=3, k=10, m=3"
+      }
+    ],
+    "tags": {
+      "course": "P23",
+      "subsections": [
+        "P23-6.3"
+      ],
+      "topic": "Numerical solutions of equations",
+      "chapter": "P23-6",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-6-3.json",
+        "locator": "P23-6.3-QC3-gen"
+      }
+    }
+  },
+  {
+    "id": "P23-6.3-PP-9709-22-MJ16-Q5",
+    "section": "P23-6.3",
+    "kind": "pastpaper",
+    "title": "A product-rule gradient leading to an iteration",
+    "marks": 9,
+    "source": {
+      "paper": "9709/22/M/J/16 Q5",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s16_qp_22.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s16_ms_22.pdf",
+      "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+    },
+    "stem": "<p>The equation of a curve is \\(y=6x\\mathrm{{e}}^{{x/3}}\\). At the point on the curve with \\(x\\)-coordinate \\(p\\), the gradient of the curve is \\(40\\).</p><p>(i) Show that \\(p=3\\ln\\left(\\dfrac{{20}}{{p+3}}\\right)\\). [4]</p><p>(ii) Show by calculation that \\(3.3&lt;p&lt;3.5\\). [2]</p><p>(iii) Use an iterative formula based on the equation in part (i) to find the value of \\(p\\) correct to 3 decimal places. Give the result of each iteration to 5 decimal places. [3]</p>",
+    "tags": {
+      "course": "P23",
+      "subsections": [
+        "P23-6.3"
+      ],
+      "topic": "Numerical solutions of equations",
+      "chapter": "P23-6",
+      "marks": 9,
+      "difficulty": "hard",
+      "type": "pp",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-6-3.json",
+        "locator": "P23-6.3-PP-9709-22-MJ16-Q5"
+      }
+    },
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "(i) Use the product rule to obtain a form \\(k_1\\mathrm{{e}}^{{x/3}}+k_2 x\\mathrm{{e}}^{{x/3}}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "*M1",
+        "note": "Official MS: *M1."
+      },
+      {
+        "name": "s2",
+        "text_tex": "(i) Obtain the correct derivative \\(6\\mathrm{{e}}^{{x/3}}+2x\\mathrm{{e}}^{{x/3}}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1."
+      },
+      {
+        "name": "s3",
+        "text_tex": "(i) Equate the first derivative to \\(40\\) and obtain an equation without \\(\\mathrm{{e}}\\) present.",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: DM1, dependent on the previous starred method mark."
+      },
+      {
+        "name": "s4",
+        "text_tex": "(i) Confirm \\(p=3\\ln\\dfrac{{20}}{{p+3}}\\), or the same with \\(x\\) in place of \\(p\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1."
+      },
+      {
+        "name": "s5",
+        "text_tex": "(ii) Consider the sign of \\(3\\ln\\dfrac{{20}}{{p+3}}-p\\) at \\(3.3\\) and at \\(3.5\\), or equivalent.",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1."
+      },
+      {
+        "name": "s6",
+        "text_tex": "(ii) Complete the argument correctly with appropriate calculations.",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1."
+      },
+      {
+        "name": "s7",
+        "text_tex": "(iii) Carry out the iterative process correctly at least once.",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1."
+      },
+      {
+        "name": "s8",
+        "text_tex": "(iii) Obtain the final answer \\(3.412\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1."
+      },
+      {
+        "name": "s9",
+        "text_tex": "(iii) Show sufficient iterations to justify accuracy to 3 decimal places, or show a sign change in the interval \\((3.4115,3.4125)\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1."
+      }
+    ]
+  }
+]

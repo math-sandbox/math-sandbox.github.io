@@ -1,0 +1,17 @@
+<svg preserveAspectRatio="xMidYMid meet" height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 340" width="100%" style="max-width:100%;height:auto" role="img" aria-labelledby="t d">
+<title id="t">Circle with tangent AT and line OBT, showing a shaded region</title>
+<desc id="d">Circle centre O radius r centimetres. Point A is at the top of the circle and AT is a horizontal tangent meeting the line through O and B at T. Angle AOB is marked theta radians. The shaded region is bounded by the tangent AT, the line TB and the minor arc AB.</desc>
+<circle cx="170" cy="210" r="90" fill="#fff" stroke="#111" stroke-width="2"/>
+<path d="M 170.00,120.00 L 346.83,120.00 L 250.21,169.18 A 90 90 0 0 1 170.00,120.00 Z" fill="#c5c5c5" stroke="#111" stroke-width="2" stroke-linejoin="round"/>
+<line x1="170" y1="210" x2="346.83" y2="120.00" stroke="#111" stroke-width="2"/>
+<line x1="170" y1="210" x2="170.00" y2="120.00" stroke="#111" stroke-width="2"/>
+<circle cx="170" cy="210" r="2.5" fill="#111"/>
+<path d="M 170.00,188.00 A 22 22 0 0 1 189.61,200.02" fill="none" stroke="#111" stroke-width="1.4"/>
+<text x="118" y="170.0" font-family="serif" font-size="15" font-style="italic">r cm</text>
+<text x="188" y="182.0" font-family="serif" font-size="15" font-style="italic">θ rad</text>
+<text x="154.0" y="112.0" font-family="serif" font-size="16">A</text>
+<text x="352.8" y="125.0" font-family="serif" font-size="16">T</text>
+<text x="258.2" y="183.2" font-family="serif" font-size="16">B</text>
+<text x="154.0" y="228.0" font-family="serif" font-size="16">O</text>
+<text x="16" y="22" font-family="serif" font-size="13">A circle with tangent AT (not to scale)</text>
+</svg>

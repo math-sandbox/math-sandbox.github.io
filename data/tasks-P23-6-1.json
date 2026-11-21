@@ -1,0 +1,246 @@
+[
+  {
+    "id": "P23-6.1-QC1-gen",
+    "section": "P23-6.1",
+    "kind": "generated",
+    "title": "Value of f(1) for a cubic",
+    "marks": 1,
+    "source": "Theory P23-6.1 Quick check 1; f(x)=x^3+x-c",
+    "params": [
+      {
+        "name": "c",
+        "min": 1,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "2-c"
+    },
+    "constraints": [
+      "c!=2"
+    ],
+    "original": {
+      "c": 3
+    },
+    "stem": "Let \\(f(x)=x^3+x-{c|int}\\). Find \\(f(1)\\).",
+    "answer": {
+      "expression": "2-c",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(f(1)=1+1-{c|int}={A|int}\\).",
+        "result": "2-c",
+        "format": "int",
+        "mark": "A1",
+        "note": "Direct substitution at x=1."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original f(x)=x^3+x-3"
+      }
+    ],
+    "tags": {
+      "course": "P23",
+      "subsections": [
+        "P23-6.1"
+      ],
+      "topic": "Numerical solutions of equations",
+      "chapter": "P23-6",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-6-1.json",
+        "locator": "P23-6.1-QC1-gen"
+      }
+    }
+  },
+  {
+    "id": "P23-6.1-QC2-gen",
+    "section": "P23-6.1",
+    "kind": "generated",
+    "title": "Value of f(2) for a cubic",
+    "marks": 1,
+    "source": "Theory P23-6.1 Quick check 2; f(x)=x^3+x-c",
+    "params": [
+      {
+        "name": "c",
+        "min": 1,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "10-c"
+    },
+    "constraints": [
+      "1==1"
+    ],
+    "original": {
+      "c": 3
+    },
+    "stem": "Let \\(f(x)=x^3+x-{c|int}\\). Find \\(f(2)\\).",
+    "answer": {
+      "expression": "10-c",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(f(2)=8+2-{c|int}={A|int}\\).",
+        "result": "10-c",
+        "format": "int",
+        "mark": "A1",
+        "note": "Direct substitution at x=2."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original f(x)=x^3+x-3"
+      }
+    ],
+    "tags": {
+      "course": "P23",
+      "subsections": [
+        "P23-6.1"
+      ],
+      "topic": "Numerical solutions of equations",
+      "chapter": "P23-6",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-6-1.json",
+        "locator": "P23-6.1-QC2-gen"
+      }
+    }
+  },
+  {
+    "id": "P23-6.1-QC3-gen",
+    "section": "P23-6.1",
+    "kind": "generated",
+    "title": "Product of end values for a sign-change check",
+    "marks": 1,
+    "source": "Theory P23-6.1 Quick check 3; product f(1)f(2) for f(x)=x^3-kx-1",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 3,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "f1": "-k",
+      "f2": "7-2*k",
+      "A": "(-k)*(7-2*k)"
+    },
+    "constraints": [
+      "(7-2*k)!=0"
+    ],
+    "original": {
+      "k": 2
+    },
+    "stem": "Let \\(f(x)=x^3-{k|int}x-1\\). Find the integer \\(f(1)\\times f(2)\\). (A negative product shows a change of sign between \\(1\\) and \\(2\\).)",
+    "answer": {
+      "expression": "(-k)*(7-2*k)",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(f(1)={f1|int}\\) and \\(f(2)={f2|int}\\), so the product is \\({A|int}\\).",
+        "result": "(-k)*(7-2*k)",
+        "format": "int",
+        "mark": "A1",
+        "note": "Evaluate at the two ends of the interval and multiply."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original f(x)=x^3-2x-1"
+      }
+    ],
+    "tags": {
+      "course": "P23",
+      "subsections": [
+        "P23-6.1"
+      ],
+      "topic": "Numerical solutions of equations",
+      "chapter": "P23-6",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-6-1.json",
+        "locator": "P23-6.1-QC3-gen"
+      }
+    }
+  },
+  {
+    "id": "P23-6.1-PP-9709-21-ON11-Q6i",
+    "section": "P23-6.1",
+    "kind": "pastpaper",
+    "title": "Change of sign for a cubic equation",
+    "marks": 2,
+    "source": {
+      "paper": "9709/21/O/N/11 Q6(i)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w11_qp_21.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w11_ms_21.pdf",
+      "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+    },
+    "stem": "<p>(i) Verify by calculation that the cubic equation \\(x^3-2x^2+5x-3=0\\) has a root that lies between \\(x=0.7\\) and \\(x=0.8\\). [2]</p>",
+    "tags": {
+      "course": "P23",
+      "subsections": [
+        "P23-6.1"
+      ],
+      "topic": "Numerical solutions of equations",
+      "chapter": "P23-6",
+      "marks": 2,
+      "difficulty": "hard",
+      "type": "pp",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-6-1.json",
+        "locator": "P23-6.1-PP-9709-21-ON11-Q6i"
+      }
+    },
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "Consider the sign of \\(x^3-2x^2+5x-3\\) at \\(x=0.7\\) and at \\(x=0.8\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1."
+      },
+      {
+        "name": "s2",
+        "text_tex": "Complete the argument correctly with appropriate calculations. \\(f(0.7)=-0.137\\) and \\(f(0.8)=0.232\\) (3 significant figures) have opposite signs, so there is a root in the interval.",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1."
+      }
+    ]
+  }
+]

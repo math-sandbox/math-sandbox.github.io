@@ -1,0 +1,202 @@
+[
+  {
+    "id": "IGCSE-15.8-QC1-gen",
+    "section": "IGCSE-15.8",
+    "kind": "generated",
+    "title": "Area with included angle 30 degrees",
+    "marks": 1,
+    "source": "Theory IGCSE-15.8 Quick check 1 (sides 8 and 6, area 12); new even sides",
+    "params": [
+      {
+        "name": "a",
+        "min": 6,
+        "max": 14,
+        "step": 2
+      },
+      {
+        "name": "b",
+        "min": 6,
+        "max": 14,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "A": "a*b/4"
+    },
+    "constraints": [
+      "(a*b)%4==0"
+    ],
+    "original": {
+      "a": 8,
+      "b": 6
+    },
+    "stem": "Two sides of a triangle are {a|int} cm and {b|int} cm, and the included angle is \\(30^\\circ\\). What is the area of the triangle?",
+    "answer": {
+      "expression": "a*b/4",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Area \\(=\\dfrac{1}{2}\\times{a|int}\\times{b|int}\\times\\dfrac{1}{2}={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is ab/4 because sin 30 = 1/2. The engine does not evaluate a sine. Original 8 and 6 give 12."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-15.8-QC2-gen",
+    "section": "IGCSE-15.8",
+    "kind": "generated",
+    "title": "Area with included angle 30 degrees, again",
+    "marks": 1,
+    "source": "Theory IGCSE-15.8 Quick check 2 (sides 10 and 8, area 20); new even sides",
+    "params": [
+      {
+        "name": "a",
+        "min": 8,
+        "max": 16,
+        "step": 2
+      },
+      {
+        "name": "b",
+        "min": 8,
+        "max": 16,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "A": "a*b/4"
+    },
+    "constraints": [
+      "(a*b)%4==0"
+    ],
+    "original": {
+      "a": 10,
+      "b": 8
+    },
+    "stem": "Two sides of a triangle are {a|int} cm and {b|int} cm, and the included angle is \\(30^\\circ\\). What is the area of the triangle?",
+    "answer": {
+      "expression": "a*b/4",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Area \\(=\\dfrac{1}{2}\\times{a|int}\\times{b|int}\\times\\dfrac{1}{2}={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is ab/4. Original 10 and 8 give 20."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-15.8-QC3-gen",
+    "section": "IGCSE-15.8",
+    "kind": "generated",
+    "title": "Area with included right angle",
+    "marks": 1,
+    "source": "Theory IGCSE-15.8 Quick check 3 (sides 7 and 8, area 28); new odd-even pairs",
+    "params": [
+      {
+        "name": "a",
+        "min": 5,
+        "max": 11,
+        "step": 2
+      },
+      {
+        "name": "b",
+        "min": 6,
+        "max": 12,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "A": "a*b/2"
+    },
+    "constraints": [
+      "(a*b)%2==0"
+    ],
+    "original": {
+      "a": 7,
+      "b": 8
+    },
+    "stem": "Two sides of a triangle are {a|int} cm and {b|int} cm, and the included angle is \\(90^\\circ\\). What is the area of the triangle?",
+    "answer": {
+      "expression": "a*b/2",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Area \\(=\\dfrac{1}{2}\\times{a|int}\\times{b|int}={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "sin 90 = 1, so A is ab/2. Original 7 and 8 give 28."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-15.8-PP-0580-22-MJ23-Q17",
+    "section": "IGCSE-15.8",
+    "kind": "pastpaper",
+    "title": "Find the included angle from the area",
+    "marks": 2,
+    "source": {
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s23_qp_22.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s23_ms_22.pdf",
+      "note": "0580/22/M/J/23 Question 17 [2]. Official QP and official MS."
+    },
+    "marking": "manual",
+    "stem": "This question is 0580/22/M/J/23 Question 17, taken from the official QP.\n\nThe diagram shows a triangle with an acute angle marked x°.\nThe area of the triangle is 2143 cm².\nOn the official diagram, the two sides enclosing that angle are 92.5 cm and 71 cm.\n\nWork out the value of x. [2]",
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "\\(\\dfrac{1}{2}\\times 92.5\\times 71\\sin x=2143\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1 for 1/2 * 92.5 * 71 sin x = 2143 oe."
+      },
+      {
+        "name": "A",
+        "text_tex": "\\(x=40.7\\) (to 3 s.f.).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: 40.7 or 40.73 to 40.74. Independent: sin x = 4286/(92.5*71)=0.652604…, arcsin=40.733…°."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Stem taken from the official QP PDF (UCLES 2023), Question 17. Official MS reproduced mark by mark. Paper/self-mark."
+      }
+    ]
+  }
+]

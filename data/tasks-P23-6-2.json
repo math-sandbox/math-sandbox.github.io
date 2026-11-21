@@ -1,0 +1,289 @@
+[
+  {
+    "id": "P23-6.2-QC1-gen",
+    "section": "P23-6.2",
+    "kind": "generated",
+    "title": "First iterate of a linear rearrangement",
+    "marks": 1,
+    "source": "Theory P23-6.2 Quick check 1; x_{n+1}=(x_n+k)/2",
+    "params": [
+      {
+        "name": "x1",
+        "min": 0,
+        "max": 6,
+        "step": 2
+      },
+      {
+        "name": "k",
+        "min": 2,
+        "max": 10,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "A": "(x1+k)/2"
+    },
+    "constraints": [
+      "(x1+k)%2==0"
+    ],
+    "original": {
+      "x1": 2,
+      "k": 6
+    },
+    "stem": "The iterative formula is \\(x_{{n+1}}=\\dfrac{{x_n+{k|int}}}{{2}}\\) and \\(x_1={x1|int}\\). Find \\(x_2\\).",
+    "answer": {
+      "expression": "(x1+k)/2",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(x_2=\\dfrac{{{x1|int}+{k|int}}}{{2}}={A|int}\\).",
+        "result": "(x1+k)/2",
+        "format": "int",
+        "mark": "A1",
+        "note": "Apply the iterative formula once."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original x1=2, k=6"
+      }
+    ],
+    "tags": {
+      "course": "P23",
+      "subsections": [
+        "P23-6.2"
+      ],
+      "topic": "Numerical solutions of equations",
+      "chapter": "P23-6",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-6-2.json",
+        "locator": "P23-6.2-QC1-gen"
+      }
+    }
+  },
+  {
+    "id": "P23-6.2-QC2-gen",
+    "section": "P23-6.2",
+    "kind": "generated",
+    "title": "Second iterate of a linear rearrangement",
+    "marks": 1,
+    "source": "Theory P23-6.2 Quick check 2; next iterate from a given x2",
+    "params": [
+      {
+        "name": "x2",
+        "min": 2,
+        "max": 8,
+        "step": 2
+      },
+      {
+        "name": "k",
+        "min": 2,
+        "max": 10,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "A": "(x2+k)/2"
+    },
+    "constraints": [
+      "(x2+k)%2==0"
+    ],
+    "original": {
+      "x2": 4,
+      "k": 6
+    },
+    "stem": "The iterative formula \\(x_{{n+1}}=\\dfrac{{x_n+{k|int}}}{{2}}\\) is used, and \\(x_2={x2|int}\\). Find \\(x_3\\).",
+    "answer": {
+      "expression": "(x2+k)/2",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(x_3=\\dfrac{{{x2|int}+{k|int}}}{{2}}={A|int}\\).",
+        "result": "(x2+k)/2",
+        "format": "int",
+        "mark": "A1",
+        "note": "Apply the iterative formula to the given x2."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original x2=4, k=6"
+      }
+    ],
+    "tags": {
+      "course": "P23",
+      "subsections": [
+        "P23-6.2"
+      ],
+      "topic": "Numerical solutions of equations",
+      "chapter": "P23-6",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-6-2.json",
+        "locator": "P23-6.2-QC2-gen"
+      }
+    }
+  },
+  {
+    "id": "P23-6.2-QC3-gen",
+    "section": "P23-6.2",
+    "kind": "generated",
+    "title": "Twice the next iterate",
+    "marks": 1,
+    "source": "Theory P23-6.2 Quick check 3; 2 x4 from x3",
+    "params": [
+      {
+        "name": "x3",
+        "min": 1,
+        "max": 9,
+        "step": 1
+      },
+      {
+        "name": "k",
+        "min": 2,
+        "max": 10,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "A": "x3+k"
+    },
+    "constraints": [
+      "1==1"
+    ],
+    "original": {
+      "x3": 5,
+      "k": 6
+    },
+    "stem": "The iterative formula \\(x_{{n+1}}=\\dfrac{{x_n+{k|int}}}{{2}}\\) is used, and \\(x_3={x3|int}\\). Find \\(2x_4\\).",
+    "answer": {
+      "expression": "x3+k",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(x_4=\\dfrac{{{x3|int}+{k|int}}}{{2}}\\), so \\(2x_4={A|int}\\).",
+        "result": "x3+k",
+        "format": "int",
+        "mark": "A1",
+        "note": "Clear the denominator after one application of the formula."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original x3=5, k=6"
+      }
+    ],
+    "tags": {
+      "course": "P23",
+      "subsections": [
+        "P23-6.2"
+      ],
+      "topic": "Numerical solutions of equations",
+      "chapter": "P23-6",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-6-2.json",
+        "locator": "P23-6.2-QC3-gen"
+      }
+    }
+  },
+  {
+    "id": "P23-6.2-PP-9709-21-ON11-Q6ii-iii",
+    "section": "P23-6.2",
+    "kind": "pastpaper",
+    "title": "Rearrangement and iteration for a cubic root",
+    "marks": 5,
+    "source": {
+      "paper": "9709/21/O/N/11 Q6(ii)(iii)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w11_qp_21.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w11_ms_21.pdf",
+      "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+    },
+    "stem": "<p>(i) Verify by calculation that the cubic equation \\(x^3-2x^2+5x-3=0\\) has a root that lies between \\(x=0.7\\) and \\(x=0.8\\).</p><p>(ii) Show that this root also satisfies an equation of the form \\(x=\\dfrac{{ax^2+3}}{{x^2+b}}\\), where the values of \\(a\\) and \\(b\\) are to be found. [2]</p><p>(iii) With these values of \\(a\\) and \\(b\\), use the iterative formula \\(x_{{n+1}}=\\dfrac{{ax_n^2+3}}{{x_n^2+b}}\\) to determine the root correct to 2 decimal places. Give the result of each iteration to 4 decimal places. [3]</p>",
+    "tags": {
+      "course": "P23",
+      "subsections": [
+        "P23-6.2"
+      ],
+      "topic": "Numerical solutions of equations",
+      "chapter": "P23-6",
+      "marks": 5,
+      "difficulty": "hard",
+      "type": "pp",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-6-2.json",
+        "locator": "P23-6.2-PP-9709-21-ON11-Q6ii-iii"
+      }
+    },
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "(ii) Rearrange the equation to the given equation, or vice versa.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1."
+      },
+      {
+        "name": "s2",
+        "text_tex": "(ii) State \\(a=2\\) and \\(b=5\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1."
+      },
+      {
+        "name": "s3",
+        "text_tex": "(iii) Use the iterative formula correctly at least once.",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1."
+      },
+      {
+        "name": "s4",
+        "text_tex": "(iii) Obtain the final answer \\(0.74\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1."
+      },
+      {
+        "name": "s5",
+        "text_tex": "(iii) Show sufficient iterations to justify its accuracy to 2 decimal places, or show there is a sign change in the interval \\((0.735,0.745)\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1."
+      }
+    ]
+  }
+]

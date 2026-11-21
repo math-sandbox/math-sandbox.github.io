@@ -1,0 +1,321 @@
+[
+  {
+    "id": "S2-1.3-QC1-gen",
+    "section": "S2-1.3",
+    "kind": "generated",
+    "title": "Largest possible Type I percentage at a given significance level",
+    "marks": 2,
+    "source": "S2 Ch1 theory S2-1.3 Quick check 1 (10% significance level, largest Type I percentage is 10)",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 10,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "E": "a"
+    },
+    "constraints": [
+      "a>=2"
+    ],
+    "original": {
+      "a": 10
+    },
+    "stem": "A test is carried out at the {a|int}\\% significance level. What is the largest possible percentage chance of a Type I error?",
+    "answer": {
+      "expression": "a",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The probability of a Type I error is at most the significance level.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Link Type I error probability with the significance level."
+      },
+      {
+        "name": "E",
+        "text_tex": "The largest possible percentage is \\({a|int}\\).",
+        "result": "a",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct percentage."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "bound",
+        "stem": "A hypothesis test uses a {a|int}\\% significance level. At most, what percentage chance is there of rejecting a true null hypothesis?",
+        "note": "bound frame"
+      },
+      {
+        "id": "nominal",
+        "stem": "The significance level of a test is {a|int}\\%. What is the largest possible value, as a percentage, of the probability of a Type I error?",
+        "note": "nominal frame"
+      }
+    ]
+  },
+  {
+    "id": "S2-1.3-QC2-gen",
+    "section": "S2-1.3",
+    "kind": "generated",
+    "title": "Type I probability for B(n,0.5) with critical region X>=n-1",
+    "marks": 2,
+    "source": "S2 Ch1 theory S2-1.3 Quick check 2 (B(8,0.5), P(X>=7)=0.0352 to 3 s.f.)",
+    "params": [
+      {
+        "name": "n",
+        "min": 6,
+        "max": 10,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "n1": "n-1",
+      "E": "(n+1)/math.pow(2,n)",
+      "np1": "n+1",
+      "den": "math.pow(2,n)"
+    },
+    "constraints": [
+      "n>=6",
+      "n<=10"
+    ],
+    "original": {
+      "n": 8
+    },
+    "stem": "Under \\(H_0\\), \\(X\\sim\\mathrm{B}({n|int},\\,0.5)\\). A one-tailed test rejects \\(H_0\\) when \\(X\\geqslant {n1|int}\\). Find the probability of a Type I error, correct to 3 significant figures.",
+    "answer": {
+      "expression": "(n+1)/math.pow(2,n)",
+      "format": "{E|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "\\(\\mathrm{P}(X\\geqslant {n1|int})=\\dfrac{{np1|int}}{{den|int}}\\). Under \\(H_0\\) the tail is {np1|int} equally likely outcomes out of {den|int}.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Write the two binomial terms of the upper tail."
+      },
+      {
+        "name": "E",
+        "text_tex": "The probability is {E|sf3z} to 3 significant figures.",
+        "result": "(n+1)/math.pow(2,n)",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct Type I probability."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "tail",
+        "stem": "A random variable has the distribution \\(\\mathrm{B}({n|int},\\,0.5)\\) under \\(H_0\\). The critical region is \\(X\\geqslant {n1|int}\\). Find the probability of a Type I error, correct to 3 significant figures.",
+        "note": "tail frame"
+      },
+      {
+        "id": "packets",
+        "stem": "Under \\(H_0\\), the number of defective packets in a sample of {n|int} has the distribution \\(\\mathrm{B}({n|int},\\,0.5)\\). The inspector rejects \\(H_0\\) if at least {n1|int} packets are defective. Find the probability of a Type I error, correct to 3 significant figures.",
+        "note": "packets frame"
+      }
+    ]
+  },
+  {
+    "id": "S2-1.3-QC3-gen",
+    "section": "S2-1.3",
+    "kind": "generated",
+    "title": "Type II probability when p=0.8 and the critical region is X>=n-1",
+    "marks": 2,
+    "source": "S2 Ch1 theory S2-1.3 Quick check 3 (n=8, p=0.8, P(X<=6)=0.497 to 3 s.f.)",
+    "params": [
+      {
+        "name": "n",
+        "min": 8,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "n1": "n-1",
+      "n2": "n-2",
+      "E": "1-(n*math.pow(0.8,n-1)*0.2+math.pow(0.8,n))"
+    },
+    "constraints": [
+      "n==8"
+    ],
+    "original": {
+      "n": 8
+    },
+    "stem": "A one-tailed test of \\(H_0\\colon p=0.5\\) against \\(H_1\\colon p\\gt 0.5\\) for \\(X\\sim\\mathrm{B}({n|int},\\,p)\\) rejects \\(H_0\\) when \\(X\\geqslant {n1|int}\\). Given that \\(p=0.8\\), find the probability of a Type II error, correct to 3 significant figures.",
+    "answer": {
+      "expression": "1-(n*math.pow(0.8,n-1)*0.2+math.pow(0.8,n))",
+      "format": "{E|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "A Type II error occurs if \\(H_0\\) is accepted when \\(p=0.8\\), that is if \\(X\\leqslant {n2|int}\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Identify the acceptance region under the given H1 value."
+      },
+      {
+        "name": "E",
+        "text_tex": "Under \\(p=0.8\\), this is \\(1-\\mathrm{P}(X={n1|int}\\ \\mathrm{or}\\ X={n|int})\\), which is {E|sf3z} to 3 significant figures.",
+        "result": "1-(n*math.pow(0.8,n-1)*0.2+math.pow(0.8,n))",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct Type II probability."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "givenp",
+        "stem": "The critical region of a test is \\(X\\geqslant {n1|int}\\) for a sample of {n|int}. If the true probability of a success is \\(0.8\\), find the probability of a Type II error, correct to 3 significant figures.",
+        "note": "givenp frame"
+      },
+      {
+        "id": "accept",
+        "stem": "Under an alternative value \\(p=0.8\\), with \\(X\\sim\\mathrm{B}({n|int},\\,0.8)\\), find \\(\\mathrm{P}(X\\leqslant {n2|int})\\), which is the probability of a Type II error for a test that rejects \\(H_0\\) when \\(X\\geqslant {n1|int}\\). Give your answer to 3 significant figures.",
+        "note": "accept frame"
+      }
+    ]
+  },
+  {
+    "id": "S2-1.3-PP-9709-72-MJ17-Q4i",
+    "section": "S2-1.3",
+    "kind": "pastpaper",
+    "title": "Probability of a Type I error for Marisa's fixed critical region",
+    "marks": 2,
+    "source": {
+      "paper": "9709/72/M/J/17 Q4(i)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s17_qp_72.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s17_ms_72.pdf",
+      "note": "Stem verbatim from the QP PDF, part (i) only. Part (ii) (Andre's test at a different sample size) is omitted. Auto-marked, accept_as sf 3. Independently P(X<=2) for B(20,0.25)=0.091260..., official 0.0913. No mixed marking."
+    },
+    "stem": "It is claimed that 1 in every 4 packets of certain biscuits contains a free gift. Marisa and André both suspect that the true proportion is less than 1 in 4. Marisa chooses 20 packets at random. She decides that if fewer than 3 contain free gifts, she will conclude that the claim is not justified. Use a binomial distribution to find the probability of a Type I error.",
+    "parts": [
+      {
+        "part": "(i)",
+        "stem": "Use a binomial distribution to find the probability of a Type I error.",
+        "marks": 2,
+        "answer": {
+          "expression": "math.pow(0.75,20)+20*math.pow(0.75,19)*0.25+190*math.pow(0.75,18)*math.pow(0.25,2)",
+          "official": "0.0913",
+          "accept_as": "sf",
+          "sf": 3,
+          "format": "{E|sf3z}"
+        },
+        "steps": [
+          {
+            "name": "form",
+            "text_tex": "Under \\(H_0\\), \\(X\\sim\\mathrm{B}(20,\\,0.25)\\), and a Type I error occurs if \\(X\\leqslant 2\\).",
+            "result": "None",
+            "format": "raw",
+            "mark": "M1",
+            "note": "MS: 0.75^20 + 20*0.75^19*0.25 + 20C2*0.75^18*0.25^2. No end errors."
+          },
+          {
+            "name": "E",
+            "text_tex": "\\(\\mathrm{P}(X\\leqslant 2)=0.0913\\) to 3 significant figures.",
+            "result": "math.pow(0.75,20)+20*math.pow(0.75,19)*0.25+190*math.pow(0.75,18)*math.pow(0.25,2)",
+            "format": "raw",
+            "mark": "A1",
+            "note": "MS: 0.0913 as final answer."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "S2-1.3-PP-9709-73-ON16-Q5ii",
+    "section": "S2-1.3",
+    "kind": "pastpaper",
+    "title": "Probability of a Type I error for a 5% binomial test",
+    "marks": 5,
+    "source": {
+      "paper": "9709/73/O/N/16 Q5(ii)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w16_qp_73.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w16_ms_73.pdf",
+      "note": "Stem verbatim from the opening of Q5 on the QP PDF, part (ii) only. Parts (i) (stating hypotheses) and (iii) (carrying out the test) are omitted so that the item is a single auto-marked numeric part with no mixed marking. Independently P(X<=2)=0.03548 for B(20,0.3), and P(X<=3)=0.107>0.05, so the Type I probability is 0.0355 to 3 s.f., matching the official MS."
+    },
+    "stem": "It is claimed that \\(30\\%\\) of packets of Froogum contain a free gift. Andre thinks that the actual proportion is less than \\(30\\%\\) and he decides to carry out a hypothesis test at the \\(5\\%\\) significance level. He buys \\(20\\) packets of Froogum and notes the number of free gifts he obtains. Use a binomial distribution to find the probability of a Type I error.",
+    "parts": [
+      {
+        "part": "(ii)",
+        "stem": "Use a binomial distribution to find the probability of a Type I error.",
+        "marks": 5,
+        "answer": {
+          "expression": "math.pow(0.7,20)+20*math.pow(0.7,19)*0.3+190*math.pow(0.7,18)*math.pow(0.3,2)",
+          "official": "0.0355",
+          "accept_as": "sf",
+          "sf": 3,
+          "format": "{E|sf3z}"
+        },
+        "steps": [
+          {
+            "name": "p2",
+            "text_tex": "Under \\(H_0\\), \\(X\\sim\\mathrm{B}(20,\\,0.3)\\). \\(\\mathrm{P}(X\\leqslant 2)=0.0355\\) to 3 significant figures.",
+            "result": "math.pow(0.7,20)+20*math.pow(0.7,19)*0.3+190*math.pow(0.7,18)*math.pow(0.3,2)",
+            "format": "raw",
+            "mark": "M1",
+            "note": "MS: P(X<=2) attempted; 0.03548 or 0.0355."
+          },
+          {
+            "name": "p2A1",
+            "text_tex": "Under \\(H_0\\), \\(X\\sim\\mathrm{B}(20,\\,0.3)\\). \\(\\mathrm{P}(X\\leqslant 2)=0.0355\\) to 3 significant figures.",
+            "result": "math.pow(0.7,20)+20*math.pow(0.7,19)*0.3+190*math.pow(0.7,18)*math.pow(0.3,2)",
+            "format": "raw",
+            "mark": "A1",
+            "note": "MS: P(X<=2) attempted; 0.03548 or 0.0355."
+          },
+          {
+            "name": "p3",
+            "text_tex": "\\(\\mathrm{P}(X\\leqslant 3)=0.107\\), which is greater than \\(0.05\\).",
+            "result": "None",
+            "format": "raw",
+            "mark": "M1",
+            "note": "MS: P(X<=3) attempted."
+          },
+          {
+            "name": "E",
+            "text_tex": "The critical region is \\(X\\leqslant 2\\), so the probability of a Type I error is \\(0.0355\\) to 3 significant figures.",
+            "result": "math.pow(0.7,20)+20*math.pow(0.7,19)*0.3+190*math.pow(0.7,18)*math.pow(0.3,2)",
+            "format": "raw",
+            "mark": "M1",
+            "note": "MS: one comparison with 0.05; P(Type I error)=0.0355 (3 s.f.)."
+          },
+          {
+            "name": "EA1",
+            "text_tex": "The critical region is \\(X\\leqslant 2\\), so the probability of a Type I error is \\(0.0355\\) to 3 significant figures.",
+            "result": "math.pow(0.7,20)+20*math.pow(0.7,19)*0.3+190*math.pow(0.7,18)*math.pow(0.3,2)",
+            "format": "raw",
+            "mark": "A1",
+            "note": "MS: one comparison with 0.05; P(Type I error)=0.0355 (3 s.f.)."
+          }
+        ]
+      }
+    ]
+  }
+]

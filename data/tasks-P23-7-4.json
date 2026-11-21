@@ -1,0 +1,378 @@
+[
+    {
+        "id": "P23-7.4-QC1-gen",
+        "section": "P23-7.4",
+        "kind": "generated",
+        "title": "Range of validity of the expansion of (a + bx) to the power -2",
+        "marks": 2,
+        "source": "Theory P23-7.4 Quick check 1; valid for |x| < a/b",
+        "params": [
+            {
+                "name": "b",
+                "min": 2,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "c",
+                "min": 2,
+                "max": 8,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "a": "b*c"
+        },
+        "constraints": [
+            "c>=2"
+        ],
+        "original": {
+            "b": 2,
+            "c": 3
+        },
+        "stem": "The expansion of \\(({a|int}+{b|int}x)^{-2}\\) in ascending powers of \\(x\\) is valid for \\(\\lvert x\\rvert\\lt k\\). Find the value of \\(k\\).",
+        "answer": {
+            "expression": "c",
+            "format": "{K|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "M",
+                "text_tex": "Write \\(({a|int}+{b|int}x)^{-2}={a|int}^{-2}\\left(1+\\dfrac{{b|int}x}{{a|int}}\\right)^{-2}\\), valid for \\(\\left\\lvert\\dfrac{{b|int}x}{{a|int}}\\right\\rvert\\lt 1\\).",
+                "result": "c",
+                "format": "int",
+                "mark": "M1",
+                "note": "Take out the constant so that the bracket starts with 1."
+            },
+            {
+                "name": "K",
+                "text_tex": "\\(\\lvert x\\rvert\\lt\\dfrac{{a|int}}{{b|int}}={c|int}\\), so \\(k={c|int}\\).",
+                "result": "c",
+                "format": "int",
+                "mark": "A1",
+                "note": "Divide by the coefficient of x."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original (6+2x) to the power -2, valid for |x| < 3"
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-7.4"
+            ],
+            "topic": "Algebra",
+            "chapter": "P23-7",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-7-4.json",
+                "locator": "P23-7.4-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-7.4-QC2-gen",
+        "section": "P23-7.4",
+        "kind": "generated",
+        "title": "Coefficient of x in the square root of (a squared + kx)",
+        "marks": 2,
+        "source": "Theory P23-7.4 Quick check 2; coefficient k/(2a)",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "k",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "A2": "a*a",
+            "a2": "2*a",
+            "Ev": "k/(2*a)"
+        },
+        "constraints": [
+            "k>=2"
+        ],
+        "original": {
+            "a": 3,
+            "k": 4
+        },
+        "stem": "Find the coefficient of \\(x\\) in the expansion of \\(\\sqrt{{A2|int}+{k|int}x}\\) in ascending powers of \\(x\\).",
+        "answer": {
+            "expression": "k/(2*a)",
+            "format": "{E|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "M",
+                "text_tex": "\\(\\sqrt{{A2|int}+{k|int}x}={a|int}\\left(1+\\dfrac{{k|int}x}{{A2|int}}\\right)^{1/2}={a|int}\\left(1+\\dfrac{1}{2}\\times\\dfrac{{k|int}x}{{A2|int}}+\\cdots\\right)\\)",
+                "result": "k/(2*a)",
+                "format": "num",
+                "mark": "M1",
+                "note": "Take out the square root of the constant, then use the first two terms of the expansion."
+            },
+            {
+                "name": "E",
+                "text_tex": "Coefficient \\(=\\dfrac{{k|int}}{{a2|int}}\\approx{Ev|sf3z}\\)",
+                "result": "k/(2*a)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Exact fraction or 3 s.f."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original square root of (9+4x), coefficient 2/3"
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-7.4"
+            ],
+            "topic": "Algebra",
+            "chapter": "P23-7",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-7-4.json",
+                "locator": "P23-7.4-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-7.4-QC3-gen",
+        "section": "P23-7.4",
+        "kind": "generated",
+        "title": "Coefficient of x squared in 1/(a + bx)",
+        "marks": 2,
+        "source": "Theory P23-7.4 Quick check 3; coefficient b squared / a cubed",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 2,
+                "max": 5,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "B2": "b*b",
+            "A3": "a*a*a",
+            "Ev": "b*b/(a*a*a)",
+            "A2s": "a*a"
+        },
+        "constraints": [
+            "b>=2"
+        ],
+        "original": {
+            "a": 3,
+            "b": 2
+        },
+        "stem": "Find the coefficient of \\(x^2\\) in the expansion of \\(\\dfrac{1}{{a|int}+{b|int}x}\\) in ascending powers of \\(x\\).",
+        "answer": {
+            "expression": "b*b/(a*a*a)",
+            "format": "{E|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "M",
+                "text_tex": "\\(({a|int}+{b|int}x)^{-1}=\\dfrac{1}{{a|int}}\\left(1+\\dfrac{{b|int}x}{{a|int}}\\right)^{-1}=\\dfrac{1}{{a|int}}\\left(1-\\dfrac{{b|int}x}{{a|int}}+\\dfrac{{B2|int}x^2}{{A2s|int}}-\\cdots\\right)\\)",
+                "result": "b*b/(a*a*a)",
+                "format": "num",
+                "mark": "M1",
+                "note": "For power -1 the coefficients of the bracket alternate in sign."
+            },
+            {
+                "name": "E",
+                "text_tex": "Coefficient \\(=\\dfrac{{B2|int}}{{A3|int}}\\approx{Ev|sf3z}\\)",
+                "result": "b*b/(a*a*a)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Exact fraction or 3 s.f."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 1/(3+2x), coefficient 4/27"
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-7.4"
+            ],
+            "topic": "Algebra",
+            "chapter": "P23-7",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-7-4.json",
+                "locator": "P23-7.4-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-7.4-PP-9709-33-MJ12-Q1",
+        "section": "P23-7.4",
+        "kind": "pastpaper",
+        "title": "Expansion of 1 over the square root of (4 + 3x)",
+        "marks": 4,
+        "source": {
+            "paper": "9709/33/M/J/12 Q1",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s12_qp_33.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s12_ms_33.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Expand \\(\\dfrac{1}{\\sqrt{(4+3x)}\\,}\\) in ascending powers of \\(x\\), up to and including the term in \\(x^2\\), simplifying the coefficients. [4]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-7.4"
+            ],
+            "topic": "Algebra",
+            "chapter": "P23-7",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-7-4.json",
+                "locator": "P23-7.4-PP-9709-33-MJ12-Q1"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "A correct unsimplified version of the \\(x\\) or \\(x^2\\) term of the expansion of \\((4+3x)^{-\\frac12}\\) or \\(\\left(1+\\frac{3}{4}x\\right)^{-\\frac12}\\) is obtained.",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1 (EITHER). OR: differentiate and evaluate f(0) and f′(0), where f′(x) = k(4 + 3x) to the power −3/2. Symbolic coefficients, e.g. (−½ over 2) in binomial form, are not sufficient for the M or B mark."
+            },
+            {
+                "name": "s2",
+                "text_tex": "The first term is \\(\\dfrac{1}{2}\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, state correct first term 1/2."
+            },
+            {
+                "name": "s3",
+                "text_tex": "The next term is \\(-\\dfrac{3}{16}x\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 + A1, obtain the next two terms −(3/16)x + (27/256)x²."
+            },
+            {
+                "name": "s4",
+                "text_tex": "The term in \\(x^2\\) is \\(+\\dfrac{27}{256}x^2\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: second A1 of A1 + A1. The expansion is 1/2 − (3/16)x + (27/256)x²."
+            }
+        ]
+    },
+    {
+        "id": "P23-7.4-PP-9709-33-MJ17-Q2",
+        "section": "P23-7.4",
+        "kind": "pastpaper",
+        "title": "Expansion of (3 + 2x) to the power -3",
+        "marks": 4,
+        "source": {
+            "paper": "9709/33/M/J/17 Q2",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s17_qp_33.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s17_ms_33.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Expand \\((3+2x)^{-3}\\) in ascending powers of \\(x\\) up to and including the term in \\(x^2\\), simplifying the coefficients. [4]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-7.4"
+            ],
+            "topic": "Algebra",
+            "chapter": "P23-7",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-7-4.json",
+                "locator": "P23-7.4-PP-9709-33-MJ17-Q2"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "A correct unsimplified version of the \\(x\\) or \\(x^2\\) term in the expansion of \\(\\left(1+\\frac{2}{3}x\\right)^{-3}\\) or \\((3+2x)^{-3}\\) is stated.",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1 (EITHER). Symbolic binomial coefficients, e.g. (−3 over 2) in binomial form, are not sufficient for M1. OR: differentiate and evaluate f(0) and f′(0), where f′(x) = k(3 + 2x) to the power −4."
+            },
+            {
+                "name": "s2",
+                "text_tex": "The first term is \\(\\dfrac{1}{27}\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, state correct first term 1/27."
+            },
+            {
+                "name": "s3",
+                "text_tex": "The term in \\(x\\) is \\(-\\dfrac{2}{27}x\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, obtain term −(2/27)x."
+            },
+            {
+                "name": "s4",
+                "text_tex": "The term in \\(x^2\\) is \\(\\dfrac{8}{81}x^2\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, obtain term (8/81)x²."
+            }
+        ]
+    }
+]

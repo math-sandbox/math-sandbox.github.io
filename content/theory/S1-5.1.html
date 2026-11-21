@@ -1,0 +1,65 @@
+<section class="theory" data-section="S1-5.1">
+<h2>5.1 The factorial function</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Probability &amp; Statistics 1 Coursebook (Dean Chalmers), Chapter 5 Permutations and combinations, printed p.124. Own wording and new numbers, following the coursebook definition of \(n!\), the sequence of values found by division, and the result \(0!=1\).</p>
+<p class="key-words"><strong>Key words:</strong> <em>factorial</em></p>
+<h3>The factorial function</h3>
+<p>Counting problems often need products such as \(5\times4\times3\times2\times1\). For a positive integer \(n\), the product of all the integers from \(n\) down to 1 is called \(n\) <strong>factorial</strong> and is written \(n!\):</p>
+<p>\[n!=n\times(n-1)\times(n-2)\times\cdots\times3\times2\times1.\]</p>
+<p>So \(3!=6\), \(4!=24\), \(5!=120\) and \(6!=720\). The values grow very quickly: \(10!=3\,628\,800\). Most calculators have a factorial key, marked \(n!\) or \(x!\).</p>
+<h3>Why \(0!=1\)</h3>
+<p>Each factorial is the next one divided by a whole number: \(3!=4!\div4\), \(2!=3!\div3\) and \(1!=2!\div2=1\). Continuing the pattern one more step gives \(0!=1!\div1=1\). The value \(0!=1\) is used in many of the formulae in this chapter.</p>
+<h3>Simplifying quotients of factorials</h3>
+<p>Because \(n!=n\times(n-1)!\), a larger factorial divided by a smaller one cancels down to a short product. For example, \(\dfrac{7!}{4!}=7\times6\times5=210\). In the same way a difference such as \(5!-4!\) can be simplified by taking out the common factor \(4!\): \(5!-4!=4!\,(5-1)=96\).</p>
+<div class="worked-example">
+<h4>Worked example 1: A quotient of factorials</h4>
+<p class="src">Coursebook, 5.1, cancelling factorials. New numbers.</p>
+<p>Evaluate \(\dfrac{8!}{5!}\) without finding \(8!\) in full.</p>
+<ol class="steps">
+<li>\(\dfrac{8!}{5!}=\dfrac{8\times7\times6\times5!}{5!}\) <span class="mark">M1</span></li>
+<li>\(=8\times7\times6=336\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(336\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: An equation with factorials</h4>
+<p class="src">Coursebook, 5.1, simplifying factorial expressions. New numbers.</p>
+<p>Find the positive integer \(n\) for which \(\dfrac{(n+2)!}{n!}=56\).</p>
+<ol class="steps">
+<li>\(\dfrac{(n+2)!}{n!}=(n+2)(n+1)\), so \((n+2)(n+1)=56\). <span class="mark">M1</span></li>
+<li>\(n^2+3n-54=0\), so \((n+9)(n-6)=0\) and the positive integer is \(n=6\). <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(n=6\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul>
+<li>Writing \(0!=0\). By the pattern above, \(0!=1\).</li>
+<li>Cancelling \(\dfrac{8!}{4!}\) as \(2!\). Factorials do not divide like ordinary numbers; \(\dfrac{8!}{4!}=8\times7\times6\times5\).</li>
+<li>Treating \(2\times3!\) as \(6!\). In fact \(2\times3!=12\) and \(6!=720\).</li>
+</ul>
+<h3>Past paper</h3>
+<p>There is no whole past-paper question on this subsection alone.</p>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>Evaluate \(\dfrac{9!}{7!}\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{9!}{7!}=9\times8=72\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(72\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>Find the positive integer \(n\) such that \(\dfrac{n!}{(n-2)!}=90\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{n!}{(n-2)!}=n(n-1)\), so \(n(n-1)=90\).</li><li>\(n^2-n-90=0\), so \((n-10)(n+9)=0\) and \(n=10\).</li></ol>
+<p class="final"><strong>Answer:</strong> \(n=10\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>Evaluate \(\dfrac{7!-6!}{5!}\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(7!-6!=7\times6!-6!=6\times6!\)</li><li>\(\dfrac{6\times6!}{5!}=6\times6=36\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(36\)</p>
+</details>
+</div>
+</section>

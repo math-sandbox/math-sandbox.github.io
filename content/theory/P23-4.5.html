@@ -1,0 +1,108 @@
+<section class="theory" data-section="P23-4.5">
+<h2>4.5 Derivatives of trigonometric functions</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 2 &amp; 3 Coursebook (Sue Pemberton, Julianne Hughes), Chapter 4 Differentiation, pp.95–98 (Key points 4.7–4.9, Worked examples 4.9–4.10, Exercise 4E). Own wording and new numbers.</p>
+<p class="key-words"><strong>Key words:</strong> <em>chain rule</em>, <em>product rule</em>, <em>quotient rule</em>, <em>radian</em></p>
+<h3>The derivatives of \(\sin x\), \(\cos x\) and \(\tan x\)</h3>
+<p>Throughout this section, and in all calculus work unless a question says otherwise, the angle is measured in <strong>radians</strong>. From the definition of the derivative, and the expansions of \(\sin(x+\delta x)\) and \(\cos(x+\delta x)\), it follows that</p>
+$$\frac{\mathrm{d}}{\mathrm{d}x}(\sin x)=\cos x,\qquad\frac{\mathrm{d}}{\mathrm{d}x}(\cos x)=-\sin x.$$
+<p>The graph of the gradient function of \(y=\sin x\) is the same shape as \(y=\cos x\): the gradient of sine is \(1\) at the origin, zero at its peaks, and negative as the curve falls.</p>
+<figure class="trig-static">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220" width="520" style="display:block;width:100%;max-width:520px;height:auto" role="img" aria-labelledby="p23-45-title p23-45-desc"><title id="p23-45-title">y = sin x and its gradient function y = cos x</title><desc id="p23-45-desc">On the interval from 0 to 2 pi, the sine curve starts at the origin, rises to 1 at pi over 2, returns to 0 at pi, falls to minus 1 at 3 pi over 2, and returns to 0 at 2 pi. The cosine curve, drawn dashed, starts at 1, is the gradient of sine at each point, and is zero where sine has a turning point.</desc>
+<rect x="0" y="0" width="520" height="220" fill="white"/>
+<g stroke="#64748b" stroke-width="1.2"><line x1="40" y1="110" x2="500" y2="110"/><line x1="40" y1="200" x2="40" y2="20"/></g>
+<polyline fill="none" stroke="#1B3A6B" stroke-width="2.4" points="40,110 74,68 97,40 120,25 143,20 166,25 189,40 212,68 235,110 258,152 281,180 304,195 327,200 350,195 373,180 396,152 429,110"/>
+<polyline fill="none" stroke="#b45309" stroke-width="2" stroke-dasharray="6 4" points="40,20 63,25 86,40 109,68 132,110 155,152 178,180 201,195 224,200 247,195 270,180 293,152 316,110 339,68 362,40 385,25 408,20 429,25"/>
+<g font-family="Arial,sans-serif" font-size="14" fill="#1B3A6B" text-anchor="middle">
+<text x="40" y="126">0</text><text x="132" y="126">π/2</text><text x="235" y="126">π</text><text x="327" y="126">3π/2</text><text x="429" y="126">2π</text>
+<text x="498" y="126">x</text><text x="28" y="24">y</text>
+<text x="28" y="44">1</text><text x="22" y="204">−1</text>
+<text x="470" y="44" fill="#1B3A6B">sin x</text>
+<text x="470" y="64" fill="#b45309">cos x</text>
+</g>
+</svg>
+<figcaption>On \(0\le x\le 2\pi\), the dashed curve is the gradient of \(y=\sin x\), which is \(y=\cos x\).</figcaption>
+</figure>
+<p>The derivative of \(\tan x\) follows from the <strong>quotient rule</strong>, writing \(\tan x=\dfrac{\sin x}{\cos x}\):</p>
+$$\frac{\mathrm{d}}{\mathrm{d}x}(\tan x)=\frac{\cos x\cdot\cos x-\sin x\cdot(-\sin x)}{\cos^2 x}=\frac{\cos^2 x+\sin^2 x}{\cos^2 x}=\sec^2 x.$$
+<h3>Linear arguments</h3>
+<p>By the <strong>chain rule</strong>, with \(u=ax+b\) and \(a\neq0\),</p>
+$$\frac{\mathrm{d}}{\mathrm{d}x}\bigl[\sin(ax+b)\bigr]=a\cos(ax+b),\qquad\frac{\mathrm{d}}{\mathrm{d}x}\bigl[\cos(ax+b)\bigr]=-a\sin(ax+b),$$
+$$\frac{\mathrm{d}}{\mathrm{d}x}\bigl[\tan(ax+b)\bigr]=a\sec^2(ax+b).$$
+<p>Combine these with the <strong>product rule</strong> and the quotient rule when a trigonometric factor is multiplied or divided by another function of \(x\). A power such as \((3+2\sin x)^4\) is also a chain-rule composite.</p>
+<div class="worked-example">
+<h4>Worked example 1: Standard rules and a product</h4>
+<p class="src">Book: Worked example 4.9, pp.96–97; Exercise 4E</p>
+<p>Differentiate with respect to \(x\): (a) \(5\sin x\) (b) \(x\sin x\) (c) \(\dfrac{\cos x}{x}\).</p>
+<ol class="steps">
+<li>(a) \(5\cos x\) <span class="mark">B1</span></li>
+<li>(b) Product rule: \(\sin x+x\cos x\) <span class="mark">M1 A1</span></li>
+<li>(c) Quotient rule: \(\dfrac{x(-\sin x)-\cos x\cdot 1}{x^2}=\dfrac{-x\sin x-\cos x}{x^2}\) <span class="mark">M1 A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> (a) \(5\cos x\) (b) \(\sin x+x\cos x\) (c) \(\dfrac{-x\sin x-\cos x}{x^2}\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: A power and a linear argument</h4>
+<p class="src">Book: Worked example 4.10, pp.97–98</p>
+<p>Differentiate with respect to \(x\): (a) \(4\sin 3x\) (b) \((2-3\cos x)^5\) (c) \(\tan\left(2x-\dfrac{\pi}{6}\right)\).</p>
+<ol class="steps">
+<li>(a) \(4\times 3\cos 3x=12\cos 3x\) <span class="mark">B1</span></li>
+<li>(b) Chain rule: \(5(2-3\cos x)^4\times 3\sin x=15\sin x(2-3\cos x)^4\) <span class="mark">M1 A1</span></li>
+<li>(c) \(2\sec^2\left(2x-\dfrac{\pi}{6}\right)\) <span class="mark">B1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> (a) \(12\cos 3x\) (b) \(15\sin x(2-3\cos x)^4\) (c) \(2\sec^2\left(2x-\dfrac{\pi}{6}\right)\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 3: A gradient at a given point</h4>
+<p class="src">Book: Key point 4.9, p.97</p>
+<p>Find the gradient of the curve \(y=3\cos 2x+4\sin x\) at the point where \(x=0\).</p>
+<ol class="steps">
+<li>\(\dfrac{\mathrm{d}y}{\mathrm{d}x}=-6\sin 2x+4\cos x\) <span class="mark">M1 A1</span></li>
+<li>At \(x=0\): \(-6\sin 0+4\cos 0=4\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(4\)</p>
+</div>
+<h3>Quick checks</h3>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>Differentiate \(7\cos 2x\) with respect to \(x\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(7\times\bigl(-2\sin 2x\bigr)=-14\sin 2x\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(-14\sin 2x\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>Find the gradient of the curve \(y=5\sin 3x\) at the point where \(x=0\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(\dfrac{\mathrm{d}y}{\mathrm{d}x}=15\cos 3x\)</li>
+<li>At \(x=0\): \(15\cos 0=15\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(15\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>Find the gradient of the curve \(y=2\tan x\) at the point where \(x=0\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(\dfrac{\mathrm{d}y}{\mathrm{d}x}=2\sec^2 x\)</li>
+<li>At \(x=0\): \(2\sec^2 0=2\cdot 1=2\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(2\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 4</h4>
+<p>Differentiate \((1+2\sin x)^3\) with respect to \(x\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(3(1+2\sin x)^2\times 2\cos x=6\cos x(1+2\sin x)^2\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(6\cos x(1+2\sin x)^2\)</p>
+</details>
+</div>
+<p class="marks-key"><strong>Marks:</strong> M = method, A = accurate answer (depends on M), B = independent mark. Marks on worked examples are illustrative, not official. Give exact answers unless the question asks for a decimal. In calculus, angles are in radians unless a question says otherwise. Differentiate first, substitute second.</p>
+</section>

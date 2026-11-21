@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Variant · Math Sandbox</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    window.MathJax = { tex: { inlineMath: [["\\(", "\\)"]], displayMath: [["$$", "$$"]] }, options: { ignoreHtmlClass: "fig|tex2jax_ignore" } };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Question variant</h1>
+    <nav class="topnav">
+      <a href="index.html">Home</a>
+      <a href="index.html?class=10P">10P</a>
+      <a href="index.html?class=10T">10T</a>
+      <a href="index.html?class=11AS">11AS</a>
+      <a href="index.html?class=12AS">12AS</a>
+      <a href="index.html?class=12A2">12A2</a>
+      <a href="generator.html">Generator</a>
+      <a href="worksheet.html">Worksheet builder</a>
+      <a href="vocabulary.html">Vocabulary</a>
+    </nav>
+  </header>
+  <main>
+    <div id="app"></div>
+  </main>
+  <script src="assets/nav.js"></script>
+  <script src="assets/review-t1-fallback.js"></script>
+  <script src="assets/review-render.js"></script>
+  <script src="assets/generators.js"></script>
+  <script>
+    const app = document.getElementById("app");
+    const q = new URLSearchParams(location.search);
+    const cls = msNav.classId();
+    const task = q.get("task") || msNav.firstTask(msNav.courseOf(cls) || "IGCSE");
+    let seed = Number(q.get("seed") || 1) || 1;
+    function go(s) {
+      seed = s;
+      const extra = cls ? "&class=" + encodeURIComponent(cls) : "";
+      history.replaceState(null, "", "?task=" + encodeURIComponent(task) + "&seed=" + seed + extra);
+      const gen = GENERATORS[task];
+      const found = findTask(window.REVIEW_T1_FALLBACK, task);
+      const label = found ? taskLabel(found.task, found.k) : "Question";
+      if (!gen) { app.innerHTML = "<p>Unknown task</p>"; return; }
+      const t = gen(mulberry(seed));
+      t.level = t.level || "Variant";
+      const links = msNav.taskHrefs(task, cls);
+      const more = links
+        ? ' · <a href="' + links.review + '">Review this task</a> · <a href="' + links.sheet + '">Worksheet</a>'
+        : "";
+      app.innerHTML = "<p>Seed <b>" + seed + "</b> · <span title=\"" + task + "\">" + label + '</span> · <button class="tab" id="nv">New variant</button>' + more + "</p>" + taskCard(t, "v", "");
+      document.getElementById("nv").onclick = () => go(seed + 1);
+      bindReveal(app);
+      if (window.MathJax?.typesetPromise) MathJax.typesetPromise([app]);
+    }
+    go(seed);
+  </script>
+  <script src="assets/analytics.js"></script>
+  <script data-goatcounter="https://xomjak.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

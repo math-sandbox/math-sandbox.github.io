@@ -1,0 +1,30 @@
+[
+  {
+    "section": "S1-4.5",
+    "q": "QC1",
+    "answer": 0.4,
+    "accept_as": "sf",
+    "sf": 3
+  },
+  {
+    "section": "S1-4.5",
+    "q": "QC2",
+    "answer": 0.13333333333333333,
+    "accept_as": "sf",
+    "sf": 3
+  },
+  {
+    "section": "S1-4.5",
+    "q": "QC3",
+    "answer": 0.05,
+    "accept_as": "sf",
+    "sf": 3
+  },
+  {
+    "section": "S1-4.5",
+    "q": "QC4",
+    "answer": 0.9210526315789473,
+    "accept_as": "sf",
+    "sf": 3
+  }
+]

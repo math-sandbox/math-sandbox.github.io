@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Module template · Math Sandbox</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script>
+    window.MathJax = { tex: { inlineMath: [["$", "$"]], displayMath: [["$$", "$$"]] } };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Module title</h1>
+    <p>P3 3.5 Integration · trainer</p>
+    <nav class="topnav">
+      <a href="../index.html">Home</a>
+      <a href="../index.html?class=10P">10P</a>
+      <a href="../index.html?class=10T">10T</a>
+      <a href="../index.html?class=11AS">11AS</a>
+      <a href="../index.html?class=12AS">12AS</a>
+      <a href="../index.html?class=12A2">12A2</a>
+      <a href="../generator.html">Generator</a>
+      <a href="../worksheet.html">Worksheet builder</a>
+      <a href="../vocabulary.html">Vocabulary</a>
+    </nav>
+  </header>
+  <main>
+    <div class="panel">
+      <h3>Task</h3>
+      <p>Choose a strategy for $\displaystyle\int x e^{2x}\,dx$:</p>
+      $$\int u\,\frac{dv}{dx}\,dx = uv-\int v\,\frac{du}{dx}\,dx$$
+      <button class="tab" onclick="finish()">Mark as done (demo)</button>
+      <span id="msg"></span>
+    </div>
+  </main>
+  <script src="../assets/nav.js"></script>
+  <script src="../assets/app.js"></script>
+  <script>
+    // File name, this constant, and the id in plan.json must be the same.
+    const MODULE_ID = "TEMPLATE";
+    function finish() {
+      Progress.set(MODULE_ID, { done: true, score: 1, total: 1 });
+      document.getElementById("msg").textContent = "Saved ✓";
+    }
+  </script>
+  <script src="../assets/analytics.js"></script>
+  <script data-goatcounter="https://xomjak.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

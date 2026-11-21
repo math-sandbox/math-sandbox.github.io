@@ -1,0 +1,344 @@
+[
+  {
+    "id": "P23-1.1-QC1-gen",
+    "section": "P23-1.1",
+    "kind": "generated",
+    "title": "Larger root of a single-modulus linear equation",
+    "marks": 2,
+    "source": "P23 Ch1 theory P23-1.1 Quick check 1 (|2x-5|=9, larger root 7)",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 1,
+        "max": 9,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": 3,
+        "max": 12,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "E": "(b+c)/a",
+      "lo": "(b-c)/a"
+    },
+    "constraints": [
+      "a>=2",
+      "c>=3"
+    ],
+    "original": {
+      "a": 2,
+      "b": 5,
+      "c": 9
+    },
+    "stem": "Solve \\(\\lvert {a|int}x-{b|int}\\rvert={c|int}\\). Give the larger root.",
+    "answer": {
+      "expression": "(b+c)/a",
+      "format": "{E|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "\\({a|int}x-{b|int}={c|int}\\) or \\({a|int}x-{b|int}=-{c|int}\\), so the roots are \\(\\dfrac{{b|int}+{c|int}}{{a|int}}\\) and \\(\\dfrac{{b|int}-{c|int}}{{a|int}}\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Drop the modulus to obtain a pair of linear equations."
+      },
+      {
+        "name": "E",
+        "text_tex": "The larger root is \\(\\dfrac{{b|int}+{c|int}}{{a|int}}\\).",
+        "result": "(b+c)/a",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Larger root, since a is positive."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "letter",
+        "stem": "Solve \\(\\lvert {a|int}u-{b|int}\\rvert={c|int}\\). Give the larger root.",
+        "note": "unknown u"
+      },
+      {
+        "id": "worded",
+        "stem": "Find the larger solution of the equation \\(\\lvert {a|int}x-{b|int}\\rvert={c|int}\\).",
+        "note": "worded as find the larger solution"
+      }
+    ]
+  },
+  {
+    "id": "P23-1.1-QC2-gen",
+    "section": "P23-1.1",
+    "kind": "generated",
+    "title": "Sum of the two roots of an equation with a modulus on each side",
+    "marks": 2,
+    "source": "P23 Ch1 theory P23-1.1 Quick check 2 (|3x+1|=|x-5|, sum of roots -2)",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "p",
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 2,
+        "max": 9,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "r1": "-(p+q)/(a-1)",
+      "r2": "(q-p)/(a+1)",
+      "E": "-(p+q)/(a-1)+(q-p)/(a+1)"
+    },
+    "constraints": [
+      "a>=2",
+      "p>=1",
+      "q>=2"
+    ],
+    "original": {
+      "a": 3,
+      "p": 1,
+      "q": 5
+    },
+    "stem": "Solve \\(\\lvert {a|int}x+{p|int}\\rvert=\\lvert x-{q|int}\\rvert\\). Give the sum of the two roots.",
+    "answer": {
+      "expression": "-(p+q)/(a-1)+(q-p)/(a+1)",
+      "format": "{E|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "\\({a|int}x+{p|int}=x-{q|int}\\) gives one root, and \\({a|int}x+{p|int}=-(x-{q|int})\\) gives the other. Both roots satisfy the original equation because each side is a modulus.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "A pair of linear equations, or the equivalent difference of squares."
+      },
+      {
+        "name": "E",
+        "text_tex": "The sum of the roots is \\(\\dfrac{-({p|int}+{q|int})}{{a|int}-1}+\\dfrac{{q|int}-{p|int}}{{a|int}+1}\\).",
+        "result": "-(p+q)/(a-1)+(q-p)/(a+1)",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Sum of both roots."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "letter",
+        "stem": "Solve \\(\\lvert {a|int}u+{p|int}\\rvert=\\lvert u-{q|int}\\rvert\\). Give the sum of the two roots.",
+        "note": "unknown u"
+      },
+      {
+        "id": "worded",
+        "stem": "Find the sum of the solutions of \\(\\lvert {a|int}x+{p|int}\\rvert=\\lvert x-{q|int}\\rvert\\).",
+        "note": "worded as find the sum"
+      }
+    ]
+  },
+  {
+    "id": "P23-1.1-QC3-gen",
+    "section": "P23-1.1",
+    "kind": "generated",
+    "title": "The only valid root of a modulus equal to a linear expression",
+    "marks": 3,
+    "source": "P23 Ch1 theory P23-1.1 Quick check 3 (|x-4|=3x-2, only valid root 3/2)",
+    "params": [
+      {
+        "name": "b",
+        "min": 3,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": 2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "d",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "rej": "(b-d)/(1-c)",
+      "E": "(b+d)/(1+c)",
+      "rhs": "(c*b-d)/(1+c)"
+    },
+    "constraints": [
+      "b>=3",
+      "c>=2",
+      "d>=1",
+      "b>d",
+      "c*b>d"
+    ],
+    "original": {
+      "b": 4,
+      "c": 3,
+      "d": 2
+    },
+    "stem": "Solve \\(\\lvert x-{b|int}\\rvert={c|int}x-{d|int}\\). Give the only valid root.",
+    "answer": {
+      "expression": "(b+d)/(1+c)",
+      "format": "{E|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The candidates come from \\(x-{b|int}={c|int}x-{d|int}\\) and from \\(x-{b|int}=-({c|int}x-{d|int})\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Drop the modulus to obtain two linear equations."
+      },
+      {
+        "name": "check",
+        "text_tex": "The first candidate must be rejected: the right-hand side is negative there, but a modulus is never negative.",
+        "result": "None",
+        "format": "num",
+        "mark": "B1",
+        "note": "Reject the invalid candidate by checking the original equation."
+      },
+      {
+        "name": "E",
+        "text_tex": "The remaining root is \\(\\dfrac{{b|int}+{d|int}}{{c|int}+1}\\), and it satisfies the original equation.",
+        "result": "(b+d)/(1+c)",
+        "format": "raw",
+        "mark": "A1",
+        "note": "The only valid root."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "letter",
+        "stem": "Solve \\(\\lvert u-{b|int}\\rvert={c|int}u-{d|int}\\). Give the only valid root.",
+        "note": "unknown u"
+      },
+      {
+        "id": "worded",
+        "stem": "Find the only solution of \\(\\lvert x-{b|int}\\rvert={c|int}x-{d|int}\\).",
+        "note": "worded as find the only solution"
+      }
+    ]
+  },
+  {
+    "id": "P23-1.1-PP-9709-22-MJ16-Q3i",
+    "section": "P23-1.1",
+    "kind": "pastpaper",
+    "marking": "manual",
+    "title": "Solve the equation |3u+1|=|2u-5|",
+    "marks": 3,
+    "source": {
+      "paper": "9709/22/M/J/16 Q3(i)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s16_qp_22.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s16_ms_22.pdf",
+      "note": "Stem verbatim from the QP PDF (checked on the rendered page; pdftotext had flattened the modulus bars). Steps and marks from the official MS PDF (the printed extract 54 is 4/5, confirmed by independently solving the equation). Part (ii) (a cotangent equation) is omitted because it uses trigonometric functions outside this section, and the engine has no sin, cos or tan. Fully manual, steps only: the official answer is a pair of roots in one part, so a single auto-marked number is not used."
+    },
+    "stem": "Solve the equation \\(\\lvert 3u+1\\rvert=\\lvert 2u-5\\rvert\\).",
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "State or imply the non-modular equation \\((3u+1)^2=(2u-5)^2\\), or the corresponding pair of linear equations \\(3u+1=2u-5\\) and \\(3u+1=-(2u-5)\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 State or imply non-modular equation (3u+1)^2 = (2u-5)^2 or corresponding pair of linear equations."
+      },
+      {
+        "name": "att",
+        "text_tex": "Attempt the solution of the resulting 3-term quadratic equation, or of the two linear equations.",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: M1 Attempt solution of 3-term quadratic equation or of 2 linear equations."
+      },
+      {
+        "name": "ans",
+        "text_tex": "Obtain the roots \\(-6\\) and \\(\\dfrac{4}{5}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: A1 Obtain -6 and 4/5 (the printed MS extract 54 is 4/5)."
+      }
+    ]
+  },
+  {
+    "id": "P23-1.1-PP-9709-22-ON19-Q2i",
+    "section": "P23-1.1",
+    "kind": "pastpaper",
+    "marking": "manual",
+    "title": "Solve the equation |4x+5|=|x-7|",
+    "marks": 3,
+    "source": {
+      "paper": "9709/22/O/N/19 Q2(i)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w19_qp_22.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w19_ms_22.pdf",
+      "note": "Stem verbatim from the QP PDF (checked on the rendered page; pdftotext had flattened the modulus bars). Steps and marks from the official MS PDF (the printed extract 52 is 2/5, confirmed by independently solving the equation). Part (ii) (an equation in 2^y, using logarithms) is omitted because it is outside this section. Fully manual, steps only: the official answer is a pair of roots in one part, so a single auto-marked number is not used."
+    },
+    "stem": "Solve the equation \\(\\lvert 4x+5\\rvert=\\lvert x-7\\rvert\\).",
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "State or imply the non-modular equation \\((4x+5)^2=(x-7)^2\\), or a pair of different linear equations.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 State or imply non-modular equation (4x+5)^2 = (x-7)^2 or pair of different linear equations."
+      },
+      {
+        "name": "att",
+        "text_tex": "Attempt the solution of the resulting 3-term quadratic equation, or of the pair of linear equations.",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: M1 Attempt solution of 3-term quadratic equation or pair of linear equations."
+      },
+      {
+        "name": "ans",
+        "text_tex": "Obtain the roots \\(\\dfrac{2}{5}\\) and \\(-4\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: A1 Obtain 2/5 and -4. SC: for x=-4 only, from correct work, allow B1."
+      }
+    ]
+  }
+]

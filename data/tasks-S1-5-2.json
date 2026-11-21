@@ -1,0 +1,399 @@
+[
+    {
+        "id": "S1-5.2-QC1-gen",
+        "section": "S1-5.2",
+        "kind": "generated",
+        "title": "Arrangements of n different objects in a row",
+        "marks": 1,
+        "source": "Theory S1-5.2 Quick check 1; n different objects in a line: n!",
+        "params": [
+            {
+                "name": "n",
+                "min": 4,
+                "max": 10,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "A": "[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][n]"
+        },
+        "constraints": [
+            "n>=4"
+        ],
+        "original": {
+            "n": 7
+        },
+        "stem": "In how many different ways can {n|int} different books be arranged in a row on a shelf?",
+        "answer": {
+            "expression": "[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][n]",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "A",
+                "text_tex": "The number of arrangements is \\({n|int}!={A|int}\\).",
+                "result": "[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][n]",
+                "format": "int",
+                "mark": "A1",
+                "note": "There are n choices for the first place, n - 1 for the second, and so on."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 7 books, 5040 arrangements"
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-5.2"
+            ],
+            "topic": "Permutations and combinations",
+            "chapter": "S1-5",
+            "marks": 1,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-5-2.json",
+                "locator": "S1-5.2-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-5.2-QC2-gen",
+        "section": "S1-5.2",
+        "kind": "generated",
+        "title": "Arrangements of counters with repeated colours",
+        "marks": 2,
+        "source": "Theory S1-5.2 Quick check 2; (a+b+c)!/(a!b!c!)",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 2,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "c",
+                "min": 2,
+                "max": 3,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "N": "a+b+c",
+            "T": "[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][a+b+c]",
+            "D": "[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][a]*[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][b]*[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][c]",
+            "A": "[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][a+b+c]/([1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][a]*[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][b]*[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][c])"
+        },
+        "constraints": [
+            "a>=2"
+        ],
+        "original": {
+            "a": 3,
+            "b": 2,
+            "c": 2
+        },
+        "stem": "A row is made from {a|int} identical red counters, {b|int} identical blue counters and {c|int} identical green counters. How many different arrangements of the {N|int} counters are possible?",
+        "answer": {
+            "expression": "A",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "The number of arrangements is \\(\\dfrac{{N|int}!}{{a|int}!\\,{b|int}!\\,{c|int}!}\\).",
+                "result": "T/D",
+                "format": "int",
+                "mark": "M1",
+                "note": "Divide by the factorial of the number of identical objects of each colour."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(=\\dfrac{{T|int}}{{D|int}}={A|int}\\)",
+                "result": "T/D",
+                "format": "int",
+                "mark": "A1",
+                "note": "Evaluate the quotient."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 3 red, 2 blue and 2 green counters, 210 arrangements"
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-5.2"
+            ],
+            "topic": "Permutations and combinations",
+            "chapter": "S1-5",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-5-2.json",
+                "locator": "S1-5.2-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-5.2-QC3-gen",
+        "section": "S1-5.2",
+        "kind": "generated",
+        "title": "Permutations of r objects from n",
+        "marks": 2,
+        "source": "Theory S1-5.2 Quick check 3; nPr = n!/(n-r)!",
+        "params": [
+            {
+                "name": "n",
+                "min": 6,
+                "max": 12,
+                "step": 1
+            },
+            {
+                "name": "r",
+                "min": 2,
+                "max": 4,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "m": "n-r",
+            "A": "[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][n]/[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][n-r]"
+        },
+        "constraints": [
+            "r<n"
+        ],
+        "original": {
+            "n": 8,
+            "r": 3
+        },
+        "stem": "{r|int} different prizes are to be given to {r|int} of {n|int} people, and no person can receive more than one prize. In how many different ways can the prizes be given?",
+        "answer": {
+            "expression": "[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][n]/[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][n-r]",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "The number of ways is \\({}^{{n|int}}P_{{r|int}}=\\dfrac{{n|int}!}{{m|int}!}\\).",
+                "result": "[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][n]/[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][n-r]",
+                "format": "int",
+                "mark": "M1",
+                "note": "Order matters, because the prizes are different."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(={A|int}\\)",
+                "result": "[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][n]/[1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600,6227020800,87178291200,1307674368000][n-r]",
+                "format": "int",
+                "mark": "A1",
+                "note": "Evaluate the product of the top r factors of n factorial."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 3 prizes among 8 people, 336 ways"
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-5.2"
+            ],
+            "topic": "Permutations and combinations",
+            "chapter": "S1-5",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-5-2.json",
+                "locator": "S1-5.2-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-5.2-PP-9709-51-MJ20-Q2",
+        "section": "S1-5.2",
+        "kind": "pastpaper",
+        "title": "Arrangements of the letters of JEWELLERY",
+        "marks": 6,
+        "source": {
+            "paper": "9709/51/M/J/20 Q2",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s20_qp_51.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s20_ms_51.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>(a) Find the number of different arrangements that can be made from the 9 letters of the word JEWELLERY in which the three Es are together and the two Ls are together. [2]</p><p>(b) Find the number of different arrangements that can be made from the 9 letters of the word JEWELLERY in which the two Ls are not next to each other. [4]</p>",
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-5.2"
+            ],
+            "topic": "Permutations and combinations",
+            "chapter": "S1-5",
+            "marks": 6,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-5-2.json",
+                "locator": "S1-5.2-PP-9709-51-MJ20-Q2"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) Treat EEE and LL as single units, which gives 6 different units to arrange: \\(6!\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, 6!."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(a) \\(720\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 720."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(b) Total number of arrangements: \\(\\dfrac{9!}{3!\\,2!}=30\\,240\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, total number 9!/(3!2!) (30240)."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(b) Number with the Ls together: \\(\\dfrac{8!}{3!}=6720\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, number with Ls together = 8!/3! (6720)."
+            },
+            {
+                "name": "s5",
+                "text_tex": "(b) Number with the Ls not together: \\(\\dfrac{9!}{3!\\,2!}-\\dfrac{8!}{3!}=30\\,240-6720\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, number with Ls not together = 9!/(3!2!) − 8!/3!."
+            },
+            {
+                "name": "s6",
+                "text_tex": "(b) \\(23\\,520\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 23 520. Alternative method: 7! × 8 × 7 / (3! × 2), with M1 for 7! × k in numerator, k integer ≥ 1; M1 for 8 × 7 × m in numerator or 8C2 × m, m integer ≥ 1; M1 for 3! in denominator; A1 for 23 520."
+            }
+        ]
+    },
+    {
+        "id": "S1-5.2-PP-9709-52-FM20-Q4",
+        "section": "S1-5.2",
+        "kind": "pastpaper",
+        "title": "Arrangements of coloured candles in a line",
+        "marks": 6,
+        "source": {
+            "paper": "9709/52/F/M/20 Q4",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m20_qp_52.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m20_ms_52.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Richard has 3 blue candles, 2 red candles and 6 green candles. The candles are identical apart from their colours. He arranges the 11 candles in a line.</p><p>(a) Find the number of different arrangements of the 11 candles if there is a red candle at each end. [2]</p><p>(b) Find the number of different arrangements of the 11 candles if all the blue candles are together and the red candles are not together. [4]</p>",
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-5.2"
+            ],
+            "topic": "Permutations and combinations",
+            "chapter": "S1-5",
+            "marks": 6,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-5-2.json",
+                "locator": "S1-5.2-PP-9709-52-FM20-Q4"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) With a red candle at each end, the 3 blue and 6 green candles fill the 9 places in between: \\(\\dfrac{9!}{3!\\,6!}\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, 9! alone on numerator, 3! × k or 6! × k on denominator."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(a) \\(=84\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 84."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(b) Treat the 3 blue candles as one unit and arrange it with the 6 green candles: \\(\\dfrac{7!}{6!}=7\\) ways.",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, 7!/6! × k or 7k seen, k an integer > 0."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(b) Place the 2 red candles in different gaps between and around these 7 items: \\(\\dfrac{7!}{6!}\\times\\dfrac{8\\times7}{2}\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, m × n(n – 1)/2 or m × nC2 or m × nP2, n = 7, 8 or 9, m an integer > 0."
+            },
+            {
+                "name": "s5",
+                "text_tex": "(b) There are 8 such gaps, so \\(n=8\\) is used.",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, n = 8 used in above expression."
+            },
+            {
+                "name": "s6",
+                "text_tex": "(b) \\(=196\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 196. Alternative: arrangements with the blues together minus arrangements with the blues together and the reds together, 9!/(2!6!) − 8!/6! = 252 – 56; M1 for 9! seen alone or as numerator with subtraction, M1 for 8! seen alone or as numerator in a second term and no other terms, M1 for all terms divided by 6! × k, k an integer, A1 for 196."
+            }
+        ]
+    }
+]

@@ -1,0 +1,69 @@
+<section class="theory" data-section="P23-1.5">
+<h2>1.5 The factor theorem</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 2 &amp; 3 Coursebook (Hugh Neill, Douglas Quadling and Julian Gilbey), Chapter 1 Algebra, printed pp.14–17 (Key points 1.3–1.4, Worked examples 1.9–1.11, Exercise 1E). Own wording and new numbers. The remainder theorem is left to the next subsection.</p>
+<p class="key-words"><strong>Key words:</strong> <em>factor theorem</em>, <em>polynomial</em></p>
+<p>If a polynomial \(P(x)\) divides exactly by a linear factor \(x-c\) to give a polynomial \(Q(x)\), then
+\[
+P(x)=(x-c)Q(x).
+\]
+Substituting \(x=c\) gives \(P(c)=0\). This is the factor theorem.</p>
+<p><strong>Key point.</strong> If, for a polynomial \(P(x)\), \(P(c)=0\), then \(x-c\) is a factor of \(P(x)\).</p>
+<p>The factor theorem can be extended. If \(P\bigl(\dfrac{b}{a}\bigr)=0\), then \(ax-b\) is a factor of \(P(x)\).</p>
+<p>A common error is substituting x=c to test the factor x+c, which checks the wrong value.</p>
+<p>For example, substituting \(x=4\) into \(x^3-6x^2+5x+12\) gives
+\[
+4^3-6(4)^2+5(4)+12=64-96+20+12=0,
+\]
+so \(x-4\) is a factor of \(x^3-6x^2+5x+12\).</p>
+<div class="worked-example">
+<h4>Worked example 1: Showing a linear factor</h4>
+<p class="src">Book: Worked example 1.9, p.15; new cubic</p>
+<p>Use the factor theorem to show that \(x-4\) is a factor of \(x^3-6x^2+5x+12\).</p>
+<ol class="steps">
+<li>Let \(f(x)=x^3-6x^2+5x+12\). The factor theorem says that if \(f(4)=0\), then \(x-4\) is a factor. <span class="mark">M1</span></li>
+<li>\(f(4)=4^3-6(4)^2+5(4)+12=64-96+20+12=0\). Hence \(x-4\) is a factor of \(x^3-6x^2+5x+12\). <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(f(4)=0\), so \(x-4\) is a factor.</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: Unknown coefficients, then complete factorisation</h4>
+<p class="src">Book: Worked example 1.10, pp.15–16; new cubic</p>
+<p>It is given that \(2x^2-3x-2\) is a factor of \(2x^3+ax^2-11x+b\). Find the value of \(a\) and the value of \(b\), and hence factorise the cubic completely.</p>
+<ol class="steps">
+<li>Let \(f(x)=2x^3+ax^2-11x+b\). Factorising the known quadratic gives \(2x^2-3x-2=(2x+1)(x-2)\), so \(2x+1\) and \(x-2\) are factors of \(f(x)\). By the factor theorem, \(f\bigl(-\dfrac{1}{2}\bigr)=0\) and \(f(2)=0\). <span class="mark">M1</span></li>
+<li>\(f(2)=0\) gives \(2(8)+a(4)-11(2)+b=0\), so \(16+4a-22+b=0\), or \(4a+b=6\). \(f\bigl(-\dfrac{1}{2}\bigr)=0\) gives \(2\bigl(-\dfrac{1}{8}\bigr)+a\bigl(\dfrac{1}{4}\bigr)-11\bigl(-\dfrac{1}{2}\bigr)+b=0\). Multiplying through by \(4\) produces \(-1+a+22+4b=0\), or \(a+4b=-21\). <span class="mark">M1</span></li>
+<li>From \(4a+b=6\), \(b=6-4a\). Substituting into \(a+4(6-4a)=-21\) gives \(a+24-16a=-21\), so \(-15a=-45\) and \(a=3\). Then \(b=6-12=-6\). <span class="mark">A1</span></li>
+<li>So \(f(x)=2x^3+3x^2-11x-6=(2x^2-3x-2)(x+3)=(2x+1)(x-2)(x+3)\). <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(a=3\), \(b=-6\); \(f(x)=(2x+1)(x-2)(x+3)\).</p>
+</div>
+<h3>Common mistakes</h3>
+<ul>
+<li>Testing \(x=c\) in order to decide whether \(x+c\) is a factor, instead of whether \(x-c\) is a factor. For \(x+3\), the substitution is \(x=-3\).</li>
+<li>For a factor \(ax-b\), substituting \(x=a/b\) instead of \(x=b/a\).</li>
+<li>Stopping after one linear factor has been found, when the question asks for a complete factorisation.</li>
+</ul>
+<h3>Quick checks</h3>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>Evaluate \(f(4)\) for \(f(x)=x^3-6x^2+5x+12\).</p>
+<details><summary>Worked solution</summary>
+<p>\(f(4)=64-96+20+12=0\).</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>Given that \(f(-5)=0\), what is the constant term in the linear factor \(x-c\) of \(f(x)\)? (Give the value of \(c\).)</p>
+<details><summary>Worked solution</summary>
+<p>By the factor theorem, \(x-(-5)=x+5\) is a factor, so \(c=-5\).</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>Given that \(f\bigl(\dfrac{2}{3}\bigr)=0\), what is the coefficient of \(x\) in the linear factor \(ax-b\) of \(f(x)\) with positive integer \(a\) and with \(a\) and \(b\) coprime?</p>
+<details><summary>Worked solution</summary>
+<p>The extended factor theorem gives the factor \(3x-2\), so the coefficient of \(x\) is \(3\).</p>
+</details>
+</div>
+<p class="marks-key">B marks are for a correct statement; M marks are for a correct method; A marks are for an accurate result.</p>
+</section>

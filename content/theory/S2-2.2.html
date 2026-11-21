@@ -1,0 +1,40 @@
+<section class="theory" data-section="S2-2.2">
+<h2>2.2 Adapting the Poisson distribution for different intervals</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Probability &amp; Statistics 2 Coursebook (Jayne Kranat), Chapter 2 The Poisson distribution, printed pp.33–35 (Key point 2.4, Worked examples 2.3–2.4, Exercise 2B). Own wording and new numbers. The Poisson approximation to the binomial distribution, the normal approximation, and hypothesis tests are left to later subsections, as in the book.</p>
+<p class="key-words"><strong>Key words:</strong> <em>Poisson distribution</em>, <em>Poisson parameter</em></p>
+<p>A Poisson distribution is built on an average rate: a mean number of events <em>per</em> a given interval of time or space. If that rate is constant, then the mean in any other interval is proportional to the length of the interval. A common error is using the original mean for a different interval, without first scaling it.</p>
+<p>For example, if events occur at a mean rate of \(2\) every \(5\) minutes, then in a \(15\)-minute interval the Poisson parameter is \(3\times 2=6\). The interval may be longer or shorter than the one in which the rate was first stated, and the new mean need not be a whole number.</p>
+<p><img src="assets/S2-2.2-rate-and-interval.svg" alt="A five-minute interval with mean 2 next to a fifteen-minute interval, three times as long, with mean 6."/></p>
+<div class="worked-example">
+<h4>Worked example 1: Scaling the mean to a new interval</h4>
+<p class="src">Book: Worked example 2.3, p.34; new rate and intervals</p>
+<p>People join a queue at random and independently at an average rate of \(2\) every \(5\) minutes. Write down the Poisson parameter for the number of people joining in a \(15\)-minute period, and find the Poisson parameter for a \(2\)-minute period.</p>
+<ol class="steps">
+<li>A \(15\)-minute period is three times \(5\) minutes, so the parameter is \(3\times 2=6\). <span class="mark">B1</span></li>
+<li>A \(2\)-minute period is \(\dfrac{2}{5}\) of \(5\) minutes, so the parameter is \(\dfrac{2}{5}\times 2=0.8\). <span class="mark">B1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(6\) and \(0.8\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: Using the scaled parameter</h4>
+<p class="src">Book: Worked example 2.3(a), p.34; new numbers, asking for the parameter rather than a calculator probability</p>
+<p>Faults occur independently and at random along a cable at a mean rate of \(1.5\) faults per \(10\) metres. A length of \(40\) metres is inspected. Write down the distribution of the number of faults \(X\) in that length, and state \(\mathrm{E}(X)\).</p>
+<ol class="steps">
+<li>Forty metres is four times \(10\) metres, so the Poisson parameter is \(4\times 1.5=6\). Thus \(X\sim\mathrm{Po}(6)\) and \(\mathrm{E}(X)=6\). <span class="mark">M1 A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(X\sim\mathrm{Po}(6)\) and \(\mathrm{E}(X)=6\)</p>
+</div>
+<h3>Quick check</h3>
+<div class="quick-check" data-q="QC1">
+<p>Events occur at a mean rate of \(5\) every \(10\) minutes. What is the Poisson parameter for a \(30\)-minute interval?</p>
+<p class="final"><strong>Answer:</strong> \(15\)</p>
+</div>
+<div class="quick-check" data-q="QC2">
+<p>Calls arrive at a mean rate of \(1.2\) every \(4\) minutes. What is the Poisson parameter for a \(10\)-minute interval?</p>
+<p class="final"><strong>Answer:</strong> \(3\)</p>
+</div>
+<div class="quick-check" data-q="QC3">
+<p>A machine produces faults at a mean rate of \(3\) per hour. What is the Poisson parameter for a \(20\)-minute interval?</p>
+<p class="final"><strong>Answer:</strong> \(1\)</p>
+</div>
+</section>

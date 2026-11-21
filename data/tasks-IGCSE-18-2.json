@@ -1,0 +1,309 @@
+[
+  {
+    "id": "IGCSE-18.2-QC1-gen",
+    "section": "IGCSE-18.2",
+    "kind": "generated",
+    "title": "Value on y = a/x",
+    "marks": 1,
+    "source": "Theory IGCSE-18.2 Quick check 1 (y=20/x at x=5 is 4); book table work pp.596–598",
+    "params": [
+      {
+        "name": "k",
+        "min": -60,
+        "max": 60,
+        "step": 1
+      },
+      {
+        "name": "x",
+        "min": 1,
+        "max": 20,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "y": "k/x"
+    },
+    "constraints": [
+      "k!=0",
+      "k%x==0",
+      "k/x!=0",
+      "abs(k)>abs(x)"
+    ],
+    "original": {
+      "k": 20,
+      "x": 5
+    },
+    "stem": "Find the value of \\(y=\\dfrac{{k|int}}{x}\\) when \\(x={x|int}\\).",
+    "answer": {
+      "expression": "k/x",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(y=\\dfrac{{k|int}}{{x|int}}={A|int}\\)",
+        "result": "k/x",
+        "format": "int",
+        "mark": "A1",
+        "note": "Substitute the given x; x=0 is never used."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "k is a multiple of x so y is an integer"
+      },
+      {
+        "id": "table",
+        "stem": "A table of values for \\(y=\\dfrac{{k|int}}{x}\\) is being completed. Find \\(y\\) when \\(x={x|int}\\)."
+      },
+      {
+        "id": "negative",
+        "stem": "Find the value of \\(y=\\dfrac{{k|int}}{x}\\) when \\(x={x|int}\\).",
+        "params": [
+          {
+            "name": "k",
+            "min": -60,
+            "max": 60,
+            "step": 1
+          },
+          {
+            "name": "x",
+            "min": -20,
+            "max": -1,
+            "step": 1
+          }
+        ],
+        "note": "negative x so that both branches appear"
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-18.2-QC2-gen",
+    "section": "IGCSE-18.2",
+    "kind": "generated",
+    "title": "Value on y = -a/x",
+    "marks": 1,
+    "source": "Theory IGCSE-18.2 Quick check 2 and Worked example 8 style (y=-12/x at x=-3 is 4); book pp.597–598",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 80,
+        "step": 1
+      },
+      {
+        "name": "x",
+        "min": -24,
+        "max": -1,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "y": "-a/x"
+    },
+    "constraints": [
+      "a%x==0",
+      "(-a)/x!=0"
+    ],
+    "original": {
+      "a": 12,
+      "x": -3
+    },
+    "stem": "Find the value of \\(y=-\\dfrac{{a|int}}{x}\\) when \\(x={x|int}\\).",
+    "answer": {
+      "expression": "-a/x",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(y=-\\dfrac{{a|int}}{{x|int}}={A|int}\\)",
+        "result": "-a/x",
+        "format": "int",
+        "mark": "A1",
+        "note": "Include the minus sign; a is positive in this template."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "negative x (matches original x=-3); a positive"
+      },
+      {
+        "id": "positive-x",
+        "stem": "Find the value of \\(y=-\\dfrac{{a|int}}{x}\\) when \\(x={x|int}\\).",
+        "params": [
+          {
+            "name": "a",
+            "min": 2,
+            "max": 80,
+            "step": 1
+          },
+          {
+            "name": "x",
+            "min": 1,
+            "max": 24,
+            "step": 1
+          }
+        ],
+        "note": "positive x branch"
+      },
+      {
+        "id": "table",
+        "stem": "Complete the entry in a table for \\(y=-\\dfrac{{a|int}}{x}\\) when \\(x={x|int}\\)."
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-18.2-QC3-gen",
+    "section": "IGCSE-18.2",
+    "kind": "generated",
+    "title": "X-intercept of y = a/x + q",
+    "marks": 2,
+    "source": "Theory IGCSE-18.2 Quick check 3 (y=12/x+2 has x-intercept -6); book p.599",
+    "params": [
+      {
+        "name": "a",
+        "min": -48,
+        "max": 48,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 1,
+        "max": 12,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "xi": "-a/q"
+    },
+    "constraints": [
+      "a!=0",
+      "a%q==0",
+      "(-a)/q!=0"
+    ],
+    "original": {
+      "a": 12,
+      "q": 2
+    },
+    "stem": "Find the \\(x\\)-intercept of \\(y=\\dfrac{{a|int}}{x}+({q|int})\\). Give the \\(x\\)-coordinate.",
+    "answer": {
+      "expression": "-a/q",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "Set \\(y=0\\): \\(0=\\dfrac{{a|int}}{x}+({q|int})\\)",
+        "result": "0",
+        "format": "int",
+        "mark": "M1",
+        "note": "The intercept is where y=0."
+      },
+      {
+        "name": "A",
+        "text_tex": "\\(x=-\\dfrac{{a|int}}{{q|int}}={A|int}\\)",
+        "result": "-a/q",
+        "format": "int",
+        "mark": "A1",
+        "note": "x-coordinate of the intercept; asymptotes are x=0 and y=q."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "q positive, includes original q=2"
+      },
+      {
+        "id": "neg-q",
+        "stem": "Find the \\(x\\)-intercept of \\(y=\\dfrac{{a|int}}{x}+({q|int})\\). Give the \\(x\\)-coordinate.",
+        "params": [
+          {
+            "name": "a",
+            "min": -48,
+            "max": 48,
+            "step": 1
+          },
+          {
+            "name": "q",
+            "min": -12,
+            "max": -1,
+            "step": 1
+          }
+        ],
+        "note": "negative q, so intercept sign flips"
+      },
+      {
+        "id": "words",
+        "stem": "The graph of \\(y=\\dfrac{{a|int}}{x}+({q|int})\\) meets the \\(x\\)-axis at \\(P\\). Find the \\(x\\)-coordinate of \\(P\\)."
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-18.2-QC4-gen",
+    "section": "IGCSE-18.2",
+    "kind": "generated",
+    "title": "Constant a = xy for a reciprocal graph",
+    "marks": 1,
+    "source": "Theory IGCSE-18.2 Quick check 4 (graph of y=a/x through (8,-3) has a=-24); book pp.596–598 and p.601 (constant product)",
+    "params": [
+      {
+        "name": "x",
+        "min": 1,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "name": "y",
+        "min": -12,
+        "max": 12,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "a": "x*y"
+    },
+    "constraints": [
+      "y!=0"
+    ],
+    "original": {
+      "x": 8,
+      "y": -3
+    },
+    "stem": "The graph of \\(y=\\dfrac{a}{x}\\) passes through the point \\(({x|int},\\ {y|int})\\). Find \\(a\\).",
+    "answer": {
+      "expression": "x*y",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(a=xy={x|int}\\times({y|int})={A|int}\\)",
+        "result": "x*y",
+        "format": "int",
+        "mark": "A1",
+        "note": "On y=a/x the product xy equals a."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "a = xy at a given point"
+      },
+      {
+        "id": "through",
+        "stem": "A hyperbola \\(y=\\dfrac{a}{x}\\) goes through \\(({x|int},\\ {y|int})\\). Find the value of \\(a\\)."
+      },
+      {
+        "id": "product",
+        "stem": "Given that \\(xy=a\\) and that the point \\(({x|int},\\ {y|int})\\) lies on the graph, find \\(a\\)."
+      }
+    ]
+  }
+]

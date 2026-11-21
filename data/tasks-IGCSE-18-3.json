@@ -1,0 +1,265 @@
+[
+  {
+    "id": "IGCSE-18.3-QC1-gen",
+    "section": "IGCSE-18.3",
+    "kind": "generated",
+    "title": "Y-value to read after rearranging",
+    "marks": 2,
+    "source": "Theory IGCSE-18.3 Quick check 1 (graph of y=x^2-2x-7 used to solve x^2-2x=1 by reading y=-6); book Worked example 10 style, pp.602-603",
+    "params": [
+      {
+        "name": "p",
+        "min": 1,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "name": "d",
+        "min": 2,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "name": "m",
+        "min": -6,
+        "max": 12,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "T": "m-d"
+    },
+    "constraints": [
+      "m-d!=0",
+      "m!=d"
+    ],
+    "original": {
+      "p": 2,
+      "d": 7,
+      "m": 1
+    },
+    "stem": "The graph of \\(y=x^2-({p|int})x-({d|int})\\) has been drawn. To use this graph to solve \\(x^2-({p|int})x=({m|int})\\), at what \\(y\\)-value should the intersections be read?",
+    "answer": {
+      "expression": "m-d",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "Subtract \\(({d|int})\\) from both sides: \\(x^2-({p|int})x-({d|int})=({m|int})-({d|int})\\)",
+        "result": "0",
+        "format": "int",
+        "mark": "M1",
+        "note": "Match the left-hand side to the graph."
+      },
+      {
+        "name": "A",
+        "text_tex": "Read the intersections with \\(y={A|int}\\)",
+        "result": "m-d",
+        "format": "int",
+        "mark": "A1",
+        "note": "The required y-value is m-d."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original p=2, d=7, m=1"
+      },
+      {
+        "id": "equals-k",
+        "stem": "A graph of \\(y=x^2-({p|int})x-({d|int})\\) is being used to solve \\(x^2-({p|int})x=({m|int})\\). Find the \\(y\\)-coordinate of the horizontal line that should be drawn."
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-18.3-QC2-gen",
+    "section": "IGCSE-18.3",
+    "kind": "generated",
+    "title": "Line of symmetry of a quadratic graph",
+    "marks": 1,
+    "source": "Theory IGCSE-18.3 Quick check 2 (axis of y=x^2-4x-3 is x=2); book p.603 and 18.1 axis formula",
+    "params": [
+      {
+        "name": "s",
+        "min": 2,
+        "max": 16,
+        "step": 2
+      },
+      {
+        "name": "q",
+        "min": 1,
+        "max": 12,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "H": "s/2"
+    },
+    "constraints": [
+      "s%2==0",
+      "s!=0"
+    ],
+    "original": {
+      "s": 4,
+      "q": 3
+    },
+    "stem": "Write down the equation of the line of symmetry of the graph of \\(y=x^2-({s|int})x-({q|int})\\). Give the \\(x\\)-coordinate of the axis.",
+    "answer": {
+      "expression": "s/2",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The axis is \\(x=\\dfrac{{s|int}}{2}={A|int}\\)",
+        "result": "s/2",
+        "format": "int",
+        "mark": "A1",
+        "note": "For y=x^2-s x-q the axis is x=s/2."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "s even so the axis is an integer"
+      },
+      {
+        "id": "written",
+        "stem": "A graph of \\(y=x^2-({s|int})x-({q|int})\\) has been drawn. Write down the \\(x\\)-coordinate of its line of symmetry."
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-18.3-QC3-gen",
+    "section": "IGCSE-18.3",
+    "kind": "generated",
+    "title": "Table value on a quadratic graph",
+    "marks": 1,
+    "source": "Theory IGCSE-18.3 Quick check 3 (y=x^2-2x-8 at x=3 is -5); book Exercise 18.5 table work, p.604",
+    "params": [
+      {
+        "name": "p",
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "d",
+        "min": 1,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "name": "x",
+        "min": -5,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "Y": "x*x-p*x-d"
+    },
+    "constraints": [
+      "x*x-p*x-d!=0"
+    ],
+    "original": {
+      "p": 2,
+      "d": 8,
+      "x": 3
+    },
+    "stem": "A table of values for \\(y=x^2-({p|int})x-({d|int})\\) is being completed. Find \\(y\\) when \\(x={x|int}\\).",
+    "answer": {
+      "expression": "x*x-p*x-d",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(y=({x|int})^2-({p|int})\\times({x|int})-({d|int})={A|int}\\)",
+        "result": "x*x-p*x-d",
+        "format": "int",
+        "mark": "A1",
+        "note": "Substitute the given x."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original x=3, p=2, d=8"
+      },
+      {
+        "id": "plot",
+        "stem": "A point on the graph of \\(y=x^2-({p|int})x-({d|int})\\) has \\(x\\)-coordinate \\({x|int}\\). Find the corresponding \\(y\\)-coordinate."
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-18.3-PP-0580-32-MJ20-Q9",
+    "section": "IGCSE-18.3",
+    "kind": "pastpaper",
+    "title": "Table, graph, axis and roots for y = x^2 - 3x - 6",
+    "marks": 10,
+    "source": {
+      "paper": "0580/32/M/J/20 Q9",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s20_qp_32.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s20_ms_32.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2020). Official answers and mark allocation from the MS PDF. The printed grid is not reproduced. All four parts are paper/self-mark."
+    },
+    "stem": "This question is 0580/32/M/J/20 Question 9, taken from the official QP.\n\n(a) Complete the table of values for \\(y=x^2-3x-6\\).\n\nThe \\(x\\)-values are \\(-3\\), \\(-2\\), \\(-1\\), \\(0\\), \\(1\\), \\(2\\), \\(3\\), \\(4\\), \\(5\\), \\(6\\). The given \\(y\\)-values are: when \\(x=-3\\), \\(y=12\\); when \\(x=-1\\), \\(y=-2\\); when \\(x=4\\), \\(y=-2\\); when \\(x=6\\), \\(y=12\\). The missing values are those for \\(x=-2\\), \\(x=0\\), \\(x=1\\), \\(x=2\\), \\(x=3\\) and \\(x=5\\).\n\n(b) On a grid, draw the graph of \\(y=x^2-3x-6\\) for \\(-3\\leqslant x\\leqslant 6\\).\n\n(c) Write down the equation of the line of symmetry of the graph.\n\n(d) Use your graph to solve the equation \\(x^2-3x-6=0\\).",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "T1",
+        "text_tex": "(a) When \\(x=-2\\), \\(y=4\\). When \\(x=0\\), \\(y=-6\\). When \\(x=1\\), \\(y=-8\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: 4, -6, -8, -8, -6, 4; B1 for 2 or 3 correct, B2 for 4 or 5 correct, 3 marks if all six are correct."
+      },
+      {
+        "name": "T2",
+        "text_tex": "When \\(x=2\\), \\(y=-8\\). When \\(x=3\\), \\(y=-6\\). When \\(x=5\\), \\(y=4\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B2",
+        "note": "Official answer (a): 4, -6, -8, -8, -6, 4."
+      },
+      {
+        "name": "C",
+        "text_tex": "(b) Plot the points from the completed table and join them with a smooth symmetrical curve.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B4",
+        "note": "MS: Correct curve, 4 marks; B3FT for 9 or 10 correctly plotted points, B2FT for 7 or 8, B1FT for 5 or 6."
+      },
+      {
+        "name": "S",
+        "text_tex": "(c) The line of symmetry is \\(x=1.5\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: x=1.5, 1 mark. Official answer (c): x=1.5."
+      },
+      {
+        "name": "R1",
+        "text_tex": "(d) The smaller root from the graph is \\(-1.4\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: -1.4 and 4.4, B1 for each."
+      },
+      {
+        "name": "R2",
+        "text_tex": "The larger root from the graph is \\(4.4\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official answer (d): -1.4, 4.4."
+      }
+    ]
+  }
+]

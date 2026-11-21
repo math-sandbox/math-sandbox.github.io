@@ -1,0 +1,392 @@
+[
+  {
+    "id": "P23-7.3-QC1-gen",
+    "section": "P23-7.3",
+    "kind": "generated",
+    "title": "Coefficient of x in the expansion of (1+n x) to the power -1",
+    "marks": 1,
+    "source": "Theory P23-7.3 Quick check 1; coefficient of x in (1+n x)^{-1} is -n",
+    "params": [
+      {
+        "name": "n",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "-n"
+    },
+    "constraints": [
+      "n>=2"
+    ],
+    "original": {
+      "n": 3
+    },
+    "stem": "Find the coefficient of \\(x\\) in the expansion of \\((1+{n|int}x)^{-1}\\) in ascending powers of \\(x\\).",
+    "answer": {
+      "expression": "-n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The coefficient is \\((-1)\\times{n|int}={A|int}\\).",
+        "result": "-n",
+        "format": "int",
+        "mark": "A1",
+        "note": "The x term is n times the first binomial coefficient."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original (1+3x) to the power -1, coefficient -3"
+      }
+    ],
+    "tags": {
+      "course": "P23",
+      "subsections": [
+        "P23-7.3"
+      ],
+      "topic": "Algebra",
+      "chapter": "P23-7",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-7-3.json",
+        "locator": "P23-7.3-QC1-gen"
+      }
+    }
+  },
+  {
+    "id": "P23-7.3-QC2-gen",
+    "section": "P23-7.3",
+    "kind": "generated",
+    "title": "Coefficient of x squared in the expansion of (1+n x) to the power -1",
+    "marks": 1,
+    "source": "Theory P23-7.3 Quick check 2; coefficient of x^2 in (1+n x)^{-1} is n squared",
+    "params": [
+      {
+        "name": "n",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "n*n"
+    },
+    "constraints": [
+      "n>=2"
+    ],
+    "original": {
+      "n": 3
+    },
+    "stem": "Find the coefficient of \\(x^2\\) in the expansion of \\((1+{n|int}x)^{-1}\\) in ascending powers of \\(x\\).",
+    "answer": {
+      "expression": "n*n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The coefficient is \\(\\dfrac{{(-1)(-2)}}{{2}}\\times{n|int}^2={A|int}\\).",
+        "result": "n*n",
+        "format": "int",
+        "mark": "A1",
+        "note": "The x squared term uses the second binomial coefficient times n squared."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original (1+3x) to the power -1, coefficient 9"
+      }
+    ],
+    "tags": {
+      "course": "P23",
+      "subsections": [
+        "P23-7.3"
+      ],
+      "topic": "Algebra",
+      "chapter": "P23-7",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-7-3.json",
+        "locator": "P23-7.3-QC2-gen"
+      }
+    }
+  },
+  {
+    "id": "P23-7.3-QC3-gen",
+    "section": "P23-7.3",
+    "kind": "generated",
+    "title": "Coefficient of x in the expansion of the square root of 1 minus n x",
+    "marks": 1,
+    "source": "Theory P23-7.3 Quick check 3; coefficient of x in sqrt(1-n x) is -n/2",
+    "params": [
+      {
+        "name": "n",
+        "min": 2,
+        "max": 8,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "A": "-n/2"
+    },
+    "constraints": [
+      "n>=2"
+    ],
+    "original": {
+      "n": 2
+    },
+    "stem": "Find the coefficient of \\(x\\) in the expansion of \\(\\sqrt{{1-{n|int}x}}\\) in ascending powers of \\(x\\).",
+    "answer": {
+      "expression": "-n/2",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The coefficient is \\(\\dfrac{{1}}{{2}}\\times(-{n|int})={A|int}\\).",
+        "result": "-n/2",
+        "format": "int",
+        "mark": "A1",
+        "note": "The x term is n times 1/2, with a minus sign."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original sqrt(1-2x), coefficient -1"
+      }
+    ],
+    "tags": {
+      "course": "P23",
+      "subsections": [
+        "P23-7.3"
+      ],
+      "topic": "Algebra",
+      "chapter": "P23-7",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-7-3.json",
+        "locator": "P23-7.3-QC3-gen"
+      }
+    }
+  },
+  {
+    "id": "P23-7.3-PP-9709-31-MJ11-Q1",
+    "section": "P23-7.3",
+    "kind": "pastpaper",
+    "title": "Binomial expansion of the cube root of 1 minus 6x",
+    "marks": 4,
+    "source": {
+      "paper": "9709/31/M/J/11 Q1",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s11_qp_31.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s11_ms_31.pdf",
+      "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+    },
+    "stem": "<p>Expand \\(\\sqrt[3]{1-6x}\\) in ascending powers of \\(x\\) up to and including the term in \\(x^3\\), simplifying the coefficients. [4]</p>",
+    "tags": {
+      "course": "P23",
+      "subsections": [
+        "P23-7.3"
+      ],
+      "topic": "Algebra",
+      "chapter": "P23-7",
+      "marks": 4,
+      "difficulty": "hard",
+      "type": "pp",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-7-3.json",
+        "locator": "P23-7.3-PP-9709-31-MJ11-Q1"
+      }
+    },
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "A first-order term of the form \\(1+kx\\), with \\(k=\\pm 6\\) or \\(k=\\pm\\dfrac{1}{3}\\), is obtained.",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1, obtain 1 + kx, where k = ±6 or ±1/3."
+      },
+      {
+        "name": "s2",
+        "text_tex": "The first two terms are \\(1-2x\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1. The official alternative method differentiates to obtain f dash of x = -2(1-6x) to the power -2/3 and hence the same first two terms."
+      },
+      {
+        "name": "s3",
+        "text_tex": "The term in \\(x^2\\) is \\(-4x^2\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, obtain −4x²."
+      },
+      {
+        "name": "s4",
+        "text_tex": "The term in \\(x^3\\) is \\(-\\dfrac{40}{3}x^3\\), or an equivalent.",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, −40/3 x³ or equivalent."
+      }
+    ]
+  },
+  {
+    "id": "P23-7.3-PP-9709-32-MJ16-Q2",
+    "section": "P23-7.3",
+    "kind": "pastpaper",
+    "title": "Binomial expansion of 1 over the square root of 1 minus 2x",
+    "marks": 4,
+    "source": {
+      "paper": "9709/32/M/J/16 Q2",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s16_qp_32.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s16_ms_32.pdf",
+      "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+    },
+    "stem": "<p>Expand \\(\\dfrac{{1}}{{\\sqrt{{1-2x}}}}\\) in ascending powers of \\(x\\), up to and including the term in \\(x^3\\), simplifying the coefficients. [4]</p>",
+    "tags": {
+      "course": "P23",
+      "subsections": [
+        "P23-7.3"
+      ],
+      "topic": "Algebra",
+      "chapter": "P23-7",
+      "marks": 4,
+      "difficulty": "hard",
+      "type": "pp",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-7-3.json",
+        "locator": "P23-7.3-PP-9709-32-MJ16-Q2"
+      }
+    },
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "A correct unsimplified version of the \\(x\\) or \\(x^2\\) or \\(x^3\\) term is stated.",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1, state a correct un-simplified version of the x or x^2 or x^3 term. Symbolic binomial coefficients are not sufficient for the M mark."
+      },
+      {
+        "name": "s2",
+        "text_tex": "The first two terms are \\(1+x\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, state correct first two terms 1 + x."
+      },
+      {
+        "name": "s3",
+        "text_tex": "The term in \\(x^2\\) is \\(\\dfrac{{3}}{{2}}x^2\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, obtain the next two terms (3/2)x^2 + (5/2)x^3, first of these two A marks."
+      },
+      {
+        "name": "s4",
+        "text_tex": "The term in \\(x^3\\) is \\(\\dfrac{{5}}{{2}}x^3\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, (5/2)x^3. The expansion is 1 + x + (3/2)x^2 + (5/2)x^3."
+      }
+    ]
+  },
+  {
+    "id": "P23-7.3-PP-9709-31-MJ17-Q2",
+    "section": "P23-7.3",
+    "kind": "pastpaper",
+    "title": "Binomial expansion of 1 over the cube root of 1 plus 6x",
+    "marks": 4,
+    "source": {
+      "paper": "9709/31/M/J/17 Q2",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s17_qp_31.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s17_ms_31.pdf",
+      "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+    },
+    "stem": "<p>Expand \\(\\dfrac{{1}}{{\\sqrt[{{3}}]{{1+6x}}}}\\) in ascending powers of \\(x\\), up to and including the term in \\(x^3\\), simplifying the coefficients. [4]</p>",
+    "tags": {
+      "course": "P23",
+      "subsections": [
+        "P23-7.3"
+      ],
+      "topic": "Algebra",
+      "chapter": "P23-7",
+      "marks": 4,
+      "difficulty": "hard",
+      "type": "pp",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-7-3.json",
+        "locator": "P23-7.3-PP-9709-31-MJ17-Q2"
+      }
+    },
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "A correct unsimplified version of the \\(x\\) or \\(x^2\\) or \\(x^3\\) term in the expansion of \\((1+6x)^{-1/3}\\) is stated.",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1 (EITHER), state a correct unsimplified version of the x or x-squared or x-cubed term in the expansion of (1+6x) to the power -1/3. Or, differentiate and evaluate f(0) and f-dash(0)."
+      },
+      {
+        "name": "s2",
+        "text_tex": "The first two terms are \\(1-2x\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, 1 - 2x."
+      },
+      {
+        "name": "s3",
+        "text_tex": "The term in \\(x^2\\) is \\(8x^2\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, 8x^2."
+      },
+      {
+        "name": "s4",
+        "text_tex": "The term in \\(x^3\\) is \\(-\\dfrac{{112}}{{3}}x^3\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, -112/3 x^3 in the final answer."
+      }
+    ]
+  }
+]

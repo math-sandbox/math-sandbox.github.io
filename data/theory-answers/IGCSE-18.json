@@ -1,0 +1,50 @@
+[
+  {
+    "section": "IGCSE-18.1",
+    "q": "QC1",
+    "answer": 2,
+    "accept_as": "integer"
+  },
+  {
+    "section": "IGCSE-18.1",
+    "q": "QC2",
+    "answer": -5,
+    "accept_as": "integer"
+  },
+  {
+    "section": "IGCSE-18.1",
+    "q": "QC3",
+    "answer": -7,
+    "accept_as": "integer"
+  },
+  {
+    "section": "IGCSE-18.1",
+    "q": "QC4",
+    "answer": 9,
+    "accept_as": "integer"
+  },
+  {
+    "section": "IGCSE-18.2",
+    "q": "QC1",
+    "answer": 4,
+    "accept_as": "integer"
+  },
+  {
+    "section": "IGCSE-18.2",
+    "q": "QC2",
+    "answer": 4,
+    "accept_as": "integer"
+  },
+  {
+    "section": "IGCSE-18.2",
+    "q": "QC3",
+    "answer": -6,
+    "accept_as": "integer"
+  },
+  {
+    "section": "IGCSE-18.2",
+    "q": "QC4",
+    "answer": -24,
+    "accept_as": "integer"
+  }
+]

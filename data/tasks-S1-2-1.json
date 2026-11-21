@@ -1,0 +1,265 @@
+[
+  {
+    "id": "S1-2.1-QC1-gen",
+    "section": "S1-2.1",
+    "kind": "generated",
+    "title": "The mode of a short list",
+    "marks": 2,
+    "source": "S1 Ch2 theory S1-2.1 Quick check 1 (mode 9 appears three times)",
+    "params": [
+      {
+        "name": "m",
+        "min": 9,
+        "max": 20,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "E": "m"
+    },
+    "constraints": [
+      "m>=9",
+      "m<=20"
+    ],
+    "original": {
+      "m": 9
+    },
+    "stem": "The values 6, {m|int}, 7, {m|int}, 4, {m|int}, 8 are recorded. What is the mode?",
+    "answer": {
+      "expression": "m",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The value \\({m|int}\\) occurs three times, which is more than any other value.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Compare frequencies."
+      },
+      {
+        "name": "E",
+        "text_tex": "The mode is \\({m|int}\\).",
+        "result": "m",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct mode."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "scores",
+        "stem": "A short list of scores is 6, {m|int}, 7, {m|int}, 4, {m|int}, 8. What is the mode?",
+        "note": "scores frame"
+      },
+      {
+        "id": "times",
+        "stem": "The recorded times, in seconds, are 6, {m|int}, 7, {m|int}, 4, {m|int} and 8. What is the mode?",
+        "note": "times frame"
+      }
+    ]
+  },
+  {
+    "id": "S1-2.1-QC2-gen",
+    "section": "S1-2.1",
+    "kind": "generated",
+    "title": "Frequency density of the modal class",
+    "marks": 2,
+    "source": "S1 Ch2 theory S1-2.1 Quick check 2 (frequency densities 5, 8 and 6; modal class has density 8)",
+    "params": [
+      {
+        "name": "p",
+        "min": 2,
+        "max": 7,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 8,
+        "max": 15,
+        "step": 1
+      },
+      {
+        "name": "r",
+        "min": 2,
+        "max": 7,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "E": "q"
+    },
+    "constraints": [
+      "q>p",
+      "q>r"
+    ],
+    "original": {
+      "p": 5,
+      "q": 8,
+      "r": 6
+    },
+    "stem": "A histogram of grouped lengths has frequency densities {p|int}, {q|int} and {r|int}. What is the frequency density of the modal class?",
+    "answer": {
+      "expression": "q",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The modal class is the class with the greatest frequency density.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Use the definition of the modal class."
+      },
+      {
+        "name": "E",
+        "text_tex": "The greatest frequency density is \\({q|int}\\).",
+        "result": "q",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct density."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "masses",
+        "stem": "Grouped masses are shown in a histogram whose three classes have frequency densities {p|int}, {q|int} and {r|int}. What is the frequency density of the modal class?",
+        "note": "masses frame"
+      },
+      {
+        "id": "heights",
+        "stem": "The frequency densities of three height classes are {p|int}, {q|int} and {r|int}. What is the frequency density of the modal class?",
+        "note": "heights frame"
+      }
+    ]
+  },
+  {
+    "id": "S1-2.1-QC3-gen",
+    "section": "S1-2.1",
+    "kind": "generated",
+    "title": "No modal class, frequencies in the same ratio as the widths",
+    "marks": 2,
+    "source": "S1 Ch2 theory S1-2.1 Quick check 3 (widths 3:2, first frequency 48, second 32)",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "f",
+        "min": 20,
+        "max": 60,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "E": "f*b/a"
+    },
+    "constraints": [
+      "a!=b",
+      "(f*b)%a==0",
+      "f*b/a!=f"
+    ],
+    "original": {
+      "a": 3,
+      "b": 2,
+      "f": 48
+    },
+    "stem": "Two classes have widths in the ratio {a|int}:{b|int}. There is no modal class, and the frequency of the first class is {f|int}. What is the frequency of the second class?",
+    "answer": {
+      "expression": "f*b/a",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "No modal class means that the frequency densities are equal, so the frequencies are in the same ratio as the widths.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Use equal frequency densities."
+      },
+      {
+        "name": "E",
+        "text_tex": "The second frequency is {E|int}.",
+        "result": "f*b/a",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct frequency."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "ratio",
+        "stem": "The widths of two classes are in the ratio {a|int}:{b|int}, and the classes have equal frequency density. If the first frequency is {f|int}, what is the second frequency?",
+        "note": "equal density frame"
+      },
+      {
+        "id": "none",
+        "stem": "There is no modal class for two classes whose widths are in the ratio {a|int}:{b|int}. The first class has frequency {f|int}. What is the frequency of the second class?",
+        "note": "no modal class frame"
+      }
+    ]
+  },
+  {
+    "id": "S1-2.1-PP-9709-62-MJ18-Q1i",
+    "section": "S1-2.1",
+    "kind": "pastpaper",
+    "title": "9709/62/M/J/18 Q1(i): the mode of ten estimates",
+    "marks": 1,
+    "source": {
+      "paper": "9709/62/M/J/18 Q1(i)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s18_qp_62.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s18_ms_62.pdf",
+      "note": "Stem verbatim from the QP PDF, part (i) only. Part (ii) (the median and the interquartile range) is omitted because those skills belong to later subsections. Official MS: 38 (B1). Independently, 38 occurs three times. A single official numeric part, so it is auto-marked with accept_as integer. No mixed marking."
+    },
+    "stem": "Each of a group of 10 boys estimates the length of a piece of string. The estimates, in centimetres, are as follows.\n\n37, 40, 45, 38, 36, 38, 42, 38, 40, 39\n\n(i) Find the mode.",
+    "parts": [
+      {
+        "part": "(i)",
+        "stem": "Find the mode.",
+        "marks": 1,
+        "answer": {
+          "expression": "38",
+          "format": "{E|int}",
+          "accept_as": "integer"
+        },
+        "steps": [
+          {
+            "name": "E",
+            "text_tex": "The estimate \\(38\\) occurs three times, which is more than any other value, so the mode is \\(38\\).",
+            "result": "38",
+            "format": "raw",
+            "mark": "B1",
+            "note": "Official MS: 38."
+          }
+        ]
+      }
+    ]
+  }
+]

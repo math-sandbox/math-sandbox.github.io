@@ -1,0 +1,5537 @@
+[
+  {
+    "id": "wages",
+    "term": "wages",
+    "definition": "Pay for each hour worked, usually paid weekly.",
+    "sections": [
+      "IGCSE-17.1"
+    ],
+    "first_section": "IGCSE-17.1",
+    "type": "term",
+    "match": [
+      "wages"
+    ]
+  },
+  {
+    "id": "salary",
+    "term": "salary",
+    "definition": "A fixed amount of pay per year, usually paid monthly.",
+    "sections": [
+      "IGCSE-17.1"
+    ],
+    "first_section": "IGCSE-17.1",
+    "type": "term",
+    "note": "Divide by 12 for monthly pay, by 52 for weekly pay.",
+    "match": [
+      "salary"
+    ]
+  },
+  {
+    "id": "piece-work",
+    "term": "piece work",
+    "definition": "Pay for each item made: number of items × rate per item.",
+    "sections": [
+      "IGCSE-17.1"
+    ],
+    "first_section": "IGCSE-17.1",
+    "type": "term",
+    "match": [
+      "piece work"
+    ]
+  },
+  {
+    "id": "commission",
+    "term": "commission",
+    "definition": "Pay calculated as a percentage of the value of sales.",
+    "sections": [
+      "IGCSE-17.1"
+    ],
+    "first_section": "IGCSE-17.1",
+    "type": "term",
+    "match": [
+      "commission"
+    ]
+  },
+  {
+    "id": "retainer",
+    "term": "retainer",
+    "definition": "A fixed basic amount paid in addition to commission.",
+    "sections": [
+      "IGCSE-17.1"
+    ],
+    "first_section": "IGCSE-17.1",
+    "type": "term",
+    "match": [
+      "retainer"
+    ]
+  },
+  {
+    "id": "overtime",
+    "term": "overtime",
+    "definition": "Hours worked beyond the normal week, paid at a higher rate.",
+    "sections": [
+      "IGCSE-17.1"
+    ],
+    "first_section": "IGCSE-17.1",
+    "type": "term",
+    "note": "Time-and-a-half is \\(1.5\\times\\) the hourly rate; apply it only to the extra hours.",
+    "match": [
+      "overtime"
+    ]
+  },
+  {
+    "id": "time-and-a-half",
+    "term": "time-and-a-half",
+    "definition": "Overtime paid at \\(1.5\\times\\) the normal hourly rate.",
+    "sections": [
+      "IGCSE-17.1"
+    ],
+    "first_section": "IGCSE-17.1",
+    "type": "term",
+    "match": [
+      "time-and-a-half"
+    ]
+  },
+  {
+    "id": "double-time",
+    "term": "double-time",
+    "definition": "Overtime paid at \\(2\\times\\) the normal hourly rate.",
+    "sections": [
+      "IGCSE-17.1"
+    ],
+    "first_section": "IGCSE-17.1",
+    "type": "term",
+    "match": [
+      "double-time"
+    ]
+  },
+  {
+    "id": "gross-income",
+    "term": "gross income (gross pay)",
+    "definition": "Total earnings before any deductions.",
+    "sections": [
+      "IGCSE-17.1"
+    ],
+    "first_section": "IGCSE-17.1",
+    "type": "term",
+    "match": [
+      "gross income"
+    ]
+  },
+  {
+    "id": "net-income",
+    "term": "net income (net pay)",
+    "definition": "Earnings after deductions: gross income − deductions.",
+    "sections": [
+      "IGCSE-17.1"
+    ],
+    "first_section": "IGCSE-17.1",
+    "type": "term",
+    "match": [
+      "net income"
+    ]
+  },
+  {
+    "id": "deductions",
+    "term": "deductions",
+    "definition": "Amounts taken off gross pay, e.g. income tax, pension, insurance.",
+    "sections": [
+      "IGCSE-17.1"
+    ],
+    "first_section": "IGCSE-17.1",
+    "type": "term",
+    "match": [
+      "deductions"
+    ]
+  },
+  {
+    "id": "income-tax",
+    "term": "income tax",
+    "definition": "Tax charged on earnings, often worked out from a tax table.",
+    "sections": [
+      "IGCSE-17.1"
+    ],
+    "first_section": "IGCSE-17.1",
+    "type": "term",
+    "match": [
+      "income tax"
+    ]
+  },
+  {
+    "id": "tax-bracket",
+    "term": "tax bracket (band)",
+    "definition": "A range of income taxed at one rate; each rate applies only to the part of income inside its band.",
+    "sections": [
+      "IGCSE-17.1"
+    ],
+    "first_section": "IGCSE-17.1",
+    "type": "term",
+    "note": "Do not apply the top rate to the whole income.",
+    "match": [
+      "brackets",
+      "band"
+    ]
+  },
+  {
+    "id": "tax-allowance",
+    "term": "tax allowance",
+    "definition": "Income that is not taxed; tax is charged only on income above it.",
+    "sections": [],
+    "first_section": null,
+    "type": "term",
+    "note": "Subtract the allowance before applying the tax rate.",
+    "match": [
+      "tax allowance",
+      "allowance"
+    ]
+  },
+  {
+    "id": "taxable-income",
+    "term": "taxable income",
+    "definition": "Income on which tax is charged (after allowances).",
+    "sections": [
+      "IGCSE-17.1"
+    ],
+    "first_section": "IGCSE-17.1",
+    "type": "term",
+    "match": [
+      "taxable income"
+    ]
+  },
+  {
+    "id": "interest",
+    "term": "interest",
+    "definition": "Money paid for borrowing, or earned from investing, money.",
+    "sections": [
+      "IGCSE-17.2"
+    ],
+    "first_section": "IGCSE-17.2",
+    "type": "term",
+    "match": [
+      "interest"
+    ]
+  },
+  {
+    "id": "simple-interest",
+    "term": "simple interest",
+    "definition": "Interest on the original principal only: \\(I=\\frac{PRT}{100}\\).",
+    "sections": [
+      "IGCSE-17.2"
+    ],
+    "first_section": "IGCSE-17.2",
+    "type": "term",
+    "match": [
+      "simple interest"
+    ]
+  },
+  {
+    "id": "compound-interest",
+    "term": "compound interest",
+    "definition": "Interest added each period that then earns interest: \\(V=P\\left(1+\\frac{r}{100}\\right)^n\\).",
+    "sections": [
+      "IGCSE-17.2"
+    ],
+    "first_section": "IGCSE-17.2",
+    "type": "term",
+    "match": [
+      "compound interest"
+    ]
+  },
+  {
+    "id": "principal",
+    "term": "principal",
+    "definition": "The amount of money originally invested or borrowed.",
+    "sections": [
+      "IGCSE-17.2"
+    ],
+    "first_section": "IGCSE-17.2",
+    "type": "term",
+    "match": [
+      "principal"
+    ]
+  },
+  {
+    "id": "interest-rate",
+    "term": "interest rate",
+    "definition": "The percentage charged or earned per period, usually per year.",
+    "sections": [
+      "IGCSE-17.2"
+    ],
+    "first_section": "IGCSE-17.2",
+    "type": "term",
+    "match": [
+      "rate of interest",
+      "interest rate"
+    ]
+  },
+  {
+    "id": "per-annum",
+    "term": "per year (per annum)",
+    "definition": "For each year; an interest rate per annum is a yearly rate.",
+    "sections": [
+      "IGCSE-17.2"
+    ],
+    "first_section": "IGCSE-17.2",
+    "type": "term",
+    "note": "Convert months to years (\\(\\div12\\)) before using \\(T\\).",
+    "match": [
+      "per year"
+    ]
+  },
+  {
+    "id": "hire-purchase",
+    "term": "hire purchase",
+    "definition": "Buying by paying a deposit, then equal instalments; usually costs more than the cash price.",
+    "sections": [
+      "IGCSE-17.2"
+    ],
+    "first_section": "IGCSE-17.2",
+    "type": "term",
+    "match": [
+      "hire purchase",
+      "HP price"
+    ]
+  },
+  {
+    "id": "deposit",
+    "term": "deposit",
+    "definition": "The first payment made when buying on hire purchase.",
+    "sections": [
+      "IGCSE-17.2"
+    ],
+    "first_section": "IGCSE-17.2",
+    "type": "term",
+    "match": [
+      "deposit"
+    ]
+  },
+  {
+    "id": "instalment",
+    "term": "instalment",
+    "definition": "One of the equal regular payments made after the deposit.",
+    "sections": [
+      "IGCSE-17.2"
+    ],
+    "first_section": "IGCSE-17.2",
+    "type": "term",
+    "match": [
+      "instalments",
+      "instalment"
+    ]
+  },
+  {
+    "id": "cash-price",
+    "term": "cash price",
+    "definition": "The price if paid in full at once.",
+    "sections": [
+      "IGCSE-17.2"
+    ],
+    "first_section": "IGCSE-17.2",
+    "type": "term",
+    "match": [
+      "cash price"
+    ]
+  },
+  {
+    "id": "multiplier",
+    "term": "multiplier",
+    "definition": "The number to multiply by for a percentage change, e.g. 1.05 for +5%, 0.85 for −15%.",
+    "sections": [
+      "IGCSE-17.2"
+    ],
+    "first_section": "IGCSE-17.2",
+    "type": "term",
+    "match": [
+      "multiplier"
+    ]
+  },
+  {
+    "id": "exp-growth",
+    "term": "exponential growth",
+    "definition": "Repeated increase by the same rate: \\(y=a(1+r)^n\\) (r as a decimal).",
+    "sections": [
+      "IGCSE-17.2"
+    ],
+    "first_section": "IGCSE-17.2",
+    "type": "term",
+    "match": [
+      "exponential growth",
+      "growth"
+    ]
+  },
+  {
+    "id": "exp-decay",
+    "term": "exponential decay",
+    "definition": "Repeated decrease by the same rate: \\(y=a(1-r)^n\\) (r as a decimal).",
+    "sections": [
+      "IGCSE-17.2"
+    ],
+    "first_section": "IGCSE-17.2",
+    "type": "term",
+    "match": [
+      "exponential decay",
+      "decay"
+    ]
+  },
+  {
+    "id": "depreciation",
+    "term": "depreciation",
+    "definition": "A fall in value over time, usually by a fixed percentage per year.",
+    "sections": [
+      "IGCSE-17.2"
+    ],
+    "first_section": "IGCSE-17.2",
+    "type": "term",
+    "match": [
+      "depreciation"
+    ]
+  },
+  {
+    "id": "appreciation",
+    "term": "appreciation",
+    "definition": "A rise in value over time.",
+    "sections": [],
+    "first_section": null,
+    "type": "term",
+    "match": [
+      "appreciation"
+    ]
+  },
+  {
+    "id": "cost-price",
+    "term": "cost price",
+    "definition": "The price a trader pays for an item.",
+    "sections": [
+      "IGCSE-17.3"
+    ],
+    "first_section": "IGCSE-17.3",
+    "type": "term",
+    "match": [
+      "cost price"
+    ]
+  },
+  {
+    "id": "selling-price",
+    "term": "selling price",
+    "definition": "The price at which an item is sold.",
+    "sections": [
+      "IGCSE-17.3"
+    ],
+    "first_section": "IGCSE-17.3",
+    "type": "term",
+    "match": [
+      "selling price"
+    ]
+  },
+  {
+    "id": "profit",
+    "term": "profit",
+    "definition": "Selling price − cost price (when positive).",
+    "sections": [
+      "IGCSE-17.3"
+    ],
+    "first_section": "IGCSE-17.3",
+    "type": "term",
+    "match": [
+      "profit"
+    ]
+  },
+  {
+    "id": "loss",
+    "term": "loss",
+    "definition": "Cost price − selling price (when selling for less than cost).",
+    "sections": [
+      "IGCSE-17.3"
+    ],
+    "first_section": "IGCSE-17.3",
+    "type": "term",
+    "match": [
+      "loss"
+    ]
+  },
+  {
+    "id": "pct-profit",
+    "term": "percentage profit",
+    "definition": "Profit as a percentage of the cost price: \\(\\frac{\\text{profit}}{\\text{cost price}}\\times100\\).",
+    "sections": [
+      "IGCSE-17.3"
+    ],
+    "first_section": "IGCSE-17.3",
+    "type": "term",
+    "note": "Divide by the cost price, not the selling price.",
+    "match": [
+      "percentage profit"
+    ]
+  },
+  {
+    "id": "mark-up",
+    "term": "mark-up",
+    "definition": "The amount or percentage added to the cost price to get the selling price.",
+    "sections": [
+      "IGCSE-17.3"
+    ],
+    "first_section": "IGCSE-17.3",
+    "type": "term",
+    "match": [
+      "mark-up"
+    ]
+  },
+  {
+    "id": "discount",
+    "term": "discount",
+    "definition": "A reduction from the original price.",
+    "sections": [
+      "IGCSE-17.3"
+    ],
+    "first_section": "IGCSE-17.3",
+    "type": "term",
+    "note": "Percentage discount uses the original price as 100%.",
+    "match": [
+      "discount"
+    ]
+  },
+  {
+    "id": "vat",
+    "term": "sales tax (VAT)",
+    "definition": "Tax added to a price: price with tax = price × \\(\\left(1+\\frac{r}{100}\\right)\\).",
+    "sections": [
+      "IGCSE-17.3"
+    ],
+    "first_section": "IGCSE-17.3",
+    "type": "term",
+    "note": "To remove tax, divide by \\(1+\\frac{r}{100}\\); do not subtract \\(r\\%\\).",
+    "match": [
+      "sales tax",
+      "VAT"
+    ]
+  },
+  {
+    "id": "reverse-pct",
+    "term": "reverse percentage",
+    "definition": "Finding the original amount from a value after a percentage change, by dividing by the multiplier.",
+    "sections": [
+      "IGCSE-17.3"
+    ],
+    "first_section": "IGCSE-17.3",
+    "type": "term",
+    "match": [
+      "reverse problems"
+    ]
+  },
+  {
+    "id": "calculate",
+    "term": "calculate",
+    "definition": "Work out from given facts or figures, showing working.",
+    "sections": [],
+    "first_section": null,
+    "type": "command",
+    "match": [
+      "calculate"
+    ]
+  },
+  {
+    "id": "show-that",
+    "term": "show that",
+    "definition": "Give every step leading to the given result; the answer alone earns nothing.",
+    "sections": [],
+    "first_section": null,
+    "type": "command",
+    "match": [
+      "show that"
+    ]
+  },
+  {
+    "id": "estimate",
+    "term": "estimate",
+    "definition": "Give a sensible approximate value, usually by rounding first or using a model.",
+    "sections": [],
+    "first_section": null,
+    "type": "phrase",
+    "match": [
+      "estimate"
+    ]
+  },
+  {
+    "id": "3sf",
+    "term": "give your answer correct to 3 s.f.",
+    "definition": "Round only the final answer to 3 significant figures; keep full values in working.",
+    "sections": [],
+    "first_section": null,
+    "type": "phrase",
+    "match": [
+      "3 s.f."
+    ]
+  },
+  {
+    "id": "hence",
+    "term": "hence",
+    "definition": "Use the previous answer or result to do this part.",
+    "sections": [],
+    "first_section": null,
+    "type": "phrase",
+    "match": [
+      "hence"
+    ]
+  },
+  {
+    "id": "explain",
+    "term": "explain",
+    "definition": "Give reasons or say why/how in words, supported by evidence from the context.",
+    "sections": [],
+    "first_section": null,
+    "type": "command",
+    "match": [
+      "explain"
+    ]
+  },
+  {
+    "id": "write-down",
+    "term": "write down",
+    "definition": "Give the answer without significant working, only if it follows directly.",
+    "sections": [],
+    "first_section": null,
+    "type": "command",
+    "match": [
+      "write down"
+    ]
+  },
+  {
+    "id": "work-out",
+    "term": "work out",
+    "definition": "Calculate from given facts or figures (with or without a calculator), showing enough working for method marks.",
+    "sections": [],
+    "first_section": null,
+    "type": "command",
+    "match": [
+      "work out"
+    ]
+  },
+  {
+    "id": "trap-per-annum",
+    "term": "per annum",
+    "definition": "Rate per year; time must be in years.",
+    "sections": [
+      "IGCSE-17.2"
+    ],
+    "first_section": "IGCSE-17.2",
+    "type": "trap",
+    "note": "Using months as \\(T\\): 18 months is \\(T=1.5\\), not 18.",
+    "match": [
+      "per year"
+    ]
+  },
+  {
+    "id": "trap-compound-vs-simple",
+    "term": "compound vs simple",
+    "definition": "Simple: interest on \\(P\\) only; compound: interest on the growing total.",
+    "sections": [
+      "IGCSE-17.2"
+    ],
+    "first_section": "IGCSE-17.2",
+    "type": "trap",
+    "note": "Using \\(PRT/100\\) for a compound question, or \\(1.05^n\\) for a simple one.",
+    "match": [
+      "compound interest",
+      "simple interest"
+    ]
+  },
+  {
+    "id": "trap-multiplier",
+    "term": "growth multiplier",
+    "definition": "For \\(r\\%\\) growth use \\(1+\\frac{r}{100}\\).",
+    "sections": [
+      "IGCSE-17.2"
+    ],
+    "first_section": "IGCSE-17.2",
+    "type": "trap",
+    "note": "Using 2.8 instead of 1.028 for 2.8%.",
+    "match": [
+      "multiplier"
+    ]
+  },
+  {
+    "id": "trap-flat-rate",
+    "term": "flat rate",
+    "definition": "Simple interest on the outstanding balance for the whole loan period.",
+    "sections": [
+      "IGCSE-17.2"
+    ],
+    "first_section": "IGCSE-17.2",
+    "type": "trap",
+    "note": "Charging the rate on the cash price instead of the balance after the deposit.",
+    "match": [
+      "flat rate"
+    ]
+  },
+  {
+    "id": "trap-depreciation",
+    "term": "depreciation",
+    "definition": "Decay: multiply by \\(1-r\\) each year.",
+    "sections": [
+      "IGCSE-17.2"
+    ],
+    "first_section": "IGCSE-17.2",
+    "type": "trap",
+    "note": "Subtracting \\(n\\times r\\%\\) of the original value (simple) instead of compounding.",
+    "match": [
+      "depreciation",
+      "loses"
+    ]
+  },
+  {
+    "id": "trap-outstanding-balance",
+    "term": "outstanding balance",
+    "definition": "The amount still owed after the deposit: cash price − deposit.",
+    "sections": [
+      "IGCSE-17.2"
+    ],
+    "first_section": "IGCSE-17.2",
+    "type": "trap",
+    "note": "Forgetting to subtract the deposit first.",
+    "match": [
+      "outstanding balance"
+    ]
+  },
+  {
+    "id": "trap-first-worth-less",
+    "term": "first worth less than",
+    "definition": "Find the smallest whole number of years where the value is below the target.",
+    "sections": [
+      "IGCSE-17.2"
+    ],
+    "first_section": "IGCSE-17.2",
+    "type": "trap",
+    "note": "Giving a non-integer \\(n\\), or the year before the value drops below.",
+    "match": [
+      "first worth less than",
+      "first below"
+    ]
+  },
+  {
+    "id": "trap-interest-vs-value",
+    "term": "interest earned vs final value",
+    "definition": "Interest = final value − principal.",
+    "sections": [
+      "IGCSE-17.2"
+    ],
+    "first_section": "IGCSE-17.2",
+    "type": "trap",
+    "note": "Forgetting to subtract \\(P\\) when the question asks for interest.",
+    "match": [
+      "interest earned",
+      "final value"
+    ]
+  },
+  {
+    "id": "trap-rounding",
+    "term": "rounding mid-way",
+    "definition": "Keep full calculator values until the final answer.",
+    "sections": [
+      "IGCSE-17.1",
+      "IGCSE-17.2",
+      "IGCSE-17.3"
+    ],
+    "first_section": "IGCSE-17.1",
+    "type": "trap",
+    "note": "Rounding intermediate values, which changes the final answer.",
+    "match": [
+      "full calculator values",
+      "3 s.f."
+    ]
+  },
+  {
+    "id": "experiment",
+    "term": "experiment",
+    "definition": "An action with an uncertain result, such as rolling a die.",
+    "sections": [
+      "S1-4.1"
+    ],
+    "first_section": "S1-4.1",
+    "type": "term",
+    "match": [
+      "experiment"
+    ]
+  },
+  {
+    "id": "outcome",
+    "term": "outcome",
+    "definition": "One possible result of an experiment.",
+    "sections": [
+      "S1-4.1"
+    ],
+    "first_section": "S1-4.1",
+    "type": "term",
+    "match": [
+      "outcomes",
+      "outcome"
+    ]
+  },
+  {
+    "id": "event",
+    "term": "event",
+    "definition": "A set of one or more outcomes of an experiment.",
+    "sections": [
+      "S1-4.1"
+    ],
+    "first_section": "S1-4.1",
+    "type": "term",
+    "match": [
+      "events",
+      "event"
+    ]
+  },
+  {
+    "id": "sample-space",
+    "term": "sample space",
+    "definition": "The list or table of all possible outcomes of an experiment (also called the possibility space).",
+    "sections": [
+      "S1-4.1"
+    ],
+    "first_section": "S1-4.1",
+    "type": "term",
+    "match": [
+      "sample space"
+    ]
+  },
+  {
+    "id": "equally-likely",
+    "term": "equally likely",
+    "definition": "Outcomes that all have the same probability, for example when an object is chosen at random.",
+    "sections": [
+      "S1-4.1"
+    ],
+    "first_section": "S1-4.1",
+    "type": "term",
+    "match": [
+      "equally likely"
+    ]
+  },
+  {
+    "id": "complement",
+    "term": "complement",
+    "definition": "The event that A does not happen, written A′; P(A′) = 1 − P(A).",
+    "sections": [
+      "S1-4.1"
+    ],
+    "first_section": "S1-4.1",
+    "type": "term",
+    "match": [
+      "complement"
+    ]
+  },
+  {
+    "id": "exhaustive",
+    "term": "exhaustive",
+    "definition": "A set of events is exhaustive if it contains every possible outcome, so one of them must happen.",
+    "sections": [
+      "S1-4.1"
+    ],
+    "first_section": "S1-4.1",
+    "type": "term",
+    "match": [
+      "exhaustive"
+    ]
+  },
+  {
+    "id": "trial",
+    "term": "trial",
+    "definition": "One repeat of an experiment.",
+    "sections": [
+      "S1-4.1"
+    ],
+    "first_section": "S1-4.1",
+    "type": "term",
+    "match": [
+      "trial"
+    ]
+  },
+  {
+    "id": "relative-frequency",
+    "term": "relative frequency",
+    "definition": "The proportion of trials in which an event happens; an estimate of its probability.",
+    "sections": [
+      "S1-4.1"
+    ],
+    "first_section": "S1-4.1",
+    "type": "term",
+    "match": [
+      "relative frequency"
+    ]
+  },
+  {
+    "id": "expected-frequency",
+    "term": "expected frequency",
+    "definition": "The number of times an event is expected in n trials: n × P(A).",
+    "sections": [
+      "S1-4.1"
+    ],
+    "first_section": "S1-4.1",
+    "type": "term",
+    "match": [
+      "expected frequency"
+    ]
+  },
+  {
+    "id": "mutually-exclusive",
+    "term": "mutually exclusive",
+    "definition": "Events that cannot both happen: they have no outcomes in common, so P(A ∩ B) = 0.",
+    "sections": [
+      "S1-4.2"
+    ],
+    "first_section": "S1-4.2",
+    "type": "term",
+    "match": [
+      "mutually exclusive"
+    ]
+  },
+  {
+    "id": "addition-law",
+    "term": "addition law",
+    "definition": "P(A ∪ B) = P(A) + P(B) − P(A ∩ B); for mutually exclusive events, P(A ∪ B) = P(A) + P(B).",
+    "sections": [
+      "S1-4.2"
+    ],
+    "first_section": "S1-4.2",
+    "type": "term",
+    "match": [
+      "addition law"
+    ]
+  },
+  {
+    "id": "venn-diagram",
+    "term": "Venn diagram",
+    "definition": "A diagram that shows events as circles inside a rectangle of all outcomes.",
+    "sections": [
+      "S1-4.2",
+      "S1-4.4"
+    ],
+    "first_section": "S1-4.2",
+    "type": "term",
+    "match": [
+      "Venn diagram"
+    ]
+  },
+  {
+    "id": "union",
+    "term": "union",
+    "definition": "A ∪ B: A or B or both.",
+    "sections": [
+      "S1-4.2"
+    ],
+    "first_section": "S1-4.2",
+    "type": "term",
+    "match": [
+      "union"
+    ]
+  },
+  {
+    "id": "intersection",
+    "term": "intersection",
+    "definition": "A ∩ B: both A and B.",
+    "sections": [
+      "S1-4.2"
+    ],
+    "first_section": "S1-4.2",
+    "type": "term",
+    "match": [
+      "intersection"
+    ]
+  },
+  {
+    "id": "empty-set",
+    "term": "empty set",
+    "definition": "The set with no elements, written ∅.",
+    "sections": [
+      "S1-4.2"
+    ],
+    "first_section": "S1-4.2",
+    "type": "term",
+    "match": [
+      "empty set"
+    ]
+  },
+  {
+    "id": "neither",
+    "term": "neither",
+    "definition": "Neither A nor B: (A ∪ B)′, with probability 1 − P(A ∪ B).",
+    "sections": [
+      "S1-4.2"
+    ],
+    "first_section": "S1-4.2",
+    "type": "term",
+    "match": [
+      "neither"
+    ]
+  },
+  {
+    "id": "trap-or-both",
+    "term": "“or” includes both",
+    "definition": "In probability, A or B means A or B or both, not “exactly one”.",
+    "sections": [
+      "S1-4.2"
+    ],
+    "first_section": "S1-4.2",
+    "type": "trap",
+    "match": []
+  },
+  {
+    "id": "trap-double-count",
+    "term": "Counting the overlap twice",
+    "definition": "Adding P(A) and P(B) for overlapping events counts A ∩ B twice; subtract P(A ∩ B) once.",
+    "sections": [
+      "S1-4.2"
+    ],
+    "first_section": "S1-4.2",
+    "type": "trap",
+    "match": []
+  },
+  {
+    "id": "trap-ordered-pairs",
+    "term": "Ordered pairs",
+    "definition": "With two ordinary six-sided dice, (2, 5) and (5, 2) are different outcomes; the sample space has 36 outcomes, not 21.",
+    "sections": [
+      "S1-4.1"
+    ],
+    "first_section": "S1-4.1",
+    "type": "trap",
+    "match": []
+  },
+  {
+    "id": "trap-expected-whole",
+    "term": "Expected frequency is an average",
+    "definition": "n × P(A) need not be a whole number and is not a guaranteed result.",
+    "sections": [
+      "S1-4.1"
+    ],
+    "first_section": "S1-4.1",
+    "type": "trap",
+    "match": []
+  },
+  {
+    "id": "continuous-random-variable",
+    "term": "continuous random variable",
+    "definition": "A random variable that can take any value in an interval, such as a time or a mass.",
+    "sections": [
+      "S2-4.1"
+    ],
+    "first_section": "S2-4.1",
+    "type": "term",
+    "match": [
+      "continuous random variable"
+    ]
+  },
+  {
+    "id": "probability-density-function",
+    "term": "probability density function",
+    "definition": "A function f with f(x) ≥ 0 and total area 1 under its graph; areas under it give probabilities. Short form: PDF.",
+    "sections": [
+      "S2-4.1"
+    ],
+    "first_section": "S2-4.1",
+    "type": "term",
+    "match": [
+      "probability density function"
+    ]
+  },
+  {
+    "id": "probability-density",
+    "term": "probability density",
+    "definition": "The height of a PDF or of a histogram scaled so that its total area is 1; it is not a probability and can be more than 1.",
+    "sections": [
+      "S2-4.1"
+    ],
+    "first_section": "S2-4.1",
+    "type": "term",
+    "match": [
+      "probability density"
+    ]
+  },
+  {
+    "id": "normalising-constant",
+    "term": "normalising constant",
+    "definition": "A constant, often k, chosen so that the total area under a PDF is 1.",
+    "sections": [
+      "S2-4.1"
+    ],
+    "first_section": "S2-4.1",
+    "type": "term",
+    "match": [
+      "normalising constant"
+    ]
+  },
+  {
+    "id": "area-under-the-graph",
+    "term": "area under the graph",
+    "definition": "For a PDF, the area under the graph between a and b is P(a < X < b).",
+    "sections": [
+      "S2-4.1"
+    ],
+    "first_section": "S2-4.1",
+    "type": "term",
+    "match": [
+      "area under the graph"
+    ]
+  },
+  {
+    "id": "trap-density-not-probability",
+    "term": "f(x) is not a probability",
+    "definition": "f(x) can be greater than 1; only areas under the graph are probabilities.",
+    "sections": [
+      "S2-4.1"
+    ],
+    "first_section": "S2-4.1",
+    "type": "trap",
+    "match": []
+  },
+  {
+    "id": "trap-single-value",
+    "term": "P(X = a) = 0",
+    "definition": "For a continuous random variable a single value has probability 0, so < and ≤ give the same answer.",
+    "sections": [
+      "S2-4.1"
+    ],
+    "first_section": "S2-4.1",
+    "type": "trap",
+    "match": []
+  },
+  {
+    "id": "trap-negative-pdf",
+    "term": "Area 1 is not enough",
+    "definition": "A function with total area 1 is not a PDF if it is negative anywhere in its range.",
+    "sections": [
+      "S2-4.1"
+    ],
+    "first_section": "S2-4.1",
+    "type": "trap",
+    "match": []
+  },
+  {
+    "id": "trap-limits",
+    "term": "Limits outside the range",
+    "definition": "Integrate only where f(x) is non-zero; outside its range f(x) = 0.",
+    "sections": [
+      "S2-4.1"
+    ],
+    "first_section": "S2-4.1",
+    "type": "trap",
+    "match": []
+  },
+  {
+    "id": "radian",
+    "term": "radian",
+    "definition": "The angle at the centre of a circle subtended by an arc equal in length to the radius. 2π radians = 360°.",
+    "sections": [
+      "P1-4-review",
+      "P1-4.1",
+      "P23-4.5",
+      "P23-5.3"
+    ],
+    "first_section": "P1-4.1",
+    "type": "term",
+    "match": [
+      "radians",
+      "radian"
+    ]
+  },
+  {
+    "id": "subtend",
+    "term": "subtend",
+    "definition": "An arc or line subtends an angle at a point when its two ends are joined to that point to form the angle.",
+    "sections": [
+      "P1-4.1"
+    ],
+    "first_section": "P1-4.1",
+    "type": "term",
+    "match": [
+      "subtends",
+      "subtend"
+    ]
+  },
+  {
+    "id": "arc",
+    "term": "arc",
+    "definition": "Part of the circumference of a circle.",
+    "sections": [
+      "P1-4-review",
+      "P1-4.1"
+    ],
+    "first_section": "P1-4.1",
+    "type": "term",
+    "match": [
+      "arc"
+    ]
+  },
+  {
+    "id": "degree",
+    "term": "degrees",
+    "definition": "A unit of angle in which a full turn is 360°. To change to radians multiply by π/180.",
+    "sections": [
+      "P1-4.1"
+    ],
+    "first_section": "P1-4.1",
+    "type": "term",
+    "match": [
+      "degrees"
+    ]
+  },
+  {
+    "id": "in-terms-of-pi",
+    "term": "in terms of π",
+    "definition": "Give an exact answer written as a multiple of π, such as 5π/12, not a decimal.",
+    "sections": [],
+    "first_section": null,
+    "type": "phrase",
+    "match": [
+      "in terms of π"
+    ]
+  },
+  {
+    "id": "trap-pi-is-180",
+    "term": "π in angles means 180°",
+    "definition": "In angle work π stands for π radians, which is 180°; it is not 3.14 degrees.",
+    "sections": [
+      "P1-4.1"
+    ],
+    "first_section": "P1-4.1",
+    "type": "trap",
+    "match": []
+  },
+  {
+    "id": "trap-calculator-mode",
+    "term": "Calculator mode",
+    "definition": "Use radian mode for sin, cos or tan of an angle in radians; degree mode gives wrong values.",
+    "sections": [
+      "P1-4.1"
+    ],
+    "first_section": "P1-4.1",
+    "type": "trap",
+    "match": []
+  },
+  {
+    "id": "trap-wrong-factor",
+    "term": "Wrong conversion factor",
+    "definition": "Degrees to radians multiply by π/180 (the number gets smaller); radians to degrees multiply by 180/π.",
+    "sections": [
+      "P1-4.1"
+    ],
+    "first_section": "P1-4.1",
+    "type": "trap",
+    "match": []
+  },
+  {
+    "id": "reverse-differentiation",
+    "term": "reverse differentiation",
+    "definition": "Integration seen as undoing differentiation: find a function whose derivative is the one given.",
+    "sections": [
+      "P23-5.1",
+      "P23-5.3"
+    ],
+    "first_section": "P23-5.1",
+    "type": "term",
+    "match": [
+      "reverse differentiation"
+    ]
+  },
+  {
+    "id": "exponential-function",
+    "term": "exponential function",
+    "definition": "A function such as e^x or e^(ax+b); its derivative is a multiple of itself.",
+    "sections": [
+      "P23-4.3",
+      "P23-5.1"
+    ],
+    "first_section": "P23-4.3",
+    "type": "term",
+    "match": [
+      "exponential function"
+    ]
+  },
+  {
+    "id": "reverse-chain-rule",
+    "term": "reverse chain rule",
+    "definition": "Integrating f(ax+b) by integrating f and dividing by a, the coefficient of x (a must not be 0; for 1/(ax+b), ax+b must not be 0 on the interval).",
+    "sections": [
+      "P23-5.1",
+      "P23-5.3"
+    ],
+    "first_section": "P23-5.1",
+    "type": "term",
+    "match": [
+      "reverse chain rule"
+    ]
+  },
+  {
+    "id": "indefinite-integral",
+    "term": "indefinite integral",
+    "definition": "An integral with no limits; the answer is a family of functions written with + c.",
+    "sections": [
+      "P23-5.1",
+      "P23-5.3"
+    ],
+    "first_section": "P23-5.1",
+    "type": "term",
+    "match": [
+      "indefinite integral"
+    ]
+  },
+  {
+    "id": "constant-of-integration",
+    "term": "constant of integration",
+    "definition": "The arbitrary constant c added to an indefinite integral, because constants differentiate to zero.",
+    "sections": [
+      "P23-5.1",
+      "P23-5.3"
+    ],
+    "first_section": "P23-5.1",
+    "type": "term",
+    "match": [
+      "constant of integration"
+    ]
+  },
+  {
+    "id": "natural-logarithm",
+    "term": "natural logarithm",
+    "definition": "The logarithm to base e, written ln. Its derivative is 1/x for x > 0.",
+    "sections": [
+      "P23-5.2",
+      "P23-4.4",
+      "P23-2.7"
+    ],
+    "first_section": "P23-2.7",
+    "type": "term",
+    "match": [
+      "natural logarithm"
+    ]
+  },
+  {
+    "id": "modulus",
+    "term": "modulus",
+    "definition": "The size of a number without its sign, written |x|. Used in ln|ax+b| so the result works when ax+b < 0.",
+    "sections": [
+      "P23-5.2"
+    ],
+    "first_section": "P23-5.2",
+    "type": "term",
+    "match": [
+      "modulus"
+    ]
+  },
+  {
+    "id": "definite-integral",
+    "term": "definite integral",
+    "definition": "An integral with limits, giving a number: F(upper limit) minus F(lower limit).",
+    "sections": [
+      "P23-5.2",
+      "P23-5.3"
+    ],
+    "first_section": "P23-5.2",
+    "type": "term",
+    "match": [
+      "definite integral"
+    ]
+  },
+  {
+    "id": "trap-multiply-by-a",
+    "term": "Dividing, not multiplying, by a",
+    "definition": "The integral of e^(ax+b) is (1/a)e^(ax+b) + c for a not 0; do not multiply by a.",
+    "sections": [
+      "P23-5.1"
+    ],
+    "first_section": "P23-5.1",
+    "type": "trap",
+    "match": []
+  },
+  {
+    "id": "trap-power-rule-minus-one",
+    "term": "No power rule for 1/x",
+    "definition": "The power rule fails for x^(-1) because it would divide by zero; use ln instead.",
+    "sections": [
+      "P23-5.2"
+    ],
+    "first_section": "P23-5.2",
+    "type": "trap",
+    "match": []
+  },
+  {
+    "id": "trap-ln-negative",
+    "term": "ln of a negative number",
+    "definition": "ln is undefined for negatives; use ln|ax+b| when the limits make ax+b negative, and never integrate across the point where ax+b = 0.",
+    "sections": [
+      "P23-5.2"
+    ],
+    "first_section": "P23-5.2",
+    "type": "trap",
+    "match": []
+  },
+  {
+    "id": "product-rule",
+    "term": "product rule",
+    "definition": "To differentiate uv: u times the derivative of v, plus v times the derivative of u.",
+    "sections": [
+      "P23-4.1",
+      "P23-4.2",
+      "P23-4.4",
+      "P23-4.5"
+    ],
+    "first_section": "P23-4.1",
+    "type": "term",
+    "match": [
+      "product rule"
+    ]
+  },
+  {
+    "id": "product",
+    "term": "product",
+    "definition": "Two functions multiplied together, such as x² times (3x − 1)⁴.",
+    "sections": [
+      "P23-4.1"
+    ],
+    "first_section": "P23-4.1",
+    "type": "term",
+    "match": [
+      "product"
+    ]
+  },
+  {
+    "id": "first-principles",
+    "term": "first principles",
+    "definition": "Finding a derivative from the definition: the limit of δy/δx as δx tends to 0.",
+    "sections": [
+      "P23-4.1"
+    ],
+    "first_section": "P23-4.1",
+    "type": "term",
+    "match": [
+      "first principles"
+    ]
+  },
+  {
+    "id": "gradient-p23",
+    "term": "gradient",
+    "definition": "The slope of the tangent to a curve at a point; equal to dy/dx there.",
+    "sections": [
+      "P23-4.1",
+      "P23-4.2"
+    ],
+    "first_section": "P23-4.1",
+    "type": "term",
+    "match": [
+      "gradient"
+    ],
+    "note": "In A Level work the gradient at a point comes from the derivative."
+  },
+  {
+    "id": "stationary-point",
+    "term": "stationary point",
+    "definition": "A point on a curve where the gradient dy/dx is 0.",
+    "sections": [
+      "P23-4.1",
+      "P23-4.3",
+      "IGCSE-18.7"
+    ],
+    "first_section": "P23-4.1",
+    "type": "term",
+    "match": [
+      "stationary points",
+      "stationary point"
+    ],
+    "note": "Also called a turning point when it is a maximum or a minimum."
+  },
+  {
+    "id": "quotient-rule",
+    "term": "quotient rule",
+    "definition": "To differentiate u/v: (v times du/dx minus u times dv/dx) divided by v², where v is non-zero.",
+    "sections": [
+      "P23-4.2",
+      "P23-4.4",
+      "P23-4.5"
+    ],
+    "first_section": "P23-4.2",
+    "type": "term",
+    "match": [
+      "quotient rule"
+    ]
+  },
+  {
+    "id": "quotient",
+    "term": "quotient",
+    "definition": "One function divided by another, such as (x² − 5)/(2x + 1).",
+    "sections": [
+      "P23-4.2"
+    ],
+    "first_section": "P23-4.2",
+    "type": "term",
+    "match": [
+      "quotient"
+    ]
+  },
+  {
+    "id": "numerator",
+    "term": "numerator",
+    "definition": "The top of a fraction.",
+    "sections": [
+      "P23-4.2"
+    ],
+    "first_section": "P23-4.2",
+    "type": "term",
+    "match": [
+      "numerator"
+    ]
+  },
+  {
+    "id": "denominator",
+    "term": "denominator",
+    "definition": "The bottom of a fraction.",
+    "sections": [
+      "P23-4.2"
+    ],
+    "first_section": "P23-4.2",
+    "type": "term",
+    "match": [
+      "denominator"
+    ]
+  },
+  {
+    "id": "e-number",
+    "term": "e",
+    "definition": "The number e ≈ 2.718, the base for which the gradient of eˣ equals its value.",
+    "sections": [
+      "P23-4.3"
+    ],
+    "first_section": "P23-4.3",
+    "type": "term",
+    "match": [
+      "the number e"
+    ]
+  },
+  {
+    "id": "chain-rule",
+    "term": "chain rule",
+    "definition": "To differentiate a function of a function: derivative of the outside times derivative of the inside.",
+    "sections": [
+      "P23-4.3",
+      "P23-4.6",
+      "P23-4.4",
+      "P23-4.5",
+      "P23-4.7"
+    ],
+    "first_section": "P23-4.3",
+    "type": "term",
+    "match": [
+      "chain rule"
+    ]
+  },
+  {
+    "id": "explicit-function",
+    "term": "explicit function",
+    "definition": "A function written with y as the subject, such as y = x³ − 2x.",
+    "sections": [
+      "P23-4.6"
+    ],
+    "first_section": "P23-4.6",
+    "type": "term",
+    "match": [
+      "explicit function"
+    ]
+  },
+  {
+    "id": "implicit-function",
+    "term": "implicit function",
+    "definition": "A relation between x and y where y is not the subject, such as x³ + 5xy + y³ = 16.",
+    "sections": [
+      "P23-4.6"
+    ],
+    "first_section": "P23-4.6",
+    "type": "term",
+    "match": [
+      "implicit function"
+    ]
+  },
+  {
+    "id": "implicit-differentiation",
+    "term": "implicit differentiation",
+    "definition": "Differentiating every term with respect to x, treating y as a function of x.",
+    "sections": [
+      "P23-4.6"
+    ],
+    "first_section": "P23-4.6",
+    "type": "term",
+    "match": [
+      "implicit differentiation"
+    ]
+  },
+  {
+    "id": "tangent-p23",
+    "term": "tangent",
+    "definition": "A straight line through a point on a curve with the same limiting gradient as the curve there.",
+    "sections": [
+      "P23-4.6"
+    ],
+    "first_section": "P23-4.6",
+    "type": "term",
+    "match": [
+      "tangent"
+    ]
+  },
+  {
+    "id": "normal-p23",
+    "term": "normal",
+    "definition": "The line perpendicular to the tangent at a point. For a finite, non-zero tangent gradient m, its gradient is −1/m; a horizontal tangent has a vertical normal.",
+    "sections": [
+      "P23-4.6"
+    ],
+    "first_section": "P23-4.6",
+    "type": "term",
+    "match": [
+      "normal"
+    ]
+  },
+  {
+    "id": "trap-product-of-derivatives",
+    "term": "product of derivatives",
+    "definition": "Wrong: the derivative of uv is not du/dx × dv/dx.",
+    "sections": [],
+    "first_section": null,
+    "type": "trap",
+    "match": [
+      "product of derivatives"
+    ]
+  },
+  {
+    "id": "trap-quotient-order",
+    "term": "quotient rule order",
+    "definition": "Wrong order u dv/dx − v du/dx changes the sign of the answer.",
+    "sections": [],
+    "first_section": null,
+    "type": "trap",
+    "match": [
+      "quotient rule order"
+    ]
+  },
+  {
+    "id": "trap-missing-dydx",
+    "term": "missing dy/dx",
+    "definition": "Wrong: differentiating y² as 2y instead of 2y dy/dx when y is a function of x.",
+    "sections": [],
+    "first_section": null,
+    "type": "trap",
+    "match": [
+      "missing dy/dx"
+    ]
+  },
+  {
+    "id": "parabola",
+    "term": "parabola",
+    "definition": "The graph of a quadratic function y = ax² + bx + c with a not zero. It is a symmetrical U-shaped curve: a valley (minimum) if a is positive and a hill (maximum) if a is negative.",
+    "sections": [
+      "IGCSE-18.1",
+      "P1-1.6"
+    ],
+    "first_section": "IGCSE-18.1",
+    "type": "term",
+    "match": [
+      "parabolas",
+      "parabola"
+    ]
+  },
+  {
+    "id": "axis-of-symmetry",
+    "term": "axis of symmetry",
+    "definition": "The vertical line about which a parabola is symmetric. For y = ax² + bx + c its equation is x = −b/(2a). It passes through the turning point, and if there are two x-intercepts it is midway between them.",
+    "sections": [
+      "IGCSE-18.1",
+      "P1-1.6"
+    ],
+    "first_section": "IGCSE-18.1",
+    "type": "term",
+    "match": [
+      "axis of symmetry"
+    ]
+  },
+  {
+    "id": "turning-point",
+    "term": "turning point",
+    "definition": "The minimum or maximum point of a parabola, which lies on the axis of symmetry. Its x-coordinate is −b/(2a); its y-coordinate is found by substituting that x into the equation of the curve. (This course does not use differentiation here.)",
+    "sections": [
+      "IGCSE-18.1",
+      "P1-1.6",
+      "P1-2.6"
+    ],
+    "first_section": "IGCSE-18.1",
+    "type": "term",
+    "match": [
+      "turning points",
+      "turning point"
+    ]
+  },
+  {
+    "id": "y-intercept",
+    "term": "y-intercept",
+    "definition": "The point where a graph meets the y-axis. For y = ax² + bx + c it is the point (0, c).",
+    "sections": [
+      "IGCSE-18.1"
+    ],
+    "first_section": "IGCSE-18.1",
+    "type": "term",
+    "match": [
+      "y-intercept"
+    ]
+  },
+  {
+    "id": "x-intercepts",
+    "term": "x-intercepts",
+    "definition": "The points where a graph meets the x-axis. For a quadratic they are the roots of ax² + bx + c = 0, if those roots are real.",
+    "sections": [
+      "IGCSE-18.1"
+    ],
+    "first_section": "IGCSE-18.1",
+    "type": "term",
+    "match": [
+      "x-intercepts",
+      "x-intercept"
+    ]
+  },
+  {
+    "id": "reciprocal-graph",
+    "term": "reciprocal graph",
+    "definition": "The graph of a reciprocal function such as y = a/x (a not zero). Its typical shape is a hyperbola with two branches, and the axes are asymptotes.",
+    "sections": [
+      "IGCSE-18.2",
+      "IGCSE-18.4"
+    ],
+    "first_section": "IGCSE-18.2",
+    "type": "term",
+    "match": [
+      "reciprocal graphs",
+      "reciprocal graph"
+    ]
+  },
+  {
+    "id": "hyperbola",
+    "term": "hyperbola",
+    "definition": "The two-branched curve obtained as the graph of y = a/x (a not zero). The branches are mirror images; they never meet the axes.",
+    "sections": [
+      "IGCSE-18.2",
+      "IGCSE-18.4"
+    ],
+    "first_section": "IGCSE-18.2",
+    "type": "term",
+    "match": [
+      "hyperbolas",
+      "hyperbola"
+    ]
+  },
+  {
+    "id": "asymptote",
+    "term": "asymptote",
+    "definition": "A line that a graph approaches but does not meet. For y = a/x the asymptotes are the coordinate axes; for y = a/x + q they are the y-axis (x = 0) and the horizontal line y = q. The graph of y = tan x has vertical asymptotes at odd multiples of 90 degrees, or of π/2 radians.",
+    "sections": [
+      "IGCSE-18.2",
+      "P1-5.4"
+    ],
+    "first_section": "IGCSE-18.2",
+    "type": "term",
+    "match": [
+      "asymptotes",
+      "asymptote"
+    ]
+  },
+  {
+    "id": "branch",
+    "term": "branch",
+    "definition": "One of the two separate parts of a hyperbola y = a/x. The branches are not joined across the asymptotes.",
+    "sections": [
+      "IGCSE-18.2"
+    ],
+    "first_section": "IGCSE-18.2",
+    "type": "term",
+    "match": [
+      "branches",
+      "branch"
+    ]
+  },
+  {
+    "id": "discriminant",
+    "term": "discriminant",
+    "definition": "For the quadratic ax² + bx + c = 0, the quantity b² − 4ac. After a line is substituted into a circle, a positive discriminant means two intersection points, a zero discriminant means the line is a tangent (a repeated root), and a negative discriminant means no real intersection.",
+    "sections": [
+      "P1-3.5",
+      "P1-1.8",
+      "P1-1.9"
+    ],
+    "first_section": "P1-3.5",
+    "type": "term",
+    "match": [
+      "discriminant"
+    ]
+  },
+  {
+    "id": "repeated-root",
+    "term": "repeated root",
+    "definition": "A quadratic equation with a repeated real root (discriminant zero) has two equal roots. In this section that means the line touches the circle at exactly one point and is a tangent.",
+    "sections": [
+      "P1-3.5",
+      "P1-1.8",
+      "P1-1.9"
+    ],
+    "first_section": "P1-3.5",
+    "type": "term",
+    "match": [
+      "repeated root"
+    ]
+  },
+  {
+    "id": "perpendicular-bisector",
+    "term": "perpendicular bisector",
+    "definition": "The line that cuts a segment in half at right angles. The perpendicular bisector of a chord of a circle always passes through the centre of the circle.",
+    "sections": [
+      "P1-3.5"
+    ],
+    "first_section": "P1-3.5",
+    "type": "term",
+    "match": [
+      "perpendicular bisector"
+    ]
+  },
+  {
+    "id": "arc-length",
+    "term": "arc length",
+    "definition": "The length of an arc of a circle of radius r that subtends an angle θ radians at the centre is rθ. The angle must be in radians.",
+    "sections": [
+      "P1-4-review",
+      "P1-4.2"
+    ],
+    "first_section": "P1-4.2",
+    "type": "term",
+    "match": [
+      "arc length"
+    ]
+  },
+  {
+    "id": "minor-arc",
+    "term": "minor arc",
+    "definition": "The shorter arc joining two points on a circle, corresponding to a central angle less than π radians.",
+    "sections": [
+      "P1-4.2"
+    ],
+    "first_section": "P1-4.2",
+    "type": "term",
+    "match": [
+      "minor arc"
+    ]
+  },
+  {
+    "id": "major-arc",
+    "term": "major arc",
+    "definition": "The longer arc joining two points on a circle, corresponding to a central angle greater than π radians. If the minor angle is θ, the major arc has length r(2π − θ).",
+    "sections": [
+      "P1-4.2"
+    ],
+    "first_section": "P1-4.2",
+    "type": "term",
+    "match": [
+      "major arc"
+    ]
+  },
+  {
+    "id": "sector",
+    "term": "sector",
+    "definition": "The region of a circle bounded by two radii and the arc between them (a ‘slice’ of the circle). The perimeter of a sector is 2r + rθ.",
+    "sections": [
+      "P1-4-review",
+      "P1-4.2",
+      "P1-4.3"
+    ],
+    "first_section": "P1-4.2",
+    "type": "term",
+    "match": [
+      "sectors",
+      "sector"
+    ]
+  },
+  {
+    "id": "perimeter",
+    "term": "perimeter",
+    "definition": "The total length of the boundary of a region. For a sector this is two radii plus the arc; for a plate made by removing a segment it is the chord plus the remaining (usually major) arc.",
+    "sections": [
+      "P1-4.2"
+    ],
+    "first_section": "P1-4.2",
+    "type": "term",
+    "match": [
+      "perimeter"
+    ]
+  },
+  {
+    "id": "area-of-a-sector",
+    "term": "area of a sector",
+    "definition": "The area of a sector of radius r and angle θ radians is (1/2)r²θ. The angle must be in radians.",
+    "sections": [
+      "P1-4-review",
+      "P1-4.3"
+    ],
+    "first_section": "P1-4.3",
+    "type": "term",
+    "match": [
+      "area of a sector"
+    ]
+  },
+  {
+    "id": "segment-of-a-circle",
+    "term": "segment",
+    "definition": "The region of a circle bounded by a chord and the arc joining its ends. The area of a minor segment is the area of the sector minus the area of the triangular portion: (1/2)r²θ − (1/2)r² sin θ.",
+    "sections": [
+      "P1-4-review",
+      "P1-4.3"
+    ],
+    "first_section": "P1-4.3",
+    "type": "term",
+    "match": [
+      "segments",
+      "segment"
+    ]
+  },
+  {
+    "id": "area-of-a-triangle",
+    "term": "area of a triangle",
+    "definition": "In this section the area of a triangle with two sides r and included angle θ radians is (1/2)r² sin θ, or (1/2)ab sin C in radian mode. Keep unrounded values when a later part, such as a segment area, depends on this calculation.",
+    "sections": [
+      "P1-4.3"
+    ],
+    "first_section": "P1-4.3",
+    "type": "term",
+    "match": [
+      "area of a triangle"
+    ]
+  },
+  {
+    "id": "independent",
+    "term": "independent",
+    "definition": "Two events are independent if either can occur without being affected by the occurrence of the other. For independent events, P(A and B) = P(A) × P(B).",
+    "sections": [
+      "S1-4.3"
+    ],
+    "first_section": "S1-4.3",
+    "type": "term",
+    "match": [
+      "independence",
+      "independent"
+    ]
+  },
+  {
+    "id": "multiplication-law",
+    "term": "multiplication law",
+    "definition": "The rule P(A ∩ B) = P(A) × P(B) for independent events, and its extension to more than two independent events.",
+    "sections": [
+      "S1-4.3"
+    ],
+    "first_section": "S1-4.3",
+    "type": "term",
+    "match": [
+      "multiplication law"
+    ]
+  },
+  {
+    "id": "tree-diagram",
+    "term": "tree diagram",
+    "definition": "A diagram of successive outcomes with a probability on each branch. For independent events, multiply along a path and add mutually exclusive paths.",
+    "sections": [
+      "S1-4.3"
+    ],
+    "first_section": "S1-4.3",
+    "type": "term",
+    "match": [
+      "tree diagrams",
+      "tree diagram"
+    ]
+  },
+  {
+    "id": "with-replacement",
+    "term": "with replacement",
+    "definition": "A selection in which each chosen item is returned before the next is chosen, so the probabilities are unchanged and the selections are independent.",
+    "sections": [
+      "S1-4.3"
+    ],
+    "first_section": "S1-4.3",
+    "type": "term",
+    "match": [
+      "with replacement"
+    ]
+  },
+  {
+    "id": "trap-independent-vs-exclusive",
+    "term": "independent is not mutually exclusive",
+    "definition": "Mutually exclusive events with positive probabilities cannot be independent, because then P(A ∩ B) = 0 but P(A)P(B) > 0.",
+    "sections": [
+      "S1-4.3"
+    ],
+    "first_section": "S1-4.3",
+    "type": "trap",
+    "match": [
+      "independent is not mutually exclusive"
+    ]
+  },
+  {
+    "id": "conditional-probability",
+    "term": "conditional probability",
+    "definition": "A probability that depends on additional information about an outcome or event, written P(A | B) and read as the probability of A given that B has occurred.",
+    "sections": [
+      "S1-4.4"
+    ],
+    "first_section": "S1-4.4",
+    "type": "term",
+    "match": [
+      "conditional probabilities",
+      "conditional probability"
+    ]
+  },
+  {
+    "id": "given-that",
+    "term": "given that",
+    "definition": "The words used to read the symbol | in a conditional probability P(A | B): the probability of A, given that B has occurred.",
+    "sections": [
+      "S1-4.4"
+    ],
+    "first_section": "S1-4.4",
+    "type": "term",
+    "match": [
+      "given that"
+    ]
+  },
+  {
+    "id": "trap-conditional-denominator",
+    "term": "using the original total as the denominator",
+    "definition": "A common mistake in a conditional probability is to divide by the size of the original sample space instead of by the number of outcomes in the given event.",
+    "sections": [
+      "S1-4.4"
+    ],
+    "first_section": "S1-4.4",
+    "type": "trap",
+    "match": [
+      "using the original total as the denominator"
+    ]
+  },
+  {
+    "id": "median-continuous",
+    "term": "median",
+    "definition": "The value m of a continuous random variable X for which the area under the PDF to the left of m is 1/2. Also called the 50th percentile.",
+    "sections": [
+      "S2-4.2"
+    ],
+    "first_section": "S2-4.2",
+    "type": "term",
+    "match": [
+      "median"
+    ]
+  },
+  {
+    "id": "percentile",
+    "term": "percentile",
+    "definition": "The rth percentile of a continuous random variable X is the value xr such that the area under the PDF to the left of xr is r/100.",
+    "sections": [
+      "S2-4.2"
+    ],
+    "first_section": "S2-4.2",
+    "type": "term",
+    "match": [
+      "percentiles",
+      "percentile"
+    ]
+  },
+  {
+    "id": "lower-quartile",
+    "term": "lower quartile",
+    "definition": "The 25th percentile of a continuous random variable: the value q1 such that P(X < q1) = 1/4.",
+    "sections": [
+      "S2-4.2"
+    ],
+    "first_section": "S2-4.2",
+    "type": "term",
+    "match": [
+      "lower quartile"
+    ]
+  },
+  {
+    "id": "upper-quartile",
+    "term": "upper quartile",
+    "definition": "The 75th percentile of a continuous random variable: the value q3 such that P(X < q3) = 3/4.",
+    "sections": [
+      "S2-4.2"
+    ],
+    "first_section": "S2-4.2",
+    "type": "term",
+    "match": [
+      "upper quartile"
+    ]
+  },
+  {
+    "id": "interquartile-range-s2",
+    "term": "interquartile range",
+    "definition": "The difference IQR = q3 − q1 between the upper and lower quartiles of a continuous random variable.",
+    "sections": [
+      "S2-4.2"
+    ],
+    "first_section": "S2-4.2",
+    "type": "term",
+    "match": [
+      "interquartile range"
+    ]
+  },
+  {
+    "id": "trap-median-midpoint",
+    "term": "taking the midpoint of the interval as the median",
+    "definition": "The median of a continuous random variable is not, in general, the midpoint of the interval on which the PDF is non-zero; it depends on the shape of the density.",
+    "sections": [
+      "S2-4.2"
+    ],
+    "first_section": "S2-4.2",
+    "type": "trap",
+    "match": [
+      "taking the midpoint of the interval as the median"
+    ]
+  },
+  {
+    "id": "trap-percentile-wrong-piece",
+    "term": "integrating the wrong piece of a piecewise PDF",
+    "definition": "For a piecewise PDF, first find the area of each complete piece so that you know which piece contains the required percentile, then integrate only inside that piece.",
+    "sections": [
+      "S2-4.2"
+    ],
+    "first_section": "S2-4.2",
+    "type": "trap",
+    "match": [
+      "integrating the wrong piece of a piecewise PDF"
+    ]
+  },
+  {
+    "id": "trap-quadratic-root-outside",
+    "term": "keeping a root outside the support",
+    "definition": "If the equation for a percentile is a quadratic, keep only the root that lies in the support of the PDF.",
+    "sections": [
+      "S2-4.2"
+    ],
+    "first_section": "S2-4.2",
+    "type": "trap",
+    "match": [
+      "keeping a root outside the support"
+    ]
+  },
+  {
+    "id": "trap-ln-chain",
+    "term": "forgetting to differentiate the inside of a logarithm",
+    "definition": "The derivative of ln f(x) is f'(x)/f(x), not 1/f(x). The chain rule contributes the derivative of the argument.",
+    "sections": [
+      "P23-4.4"
+    ],
+    "first_section": "P23-4.4",
+    "type": "trap",
+    "match": [
+      "forgetting to differentiate the inside of a logarithm"
+    ]
+  },
+  {
+    "id": "trap-degrees-in-calculus",
+    "term": "using degrees in calculus",
+    "definition": "The standard derivatives of sin x, cos x and tan x, and the corresponding integrals, hold only when the angle is measured in radians, unless a question says otherwise.",
+    "sections": [
+      "P23-4.5",
+      "P23-5.3"
+    ],
+    "first_section": "P23-4.5",
+    "type": "trap",
+    "match": [
+      "using degrees in calculus"
+    ]
+  },
+  {
+    "id": "parameter",
+    "term": "parameter",
+    "definition": "A third variable, often t, in terms of which both x and y are given.",
+    "sections": [
+      "P23-4.7"
+    ],
+    "first_section": "P23-4.7",
+    "type": "term",
+    "match": [
+      "parameter"
+    ]
+  },
+  {
+    "id": "parametric-equations",
+    "term": "parametric equations",
+    "definition": "A pair of equations that give x and y in terms of a parameter.",
+    "sections": [
+      "P23-4.7"
+    ],
+    "first_section": "P23-4.7",
+    "type": "term",
+    "match": [
+      "parametric equations"
+    ]
+  },
+  {
+    "id": "parametric-differentiation",
+    "term": "parametric differentiation",
+    "definition": "Finding dy/dx from dy/dt and dx/dt by the chain rule: dy/dx = (dy/dt) / (dx/dt), provided dx/dt is not zero.",
+    "sections": [
+      "P23-4.7"
+    ],
+    "first_section": "P23-4.7",
+    "type": "term",
+    "match": [
+      "parametric differentiation"
+    ]
+  },
+  {
+    "id": "trap-parametric-divide",
+    "term": "forgetting to divide by dx/dt",
+    "definition": "The derivative dy/dx is not equal to dy/dt. You must divide dy/dt by dx/dt.",
+    "sections": [
+      "P23-4.7"
+    ],
+    "first_section": "P23-4.7",
+    "type": "trap",
+    "match": [
+      "forgetting to divide by dx/dt"
+    ]
+  },
+  {
+    "id": "trap-trig-int-minus",
+    "term": "losing the minus sign when integrating sine",
+    "definition": "Because the derivative of cos x is −sin x, the integral of sin x is −cos x + c, and the integral of sin(ax+b) is −(1/a) cos(ax+b) + c.",
+    "sections": [
+      "P23-5.3"
+    ],
+    "first_section": "P23-5.3",
+    "type": "trap",
+    "match": [
+      "losing the minus sign when integrating sine"
+    ]
+  },
+  {
+    "id": "trap-trig-int-times-a",
+    "term": "multiplying by a instead of dividing when integrating",
+    "definition": "The reverse chain rule for sin(ax+b), cos(ax+b) and sec²(ax+b) divides by a, the coefficient of x; it does not multiply by a.",
+    "sections": [
+      "P23-5.3"
+    ],
+    "first_section": "P23-5.3",
+    "type": "trap",
+    "match": [
+      "multiplying by a instead of dividing when integrating"
+    ]
+  },
+  {
+    "id": "root",
+    "term": "root",
+    "definition": "A root of an equation in x is a value of x that satisfies the equation. On the graph of y equal to the left-hand side, the roots of y=0 are the x-intercepts.",
+    "sections": [
+      "IGCSE-18.3",
+      "P1-1.1",
+      "P1-1.2",
+      "P1-1.3",
+      "P1-1.4",
+      "P1-1.5",
+      "P1-1.7",
+      "P1-1.8",
+      "IGCSE-14.5",
+      "P23-6.1",
+      "P23-6.2"
+    ],
+    "first_section": "IGCSE-18.3",
+    "type": "term",
+    "match": [
+      "roots of the equation",
+      "root of the equation",
+      "roots",
+      "root"
+    ]
+  },
+  {
+    "id": "quadratic-equation",
+    "term": "quadratic equation",
+    "definition": "An equation that can be written in the form ax^2+bx+c=0 with a not zero. Its solutions may be read from the corresponding parabola.",
+    "sections": [
+      "IGCSE-18.3",
+      "P1-1.1",
+      "P1-1.2",
+      "P1-1.3",
+      "P1-1.4",
+      "P1-1.5",
+      "IGCSE-14.5"
+    ],
+    "first_section": "IGCSE-18.3",
+    "type": "term",
+    "match": [
+      "quadratic equations",
+      "quadratic equation"
+    ]
+  },
+  {
+    "id": "simultaneous-equations",
+    "term": "simultaneous equations",
+    "definition": "Two or more equations that are to be satisfied by the same values of the unknowns. For a straight line and a curve, the solutions are the coordinates of the points where the graphs meet.",
+    "sections": [
+      "IGCSE-18.4",
+      "IGCSE-14.1",
+      "P1-1.4"
+    ],
+    "first_section": "IGCSE-18.4",
+    "type": "term",
+    "match": [
+      "simultaneous equations"
+    ]
+  },
+  {
+    "id": "substitution",
+    "term": "substitution",
+    "definition": "Replacing a variable by an equal expression from another equation. Substituting the expression for y from a line into a curve produces an equation in x only.",
+    "sections": [
+      "IGCSE-18.4",
+      "IGCSE-14.1",
+      "P1-1.4",
+      "P1-1.5"
+    ],
+    "first_section": "IGCSE-18.4",
+    "type": "term",
+    "match": [
+      "substitution"
+    ]
+  },
+  {
+    "id": "cubic-graph",
+    "term": "cubic graph",
+    "definition": "The graph of a cubic polynomial in x. With a positive coefficient of x^3 the curve comes from the bottom left and leaves towards the top right; with a negative coefficient the directions are reversed.",
+    "sections": [
+      "IGCSE-18.5"
+    ],
+    "first_section": "IGCSE-18.5",
+    "type": "term",
+    "match": [
+      "cubic graphs",
+      "cubic graph"
+    ]
+  },
+  {
+    "id": "exponential-graph",
+    "term": "exponential graph",
+    "definition": "The graph of y=a^x for a positive constant a other than 1. Every such graph passes through (0,1), because a^0=1.",
+    "sections": [
+      "IGCSE-18.5"
+    ],
+    "first_section": "IGCSE-18.5",
+    "type": "term",
+    "match": [
+      "exponential graphs",
+      "exponential graph"
+    ]
+  },
+  {
+    "id": "dependent-events",
+    "term": "dependent events",
+    "definition": "Two events are dependent when the occurrence of one affects the probability of the other, as in selections without replacement.",
+    "sections": [
+      "S1-4.5"
+    ],
+    "first_section": "S1-4.5",
+    "type": "term",
+    "match": [
+      "dependent events",
+      "dependent event",
+      "are dependent",
+      "is dependent"
+    ]
+  },
+  {
+    "id": "trap-ignore-dependence",
+    "term": "using a simple product when events are dependent",
+    "definition": "A common mistake is to multiply the two ordinary probabilities P(A)P(B) after a selection without replacement, instead of using a conditional probability in the product.",
+    "sections": [
+      "S1-4.5"
+    ],
+    "first_section": "S1-4.5",
+    "type": "trap",
+    "match": [
+      "using a simple product when events are dependent"
+    ]
+  },
+  {
+    "id": "general-multiplication-law",
+    "term": "general multiplication law",
+    "definition": "For any two events A and B, P(A and B)=P(A)P(B given A)=P(B)P(A given B). When the events are independent this reduces to the product of the two ordinary probabilities.",
+    "sections": [
+      "S1-4.5"
+    ],
+    "first_section": "S1-4.5",
+    "type": "term",
+    "match": [
+      "general multiplication law"
+    ]
+  },
+  {
+    "id": "double-angle-integration",
+    "term": "double-angle formula",
+    "definition": "To integrate sin^2 x or cos^2 x, first rewrite using a double-angle identity: sin^2 x = (1/2)(1-cos 2x) and cos^2 x = (1/2)(1+cos 2x).",
+    "sections": [
+      "P23-5.4"
+    ],
+    "first_section": "P23-5.4",
+    "type": "term",
+    "match": [
+      "double-angle identities",
+      "double-angle formula"
+    ]
+  },
+  {
+    "id": "trap-sin2-as-power",
+    "term": "integrating sin squared x as a power",
+    "definition": "A common mistake is to write the integral of sin^2 x as (1/3)sin^3 x, instead of first using the double-angle identity.",
+    "sections": [
+      "P23-5.4"
+    ],
+    "first_section": "P23-5.4",
+    "type": "trap",
+    "match": [
+      "integrating sin squared x as a power"
+    ]
+  },
+  {
+    "id": "trigonometric-identity",
+    "term": "trigonometric identity",
+    "definition": "An equation between trigonometric expressions that holds for every value of the angle for which both sides are defined, such as tan squared x = sec squared x minus 1. Identities are used to rewrite expressions, for example before solving an equation or integrating.",
+    "sections": [
+      "P23-5.4",
+      "P1-5.7",
+      "P1-5.8"
+    ],
+    "first_section": "P23-5.4",
+    "type": "term",
+    "match": [
+      "trigonometric identity"
+    ]
+  },
+  {
+    "id": "expectation-crv",
+    "term": "expectation",
+    "definition": "For a continuous random variable X with PDF f, the expectation (mean) is E(X), the integral of x f(x) over the interval where f is non-zero.",
+    "sections": [
+      "S2-4.3"
+    ],
+    "first_section": "S2-4.3",
+    "type": "term",
+    "match": [
+      "expectation",
+      "mean"
+    ]
+  },
+  {
+    "id": "variance-crv",
+    "term": "variance",
+    "definition": "For a continuous random variable X, Var(X) = E(X squared) minus the square of E(X), where E(X squared) is the integral of x squared times f(x).",
+    "sections": [
+      "S2-4.3"
+    ],
+    "first_section": "S2-4.3",
+    "type": "term",
+    "match": [
+      "variance"
+    ]
+  },
+  {
+    "id": "trap-var-forget-minus-mean-sq",
+    "term": "stopping at E(X squared) when finding the variance",
+    "definition": "A common mistake is to give E(X^2) as the variance, instead of subtracting the square of the mean.",
+    "sections": [
+      "S2-4.3"
+    ],
+    "first_section": "S2-4.3",
+    "type": "trap",
+    "match": [
+      "stopping at E(X squared) when finding the variance"
+    ]
+  },
+  {
+    "id": "metric",
+    "term": "metric",
+    "definition": "The metric system measures length, mass and capacity in units linked by powers of ten, such as kilometres, metres and centimetres.",
+    "sections": [
+      "IGCSE-13.1"
+    ],
+    "first_section": "IGCSE-13.1",
+    "type": "term",
+    "match": [
+      "metric measurements",
+      "metric system",
+      "metric units",
+      "metric"
+    ]
+  },
+  {
+    "id": "conversion",
+    "term": "conversion",
+    "definition": "A change from one unit to another, using a conversion factor. Multiply when moving to a smaller unit and divide when moving to a larger unit.",
+    "sections": [
+      "IGCSE-13.1",
+      "IGCSE-13.4",
+      "IGCSE-13.5"
+    ],
+    "first_section": "IGCSE-13.1",
+    "type": "term",
+    "match": [
+      "conversion factors",
+      "conversion factor",
+      "conversions",
+      "conversion"
+    ]
+  },
+  {
+    "id": "unit",
+    "term": "unit",
+    "definition": "A standard used to measure a quantity, such as the metre for length or the litre for capacity.",
+    "sections": [
+      "IGCSE-13.1",
+      "IGCSE-13.3"
+    ],
+    "first_section": "IGCSE-13.1",
+    "type": "term",
+    "match": [
+      "units of measurement",
+      "units",
+      "unit"
+    ]
+  },
+  {
+    "id": "12-hour-clock",
+    "term": "12-hour clock",
+    "definition": "A way of writing times using the 12 hours from 12 midnight to 12 noon (am) and the 12 hours from 12 noon to 12 midnight (pm).",
+    "sections": [
+      "IGCSE-13.2"
+    ],
+    "first_section": "IGCSE-13.2",
+    "type": "term",
+    "match": [
+      "12-hour clocks",
+      "12-hour system",
+      "12-hour clock",
+      "12-hour"
+    ]
+  },
+  {
+    "id": "24-hour-clock",
+    "term": "24-hour clock",
+    "definition": "A way of writing times as four-digit times from 00 00 (midnight) to 23 59. Afternoon times are written by adding 12 hours to the 12-hour clock hour after 12 noon.",
+    "sections": [
+      "IGCSE-13.2"
+    ],
+    "first_section": "IGCSE-13.2",
+    "type": "term",
+    "match": [
+      "24-hour clocks",
+      "24-hour system",
+      "24-hour clock",
+      "24-hour"
+    ]
+  },
+  {
+    "id": "timetable",
+    "term": "timetable",
+    "definition": "A table of departure and arrival times for a service such as a bus or a train, usually written in the 24-hour clock.",
+    "sections": [
+      "IGCSE-13.2"
+    ],
+    "first_section": "IGCSE-13.2",
+    "type": "term",
+    "match": [
+      "timetables",
+      "timetable"
+    ]
+  },
+  {
+    "id": "lower-bound",
+    "term": "lower bound",
+    "definition": "The smallest value that a rounded measurement could have come from. It is found by subtracting half a unit of the given accuracy.",
+    "sections": [
+      "IGCSE-13.3"
+    ],
+    "first_section": "IGCSE-13.3",
+    "type": "term",
+    "match": [
+      "lower bounds",
+      "lower bound"
+    ]
+  },
+  {
+    "id": "upper-bound",
+    "term": "upper bound",
+    "definition": "The greatest value that a rounded measurement could have come from. It is found by adding half a unit of the given accuracy.",
+    "sections": [
+      "IGCSE-13.3"
+    ],
+    "first_section": "IGCSE-13.3",
+    "type": "term",
+    "match": [
+      "upper bounds",
+      "upper bound"
+    ]
+  },
+  {
+    "id": "error-interval",
+    "term": "error interval",
+    "definition": "The range of possible true values of a rounded measurement, from the lower bound up to the upper bound. It may be written with a strict or a closed inequality at the upper end, according to the question.",
+    "sections": [
+      "IGCSE-13.3"
+    ],
+    "first_section": "IGCSE-13.3",
+    "type": "term",
+    "match": [
+      "error intervals",
+      "error interval"
+    ]
+  },
+  {
+    "id": "factorisation",
+    "term": "factorisation",
+    "definition": "Rewriting a quadratic expression as a product of linear factors, so that a quadratic equation can be solved by setting each factor equal to zero.",
+    "sections": [
+      "P1-1.1",
+      "P1-1.3",
+      "P1-1.5",
+      "IGCSE-14.6"
+    ],
+    "first_section": "P1-1.1",
+    "type": "term",
+    "match": [
+      "factorisation",
+      "factorising",
+      "factorise"
+    ]
+  },
+  {
+    "id": "completing-the-square",
+    "term": "completing the square",
+    "definition": "Rewriting a quadratic expression so that the variable appears only inside a squared bracket, using the identities x squared plus 2dx equals (x+d) squared minus d squared, and the corresponding identity with a minus sign.",
+    "sections": [
+      "P1-1.2",
+      "P1-1.3",
+      "P1-1.6",
+      "IGCSE-14.4",
+      "IGCSE-14.5"
+    ],
+    "first_section": "P1-1.2",
+    "type": "term",
+    "match": [
+      "completing the square",
+      "complete the square"
+    ]
+  },
+  {
+    "id": "quadratic-formula",
+    "term": "quadratic formula",
+    "definition": "The formula x equals open parenthesis negative b plus or minus the square root of b squared minus 4ac close parenthesis, all divided by 2a, which gives the roots of the quadratic equation ax squared plus bx plus c equals 0 when a is not zero.",
+    "sections": [
+      "P1-1.3",
+      "IGCSE-14.5"
+    ],
+    "first_section": "P1-1.3",
+    "type": "term",
+    "match": [
+      "quadratic formula"
+    ]
+  },
+  {
+    "id": "qualitative-data",
+    "term": "qualitative data",
+    "definition": "Data described in words rather than numbers, also called categorical data, such as a colour or a blood type.",
+    "sections": [
+      "S1-1.1"
+    ],
+    "first_section": "S1-1.1",
+    "type": "term",
+    "match": [
+      "qualitative data",
+      "qualitative"
+    ]
+  },
+  {
+    "id": "quantitative-data",
+    "term": "quantitative data",
+    "definition": "Data that take numerical values. Quantitative data are either discrete or continuous.",
+    "sections": [
+      "S1-1.1"
+    ],
+    "first_section": "S1-1.1",
+    "type": "term",
+    "match": [
+      "quantitative data",
+      "quantitative"
+    ]
+  },
+  {
+    "id": "discrete-data",
+    "term": "discrete data",
+    "definition": "Numerical data that can take only certain separate values, usually from a count, and cannot be made more precise.",
+    "sections": [
+      "S1-1.1"
+    ],
+    "first_section": "S1-1.1",
+    "type": "term",
+    "match": [
+      "discrete data",
+      "discrete"
+    ]
+  },
+  {
+    "id": "continuous-data",
+    "term": "continuous data",
+    "definition": "Numerical data that are measurements given to a chosen degree of accuracy and can, in principle, take any value in an interval.",
+    "sections": [
+      "S1-1.1"
+    ],
+    "first_section": "S1-1.1",
+    "type": "term",
+    "match": [
+      "continuous data"
+    ]
+  },
+  {
+    "id": "trap-shoe-size-continuous",
+    "term": "treating shoe size as continuous",
+    "definition": "A common mistake is to treat shoe size as a continuous measurement. Shoe size takes only certain separate values, so it is discrete, even though a size need not be a whole number.",
+    "sections": [
+      "S1-1.1"
+    ],
+    "first_section": "S1-1.1",
+    "type": "trap",
+    "match": [
+      "treating shoe size as continuous"
+    ]
+  },
+  {
+    "id": "stem-and-leaf-diagram",
+    "term": "stem-and-leaf diagram",
+    "definition": "A table for a small set of discrete data in which the last digit of each value is a leaf, attached to the earlier digits, which form the stem. The leaves on each row are written in order, and a key with units must be given.",
+    "sections": [
+      "S1-1.2"
+    ],
+    "first_section": "S1-1.2",
+    "type": "term",
+    "match": [
+      "stem-and-leaf diagram"
+    ]
+  },
+  {
+    "id": "back-to-back-stem-and-leaf",
+    "term": "back-to-back stem-and-leaf diagram",
+    "definition": "A stem-and-leaf diagram with a shared stem and a set of leaves on each side, used to compare two data sets of the same kind.",
+    "sections": [
+      "S1-1.2"
+    ],
+    "first_section": "S1-1.2",
+    "type": "term",
+    "match": [
+      "back-to-back stem-and-leaf diagram",
+      "back-to-back"
+    ]
+  },
+  {
+    "id": "stem-digits",
+    "term": "stem",
+    "definition": "The leading digits shared by the values in a row of a stem-and-leaf diagram, written in a vertical list of equal class widths.",
+    "sections": [
+      "S1-1.2"
+    ],
+    "first_section": "S1-1.2",
+    "type": "term",
+    "match": [
+      "stem digits",
+      "the stem",
+      "a stem"
+    ]
+  },
+  {
+    "id": "leaf-digits",
+    "term": "leaf",
+    "definition": "The final digit of a data value in a stem-and-leaf diagram. Each leaf stands for one observation and the leaves in a row are ordered, with the smallest nearest the stem.",
+    "sections": [
+      "S1-1.2"
+    ],
+    "first_section": "S1-1.2",
+    "type": "term",
+    "match": [
+      "leaf digits",
+      "the leaves",
+      "a leaf"
+    ]
+  },
+  {
+    "id": "stem-and-leaf-key",
+    "term": "key (stem-and-leaf)",
+    "definition": "A statement, with the unit, that shows how to read a stem and a leaf as a data value, for example 1 | 2 means 12 employees.",
+    "sections": [
+      "S1-1.2"
+    ],
+    "first_section": "S1-1.2",
+    "type": "term",
+    "match": [
+      "the key",
+      "a key"
+    ]
+  },
+  {
+    "id": "trap-missing-key",
+    "term": "forgetting the key on a stem-and-leaf diagram",
+    "definition": "A common mistake is to draw a tidy stem-and-leaf diagram but omit the key, so a reader cannot tell what each stem and leaf together represent.",
+    "sections": [
+      "S1-1.2"
+    ],
+    "first_section": "S1-1.2",
+    "type": "trap",
+    "match": [
+      "forgetting the key on a stem-and-leaf diagram"
+    ]
+  },
+  {
+    "id": "modulus-function",
+    "term": "modulus function",
+    "definition": "The function defined by |x|=x when x is greater than or equal to 0, and |x|=-x when x is less than 0. Its value is the magnitude of x and is never negative. It is also called the absolute value.",
+    "sections": [
+      "P23-1.1"
+    ],
+    "first_section": "P23-1.1",
+    "type": "term",
+    "match": [
+      "modulus function",
+      "absolute value"
+    ]
+  },
+  {
+    "id": "trap-skip-root-check",
+    "term": "keeping a candidate that makes the other side negative",
+    "definition": "When |f(x)| is set equal to a linear expression that is not itself a modulus, each candidate must be substituted back. A value that makes the right-hand side negative is not a solution, because a modulus is never negative.",
+    "sections": [
+      "P23-1.1"
+    ],
+    "first_section": "P23-1.1",
+    "type": "trap",
+    "match": [
+      "keeping a candidate that makes the other side negative"
+    ]
+  },
+  {
+    "id": "vertex-modulus-graph",
+    "term": "vertex",
+    "definition": "The point of a V-shaped graph y = |ax+b| where the graph meets the x-axis, namely the point (-b/a, 0) when a is not zero.",
+    "sections": [
+      "P23-1.2"
+    ],
+    "first_section": "P23-1.2",
+    "type": "term",
+    "match": [
+      "vertex"
+    ]
+  },
+  {
+    "id": "trap-two-intersections",
+    "term": "assuming that a straight line always meets a V-shape at two points",
+    "definition": "A common mistake when solving |ax+b| = cx+d graphically is to assume there are always two intersections. One candidate can fail when the line lies below the x-axis, so a sketch or a substitution check is required.",
+    "sections": [
+      "P23-1.2"
+    ],
+    "first_section": "P23-1.2",
+    "type": "trap",
+    "match": [
+      "assuming that a straight line always meets a V-shape at two points"
+    ]
+  },
+  {
+    "id": "hypothesis-test",
+    "term": "hypothesis test",
+    "definition": "A procedure that asks whether an observed result could reasonably have happened by chance under a stated claim, or whether the chance of such a result is small enough to be called statistically significant. A test cannot prove a claim with certainty.",
+    "sections": [
+      "S2-1.1",
+      "S2-2.5"
+    ],
+    "first_section": "S2-1.1",
+    "type": "term",
+    "match": [
+      "hypothesis testing",
+      "hypothesis test"
+    ]
+  },
+  {
+    "id": "null-hypothesis",
+    "term": "null hypothesis",
+    "definition": "The claim under test, written H0. In this subsection it is a stated value of a binomial probability p, and the test asks whether the data are consistent with that value.",
+    "sections": [
+      "S2-1.1",
+      "S2-2.5"
+    ],
+    "first_section": "S2-1.1",
+    "type": "term",
+    "match": [
+      "null hypothesis"
+    ]
+  },
+  {
+    "id": "alternative-hypothesis",
+    "term": "alternative hypothesis",
+    "definition": "The competing claim, written H1. In this subsection the alternative is one-tailed: either p is less than the value in H0, or p is greater than that value, but not both.",
+    "sections": [
+      "S2-1.1",
+      "S2-2.5"
+    ],
+    "first_section": "S2-1.1",
+    "type": "term",
+    "match": [
+      "alternative hypothesis"
+    ]
+  },
+  {
+    "id": "significance-level",
+    "term": "significance level",
+    "definition": "The threshold, often 5% or 10%, used to decide whether an observed tail probability is small enough to reject H0. It must be compared with the calculated tail, or used to read a critical value, before a conclusion is written.",
+    "sections": [
+      "S2-1.1",
+      "S2-2.5"
+    ],
+    "first_section": "S2-1.1",
+    "type": "term",
+    "match": [
+      "significance level"
+    ]
+  },
+  {
+    "id": "critical-region",
+    "term": "critical region",
+    "definition": "The set of values of the test statistic that lead to rejection of H0. It is also called the rejection region. In a one-tailed binomial test it is a tail of the form X is at most c, or X is at least c.",
+    "sections": [
+      "S2-1.1",
+      "S2-2.5"
+    ],
+    "first_section": "S2-1.1",
+    "type": "term",
+    "match": [
+      "rejection region",
+      "critical region"
+    ]
+  },
+  {
+    "id": "acceptance-region",
+    "term": "acceptance region",
+    "definition": "The set of values of the test statistic that do not lead to rejection of H0. It is the complement of the critical region.",
+    "sections": [
+      "S2-1.1"
+    ],
+    "first_section": "S2-1.1",
+    "type": "term",
+    "match": [
+      "acceptance region"
+    ]
+  },
+  {
+    "id": "critical-value",
+    "term": "critical value",
+    "definition": "The boundary value of the test statistic that marks the edge of the critical region. For a one-tailed binomial test it is the largest (or smallest) integer in that tail for which the tail probability is still no greater than the significance level.",
+    "sections": [
+      "S2-1.1"
+    ],
+    "first_section": "S2-1.1",
+    "type": "term",
+    "match": [
+      "critical value"
+    ]
+  },
+  {
+    "id": "test-statistic",
+    "term": "test statistic",
+    "definition": "The observed quantity on which the test is based. In this subsection it is usually the number of successes X, or a continuity-corrected z-value when a normal approximation is used.",
+    "sections": [
+      "S2-1.1"
+    ],
+    "first_section": "S2-1.1",
+    "type": "term",
+    "match": [
+      "test statistic"
+    ]
+  },
+  {
+    "id": "trap-wrong-h0-direction",
+    "term": "writing H0 as the suspicion being tested",
+    "definition": "A common mistake is to put the experimenter's suspicion into H0, or to write H1 in the opposite direction to the claim being tested. H0 is the existing value of p; H1 follows the direction of the suspicion.",
+    "sections": [
+      "S2-1.1"
+    ],
+    "first_section": "S2-1.1",
+    "type": "trap",
+    "match": [
+      "writing H0 as the suspicion being tested"
+    ]
+  },
+  {
+    "id": "conversion-graph",
+    "term": "conversion graph",
+    "definition": "A straight-line graph that relates two quantities, such as miles and kilometres. A value on one axis is read across or up to the line and then across or down to the other axis.",
+    "sections": [
+      "IGCSE-13.4"
+    ],
+    "first_section": "IGCSE-13.4",
+    "type": "term",
+    "match": [
+      "conversion graphs",
+      "conversion graph"
+    ]
+  },
+  {
+    "id": "exchange-rate",
+    "term": "exchange rate",
+    "definition": "The number of units of one currency that are equal to one unit of another currency. Multiply by the rate when changing from the currency written as 1, and divide when changing the other way.",
+    "sections": [
+      "IGCSE-13.5"
+    ],
+    "first_section": "IGCSE-13.5",
+    "type": "term",
+    "match": [
+      "exchange rates",
+      "exchange rate"
+    ]
+  },
+  {
+    "id": "currency",
+    "term": "currency",
+    "definition": "The system of money used in a country, such as dollars, pounds, euros or yen. Amounts in one currency are changed into another using an exchange rate.",
+    "sections": [
+      "IGCSE-13.5"
+    ],
+    "first_section": "IGCSE-13.5",
+    "type": "term",
+    "match": [
+      "currencies",
+      "currency"
+    ]
+  },
+  {
+    "id": "elimination",
+    "term": "elimination",
+    "definition": "A method for solving a pair of linear simultaneous equations by adding or subtracting multiples of the equations so that one unknown cancels, leaving an equation in the other unknown.",
+    "sections": [
+      "IGCSE-14.1"
+    ],
+    "first_section": "IGCSE-14.1",
+    "type": "term",
+    "match": [
+      "elimination"
+    ]
+  },
+  {
+    "id": "histogram",
+    "term": "histogram",
+    "definition": "A diagram for grouped continuous data in which the area of each column is proportional to the class frequency. There are no gaps between columns unless a class has frequency zero, and the vertical axis is frequency density.",
+    "sections": [
+      "S1-1.3",
+      "IGCSE-20.1"
+    ],
+    "first_section": "S1-1.3",
+    "type": "term",
+    "match": [
+      "histograms",
+      "histogram"
+    ]
+  },
+  {
+    "id": "frequency-density",
+    "term": "frequency density",
+    "definition": "The height of a histogram column, equal to the class frequency divided by the class width. It measures frequency per unit of the horizontal variable.",
+    "sections": [
+      "S1-1.3",
+      "IGCSE-20.1"
+    ],
+    "first_section": "S1-1.3",
+    "type": "term",
+    "match": [
+      "frequency densities",
+      "frequency density"
+    ]
+  },
+  {
+    "id": "class-width",
+    "term": "class width",
+    "definition": "The difference between the upper class boundary and the lower class boundary of a class. It is the width of the corresponding histogram column.",
+    "sections": [
+      "S1-1.3",
+      "IGCSE-20.1"
+    ],
+    "first_section": "S1-1.3",
+    "type": "term",
+    "match": [
+      "class widths",
+      "class width"
+    ]
+  },
+  {
+    "id": "class-boundary",
+    "term": "class boundary",
+    "definition": "An end of a class interval after rounding has been allowed for. The lower and upper class boundaries of a class are used to find the class width and the class mid-value, and to place the column of a histogram.",
+    "sections": [
+      "S1-1.3"
+    ],
+    "first_section": "S1-1.3",
+    "type": "term",
+    "match": [
+      "lower class boundaries",
+      "upper class boundaries",
+      "class boundaries",
+      "class boundary"
+    ]
+  },
+  {
+    "id": "class-mid-value",
+    "term": "class mid-value",
+    "definition": "The mean of the lower and upper class boundaries of a class. It is also called the midpoint of the class.",
+    "sections": [
+      "S1-1.3",
+      "S1-2.2"
+    ],
+    "first_section": "S1-1.3",
+    "type": "term",
+    "match": [
+      "class mid-values",
+      "class mid-value",
+      "mid-values",
+      "mid-value"
+    ]
+  },
+  {
+    "id": "class-interval",
+    "term": "class interval",
+    "definition": "The range of values belonging to one class, from its lower class boundary to its upper class boundary.",
+    "sections": [
+      "S1-1.3"
+    ],
+    "first_section": "S1-1.3",
+    "type": "term",
+    "match": [
+      "class intervals",
+      "class interval"
+    ]
+  },
+  {
+    "id": "trap-fd-vs-frequency",
+    "term": "using the frequency as the column height",
+    "definition": "A common mistake, when the classes have unequal widths, is to take the frequency itself as the height of a histogram column. The height must be the frequency density, so that area is proportional to frequency.",
+    "sections": [
+      "S1-1.3"
+    ],
+    "first_section": "S1-1.3",
+    "type": "trap",
+    "match": [
+      "using the frequency as the column height"
+    ]
+  },
+  {
+    "id": "trap-rounded-width",
+    "term": "taking the class width from the rounded labels",
+    "definition": "A common mistake is to compute a class width from rounded class labels, for example treating 60–62 as width 2, instead of using the class boundaries 59.5 and 62.5.",
+    "sections": [
+      "S1-1.3"
+    ],
+    "first_section": "S1-1.3",
+    "type": "trap",
+    "match": [
+      "taking the class width from the rounded labels"
+    ]
+  },
+  {
+    "id": "cumulative-frequency",
+    "term": "cumulative frequency",
+    "definition": "The total frequency of all values less than a given value. For grouped data it is obtained by adding the class frequencies up to that value.",
+    "sections": [
+      "S1-1.4",
+      "IGCSE-20.2"
+    ],
+    "first_section": "S1-1.4",
+    "type": "term",
+    "match": [
+      "cumulative frequencies",
+      "cumulative frequency"
+    ]
+  },
+  {
+    "id": "cumulative-frequency-graph",
+    "term": "cumulative frequency graph",
+    "definition": "A graph of cumulative frequency against the upper class boundaries of grouped continuous data. The starting point, at the lowest lower class boundary, has cumulative frequency 0.",
+    "sections": [
+      "S1-1.4"
+    ],
+    "first_section": "S1-1.4",
+    "type": "term",
+    "match": [
+      "cumulative frequency graphs",
+      "cumulative frequency graph"
+    ]
+  },
+  {
+    "id": "cumulative-frequency-polygon",
+    "term": "cumulative frequency polygon",
+    "definition": "A cumulative frequency graph in which the plotted points are joined by straight-line segments. Estimates taken from the polygon match those taken from a histogram for the same grouped data.",
+    "sections": [
+      "S1-1.4"
+    ],
+    "first_section": "S1-1.4",
+    "type": "term",
+    "match": [
+      "cumulative frequency polygons",
+      "cumulative frequency polygon"
+    ]
+  },
+  {
+    "id": "cumulative-frequency-curve",
+    "term": "cumulative frequency curve",
+    "definition": "A cumulative frequency graph in which the plotted points are joined by a smooth curve. Away from the plotted points, readings from a curve need not agree with readings from a polygon.",
+    "sections": [
+      "S1-1.4",
+      "IGCSE-20.2"
+    ],
+    "first_section": "S1-1.4",
+    "type": "term",
+    "match": [
+      "cumulative frequency curves",
+      "cumulative frequency curve"
+    ]
+  },
+  {
+    "id": "trap-cf-midvalues",
+    "term": "plotting cumulative frequencies at class mid-values",
+    "definition": "A common mistake is to plot cumulative frequencies at class mid-values. The totals are known exactly only at the upper class boundaries, and mid-value plots would themselves be estimates.",
+    "sections": [
+      "S1-1.4"
+    ],
+    "first_section": "S1-1.4",
+    "type": "trap",
+    "match": [
+      "plotting cumulative frequencies at class mid-values"
+    ]
+  },
+  {
+    "id": "modulus-inequality",
+    "term": "modulus inequality",
+    "definition": "An inequality that involves one or more expressions of the form |ax+b|. It may be rewritten using |a| < b if and only if -b < a < b, or |a| > b if and only if a < -b or a > b, or, when two moduli are compared, by squaring both sides.",
+    "sections": [
+      "P23-1.3"
+    ],
+    "first_section": "P23-1.3",
+    "type": "term",
+    "match": [
+      "modulus inequalities",
+      "modulus inequality"
+    ]
+  },
+  {
+    "id": "boundary-value",
+    "term": "boundary value",
+    "definition": "A value of x at which the two sides of a modulus inequality are equal. The solution is found by testing the sign of the inequality on each side of these values, or by reading the corresponding intersections on a graph.",
+    "sections": [
+      "P23-1.3"
+    ],
+    "first_section": "P23-1.3",
+    "type": "term",
+    "match": [
+      "boundary values",
+      "boundary value"
+    ]
+  },
+  {
+    "id": "polynomial",
+    "term": "polynomial",
+    "definition": "An expression a_n x^n + ... + a_1 x + a_0, where n is a non-negative integer and a_n is not zero. The coefficients are constants and x is a variable.",
+    "sections": [
+      "P23-1.4"
+    ],
+    "first_section": "P23-1.4",
+    "type": "term",
+    "match": [
+      "polynomials",
+      "polynomial"
+    ]
+  },
+  {
+    "id": "degree-of-a-polynomial",
+    "term": "degree of a polynomial",
+    "definition": "The highest power of x that appears in the polynomial, after any zero coefficients have been ignored.",
+    "sections": [
+      "P23-1.4"
+    ],
+    "first_section": "P23-1.4",
+    "type": "term",
+    "match": [
+      "degree of the polynomial",
+      "degree of a polynomial"
+    ]
+  },
+  {
+    "id": "leading-coefficient",
+    "term": "leading coefficient",
+    "definition": "The coefficient of the highest power of x in a polynomial. It is not zero.",
+    "sections": [
+      "P23-1.4"
+    ],
+    "first_section": "P23-1.4",
+    "type": "term",
+    "match": [
+      "leading coefficient"
+    ]
+  },
+  {
+    "id": "constant-term",
+    "term": "constant term",
+    "definition": "The term of a polynomial that does not involve x; the coefficient a_0.",
+    "sections": [
+      "P23-1.4"
+    ],
+    "first_section": "P23-1.4",
+    "type": "term",
+    "match": [
+      "constant term"
+    ]
+  },
+  {
+    "id": "dividend",
+    "term": "dividend",
+    "definition": "The polynomial that is being divided.",
+    "sections": [
+      "P23-1.4"
+    ],
+    "first_section": "P23-1.4",
+    "type": "term",
+    "match": [
+      "dividend"
+    ]
+  },
+  {
+    "id": "divisor",
+    "term": "divisor",
+    "definition": "The polynomial that is dividing the dividend.",
+    "sections": [
+      "P23-1.4"
+    ],
+    "first_section": "P23-1.4",
+    "type": "term",
+    "match": [
+      "divisor"
+    ]
+  },
+  {
+    "id": "polynomial-quotient",
+    "term": "quotient of a polynomial",
+    "definition": "The polynomial obtained by dividing one polynomial by another, before any remainder is written down.",
+    "sections": [
+      "P23-1.4"
+    ],
+    "first_section": "P23-1.4",
+    "type": "term",
+    "match": [
+      "quotient of the polynomial",
+      "quotient of a polynomial"
+    ]
+  },
+  {
+    "id": "remainder-polynomial",
+    "term": "remainder",
+    "definition": "What is left after one polynomial has been divided by another. Its degree is less than the degree of the divisor. If the remainder is 0, the divisor is a factor of the dividend.",
+    "sections": [
+      "P23-1.4"
+    ],
+    "first_section": "P23-1.4",
+    "type": "term",
+    "match": [
+      "remainder"
+    ]
+  },
+  {
+    "id": "division-algorithm",
+    "term": "division algorithm",
+    "definition": "The identity dividend = divisor × (quotient of a polynomial) + remainder, used to record the result of dividing one polynomial by another.",
+    "sections": [
+      "P23-1.4"
+    ],
+    "first_section": "P23-1.4",
+    "type": "term",
+    "match": [
+      "division algorithm"
+    ]
+  },
+  {
+    "id": "trap-missing-power",
+    "term": "when a power is missing",
+    "definition": "A common mistake in long division is to forget a placeholder 0x^k when a power is missing, and then to subtract from the wrong column.",
+    "sections": [
+      "P23-1.4"
+    ],
+    "first_section": "P23-1.4",
+    "type": "trap",
+    "match": [
+      "when a power is missing"
+    ]
+  },
+  {
+    "id": "one-tailed-test",
+    "term": "one-tailed test",
+    "definition": "A hypothesis test in which the alternative hypothesis has a direction, using < or >, and the critical region lies in a single tail of the distribution.",
+    "sections": [
+      "S2-1.2"
+    ],
+    "first_section": "S2-1.2",
+    "type": "term",
+    "match": [
+      "one-tailed tests",
+      "one-tailed test"
+    ]
+  },
+  {
+    "id": "two-tailed-test",
+    "term": "two-tailed test",
+    "definition": "A hypothesis test in which the alternative hypothesis uses ≠, because the claim is only that the parameter is different from the value in H0. The significance level is shared between the two tails, usually equally, and the observed tail probability is compared with half of the significance level.",
+    "sections": [
+      "S2-1.2"
+    ],
+    "first_section": "S2-1.2",
+    "type": "term",
+    "match": [
+      "two-tailed tests",
+      "two-tailed test"
+    ]
+  },
+  {
+    "id": "linear-inequality",
+    "term": "linear inequality",
+    "definition": "A statement comparing two linear expressions, such as 3x-4 < 11. Its solutions form a range of values, which can be shown on a number line.",
+    "sections": [
+      "IGCSE-14.2"
+    ],
+    "first_section": "IGCSE-14.2",
+    "type": "term",
+    "match": [
+      "linear inequalities",
+      "linear inequality"
+    ]
+  },
+  {
+    "id": "number-line",
+    "term": "number line",
+    "definition": "A line on which numbers are marked in order. For an inequality, a filled circle includes the end-point and an open circle excludes it.",
+    "sections": [
+      "IGCSE-14.2"
+    ],
+    "first_section": "IGCSE-14.2",
+    "type": "term",
+    "match": [
+      "number line"
+    ]
+  },
+  {
+    "id": "region-in-a-plane",
+    "term": "region",
+    "definition": "A set of points in the coordinate plane that satisfy one or more inequalities. The boundary line is solid if equality is included and broken if it is not.",
+    "sections": [
+      "IGCSE-14.3"
+    ],
+    "first_section": "IGCSE-14.3",
+    "type": "term",
+    "match": [
+      "region that represents",
+      "region in the plane",
+      "unshaded region",
+      "required region"
+    ]
+  },
+  {
+    "id": "simultaneous-inequalities",
+    "term": "simultaneous inequalities",
+    "definition": "Two or more inequalities that must all be satisfied at the same time. The required region is the overlap of the individual regions.",
+    "sections": [
+      "IGCSE-14.3"
+    ],
+    "first_section": "IGCSE-14.3",
+    "type": "term",
+    "match": [
+      "simultaneous inequalities"
+    ]
+  },
+  {
+    "id": "quadratic-inequality",
+    "term": "quadratic inequality",
+    "definition": "An inequality that involves a quadratic expression, such as x^2-7x+10<0. It is solved by finding the roots of the corresponding equation and reading a sketch of the parabola.",
+    "sections": [
+      "P1-1.7"
+    ],
+    "first_section": "P1-1.7",
+    "type": "term",
+    "match": [
+      "quadratic inequalities",
+      "quadratic inequality"
+    ]
+  },
+  {
+    "id": "data-representation",
+    "term": "data representation",
+    "definition": "A diagram or table used to display a data set, chosen to match the type and quantity of the data, the audience and the purpose, without being misleading.",
+    "type": "term",
+    "first_section": "S1-1.5",
+    "sections": [
+      "S1-1.5"
+    ],
+    "match": [
+      "data representations",
+      "data representation"
+    ]
+  },
+  {
+    "id": "trap-bar-unequal-width",
+    "term": "bar chart for unequal-width classes",
+    "definition": "A bar chart treats classes as comparable categories, so it is misleading for continuous data grouped in classes of unequal width; a histogram, with area proportional to frequency, is appropriate instead.",
+    "type": "trap",
+    "first_section": "S1-1.5",
+    "sections": [
+      "S1-1.5"
+    ],
+    "match": [
+      "using a bar chart for classes of unequal width"
+    ]
+  },
+  {
+    "id": "factor-theorem",
+    "term": "factor theorem",
+    "definition": "If, for a polynomial P(x), P(c)=0, then x-c is a factor of P(x). More generally, if P(b/a)=0, then ax-b is a factor of P(x).",
+    "type": "term",
+    "first_section": "P23-1.5",
+    "sections": [
+      "P23-1.5"
+    ],
+    "match": [
+      "factor theorem"
+    ]
+  },
+  {
+    "id": "trap-factor-wrong-sign",
+    "term": "testing x=c for the factor x+c",
+    "definition": "To test whether x+c is a factor, substitute x=-c, not x=c.",
+    "type": "trap",
+    "first_section": "P23-1.5",
+    "sections": [
+      "P23-1.5"
+    ],
+    "match": [
+      "substituting x=c to test the factor x+c"
+    ]
+  },
+  {
+    "id": "remainder-theorem",
+    "term": "remainder theorem",
+    "definition": "If a polynomial P(x) is divided by x-c, the remainder is P(c). If P(x) is divided by ax-b, the remainder is P(b/a).",
+    "type": "term",
+    "first_section": "P23-1.6",
+    "sections": [
+      "P23-1.6"
+    ],
+    "match": [
+      "remainder theorem"
+    ]
+  },
+  {
+    "id": "trap-remainder-wrong-sign",
+    "term": "substituting the wrong point for a remainder",
+    "definition": "For a remainder when dividing by x+c, substitute x=-c, not x=c. For a divisor ax-b, substitute x=b/a, not x=a/b.",
+    "type": "trap",
+    "first_section": "P23-1.6",
+    "sections": [
+      "P23-1.6"
+    ],
+    "match": [
+      "substituting the wrong point for a remainder"
+    ]
+  },
+  {
+    "id": "logarithm",
+    "term": "logarithm",
+    "definition": "The logarithm to base 10 of a positive number y is the power to which 10 must be raised to obtain y: if 10^x=y, then x=log_10 y. The same value is given by the calculator keys log or lg.",
+    "type": "term",
+    "first_section": "P23-2.1",
+    "sections": [
+      "P23-2.1",
+      "P23-2.4",
+      "P23-2.5",
+      "P23-2.6"
+    ],
+    "match": [
+      "logarithms to base 10",
+      "logarithm to base 10",
+      "logarithms",
+      "logarithm",
+      "lg"
+    ]
+  },
+  {
+    "id": "trap-index-base-swap",
+    "term": "swapping the base and the index of a logarithm",
+    "definition": "In logarithmic form the index stands alone and the base of 10^x is the base of the logarithm: 10^x=y is x=log_10 y, not y=log_10 x.",
+    "type": "trap",
+    "first_section": "P23-2.1",
+    "sections": [
+      "P23-2.1"
+    ],
+    "match": [
+      "writing the base and the index the wrong way round"
+    ]
+  },
+  {
+    "id": "exponential",
+    "term": "exponential",
+    "type": "term",
+    "match": [
+      "exponential"
+    ],
+    "definition": "A quantity or function in which the variable appears as an index, such as \\(10^x\\). The exponential \\(10^x\\) and the logarithm to base 10 are inverse functions.",
+    "first_section": "P23-2.1",
+    "sections": [
+      "P23-2.1"
+    ]
+  },
+  {
+    "id": "type-i-error",
+    "term": "Type I error",
+    "definition": "A Type I error occurs when a true null hypothesis is rejected. Its probability is the probability of landing in the critical region when H0 is true, and is at most the significance level of the test.",
+    "type": "term",
+    "first_section": "S2-1.3",
+    "sections": [
+      "S2-1.3",
+      "S2-2.5"
+    ],
+    "match": [
+      "Type I errors",
+      "Type I error"
+    ]
+  },
+  {
+    "id": "type-ii-error",
+    "term": "Type II error",
+    "definition": "A Type II error occurs when a false null hypothesis is accepted. Its probability can be calculated only when a particular value of the parameter under H1 is given.",
+    "type": "term",
+    "first_section": "S2-1.3",
+    "sections": [
+      "S2-1.3"
+    ],
+    "match": [
+      "Type II errors",
+      "Type II error"
+    ]
+  },
+  {
+    "id": "algebraic-fraction",
+    "term": "algebraic fraction",
+    "definition": "A fraction whose numerator or denominator, or both, contains an algebraic expression. It is simplified by cancelling a common factor, and combined by using a common denominator or by multiplying by a reciprocal.",
+    "sections": [
+      "IGCSE-14.7"
+    ],
+    "first_section": "IGCSE-14.7",
+    "type": "term",
+    "match": [
+      "algebraic fractions",
+      "algebraic fraction"
+    ]
+  },
+  {
+    "id": "one-one-function",
+    "term": "one-one function",
+    "definition": "A function for which each output that appears comes from exactly one input. A horizontal line meets the graph at most once.",
+    "sections": [
+      "P1-2.1",
+      "P1-2.3",
+      "P1-2.4"
+    ],
+    "first_section": "P1-2.1",
+    "type": "term",
+    "match": [
+      "one-one functions",
+      "one-one function",
+      "one-one mapping"
+    ]
+  },
+  {
+    "id": "many-one-function",
+    "term": "many-one function",
+    "definition": "A function for which each input has one output, but an output may come from more than one input. The mapping x to x squared, for real x, is many-one.",
+    "sections": [
+      "P1-2.1"
+    ],
+    "first_section": "P1-2.1",
+    "type": "term",
+    "match": [
+      "many-one functions",
+      "many-one function"
+    ]
+  },
+  {
+    "id": "domain-of-a-function",
+    "term": "domain of a function",
+    "definition": "The set of allowed input values of a function. It must be stated as part of the definition of the function.",
+    "sections": [
+      "P1-2.1",
+      "P1-2.2",
+      "P1-2.3",
+      "P1-2.4"
+    ],
+    "first_section": "P1-2.1",
+    "type": "term",
+    "match": [
+      "domain of this function",
+      "domain of the function",
+      "domain of f",
+      "domain of g"
+    ]
+  },
+  {
+    "id": "range-of-a-function",
+    "term": "range of a function",
+    "definition": "The set of output values that a function actually takes, as the input runs through the domain. The coursebook also uses the word codomain for this set of outputs.",
+    "sections": [
+      "P1-2.1",
+      "P1-2.2",
+      "P1-2.3",
+      "P1-2.4"
+    ],
+    "first_section": "P1-2.1",
+    "type": "term",
+    "match": [
+      "range of this function",
+      "range of the function",
+      "range of fg",
+      "range of ff",
+      "range of f",
+      "range of g"
+    ]
+  },
+  {
+    "id": "composite-function",
+    "term": "composite function",
+    "definition": "The function obtained by applying one function and then another. The notation fg(x) means that g acts on x first, and then f acts on the result.",
+    "sections": [
+      "P1-2.2"
+    ],
+    "first_section": "P1-2.2",
+    "type": "term",
+    "match": [
+      "composite functions",
+      "composite function"
+    ]
+  },
+  {
+    "id": "inverse-function",
+    "term": "inverse function",
+    "definition": "The function that undoes a given one-one function f. It is written f to the minus one. The domain of the inverse is the range of f, and the range of the inverse is the domain of f.",
+    "sections": [
+      "P1-2.3",
+      "P1-2.4"
+    ],
+    "first_section": "P1-2.3",
+    "type": "term",
+    "match": [
+      "inverse of the function",
+      "inverse of a function",
+      "inverse functions",
+      "inverse function"
+    ]
+  },
+  {
+    "id": "self-inverse-function",
+    "term": "self-inverse function",
+    "definition": "A function that is equal to its own inverse, so that f and f to the minus one are the same mapping. For example, f(x)=1/x for x not 0 is self-inverse.",
+    "sections": [
+      "P1-2.3",
+      "P1-2.4"
+    ],
+    "first_section": "P1-2.3",
+    "type": "term",
+    "match": [
+      "self-inverse functions",
+      "self-inverse function"
+    ]
+  },
+  {
+    "id": "mode",
+    "term": "mode",
+    "type": "term",
+    "match": [
+      "modes",
+      "mode"
+    ],
+    "definition": "The value that occurs most often in a set of data. A list may have more than one mode, or no mode at all.",
+    "first_section": "S1-2.1",
+    "sections": [
+      "S1-2.1"
+    ]
+  },
+  {
+    "id": "modal-class",
+    "term": "modal class",
+    "type": "term",
+    "match": [
+      "modal classes",
+      "modal class"
+    ],
+    "definition": "In grouped data, the class with the highest frequency density. In a histogram it is the class with the tallest column.",
+    "first_section": "S1-2.1",
+    "sections": [
+      "S1-2.1"
+    ]
+  },
+  {
+    "id": "trap-modal-highest-frequency",
+    "term": "taking the highest frequency as the modal class",
+    "type": "trap",
+    "match": [
+      "taking the class with the highest frequency as the modal class"
+    ],
+    "definition": "The modal class is the class with the highest frequency density, not necessarily the highest frequency, unless every class has the same width.",
+    "first_section": "S1-2.1",
+    "sections": [
+      "S1-2.1"
+    ]
+  },
+  {
+    "id": "logarithm-to-base-a",
+    "term": "logarithm to base a",
+    "type": "term",
+    "match": [
+      "logarithms to base a",
+      "logarithm to base a"
+    ],
+    "definition": "If y = a^x, then x = log_a y, provided that a > 0, a is not 1, and y > 0. The functions a^x and log_a x are inverses.",
+    "first_section": "P23-2.2",
+    "sections": [
+      "P23-2.2"
+    ]
+  },
+  {
+    "id": "laws-of-logarithms",
+    "term": "laws of logarithms",
+    "type": "term",
+    "match": [
+      "laws of logarithms",
+      "law of logarithms"
+    ],
+    "definition": "For a positive base a other than 1, log_a(xy) = log_a x + log_a y, log_a(x/y) = log_a x - log_a y, and log_a(x^m) = m log_a x.",
+    "first_section": "P23-2.3",
+    "sections": [
+      "P23-2.3",
+      "P23-2.4",
+      "P23-2.7"
+    ]
+  },
+  {
+    "id": "multiplication-law-of-logarithms",
+    "term": "multiplication law of logarithms",
+    "type": "term",
+    "match": [
+      "multiplication law of logarithms"
+    ],
+    "definition": "log_a(xy) = log_a x + log_a y, provided the logarithms are defined. This is not the same as the addition of x and y inside a single logarithm.",
+    "first_section": "P23-2.3",
+    "sections": [
+      "P23-2.3"
+    ]
+  },
+  {
+    "id": "trap-log-sum-as-sum",
+    "term": "writing log x + log y as log(x + y)",
+    "type": "trap",
+    "match": [
+      "writing log x + log y as log(x + y)"
+    ],
+    "definition": "The multiplication law of logarithms combines a product, not a sum: log x + log y = log(xy).",
+    "first_section": "P23-2.3",
+    "sections": [
+      "P23-2.3"
+    ]
+  },
+  {
+    "id": "poisson-distribution",
+    "term": "Poisson distribution",
+    "type": "term",
+    "match": [
+      "Poisson distributions",
+      "Poisson distribution"
+    ],
+    "definition": "A discrete distribution for the number of events that occur singly, at random and independently in a fixed interval. If X ~ Po(λ), then E(X) = Var(X) = λ and P(X = r) = e^{-λ} λ^r / r!.",
+    "first_section": "S2-2.1",
+    "sections": [
+      "S2-2.1",
+      "S2-2.2",
+      "S2-2.3",
+      "S2-2.5",
+      "S2-2.4"
+    ]
+  },
+  {
+    "id": "poisson-parameter",
+    "term": "Poisson parameter",
+    "type": "term",
+    "match": [
+      "Poisson parameter"
+    ],
+    "definition": "The single parameter λ of a Poisson distribution, equal to both the mean and the variance.",
+    "first_section": "S2-2.1",
+    "sections": [
+      "S2-2.1",
+      "S2-2.2",
+      "S2-2.3"
+    ]
+  },
+  {
+    "id": "trap-poisson-unscaled-mean",
+    "term": "using the original mean for a different interval",
+    "type": "trap",
+    "match": [
+      "using the original mean for a different interval"
+    ],
+    "definition": "If events occur at a constant rate, the Poisson parameter is proportional to the length of the interval and must be scaled before it is used.",
+    "first_section": "S2-2.2",
+    "sections": [
+      "S2-2.2"
+    ]
+  },
+  {
+    "id": "arithmetic-mean",
+    "term": "arithmetic mean",
+    "type": "term",
+    "match": [
+      "arithmetic means",
+      "arithmetic mean"
+    ],
+    "definition": "The sum of a set of data values divided by the number of values. For ungrouped data it is (Sigma x)/n, and for a frequency table it is (Sigma xf)/(Sigma f).",
+    "first_section": "S1-2.2",
+    "sections": [
+      "S1-2.2"
+    ]
+  },
+  {
+    "id": "coded-data",
+    "term": "coded data",
+    "type": "term",
+    "match": [
+      "coded values",
+      "coded value",
+      "coded data"
+    ],
+    "definition": "Values rewritten as x-b or ax-b to make a calculation simpler. The original mean is recovered by undoing the coding: add b, and if there is a multiplier, then divide by a.",
+    "first_section": "S1-2.2",
+    "sections": [
+      "S1-2.2"
+    ]
+  },
+  {
+    "id": "trap-unweighted-means",
+    "term": "taking the mean of the two means",
+    "type": "trap",
+    "match": [
+      "taking the mean of the two means"
+    ],
+    "definition": "The mean of two combined sets is the total of all the values divided by the total number of values. Averaging the two separate means is correct only when the two sets have the same size.",
+    "first_section": "S1-2.2",
+    "sections": [
+      "S1-2.2"
+    ]
+  },
+  {
+    "id": "logarithmic-equation",
+    "term": "logarithmic equation",
+    "type": "term",
+    "match": [
+      "logarithmic equations",
+      "logarithmic equation"
+    ],
+    "definition": "An equation in which the unknown appears inside a logarithm, or as the base of a logarithm. After using the laws of logarithms, every candidate must be checked so that each logarithm is defined.",
+    "first_section": "P23-2.4",
+    "sections": [
+      "P23-2.4"
+    ]
+  },
+  {
+    "id": "trap-log-extraneous",
+    "term": "forgetting to check that each solution makes the logarithms defined",
+    "type": "trap",
+    "match": [
+      "forgetting to check that each solution makes the logarithms defined"
+    ],
+    "definition": "A value that satisfies an equation obtained after using the laws of logarithms is not a solution of the original equation if it makes an argument zero or negative, or if it makes a variable base non-positive or equal to 1.",
+    "first_section": "P23-2.4",
+    "sections": [
+      "P23-2.4"
+    ]
+  },
+  {
+    "id": "exponential-equation",
+    "term": "exponential equation",
+    "type": "term",
+    "match": [
+      "exponential equations",
+      "exponential equation"
+    ],
+    "definition": "An equation in which the unknown appears in an index. If the powers cannot be written with the same base, take logarithms of both sides and use the power law, then collect the unknown.",
+    "first_section": "P23-2.5",
+    "sections": [
+      "P23-2.5"
+    ]
+  },
+  {
+    "id": "exponential-inequality",
+    "term": "exponential inequality",
+    "type": "term",
+    "match": [
+      "exponential inequalities",
+      "exponential inequality"
+    ],
+    "definition": "An inequality in which the unknown appears in an index. Taking logarithms leaves the inequality symbol unchanged if the base is greater than 1, but the symbol must be reversed if the base is between 0 and 1, or if you divide by a negative logarithm.",
+    "first_section": "P23-2.6",
+    "sections": [
+      "P23-2.6"
+    ]
+  },
+  {
+    "id": "trap-log-inequality-reverse",
+    "term": "forgetting to reverse the inequality when the logarithm is negative",
+    "type": "trap",
+    "match": [
+      "forgetting to reverse the inequality when the logarithm is negative"
+    ],
+    "definition": "If you take logarithms and then divide by a negative value, such as log 0.5, the inequality symbol must be reversed. The same reversal is needed if the logarithm itself has a base between 0 and 1.",
+    "first_section": "P23-2.6",
+    "sections": [
+      "P23-2.6"
+    ]
+  },
+  {
+    "id": "poisson-approximation",
+    "term": "Poisson approximation",
+    "type": "term",
+    "match": [
+      "Poisson approximations",
+      "Poisson approximation"
+    ],
+    "definition": "The use of a Poisson distribution with mean np in place of B(n,p), when n is large and p is small. As a guide, the approximation is used when n>50 and np<5.",
+    "first_section": "S2-2.3",
+    "sections": [
+      "S2-2.3"
+    ]
+  },
+  {
+    "id": "trap-poisson-approx-conditions",
+    "term": "using a Poisson approximation when n is not large or np is not moderate",
+    "type": "trap",
+    "match": [
+      "using a Poisson approximation when n is not large or np is not moderate"
+    ],
+    "definition": "A Poisson approximation to B(n,p) is suitable when n is large and p is small, so that np is moderate. As a guide, n>50 and np<5. The approximation is not equally good for every pair (n,p) with the same product np.",
+    "first_section": "S2-2.3",
+    "sections": [
+      "S2-2.3"
+    ]
+  },
+  {
+    "id": "scale-drawing",
+    "term": "scale drawing",
+    "definition": "A diagram in which every length is a fixed fraction of the corresponding real length. The scale may be written as a ratio such as 1 to 50000, or in words such as 1 cm to 10 m.",
+    "sections": [
+      "IGCSE-15.1"
+    ],
+    "first_section": "IGCSE-15.1",
+    "type": "term",
+    "match": [
+      "scale drawings",
+      "scale drawing"
+    ]
+  },
+  {
+    "id": "scale-of-a-map",
+    "term": "scale of a map",
+    "definition": "The ratio that compares a length on a map or scale drawing with the real length it represents. The two lengths must be in the same unit before the ratio is written in the form 1 to n.",
+    "sections": [
+      "IGCSE-15.1"
+    ],
+    "first_section": "IGCSE-15.1",
+    "type": "term",
+    "match": [
+      "scale of the drawing",
+      "scale of this map",
+      "scale of the map"
+    ]
+  },
+  {
+    "id": "angle-of-elevation",
+    "term": "angle of elevation",
+    "definition": "The angle between the horizontal and the line of sight when an observer looks up at an object. It is always measured from the horizontal.",
+    "sections": [
+      "IGCSE-15.1",
+      "IGCSE-15.5"
+    ],
+    "first_section": "IGCSE-15.1",
+    "type": "term",
+    "match": [
+      "angles of elevation",
+      "angle of elevation"
+    ]
+  },
+  {
+    "id": "angle-of-depression",
+    "term": "angle of depression",
+    "definition": "The angle between the horizontal and the line of sight when an observer looks down at an object. It is always measured from the horizontal.",
+    "sections": [
+      "IGCSE-15.1",
+      "IGCSE-15.5"
+    ],
+    "first_section": "IGCSE-15.1",
+    "type": "term",
+    "match": [
+      "angles of depression",
+      "angle of depression"
+    ]
+  },
+  {
+    "id": "bearing",
+    "term": "bearing",
+    "definition": "A direction measured as an angle clockwise from north. Bearings are used to describe the direction from one position to another.",
+    "sections": [
+      "IGCSE-15.2"
+    ],
+    "first_section": "IGCSE-15.2",
+    "type": "term",
+    "match": [
+      "bearings",
+      "bearing"
+    ]
+  },
+  {
+    "id": "three-figure-bearing",
+    "term": "three-figure bearing",
+    "definition": "A bearing written with three digits. For example, a bearing of 40 degrees is written 040 degrees, so that it is clearly a bearing and not a two-digit angle.",
+    "sections": [
+      "IGCSE-15.2"
+    ],
+    "first_section": "IGCSE-15.2",
+    "type": "term",
+    "match": [
+      "three-figure bearings",
+      "three-figure bearing"
+    ]
+  },
+  {
+    "id": "back-bearing",
+    "term": "back bearing",
+    "definition": "The bearing of the starting point from the finishing point. It differs from the original bearing by 180 degrees: add 180 degrees, or subtract 180 degrees if adding would give 360 degrees or more.",
+    "sections": [
+      "IGCSE-15.2"
+    ],
+    "first_section": "IGCSE-15.2",
+    "type": "term",
+    "match": [
+      "back bearings",
+      "back bearing"
+    ]
+  },
+  {
+    "id": "hypotenuse",
+    "term": "hypotenuse",
+    "definition": "The longest side of a right-angled triangle, opposite the right angle. Its length does not depend on which of the two acute angles is being used.",
+    "sections": [
+      "IGCSE-15.3"
+    ],
+    "first_section": "IGCSE-15.3",
+    "type": "term",
+    "match": [
+      "hypotenuses",
+      "hypotenuse"
+    ]
+  },
+  {
+    "id": "opposite-side",
+    "term": "opposite side",
+    "definition": "In a right-angled triangle, the side that faces a chosen acute angle and is not the hypotenuse.",
+    "sections": [
+      "IGCSE-15.3"
+    ],
+    "first_section": "IGCSE-15.3",
+    "type": "term",
+    "match": [
+      "opposite sides",
+      "opposite side"
+    ]
+  },
+  {
+    "id": "adjacent-side",
+    "term": "adjacent side",
+    "definition": "In a right-angled triangle, the shorter side that meets a chosen acute angle. It is not the hypotenuse.",
+    "sections": [
+      "IGCSE-15.3"
+    ],
+    "first_section": "IGCSE-15.3",
+    "type": "term",
+    "match": [
+      "adjacent sides",
+      "adjacent side"
+    ]
+  },
+  {
+    "id": "sine-ratio",
+    "term": "sine ratio",
+    "definition": "For an acute angle A in a right-angled triangle, the sine of A is the length of the opposite side divided by the length of the hypotenuse.",
+    "sections": [
+      "IGCSE-15.3",
+      "P1-5.1"
+    ],
+    "first_section": "IGCSE-15.3",
+    "type": "term",
+    "match": [
+      "sine ratios",
+      "sine ratio"
+    ]
+  },
+  {
+    "id": "cosine-ratio",
+    "term": "cosine ratio",
+    "definition": "For an acute angle A in a right-angled triangle, the cosine of A is the length of the adjacent side divided by the length of the hypotenuse.",
+    "sections": [
+      "IGCSE-15.3",
+      "P1-5.1"
+    ],
+    "first_section": "IGCSE-15.3",
+    "type": "term",
+    "match": [
+      "cosine ratios",
+      "cosine ratio"
+    ]
+  },
+  {
+    "id": "tan-ratio",
+    "term": "tan ratio",
+    "definition": "For an acute angle A in a right-angled triangle, tan A is the length of the opposite side divided by the length of the adjacent side. The value depends only on the size of A, not on the size of the triangle.",
+    "sections": [
+      "IGCSE-15.3",
+      "P1-5.1"
+    ],
+    "first_section": "IGCSE-15.3",
+    "type": "term",
+    "match": [
+      "tan ratios",
+      "tan ratio"
+    ]
+  },
+  {
+    "id": "translation-of-a-graph",
+    "term": "translation of a graph",
+    "definition": "A shift of a graph that does not change its shape or orientation. The graph of y=f(x)+a is a translation of y=f(x) by the vector (0, a). The graph of y=f(x-a) is a translation of y=f(x) by the vector (a, 0). Combining these, y=f(x-a)+b is a translation by the vector (a, b).",
+    "sections": [
+      "P1-2.5"
+    ],
+    "first_section": "P1-2.5",
+    "type": "term",
+    "match": [
+      "translation of this graph",
+      "translation of the graph",
+      "translated by the vector",
+      "translation of a graph",
+      "translated by"
+    ]
+  },
+  {
+    "id": "reflection-in-the-x-axis",
+    "term": "reflection in the x-axis",
+    "definition": "The transformation that sends each point (x, y) to (x, minus y). The graph of y equals minus f(x) is a reflection of the graph of y equals f(x) in the x-axis.",
+    "sections": [
+      "P1-2.6"
+    ],
+    "first_section": "P1-2.6",
+    "type": "term",
+    "match": [
+      "reflection in the x-axis",
+      "reflected in the x-axis"
+    ]
+  },
+  {
+    "id": "reflection-in-the-y-axis",
+    "term": "reflection in the y-axis",
+    "definition": "The transformation that sends each point (x, y) to (minus x, y). The graph of y equals f of minus x is a reflection of the graph of y equals f(x) in the y-axis.",
+    "sections": [
+      "P1-2.6"
+    ],
+    "first_section": "P1-2.6",
+    "type": "term",
+    "match": [
+      "reflection in the y-axis",
+      "reflected in the y-axis"
+    ]
+  },
+  {
+    "id": "exact-trigonometric-ratio",
+    "term": "exact trigonometric ratio",
+    "definition": "The exact value of sine, cosine or tangent of 0, 30, 45, 60 or 90 degrees, written as an integer, a fraction or a surd, rather than a rounded calculator decimal.",
+    "sections": [
+      "IGCSE-15.4"
+    ],
+    "first_section": "IGCSE-15.4",
+    "type": "term",
+    "match": [
+      "exact trigonometric ratios",
+      "exact trigonometric ratio"
+    ]
+  },
+  {
+    "id": "angle-between-a-line-and-a-plane",
+    "term": "angle between a line and a plane",
+    "definition": "The angle between a line from a point to the plane and the line joining the foot of the perpendicular from that point to the same point on the plane. In a right-angled triangle this is the angle between the sloping edge and its projection on the plane.",
+    "sections": [
+      "IGCSE-15.5"
+    ],
+    "first_section": "IGCSE-15.5",
+    "type": "term",
+    "match": [
+      "angle between a line and a plane"
+    ]
+  },
+  {
+    "id": "related-angle",
+    "term": "related angle",
+    "definition": "The acute angle that has the same sine, or the same cosine, or the same tangent, in absolute value, as a given angle. For an angle x between 0 and 360 degrees the related angle is used with the signs in each quadrant to find all solutions.",
+    "sections": [
+      "IGCSE-15.6",
+      "P1-5.3"
+    ],
+    "first_section": "IGCSE-15.6",
+    "type": "term",
+    "match": [
+      "related angles",
+      "related angle"
+    ]
+  },
+  {
+    "id": "stretch-of-a-graph",
+    "term": "stretch",
+    "definition": "A transformation that enlarges or reduces all distances from an invariant axis by a constant scale factor. The graph of y=a f(x) is a stretch of y=f(x) by scale factor a parallel to the y-axis, and the graph of y=f(ax) is a stretch of y=f(x) by scale factor 1/a parallel to the x-axis.",
+    "sections": [
+      "P1-2.7",
+      "P1-2.8"
+    ],
+    "first_section": "P1-2.7",
+    "type": "term",
+    "match": [
+      "stretches of a graph",
+      "stretch of a graph",
+      "stretch"
+    ]
+  },
+  {
+    "id": "combined-transformations",
+    "term": "combined transformations",
+    "definition": "Two or more transformations of a graph applied in a stated order. The resulting equation is found by carrying out the corresponding replacements or multiplications in that same order.",
+    "sections": [
+      "P1-2.8"
+    ],
+    "first_section": "P1-2.8",
+    "type": "term",
+    "match": [
+      "sequence of transformations",
+      "combined transformations"
+    ]
+  },
+  {
+    "id": "median-of-a-data-set",
+    "term": "median of a data set",
+    "definition": "The middle value when the observations are arranged in order. For an odd number of observations it is the middle one; for an even number it is the mid-point of the two middle values. On a cumulative frequency graph it is read at half the total frequency.",
+    "sections": [
+      "S1-2.3"
+    ],
+    "first_section": "S1-2.3",
+    "type": "term",
+    "match": [
+      "median of a data set"
+    ]
+  },
+  {
+    "id": "linear-form",
+    "term": "linear form",
+    "definition": "A rearranged relationship, often obtained by taking logarithms, that can be plotted as a straight line. For example, if y=A e^{px} then ln y = ln A + p x, so a graph of ln y against x has gradient p and intercept ln A.",
+    "sections": [
+      "P23-2.8"
+    ],
+    "first_section": "P23-2.8",
+    "type": "term",
+    "match": [
+      "linear form"
+    ]
+  },
+  {
+    "id": "normal-approximation-to-the-poisson",
+    "term": "normal approximation to the Poisson distribution",
+    "definition": "When the Poisson parameter lambda is large, a Poisson variable may be approximated by a normal variable with mean lambda and variance lambda. A continuity correction is used because the Poisson distribution is discrete.",
+    "sections": [
+      "S2-2.4"
+    ],
+    "first_section": "S2-2.4",
+    "type": "term",
+    "match": [
+      "normal approximation to the Poisson distribution",
+      "normal approximation to the Poisson"
+    ]
+  },
+  {
+    "id": "continuity-correction",
+    "term": "continuity correction",
+    "definition": "The adjustment used when a discrete distribution is approximated by a continuous one: P(X less than or equal to k) is replaced by P(Y less than k plus one half), and P(X less than k) is replaced by P(Y less than k minus one half).",
+    "sections": [
+      "S2-2.4"
+    ],
+    "first_section": "S2-2.4",
+    "type": "term",
+    "match": [
+      "continuity corrections",
+      "continuity correction"
+    ]
+  },
+  {
+    "id": "sine-rule",
+    "term": "sine rule",
+    "definition": "In any triangle, a over sin A equals b over sin B equals c over sin C, where side a is opposite angle A, and similarly for the other two sides.",
+    "sections": [
+      "IGCSE-15.7"
+    ],
+    "first_section": "IGCSE-15.7",
+    "type": "term",
+    "match": [
+      "sine rules",
+      "sine rule"
+    ]
+  },
+  {
+    "id": "cosine-rule",
+    "term": "cosine rule",
+    "definition": "In any triangle, a squared equals b squared plus c squared minus 2bc cos A, where a is the side opposite angle A. The same pattern holds for the other two sides.",
+    "sections": [
+      "IGCSE-15.7"
+    ],
+    "first_section": "IGCSE-15.7",
+    "type": "term",
+    "match": [
+      "cosine rules",
+      "cosine rule"
+    ]
+  },
+  {
+    "id": "area-of-a-triangle-using-sine",
+    "term": "area of a triangle using sine",
+    "definition": "The area of a triangle is one half times the product of two sides and the sine of the included angle: one half ab sin C, where C is the angle between sides a and b. In this IGCSE work the calculator is in degree mode.",
+    "sections": [
+      "IGCSE-15.8"
+    ],
+    "first_section": "IGCSE-15.8",
+    "type": "term",
+    "match": [
+      "area of a triangle using sine"
+    ]
+  },
+  {
+    "id": "length-of-a-line-segment",
+    "term": "length of a line segment",
+    "definition": "The distance between two points P(x1, y1) and Q(x2, y2) is the square root of (x2-x1) squared plus (y2-y1) squared.",
+    "sections": [
+      "P1-3.1"
+    ],
+    "first_section": "P1-3.1",
+    "type": "term",
+    "match": [
+      "length of the line segment",
+      "length of a line segment"
+    ]
+  },
+  {
+    "id": "midpoint-of-a-line-segment",
+    "term": "midpoint",
+    "definition": "The midpoint of the segment joining P(x1, y1) and Q(x2, y2) is the point whose coordinates are the averages of the corresponding coordinates of P and Q.",
+    "sections": [
+      "P1-3.1"
+    ],
+    "first_section": "P1-3.1",
+    "type": "term",
+    "match": [
+      "midpoint of the line segment",
+      "midpoint of the segment",
+      "midpoint"
+    ]
+  },
+  {
+    "id": "gradient-of-a-straight-line",
+    "term": "gradient of a straight line",
+    "definition": "The number m in the equation y=mx+c; it measures the steepness of the line. Parallel lines have equal gradients. If two lines are perpendicular and one has gradient m, the other has gradient -1/m, so the product of the gradients is -1.",
+    "sections": [
+      "P1-3.2",
+      "P1-3.3"
+    ],
+    "first_section": "P1-3.2",
+    "type": "term",
+    "match": [
+      "gradient of a straight line"
+    ]
+  },
+  {
+    "id": "parallel-lines",
+    "term": "parallel lines",
+    "definition": "Lines that never meet. In the coordinate plane, two non-vertical lines are parallel when they have the same gradient.",
+    "sections": [
+      "P1-3.2"
+    ],
+    "first_section": "P1-3.2",
+    "type": "term",
+    "match": [
+      "parallel lines",
+      "parallel line"
+    ]
+  },
+  {
+    "id": "perpendicular-lines",
+    "term": "perpendicular lines",
+    "definition": "Lines that meet at a right angle. If their gradients are m1 and m2, then m1 times m2 equals -1.",
+    "sections": [
+      "P1-3.2"
+    ],
+    "first_section": "P1-3.2",
+    "type": "term",
+    "match": [
+      "perpendicular lines",
+      "perpendicular to"
+    ]
+  },
+  {
+    "id": "equation-of-a-straight-line",
+    "term": "equation of a straight line",
+    "definition": "A non-vertical straight line may be written y=mx+c, where m is the gradient and c is the y-intercept, or in the point-gradient form y-y1=m(x-x1). A vertical line has equation x=b.",
+    "sections": [
+      "P1-3.3"
+    ],
+    "first_section": "P1-3.3",
+    "type": "term",
+    "match": [
+      "equation of a straight line",
+      "equation of the line",
+      "equation of AB"
+    ]
+  },
+  {
+    "id": "cosecant",
+    "term": "cosecant",
+    "definition": "The reciprocal of sine: cosec θ equals 1 over sin θ, or hypotenuse over opposite in a right-angled triangle.",
+    "sections": [
+      "P23-3.1"
+    ],
+    "first_section": "P23-3.1",
+    "type": "term",
+    "match": [
+      "cosecant",
+      "cosec"
+    ]
+  },
+  {
+    "id": "secant-trig",
+    "term": "secant",
+    "definition": "The reciprocal of cosine: sec θ equals 1 over cos θ, or hypotenuse over adjacent in a right-angled triangle. This is the trigonometric ratio, not a secant of a circle.",
+    "sections": [
+      "P23-3.1"
+    ],
+    "first_section": "P23-3.1",
+    "type": "term",
+    "match": [
+      "secant",
+      "sec 60",
+      "sec θ"
+    ]
+  },
+  {
+    "id": "cotangent",
+    "term": "cotangent",
+    "definition": "The reciprocal of tangent: cot θ equals 1 over tan θ, or cos θ over sin θ, or adjacent over opposite in a right-angled triangle.",
+    "sections": [
+      "P23-3.1"
+    ],
+    "first_section": "P23-3.1",
+    "type": "term",
+    "match": [
+      "cotangent",
+      "cot"
+    ]
+  },
+  {
+    "id": "compound-angle-formulae",
+    "term": "compound angle formulae",
+    "definition": "The identities that expand sin(A±B), cos(A±B) and tan(A±B) in terms of the sine, cosine and tangent of A and of B. In particular, sin(A+B) is sin A cos B plus cos A sin B, and cos(A+B) is cos A cos B minus sin A sin B.",
+    "sections": [
+      "P23-3.2"
+    ],
+    "first_section": "P23-3.2",
+    "type": "term",
+    "match": [
+      "compound angle formulae",
+      "compound angle formula"
+    ]
+  },
+  {
+    "id": "range-of-a-data-set",
+    "term": "range of a data set",
+    "definition": "The numerical difference between the largest and smallest values in a set of data. For grouped data a least and a greatest possible range can be stated from the class boundaries.",
+    "sections": [
+      "S1-3.1"
+    ],
+    "first_section": "S1-3.1",
+    "type": "term",
+    "match": [
+      "range of this data set",
+      "range of a data set"
+    ]
+  },
+  {
+    "id": "interquartile-range-of-a-data-set",
+    "term": "interquartile range of a data set",
+    "definition": "The numerical difference Q3 minus Q1 between the upper and lower quartiles of a data set. It is the range of the middle half of the ordered values.",
+    "sections": [
+      "S1-3.2"
+    ],
+    "first_section": "S1-3.2",
+    "type": "term",
+    "match": [
+      "interquartile range of this data set",
+      "interquartile range of a data set"
+    ]
+  },
+  {
+    "id": "lower-quartile-of-a-data-set",
+    "term": "lower quartile of a data set",
+    "definition": "The first quartile Q1 of an ordered data set: the median of the lower half of the values, or, for grouped data, the value at the appropriate position in a cumulative frequency table or graph.",
+    "sections": [
+      "S1-3.2"
+    ],
+    "first_section": "S1-3.2",
+    "type": "term",
+    "match": [
+      "lower quartile of a data set"
+    ]
+  },
+  {
+    "id": "upper-quartile-of-a-data-set",
+    "term": "upper quartile of a data set",
+    "definition": "The third quartile Q3 of an ordered data set: the median of the upper half of the values, or, for grouped data, the value at the appropriate position in a cumulative frequency table or graph.",
+    "sections": [
+      "S1-3.2"
+    ],
+    "first_section": "S1-3.2",
+    "type": "term",
+    "match": [
+      "upper quartile of a data set"
+    ]
+  },
+  {
+    "id": "percentile-of-a-data-set",
+    "term": "percentile of a data set",
+    "definition": "The value that is n percent of the way through an ordered data set. In particular, the 25th, 50th and 75th percentiles of a data set are the lower quartile, the median and the upper quartile.",
+    "sections": [
+      "S1-3.2"
+    ],
+    "first_section": "S1-3.2",
+    "type": "term",
+    "match": [
+      "percentiles of a data set",
+      "percentile of a data set"
+    ]
+  },
+  {
+    "id": "expectation-of-a-linear-combination",
+    "term": "expectation of a linear combination",
+    "definition": "For a single random variable X and constants a and b, E(aX+b) equals a E(X)+b. The result does not require independence of two random variables.",
+    "sections": [
+      "S2-3.1"
+    ],
+    "first_section": "S2-3.1",
+    "type": "term",
+    "match": [
+      "expectation of a linear combination"
+    ]
+  },
+  {
+    "id": "variance-of-a-linear-combination",
+    "term": "variance of a linear combination",
+    "definition": "For a single random variable X and constants a and b, Var(aX+b) equals a squared times Var(X). A constant shift does not change the variance.",
+    "sections": [
+      "S2-3.1"
+    ],
+    "first_section": "S2-3.1",
+    "type": "term",
+    "match": [
+      "variance of a linear combination"
+    ]
+  },
+  {
+    "id": "trigonometry-in-three-dimensions",
+    "term": "trigonometry in three dimensions",
+    "definition": "Finding a length or an angle in a solid by first identifying a right-angled triangle in the figure and then using Pythagoras’ theorem or a sine, cosine or tangent ratio in that triangle.",
+    "sections": [
+      "IGCSE-15.9"
+    ],
+    "first_section": "IGCSE-15.9",
+    "type": "term",
+    "match": [
+      "trigonometry in three dimensions",
+      "3-D trigonometry",
+      "3D trigonometry"
+    ]
+  },
+  {
+    "id": "bivariate-data",
+    "term": "bivariate data",
+    "definition": "Data that record two measurements for each item, so that the relationship between the two measurements can be studied.",
+    "sections": [
+      "IGCSE-16.1"
+    ],
+    "first_section": "IGCSE-16.1",
+    "type": "term",
+    "match": [
+      "bivariate data",
+      "bivariate"
+    ]
+  },
+  {
+    "id": "scatter-diagram",
+    "term": "scatter diagram",
+    "definition": "A diagram that plots one measurement against another for each item in a bivariate data set.",
+    "sections": [
+      "IGCSE-16.1"
+    ],
+    "first_section": "IGCSE-16.1",
+    "type": "term",
+    "match": [
+      "scatter diagrams",
+      "scatter diagram",
+      "scatter graph"
+    ]
+  },
+  {
+    "id": "correlation",
+    "term": "correlation",
+    "definition": "A description of the trend on a scatter diagram: positive if the points tend to rise from left to right, negative if they tend to fall, and none if there is no such pattern.",
+    "sections": [
+      "IGCSE-16.1"
+    ],
+    "first_section": "IGCSE-16.1",
+    "type": "term",
+    "match": [
+      "negative correlation",
+      "positive correlation",
+      "no correlation",
+      "correlation"
+    ]
+  },
+  {
+    "id": "line-of-best-fit",
+    "term": "line of best fit",
+    "definition": "A straight line drawn through the cloud of points on a scatter diagram to show the trend, used to estimate one measurement from the other within the range of the data.",
+    "sections": [
+      "IGCSE-16.1"
+    ],
+    "first_section": "IGCSE-16.1",
+    "type": "term",
+    "match": [
+      "line of best fit",
+      "best fit"
+    ]
+  },
+  {
+    "id": "equation-of-a-circle",
+    "term": "equation of a circle",
+    "definition": "The completed-square equation of a circle with centre (a, b) and radius r is (x-a)^2+(y-b)^2=r^2. The expanded form is converted back to this by completing the square.",
+    "sections": [
+      "P1-3.4"
+    ],
+    "first_section": "P1-3.4",
+    "type": "term",
+    "match": [
+      "equation of the circle",
+      "completed square form",
+      "equation of a circle"
+    ]
+  },
+  {
+    "id": "variance-of-a-data-set",
+    "term": "variance of a data set",
+    "definition": "For n values, the variance is the mean of the squared deviations from the mean, equal to (Sigma x^2)/n minus the square of the mean. In this syllabus the divisor is n, or Sigma f for grouped data.",
+    "sections": [
+      "S1-3.3"
+    ],
+    "first_section": "S1-3.3",
+    "type": "term",
+    "match": [
+      "variance of these values",
+      "variance of a data set",
+      "variance of the values"
+    ]
+  },
+  {
+    "id": "standard-deviation-of-a-data-set",
+    "term": "standard deviation of a data set",
+    "definition": "The square root of the variance of a data set.",
+    "sections": [
+      "S1-3.3"
+    ],
+    "first_section": "S1-3.3",
+    "type": "term",
+    "match": [
+      "standard deviation of these values",
+      "standard deviation of a data set",
+      "standard deviation of the values"
+    ]
+  },
+  {
+    "id": "double-angle-formulae",
+    "term": "double angle formulae",
+    "definition": "The identities sin 2A = 2 sin A cos A, cos 2A = cos^2 A - sin^2 A = 2 cos^2 A - 1 = 1 - 2 sin^2 A, and tan 2A = 2 tan A / (1 - tan^2 A).",
+    "sections": [
+      "P23-3.3"
+    ],
+    "first_section": "P23-3.3",
+    "type": "term",
+    "match": [
+      "double angle formulae",
+      "double-angle formulae",
+      "double angle formula"
+    ]
+  },
+  {
+    "id": "r-form",
+    "term": "R-form",
+    "definition": "Writing a sin theta + b cos theta as R sin(theta +/- alpha), or a similar single-sine or single-cosine form, with R = sqrt(a^2+b^2) and tan alpha = b/a, where R > 0 and 0 deg < alpha < 90 deg when a and b are positive.",
+    "sections": [
+      "P23-3.5"
+    ],
+    "first_section": "P23-3.5",
+    "type": "term",
+    "match": [
+      "form R cos",
+      "form R sin",
+      "R form",
+      "R-form"
+    ]
+  },
+  {
+    "id": "sum-of-independent-random-variables",
+    "term": "sum of independent random variables",
+    "definition": "If X and Y are independent, E(aX+bY)=a E(X)+b E(Y) and Var(aX+bY)=a^2 Var(X)+b^2 Var(Y). The mean formula does not need independence.",
+    "sections": [
+      "S2-3.2"
+    ],
+    "first_section": "S2-3.2",
+    "type": "term",
+    "match": [
+      "sum of independent random variables",
+      "sum of four independent values",
+      "independent values of X"
+    ]
+  },
+  {
+    "id": "linear-combination-of-normal-distributions",
+    "term": "linear combination of normal distributions",
+    "definition": "If X is normal then aX+b is normal. If X and Y are independent and each is normal, then aX+bY is normal, with mean a E(X)+b E(Y) and variance a^2 Var(X)+b^2 Var(Y).",
+    "sections": [
+      "S2-3.3"
+    ],
+    "first_section": "S2-3.3",
+    "type": "term",
+    "match": [
+      "independent random variables X and Y have the distributions N",
+      "linear combination of normal distributions"
+    ]
+  },
+  {
+    "id": "sum-of-independent-poisson-distributions",
+    "term": "sum of independent Poisson distributions",
+    "definition": "If X ~ Po(lambda) and Y ~ Po(mu) are independent, then X+Y ~ Po(lambda+mu). The parameters must first refer to the same interval.",
+    "sections": [
+      "S2-3.4"
+    ],
+    "first_section": "S2-3.4",
+    "type": "term",
+    "match": [
+      "sum of independent Poisson distributions",
+      "linear combinations of Poisson",
+      "Po(lambda+mu)"
+    ]
+  },
+  {
+    "id": "tangent-to-a-curve",
+    "term": "tangent to a curve",
+    "definition": "The straight line that just touches a curve at a given point and has the same direction as the curve there. Its gradient is taken as the gradient of the curve at that point.",
+    "sections": [
+      "IGCSE-18.6"
+    ],
+    "first_section": "IGCSE-18.6",
+    "match": [
+      "tangents to a curve",
+      "tangent to a curve",
+      "tangent at a point"
+    ],
+    "type": "term"
+  },
+  {
+    "id": "gradient-of-a-curve",
+    "term": "gradient of a curve",
+    "definition": "At a point on a curve, the gradient of the tangent at that point. It can be estimated by drawing a tangent and calculating rise over run, or found exactly from the derived function.",
+    "sections": [
+      "IGCSE-18.6",
+      "IGCSE-18.7"
+    ],
+    "first_section": "IGCSE-18.6",
+    "match": [
+      "gradient of the curve",
+      "gradient of a curve"
+    ],
+    "type": "term"
+  },
+  {
+    "id": "derived-function",
+    "term": "derived function",
+    "definition": "The gradient function of y, written dy/dx. For a power of x, the derived function of x^n is n x^{n-1}. A sum is differentiated term by term.",
+    "sections": [
+      "IGCSE-18.7"
+    ],
+    "first_section": "IGCSE-18.7",
+    "match": [
+      "derived functions",
+      "derived function"
+    ],
+    "type": "term"
+  },
+  {
+    "id": "derivative",
+    "term": "derivative",
+    "definition": "Another name for the derived function dy/dx, or for its value at a particular point.",
+    "sections": [
+      "IGCSE-18.7"
+    ],
+    "first_section": "IGCSE-18.7",
+    "match": [
+      "derivatives",
+      "derivative"
+    ],
+    "type": "term"
+  },
+  {
+    "id": "change-of-sign",
+    "term": "change of sign",
+    "definition": "If a continuous function f takes values of opposite sign at the ends of an interval, then the equation f(x)=0 has a root in that interval.",
+    "sections": [
+      "P23-6.1",
+      "P23-6.2",
+      "P23-6.3"
+    ],
+    "first_section": "P23-6.1",
+    "match": [
+      "changes of sign",
+      "change of sign",
+      "sign change"
+    ],
+    "type": "term"
+  },
+  {
+    "id": "continuous-function",
+    "term": "continuous function",
+    "definition": "A function whose graph has no breaks on the interval being considered. A change of sign then guarantees at least one root.",
+    "sections": [
+      "P23-6.1"
+    ],
+    "first_section": "P23-6.1",
+    "match": [
+      "continuous functions",
+      "continuous function"
+    ],
+    "type": "term"
+  },
+  {
+    "id": "iterative-formula",
+    "term": "iterative formula",
+    "definition": "A formula of the form x_{n+1}=F(x_n), used to produce a sequence of approximations to a root of x=F(x).",
+    "sections": [
+      "P23-6.2",
+      "P23-6.3"
+    ],
+    "first_section": "P23-6.2",
+    "match": [
+      "iterative formulae",
+      "iterative formula"
+    ],
+    "type": "term"
+  },
+  {
+    "id": "iteration",
+    "term": "iteration",
+    "definition": "One application of an iterative formula, taking the current approximation as the input and producing the next approximation as the output.",
+    "sections": [
+      "P23-6.2",
+      "P23-6.3"
+    ],
+    "first_section": "P23-6.2",
+    "match": [
+      "iterative processes",
+      "iterative process",
+      "iterations",
+      "iteration"
+    ],
+    "type": "term"
+  },
+  {
+    "id": "cobweb-diagram",
+    "term": "cobweb diagram",
+    "definition": "A diagram of y=x and y=F(x) in which the iteration x_{n+1}=F(x_n) appears as a spiral approaching the intersection.",
+    "sections": [
+      "P23-6.2"
+    ],
+    "first_section": "P23-6.2",
+    "match": [
+      "cobweb diagrams",
+      "cobweb diagram",
+      "cobweb pattern"
+    ],
+    "type": "term"
+  },
+  {
+    "id": "staircase-diagram",
+    "term": "staircase diagram",
+    "definition": "A diagram of y=x and y=F(x) in which the iteration x_{n+1}=F(x_n) appears as a stepped path approaching the intersection.",
+    "sections": [
+      "P23-6.2"
+    ],
+    "first_section": "P23-6.2",
+    "match": [
+      "staircase diagrams",
+      "staircase diagram",
+      "staircase pattern"
+    ],
+    "type": "term"
+  },
+  {
+    "id": "exact-value-trig",
+    "term": "exact value",
+    "definition": "A trigonometric value written using integers, fractions and surds, without a rounded calculator decimal. The exact values of sine, cosine and tangent at 30°, 45° and 60° come from two standard right-angled triangles.",
+    "sections": [
+      "P1-5.1",
+      "P1-5.3"
+    ],
+    "first_section": "P1-5.1",
+    "match": [
+      "exact values",
+      "exact value"
+    ],
+    "type": "term"
+  },
+  {
+    "id": "general-angle",
+    "term": "general angle",
+    "definition": "An angle measured as a rotation of a line OP from the positive x-direction. Anticlockwise rotations are positive and clockwise rotations are negative.",
+    "sections": [
+      "P1-5.2",
+      "P1-5.3"
+    ],
+    "first_section": "P1-5.2",
+    "match": [
+      "general definition of an angle",
+      "general angles",
+      "general angle"
+    ],
+    "type": "term"
+  },
+  {
+    "id": "quadrant",
+    "term": "quadrant",
+    "definition": "One of the four regions into which the axes divide the plane. The angle θ is said to be in the quadrant in which the rotating line OP lies.",
+    "sections": [
+      "P1-5.2",
+      "P1-5.3"
+    ],
+    "first_section": "P1-5.2",
+    "match": [
+      "quadrants",
+      "quadrant"
+    ],
+    "type": "term"
+  },
+  {
+    "id": "basic-angle",
+    "term": "basic angle",
+    "definition": "The acute angle that the rotating line OP makes with the x-axis. Also called the reference angle.",
+    "sections": [
+      "P1-5.2",
+      "P1-5.3"
+    ],
+    "first_section": "P1-5.2",
+    "match": [
+      "reference angles",
+      "reference angle",
+      "basic angles",
+      "basic angle"
+    ],
+    "type": "term"
+  },
+  {
+    "id": "CAST-diagram",
+    "term": "CAST",
+    "definition": "A reminder of the signs of the trigonometric ratios in the four quadrants, read anticlockwise from the fourth: Cosine positive, All positive, Sine positive, Tangent positive.",
+    "sections": [
+      "P1-5.3"
+    ],
+    "first_section": "P1-5.3",
+    "match": [
+      "CAST diagram",
+      "CAST"
+    ],
+    "type": "term"
+  },
+  {
+    "id": "trigonometric-ratio-general-angle",
+    "term": "trigonometric ratio of a general angle",
+    "definition": "If P is the point (x,y) on the rotating line and r is the positive length of OP, then sin θ = y/r, cos θ = x/r and tan θ = y/x.",
+    "sections": [
+      "P1-5.3"
+    ],
+    "first_section": "P1-5.3",
+    "match": [
+      "trigonometric ratios of general angles"
+    ],
+    "type": "term"
+  },
+  {
+    "id": "amplitude",
+    "term": "amplitude",
+    "definition": "Half the difference between the greatest and least values of a bounded wave. For y = a sin x and y = a cos x, with a positive, the amplitude is a. The graph of y = tan x is unbounded and has no amplitude.",
+    "sections": [
+      "P1-5.4"
+    ],
+    "first_section": "P1-5.4",
+    "type": "term",
+    "match": [
+      "amplitudes",
+      "amplitude"
+    ]
+  },
+  {
+    "id": "period",
+    "term": "period",
+    "definition": "The smallest positive interval after which a function repeats. The period of y = sin x and of y = cos x is 360 degrees, or 2π radians; the period of y = tan x is 180 degrees, or π radians. For y = sin(bx) the period is 360 degrees divided by b, or 2π/b radians.",
+    "sections": [
+      "P1-5.4"
+    ],
+    "first_section": "P1-5.4",
+    "type": "term",
+    "match": [
+      "periods",
+      "period"
+    ]
+  },
+  {
+    "id": "line-of-symmetry",
+    "term": "line of symmetry",
+    "definition": "A line that divides a two-dimensional shape into two parts that are mirror images of each other. A reflection in a line of symmetry leaves the shape looking the same. A square has four lines of symmetry; a rectangle that is not a square has two.",
+    "sections": [
+      "IGCSE-19.1"
+    ],
+    "first_section": "IGCSE-19.1",
+    "type": "term",
+    "match": [
+      "lines of symmetry",
+      "line of symmetry",
+      "mirror line"
+    ]
+  },
+  {
+    "id": "rotational-symmetry",
+    "term": "rotational symmetry",
+    "definition": "A shape has rotational symmetry about a point if it looks the same after a rotation of less than one full turn about that point. The number of times the shape looks the same in a full turn of 360 degrees, including the original position, is the order of rotational symmetry.",
+    "sections": [
+      "IGCSE-19.1"
+    ],
+    "first_section": "IGCSE-19.1",
+    "type": "term",
+    "match": [
+      "rotational symmetry"
+    ]
+  },
+  {
+    "id": "order-of-rotational-symmetry",
+    "term": "order of rotational symmetry",
+    "definition": "The number of times a shape looks the same in a full turn of 360 degrees about a centre, including the original position. A regular n-sided polygon has order n, and the smallest angle of rotation that maps it onto itself is 360 degrees divided by n. A shape with no rotational symmetry other than a full turn has order 1.",
+    "sections": [
+      "IGCSE-19.1"
+    ],
+    "first_section": "IGCSE-19.1",
+    "type": "term",
+    "match": [
+      "order of rotational symmetry",
+      "order"
+    ]
+  },
+  {
+    "id": "plane-of-symmetry",
+    "term": "plane of symmetry",
+    "definition": "A plane that cuts a solid into two parts that are mirror images of each other. A cuboid with three different edge lengths has three planes of symmetry; a cube has nine.",
+    "sections": [
+      "IGCSE-19.2"
+    ],
+    "first_section": "IGCSE-19.2",
+    "type": "term",
+    "match": [
+      "planes of symmetry",
+      "plane of symmetry"
+    ]
+  },
+  {
+    "id": "inverse-sine",
+    "term": "inverse sine",
+    "definition": "The inverse of sine on a restricted domain, written sin to the power minus 1, or arcsin. It is defined for inputs from minus 1 to 1, and its principal values lie between minus 90 degrees and 90 degrees, or between minus π/2 and π/2 radians.",
+    "sections": [
+      "P1-5.5"
+    ],
+    "first_section": "P1-5.5",
+    "type": "term",
+    "match": [
+      "inverse sine",
+      "sin^{-1}",
+      "arcsin"
+    ]
+  },
+  {
+    "id": "inverse-cosine",
+    "term": "inverse cosine",
+    "definition": "The inverse of cosine on a restricted domain, written cos to the power minus 1, or arccos. It is defined for inputs from minus 1 to 1, and its principal values lie between 0 degrees and 180 degrees, or between 0 and π radians.",
+    "sections": [
+      "P1-5.5"
+    ],
+    "first_section": "P1-5.5",
+    "type": "term",
+    "match": [
+      "inverse cosine",
+      "cos^{-1}",
+      "arccos"
+    ]
+  },
+  {
+    "id": "inverse-tangent",
+    "term": "inverse tangent",
+    "definition": "The inverse of tangent on a restricted domain, written tan to the power minus 1, or arctan. It is defined for all real inputs, and its principal values lie strictly between minus 90 degrees and 90 degrees, or strictly between minus π/2 and π/2 radians.",
+    "sections": [
+      "P1-5.5"
+    ],
+    "first_section": "P1-5.5",
+    "type": "term",
+    "match": [
+      "inverse tangent",
+      "tan^{-1}",
+      "arctan"
+    ]
+  },
+  {
+    "id": "principal-value",
+    "term": "principal value",
+    "definition": "The unique value chosen for an inverse trigonometric function from its restricted range. For example, the principal value of sin to the power minus 1 of one half is 30 degrees, not 150 degrees, even though both angles have the same sine.",
+    "sections": [
+      "P1-5.5"
+    ],
+    "first_section": "P1-5.5",
+    "type": "term",
+    "match": [
+      "principal values",
+      "principal value"
+    ]
+  },
+  {
+    "id": "improper-fraction",
+    "term": "improper fraction",
+    "definition": "A rational expression in which the degree of the numerator is at least the degree of the denominator. An improper algebraic fraction is first rewritten, by polynomial division, as a polynomial plus a proper fraction, before any decomposition into partial fractions.",
+    "sections": [
+      "P23-7.1"
+    ],
+    "first_section": "P23-7.1",
+    "type": "term",
+    "match": [
+      "improper algebraic fraction",
+      "improper fractions",
+      "improper fraction"
+    ]
+  },
+  {
+    "id": "partial-fractions",
+    "term": "partial fractions",
+    "definition": "The decomposition of a proper rational expression into a sum of simpler fractions whose denominators are the factors of the original denominator. Distinct linear factors, a repeated linear factor, and an irreducible quadratic factor each have their own standard form.",
+    "sections": [
+      "P23-7.2",
+      "P23-7.5"
+    ],
+    "first_section": "P23-7.2",
+    "type": "term",
+    "match": [
+      "partial fractions",
+      "partial fraction"
+    ]
+  },
+  {
+    "id": "binomial-expansion",
+    "term": "binomial expansion",
+    "definition": "The expansion of (a + b) to the power n, or of (1 + x) to the power n, as a sum of terms with binomial coefficients. When n is a positive integer the expansion is finite. When n is not a positive integer, (1 + x) to the power n = 1 + n x + n(n−1)/2! x squared + ⋯ is an infinite series valid for the absolute value of x less than 1, and for (1 + a x) to the power n it is valid for the absolute value of a x less than 1.",
+    "sections": [
+      "P23-7.3",
+      "P1-6.1",
+      "P23-7.4",
+      "P23-7.5"
+    ],
+    "first_section": "P23-7.3",
+    "type": "term",
+    "match": [
+      "binomial expansions",
+      "binomial expansion"
+    ]
+  },
+  {
+    "id": "cyclic-quadrilateral",
+    "term": "cyclic quadrilateral",
+    "definition": "A quadrilateral whose four vertices all lie on a single circle. Opposite angles of a cyclic quadrilateral add to 180 degrees.",
+    "sections": [
+      "IGCSE-19.4"
+    ],
+    "first_section": "IGCSE-19.4",
+    "type": "term",
+    "match": [
+      "cyclic quadrilaterals",
+      "cyclic quadrilateral"
+    ]
+  },
+  {
+    "id": "angle-at-the-centre",
+    "term": "angle at the centre",
+    "definition": "The angle formed at the centre of a circle by two radii standing on an arc. It is twice the angle at the circumference standing on the same arc.",
+    "sections": [
+      "IGCSE-19.4"
+    ],
+    "first_section": "IGCSE-19.4",
+    "type": "term",
+    "match": [
+      "angle at the centre",
+      "angle at the center"
+    ]
+  },
+  {
+    "id": "angle-in-a-semicircle",
+    "term": "angle in a semicircle",
+    "definition": "The angle at the circumference standing on a diameter of a circle. It is a right angle.",
+    "sections": [
+      "IGCSE-19.4"
+    ],
+    "first_section": "IGCSE-19.4",
+    "type": "term",
+    "match": [
+      "angle in a semi-circle",
+      "angle in a semicircle"
+    ]
+  },
+  {
+    "id": "alternate-segment",
+    "term": "alternate segment",
+    "definition": "The segment of a circle on the other side of a chord from a tangent at one end of the chord. The angle between the tangent and the chord is equal to the angle in the alternate segment.",
+    "sections": [
+      "IGCSE-19.4"
+    ],
+    "first_section": "IGCSE-19.4",
+    "type": "term",
+    "match": [
+      "alternate segment theorem",
+      "alternate segment"
+    ]
+  },
+  {
+    "id": "perpendicular-from-the-centre",
+    "term": "perpendicular from the centre",
+    "definition": "The perpendicular from the centre of a circle to a chord. It bisects the chord. Conversely, the line from the centre to the midpoint of a chord is perpendicular to the chord, and the perpendicular bisector of a chord passes through the centre.",
+    "sections": [
+      "IGCSE-19.3"
+    ],
+    "first_section": "IGCSE-19.3",
+    "type": "term",
+    "match": [
+      "perpendicular from the centre",
+      "perpendicular from the center"
+    ]
+  },
+  {
+    "id": "axis-of-rotational-symmetry",
+    "term": "axis of rotational symmetry",
+    "definition": "A line about which a solid looks the same after a rotation of less than one full turn. A right prism with a regular polygonal cross-section has an axis of rotational symmetry through the centres of the two end faces.",
+    "sections": [
+      "IGCSE-19.2"
+    ],
+    "first_section": "IGCSE-19.2",
+    "type": "term",
+    "match": [
+      "axes of rotational symmetry",
+      "axis of rotational symmetry"
+    ]
+  },
+  {
+    "id": "equal-chords",
+    "term": "equal chords",
+    "definition": "Chords of a circle that have the same length. Equal chords are equidistant from the centre, and chords that are equidistant from the centre are equal.",
+    "sections": [
+      "IGCSE-19.3"
+    ],
+    "first_section": "IGCSE-19.3",
+    "type": "term",
+    "match": [
+      "equal chords"
+    ]
+  },
+  {
+    "id": "factorial",
+    "term": "factorial",
+    "definition": "For a positive integer n, n factorial, written n!, is the product n × (n − 1) × ⋯ × 2 × 1. By definition 0! = 1.",
+    "sections": [
+      "S1-5.1"
+    ],
+    "first_section": "S1-5.1",
+    "type": "term",
+    "match": [
+      "factorials",
+      "factorial"
+    ]
+  },
+  {
+    "id": "permutation",
+    "term": "permutation",
+    "definition": "An arrangement of objects in which the order matters. The number of permutations of r objects chosen from n different objects is n!/(n − r)!.",
+    "sections": [
+      "S1-5.2",
+      "S1-5.4"
+    ],
+    "first_section": "S1-5.2",
+    "type": "term",
+    "match": [
+      "permutations",
+      "permutation"
+    ]
+  },
+  {
+    "id": "combination",
+    "term": "combination",
+    "definition": "A selection of objects in which the order does not matter. The number of combinations of r objects chosen from n different objects is n!/(r!(n − r)!).",
+    "sections": [
+      "S1-5.3",
+      "S1-5.4"
+    ],
+    "first_section": "S1-5.3",
+    "type": "term",
+    "match": [
+      "combinations",
+      "combination"
+    ]
+  },
+  {
+    "id": "pascals-triangle",
+    "term": "Pascal’s triangle",
+    "definition": "A triangular array of numbers in which each row starts and ends with 1 and every other number is the sum of the two numbers above it. Row n gives the coefficients in the expansion of (a + b) to the power n.",
+    "sections": [
+      "P1-6.1"
+    ],
+    "first_section": "P1-6.1",
+    "type": "term",
+    "match": [
+      "Pascal’s triangle",
+      "Pascal's triangle"
+    ]
+  },
+  {
+    "id": "binomial-coefficient",
+    "term": "binomial coefficient",
+    "definition": "The number n!/(r!(n − r)!), written as n over r in brackets or as nCr. It is the coefficient of the term in b to the power r in the expansion of (a + b) to the power n.",
+    "sections": [
+      "P1-6.2"
+    ],
+    "first_section": "P1-6.2",
+    "type": "term",
+    "match": [
+      "binomial coefficients",
+      "binomial coefficient"
+    ]
+  },
+  {
+    "id": "arithmetic-progression",
+    "term": "arithmetic progression",
+    "definition": "A sequence in which each term is found by adding the same number, the common difference, to the previous term. The nth term is a + (n − 1)d.",
+    "sections": [
+      "P1-6.3"
+    ],
+    "first_section": "P1-6.3",
+    "type": "term",
+    "match": [
+      "arithmetic progressions",
+      "arithmetic progression"
+    ]
+  },
+  {
+    "id": "common-difference",
+    "term": "common difference",
+    "definition": "The fixed number d that is added to each term of an arithmetic progression to give the next term.",
+    "sections": [
+      "P1-6.3"
+    ],
+    "first_section": "P1-6.3",
+    "type": "term",
+    "match": [
+      "common difference"
+    ]
+  },
+  {
+    "id": "geometric-progression",
+    "term": "geometric progression",
+    "definition": "A sequence in which each term is found by multiplying the previous term by the same non-zero number, the common ratio. The nth term is a r to the power n − 1.",
+    "sections": [
+      "P1-6.4"
+    ],
+    "first_section": "P1-6.4",
+    "type": "term",
+    "match": [
+      "geometric progressions",
+      "geometric progression"
+    ]
+  },
+  {
+    "id": "common-ratio",
+    "term": "common ratio",
+    "definition": "The fixed number r by which each term of a geometric progression is multiplied to give the next term.",
+    "sections": [
+      "P1-6.4"
+    ],
+    "first_section": "P1-6.4",
+    "type": "term",
+    "match": [
+      "common ratio"
+    ]
+  },
+  {
+    "id": "cumulative-frequency-diagram",
+    "term": "cumulative frequency diagram",
+    "definition": "A graph of cumulative frequency against the upper class boundaries, starting at the lower boundary of the first class with cumulative frequency 0. The points are joined by a smooth curve or by straight lines.",
+    "sections": [
+      "IGCSE-20.2"
+    ],
+    "first_section": "IGCSE-20.2",
+    "type": "term",
+    "match": [
+      "cumulative frequency diagrams",
+      "cumulative frequency diagram"
+    ]
+  }
+]

@@ -1,0 +1,63 @@
+{
+ "courses": [
+  {
+   "id": "IGCSE",
+   "books": [
+    "IGCSE"
+   ],
+   "archive": {
+    "label": "Y1",
+    "chapters": [
+     "IGCSE-1",
+     "IGCSE-2",
+     "IGCSE-3",
+     "IGCSE-4",
+     "IGCSE-5",
+     "IGCSE-6",
+     "IGCSE-7",
+     "IGCSE-8",
+     "IGCSE-9",
+     "IGCSE-10",
+     "IGCSE-11",
+     "IGCSE-12"
+    ]
+   }
+  },
+  {
+   "id": "AS",
+   "books": [
+    "P1",
+    "S1"
+   ]
+  },
+  {
+   "id": "A2",
+   "books": [
+    {
+     "id": "P23",
+     "papers": [
+      "P3",
+      "P2 and P3"
+     ]
+    },
+    "S2"
+   ],
+   "chapterBadges": {
+    "P23-1": "P2–3",
+    "P23-2": "P2–3",
+    "P23-3": "P2–3",
+    "P23-4": "P2–3",
+    "P23-5": "P2–3",
+    "P23-6": "P2–3"
+   }
+  }
+ ],
+ "classToCourse": {
+  "10P": "IGCSE",
+  "10T": "IGCSE",
+  "11AS": "AS",
+  "12AS": "AS",
+  "12A2": "A2",
+  "Y1": "IGCSE"
+ }
+}

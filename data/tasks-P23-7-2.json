@@ -1,0 +1,194 @@
+[
+  {
+    "id": "P23-7.2-QC1-gen",
+    "section": "P23-7.2",
+    "kind": "generated",
+    "title": "Numerator of the first partial fraction with distinct linear factors",
+    "marks": 1,
+    "source": "Theory P23-7.2 Quick check 1; A for (x+n)/((x+1)(x+3))",
+    "params": [
+      {
+        "name": "n",
+        "min": 3,
+        "max": 11,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "A": "(n-1)/2"
+    },
+    "constraints": [
+      "n>=3"
+    ],
+    "original": {
+      "n": 7
+    },
+    "stem": "Express \\(\\dfrac{x+{n|int}}{(x+1)(x+3)}\\) in partial fractions. Give the numerator of the term with denominator \\(x+1\\).",
+    "answer": {
+      "expression": "(n-1)/2",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Putting \\(x=-1\\) gives the numerator \\({A|int}\\).",
+        "result": "(n-1)/2",
+        "format": "int",
+        "mark": "A1",
+        "note": "Cover-up at x = -1."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original n = 7, numerator 3"
+      }
+    ],
+    "tags": {
+      "course": "P23",
+      "subsections": [
+        "P23-7.2"
+      ],
+      "topic": "Algebra",
+      "chapter": "P23-7",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-7-2.json",
+        "locator": "P23-7.2-QC1-gen"
+      }
+    }
+  },
+  {
+    "id": "P23-7.2-QC2-gen",
+    "section": "P23-7.2",
+    "kind": "generated",
+    "title": "Numerator of the second partial fraction with distinct linear factors",
+    "marks": 1,
+    "source": "Theory P23-7.2 Quick check 2; B for (x+n)/((x+1)(x+3))",
+    "params": [
+      {
+        "name": "n",
+        "min": 3,
+        "max": 11,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "A": "(3-n)/2"
+    },
+    "constraints": [
+      "n>=3"
+    ],
+    "original": {
+      "n": 7
+    },
+    "stem": "Express \\(\\dfrac{x+{n|int}}{(x+1)(x+3)}\\) in partial fractions. Give the numerator of the term with denominator \\(x+3\\).",
+    "answer": {
+      "expression": "(3-n)/2",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Putting \\(x=-3\\) gives the numerator \\({A|int}\\).",
+        "result": "(3-n)/2",
+        "format": "int",
+        "mark": "A1",
+        "note": "Cover-up at x = -3."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original n = 7, numerator -2"
+      }
+    ],
+    "tags": {
+      "course": "P23",
+      "subsections": [
+        "P23-7.2"
+      ],
+      "topic": "Algebra",
+      "chapter": "P23-7",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-7-2.json",
+        "locator": "P23-7.2-QC2-gen"
+      }
+    }
+  },
+  {
+    "id": "P23-7.2-QC3-gen",
+    "section": "P23-7.2",
+    "kind": "generated",
+    "title": "Numerator of the repeated-factor term in a partial-fraction decomposition",
+    "marks": 1,
+    "source": "Theory P23-7.2 Quick check 3; B for (2x+n)/(x+1)^2",
+    "params": [
+      {
+        "name": "n",
+        "min": 1,
+        "max": 7,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "A": "n-2"
+    },
+    "constraints": [
+      "n>=1"
+    ],
+    "original": {
+      "n": 3
+    },
+    "stem": "Express \\(\\dfrac{2x+{n|int}}{(x+1)^2}\\) in partial fractions. Give the numerator of the term with denominator \\((x+1)^2\\).",
+    "answer": {
+      "expression": "n-2",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Putting \\(x=-1\\) gives the numerator \\({A|int}\\).",
+        "result": "n-2",
+        "format": "int",
+        "mark": "A1",
+        "note": "Cover-up, or equate numerators, at x = -1."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original n = 3, numerator 1"
+      }
+    ],
+    "tags": {
+      "course": "P23",
+      "subsections": [
+        "P23-7.2"
+      ],
+      "topic": "Algebra",
+      "chapter": "P23-7",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-7-2.json",
+        "locator": "P23-7.2-QC3-gen"
+      }
+    }
+  }
+]

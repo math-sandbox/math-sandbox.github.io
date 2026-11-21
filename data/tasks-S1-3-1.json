@@ -1,0 +1,164 @@
+[
+  {
+    "id": "S1-3.1-QC1-gen",
+    "section": "S1-3.1",
+    "kind": "generated",
+    "title": "Range of a short list",
+    "marks": 1,
+    "source": "Theory S1-3.1 Quick check 1 (range 7); new integer endpoints",
+    "params": [
+      {
+        "name": "lo",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "hi",
+        "min": 8,
+        "max": 16,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "hi-lo"
+    },
+    "constraints": [
+      "hi>lo"
+    ],
+    "original": {
+      "lo": 2,
+      "hi": 9
+    },
+    "stem": "A data set has smallest value {lo|int} and largest value {hi|int}. What is the range of this data set?",
+    "answer": {
+      "expression": "hi-lo",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The range of a data set is {hi|int}-{lo|int}={A|int}.",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is hi-lo. Original 9-2=7."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "S1-3.1-QC2-gen",
+    "section": "S1-3.1",
+    "kind": "generated",
+    "title": "Range with a larger maximum",
+    "marks": 1,
+    "source": "Theory S1-3.1 Quick check 2 (range 16); new integer endpoints",
+    "params": [
+      {
+        "name": "lo",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "hi",
+        "min": 16,
+        "max": 24,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "A": "hi-lo"
+    },
+    "constraints": [
+      "hi>lo"
+    ],
+    "original": {
+      "lo": 4,
+      "hi": 20
+    },
+    "stem": "A data set has smallest value {lo|int} and largest value {hi|int}. What is the range of this data set?",
+    "answer": {
+      "expression": "hi-lo",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The range of a data set is {hi|int}-{lo|int}={A|int}.",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "Original 20-4=16."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "S1-3.1-QC3-gen",
+    "section": "S1-3.1",
+    "kind": "generated",
+    "title": "Range of another list",
+    "marks": 1,
+    "source": "Theory S1-3.1 Quick check 3 (range 7); new integer endpoints",
+    "params": [
+      {
+        "name": "lo",
+        "min": 1,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "name": "hi",
+        "min": 7,
+        "max": 14,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "hi-lo"
+    },
+    "constraints": [
+      "hi>lo"
+    ],
+    "original": {
+      "lo": 1,
+      "hi": 8
+    },
+    "stem": "A data set has smallest value {lo|int} and largest value {hi|int}. What is the range of this data set?",
+    "answer": {
+      "expression": "hi-lo",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The range of a data set is {hi|int}-{lo|int}={A|int}.",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "Original 8-1=7."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  }
+]

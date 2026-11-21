@@ -1,0 +1,21 @@
+[
+  {
+    "section": "S2-1.2",
+    "q": "QC1",
+    "answer": 5,
+    "accept_as": "integer"
+  },
+  {
+    "section": "S2-1.2",
+    "q": "QC2",
+    "answer": 0.3670806884765625,
+    "accept_as": "sf",
+    "sf": 3
+  },
+  {
+    "section": "S2-1.2",
+    "q": "QC3",
+    "answer": 8,
+    "accept_as": "integer"
+  }
+]

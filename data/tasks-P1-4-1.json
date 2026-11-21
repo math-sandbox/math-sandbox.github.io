@@ -1,0 +1,516 @@
+[
+  {
+    "id": "P1-4.1-QC2-gen",
+    "section": "P1-4.1",
+    "kind": "generated",
+    "title": "Radians in terms of π to degrees",
+    "marks": 2,
+    "source": "Theory P1-4.1 Quick check 2 (7π/12 = 105°); book Worked example 4.1b p.102, Exercise 4A Q2 p.102",
+    "params": [
+      {
+        "name": "k",
+        "min": 2,
+        "max": 23,
+        "step": 1
+      },
+      {
+        "name": "n",
+        "min": 2,
+        "max": 20,
+        "step": 1
+      },
+      {
+        "name": "ordinary_sector",
+        "min": 0,
+        "max": 0,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "D": "180*k/n"
+    },
+    "constraints": [
+      "(180*k)%n==0",
+      "180*k/n<=720",
+      "(k%2)+(n%2)>0",
+      "(k%3>0)+(n%3>0)>0",
+      "(k%5>0)+(n%5>0)>0",
+      "(k%7>0)+(n%7>0)>0",
+      "(k%11>0)+(n%11>0)>0",
+      "(k%13>0)+(n%13>0)>0",
+      "(k%17>0)+(n%17>0)>0",
+      "(k%19>0)+(n%19>0)>0",
+      "(ordinary_sector==0)+(k<2*n)>0"
+    ],
+    "original": {
+      "k": 7,
+      "n": 12,
+      "ordinary_sector": 0
+    },
+    "stem": "Change \\(\\frac{{k|int}\\pi}{{n|int}}\\) radians to degrees.",
+    "answer": {
+      "expression": "k*180/n",
+      "format": "{A|int}°",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "U",
+        "text_tex": "\\(\\frac{\\pi}{{n|int}}=\\frac{180^\\circ}{{n|int}}={U|raw}^\\circ\\)",
+        "result": "180/n",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Pi radians is 180 degrees, or multiply by 180 over pi."
+      },
+      {
+        "name": "A",
+        "text_tex": "\\({k|int}\\times{U|raw}^\\circ={A|int}^\\circ\\)",
+        "result": "k*U",
+        "format": "int",
+        "mark": "A1",
+        "note": "Exact number of degrees."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem; k at least 2 so the numerator shows k times pi"
+      },
+      {
+        "id": "unit",
+        "stem": "Change \\(\\frac{\\pi}{{n|int}}\\) radians to degrees.",
+        "params": [
+          {
+            "name": "k",
+            "min": 1,
+            "max": 1,
+            "step": 1
+          },
+          {
+            "name": "n",
+            "min": 2,
+            "max": 20,
+            "step": 1
+          }
+        ],
+        "step_text": {
+          "A": "\\(1\\times{U|raw}^\\circ={A|int}^\\circ\\)"
+        }
+      },
+      {
+        "id": "sector",
+        "stem": "The angle at the centre of a sector is \\(\\frac{{k|int}\\pi}{{n|int}}\\) radians. Find this angle in degrees.",
+        "params": [
+          {
+            "name": "k",
+            "min": 2,
+            "max": 11,
+            "step": 1
+          },
+          {
+            "name": "n",
+            "min": 3,
+            "max": 12,
+            "step": 1
+          },
+          {
+            "name": "ordinary_sector",
+            "min": 1,
+            "max": 1,
+            "step": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P1-4.1-QC3-gen",
+    "section": "P1-4.1",
+    "kind": "generated",
+    "title": "Degrees to radians, 3 significant figures",
+    "marks": 2,
+    "source": "Theory P1-4.1 Quick check 3 (47° = 0.820 rad); book Exercise 4A Q3 p.103",
+    "params": [
+      {
+        "name": "d",
+        "min": 2,
+        "max": 358,
+        "step": 1
+      }
+    ],
+    "derived": {},
+    "constraints": [
+      "d%15>0"
+    ],
+    "original": {
+      "d": 47
+    },
+    "stem": "Write \\({d|int}^\\circ\\) in radians, correct to 3 significant figures.",
+    "answer": {
+      "expression": "d*3.141592653589793/180",
+      "format": "{R|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "Rm",
+        "text_tex": "\\({d|int}\\times\\frac{\\pi}{180}={Rm|num5}\\ldots\\)",
+        "result": "d*3.141592653589793/180",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Multiply by pi over 180."
+      },
+      {
+        "name": "R",
+        "text_tex": "\\(\\approx {R|sf3z}\\) rad (3 s.f.)",
+        "result": "Rm",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Correct to 3 significant figures, including significant trailing zeros."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem; multiples of 15 degrees excluded because they have a simple exact form"
+      },
+      {
+        "id": "wheel",
+        "stem": "A wheel turns through \\({d|int}^\\circ\\). Find this angle in radians, correct to 3 significant figures.",
+        "params": [
+          {
+            "name": "d",
+            "min": 5,
+            "max": 355,
+            "step": 1
+          }
+        ]
+      },
+      {
+        "id": "bearing",
+        "stem": "The angle between two straight roads is \\({d|int}^\\circ\\). Write this angle in radians, correct to 3 significant figures.",
+        "params": [
+          {
+            "name": "d",
+            "min": 10,
+            "max": 170,
+            "step": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P1-4.1-QC4-gen",
+    "section": "P1-4.1",
+    "kind": "generated",
+    "title": "Radians to degrees, 1 decimal place",
+    "marks": 2,
+    "source": "Theory P1-4.1 Quick check 4 (1.3 rad = 74.5°); book Exercise 4A Q4 p.103",
+    "params": [
+      {
+        "name": "x",
+        "min": 0.05,
+        "max": 6.2,
+        "step": 0.01
+      }
+    ],
+    "derived": {},
+    "constraints": [
+      "abs(x-1)>1e-9"
+    ],
+    "original": {
+      "x": 1.3
+    },
+    "stem": "Write \\({x|raw}\\) radians in degrees, correct to 1 decimal place.",
+    "answer": {
+      "expression": "x*180/3.141592653589793",
+      "format": "{G|dp1}°",
+      "tolerance": 0.05
+    },
+    "steps": [
+      {
+        "name": "Gm",
+        "text_tex": "\\({x|raw}\\times\\frac{180}{\\pi}={Gm|num4}\\ldots\\)",
+        "result": "x*180/3.141592653589793",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Multiply by 180 over pi."
+      },
+      {
+        "name": "G",
+        "text_tex": "\\(={G|dp1}^\\circ\\) (1 d.p.)",
+        "result": "Gm",
+        "format": "dp1",
+        "mark": "A1",
+        "note": "Correct to 1 decimal place."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "pendulum",
+        "stem": "A pendulum swings through an angle of \\({x|raw}\\) radians. Find this angle in degrees, correct to 1 decimal place.",
+        "params": [
+          {
+            "name": "x",
+            "min": 0.1,
+            "max": 1.2,
+            "step": 0.01
+          }
+        ]
+      },
+      {
+        "id": "sector",
+        "stem": "A sector of a circle has an angle of \\({x|raw}\\) radians at the centre. Find this angle in degrees, correct to 1 decimal place.",
+        "params": [
+          {
+            "name": "x",
+            "min": 0.3,
+            "max": 5.5,
+            "step": 0.05
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P1-4.1-PP-9709-12-ON10-Q4i",
+    "section": "P1-4.1",
+    "kind": "pastpaper",
+    "title": "Angles at a point in radians",
+    "marks": 1,
+    "source": {
+      "paper": "9709/12/O/N/10 Q4(i)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w10_qp_12.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w10_ms_12.pdf",
+      "note": "Text taken from the QP and MS PDFs (UCLES 2010). Part (ii) (area) is P1-4.3 content and is omitted. A source-faithful static redraw is embedded in the existing HTML stem, using the approved source page. No figure field or renderer was added."
+    },
+    "stem": "<figure><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\" width=\"400\" style=\"max-width:100%;height:auto\" role=\"img\" aria-labelledby=\"on10-q4i-title on10-q4i-desc\"><title id=\"on10-q4i-title\">9709/12/O/N/10 question 4 official examination diagram</title><desc id=\"on10-q4i-desc\">Circle centre O, radius 3 cm. C is at the top. A is lower left and B lower right; P is on the lower arc AB. Both angles AOC and BOC are 2.3 radians. The source shading is bounded by AC, CB and the lower arc APB; only angle AOB in part (i) is asked here.</desc><circle cx=\"200\" cy=\"155\" r=\"110\" fill=\"none\" stroke=\"#333\" stroke-dasharray=\"5 4\"/><path d=\"M200 45 L117.972 228.291 A110 110 0 0 0 282.028 228.291 Z\" fill=\"#ddd\" stroke=\"#222\" stroke-width=\"1.5\"/><path d=\"M200 45 V155 L117.972 228.291 M200 155 L282.028 228.291\" fill=\"none\" stroke=\"#333\" stroke-dasharray=\"5 4\"/><path d=\"M200 129 A26 26 0 0 0 180.612 172.323 M200 129 A26 26 0 0 1 219.388 172.323\" fill=\"none\" stroke=\"#333\"/><g fill=\"#111\" font-family=\"serif\" font-size=\"16\"><text x=\"194\" y=\"33\">C</text><text x=\"103\" y=\"246\">A</text><text x=\"286\" y=\"246\">B</text><text x=\"194\" y=\"285\">P</text><text x=\"194\" y=\"179\">O</text><text x=\"122\" y=\"142\">2.3 rad</text><text x=\"230\" y=\"142\">2.3 rad</text><text x=\"207\" y=\"104\">3 cm</text><text x=\"154\" y=\"215\">3 cm</text><text x=\"213\" y=\"215\">3 cm</text></g></svg><figcaption>Static redraw of the source diagram; only part (i) is asked.</figcaption></figure>\nThe diagram shows points A, C, B, P on the circumference of a circle with centre O and radius 3 cm.\nAngle AOC = angle BOC = 2.3 radians.\nFind angle AOB in radians, correct to 4 significant figures.",
+    "answer": {
+      "expression": "2*3.141592653589793-2*2.3",
+      "official": "1.683(18…)",
+      "accept_as": "sf",
+      "sf": 4
+    },
+    "steps": [
+      {
+        "name": "Ab",
+        "text_tex": "\\(2\\pi-2\\times2.3=1.68318\\ldots=1.683\\)",
+        "result": "2*3.141592653589793-4.6",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 for 1.683(18…). Angles at a point add up to 2 pi."
+      }
+    ]
+  },
+  {
+    "id": "P1-4.1-PP-9709-13-MJ15-Q11iii",
+    "section": "P1-4.1",
+    "kind": "pastpaper",
+    "title": "Converting a radian angle to degrees",
+    "marks": 1,
+    "source": {
+      "paper": "9709/13/M/J/15 Q11(iii)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s15_qp_13.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s15_ms_13.pdf",
+      "note": "Text taken from the QP and MS PDFs (UCLES 2015). Parts (i) and (ii) (sector area and perimeter) are outside P1-4.1 and are omitted; the given value of alpha makes (iii) self-contained."
+    },
+    "stem": "In the diagram, OAB is a sector of a circle with centre O and radius r. The point C on OB is such that angle ACO is a right angle. Angle AOB is \\(\\alpha\\) radians and is such that AC divides the sector into two regions of equal area.\nIt is given that the solution of the equation in part (i) is \\(\\alpha=0.9477\\), correct to 4 decimal places.\nFind angle AOB in degrees.",
+    "answer": {
+      "expression": "0.9477*180/3.141592653589793",
+      "official": "54.3° cao",
+      "tolerance": 0.05
+    },
+    "steps": [
+      {
+        "name": "Dg",
+        "text_tex": "\\(0.9477\\times\\frac{180}{\\pi}=54.299\\ldots=54.3^\\circ\\)",
+        "result": "0.9477*180/3.141592653589793",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 for 54.3 degrees, cao (correct answer only)."
+      }
+    ]
+  },
+  {
+    "id": "P1-4.1-PP-ON10-Q4i-similar",
+    "section": "P1-4.1",
+    "kind": "generated",
+    "title": "Angles at a point in radians",
+    "marks": 2,
+    "source": "Similar to 9709/12/O/N/10 Q4(i): new values and contexts; asks for 3 s.f. because the engine has no 4 s.f. rounding format",
+    "params": [
+      {
+        "name": "a",
+        "min": 1.5,
+        "max": 3.0,
+        "step": 0.1
+      },
+      {
+        "name": "b",
+        "min": 1.5,
+        "max": 3.0,
+        "step": 0.1
+      }
+    ],
+    "derived": {},
+    "constraints": [
+      "a+b<6.0",
+      "abs(a-1)>1e-9",
+      "abs(b-1)>1e-9"
+    ],
+    "original": {
+      "a": 2.3,
+      "b": 2.3
+    },
+    "stem": "Points A, B and C lie on a circle with centre O. Angle AOC = {a|raw} radians and angle BOC = {b|raw} radians. The three angles AOC, BOC and AOB together make a full turn at O. Find angle AOB in radians, correct to 3 significant figures.",
+    "answer": {
+      "expression": "2*3.141592653589793-a-b",
+      "format": "{T|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "Tm",
+        "text_tex": "\\(2\\pi-{a|raw}-{b|raw}={Tm|num5}\\ldots\\)",
+        "result": "2*3.141592653589793-a-b",
+        "format": "raw",
+        "mark": "M1",
+        "note": "A full turn is 2 pi radians."
+      },
+      {
+        "name": "T",
+        "text_tex": "\\(={T|sf3z}\\) rad (3 s.f.)",
+        "result": "Tm",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Correct to 3 significant figures."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "pie",
+        "stem": "A pie chart has three sectors. Two of the sector angles are {a|raw} radians and {b|raw} radians. Find the third sector angle in radians, correct to 3 significant figures.",
+        "params": [
+          {
+            "name": "a",
+            "min": 0.8,
+            "max": 3.0,
+            "step": 0.1
+          },
+          {
+            "name": "b",
+            "min": 0.8,
+            "max": 3.0,
+            "step": 0.1
+          }
+        ]
+      },
+      {
+        "id": "clock",
+        "stem": "Three spokes of a wheel meet at the centre O. The angles between neighbouring spokes are {a|raw} radians, {b|raw} radians and a third angle. Find the third angle in radians, correct to 3 significant figures.",
+        "params": [
+          {
+            "name": "a",
+            "min": 1.6,
+            "max": 2.6,
+            "step": 0.05
+          },
+          {
+            "name": "b",
+            "min": 1.6,
+            "max": 2.6,
+            "step": 0.05
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P1-4.1-PP-MJ15-Q11iii-similar",
+    "section": "P1-4.1",
+    "kind": "generated",
+    "title": "Converting a radian angle to degrees",
+    "marks": 2,
+    "source": "Similar to 9709/13/M/J/15 Q11(iii): new values and contexts (2 marks here so the method and the rounding are each marked; the paper gives B1)",
+    "params": [
+      {
+        "name": "al",
+        "min": 0.2,
+        "max": 1.5,
+        "step": 0.0001
+      }
+    ],
+    "derived": {},
+    "constraints": [
+      "abs(al-1)>1e-9"
+    ],
+    "original": {
+      "al": 0.9477
+    },
+    "stem": "Angle AOB is \\(\\alpha\\) radians, where \\(\\alpha={al|dp4}\\), correct to 4 decimal places. Find angle AOB in degrees, correct to 1 decimal place.",
+    "answer": {
+      "expression": "al*180/3.141592653589793",
+      "format": "{G|dp1}°",
+      "tolerance": 0.05
+    },
+    "steps": [
+      {
+        "name": "Gm",
+        "text_tex": "\\({al|dp4}\\times\\frac{180}{\\pi}={Gm|num4}\\ldots\\)",
+        "result": "al*180/3.141592653589793",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Multiply by 180 over pi."
+      },
+      {
+        "name": "G",
+        "text_tex": "\\(={G|dp1}^\\circ\\)",
+        "result": "Gm",
+        "format": "dp1",
+        "mark": "A1",
+        "note": "Correct to 1 decimal place."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "equation",
+        "stem": "The solution of an equation is \\(\\theta={al|dp4}\\) radians, correct to 4 decimal places. Write \\(\\theta\\) in degrees, correct to 1 decimal place.",
+        "params": [
+          {
+            "name": "al",
+            "min": 0.1,
+            "max": 3.1,
+            "step": 0.0001
+          }
+        ]
+      },
+      {
+        "id": "ramp",
+        "stem": "A ramp makes an angle of {al|dp4} radians with the horizontal. Find this angle in degrees, correct to 1 decimal place.",
+        "params": [
+          {
+            "name": "al",
+            "min": 0.05,
+            "max": 0.6,
+            "step": 0.0001
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,221 @@
+[
+  {
+    "id": "P23-5.3-QC2-gen",
+    "section": "P23-5.3",
+    "kind": "generated",
+    "title": "Definite integral of k cos(nx) from 0 to π/2",
+    "marks": 3,
+    "source": "Theory P23-5.3 Quick check 2 (integral of 6 cos 3x from 0 to π/2 = -2)",
+    "params": [
+      {
+        "name": "k",
+        "min": 2,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "name": "n",
+        "min": 1,
+        "max": 7,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "s": "math.pow(-1,(n-1)/2)"
+    },
+    "constraints": [
+      "n%2==1",
+      "k%n==0"
+    ],
+    "original": {
+      "k": 6,
+      "n": 3
+    },
+    "stem": "Find the exact value of \\(\\displaystyle\\int_0^{\\pi/2}{k|int}\\cos({n|int}x)\\,\\mathrm{d}x\\).",
+    "answer": {
+      "expression": "math.pow(-1,(n-1)/2)*k/n",
+      "format": "{V|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "F",
+        "text_tex": "\\(\\left[{k|int}\\times\\dfrac{1}{{n|int}}\\sin({n|int}x)\\right]_0^{\\pi/2}\\)",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Reverse chain rule."
+      },
+      {
+        "name": "S",
+        "text_tex": "\\(=\\dfrac{{k|int}}{{n|int}}\\left(\\sin\\bigl({n|int}\\times\\pi/2\\bigr)-\\sin0\\right)\\)",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Substitute limits."
+      },
+      {
+        "name": "V",
+        "text_tex": "\\(={V|int}\\)",
+        "result": "(k/n)*s",
+        "format": "int",
+        "mark": "A1",
+        "note": "sin(nπ/2) is 1 or −1 for odd n."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "area",
+        "stem": "Evaluate \\(\\displaystyle\\int_0^{\\pi/2}{k|int}\\cos({n|int}x)\\,\\mathrm{d}x\\).",
+        "step_text": {}
+      },
+      {
+        "id": "exact",
+        "stem": "Find the exact value of the definite integral \\(\\displaystyle\\int_0^{\\pi/2}{k|int}\\cos({n|int}x)\\,\\mathrm{d}x\\).",
+        "step_text": {}
+      }
+    ]
+  },
+  {
+    "id": "P23-5.3-QC3-gen",
+    "section": "P23-5.3",
+    "kind": "generated",
+    "title": "Definite integral of k sec squared of (ax) up to pi over 4a",
+    "marks": 3,
+    "source": "Theory P23-5.3 Quick check 3 (integral of 4 sec^{2}(2x) from 0 to π/8 = 2)",
+    "params": [
+      {
+        "name": "k",
+        "min": 2,
+        "max": 12,
+        "step": 2
+      },
+      {
+        "name": "a",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "lim": "4*a"
+    },
+    "constraints": [
+      "k%a==0",
+      "k!=a"
+    ],
+    "original": {
+      "k": 4,
+      "a": 2
+    },
+    "stem": "Find the exact value of \\(\\displaystyle\\int_0^{\\pi/{lim|int}}{k|int}\\sec^2({a|int}x)\\,\\mathrm{d}x\\).",
+    "answer": {
+      "expression": "k/a",
+      "format": "{V|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "F",
+        "text_tex": "\\(\\left[{k|int}\\times\\dfrac{1}{{a|int}}\\tan({a|int}x)\\right]_0^{\\pi/{lim|int}}\\)",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Reverse chain rule."
+      },
+      {
+        "name": "S",
+        "text_tex": "\\(=\\dfrac{{k|int}}{{a|int}}\\left(\\tan\\dfrac{\\pi}{4}-\\tan0\\right)\\)",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Upper limit gives tan(π/4)=1."
+      },
+      {
+        "name": "V",
+        "text_tex": "\\(={V|int}\\)",
+        "result": "k/a",
+        "format": "int",
+        "mark": "A1",
+        "note": "Exact integer value."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "area",
+        "stem": "Evaluate \\(\\displaystyle\\int_0^{\\pi/{lim|int}}{k|int}\\sec^2({a|int}x)\\,\\mathrm{d}x\\).",
+        "step_text": {}
+      },
+      {
+        "id": "exact",
+        "stem": "Find the exact value of the definite integral \\(\\displaystyle\\int_0^{\\pi/{lim|int}}{k|int}\\sec^2({a|int}x)\\,\\mathrm{d}x\\).",
+        "step_text": {}
+      }
+    ]
+  },
+  {
+    "id": "P23-5.3-PP-9709-21-MJ16-Q7a",
+    "section": "P23-5.3",
+    "kind": "pastpaper",
+    "title": "Indefinite integral of (1+cos^4 2x)/cos^2 2x",
+    "marks": 5,
+    "source": {
+      "paper": "9709/21/M/J/16 Q7(a)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s16_qp_21.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s16_ms_21.pdf",
+      "note": "Stem text verbatim from the QP PDF; steps and marks from the official MS PDF (Cambridge International Examinations 2016). Part (b) is a logarithm integral and is omitted. This part also uses the double-angle rewrite of cos^2 2x, which is extra to the basic reverse derivatives of this section. Official MS final answer: (1/2) tan 2x + (1/2)x + (1/8) sin 4x + c  [MS typeset 1/2 tan 2x + 1/2 x + 1/8 sin 4x; condoning absence of +c]."
+    },
+    "stem": "Find \\(\\displaystyle\\int\\dfrac{1+\\cos^4 2x}{\\cos^2 2x}\\,\\mathrm{d}x\\).",
+    "steps": [
+      {
+        "name": "rw",
+        "text_tex": "\\(\\dfrac{1+\\cos^4 2x}{\\cos^2 2x}=\\sec^2 2x+\\cos^2 2x\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 rewrite integrand as sec^2 2x + cos^2 2x."
+      },
+      {
+        "name": "id",
+        "text_tex": "Write \\(\\cos^2 2x\\) in the form \\(k_1+k_2\\cos 4x\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: M1 express cos^2 2x in form k1 + k2 cos 4x."
+      },
+      {
+        "name": "id2",
+        "text_tex": "\\(\\cos^2 2x=\\dfrac12+\\dfrac12\\cos 4x\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: A1 state correct 1/2 + 1/2 cos 4x."
+      },
+      {
+        "name": "int",
+        "text_tex": "Integrate to obtain terms involving \\(\\tan 2x\\) and \\(\\sin 4x\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: M1 integrate to obtain at least terms involving tan 2x and sin 4x."
+      },
+      {
+        "name": "ans",
+        "text_tex": "\\(\\dfrac12\\tan 2x+\\dfrac12 x+\\dfrac18\\sin 4x+c\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: A1 obtain (1/2) tan 2x + (1/2)x + (1/8) sin 4x, condoning absence of +c. The model answer still shows +c, as the teaching rule requires."
+      }
+    ],
+    "marking": "manual"
+  }
+]

@@ -1,0 +1,184 @@
+[
+  {
+    "id": "P1-2.7-QC1-gen",
+    "section": "P1-2.7",
+    "kind": "generated",
+    "title": "Y-coordinate after a stretch parallel to the y-axis",
+    "marks": 1,
+    "source": "Theory P1-2.7 Quick check 1 (point (2, 4) on y=f(x) maps to (2, 12) on y=3f(x)); new positive scale factors and y-coordinates",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 1,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "a*q"
+    },
+    "constraints": [
+      "a>=2",
+      "q>=1"
+    ],
+    "original": {
+      "a": 3,
+      "q": 4
+    },
+    "stem": "The point \\((2, {q|int})\\) lies on the graph of \\(y=f(x)\\). What is the \\(y\\)-coordinate of the image of this point on the graph of \\(y={a|int}f(x)\\)?",
+    "answer": {
+      "expression": "a*q",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "A stretch of scale factor {a|int} parallel to the \\(y\\)-axis multiplies the \\(y\\)-coordinate by {a|int}, so the image has \\(y\\)-coordinate \\({a|int}\\times{q|int}={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is a q. Original a=3, q=4 gives 12."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P1-2.7-QC2-gen",
+    "section": "P1-2.7",
+    "kind": "generated",
+    "title": "X-coordinate after a stretch parallel to the x-axis",
+    "marks": 1,
+    "source": "Theory P1-2.7 Quick check 2 (point (4, 5) on y=f(x) corresponds to (2, 5) on y=f(2x)); new even x-coordinates and integer factors",
+    "params": [
+      {
+        "name": "k",
+        "min": 2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "p",
+        "min": 4,
+        "max": 20,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "A": "p/k"
+    },
+    "constraints": [
+      "p%k==0",
+      "p>k"
+    ],
+    "original": {
+      "k": 2,
+      "p": 4
+    },
+    "stem": "The point \\(({p|int}, 5)\\) lies on the graph of \\(y=f(x)\\). The same \\(y\\)-value occurs on the graph of \\(y=f({k|int}x)\\) at \\((c, 5)\\). What is the value of \\(c\\)?",
+    "answer": {
+      "expression": "p/k",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The graph of \\(y=f({k|int}x)\\) is a stretch of scale factor \\(1/{k|int}\\) parallel to the \\(x\\)-axis, so the new \\(x\\)-coordinate is \\({p|int}/{k|int}={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is p/k. Original k=2, p=4 gives c=2."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P1-2.7-QC3-gen",
+    "section": "P1-2.7",
+    "kind": "generated",
+    "title": "Stretched y-value of a known point",
+    "marks": 1,
+    "source": "Theory P1-2.7 Quick check 3 (the point at height 5 is stretched to height 15 when the scale factor is 3); new factors",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "5*a"
+    },
+    "constraints": [
+      "a>=2"
+    ],
+    "original": {
+      "a": 3
+    },
+    "stem": "A point on the graph of \\(y=f(x)\\) has \\(y\\)-coordinate 5. After a stretch of scale factor {a|int} parallel to the \\(y\\)-axis, what is the new \\(y\\)-coordinate of this point?",
+    "answer": {
+      "expression": "5*a",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The new \\(y\\)-coordinate is \\(5\\times{a|int}={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is 5a. Original a=3 gives 15."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P1-2.7-PP-9709-13-MJ22-Q4b",
+    "section": "P1-2.7",
+    "kind": "pastpaper",
+    "title": "Single stretch taking y=x squared + 2x - 5 to y=4x squared + 4x - 5",
+    "marks": 2,
+    "source": {
+      "paper": "9709/13/M/J/22 Q4(b)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s22_qp_13.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s22_ms_13.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2022), Question 4(b) only. Official answer and mark allocation from the MS PDF. The item is paper/self-mark. Part 4(a) is a translation, already used in package 8 (P1-2.5), and is omitted. Part (b) is independent of (a)."
+    },
+    "stem": "This question is 9709/13/M/J/22 Question 4(b), taken from the official QP.\n\nThe curve with equation \\(y=x^2+2x-5\\) is transformed to a curve with equation \\(y=4x^2+4x-5\\).\n\nDescribe fully the single transformation that has been applied.  [2]",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "B",
+        "text_tex": "The image is obtained by replacing \\(x\\) with \\(2x\\) in \\(x^2+2x-5\\), so the single transformation is a stretch of scale factor \\(\\dfrac{1}{2}\\) parallel to the \\(x\\)-axis (equivalently, horizontally, or with the \\(y\\)-axis invariant).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B2",
+        "note": "Official MS 4(b): B2, 1, 0 for the three elements Stretch; x direction or horizontally or y-axis invariant; factor 1/2. Additional transformation scores B0. Independent: f(2x)=(2x)^2+2(2x)-5=4x^2+4x-5."
+      }
+    ]
+  }
+]

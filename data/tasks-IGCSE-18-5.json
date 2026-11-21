@@ -1,0 +1,222 @@
+[
+  {
+    "id": "IGCSE-18.5-QC1-gen",
+    "section": "IGCSE-18.5",
+    "kind": "generated",
+    "title": "Value of a cubic y=x^3-q x",
+    "marks": 1,
+    "source": "Theory IGCSE-18.5 Quick check 1 (y=x^3-4x at x=3 is 15); book cubic plotting, pp.608-611",
+    "params": [
+      {
+        "name": "x",
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 1,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "Y": "x*x*x-q*x",
+      "A": "x*x*x-q*x"
+    },
+    "constraints": [
+      "x!=0"
+    ],
+    "original": {
+      "x": 3,
+      "q": 4
+    },
+    "stem": "Find the value of \\(y=x^3-({q|int})x\\) when \\(x=({x|int})\\).",
+    "answer": {
+      "expression": "x*x*x-q*x",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(y=({x|int})^3-({q|int})\\times({x|int})={A|int}\\)",
+        "result": "x*x*x-q*x",
+        "format": "int",
+        "mark": "A1",
+        "note": "Direct substitution into the cubic."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original x=3, q=4"
+      },
+      {
+        "id": "table",
+        "stem": "A table of values for \\(y=x^3-({q|int})x\\) is being completed. Find \\(y\\) when \\(x=({x|int})\\)."
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-18.5-QC2-gen",
+    "section": "IGCSE-18.5",
+    "kind": "generated",
+    "title": "Value of y=2^n",
+    "marks": 1,
+    "source": "Theory IGCSE-18.5 Quick check 2 (y=2^x at x=3 is 8); book exponential graphs in 18.5",
+    "params": [
+      {
+        "name": "n",
+        "min": 0,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "Y": "2**n",
+      "A": "2**n"
+    },
+    "constraints": [
+      "n>=0"
+    ],
+    "original": {
+      "n": 3
+    },
+    "stem": "Find the value of \\(y=2^x\\) when \\(x=({n|int})\\).",
+    "answer": {
+      "expression": "2**n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(y=2^{{{n|int}}}={A|int}\\)",
+        "result": "2**n",
+        "format": "int",
+        "mark": "A1",
+        "note": "n is a non-negative integer, so 2^n is an integer."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original n=3"
+      },
+      {
+        "id": "point",
+        "stem": "The graph of \\(y=2^x\\) has been drawn. Write down the \\(y\\)-coordinate of the point on the curve where \\(x=({n|int})\\)."
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-18.5-QC3-gen",
+    "section": "IGCSE-18.5",
+    "kind": "generated",
+    "title": "Value of y=x+a/x at a divisor",
+    "marks": 1,
+    "source": "Theory IGCSE-18.5 Quick check 3 (y=x+2/x at x=2 is 3); book combination graphs in 18.5",
+    "params": [
+      {
+        "name": "x",
+        "min": 2,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "name": "m",
+        "min": 1,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "a": "x*m",
+      "Y": "x+m",
+      "A": "x+m"
+    },
+    "constraints": [
+      "x!=0"
+    ],
+    "original": {
+      "x": 2,
+      "m": 1
+    },
+    "stem": "Find the value of \\(y=x+\\dfrac{({a|int})}{x}\\) when \\(x=({x|int})\\).",
+    "answer": {
+      "expression": "x+m",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(y=({x|int})+({a|int})/({x|int})={A|int}\\)",
+        "result": "x+m",
+        "format": "int",
+        "mark": "A1",
+        "note": "a is a multiple of x, so the value is an integer."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original x=2, a=2, y=3"
+      },
+      {
+        "id": "table",
+        "stem": "A table of values for \\(y=x+({a|int})/x\\) is being completed. Find \\(y\\) when \\(x=({x|int})\\)."
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-18.5-PP-0580-43-ON19-Q3ac",
+    "section": "IGCSE-18.5",
+    "kind": "pastpaper",
+    "title": "Table and graph of y=x^3+x^2-5x, and the roots of y=0",
+    "marks": 9,
+    "source": {
+      "paper": "0580/43/O/N/19 Q3 (a)(b)(c) only",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w19_qp_43.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w19_ms_43.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2019), parts (a), (b) and (c) only. Official answers and mark allocation from the MS PDF. The printed grid is not reproduced. Parts (d) (tangent gradient, section 18.6) and (e) are omitted; they are not part of this item. Fully manual."
+    },
+    "stem": "This question is 0580/43/O/N/19 Question 3 parts (a), (b) and (c) only, taken from the official QP. Parts (d) and (e) of the printed question are not included here.\n\nThe table shows some values for \\(y=x^3+x^2-5x\\).\n\nThe \\(x\\)-values are \\(-3\\), \\(-2\\), \\(-1.5\\), \\(-1\\), \\(0\\), \\(1\\), \\(1.5\\), \\(2\\), \\(2.5\\), \\(3\\). The given \\(y\\)-values are: when \\(x=-3\\), \\(y=-3\\); when \\(x=-2\\), \\(y=6\\); when \\(x=-1.5\\), \\(y=6.4\\); when \\(x=0\\), \\(y=0\\); when \\(x=1.5\\), \\(y=-1.9\\); when \\(x=2\\), \\(y=2\\); when \\(x=2.5\\), \\(y=9.4\\). The missing values are those for \\(x=-1\\), \\(x=1\\) and \\(x=3\\).\n\n(a) Complete the table.\n\n(b) On a grid, draw the graph of \\(y=x^3+x^2-5x\\) for \\(-3\\leqslant x\\leqslant 3\\).\n\n(c) Use your graph to solve the equation \\(x^3+x^2-5x=0\\).",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "T",
+        "text_tex": "(a) When \\(x=-1\\), \\(y=5\\). When \\(x=1\\), \\(y=-3\\). When \\(x=3\\), \\(y=21\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B3",
+        "note": "MS 3(a): 5, \u20133, 21, 3 marks, B1 for each."
+      },
+      {
+        "name": "C",
+        "text_tex": "(b) Plot the points from the completed table and join them with a smooth cubic curve.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B4",
+        "note": "MS 3(b): Fully correct curve, 4 marks; B3 FT for 9 or 10 points, B2 FT for 7 or 8 points, B1 FT for 5 or 6 points."
+      },
+      {
+        "name": "R1",
+        "text_tex": "(c) One solution is \\(x=0\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS 3(c): \u20132.9 to \u20132.7, 0, and 1.7 to 1.9, 2 marks, B1 for 2 correct values."
+      },
+      {
+        "name": "R2",
+        "text_tex": "The other two solutions, read from the graph, are in the intervals \\(-2.9\\) to \\(-2.7\\) and \\(1.7\\) to \\(1.9\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official acceptable ranges from the MS. The exact roots are not required."
+      }
+    ]
+  }
+]

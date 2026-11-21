@@ -1,0 +1,204 @@
+[
+  {
+    "id": "P1-1.7-QC1-gen",
+    "section": "P1-1.7",
+    "kind": "generated",
+    "title": "Larger root of a factored quadratic",
+    "marks": 1,
+    "source": "Theory P1-1.7 Quick check 1 (larger root of (x-2)(x-7)=0 is 7); book Worked example 1.15 style pp.22-23, new numbers",
+    "params": [
+      {
+        "name": "p",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 6,
+        "max": 12,
+        "step": 1
+      }
+    ],
+    "derived": {},
+    "constraints": [
+      "q>=p+2"
+    ],
+    "original": {
+      "p": 2,
+      "q": 7
+    },
+    "stem": "The inequality \\((x-{p|int})(x-{q|int})&lt;0\\) holds between the roots. What is the larger root?",
+    "answer": {
+      "expression": "q",
+      "format": "{q|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The roots are \\({p|int}\\) and \\({q|int}\\), so the larger root is \\({q|int}\\).",
+        "result": "q",
+        "format": "int",
+        "mark": "A1",
+        "note": "q is chosen larger than p."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original p=2, q=7"
+      }
+    ]
+  },
+  {
+    "id": "P1-1.7-QC2-gen",
+    "section": "P1-1.7",
+    "kind": "generated",
+    "title": "Smaller root of a monic quadratic",
+    "marks": 1,
+    "source": "Theory P1-1.7 Quick check 2 (smaller root of x^2-5x+6=0 is 2); book factorisation step, new numbers",
+    "params": [
+      {
+        "name": "p",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 3,
+        "max": 9,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "B": "p+q",
+      "C": "p*q"
+    },
+    "constraints": [
+      "q>=p+1"
+    ],
+    "original": {
+      "p": 2,
+      "q": 3
+    },
+    "stem": "Solve \\(x^2-{B|int}x+{C|int}=0\\). What is the smaller root?",
+    "answer": {
+      "expression": "p",
+      "format": "{p|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\((x-{p|int})(x-{q|int})=0\\), so the smaller root is \\({p|int}\\).",
+        "result": "p",
+        "format": "int",
+        "mark": "A1",
+        "note": "p is the smaller root because q>=p+1."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original p=2, q=3, giving x^2-5x+6"
+      }
+    ]
+  },
+  {
+    "id": "P1-1.7-QC3-gen",
+    "section": "P1-1.7",
+    "kind": "generated",
+    "title": "How many integers lie strictly between two bounds",
+    "marks": 1,
+    "source": "Theory P1-1.7 Quick check 3 (three integers satisfy 1<x<5); counting integers in an open interval, new numbers",
+    "params": [
+      {
+        "name": "a",
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "n",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "B": "a+n+1"
+    },
+    "constraints": [
+      "n>=2"
+    ],
+    "original": {
+      "a": 1,
+      "n": 3
+    },
+    "stem": "How many integers \\(x\\) satisfy \\({a|int}&lt;x&lt;{B|int}\\)?",
+    "answer": {
+      "expression": "n",
+      "format": "{n|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The integers run from \\({a|int}+1\\) to \\({B|int}-1\\), so there are \\({n|int}\\) of them.",
+        "result": "n",
+        "format": "int",
+        "mark": "A1",
+        "note": "B = a+n+1, so the number of integers strictly between a and B is n. Original: 1<x<5, n=3."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original a=1, n=3, B=5"
+      }
+    ]
+  },
+  {
+    "id": "P1-1.7-PP-9709-12-MJ16-Q11i",
+    "section": "P1-1.7",
+    "kind": "pastpaper",
+    "title": "Set of values for a quadratic inequality",
+    "marks": 3,
+    "source": {
+      "paper": "9709/12/M/J/16 Q11(i)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s16_qp_12.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s16_ms_12.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2016), Question 11(i) only. Official answer and mark allocation from the MS PDF. The item is paper/self-mark. Later parts of Question 11 are omitted (they concern a line meeting the curve and a restricted domain)."
+    },
+    "stem": "This question is 9709/12/M/J/16 Question 11(i), taken from the official QP.\n\nThe function \\(f\\) is defined by \\(f:x\\mapsto 6x-x^2-5\\) for \\(x\\in\\mathbb{R}\\).\n\nFind the set of values of \\(x\\) for which \\(f(x)\\leqslant 3\\).  [3]",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "\\(6x-x^2-5\\leqslant 3\\) rearranges to \\(x^2-6x+8\\geqslant 0\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: M1 for rearranging to a quadratic inequality in x and attempting to solve."
+      },
+      {
+        "name": "A1",
+        "text_tex": "The roots are \\(x=2\\) and \\(x=4\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: A1 for both values 2 and 4."
+      },
+      {
+        "name": "A",
+        "text_tex": "Hence \\(x\\leqslant 2\\) or \\(x\\geqslant 4\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "MS: A1 for x <= 2, x >= 4, with recognisable notation; condone < and/or >. Independent check: 6x-x^2-5 <= 3 iff x^2-6x+8 >= 0 iff (x-2)(x-4) >= 0, so x<=2 or x>=4. The official domain is all real x (the QP uses the real-number symbol)."
+      }
+    ]
+  }
+]

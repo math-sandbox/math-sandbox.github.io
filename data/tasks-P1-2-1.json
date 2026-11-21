@@ -1,0 +1,233 @@
+[
+  {
+    "id": "P1-2.1-QC1-gen",
+    "section": "P1-2.1",
+    "kind": "generated",
+    "title": "Maximum value of a decreasing linear function on a closed interval",
+    "marks": 1,
+    "source": "Theory P1-2.1 Quick check 1 (maximum of 5-2x on -4<=x<=5 is 13); book Worked example 2.1 style, new numbers",
+    "params": [
+      {
+        "name": "k",
+        "min": 3,
+        "max": 9,
+        "step": 1
+      },
+      {
+        "name": "m",
+        "min": 1,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "name": "a",
+        "min": -6,
+        "max": -1,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 2,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "M": "k-m*a"
+    },
+    "constraints": [
+      "m>=1",
+      "b>=a+2"
+    ],
+    "original": {
+      "k": 5,
+      "m": 2,
+      "a": -4,
+      "b": 5
+    },
+    "stem": "The function \\(f\\) is given by \\(f(x)={k|int}-{m|int}x\\) for \\({a|int}\\leqslant x\\leqslant {b|int}\\). What is the maximum value of \\(f\\)?",
+    "answer": {
+      "expression": "M",
+      "format": "{M|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The gradient is negative, so the maximum is at the left endpoint: \\(f({a|int})={k|int}-{m|int}({a|int})={M|int}\\).",
+        "result": "M",
+        "format": "int",
+        "mark": "A1",
+        "note": "M = k-m*a. Original: 5-2*(-4)=13."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P1-2.1-QC2-gen",
+    "section": "P1-2.1",
+    "kind": "generated",
+    "title": "Evaluate a linear function at a given input",
+    "marks": 1,
+    "source": "Theory P1-2.1 Quick check 2 (f(x)=x+2, f(5)=7); book function-notation example on printed p.35, new numbers",
+    "params": [
+      {
+        "name": "c",
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "n",
+        "min": 2,
+        "max": 9,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "V": "n+c"
+    },
+    "constraints": [
+      "n>=2"
+    ],
+    "original": {
+      "c": 2,
+      "n": 5
+    },
+    "stem": "If \\(f(x)=x+{c|int}\\), what is the value of \\(f({n|int})\\)?",
+    "answer": {
+      "expression": "V",
+      "format": "{V|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(f({n|int})={n|int}+{c|int}={V|int}\\).",
+        "result": "V",
+        "format": "int",
+        "mark": "A1",
+        "note": "V is n plus c. Original: 5+2=7."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P1-2.1-QC3-gen",
+    "section": "P1-2.1",
+    "kind": "generated",
+    "title": "Minimum value of a translated square on an interval containing the turning point",
+    "marks": 1,
+    "source": "Theory P1-2.1 Quick check 3 (minimum of (x-3)^2+8 on -1<=x<=9 is 8); book Worked example 2.2 style, new numbers",
+    "params": [
+      {
+        "name": "h",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "k",
+        "min": 2,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "name": "a",
+        "min": -3,
+        "max": 0,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 6,
+        "max": 12,
+        "step": 1
+      }
+    ],
+    "derived": {},
+    "constraints": [
+      "a<=h-1",
+      "b>=h+1"
+    ],
+    "original": {
+      "h": 3,
+      "k": 8,
+      "a": -1,
+      "b": 9
+    },
+    "stem": "The function \\(f\\) is defined by \\(f(x)=(x-{h|int})^2+{k|int}\\) for \\({a|int}\\leqslant x\\leqslant {b|int}\\). What is the minimum value of \\(f\\)?",
+    "answer": {
+      "expression": "k",
+      "format": "{k|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The squared bracket is zero when \\(x={h|int}\\), which lies inside the domain, so the minimum value is \\({k|int}\\).",
+        "result": "k",
+        "format": "int",
+        "mark": "A1",
+        "note": "The turning point x=h is required to lie in [a,b] by the constraints."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P1-2.1-PP-9709-13-ON22-Q2ab",
+    "section": "P1-2.1",
+    "kind": "pastpaper",
+    "title": "Completed-square form and the range of a restricted quadratic",
+    "marks": 3,
+    "source": {
+      "paper": "9709/13/O/N/22 Q2(a)(b)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w22_qp_13.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w22_ms_13.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2022), Question 2(a) and (b) only. Official answers and mark allocation from the MS PDF. The item is paper/self-mark. Part 2(c), which asks for the inverse, is omitted."
+    },
+    "stem": "This question is 9709/13/O/N/22 Question 2(a) and (b), taken from the official QP.\n\nThe function \\(f\\) is defined by \\(f(x)=-2x^2-8x-13\\) for \\(x\\lt -3\\).\n\n(a) Express \\(f(x)\\) in the form \\(-2(x+a)^2+b\\), where \\(a\\) and \\(b\\) are integers.  [2]\n\n(b) Find the range of \\(f\\).  [1]",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "B1",
+        "text_tex": "\\(f(x)=-2(x^2+4x)-13=-2\\bigl((x+2)^2-4\\bigr)-13=-2(x+2)^2+8-13\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS 2(a): B1 B1 for -2(x+2)^2 and for -5 (the completed-square constants a=2 and b=-5)."
+      },
+      {
+        "name": "B2",
+        "text_tex": "So \\(f(x)=-2(x+2)^2-5\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS 2(a): the completed form is -2(x+2)^2-5. Independent check: expand to -2x^2-8x-8-5=-2x^2-8x-13."
+      },
+      {
+        "name": "A",
+        "text_tex": "The graph is a downward-opening parabola. On the given domain \\(x\\lt -3\\), which lies to the left of \\(x=-2\\), the values of \\(f\\) are less than \\(f(-3)=-7\\). The range of the function is therefore \\(f(x)\\lt -7\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS 2(b): f(x) < -7, or equivalent such as y < -7 or (-infinity, -7). Independent: f(-3)=-7 is not attained, and as x tends to minus infinity, f tends to minus infinity."
+      }
+    ]
+  }
+]

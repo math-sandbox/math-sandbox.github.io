@@ -1,0 +1,183 @@
+[
+  {
+    "id": "P23-3.4-QC1-gen",
+    "section": "P23-3.4",
+    "kind": "generated",
+    "title": "Special-angle check of a cosec-tan product",
+    "marks": 1,
+    "source": "Theory P23-3.4 Quick check 1 (2); 2 cosec 90 tan 45",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 1,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "2"
+    },
+    "constraints": [],
+    "original": {
+      "k": 1
+    },
+    "stem": "Find the value of \\(2\\operatorname{cosec} 90^\\circ\\tan 45^\\circ\\).",
+    "answer": {
+      "expression": "2",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(2\\times 1\\times 1=2\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is 2. The parameter k is unused; the generator requires a parameter."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P23-3.4-QC2-gen",
+    "section": "P23-3.4",
+    "kind": "generated",
+    "title": "Secant squared at 60 degrees",
+    "marks": 1,
+    "source": "Theory P23-3.4 Quick check 2 (4); sec squared 60",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 1,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "4"
+    },
+    "constraints": [],
+    "original": {
+      "k": 1
+    },
+    "stem": "Find the value of \\(\\sec^2 60^\\circ\\).",
+    "answer": {
+      "expression": "4",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\sec^2 60^\\circ=4\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is 4. The parameter k is unused; the generator requires a parameter."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P23-3.4-QC3-gen",
+    "section": "P23-3.4",
+    "kind": "generated",
+    "title": "Secant squared at 45 degrees",
+    "marks": 1,
+    "source": "Theory P23-3.4 Quick check 3 (2); sec squared 45",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 1,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "2"
+    },
+    "constraints": [],
+    "original": {
+      "k": 1
+    },
+    "stem": "Find the value of \\(\\sec^2 45^\\circ\\).",
+    "answer": {
+      "expression": "2",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\sec^2 45^\\circ=2\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is 2. The parameter k is unused; the generator requires a parameter."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P23-3.4-PP-9709-21-MJ15-Q6i",
+    "section": "P23-3.4",
+    "kind": "pastpaper",
+    "title": "Prove a further trigonometric identity",
+    "marks": 3,
+    "source": {
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s15_qp_21.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s15_ms_21.pdf",
+      "note": "9709/21/M/J/15 Question 6(i) only [3]. Official QP and official MS. Part (ii) omitted."
+    },
+    "marking": "manual",
+    "stem": "This question is 9709/21/M/J/15 Question 6(i) only, taken from the official QP.\n\nProve that 2 cosec 2θ tan θ ≡ sec² θ. [3]",
+    "steps": [
+      {
+        "name": "B",
+        "text_tex": "State or imply \\(\\operatorname{cosec} 2\\theta=1/\\sin 2\\theta\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1, state or imply cosec 2 theta = 1 / sin 2 theta."
+      },
+      {
+        "name": "M",
+        "text_tex": "Express the left-hand side in terms of \\(\\sin\\theta\\) and \\(\\cos\\theta\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1, express the left-hand side in terms of sin theta and cos theta."
+      },
+      {
+        "name": "A",
+        "text_tex": "Obtain the given answer \\(\\sec^2\\theta\\) correctly.",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, obtain the given answer sec^2 theta correctly."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Stem taken from the official QP PDF, Question 6(i) only, verified on the rendered official page. Official MS reproduced mark by mark. Paper/self-mark."
+      }
+    ]
+  }
+]

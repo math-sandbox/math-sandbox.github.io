@@ -1,0 +1,271 @@
+[
+  {
+    "id": "IGCSE-13.2-QC1-gen",
+    "section": "IGCSE-13.2",
+    "kind": "generated",
+    "title": "Change a pm time to a four-digit 24-hour time",
+    "marks": 1,
+    "source": "Theory IGCSE-13.2 Quick check 1 (4.20 pm is 1620); book p.405 and Exercise 13.2 Q1",
+    "params": [
+      {
+        "name": "h",
+        "min": 1,
+        "max": 9,
+        "step": 1
+      },
+      {
+        "name": "m",
+        "min": 10,
+        "max": 50,
+        "step": 10
+      }
+    ],
+    "derived": {
+      "H24": "h+12",
+      "T": "100*(h+12)+m"
+    },
+    "constraints": [
+      "h>=1",
+      "h<=9",
+      "m>=10",
+      "m<=50"
+    ],
+    "original": {
+      "h": 4,
+      "m": 20
+    },
+    "stem": "Write \\(({h|int}).({m|int})\\) pm in the 24-hour clock as a four-digit time.",
+    "answer": {
+      "expression": "100*(h+12)+m",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Add 12 hours to the hour: \\(({h|int})+12={H24|int}\\), so the 24-hour time is \\({A|int}\\)",
+        "result": "100*(h+12)+m",
+        "format": "int",
+        "mark": "A1",
+        "note": "h is from 1 to 9, so this is an afternoon time after 12 noon."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original 4.20 pm = 1620"
+      },
+      {
+        "id": "written",
+        "stem": "A clock shows \\(({h|int}).({m|int})\\) pm. Write this as a four-digit 24-hour time."
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-13.2-QC2-gen",
+    "section": "IGCSE-13.2",
+    "kind": "generated",
+    "title": "Journey time in minutes from two 24-hour times",
+    "marks": 2,
+    "source": "Theory IGCSE-13.2 Quick check 2 (08 10 to 11 55 is 225 minutes); book Worked example 3 style, p.406",
+    "params": [
+      {
+        "name": "sh",
+        "min": 7,
+        "max": 9,
+        "step": 1
+      },
+      {
+        "name": "sm",
+        "min": 10,
+        "max": 50,
+        "step": 10
+      },
+      {
+        "name": "eh",
+        "min": 10,
+        "max": 11,
+        "step": 1
+      },
+      {
+        "name": "em",
+        "min": 15,
+        "max": 55,
+        "step": 10
+      }
+    ],
+    "derived": {
+      "D": "60*eh+em-(60*sh+sm)"
+    },
+    "constraints": [
+      "60*eh+em-(60*sh+sm)>0"
+    ],
+    "original": {
+      "sh": 8,
+      "sm": 10,
+      "eh": 11,
+      "em": 55
+    },
+    "stem": "A bus leaves at \\(({sh|int}).({sm|int})\\) am and arrives at \\(({eh|int}).({em|int})\\) am. How many minutes does the journey take?",
+    "answer": {
+      "expression": "60*eh+em-(60*sh+sm)",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "Convert each time to minutes after midnight: the arrival is \\(({eh|int})\\times 60+({em|int})\\) and the departure is \\(({sh|int})\\times 60+({sm|int})\\)",
+        "result": "60*eh+em",
+        "format": "int",
+        "mark": "M1",
+        "note": "Work in minutes after midnight."
+      },
+      {
+        "name": "A",
+        "text_tex": "The difference is \\({A|int}\\) minutes",
+        "result": "60*eh+em-(60*sh+sm)",
+        "format": "int",
+        "mark": "A1",
+        "note": "Both times are on the same morning."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original 08 10 to 11 55"
+      },
+      {
+        "id": "written",
+        "stem": "A journey starts at \\(({sh|int}).({sm|int})\\) am and ends at \\(({eh|int}).({em|int})\\) am on the same day. Find the duration in minutes."
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-13.2-QC3-gen",
+    "section": "IGCSE-13.2",
+    "kind": "generated",
+    "title": "Add a duration to a 24-hour departure time",
+    "marks": 1,
+    "source": "Theory IGCSE-13.2 Quick check 3 (07 50 plus 2 h 35 min is 1025); book Exercise 13.2 Q4 style",
+    "params": [
+      {
+        "name": "sh",
+        "min": 6,
+        "max": 9,
+        "step": 1
+      },
+      {
+        "name": "sm",
+        "min": 10,
+        "max": 50,
+        "step": 10
+      },
+      {
+        "name": "dh",
+        "min": 2,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "name": "dm",
+        "min": 15,
+        "max": 55,
+        "step": 10
+      }
+    ],
+    "derived": {
+      "TOT": "60*sh+sm+60*dh+dm",
+      "TH": "math.floor((60*sh+sm+60*dh+dm)/60)",
+      "TM": "(60*sh+sm+60*dh+dm)%60",
+      "T": "100*math.floor((60*sh+sm+60*dh+dm)/60)+((60*sh+sm+60*dh+dm)%60)"
+    },
+    "constraints": [
+      "sm>=10",
+      "dm>=15",
+      "(60*sh+sm+60*dh+dm)<12*60",
+      "math.floor((60*sh+sm+60*dh+dm)/60)>=10"
+    ],
+    "original": {
+      "sh": 7,
+      "sm": 50,
+      "dh": 2,
+      "dm": 35
+    },
+    "stem": "A train leaves at \\(({sh|int}).({sm|int})\\) am and the journey lasts ({dh|int}) hours ({dm|int}) minutes. Write the arrival time as a four-digit 24-hour time.",
+    "answer": {
+      "expression": "100*math.floor((60*sh+sm+60*dh+dm)/60)+((60*sh+sm+60*dh+dm)%60)",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Add the duration to the departure time to obtain \\({A|int}\\)",
+        "result": "100*math.floor((60*sh+sm+60*dh+dm)/60)+((60*sh+sm+60*dh+dm)%60)",
+        "format": "int",
+        "mark": "A1",
+        "note": "dh is at least 2 so the word hours stays plural. The arrival is from 10 00 up to but not including 12 00, so the four-digit 24-hour time needs no leading zero."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original 07 50 + 2 h 35 min = 1025"
+      },
+      {
+        "id": "written",
+        "stem": "A bus departs at \\(({sh|int}).({sm|int})\\) am and takes ({dh|int}) hours ({dm|int}) minutes. Write the arrival time as a four-digit 24-hour time."
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-13.2-PP-0580-32-MJ21-Q3ab",
+    "section": "IGCSE-13.2",
+    "kind": "pastpaper",
+    "title": "24-hour clock, journey time, and a time-zone arrival",
+    "marks": 5,
+    "source": {
+      "paper": "0580/32/M/J/21 Q3(a)(b)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s21_qp_32.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s21_ms_32.pdf",
+      "note": "Stem taken from the QP PDF (UCLES 2021), Question 3 parts (a) and (b) only. Official answers and mark allocation from the MS PDF. Part (c) is an average-speed calculation and is not included. The item is paper/self-mark."
+    },
+    "stem": "This question is 0580/32/M/J/21 Question 3(a) and (b), taken from the official QP.\n\nPierre travels from his home in Lyon to Singapore.\n\n(a) He travels by train from Lyon to Paris.\nThe train leaves Lyon at 9.05 am and arrives in Paris at 1.30 pm.\n\n(i) Write 1.30 pm in the 24-hour clock system.\n\n(ii) Work out, in hours and minutes, the time the train journey takes.\n\n(b) He then travels by plane from Paris to Singapore.\nThe plane leaves Paris at \\(16\\,35\\) on Thursday and arrives in Singapore 13 hours and 45 minutes later.\nThe local time in Singapore is 6 hours ahead of the local time in Paris.\n\nWork out the day and time in Singapore when the plane arrives.",
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "A1",
+        "text_tex": "(a)(i) 1.30 pm is \\(13\\,30\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: 13 30, 1 mark."
+      },
+      {
+        "name": "A2",
+        "text_tex": "(a)(ii) From 9.05 am to 1.30 pm is 4 hours 25 minutes.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: 4 [h] 25 [min], 1 mark."
+      },
+      {
+        "name": "Bday",
+        "text_tex": "(b) \\(16\\,35+13\\,\\mathrm{h}=05\\,35\\) on Friday, then add 45 minutes to obtain \\(06\\,20\\) in Paris on Friday.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: Friday as final answer, B1. Intermediate Paris arrival 06 20 on Friday also earns credit towards the time marks."
+      },
+      {
+        "name": "Btime",
+        "text_tex": "Singapore is 6 hours ahead, so the local arrival time is \\(06\\,20+6\\,\\mathrm{h}=12\\,20\\) on Friday.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B2",
+        "note": "MS: 12 20 as final answer, B2; or B1 for 06 20 or 22 35 or 19 h 45 min or 12 20 seen then spoilt; or M1 for their arrival time of flight + 6 hours. Official answer (b): Friday, 12 20."
+      }
+    ]
+  }
+]

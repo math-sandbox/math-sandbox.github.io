@@ -1,0 +1,197 @@
+[
+  {
+    "id": "P1-5.2-QC1-gen",
+    "section": "P1-5.2",
+    "kind": "generated",
+    "title": "Basic angle of a second-quadrant rotation",
+    "marks": 1,
+    "source": "Theory P1-5.2 Quick check 1; basic angle of theta in (90, 180)",
+    "params": [
+      {
+        "name": "th",
+        "min": 100,
+        "max": 170,
+        "step": 10
+      }
+    ],
+    "derived": {
+      "A": "180-th"
+    },
+    "constraints": [
+      "th>90",
+      "th<180"
+    ],
+    "original": {
+      "th": 150
+    },
+    "stem": "What is the basic angle of \\({th|int}^\\circ\\), in degrees?",
+    "answer": {
+      "expression": "180-th",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The angle is in the second quadrant, so the basic angle is \\(180^\\circ-{th|int}^\\circ={A|int}^\\circ\\).",
+        "result": "180-th",
+        "format": "int",
+        "mark": "A1",
+        "note": "The basic angle is the acute angle with the x-axis."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original 150 degrees"
+      }
+    ],
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.2"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-2.json",
+        "locator": "P1-5.2-QC1-gen"
+      }
+    }
+  },
+  {
+    "id": "P1-5.2-QC2-gen",
+    "section": "P1-5.2",
+    "kind": "generated",
+    "title": "Basic angle of a third-quadrant rotation",
+    "marks": 1,
+    "source": "Theory P1-5.2 Quick check 2; basic angle of theta in (180, 270)",
+    "params": [
+      {
+        "name": "th",
+        "min": 190,
+        "max": 260,
+        "step": 10
+      }
+    ],
+    "derived": {
+      "A": "th-180"
+    },
+    "constraints": [
+      "th>180",
+      "th<270"
+    ],
+    "original": {
+      "th": 210
+    },
+    "stem": "What is the basic angle of \\({th|int}^\\circ\\), in degrees?",
+    "answer": {
+      "expression": "th-180",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The angle is in the third quadrant, so the basic angle is \\({th|int}^\\circ-180^\\circ={A|int}^\\circ\\).",
+        "result": "th-180",
+        "format": "int",
+        "mark": "A1",
+        "note": "The basic angle is the acute angle with the x-axis."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original 210 degrees"
+      }
+    ],
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.2"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-2.json",
+        "locator": "P1-5.2-QC2-gen"
+      }
+    }
+  },
+  {
+    "id": "P1-5.2-QC3-gen",
+    "section": "P1-5.2",
+    "kind": "generated",
+    "title": "Recovering a second-quadrant angle from its basic angle",
+    "marks": 1,
+    "source": "Theory P1-5.2 Quick check 3; theta=180-b in the second quadrant",
+    "params": [
+      {
+        "name": "b",
+        "min": 10,
+        "max": 80,
+        "step": 5
+      }
+    ],
+    "derived": {
+      "A": "180-b"
+    },
+    "constraints": [
+      "b>0",
+      "b<90"
+    ],
+    "original": {
+      "b": 50
+    },
+    "stem": "The basic angle of \\(\\theta\\) is \\({b|int}^\\circ\\), and \\(\\theta\\) is in the second quadrant with \\(0^\\circ\\leqslant\\theta\\leqslant 360^\\circ\\). Find \\(\\theta\\), in degrees.",
+    "answer": {
+      "expression": "180-b",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\theta=180^\\circ-{b|int}^\\circ={A|int}^\\circ\\).",
+        "result": "180-b",
+        "format": "int",
+        "mark": "A1",
+        "note": "In the second quadrant the angle is 180 degrees minus the basic angle."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original basic angle 50 degrees"
+      }
+    ],
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.2"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-2.json",
+        "locator": "P1-5.2-QC3-gen"
+      }
+    }
+  }
+]

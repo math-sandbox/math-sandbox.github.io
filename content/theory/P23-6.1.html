@@ -1,0 +1,84 @@
+<section class="theory" data-section="P23-6.1">
+<h2>6.1 Finding a starting point</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 2 &amp; 3 Coursebook (Sue Pemberton and Julianne Hughes, series editor Julian Gilbey), Chapter 6 Numerical solutions of equations, printed pp.135–139 (physical PDF page = printed page + 12). Own wording and new numbers, following the worked examples and the change-of-sign method in the coursebook.</p>
+<p class="key-words"><strong>Key words:</strong> <em>change of sign</em>, <em>root</em>, <em>continuous function</em></p>
+<h3>Why a starting point is needed</h3>
+<p>Not every equation can be solved by a direct algebraic rearrangement or formula. A <strong>numerical method</strong> produces a sequence of better and better approximations to a root. That process needs a starting interval, or a starting value, in which the root is already known to lie.</p>
+<p>Two standard ways to locate such a starting interval are used in this section:</p>
+<ul>
+<li>a sketch of a suitable pair of graphs, showing where they meet;</li>
+<li>a <strong>change of sign</strong> calculation for a continuous function \(f\).</li>
+</ul>
+<h3>The change-of-sign method</h3>
+<p>Suppose \(f\) is <strong>continuous</strong> on an interval (the graph of \(y=f(x)\) has no breaks). If \(f(a)\) and \(f(b)\) have opposite signs, then the graph must cross the \(x\)-axis at least once between \(x=a\) and \(x=b\). So the equation \(f(x)=0\) has a root in that interval.</p>
+<p>The calculation must be shown clearly: evaluate \(f(a)\) and \(f(b)\) (to a sensible number of figures), and then state that the change of sign indicates a root.</p>
+<p>The method can fail to detect a root if there is a break in the graph (for example a vertical asymptote) between \(a\) and \(b\), or if the graph touches the axis without changing sign, or if there is an even number of roots in the interval so that the two end values have the same sign.</p>
+<div class="worked-example">
+<h4>Worked example 1: A change of sign</h4>
+<p class="src">Coursebook, 6.1, change-of-sign method (Worked example 6.2 style). New equation \(x^3+x-1=0\).</p>
+<p>Show, by calculation, that the equation \(x^3+x-1=0\) has a root between \(0\) and \(1\).</p>
+<ol class="steps">
+<li>Let \(f(x)=x^3+x-1\). Then \(f(0)=-1\) and \(f(1)=1\) <span class="mark">M1</span></li>
+<li>There is a change of sign, and \(f\) is continuous, so there is a root in the interval \(0&lt;x&lt;1\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(f(0)=-1\), \(f(1)=1\); change of sign, so a root lies between \(0\) and \(1\).</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: A tighter interval</h4>
+<p class="src">Coursebook, 6.1, calculation in a decimal interval. New numbers for \(f(x)=x^3-x-1\).</p>
+<p>Show, by calculation, that the equation \(x^3-x-1=0\) has a root between \(1.3\) and \(1.4\).</p>
+<ol class="steps">
+<li>Let \(f(x)=x^3-x-1\). Then \(f(1.3)=1.3^3-1.3-1=-0.103\) and \(f(1.4)=1.4^3-1.4-1=0.344\) <span class="mark">M1</span></li>
+<li>There is a change of sign, so a root lies between \(1.3\) and \(1.4\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(f(1.3)&lt;0\), \(f(1.4)&gt;0\); change of sign, so a root lies between \(1.3\) and \(1.4\).</p>
+</div>
+<h3>Using a pair of graphs</h3>
+<p>Some questions ask you to sketch two graphs, such as \(y=x^3\) and \(y=4-x\), and to deduce that an equation such as \(x^3+x-4=0\) has a root in a stated interval. The sketches must show the essential features (intercepts and the general shape). The conclusion is completed by naming the interval that contains the intersection.</p>
+<h3>Common mistakes</h3>
+<ul>
+<li>Claiming a change of sign without writing down the two function values.</li>
+<li>Using an interval on which the function is not continuous, so a sign change need not mean a root.</li>
+<li>Stopping after the sketches and forgetting to state that the intersection gives a root of the equation in the required form.</li>
+</ul>
+<h3>Past paper</h3>
+<p class="src">9709/21/O/N/11 Q6(i), official QP and official MS.</p>
+<p>(i) Verify by calculation that the cubic equation \(x^3-2x^2+5x-3=0\) has a root that lies between \(x=0.7\) and \(x=0.8\). [2]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>Consider the sign of \(x^3-2x^2+5x-3\) at \(x=0.7\) and at \(x=0.8\). <span class="mark">M1</span></li>
+<li>Complete the argument correctly with appropriate calculations. \(f(0.7)=-0.137\) and \(f(0.8)=0.232\) (3 s.f.) have opposite signs, so there is a root in the interval. <span class="mark">A1</span></li>
+</ol>
+</details>
+<h3>Quick checks</h3>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>Let \(f(x)=x^3+x-3\). Find \(f(1)\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(f(1)=1+1-3=-1\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(-1\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>Let \(f(x)=x^3+x-3\). Find \(f(2)\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(f(2)=8+2-3=7\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(7\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>Let \(f(x)=x^3-2x-1\). Find the integer \(f(1)\times f(2)\). (A negative product shows a change of sign between \(1\) and \(2\).)</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(f(1)=1-2-1=-2\) and \(f(2)=8-4-1=3\), so the product is \(-6\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(-6\)</p>
+</details>
+</div>
+</section>

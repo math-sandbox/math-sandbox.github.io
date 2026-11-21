@@ -1,0 +1,107 @@
+<section class="theory" data-section="P23-4.7">
+<h2>4.7 Parametric differentiation</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 2 &amp; 3 Coursebook (Sue Pemberton, Julianne Hughes), Chapter 4 Differentiation, pp.103–107 (Worked examples 4.14–4.15, Exercise 4G). Own wording and new numbers.</p>
+<p class="key-words"><strong>Key words:</strong> <em>parameter</em>, <em>parametric equations</em>, <em>parametric differentiation</em>, <em>chain rule</em></p>
+<h3>Parametric equations</h3>
+<p>Sometimes \(x\) and \(y\) are both given in terms of a third variable, called a <strong>parameter</strong>. The two equations are then the <strong>parametric equations</strong> of the curve. For example, \(x=1+4\sin t\) and \(y=2\cos t\), for \(0\le t\le 2\pi\), describe an ellipse: as \(t\) varies, the point \((x,y)\) traces the curve.</p>
+<figure class="param-static">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 280" width="520" style="display:block;width:100%;max-width:520px;height:auto" role="img" aria-labelledby="p23-47-title p23-47-desc"><title id="p23-47-title">The curve x = 1 + 4 sin t, y = 2 cos t</title><desc id="p23-47-desc">An ellipse centred at (1, 0), stretching from x equals minus 3 to 5 and from y equals minus 2 to 2. Marked points include (1, 2) when t is 0 and (5, 0) when t is pi over 2.</desc>
+<rect x="0" y="0" width="520" height="280" fill="white"/>
+<g stroke="#64748b" stroke-width="1.2">
+<line x1="30" y1="140" x2="500" y2="140"/>
+<line x1="210" y1="260" x2="210" y2="20"/>
+</g>
+<ellipse cx="250" cy="140" rx="160" ry="80" fill="none" stroke="#1B3A6B" stroke-width="2.4"/>
+<g fill="#1B3A6B" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">
+<circle cx="250" cy="60" r="3"/><text x="250" y="52">t=0 (1, 2)</text>
+<circle cx="410" cy="140" r="3"/><text x="430" y="128">t=π/2 (5, 0)</text>
+<circle cx="250" cy="220" r="3"/><text x="250" y="244">t=π (1, −2)</text>
+<text x="498" y="156">x</text><text x="222" y="28">y</text>
+<text x="210" y="156">O</text>
+</g>
+</svg>
+<figcaption>The curve \(x=1+4\sin t\), \(y=2\cos t\) for \(0\le t\le 2\pi\). The value of the parameter \(t\) locates the point on the curve.</figcaption>
+</figure>
+<h3>Parametric differentiation</h3>
+<p>To find \(\dfrac{\mathrm{d}y}{\mathrm{d}x}\) in terms of the parameter, use the <strong>chain rule</strong>:</p>
+$$\frac{\mathrm{d}y}{\mathrm{d}x}=\frac{\mathrm{d}y}{\mathrm{d}t}\div\frac{\mathrm{d}x}{\mathrm{d}t}=\frac{\mathrm{d}y/\mathrm{d}t}{\mathrm{d}x/\mathrm{d}t},$$
+provided \(\dfrac{\mathrm{d}x}{\mathrm{d}t}\neq0\). This is <strong>parametric differentiation</strong>. If \(\dfrac{\mathrm{d}x}{\mathrm{d}t}=0\) but \(\dfrac{\mathrm{d}y}{\mathrm{d}t}\neq0\), the tangent is parallel to the \(y\)-axis. If \(\dfrac{\mathrm{d}y}{\mathrm{d}t}=0\) but \(\dfrac{\mathrm{d}x}{\mathrm{d}t}\neq0\), the tangent is parallel to the \(x\)-axis (a stationary point on the curve).</p>
+<p>Once you have \(\dfrac{\mathrm{d}y}{\mathrm{d}x}\) in terms of the parameter, you can find a gradient at a given value of \(t\), and then the equation of a tangent or a normal, by first finding the corresponding coordinates \((x,y)\).</p>
+<div class="worked-example">
+<h4>Worked example 1: A tangent from a parameter</h4>
+<p class="src">Book: Worked example 4.14, p.104; Exercise 4G Q1, p.105</p>
+<p>The parametric equations of a curve are \(x=t^2\), \(y=7-3t\). (a) Find \(\dfrac{\mathrm{d}y}{\mathrm{d}x}\) in terms of \(t\). (b) Find the equation of the tangent to the curve at the point where \(t=2\).</p>
+<ol class="steps">
+<li>(a) \(\dfrac{\mathrm{d}x}{\mathrm{d}t}=2t\), \(\dfrac{\mathrm{d}y}{\mathrm{d}t}=-3\), so \(\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{-3}{2t}\) <span class="mark">M1 A1</span></li>
+<li>(b) At \(t=2\): gradient \(=-\dfrac{3}{4}\), point \((4,\,1)\) <span class="mark">B1</span></li>
+<li>\(y-1=-\dfrac{3}{4}(x-4)\), so \(y=-\dfrac{3}{4}x+4\) <span class="mark">M1 A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> (a) \(-\dfrac{3}{2t}\) (b) \(y=-\dfrac34 x+4\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: A tangent parallel to an axis</h4>
+<p class="src">Book: Worked example 4.15, pp.104–105; Exercise 4G Q2, p.105</p>
+<p>The parametric equations of a curve are \(x=t^2-3\), \(y=t^3-3t\). Find the values of \(t\) at which the tangent is parallel to the \(x\)-axis, and the corresponding points on the curve.</p>
+<ol class="steps">
+<li>\(\dfrac{\mathrm{d}x}{\mathrm{d}t}=2t\), \(\dfrac{\mathrm{d}y}{\mathrm{d}t}=3t^2-3\), so \(\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{3t^2-3}{2t}\) <span class="mark">M1 A1</span></li>
+<li>Parallel to the \(x\)-axis: \(\dfrac{\mathrm{d}y}{\mathrm{d}t}=0\) and \(\dfrac{\mathrm{d}x}{\mathrm{d}t}\neq0\), so \(3(t^2-1)=0\) and \(t\neq0\) <span class="mark">M1</span></li>
+<li>\(t=\pm1\). When \(t=1\): \((-2,\,-2)\); when \(t=-1\): \((-2,\,2)\) <span class="mark">A1 A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(t=1\) at \((-2,\,-2)\); \(t=-1\) at \((-2,\,2)\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 3: A gradient at a given value of the parameter</h4>
+<p class="src">Book: Exercise 4G Q1, p.105</p>
+<p>The parametric equations of a curve are \(x=2t^3\), \(y=6t\). Find the gradient of the curve at the point where \(t=1\).</p>
+<ol class="steps">
+<li>\(\dfrac{\mathrm{d}x}{\mathrm{d}t}=6t^2\), \(\dfrac{\mathrm{d}y}{\mathrm{d}t}=6\), so \(\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{6}{6t^2}=\dfrac{1}{t^2}\) <span class="mark">M1 A1</span></li>
+<li>At \(t=1\): gradient \(=1\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(1\)</p>
+</div>
+<h3>Quick checks</h3>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>The parametric equations of a curve are \(x=3t^2\), \(y=6t\). Find the gradient of the curve at the point where \(t=2\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(\dfrac{\mathrm{d}x}{\mathrm{d}t}=6t\), \(\dfrac{\mathrm{d}y}{\mathrm{d}t}=6\), so \(\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{6}{6t}=\dfrac{1}{t}\)</li>
+<li>At \(t=2\): \(\dfrac12=0.5\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(0.5\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>The parametric equations of a curve are \(x=t^3\), \(y=t^2-5\). Find the gradient of the curve at the point where \(t=1\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(\dfrac{\mathrm{d}x}{\mathrm{d}t}=3t^2\), \(\dfrac{\mathrm{d}y}{\mathrm{d}t}=2t\), so \(\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{2t}{3t^2}=\dfrac{2}{3t}\)</li>
+<li>At \(t=1\): \(\dfrac23\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac23\approx0.667\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>The parametric equations of a curve are \(x=2t\), \(y=t^3-12t\). Find the positive value of \(t\) at which the tangent is parallel to the \(x\)-axis.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(\dfrac{\mathrm{d}y}{\mathrm{d}t}=3t^2-12\), \(\dfrac{\mathrm{d}x}{\mathrm{d}t}=2\)</li>
+<li>\(3t^2-12=0\), so \(t^2=4\). The positive value is \(t=2\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(2\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 4</h4>
+<p>The parametric equations of a curve are \(x=t^2\), \(y=4t\). Find \(\dfrac{\mathrm{d}y}{\mathrm{d}x}\) in terms of \(t\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(\dfrac{\mathrm{d}x}{\mathrm{d}t}=2t\), \(\dfrac{\mathrm{d}y}{\mathrm{d}t}=4\), so \(\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{4}{2t}=\dfrac{2}{t}\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{2}{t}\)</p>
+</details>
+</div>
+<p class="marks-key"><strong>Marks:</strong> M = method, A = accurate answer (depends on M), B = independent mark. Marks on worked examples are illustrative, not official. Give exact answers unless the question asks for a decimal. Find \(\mathrm{d}y/\mathrm{d}t\) and \(\mathrm{d}x/\mathrm{d}t\) first, then divide. The tangent is parallel to the \(y\)-axis when \(\mathrm{d}x/\mathrm{d}t=0\) but \(\mathrm{d}y/\mathrm{d}t\neq0\).</p>
+</section>

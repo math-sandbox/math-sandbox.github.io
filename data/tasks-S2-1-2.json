@@ -1,0 +1,221 @@
+[
+  {
+    "id": "S2-1.2-QC1-gen",
+    "section": "S2-1.2",
+    "kind": "generated",
+    "title": "Half of a two-tailed significance level, as a percentage",
+    "marks": 2,
+    "source": "S2 Ch1 theory S2-1.2 Quick check 1 (10% two-tailed test, each tail compared with 5%)",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 12,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "E": "a/2"
+    },
+    "constraints": [
+      "a>=2",
+      "a/2==a*0.5"
+    ],
+    "original": {
+      "a": 10
+    },
+    "stem": "A two-tailed test is carried out at the {a|int}\\% significance level, with the significance level shared equally between the two tails. With what percentage is each tail probability compared?",
+    "answer": {
+      "expression": "a/2",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "Each tail is compared with half of the significance level, \\(\\dfrac{{a|int}}{2}\\%\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Share the significance level equally."
+      },
+      {
+        "name": "E",
+        "text_tex": "Each tail is compared with \\({E|int}\\%\\).",
+        "result": "a/2",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct half-percentage."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "shared",
+        "stem": "In a two-tailed test at the {a|int}\\% level the significance level is shared equally. What percentage is used as the threshold in each tail?",
+        "note": "shared frame"
+      },
+      {
+        "id": "compare",
+        "stem": "A two-tailed hypothesis test uses a {a|int}\\% significance level, split equally between the two critical regions. With what percentage should an observed tail probability be compared?",
+        "note": "compare frame"
+      }
+    ]
+  },
+  {
+    "id": "S2-1.2-QC2-gen",
+    "section": "S2-1.2",
+    "kind": "generated",
+    "title": "Lower tail P(X is at most 1) for a binomial distribution",
+    "marks": 2,
+    "source": "S2 Ch1 theory S2-1.2 Quick check 2 (B(8,0.25), P(X<=1)=0.367 to 3 s.f.)",
+    "params": [
+      {
+        "name": "n",
+        "min": 7,
+        "max": 11,
+        "step": 1
+      },
+      {
+        "name": "a",
+        "min": 20,
+        "max": 30,
+        "step": 5
+      }
+    ],
+    "derived": {
+      "p": "a/100",
+      "q": "1-a/100",
+      "n1": "n-1",
+      "E": "math.pow(1-a/100,n)+n*(a/100)*math.pow(1-a/100,n-1)"
+    },
+    "constraints": [
+      "n>=7",
+      "a>=20",
+      "a<=30"
+    ],
+    "original": {
+      "n": 8,
+      "a": 25
+    },
+    "stem": "Given that \\(X\\sim\\mathrm{B}({n|int},\\,{p|raw})\\), find \\(\\mathrm{P}(X\\leqslant 1)\\), correct to 3 significant figures.",
+    "answer": {
+      "expression": "math.pow(1-a/100,n)+n*(a/100)*math.pow(1-a/100,n-1)",
+      "format": "{E|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "\\(\\mathrm{P}(X\\leqslant 1)=\\mathrm{P}(X=0)+\\mathrm{P}(X=1)=({q|raw})^{{n|int}}+{n|int}({p|raw})({q|raw})^{{n1|int}}\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Write the two binomial terms for a short lower tail."
+      },
+      {
+        "name": "E",
+        "text_tex": "The value is \\({E|sf3z}\\) to 3 significant figures.",
+        "result": "math.pow(1-a/100,n)+n*(a/100)*math.pow(1-a/100,n-1)",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct tail probability."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "trials",
+        "stem": "A trial is repeated independently {n|int} times, and the probability of success on each trial is {p|raw}. If \\(X\\) is the number of successes, find \\(\\mathrm{P}(X\\leqslant 1)\\), correct to 3 significant figures.",
+        "note": "trials frame"
+      },
+      {
+        "id": "packets",
+        "stem": "A sample of {n|int} packets is inspected. The probability that a packet is a special edition is {p|raw}, independently of the others. Find the probability that at most one packet is a special edition, correct to 3 significant figures.",
+        "note": "packets frame"
+      }
+    ]
+  },
+  {
+    "id": "S2-1.2-QC3-gen",
+    "section": "S2-1.2",
+    "kind": "generated",
+    "title": "Expected number of successes under H0 for a binomial sample",
+    "marks": 2,
+    "source": "S2 Ch1 theory S2-1.2 Quick check 3 (B(20,0.4), mean np=8)",
+    "params": [
+      {
+        "name": "n",
+        "min": 10,
+        "max": 30,
+        "step": 2
+      },
+      {
+        "name": "a",
+        "min": 2,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "p": "a/10",
+      "E": "n*(a/10)"
+    },
+    "constraints": [
+      "n>=10",
+      "a>=2",
+      "n*a % 10 == 0"
+    ],
+    "original": {
+      "n": 20,
+      "a": 4
+    },
+    "stem": "Under \\(H_0\\) a random variable has the distribution \\(\\mathrm{B}({n|int},\\,{p|raw})\\). What is the expected number of successes in the {n|int} trials?",
+    "answer": {
+      "expression": "n*(a/10)",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The mean of \\(\\mathrm{B}({n|int},\\,{p|raw})\\) is \\(np={n|int}\\times{p|raw}\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Use the binomial mean np."
+      },
+      {
+        "name": "E",
+        "text_tex": "The expected number is \\({E|int}\\).",
+        "result": "n*(a/10)",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct mean."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "h0",
+        "stem": "A two-tailed test uses the null hypothesis that \\(X\\sim\\mathrm{B}({n|int},\\,{p|raw})\\). Find the expected number of successes under \\(H_0\\).",
+        "note": "h0 frame"
+      },
+      {
+        "id": "sample",
+        "stem": "A random sample of {n|int} trials is modelled, under \\(H_0\\), by a binomial distribution with success probability {p|raw}. What is the expected number of successes?",
+        "note": "sample frame"
+      }
+    ]
+  }
+]

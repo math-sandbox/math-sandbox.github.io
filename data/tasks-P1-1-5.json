@@ -1,0 +1,171 @@
+[
+  {
+    "id": "P1-1.5-QC1-gen",
+    "section": "P1-1.5",
+    "kind": "generated",
+    "title": "Greatest real root of a biquadratic equation",
+    "marks": 1,
+    "source": "Theory P1-1.5 Quick check 1 (x^4-5x^2+4=0, greatest root 2); book Worked example 1.10 style p.15, new numbers",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "S": "a*a+b*b",
+      "P": "a*a*b*b"
+    },
+    "constraints": [
+      "a>b",
+      "b>=1"
+    ],
+    "original": {
+      "a": 2,
+      "b": 1
+    },
+    "stem": "Solve \\(x^4-({S|int})x^2+{P|int}=0\\). What is the greatest real root?",
+    "answer": {
+      "expression": "a",
+      "format": "{a|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Let \\(u=x^2\\). Then \\(u^2-{S|int}u+{P|int}=0\\), so \\(u=( {a|int} )^2\\) or \\(u=( {b|int} )^2\\). Hence \\(x=\\pm {a|int}\\) or \\(x=\\pm {b|int}\\). The greatest real root is \\({a|int}\\).",
+        "result": "a",
+        "format": "int",
+        "mark": "A1",
+        "note": "The quadratic in u has roots a^2 and b^2. Space the braces so that {a|int} is not adjacent to a TeX brace. a>b>0."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original a=2, b=1"
+      }
+    ]
+  },
+  {
+    "id": "P1-1.5-QC2-gen",
+    "section": "P1-1.5",
+    "kind": "generated",
+    "title": "Smaller positive root of a biquadratic equation",
+    "marks": 1,
+    "source": "Theory P1-1.5 Quick check 2 (same family, smaller positive root 1); book style p.15, new numbers",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "S": "a*a+b*b",
+      "P": "a*a*b*b"
+    },
+    "constraints": [
+      "a>b",
+      "b>=1"
+    ],
+    "original": {
+      "a": 2,
+      "b": 1
+    },
+    "stem": "Solve \\(x^4-({S|int})x^2+{P|int}=0\\). What is the smaller of the two positive roots?",
+    "answer": {
+      "expression": "b",
+      "format": "{b|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Let \\(u=x^2\\). Then \\(u^2-{S|int}u+{P|int}=0\\), so \\(x=\\pm {a|int}\\) or \\(x=\\pm {b|int}\\). The two positive roots are \\({a|int}\\) and \\({b|int}\\). The smaller is \\({b|int}\\).",
+        "result": "b",
+        "format": "int",
+        "mark": "A1",
+        "note": "Same substitution as Quick check 1. a>b>0."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original a=2, b=1"
+      }
+    ]
+  },
+  {
+    "id": "P1-1.5-QC3-gen",
+    "section": "P1-1.5",
+    "kind": "generated",
+    "title": "Greater solution of a quadratic in 2^x",
+    "marks": 1,
+    "source": "Theory P1-1.5 Quick check 3 (2^{2x}-6*2^x+8=0, greater x=2); book Worked example 1.12 style p.16, new numbers",
+    "params": [
+      {
+        "name": "p",
+        "min": 1,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 1,
+        "max": 4,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "S": "2**p+2**q",
+      "P": "2**(p+q)"
+    },
+    "constraints": [
+      "p>q",
+      "q>=1",
+      "p<=4"
+    ],
+    "original": {
+      "p": 2,
+      "q": 1
+    },
+    "stem": "Solve \\(2^{2x}-({S|int})\\times 2^x+{P|int}=0\\). What is the greater of the two real values of \\(x\\)?",
+    "answer": {
+      "expression": "p",
+      "format": "{p|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Let \\(u=2^x\\). Then \\(u^2-{S|int}u+{P|int}=0\\), so \\(u=2^{ {p|int} }\\) or \\(u=2^{ {q|int} }\\). Hence \\(x={p|int}\\) or \\(x={q|int}\\). The greater value is \\({p|int}\\).",
+        "result": "p",
+        "format": "int",
+        "mark": "A1",
+        "note": "The roots for u are 2^p and 2^q. Spaced braces avoid adjacent {{ from TeX. 2^x is one-to-one, so the x-values are p and q."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original p=2, q=1, greater=2"
+      }
+    ]
+  }
+]

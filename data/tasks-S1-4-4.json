@@ -1,0 +1,445 @@
+[
+  {
+    "id": "S1-4.4-QC1-gen",
+    "section": "S1-4.4",
+    "kind": "generated",
+    "title": "Conditional probability from letter counts",
+    "marks": 3,
+    "source": "S1 Ch4 theory S1-4.4 Quick check 1 (BANANA, P(N | not A)=2/3)",
+    "params": [
+      {
+        "name": "n",
+        "min": 5,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "name": "a",
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "k",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "r": "n-a"
+    },
+    "constraints": [
+      "n-a>=k+1",
+      "k>=1",
+      "a>=1"
+    ],
+    "original": {
+      "n": 6,
+      "a": 3,
+      "k": 2
+    },
+    "stem": "A letter is selected at random from a word of {n|int} letters, of which {a|int} are the letter A and {k|int} are the letter N. None of the letters N is an A. Find the probability that an N is selected, given that an A is not selected.",
+    "answer": {
+      "expression": "k/(n-a)",
+      "format": "\\(\\dfrac{{k|int}}{{r|int}}\\approx{E|sf3z}\\)",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "r",
+        "text_tex": "There are \\({r|int}\\) letters that are not A.",
+        "result": "n-a",
+        "format": "int",
+        "mark": "B1",
+        "note": "Reduced sample space."
+      },
+      {
+        "name": "m",
+        "text_tex": "Of these, \\({k|int}\\) are N.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Favourable in the reduced space."
+      },
+      {
+        "name": "E",
+        "text_tex": "\\(\\dfrac{{k|int}}{{r|int}}\\)",
+        "result": "k/r",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct conditional probability."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "bag",
+        "stem": "A bag contains {n|int} counters, of which {a|int} are yellow and {k|int} are blue. None of the blue counters is yellow. One counter is selected at random. Find the probability that it is blue, given that it is not yellow.",
+        "step_text": {
+          "r": "There are \\({r|int}\\) counters that are not yellow.",
+          "m": "Of these, \\({k|int}\\) are blue."
+        }
+      },
+      {
+        "id": "names",
+        "stem": "A name is selected at random from a list of {n|int} names, of which {a|int} begin with A and {k|int} begin with N. None of the names beginning with N begins with A. Find the probability that the name begins with N, given that it does not begin with A.",
+        "step_text": {
+          "r": "There are \\({r|int}\\) names that do not begin with A.",
+          "m": "Of these, \\({k|int}\\) begin with N."
+        }
+      }
+    ]
+  },
+  {
+    "id": "S1-4.4-QC2-gen",
+    "section": "S1-4.4",
+    "kind": "generated",
+    "title": "Conditional probability from an overlap count",
+    "marks": 2,
+    "source": "S1 Ch4 theory S1-4.4 Quick check 2 (12 study French, 8 of them Spanish: 8/12=2/3)",
+    "params": [
+      {
+        "name": "f",
+        "min": 6,
+        "max": 20,
+        "step": 1
+      },
+      {
+        "name": "s",
+        "min": 2,
+        "max": 18,
+        "step": 1
+      }
+    ],
+    "derived": {},
+    "constraints": [
+      "s<=f-1",
+      "s>=1"
+    ],
+    "original": {
+      "f": 12,
+      "s": 8
+    },
+    "stem": "In a group of students, {f|int} study French and {s|int} of those {f|int} also study Spanish. One student is chosen at random. Find the probability that the student studies Spanish, given that the student studies French.",
+    "answer": {
+      "expression": "s/f",
+      "format": "\\(\\dfrac{{s|int}}{{f|int}}\\approx{E|sf3z}\\)",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "m",
+        "text_tex": "\\({f|int}\\) study French, and \\({s|int}\\) of these also study Spanish.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Reduced sample space is those who study French."
+      },
+      {
+        "name": "E",
+        "text_tex": "\\(\\dfrac{{s|int}}{{f|int}}\\)",
+        "result": "s/f",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct conditional probability."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "sport",
+        "stem": "In a group of students, {f|int} play football and {s|int} of those {f|int} also play tennis. One student is chosen at random. Find the probability that the student plays tennis, given that the student plays football.",
+        "step_text": {
+          "m": "\\({f|int}\\) play football, and \\({s|int}\\) of these also play tennis."
+        }
+      },
+      {
+        "id": "music",
+        "stem": "In a group of students, {f|int} play the piano and {s|int} of those {f|int} also sing in the choir. One student is chosen at random. Find the probability that the student sings in the choir, given that the student plays the piano.",
+        "step_text": {
+          "m": "\\({f|int}\\) play the piano, and \\({s|int}\\) of these also sing in the choir."
+        }
+      }
+    ]
+  },
+  {
+    "id": "S1-4.4-QC3-gen",
+    "section": "S1-4.4",
+    "kind": "generated",
+    "title": "Second selection given the first",
+    "marks": 2,
+    "source": "S1 Ch4 theory S1-4.4 Quick check 3 (5 red, 3 blue: P(second red | first red)=4/7)",
+    "params": [
+      {
+        "name": "r",
+        "min": 3,
+        "max": 10,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 2,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "n": "r+b",
+      "r1": "r-1",
+      "n1": "r+b-1"
+    },
+    "constraints": [
+      "r>=3",
+      "b>=2"
+    ],
+    "original": {
+      "r": 5,
+      "b": 3
+    },
+    "stem": "Two counters are selected at random from a bag containing {r|int} red counters and {b|int} blue counters. Find the probability that the second counter is red, given that the first counter is red.",
+    "answer": {
+      "expression": "(r-1)/(r+b-1)",
+      "format": "\\(\\dfrac{{r1|int}}{{n1|int}}\\approx{E|sf3z}\\)",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "n1",
+        "text_tex": "If the first counter is red, \\({r1|int}\\) red and \\({b|int}\\) blue remain, so \\({n1|int}\\) counters remain.",
+        "result": "r+b-1",
+        "format": "int",
+        "mark": "M1",
+        "note": "Reduced collection after the first red."
+      },
+      {
+        "name": "E",
+        "text_tex": "\\(\\dfrac{{r1|int}}{{n1|int}}\\)",
+        "result": "(r-1)/n1",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct conditional probability."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "students",
+        "stem": "Two students are selected at random from a group of {r|int} girls and {b|int} boys. Find the probability that the second student is a girl, given that the first student is a girl.",
+        "step_text": {
+          "n1": "If the first student is a girl, \\({r1|int}\\) girls and \\({b|int}\\) boys remain, so \\({n1|int}\\) students remain."
+        }
+      },
+      {
+        "id": "cards",
+        "stem": "Two cards are drawn at random from a pack that contains {r|int} red cards and {b|int} black cards. Find the probability that the second card is red, given that the first card is red.",
+        "step_text": {
+          "n1": "If the first card is red, \\({r1|int}\\) red and \\({b|int}\\) black remain, so \\({n1|int}\\) cards remain."
+        }
+      }
+    ]
+  },
+  {
+    "id": "S1-4.4-QC4-gen",
+    "section": "S1-4.4",
+    "kind": "generated",
+    "title": "Conditional probability from a two-way table",
+    "marks": 2,
+    "source": "S1 Ch4 theory S1-4.4 Quick check 4 (8 female seniors, 10 male seniors: 8/18=4/9)",
+    "params": [
+      {
+        "name": "f",
+        "min": 4,
+        "max": 16,
+        "step": 1
+      },
+      {
+        "name": "m",
+        "min": 4,
+        "max": 16,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "s": "f+m"
+    },
+    "constraints": [],
+    "original": {
+      "f": 8,
+      "m": 10
+    },
+    "stem": "A club has {f|int} female senior members and {m|int} male senior members. One member is chosen at random from the seniors. Find the probability that the member is female, given that the member is a senior.",
+    "answer": {
+      "expression": "f/(f+m)",
+      "format": "\\(\\dfrac{{f|int}}{{s|int}}\\approx{E|sf3z}\\)",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "s",
+        "text_tex": "There are \\({s|int}\\) seniors.",
+        "result": "f+m",
+        "format": "int",
+        "mark": "M1",
+        "note": "Reduced sample space."
+      },
+      {
+        "name": "E",
+        "text_tex": "\\(\\dfrac{{f|int}}{{s|int}}\\)",
+        "result": "f/s",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct conditional probability."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem, params and step texts above"
+      },
+      {
+        "id": "school",
+        "stem": "A school has {f|int} female Year 12 students and {m|int} male Year 12 students. One student is chosen at random from Year 12. Find the probability that the student is female, given that the student is in Year 12.",
+        "step_text": {
+          "s": "There are \\({s|int}\\) Year 12 students."
+        }
+      },
+      {
+        "id": "team",
+        "stem": "A team has {f|int} junior players and {m|int} senior players who are available on Saturday. One of these players is chosen at random. Find the probability that the player is a junior, given that the player is available on Saturday.",
+        "step_text": {
+          "s": "There are \\({s|int}\\) available players.",
+          "E": "\\(\\dfrac{{f|int}}{{s|int}}\\)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "S1-4.4-PP-9709-62-FM18-Q3",
+    "section": "S1-4.4",
+    "kind": "pastpaper",
+    "title": "Cars in a car park: reduced sample space and independence",
+    "marks": 6,
+    "source": {
+      "paper": "9709/62/F/M/18 Q3(i)–(iv)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m18_qp_62.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m18_ms_62.pdf",
+      "note": "Stem text verbatim from the QP PDF; steps and marks from the official MS PDF (UCLES 2018). Part (iii) is officially accepted either from the formal quotient or directly from the table as 40/90 (reduced sample space, the method of this section). Part (iv) is an independence test (S1-4.3) kept as the official remainder of the question. The official QP table has vertical rules between type columns; those rules are omitted in this stem because the practice checker forbids the | character in task text. Counts and headings are unchanged."
+    },
+    "stem": "Last Saturday, Sarah recorded the colour and type of 160 cars in a car park. All the cars that were not red or silver in colour were grouped together as ‘other’. Her results are shown in the following table.\n\\(\\begin{array}{ccccc} & & \\text{Saloon} & \\text{Hatchback} & \\text{Estate} \\\\ \\hline \\text{Colour of car} & \\text{Red} & 20 & 40 & 12 \\\\  & \\text{Silver} & 14 & 26 & 10 \\\\  & \\text{Other} & 6 & 24 & 8\\end{array}\\)",
+    "parts": [
+      {
+        "part": "(i)",
+        "stem": "Find the probability that a randomly chosen car in the car park is a silver estate car.",
+        "marks": 1,
+        "answer": {
+          "expression": "10/160",
+          "official": "10/160 = 1/16 or 0.0625",
+          "accept_as": "sf",
+          "sf": 3
+        },
+        "steps": [
+          {
+            "name": "p1",
+            "text_tex": "\\(\\dfrac{10}{160}=\\dfrac{1}{16}\\)",
+            "result": "10/160",
+            "format": "num",
+            "mark": "B1",
+            "note": "MS: B1 10/160 = 1/16 or 0.0625 (oe)."
+          }
+        ]
+      },
+      {
+        "part": "(ii)",
+        "stem": "Find the probability that a randomly chosen car in the car park is a hatchback car.",
+        "marks": 1,
+        "answer": {
+          "expression": "90/160",
+          "official": "90/160 = 9/16 or 0.5625",
+          "accept_as": "sf",
+          "sf": 3
+        },
+        "steps": [
+          {
+            "name": "p2",
+            "text_tex": "Hatchbacks: \\(40+26+24=90\\), so \\(\\dfrac{90}{160}=\\dfrac{9}{16}\\)",
+            "result": "90/160",
+            "format": "num",
+            "mark": "B1",
+            "note": "MS: B1 90/160 = 9/16 or 0.5625 (oe)."
+          }
+        ]
+      },
+      {
+        "part": "(iii)",
+        "stem": "Find the probability that a randomly chosen car in the car park is red, given that it is a hatchback car.",
+        "marks": 2,
+        "answer": {
+          "expression": "40/90",
+          "official": "4/9 (or 40/90)",
+          "accept_as": "sf",
+          "sf": 3
+        },
+        "steps": [
+          {
+            "name": "m",
+            "text_tex": "Restricted to the 90 hatchbacks, 40 are red, so the probability is \\(\\dfrac{40}{90}\\).",
+            "result": "None",
+            "format": "raw",
+            "mark": "M1",
+            "note": "MS alternative (direct from table, the method of this section): M1 for 40/a or b/90, a≠160. Official also allows P(red hatchback)/P(hatchback)=(40/160)/(90/160)."
+          },
+          {
+            "name": "a",
+            "text_tex": "\\(=\\dfrac{4}{9}\\)",
+            "result": "40/90",
+            "format": "num",
+            "mark": "A1",
+            "note": "MS: A1 4/9 (oe), or 40/90 from the table."
+          }
+        ]
+      },
+      {
+        "part": "(iv)",
+        "stem": "One of the cars in the car park is chosen at random. Determine whether the events ‘the car is a hatchback car’ and ‘the car is red’ are independent, justifying your answer.",
+        "marks": 2,
+        "answer": {
+          "official": "not independent, since P(red)×P(hatchback)=72/160 × 90/160 ≠ 40/160",
+          "marking": "manual"
+        },
+        "steps": [
+          {
+            "name": "prod",
+            "text_tex": "Red cars: \\(20+40+12=72\\). \\(\\mathrm{P}(\\text{red})\\times\\mathrm{P}(\\text{hatchback})=\\dfrac{72}{160}\\times\\dfrac{90}{160}\\neq\\dfrac{40}{160}\\).",
+            "result": "None",
+            "format": "raw",
+            "mark": "M1",
+            "note": "MS: M1 use a correct approach with appropriate probabilities substituted. Alternative: P(red|hatchback)=40/90 ≠ 72/160=P(red)."
+          },
+          {
+            "name": "con",
+            "text_tex": "The events are not independent.",
+            "result": "None",
+            "format": "raw",
+            "mark": "A1",
+            "note": "MS: A1 numerical comparison and conclusion stated."
+          }
+        ],
+        "marking": "manual"
+      }
+    ]
+  }
+]

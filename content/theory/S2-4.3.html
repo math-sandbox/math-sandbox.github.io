@@ -1,0 +1,97 @@
+<section class="theory" data-section="S2-4.3">
+<h2>4.3 Finding the expectation and variance</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Probability &amp; Statistics 2 Coursebook (Jayne Kranat), Chapter 4 Continuous random variables, printed pp.88–93 (Key point 4.5, Worked examples 4.6–4.7, Exercise 4C). Own wording and new numbers.</p>
+<p class="key-words"><strong>Key words:</strong> <em>expectation</em>, <em>mean</em>, <em>variance</em>, <em>probability density function</em></p>
+<h3>The mean of a continuous random variable</h3>
+<p>For a discrete random variable the mean is \(\mathrm{E}(X)=\sum x\,\mathrm{P}(X=x)\). For a continuous random variable, \(\mathrm{P}(X=x)=0\) at every single point, so that sum cannot be used as it stands. Instead, the probability in a very small interval of width \(\delta x\) is about \(\mathrm{f}(x)\,\delta x\), and the sum becomes an integral.</p>
+<p><strong>Key point.</strong> If \(X\) is a continuous random variable with probability density function \(\mathrm{f}(x)\), then
+$$\mathrm{E}(X)=\int_{-\infty}^{\infty} x\,\mathrm{f}(x)\,\mathrm{d}x.$$
+In practice the integral is taken only over the interval where \(\mathrm{f}(x)\) is non-zero. If the PDF is defined in pieces, multiply each piece by \(x\) and integrate piece by piece with its own limits.</p>
+<h3>The variance</h3>
+<p>The same reasoning gives \(\mathrm{E}(X^2)=\displaystyle\int_{-\infty}^{\infty} x^2\,\mathrm{f}(x)\,\mathrm{d}x\). The <strong>variance</strong> is then found from the usual identity
+$$\mathrm{Var}(X)=\mathrm{E}(X^2)-\bigl\{\mathrm{E}(X)\bigr\}^2.$$
+If the mean will later be used in a variance, keep it as an exact fraction (or work to at least four significant figures) rather than a prematurely rounded decimal.</p>
+<div class="worked-example">
+<h4>Worked example 1: A linear PDF</h4>
+<p class="src">Book: introductory calculation pp.88–89; Exercise 4C Q1</p>
+<p>The continuous random variable \(X\) has probability density function \(\mathrm{f}(x)=\dfrac{2x}{16}\) for \(0\le x\le 4\), and \(\mathrm{f}(x)=0\) otherwise. Find the mean and variance of \(X\).</p>
+<ol class="steps">
+<li>\(\mathrm{E}(X)=\displaystyle\int_0^4 x\cdot\dfrac{2x}{16}\,\mathrm{d}x=\dfrac{2}{16}\Bigl[\dfrac{x^3}{3}\Bigr]_0^4=\dfrac{1}{8}\cdot\dfrac{64}{3}=\dfrac{8}{3}\) <span class="mark">M1 A1</span></li>
+<li>\(\mathrm{E}(X^2)=\displaystyle\int_0^4 x^2\cdot\dfrac{2x}{16}\,\mathrm{d}x=\dfrac{2}{16}\Bigl[\dfrac{x^4}{4}\Bigr]_0^4=\dfrac{1}{8}\cdot 64=8\) <span class="mark">M1 A1</span></li>
+<li>\(\mathrm{Var}(X)=8-\left(\dfrac{8}{3}\right)^2=8-\dfrac{64}{9}=\dfrac{8}{9}\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> mean \(\dfrac{8}{3}\approx2.67\); variance \(\dfrac{8}{9}\approx0.889\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: A quadratic PDF</h4>
+<p class="src">Book: Worked example 4.6, pp.89–90; Exercise 4C Q1</p>
+<p>The continuous random variable \(X\) has PDF \(\mathrm{f}(x)=\dfrac{3x^2}{8}\) for \(0\le x\le 2\), and \(\mathrm{f}(x)=0\) otherwise. Find \(\mathrm{E}(X)\) and \(\mathrm{Var}(X)\).</p>
+<ol class="steps">
+<li>\(\mathrm{E}(X)=\displaystyle\int_0^2 x\cdot\dfrac{3x^2}{8}\,\mathrm{d}x=\dfrac{3}{8}\Bigl[\dfrac{x^4}{4}\Bigr]_0^2=\dfrac{3}{8}\cdot 4=\dfrac{3}{2}\) <span class="mark">M1 A1</span></li>
+<li>\(\mathrm{E}(X^2)=\displaystyle\int_0^2 x^2\cdot\dfrac{3x^2}{8}\,\mathrm{d}x=\dfrac{3}{8}\Bigl[\dfrac{x^5}{5}\Bigr]_0^2=\dfrac{3}{8}\cdot\dfrac{32}{5}=\dfrac{12}{5}\) <span class="mark">M1 A1</span></li>
+<li>\(\mathrm{Var}(X)=\dfrac{12}{5}-\left(\dfrac{3}{2}\right)^2=\dfrac{12}{5}-\dfrac{9}{4}=\dfrac{48-45}{20}=\dfrac{3}{20}\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> mean \(\dfrac{3}{2}\); variance \(\dfrac{3}{20}=0.15\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 3: A piecewise PDF</h4>
+<p class="src">Book: Worked example 4.7, p.90; Exercise 4C Q2–3</p>
+<p>The waiting time, \(X\) minutes, has PDF \(\mathrm{f}(x)=\dfrac{x}{8}\) for \(0\le x\le 2\), \(\mathrm{f}(x)=\dfrac{3}{8}\) for \(2\le x\le 4\), and \(\mathrm{f}(x)=0\) otherwise. A notice claims that the mean waiting time is less than 3 minutes. Determine whether this claim is true.</p>
+<ol class="steps">
+<li>\(\mathrm{E}(X)=\displaystyle\int_0^2 x\cdot\dfrac{x}{8}\,\mathrm{d}x+\displaystyle\int_2^4 x\cdot\dfrac{3}{8}\,\mathrm{d}x=\dfrac{1}{8}\Bigl[\dfrac{x^3}{3}\Bigr]_0^2+\dfrac{3}{8}\Bigl[\dfrac{x^2}{2}\Bigr]_2^4\) <span class="mark">M1</span></li>
+<li>\(=\dfrac{1}{8}\cdot\dfrac{8}{3}+\dfrac{3}{16}(16-4)=\dfrac{1}{3}+\dfrac{9}{4}=\dfrac{31}{12}\) <span class="mark">A1</span></li>
+<li>\(\dfrac{31}{12}\approx2.58\lt 3\), so the claim is true. <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> mean \(\dfrac{31}{12}\approx2.58\); the claim is true</p>
+</div>
+<h3>Common mistakes</h3>
+<ul>
+<li>Integrating \(\mathrm{f}(x)\) instead of \(x\,\mathrm{f}(x)\) when finding the mean.</li>
+<li>Forgetting to subtract \(\bigl\{\mathrm{E}(X)\bigr\}^2\) after finding \(\mathrm{E}(X^2)\).</li>
+<li>Rounding the mean too early and then spoiling the variance.</li>
+<li>Using the wrong limits, or only one piece of a piecewise PDF.</li>
+</ul>
+<p>The rectangular (uniform) distribution on an interval from \(a\) to \(b\), for which \(\mathrm{f}(x)=\dfrac{1}{b-a}\), is explored in the book: its mean and median both lie at the midpoint \(\dfrac{a+b}{2}\). That special case is not needed for the calculations in this section, which use the integral formulae directly.</p>
+<h3>Quick checks</h3>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>The continuous random variable \(X\) has probability density function \(\mathrm{f}(x)=\dfrac{2x}{16}\) for \(0\le x\le 4\), and \(\mathrm{f}(x)=0\) otherwise. Find \(\mathrm{E}(X)\), giving your answer correct to 3 significant figures.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(\mathrm{E}(X)=\dfrac{2}{16}\displaystyle\int_0^4 x^2\,\mathrm{d}x=\dfrac{1}{8}\cdot\dfrac{64}{3}=\dfrac{8}{3}\approx2.67\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(2.67\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>For the same PDF as Quick check 1, find \(\mathrm{Var}(X)\), giving your answer correct to 3 significant figures.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(\mathrm{E}(X^2)=\dfrac{2}{16}\displaystyle\int_0^4 x^3\,\mathrm{d}x=8\), so \(\mathrm{Var}(X)=8-\left(\dfrac{8}{3}\right)^2=\dfrac{8}{9}\approx0.889\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(0.889\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>The continuous random variable \(X\) has probability density function \(\mathrm{f}(x)=\dfrac{3x^2}{8}\) for \(0\le x\le 2\), and \(\mathrm{f}(x)=0\) otherwise. Find \(\mathrm{E}(X)\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(\mathrm{E}(X)=\dfrac{3}{8}\displaystyle\int_0^2 x^3\,\mathrm{d}x=\dfrac{3}{8}\cdot 4=\dfrac{3}{2}\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{3}{2}\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 4</h4>
+<p>For the same PDF as Quick check 3, find \(\mathrm{Var}(X)\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps">
+<li>\(\mathrm{E}(X^2)=\dfrac{3}{8}\displaystyle\int_0^2 x^4\,\mathrm{d}x=\dfrac{12}{5}\), so \(\mathrm{Var}(X)=\dfrac{12}{5}-\left(\dfrac{3}{2}\right)^2=\dfrac{3}{20}=0.15\)</li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(0.15\)</p>
+</details>
+</div>
+<p class="marks-key"><strong>Marks:</strong> M = method, A = accurate answer (depends on M), B = independent mark. Marks on worked examples are illustrative, not official. Give exact fractions or answers correct to 3 significant figures. \(\mathrm{Var}(X)=\mathrm{E}(X^2)-\{\mathrm{E}(X)\}^2\); do not stop at \(\mathrm{E}(X^2)\).</p>
+</section>

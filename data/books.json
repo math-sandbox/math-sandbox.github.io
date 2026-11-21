@@ -1,0 +1,3319 @@
+{
+ "books": [
+  {
+   "id": "IGCSE",
+   "chapters": [
+    {
+     "id": "IGCSE-1",
+     "num": 1,
+     "title": "Review of number concepts",
+     "kind": "chapter",
+     "start": 1,
+     "end": 37,
+     "sections": [
+      {
+       "id": "IGCSE-1.1",
+       "title": "Different types of numbers",
+       "start": 3,
+       "end": 5,
+       "num": "1.1"
+      },
+      {
+       "id": "IGCSE-1.2",
+       "title": "Multiples and factors",
+       "start": 6,
+       "end": 8,
+       "num": "1.2"
+      },
+      {
+       "id": "IGCSE-1.3",
+       "title": "Prime numbers",
+       "start": 9,
+       "end": 13,
+       "num": "1.3"
+      },
+      {
+       "id": "IGCSE-1.4",
+       "title": "Working with directed numbers",
+       "start": 14,
+       "end": 16,
+       "num": "1.4"
+      },
+      {
+       "id": "IGCSE-1.5",
+       "title": "Powers, roots and laws of indices",
+       "start": 17,
+       "end": 25,
+       "num": "1.5"
+      },
+      {
+       "id": "IGCSE-1.6",
+       "title": "Order of operations",
+       "start": 26,
+       "end": 30,
+       "num": "1.6"
+      },
+      {
+       "id": "IGCSE-1.7",
+       "title": "Rounding and estimating",
+       "start": 31,
+       "end": 37,
+       "num": "1.7"
+      }
+     ]
+    },
+    {
+     "id": "IGCSE-2",
+     "num": 2,
+     "title": "Making sense of algebra",
+     "kind": "chapter",
+     "start": 38,
+     "end": 69,
+     "sections": [
+      {
+       "id": "IGCSE-2.1",
+       "title": "Using letters to represent unknown values",
+       "start": 40,
+       "end": 42,
+       "num": "2.1"
+      },
+      {
+       "id": "IGCSE-2.2",
+       "title": "Substitution",
+       "start": 43,
+       "end": 46,
+       "num": "2.2"
+      },
+      {
+       "id": "IGCSE-2.3",
+       "title": "Simplifying expressions",
+       "start": 47,
+       "end": 52,
+       "num": "2.3"
+      },
+      {
+       "id": "IGCSE-2.4",
+       "title": "Working with brackets",
+       "start": 53,
+       "end": 56,
+       "num": "2.4"
+      },
+      {
+       "id": "IGCSE-2.5",
+       "title": "Indices",
+       "start": 57,
+       "end": 69,
+       "num": "2.5"
+      }
+     ]
+    },
+    {
+     "id": "IGCSE-3",
+     "num": 3,
+     "title": "Lines, angles and shapes",
+     "kind": "chapter",
+     "start": 70,
+     "end": 106,
+     "sections": [
+      {
+       "id": "IGCSE-3.1",
+       "title": "Lines and angles",
+       "start": 72,
+       "end": 85,
+       "num": "3.1"
+      },
+      {
+       "id": "IGCSE-3.2",
+       "title": "Triangles",
+       "start": 86,
+       "end": 90,
+       "num": "3.2"
+      },
+      {
+       "id": "IGCSE-3.3",
+       "title": "Quadrilaterals",
+       "start": 91,
+       "end": 93,
+       "num": "3.3"
+      },
+      {
+       "id": "IGCSE-3.4",
+       "title": "Polygons",
+       "start": 94,
+       "end": 96,
+       "num": "3.4"
+      },
+      {
+       "id": "IGCSE-3.5",
+       "title": "Circles",
+       "start": 97,
+       "end": 98,
+       "num": "3.5"
+      },
+      {
+       "id": "IGCSE-3.6",
+       "title": "Construction",
+       "start": 99,
+       "end": 106,
+       "num": "3.6"
+      }
+     ]
+    },
+    {
+     "id": "IGCSE-4",
+     "num": 4,
+     "title": "Collecting, organising and displaying data",
+     "kind": "chapter",
+     "start": 107,
+     "end": 144,
+     "sections": [
+      {
+       "id": "IGCSE-4.1",
+       "title": "Collecting and classifying data",
+       "start": 110,
+       "end": 112,
+       "num": "4.1"
+      },
+      {
+       "id": "IGCSE-4.2",
+       "title": "Organising data",
+       "start": 113,
+       "end": 124,
+       "num": "4.2"
+      },
+      {
+       "id": "IGCSE-4.3",
+       "title": "Using charts to display data",
+       "start": 125,
+       "end": 144,
+       "num": "4.3"
+      }
+     ]
+    },
+    {
+     "id": "IGCSE-5",
+     "num": 5,
+     "title": "Fractions, percentages and standard form",
+     "kind": "chapter",
+     "start": 149,
+     "end": 179,
+     "sections": [
+      {
+       "id": "IGCSE-5.1",
+       "title": "Revisiting fractions",
+       "start": 151,
+       "end": 152,
+       "num": "5.1"
+      },
+      {
+       "id": "IGCSE-5.2",
+       "title": "Operations on fractions",
+       "start": 153,
+       "end": 158,
+       "num": "5.2"
+      },
+      {
+       "id": "IGCSE-5.3",
+       "title": "Percentages",
+       "start": 159,
+       "end": 169,
+       "num": "5.3"
+      },
+      {
+       "id": "IGCSE-5.4",
+       "title": "Standard form",
+       "start": 170,
+       "end": 179,
+       "num": "5.4"
+      }
+     ]
+    },
+    {
+     "id": "IGCSE-6",
+     "num": 6,
+     "title": "Equations, factors and formulae",
+     "kind": "chapter",
+     "start": 180,
+     "end": 193,
+     "sections": [
+      {
+       "id": "IGCSE-6.1",
+       "title": "Solving equations",
+       "start": 181,
+       "end": 185,
+       "num": "6.1"
+      },
+      {
+       "id": "IGCSE-6.2",
+       "title": "Factorising algebraic expressions",
+       "start": 186,
+       "end": 188,
+       "num": "6.2"
+      },
+      {
+       "id": "IGCSE-6.3",
+       "title": "Rearranging formulae",
+       "start": 189,
+       "end": 193,
+       "num": "6.3"
+      }
+     ]
+    },
+    {
+     "id": "IGCSE-7",
+     "num": 7,
+     "title": "Perimeter, area and volume",
+     "kind": "chapter",
+     "start": 194,
+     "end": 227,
+     "sections": [
+      {
+       "id": "IGCSE-7.1",
+       "title": "Perimeter and area in two dimensions",
+       "start": 195,
+       "end": 211,
+       "num": "7.1"
+      },
+      {
+       "id": "IGCSE-7.2",
+       "title": "Three-dimensional objects",
+       "start": 212,
+       "end": 213,
+       "num": "7.2"
+      },
+      {
+       "id": "IGCSE-7.3",
+       "title": "Surface areas and volumes of solids",
+       "start": 214,
+       "end": 227,
+       "num": "7.3"
+      }
+     ]
+    },
+    {
+     "id": "IGCSE-8",
+     "num": 8,
+     "title": "Introduction to probability",
+     "kind": "chapter",
+     "start": 228,
+     "end": 245,
+     "sections": [
+      {
+       "id": "IGCSE-8.1",
+       "title": "Understanding basic probability",
+       "start": 229,
+       "end": 234,
+       "num": "8.1"
+      },
+      {
+       "id": "IGCSE-8.2",
+       "title": "Sample space diagrams",
+       "start": 235,
+       "end": 238,
+       "num": "8.2"
+      },
+      {
+       "id": "IGCSE-8.3",
+       "title": "Combining independent and mutually exclusive events",
+       "start": 239,
+       "end": 245,
+       "num": "8.3"
+      }
+     ]
+    },
+    {
+     "id": "IGCSE-9",
+     "num": 9,
+     "title": "Sequences, surds and sets",
+     "kind": "chapter",
+     "start": 253,
+     "end": 299,
+     "sections": [
+      {
+       "id": "IGCSE-9.1",
+       "title": "Sequences",
+       "start": 255,
+       "end": 268,
+       "num": "9.1"
+      },
+      {
+       "id": "IGCSE-9.2",
+       "title": "Rational and irrational numbers",
+       "start": 269,
+       "end": 272,
+       "num": "9.2"
+      },
+      {
+       "id": "IGCSE-9.3",
+       "title": "Surds",
+       "start": 273,
+       "end": 284,
+       "num": "9.3"
+      },
+      {
+       "id": "IGCSE-9.4",
+       "title": "Sets",
+       "start": 285,
+       "end": 299,
+       "num": "9.4"
+      }
+     ]
+    },
+    {
+     "id": "IGCSE-10",
+     "num": 10,
+     "title": "Straight lines and quadratic equations",
+     "kind": "chapter",
+     "start": 300,
+     "end": 334,
+     "sections": [
+      {
+       "id": "IGCSE-10.1",
+       "title": "Straight line graphs",
+       "start": 301,
+       "end": 320,
+       "num": "10.1"
+      },
+      {
+       "id": "IGCSE-10.2",
+       "title": "Quadratic expressions and equations",
+       "start": 321,
+       "end": 334,
+       "num": "10.2"
+      }
+     ]
+    },
+    {
+     "id": "IGCSE-11",
+     "num": 11,
+     "title": "Pythagoras' theorem and similar shapes",
+     "kind": "chapter",
+     "start": 335,
+     "end": 365,
+     "sections": [
+      {
+       "id": "IGCSE-11.1",
+       "title": "Pythagoras' theorem",
+       "start": 337,
+       "end": 343,
+       "num": "11.1"
+      },
+      {
+       "id": "IGCSE-11.2",
+       "title": "Understanding similar triangles",
+       "start": 344,
+       "end": 348,
+       "num": "11.2"
+      },
+      {
+       "id": "IGCSE-11.3",
+       "title": "Understanding similar shapes",
+       "start": 349,
+       "end": 359,
+       "num": "11.3"
+      },
+      {
+       "id": "IGCSE-11.4",
+       "title": "Understanding congruence",
+       "start": 360,
+       "end": 365,
+       "num": "11.4"
+      }
+     ]
+    },
+    {
+     "id": "IGCSE-12",
+     "num": 12,
+     "title": "Averages and measures of spread",
+     "kind": "chapter",
+     "start": 366,
+     "end": 391,
+     "sections": [
+      {
+       "id": "IGCSE-12.1",
+       "title": "Different types of averages",
+       "start": 367,
+       "end": 370,
+       "num": "12.1"
+      },
+      {
+       "id": "IGCSE-12.2",
+       "title": "Making comparisons using averages and ranges",
+       "start": 371,
+       "end": 374,
+       "num": "12.2"
+      },
+      {
+       "id": "IGCSE-12.3",
+       "title": "Calculating averages and ranges for frequency data",
+       "start": 375,
+       "end": 379,
+       "num": "12.3"
+      },
+      {
+       "id": "IGCSE-12.4",
+       "title": "Estimating the mean and finding the modal class for grouped data",
+       "start": 380,
+       "end": 382,
+       "num": "12.4"
+      },
+      {
+       "id": "IGCSE-12.5",
+       "title": "Quartiles",
+       "start": 383,
+       "end": 391,
+       "num": "12.5"
+      }
+     ]
+    },
+    {
+     "id": "IGCSE-13",
+     "num": 13,
+     "title": "Understanding measurement",
+     "kind": "chapter",
+     "start": 400,
+     "end": 426,
+     "sections": [
+      {
+       "id": "IGCSE-13.1",
+       "title": "Understanding units",
+       "start": 401,
+       "end": 404,
+       "num": "13.1"
+      },
+      {
+       "id": "IGCSE-13.2",
+       "title": "Time",
+       "start": 405,
+       "end": 408,
+       "num": "13.2"
+      },
+      {
+       "id": "IGCSE-13.3",
+       "title": "Limits of accuracy — upper and lower bounds",
+       "start": 409,
+       "end": 417,
+       "num": "13.3"
+      },
+      {
+       "id": "IGCSE-13.4",
+       "title": "Conversion graphs",
+       "start": 418,
+       "end": 420,
+       "num": "13.4"
+      },
+      {
+       "id": "IGCSE-13.5",
+       "title": "Exchanging currencies",
+       "start": 421,
+       "end": 426,
+       "num": "13.5"
+      }
+     ]
+    },
+    {
+     "id": "IGCSE-14",
+     "num": 14,
+     "title": "Further solving of equations and inequalities",
+     "kind": "chapter",
+     "start": 427,
+     "end": 470,
+     "sections": [
+      {
+       "id": "IGCSE-14.1",
+       "title": "Simultaneous linear equations",
+       "start": 428,
+       "end": 439,
+       "num": "14.1"
+      },
+      {
+       "id": "IGCSE-14.2",
+       "title": "Linear inequalities",
+       "start": 440,
+       "end": 444,
+       "num": "14.2"
+      },
+      {
+       "id": "IGCSE-14.3",
+       "title": "Regions in a plane",
+       "start": 445,
+       "end": 451,
+       "num": "14.3"
+      },
+      {
+       "id": "IGCSE-14.4",
+       "title": "Completing the square",
+       "start": 452,
+       "end": 454,
+       "num": "14.4"
+      },
+      {
+       "id": "IGCSE-14.5",
+       "title": "Quadratic formula",
+       "start": 455,
+       "end": 458,
+       "num": "14.5"
+      },
+      {
+       "id": "IGCSE-14.6",
+       "title": "Factorising quadratics where the coefficient of x² is not 1",
+       "start": 459,
+       "end": 460,
+       "num": "14.6"
+      },
+      {
+       "id": "IGCSE-14.7",
+       "title": "Algebraic fractions",
+       "start": 461,
+       "end": 470,
+       "num": "14.7"
+      }
+     ]
+    },
+    {
+     "id": "IGCSE-15",
+     "num": 15,
+     "title": "Scale drawings, bearings and trigonometry",
+     "kind": "chapter",
+     "start": 471,
+     "end": 530,
+     "sections": [
+      {
+       "id": "IGCSE-15.1",
+       "title": "Scale drawings",
+       "start": 472,
+       "end": 475,
+       "num": "15.1"
+      },
+      {
+       "id": "IGCSE-15.2",
+       "title": "Bearings",
+       "start": 476,
+       "end": 478,
+       "num": "15.2"
+      },
+      {
+       "id": "IGCSE-15.3",
+       "title": "Understanding the tangent, cosine and sine ratios",
+       "start": 479,
+       "end": 494,
+       "num": "15.3"
+      },
+      {
+       "id": "IGCSE-15.4",
+       "title": "Exact trigonometric ratios",
+       "start": 495,
+       "end": 498,
+       "num": "15.4"
+      },
+      {
+       "id": "IGCSE-15.5",
+       "title": "Solving problems using trigonometry",
+       "start": 499,
+       "end": 504,
+       "num": "15.5"
+      },
+      {
+       "id": "IGCSE-15.6",
+       "title": "Sines, cosines and tangents of angles greater than 90°",
+       "start": 505,
+       "end": 509,
+       "num": "15.6"
+      },
+      {
+       "id": "IGCSE-15.7",
+       "title": "The sine and cosine rules",
+       "start": 510,
+       "end": 518,
+       "num": "15.7"
+      },
+      {
+       "id": "IGCSE-15.8",
+       "title": "Area of a triangle",
+       "start": 519,
+       "end": 522,
+       "num": "15.8"
+      },
+      {
+       "id": "IGCSE-15.9",
+       "title": "Trigonometry in three dimensions",
+       "start": 523,
+       "end": 530,
+       "num": "15.9"
+      }
+     ]
+    },
+    {
+     "id": "IGCSE-16",
+     "num": 16,
+     "title": "Scatter diagrams and correlation",
+     "kind": "chapter",
+     "start": 531,
+     "end": 542,
+     "sections": [
+      {
+       "id": "IGCSE-16.1",
+       "title": "Introduction to bivariate data",
+       "start": 532,
+       "end": 542,
+       "num": "16.1"
+      }
+     ]
+    },
+    {
+     "id": "IGCSE-17",
+     "num": 17,
+     "title": "Managing money",
+     "kind": "chapter",
+     "start": 551,
+     "end": 580,
+     "sections": [
+      {
+       "id": "IGCSE-17.1",
+       "title": "Earning money",
+       "start": 553,
+       "end": 557,
+       "num": "17.1"
+      },
+      {
+       "id": "IGCSE-17.2",
+       "title": "Borrowing and investing money",
+       "start": 558,
+       "end": 570,
+       "num": "17.2"
+      },
+      {
+       "id": "IGCSE-17.3",
+       "title": "Buying and selling",
+       "start": 571,
+       "end": 580,
+       "num": "17.3"
+      }
+     ]
+    },
+    {
+     "id": "IGCSE-18",
+     "num": 18,
+     "title": "Curved graphs",
+     "kind": "chapter",
+     "start": 581,
+     "end": 640,
+     "sections": [
+      {
+       "id": "IGCSE-18.1",
+       "title": "Review of quadratic graphs (the parabola)",
+       "start": 584,
+       "end": 595,
+       "num": "18.1"
+      },
+      {
+       "id": "IGCSE-18.2",
+       "title": "Drawing reciprocal graphs (the hyperbola)",
+       "start": 596,
+       "end": 601,
+       "num": "18.2"
+      },
+      {
+       "id": "IGCSE-18.3",
+       "title": "Using graphs to solve quadratic equations",
+       "start": 602,
+       "end": 604,
+       "num": "18.3"
+      },
+      {
+       "id": "IGCSE-18.4",
+       "title": "Simultaneous linear and non-linear equations",
+       "start": 605,
+       "end": 607,
+       "num": "18.4"
+      },
+      {
+       "id": "IGCSE-18.5",
+       "title": "Other non-linear graphs",
+       "start": 608,
+       "end": 619,
+       "num": "18.5"
+      },
+      {
+       "id": "IGCSE-18.6",
+       "title": "Finding the gradient of a curve",
+       "start": 620,
+       "end": 623,
+       "num": "18.6"
+      },
+      {
+       "id": "IGCSE-18.7",
+       "title": "Derivatives of functions",
+       "start": 624,
+       "end": 640,
+       "num": "18.7"
+      }
+     ]
+    },
+    {
+     "id": "IGCSE-19",
+     "num": 19,
+     "title": "Symmetry",
+     "kind": "chapter",
+     "start": 641,
+     "end": 670,
+     "sections": [
+      {
+       "id": "IGCSE-19.1",
+       "title": "Symmetry in two dimensions",
+       "start": 643,
+       "end": 648,
+       "num": "19.1"
+      },
+      {
+       "id": "IGCSE-19.2",
+       "title": "Symmetry in three dimensions",
+       "start": 649,
+       "end": 650,
+       "num": "19.2"
+      },
+      {
+       "id": "IGCSE-19.3",
+       "title": "Symmetry properties of circles",
+       "start": 651,
+       "end": 655,
+       "num": "19.3"
+      },
+      {
+       "id": "IGCSE-19.4",
+       "title": "Angle relationships in circles",
+       "start": 656,
+       "end": 670,
+       "num": "19.4"
+      }
+     ]
+    },
+    {
+     "id": "IGCSE-20",
+     "num": 20,
+     "title": "Histograms and cumulative frequency diagrams",
+     "kind": "chapter",
+     "start": 671,
+     "end": 694,
+     "sections": [
+      {
+       "id": "IGCSE-20.1",
+       "title": "Histograms",
+       "start": 673,
+       "end": 679,
+       "num": "20.1"
+      },
+      {
+       "id": "IGCSE-20.2",
+       "title": "Cumulative frequency",
+       "start": 680,
+       "end": 694,
+       "num": "20.2"
+      }
+     ]
+    },
+    {
+     "id": "IGCSE-21",
+     "num": 21,
+     "title": "Ratio, rate and proportion",
+     "kind": "chapter",
+     "start": 710,
+     "end": 753,
+     "sections": [
+      {
+       "id": "IGCSE-21.1",
+       "title": "Working with ratio",
+       "start": 712,
+       "end": 719,
+       "num": "21.1"
+      },
+      {
+       "id": "IGCSE-21.2",
+       "title": "Ratio and scale",
+       "start": 720,
+       "end": 724,
+       "num": "21.2"
+      },
+      {
+       "id": "IGCSE-21.3",
+       "title": "Rates",
+       "start": 725,
+       "end": 728,
+       "num": "21.3"
+      },
+      {
+       "id": "IGCSE-21.4",
+       "title": "Kinematic graphs",
+       "start": 729,
+       "end": 738,
+       "num": "21.4"
+      },
+      {
+       "id": "IGCSE-21.5",
+       "title": "Proportion",
+       "start": 739,
+       "end": 744,
+       "num": "21.5"
+      },
+      {
+       "id": "IGCSE-21.6",
+       "title": "Direct and inverse proportion in algebraic terms",
+       "start": 745,
+       "end": 753,
+       "num": "21.6"
+      }
+     ]
+    },
+    {
+     "id": "IGCSE-22",
+     "num": 22,
+     "title": "More equations, formulae and functions",
+     "kind": "chapter",
+     "start": 754,
+     "end": 780,
+     "sections": [
+      {
+       "id": "IGCSE-22.1",
+       "title": "Setting up equations to solve problems",
+       "start": 756,
+       "end": 762,
+       "num": "22.1"
+      },
+      {
+       "id": "IGCSE-22.2",
+       "title": "Using and rearranging formulae",
+       "start": 763,
+       "end": 767,
+       "num": "22.2"
+      },
+      {
+       "id": "IGCSE-22.3",
+       "title": "Functions and function notation",
+       "start": 768,
+       "end": 780,
+       "num": "22.3"
+      }
+     ]
+    },
+    {
+     "id": "IGCSE-23",
+     "num": 23,
+     "title": "Transformations and vectors",
+     "kind": "chapter",
+     "start": 781,
+     "end": 829,
+     "sections": [
+      {
+       "id": "IGCSE-23.1",
+       "title": "Simple plane transformations",
+       "start": 783,
+       "end": 800,
+       "num": "23.1"
+      },
+      {
+       "id": "IGCSE-23.2",
+       "title": "Further transformations",
+       "start": 801,
+       "end": 808,
+       "num": "23.2"
+      },
+      {
+       "id": "IGCSE-23.3",
+       "title": "Vectors",
+       "start": 809,
+       "end": 829,
+       "num": "23.3"
+      }
+     ]
+    },
+    {
+     "id": "IGCSE-24",
+     "num": 24,
+     "title": "Probability using tree diagrams and Venn diagrams",
+     "kind": "chapter",
+     "start": 830,
+     "end": 851,
+     "sections": [
+      {
+       "id": "IGCSE-24.1",
+       "title": "Using tree diagrams to show outcomes",
+       "start": 832,
+       "end": 832,
+       "num": "24.1"
+      },
+      {
+       "id": "IGCSE-24.2",
+       "title": "Calculating probability from tree diagrams",
+       "start": 833,
+       "end": 836,
+       "num": "24.2"
+      },
+      {
+       "id": "IGCSE-24.3",
+       "title": "Calculating probability from Venn diagrams",
+       "start": 837,
+       "end": 842,
+       "num": "24.3"
+      },
+      {
+       "id": "IGCSE-24.4",
+       "title": "Conditional probability",
+       "start": 843,
+       "end": 851,
+       "num": "24.4"
+      }
+     ]
+    }
+   ],
+   "extras": [
+    {
+     "id": "IGCSE-front-matter-introduction",
+     "kind": "front_matter",
+     "title": "Introduction",
+     "start": null,
+     "end": null,
+     "raw_start": "viii",
+     "raw_end": "viii",
+     "paper": "IGCSE"
+    },
+    {
+     "id": "IGCSE-front-matter-how-to-use-this-book",
+     "kind": "front_matter",
+     "title": "How to use this book",
+     "start": null,
+     "end": null,
+     "raw_start": "ix",
+     "raw_end": "x",
+     "paper": "IGCSE"
+    },
+    {
+     "id": "IGCSE-front-matter-how-to-use-this-series",
+     "kind": "front_matter",
+     "title": "How to use this series",
+     "start": null,
+     "end": null,
+     "raw_start": "xi",
+     "raw_end": "xi",
+     "paper": "IGCSE"
+    },
+    {
+     "id": "IGCSE-front-matter-acknowledgements",
+     "kind": "front_matter",
+     "title": "Acknowledgements",
+     "start": null,
+     "end": null,
+     "raw_start": "xii",
+     "raw_end": "xii",
+     "paper": "IGCSE"
+    },
+    {
+     "id": "IGCSE-cross-1",
+     "kind": "past_paper",
+     "title": "Past paper questions for Unit 1",
+     "start": 145,
+     "end": 147,
+     "raw_start": "145",
+     "raw_end": "147",
+     "paper": "IGCSE"
+    },
+    {
+     "id": "IGCSE-project-unit-1-project",
+     "kind": "project",
+     "title": "Unit 1 Project",
+     "start": 148,
+     "end": 148,
+     "raw_start": "148",
+     "raw_end": "148",
+     "paper": "IGCSE"
+    },
+    {
+     "id": "IGCSE-cross-2",
+     "kind": "past_paper",
+     "title": "Past paper questions for Unit 2",
+     "start": 246,
+     "end": 251,
+     "raw_start": "246",
+     "raw_end": "251",
+     "paper": "IGCSE"
+    },
+    {
+     "id": "IGCSE-project-unit-2-project",
+     "kind": "project",
+     "title": "Unit 2 Project",
+     "start": 252,
+     "end": 252,
+     "raw_start": "252",
+     "raw_end": "252",
+     "paper": "IGCSE"
+    },
+    {
+     "id": "IGCSE-cross-3",
+     "kind": "past_paper",
+     "title": "Past paper questions for Unit 3",
+     "start": 392,
+     "end": 398,
+     "raw_start": "392",
+     "raw_end": "398",
+     "paper": "IGCSE"
+    },
+    {
+     "id": "IGCSE-project-unit-3-project",
+     "kind": "project",
+     "title": "Unit 3 Project",
+     "start": 399,
+     "end": 399,
+     "raw_start": "399",
+     "raw_end": "399",
+     "paper": "IGCSE"
+    },
+    {
+     "id": "IGCSE-cross-4",
+     "kind": "past_paper",
+     "title": "Past paper questions for Unit 4",
+     "start": 543,
+     "end": 549,
+     "raw_start": "543",
+     "raw_end": "549",
+     "paper": "IGCSE"
+    },
+    {
+     "id": "IGCSE-project-unit-4-project",
+     "kind": "project",
+     "title": "Unit 4 Project",
+     "start": 550,
+     "end": 550,
+     "raw_start": "550",
+     "raw_end": "550",
+     "paper": "IGCSE"
+    },
+    {
+     "id": "IGCSE-cross-5",
+     "kind": "past_paper",
+     "title": "Past paper questions for Unit 5",
+     "start": 695,
+     "end": 707,
+     "raw_start": "695",
+     "raw_end": "707",
+     "paper": "IGCSE"
+    },
+    {
+     "id": "IGCSE-project-unit-5-project",
+     "kind": "project",
+     "title": "Unit 5 Project",
+     "start": 708,
+     "end": 709,
+     "raw_start": "708",
+     "raw_end": "709",
+     "paper": "IGCSE"
+    },
+    {
+     "id": "IGCSE-cross-6",
+     "kind": "past_paper",
+     "title": "Past paper questions for Unit 6",
+     "start": 852,
+     "end": 866,
+     "raw_start": "852",
+     "raw_end": "866",
+     "paper": "IGCSE"
+    },
+    {
+     "id": "IGCSE-glossary-glossary",
+     "kind": "glossary",
+     "title": "Glossary",
+     "start": 867,
+     "end": 871,
+     "raw_start": "867",
+     "raw_end": "871",
+     "paper": "IGCSE"
+    },
+    {
+     "id": "IGCSE-index-index",
+     "kind": "index",
+     "title": "Index",
+     "start": 872,
+     "end": 0,
+     "raw_start": "872",
+     "raw_end": "",
+     "paper": "IGCSE"
+    }
+   ]
+  },
+  {
+   "id": "P1",
+   "chapters": [
+    {
+     "id": "P1-1",
+     "num": 1,
+     "title": "Quadratics",
+     "kind": "chapter_opener",
+     "start": 1,
+     "end": 32,
+     "sections": [
+      {
+       "id": "P1-1.1",
+       "title": "Solving quadratic equations by factorisation",
+       "start": 3,
+       "end": 6,
+       "num": "1.1"
+      },
+      {
+       "id": "P1-1.2",
+       "title": "Completing the square",
+       "start": 6,
+       "end": 9,
+       "num": "1.2"
+      },
+      {
+       "id": "P1-1.3",
+       "title": "The quadratic formula",
+       "start": 10,
+       "end": 11,
+       "num": "1.3"
+      },
+      {
+       "id": "P1-1.4",
+       "title": "Solving simultaneous equations (one linear and one quadratic)",
+       "start": 11,
+       "end": 14,
+       "num": "1.4"
+      },
+      {
+       "id": "P1-1.5",
+       "title": "Solving more complex quadratic equations",
+       "start": 15,
+       "end": 17,
+       "num": "1.5"
+      },
+      {
+       "id": "P1-1.6",
+       "title": "Maximum and minimum values of a quadratic function",
+       "start": 17,
+       "end": 21,
+       "num": "1.6"
+      },
+      {
+       "id": "P1-1.7",
+       "title": "Solving quadratic inequalities",
+       "start": 21,
+       "end": 24,
+       "num": "1.7"
+      },
+      {
+       "id": "P1-1.8",
+       "title": "The number of roots of a quadratic equation",
+       "start": 24,
+       "end": 26,
+       "num": "1.8"
+      },
+      {
+       "id": "P1-1.9",
+       "title": "Intersection of a line and a quadratic curve",
+       "start": 27,
+       "end": 30,
+       "num": "1.9"
+      },
+      {
+       "id": "P1-1-review",
+       "title": "End-of-chapter review exercise 1",
+       "start": 31,
+       "end": 32
+      }
+     ]
+    },
+    {
+     "id": "P1-2",
+     "num": 2,
+     "title": "Functions",
+     "kind": "chapter_opener",
+     "start": 33,
+     "end": 69,
+     "sections": [
+      {
+       "id": "P1-2.1",
+       "title": "Definition of a function",
+       "start": 34,
+       "end": 38,
+       "num": "2.1"
+      },
+      {
+       "id": "P1-2.2",
+       "title": "Composite functions",
+       "start": 39,
+       "end": 43,
+       "num": "2.2"
+      },
+      {
+       "id": "P1-2.3",
+       "title": "Inverse functions",
+       "start": 43,
+       "end": 47,
+       "num": "2.3"
+      },
+      {
+       "id": "P1-2.4",
+       "title": "The graph of a function and its inverse",
+       "start": 48,
+       "end": 51,
+       "num": "2.4"
+      },
+      {
+       "id": "P1-2.5",
+       "title": "Transformations of functions",
+       "start": 51,
+       "end": 55,
+       "num": "2.5"
+      },
+      {
+       "id": "P1-2.6",
+       "title": "Reflections",
+       "start": 55,
+       "end": 57,
+       "num": "2.6"
+      },
+      {
+       "id": "P1-2.7",
+       "title": "Stretches",
+       "start": 57,
+       "end": 59,
+       "num": "2.7"
+      },
+      {
+       "id": "P1-2.8",
+       "title": "Combined transformations",
+       "start": 59,
+       "end": 66,
+       "num": "2.8"
+      },
+      {
+       "id": "P1-2-review",
+       "title": "End-of-chapter review exercise 2",
+       "start": 67,
+       "end": 69
+      }
+     ]
+    },
+    {
+     "id": "P1-3",
+     "num": 3,
+     "title": "Coordinate geometry",
+     "kind": "chapter_opener",
+     "start": 70,
+     "end": 94,
+     "sections": [
+      {
+       "id": "P1-3.1",
+       "title": "Length of a line segment and midpoint",
+       "start": 72,
+       "end": 75,
+       "num": "3.1"
+      },
+      {
+       "id": "P1-3.2",
+       "title": "Parallel and perpendicular lines",
+       "start": 75,
+       "end": 78,
+       "num": "3.2"
+      },
+      {
+       "id": "P1-3.3",
+       "title": "Equations of straight lines",
+       "start": 78,
+       "end": 82,
+       "num": "3.3"
+      },
+      {
+       "id": "P1-3.4",
+       "title": "The equation of a circle",
+       "start": 82,
+       "end": 88,
+       "num": "3.4"
+      },
+      {
+       "id": "P1-3.5",
+       "title": "Problems involving intersections of lines and circles",
+       "start": 88,
+       "end": 91,
+       "num": "3.5"
+      },
+      {
+       "id": "P1-3-review",
+       "title": "End-of-chapter review exercise 3",
+       "start": 92,
+       "end": 94
+      }
+     ]
+    },
+    {
+     "id": "P1-4",
+     "num": 4,
+     "title": "Circular measure",
+     "kind": "chapter_opener",
+     "start": 99,
+     "end": 115,
+     "sections": [
+      {
+       "id": "P1-4.1",
+       "title": "Radians",
+       "start": 101,
+       "end": 104,
+       "num": "4.1"
+      },
+      {
+       "id": "P1-4.2",
+       "title": "Length of an arc",
+       "start": 104,
+       "end": 106,
+       "num": "4.2"
+      },
+      {
+       "id": "P1-4.3",
+       "title": "Area of a sector",
+       "start": 107,
+       "end": 111,
+       "num": "4.3"
+      },
+      {
+       "id": "P1-4-review",
+       "title": "End-of-chapter review exercise 4",
+       "start": 112,
+       "end": 115
+      }
+     ]
+    },
+    {
+     "id": "P1-5",
+     "num": 5,
+     "title": "Trigonometry",
+     "kind": "chapter_opener",
+     "start": 116,
+     "end": 154,
+     "sections": [
+      {
+       "id": "P1-5.1",
+       "title": "Angles between 0° and 90°",
+       "start": 118,
+       "end": 121,
+       "num": "5.1"
+      },
+      {
+       "id": "P1-5.2",
+       "title": "The general definition of an angle",
+       "start": 121,
+       "end": 123,
+       "num": "5.2"
+      },
+      {
+       "id": "P1-5.3",
+       "title": "Trigonometric ratios of general angles",
+       "start": 123,
+       "end": 127,
+       "num": "5.3"
+      },
+      {
+       "id": "P1-5.4",
+       "title": "Graphs of trigonometric functions",
+       "start": 127,
+       "end": 136,
+       "num": "5.4"
+      },
+      {
+       "id": "P1-5.5",
+       "title": "Inverse trigonometric functions",
+       "start": 136,
+       "end": 139,
+       "num": "5.5"
+      },
+      {
+       "id": "P1-5.6",
+       "title": "Trigonometric equations",
+       "start": 140,
+       "end": 145,
+       "num": "5.6"
+      },
+      {
+       "id": "P1-5.7",
+       "title": "Trigonometric identities",
+       "start": 145,
+       "end": 148,
+       "num": "5.7"
+      },
+      {
+       "id": "P1-5.8",
+       "title": "Further trigonometric equations",
+       "start": 149,
+       "end": 152,
+       "num": "5.8"
+      },
+      {
+       "id": "P1-5-review",
+       "title": "End-of-chapter review exercise 5",
+       "start": 153,
+       "end": 154
+      }
+     ]
+    },
+    {
+     "id": "P1-6",
+     "num": 6,
+     "title": "Series",
+     "kind": "chapter_opener",
+     "start": 155,
+     "end": 185,
+     "sections": [
+      {
+       "id": "P1-6.1",
+       "title": "Binomial expansion of (a + b)^n",
+       "start": 156,
+       "end": 160,
+       "num": "6.1"
+      },
+      {
+       "id": "P1-6.2",
+       "title": "Binomial coefficients",
+       "start": 160,
+       "end": 165,
+       "num": "6.2"
+      },
+      {
+       "id": "P1-6.3",
+       "title": "Arithmetic progressions",
+       "start": 166,
+       "end": 171,
+       "num": "6.3"
+      },
+      {
+       "id": "P1-6.4",
+       "title": "Geometric progressions",
+       "start": 171,
+       "end": 175,
+       "num": "6.4"
+      },
+      {
+       "id": "P1-6.5",
+       "title": "Infinite geometric series",
+       "start": 175,
+       "end": 179,
+       "num": "6.5"
+      },
+      {
+       "id": "P1-6.6",
+       "title": "Further arithmetic and geometric series",
+       "start": 180,
+       "end": 182,
+       "num": "6.6"
+      },
+      {
+       "id": "P1-6-review",
+       "title": "End-of-chapter review exercise 6",
+       "start": 183,
+       "end": 185
+      }
+     ]
+    },
+    {
+     "id": "P1-7",
+     "num": 7,
+     "title": "Differentiation",
+     "kind": "chapter_opener",
+     "start": 190,
+     "end": 210,
+     "sections": [
+      {
+       "id": "P1-7.1",
+       "title": "Derivatives and gradient functions",
+       "start": 191,
+       "end": 198,
+       "num": "7.1"
+      },
+      {
+       "id": "P1-7.2",
+       "title": "The chain rule",
+       "start": 198,
+       "end": 201,
+       "num": "7.2"
+      },
+      {
+       "id": "P1-7.3",
+       "title": "Tangents and normals",
+       "start": 201,
+       "end": 205,
+       "num": "7.3"
+      },
+      {
+       "id": "P1-7.4",
+       "title": "Second derivatives",
+       "start": 205,
+       "end": 208,
+       "num": "7.4"
+      },
+      {
+       "id": "P1-7-review",
+       "title": "End-of-chapter review exercise 7",
+       "start": 209,
+       "end": 210
+      }
+     ]
+    },
+    {
+     "id": "P1-8",
+     "num": 8,
+     "title": "Further differentiation",
+     "kind": "chapter_opener",
+     "start": 211,
+     "end": 237,
+     "sections": [
+      {
+       "id": "P1-8.1",
+       "title": "Increasing and decreasing functions",
+       "start": 213,
+       "end": 215,
+       "num": "8.1"
+      },
+      {
+       "id": "P1-8.2",
+       "title": "Stationary points",
+       "start": 216,
+       "end": 221,
+       "num": "8.2"
+      },
+      {
+       "id": "P1-8.3",
+       "title": "Practical maximum and minimum problems",
+       "start": 221,
+       "end": 226,
+       "num": "8.3"
+      },
+      {
+       "id": "P1-8.4",
+       "title": "Rates of change",
+       "start": 227,
+       "end": 229,
+       "num": "8.4"
+      },
+      {
+       "id": "P1-8.5",
+       "title": "Practical applications of connected rates of change",
+       "start": 230,
+       "end": 234,
+       "num": "8.5"
+      },
+      {
+       "id": "P1-8-review",
+       "title": "End-of-chapter review exercise 8",
+       "start": 235,
+       "end": 237
+      }
+     ]
+    },
+    {
+     "id": "P1-9",
+     "num": 9,
+     "title": "Integration",
+     "kind": "chapter_opener",
+     "start": 238,
+     "end": 279,
+     "sections": [
+      {
+       "id": "P1-9.1",
+       "title": "Integration as the reverse of differentiation",
+       "start": 239,
+       "end": 243,
+       "num": "9.1"
+      },
+      {
+       "id": "P1-9.2",
+       "title": "Finding the constant of integration",
+       "start": 244,
+       "end": 247,
+       "num": "9.2"
+      },
+      {
+       "id": "P1-9.3",
+       "title": "Integration of expressions of the form (ax + b)^n",
+       "start": 247,
+       "end": 248,
+       "num": "9.3"
+      },
+      {
+       "id": "P1-9.4",
+       "title": "Further indefinite integration",
+       "start": 249,
+       "end": 250,
+       "num": "9.4"
+      },
+      {
+       "id": "P1-9.5",
+       "title": "Definite integration",
+       "start": 250,
+       "end": 252,
+       "num": "9.5"
+      },
+      {
+       "id": "P1-9.6",
+       "title": "Area under a curve",
+       "start": 253,
+       "end": 259,
+       "num": "9.6"
+      },
+      {
+       "id": "P1-9.7",
+       "title": "Area bounded by a curve and a line or by two curves",
+       "start": 260,
+       "end": 264,
+       "num": "9.7"
+      },
+      {
+       "id": "P1-9.8",
+       "title": "Improper integrals",
+       "start": 264,
+       "end": 268,
+       "num": "9.8"
+      },
+      {
+       "id": "P1-9.9",
+       "title": "Volumes of revolution",
+       "start": 268,
+       "end": 275,
+       "num": "9.9"
+      },
+      {
+       "id": "P1-9-review",
+       "title": "End-of-chapter review exercise 9",
+       "start": 276,
+       "end": 279
+      }
+     ]
+    }
+   ],
+   "extras": [
+    {
+     "id": "P1-cross-1",
+     "kind": "cross_topic_review",
+     "title": "Cross-topic review exercise 1",
+     "start": 95,
+     "end": 98,
+     "raw_start": "95",
+     "raw_end": "98",
+     "paper": "P1"
+    },
+    {
+     "id": "P1-cross-2",
+     "kind": "cross_topic_review",
+     "title": "Cross-topic review exercise 2",
+     "start": 186,
+     "end": 189,
+     "raw_start": "186",
+     "raw_end": "189",
+     "paper": "P1"
+    },
+    {
+     "id": "P1-cross-3",
+     "kind": "cross_topic_review",
+     "title": "Cross-topic review exercise 3",
+     "start": 280,
+     "end": 283,
+     "raw_start": "280",
+     "raw_end": "283",
+     "paper": "P1"
+    },
+    {
+     "id": "P1-practice",
+     "kind": "practice_exam",
+     "title": "Practice exam-style paper",
+     "start": 284,
+     "end": 285,
+     "raw_start": "284",
+     "raw_end": "285",
+     "paper": "P1"
+    }
+   ]
+  },
+  {
+   "id": "S1",
+   "chapters": [
+    {
+     "id": "S1-1",
+     "num": 1,
+     "title": "Representation of data",
+     "kind": "chapter",
+     "start": 1,
+     "end": 25,
+     "sections": [
+      {
+       "id": "S1-1.1",
+       "title": "Types of data",
+       "start": 2,
+       "end": 2,
+       "num": "1.1"
+      },
+      {
+       "id": "S1-1.2",
+       "title": "Representation of discrete data: stem-and-leaf diagrams",
+       "start": 3,
+       "end": 5,
+       "num": "1.2"
+      },
+      {
+       "id": "S1-1.3",
+       "title": "Representation of continuous data: histograms",
+       "start": 6,
+       "end": 12,
+       "num": "1.3"
+      },
+      {
+       "id": "S1-1.4",
+       "title": "Representation of continuous data: cumulative frequency graphs",
+       "start": 13,
+       "end": 19,
+       "num": "1.4"
+      },
+      {
+       "id": "S1-1.5",
+       "title": "Comparing different data representations",
+       "start": 20,
+       "end": 23,
+       "num": "1.5"
+      },
+      {
+       "id": "S1-1-review",
+       "title": "End-of-chapter review exercise 1",
+       "start": 24,
+       "end": 25
+      }
+     ]
+    },
+    {
+     "id": "S1-2",
+     "num": 2,
+     "title": "Measures of central tendency",
+     "kind": "chapter",
+     "start": 26,
+     "end": 53,
+     "sections": [
+      {
+       "id": "S1-2.1",
+       "title": "The mode and the modal class",
+       "start": 28,
+       "end": 29,
+       "num": "2.1"
+      },
+      {
+       "id": "S1-2.2",
+       "title": "The mean",
+       "start": 30,
+       "end": 41,
+       "num": "2.2"
+      },
+      {
+       "id": "S1-2.3",
+       "title": "The median",
+       "start": 42,
+       "end": 50,
+       "num": "2.3"
+      },
+      {
+       "id": "S1-2-review",
+       "title": "End-of-chapter review exercise 2",
+       "start": 51,
+       "end": 53
+      }
+     ]
+    },
+    {
+     "id": "S1-3",
+     "num": 3,
+     "title": "Measures of variation",
+     "kind": "chapter",
+     "start": 54,
+     "end": 85,
+     "sections": [
+      {
+       "id": "S1-3.1",
+       "title": "The range",
+       "start": 55,
+       "end": 55,
+       "num": "3.1"
+      },
+      {
+       "id": "S1-3.2",
+       "title": "The interquartile range and percentiles",
+       "start": 56,
+       "end": 64,
+       "num": "3.2"
+      },
+      {
+       "id": "S1-3.3",
+       "title": "Variance and standard deviation",
+       "start": 65,
+       "end": 82,
+       "num": "3.3"
+      },
+      {
+       "id": "S1-3-review",
+       "title": "End-of-chapter review exercise 3",
+       "start": 83,
+       "end": 85
+      }
+     ]
+    },
+    {
+     "id": "S1-4",
+     "num": 4,
+     "title": "Probability",
+     "kind": "chapter",
+     "start": 90,
+     "end": 121,
+     "sections": [
+      {
+       "id": "S1-4.1",
+       "title": "Experiments, events and outcomes",
+       "start": 91,
+       "end": 93,
+       "num": "4.1"
+      },
+      {
+       "id": "S1-4.2",
+       "title": "Mutually exclusive events and the addition law",
+       "start": 94,
+       "end": 99,
+       "num": "4.2"
+      },
+      {
+       "id": "S1-4.3",
+       "title": "Independent events and the multiplication law",
+       "start": 100,
+       "end": 107,
+       "num": "4.3"
+      },
+      {
+       "id": "S1-4.4",
+       "title": "Conditional probability",
+       "start": 108,
+       "end": 111,
+       "num": "4.4"
+      },
+      {
+       "id": "S1-4.5",
+       "title": "Dependent events and conditional probability",
+       "start": 112,
+       "end": 117,
+       "num": "4.5"
+      },
+      {
+       "id": "S1-4-review",
+       "title": "End-of-chapter review exercise 4",
+       "start": 118,
+       "end": 121
+      }
+     ]
+    },
+    {
+     "id": "S1-5",
+     "num": 5,
+     "title": "Permutations and combinations",
+     "kind": "chapter",
+     "start": 122,
+     "end": 145,
+     "sections": [
+      {
+       "id": "S1-5.1",
+       "title": "The factorial function",
+       "start": 124,
+       "end": 124,
+       "num": "5.1"
+      },
+      {
+       "id": "S1-5.2",
+       "title": "Permutations",
+       "start": 125,
+       "end": 134,
+       "num": "5.2"
+      },
+      {
+       "id": "S1-5.3",
+       "title": "Combinations",
+       "start": 135,
+       "end": 137,
+       "num": "5.3"
+      },
+      {
+       "id": "S1-5.4",
+       "title": "Problem solving with permutations and combinations",
+       "start": 138,
+       "end": 142,
+       "num": "5.4"
+      },
+      {
+       "id": "S1-5-review",
+       "title": "End-of-chapter review exercise 5",
+       "start": 143,
+       "end": 145
+      }
+     ]
+    },
+    {
+     "id": "S1-6",
+     "num": 6,
+     "title": "Probability distributions",
+     "kind": "chapter",
+     "start": 149,
+     "end": 164,
+     "sections": [
+      {
+       "id": "S1-6.1",
+       "title": "Discrete random variables",
+       "start": 150,
+       "end": 150,
+       "num": "6.1"
+      },
+      {
+       "id": "S1-6.2",
+       "title": "Probability distributions",
+       "start": 150,
+       "end": 155,
+       "num": "6.2"
+      },
+      {
+       "id": "S1-6.3",
+       "title": "Expectation and variance of a discrete random variable",
+       "start": 156,
+       "end": 161,
+       "num": "6.3"
+      },
+      {
+       "id": "S1-6-review",
+       "title": "End-of-chapter review exercise 6",
+       "start": 162,
+       "end": 164
+      }
+     ]
+    },
+    {
+     "id": "S1-7",
+     "num": 7,
+     "title": "The binomial and geometric distributions",
+     "kind": "chapter",
+     "start": 165,
+     "end": 186,
+     "sections": [
+      {
+       "id": "S1-7.1",
+       "title": "The binomial distribution",
+       "start": 166,
+       "end": 174,
+       "num": "7.1"
+      },
+      {
+       "id": "S1-7.2",
+       "title": "The geometric distribution",
+       "start": 175,
+       "end": 184,
+       "num": "7.2"
+      },
+      {
+       "id": "S1-7-review",
+       "title": "End-of-chapter review exercise 7",
+       "start": 185,
+       "end": 186
+      }
+     ]
+    },
+    {
+     "id": "S1-8",
+     "num": 8,
+     "title": "The normal distribution",
+     "kind": "chapter",
+     "start": 187,
+     "end": 216,
+     "sections": [
+      {
+       "id": "S1-8.1",
+       "title": "Continuous random variables",
+       "start": 188,
+       "end": 192,
+       "num": "8.1"
+      },
+      {
+       "id": "S1-8.2",
+       "title": "The normal distribution",
+       "start": 193,
+       "end": 204,
+       "num": "8.2"
+      },
+      {
+       "id": "S1-8.3",
+       "title": "Modelling with the normal distribution",
+       "start": 205,
+       "end": 207,
+       "num": "8.3"
+      },
+      {
+       "id": "S1-8.4",
+       "title": "The normal approximation to the binomial distribution",
+       "start": 208,
+       "end": 214,
+       "num": "8.4"
+      },
+      {
+       "id": "S1-8-review",
+       "title": "End-of-chapter review exercise 8",
+       "start": 215,
+       "end": 216
+      }
+     ]
+    }
+   ],
+   "extras": [
+    {
+     "id": "S1-front-matter-series-introduction",
+     "kind": "front_matter",
+     "title": "Series introduction",
+     "start": null,
+     "end": null,
+     "raw_start": "vi",
+     "raw_end": "vii",
+     "paper": "S1"
+    },
+    {
+     "id": "S1-front-matter-how-to-use-this-book",
+     "kind": "front_matter",
+     "title": "How to use this book",
+     "start": null,
+     "end": null,
+     "raw_start": "viii",
+     "raw_end": "ix",
+     "paper": "S1"
+    },
+    {
+     "id": "S1-front-matter-acknowledgements",
+     "kind": "front_matter",
+     "title": "Acknowledgements",
+     "start": null,
+     "end": null,
+     "raw_start": "x",
+     "raw_end": "x",
+     "paper": "S1"
+    },
+    {
+     "id": "S1-cross-1",
+     "kind": "cross_topic_review",
+     "title": "Cross-topic review exercise 1",
+     "start": 86,
+     "end": 89,
+     "raw_start": "86",
+     "raw_end": "89",
+     "paper": "S1"
+    },
+    {
+     "id": "S1-cross-2",
+     "kind": "cross_topic_review",
+     "title": "Cross-topic review exercise 2",
+     "start": 146,
+     "end": 148,
+     "raw_start": "146",
+     "raw_end": "148",
+     "paper": "S1"
+    },
+    {
+     "id": "S1-cross-3",
+     "kind": "cross_topic_review",
+     "title": "Cross-topic review exercise 3",
+     "start": 217,
+     "end": 219,
+     "raw_start": "217",
+     "raw_end": "219",
+     "paper": "S1"
+    },
+    {
+     "id": "S1-practice",
+     "kind": "practice_exam",
+     "title": "Practice exam-style paper",
+     "start": 220,
+     "end": 221,
+     "raw_start": "220",
+     "raw_end": "221",
+     "paper": "S1"
+    },
+    {
+     "id": "S1-reference-the-standard-normal-distribution-function",
+     "kind": "reference",
+     "title": "The standard normal distribution function",
+     "start": 222,
+     "end": 222,
+     "raw_start": "222",
+     "raw_end": "222",
+     "paper": "S1"
+    },
+    {
+     "id": "S1-answers-answers",
+     "kind": "answers",
+     "title": "Answers",
+     "start": 223,
+     "end": 244,
+     "raw_start": "223",
+     "raw_end": "244",
+     "paper": "S1"
+    },
+    {
+     "id": "S1-glossary-glossary",
+     "kind": "glossary",
+     "title": "Glossary",
+     "start": 245,
+     "end": 246,
+     "raw_start": "245",
+     "raw_end": "246",
+     "paper": "S1"
+    },
+    {
+     "id": "S1-index-index",
+     "kind": "index",
+     "title": "Index",
+     "start": 247,
+     "end": 248,
+     "raw_start": "247",
+     "raw_end": "248",
+     "paper": "S1"
+    }
+   ]
+  },
+  {
+   "id": "P23",
+   "chapters": [
+    {
+     "id": "P23-1",
+     "num": 1,
+     "title": "Algebra",
+     "kind": "chapter",
+     "start": 1,
+     "end": 24,
+     "sections": [
+      {
+       "id": "P23-1.1",
+       "title": "The modulus function",
+       "start": 2,
+       "end": 6,
+       "num": "1.1",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-1.2",
+       "title": "Graphs of y = |f(x)| where f(x) is linear",
+       "start": 7,
+       "end": 7,
+       "num": "1.2",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-1.3",
+       "title": "Solving modulus inequalities",
+       "start": 8,
+       "end": 10,
+       "num": "1.3",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-1.4",
+       "title": "Division of polynomials",
+       "start": 11,
+       "end": 13,
+       "num": "1.4",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-1.5",
+       "title": "The factor theorem",
+       "start": 14,
+       "end": 17,
+       "num": "1.5",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-1.6",
+       "title": "The remainder theorem",
+       "start": 18,
+       "end": 21,
+       "num": "1.6",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-1-review",
+       "title": "End-of-chapter review exercise 1",
+       "start": 22,
+       "end": 24,
+       "paper": "P2 and P3"
+      }
+     ],
+     "paper": "P2 and P3"
+    },
+    {
+     "id": "P23-2",
+     "num": 2,
+     "title": "Logarithmic and exponential functions",
+     "kind": "chapter",
+     "start": 25,
+     "end": 51,
+     "sections": [
+      {
+       "id": "P23-2.1",
+       "title": "Logarithms to base 10",
+       "start": 26,
+       "end": 29,
+       "num": "2.1",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-2.2",
+       "title": "Logarithms to base a",
+       "start": 30,
+       "end": 32,
+       "num": "2.2",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-2.3",
+       "title": "The laws of logarithms",
+       "start": 33,
+       "end": 34,
+       "num": "2.3",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-2.4",
+       "title": "Solving logarithmic equations",
+       "start": 35,
+       "end": 37,
+       "num": "2.4",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-2.5",
+       "title": "Solving exponential equations",
+       "start": 38,
+       "end": 39,
+       "num": "2.5",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-2.6",
+       "title": "Solving exponential inequalities",
+       "start": 40,
+       "end": 41,
+       "num": "2.6",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-2.7",
+       "title": "Natural logarithms",
+       "start": 42,
+       "end": 43,
+       "num": "2.7",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-2.8",
+       "title": "Transforming a relationship to linear form",
+       "start": 44,
+       "end": 49,
+       "num": "2.8",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-2-review",
+       "title": "End-of-chapter review exercise 2",
+       "start": 50,
+       "end": 51,
+       "paper": "P2 and P3"
+      }
+     ],
+     "paper": "P2 and P3"
+    },
+    {
+     "id": "P23-3",
+     "num": 3,
+     "title": "Trigonometry",
+     "kind": "chapter",
+     "start": 52,
+     "end": 75,
+     "sections": [
+      {
+       "id": "P23-3.1",
+       "title": "The cosecant, secant and cotangent ratios",
+       "start": 53,
+       "end": 57,
+       "num": "3.1",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-3.2",
+       "title": "Compound angle formulae",
+       "start": 58,
+       "end": 60,
+       "num": "3.2",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-3.3",
+       "title": "Double angle formulae",
+       "start": 61,
+       "end": 65,
+       "num": "3.3",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-3.4",
+       "title": "Further trigonometric identities",
+       "start": 66,
+       "end": 67,
+       "num": "3.4",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-3.5",
+       "title": "Expressing a sin θ + b cos θ in the form R sin(θ ± α) or R cos(θ ± α)",
+       "start": 68,
+       "end": 73,
+       "num": "3.5",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-3-review",
+       "title": "End-of-chapter review exercise 3",
+       "start": 74,
+       "end": 75,
+       "paper": "P2 and P3"
+      }
+     ],
+     "paper": "P2 and P3"
+    },
+    {
+     "id": "P23-4",
+     "num": 4,
+     "title": "Differentiation",
+     "kind": "chapter",
+     "start": 80,
+     "end": 110,
+     "sections": [
+      {
+       "id": "P23-4.1",
+       "title": "The product rule",
+       "start": 81,
+       "end": 83,
+       "num": "4.1",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-4.2",
+       "title": "The quotient rule",
+       "start": 84,
+       "end": 86,
+       "num": "4.2",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-4.3",
+       "title": "Derivatives of exponential functions",
+       "start": 87,
+       "end": 90,
+       "num": "4.3",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-4.4",
+       "title": "Derivatives of natural logarithmic functions",
+       "start": 91,
+       "end": 94,
+       "num": "4.4",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-4.5",
+       "title": "Derivatives of trigonometric functions",
+       "start": 95,
+       "end": 98,
+       "num": "4.5",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-4.6",
+       "title": "Implicit differentiation",
+       "start": 99,
+       "end": 102,
+       "num": "4.6",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-4.7",
+       "title": "Parametric differentiation",
+       "start": 103,
+       "end": 107,
+       "num": "4.7",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-4-review",
+       "title": "End-of-chapter review exercise 4",
+       "start": 108,
+       "end": 110,
+       "paper": "P2 and P3"
+      }
+     ],
+     "paper": "P2 and P3"
+    },
+    {
+     "id": "P23-5",
+     "num": 5,
+     "title": "Integration",
+     "kind": "chapter",
+     "start": 111,
+     "end": 132,
+     "sections": [
+      {
+       "id": "P23-5.1",
+       "title": "Integration of exponential functions",
+       "start": 112,
+       "end": 114,
+       "num": "5.1",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-5.2",
+       "title": "Integration of 1/(ax + b)",
+       "start": 115,
+       "end": 117,
+       "num": "5.2",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-5.3",
+       "title": "Integration of sin(ax + b), cos(ax + b) and sec²(ax + b)",
+       "start": 118,
+       "end": 120,
+       "num": "5.3",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-5.4",
+       "title": "Further integration of trigonometric functions",
+       "start": 121,
+       "end": 125,
+       "num": "5.4",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-5.5",
+       "title": "The trapezium rule",
+       "start": 126,
+       "end": 130,
+       "num": "5.5",
+       "paper": "P2"
+      },
+      {
+       "id": "P23-5-review",
+       "title": "End-of-chapter review exercise 5",
+       "start": 131,
+       "end": 132,
+       "paper": "P2 and P3"
+      }
+     ],
+     "paper": "P2 and P3"
+    },
+    {
+     "id": "P23-6",
+     "num": 6,
+     "title": "Numerical solutions of equations",
+     "kind": "chapter",
+     "start": 133,
+     "end": 157,
+     "sections": [
+      {
+       "id": "P23-6.1",
+       "title": "Finding a starting point",
+       "start": 135,
+       "end": 139,
+       "num": "6.1",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-6.2",
+       "title": "Improving your solution",
+       "start": 140,
+       "end": 148,
+       "num": "6.2",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-6.3",
+       "title": "Using iterative processes to solve problems involving other areas of mathematics",
+       "start": 149,
+       "end": 154,
+       "num": "6.3",
+       "paper": "P2 and P3"
+      },
+      {
+       "id": "P23-6-review",
+       "title": "End-of-chapter review exercise 6",
+       "start": 155,
+       "end": 157,
+       "paper": "P2 and P3"
+      }
+     ],
+     "paper": "P2 and P3"
+    },
+    {
+     "id": "P23-7",
+     "num": 7,
+     "title": "Further algebra",
+     "kind": "chapter",
+     "start": 165,
+     "end": 183,
+     "sections": [
+      {
+       "id": "P23-7.1",
+       "title": "Improper algebraic fractions",
+       "start": 166,
+       "end": 167,
+       "num": "7.1",
+       "paper": "P3"
+      },
+      {
+       "id": "P23-7.2",
+       "title": "Partial fractions",
+       "start": 168,
+       "end": 173,
+       "num": "7.2",
+       "paper": "P3"
+      },
+      {
+       "id": "P23-7.3",
+       "title": "Binomial expansion of (1 + x)^n for values of n that are not positive integers",
+       "start": 174,
+       "end": 176,
+       "num": "7.3",
+       "paper": "P3"
+      },
+      {
+       "id": "P23-7.4",
+       "title": "Binomial expansion of (a + x)^n for values of n that are not positive integers",
+       "start": 177,
+       "end": 178,
+       "num": "7.4",
+       "paper": "P3"
+      },
+      {
+       "id": "P23-7.5",
+       "title": "Partial fractions and binomial expansions",
+       "start": 179,
+       "end": 181,
+       "num": "7.5",
+       "paper": "P3"
+      },
+      {
+       "id": "P23-7-review",
+       "title": "End-of-chapter review exercise 7",
+       "start": 182,
+       "end": 183,
+       "paper": "P3"
+      }
+     ],
+     "paper": "P3"
+    },
+    {
+     "id": "P23-8",
+     "num": 8,
+     "title": "Further calculus",
+     "kind": "chapter",
+     "start": 184,
+     "end": 204,
+     "sections": [
+      {
+       "id": "P23-8.1",
+       "title": "Derivative of tan⁻¹ x",
+       "start": 186,
+       "end": 186,
+       "num": "8.1",
+       "paper": "P3"
+      },
+      {
+       "id": "P23-8.2",
+       "title": "Integration of 1/(a² + x²)",
+       "start": 187,
+       "end": 188,
+       "num": "8.2",
+       "paper": "P3"
+      },
+      {
+       "id": "P23-8.3",
+       "title": "Integration of k f'(x)/f(x)",
+       "start": 189,
+       "end": 190,
+       "num": "8.3",
+       "paper": "P3"
+      },
+      {
+       "id": "P23-8.4",
+       "title": "Integration by substitution",
+       "start": 191,
+       "end": 193,
+       "num": "8.4",
+       "paper": "P3"
+      },
+      {
+       "id": "P23-8.5",
+       "title": "The use of partial fractions in integration",
+       "start": 194,
+       "end": 196,
+       "num": "8.5",
+       "paper": "P3"
+      },
+      {
+       "id": "P23-8.6",
+       "title": "Integration by parts",
+       "start": 197,
+       "end": 200,
+       "num": "8.6",
+       "paper": "P3"
+      },
+      {
+       "id": "P23-8.7",
+       "title": "Further integration",
+       "start": 201,
+       "end": 202,
+       "num": "8.7",
+       "paper": "P3"
+      },
+      {
+       "id": "P23-8-review",
+       "title": "End-of-chapter review exercise 8",
+       "start": 203,
+       "end": 204,
+       "paper": "P3"
+      }
+     ],
+     "paper": "P3"
+    },
+    {
+     "id": "P23-9",
+     "num": 9,
+     "title": "Vectors",
+     "kind": "chapter",
+     "start": 209,
+     "end": 242,
+     "sections": [
+      {
+       "id": "P23-9.1",
+       "title": "Displacement or translation vectors",
+       "start": 211,
+       "end": 219,
+       "num": "9.1",
+       "paper": "P3"
+      },
+      {
+       "id": "P23-9.2",
+       "title": "Position vectors",
+       "start": 220,
+       "end": 224,
+       "num": "9.2",
+       "paper": "P3"
+      },
+      {
+       "id": "P23-9.3",
+       "title": "The scalar product",
+       "start": 225,
+       "end": 230,
+       "num": "9.3",
+       "paper": "P3"
+      },
+      {
+       "id": "P23-9.4",
+       "title": "The vector equation of a line",
+       "start": 231,
+       "end": 235,
+       "num": "9.4",
+       "paper": "P3"
+      },
+      {
+       "id": "P23-9.5",
+       "title": "Intersection of two lines",
+       "start": 236,
+       "end": 239,
+       "num": "9.5",
+       "paper": "P3"
+      },
+      {
+       "id": "P23-9-review",
+       "title": "End-of-chapter review exercise 9",
+       "start": 240,
+       "end": 242,
+       "paper": "P3"
+      }
+     ],
+     "paper": "P3"
+    },
+    {
+     "id": "P23-10",
+     "num": 10,
+     "title": "Differential equations",
+     "kind": "chapter",
+     "start": 243,
+     "end": 264,
+     "sections": [
+      {
+       "id": "P23-10.1",
+       "title": "The technique of separating the variables",
+       "start": 245,
+       "end": 251,
+       "num": "10.1",
+       "paper": "P3"
+      },
+      {
+       "id": "P23-10.2",
+       "title": "Forming a differential equation from a problem",
+       "start": 252,
+       "end": 261,
+       "num": "10.2",
+       "paper": "P3"
+      },
+      {
+       "id": "P23-10-review",
+       "title": "End-of-chapter review exercise 10",
+       "start": 262,
+       "end": 264,
+       "paper": "P3"
+      }
+     ],
+     "paper": "P3"
+    },
+    {
+     "id": "P23-11",
+     "num": 11,
+     "title": "Complex numbers",
+     "kind": "chapter",
+     "start": 265,
+     "end": 299,
+     "sections": [
+      {
+       "id": "P23-11.1",
+       "title": "Imaginary numbers",
+       "start": 267,
+       "end": 268,
+       "num": "11.1",
+       "paper": "P3"
+      },
+      {
+       "id": "P23-11.2",
+       "title": "Complex numbers",
+       "start": 269,
+       "end": 272,
+       "num": "11.2",
+       "paper": "P3"
+      },
+      {
+       "id": "P23-11.3",
+       "title": "The complex plane",
+       "start": 273,
+       "end": 282,
+       "num": "11.3",
+       "paper": "P3"
+      },
+      {
+       "id": "P23-11.4",
+       "title": "Solving equations",
+       "start": 283,
+       "end": 287,
+       "num": "11.4",
+       "paper": "P3"
+      },
+      {
+       "id": "P23-11.5",
+       "title": "Loci",
+       "start": 288,
+       "end": 296,
+       "num": "11.5",
+       "paper": "P3"
+      },
+      {
+       "id": "P23-11-review",
+       "title": "End-of-chapter review exercise 11",
+       "start": 297,
+       "end": 299,
+       "paper": "P3"
+      }
+     ],
+     "paper": "P3"
+    }
+   ],
+   "extras": [
+    {
+     "id": "P23-front-matter-series-introduction",
+     "kind": "front_matter",
+     "title": "Series introduction",
+     "start": null,
+     "end": null,
+     "raw_start": "vi",
+     "raw_end": "vii",
+     "paper": "P2 and P3"
+    },
+    {
+     "id": "P23-front-matter-how-to-use-this-book",
+     "kind": "front_matter",
+     "title": "How to use this book",
+     "start": null,
+     "end": null,
+     "raw_start": "viii",
+     "raw_end": "ix",
+     "paper": "P2 and P3"
+    },
+    {
+     "id": "P23-front-matter-acknowledgements",
+     "kind": "front_matter",
+     "title": "Acknowledgements",
+     "start": null,
+     "end": null,
+     "raw_start": "x",
+     "raw_end": "x",
+     "paper": "P2 and P3"
+    },
+    {
+     "id": "P23-cross-1",
+     "kind": "cross_topic_review",
+     "title": "Cross-topic review exercise 1",
+     "start": 76,
+     "end": 79,
+     "raw_start": "76",
+     "raw_end": "79",
+     "paper": "P2 and P3"
+    },
+    {
+     "id": "P23-cross-2",
+     "kind": "cross_topic_review",
+     "title": "Cross-topic review exercise 2",
+     "start": 158,
+     "end": 164,
+     "raw_start": "158",
+     "raw_end": "164",
+     "paper": "P2 and P3"
+    },
+    {
+     "id": "P23-cross-3",
+     "kind": "cross_topic_review",
+     "title": "Cross-topic review exercise 3",
+     "start": 205,
+     "end": 208,
+     "raw_start": "205",
+     "raw_end": "208",
+     "paper": "P3"
+    },
+    {
+     "id": "P23-cross-4",
+     "kind": "cross_topic_review",
+     "title": "Cross-topic review exercise 4",
+     "start": 300,
+     "end": 306,
+     "raw_start": "300",
+     "raw_end": "306",
+     "paper": "P3"
+    },
+    {
+     "id": "P23-practice-P2",
+     "kind": "practice_exam",
+     "title": "Pure Mathematics 2 Practice exam-style paper",
+     "start": 307,
+     "end": 307,
+     "raw_start": "307",
+     "raw_end": "307",
+     "paper": "P2"
+    },
+    {
+     "id": "P23-practice-P3",
+     "kind": "practice_exam",
+     "title": "Pure Mathematics 3 Practice exam-style paper",
+     "start": 308,
+     "end": 309,
+     "raw_start": "308",
+     "raw_end": "309",
+     "paper": "P3"
+    },
+    {
+     "id": "P23-answers-answers",
+     "kind": "answers",
+     "title": "Answers",
+     "start": 310,
+     "end": 352,
+     "raw_start": "310",
+     "raw_end": "352",
+     "paper": "P2 and P3"
+    },
+    {
+     "id": "P23-glossary-glossary",
+     "kind": "glossary",
+     "title": "Glossary",
+     "start": 353,
+     "end": 354,
+     "raw_start": "353",
+     "raw_end": "354",
+     "paper": "P2 and P3"
+    },
+    {
+     "id": "P23-index-index",
+     "kind": "index",
+     "title": "Index",
+     "start": 355,
+     "end": 357,
+     "raw_start": "355",
+     "raw_end": "357",
+     "paper": "P2 and P3"
+    }
+   ]
+  },
+  {
+   "id": "S2",
+   "chapters": [
+    {
+     "id": "S2-1",
+     "num": 1,
+     "title": "Hypothesis testing",
+     "kind": "chapter",
+     "start": 1,
+     "end": 24,
+     "sections": [
+      {
+       "id": "S2-1.1",
+       "title": "Introduction to hypothesis testing",
+       "start": 3,
+       "end": 13,
+       "num": "1.1"
+      },
+      {
+       "id": "S2-1.2",
+       "title": "One-tailed and two-tailed hypothesis tests",
+       "start": 14,
+       "end": 16,
+       "num": "1.2"
+      },
+      {
+       "id": "S2-1.3",
+       "title": "Type I and Type II errors",
+       "start": 17,
+       "end": 22,
+       "num": "1.3"
+      },
+      {
+       "id": "S2-1-review",
+       "title": "End-of-chapter review exercise 1",
+       "start": 23,
+       "end": 24
+      }
+     ]
+    },
+    {
+     "id": "S2-2",
+     "num": 2,
+     "title": "The Poisson distribution",
+     "kind": "chapter",
+     "start": 25,
+     "end": 49,
+     "sections": [
+      {
+       "id": "S2-2.1",
+       "title": "Introduction to the Poisson distribution",
+       "start": 27,
+       "end": 32,
+       "num": "2.1"
+      },
+      {
+       "id": "S2-2.2",
+       "title": "Adapting the Poisson distribution for different intervals",
+       "start": 33,
+       "end": 35,
+       "num": "2.2"
+      },
+      {
+       "id": "S2-2.3",
+       "title": "The Poisson distribution as an approximation to the binomial distribution",
+       "start": 36,
+       "end": 39,
+       "num": "2.3"
+      },
+      {
+       "id": "S2-2.4",
+       "title": "Using the normal distribution as an approximation to the Poisson distribution",
+       "start": 40,
+       "end": 42,
+       "num": "2.4"
+      },
+      {
+       "id": "S2-2.5",
+       "title": "Hypothesis testing with the Poisson distribution",
+       "start": 43,
+       "end": 46,
+       "num": "2.5"
+      },
+      {
+       "id": "S2-2-review",
+       "title": "End-of-chapter review exercise 2",
+       "start": 47,
+       "end": 49
+      }
+     ]
+    },
+    {
+     "id": "S2-3",
+     "num": 3,
+     "title": "Linear combinations of random variables",
+     "kind": "chapter",
+     "start": 50,
+     "end": 69,
+     "sections": [
+      {
+       "id": "S2-3.1",
+       "title": "Expectation and variance",
+       "start": 51,
+       "end": 55,
+       "num": "3.1"
+      },
+      {
+       "id": "S2-3.2",
+       "title": "Sum and difference of independent random variables",
+       "start": 56,
+       "end": 60,
+       "num": "3.2"
+      },
+      {
+       "id": "S2-3.3",
+       "title": "Working with normal distributions",
+       "start": 61,
+       "end": 63,
+       "num": "3.3"
+      },
+      {
+       "id": "S2-3.4",
+       "title": "Linear combinations of Poisson distributions",
+       "start": 64,
+       "end": 67,
+       "num": "3.4"
+      },
+      {
+       "id": "S2-3-review",
+       "title": "End-of-chapter review exercise 3",
+       "start": 68,
+       "end": 69
+      }
+     ]
+    },
+    {
+     "id": "S2-4",
+     "num": 4,
+     "title": "Continuous random variables",
+     "kind": "chapter",
+     "start": 74,
+     "end": 98,
+     "sections": [
+      {
+       "id": "S2-4.1",
+       "title": "Introduction to continuous random variables",
+       "start": 76,
+       "end": 82,
+       "num": "4.1"
+      },
+      {
+       "id": "S2-4.2",
+       "title": "Finding the median and other percentiles of a continuous random variable",
+       "start": 83,
+       "end": 87,
+       "num": "4.2"
+      },
+      {
+       "id": "S2-4.3",
+       "title": "Finding the expectation and variance",
+       "start": 88,
+       "end": 93,
+       "num": "4.3"
+      },
+      {
+       "id": "S2-4-review",
+       "title": "End-of-chapter review exercise 4",
+       "start": 94,
+       "end": 98
+      }
+     ]
+    },
+    {
+     "id": "S2-5",
+     "num": 5,
+     "title": "Sampling",
+     "kind": "chapter",
+     "start": 99,
+     "end": 119,
+     "sections": [
+      {
+       "id": "S2-5.1",
+       "title": "Introduction to sampling",
+       "start": 102,
+       "end": 105,
+       "num": "5.1"
+      },
+      {
+       "id": "S2-5.2",
+       "title": "The distribution of sample means",
+       "start": 106,
+       "end": 117,
+       "num": "5.2"
+      },
+      {
+       "id": "S2-5-review",
+       "title": "End-of-chapter review exercise 5",
+       "start": 118,
+       "end": 119
+      }
+     ]
+    },
+    {
+     "id": "S2-6",
+     "num": 6,
+     "title": "Estimation",
+     "kind": "chapter",
+     "start": 120,
+     "end": 146,
+     "sections": [
+      {
+       "id": "S2-6.1",
+       "title": "Unbiased estimates of population mean and variance",
+       "start": 122,
+       "end": 126,
+       "num": "6.1"
+      },
+      {
+       "id": "S2-6.2",
+       "title": "Hypothesis testing of the population mean",
+       "start": 127,
+       "end": 130,
+       "num": "6.2"
+      },
+      {
+       "id": "S2-6.3",
+       "title": "Confidence intervals for population mean",
+       "start": 131,
+       "end": 137,
+       "num": "6.3"
+      },
+      {
+       "id": "S2-6.4",
+       "title": "Confidence intervals for population proportion",
+       "start": 138,
+       "end": 142,
+       "num": "6.4"
+      },
+      {
+       "id": "S2-6-review",
+       "title": "End-of-chapter review exercise 6",
+       "start": 143,
+       "end": 146
+      }
+     ]
+    }
+   ],
+   "extras": [
+    {
+     "id": "S2-front-matter-series-introduction",
+     "kind": "front_matter",
+     "title": "Series introduction",
+     "start": null,
+     "end": null,
+     "raw_start": "vi",
+     "raw_end": "vii",
+     "paper": "S2"
+    },
+    {
+     "id": "S2-front-matter-how-to-use-this-book",
+     "kind": "front_matter",
+     "title": "How to use this book",
+     "start": null,
+     "end": null,
+     "raw_start": "viii",
+     "raw_end": "ix",
+     "paper": "S2"
+    },
+    {
+     "id": "S2-front-matter-acknowledgements",
+     "kind": "front_matter",
+     "title": "Acknowledgements",
+     "start": null,
+     "end": null,
+     "raw_start": "x",
+     "raw_end": "x",
+     "paper": "S2"
+    },
+    {
+     "id": "S2-cross-1",
+     "kind": "cross_topic_review",
+     "title": "Cross-topic review exercise 1",
+     "start": 70,
+     "end": 73,
+     "raw_start": "70",
+     "raw_end": "73",
+     "paper": "S2"
+    },
+    {
+     "id": "S2-cross-2",
+     "kind": "cross_topic_review",
+     "title": "Cross-topic review exercise 2",
+     "start": 147,
+     "end": 152,
+     "raw_start": "147",
+     "raw_end": "152",
+     "paper": "S2"
+    },
+    {
+     "id": "S2-practice",
+     "kind": "practice_exam",
+     "title": "Practice exam-style paper",
+     "start": 153,
+     "end": 154,
+     "raw_start": "153",
+     "raw_end": "154",
+     "paper": "S2"
+    },
+    {
+     "id": "S2-reference-the-standard-normal-distribution-function",
+     "kind": "reference",
+     "title": "The standard normal distribution function",
+     "start": 155,
+     "end": 156,
+     "raw_start": "155",
+     "raw_end": "156",
+     "paper": "S2"
+    },
+    {
+     "id": "S2-answers-answers",
+     "kind": "answers",
+     "title": "Answers",
+     "start": 157,
+     "end": 170,
+     "raw_start": "157",
+     "raw_end": "170",
+     "paper": "S2"
+    },
+    {
+     "id": "S2-glossary-glossary",
+     "kind": "glossary",
+     "title": "Glossary",
+     "start": 171,
+     "end": 172,
+     "raw_start": "171",
+     "raw_end": "172",
+     "paper": "S2"
+    },
+    {
+     "id": "S2-index-index",
+     "kind": "index",
+     "title": "Index",
+     "start": 173,
+     "end": 174,
+     "raw_start": "173",
+     "raw_end": "174",
+     "paper": "S2"
+    }
+   ]
+  }
+ ]
+}

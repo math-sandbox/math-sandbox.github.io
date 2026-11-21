@@ -1,0 +1,518 @@
+[
+  {
+    "id": "S1-4.5-QC1-gen",
+    "section": "S1-4.5",
+    "kind": "generated",
+    "title": "Formal conditional probability from two probabilities",
+    "marks": 2,
+    "source": "S1 Ch4 theory S1-4.5 Quick check 1 (P(A and B)=0.24, P(B)=0.6)",
+    "params": [
+      {
+        "name": "a",
+        "min": 10,
+        "max": 40,
+        "step": 2
+      },
+      {
+        "name": "b",
+        "min": 40,
+        "max": 80,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "pa": "a/100",
+      "pb": "b/100"
+    },
+    "constraints": [
+      "a<b",
+      "a>=10",
+      "b>=40"
+    ],
+    "original": {
+      "a": 24,
+      "b": 60
+    },
+    "stem": "Given that \\(\\mathrm{P}(A\\cap B)={pa|raw}\\) and \\(\\mathrm{P}(B)={pb|raw}\\), find \\(\\mathrm{P}(A\\text{ given }B)\\).",
+    "answer": {
+      "expression": "a/b",
+      "format": "{E|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "\\(\\mathrm{P}(A\\text{ given }B)=\\dfrac{\\mathrm{P}(A\\cap B)}{\\mathrm{P}(B)}=\\dfrac{{pa|raw}}{{pb|raw}}\\)",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Formal formula, denominator is P(B)."
+      },
+      {
+        "name": "E",
+        "text_tex": "\\(\\dfrac{{a|int}}{{b|int}}\\)",
+        "result": "a/b",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct conditional probability."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "events",
+        "stem": "Given that \\(\\mathrm{P}(C\\cap D)={pa|raw}\\) and \\(\\mathrm{P}(D)={pb|raw}\\), find \\(\\mathrm{P}(C\\text{ given }D)\\).",
+        "note": "event letters C, D"
+      },
+      {
+        "id": "tests",
+        "stem": "Given that \\(\\mathrm{P}(X\\cap Y)={pa|raw}\\) and \\(\\mathrm{P}(Y)={pb|raw}\\), find \\(\\mathrm{P}(X\\text{ given }Y)\\).",
+        "note": "event letters X, Y"
+      }
+    ]
+  },
+  {
+    "id": "S1-4.5-QC2-gen",
+    "section": "S1-4.5",
+    "kind": "generated",
+    "title": "Two of the same type without replacement",
+    "marks": 3,
+    "source": "S1 Ch4 theory S1-4.5 Quick check 2 (4 red, 6 blue, both red)",
+    "params": [
+      {
+        "name": "r",
+        "min": 3,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 3,
+        "max": 9,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "n": "r+b",
+      "r1": "r-1",
+      "n1": "r+b-1"
+    },
+    "constraints": [
+      "r>=3",
+      "b>=3",
+      "r+b>=8"
+    ],
+    "original": {
+      "r": 4,
+      "b": 6
+    },
+    "stem": "Two counters are selected at random, without replacement, from a bag containing {r|int} red counters and {b|int} blue counters. Find the probability that both counters are red.",
+    "answer": {
+      "expression": "r/n * r1/n1",
+      "format": "\\(\\dfrac{{r|int}}{{n|int}}\\times\\dfrac{{r1|int}}{{n1|int}}\\approx{E|sf3z}\\)",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "dep",
+        "text_tex": "The second selection is from the remaining {n1|int} counters, so the selections are dependent.",
+        "result": "None",
+        "format": "num",
+        "mark": "B1",
+        "note": "Recognise dependence."
+      },
+      {
+        "name": "prod",
+        "text_tex": "\\(\\mathrm{P}(\\text{both red})=\\dfrac{{r|int}}{{n|int}}\\times\\dfrac{{r1|int}}{{n1|int}}\\)",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Product with a conditional probability."
+      },
+      {
+        "name": "E",
+        "text_tex": "The value of this probability.",
+        "result": "r/n * r1/n1",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct probability."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "sweets",
+        "stem": "Two sweets are selected at random, without replacement, from a bag containing {r|int} toffee sweets and {b|int} mint sweets. Find the probability that both sweets are toffee.",
+        "note": "toffee/mint"
+      },
+      {
+        "id": "tickets",
+        "stem": "Two tickets are drawn at random, without replacement, from a box containing {r|int} winning tickets and {b|int} blank tickets. Find the probability that both tickets are winning tickets.",
+        "note": "tickets"
+      }
+    ]
+  },
+  {
+    "id": "S1-4.5-QC3-gen",
+    "section": "S1-4.5",
+    "kind": "generated",
+    "title": "Total probability from a two-branch tree",
+    "marks": 3,
+    "source": "S1 Ch4 theory S1-4.5 Quick check 3 (card 0.40 receipt 0.08, cash receipt 0.03)",
+    "params": [
+      {
+        "name": "p",
+        "min": 30,
+        "max": 70,
+        "step": 5
+      },
+      {
+        "name": "u",
+        "min": 4,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "name": "v",
+        "min": 2,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "q": "100-p",
+      "P": "p/100",
+      "U": "u/100",
+      "V": "v/100",
+      "Q": "(100-p)/100"
+    },
+    "constraints": [
+      "p>=30",
+      "p<=70",
+      "u!=v"
+    ],
+    "original": {
+      "p": 40,
+      "u": 8,
+      "v": 3
+    },
+    "stem": "A shopper pays by card on {p|int}% of visits and by cash on the other visits. The shopper is offered a receipt on {u|int}% of card payments and on {v|int}% of cash payments. Find the probability that the shopper is offered a receipt on a randomly chosen visit.",
+    "answer": {
+      "expression": "(p/100)*(u/100)+((100-p)/100)*(v/100)",
+      "format": "{E|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "br",
+        "text_tex": "\\(\\mathrm{P}(\\text{card and receipt})={P|raw}\\times{U|raw}\\) and \\(\\mathrm{P}(\\text{cash and receipt})={Q|raw}\\times{V|raw}\\)",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Two combined branches."
+      },
+      {
+        "name": "sum",
+        "text_tex": "Add the two combined probabilities.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Total probability."
+      },
+      {
+        "name": "E",
+        "text_tex": "The probability of a receipt.",
+        "result": "(p/100)*(u/100)+((100-p)/100)*(v/100)",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct total."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "travel",
+        "stem": "A commuter travels by bus on {p|int}% of mornings and walks on the other mornings. The commuter is late on {u|int}% of bus mornings and on {v|int}% of walking mornings. Find the probability that the commuter is late on a randomly chosen morning.",
+        "note": "bus/walk late"
+      },
+      {
+        "id": "calls",
+        "stem": "A caller uses a mobile phone on {p|int}% of calls and a landline on the other calls. The call is answered on {u|int}% of mobile calls and on {v|int}% of landline calls. Find the probability that a randomly chosen call is answered.",
+        "note": "calls"
+      }
+    ]
+  },
+  {
+    "id": "S1-4.5-QC4-gen",
+    "section": "S1-4.5",
+    "kind": "generated",
+    "title": "Conditional probability from a tree (Bayes form)",
+    "marks": 4,
+    "source": "S1 Ch4 theory S1-4.5 Quick check 4 (walk 70% late 10%, cycle late 2%)",
+    "params": [
+      {
+        "name": "w",
+        "min": 50,
+        "max": 80,
+        "step": 5
+      },
+      {
+        "name": "a",
+        "min": 6,
+        "max": 16,
+        "step": 2
+      },
+      {
+        "name": "b",
+        "min": 2,
+        "max": 8,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "c": "100-w",
+      "num": "w*a",
+      "den": "w*a+(100-w)*b"
+    },
+    "constraints": [
+      "w>=50",
+      "w<=80",
+      "a>b",
+      "b>=2",
+      "(w*a+(100-w)*b)>0"
+    ],
+    "original": {
+      "w": 70,
+      "a": 10,
+      "b": 2
+    },
+    "stem": "A student walks to college on {w|int}% of mornings and cycles on the other mornings. The student is late on {a|int}% of the mornings that they walk and on {b|int}% of the mornings that they cycle. Given that the student is late, find the probability that the student walked.",
+    "answer": {
+      "expression": "(w*a)/(w*a+(100-w)*b)",
+      "format": "{E|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "and",
+        "text_tex": "\\(\\mathrm{P}(\\text{walk and late})=\\dfrac{{w|int}}{100}\\times\\dfrac{{a|int}}{100}\\) and \\(\\mathrm{P}(\\text{cycle and late})=\\dfrac{{c|int}}{100}\\times\\dfrac{{b|int}}{100}\\)",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Combined branches."
+      },
+      {
+        "name": "tot",
+        "text_tex": "\\(\\mathrm{P}(\\text{late})\\) is the sum of those two probabilities.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Total probability of the given event."
+      },
+      {
+        "name": "form",
+        "text_tex": "\\(\\mathrm{P}(\\text{walked given late})=\\dfrac{\\mathrm{P}(\\text{walk and late})}{\\mathrm{P}(\\text{late})}\\)",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Formal formula."
+      },
+      {
+        "name": "E",
+        "text_tex": "The value of this conditional probability.",
+        "result": "(w*a)/(w*a+(100-w)*b)",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct value."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "post",
+        "stem": "A messenger cycles on {w|int}% of deliveries and walks on the other deliveries. The messenger is delayed on {a|int}% of cycling deliveries and on {b|int}% of walking deliveries. Given that a delivery is delayed, find the probability that the messenger cycled.",
+        "note": "cycle given delayed"
+      },
+      {
+        "id": "invite",
+        "stem": "A host offers the theatre on {w|int}% of invitations and the cinema on the other invitations. An invitation is accepted on {a|int}% of theatre offers and on {b|int}% of cinema offers. Given that an invitation is accepted, find the probability that the theatre was offered.",
+        "note": "theatre given accepted"
+      }
+    ]
+  },
+  {
+    "id": "S1-4.5-PP-9709-63-MJ13-Q5a",
+    "section": "S1-4.5",
+    "kind": "pastpaper",
+    "title": "John plays two games of squash",
+    "marks": 4,
+    "source": {
+      "paper": "9709/63/M/J/13 Q5(a)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s13_qp_63.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s13_ms_63.pdf",
+      "note": "Stem verbatim from the QP PDF; steps and marks from the official MS PDF. Part (b) (two packs of cards) is omitted because it is an independence product, not the skill of this section."
+    },
+    "stem": "John plays two games of squash. The probability that he wins his first game is 0.3. If he wins his first game, the probability that he wins his second game is 0.6. If he loses his first game, the probability that he wins his second game is 0.15. Given that he wins his second game, find the probability that he won his first game.",
+    "parts": [
+      {
+        "part": "(a)",
+        "stem": "Given that he wins his second game, find the probability that he won his first game.",
+        "marks": 4,
+        "answer": {
+          "expression": "0.18/0.285",
+          "format": "{E|sf3z}",
+          "accept_as": "sf",
+          "sf": 3
+        },
+        "steps": [
+          {
+            "name": "p0_num",
+            "text_tex": "\\(\\mathrm{P}(W_1\\cap W_2)=0.3\\times 0.6=0.18\\)",
+            "result": "0.18",
+            "format": "raw",
+            "mark": "B1",
+            "note": "MS: B1 0.3 times 0.6 alone as numerator or denominator of a fraction."
+          },
+          {
+            "name": "p0_den",
+            "text_tex": "\\(\\mathrm{P}(W_2)=0.3\\times 0.6+0.7\\times 0.15=0.285\\)",
+            "result": "0.285",
+            "format": "raw",
+            "mark": "M1",
+            "note": "MS: M1 attempt at P(W2) as a sum of two two-factor options, seen anywhere."
+          },
+          {
+            "name": "p0_form",
+            "text_tex": "\\(\\mathrm{P}(W_1\\text{ given }W_2)=\\dfrac{0.18}{0.285}\\)",
+            "result": "None",
+            "format": "num",
+            "mark": "A1",
+            "note": "MS: A1 correct unsimplified P(W2) as numerator or denominator of a fraction."
+          },
+          {
+            "name": "p0_E",
+            "text_tex": "\\(\\dfrac{12}{19}\\) (or 0.632 to 3 significant figures)",
+            "result": "0.18/0.285",
+            "format": "raw",
+            "mark": "A1",
+            "note": "MS: A1 0.632 or 12/19."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "S1-4.5-PP-9709-61-MJ15-Q4",
+    "section": "S1-4.5",
+    "kind": "pastpaper",
+    "title": "A survey of photos and viewing",
+    "marks": 7,
+    "source": {
+      "paper": "9709/61/M/J/15 Q4",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s15_qp_61.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s15_ms_61.pdf",
+      "note": "Stem verbatim from the QP PDF (the official tree diagram is reconstructed in TeX without vertical rules, with the same labels; complement branches are left unlabelled as in the QP). Steps and marks from the official MS PDF. Both parts are numeric (x=0.15 and 0.427). Fully numeric, not mixed. The official stem contains the phrase one-week holiday; that wording is kept because the no-week rule applies only to the site teaching schedule and UI, not to official paper stems."
+    },
+    "stem": "\\(\\begin{array}{cccc} & \\text{Take fewer than 100 photos} & & \\text{View fewer than 3 times}\\\\\nx & & & \\\\\n & & 0.76 & \\text{View at least 3 times}\\\\\n & \\text{Take at least 100 photos} & 0.90 & \\text{View fewer than 3 times}\\\\\n & & & \\text{View at least 3 times}\\end{array}\\)\n\nA survey is undertaken to investigate how many photos people take on a one-week holiday and also how many times they view past photos. For a randomly chosen person, the probability of taking fewer than 100 photos is \\(x\\). The probability that these people view past photos at least 3 times is 0.76. For those who take at least 100 photos, the probability that they view past photos fewer than 3 times is 0.90. This information is shown in the tree diagram. The probability that a randomly chosen person views past photos fewer than 3 times is 0.801.",
+    "parts": [
+      {
+        "part": "(i)",
+        "stem": "Find \\(x\\).",
+        "marks": 3,
+        "answer": {
+          "expression": "0.15",
+          "format": "{E|sf3z}",
+          "accept_as": "sf",
+          "sf": 3
+        },
+        "steps": [
+          {
+            "name": "p0_eqn",
+            "text_tex": "Form an equation from the two routes to viewing fewer than 3 times, equal to 0.801.",
+            "result": "None",
+            "format": "num",
+            "mark": "M1",
+            "note": "MS: M1 equation with a sum of two two-factor probabilities equal to 0.801."
+          },
+          {
+            "name": "p0_form",
+            "text_tex": "\\((1-x)\\times 0.9+x\\times 0.24=0.801\\).",
+            "result": "None",
+            "format": "num",
+            "mark": "A1",
+            "note": "MS: A1 correct equation."
+          },
+          {
+            "name": "p0_E",
+            "text_tex": "\\(x=0.15\\).",
+            "result": "0.15",
+            "format": "raw",
+            "mark": "A1",
+            "note": "MS: A1 correct answer, x=0.15."
+          }
+        ]
+      },
+      {
+        "part": "(ii)",
+        "stem": "Given that a person views past photos at least 3 times, find the probability that this person takes at least 100 photos.",
+        "marks": 4,
+        "answer": {
+          "expression": "0.085/0.199",
+          "format": "{E|sf3z}",
+          "accept_as": "sf",
+          "sf": 3
+        },
+        "steps": [
+          {
+            "name": "p1_num",
+            "text_tex": "\\(\\mathrm{P}(\\text{at least 100 photos and at least 3 views})=0.85\\times 0.1=0.085\\).",
+            "result": "0.085",
+            "format": "raw",
+            "mark": "B1",
+            "note": "MS: B1 0.85 times 0.1 seen on its own as numerator or denominator of a fraction."
+          },
+          {
+            "name": "p1_den",
+            "text_tex": "\\(\\mathrm{P}(\\text{at least 3 views})=0.85\\times 0.1+0.15\\times 0.76\\) (or \\(1-0.801\\)).",
+            "result": "None",
+            "format": "num",
+            "mark": "M1",
+            "note": "MS: M1 attempt at P(at least 3 views), either (0.85 times p1 + 0.15 times p2) or 1-0.801, seen anywhere."
+          },
+          {
+            "name": "p1_form",
+            "text_tex": "\\(\\mathrm{P}(\\text{at least 100 photos given at least 3 views})=\\dfrac{0.85\\times 0.1}{0.85\\times 0.1+0.15\\times 0.76}=\\dfrac{0.085}{0.199}\\) (or denominator \\(1-0.801\\)).",
+            "result": "None",
+            "format": "num",
+            "mark": "A1",
+            "note": "MS: A1 correct unsimplified P(at least 3 views) as numerator or denominator of a fraction."
+          },
+          {
+            "name": "p1_E",
+            "text_tex": "\\(0.427\\) (to 3 significant figures).",
+            "result": "0.085/0.199",
+            "format": "raw",
+            "mark": "A1",
+            "note": "MS: A1 correct answer 0.427."
+          }
+        ]
+      }
+    ]
+  }
+]

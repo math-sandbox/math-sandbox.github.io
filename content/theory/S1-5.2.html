@@ -1,0 +1,108 @@
+<section class="theory" data-section="S1-5.2">
+<h2>5.2 Permutations</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Probability &amp; Statistics 1 Coursebook (Dean Chalmers), Chapter 5 Permutations and combinations, printed pp.125–134. Own wording and new numbers, following the coursebook treatment of permutations of distinct objects, of objects with repetitions, of arrangements with restrictions, and of \({}^{n}P_{r}\).</p>
+<p class="key-words"><strong>Key words:</strong> <em>permutation</em></p>
+<h3>Arranging different objects</h3>
+<p>A <strong>permutation</strong> is an arrangement of objects in which the order matters. There are \(n\) choices for the first place in a line of \(n\) different objects, then \(n-1\) choices for the second place, and so on, so</p>
+<p>\[\text{the number of arrangements of } n \text{ different objects in a line is } n!.\]</p>
+<h3>Objects that are not all different</h3>
+<p>If some of the objects are identical, swapping identical objects does not give a new arrangement. For \(n\) objects of which \(p\) are identical of one type, \(q\) of another and \(r\) of a third, the number of arrangements is</p>
+<p>\[\dfrac{n!}{p!\,q!\,r!}.\]</p>
+<h3>Arrangements with restrictions</h3>
+<ul>
+<li>Objects that must be <em>together</em>: treat them as a single unit, arrange the units, then multiply by the number of ways of arranging the objects inside the unit.</li>
+<li>Objects that must <em>not</em> be together: either subtract the arrangements in which they are together from the total, or arrange the other objects first and place the separated objects in different gaps between them.</li>
+<li>Objects in fixed places, such as at the ends: fill the fixed places first, then arrange the rest.</li>
+</ul>
+<h3>Permutations of \(r\) objects from \(n\)</h3>
+<p>The number of ordered arrangements of \(r\) objects chosen from \(n\) different objects is</p>
+<p>\[{}^{n}P_{r}=\dfrac{n!}{(n-r)!}=n(n-1)\cdots(n-r+1).\]</p>
+<div class="worked-example">
+<h4>Worked example 1: Letters with repeats</h4>
+<p class="src">Coursebook, 5.2, permutations of objects with repetitions. New word.</p>
+<p>Find the number of different arrangements of the 6 letters of the word PEPPER.</p>
+<ol class="steps">
+<li>PEPPER has 3 Ps, 2 Es and 1 R, so the number of arrangements is \(\dfrac{6!}{3!\,2!\,1!}\). <span class="mark">M1</span></li>
+<li>\(=\dfrac{720}{12}=60\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(60\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: Together and not together</h4>
+<p class="src">Coursebook, 5.2, permutations with restrictions. New numbers.</p>
+<p>Six different books, including a dictionary and an atlas, are arranged in a row on a shelf. Find the number of arrangements in which (a) the dictionary and the atlas are next to each other, (b) the dictionary and the atlas are not next to each other.</p>
+<ol class="steps">
+<li>(a) Treat the dictionary and the atlas as one unit: 5 units in \(5!\) ways, and the two books inside the unit in \(2!\) ways. <span class="mark">M1</span></li>
+<li>(a) \(5!\times2!=240\) <span class="mark">A1</span></li>
+<li>(b) Total \(6!=720\), so the number not together is \(720-240\). <span class="mark">M1</span></li>
+<li>(b) \(=480\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> (a) \(240\) (b) \(480\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 3: Ordered choices</h4>
+<p class="src">Coursebook, 5.2, permutations of \(r\) objects from \(n\). New numbers.</p>
+<p>A race has 10 runners. In how many ways can the first, second and third places be filled, if there are no ties?</p>
+<ol class="steps">
+<li>Order matters, so the number of ways is \({}^{10}P_{3}=10\times9\times8\). <span class="mark">M1</span></li>
+<li>\(=720\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(720\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul>
+<li>Forgetting to divide by the factorials of repeated letters, or dividing by the wrong ones.</li>
+<li>Treating a group that must be together as one unit but forgetting the arrangements inside the unit (unless the objects in it are identical).</li>
+<li>Counting the gaps wrongly: \(k\) objects in a line have \(k+1\) gaps, including the two ends.</li>
+</ul>
+<h3>Past paper</h3>
+<p class="src">9709/51/M/J/20 Q2, official QP and official MS.</p>
+<p>(a) Find the number of different arrangements that can be made from the 9 letters of the word JEWELLERY in which the three Es are together and the two Ls are together. [2]</p><p>(b) Find the number of different arrangements that can be made from the 9 letters of the word JEWELLERY in which the two Ls are not next to each other. [4]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(a) Treat EEE and LL as single units, which gives 6 different units to arrange: \(6!\). <span class="mark">M1</span> Official MS: M1, 6!.</li>
+<li>(a) \(720\) <span class="mark">A1</span> Official MS: A1, 720.</li>
+<li>(b) Total number of arrangements: \(\dfrac{9!}{3!\,2!}=30\,240\). <span class="mark">M1</span> Official MS: M1, total number 9!/(3!2!) (30240).</li>
+<li>(b) Number with the Ls together: \(\dfrac{8!}{3!}=6720\). <span class="mark">M1</span> Official MS: M1, number with Ls together = 8!/3! (6720).</li>
+<li>(b) Number with the Ls not together: \(\dfrac{9!}{3!\,2!}-\dfrac{8!}{3!}=30\,240-6720\). <span class="mark">M1</span> Official MS: M1, number with Ls not together = 9!/(3!2!) − 8!/3!.</li>
+<li>(b) \(23\,520\) <span class="mark">A1</span> Official MS: A1, 23 520. Alternative method: 7! × 8 × 7 / (3! × 2), with M1 for 7! × k in numerator, k integer ≥ 1; M1 for 8 × 7 × m in numerator or 8C2 × m, m integer ≥ 1; M1 for 3! in denominator; A1 for 23 520.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/52/F/M/20 Q4, official QP and official MS.</p>
+<p>Richard has 3 blue candles, 2 red candles and 6 green candles. The candles are identical apart from their colours. He arranges the 11 candles in a line.</p><p>(a) Find the number of different arrangements of the 11 candles if there is a red candle at each end. [2]</p><p>(b) Find the number of different arrangements of the 11 candles if all the blue candles are together and the red candles are not together. [4]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(a) With a red candle at each end, the 3 blue and 6 green candles fill the 9 places in between: \(\dfrac{9!}{3!\,6!}\). <span class="mark">M1</span> Official MS: M1, 9! alone on numerator, 3! × k or 6! × k on denominator.</li>
+<li>(a) \(=84\) <span class="mark">A1</span> Official MS: A1, 84.</li>
+<li>(b) Treat the 3 blue candles as one unit and arrange it with the 6 green candles: \(\dfrac{7!}{6!}=7\) ways. <span class="mark">M1</span> Official MS: M1, 7!/6! × k or 7k seen, k an integer &gt; 0.</li>
+<li>(b) Place the 2 red candles in different gaps between and around these 7 items: \(\dfrac{7!}{6!}\times\dfrac{8\times7}{2}\). <span class="mark">M1</span> Official MS: M1, m × n(n – 1)/2 or m × nC2 or m × nP2, n = 7, 8 or 9, m an integer &gt; 0.</li>
+<li>(b) There are 8 such gaps, so \(n=8\) is used. <span class="mark">M1</span> Official MS: M1, n = 8 used in above expression.</li>
+<li>(b) \(=196\) <span class="mark">A1</span> Official MS: A1, 196. Alternative: arrangements with the blues together minus arrangements with the blues together and the reds together, 9!/(2!6!) − 8!/6! = 252 – 56; M1 for 9! seen alone or as numerator with subtraction, M1 for 8! seen alone or as numerator in a second term and no other terms, M1 for all terms divided by 6! × k, k an integer, A1 for 196.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>In how many different ways can 7 different books be arranged in a row on a shelf?</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>The number of arrangements is \(7!=5040\).</li></ol>
+<p class="final"><strong>Answer:</strong> \(5040\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>A row is made from 3 identical red counters, 2 identical blue counters and 2 identical green counters. How many different arrangements of the 7 counters are possible?</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{7!}{3!\,2!\,2!}=\dfrac{5040}{24}=210\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(210\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>3 different prizes are to be given to 3 of 8 people, and no person can receive more than one prize. In how many different ways can the prizes be given?</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\({}^{8}P_{3}=8\times7\times6=336\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(336\)</p>
+</details>
+</div>
+</section>

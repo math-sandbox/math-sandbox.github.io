@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 220" width="420" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:420px;height:auto" role="img" aria-labelledby="p122a-t p122a-d">
+<title id="p122a-t">Composition of two functions</title>
+<desc id="p122a-d">Three ovals labelled x, g of x, and fg of x. Arrows show g then f across the top, and a single arrow fg along the bottom.</desc>
+
+<rect x="0" y="0" width="420" height="220" fill="#fff"/>
+<g font-family="Source Sans 3, DejaVu Sans, sans-serif" font-size="14" fill="#333">
+  <ellipse cx="70" cy="90" rx="48" ry="36" fill="#eef6fb" stroke="#1b5e8a" stroke-width="1.8"/>
+  <ellipse cx="210" cy="90" rx="48" ry="36" fill="#eef6fb" stroke="#1b5e8a" stroke-width="1.8"/>
+  <ellipse cx="350" cy="90" rx="52" ry="36" fill="#eef6fb" stroke="#1b5e8a" stroke-width="1.8"/>
+  <text x="70" y="95" text-anchor="middle">x</text>
+  <text x="210" y="95" text-anchor="middle">g(x)</text>
+  <text x="350" y="95" text-anchor="middle">fg(x)</text>
+  <line x1="118" y1="90" x2="158" y2="90" stroke="#333" stroke-width="1.6"/>
+  <polygon points="162,90 152,86 152,94" fill="#333"/>
+  <text x="138" y="78" text-anchor="middle">g</text>
+  <line x1="258" y1="90" x2="294" y2="90" stroke="#333" stroke-width="1.6"/>
+  <polygon points="298,90 288,86 288,94" fill="#333"/>
+  <text x="276" y="78" text-anchor="middle">f</text>
+  <path d="M 70,126 C 70,175 350,175 350,126" fill="none" stroke="#c0392b" stroke-width="1.6"/>
+  <polygon points="350,126 344,134 356,134" fill="#c0392b"/>
+  <text x="210" y="192" text-anchor="middle" fill="#c0392b">fg</text>
+</g>
+
+</svg>

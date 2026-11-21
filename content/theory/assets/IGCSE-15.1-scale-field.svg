@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 260" width="420" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:420px;height:auto" role="img" aria-labelledby="IGCSE-15-1-scale-field-t IGCSE-15-1-scale-field-d">
+<title id="IGCSE-15-1-scale-field-t">A scale drawing of a rectangular field</title>
+<desc id="IGCSE-15-1-scale-field-d">A 60 metre by 24 metre field drawn at a scale of 1 centimetre to 6 metres, so the drawing is 10 centimetres by 4 centimetres.</desc>
+<rect x="0" y="0" width="420" height="260" fill="#fff"/>
+<g font-family="Source Sans 3, DejaVu Sans, sans-serif" font-size="13" fill="#333">
+  <rect x="60.00" y="80.00" width="280.00" height="112.00" fill="#eaf4fb" stroke="#1b5e8a" stroke-width="2.2"/>
+  <line x1="60.00" y1="62.00" x2="340.00" y2="62.00" stroke="#1b5e8a" stroke-width="1.2"/>
+  <line x1="60.00" y1="58.00" x2="60.00" y2="66.00" stroke="#1b5e8a" stroke-width="1.2"/>
+  <line x1="340.00" y1="58.00" x2="340.00" y2="66.00" stroke="#1b5e8a" stroke-width="1.2"/>
+  <text x="200.00" y="56.00" text-anchor="middle" fill="#1b5e8a">10 cm</text>
+  <line x1="358.00" y1="80.00" x2="358.00" y2="192.00" stroke="#1b5e8a" stroke-width="1.2"/>
+  <line x1="354.00" y1="80.00" x2="362.00" y2="80.00" stroke="#1b5e8a" stroke-width="1.2"/>
+  <line x1="354.00" y1="192.00" x2="362.00" y2="192.00" stroke="#1b5e8a" stroke-width="1.2"/>
+  <text x="372.00" y="141.00" fill="#1b5e8a">4 cm</text>
+  <text x="210.00" y="40.00" text-anchor="middle" font-size="14">Scale: 1 cm to 6 m</text>
+  <text x="200.00" y="141.00" text-anchor="middle" fill="#1b5e8a">60 m by 24 m</text>
+  <text x="210.00" y="230.00" text-anchor="middle" font-size="13">Drawing: 10 cm by 4 cm</text>
+</g>
+</svg>

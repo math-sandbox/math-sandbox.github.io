@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 230" width="420" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:420px;height:auto" role="img" aria-labelledby="P23-2-3-product-law-t P23-2-3-product-law-d">
+<title id="P23-2-3-product-law-t">The multiplication law of logarithms with base 2</title>
+<desc id="P23-2-3-product-law-d">A bar of length 3 for log base 2 of 8 and a bar of length 2 for log base 2 of 4 sit end to end to make a bar of length 5, which is log base 2 of 32, since 8 times 4 equals 32.</desc>
+<rect x="0" y="0" width="420" height="230" fill="#fff"/>
+<g font-family="Source Sans 3, DejaVu Sans, sans-serif" font-size="13" fill="#333">
+  <line x1="70.00" y1="200.00" x2="360.00" y2="200.00" stroke="#333" stroke-width="1.4"/>
+  <line x1="70.00" y1="196.00" x2="70.00" y2="204.00" stroke="#333" stroke-width="1.2"/>
+  <text x="70.00" y="220.00" text-anchor="middle" font-size="12">0</text>
+  <line x1="128.00" y1="196.00" x2="128.00" y2="204.00" stroke="#333" stroke-width="1.2"/>
+  <text x="128.00" y="220.00" text-anchor="middle" font-size="12">1</text>
+  <line x1="186.00" y1="196.00" x2="186.00" y2="204.00" stroke="#333" stroke-width="1.2"/>
+  <text x="186.00" y="220.00" text-anchor="middle" font-size="12">2</text>
+  <line x1="244.00" y1="196.00" x2="244.00" y2="204.00" stroke="#333" stroke-width="1.2"/>
+  <text x="244.00" y="220.00" text-anchor="middle" font-size="12">3</text>
+  <line x1="302.00" y1="196.00" x2="302.00" y2="204.00" stroke="#333" stroke-width="1.2"/>
+  <text x="302.00" y="220.00" text-anchor="middle" font-size="12">4</text>
+  <line x1="360.00" y1="196.00" x2="360.00" y2="204.00" stroke="#333" stroke-width="1.2"/>
+  <text x="360.00" y="220.00" text-anchor="middle" font-size="12">5</text>
+  <rect x="70.00" y="41.00" width="174.00" height="28.00" fill="#d6e8f5" stroke="#1b5e8a" stroke-width="1.6"/>
+  <text x="157.00" y="60.00" text-anchor="middle" fill="#1b5e8a">log₂ 8 = 3</text>
+  <rect x="244.00" y="41.00" width="116.00" height="28.00" fill="#f8d6d2" stroke="#c0392b" stroke-width="1.6"/>
+  <text x="302.00" y="60.00" text-anchor="middle" fill="#c0392b">log₂ 4 = 2</text>
+  <rect x="70.00" y="151.00" width="290.00" height="28.00" fill="#e8f0d8" stroke="#3d6b1e" stroke-width="1.6"/>
+  <text x="215.00" y="170.00" text-anchor="middle" fill="#3d6b1e">log₂ 32 = 5</text>
+  <text x="210.00" y="113.00" text-anchor="middle" >8 × 4 = 32, so the lengths add: 3 + 2 = 5</text>
+</g>
+</svg>

@@ -1,0 +1,1188 @@
+[
+ {
+  "id": "17.2-QC1-gen",
+  "section": "17.2",
+  "kind": "generated",
+  "title": "Simple interest: find the rate",
+  "marks": 3,
+  "source": "Ch17 theory IGCSE-17.2 Quick check 1 ($750 → $894, 4 years, 4.8%)",
+  "params": [
+   {
+    "name": "P",
+    "min": 500,
+    "max": 2000,
+    "step": 50
+   },
+   {
+    "name": "R",
+    "min": 2,
+    "max": 8,
+    "step": 0.1
+   },
+   {
+    "name": "T",
+    "min": 2,
+    "max": 8,
+    "step": 1
+   }
+  ],
+  "derived": {
+   "A": "round(P+P*R*T/100,2)"
+  },
+  "constraints": [
+   "abs(P*R*T/100*100-round(P*R*T/100*100))<1e-6  # interest has exact cents",
+   "A>P"
+  ],
+  "original": {
+   "P": 750,
+   "R": 4.8,
+   "T": 4
+  },
+  "stem": "${P|money} grows to ${A|money} in {T|int} years with simple interest. Find the interest rate.",
+  "answer": {
+   "expression": "R",
+   "format": "{R|dp1}% per year",
+   "tolerance": 0.05
+  },
+  "steps": [
+   {
+    "name": "I",
+    "text_tex": "\\(I={A|num}-{P|num}={I|num}\\)",
+    "result": "A-P",
+    "format": "num",
+    "mark": "B1",
+    "note": "Interest = amount − principal; accept the correct value seen."
+   },
+   {
+    "name": "Rm",
+    "text_tex": "\\(R=\\dfrac{{100\\times{I|num}}}{{{P|num}\\times{T|int}}}\\)",
+    "result": "100*I/(P*T)",
+    "format": "dp1",
+    "mark": "M1",
+    "note": "Correct rearrangement of \\(I=\\frac{PRT}{100}\\) with their \\(I\\) (ft)."
+   },
+   {
+    "name": "Ra",
+    "text_tex": "\\(R={Rm|dp1}\\)",
+    "result": "Rm",
+    "format": "dp1",
+    "mark": "A1",
+    "note": "Correct rate; dependent on M1."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem, params and step texts above"
+   },
+   {
+    "id": "loan",
+    "stem": "Sam borrows ${P|money} and repays ${A|money} in total after {T|int} years. Simple interest is charged. Find the interest rate.",
+    "params": [
+     {
+      "name": "P",
+      "min": 500,
+      "max": 5000,
+      "step": 100
+     },
+     {
+      "name": "R",
+      "min": 5,
+      "max": 15,
+      "step": 0.5
+     },
+     {
+      "name": "T",
+      "min": 2,
+      "max": 5,
+      "step": 1
+     }
+    ]
+   },
+   {
+    "id": "bond",
+    "stem": "A savings bond of ${P|money} is worth ${A|money} after {T|int} years at simple interest. Find the interest rate.",
+    "params": [
+     {
+      "name": "P",
+      "min": 1000,
+      "max": 10000,
+      "step": 500
+     },
+     {
+      "name": "R",
+      "min": 1.5,
+      "max": 6,
+      "step": 0.1
+     },
+     {
+      "name": "T",
+      "min": 3,
+      "max": 10,
+      "step": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "17.2-QC2-gen",
+  "section": "17.2",
+  "kind": "generated",
+  "title": "Hire purchase: flat rate of interest",
+  "marks": 4,
+  "source": "Ch17 theory IGCSE-17.2 Quick check 2 ($680 TV, $200 deposit, 12 × $45, 12.5%)",
+  "params": [
+   {
+    "name": "C",
+    "min": 400,
+    "max": 1500,
+    "step": 20
+   },
+   {
+    "name": "D",
+    "min": 50,
+    "max": 400,
+    "step": 10
+   },
+   {
+    "name": "R",
+    "min": 5,
+    "max": 20,
+    "step": 0.5
+   }
+  ],
+  "derived": {
+   "m": "round((C-D)*(1+R/100)/12,2)"
+  },
+  "constraints": [
+   "abs((C-D)*(1+R/100)/12*100-round((C-D)*(1+R/100)/12*100))<1e-6  # instalment has exact cents",
+   "D<C/2"
+  ],
+  "original": {
+   "C": 680,
+   "D": 200,
+   "R": 12.5
+  },
+  "stem": "A TV costs ${C|money} cash. On HP it costs a ${D|money} deposit and 12 monthly instalments of ${m|money}, paid over 1 year. Find the flat rate of interest charged on the outstanding balance.",
+  "answer": {
+   "expression": "R",
+   "format": "{R|raw}% per year",
+   "tolerance": 0.005
+  },
+  "steps": [
+   {
+    "name": "B",
+    "text_tex": "Balance \\(={C|num}-{D|num}={B|num}\\)",
+    "result": "C-D",
+    "format": "num",
+    "mark": "B1",
+    "note": "Outstanding balance = cash price − deposit."
+   },
+   {
+    "name": "S",
+    "text_tex": "Instalments \\(=12\\times{m|num}={S|num}\\)",
+    "result": "12*m",
+    "format": "num",
+    "mark": "B1",
+    "note": "Total of instalments."
+   },
+   {
+    "name": "Iv",
+    "text_tex": "Interest \\(={S|num}-{B|num}={Iv|num}\\)",
+    "result": "S-B",
+    "format": "num",
+    "mark": "M1",
+    "note": "Total instalments − balance (ft their values)."
+   },
+   {
+    "name": "Rt",
+    "text_tex": "Rate \\(=\\dfrac{{{Iv|num}}}{{{B|num}}}\\times100={Rt|raw}\\%\\) per year (\\(T=1\\))",
+    "result": "Iv/B*100",
+    "format": "raw",
+    "mark": "A1",
+    "note": "Correct flat rate; dependent on M1."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem, params and step texts above"
+   },
+   {
+    "id": "laptop",
+    "stem": "A laptop costs ${C|money} cash. On HP it costs a ${D|money} deposit and 12 monthly instalments of ${m|money}, paid over 1 year. Find the flat rate of interest charged on the outstanding balance.",
+    "params": [
+     {
+      "name": "C",
+      "min": 500,
+      "max": 2500,
+      "step": 50
+     },
+     {
+      "name": "D",
+      "min": 50,
+      "max": 600,
+      "step": 10
+     },
+     {
+      "name": "R",
+      "min": 8,
+      "max": 25,
+      "step": 0.5
+     }
+    ]
+   },
+   {
+    "id": "car",
+    "stem": "A used car costs ${C|money} cash. On HP it costs a ${D|money} deposit and 12 monthly instalments of ${m|money}, paid over 1 year. Find the flat rate of interest charged on the outstanding balance.",
+    "params": [
+     {
+      "name": "C",
+      "min": 4000,
+      "max": 20000,
+      "step": 100
+     },
+     {
+      "name": "D",
+      "min": 500,
+      "max": 4000,
+      "step": 100
+     },
+     {
+      "name": "R",
+      "min": 4,
+      "max": 12,
+      "step": 0.5
+     }
+    ]
+   },
+   {
+    "id": "sofa",
+    "stem": "A sofa costs ${C|money} cash. On HP it costs a ${D|money} deposit and 12 monthly instalments of ${m|money}, paid over 1 year. Find the flat rate of interest charged on the outstanding balance.",
+    "params": [
+     {
+      "name": "C",
+      "min": 300,
+      "max": 1200,
+      "step": 10
+     },
+     {
+      "name": "D",
+      "min": 30,
+      "max": 200,
+      "step": 10
+     },
+     {
+      "name": "R",
+      "min": 10,
+      "max": 30,
+      "step": 0.5
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "17.2-QC3-gen",
+  "section": "17.2",
+  "kind": "generated",
+  "title": "Compound interest: final value and interest earned",
+  "marks": 3,
+  "source": "Ch17 theory IGCSE-17.2 Quick check 3 ($3200, 5%, 3 years)",
+  "params": [
+   {
+    "name": "P",
+    "min": 1000,
+    "max": 9000,
+    "step": 100
+   },
+   {
+    "name": "r",
+    "min": 1,
+    "max": 8,
+    "step": 0.5
+   },
+   {
+    "name": "n",
+    "min": 2,
+    "max": 6,
+    "step": 1
+   }
+  ],
+  "derived": {},
+  "constraints": [],
+  "original": {
+   "P": 3200,
+   "r": 5,
+   "n": 3
+  },
+  "stem": "${P|money} is invested at {r|raw}% per year compound interest for {n|int} years. Find (a) the final value, (b) the interest earned.",
+  "answer": {
+   "parts": [
+    {
+     "part": "a",
+     "expression": "P*(1+r/100)**n",
+     "format": "${V|money}",
+     "tolerance": 0.005
+    },
+    {
+     "part": "b",
+     "expression": "P*(1+r/100)**n-P",
+     "format": "${Ie|money}",
+     "tolerance": 0.005
+    }
+   ]
+  },
+  "steps": [
+   {
+    "name": "Vm",
+    "text_tex": "\\(V={P|num}\\times\\left(1+\\frac{{{r|raw}}}{{100}}\\right)^{{{n|int}}}\\)",
+    "result": "P*(1+r/100)**n",
+    "format": "num",
+    "mark": "M1",
+    "note": "Correct compound method; multiplier \\(1+\\frac{r}{100}\\), power \\(n\\)."
+   },
+   {
+    "name": "V",
+    "text_tex": "\\(V={Vm|num6}\\ldots\\) so the final value is ${Vm|money}",
+    "result": "Vm",
+    "format": "money",
+    "mark": "A1",
+    "note": "Correct value to 2 d.p.; dependent on M1."
+   },
+   {
+    "name": "Ie",
+    "text_tex": "Interest \\(={V|num2}-{P|num}={Ie|num}\\)",
+    "result": "V-P",
+    "format": "money",
+    "mark": "B1",
+    "note": "ft their (a) − P. Do not give the final value as the interest."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem, params and step texts above"
+   },
+   {
+    "id": "loan",
+    "stem": "A loan of ${P|money} is charged {r|raw}% per year compound interest. Nothing is repaid for {n|int} years. Find (a) the amount owed after {n|int} years, (b) the interest charged.",
+    "params": [
+     {
+      "name": "P",
+      "min": 500,
+      "max": 15000,
+      "step": 100
+     },
+     {
+      "name": "r",
+      "min": 4,
+      "max": 15,
+      "step": 0.5
+     },
+     {
+      "name": "n",
+      "min": 2,
+      "max": 5,
+      "step": 1
+     }
+    ],
+    "step_text": {
+     "V": "\\(V={Vm|num6}\\ldots\\) so the amount owed is ${Vm|money}"
+    }
+   },
+   {
+    "id": "house",
+    "stem": "A house is bought for ${P|money}. Its value increases by {r|raw}% each year. Find (a) its value after {n|int} years, (b) the increase in value.",
+    "params": [
+     {
+      "name": "P",
+      "min": 80000,
+      "max": 500000,
+      "step": 1000
+     },
+     {
+      "name": "r",
+      "min": 2,
+      "max": 8,
+      "step": 0.5
+     },
+     {
+      "name": "n",
+      "min": 2,
+      "max": 8,
+      "step": 1
+     }
+    ],
+    "step_text": {
+     "V": "\\(V={Vm|num6}\\ldots\\) so the value is ${Vm|money}",
+     "Ie": "Increase \\(={V|num2}-{P|num}={Ie|num}\\)"
+    }
+   }
+  ]
+ },
+ {
+  "id": "17.2-QC4-gen",
+  "section": "17.2",
+  "kind": "generated",
+  "title": "Exponential decay: repeated percentage decrease",
+  "marks": 2,
+  "source": "Ch17 theory IGCSE-17.2 Quick check 4 (85 000, 2%, 6 years)",
+  "params": [
+   {
+    "name": "a",
+    "min": 20000,
+    "max": 200000,
+    "step": 1000
+   },
+   {
+    "name": "r",
+    "min": 1,
+    "max": 6,
+    "step": 0.5
+   },
+   {
+    "name": "n",
+    "min": 3,
+    "max": 10,
+    "step": 1
+   }
+  ],
+  "derived": {},
+  "constraints": [],
+  "original": {
+   "a": 85000,
+   "r": 2,
+   "n": 6
+  },
+  "stem": "A town has {a|cnt} people. The population decreases by {r|raw}% each year. Estimate the population after {n|int} years.",
+  "answer": {
+   "expression": "a*(1-r/100)**n",
+   "format": "{y|sf3} people (3 s.f.)",
+   "tolerance_sf": 3,
+   "tolerance_note": "±half a unit in the 3rd significant figure (±50 for 75 300); 2 s.f. answers are wrong"
+  },
+  "steps": [
+   {
+    "name": "ym",
+    "text_tex": "Decay: \\(y={a|int}\\left(1-\\frac{{{r|raw}}}{{100}}\\right)^{{{n|int}}}\\)",
+    "result": "a*(1-r/100)**n",
+    "format": "num",
+    "mark": "M1",
+    "note": "Decay multiplier \\(1-\\frac{r}{100}\\) with power \\(n\\)."
+   },
+   {
+    "name": "y",
+    "text_tex": "\\(={ym|num4}\\ldots\\) so about {ym|sf3} people",
+    "result": "ym",
+    "format": "sf3",
+    "mark": "A1",
+    "note": "Correct to 3 s.f.; dependent on M1."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem, params and step texts above"
+   },
+   {
+    "id": "car",
+    "stem": "A car is bought for ${a|money}. Its value decreases by {r|raw}% each year. Estimate its value after {n|int} years.",
+    "params": [
+     {
+      "name": "a",
+      "min": 8000,
+      "max": 60000,
+      "step": 500
+     },
+     {
+      "name": "r",
+      "min": 10,
+      "max": 25,
+      "step": 1
+     },
+     {
+      "name": "n",
+      "min": 2,
+      "max": 6,
+      "step": 1
+     }
+    ],
+    "step_text": {
+     "y": "\\(={ym|num4}\\ldots\\) so about ${ym|sf3}"
+    },
+    "answer_format": "${y|sf3} (3 s.f.)"
+   },
+   {
+    "id": "fish",
+    "stem": "A lake has {a|cnt} fish. The number of fish decreases by {r|raw}% each year. Estimate the number of fish after {n|int} years.",
+    "params": [
+     {
+      "name": "a",
+      "min": 2000,
+      "max": 50000,
+      "step": 100
+     },
+     {
+      "name": "r",
+      "min": 3,
+      "max": 12,
+      "step": 0.5
+     },
+     {
+      "name": "n",
+      "min": 2,
+      "max": 8,
+      "step": 1
+     }
+    ],
+    "step_text": {
+     "y": "\\(={ym|num4}\\ldots\\) so about {ym|sf3} fish"
+    },
+    "answer_format": "{y|sf3} fish (3 s.f.)"
+   },
+   {
+    "id": "machine",
+    "stem": "A factory machine costs ${a|money}. It depreciates by {r|raw}% each year. Estimate its value after {n|int} years.",
+    "params": [
+     {
+      "name": "a",
+      "min": 20000,
+      "max": 250000,
+      "step": 1000
+     },
+     {
+      "name": "r",
+      "min": 5,
+      "max": 20,
+      "step": 1
+     },
+     {
+      "name": "n",
+      "min": 2,
+      "max": 8,
+      "step": 1
+     }
+    ],
+    "step_text": {
+     "y": "\\(={ym|num4}\\ldots\\) so about ${ym|sf3}"
+    },
+    "answer_format": "${y|sf3} (3 s.f.)"
+   }
+  ]
+ },
+ {
+  "id": "17.2-PP-0580-42-MJ23-Q2c",
+  "section": "17.2",
+  "kind": "pastpaper",
+  "title": "Compound interest: interest earned and years to reach a target",
+  "marks": 6,
+  "source": {
+   "paper": "0580/42/M/J/23 Q2(c)",
+   "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s23_qp_42.pdf",
+   "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s23_ms_42.pdf",
+   "note": "Text taken from the QP and MS PDFs (UCLES 2023)."
+  },
+  "stem": "Anil invests $3500 in an account that pays a rate of 2.4% per year compound interest.",
+  "parts": [
+   {
+    "part": "(i)",
+    "stem": "Calculate the total interest earned at the end of 5 years.",
+    "marks": 3,
+    "answer": {
+     "expression": "3500*(1+2.4/100)**5-3500",
+     "official": "441 or 440.6 or 440.64 to 440.65",
+     "tolerance_range": [
+      440.6,
+      440.65
+     ],
+     "also": [
+      441
+     ]
+    },
+    "steps": [
+     {
+      "name": "V",
+      "text_tex": "\\(3500\\times\\left(1+\\frac{2.4}{100}\\right)^5=3940.6496\\ldots\\)",
+      "result": "3500*(1+2.4/100)**5",
+      "format": "num",
+      "mark": "M1",
+      "note": "MS: M1 for \\(3500\\times\\left(1+\\frac{2.4}{100}\\right)^5\\) oe isw."
+     },
+     {
+      "name": "Im",
+      "text_tex": "\\(3940.6496\\ldots-3500\\)",
+      "result": "V-3500",
+      "format": "num",
+      "mark": "M1",
+      "note": "MS: M2 for \\(3500\\times\\left(1+\\frac{2.4}{100}\\right)^5-3500\\). B2 for answer 3941 or 3940.6 or 3940.64 to 3940.65 (final value given instead of interest)."
+     },
+     {
+      "name": "I",
+      "text_tex": "\\(=440.6496\\ldots\\), so $440.65",
+      "result": "Im",
+      "format": "money",
+      "mark": "A1",
+      "note": "MS: 441 or 440.6 or 440.64 to 440.65."
+     }
+    ]
+   },
+   {
+    "part": "(ii)",
+    "stem": "Find the number of complete years before Anil has at least $5000 in this account.",
+    "marks": 3,
+    "answer": {
+     "expression": "16",
+     "official": "16",
+     "tolerance": 0
+    },
+    "steps": [
+     {
+      "name": "f",
+      "text_tex": "\\(3500\\times\\left(1+\\frac{2.4}{100}\\right)^n\\) associated with 5000",
+      "result": "None",
+      "format": "raw",
+      "mark": "M1",
+      "note": "MS: M1 for (3500 or their 3941) \\(\\times\\left(1+\\frac{2.4}{100}\\right)^n\\) associated with 5000 oe."
+     },
+     {
+      "name": "v15",
+      "text_tex": "\\(3500\\times1.024^{15}=4995.37\\ldots\\) (less than 5000) and \\(3500\\times1.024^{16}=5115.26\\ldots\\) (at least 5000)",
+      "result": "(3500*1.024**15,3500*1.024**16)",
+      "format": "raw",
+      "mark": "M1",
+      "note": "MS: M2 for \\(3500\\times\\left(1+\\frac{2.4}{100}\\right)^{15}\\) oe seen or \\(3500\\times\\left(1+\\frac{2.4}{100}\\right)^{16}\\) oe seen. B2 for 15[.0] nfww to 15.1."
+     },
+     {
+      "name": "n",
+      "text_tex": "16 years",
+      "result": "16",
+      "format": "int",
+      "mark": "A1",
+      "note": "MS: 16."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "17.2-PP-0580-42-MJ24-Q1d",
+  "section": "17.2",
+  "kind": "pastpaper",
+  "title": "Exponential growth: bottles sold",
+  "marks": 2,
+  "source": {
+   "paper": "0580/42/M/J/24 Q1(d)",
+   "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s24_qp_42.pdf",
+   "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s24_ms_42.pdf",
+   "note": "Text taken from the QP and MS PDFs (UCLES 2024)."
+  },
+  "stem": "The number of bottles of fruit drink sold has grown exponentially at a constant rate of 2.5% per year.\n5 years ago, the shop sold 16 620 bottles.\nCalculate the number of bottles sold this year.",
+  "answer": {
+   "expression": "16620*(1+2.5/100)**5",
+   "official": "18 804[.0...]",
+   "tolerance_range": [
+    18804.0,
+    18804.01
+   ]
+  },
+  "steps": [
+   {
+    "name": "m",
+    "text_tex": "\\(16\\,620\\times\\left(1+\\frac{2.5}{100}\\right)^5\\)",
+    "result": "16620*(1+2.5/100)**5",
+    "format": "num",
+    "mark": "M1",
+    "note": "MS: M1 for \\(16620\\times\\left(1+\\frac{2.5}{100}\\right)^5\\) oe."
+   },
+   {
+    "name": "a",
+    "text_tex": "\\(=18\\,804.004\\ldots\\), so 18 804 bottles",
+    "result": "m",
+    "format": "int",
+    "mark": "A1",
+    "note": "MS: 18 804[.0...]."
+   }
+  ]
+ },
+ {
+  "id": "17.2-PP-0580-42-ON22-Q1a4",
+  "section": "17.2",
+  "kind": "pastpaper",
+  "title": "Reverse exponential growth: average attendance",
+  "marks": 3,
+  "source": {
+   "paper": "0580/42/O/N/22 Q1(a)(iv)",
+   "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w22_qp_42.pdf",
+   "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w22_ms_42.pdf",
+   "note": "Text taken from the QP and MS PDFs (UCLES 2022)."
+  },
+  "stem": "The average attendance increased exponentially by 4% each year for the three years from 2016 to 2019.\nIn 2019 the average attendance was 1631.\nFind the average attendance for 2016.",
+  "answer": {
+   "expression": "1631/(1+4/100)**3",
+   "official": "1450 or 1449 to 1450",
+   "tolerance_range": [
+    1449,
+    1450
+   ]
+  },
+  "steps": [
+   {
+    "name": "e",
+    "text_tex": "\\(1631=k\\left(1+\\frac{4}{100}\\right)^n\\), \\(n>0\\)",
+    "result": "None",
+    "format": "raw",
+    "mark": "M1",
+    "note": "MS: M1 for \\(1631=k\\left(1+\\frac{4}{100}\\right)^n\\), n > 0 oe; or B1 for \\(1+\\frac{4}{100}\\) oe seen."
+   },
+   {
+    "name": "k",
+    "text_tex": "\\(1631=k\\left(1+\\frac{4}{100}\\right)^3\\Rightarrow k=\\dfrac{1631}{1.04^3}\\)",
+    "result": "1631/1.04**3",
+    "format": "num",
+    "mark": "M1",
+    "note": "MS: M2 for \\(1631=k\\left(1+\\frac{4}{100}\\right)^3\\) oe or better."
+   },
+   {
+    "name": "a",
+    "text_tex": "\\(=1449.95\\ldots\\), so 1450",
+    "result": "k",
+    "format": "int",
+    "mark": "A1",
+    "note": "MS: 1450 or 1449 to 1450."
+   }
+  ]
+ },
+ {
+  "id": "17.2-PP-MJ23-Q2c-similar",
+  "section": "17.2",
+  "kind": "generated",
+  "title": "Similar to 0580/42/M/J/23 Q2(c): interest earned and years to a target",
+  "marks": 6,
+  "source": "Similar to 0580/42/M/J/23 Q2(c); same mark structure",
+  "params": [
+   {
+    "name": "P",
+    "min": 1000,
+    "max": 8000,
+    "step": 100
+   },
+   {
+    "name": "r",
+    "min": 1.5,
+    "max": 6,
+    "step": 0.1
+   },
+   {
+    "name": "k",
+    "min": 5,
+    "max": 5,
+    "step": 1
+   },
+   {
+    "name": "G",
+    "min": 1200,
+    "max": 12000,
+    "step": 100
+   }
+  ],
+  "derived": {
+   "N": "next(j for j in range(1,200) if P*(1+r/100)**j>=G)",
+   "Nm1": "N-1",
+   "lo": "P*(1+r/100)**(N-1)",
+   "hi": "P*(1+r/100)**N"
+  },
+  "constraints": [
+   "G>=1.3*P",
+   "G<=2.5*P",
+   "N>=k+2  # part (ii) goes beyond the k years of part (i) (original 16 > 5)",
+   "N<=25  # realistic number of years (original 16)",
+   "abs(math.log(G/P)/math.log(1+r/100)-round(math.log(G/P)/math.log(1+r/100)))>0.02  # target not hit almost exactly"
+  ],
+  "original": {
+   "P": 3500,
+   "r": 2.4,
+   "k": 5,
+   "G": 5000
+  },
+  "stem": "Kim invests ${P|money} in an account that pays a rate of {r|raw}% per year compound interest. (i) Calculate the total interest earned at the end of {k|int} years. (ii) Find the number of complete years before Kim has at least ${G|money} in this account.",
+  "answer": {
+   "parts": [
+    {
+     "part": "(i)",
+     "expression": "P*(1+r/100)**k-P",
+     "format": "${I|money}",
+     "tolerance": 0.005
+    },
+    {
+     "part": "(ii)",
+     "expression": "N",
+     "format": "{N|int} years",
+     "tolerance": 0
+    }
+   ]
+  },
+  "steps": [
+   {
+    "name": "V",
+    "text_tex": "\\({P|num}\\times\\left(1+\\frac{{{r|raw}}}{{100}}\\right)^{{{k|int}}}={V|num4}\\ldots\\)",
+    "result": "P*(1+r/100)**k",
+    "format": "num",
+    "mark": "M1",
+    "note": "(i) Compound value; M1 isw."
+   },
+   {
+    "name": "Im",
+    "text_tex": "\\({V|num4}\\ldots-{P|num}\\)",
+    "result": "V-P",
+    "format": "num",
+    "mark": "M1",
+    "note": "(i) Subtract the principal (M2 total). B2 for the final value as the answer."
+   },
+   {
+    "name": "I",
+    "text_tex": "\\(={Im|num4}\\ldots\\), so ${Im|money}",
+    "result": "Im",
+    "format": "money",
+    "mark": "A1",
+    "note": "(i) Correct interest to 2 d.p."
+   },
+   {
+    "name": "f",
+    "text_tex": "\\({P|num}\\times\\left(1+\\frac{{{r|raw}}}{{100}}\\right)^n\\) associated with {G|num}",
+    "result": "None",
+    "format": "raw",
+    "mark": "M1",
+    "note": "(ii) Compound form with power n linked to the target."
+   },
+   {
+    "name": "trial",
+    "text_tex": "\\(n={Nm1|int}\\): {lo|num2} (less than {G|num}); \\(n={N|int}\\): {hi|num2} (at least {G|num})",
+    "result": "(lo,hi)",
+    "format": "raw",
+    "mark": "M1",
+    "note": "(ii) Either trial value (n = {Nm1|int} or n = {N|int}) seen (M2 total), as in the MS. B2 for the non-integer n from logs."
+   },
+   {
+    "name": "n",
+    "text_tex": "{N|int} years",
+    "result": "N",
+    "format": "int",
+    "mark": "A1",
+    "note": "(ii) Smallest whole number of years."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem, params and step texts above"
+   },
+   {
+    "id": "house",
+    "stem": "A house is worth ${P|money}. Its value increases by {r|raw}% each year, compounded yearly. (i) Calculate the total increase in value at the end of {k|int} years. (ii) Find the number of complete years before the house is worth at least ${G|money}.",
+    "params": [
+     {
+      "name": "P",
+      "min": 100000,
+      "max": 400000,
+      "step": 5000
+     },
+     {
+      "name": "r",
+      "min": 2,
+      "max": 6,
+      "step": 0.1
+     },
+     {
+      "name": "G",
+      "min": 130000,
+      "max": 1000000,
+      "step": 5000
+     }
+    ]
+   },
+   {
+    "id": "debt",
+    "stem": "Lee owes ${P|money} on a loan charged at {r|raw}% per year compound interest, and makes no repayments. (i) Calculate the total interest charged at the end of {k|int} years. (ii) Find the number of complete years before Lee owes at least ${G|money}.",
+    "params": [
+     {
+      "name": "P",
+      "min": 500,
+      "max": 6000,
+      "step": 100
+     },
+     {
+      "name": "r",
+      "min": 5,
+      "max": 15,
+      "step": 0.5
+     },
+     {
+      "name": "G",
+      "min": 700,
+      "max": 15000,
+      "step": 100
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "17.2-PP-MJ24-Q1d-similar",
+  "section": "17.2",
+  "kind": "generated",
+  "title": "Similar to 0580/42/M/J/24 Q1(d): exponential growth",
+  "marks": 2,
+  "source": "Similar to 0580/42/M/J/24 Q1(d)",
+  "params": [
+   {
+    "name": "a",
+    "min": 5000,
+    "max": 50000,
+    "step": 10
+   },
+   {
+    "name": "r",
+    "min": 1,
+    "max": 8,
+    "step": 0.5
+   },
+   {
+    "name": "n",
+    "min": 3,
+    "max": 10,
+    "step": 1
+   }
+  ],
+  "derived": {},
+  "constraints": [
+   "abs(a*(1+r/100)**n-round(a*(1+r/100)**n))<0.45  # answer clearly rounds to a whole number"
+  ],
+  "original": {
+   "a": 16620,
+   "r": 2.5,
+   "n": 5
+  },
+  "stem": "The number of tickets sold has grown exponentially at a constant rate of {r|raw}% per year. {n|int} years ago, {a|cnt} tickets were sold. Calculate the number of tickets sold this year.",
+  "answer": {
+   "expression": "a*(1+r/100)**n",
+   "format": "{y|cnt}",
+   "tolerance": 0.5
+  },
+  "steps": [
+   {
+    "name": "m",
+    "text_tex": "\\({a|int}\\times\\left(1+\\frac{{{r|raw}}}{{100}}\\right)^{{{n|int}}}\\)",
+    "result": "a*(1+r/100)**n",
+    "format": "num",
+    "mark": "M1",
+    "note": "Growth multiplier with power n."
+   },
+   {
+    "name": "y",
+    "text_tex": "\\(={m|num4}\\ldots\\), so {m|cnt} tickets",
+    "result": "m",
+    "format": "int",
+    "mark": "A1",
+    "note": "Correct answer (nearest whole number)."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem, params and step texts above"
+   },
+   {
+    "id": "population",
+    "stem": "The population of a town has grown exponentially at a constant rate of {r|raw}% per year. {n|int} years ago, the population was {a|cnt}. Calculate the population this year.",
+    "params": [
+     {
+      "name": "a",
+      "min": 5000,
+      "max": 90000,
+      "step": 10
+     },
+     {
+      "name": "r",
+      "min": 0.5,
+      "max": 4,
+      "step": 0.5
+     },
+     {
+      "name": "n",
+      "min": 3,
+      "max": 12,
+      "step": 1
+     }
+    ],
+    "step_text": {
+     "y": "\\(={m|num4}\\ldots\\), so {m|cnt} people"
+    },
+    "answer_format": "{y|cnt} people"
+   },
+   {
+    "id": "visitors",
+    "stem": "The number of visitors to a website each year has grown exponentially at a constant rate of {r|raw}% per year. {n|int} years ago, there were {a|cnt} visitors. Calculate the number of visitors this year.",
+    "params": [
+     {
+      "name": "a",
+      "min": 10000,
+      "max": 200000,
+      "step": 100
+     },
+     {
+      "name": "r",
+      "min": 5,
+      "max": 20,
+      "step": 0.5
+     },
+     {
+      "name": "n",
+      "min": 2,
+      "max": 6,
+      "step": 1
+     }
+    ],
+    "step_text": {
+     "y": "\\(={m|num4}\\ldots\\), so {m|cnt} visitors"
+    },
+    "answer_format": "{y|cnt} visitors"
+   }
+  ]
+ },
+ {
+  "id": "17.2-PP-ON22-Q1a4-similar",
+  "section": "17.2",
+  "kind": "generated",
+  "title": "Similar to 0580/42/O/N/22 Q1(a)(iv): reverse growth",
+  "marks": 3,
+  "source": "Similar to 0580/42/O/N/22 Q1(a)(iv)",
+  "params": [
+   {
+    "name": "F",
+    "min": 500,
+    "max": 20000,
+    "step": 1
+   },
+   {
+    "name": "r",
+    "min": 2,
+    "max": 10,
+    "step": 0.5
+   },
+   {
+    "name": "n",
+    "min": 2,
+    "max": 5,
+    "step": 1
+   }
+  ],
+  "derived": {
+   "Y0": "2018",
+   "Y1": "2018+n"
+  },
+  "constraints": [
+   "abs(F/(1+r/100)**n-round(F/(1+r/100)**n))<0.45"
+  ],
+  "original": {
+   "F": 1631,
+   "r": 4,
+   "n": 3
+  },
+  "stem": "The average attendance increased exponentially by {r|raw}% each year for the {n|int} years from {Y0|int} to {Y1|int}. In {Y1|int} the average attendance was {F|cnt}. Find the average attendance for {Y0|int}.",
+  "answer": {
+   "expression": "F/(1+r/100)**n",
+   "format": "{k|cnt}",
+   "tolerance": 0.5
+  },
+  "steps": [
+   {
+    "name": "e",
+    "text_tex": "\\({F|int}=k\\left(1+\\frac{{{r|raw}}}{{100}}\\right)^n\\), \\(n>0\\)",
+    "result": "None",
+    "format": "raw",
+    "mark": "M1",
+    "note": "Correct form with any n > 0; or B1 for the multiplier seen."
+   },
+   {
+    "name": "km",
+    "text_tex": "\\(k=\\dfrac{{{F|int}}}{{\\left(1+\\frac{{{r|raw}}}{{100}}\\right)^{{{n|int}}}}}\\)",
+    "result": "F/(1+r/100)**n",
+    "format": "num",
+    "mark": "M1",
+    "note": "Correct power n (M2 total). Do not multiply by \\(1-\\frac{r}{100}\\)."
+   },
+   {
+    "name": "k",
+    "text_tex": "\\(={km|num4}\\ldots\\), so {km|cnt}",
+    "result": "km",
+    "format": "int",
+    "mark": "A1",
+    "note": "Correct to the nearest whole number."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem, params and step texts above"
+   },
+   {
+    "id": "house",
+    "stem": "The price of a house increased exponentially by {r|raw}% each year for the {n|int} years from {Y0|int} to {Y1|int}. In {Y1|int} the price was ${F|money}. Find the price in {Y0|int}, to the nearest dollar.",
+    "params": [
+     {
+      "name": "F",
+      "min": 150000,
+      "max": 600000,
+      "step": 1000
+     },
+     {
+      "name": "r",
+      "min": 2,
+      "max": 8,
+      "step": 0.5
+     },
+     {
+      "name": "n",
+      "min": 2,
+      "max": 6,
+      "step": 1
+     }
+    ],
+    "step_text": {
+     "k": "\\(={km|num4}\\ldots\\), so ${km|cnt}"
+    },
+    "answer_format": "${k|cnt}"
+   },
+   {
+    "id": "village",
+    "stem": "The population of a village increased exponentially by {r|raw}% each year for the {n|int} years from {Y0|int} to {Y1|int}. In {Y1|int} the population was {F|cnt}. Find the population in {Y0|int}.",
+    "params": [
+     {
+      "name": "F",
+      "min": 800,
+      "max": 20000,
+      "step": 1
+     },
+     {
+      "name": "r",
+      "min": 1,
+      "max": 5,
+      "step": 0.5
+     },
+     {
+      "name": "n",
+      "min": 2,
+      "max": 6,
+      "step": 1
+     }
+    ],
+    "step_text": {
+     "k": "\\(={km|num4}\\ldots\\), so {km|cnt} people"
+    },
+    "answer_format": "{k|cnt} people"
+   }
+  ]
+ }
+]

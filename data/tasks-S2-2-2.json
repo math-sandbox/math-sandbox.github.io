@@ -1,0 +1,322 @@
+[
+  {
+    "id": "S2-2.2-QC1-gen",
+    "section": "S2-2.2",
+    "kind": "generated",
+    "title": "Scale a Poisson mean to a longer interval",
+    "marks": 2,
+    "source": "S2 Ch2 theory S2-2.2 Quick check 1 (5 every 10 minutes, so 15 in 30 minutes)",
+    "params": [
+      {
+        "name": "r",
+        "min": 2,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "name": "t",
+        "min": 5,
+        "max": 15,
+        "step": 5
+      },
+      {
+        "name": "k",
+        "min": 2,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "T": "k*t",
+      "E": "r*k"
+    },
+    "constraints": [
+      "t>=5",
+      "k>=2"
+    ],
+    "original": {
+      "r": 5,
+      "t": 10,
+      "k": 3
+    },
+    "stem": "Events occur at a mean rate of {r|int} every {t|int} minutes. What is the Poisson parameter for a {T|int}-minute interval?",
+    "answer": {
+      "expression": "r*k",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The new interval is \\({k|int}\\) times as long, so the mean is scaled by \\({k|int}\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "The mean is proportional to the length of the interval."
+      },
+      {
+        "name": "E",
+        "text_tex": "The Poisson parameter is \\({E|int}\\).",
+        "result": "r*k",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct parameter."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "calls",
+        "stem": "Calls arrive at a mean rate of {r|int} every {t|int} minutes. What is the Poisson parameter for a period of {T|int} minutes?",
+        "note": "calls frame"
+      },
+      {
+        "id": "faults",
+        "stem": "Faults occur at a mean rate of {r|int} every {t|int} metres. What is the Poisson parameter for a length of {T|int} metres?",
+        "note": "length frame"
+      }
+    ]
+  },
+  {
+    "id": "S2-2.2-QC2-gen",
+    "section": "S2-2.2",
+    "kind": "generated",
+    "title": "Scale a Poisson mean when the rate is not an integer",
+    "marks": 2,
+    "source": "S2 Ch2 theory S2-2.2 Quick check 2 (1.2 every 4 minutes, so 3 in 10 minutes)",
+    "params": [
+      {
+        "name": "r",
+        "min": 6,
+        "max": 18,
+        "step": 2
+      },
+      {
+        "name": "t",
+        "min": 2,
+        "max": 6,
+        "step": 2
+      },
+      {
+        "name": "T",
+        "min": 8,
+        "max": 20,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "R": "r/10",
+      "E": "(r/10)*T/t"
+    },
+    "constraints": [
+      "t>=2",
+      "T!=t",
+      "((r/10)*T)%t==0"
+    ],
+    "original": {
+      "r": 12,
+      "t": 4,
+      "T": 10
+    },
+    "stem": "Calls arrive at a mean rate of {R|dp1} every {t|int} minutes. What is the Poisson parameter for a {T|int}-minute interval?",
+    "answer": {
+      "expression": "(r/10)*T/t",
+      "format": "{E|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "The mean scales in the ratio of the intervals, \\(\\dfrac{{T|int}}{{t|int}}\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "The mean is proportional to the interval."
+      },
+      {
+        "name": "E",
+        "text_tex": "The Poisson parameter is \\({E|dp1}\\).",
+        "result": "(r/10)*T/t",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct parameter."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "events",
+        "stem": "Events occur at a mean rate of {R|dp1} every {t|int} minutes. Find the Poisson parameter for an interval of {T|int} minutes.",
+        "note": "events frame"
+      },
+      {
+        "id": "arrive",
+        "stem": "If the mean number of arrivals in {t|int} minutes is {R|dp1}, what is the mean number in {T|int} minutes?",
+        "note": "mean frame"
+      }
+    ]
+  },
+  {
+    "id": "S2-2.2-QC3-gen",
+    "section": "S2-2.2",
+    "kind": "generated",
+    "title": "Scale a per-hour rate down to a shorter interval",
+    "marks": 2,
+    "source": "S2 Ch2 theory S2-2.2 Quick check 3 (3 per hour, so 1 in 20 minutes)",
+    "params": [
+      {
+        "name": "h",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "m",
+        "min": 10,
+        "max": 30,
+        "step": 10
+      }
+    ],
+    "derived": {
+      "E": "h*m/60"
+    },
+    "constraints": [
+      "(h*m)%60==0",
+      "m!=60"
+    ],
+    "original": {
+      "h": 3,
+      "m": 20
+    },
+    "stem": "A machine produces faults at a mean rate of {h|int} per hour. What is the Poisson parameter for a {m|int}-minute interval?",
+    "answer": {
+      "expression": "h*m/60",
+      "format": "{E|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "\\({m|int}\\) minutes is \\(\\dfrac{{m|int}}{60}\\) of an hour, so the mean is scaled by that fraction.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Convert to a fraction of an hour."
+      },
+      {
+        "name": "E",
+        "text_tex": "The Poisson parameter is \\({E|dp1}\\).",
+        "result": "h*m/60",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct parameter."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "hour",
+        "stem": "Events occur at a mean rate of {h|int} per hour. Find the Poisson parameter for {m|int} minutes.",
+        "note": "hour frame"
+      },
+      {
+        "id": "short",
+        "stem": "If the mean number of events per hour is {h|int}, what is the mean number in {m|int} minutes?",
+        "note": "short frame"
+      }
+    ]
+  },
+  {
+    "id": "S2-2.2-PP-9709-72-MJ16-Q6i",
+    "section": "S2-2.2",
+    "kind": "pastpaper",
+    "marking": "manual",
+    "title": "9709/72/M/J/16 Q6(i): demand in a two-week period",
+    "marks": 3,
+    "source": {
+      "paper": "9709/72/M/J/16 Q6(i)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s16_qp_72.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s16_ms_72.pdf",
+      "note": "Stem verbatim from the QP PDF, part (i) only, including the official wording 'per week' and 'two-week period'. Later parts of Q6 (stock levels for one week) are omitted. Fully manual, because the official answer is a Poisson probability. Official MS: lambda=6.8 (B1), Poisson P(X=5) (M1), 0.135 to 3 s.f. (A1). Independently exp(-6.8) times 6.8^5 / 120 = 0.13495..., which is 0.135 to 3 s.f."
+    },
+    "stem": "At a certain shop the demand for hair dryers has a Poisson distribution with mean 3.4 per week.\n\n(i) Find the probability that, in a randomly chosen two-week period, the demand is for exactly 5 hair dryers.",
+    "steps": [
+      {
+        "name": "lam",
+        "text_tex": "A two-week period has Poisson parameter \\(\\lambda=2\\times 3.4=6.8\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "B1",
+        "note": "Official MS: λ=6.8."
+      },
+      {
+        "name": "form",
+        "text_tex": "\\(\\mathrm{P}(X=5)=\\mathrm{e}^{-6.8}\\dfrac{6.8^5}{5!}\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Official MS: Poisson P(X=5) with any λ."
+      },
+      {
+        "name": "E",
+        "text_tex": "The probability is \\(0.135\\) to 3 significant figures.",
+        "result": "None",
+        "format": "num",
+        "mark": "A1",
+        "note": "Official MS: 0.135 (3 s.f.). Independently 0.13495..."
+      }
+    ]
+  },
+  {
+    "id": "S2-2.2-PP-9709-71-ON14-Q6i",
+    "section": "S2-2.2",
+    "kind": "pastpaper",
+    "marking": "manual",
+    "title": "9709/71/O/N/14 Q6(i): accidents in an 18-week period",
+    "marks": 3,
+    "source": {
+      "paper": "9709/71/O/N/14 Q6(i)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w14_qp_71.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w14_ms_71.pdf",
+      "note": "Stem verbatim from the QP PDF, part (i) only, including the official wording 'per 12-week period' and '18-week period'. Parts (ii)–(iv) (Type I and Type II errors after a new junction) are omitted because they belong to hypothesis testing in a later subsection. Fully manual. Official MS: lambda=4.65 (B1), Poisson P(X=4) (M1), 0.186 to 3 s.f. (A1). Independently lambda=3.1*18/12=4.65 and exp(-4.65) times 4.65^4 / 24 = 0.18626..., which is 0.186 to 3 s.f."
+    },
+    "stem": "The number of accidents on a certain road has a Poisson distribution with mean 3.1 per 12-week period.\n\n(i) Find the probability that there will be exactly 4 accidents during an 18-week period.",
+    "steps": [
+      {
+        "name": "lam",
+        "text_tex": "The mean scales in the ratio of the intervals: \\(\\lambda=3.1\\times\\dfrac{18}{12}=4.65\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "B1",
+        "note": "Official MS: λ=4.65."
+      },
+      {
+        "name": "form",
+        "text_tex": "\\(\\mathrm{P}(X=4)=\\mathrm{e}^{-4.65}\\dfrac{4.65^4}{4!}\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Official MS: Poisson P(X=4) with any λ."
+      },
+      {
+        "name": "E",
+        "text_tex": "The probability is \\(0.186\\) to 3 significant figures.",
+        "result": "None",
+        "format": "num",
+        "mark": "A1",
+        "note": "Official MS: 0.186 (3 s.f.). Independently 0.18626..."
+      }
+    ]
+  }
+]

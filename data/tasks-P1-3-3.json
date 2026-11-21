@@ -1,0 +1,177 @@
+[
+  {
+    "id": "P1-3.3-QC1-gen",
+    "section": "P1-3.3",
+    "kind": "generated",
+    "title": "Reading a y-intercept",
+    "marks": 1,
+    "source": "Theory P1-3.3 Quick check 1 (intercept 3); new integer intercepts",
+    "params": [
+      {
+        "name": "c",
+        "min": 1,
+        "max": 9,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "c"
+    },
+    "constraints": [],
+    "original": {
+      "c": 3
+    },
+    "stem": "A straight line has equation \\(y=2x+{c|int}\\). What is the \\(y\\)-intercept?",
+    "answer": {
+      "expression": "c",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The \\(y\\)-intercept is {A|int}.",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A equals c. Original c=3 gives 3."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P1-3.3-QC2-gen",
+    "section": "P1-3.3",
+    "kind": "generated",
+    "title": "y-intercept from two points with gradient 2",
+    "marks": 1,
+    "source": "Theory P1-3.3 Quick check 2 (intercept 2); new points on y=2x+b",
+    "params": [
+      {
+        "name": "b",
+        "min": 1,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "y1": "2+b",
+      "y2": "6+b",
+      "A": "b"
+    },
+    "constraints": [],
+    "original": {
+      "b": 2
+    },
+    "stem": "The points \\(A(1, {y1|int})\\) and \\(B(3, {y2|int})\\) lie on a straight line. What is the \\(y\\)-intercept of the line \\(AB\\)?",
+    "answer": {
+      "expression": "b",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The gradient is 2, so \\(y-{y1|int}=2(x-1)\\) and the \\(y\\)-intercept is {A|int}.",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "Points lie on y=2x+b, so the intercept is b. Original b=2 gives 2."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P1-3.3-QC3-gen",
+    "section": "P1-3.3",
+    "kind": "generated",
+    "title": "A negative y-intercept",
+    "marks": 1,
+    "source": "Theory P1-3.3 Quick check 3 (intercept -3); new negative intercepts",
+    "params": [
+      {
+        "name": "c",
+        "min": 1,
+        "max": 9,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "-c"
+    },
+    "constraints": [],
+    "original": {
+      "c": 3
+    },
+    "stem": "A straight line has equation \\(y=x-{c|int}\\). What is the \\(y\\)-intercept?",
+    "answer": {
+      "expression": "-c",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The \\(y\\)-intercept is {A|int}.",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is -c. Original c=3 gives -3."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P1-3.3-PP-9709-12-FM23-Q11a",
+    "section": "P1-3.3",
+    "kind": "pastpaper",
+    "title": "Equation of the line AB",
+    "marks": 2,
+    "source": {
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m23_qp_12.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m23_ms_12.pdf",
+      "note": "9709/12/F/M/23 Question 11(a) only [2]. Official QP and official MS. Later parts omitted."
+    },
+    "marking": "manual",
+    "stem": "This question is 9709/12/F/M/23 Question 11(a) only, taken from the official QP.\n\nThe diagram shows the curve with equation x = y² + 1. The points A (5, 2) and B (2, −1) lie on the curve.\n\n(a) Find an equation of the line AB. [2]",
+    "steps": [
+      {
+        "name": "M",
+        "text_tex": "Gradient of \\(AB=\\dfrac{2-(-1)}{5-2}=1\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1, expect 1, must be from dy/dx differences."
+      },
+      {
+        "name": "A",
+        "text_tex": "An equation of \\(AB\\) is \\(y-2=1(x-5)\\) or \\(y+1=1(x-2)\\), so \\(y=x-3\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, OE. Expect y=x-3. Independent: gradient 3/3=1, y-2=1(x-5), y=x-3."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Stem taken from the official QP PDF (UCLES 2023), Question 11(a) only. Official MS reproduced mark by mark. Paper/self-mark."
+      }
+    ]
+  }
+]

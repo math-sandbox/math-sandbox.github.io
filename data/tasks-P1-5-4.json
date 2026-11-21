@@ -1,0 +1,414 @@
+[
+  {
+    "id": "P1-5.4-QC1-gen",
+    "section": "P1-5.4",
+    "kind": "generated",
+    "title": "Amplitude of a sine graph",
+    "marks": 1,
+    "source": "Theory P1-5.4 Quick check 1; amplitude of n sin x with n even",
+    "params": [
+      {
+        "name": "n",
+        "min": 2,
+        "max": 10,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "A": "n"
+    },
+    "constraints": [
+      "n%2==0"
+    ],
+    "original": {
+      "n": 2
+    },
+    "stem": "State the amplitude of \\(y={n|int}\\sin x\\).",
+    "answer": {
+      "expression": "n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The coefficient of sine is \\({n|int}\\), so the amplitude is \\({A|int}\\).",
+        "result": "n",
+        "format": "int",
+        "mark": "A1",
+        "note": "Amplitude is the positive coefficient of sine or cosine."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original y = 2 sin x"
+      }
+    ],
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.4"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-4.json",
+        "locator": "P1-5.4-QC1-gen"
+      }
+    }
+  },
+  {
+    "id": "P1-5.4-QC2-gen",
+    "section": "P1-5.4",
+    "kind": "generated",
+    "title": "Period of sin nx in degrees",
+    "marks": 1,
+    "source": "Theory P1-5.4 Quick check 2; period 360/n",
+    "params": [
+      {
+        "name": "n",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "P": "360/n"
+    },
+    "constraints": [
+      "360%n==0"
+    ],
+    "original": {
+      "n": 2
+    },
+    "stem": "State the period, in degrees, of \\(y=\\sin {n|int}x\\).",
+    "answer": {
+      "expression": "360/n",
+      "format": "{P|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "P",
+        "text_tex": "The period of \\(y=\\sin x\\) is \\(360^\\circ\\), so the period of \\(y=\\sin {n|int}x\\) is \\(\\dfrac{{360^\\circ}}{{{n|int}}}={P|int}^\\circ\\).",
+        "result": "360/n",
+        "format": "int",
+        "mark": "A1",
+        "note": "Period of sin(bx) is 360 degrees divided by b."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original y = sin 2x"
+      }
+    ],
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.4"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-4.json",
+        "locator": "P1-5.4-QC2-gen"
+      }
+    }
+  },
+  {
+    "id": "P1-5.4-QC3-gen",
+    "section": "P1-5.4",
+    "kind": "generated",
+    "title": "Greatest value of a cosine graph after a vertical translation",
+    "marks": 1,
+    "source": "Theory P1-5.4 Quick check 3; greatest value a + b",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 1,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "G": "a+b"
+    },
+    "constraints": [
+      "a>=2",
+      "b>=1"
+    ],
+    "original": {
+      "a": 3,
+      "b": 2
+    },
+    "stem": "State the greatest value of \\(y={a|int}\\cos x+{b|int}\\).",
+    "answer": {
+      "expression": "a+b",
+      "format": "{G|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "G",
+        "text_tex": "The greatest value of \\(\\cos x\\) is \\(1\\), so the greatest value of \\(y\\) is \\({a|int}\\times 1+{b|int}={G|int}\\).",
+        "result": "a+b",
+        "format": "int",
+        "mark": "A1",
+        "note": "Add the vertical translation to the amplitude."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original y = 3 cos x + 2"
+      }
+    ],
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.4"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-4.json",
+        "locator": "P1-5.4-QC3-gen"
+      }
+    }
+  },
+  {
+    "id": "P1-5.4-PP-9709-12-ON20-Q11",
+    "section": "P1-5.4",
+    "kind": "pastpaper",
+    "title": "Graph of y = 3 cos 2x + 2 and related transformations",
+    "marks": 11,
+    "source": {
+      "paper": "9709/12/O/N/20 Q11",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w20_qp_12.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w20_ms_12.pdf",
+      "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+    },
+    "stem": "<p>A curve has equation \\(y=3\\cos 2x+2\\) for \\(0\\le x\\le\\pi\\).</p><p>(a) State the greatest and least values of \\(y\\). [2]</p><p>(b) Sketch the graph of \\(y=3\\cos 2x+2\\) for \\(0\\le x\\le\\pi\\). [2]</p><p>(c) By considering the straight line \\(y=kx\\), where \\(k\\) is a constant, state the number of solutions of the equation \\(3\\cos 2x+2=kx\\) for \\(0\\le x\\le\\pi\\) in each of the following cases.</p><p>(i) \\(k=-3\\) [1]</p><p>(ii) \\(k=1\\) [1]</p><p>(iii) \\(k=3\\) [1]</p><p>Functions \\(f\\), \\(g\\) and \\(h\\) are defined for \\(x\\in\\mathbb{R}\\) by</p><p>\\(f(x)=3\\cos 2x+2\\),</p><p>\\(g(x)=f(2x)+4\\),</p><p>\\(h(x)=2f\\bigl(x+\\tfrac{1}{2}\\pi\\bigr)\\).</p><p>(d) Describe fully a sequence of transformations that maps the graph of \\(y=f(x)\\) on to \\(y=g(x)\\). [2]</p><p>(e) Describe fully a sequence of transformations that maps the graph of \\(y=f(x)\\) on to \\(y=h(x)\\). [2]</p>",
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.4"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 11,
+      "difficulty": "hard",
+      "type": "pp",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-4.json",
+        "locator": "P1-5.4-PP-9709-12-ON20-Q11"
+      }
+    },
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "(a) \\(5\\), \\(-1\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1, sight of 5."
+      },
+      {
+        "name": "s2",
+        "text_tex": "(a) The least value \\(-1\\) is stated.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1, sight of each value."
+      },
+      {
+        "name": "s3",
+        "text_tex": "(b) The sketch is a curve, not straight line segments, showing one complete cycle starting and finishing at the candidate’s largest value.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: *B1, needs to be a curve, not straight lines. One complete cycle starting and finishing at their largest value."
+      },
+      {
+        "name": "s4",
+        "text_tex": "(b) One complete cycle starting and finishing at \\(y=5\\) and going down to \\(y=-1\\), and starting to level off at least at one end.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: DB1."
+      },
+      {
+        "name": "s5",
+        "text_tex": "(c)(i) \\(0\\) solutions.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1."
+      },
+      {
+        "name": "s6",
+        "text_tex": "(c)(ii) \\(2\\) solutions.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1."
+      },
+      {
+        "name": "s7",
+        "text_tex": "(c)(iii) \\(1\\) solution.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1."
+      },
+      {
+        "name": "s8",
+        "text_tex": "(d) Stretch by scale factor \\(\\dfrac{1}{2}\\), parallel to the \\(x\\)-axis (or in the \\(x\\)-direction, or horizontally).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1."
+      },
+      {
+        "name": "s9",
+        "text_tex": "(d) Translation of \\(\\dbinom{0}{4}\\) (or a translation \\(4\\) units in the positive \\(y\\)-direction).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1. Accept translation/shift."
+      },
+      {
+        "name": "s10",
+        "text_tex": "(e) Translation of \\(\\dbinom{{-\\frac{{\\pi}}{{2}}}}{{0}}\\) (or a translation \\(\\dfrac{{\\pi}}{{2}}\\) units in the negative \\(x\\)-direction).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1. Accept translation/shift."
+      },
+      {
+        "name": "s11",
+        "text_tex": "(e) Stretch by scale factor \\(2\\), parallel to the \\(y\\)-axis (or vertically).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1."
+      }
+    ]
+  },
+  {
+    "id": "P1-5.4-PP-9709-11-MJ17-Q5",
+    "section": "P1-5.4",
+    "kind": "pastpaper",
+    "title": "A cosine graph, the length of a chord, and intercepts of the chord",
+    "marks": 7,
+    "source": {
+      "paper": "9709/11/M/J/17 Q5",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s17_qp_11.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s17_ms_11.pdf",
+      "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+    },
+    "stem": "<p>The equation of a curve is \\(y=2\\cos x\\).</p><p>(i) Sketch the graph of \\(y=2\\cos x\\) for \\(-\\pi\\le x\\le\\pi\\), stating the coordinates of the point of intersection with the \\(y\\)-axis. [2]</p><p>Points \\(P\\) and \\(Q\\) lie on the curve and have \\(x\\)-coordinates of \\(\\dfrac{{\\pi}}{{3}}\\) and \\(\\pi\\) respectively.</p><p>(ii) Find the length of \\(PQ\\) correct to 1 decimal place. [2]</p><p>The line through \\(P\\) and \\(Q\\) meets the \\(x\\)-axis at \\(H\\,(h,0)\\) and the \\(y\\)-axis at \\(K\\,(0,k)\\).</p><p>(iii) Show that \\(h=\\dfrac{{5\\pi}}{{9}}\\) and find the value of \\(k\\). [3]</p>",
+    "tags": {
+      "course": "P1",
+      "subsections": [
+        "P1-5.4"
+      ],
+      "topic": "Trigonometry",
+      "chapter": "P1-5",
+      "marks": 7,
+      "difficulty": "hard",
+      "type": "pp",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-5-4.json",
+        "locator": "P1-5.4-PP-9709-11-MJ17-Q5"
+      }
+    },
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "(i) The sketch is one complete cycle of a cosine wave, starting and finishing at a negative value.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1, one whole cycle - starts and finishes at -ve value."
+      },
+      {
+        "name": "s2",
+        "text_tex": "(i) The curve is smooth, flattens at the ends and the middle, and meets the y-axis at \\((0,2)\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: DB1, smooth curve, flattens at ends and middle. Shows (0, 2)."
+      },
+      {
+        "name": "s3",
+        "text_tex": "(ii) \\(P\\left(\\dfrac{{\\pi}}{{3}},1\\right)\\) and \\(Q(\\pi,-2)\\), so \\(PQ^2=\\left(\\dfrac{{2\\pi}}{{3}}\\right)^2+3^2\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1, Pythagoras (on their coordinates) must be correct, OE."
+      },
+      {
+        "name": "s4",
+        "text_tex": "(ii) \\(PQ=3.7\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, PQ = 3.7."
+      },
+      {
+        "name": "s5",
+        "text_tex": "(iii) The equation of \\(PQ\\) is \\(y-1=-\\dfrac{{9}}{{2\\pi}}\\left(x-\\dfrac{{\\pi}}{{3}}\\right)\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1, correct form of line equation or simultaneous equations from their P and Q."
+      },
+      {
+        "name": "s6",
+        "text_tex": "(iii) When \\(y=0\\), \\(h=\\dfrac{{5\\pi}}{{9}}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, AG, condone x = 5 pi / 9."
+      },
+      {
+        "name": "s7",
+        "text_tex": "(iii) When \\(x=0\\), \\(k=\\dfrac{{5}}{{2}}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1, k = 5/2. SR: non-exact solutions A1 for both."
+      }
+    ]
+  }
+]

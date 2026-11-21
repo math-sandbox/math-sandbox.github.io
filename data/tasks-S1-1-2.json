@@ -1,0 +1,255 @@
+[
+  {
+    "id": "S1-1.2-QC1-gen",
+    "section": "S1-1.2",
+    "kind": "generated",
+    "title": "Count how many values in a stem-and-leaf list are less than a threshold",
+    "marks": 2,
+    "source": "S1 Ch1 theory S1-1.2 Quick check 1 (6 of 9 scores less than 35)",
+    "params": [
+      {
+        "name": "t",
+        "min": 25,
+        "max": 42,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "E": "round((((t-23)+abs(t-23))/2)/((((t-23)+abs(t-23))/2)+0.5))+round((((t-25)+abs(t-25))/2)/((((t-25)+abs(t-25))/2)+0.5))+round((((t-27)+abs(t-27))/2)/((((t-27)+abs(t-27))/2)+0.5))+round((((t-31)+abs(t-31))/2)/((((t-31)+abs(t-31))/2)+0.5))+round((((t-32)+abs(t-32))/2)/((((t-32)+abs(t-32))/2)+0.5))+round((((t-34)+abs(t-34))/2)/((((t-34)+abs(t-34))/2)+0.5))+round((((t-36)+abs(t-36))/2)/((((t-36)+abs(t-36))/2)+0.5))+round((((t-41)+abs(t-41))/2)/((((t-41)+abs(t-41))/2)+0.5))+round((((t-45)+abs(t-45))/2)/((((t-45)+abs(t-45))/2)+0.5))"
+    },
+    "constraints": [
+      "t>=25",
+      "t<=42"
+    ],
+    "original": {
+      "t": 35
+    },
+    "stem": "The scores of 9 players, already written in a stem-and-leaf diagram, are 23, 25, 27, 31, 32, 34, 36, 41 and 45. How many of these scores are less than {t|int}?",
+    "answer": {
+      "expression": "round((((t-23)+abs(t-23))/2)/((((t-23)+abs(t-23))/2)+0.5))+round((((t-25)+abs(t-25))/2)/((((t-25)+abs(t-25))/2)+0.5))+round((((t-27)+abs(t-27))/2)/((((t-27)+abs(t-27))/2)+0.5))+round((((t-31)+abs(t-31))/2)/((((t-31)+abs(t-31))/2)+0.5))+round((((t-32)+abs(t-32))/2)/((((t-32)+abs(t-32))/2)+0.5))+round((((t-34)+abs(t-34))/2)/((((t-34)+abs(t-34))/2)+0.5))+round((((t-36)+abs(t-36))/2)/((((t-36)+abs(t-36))/2)+0.5))+round((((t-41)+abs(t-41))/2)/((((t-41)+abs(t-41))/2)+0.5))+round((((t-45)+abs(t-45))/2)/((((t-45)+abs(t-45))/2)+0.5))",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "Compare each of the nine scores with the threshold {t|int} and count those that are strictly less than {t|int}.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Read the list against the threshold."
+      },
+      {
+        "name": "E",
+        "text_tex": "\\({E|int}\\) of the scores are less than {t|int}.",
+        "result": "round((((t-23)+abs(t-23))/2)/((((t-23)+abs(t-23))/2)+0.5))+round((((t-25)+abs(t-25))/2)/((((t-25)+abs(t-25))/2)+0.5))+round((((t-27)+abs(t-27))/2)/((((t-27)+abs(t-27))/2)+0.5))+round((((t-31)+abs(t-31))/2)/((((t-31)+abs(t-31))/2)+0.5))+round((((t-32)+abs(t-32))/2)/((((t-32)+abs(t-32))/2)+0.5))+round((((t-34)+abs(t-34))/2)/((((t-34)+abs(t-34))/2)+0.5))+round((((t-36)+abs(t-36))/2)/((((t-36)+abs(t-36))/2)+0.5))+round((((t-41)+abs(t-41))/2)/((((t-41)+abs(t-41))/2)+0.5))+round((((t-45)+abs(t-45))/2)/((((t-45)+abs(t-45))/2)+0.5))",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct count."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "club",
+        "stem": "The scores of 9 club members, already written in a stem-and-leaf diagram, are 23, 25, 27, 31, 32, 34, 36, 41 and 45. How many of these scores are less than {t|int}?",
+        "note": "club frame"
+      },
+      {
+        "id": "test",
+        "stem": "The marks of 9 students, already written in a stem-and-leaf diagram, are 23, 25, 27, 31, 32, 34, 36, 41 and 45. How many of these marks are less than {t|int}?",
+        "note": "test-mark frame"
+      }
+    ]
+  },
+  {
+    "id": "S1-1.2-QC4-gen",
+    "section": "S1-1.2",
+    "kind": "generated",
+    "title": "Total number of values represented by the leaves in three rows",
+    "marks": 2,
+    "source": "S1 Ch1 theory S1-1.2 Quick check 4 (4+7+9=20 values)",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 10,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 2,
+        "max": 10,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": 2,
+        "max": 12,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "E": "a+b+c"
+    },
+    "constraints": [
+      "a>=2",
+      "b>=2",
+      "c>=2"
+    ],
+    "original": {
+      "a": 4,
+      "b": 7,
+      "c": 9
+    },
+    "stem": "A stem-and-leaf diagram for a set of values has {a|int} leaves in the first row, {b|int} in the second and {c|int} in the third. How many values are represented in total?",
+    "answer": {
+      "expression": "a+b+c",
+      "format": "{E|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "Each leaf represents one data value, so the total is the sum of the numbers of leaves.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "One leaf for each value."
+      },
+      {
+        "name": "E",
+        "text_tex": "\\({a|int}+{b|int}+{c|int}={E|int}\\)",
+        "result": "a+b+c",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Total number of values."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "times",
+        "stem": "A stem-and-leaf diagram of recorded times has {a|int} leaves in the first row, {b|int} in the second and {c|int} in the third. How many times are represented in total?",
+        "note": "times frame"
+      },
+      {
+        "id": "masses",
+        "stem": "A stem-and-leaf diagram of recorded masses has {a|int} leaves in the first row, {b|int} in the second and {c|int} in the third. How many masses are represented in total?",
+        "note": "masses frame"
+      }
+    ]
+  },
+  {
+    "id": "S1-1.2-PP-9709-63-ON17-Q5i",
+    "section": "S1-1.2",
+    "kind": "pastpaper",
+    "marking": "manual",
+    "title": "Olympic medals: draw a stem-and-leaf diagram",
+    "marks": 4,
+    "source": {
+      "paper": "9709/63/O/N/17 Q5(i)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w17_qp_63.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w17_ms_63.pdf",
+      "note": "Stem verbatim from the QP PDF (the official stem mentions the 2012 Olympic Games; that wording is kept because official paper text is not rewritten). Steps and marks from the official MS PDF. Part (ii) (median, quartiles and a box-and-whisker plot) is omitted because it is later work, not the skill of this section. Fully manual, steps only."
+    },
+    "stem": "The number of Olympic medals won in the 2012 Olympic Games by the top 27 countries is shown below.\n\n104  88  82  65  44  38  35  34  28\n28  18  18  17  17  14  13  13  12\n12  10  10  10  9  6  5  2  2\n\n(i) Draw a stem-and-leaf diagram to illustrate the data.",
+    "steps": [
+      {
+        "name": "stem",
+        "text_tex": "Write a stem that includes the tens (and hundreds) digits needed for these values. The official scheme allows the unused stem digits 5, 7 and 9 to be missing at this stage, and the diagram may be drawn upside down.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 Stem, digits 5, 7, 9 can be missing here, can be upside down."
+      },
+      {
+        "name": "leaves",
+        "text_tex": "Attach every leaf in the correct place, with the leaves on each stem in increasing order away from the stem. The official scheme still allows 5, 7 and 9 to be missing here, and commas between leaves may be condoned.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 All leaves in correct order increasing from stem, (5, 7 and 9 can be missing), condone commas."
+      },
+      {
+        "name": "shape",
+        "text_tex": "Give the diagram a reasonable shape: every required stem is present, there is only one line for each stem, and the leaves are lined up. Commas are not allowed in the final diagram. One leaf error may be condoned. The diagram may be upside down or sideways.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 Reasonable shape, requires all values of the stem, only one line for each stem and leaves must be lined up. Can be upside down or sideways. No commas. Condone one leaf error."
+      },
+      {
+        "name": "key",
+        "text_tex": "Include a correct key that states medals, or has medals in the leaf heading or title. For example: stem 2 with leaf 8 means 28 medals.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 Correct key must state medals or have medals in leaf heading or title."
+      }
+    ]
+  },
+  {
+    "id": "S1-1.2-PP-9709-62-MJ16-Q5i",
+    "section": "S1-1.2",
+    "kind": "pastpaper",
+    "marking": "manual",
+    "title": "Bronlea and Rogate: draw a back-to-back stem-and-leaf diagram",
+    "marks": 5,
+    "source": {
+      "paper": "9709/62/M/J/16 Q5(i)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s16_qp_62.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s16_ms_62.pdf",
+      "note": "Stem verbatim from the QP PDF (the official layout is a two-row table; the two lists are transcribed with the same values. The official stem contains the phrase first two weeks in April; that wording is kept because the no-week rule applies only to the site teaching schedule and UI, not to official paper stems). Steps and marks from the official MS PDF. Parts (ii) and (iii) (median, interquartile range and a comparison) are omitted because they go beyond this subsection. Fully manual, steps only."
+    },
+    "stem": "The following are the maximum daily wind speeds in kilometres per hour for the first two weeks in April for two towns, Bronlea and Rogate.\n\nBronlea   21  45  6  33  27  3  32  14  28  24  13  17  25  22\nRogate    7  5  4  15  23  7  11  13  26  18  23  16  10  34\n\n(i) Draw a back-to-back stem-and-leaf diagram to represent this information.",
+    "steps": [
+      {
+        "name": "stem",
+        "text_tex": "Write a single, shared stem for the two towns.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 Correct single stem."
+      },
+      {
+        "name": "bronlea",
+        "text_tex": "Place the Bronlea leaves in the correct positions, ordered towards the stem.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 Correct ordered leaves Bronlea."
+      },
+      {
+        "name": "rogate",
+        "text_tex": "Place the Rogate leaves in the correct positions, ordered away from the stem.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 Correct ordered leaves Rogate."
+      },
+      {
+        "name": "shape",
+        "text_tex": "Give the finished diagram a correct overall shape (one line for each stem, leaves aligned on both sides).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 Correct overall shape."
+      },
+      {
+        "name": "key",
+        "text_tex": "Give a single key that names both towns and uses units consistent with the values, for example: stem 1 with leaf 3 on the Bronlea side and leaf 5 on the Rogate side represents 13 kph for Bronlea and 15 kph for Rogate.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "MS: B1 Single key must have both towns and units consistent with their values."
+      }
+    ]
+  }
+]

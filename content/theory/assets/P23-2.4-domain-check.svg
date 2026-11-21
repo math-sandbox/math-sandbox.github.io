@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 160" width="420" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:420px;height:auto" role="img" aria-labelledby="p224-t p224-d">
+<title id="p224-t">Checking candidates against the domain of a logarithmic equation</title>
+<desc id="p224-d">A number line. The domain x greater than negative 2 is shaded. The rejected candidate x=negative 4 lies to the left of the boundary, and the solution x=3 lies in the domain.</desc>
+<line x1="40" y1="80" x2="400" y2="80" stroke="#333" stroke-width="1.4"/>
+<polygon points="400,80 388,75 388,85" fill="#333"/>
+<rect x="160.0" y="68" width="240.0" height="24" fill="#dcfce7" opacity="0.9"/>
+<line x1="160.0" y1="68" x2="160.0" y2="92" stroke="#16a34a" stroke-width="2"/>
+<text x="160.0" y="112" text-anchor="middle" font-family="serif" font-size="13" fill="#15803d">−2</text>
+<text x="280.0" y="48" text-anchor="middle" font-family="serif" font-size="13" fill="#15803d">domain: x &gt; −2</text>
+<circle cx="100.0" cy="80" r="7" fill="#fff" stroke="#b91c1c" stroke-width="2"/>
+<text x="100.0" y="112" text-anchor="middle" font-family="serif" font-size="13" fill="#b91c1c">−4</text>
+<text x="100.0" y="36" text-anchor="middle" font-family="serif" font-size="12" fill="#b91c1c">rejected</text>
+<circle cx="310.0" cy="80" r="7" fill="#16a34a"/>
+<text x="310.0" y="112" text-anchor="middle" font-family="serif" font-size="13" fill="#15803d">3</text>
+<text x="310.0" y="36" text-anchor="middle" font-family="serif" font-size="12" fill="#15803d">solution</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="400" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:400px;height:auto" role="img" aria-label="A straight line with y-intercept c and gradient m">
+  <style>text{font-family:system-ui,Segoe UI,sans-serif;font-size:13px;fill:#222}</style>
+  <line x1="40" y1="220" x2="380" y2="220" stroke="#444" stroke-width="1.2"/>
+  <line x1="60" y1="20" x2="60" y2="230" stroke="#444" stroke-width="1.2"/>
+  <line x1="60" y1="180" x2="340" y2="40" stroke="#1d4f91" stroke-width="2"/>
+  <circle cx="60" cy="180" r="3.5" fill="#b42318"/>
+  <text x="70" y="200">c</text>
+  <text x="250" y="70">y = mx + c</text>
+</svg>

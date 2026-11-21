@@ -1,0 +1,1284 @@
+[
+  {
+    "id": "17.3-QC1-gen",
+    "section": "17.3",
+    "kind": "generated",
+    "title": "Selling price after a percentage loss",
+    "marks": 2,
+    "source": "Theory IGCSE-17.3 Quick check 1 ($360 cost, 12.5% loss, $315.00); book Exercise 17.9 Q1c-d, Q4-5 p.575; step marks are authored, not the official MS allocation",
+    "params": [
+      {
+        "name": "C",
+        "min": 100,
+        "max": 900,
+        "step": 5
+      },
+      {
+        "name": "r",
+        "min": 2.5,
+        "max": 40,
+        "step": 2.5
+      }
+    ],
+    "derived": {},
+    "constraints": [
+      "abs((C*(100-r)/100)*100-round((C*(100-r)/100)*100))<1e-6"
+    ],
+    "original": {
+      "C": 360,
+      "r": 12.5
+    },
+    "stem": "A phone costs a shop ${C|money}. It is sold at a loss of {r|raw}%. Find the selling price.",
+    "answer": {
+      "expression": "C*(100-r)/100",
+      "format": "${Sp|money}",
+      "tolerance": 0.005
+    },
+    "steps": [
+      {
+        "name": "Pc",
+        "text_tex": "Selling price is \\(100-{r|raw}={Pc|raw}\\%\\) of the cost",
+        "result": "100-r",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Loss is taken from 100 per cent of the cost price."
+      },
+      {
+        "name": "Sp",
+        "text_tex": "\\({Pc|raw}\\div100\\times{C|num2}={Sp|num2}\\), so ${Sp|money}",
+        "result": "Pc/100*C",
+        "format": "money",
+        "mark": "A1",
+        "note": "Correct selling price to the cent."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "car",
+        "stem": "A used-car dealer buys a car for ${C|money}. He sells it at a loss of {r|raw}%. Find the selling price.",
+        "params": [
+          {
+            "name": "C",
+            "min": 2000,
+            "max": 15000,
+            "step": 50
+          },
+          {
+            "name": "r",
+            "min": 2.5,
+            "max": 30,
+            "step": 2.5
+          }
+        ]
+      },
+      {
+        "id": "stock",
+        "stem": "A shop paid ${C|money} for a sofa. In a clearance it is sold at a loss of {r|raw}% on the cost price. Find the selling price.",
+        "params": [
+          {
+            "name": "C",
+            "min": 150,
+            "max": 1200,
+            "step": 10
+          },
+          {
+            "name": "r",
+            "min": 5,
+            "max": 40,
+            "step": 2.5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "17.3-QC2-gen",
+    "section": "17.3",
+    "kind": "generated",
+    "title": "Reverse percentage: price before an increase",
+    "marks": 2,
+    "source": "Theory IGCSE-17.3 Quick check 2 ($45.60 including 14% tax, $40.00); book Worked example 20 p.575 (reverse mark-up); step marks are authored, not the official MS allocation",
+    "params": [
+      {
+        "name": "X",
+        "min": 8,
+        "max": 200,
+        "step": 0.5
+      },
+      {
+        "name": "r",
+        "min": 5,
+        "max": 25,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "Pi": "X*(100+r)/100"
+    },
+    "constraints": [
+      "abs((X*(100+r)/100)*100-round((X*(100+r)/100)*100))<1e-6"
+    ],
+    "original": {
+      "X": 40,
+      "r": 14
+    },
+    "stem": "A price of ${Pi|money} includes {r|int}% sales tax. Find the price before tax.",
+    "answer": {
+      "expression": "Pi/((100+r)/100)",
+      "format": "${B|money}",
+      "tolerance": 0.005
+    },
+    "steps": [
+      {
+        "name": "Pc",
+        "text_tex": "${Pi|money} is \\(100+{r|int}={Pc|int}\\%\\) of the price before tax",
+        "result": "100+r",
+        "format": "int",
+        "mark": "M1",
+        "note": "The price before tax is 100 per cent, so divide by the multiplier, do not subtract the percentage."
+      },
+      {
+        "name": "B",
+        "text_tex": "\\({Pi|num2}\\div{Pc|int}\\times100={B|num2}\\), so ${B|money}",
+        "result": "Pi/Pc*100",
+        "format": "money",
+        "mark": "A1",
+        "note": "Correct original price to the cent."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem (tax context as in theory Quick check 2)"
+      },
+      {
+        "id": "markup",
+        "stem": "A trader sells a lamp for ${Pi|money}. Her mark-up is {r|int}% on the cost price. Find the cost price.",
+        "params": [
+          {
+            "name": "X",
+            "min": 8,
+            "max": 120,
+            "step": 0.5
+          },
+          {
+            "name": "r",
+            "min": 10,
+            "max": 60,
+            "step": 5
+          }
+        ],
+        "step_text": {
+          "Pc": "${Pi|money} is \\(100+{r|int}={Pc|int}\\%\\) of the cost price"
+        }
+      },
+      {
+        "id": "bill",
+        "stem": "A hotel bill of ${Pi|money} includes a service charge of {r|int}%. Find the bill before the service charge.",
+        "params": [
+          {
+            "name": "X",
+            "min": 40,
+            "max": 600,
+            "step": 1
+          },
+          {
+            "name": "r",
+            "min": 5,
+            "max": 15,
+            "step": 1
+          }
+        ],
+        "step_text": {
+          "Pc": "${Pi|money} is \\(100+{r|int}={Pc|int}\\%\\) of the bill before the charge"
+        }
+      }
+    ]
+  },
+  {
+    "id": "17.3-QC3-gen",
+    "section": "17.3",
+    "kind": "generated",
+    "title": "Percentage discount",
+    "marks": 2,
+    "source": "Theory IGCSE-17.3 Quick check 3 ($250 reduced to $212.50, 15%); book Discount p.576; step marks are authored, not the official MS allocation",
+    "params": [
+      {
+        "name": "O",
+        "min": 40,
+        "max": 900,
+        "step": 10
+      },
+      {
+        "name": "q",
+        "min": 5,
+        "max": 45,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "Sp": "O*(100-q)/100"
+    },
+    "constraints": [
+      "abs((O*(100-q)/100)*100-round((O*(100-q)/100)*100))<1e-6"
+    ],
+    "original": {
+      "O": 250,
+      "q": 15
+    },
+    "stem": "A sofa is reduced from ${O|money} to ${Sp|money} in a sale. Find the percentage discount.",
+    "answer": {
+      "expression": "(O-Sp)/O*100",
+      "format": "{Q|sf3z}%",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "D",
+        "text_tex": "Discount \\(={O|num2}-{Sp|num2}={D|num2}\\)",
+        "result": "O-Sp",
+        "format": "num2",
+        "mark": "M1",
+        "note": "Discount is original price minus sale price."
+      },
+      {
+        "name": "Q",
+        "text_tex": "\\({D|num2}\\div{O|num2}\\times100\\approx {Q|sf3z}\\), so {Q|sf3z}%",
+        "result": "D/O*100",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Divide by the original price, not the sale price."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "shoes",
+        "stem": "Trainers originally priced at ${O|money} are on sale for ${Sp|money}. Find the percentage discount.",
+        "params": [
+          {
+            "name": "O",
+            "min": 30,
+            "max": 200,
+            "step": 5
+          },
+          {
+            "name": "q",
+            "min": 5,
+            "max": 50,
+            "step": 1
+          }
+        ]
+      },
+      {
+        "id": "laptop",
+        "stem": "In a sale the price of a laptop falls from ${O|money} to ${Sp|money}. Find the percentage reduction.",
+        "params": [
+          {
+            "name": "O",
+            "min": 300,
+            "max": 2500,
+            "step": 25
+          },
+          {
+            "name": "q",
+            "min": 5,
+            "max": 35,
+            "step": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "17.3-QC4-gen",
+    "section": "17.3",
+    "kind": "generated",
+    "title": "Percentage profit on a batch sold at two prices",
+    "marks": 4,
+    "source": "Theory IGCSE-17.3 Quick check 4 (40 melons, 36%); book Exercise 17.9 Q6-7 p.575; step marks are authored, not the official MS allocation",
+    "params": [
+      {
+        "name": "n",
+        "min": 20,
+        "max": 60,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": 1.5,
+        "max": 6,
+        "step": 0.25
+      },
+      {
+        "name": "m",
+        "min": 10,
+        "max": 55,
+        "step": 1
+      },
+      {
+        "name": "a",
+        "min": 2,
+        "max": 10,
+        "step": 0.25
+      },
+      {
+        "name": "b",
+        "min": 1,
+        "max": 5,
+        "step": 0.1
+      }
+    ],
+    "derived": {
+      "k": "n-m"
+    },
+    "constraints": [
+      "m<n",
+      "b<c",
+      "c<a",
+      "n*c<m*a+(n-m)*b",
+      "abs((m*a+(n-m)*b-n*c)/(n*c)*1000-round((m*a+(n-m)*b-n*c)/(n*c)*1000))<1e-6"
+    ],
+    "original": {
+      "n": 40,
+      "c": 3.5,
+      "m": 32,
+      "a": 5.25,
+      "b": 2.8
+    },
+    "stem": "A trader buys {n|cnt} melons at ${c|money} each. She sells {m|cnt} of them at ${a|money} each and the rest at ${b|money} each. Find her percentage profit.",
+    "answer": {
+      "expression": "(m*a+k*b-n*c)/(n*c)*100",
+      "format": "{Q|sf3z}%",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "Co",
+        "text_tex": "Cost \\(={n|int}\\times{c|num2}={Co|num2}\\)",
+        "result": "n*c",
+        "format": "num2",
+        "mark": "B1",
+        "note": "Total cost price."
+      },
+      {
+        "name": "I",
+        "text_tex": "Income \\(={m|int}\\times{a|num2}+{k|int}\\times{b|num2}={I|num2}\\)",
+        "result": "m*a+k*b",
+        "format": "num2",
+        "mark": "M1",
+        "note": "Both groups of sales added."
+      },
+      {
+        "name": "Pr",
+        "text_tex": "Profit \\(={I|num2}-{Co|num2}={Pr|num2}\\)",
+        "result": "I-Co",
+        "format": "num2",
+        "mark": "M1",
+        "note": "Income minus cost, then divide by the cost."
+      },
+      {
+        "name": "Q",
+        "text_tex": "\\({Pr|num2}\\div{Co|num2}\\times100\\approx {Q|sf3z}\\), so {Q|sf3z}%",
+        "result": "Pr/Co*100",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Percentage of the cost price."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "scarves",
+        "stem": "A stallholder buys {n|cnt} scarves for ${c|money} each. He sells {m|cnt} of them for ${a|money} each and the others for ${b|money} each. Calculate his percentage profit.",
+        "params": [
+          {
+            "name": "n",
+            "min": 20,
+            "max": 60,
+            "step": 1
+          },
+          {
+            "name": "c",
+            "min": 3,
+            "max": 12,
+            "step": 0.5
+          },
+          {
+            "name": "m",
+            "min": 10,
+            "max": 55,
+            "step": 1
+          },
+          {
+            "name": "a",
+            "min": 5,
+            "max": 20,
+            "step": 0.5
+          },
+          {
+            "name": "b",
+            "min": 2,
+            "max": 8,
+            "step": 0.25
+          }
+        ]
+      },
+      {
+        "id": "plants",
+        "stem": "A gardener buys {n|cnt} plants at ${c|money} each. She sells {m|cnt} at ${a|money} each and the rest at the reduced price of ${b|money} each. Calculate her percentage profit."
+      }
+    ]
+  },
+  {
+    "id": "17.3-PP-0580-42-MJ20-Q1b",
+    "section": "17.3",
+    "kind": "pastpaper",
+    "title": "Sale price and original price after a percentage reduction",
+    "marks": 4,
+    "source": {
+      "paper": "0580/42/M/J/20 Q1(b)(i)(ii)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s20_qp_42.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s20_ms_42.pdf",
+      "note": "Text taken from the QP and MS PDFs (UCLES 2020)."
+    },
+    "stem": "In a sale the original prices are reduced by 15%.",
+    "parts": [
+      {
+        "part": "(i)",
+        "marks": 2,
+        "stem": "Calculate the sale price of a book that has an original price of $12.",
+        "answer": {
+          "expression": "12-15/100*12",
+          "official": "10.2[0]",
+          "tolerance_range": [
+            10.2,
+            10.2
+          ]
+        },
+        "steps": [
+          {
+            "name": "d1",
+            "text_tex": "\\(\\frac{15}{100}\\times12=1.80\\)",
+            "result": "15/100*12",
+            "format": "num2",
+            "mark": "M1",
+            "note": "MS: M1 for 15/100 times 12 oe or better."
+          },
+          {
+            "name": "a1",
+            "text_tex": "\\(12-1.80=10.20\\), so $10.20",
+            "result": "12-d1",
+            "format": "money",
+            "mark": "A1",
+            "note": "MS: 10.2[0]."
+          }
+        ]
+      },
+      {
+        "part": "(ii)",
+        "marks": 2,
+        "stem": "Calculate the original price of a jacket that has a sale price of $38.25 .",
+        "answer": {
+          "expression": "38.25/(1-15/100)",
+          "official": "45",
+          "tolerance_range": [
+            45,
+            45
+          ]
+        },
+        "steps": [
+          {
+            "name": "m2",
+            "text_tex": "\\(\\dfrac{38.25}{1-\\frac{15}{100} }=\\dfrac{38.25}{0.85}\\)",
+            "result": "None",
+            "format": "raw",
+            "mark": "M1",
+            "note": "MS: M1 for 38.25 divided by (1 minus 15/100) oe."
+          },
+          {
+            "name": "a2",
+            "text_tex": "\\(=45\\), so $45",
+            "result": "38.25/0.85",
+            "format": "int",
+            "mark": "A1",
+            "note": "MS: 45."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "17.3-PP-0580-41-ON19-Q2bc",
+    "section": "17.3",
+    "kind": "pastpaper",
+    "title": "Percentage reduction and original price",
+    "marks": 6,
+    "source": {
+      "paper": "0580/41/O/N/19 Q2(b)(c)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w19_qp_41.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w19_ms_41.pdf",
+      "note": "Text taken from the QP and MS PDFs (UCLES 2019)."
+    },
+    "stem": "",
+    "parts": [
+      {
+        "part": "(b)",
+        "marks": 3,
+        "stem": "In a sale, Ali buys a television for $195.80 .\nThe original price was $220.\nCalculate the percentage reduction on the original price.",
+        "answer": {
+          "expression": "(220-195.8)/220*100",
+          "official": "11",
+          "accept_as": "sf",
+          "sf": 3
+        },
+        "steps": [
+          {
+            "name": "r1",
+            "text_tex": "\\(220-195.80=24.20;\\quad\\dfrac{220-195.80}{220}\\times100\\)",
+            "result": "220-195.8",
+            "format": "num2",
+            "mark": "M2",
+            "note": "Official MS: M2 for (220 minus 195.8)/220 [times 100], or [100 minus] (195.8/220) times 100, or equivalent. Award the full 2 method marks for a qualifying equivalent method; a separate reduction row is NOT required. If full M2 is not earned, award M1 for 220 minus 195.8, or 195.8/220, or a correct implicit equation for percentage reduction, or (195.8 minus 220)/220. M1 is partial credit WITHIN this M2, not an additional mark. Explanatory intermediate 24.20 is not a compulsory checkpoint. Partial M1 is recorded on paper: this M2 checkbox records only 0 or 2, so its tick total may differ from the official paper score."
+          },
+          {
+            "name": "ab",
+            "text_tex": "\\(=11\\), so 11%",
+            "result": "r1/220*100",
+            "format": "int",
+            "mark": "A1",
+            "note": "MS: 11."
+          }
+        ]
+      },
+      {
+        "part": "(c)",
+        "marks": 3,
+        "stem": "In the sale, Mo buys a jacket for $63.\nThe original price was reduced by 25%.\nCalculate the original price of the jacket.",
+        "answer": {
+          "expression": "63/(1-25/100)",
+          "official": "84",
+          "tolerance_range": [
+            84,
+            84
+          ]
+        },
+        "steps": [
+          {
+            "name": "c2",
+            "text_tex": "\\(\\dfrac{63}{1-\\frac{25}{100} }=\\dfrac{63}{0.75}\\)",
+            "result": "None",
+            "format": "raw",
+            "mark": "M2",
+            "note": "Official MS: M2 for 63/(1 minus 25/100) or equivalent. The single complete expression 63/0.75 earns the full 2 method marks; no separate 75 per cent row is required. If full M2 is not earned, award M1 for associating 63 with (100 minus 25) per cent, or a correct implicit equation for the original price. M1 is partial credit WITHIN this M2, not an additional mark. Partial M1 is recorded on paper: this M2 checkbox records only 0 or 2, so its tick total may differ from the official paper score."
+          },
+          {
+            "name": "ac",
+            "text_tex": "\\(=84\\), so $84",
+            "result": "63/0.75",
+            "format": "int",
+            "mark": "A1",
+            "note": "MS: 84."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "17.3-PP-0580-32-ON19-Q1e",
+    "section": "17.3",
+    "kind": "pastpaper",
+    "title": "Percentage profit on a pack sold at two prices",
+    "marks": 4,
+    "source": {
+      "paper": "0580/32/O/N/19 Q1(e)",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w19_qp_32.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w19_ms_32.pdf",
+      "note": "Text taken from the QP and MS PDFs (UCLES 2019)."
+    },
+    "stem": "Nadira owns a clothes shop.\nNadira buys a pack of 40 dresses and pays $500.\nShe sells 35 of these dresses for $22 each.\nShe sells the remaining 5 dresses for $14.50 each.\nCalculate the percentage profit she makes when she sells all 40 dresses.",
+    "answer": {
+      "expression": "(35*22+5*14.5-500)/500*100",
+      "official": "68.5",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "In",
+        "text_tex": "\\(35\\times22+5\\times14.50=842.50\\)",
+        "result": "35*22+5*14.5",
+        "format": "num2",
+        "mark": "M1",
+        "note": "MS: M1 for 35 times 22 plus 5 times 14.5 oe."
+      },
+      {
+        "name": "Pf",
+        "text_tex": "\\(842.50-500=342.50;\\quad\\dfrac{842.50-500}{500}\\times100\\)",
+        "result": "In-500",
+        "format": "num2",
+        "mark": "M2",
+        "note": "Official MS: M2 for (their 842.50 minus 500)/500 [times 100], or (their 842.50/500 minus 1) [times 100], or (their 842.50/500) times 100 [minus 100]. If full M2 is not earned, award M1 for their 842.50/500 or their 842.50 minus 500. Use their revenue as specified by the MS; do not require a separate profit row when a complete equivalent method is shown. M1 is partial credit WITHIN this M2, not an additional mark. Explanatory intermediate 342.50 is not compulsory. Partial M1 is recorded on paper: this M2 checkbox records only 0 or 2, so its tick total may differ from the official paper score."
+      },
+      {
+        "name": "Qe",
+        "text_tex": "\\(=68.5\\), so 68.5%",
+        "result": "Pf/500*100",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "MS: 68.5."
+      }
+    ]
+  },
+  {
+    "id": "17.3-PP-0580-23-ON21-Q6",
+    "section": "17.3",
+    "kind": "pastpaper",
+    "title": "Selling price after a percentage loss",
+    "marks": 2,
+    "source": {
+      "paper": "0580/23/O/N/21 Q6",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w21_qp_23.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w21_ms_23.pdf",
+      "note": "Text taken from the QP and MS PDFs (UCLES 2021)."
+    },
+    "stem": "Marek buys a computer for $420.\nHe sells it at a loss of 15%.\nCalculate the selling price of this computer.",
+    "answer": {
+      "expression": "(1-15/100)*420",
+      "official": "357",
+      "tolerance_range": [
+        357,
+        357
+      ]
+    },
+    "steps": [
+      {
+        "name": "Lm",
+        "text_tex": "\\(\\left(1-\\frac{15}{100}\\right)\\times420\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "MS: M1 for (1 minus 15/100) times 420 oe, or B1 for 63."
+      },
+      {
+        "name": "Sl",
+        "text_tex": "\\(=357\\), so $357",
+        "result": "0.85*420",
+        "format": "int",
+        "mark": "A1",
+        "note": "MS: 357."
+      }
+    ]
+  },
+  {
+    "id": "17.3-PP-MJ20-Q1b-similar",
+    "section": "17.3",
+    "kind": "generated",
+    "title": "Sale price and original price after a percentage reduction",
+    "marks": 4,
+    "source": "Similar to 0580/42/M/J/20 Q1(b): new values and contexts; step marks are authored, not the official MS allocation",
+    "params": [
+      {
+        "name": "r",
+        "min": 5,
+        "max": 40,
+        "step": 5
+      },
+      {
+        "name": "O",
+        "min": 4,
+        "max": 80,
+        "step": 0.5
+      },
+      {
+        "name": "X",
+        "min": 10,
+        "max": 150,
+        "step": 0.5
+      }
+    ],
+    "derived": {
+      "Sj": "X*(100-r)/100"
+    },
+    "constraints": [
+      "abs((O*(100-r)/100)*100-round((O*(100-r)/100)*100))<1e-6",
+      "abs((X*(100-r)/100)*100-round((X*(100-r)/100)*100))<1e-6",
+      "X!=O"
+    ],
+    "original": {
+      "r": 15,
+      "O": 12,
+      "X": 45
+    },
+    "stem": "In a sale the original prices are reduced by {r|int}%. (a) Calculate the sale price of a book that has an original price of ${O|money}. (b) Calculate the original price of a jacket that has a sale price of ${Sj|money}.",
+    "answer": {
+      "parts": [
+        {
+          "part": "a",
+          "expression": "O-r/100*O",
+          "format": "${Sa|money}",
+          "tolerance": 0.005
+        },
+        {
+          "part": "b",
+          "expression": "Sj/(1-r/100)",
+          "format": "${Ob|money}",
+          "tolerance": 0.005
+        }
+      ]
+    },
+    "steps": [
+      {
+        "name": "Dd",
+        "text_tex": "(a) Reduction \\(=\\frac{{{r|int}}}{{100}}\\times{O|num2}={Dd|num2}\\)",
+        "result": "r/100*O",
+        "format": "num2",
+        "mark": "M1",
+        "note": "Percentage of the original price."
+      },
+      {
+        "name": "Sa",
+        "text_tex": "\\({O|num2}-{Dd|num2}={Sa|num2}\\), so ${Sa|money}",
+        "result": "O-Dd",
+        "format": "money",
+        "mark": "A1",
+        "note": "(a) Sale price."
+      },
+      {
+        "name": "Mb",
+        "text_tex": "(b) \\({Sj|num2}\\div\\left(1-\\frac{{{r|int}}}{{100}}\\right)\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Divide by the multiplier; do not add the percentage back on."
+      },
+      {
+        "name": "Ob",
+        "text_tex": "\\(={Ob|num2}\\), so ${Ob|money}",
+        "result": "Sj/(1-r/100)",
+        "format": "money",
+        "mark": "A1",
+        "note": "(b) Original price."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "furniture",
+        "stem": "A furniture shop reduces all prices by {r|int}% in a sale. (a) Calculate the sale price of a chair with an original price of ${O|money}. (b) Calculate the original price of a table with a sale price of ${Sj|money}.",
+        "params": [
+          {
+            "name": "r",
+            "min": 5,
+            "max": 40,
+            "step": 5
+          },
+          {
+            "name": "O",
+            "min": 40,
+            "max": 400,
+            "step": 5
+          },
+          {
+            "name": "X",
+            "min": 100,
+            "max": 1200,
+            "step": 5
+          }
+        ]
+      },
+      {
+        "id": "phones",
+        "stem": "A phone shop takes {r|int}% off all original prices. (a) Calculate the sale price of a phone case with an original price of ${O|money}. (b) Calculate the original price of a phone with a sale price of ${Sj|money}.",
+        "params": [
+          {
+            "name": "r",
+            "min": 5,
+            "max": 30,
+            "step": 5
+          },
+          {
+            "name": "O",
+            "min": 6,
+            "max": 40,
+            "step": 0.5
+          },
+          {
+            "name": "X",
+            "min": 120,
+            "max": 900,
+            "step": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "17.3-PP-ON19-Q2bc-similar",
+    "section": "17.3",
+    "kind": "generated",
+    "title": "Percentage reduction and original price",
+    "marks": 6,
+    "source": "Similar to 0580/41/O/N/19 Q2(b)(c): new values and contexts; step marks are authored, not the official MS allocation",
+    "params": [
+      {
+        "name": "Ot",
+        "min": 100,
+        "max": 900,
+        "step": 10
+      },
+      {
+        "name": "q",
+        "min": 4,
+        "max": 40,
+        "step": 1
+      },
+      {
+        "name": "X",
+        "min": 30,
+        "max": 300,
+        "step": 1
+      },
+      {
+        "name": "r",
+        "min": 10,
+        "max": 40,
+        "step": 5
+      }
+    ],
+    "derived": {
+      "N": "Ot*(100-q)/100",
+      "S": "X*(100-r)/100"
+    },
+    "constraints": [
+      "abs((Ot*(100-q)/100)*100-round((Ot*(100-q)/100)*100))<1e-6",
+      "abs((X*(100-r)/100)*100-round((X*(100-r)/100)*100))<1e-6"
+    ],
+    "original": {
+      "Ot": 220,
+      "q": 11,
+      "X": 84,
+      "r": 25
+    },
+    "stem": "In a sale, Ali buys a television for ${N|money}. The original price was ${Ot|money}. (a) Calculate the percentage reduction on the original price. Mo buys a jacket for ${S|money}. The original price was reduced by {r|int}%. (b) Calculate the original price of the jacket.",
+    "answer": {
+      "parts": [
+        {
+          "part": "a",
+          "expression": "(Ot-N)/Ot*100",
+          "format": "{Qa|sf3z}%",
+          "accept_as": "sf",
+          "sf": 3
+        },
+        {
+          "part": "b",
+          "expression": "S/(1-r/100)",
+          "format": "${Xb|money}",
+          "tolerance": 0.005
+        }
+      ]
+    },
+    "steps": [
+      {
+        "name": "Rd",
+        "text_tex": "(a) \\({Ot|num2}-{N|num2}={Rd|num2}\\)",
+        "result": "Ot-N",
+        "format": "num2",
+        "mark": "M1",
+        "note": "Reduction in dollars."
+      },
+      {
+        "name": "Rm",
+        "text_tex": "\\({Rd|num2}\\div{Ot|num2}\\times100\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Divide by the original price."
+      },
+      {
+        "name": "Qa",
+        "text_tex": "\\(\\approx {Qa|sf3z}\\), so {Qa|sf3z}%",
+        "result": "Rd/Ot*100",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "(a) Percentage reduction."
+      },
+      {
+        "name": "Ps",
+        "text_tex": "(b) ${S|money} is \\(100-{r|int}={Ps|int}\\%\\) of the original price",
+        "result": "100-r",
+        "format": "int",
+        "mark": "M1",
+        "note": "Associate the sale price with the reduced percentage."
+      },
+      {
+        "name": "Pm",
+        "text_tex": "\\({S|num2}\\div{Ps|int}\\times100\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Find 1 per cent, then 100 per cent."
+      },
+      {
+        "name": "Xb",
+        "text_tex": "\\(={Xb|num2}\\), so ${Xb|money}",
+        "result": "S/Ps*100",
+        "format": "money",
+        "mark": "A1",
+        "note": "(b) Original price."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "bikes",
+        "stem": "In a sale, Lina buys a bicycle for ${N|money}. The original price was ${Ot|money}. (a) Calculate the percentage reduction on the original price. Her brother buys a helmet for ${S|money}. The original price was reduced by {r|int}%. (b) Calculate the original price of the helmet.",
+        "params": [
+          {
+            "name": "Ot",
+            "min": 150,
+            "max": 800,
+            "step": 10
+          },
+          {
+            "name": "q",
+            "min": 4,
+            "max": 40,
+            "step": 1
+          },
+          {
+            "name": "X",
+            "min": 20,
+            "max": 90,
+            "step": 1
+          },
+          {
+            "name": "r",
+            "min": 10,
+            "max": 40,
+            "step": 5
+          }
+        ]
+      },
+      {
+        "id": "tickets",
+        "stem": "An airline sells a flight for ${N|money}. The usual price is ${Ot|money}. (a) Calculate the percentage reduction on the usual price. A hotel room costs ${S|money} after the usual price is reduced by {r|int}%. (b) Calculate the usual price of the room.",
+        "params": [
+          {
+            "name": "Ot",
+            "min": 200,
+            "max": 1500,
+            "step": 10
+          },
+          {
+            "name": "q",
+            "min": 4,
+            "max": 40,
+            "step": 1
+          },
+          {
+            "name": "X",
+            "min": 60,
+            "max": 400,
+            "step": 1
+          },
+          {
+            "name": "r",
+            "min": 10,
+            "max": 40,
+            "step": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "17.3-PP-ON19-Q1e-similar",
+    "section": "17.3",
+    "kind": "generated",
+    "title": "Percentage profit on a pack sold at two prices",
+    "marks": 4,
+    "source": "Similar to 0580/32/O/N/19 Q1(e): new values and contexts; step marks are authored, not the official MS allocation",
+    "params": [
+      {
+        "name": "n",
+        "min": 20,
+        "max": 80,
+        "step": 1
+      },
+      {
+        "name": "T",
+        "min": 100,
+        "max": 1500,
+        "step": 10
+      },
+      {
+        "name": "m",
+        "min": 10,
+        "max": 75,
+        "step": 1
+      },
+      {
+        "name": "a",
+        "min": 5,
+        "max": 40,
+        "step": 0.5
+      },
+      {
+        "name": "b",
+        "min": 2,
+        "max": 20,
+        "step": 0.5
+      }
+    ],
+    "derived": {
+      "k": "n-m"
+    },
+    "constraints": [
+      "m<n",
+      "b<a",
+      "T<m*a+(n-m)*b",
+      "abs((m*a+(n-m)*b-T)/T*1000-round((m*a+(n-m)*b-T)/T*1000))<1e-6"
+    ],
+    "original": {
+      "n": 40,
+      "T": 500,
+      "m": 35,
+      "a": 22,
+      "b": 14.5
+    },
+    "stem": "Nadira buys a pack of {n|cnt} dresses and pays ${T|money}. She sells {m|cnt} of these dresses for ${a|money} each. She sells the remaining {k|cnt} dresses for ${b|money} each. Calculate the percentage profit she makes when she sells all {n|cnt} dresses.",
+    "answer": {
+      "expression": "(m*a+k*b-T)/T*100",
+      "format": "{Qe|sf3z}%",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "In",
+        "text_tex": "\\({m|int}\\times{a|num2}+{k|int}\\times{b|num2}={In|num2}\\)",
+        "result": "m*a+k*b",
+        "format": "num2",
+        "mark": "M1",
+        "note": "Total income."
+      },
+      {
+        "name": "Pf",
+        "text_tex": "\\({In|num2}-{T|num2}={Pf|num2}\\)",
+        "result": "In-T",
+        "format": "num2",
+        "mark": "M1",
+        "note": "Profit."
+      },
+      {
+        "name": "Pm",
+        "text_tex": "\\({Pf|num2}\\div{T|num2}\\times100\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Percentage of the cost price."
+      },
+      {
+        "name": "Qe",
+        "text_tex": "\\(\\approx {Qe|sf3z}\\), so {Qe|sf3z}%",
+        "result": "Pf/T*100",
+        "format": "sf3z",
+        "mark": "A1",
+        "note": "Percentage profit."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "phones",
+        "stem": "A trader buys a box of {n|cnt} phone chargers and pays ${T|money}. He sells {m|cnt} of them for ${a|money} each. He sells the remaining {k|cnt} chargers for ${b|money} each. Calculate the percentage profit he makes when he sells all {n|cnt} chargers.",
+        "params": [
+          {
+            "name": "n",
+            "min": 20,
+            "max": 80,
+            "step": 1
+          },
+          {
+            "name": "T",
+            "min": 100,
+            "max": 800,
+            "step": 10
+          },
+          {
+            "name": "m",
+            "min": 10,
+            "max": 75,
+            "step": 1
+          },
+          {
+            "name": "a",
+            "min": 4,
+            "max": 25,
+            "step": 0.5
+          },
+          {
+            "name": "b",
+            "min": 1,
+            "max": 10,
+            "step": 0.5
+          }
+        ]
+      },
+      {
+        "id": "books",
+        "stem": "A school buys {n|cnt} second-hand books for a fair and pays ${T|money}. It sells {m|cnt} of them for ${a|money} each. It sells the remaining {k|cnt} books for ${b|money} each. Calculate the percentage profit when all {n|cnt} books are sold.",
+        "params": [
+          {
+            "name": "n",
+            "min": 30,
+            "max": 80,
+            "step": 1
+          },
+          {
+            "name": "T",
+            "min": 50,
+            "max": 400,
+            "step": 5
+          },
+          {
+            "name": "m",
+            "min": 10,
+            "max": 75,
+            "step": 1
+          },
+          {
+            "name": "a",
+            "min": 2,
+            "max": 12,
+            "step": 0.5
+          },
+          {
+            "name": "b",
+            "min": 0.5,
+            "max": 4,
+            "step": 0.5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "17.3-PP-ON21-Q6-similar",
+    "section": "17.3",
+    "kind": "generated",
+    "title": "Selling price after a percentage loss",
+    "marks": 2,
+    "source": "Similar to 0580/23/O/N/21 Q6: new values and contexts; step marks are authored, not the official MS allocation",
+    "params": [
+      {
+        "name": "C",
+        "min": 100,
+        "max": 2000,
+        "step": 10
+      },
+      {
+        "name": "r",
+        "min": 5,
+        "max": 40,
+        "step": 1
+      }
+    ],
+    "derived": {},
+    "constraints": [
+      "abs((C*(100-r)/100)*100-round((C*(100-r)/100)*100))<1e-6"
+    ],
+    "original": {
+      "C": 420,
+      "r": 15
+    },
+    "stem": "Marek buys a computer for ${C|money}. He sells it at a loss of {r|int}%. Calculate the selling price of this computer.",
+    "answer": {
+      "expression": "(1-r/100)*C",
+      "format": "${Sl|money}",
+      "tolerance": 0.005
+    },
+    "steps": [
+      {
+        "name": "Lm",
+        "text_tex": "\\(\\left(1-\\frac{{{r|int}}}{{100}}\\right)\\times{C|num2}\\)",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Multiply by the remaining percentage, or find the loss first."
+      },
+      {
+        "name": "Sl",
+        "text_tex": "\\(={Sl|num2}\\), so ${Sl|money}",
+        "result": "(100-r)/100*C",
+        "format": "money",
+        "mark": "A1",
+        "note": "Selling price."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "bike",
+        "stem": "Ana buys a bicycle for ${C|money}. She sells it at a loss of {r|int}%. Calculate the selling price of the bicycle.",
+        "params": [
+          {
+            "name": "C",
+            "min": 80,
+            "max": 900,
+            "step": 5
+          },
+          {
+            "name": "r",
+            "min": 5,
+            "max": 40,
+            "step": 1
+          }
+        ]
+      },
+      {
+        "id": "car",
+        "stem": "Joe buys a car for ${C|money}. Three years later he sells it at a loss of {r|int}%. Calculate the selling price of the car.",
+        "params": [
+          {
+            "name": "C",
+            "min": 4000,
+            "max": 30000,
+            "step": 100
+          },
+          {
+            "name": "r",
+            "min": 10,
+            "max": 60,
+            "step": 1
+          }
+        ]
+      }
+    ]
+  }
+]

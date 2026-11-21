@@ -1,0 +1,188 @@
+[
+  {
+    "id": "P1-3.4-QC1-gen",
+    "section": "P1-3.4",
+    "kind": "generated",
+    "title": "Square of the radius of a circle",
+    "marks": 1,
+    "source": "Theory P1-3.4 Quick check 1 (25); r^2 for integer radius",
+    "params": [
+      {
+        "name": "r",
+        "min": 3,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "r*r"
+    },
+    "constraints": [],
+    "original": {
+      "r": 5
+    },
+    "stem": "Write down the value of \\(r^2\\) for the circle with centre \\((2, -1)\\) and radius \\({r|int}\\).",
+    "answer": {
+      "expression": "r*r",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(r^2={A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is r squared. Original radius 5 gives 25."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P1-3.4-QC2-gen",
+    "section": "P1-3.4",
+    "kind": "generated",
+    "title": "Radius by completing the square",
+    "marks": 1,
+    "source": "Theory P1-3.4 Quick check 2 (5); completing the square",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 3,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "5*k",
+      "p": "6*k",
+      "q": "4*k",
+      "c": "12*k*k"
+    },
+    "constraints": [],
+    "original": {
+      "k": 1
+    },
+    "stem": "The equation of a circle is \\(x^2+y^2-{p|int}x+{q|int}y-{c|int}=0\\). Find the radius of the circle.",
+    "answer": {
+      "expression": "5*k",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Completing the square gives radius \\({A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is 5k. Original k=1 is x^2+y^2-6x+4y-12=0, radius 5."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P1-3.4-QC3-gen",
+    "section": "P1-3.4",
+    "kind": "generated",
+    "title": "Radius from the centre and a point",
+    "marks": 1,
+    "source": "Theory P1-3.4 Quick check 3 (10); distance from the origin",
+    "params": [
+      {
+        "name": "k",
+        "min": 1,
+        "max": 3,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "5*k",
+      "x": "3*k",
+      "y": "4*k"
+    },
+    "constraints": [],
+    "original": {
+      "k": 2
+    },
+    "stem": "A circle has centre \\((0, 0)\\) and passes through the point \\(({x|int}, {y|int})\\). Find the radius of the circle.",
+    "answer": {
+      "expression": "5*k",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(r^2={x|int}^2+{y|int}^2\\), so the radius is \\({A|int}\\).",
+        "result": "A",
+        "format": "int",
+        "mark": "A1",
+        "note": "A is 5k. Original k=2 gives the point (6, 8) and radius 10."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original values"
+      }
+    ]
+  },
+  {
+    "id": "P1-3.4-PP-9709-12-ON20-Q9a",
+    "section": "P1-3.4",
+    "kind": "pastpaper",
+    "title": "Equation of a circle given the centre and a point",
+    "marks": 3,
+    "source": {
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w20_qp_12.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w20_ms_12.pdf",
+      "note": "9709/12/O/N/20 Question 9(a) only [3]. Official QP and official MS. Part (b) omitted."
+    },
+    "marking": "manual",
+    "stem": "This question is 9709/12/O/N/20 Question 9(a) only, taken from the official QP.\n\nA circle has centre at the point B (5, 1). The point A (−1, −2) lies on the circle.\n\n(a) Find the equation of the circle. [3]",
+    "steps": [
+      {
+        "name": "R",
+        "text_tex": "\\(r^2=45\\), or \\(r=\\sqrt{6^2+3^2}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1, r = sqrt(6^2+3^2) or r^2=45 (sight of r=6.7 implies B1). Independent: (5-(-1))^2+(1-(-2))^2=36+9=45."
+      },
+      {
+        "name": "M",
+        "text_tex": "\\((x-5)^2+(y-1)^2=r^2\\), using the given centre and their radius.",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1, using the centre given and their radius or an equivalent expanded form."
+      },
+      {
+        "name": "A",
+        "text_tex": "\\((x-5)^2+(y-1)^2=45\\), or \\(x^2-10x+y^2-2y=19\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: A1. Do not allow a squared root written incorrectly for r."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Stem taken from the official QP PDF, Question 9(a) only. Official MS reproduced mark by mark. Paper/self-mark."
+      }
+    ]
+  }
+]

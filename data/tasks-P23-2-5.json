@@ -1,0 +1,294 @@
+[
+  {
+    "id": "P23-2.5-QC1-gen",
+    "section": "P23-2.5",
+    "kind": "generated",
+    "title": "An exponential equation in one base",
+    "marks": 2,
+    "source": "P23 Ch2 theory P23-2.5 Quick check 1 (2^x=20, x=4.32 to 3 s.f.)",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "name": "N",
+        "min": 15,
+        "max": 40,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "E": "math.log(N)/math.log(a)"
+    },
+    "constraints": [
+      "N>a",
+      "a>=2"
+    ],
+    "original": {
+      "a": 2,
+      "N": 20
+    },
+    "stem": "Solve {a|int} to the power x equals {N|int}, giving your answer correct to 3 significant figures.",
+    "answer": {
+      "expression": "math.log(N)/math.log(a)",
+      "format": "{E|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "Taking logarithms, x times the logarithm of {a|int} equals the logarithm of {N|int}.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Take logs and use the power law."
+      },
+      {
+        "name": "E",
+        "text_tex": "So x is the logarithm of {N|int} divided by the logarithm of {a|int}, which is {E|sf3z} to 3 significant figures.",
+        "result": "math.log(N)/math.log(a)",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct to 3 s.f."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "power",
+        "stem": "Find x, correct to 3 significant figures, if {a|int} to the power x equals {N|int}.",
+        "note": "power frame"
+      },
+      {
+        "id": "value",
+        "stem": "Solve the exponential equation in which {a|int} to the power x equals {N|int}. Give x to 3 significant figures.",
+        "note": "value frame"
+      }
+    ]
+  },
+  {
+    "id": "P23-2.5-QC2-gen",
+    "section": "P23-2.5",
+    "kind": "generated",
+    "title": "An exponential equation with a linear index",
+    "marks": 2,
+    "source": "P23 Ch2 theory P23-2.5 Quick check 2 (5^{2x+1}=12, x=0.272 to 3 s.f.)",
+    "params": [
+      {
+        "name": "a",
+        "min": 2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 2,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": 1,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "name": "N",
+        "min": 8,
+        "max": 20,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "E": "(math.log(N)-c*math.log(a))/(b*math.log(a))"
+    },
+    "constraints": [
+      "N>1",
+      "a>=2"
+    ],
+    "original": {
+      "a": 5,
+      "b": 2,
+      "c": 1,
+      "N": 12
+    },
+    "stem": "Solve {a|int} to the power ({b|int}x+{c|int}) equals {N|int}, giving your answer correct to 3 significant figures.",
+    "answer": {
+      "expression": "(math.log(N)-c*math.log(a))/(b*math.log(a))",
+      "format": "{E|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "Taking logarithms, ({b|int}x+{c|int}) times the logarithm of {a|int} equals the logarithm of {N|int}.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Take logs and expand the index."
+      },
+      {
+        "name": "E",
+        "text_tex": "Hence x={E|sf3z} to 3 significant figures.",
+        "result": "(math.log(N)-c*math.log(a))/(b*math.log(a))",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct to 3 s.f."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "index",
+        "stem": "Find x, correct to 3 significant figures, if {a|int} to the power ({b|int}x+{c|int}) equals {N|int}.",
+        "note": "index frame"
+      },
+      {
+        "id": "value",
+        "stem": "Solve the exponential equation {a|int} to the power {b|int}x+{c|int} equals {N|int}, to 3 significant figures.",
+        "note": "value frame"
+      }
+    ]
+  },
+  {
+    "id": "P23-2.5-QC3-gen",
+    "section": "P23-2.5",
+    "kind": "generated",
+    "title": "Different bases on each side",
+    "marks": 2,
+    "source": "P23 Ch2 theory P23-2.5 Quick check 3 (3^x=2^{x+2}, x=3.42 to 3 s.f.)",
+    "params": [
+      {
+        "name": "a",
+        "min": 3,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "name": "b",
+        "min": 2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": 1,
+        "max": 3,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "E": "c*math.log(b)/(math.log(a)-math.log(b))"
+    },
+    "constraints": [
+      "a>b",
+      "b==2"
+    ],
+    "original": {
+      "a": 3,
+      "b": 2,
+      "c": 2
+    },
+    "stem": "Solve {a|int} to the power x equals {b|int} to the power (x+{c|int}), giving your answer correct to 3 significant figures.",
+    "answer": {
+      "expression": "c*math.log(b)/(math.log(a)-math.log(b))",
+      "format": "{E|sf3z}",
+      "accept_as": "sf",
+      "sf": 3
+    },
+    "steps": [
+      {
+        "name": "form",
+        "text_tex": "Taking logarithms and collecting x terms, x times (the logarithm of {a|int} minus the logarithm of {b|int}) equals {c|int} times the logarithm of {b|int}.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Take logs and collect x."
+      },
+      {
+        "name": "E",
+        "text_tex": "Hence x={E|sf3z} to 3 significant figures.",
+        "result": "c*math.log(b)/(math.log(a)-math.log(b))",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Correct to 3 s.f."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "base stem"
+      },
+      {
+        "id": "bases",
+        "stem": "Find x, correct to 3 significant figures, if {a|int} to the power x equals {b|int} to the power (x+{c|int}).",
+        "note": "bases frame"
+      },
+      {
+        "id": "value",
+        "stem": "Solve {a|int} to the power x equals {b|int} to the power (x+{c|int}), giving x to 3 significant figures.",
+        "note": "value frame"
+      }
+    ]
+  },
+  {
+    "id": "P23-2.5-PP-9709-21-ON10-Q2",
+    "section": "P23-2.5",
+    "kind": "pastpaper",
+    "marking": "manual",
+    "title": "9709/21/O/N/10 Q2: use logarithms to solve 5 to the x equals 2 to the (2x+1)",
+    "marks": 4,
+    "source": {
+      "paper": "9709/21/O/N/10 Q2",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w10_qp_21.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w10_ms_21.pdf",
+      "note": "Stem verbatim from the QP PDF (the printed equation is 5 to the power x equals 2 to the power (2x+1), confirmed by the official MS). Fully manual, because the official MS allows the interval from 3.10 to 3.11 rather than a single 3 significant figure value; automatic 3 s.f. marking would reject the allowed 3.10. Independently, log 2 divided by (log 5 minus 2 log 2) equals 3.10628..., which rounds to 3.11 to 3 s.f."
+    },
+    "stem": "Use logarithms to solve the equation \\(5^x=2^{2x+1}\\), giving your answer correct to 3 significant figures.",
+    "steps": [
+      {
+        "name": "law",
+        "text_tex": "Take logarithms of both sides and use the power law.",
+        "result": "None",
+        "format": "num",
+        "mark": "M1*",
+        "note": "Official MS: M1* use a law for the logarithm of a product, a quotient or a power."
+      },
+      {
+        "name": "eq",
+        "text_tex": "This gives \\(x\\log 5=(2x+1)\\log 2\\), or an equivalent equation.",
+        "result": "None",
+        "format": "num",
+        "mark": "A1",
+        "note": "Official MS: A1 obtain x log 5 = (2x+1) log 2, or equivalent."
+      },
+      {
+        "name": "collect",
+        "text_tex": "Rearrange to \\(x(\\log 5-2\\log 2)=\\log 2\\), so \\(x=\\dfrac{\\log 2}{\\log 5-2\\log 2}\\).",
+        "result": "None",
+        "format": "num",
+        "mark": "M1",
+        "note": "Official MS: M1(dep*) solve for x via correct manipulative technique(s). Recorded as M1 because the checker mark field allows M1* / *M1 but not M1(dep*). Official scheme totals [4]."
+      },
+      {
+        "name": "E",
+        "text_tex": "Hence \\(x=3.11\\) to 3 significant figures.",
+        "result": "None",
+        "format": "num",
+        "mark": "A1",
+        "note": "Official MS: A1 obtain x=3.11, allowed in [3.10, 3.11]. Independently 3.10628..."
+      }
+    ]
+  }
+]

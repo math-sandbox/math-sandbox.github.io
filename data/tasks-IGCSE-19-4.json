@@ -1,0 +1,475 @@
+[
+  {
+    "id": "IGCSE-19.4-QC1-gen",
+    "section": "IGCSE-19.4",
+    "kind": "generated",
+    "title": "Angle at the centre from the angle at the circumference",
+    "marks": 1,
+    "source": "Theory IGCSE-19.4 Quick check 1; twice the circumference angle",
+    "params": [
+      {
+        "name": "n",
+        "min": 20,
+        "max": 40,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "2*n"
+    },
+    "constraints": [
+      "n>=20",
+      "n!=27"
+    ],
+    "original": {
+      "n": 32
+    },
+    "stem": "An angle at the circumference standing on an arc is \\({n|int}^\\circ\\). Find the angle at the centre, in degrees, standing on the same arc.",
+    "answer": {
+      "expression": "2*n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "The angle at the centre is twice the angle at the circumference, so \\({A|int}^\\circ\\).",
+        "result": "2*n",
+        "format": "int",
+        "mark": "A1",
+        "note": "Angle at the centre is twice the angle at the circumference on the same arc."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original 32 degrees; 27 (the worked example) is excluded"
+      }
+    ],
+    "tags": {
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-19.4"
+      ],
+      "topic": "Symmetry",
+      "chapter": "IGCSE-19",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-19-4.json",
+        "locator": "IGCSE-19.4-QC1-gen"
+      }
+    }
+  },
+  {
+    "id": "IGCSE-19.4-QC2-gen",
+    "section": "IGCSE-19.4",
+    "kind": "generated",
+    "title": "Opposite angle in a cyclic quadrilateral",
+    "marks": 1,
+    "source": "Theory IGCSE-19.4 Quick check 2; 180 minus the given opposite angle",
+    "params": [
+      {
+        "name": "n",
+        "min": 70,
+        "max": 130,
+        "step": 5
+      }
+    ],
+    "derived": {
+      "A": "180-n"
+    },
+    "constraints": [
+      "n>=70",
+      "n!=110"
+    ],
+    "original": {
+      "n": 95
+    },
+    "stem": "\\(PQRS\\) is a cyclic quadrilateral and angle \\(PQR={n|int}^\\circ\\). Find angle \\(PSR\\), in degrees.",
+    "answer": {
+      "expression": "180-n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "Opposite angles add to \\(180^\\circ\\), so angle \\(PSR={A|int}^\\circ\\).",
+        "result": "180-n",
+        "format": "int",
+        "mark": "A1",
+        "note": "Opposite angles of a cyclic quadrilateral add to 180 degrees."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original 95 degrees; 110 (the worked example) is excluded"
+      }
+    ],
+    "tags": {
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-19.4"
+      ],
+      "topic": "Symmetry",
+      "chapter": "IGCSE-19",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-19-4.json",
+        "locator": "IGCSE-19.4-QC2-gen"
+      }
+    }
+  },
+  {
+    "id": "IGCSE-19.4-QC3-gen",
+    "section": "IGCSE-19.4",
+    "kind": "generated",
+    "title": "Apex of an isosceles triangle from a tangent-chord angle",
+    "marks": 1,
+    "source": "Theory IGCSE-19.4 Quick check 3; 180 minus twice the tangent-chord angle",
+    "params": [
+      {
+        "name": "n",
+        "min": 20,
+        "max": 50,
+        "step": 2
+      }
+    ],
+    "derived": {
+      "A": "180-2*n"
+    },
+    "constraints": [
+      "n>=20",
+      "n!=40"
+    ],
+    "original": {
+      "n": 32
+    },
+    "stem": "The angle between a tangent and a chord is \\({n|int}^\\circ\\). The chord is one equal side of an isosceles triangle whose two equal sides meet at a point on the circle. Find the angle, in degrees, at that point.",
+    "answer": {
+      "expression": "180-2*n",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "By the alternate segment theorem both base angles are \\({n|int}^\\circ\\), so the remaining angle is \\({A|int}^\\circ\\).",
+        "result": "180-2*n",
+        "format": "int",
+        "mark": "A1",
+        "note": "Alternate segment gives the base angles; the remaining angle is 180 minus twice that."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original 32 degrees; 40 (the worked example) is excluded"
+      }
+    ],
+    "tags": {
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-19.4"
+      ],
+      "topic": "Symmetry",
+      "chapter": "IGCSE-19",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-19-4.json",
+        "locator": "IGCSE-19.4-QC3-gen"
+      }
+    }
+  },
+  {
+    "id": "IGCSE-19.4-PP-0580-43-ON21-Q2",
+    "section": "IGCSE-19.4",
+    "kind": "pastpaper",
+    "title": "Angle at the circumference, a cyclic quadrilateral and a tangent",
+    "marks": 6,
+    "source": {
+      "paper": "0580/43/O/N/21 Q2",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w21_qp_43.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w21_ms_43.pdf",
+      "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+    },
+    "stem": "<p>(a) \\(A\\), \\(B\\) and \\(P\\) are points on a circle, centre \\(O\\) and angle \\(OBA=38^\\circ\\).</p><figure><svg viewBox=\"0 0 368 268\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"ig194a-t ig194a-d\" style=\"width:100%;max-width:368px;height:auto\"><title id=\"ig194a-t\">Circle, centre O, with points A, B and P on the circumference and angle OBA equal to 38 degrees</title><desc id=\"ig194a-d\">Circle centre O. Radii OA and OB, chord AB, and point P on the circumference so that AP and BP are drawn. Angle OBA is marked 38 degrees. A NOT TO SCALE label sits inside the picture, away from the edges.</desc><circle cx=\"180.0\" cy=\"125.0\" r=\"88.0\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.6\"/><line x1=\"180.0\" y1=\"125.0\" x2=\"172.3\" y2=\"37.3\" stroke=\"#1a1a1a\" stroke-width=\"1.6\"/><line x1=\"180.0\" y1=\"125.0\" x2=\"97.3\" y2=\"155.1\" stroke=\"#1a1a1a\" stroke-width=\"1.6\"/><line x1=\"172.3\" y1=\"37.3\" x2=\"97.3\" y2=\"155.1\" stroke=\"#1a1a1a\" stroke-width=\"1.6\"/><line x1=\"172.3\" y1=\"37.3\" x2=\"230.5\" y2=\"197.1\" stroke=\"#0b5cab\" stroke-width=\"1.5\"/><line x1=\"97.3\" y1=\"155.1\" x2=\"230.5\" y2=\"197.1\" stroke=\"#0b5cab\" stroke-width=\"1.5\"/><circle cx=\"180.0\" cy=\"125.0\" r=\"3\" fill=\"#1a1a1a\"/><text x=\"190.0\" y=\"129.0\" font-size=\"13\" font-family=\"sans-serif\">O</text><text x=\"164.3\" y=\"29.3\" font-size=\"13\" font-family=\"sans-serif\">A</text><text x=\"81.3\" y=\"161.1\" font-size=\"13\" font-family=\"sans-serif\">B</text><text x=\"238.5\" y=\"213.1\" font-size=\"13\" font-family=\"sans-serif\">P</text><text x=\"119.3\" y=\"145.1\" font-size=\"12\" font-family=\"sans-serif\">38°</text><text y=\"28.0\" font-size=\"11\" font-family=\"sans-serif\" x=\"360\" text-anchor=\"end\">NOT TO SCALE</text></svg></figure><p>Find angle \\(APB\\). [3]</p><p>(b) \\(CDEF\\) is a cyclic quadrilateral and \\(FC=FE\\). \\(TU\\) is a tangent to the circle at \\(C\\) and angle \\(TCF=50^\\circ\\).</p><figure><svg viewBox=\"0 0 368 308\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"ig194b-t ig194b-d\" style=\"width:100%;max-width:368px;height:auto\"><title id=\"ig194b-t\">Cyclic quadrilateral CDEF with FC equal to FE and a tangent TU at C, angle TCF equal to 50 degrees</title><desc id=\"ig194b-d\">A circle with cyclic quadrilateral CDEF. Chords CF, FE, ED, DC and CE are drawn. Equal-length chords FC and FE have tick marks. The line TU is a tangent at C, with T upper left and U lower right. Angle TCF is marked 50 degrees. A NOT TO SCALE label sits inside the picture, away from the edges.</desc><circle cx=\"168.0\" cy=\"142.0\" r=\"90.0\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.6\"/><line x1=\"49.8\" y1=\"156.7\" x2=\"159.8\" y2=\"255.7\" stroke=\"#1a1a1a\" stroke-width=\"1.6\"/><line x1=\"107.8\" y1=\"208.9\" x2=\"117.7\" y2=\"67.4\" stroke=\"#0b5cab\" stroke-width=\"1.5\"/><line x1=\"117.7\" y1=\"67.4\" x2=\"252.6\" y2=\"111.2\" stroke=\"#0b5cab\" stroke-width=\"1.5\"/><line x1=\"252.6\" y1=\"111.2\" x2=\"253.6\" y2=\"169.8\" stroke=\"#0b5cab\" stroke-width=\"1.5\"/><line x1=\"253.6\" y1=\"169.8\" x2=\"107.8\" y2=\"208.9\" stroke=\"#0b5cab\" stroke-width=\"1.5\"/><line x1=\"107.8\" y1=\"208.9\" x2=\"252.6\" y2=\"111.2\" stroke=\"#0b5cab\" stroke-width=\"1.5\"/><line x1=\"119.7\" y1=\"138.6\" x2=\"105.7\" y2=\"137.6\" stroke=\"#1a1a1a\" stroke-width=\"1.4\"/><line x1=\"187.3\" y1=\"82.6\" x2=\"183.0\" y2=\"96.0\" stroke=\"#1a1a1a\" stroke-width=\"1.4\"/><path d=\"M 87.0 190.1 A 28 28 0 0 1 109.7 181.0\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.1\"/><text x=\"35.8\" y=\"152.7\" font-size=\"13\" font-family=\"sans-serif\">T</text><text x=\"167.8\" y=\"271.7\" font-size=\"13\" font-family=\"sans-serif\">U</text><text x=\"91.8\" y=\"226.9\" font-size=\"13\" font-family=\"sans-serif\">C</text><text x=\"103.7\" y=\"61.4\" font-size=\"13\" font-family=\"sans-serif\">F</text><text x=\"260.6\" y=\"107.2\" font-size=\"13\" font-family=\"sans-serif\">E</text><text x=\"263.6\" y=\"175.8\" font-size=\"13\" font-family=\"sans-serif\">D</text><text x=\"92.0\" y=\"173.9\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"middle\">50°</text><text y=\"28.0\" font-size=\"11\" font-family=\"sans-serif\" x=\"360\" text-anchor=\"end\">NOT TO SCALE</text></svg></figure><p>Find</p><p>(i) angle \\(EFC\\), [2]</p><p>(ii) angle \\(CDE\\). [1]</p>",
+    "tags": {
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-19.4"
+      ],
+      "topic": "Symmetry",
+      "chapter": "IGCSE-19",
+      "marks": 6,
+      "difficulty": "hard",
+      "type": "pp",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-19-4.json",
+        "locator": "IGCSE-19.4-PP-0580-43-ON21-Q2"
+      }
+    },
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "(a) Triangle \\(OAB\\) is isosceles with \\(OA=OB\\), so angle \\(AOB=180^\\circ-2\\times 38^\\circ=104^\\circ\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1 for 180 – 2 × 38, implied by 104."
+      },
+      {
+        "name": "s2",
+        "text_tex": "(a) Angle \\(APB\\) is the angle at the circumference standing on the same arc as angle \\(AOB\\), so it is half of \\(104^\\circ\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1 for their AOB ÷ 2."
+      },
+      {
+        "name": "s3",
+        "text_tex": "(a) Angle \\(APB=52^\\circ\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: 52°, 3 marks."
+      },
+      {
+        "name": "s4",
+        "text_tex": "(b)(i) By the alternate segment theorem, \\(FEC=50^\\circ\\) or \\(FCE=50^\\circ\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1 for FEC = 50 or FCE = 50."
+      },
+      {
+        "name": "s5",
+        "text_tex": "(b)(i) Triangle \\(FCE\\) is isosceles with \\(FC=FE\\), so angle \\(EFC=80^\\circ\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: 80°, 2 marks."
+      },
+      {
+        "name": "s6",
+        "text_tex": "(b)(ii) Opposite angles of cyclic quadrilateral \\(CDEF\\) add to \\(180^\\circ\\), so angle \\(CDE=100^\\circ\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: 100°, 1 mark, FT 180 – their (i)."
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-19.4-PP-0580-42-MJ22-Q2",
+    "section": "IGCSE-19.4",
+    "kind": "pastpaper",
+    "title": "Angle in a semicircle, angles in the same segment, and a tangent",
+    "marks": 7,
+    "source": {
+      "paper": "0580/42/M/J/22 Q2",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s22_qp_42.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s22_ms_42.pdf",
+      "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+    },
+    "stem": "<p>(a) The points \\(P\\), \\(Q\\), \\(R\\) and \\(S\\) lie on a circle with diameter \\(PR\\).</p><figure><svg viewBox=\"0 0 368 258\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"ig194mj22a-t ig194mj22a-d\" style=\"width:100%;max-width:368px;height:auto\"><title id=\"ig194mj22a-t\">Circle with diameter PR and points Q and S on the circumference, angle QPR equal to 29 degrees</title><desc id=\"ig194mj22a-d\">A circle with diameter PR. Points Q and S lie on the circumference. Chords PQ, QR, PS and SQ are drawn. Angle QPR is marked 29 degrees. A NOT TO SCALE label sits inside the picture, away from the edges.</desc><circle cx=\"160.0\" cy=\"130.0\" r=\"88.0\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.6\"/><line x1=\"160.0\" y1=\"218.0\" x2=\"160.0\" y2=\"42.0\" stroke=\"#1a1a1a\" stroke-width=\"1.6\"/><line x1=\"77.3\" y1=\"99.9\" x2=\"242.7\" y2=\"99.9\" stroke=\"#0b5cab\" stroke-width=\"1.5\"/><line x1=\"77.3\" y1=\"99.9\" x2=\"160.0\" y2=\"218.0\" stroke=\"#0b5cab\" stroke-width=\"1.5\"/><line x1=\"160.0\" y1=\"218.0\" x2=\"242.7\" y2=\"99.9\" stroke=\"#0b5cab\" stroke-width=\"1.5\"/><line x1=\"160.0\" y1=\"42.0\" x2=\"242.7\" y2=\"99.9\" stroke=\"#0b5cab\" stroke-width=\"1.5\"/><text x=\"156.0\" y=\"234.0\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">P</text><text x=\"156.0\" y=\"36.0\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">R</text><text x=\"252.7\" y=\"103.9\" font-size=\"13\" font-family=\"sans-serif\">Q</text><text x=\"61.3\" y=\"103.9\" font-size=\"13\" font-family=\"sans-serif\">S</text><text x=\"176.0\" y=\"202.0\" font-size=\"12\" font-family=\"sans-serif\">29°</text><text y=\"36.0\" font-size=\"11\" font-family=\"sans-serif\" x=\"360\" text-anchor=\"end\">NOT TO SCALE</text></svg></figure><p>Work out the size of angle \\(PSQ\\), giving a geometrical reason for each step of your working. [3]</p><p>(b) The points \\(A\\), \\(B\\) and \\(T\\) lie on a circle and \\(CTS\\) is a tangent to the circle at \\(T\\).</p><p>\\(ABC\\) is a straight line and \\(AB=BT\\).</p><p>Angle \\(ATS=98^\\circ\\).</p><figure><svg viewBox=\"0 0 388 258\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"ig194mj22b-t ig194mj22b-d\" style=\"width:100%;max-width:388px;height:auto\"><title id=\"ig194mj22b-t\">Circle with points A, B and T, tangent CTS at T, AB equal to BT, and angle ATS equal to 98 degrees</title><desc id=\"ig194mj22b-d\">A circle with points A, B and T on the circumference. The line CTS is a tangent at T, and ABC is a straight line. Equal lengths AB and BT have tick marks. Angle ATS is marked 98 degrees. A NOT TO SCALE label sits inside the picture, away from the edges.</desc><circle cx=\"200.0\" cy=\"110.0\" r=\"86.0\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.6\"/><line x1=\"97.6\" y1=\"196.0\" x2=\"315.0\" y2=\"196.0\" stroke=\"#1a1a1a\" stroke-width=\"1.6\"/><line x1=\"150.7\" y1=\"39.6\" x2=\"97.6\" y2=\"196.0\" stroke=\"#0b5cab\" stroke-width=\"1.5\"/><line x1=\"150.7\" y1=\"39.6\" x2=\"200.0\" y2=\"196.0\" stroke=\"#0b5cab\" stroke-width=\"1.5\"/><line x1=\"118.0\" y1=\"135.9\" x2=\"200.0\" y2=\"196.0\" stroke=\"#0b5cab\" stroke-width=\"1.5\"/><line x1=\"140.0\" y1=\"89.6\" x2=\"128.6\" y2=\"85.8\" stroke=\"#1a1a1a\" stroke-width=\"1.4\"/><line x1=\"162.5\" y1=\"161.1\" x2=\"155.4\" y2=\"170.8\" stroke=\"#1a1a1a\" stroke-width=\"1.4\"/><path d=\"M 226.0 196.0 A 26 26 0 0 0 192.2 171.2\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.1\"/><text x=\"144.7\" y=\"31.6\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"102.0\" y=\"139.9\" font-size=\"13\" font-family=\"sans-serif\">B</text><text x=\"85.6\" y=\"212.0\" font-size=\"13\" font-family=\"sans-serif\">C</text><text x=\"196.0\" y=\"212.0\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">T</text><text x=\"319.0\" y=\"212.0\" font-size=\"13\" font-family=\"sans-serif\">S</text><text x=\"217.7\" y=\"175.8\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"middle\">98°</text><text y=\"28.0\" font-size=\"11\" font-family=\"sans-serif\" x=\"380\" text-anchor=\"end\">NOT TO SCALE</text></svg></figure><p>Work out the size of angle \\(ACT\\). [4]</p>",
+    "tags": {
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-19.4"
+      ],
+      "topic": "Symmetry",
+      "chapter": "IGCSE-19",
+      "marks": 7,
+      "difficulty": "hard",
+      "type": "pp",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-19-4.json",
+        "locator": "IGCSE-19.4-PP-0580-42-MJ22-Q2"
+      }
+    },
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "(a) Angle \\(PQR=90^\\circ\\), angle in a semicircle.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: PQR = 90 angle in semi-circle."
+      },
+      {
+        "name": "s2",
+        "text_tex": "(a) Angle \\(PRQ=61^\\circ\\), angle sum of triangle.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: PRQ = 61 angle sum of triangle [= 180]."
+      },
+      {
+        "name": "s3",
+        "text_tex": "(a) Angle \\(PSQ=61^\\circ\\), angle in the same segment.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: PSQ = 61 angle in same segment. If 0 scored, SC1 for PSQ = PRQ [= 61] soi."
+      },
+      {
+        "name": "s4",
+        "text_tex": "(b) Angle \\(ABT=98^\\circ\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1 for ABT = 98."
+      },
+      {
+        "name": "s5",
+        "text_tex": "(b) Angle \\(TAB\\) or angle \\(ATB=41^\\circ\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1 for TAB or ATB = 41."
+      },
+      {
+        "name": "s6",
+        "text_tex": "(b) Angle \\(BTC=41^\\circ\\), or \\(TBC=82^\\circ\\), or \\(ATC=82^\\circ\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1 for BTC = 41 or TBC = 82 or ATC = 82 soi."
+      },
+      {
+        "name": "s7",
+        "text_tex": "(b) Angle \\(ACT=57^\\circ\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: 57, 4 marks."
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-19.4-PP-0580-41-ON21-Q5",
+    "section": "IGCSE-19.4",
+    "kind": "pastpaper",
+    "title": "Angle at the centre, a cyclic quadrilateral, and the circumference of a circle",
+    "marks": 11,
+    "source": {
+      "paper": "0580/41/O/N/21 Q5",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w21_qp_41.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w21_ms_41.pdf",
+      "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+    },
+    "stem": "<p>(a) \\(A\\), \\(B\\), \\(C\\) and \\(D\\) are points on a circle, centre \\(O\\).</p><p>Angle \\(COD=124^\\circ\\) and angle \\(BCO=35^\\circ\\).</p><figure><svg viewBox=\"0 0 368 288\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"ig194on21q5a-t ig194on21q5a-d\" style=\"width:100%;max-width:368px;height:auto\"><title id=\"ig194on21q5a-t\">Circle, centre O, with points A, B, C and D on the circumference, angle COD equal to 124 degrees and angle BCO equal to 35 degrees</title><desc id=\"ig194on21q5a-d\">A circle, centre O, with points A, B, C and D on the circumference. Radii OD and OC, and chords AD, AB, BC, BD and DC are drawn. Angle COD is marked 124 degrees and angle BCO is marked 35 degrees. A NOT TO SCALE label sits inside the picture, away from the edges.</desc><circle cx=\"170.0\" cy=\"140.0\" r=\"96.0\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.6\"/><line x1=\"108.3\" y1=\"66.5\" x2=\"202.8\" y2=\"49.8\" stroke=\"#0b5cab\" stroke-width=\"1.5\"/><line x1=\"108.3\" y1=\"66.5\" x2=\"79.8\" y2=\"172.8\" stroke=\"#0b5cab\" stroke-width=\"1.5\"/><line x1=\"79.8\" y1=\"172.8\" x2=\"260.2\" y2=\"172.8\" stroke=\"#0b5cab\" stroke-width=\"1.5\"/><line x1=\"79.8\" y1=\"172.8\" x2=\"202.8\" y2=\"49.8\" stroke=\"#0b5cab\" stroke-width=\"1.5\"/><line x1=\"202.8\" y1=\"49.8\" x2=\"260.2\" y2=\"172.8\" stroke=\"#0b5cab\" stroke-width=\"1.5\"/><line x1=\"170.0\" y1=\"140.0\" x2=\"202.8\" y2=\"49.8\" stroke=\"#1a1a1a\" stroke-width=\"1.6\"/><line x1=\"170.0\" y1=\"140.0\" x2=\"260.2\" y2=\"172.8\" stroke=\"#1a1a1a\" stroke-width=\"1.6\"/><circle cx=\"170.0\" cy=\"140.0\" r=\"3\" fill=\"#1a1a1a\"/><path d=\"M 179.6 113.7 A 28 28 0 0 1 196.3 149.6\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.1\"/><path d=\"M 236.2 172.8 A 24 24 0 0 1 237.7 164.6\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.1\"/><text x=\"154.0\" y=\"144.0\" font-size=\"13\" font-family=\"sans-serif\">O</text><text x=\"94.3\" y=\"62.5\" font-size=\"13\" font-family=\"sans-serif\">A</text><text x=\"63.8\" y=\"178.8\" font-size=\"13\" font-family=\"sans-serif\">B</text><text x=\"268.2\" y=\"188.8\" font-size=\"13\" font-family=\"sans-serif\">C</text><text x=\"208.8\" y=\"43.8\" font-size=\"13\" font-family=\"sans-serif\">D</text><text x=\"192.0\" y=\"132.0\" font-size=\"12\" font-family=\"sans-serif\">124°</text><text x=\"252.2\" y=\"152.8\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"middle\">35°</text><text y=\"28.0\" font-size=\"11\" font-family=\"sans-serif\" x=\"360\" text-anchor=\"end\">NOT TO SCALE</text></svg></figure><p>(i) Work out angle \\(CBD\\).</p><p>Give a geometrical reason for your answer. [2]</p><p>(ii) Work out angle \\(BAD\\).</p><p>Give a geometrical reason for each step of your working. [4]</p><p>(b) \\(P\\), \\(Q\\), \\(R\\) and \\(S\\) are points on a circle, centre \\(O\\).</p><p>\\(QS\\) is a diameter.</p><p>Angle \\(PRS=42^\\circ\\) and \\(PQ=5.9\\) cm.</p><figure><svg viewBox=\"0 0 368 288\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"ig194on21q5b-t ig194on21q5b-d\" style=\"width:100%;max-width:368px;height:auto\"><title id=\"ig194on21q5b-t\">Circle, centre O, with diameter QS, points P and R on the circumference, angle PRS equal to 42 degrees and PQ equal to 5.9 centimetres</title><desc id=\"ig194on21q5b-d\">A circle, centre O, with diameter QS. Points P and R lie on the circumference. Chords SR, RP, PS and PQ are drawn. Angle PRS is marked 42 degrees and PQ is labelled 5.9 cm. A NOT TO SCALE label sits inside the picture, away from the edges.</desc><circle cx=\"175.0\" cy=\"140.0\" r=\"96.0\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.6\"/><line x1=\"84.8\" y1=\"107.2\" x2=\"265.2\" y2=\"172.8\" stroke=\"#1a1a1a\" stroke-width=\"1.6\"/><line x1=\"84.8\" y1=\"107.2\" x2=\"199.8\" y2=\"47.3\" stroke=\"#0b5cab\" stroke-width=\"1.5\"/><line x1=\"199.8\" y1=\"47.3\" x2=\"113.3\" y2=\"213.5\" stroke=\"#0b5cab\" stroke-width=\"1.5\"/><line x1=\"113.3\" y1=\"213.5\" x2=\"84.8\" y2=\"107.2\" stroke=\"#0b5cab\" stroke-width=\"1.5\"/><line x1=\"113.3\" y1=\"213.5\" x2=\"265.2\" y2=\"172.8\" stroke=\"#0b5cab\" stroke-width=\"1.5\"/><circle cx=\"175.0\" cy=\"140.0\" r=\"3\" fill=\"#1a1a1a\"/><text x=\"183.0\" y=\"134.0\" font-size=\"13\" font-family=\"sans-serif\">O</text><text x=\"68.8\" y=\"105.2\" font-size=\"13\" font-family=\"sans-serif\">S</text><text x=\"275.2\" y=\"180.8\" font-size=\"13\" font-family=\"sans-serif\">Q</text><text x=\"197.8\" y=\"39.3\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">R</text><text x=\"105.3\" y=\"229.5\" font-size=\"13\" font-family=\"sans-serif\">P</text><text x=\"177.8\" y=\"65.3\" font-size=\"12\" font-family=\"sans-serif\">42°</text><text x=\"197.3\" y=\"209.2\" font-size=\"12\" font-family=\"sans-serif\">5.9 cm</text><text y=\"28.0\" font-size=\"11\" font-family=\"sans-serif\" x=\"360\" text-anchor=\"end\">NOT TO SCALE</text></svg></figure><p>Calculate the circumference of the circle. [5]</p>",
+    "tags": {
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-19.4"
+      ],
+      "topic": "Symmetry",
+      "chapter": "IGCSE-19",
+      "marks": 11,
+      "difficulty": "hard",
+      "type": "pp",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-19-4.json",
+        "locator": "IGCSE-19.4-PP-0580-41-ON21-Q5"
+      }
+    },
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "(a)(i) Angle \\(CBD=62^\\circ\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: 62."
+      },
+      {
+        "name": "s2",
+        "text_tex": "(a)(i) The angle at the centre is twice the angle at the circumference.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: Angle at centre is twice angle at circumference oe. B1 for either the angle or the reason."
+      },
+      {
+        "name": "s3",
+        "text_tex": "(a)(ii) Angle \\(OCD=28^\\circ\\), angle \\(BCD=63^\\circ\\), angle \\(BAD=117^\\circ\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B2",
+        "note": "Official MS: B2 for 117 or B1 for [angle OCD =] 28"
+      },
+      {
+        "name": "s4",
+        "text_tex": "(a)(ii) Triangle \\(OCD\\) is isosceles.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1dep for isosceles [triangle]."
+      },
+      {
+        "name": "s5",
+        "text_tex": "(a)(ii) Opposite angles in a cyclic quadrilateral are supplementary.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1 for opposite angles in a cyclic quadrilateral are supplementary."
+      },
+      {
+        "name": "s6",
+        "text_tex": "(b) Angle \\(PQS=42^\\circ\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1 for angle PQS = 42."
+      },
+      {
+        "name": "s7",
+        "text_tex": "(b) \\(QS=5.9\\div\\cos 42^\\circ\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M2",
+        "note": "Official MS: M2 for QS = 5.9 / cos 42 oe, or M1 for cos 42 = 5.9/QS oe."
+      },
+      {
+        "name": "s8",
+        "text_tex": "(b) The circumference is \\(QS\\times\\pi\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1dep for their SQ x pi oe."
+      },
+      {
+        "name": "s9",
+        "text_tex": "(b) The circumference is \\(24.9\\) cm.",
+        "result": "None",
+        "format": "raw",
+        "mark": "A1",
+        "note": "Official MS: 24.9 or 24.94 to 24.95, 5 marks."
+      }
+    ]
+  }
+]

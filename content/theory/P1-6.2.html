@@ -1,0 +1,84 @@
+<section class="theory" data-section="P1-6.2">
+<h2>6.2 Binomial coefficients</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 1 Coursebook (Sue Pemberton, series editor Julian Gilbey), Chapter 6 Series, printed pp.160–165. Own wording and new numbers, following the coursebook notation \(\binom{n}{r}\), its factorial formula, and the binomial theorem for a positive integer \(n\).</p>
+<p class="key-words"><strong>Key words:</strong> <em>binomial coefficient</em></p>
+<h3>The notation \(\binom{n}{r}\)</h3>
+<p>The entries of row \(n\) of Pascal’s triangle are the binomial coefficients \(\binom{n}{0},\binom{n}{1},\ldots,\binom{n}{n}\). Each binomial coefficient can be found without the triangle:</p>
+<p>\[\binom{n}{r}={}^{n}C_{r}=\dfrac{n!}{r!\,(n-r)!},\qquad \binom{n}{0}=\binom{n}{n}=1,\qquad \binom{n}{r}=\binom{n}{n-r}.\]</p>
+<p>For example, \(\binom{6}{2}=\dfrac{6\times5}{2\times1}=15\).</p>
+<h3>The binomial theorem</h3>
+<p>For a positive integer \(n\),</p>
+<p>\[(a+b)^n=a^n+\binom{n}{1}a^{n-1}b+\binom{n}{2}a^{n-2}b^2+\cdots+\binom{n}{r}a^{n-r}b^r+\cdots+b^n.\]</p>
+<p>The general term is \(\binom{n}{r}a^{n-r}b^r\). To find one coefficient, choose the value of \(r\) that gives the required power of \(x\). An unknown constant in the bracket can be found by setting a coefficient equal to its given value.</p>
+<div class="worked-example">
+<h4>Worked example 1: One coefficient</h4>
+<p class="src">Coursebook, 6.2, the general term. New numbers.</p>
+<p>Find the coefficient of \(x^3\) in the expansion of \((2+x)^7\).</p>
+<ol class="steps">
+<li>The term in \(x^3\) has \(r=3\): \(\binom{7}{3}2^4x^3\). <span class="mark">M1</span></li>
+<li>\(35\times16=560\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(560\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: The term independent of \(x\)</h4>
+<p class="src">Coursebook, 6.2, terms with negative powers. New numbers.</p>
+<p>Find the term independent of \(x\) in the expansion of \(\left(x+\dfrac{2}{x}\right)^6\).</p>
+<ol class="steps">
+<li>The general term is \(\binom{6}{r}x^{6-r}\left(\dfrac{2}{x}\right)^r=\binom{6}{r}2^rx^{6-2r}\), so the power of \(x\) is zero when \(r=3\). <span class="mark">M1</span></li>
+<li>\(\binom{6}{3}\times2^3=20\times8=160\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(160\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul>
+<li>Using \(\binom{n}{r}\) with the wrong \(r\): the term in \(x^r\) of \((1+kx)^n\) uses \(\binom{n}{r}\), the \((r+1)\)th term.</li>
+<li>Raising only \(x\), and not the constant in front of it, to the power \(r\).</li>
+<li>Dropping the sign of a negative term, for example writing \(+80x^3\) for the term in \(x^3\) of \((1-2x)^5\).</li>
+</ul>
+<h3>Past paper</h3>
+<p class="src">9709/11/O/N/10 Q2, official QP and official MS.</p>
+<p>In the expansion of \((1+ax)^6\), where \(a\) is a constant, the coefficient of \(x\) is \(-30\). Find the coefficient of \(x^3\). [4]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>The term in \(x\) is \(6ax\). <span class="mark">B1</span> Official MS: B1, term in x = 6ax, correct only.</li>
+<li>\(6a=-30\), so \(a=-5\). <span class="mark">B1</span> Official MS: B1 ft, equate with −30 to give a = −5; ft from his answer for 6ax.</li>
+<li>The term in \(x^3\) is \(\dfrac{6\times5\times4}{3!}a^3x^3=20a^3x^3\). <span class="mark">B1</span> Official MS: B1, term in x³ = (6.5.4/3!) a³, correct only.</li>
+<li>Coefficient of \(x^3\) \(=20\times(-5)^3=-2500\) <span class="mark">B1</span> Official MS: B1 ft, −2500; ft for 20 × a³.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/12/F/M/19 Q1, official QP and official MS.</p>
+<p>The coefficient of \(x^3\) in the expansion of \((1-px)^5\) is \(-2160\). Find the value of the constant \(p\). [3]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>The term in \(x^3\) is \({}^{5}C_{3}(-px)^3=-10p^3x^3\). <span class="mark">B1</span> Official MS: B1, 5C3 [(−)(px)³] soi. Can be part of expansion. Condone omission of − sign.</li>
+<li>\(-10p^3=-2160\), so \(p^3=216\). <span class="mark">M1</span> Official MS: M1, (−1)10p³ = −2160 then ÷ and cube root. Condone omission of − sign.</li>
+<li>\(p=6\) <span class="mark">A1</span> Official MS: A1, p = 6.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>Evaluate \(\dbinom{7}{3}\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dbinom{7}{3}=\dfrac{7\times6\times5}{3\times2\times1}=35\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(35\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>Find the coefficient of \(x^3\) in the expansion of \((1-2x)^6\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>The term is \(\dbinom{6}{3}(-2x)^3=20\times(-8)x^3\).</li></ol>
+<p class="final"><strong>Answer:</strong> \(-160\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>The coefficient of \(x^2\) in the expansion of \((1+x)^n\), where \(n\) is a positive integer, is 28. Find \(n\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{n(n-1)}{2}=28\), so \(n^2-n-56=0\).</li><li>\((n-8)(n+7)=0\), so \(n=8\).</li></ol>
+<p class="final"><strong>Answer:</strong> \(n=8\)</p>
+</details>
+</div>
+</section>

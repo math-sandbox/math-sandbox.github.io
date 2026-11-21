@@ -1,0 +1,214 @@
+[
+    {
+        "id": "S1-5.1-QC1-gen",
+        "section": "S1-5.1",
+        "kind": "generated",
+        "title": "Evaluate a quotient of factorials",
+        "marks": 1,
+        "source": "Theory S1-5.1 Quick check 1; n!/(n-2)! = n(n-1)",
+        "params": [
+            {
+                "name": "n",
+                "min": 6,
+                "max": 15,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "m": "n-2",
+            "m1": "n-1",
+            "A": "n*(n-1)"
+        },
+        "constraints": [
+            "n>=6"
+        ],
+        "original": {
+            "n": 9
+        },
+        "stem": "Evaluate \\(\\dfrac{{n|int}!}{{m|int}!}\\).",
+        "answer": {
+            "expression": "n*(n-1)",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "A",
+                "text_tex": "\\(\\dfrac{{n|int}!}{{m|int}!}={n|int}\\times{m1|int}={A|int}\\)",
+                "result": "n*(n-1)",
+                "format": "int",
+                "mark": "A1",
+                "note": "All the factors from the smaller factorial downwards cancel, leaving the top two factors."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 9!/7! = 72"
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-5.1"
+            ],
+            "topic": "Permutations and combinations",
+            "chapter": "S1-5",
+            "marks": 1,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-5-1.json",
+                "locator": "S1-5.1-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-5.1-QC2-gen",
+        "section": "S1-5.1",
+        "kind": "generated",
+        "title": "Solve an equation involving factorials",
+        "marks": 2,
+        "source": "Theory S1-5.1 Quick check 2; n!/(n-2)! = n(n-1) = V",
+        "params": [
+            {
+                "name": "n",
+                "min": 5,
+                "max": 14,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "V": "n*(n-1)"
+        },
+        "constraints": [
+            "n>=5"
+        ],
+        "original": {
+            "n": 10
+        },
+        "stem": "Find the positive integer \\(n\\) such that \\(\\dfrac{n!}{(n-2)!}={V|int}\\).",
+        "answer": {
+            "expression": "n",
+            "format": "{N|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\dfrac{n!}{(n-2)!}=n(n-1)\\), so \\(n(n-1)={V|int}\\).",
+                "result": "V",
+                "format": "int",
+                "mark": "M1",
+                "note": "Cancel the factorials to obtain a quadratic in n."
+            },
+            {
+                "name": "N",
+                "text_tex": "\\(n={n|int}\\), the positive root.",
+                "result": "n",
+                "format": "int",
+                "mark": "A1",
+                "note": "Reject the negative root."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original n(n-1) = 90, n = 10"
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-5.1"
+            ],
+            "topic": "Permutations and combinations",
+            "chapter": "S1-5",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-5-1.json",
+                "locator": "S1-5.1-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-5.1-QC3-gen",
+        "section": "S1-5.1",
+        "kind": "generated",
+        "title": "Factorise a difference of factorials",
+        "marks": 2,
+        "source": "Theory S1-5.1 Quick check 3; ((n+1)! - n!)/(n-1)! = n squared",
+        "params": [
+            {
+                "name": "n",
+                "min": 4,
+                "max": 12,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "N1": "n+1",
+            "m": "n-1",
+            "A": "n*n"
+        },
+        "constraints": [
+            "n>=4"
+        ],
+        "original": {
+            "n": 6
+        },
+        "stem": "Evaluate \\(\\dfrac{{N1|int}!-{n|int}!}{{m|int}!}\\).",
+        "answer": {
+            "expression": "n*n",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\({N1|int}!-{n|int}!={N1|int}\\times{n|int}!-{n|int}!={n|int}\\times{n|int}!\\)",
+                "result": "n",
+                "format": "int",
+                "mark": "M1",
+                "note": "Take out the common factor n factorial."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\dfrac{{n|int}\\times{n|int}!}{{m|int}!}={n|int}\\times{n|int}={A|int}\\)",
+                "result": "n*n",
+                "format": "int",
+                "mark": "A1",
+                "note": "n factorial divided by (n - 1) factorial is n."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original (7! - 6!)/5! = 36"
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-5.1"
+            ],
+            "topic": "Permutations and combinations",
+            "chapter": "S1-5",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-5-1.json",
+                "locator": "S1-5.1-QC3-gen"
+            }
+        }
+    }
+]

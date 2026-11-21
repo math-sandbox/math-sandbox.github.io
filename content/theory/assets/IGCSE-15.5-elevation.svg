@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="auto" preserveAspectRatio="xMinYMin meet" style="max-width:420px;height:auto" role="img" aria-labelledby="IGCSE-15-5-elevation-t IGCSE-15-5-elevation-d">
+<title id="IGCSE-15-5-elevation-t">Angle of elevation of 45 degrees to the top of a 20 metre tower from 20 metres away</title>
+<desc id="IGCSE-15-5-elevation-d">From a point A on horizontal ground 20 metres from the foot of a vertical tower, the angle of elevation of the top is 45 degrees, so the height equals 20 metres because tan 45 degrees is 1.</desc>
+<rect x="0" y="0" width="420" height="280" fill="#fff"/>
+<g font-family="Source Sans 3, DejaVu Sans, sans-serif" font-size="14" fill="#333">
+  <line x1="50" y1="230" x2="390" y2="230" stroke="#333" stroke-width="1.6"/>
+  <text x="370" y="248">ground</text>
+  <rect x="300" y="70" width="22" height="160" fill="#c5d8ea" stroke="#1b5e8a" stroke-width="1.8"/>
+  <line x1="80" y1="230" x2="300" y2="70" stroke="#c0392b" stroke-width="2"/>
+  <path d="M 120 230 A 40 40 0 0 0 108.2 201.8" fill="none" stroke="#1e7a46" stroke-width="1.6"/>
+  <text x="128" y="218" fill="#1e7a46">45&#176;</text>
+  <text x="180" y="248">20 m</text>
+  <text x="328" y="155">20 m</text>
+  <circle cx="80" cy="230" r="3" fill="#333"/>
+  <text x="58" y="248">A</text>
+  <text x="300" y="62" text-anchor="middle">top</text>
+</g>
+</svg>

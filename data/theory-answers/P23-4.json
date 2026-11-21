@@ -1,0 +1,155 @@
+[
+ {
+  "section": "P23-4.1",
+  "q": "QC1",
+  "answer": 128.0,
+  "tolerance": 0.005
+ },
+ {
+  "section": "P23-4.1",
+  "q": "QC2",
+  "answer": 4.75,
+  "tolerance": 0.005
+ },
+ {
+  "section": "P23-4.1",
+  "q": "QC3a",
+  "answer": 0.0,
+  "tolerance": 0.005
+ },
+ {
+  "section": "P23-4.1",
+  "q": "QC3b",
+  "answer": 2.0,
+  "tolerance": 0.005
+ },
+ {
+  "section": "P23-4.2",
+  "q": "QC1",
+  "answer": -7.0,
+  "tolerance": 0.005
+ },
+ {
+  "section": "P23-4.2",
+  "q": "QC2a",
+  "answer": 1.0,
+  "tolerance": 0.005
+ },
+ {
+  "section": "P23-4.2",
+  "q": "QC2b",
+  "answer": 1.0,
+  "tolerance": 0.005
+ },
+ {
+  "section": "P23-4.2",
+  "q": "QC3",
+  "answer": -1.25,
+  "tolerance": 0.005
+ },
+ {
+  "section": "P23-4.3",
+  "q": "QC1",
+  "answer": -4.0,
+  "tolerance": 0.005
+ },
+ {
+  "section": "P23-4.3",
+  "q": "QC2",
+  "answer": 1.0,
+  "tolerance": 0.005
+ },
+ {
+  "section": "P23-4.3",
+  "q": "QC3",
+  "answer": 1.0,
+  "tolerance": 0.005
+ },
+ {
+  "section": "P23-4.6",
+  "q": "QC1",
+  "answer": -0.75,
+  "tolerance": 0.005
+ },
+ {
+  "section": "P23-4.6",
+  "q": "QC2",
+  "answer": -0.8,
+  "tolerance": 0.005
+ },
+ {
+  "section": "P23-4.6",
+  "q": "QC3",
+  "answer": -0.4,
+  "tolerance": 0.005
+ },
+ {
+  "section": "P23-4.4",
+  "q": "QC1",
+  "marking": "manual"
+ },
+ {
+  "section": "P23-4.4",
+  "q": "QC2",
+  "answer": 0.75,
+  "tolerance": 0
+ },
+ {
+  "section": "P23-4.4",
+  "q": "QC3",
+  "answer": 1,
+  "accept_as": "integer"
+ },
+ {
+  "section": "P23-4.4",
+  "q": "QC4",
+  "answer": -0.4,
+  "tolerance": 0
+ },
+ {
+  "section": "P23-4.5",
+  "q": "QC1",
+  "marking": "manual"
+ },
+ {
+  "section": "P23-4.5",
+  "q": "QC2",
+  "answer": 15,
+  "accept_as": "integer"
+ },
+ {
+  "section": "P23-4.5",
+  "q": "QC3",
+  "answer": 2,
+  "accept_as": "integer"
+ },
+ {
+  "section": "P23-4.5",
+  "q": "QC4",
+  "marking": "manual"
+ },
+ {
+  "section": "P23-4.7",
+  "q": "QC1",
+  "answer": 0.5,
+  "tolerance": 0
+ },
+ {
+  "section": "P23-4.7",
+  "q": "QC2",
+  "answer": 0.6666666666666666,
+  "accept_as": "sf",
+  "sf": 3
+ },
+ {
+  "section": "P23-4.7",
+  "q": "QC3",
+  "answer": 2,
+  "accept_as": "integer"
+ },
+ {
+  "section": "P23-4.7",
+  "q": "QC4",
+  "marking": "manual"
+ }
+]

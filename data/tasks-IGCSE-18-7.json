@@ -1,0 +1,462 @@
+[
+  {
+    "id": "IGCSE-18.7-QC1-gen",
+    "section": "IGCSE-18.7",
+    "kind": "generated",
+    "title": "Value of the derived function at a point",
+    "marks": 1,
+    "source": "Theory IGCSE-18.7 Quick check 1; derived function of y=x^3-qx",
+    "params": [
+      {
+        "name": "a",
+        "min": -3,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 1,
+        "max": 9,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "3*a*a-q"
+    },
+    "constraints": [
+      "1==1"
+    ],
+    "original": {
+      "a": 1,
+      "q": 6
+    },
+    "stem": "Find the value of \\(\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}\\) for \\(y=x^3-{q|int}x\\) at \\(x={a|int}\\).",
+    "answer": {
+      "expression": "3*a*a-q",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}=3x^2-{q|int}\\). At \\(x={a|int}\\) this is \\({A|int}\\).",
+        "result": "3*a*a-q",
+        "format": "int",
+        "mark": "A1",
+        "note": "Differentiate term by term, then substitute the given x-value."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original y=x^3-6x at x=1"
+      }
+    ],
+    "tags": {
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-18.7"
+      ],
+      "topic": "Curved graphs",
+      "chapter": "IGCSE-18",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-18-7.json",
+        "locator": "IGCSE-18.7-QC1-gen"
+      }
+    }
+  },
+  {
+    "id": "IGCSE-18.7-QC2-gen",
+    "section": "IGCSE-18.7",
+    "kind": "generated",
+    "title": "Gradient of a cubic at a given x",
+    "marks": 1,
+    "source": "Theory IGCSE-18.7 Quick check 2; gradient of y=x^3-qx at x=a",
+    "params": [
+      {
+        "name": "a",
+        "min": -3,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "name": "q",
+        "min": 1,
+        "max": 9,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "3*a*a-q"
+    },
+    "constraints": [
+      "a!=0"
+    ],
+    "original": {
+      "a": 2,
+      "q": 6
+    },
+    "stem": "Find the gradient of the curve \\(y=x^3-{q|int}x\\) at \\(x={a|int}\\).",
+    "answer": {
+      "expression": "3*a*a-q",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}=3x^2-{q|int}\\), so at \\(x={a|int}\\) the gradient is \\({A|int}\\).",
+        "result": "3*a*a-q",
+        "format": "int",
+        "mark": "A1",
+        "note": "Substitute the given x-value into the derived function."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original y=x^3-6x at x=2"
+      }
+    ],
+    "tags": {
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-18.7"
+      ],
+      "topic": "Curved graphs",
+      "chapter": "IGCSE-18",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-18-7.json",
+        "locator": "IGCSE-18.7-QC2-gen"
+      }
+    }
+  },
+  {
+    "id": "IGCSE-18.7-QC3-gen",
+    "section": "IGCSE-18.7",
+    "kind": "generated",
+    "title": "x-coordinate of a stationary point of a quadratic",
+    "marks": 1,
+    "source": "Theory IGCSE-18.7 Quick check 3; stationary point of y=x^2-2bx+c",
+    "params": [
+      {
+        "name": "b",
+        "min": 1,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "name": "c",
+        "min": 1,
+        "max": 8,
+        "step": 1
+      }
+    ],
+    "derived": {
+      "A": "b",
+      "twob": "2*b"
+    },
+    "constraints": [
+      "b>0"
+    ],
+    "original": {
+      "b": 2,
+      "c": 1
+    },
+    "stem": "The curve \\(y=x^2-{twob|int}x+{c|int}\\) has a stationary point. What is the \\(x\\)-coordinate of that point?",
+    "answer": {
+      "expression": "b",
+      "format": "{A|int}",
+      "accept_as": "integer"
+    },
+    "steps": [
+      {
+        "name": "A",
+        "text_tex": "\\(\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}=2x-{twob|int}=0\\), so \\(x={A|int}\\).",
+        "result": "b",
+        "format": "int",
+        "mark": "A1",
+        "note": "Set the derived function equal to 0."
+      }
+    ],
+    "contexts": [
+      {
+        "id": "default",
+        "note": "Includes the original y=x^2-4x+1"
+      }
+    ],
+    "tags": {
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-18.7"
+      ],
+      "topic": "Curved graphs",
+      "chapter": "IGCSE-18",
+      "marks": 1,
+      "difficulty": "easy",
+      "type": "generator",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-18-7.json",
+        "locator": "IGCSE-18.7-QC3-gen"
+      }
+    }
+  },
+  {
+    "id": "IGCSE-18.7-PP-0580-42-MJ20-Q10",
+    "section": "IGCSE-18.7",
+    "kind": "pastpaper",
+    "title": "Stationary points and a derived function",
+    "marks": 10,
+    "source": {
+      "paper": "0580/42/M/J/20 Q10",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s20_qp_42.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s20_ms_42.pdf",
+      "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+    },
+    "stem": "<p>(a) \\(y=x^4-4x^3\\)</p><p>(i) Find the value of \\(y\\) when \\(x=-1\\). [2]</p><p>(ii) Find the two stationary points on the graph of \\(y=x^4-4x^3\\). [6]</p><p>(b) \\(y=x^p+2x^q\\).</p><p>\\(\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}=11x^{{10}}+10x^4\\), where \\(\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}\\) is the derived function.</p><p>Find the value of \\(p\\) and the value of \\(q\\). [2]</p>",
+    "tags": {
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-18.7"
+      ],
+      "topic": "Curved graphs",
+      "chapter": "IGCSE-18",
+      "marks": 10,
+      "difficulty": "hard",
+      "type": "pp",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-18-7.json",
+        "locator": "IGCSE-18.7-PP-0580-42-MJ20-Q10"
+      }
+    },
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "Working: \\((-1)^4-4(-1)^3\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1 for (-1)^4-4(-1)^3."
+      },
+      {
+        "name": "s2",
+        "text_tex": "\\(y=5\\).",
+        "result": "5",
+        "format": "int",
+        "mark": "B1",
+        "note": "Official MS: the value is 5."
+      },
+      {
+        "name": "s3",
+        "text_tex": "The derived function is \\(4x^3-12x^2[=0]\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B2",
+        "note": "Official MS: B2 for 4x^3-12x^2[=0], or B1 for 4x^3 or for 12x^2."
+      },
+      {
+        "name": "s4",
+        "text_tex": "The derivative, or their derivative, is set equal to \\(0\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1 for derivative =0 or their derivative =0."
+      },
+      {
+        "name": "s5",
+        "text_tex": "\\(4x^2(x-3)[=0]\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "M1",
+        "note": "Official MS: M1 for 4x^2(x-3)[=0]."
+      },
+      {
+        "name": "s6",
+        "text_tex": "\\(x=0\\) and \\(x=3\\), or \\(y=0\\) and \\(y=-27\\), or one correct coordinate pair.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: B1 for those values, or for one correct coordinate pair."
+      },
+      {
+        "name": "s7",
+        "text_tex": "The stationary points are \\((0,0)\\) and \\((3,-27)\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B1",
+        "note": "Official MS: the two coordinate pairs."
+      },
+      {
+        "name": "s8",
+        "text_tex": "\\(p=11\\) and \\(q=5\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B2",
+        "note": "Official MS: B1 for each, or M1 for =px^p-1+2qx^q-1."
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-18.7-PP-0580-41-ON20-Q10",
+    "section": "IGCSE-18.7",
+    "kind": "pastpaper",
+    "title": "A quadratic sketch, a tangent, and a tangent graph",
+    "marks": 14,
+    "source": {
+      "paper": "0580/41/O/N/20 Q10",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w20_qp_41.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w20_ms_41.pdf",
+      "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+    },
+    "stem": "<p>(a) The diagram shows a sketch of the curve \\(y=x^2+3x-4\\).</p><figure><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 300\" preserveAspectRatio=\"xMidYMid meet\" style=\"width:100%;max-width:440px;height:auto\" role=\"img\" aria-labelledby=\"on20-41-q10a-t on20-41-q10a-d\"><title id=\"on20-41-q10a-t\">Sketch of the curve y equals x squared plus 3x minus 4, not to scale, with points A, B, C and O</title><desc id=\"on20-41-q10a-d\">A U-shaped curve crossing the x-axis at A to the left of the origin and at B to the right, and crossing the y-axis at C below the origin. The sketch is marked NOT TO SCALE.</desc><line x1=\"20\" y1=\"118.75\" x2=\"410\" y2=\"118.75\" stroke=\"#111827\" stroke-width=\"1.6\"/><line x1=\"273.45\" y1=\"275\" x2=\"273.45\" y2=\"28\" stroke=\"#111827\" stroke-width=\"1.6\"/><polygon points=\"410,118.75 402,113.75 402,123.75\" fill=\"#111827\"/><polygon points=\"273.45,28 268.45,36 278.45,36\" fill=\"#111827\"/><path d=\"M78.00,30.37 L79.50,34.05 L81.00,37.69 L82.50,41.30 L84.00,44.86 L85.50,48.39 L87.00,51.87 L88.50,55.31 L90.00,58.71 L91.50,62.08 L93.00,65.40 L94.50,68.68 L96.00,71.92 L97.50,75.12 L99.00,78.29 L100.50,81.41 L102.00,84.49 L103.50,87.53 L105.00,90.53 L106.50,93.49 L108.00,96.41 L109.50,99.29 L111.00,102.12 L112.50,104.92 L114.00,107.68 L115.50,110.40 L117.00,113.08 L118.50,115.71 L120.00,118.31 L121.50,120.87 L123.00,123.39 L124.50,125.86 L126.00,128.30 L127.50,130.69 L129.00,133.05 L130.50,135.37 L132.00,137.64 L133.50,139.88 L135.00,142.07 L136.50,144.22 L138.00,146.34 L139.50,148.41 L141.00,150.45 L142.50,152.44 L144.00,154.39 L145.50,156.30 L147.00,158.18 L148.50,160.01 L150.00,161.80 L151.50,163.55 L153.00,165.26 L154.50,166.94 L156.00,168.57 L157.50,170.16 L159.00,171.71 L160.50,173.22 L162.00,174.69 L163.50,176.12 L165.00,177.51 L166.50,178.86 L168.00,180.16 L169.50,181.43 L171.00,182.66 L172.50,183.85 L174.00,185.00 L175.50,186.10 L177.00,187.17 L178.50,188.20 L180.00,189.18 L181.50,190.13 L183.00,191.04 L184.50,191.90 L186.00,192.73 L187.50,193.51 L189.00,194.26 L190.50,194.96 L192.00,195.63 L193.50,196.25 L195.00,196.83 L196.50,197.38 L198.00,197.88 L199.50,198.35 L201.00,198.77 L202.50,199.15 L204.00,199.49 L205.50,199.79 L207.00,200.06 L208.50,200.28 L210.00,200.46 L211.50,200.60 L213.00,200.70 L214.50,200.76 L216.00,200.78 L217.50,200.76 L219.00,200.70 L220.50,200.60 L222.00,200.46 L223.50,200.28 L225.00,200.06 L226.50,199.79 L228.00,199.49 L229.50,199.15 L231.00,198.77 L232.50,198.35 L234.00,197.88 L235.50,197.38 L237.00,196.83 L238.50,196.25 L240.00,195.63 L241.50,194.96 L243.00,194.26 L244.50,193.51 L246.00,192.73 L247.50,191.90 L249.00,191.04 L250.50,190.13 L252.00,189.18 L253.50,188.20 L255.00,187.17 L256.50,186.10 L258.00,185.00 L259.50,183.85 L261.00,182.66 L262.50,181.43 L264.00,180.16 L265.50,178.86 L267.00,177.51 L268.50,176.12 L270.00,174.69 L271.50,173.22 L273.00,171.71 L274.50,170.16 L276.00,168.57 L277.50,166.94 L279.00,165.26 L280.50,163.55 L282.00,161.80 L283.50,160.01 L285.00,158.18 L286.50,156.30 L288.00,154.39 L289.50,152.44 L291.00,150.45 L292.50,148.41 L294.00,146.34 L295.50,144.22 L297.00,142.07 L298.50,139.88 L300.00,137.64 L301.50,135.37 L303.00,133.05 L304.50,130.69 L306.00,128.30 L307.50,125.86 L309.00,123.39 L310.50,120.87 L312.00,118.31 L313.50,115.71 L315.00,113.08 L316.50,110.40 L318.00,107.68 L319.50,104.92 L321.00,102.12 L322.50,99.29 L324.00,96.41 L325.50,93.49 L327.00,90.53 L328.50,87.53 L330.00,84.49 L331.50,81.41 L333.00,78.29 L334.50,75.12 L336.00,71.92 L337.50,68.68 L339.00,65.40 L340.50,62.08 L342.00,58.71 L343.50,55.31 L345.00,51.87 L346.50,48.39 L348.00,44.86 L349.50,41.30 L351.00,37.69 L352.50,34.05 L354.00,30.37\" fill=\"none\" stroke=\"#111827\" stroke-width=\"2\"/><text x=\"120.26\" y=\"108.75\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Times,serif\" font-style=\"italic\">A</text><text x=\"311.74\" y=\"108.75\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Times,serif\" font-style=\"italic\">B</text><text x=\"285.45\" y=\"175.25\" font-size=\"16\" font-family=\"Times,serif\" font-style=\"italic\">C</text><text x=\"261.45\" y=\"110.75\" text-anchor=\"end\" font-size=\"16\" font-family=\"Times,serif\" font-style=\"italic\">O</text><text x=\"416\" y=\"123.75\" font-size=\"16\" font-family=\"Times,serif\" font-style=\"italic\">x</text><text x=\"281.45\" y=\"22\" font-size=\"16\" font-family=\"Times,serif\" font-style=\"italic\">y</text><text x=\"24\" y=\"24\" font-size=\"13\" font-family=\"Times,serif\">NOT TO</text><text x=\"24\" y=\"40\" font-size=\"13\" font-family=\"Times,serif\">SCALE</text></svg></figure><p>(i) Find the coordinates of the points \\(A\\), \\(B\\) and \\(C\\). [4]</p><p>(ii) Differentiate \\(x^2+3x-4\\). [2]</p><p>(iii) Find the equation of the tangent to the curve at the point \\((2, 6)\\). [3]</p><p>(b) (i) On the diagram, sketch the graph of \\(y=\\tan x\\) for \\(0^\\circ\\leqslant x\\leqslant 360^\\circ\\). [2]</p><figure><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 320\" preserveAspectRatio=\"xMidYMid meet\" style=\"width:100%;max-width:640px;height:auto\" role=\"img\" aria-labelledby=\"on20-41-q10b-t on20-41-q10b-d\"><title id=\"on20-41-q10b-t\">Blank axes from 0 degrees to 360 degrees for a sketch of y equals tan x</title><desc id=\"on20-41-q10b-d\">A pair of axes with the origin labelled 0 at mid-height. The y-axis extends above and below the origin. Dotted vertical lines at 90, 180, 270 and 360 degrees run both above and below the x-axis. No graph is drawn.</desc><line x1=\"56\" y1=\"300\" x2=\"56\" y2=\"24\" stroke=\"#111827\" stroke-width=\"1.8\"/><polygon points=\"56,16 50,28 62,28\" fill=\"#111827\"/><line x1=\"56\" y1=\"160\" x2=\"600\" y2=\"160\" stroke=\"#111827\" stroke-width=\"1.8\"/><polygon points=\"610,160 598,154 598,166\" fill=\"#111827\"/><line x1=\"192.00\" y1=\"40\" x2=\"192.00\" y2=\"280\" stroke=\"#6b7280\" stroke-width=\"1.2\" stroke-dasharray=\"3 4\"/><text x=\"192.00\" y=\"182\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Times,serif\">90°</text><line x1=\"328.00\" y1=\"40\" x2=\"328.00\" y2=\"280\" stroke=\"#6b7280\" stroke-width=\"1.2\" stroke-dasharray=\"3 4\"/><text x=\"328.00\" y=\"182\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Times,serif\">180°</text><line x1=\"464.00\" y1=\"40\" x2=\"464.00\" y2=\"280\" stroke=\"#6b7280\" stroke-width=\"1.2\" stroke-dasharray=\"3 4\"/><text x=\"464.00\" y=\"182\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Times,serif\">270°</text><line x1=\"600.00\" y1=\"40\" x2=\"600.00\" y2=\"280\" stroke=\"#6b7280\" stroke-width=\"1.2\" stroke-dasharray=\"3 4\"/><text x=\"600.00\" y=\"182\" text-anchor=\"middle\" font-size=\"16\" font-family=\"Times,serif\">360°</text><text x=\"42\" y=\"166\" text-anchor=\"end\" font-size=\"16\" font-family=\"Times,serif\">0</text><text x=\"616\" y=\"152\" font-size=\"16\" font-family=\"Times,serif\" font-style=\"italic\">x</text><text x=\"66\" y=\"22\" font-size=\"16\" font-family=\"Times,serif\" font-style=\"italic\">y</text></svg></figure><p>(ii) Solve the equation \\(5\\tan x=-7\\) for \\(0^\\circ\\leqslant x\\leqslant 360^\\circ\\). [3]</p>",
+    "tags": {
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-18.7"
+      ],
+      "topic": "Curved graphs",
+      "chapter": "IGCSE-18",
+      "marks": 14,
+      "difficulty": "hard",
+      "type": "pp",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-18-7.json",
+        "locator": "IGCSE-18.7-PP-0580-41-ON20-Q10"
+      }
+    },
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "\\(A(-4,0)\\), \\(B(1,0)\\), \\(C(0,-4)\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B4",
+        "note": "Official MS: 4 marks, with B3 for A and B correct; or B2 for the intercepts swapped; or B1 for (x+4)(x-1) or for the quadratic formula, and B1 for A or B correct; and B1 for C(0,-4). Or SC2 for -4, 1 and -4 in the correct positions on the graph."
+      },
+      {
+        "name": "s2",
+        "text_tex": "\\(2x+3\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B2",
+        "note": "Official MS: 2 marks, with B1 for 2x+c or for ax+3 with a≠ 0, or for the correct answer seen. The final answer is 2x+3."
+      },
+      {
+        "name": "s3",
+        "text_tex": "\\(y=7x-8\\), or equivalent.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B3",
+        "note": "Official MS: 3 marks, with B2 for the answer 7x-8; or M1 for the gradient 2(2)+3, following through their (a)(ii) of the form ax+b; and M1 dependent, for substituting (2,6) into y= their mx+c."
+      },
+      {
+        "name": "s4",
+        "text_tex": "A correct sketch of \\(y=\\tan x\\) for \\(0^\\circ\\leqslant x\\leqslant 360^\\circ\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B2",
+        "note": "Official MS: 2 marks, with B1 for one correct section out of four; or B1 for two properties correct from: crosses the x-axis at (0,0), (180,0) and (360,0) only; correct curvature in each section of 90°; asymptotes at x=90 and x=270."
+      },
+      {
+        "name": "s5",
+        "text_tex": "\\(x=125.5\\) or \\(125.53\\) to \\(125.54\\), and \\(x=305.5\\) or \\(305.53\\) to \\(305.54\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B3",
+        "note": "Official MS: 3 marks, with B2 for one correct angle, or B1 for -54.5 or -54.46, or for two angles with a difference of 180."
+      }
+    ]
+  },
+  {
+    "id": "IGCSE-18.7-PP-0580-41-MJ21-Q7",
+    "section": "IGCSE-18.7",
+    "kind": "pastpaper",
+    "title": "Algebraic fractions, a derived function and stationary points",
+    "marks": 14,
+    "source": {
+      "paper": "0580/41/M/J/21 Q7",
+      "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s21_qp_41.pdf",
+      "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s21_ms_41.pdf",
+      "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+    },
+    "stem": "<p>(a) Simplify.</p><p>\\(\\dfrac{{x^2-25}}{{x^2-x-20}}\\)</p><p>[3]</p><p>(b) Write as a single fraction in its simplest form.</p><p>\\(\\dfrac{{x+5}}{{x}}+\\dfrac{{x+8}}{{x-1}}\\)</p><p>[3]</p><p>(c) A curve has equation \\(y=2x^3-4x^2+6\\).</p><p>(i) Find \\(\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}\\), the derived function of \\(y\\). [2]</p><p>(ii) Calculate the gradient of the curve \\(y=2x^3-4x^2+6\\) at \\(x=4\\). [2]</p><p>(iii) Find the coordinates of the two stationary points on the curve. [4]</p>",
+    "tags": {
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-18.7"
+      ],
+      "topic": "Curved graphs",
+      "chapter": "IGCSE-18",
+      "marks": 14,
+      "difficulty": "hard",
+      "type": "pp",
+      "has_markscheme": true,
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-18-7.json",
+        "locator": "IGCSE-18.7-PP-0580-41-MJ21-Q7"
+      }
+    },
+    "marking": "manual",
+    "steps": [
+      {
+        "name": "s1",
+        "text_tex": "\\(\\dfrac{{x+5}}{{x+4}}\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B3",
+        "note": "Official MS: 3 marks, with B1 for (x-5)(x+5) and B1 for (x-5)(x+4). The final answer is (x+5)/(x+4)."
+      },
+      {
+        "name": "s2",
+        "text_tex": "\\(\\dfrac{{2x^2+12x-5}}{{x(x-1)}}\\), or with denominator \\(x^2-x\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B3",
+        "note": "Official MS: 3 marks, with B1 for a common denominator x(x-1), or equivalent, and B1 for (x-1)(x+5)+x(x+8), or better. The final answer is that fraction."
+      },
+      {
+        "name": "s3",
+        "text_tex": "\\(6x^2-8x\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B2",
+        "note": "Official MS: 2 marks, with B1 for each term in the final answer, or M1 for a correct answer seen and spoilt."
+      },
+      {
+        "name": "s4",
+        "text_tex": "The gradient at \\(x=4\\) is \\(64\\).",
+        "result": "None",
+        "format": "raw",
+        "mark": "B2",
+        "note": "Official MS: 2 marks, following through their (c)(i) correctly evaluated provided it has at least two terms but is not the original equation; M1 for substituting x=4 into their (c)(i)."
+      },
+      {
+        "name": "s5",
+        "text_tex": "The stationary points are \\((0,6)\\) and \\(\\left(\\dfrac{{4}}{{3}},\\dfrac{{98}}{{27}}\\right)\\), or equivalent.",
+        "result": "None",
+        "format": "raw",
+        "mark": "B4",
+        "note": "Official MS: 4 marks, with M1 for their derivative =0; B1 for x=0 and x=(4)/(3); and M1 dependent, for substituting one of their x-values into y=2x^3-4x^2+6."
+      }
+    ]
+  }
+]

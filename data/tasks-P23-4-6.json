@@ -1,0 +1,560 @@
+[
+ {
+  "id": "P23-4.6-QC1-gen",
+  "section": "P23-4.6",
+  "kind": "generated",
+  "title": "Implicit: tangent gradient on a circle",
+  "marks": 3,
+  "source": "P23 Ch4 theory P23-4.6 Quick check 1 (x² + y² = 25 at (3, 4), gradient −0.75)",
+  "params": [
+   {
+    "name": "p",
+    "min": -9,
+    "max": 9,
+    "step": 1
+   },
+   {
+    "name": "q",
+    "min": -9,
+    "max": 9,
+    "step": 1
+   }
+  ],
+  "derived": {
+   "r2": "p*p+q*q"
+  },
+  "constraints": [
+   "p!=0",
+   "q!=0",
+   "abs((p/q)*100-round((p/q)*100))<1e-6  # exact gradient"
+  ],
+  "original": {
+   "p": 3,
+   "q": 4
+  },
+  "stem": "Find the gradient of the tangent to the circle \\(x^2+y^2={r2|int}\\) at the point \\(({p|int},\\ {q|int})\\).",
+  "answer": {
+   "expression": "-p/q",
+   "format": "{G|num}",
+   "tolerance": 0.005
+  },
+  "steps": [
+   {
+    "name": "b1",
+    "text_tex": "\\(2x+2y\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}=0\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "B1",
+    "note": "Implicit derivative of y² is 2y dy/dx."
+   },
+   {
+    "name": "m1",
+    "text_tex": "\\(\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}=-\\dfrac{{x}}{{y}}=-\\dfrac{{{p|int}}}{{{q|int}}}\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Rearrange and substitute both coordinates."
+   },
+   {
+    "name": "G",
+    "text_tex": "\\(={G|num}\\)",
+    "result": "-p/q",
+    "format": "num",
+    "mark": "A1",
+    "note": "Correct gradient."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem, params and step texts above"
+   },
+   {
+    "id": "curve",
+    "stem": "The point \\(({p|int},\\ {q|int})\\) lies on the curve \\(x^2+y^2={r2|int}\\). Find the value of \\(\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}\\) at this point.",
+    "params": [
+     {
+      "name": "p",
+      "min": -6,
+      "max": 6,
+      "step": 1
+     },
+     {
+      "name": "q",
+      "min": -6,
+      "max": 6,
+      "step": 1
+     }
+    ]
+   },
+   {
+    "id": "tangent",
+    "stem": "A tangent is drawn to the circle \\(x^2+y^2={r2|int}\\) at the point \\(({p|int},\\ {q|int})\\). Find the gradient of this tangent.",
+    "params": [
+     {
+      "name": "p",
+      "min": 1,
+      "max": 12,
+      "step": 1
+     },
+     {
+      "name": "q",
+      "min": 1,
+      "max": 12,
+      "step": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "P23-4.6-QC2-gen",
+  "section": "P23-4.6",
+  "kind": "generated",
+  "title": "Implicit: gradient of x² + xy + y² = k",
+  "marks": 4,
+  "source": "P23 Ch4 theory P23-4.6 Quick check 2 (x² + xy + y² = 7 at (1, 2), gradient −0.8)",
+  "params": [
+   {
+    "name": "p",
+    "min": -5,
+    "max": 5,
+    "step": 1
+   },
+   {
+    "name": "q",
+    "min": -5,
+    "max": 5,
+    "step": 1
+   }
+  ],
+  "derived": {
+   "K": "p*p+p*q+q*q",
+   "n": "2*p+q",
+   "d": "p+2*q"
+  },
+  "constraints": [
+   "K>0",
+   "d!=0",
+   "abs(((2*p+q)/(p+2*q))*100-round(((2*p+q)/(p+2*q))*100))<1e-6  # exact gradient"
+  ],
+  "original": {
+   "p": 1,
+   "q": 2
+  },
+  "stem": "Find the gradient of the curve \\(x^2+xy+y^2={K|int}\\) at the point \\(({p|int},\\ {q|int})\\).",
+  "answer": {
+   "expression": "-(2*p+q)/(p+2*q)",
+   "format": "{G|num}",
+   "tolerance": 0.005
+  },
+  "steps": [
+   {
+    "name": "b1",
+    "text_tex": "\\(\\dfrac{{\\mathrm{{d}}}}{{\\mathrm{{d}}x}}(xy)=x\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}+y\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "B1",
+    "note": "Product rule on xy."
+   },
+   {
+    "name": "b2",
+    "text_tex": "\\(2x+x\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}+y+2y\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}=0\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "B1",
+    "note": "Other terms: 2x and 2y dy/dx."
+   },
+   {
+    "name": "m1",
+    "text_tex": "\\(\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}=-\\dfrac{{2x+y}}{{x+2y}}=-\\dfrac{{{n|int}}}{{{d|int}}}\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Collect dy/dx terms and substitute the point."
+   },
+   {
+    "name": "G",
+    "text_tex": "\\(={G|num}\\)",
+    "result": "-n/d",
+    "format": "num",
+    "mark": "A1",
+    "note": "Correct gradient."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem, params and step texts above"
+   },
+   {
+    "id": "tangent",
+    "stem": "Find the gradient of the tangent to the curve \\(x^2+xy+y^2={K|int}\\) at the point \\(({p|int},\\ {q|int})\\).",
+    "params": [
+     {
+      "name": "p",
+      "min": 1,
+      "max": 6,
+      "step": 1
+     },
+     {
+      "name": "q",
+      "min": 1,
+      "max": 6,
+      "step": 1
+     }
+    ]
+   },
+   {
+    "id": "value",
+    "stem": "The point \\(({p|int},\\ {q|int})\\) lies on the curve \\(x^2+xy+y^2={K|int}\\). Find the value of \\(\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}\\) at this point.",
+    "params": [
+     {
+      "name": "p",
+      "min": -7,
+      "max": 7,
+      "step": 1
+     },
+     {
+      "name": "q",
+      "min": -7,
+      "max": 7,
+      "step": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "P23-4.6-QC3-gen",
+  "section": "P23-4.6",
+  "kind": "generated",
+  "title": "Implicit: gradient of x²y + c y³ = k",
+  "marks": 4,
+  "source": "P23 Ch4 theory P23-4.6 Quick check 3 (x²y + 2y³ = 6 at (2, 1), gradient −0.4)",
+  "params": [
+   {
+    "name": "c",
+    "min": 1,
+    "max": 3,
+    "step": 1
+   },
+   {
+    "name": "p",
+    "min": 1,
+    "max": 6,
+    "step": 1
+   },
+   {
+    "name": "q",
+    "min": -4,
+    "max": 4,
+    "step": 1
+   }
+  ],
+  "derived": {
+   "K": "p*p*q+c*q**3",
+   "c3": "3*c",
+   "n": "2*p*q",
+   "d": "p*p+3*c*q*q"
+  },
+  "constraints": [
+   "q!=0",
+   "abs((2*p*q/(p*p+3*c*q*q))*100-round((2*p*q/(p*p+3*c*q*q))*100))<1e-6  # exact gradient"
+  ],
+  "original": {
+   "c": 2,
+   "p": 2,
+   "q": 1
+  },
+  "stem": "Find the gradient of the curve \\(x^2y+{c|int}y^3={K|int}\\) at the point \\(({p|int},\\ {q|int})\\).",
+  "answer": {
+   "expression": "-2*p*q/(p*p+3*c*q*q)",
+   "format": "{G|num}",
+   "tolerance": 0.005
+  },
+  "steps": [
+   {
+    "name": "m1",
+    "text_tex": "\\(\\dfrac{{\\mathrm{{d}}}}{{\\mathrm{{d}}x}}(x^2y)=2xy+x^2\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Product rule on x²y."
+   },
+   {
+    "name": "a1",
+    "text_tex": "\\(2xy+x^2\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}+{c3|int}y^2\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}=0\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "A1",
+    "note": "All terms correct."
+   },
+   {
+    "name": "m2",
+    "text_tex": "\\(\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}=-\\dfrac{{2xy}}{{x^2+{c3|int}y^2}}=-\\dfrac{{{n|int}}}{{{d|int}}}\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Rearrange and substitute."
+   },
+   {
+    "name": "G",
+    "text_tex": "\\(={G|num}\\)",
+    "result": "-n/d",
+    "format": "num",
+    "mark": "A1",
+    "note": "Correct gradient."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem, params and step texts above"
+   },
+   {
+    "id": "tangent",
+    "stem": "Find the gradient of the tangent to the curve \\(x^2y+{c|int}y^3={K|int}\\) at the point \\(({p|int},\\ {q|int})\\).",
+    "params": [
+     {
+      "name": "c",
+      "min": 1,
+      "max": 2,
+      "step": 1
+     },
+     {
+      "name": "p",
+      "min": 1,
+      "max": 4,
+      "step": 1
+     },
+     {
+      "name": "q",
+      "min": 1,
+      "max": 3,
+      "step": 1
+     }
+    ]
+   },
+   {
+    "id": "value",
+    "stem": "The point \\(({p|int},\\ {q|int})\\) lies on the curve \\(x^2y+{c|int}y^3={K|int}\\). Find the value of \\(\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}\\) there.",
+    "params": [
+     {
+      "name": "c",
+      "min": 1,
+      "max": 4,
+      "step": 1
+     },
+     {
+      "name": "p",
+      "min": 1,
+      "max": 8,
+      "step": 1
+     },
+     {
+      "name": "q",
+      "min": -5,
+      "max": 5,
+      "step": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "P23-4.6-PP-9709-31-MJ19-Q3",
+  "section": "P23-4.6",
+  "kind": "pastpaper",
+  "title": "Gradient of x³ + 3xy² − y³ = 1 at (1, 3)",
+  "marks": 4,
+  "source": {
+   "paper": "9709/31/M/J/19 Q3",
+   "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s19_qp_31.pdf",
+   "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s19_ms_31.pdf",
+   "note": "Text taken from the QP and MS PDFs (UCLES 2019)."
+  },
+  "stem": "Find the gradient of the curve \\(x^3+3xy^2-y^3=1\\) at the point with coordinates \\((1,\\ 3)\\).",
+  "answer": {
+   "expression": "10/3",
+   "official": "10/3 or equivalent (3.33 or better)",
+   "tolerance": 0.005,
+   "tolerance_range": [
+    3.33,
+    3.3334
+   ]
+  },
+  "steps": [
+   {
+    "name": "b1",
+    "text_tex": "\\(\\dfrac{{\\mathrm{{d}}}}{{\\mathrm{{d}}x}}(3xy^2)=3y^2+6xy\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "B1",
+    "note": "MS: B1 State or imply 3y² + 6xy dy/dx as derivative of 3xy²."
+   },
+   {
+    "name": "b2",
+    "text_tex": "\\(\\dfrac{{\\mathrm{{d}}}}{{\\mathrm{{d}}x}}(y^3)=3y^2\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "B1",
+    "note": "MS: B1 State or imply 3y² dy/dx as derivative of y³."
+   },
+   {
+    "name": "m1",
+    "text_tex": "\\(3x^2+3y^2+6xy\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}-3y^2\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}=0\\); at \\((1,\\ 3)\\): \\(30-9\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}=0\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "MS: M1 Equate derivative of LHS to zero, substitute (1, 3) and find the gradient; dy/dx = (x² + y²)/(y² − 2xy)."
+   },
+   {
+    "name": "G",
+    "text_tex": "\\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}=\\dfrac{10}{3}\\)",
+    "result": "10/3",
+    "format": "num",
+    "mark": "A1",
+    "note": "MS: A1 Obtain final answer 10/3 or equivalent; 3.33 or better."
+   }
+  ]
+ },
+ {
+  "id": "P23-4.6-PP-MJ19-Q3-similar",
+  "section": "P23-4.6",
+  "kind": "generated",
+  "title": "Gradient of x³ + axy² − y³ = k at a point",
+  "marks": 4,
+  "source": "Similar to 9709/31/M/J/19 Q3; same mark structure (B1 B1 M1 A1)",
+  "params": [
+   {
+    "name": "a",
+    "min": 1,
+    "max": 4,
+    "step": 1
+   },
+   {
+    "name": "p",
+    "min": 1,
+    "max": 3,
+    "step": 1
+   },
+   {
+    "name": "q",
+    "min": 1,
+    "max": 4,
+    "step": 1
+   }
+  ],
+  "derived": {
+   "K": "p**3+a*p*q*q-q**3",
+   "n": "3*p*p+a*q*q",
+   "d": "2*a*p*q-3*q*q",
+   "a3": "3*a",
+   "a6": "2*a"
+  },
+  "constraints": [
+   "d!=0",
+   "abs(((3*p*p+a*q*q)/(2*a*p*q-3*q*q))*100-round(((3*p*p+a*q*q)/(2*a*p*q-3*q*q))*100))<1e-6  # exact gradient"
+  ],
+  "original": {
+   "a": 2,
+   "p": 1,
+   "q": 1
+  },
+  "stem": "Find the gradient of the curve \\(x^3+{a|int}xy^2-y^3={K|int}\\) at the point with coordinates \\(({p|int},\\ {q|int})\\).",
+  "answer": {
+   "expression": "-(3*p*p+a*q*q)/(2*a*p*q-3*q*q)",
+   "format": "{G|num}",
+   "tolerance": 0.005
+  },
+  "steps": [
+   {
+    "name": "b1",
+    "text_tex": "\\(\\dfrac{{\\mathrm{{d}}}}{{\\mathrm{{d}}x}}({a|int}xy^2)={a|int}y^2+{a6|int}xy\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "B1",
+    "note": "Product rule on axy²."
+   },
+   {
+    "name": "b2",
+    "text_tex": "\\(\\dfrac{{\\mathrm{{d}}}}{{\\mathrm{{d}}x}}(y^3)=3y^2\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "B1",
+    "note": "Chain rule on y³."
+   },
+   {
+    "name": "m1",
+    "text_tex": "\\(3x^2+{a|int}y^2+\\left({a6|int}xy-3y^2\\right)\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}=0\\Rightarrow\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}=-\\dfrac{{{n|int}}}{{{d|int}}}\\)",
+    "result": "None",
+    "format": "num",
+    "mark": "M1",
+    "note": "Equate to zero, substitute and solve."
+   },
+   {
+    "name": "G",
+    "text_tex": "\\(={G|num}\\)",
+    "result": "-n/d",
+    "format": "num",
+    "mark": "A1",
+    "note": "Correct gradient."
+   }
+  ],
+  "contexts": [
+   {
+    "id": "default",
+    "note": "base stem, params and step texts above"
+   },
+   {
+    "id": "tangent",
+    "stem": "Find the gradient of the tangent to the curve \\(x^3+{a|int}xy^2-y^3={K|int}\\) at the point \\(({p|int},\\ {q|int})\\).",
+    "params": [
+     {
+      "name": "a",
+      "min": 1,
+      "max": 3,
+      "step": 1
+     },
+     {
+      "name": "p",
+      "min": 1,
+      "max": 3,
+      "step": 1
+     },
+     {
+      "name": "q",
+      "min": 1,
+      "max": 3,
+      "step": 1
+     }
+    ]
+   },
+   {
+    "id": "value",
+    "stem": "The point \\(({p|int},\\ {q|int})\\) lies on the curve \\(x^3+{a|int}xy^2-y^3={K|int}\\). Find the value of \\(\\dfrac{{\\mathrm{{d}}y}}{{\\mathrm{{d}}x}}\\) at this point.",
+    "params": [
+     {
+      "name": "a",
+      "min": 1,
+      "max": 5,
+      "step": 1
+     },
+     {
+      "name": "p",
+      "min": 1,
+      "max": 4,
+      "step": 1
+     },
+     {
+      "name": "q",
+      "min": 1,
+      "max": 5,
+      "step": 1
+     }
+    ]
+   }
+  ]
+ }
+]
