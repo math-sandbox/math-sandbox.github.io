@@ -1,0 +1,389 @@
+[
+    {
+        "id": "IGCSE-21.1-QC1-gen",
+        "section": "IGCSE-21.1",
+        "kind": "generated",
+        "title": "Sharing a quantity in a given ratio",
+        "marks": 2,
+        "source": "Theory IGCSE-21.1 Quick check 1; one part is the total divided by the number of parts",
+        "params": [
+            {
+                "name": "a",
+                "min": 3,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 1,
+                "max": 8,
+                "step": 1
+            },
+            {
+                "name": "u",
+                "min": 5,
+                "max": 40,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "P": "a+b",
+            "T": "(a+b)*u",
+            "A": "a*u"
+        },
+        "constraints": [
+            "b<a"
+        ],
+        "original": {
+            "a": 5,
+            "b": 3,
+            "u": 15
+        },
+        "stem": "Ravi and Mei share {T|int} stickers in the ratio \\({a|int}:{b|int}\\). How many stickers does Ravi receive?",
+        "answer": {
+            "expression": "a*u",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "There are \\({a|int}+{b|int}={P|int}\\) parts, so one part is \\({T|int}\\div{P|int}={u|int}\\) stickers.",
+                "result": "u",
+                "format": "int",
+                "mark": "M1",
+                "note": "Divide the total by the total number of parts."
+            },
+            {
+                "name": "A",
+                "text_tex": "Ravi receives \\({a|int}\\times{u|int}={A|int}\\) stickers.",
+                "result": "a*u",
+                "format": "int",
+                "mark": "A1",
+                "note": "Multiply one part by Ravi's share of the ratio."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 120 stickers in the ratio 5 : 3, Ravi receives 75"
+            },
+            {
+                "id": "beads",
+                "stem": "A bag of {T|int} beads is split between Ana and Ben in the ratio \\({a|int}:{b|int}\\). How many beads does Ana get?"
+            },
+            {
+                "id": "seeds",
+                "stem": "{T|int} seeds are shared between two gardeners in the ratio \\({a|int}:{b|int}\\). Find the larger share."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-21.1"
+            ],
+            "topic": "Ratio, rate and proportion",
+            "chapter": "IGCSE-21",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-21-1.json",
+                "locator": "IGCSE-21.1-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-21.1-QC2-gen",
+        "section": "IGCSE-21.1",
+        "kind": "generated",
+        "title": "Sharing when the difference between the shares is known",
+        "marks": 2,
+        "source": "Theory IGCSE-21.1 Quick check 2; the difference is a - b parts",
+        "params": [
+            {
+                "name": "a",
+                "min": 3,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 1,
+                "max": 8,
+                "step": 1
+            },
+            {
+                "name": "u",
+                "min": 2,
+                "max": 15,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "E": "a-b",
+            "D": "(a-b)*u",
+            "A": "b*u"
+        },
+        "constraints": [
+            "b<a"
+        ],
+        "original": {
+            "a": 7,
+            "b": 3,
+            "u": 5
+        },
+        "stem": "Alex and Chris share sweets in the ratio Alex : Chris \\(={a|int}:{b|int}\\). Alex receives {D|int} more sweets than Chris. Work out the number of sweets Chris receives.",
+        "answer": {
+            "expression": "b*u",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "The difference is \\({a|int}-{b|int}={E|int}\\) parts, so \\({E|int}\\) parts \\(={D|int}\\) and one part \\(={u|int}\\).",
+                "result": "u",
+                "format": "int",
+                "mark": "M1",
+                "note": "The difference in sweets matches the difference in parts."
+            },
+            {
+                "name": "A",
+                "text_tex": "Chris receives \\({b|int}\\times{u|int}={A|int}\\) sweets.",
+                "result": "b*u",
+                "format": "int",
+                "mark": "A1",
+                "note": "Multiply one part by Chris's share."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original ratio 7 : 3 with a difference of 20, Chris receives 15"
+            },
+            {
+                "id": "cards",
+                "stem": "Leo and Tara share some cards in the ratio Leo : Tara \\(={a|int}:{b|int}\\). Leo has {D|int} more cards than Tara. How many cards does Tara have?"
+            },
+            {
+                "id": "marbles",
+                "stem": "Some marbles are shared between Kim and Sam in the ratio \\({a|int}:{b|int}\\). Kim gets {D|int} more marbles than Sam. Find the number of marbles Sam gets."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-21.1"
+            ],
+            "topic": "Ratio, rate and proportion",
+            "chapter": "IGCSE-21",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-21-1.json",
+                "locator": "IGCSE-21.1-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-21.1-QC3-gen",
+        "section": "IGCSE-21.1",
+        "kind": "generated",
+        "title": "Finding one quantity from a ratio",
+        "marks": 2,
+        "source": "Theory IGCSE-21.1 Quick check 3; one part is the known amount divided by its share",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "u",
+                "min": 3,
+                "max": 20,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "Bq": "a*u",
+            "A": "b*u"
+        },
+        "constraints": [
+            "a!=b"
+        ],
+        "original": {
+            "a": 4,
+            "b": 5,
+            "u": 6
+        },
+        "stem": "In a choir the ratio of boys to girls is \\({a|int}:{b|int}\\). There are {Bq|int} boys. How many girls are there?",
+        "answer": {
+            "expression": "b*u",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\({a|int}\\) parts \\(={Bq|int}\\), so one part \\(={Bq|int}\\div{a|int}={u|int}\\).",
+                "result": "u",
+                "format": "int",
+                "mark": "M1",
+                "note": "Use the boys to find one part."
+            },
+            {
+                "name": "A",
+                "text_tex": "Girls \\(={b|int}\\times{u|int}={A|int}\\)",
+                "result": "b*u",
+                "format": "int",
+                "mark": "A1",
+                "note": "Multiply by the girls' share."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original ratio 4 : 5 with 24 boys, giving 30 girls"
+            },
+            {
+                "id": "paint",
+                "stem": "Blue and yellow paint are mixed in the ratio \\({a|int}:{b|int}\\). Hana uses {Bq|int} litres of blue paint. How many litres of yellow paint does she use?"
+            },
+            {
+                "id": "club",
+                "stem": "The ratio of adults to children at a club is \\({a|int}:{b|int}\\). There are {Bq|int} adults. Find the number of children."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-21.1"
+            ],
+            "topic": "Ratio, rate and proportion",
+            "chapter": "IGCSE-21",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-21-1.json",
+                "locator": "IGCSE-21.1-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-21.1-PP-0580-22-FM21-Q2",
+        "section": "IGCSE-21.1",
+        "kind": "pastpaper",
+        "title": "Sharing 78 dollars in the ratio 5 : 8",
+        "marks": 2,
+        "source": {
+            "paper": "0580/22/F/M/21 Q2",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_m21_qp_22.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_m21_ms_22.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Sahil and Anika share $78 in the ratio 5 : 8.</p><p>Calculate the amount each receives. [2]</p>",
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-21.1"
+            ],
+            "topic": "Ratio, rate and proportion",
+            "chapter": "IGCSE-21",
+            "marks": 2,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-21-1.json",
+                "locator": "IGCSE-21.1-PP-0580-22-FM21-Q2"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "One part is \\(78\\div(5+8)=78\\div13=6\\) dollars.",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1 for 78 ÷ (5 + 8) × k oe, where k = 1, 5 or 8."
+            },
+            {
+                "name": "s2",
+                "text_tex": "Sahil receives \\(5\\times6=30\\) dollars and Anika receives \\(8\\times6=48\\) dollars.",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: 2 marks for 30 and 48."
+            }
+        ]
+    },
+    {
+        "id": "IGCSE-21.1-PP-0580-22-ON20-Q12",
+        "section": "IGCSE-21.1",
+        "kind": "pastpaper",
+        "title": "Sharing sweets when the difference is known",
+        "marks": 2,
+        "source": {
+            "paper": "0580/22/O/N/20 Q12",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w20_qp_22.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w20_ms_22.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Alex and Chris share sweets in the ratio Alex : Chris = 7 : 3.</p><p>Alex receives 20 more sweets than Chris.</p><p>Work out the number of sweets Chris receives. [2]</p>",
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-21.1"
+            ],
+            "topic": "Ratio, rate and proportion",
+            "chapter": "IGCSE-21",
+            "marks": 2,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-21-1.json",
+                "locator": "IGCSE-21.1-PP-0580-22-ON20-Q12"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "The difference is \\(7-3=4\\) parts, so 4 parts \\(=20\\) and one part \\(=5\\) sweets.",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1 for 4 [parts] = 20 soi, or a correct equation, e.g. (x + 20)/7 = x/3 oe."
+            },
+            {
+                "name": "s2",
+                "text_tex": "Chris receives \\(3\\times5=15\\) sweets.",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: 2 marks for 15."
+            }
+        ]
+    }
+]

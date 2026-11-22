@@ -1,0 +1,95 @@
+<script>if(location.hostname.endsWith('onrender.com'))location.replace('https://math-sandbox.github.io'+location.pathname+location.search+location.hash)</script>
+<section class="theory" data-section="P1-6.5">
+<h2>6.5 Infinite geometric series</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 1 Coursebook (Sue Pemberton, series editor Julian Gilbey), Chapter 6 Series, printed pp.175–179. Own wording and new numbers, following the coursebook treatment of convergent geometric series and the formula for the sum to infinity.</p>
+<p class="key-words"><strong>Key words:</strong> <em>sum to infinity</em>, <em>convergent</em>, <em>geometric progression</em>, <em>common ratio</em></p>
+<h3>When does an infinite series have a sum?</h3>
+<p>For a geometric progression with first term \(a\) and common ratio \(r\), the sum of the first \(n\) terms is</p>
+<p>\[S_n=\frac{a(1-r^n)}{1-r}.\]</p>
+<p>If \(-1\lt r\lt 1\), then \(r^n\) gets closer and closer to \(0\) as \(n\) increases, so \(S_n\) gets closer to a fixed value. The series is then convergent and this limit is called the sum to infinity.</p>
+<p>\[S_\infty=\frac{a}{1-r},\qquad\text{valid only for } -1\lt r\lt 1.\]</p>
+<p>If \(r\ge 1\) or \(r\le -1\), the terms do not get smaller, \(S_n\) does not settle to a single value and the series has no sum to infinity. Such a series is divergent.</p>
+<div class="ms-widget" data-widget="gp-sum-to-infinity"></div>
+<script src="../../assets/widget-kinds-pkg16.js"></script>
+<h3>Using the sum to infinity</h3>
+<p>Questions often give two facts, such as a term and the sum to infinity. Write each fact as an equation in \(a\) and \(r\), eliminate one unknown and solve. Then check that each value of \(r\) satisfies \(-1\lt r\lt 1\) and any other condition in the question.</p>
+<div class="worked-example">
+<h4>Worked example 1: Finding a sum to infinity</h4>
+<p class="src">Coursebook, 6.5, sum to infinity. New numbers.</p>
+<p>Find the sum to infinity of the geometric series \(24+12+6+3+\dots\)</p>
+<ol class="steps">
+<li>\(a=24\) and \(r=\dfrac{12}{24}=\dfrac{1}{2}\), and \(-1\lt r\lt 1\) so the sum to infinity exists. <span class="mark">B1</span></li>
+<li>\(S_\infty=\dfrac{24}{1-\frac{1}{2}}\) <span class="mark">M1</span></li>
+<li>\(=48\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(48\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: Two conditions</h4>
+<p class="src">Coursebook, 6.5, problems with the sum to infinity. New numbers.</p>
+<p>The second term of a geometric progression is 6 and the sum to infinity is 27. Find the two possible values of the common ratio and the corresponding first terms.</p>
+<ol class="steps">
+<li>\(ar=6\) and \(\dfrac{a}{1-r}=27\) <span class="mark">B1</span></li>
+<li>Substitute \(a=\dfrac{6}{r}\): \(6=27r(1-r)\), so \(27r^2-27r+6=0\), that is \(9r^2-9r+2=0\). <span class="mark">M1</span></li>
+<li>\((3r-1)(3r-2)=0\), so \(r=\dfrac{1}{3}\) or \(r=\dfrac{2}{3}\). <span class="mark">A1</span></li>
+<li>\(a=\dfrac{6}{r}\) gives \(a=18\) or \(a=9\). <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(r=\dfrac{1}{3}\), \(a=18\) or \(r=\dfrac{2}{3}\), \(a=9\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul>
+<li>Using \(S_\infty=\dfrac{a}{1-r}\) when \(r\) is not between \(-1\) and \(1\).</li>
+<li>Forgetting to reject a value of \(r\) that does not meet a condition in the question, such as \(r\) being negative or greater than a given value.</li>
+<li>Writing \(1-r\) as \(1+r\) when \(r\) is negative. For \(r=-\dfrac{2}{5}\), \(1-r=\dfrac{7}{5}\).</li>
+</ul>
+<h3>Past paper</h3>
+<p class="src">9709/12/O/N/21 Q6, official QP and official MS.</p>
+<p>The second term of a geometric progression is 54 and the sum to infinity of the progression is 243. The common ratio is greater than \(\dfrac{1}{2}\).</p><p>Find the tenth term, giving your answer in exact form. [5]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>\(ar=54\) and \(\dfrac{a}{1-r}=243\) <span class="mark">B1</span> Official MS: B1, ar = 54 and a/(1 − r) = 243.</li>
+<li>Eliminate \(a\): \(\dfrac{54}{r}=243(1-r)\), so \(243r^2-243r+54=0\), that is \(9r^2-9r+2=0\). <span class="mark">M1</span> Official MS: *M1, form a 3-term quadratic, 243r² − 243r + 54 = 0 [9r² − 9r + 2 = 0] or a² − 243a + 13122 = 0. Allow ± sign errors.</li>
+<li>\((3r-2)(3r-1)=0\), so \(r=\dfrac{2}{3}\) (since \(r\gt \dfrac{1}{2}\)). <span class="mark">DM1</span> Official MS: DM1, solve, k(3r − 2)(3r − 1) or (a − 81)(a − 162).</li>
+<li>\(a=54\div\dfrac{2}{3}=81\) <span class="mark">DM1</span> Official MS: DM1, 54 ÷ their 2/3 = a, or 54 ÷ their 81 = r. May be implied by final answer.</li>
+<li>Tenth term \(=81\left(\dfrac{2}{3}\right)^9=\dfrac{512}{243}\) <span class="mark">A1</span> Official MS: A1 OE, 512/243 (exact, e.g. 81 × (2/3)⁹ or 54 × (2/3)⁸). SC: if B1 M1 DM0 DM1 scored, SC B1 for correct final answer.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/11/O/N/23 Q7, official QP and official MS.</p>
+<p>The sum of the first two terms of a geometric progression is 15 and the sum to infinity is \(\dfrac{125}{7}\). The common ratio of the progression is negative.</p><p>Find the third term of the progression. [7]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>\(a(1+r)=15\) <span class="mark">B1</span> Official MS: B1, accept a(1 − r²)/(1 − r) = 15.</li>
+<li>\(\dfrac{a}{1-r}=\dfrac{125}{7}\) <span class="mark">B1</span> Official MS: B1.</li>
+<li>Eliminate \(a\): \(\dfrac{125}{7}(1-r)(1+r)=15\) <span class="mark">M1</span> Official MS: M1, eliminate a.</li>
+<li>\(1-r^2=\dfrac{105}{125}\) <span class="mark">M1</span> Official MS: M1.</li>
+<li>\(r^2=\dfrac{4}{25}\), so \(r=-\dfrac{2}{5}\) since the common ratio is negative. <span class="mark">A1</span> Official MS: A1, r² = 4/25 leading to r = −2/5; condone 2/5 or ±.</li>
+<li>\(a=\dfrac{125}{7}\times\dfrac{7}{5}=25\) <span class="mark">A1</span> Official MS: A1, a = 25; ignore a second answer.</li>
+<li>Third term \(=25\times\dfrac{4}{25}=4\) <span class="mark">A1</span> Official MS: A1 CAO, 3rd term = 4. An alternative method is also given in the MS.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>A geometric progression has first term 12 and common ratio 0.25. Find the sum to infinity.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(S_\infty=\dfrac{12}{1-0.25}=\dfrac{12}{0.75}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(16\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>A geometric progression has first term 10 and sum to infinity 25. Find the common ratio.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{10}{1-r}=25\), so \(1-r=0.4\).</li></ol>
+<p class="final"><strong>Answer:</strong> \(r=0.6\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>A geometric progression has common ratio 0.75 and sum to infinity 40. Find the first term.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(a=40\times(1-0.75)=40\times0.25\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(10\)</p>
+</details>
+</div>
+</section>

@@ -149,7 +149,23 @@
     "P23-7.4": true,
     "P23-7.5": true,
     "IGCSE-20.1": true,
-    "IGCSE-20.2": true
+    "IGCSE-20.2": true,
+    "S2-5.1": true,
+    "P1-6.5": true,
+    "P1-6.6": true,
+    "IGCSE-21.1": true,
+    "IGCSE-21.2": true,
+    "IGCSE-21.3": true,
+    "IGCSE-21.4": true,
+    "IGCSE-21.5": true,
+    "IGCSE-21.6": true,
+    "P23-8.1": true,
+    "P23-8.2": true,
+    "P23-8.3": true,
+    "P23-8.4": true,
+    "P23-8.5": true,
+    "P23-8.6": true,
+    "P23-8.7": true
   },
   "practice": {
     "IGCSE-17.1": "data/tasks-17-1.json",
@@ -301,6 +317,22 @@
     "P23-7.4": "data/tasks-P23-7-4.json",
     "P23-7.5": "data/tasks-P23-7-5.json",
     "IGCSE-20.1": "data/tasks-IGCSE-20-1.json",
-    "IGCSE-20.2": "data/tasks-IGCSE-20-2.json"
+    "IGCSE-20.2": "data/tasks-IGCSE-20-2.json",
+    "S2-5.1": "data/tasks-S2-5-1.json",
+    "P1-6.5": "data/tasks-P1-6-5.json",
+    "P1-6.6": "data/tasks-P1-6-6.json",
+    "IGCSE-21.1": "data/tasks-IGCSE-21-1.json",
+    "IGCSE-21.2": "data/tasks-IGCSE-21-2.json",
+    "IGCSE-21.3": "data/tasks-IGCSE-21-3.json",
+    "IGCSE-21.4": "data/tasks-IGCSE-21-4.json",
+    "IGCSE-21.5": "data/tasks-IGCSE-21-5.json",
+    "IGCSE-21.6": "data/tasks-IGCSE-21-6.json",
+    "P23-8.1": "data/tasks-P23-8-1.json",
+    "P23-8.2": "data/tasks-P23-8-2.json",
+    "P23-8.3": "data/tasks-P23-8-3.json",
+    "P23-8.4": "data/tasks-P23-8-4.json",
+    "P23-8.5": "data/tasks-P23-8-5.json",
+    "P23-8.6": "data/tasks-P23-8-6.json",
+    "P23-8.7": "data/tasks-P23-8-7.json"
   }
 }

@@ -1295,7 +1295,8 @@
     "sections": [
       "P23-5.2",
       "P23-4.4",
-      "P23-2.7"
+      "P23-2.7",
+      "P23-8.3"
     ],
     "first_section": "P23-2.7",
     "type": "term",
@@ -1322,7 +1323,8 @@
     "definition": "An integral with limits, giving a number: F(upper limit) minus F(lower limit).",
     "sections": [
       "P23-5.2",
-      "P23-5.3"
+      "P23-5.3",
+      "P23-8.4"
     ],
     "first_section": "P23-5.2",
     "type": "term",
@@ -1371,7 +1373,8 @@
       "P23-4.1",
       "P23-4.2",
       "P23-4.4",
-      "P23-4.5"
+      "P23-4.5",
+      "P23-8.6"
     ],
     "first_section": "P23-4.1",
     "type": "term",
@@ -1513,7 +1516,9 @@
       "P23-4.6",
       "P23-4.4",
       "P23-4.5",
-      "P23-4.7"
+      "P23-4.7",
+      "P23-8.1",
+      "P23-8.3"
     ],
     "first_section": "P23-4.3",
     "type": "term",
@@ -3823,7 +3828,8 @@
     "sections": [
       "P23-2.3",
       "P23-2.4",
-      "P23-2.7"
+      "P23-2.7",
+      "P23-8.5"
     ]
   },
   {
@@ -4040,7 +4046,8 @@
     "term": "scale drawing",
     "definition": "A diagram in which every length is a fixed fraction of the corresponding real length. The scale may be written as a ratio such as 1 to 50000, or in words such as 1 cm to 10 m.",
     "sections": [
-      "IGCSE-15.1"
+      "IGCSE-15.1",
+      "IGCSE-21.2"
     ],
     "first_section": "IGCSE-15.1",
     "type": "term",
@@ -5226,7 +5233,9 @@
     "term": "inverse tangent",
     "definition": "The inverse of tangent on a restricted domain, written tan to the power minus 1, or arctan. It is defined for all real inputs, and its principal values lie strictly between minus 90 degrees and 90 degrees, or strictly between minus π/2 and π/2 radians.",
     "sections": [
-      "P1-5.5"
+      "P1-5.5",
+      "P23-8.1",
+      "P23-8.2"
     ],
     "first_section": "P1-5.5",
     "type": "term",
@@ -5271,7 +5280,9 @@
     "definition": "The decomposition of a proper rational expression into a sum of simpler fractions whose denominators are the factors of the original denominator. Distinct linear factors, a repeated linear factor, and an irreducible quadratic factor each have their own standard form.",
     "sections": [
       "P23-7.2",
-      "P23-7.5"
+      "P23-7.5",
+      "P23-8.5",
+      "P23-8.7"
     ],
     "first_section": "P23-7.2",
     "type": "term",
@@ -5471,7 +5482,8 @@
     "term": "arithmetic progression",
     "definition": "A sequence in which each term is found by adding the same number, the common difference, to the previous term. The nth term is a + (n − 1)d.",
     "sections": [
-      "P1-6.3"
+      "P1-6.3",
+      "P1-6.6"
     ],
     "first_section": "P1-6.3",
     "type": "term",
@@ -5498,7 +5510,9 @@
     "term": "geometric progression",
     "definition": "A sequence in which each term is found by multiplying the previous term by the same non-zero number, the common ratio. The nth term is a r to the power n − 1.",
     "sections": [
-      "P1-6.4"
+      "P1-6.4",
+      "P1-6.5",
+      "P1-6.6"
     ],
     "first_section": "P1-6.4",
     "type": "term",
@@ -5512,7 +5526,8 @@
     "term": "common ratio",
     "definition": "The fixed number r by which each term of a geometric progression is multiplied to give the next term.",
     "sections": [
-      "P1-6.4"
+      "P1-6.4",
+      "P1-6.5"
     ],
     "first_section": "P1-6.4",
     "type": "term",
@@ -5532,6 +5547,321 @@
     "match": [
       "cumulative frequency diagrams",
       "cumulative frequency diagram"
+    ]
+  },
+  {
+    "id": "population",
+    "term": "population",
+    "definition": "The complete set of items or people that a statistical investigation is about, for example all the students in a school.",
+    "sections": [
+      "S2-5.1"
+    ],
+    "first_section": "S2-5.1",
+    "type": "term",
+    "match": [
+      "populations",
+      "population"
+    ]
+  },
+  {
+    "id": "sample",
+    "term": "sample",
+    "definition": "A part of a population that is selected so that information about the population can be found from it.",
+    "sections": [
+      "S2-5.1"
+    ],
+    "first_section": "S2-5.1",
+    "type": "term",
+    "match": [
+      "samples",
+      "sample"
+    ]
+  },
+  {
+    "id": "census",
+    "term": "census",
+    "definition": "A survey that collects information from every member of the population.",
+    "sections": [
+      "S2-5.1"
+    ],
+    "first_section": "S2-5.1",
+    "type": "term",
+    "match": [
+      "census"
+    ]
+  },
+  {
+    "id": "random-sample",
+    "term": "random sample",
+    "definition": "A sample of size n chosen so that every possible sample of size n from the population has the same chance of being chosen; in particular every member has the same chance of being chosen.",
+    "sections": [
+      "S2-5.1"
+    ],
+    "first_section": "S2-5.1",
+    "type": "term",
+    "match": [
+      "random samples",
+      "random sample"
+    ]
+  },
+  {
+    "id": "sampling-frame",
+    "term": "sampling frame",
+    "definition": "A complete list of the members of the population, from which a sample is chosen.",
+    "sections": [
+      "S2-5.1"
+    ],
+    "first_section": "S2-5.1",
+    "type": "term",
+    "match": [
+      "sampling frames",
+      "sampling frame"
+    ]
+  },
+  {
+    "id": "bias",
+    "term": "bias",
+    "definition": "A sampling method is biased if some members or groups of the population are more likely to be chosen than others, so that the sample is not representative of the population.",
+    "sections": [
+      "S2-5.1"
+    ],
+    "first_section": "S2-5.1",
+    "type": "term",
+    "match": [
+      "biased",
+      "bias"
+    ]
+  },
+  {
+    "id": "sum-to-infinity",
+    "term": "sum to infinity",
+    "definition": "For a geometric progression with first term a and common ratio r, where r is between −1 and 1, the sum to infinity is the limit of the sum of the first n terms as n increases: a/(1 − r).",
+    "sections": [
+      "P1-6.5",
+      "P1-6.6"
+    ],
+    "first_section": "P1-6.5",
+    "type": "term",
+    "match": [
+      "sum to infinity"
+    ]
+  },
+  {
+    "id": "convergent",
+    "term": "convergent",
+    "definition": "An infinite series is convergent if the sum of its first n terms approaches a fixed value as n increases. A geometric series is convergent when r is between −1 and 1.",
+    "sections": [
+      "P1-6.5"
+    ],
+    "first_section": "P1-6.5",
+    "type": "term",
+    "match": [
+      "convergent"
+    ]
+  },
+  {
+    "id": "ratio",
+    "term": "ratio",
+    "definition": "A comparison of two or more quantities of the same kind, written with colons, such as 3 : 5. A ratio has no units.",
+    "sections": [
+      "IGCSE-21.1"
+    ],
+    "first_section": "IGCSE-21.1",
+    "type": "term",
+    "match": [
+      "ratios",
+      "ratio"
+    ]
+  },
+  {
+    "id": "simplest-form-ratio",
+    "term": "simplest form",
+    "definition": "A ratio is in simplest form when its parts are whole numbers with no common factor other than 1.",
+    "sections": [
+      "IGCSE-21.1"
+    ],
+    "first_section": "IGCSE-21.1",
+    "type": "term",
+    "match": [
+      "simplest form"
+    ]
+  },
+  {
+    "id": "scale",
+    "term": "scale",
+    "definition": "The ratio of a length on a map or scale drawing to the real length, written as 1 : n. One unit on the map represents n of the same units on the ground.",
+    "sections": [
+      "IGCSE-21.2"
+    ],
+    "first_section": "IGCSE-21.2",
+    "type": "term",
+    "match": [
+      "scale"
+    ]
+  },
+  {
+    "id": "rate",
+    "term": "rate",
+    "definition": "A comparison of two quantities of different kinds, giving the amount of the first quantity for one unit of the second, such as litres per minute or kilometres per hour.",
+    "sections": [
+      "IGCSE-21.3"
+    ],
+    "first_section": "IGCSE-21.3",
+    "type": "term",
+    "match": [
+      "rates",
+      "rate"
+    ]
+  },
+  {
+    "id": "average-speed",
+    "term": "average speed",
+    "definition": "The total distance travelled divided by the total time taken for a whole journey.",
+    "sections": [
+      "IGCSE-21.3"
+    ],
+    "first_section": "IGCSE-21.3",
+    "type": "term",
+    "match": [
+      "average speed"
+    ]
+  },
+  {
+    "id": "distance-time-graph",
+    "term": "distance-time graph",
+    "definition": "A graph of distance from a starting point against time. Its gradient is the speed.",
+    "sections": [
+      "IGCSE-21.4"
+    ],
+    "first_section": "IGCSE-21.4",
+    "type": "term",
+    "match": [
+      "distance-time graphs",
+      "distance-time graph"
+    ]
+  },
+  {
+    "id": "speed-time-graph",
+    "term": "speed-time graph",
+    "definition": "A graph of speed against time. Its gradient is the acceleration and the area under it is the distance travelled.",
+    "sections": [
+      "IGCSE-21.4"
+    ],
+    "first_section": "IGCSE-21.4",
+    "type": "term",
+    "match": [
+      "speed-time graphs",
+      "speed-time graph"
+    ]
+  },
+  {
+    "id": "acceleration",
+    "term": "acceleration",
+    "definition": "The rate of change of speed: the change in speed divided by the time taken, measured for example in metres per second squared.",
+    "sections": [
+      "IGCSE-21.4"
+    ],
+    "first_section": "IGCSE-21.4",
+    "type": "term",
+    "match": [
+      "acceleration"
+    ]
+  },
+  {
+    "id": "deceleration",
+    "term": "deceleration",
+    "definition": "A negative acceleration: the rate at which an object slows down.",
+    "sections": [
+      "IGCSE-21.4"
+    ],
+    "first_section": "IGCSE-21.4",
+    "type": "term",
+    "match": [
+      "deceleration"
+    ]
+  },
+  {
+    "id": "direct-proportion",
+    "term": "direct proportion",
+    "definition": "Two quantities are in direct proportion if their ratio is constant, so y = kx for a constant k. Doubling one doubles the other.",
+    "sections": [
+      "IGCSE-21.5",
+      "IGCSE-21.6"
+    ],
+    "first_section": "IGCSE-21.5",
+    "type": "term",
+    "match": [
+      "directly proportional",
+      "direct proportion"
+    ]
+  },
+  {
+    "id": "inverse-proportion",
+    "term": "inverse proportion",
+    "definition": "Two quantities are in inverse proportion if their product is constant, so y = k/x for a constant k. Doubling one halves the other.",
+    "sections": [
+      "IGCSE-21.5",
+      "IGCSE-21.6"
+    ],
+    "first_section": "IGCSE-21.5",
+    "type": "term",
+    "match": [
+      "inversely proportional",
+      "inverse proportion"
+    ]
+  },
+  {
+    "id": "unitary-method",
+    "term": "unitary method",
+    "definition": "A method for proportion problems in which the value for one unit is found first and then multiplied by the number of units needed.",
+    "sections": [
+      "IGCSE-21.5"
+    ],
+    "first_section": "IGCSE-21.5",
+    "type": "term",
+    "match": [
+      "unitary method"
+    ]
+  },
+  {
+    "id": "constant-of-proportionality",
+    "term": "constant of proportionality",
+    "definition": "The constant k in a proportion equation such as y = kx or y = k/x.",
+    "sections": [
+      "IGCSE-21.6"
+    ],
+    "first_section": "IGCSE-21.6",
+    "type": "term",
+    "match": [
+      "constant of proportionality"
+    ]
+  },
+  {
+    "id": "integration-by-substitution",
+    "term": "integration by substitution",
+    "definition": "A method of integration in which the variable is changed, for example u = g(x), so that the integral becomes a standard one in u. For a definite integral the limits are changed as well.",
+    "sections": [
+      "P23-8.4",
+      "P23-8.7"
+    ],
+    "first_section": "P23-8.4",
+    "type": "term",
+    "match": [
+      "integration by substitution"
+    ]
+  },
+  {
+    "id": "integration-by-parts",
+    "term": "integration by parts",
+    "definition": "The method of integration given by the integral of u dv/dx = uv − the integral of v du/dx. It comes from integrating the product rule.",
+    "sections": [
+      "P23-8.6",
+      "P23-8.7"
+    ],
+    "first_section": "P23-8.6",
+    "type": "term",
+    "match": [
+      "integration by parts"
     ]
   }
 ]

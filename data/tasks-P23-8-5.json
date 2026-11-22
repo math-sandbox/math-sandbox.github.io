@@ -1,0 +1,477 @@
+[
+    {
+        "id": "P23-8.5-QC1-gen",
+        "section": "P23-8.5",
+        "kind": "generated",
+        "title": "Partial fractions with two linear factors",
+        "marks": 2,
+        "source": "Theory P23-8.5 Quick check 1; difference of two logarithms",
+        "params": [
+            {
+                "name": "p",
+                "min": 1,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "d",
+                "min": 1,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "c",
+                "min": 1,
+                "max": 6,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "q": "p+d",
+            "P1": "c+p",
+            "Q1": "c+p+d",
+            "A": "math.log((p+d)*(c+p)/(p*(c+p+d)))"
+        },
+        "constraints": [
+            "c>0"
+        ],
+        "original": {
+            "p": 1,
+            "d": 1,
+            "c": 1
+        },
+        "stem": "Find the value of \\(\\displaystyle\\int_0^{ {c|int} }\\frac{{d|int}}{(x+{p|int})(x+{q|int})}\\,\\mathrm{d}x\\), correct to 3 significant figures.",
+        "answer": {
+            "expression": "math.log(q*P1/(p*Q1))",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\dfrac{{d|int}}{(x+{p|int})(x+{q|int})}=\\dfrac{1}{x+{p|int}}-\\dfrac{1}{x+{q|int}}\\), so the integral is \\(\\ln(x+{p|int})-\\ln(x+{q|int})\\).",
+                "result": "d",
+                "format": "int",
+                "mark": "M1",
+                "note": "Partial fractions, then integrate each term."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\ln\\dfrac{{P1|int}}{{p|int}}-\\ln\\dfrac{{Q1|int}}{{q|int}}={A|sf3z}\\)",
+                "result": "math.log(q*P1/(p*Q1))",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Use the limits."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original p = 1, q = 2 and upper limit 1, ln(4/3) = 0.288"
+            },
+            {
+                "id": "eval",
+                "stem": "Use partial fractions to evaluate \\(\\displaystyle\\int_0^{ {c|int} }\\frac{{d|int}}{(x+{p|int})(x+{q|int})}\\,\\mathrm{d}x\\) to 3 significant figures."
+            },
+            {
+                "id": "area",
+                "stem": "Find the area under the curve \\(y=\\dfrac{{d|int}}{(x+{p|int})(x+{q|int})}\\) from \\(x=0\\) to \\(x={c|int}\\), correct to 3 significant figures."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-8.5"
+            ],
+            "topic": "Further calculus",
+            "chapter": "P23-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-8-5.json",
+                "locator": "P23-8.5-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-8.5-QC2-gen",
+        "section": "P23-8.5",
+        "kind": "generated",
+        "title": "Partial fractions for a over x times x + a",
+        "marks": 2,
+        "source": "Theory P23-8.5 Quick check 2; one over x minus one over x + a",
+        "params": [
+            {
+                "name": "a",
+                "min": 1,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "c",
+                "min": 2,
+                "max": 8,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "A1v": "1+a",
+            "Cv": "c+a",
+            "A": "math.log(c*(1+a)/(c+a))"
+        },
+        "constraints": [
+            "c>1"
+        ],
+        "original": {
+            "a": 2,
+            "c": 4
+        },
+        "stem": "Find the value of \\(\\displaystyle\\int_1^{ {c|int} }\\frac{{a|int}}{x(x+{a|int})}\\,\\mathrm{d}x\\), correct to 3 significant figures.",
+        "answer": {
+            "expression": "math.log(c*A1v/Cv)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\dfrac{{a|int}}{x(x+{a|int})}=\\dfrac{1}{x}-\\dfrac{1}{x+{a|int}}\\), so the integral is \\(\\ln x-\\ln(x+{a|int})\\).",
+                "result": "a",
+                "format": "int",
+                "mark": "M1",
+                "note": "Partial fractions, then integrate each term."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\ln{c|int}-\\ln{Cv|int}+\\ln{A1v|int}={A|sf3z}\\)",
+                "result": "math.log(c*A1v/Cv)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Use the limits."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original a = 2 and upper limit 4, ln 2 = 0.693"
+            },
+            {
+                "id": "eval",
+                "stem": "Use partial fractions to evaluate \\(\\displaystyle\\int_1^{ {c|int} }\\frac{{a|int}}{x(x+{a|int})}\\,\\mathrm{d}x\\), giving your answer to 3 significant figures."
+            },
+            {
+                "id": "area",
+                "stem": "Find the area under the curve \\(y=\\dfrac{{a|int}}{x(x+{a|int})}\\) between \\(x=1\\) and \\(x={c|int}\\), correct to 3 significant figures."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-8.5"
+            ],
+            "topic": "Further calculus",
+            "chapter": "P23-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-8-5.json",
+                "locator": "P23-8.5-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-8.5-QC3-gen",
+        "section": "P23-8.5",
+        "kind": "generated",
+        "title": "Partial fractions for 2 over x squared - 1",
+        "marks": 2,
+        "source": "Theory P23-8.5 Quick check 3; ln of (x - 1) over (x + 1)",
+        "params": [
+            {
+                "name": "c",
+                "min": 3,
+                "max": 12,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "Cm": "c-1",
+            "Cp": "c+1",
+            "A": "math.log(3*(c-1)/(c+1))"
+        },
+        "constraints": [
+            "c>2"
+        ],
+        "original": {
+            "c": 3
+        },
+        "stem": "Find the value of \\(\\displaystyle\\int_2^{ {c|int} }\\frac{2}{x^2-1}\\,\\mathrm{d}x\\), correct to 3 significant figures.",
+        "answer": {
+            "expression": "math.log(3*Cm/Cp)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\dfrac{2}{(x-1)(x+1)}=\\dfrac{1}{x-1}-\\dfrac{1}{x+1}\\), so the integral is \\(\\ln(x-1)-\\ln(x+1)\\).",
+                "result": "Cm",
+                "format": "int",
+                "mark": "M1",
+                "note": "Factorise, use partial fractions and integrate."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\ln\\dfrac{{Cm|int}}{{Cp|int}}-\\ln\\dfrac{1}{3}={A|sf3z}\\)",
+                "result": "math.log(3*Cm/Cp)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Use the limits."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original upper limit 3, ln 1.5 = 0.405"
+            },
+            {
+                "id": "eval",
+                "stem": "Use partial fractions to evaluate \\(\\displaystyle\\int_2^{ {c|int} }\\frac{2}{(x-1)(x+1)}\\,\\mathrm{d}x\\) to 3 significant figures."
+            },
+            {
+                "id": "area",
+                "stem": "Find the area under the curve \\(y=\\dfrac{2}{x^2-1}\\) from \\(x=2\\) to \\(x={c|int}\\), correct to 3 significant figures."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-8.5"
+            ],
+            "topic": "Further calculus",
+            "chapter": "P23-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-8-5.json",
+                "locator": "P23-8.5-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-8.5-PP-9709-32-ON19-Q8",
+        "section": "P23-8.5",
+        "kind": "pastpaper",
+        "title": "Partial fractions, then an integral in the form ln c",
+        "marks": 10,
+        "source": {
+            "paper": "9709/32/O/N/19 Q8",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w19_qp_32.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w19_ms_32.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Let \\(\\mathrm{f}(x)=\\dfrac{2x^2+x+8}{(2x-1)(x^2+2)}\\).</p><p>(i) Express \\(\\mathrm{f}(x)\\) in partial fractions. [5]</p><p>(ii) Hence, showing full working, find \\(\\displaystyle\\int_1^5\\mathrm{f}(x)\\,\\mathrm{d}x\\), giving the answer in the form \\(\\ln c\\), where \\(c\\) is an integer. [5]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-8.5"
+            ],
+            "topic": "Further calculus",
+            "chapter": "P23-8",
+            "marks": 10,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-8-5.json",
+                "locator": "P23-8.5-PP-9709-32-ON19-Q8"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(i) \\(\\dfrac{A}{2x-1}+\\dfrac{Bx+C}{x^2+2}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, correct form."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(i) \\(2x^2+x+8=A(x^2+2)+(Bx+C)(2x-1)\\); use a correct method to find a constant.",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(i) \\(A=4\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(i) \\(B=-1\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1."
+            },
+            {
+                "name": "s5",
+                "text_tex": "(i) \\(C=0\\), so \\(\\mathrm{f}(x)=\\dfrac{4}{2x-1}-\\dfrac{x}{x^2+2}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1."
+            },
+            {
+                "name": "s6",
+                "text_tex": "(ii) \\(\\displaystyle\\int\\frac{4}{2x-1}\\,\\mathrm{d}x=2\\ln(2x-1)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 FT."
+            },
+            {
+                "name": "s7",
+                "text_tex": "(ii) \\(\\displaystyle\\int\\frac{x}{x^2+2}\\,\\mathrm{d}x\\) is of the form \\(k\\ln(x^2+2)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: *M1."
+            },
+            {
+                "name": "s8",
+                "text_tex": "(ii) \\(-\\frac{1}{2}\\ln(x^2+2)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 FT."
+            },
+            {
+                "name": "s9",
+                "text_tex": "(ii) Limits: \\(2\\ln9-\\frac{1}{2}\\ln27-2\\ln1+\\frac{1}{2}\\ln3\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: DM1, substitute limits correctly."
+            },
+            {
+                "name": "s10",
+                "text_tex": "(ii) \\(=\\ln81-\\frac{1}{2}\\ln9=\\ln81-\\ln3=\\ln27\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, ln 27 after full and exact working; ISW."
+            }
+        ]
+    },
+    {
+        "id": "P23-8.5-PP-9709-33-ON10-Q5",
+        "section": "P23-8.5",
+        "kind": "pastpaper",
+        "title": "Show that an integral equals ln 50",
+        "marks": 7,
+        "source": {
+            "paper": "9709/33/O/N/10 Q5",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w10_qp_33.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w10_ms_33.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Show that \\(\\displaystyle\\int_0^7\\frac{2x+7}{(2x+1)(x+2)}\\,\\mathrm{d}x=\\ln50\\). [7]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-8.5"
+            ],
+            "topic": "Further calculus",
+            "chapter": "P23-8",
+            "marks": 7,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-8-5.json",
+                "locator": "P23-8.5-PP-9709-33-ON10-Q5"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(\\dfrac{A}{2x+1}+\\dfrac{B}{x+2}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, correct form."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(2x+7=A(x+2)+B(2x+1)\\); use a correct method for \\(A\\) or \\(B\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(\\dfrac{4}{2x+1}-\\dfrac{1}{x+2}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(\\displaystyle\\int\\frac{4}{2x+1}\\,\\mathrm{d}x=2\\ln(2x+1)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 FT."
+            },
+            {
+                "name": "s5",
+                "text_tex": "\\(\\displaystyle\\int\\frac{1}{x+2}\\,\\mathrm{d}x=\\ln(x+2)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 FT."
+            },
+            {
+                "name": "s6",
+                "text_tex": "Limits and a log law: \\(2\\ln15-\\ln9+\\ln2=\\ln\\dfrac{225\\times2}{9}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, apply limits and use a law of logarithms."
+            },
+            {
+                "name": "s7",
+                "text_tex": "\\(=\\ln50\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, given answer obtained correctly."
+            }
+        ]
+    }
+]

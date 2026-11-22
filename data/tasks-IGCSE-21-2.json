@@ -1,0 +1,370 @@
+[
+    {
+        "id": "IGCSE-21.2-QC1-gen",
+        "section": "IGCSE-21.2",
+        "kind": "generated",
+        "title": "Real distance from a map distance",
+        "marks": 2,
+        "source": "Theory IGCSE-21.2 Quick check 1; multiply by the scale factor and convert to km",
+        "params": [
+            {
+                "name": "N",
+                "min": 10000,
+                "max": 100000,
+                "step": 5000
+            },
+            {
+                "name": "d",
+                "min": 2,
+                "max": 15,
+                "step": 0.5
+            }
+        ],
+        "derived": {
+            "C": "d*N",
+            "A": "d*N/100000"
+        },
+        "constraints": [
+            "d>0"
+        ],
+        "original": {
+            "N": 25000,
+            "d": 6
+        },
+        "stem": "A map has a scale of \\(1:{N|int}\\). Two villages are {d|dp1} cm apart on the map. Find the actual distance between the villages in kilometres.",
+        "answer": {
+            "expression": "d*N/100000",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "Actual distance \\(={d|dp1}\\times{N|int}={C|int}\\) cm",
+                "result": "d*N",
+                "format": "int",
+                "mark": "M1",
+                "note": "Multiply the map distance by the scale factor."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(1\\text{ km}=100\\,000\\text{ cm}\\), so the distance is \\({A|sf3z}\\) km.",
+                "result": "d*N/100000",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Convert centimetres to kilometres."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original scale 1 : 25000 and map distance 6 cm, giving 1.50 km"
+            },
+            {
+                "id": "towns",
+                "stem": "On a map with scale \\(1:{N|int}\\), the distance between two towns is {d|dp1} cm. How far apart are the towns in real life? Give your answer in kilometres."
+            },
+            {
+                "id": "path",
+                "stem": "A path is {d|dp1} cm long on a map drawn to a scale of \\(1:{N|int}\\). Calculate the real length of the path in kilometres."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-21.2"
+            ],
+            "topic": "Ratio, rate and proportion",
+            "chapter": "IGCSE-21",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-21-2.json",
+                "locator": "IGCSE-21.2-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-21.2-QC2-gen",
+        "section": "IGCSE-21.2",
+        "kind": "generated",
+        "title": "Map distance from a real distance",
+        "marks": 2,
+        "source": "Theory IGCSE-21.2 Quick check 2; convert to cm and divide by the scale factor",
+        "params": [
+            {
+                "name": "N",
+                "min": 20000,
+                "max": 100000,
+                "step": 10000
+            },
+            {
+                "name": "D",
+                "min": 2,
+                "max": 30,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "C": "D*100000",
+            "A": "D*100000/N"
+        },
+        "constraints": [
+            "D>0"
+        ],
+        "original": {
+            "N": 50000,
+            "D": 8
+        },
+        "stem": "A map has a scale of \\(1:{N|int}\\). The real distance between two points is {D|int} km. How far apart are the points on the map, in centimetres?",
+        "answer": {
+            "expression": "C/N",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\({D|int}\\text{ km}={C|int}\\text{ cm}\\)",
+                "result": "C",
+                "format": "int",
+                "mark": "M1",
+                "note": "Convert to centimetres first."
+            },
+            {
+                "name": "A",
+                "text_tex": "Map distance \\(={C|int}\\div{N|int}={A|sf3z}\\) cm",
+                "result": "C/N",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Divide by the scale factor."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original scale 1 : 50000 and 8 km, giving 16.0 cm"
+            },
+            {
+                "id": "road",
+                "stem": "A straight road is {D|int} km long. It is drawn on a map with scale \\(1:{N|int}\\). Find the length of the road on the map in centimetres."
+            },
+            {
+                "id": "river",
+                "stem": "On a map the scale is \\(1:{N|int}\\). Find the length on the map, in centimetres, of a {D|int} km stretch of river."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-21.2"
+            ],
+            "topic": "Ratio, rate and proportion",
+            "chapter": "IGCSE-21",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-21-2.json",
+                "locator": "IGCSE-21.2-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-21.2-QC3-gen",
+        "section": "IGCSE-21.2",
+        "kind": "generated",
+        "title": "Real area from a map area",
+        "marks": 2,
+        "source": "Theory IGCSE-21.2 Quick check 3; 1 cm squared on the map is the square of the length scale",
+        "params": [
+            {
+                "name": "N",
+                "min": 100000,
+                "max": 1000000,
+                "step": 100000
+            },
+            {
+                "name": "a",
+                "min": 2,
+                "max": 20,
+                "step": 0.5
+            }
+        ],
+        "derived": {
+            "K": "N/100000",
+            "K2": "(N/100000)*(N/100000)",
+            "A": "a*(N/100000)*(N/100000)"
+        },
+        "constraints": [
+            "a>0"
+        ],
+        "original": {
+            "N": 200000,
+            "a": 12.4
+        },
+        "stem": "A map has a scale of \\(1:{N|int}\\). Find the area, in square kilometres, of a lake that has an area of {a|dp1} \\(\\text{cm}^2\\) on the map.",
+        "answer": {
+            "expression": "a*K2",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(1\\) cm on the map represents \\({K|int}\\) km, so \\(1\\text{ cm}^2\\) represents \\({K|int}^2={K2|int}\\text{ km}^2\\).",
+                "result": "K2",
+                "format": "int",
+                "mark": "M1",
+                "note": "Square the length scale to get the area scale."
+            },
+            {
+                "name": "A",
+                "text_tex": "Area \\(={a|dp1}\\times{K2|int}={A|sf3z}\\text{ km}^2\\)",
+                "result": "a*K2",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Multiply the map area by the area scale."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original scale 1 : 200000 and 12.4 square centimetres, giving 49.6 square kilometres"
+            },
+            {
+                "id": "forest",
+                "stem": "A forest has an area of {a|dp1} \\(\\text{cm}^2\\) on a map drawn to a scale of \\(1:{N|int}\\). Calculate the actual area of the forest in square kilometres."
+            },
+            {
+                "id": "park",
+                "stem": "On a map with scale \\(1:{N|int}\\), a national park covers {a|dp1} \\(\\text{cm}^2\\). What is the real area of the park in square kilometres?"
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-21.2"
+            ],
+            "topic": "Ratio, rate and proportion",
+            "chapter": "IGCSE-21",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-21-2.json",
+                "locator": "IGCSE-21.2-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-21.2-PP-0580-23-ON22-Q14",
+        "section": "IGCSE-21.2",
+        "kind": "pastpaper",
+        "title": "Area of a lake from a map with scale 1 : 200 000",
+        "marks": 2,
+        "source": {
+            "paper": "0580/23/O/N/22 Q14",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w22_qp_23.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w22_ms_23.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>A map has a scale of 1 : 200 000.</p><p>Find the area, in square kilometres, of a lake that has an area of 12.4 \\(\\text{cm}^2\\) on the map. [2]</p>",
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-21.2"
+            ],
+            "topic": "Ratio, rate and proportion",
+            "chapter": "IGCSE-21",
+            "marks": 2,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-21-2.json",
+                "locator": "IGCSE-21.2-PP-0580-23-ON22-Q14"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "1 cm represents 200 000 cm \\(=2\\) km, so \\(1\\text{ cm}^2\\) represents \\(2^2=4\\text{ km}^2\\), and the area is \\(12.4\\times4\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1 for answer figs 496."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(=49.6\\text{ km}^2\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: 2 marks for 49.6."
+            }
+        ]
+    },
+    {
+        "id": "IGCSE-21.2-PP-0580-22-MJ16-Q7",
+        "section": "IGCSE-21.2",
+        "kind": "pastpaper",
+        "title": "Area of a forest from a map with scale 1 : 1 000 000",
+        "marks": 2,
+        "source": {
+            "paper": "0580/22/M/J/16 Q7",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s16_qp_22.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s16_ms_22.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>A map is drawn to a scale of 1 : 1 000 000.</p><p>A forest on the map has an area of 4.6 \\(\\text{cm}^2\\).</p><p>Calculate the actual area of the forest in square kilometres. [2]</p>",
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-21.2"
+            ],
+            "topic": "Ratio, rate and proportion",
+            "chapter": "IGCSE-21",
+            "marks": 2,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-21-2.json",
+                "locator": "IGCSE-21.2-PP-0580-22-MJ16-Q7"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "1 cm represents 1 000 000 cm \\(=10\\) km, so \\(1\\text{ cm}^2\\) represents \\(100\\text{ km}^2\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 for 1 cm² : 100 km² oe, or M1 for 4.6 × 1 000 000² ÷ 100 000² oe seen."
+            },
+            {
+                "name": "s2",
+                "text_tex": "Area \\(=4.6\\times100=460\\text{ km}^2\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: 2 marks for 460."
+            }
+        ]
+    }
+]

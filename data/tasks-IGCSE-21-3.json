@@ -1,0 +1,400 @@
+[
+    {
+        "id": "IGCSE-21.3-QC1-gen",
+        "section": "IGCSE-21.3",
+        "kind": "generated",
+        "title": "Converting km/h to m/s",
+        "marks": 2,
+        "source": "Theory IGCSE-21.3 Quick check 1; divide by 3.6",
+        "params": [
+            {
+                "name": "v",
+                "min": 18,
+                "max": 144,
+                "step": 3
+            }
+        ],
+        "derived": {
+            "M": "v*1000",
+            "A": "v/3.6"
+        },
+        "constraints": [
+            "v>0"
+        ],
+        "original": {
+            "v": 72
+        },
+        "stem": "A car travels at {v|int} km/h. Write this speed in metres per second.",
+        "answer": {
+            "expression": "M/3600",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\({v|int}\\text{ km/h}={M|int}\\) m in 3600 s",
+                "result": "M",
+                "format": "int",
+                "mark": "M1",
+                "note": "Change km to m and hours to seconds."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\({M|int}\\div3600={A|sf3z}\\) m/s",
+                "result": "M/3600",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Divide distance by time."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 72 km/h, giving 20.0 m/s"
+            },
+            {
+                "id": "train",
+                "stem": "A train has a speed of {v|int} km/h. What is its speed in m/s?"
+            },
+            {
+                "id": "bird",
+                "stem": "A bird flies at a constant {v|int} kilometres per hour. Convert this speed to metres per second."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-21.3"
+            ],
+            "topic": "Ratio, rate and proportion",
+            "chapter": "IGCSE-21",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-21-3.json",
+                "locator": "IGCSE-21.3-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-21.3-QC2-gen",
+        "section": "IGCSE-21.3",
+        "kind": "generated",
+        "title": "Average speed for a journey in two parts",
+        "marks": 3,
+        "source": "Theory IGCSE-21.3 Quick check 2; total distance over total time",
+        "params": [
+            {
+                "name": "d1",
+                "min": 1,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "v1",
+                "min": 3,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "d2",
+                "min": 1,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "v2",
+                "min": 2,
+                "max": 8,
+                "step": 0.5
+            }
+        ],
+        "derived": {
+            "D": "d1+d2",
+            "Tt": "d1/v1+d2/v2",
+            "A": "(d1+d2)/(d1/v1+d2/v2)"
+        },
+        "constraints": [
+            "v1!=v2"
+        ],
+        "original": {
+            "d1": 2,
+            "v1": 4,
+            "d2": 3,
+            "v2": 6
+        },
+        "stem": "Ola walks {d1|int} km at a speed of {v1|int} km/h and then {d2|int} km at a speed of {v2|dp1} km/h. Work out Ola's average speed for the whole journey.",
+        "answer": {
+            "expression": "D/Tt",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "Time \\(=\\dfrac{{d1|int}}{{v1|int}}+\\dfrac{{d2|int}}{{v2|dp1}}={Tt|sf3z}\\) hours",
+                "result": "Tt",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Time for each part is distance divided by speed."
+            },
+            {
+                "name": "L",
+                "text_tex": "Average speed \\(=\\dfrac{\\text{total distance} }{\\text{total time} }=\\dfrac{{D|int}}{{Tt|sf3z}}\\)",
+                "result": "D/Tt",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Total distance divided by total time."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(={A|sf3z}\\) km/h",
+                "result": "D/Tt",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 2 km at 4 km/h then 3 km at 6 km/h, giving 5.00 km/h"
+            },
+            {
+                "id": "cycle",
+                "stem": "A cyclist rides {d1|int} km at {v1|int} km/h and then a further {d2|int} km at {v2|dp1} km/h. Find the average speed for the whole ride."
+            },
+            {
+                "id": "run",
+                "stem": "Zara runs {d1|int} km at an average speed of {v1|int} km/h, then walks {d2|int} km at {v2|dp1} km/h. Calculate her average speed for the whole distance."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-21.3"
+            ],
+            "topic": "Ratio, rate and proportion",
+            "chapter": "IGCSE-21",
+            "marks": 3,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-21-3.json",
+                "locator": "IGCSE-21.3-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-21.3-QC3-gen",
+        "section": "IGCSE-21.3",
+        "kind": "generated",
+        "title": "Time from a rate of flow",
+        "marks": 2,
+        "source": "Theory IGCSE-21.3 Quick check 3; time is amount divided by rate",
+        "params": [
+            {
+                "name": "V",
+                "min": 100,
+                "max": 900,
+                "step": 50
+            },
+            {
+                "name": "r",
+                "min": 4,
+                "max": 25,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "A": "V/r"
+        },
+        "constraints": [
+            "r>0"
+        ],
+        "original": {
+            "V": 600,
+            "r": 12
+        },
+        "stem": "Water flows into a tank at a rate of {r|int} litres per minute. How many minutes does it take to put {V|int} litres of water into the tank?",
+        "answer": {
+            "expression": "V/r",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "Time \\(=\\dfrac{\\text{amount} }{\\text{rate} }=\\dfrac{{V|int}}{{r|int}}\\)",
+                "result": "V/r",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Divide the amount by the rate."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(={A|sf3z}\\) minutes",
+                "result": "V/r",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 600 litres at 12 litres per minute, giving 50.0 minutes"
+            },
+            {
+                "id": "pool",
+                "stem": "A pump empties a pond at {r|int} litres per minute. How long does it take to pump out {V|int} litres? Give your answer in minutes."
+            },
+            {
+                "id": "fuel",
+                "stem": "Fuel is pumped into a truck at {r|int} litres per minute. Find the time, in minutes, needed to pump {V|int} litres."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-21.3"
+            ],
+            "topic": "Ratio, rate and proportion",
+            "chapter": "IGCSE-21",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-21-3.json",
+                "locator": "IGCSE-21.3-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-21.3-PP-0580-22-FM24-Q14",
+        "section": "IGCSE-21.3",
+        "kind": "pastpaper",
+        "title": "A train crossing a bridge",
+        "marks": 3,
+        "source": {
+            "paper": "0580/22/F/M/24 Q14",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_m24_qp_22.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_m24_ms_22.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>A train, 1750 metres long, is travelling at 55 km/h.</p><p>Calculate how long it will take for the whole train to completely cross a bridge that is 480 metres long.</p><p>Give your answer in seconds, correct to the nearest second. [3]</p>",
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-21.3"
+            ],
+            "topic": "Ratio, rate and proportion",
+            "chapter": "IGCSE-21",
+            "marks": 3,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-21-3.json",
+                "locator": "IGCSE-21.3-PP-0580-22-FM24-Q14"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "The front must travel the length of the bridge plus the length of the train: distance \\(=1750+480=2230\\) m.",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1 for distance = 1750 + 480 oe, or for 55 × 1000 (÷ 60 ÷ 60)."
+            },
+            {
+                "name": "s2",
+                "text_tex": "Time \\(=\\dfrac{2230}{55\\times1000}\\times60\\times60\\) seconds",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M2 for (1750 + 480)/(55 × 1000) × 60 × 60 oe."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(=145.96\\ldots\\), so 146 seconds",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: 3 marks for 146 cao."
+            }
+        ]
+    },
+    {
+        "id": "IGCSE-21.3-PP-0580-23-ON21-Q8",
+        "section": "IGCSE-21.3",
+        "kind": "pastpaper",
+        "title": "Average speed for a walk in two parts",
+        "marks": 3,
+        "source": {
+            "paper": "0580/23/O/N/21 Q8",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w21_qp_23.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w21_ms_23.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Beatrice walks 1 km at a speed of 4 km/h and then 2 km at a speed of 4.5 km/h.</p><p>Work out Beatrice’s average speed for the whole journey. [3]</p>",
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-21.3"
+            ],
+            "topic": "Ratio, rate and proportion",
+            "chapter": "IGCSE-21",
+            "marks": 3,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-21-3.json",
+                "locator": "IGCSE-21.3-PP-0580-23-ON21-Q8"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "Times: \\(\\dfrac{1}{4}\\) h and \\(\\dfrac{2}{4.5}\\) h",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 for 1/4 oe or 2/4.5 oe seen."
+            },
+            {
+                "name": "s2",
+                "text_tex": "Average speed \\(=\\dfrac{1+2}{\\frac{1}{4}+\\frac{2}{4.5} }\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1 dep on B1 for (1 + 2)/(their 1/4 + their 2/4.5) oe."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(=4.32\\) km/h",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: 3 marks for 4.32."
+            }
+        ]
+    }
+]

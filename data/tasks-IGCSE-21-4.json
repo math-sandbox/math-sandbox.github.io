@@ -1,0 +1,407 @@
+[
+    {
+        "id": "IGCSE-21.4-QC1-gen",
+        "section": "IGCSE-21.4",
+        "kind": "generated",
+        "title": "Acceleration from a speed-time graph",
+        "marks": 2,
+        "source": "Theory IGCSE-21.4 Quick check 1; acceleration is the gradient",
+        "params": [
+            {
+                "name": "V",
+                "min": 6,
+                "max": 30,
+                "step": 2
+            },
+            {
+                "name": "t",
+                "min": 4,
+                "max": 20,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "A": "V/t"
+        },
+        "constraints": [
+            "t>0"
+        ],
+        "original": {
+            "V": 12,
+            "t": 4
+        },
+        "stem": "A car starts from rest and reaches a speed of {V|int} m/s after {t|int} seconds, accelerating at a constant rate. Find the acceleration.",
+        "answer": {
+            "expression": "V/t",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "Acceleration is the gradient of the speed-time graph: \\(\\dfrac{{V|int}-0}{{t|int}}\\)",
+                "result": "V/t",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Change in speed divided by time."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(={A|sf3z}\\text{ m/s}^2\\)",
+                "result": "V/t",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 12 m/s after 4 seconds, giving 3.00 metres per second squared"
+            },
+            {
+                "id": "tram",
+                "stem": "A tram accelerates uniformly from rest to {V|int} m/s in {t|int} seconds. Calculate its acceleration in \\(\\text{m/s}^2\\)."
+            },
+            {
+                "id": "graph",
+                "stem": "A speed-time graph is a straight line from the origin to the point where the time is {t|int} seconds and the speed is {V|int} m/s. Find the acceleration shown by the graph."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-21.4"
+            ],
+            "topic": "Ratio, rate and proportion",
+            "chapter": "IGCSE-21",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-21-4.json",
+                "locator": "IGCSE-21.4-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-21.4-QC2-gen",
+        "section": "IGCSE-21.4",
+        "kind": "generated",
+        "title": "Distance from a trapezium-shaped speed-time graph",
+        "marks": 2,
+        "source": "Theory IGCSE-21.4 Quick check 2; area of a trapezium",
+        "params": [
+            {
+                "name": "V",
+                "min": 4,
+                "max": 30,
+                "step": 2
+            },
+            {
+                "name": "t1",
+                "min": 5,
+                "max": 20,
+                "step": 5
+            },
+            {
+                "name": "c",
+                "min": 20,
+                "max": 90,
+                "step": 10
+            },
+            {
+                "name": "t3",
+                "min": 10,
+                "max": 40,
+                "step": 5
+            }
+        ],
+        "derived": {
+            "t2": "t1+c",
+            "T": "t1+c+t3",
+            "S": "c+t1+c+t3",
+            "A": "(c+t1+c+t3)*V/2"
+        },
+        "constraints": [
+            "c>0"
+        ],
+        "original": {
+            "V": 20,
+            "t1": 10,
+            "c": 90,
+            "t3": 30
+        },
+        "stem": "A tram starts from rest and accelerates steadily to {V|int} m/s in {t1|int} seconds. It travels at this speed until {t2|int} seconds, then slows down steadily and stops at {T|int} seconds. Calculate the distance travelled.",
+        "answer": {
+            "expression": "(c+T)*V/2",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "The graph is a trapezium with parallel sides \\({c|int}\\) s and \\({T|int}\\) s and height \\({V|int}\\) m/s.",
+                "result": "c",
+                "format": "int",
+                "mark": "M1",
+                "note": "Distance is the area under the graph; the top side is the time at constant speed."
+            },
+            {
+                "name": "A",
+                "text_tex": "The parallel sides add to \\({S|int}\\) s, so distance \\(=\\dfrac{1}{2}\\times{S|int}\\times{V|int}={A|int}\\) m",
+                "result": "S*V/2",
+                "format": "int",
+                "mark": "A1",
+                "note": "Area of the trapezium."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original tram, 20 m/s after 10 s, constant until 100 s, stopping at 130 s, distance 2200 m"
+            },
+            {
+                "id": "lift",
+                "stem": "A lift starts from rest and speeds up steadily to {V|int} m/s in {t1|int} seconds. It moves at this speed until {t2|int} seconds, then slows down steadily, stopping at {T|int} seconds. How far does it travel?"
+            },
+            {
+                "id": "train",
+                "stem": "A train leaves a station, reaching {V|int} m/s after {t1|int} seconds with constant acceleration. It keeps this speed until {t2|int} seconds, then decelerates steadily to rest at {T|int} seconds. Find the distance between the two stations."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-21.4"
+            ],
+            "topic": "Ratio, rate and proportion",
+            "chapter": "IGCSE-21",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-21-4.json",
+                "locator": "IGCSE-21.4-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-21.4-QC3-gen",
+        "section": "IGCSE-21.4",
+        "kind": "generated",
+        "title": "Speed from a distance-time graph",
+        "marks": 2,
+        "source": "Theory IGCSE-21.4 Quick check 3; speed is the gradient",
+        "params": [
+            {
+                "name": "D",
+                "min": 2,
+                "max": 30,
+                "step": 1
+            },
+            {
+                "name": "m",
+                "min": 10,
+                "max": 90,
+                "step": 5
+            }
+        ],
+        "derived": {
+            "H": "m/60",
+            "A": "D/(m/60)"
+        },
+        "constraints": [
+            "m>0"
+        ],
+        "original": {
+            "D": 12,
+            "m": 45
+        },
+        "stem": "A distance-time graph shows a cyclist travelling {D|int} km in {m|int} minutes at a constant speed. Find the cyclist's speed in km/h.",
+        "answer": {
+            "expression": "D/H",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "Time \\(=\\dfrac{{m|int}}{60}\\) hours",
+                "result": "H",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Speed is the gradient; convert the time to hours."
+            },
+            {
+                "name": "A",
+                "text_tex": "Speed \\(={D|int}\\div\\dfrac{{m|int}}{60}={A|sf3z}\\) km/h",
+                "result": "D/H",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Distance divided by time."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 12 km in 45 minutes, giving 16.0 km/h"
+            },
+            {
+                "id": "boat",
+                "stem": "On a distance-time graph, a boat's journey is a straight line showing {D|int} km in {m|int} minutes. Calculate the speed of the boat in kilometres per hour."
+            },
+            {
+                "id": "runner",
+                "stem": "A runner covers {D|int} km in {m|int} minutes at a steady pace. The distance-time graph is a straight line. Find the gradient of the line in km/h."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-21.4"
+            ],
+            "topic": "Ratio, rate and proportion",
+            "chapter": "IGCSE-21",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-21-4.json",
+                "locator": "IGCSE-21.4-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-21.4-PP-0580-21-MJ18-Q17",
+        "section": "IGCSE-21.4",
+        "kind": "pastpaper",
+        "title": "Speed-time graph of a tram",
+        "marks": 4,
+        "source": {
+            "paper": "0580/21/M/J/18 Q17",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s18_qp_21.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s18_ms_21.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>The speed–time graph shows information about the journey of a tram between two stations.</p><figure><svg viewBox=\"0 0 376 250\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"ig214a-t ig214a-d\" style=\"width:100%;max-width:376px;height:auto\"><title id=\"ig214a-t\">Speed-time graph of a tram journey between two stations</title><desc id=\"ig214a-d\">Speed in metres per second against time in seconds, not to scale. The speed rises in a straight line from 0 at time 0 to 20 at time 10, stays at 20 until time 100, then falls in a straight line to 0 at time 130. Dashed lines mark times 10 and 100 and speed 20.</desc><line x1=\"126.8\" y1=\"204.0\" x2=\"126.8\" y2=\"49.3\" stroke=\"#1a1a1a\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><line x1=\"211.2\" y1=\"204.0\" x2=\"211.2\" y2=\"49.3\" stroke=\"#1a1a1a\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><line x1=\"78.0\" y1=\"49.3\" x2=\"126.8\" y2=\"49.3\" stroke=\"#1a1a1a\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><path d=\"M 78.0 204.0 L 126.8 49.3 L 211.2 49.3 L 295.6 204.0\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.6\"/><line x1=\"78.0\" y1=\"204.0\" x2=\"322.0\" y2=\"204.0\" stroke=\"#1a1a1a\" stroke-width=\"1.3\"/><path d=\"M 330.0 204.0 L 320.0 200.0 L 320.0 208.0 Z\" fill=\"#1a1a1a\"/><line x1=\"78.0\" y1=\"204.0\" x2=\"78.0\" y2=\"16.0\" stroke=\"#1a1a1a\" stroke-width=\"1.3\"/><path d=\"M 78.0 8.0 L 74.0 18.0 L 82.0 18.0 Z\" fill=\"#1a1a1a\"/><line x1=\"78.0\" y1=\"204.0\" x2=\"78.0\" y2=\"208.0\" stroke=\"#1a1a1a\" stroke-width=\"1\"/><text x=\"78.0\" y=\"220.0\" font-size=\"12\" font-family=\"serif\" text-anchor=\"middle\">0</text><line x1=\"126.8\" y1=\"204.0\" x2=\"126.8\" y2=\"208.0\" stroke=\"#1a1a1a\" stroke-width=\"1\"/><text x=\"126.8\" y=\"220.0\" font-size=\"12\" font-family=\"serif\" text-anchor=\"middle\">10</text><line x1=\"211.2\" y1=\"204.0\" x2=\"211.2\" y2=\"208.0\" stroke=\"#1a1a1a\" stroke-width=\"1\"/><text x=\"211.2\" y=\"220.0\" font-size=\"12\" font-family=\"serif\" text-anchor=\"middle\">100</text><line x1=\"295.6\" y1=\"204.0\" x2=\"295.6\" y2=\"208.0\" stroke=\"#1a1a1a\" stroke-width=\"1\"/><text x=\"295.6\" y=\"220.0\" font-size=\"12\" font-family=\"serif\" text-anchor=\"middle\">130</text><line x1=\"74.0\" y1=\"204.0\" x2=\"78.0\" y2=\"204.0\" stroke=\"#1a1a1a\" stroke-width=\"1\"/><text x=\"71.0\" y=\"208.0\" font-size=\"12\" font-family=\"serif\" text-anchor=\"end\">0</text><line x1=\"74.0\" y1=\"49.3\" x2=\"78.0\" y2=\"49.3\" stroke=\"#1a1a1a\" stroke-width=\"1\"/><text x=\"71.0\" y=\"53.3\" font-size=\"12\" font-family=\"serif\" text-anchor=\"end\">20</text><text x=\"189.0\" y=\"238.0\" font-size=\"12\" font-family=\"serif\" text-anchor=\"middle\">Time (seconds)</text><text x=\"30\" y=\"109.0\" font-size=\"12\" font-family=\"serif\" text-anchor=\"middle\">Speed</text><text x=\"30\" y=\"124.0\" font-size=\"12\" font-family=\"serif\" text-anchor=\"middle\">(m/s)</text><text x=\"370\" y=\"62.0\" font-size=\"11\" font-family=\"serif\" text-anchor=\"end\">NOT TO</text><text x=\"370\" y=\"76.0\" font-size=\"11\" font-family=\"serif\" text-anchor=\"end\">SCALE</text></svg></figure><p>(a) Calculate the distance between the two stations. [3]</p><p>(b) Calculate the average speed of the tram for the whole journey. [1]</p>",
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-21.4"
+            ],
+            "topic": "Ratio, rate and proportion",
+            "chapter": "IGCSE-21",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-21-4.json",
+                "locator": "IGCSE-21.4-PP-0580-21-MJ18-Q17"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) Distance is the area under the graph, a trapezium with parallel sides 90 and 130 and height 20.",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M2 for ½(90 + 130) × 20, or (½ × 10 × 20) + (90 × 20) + ½(30 × 20); otherwise M1 for a partial area."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(a) \\(\\dfrac{1}{2}(90+130)\\times20\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M2 for the complete area expression."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(a) \\(=2200\\) m",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: 3 marks for 2200."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(b) Average speed \\(=2200\\div130=16.9\\) m/s",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: 1 mark for 16.9 or 16.92…, FT their (a) ÷ 130."
+            }
+        ]
+    },
+    {
+        "id": "IGCSE-21.4-PP-0580-23-MJ21-Q18",
+        "section": "IGCSE-21.4",
+        "kind": "pastpaper",
+        "title": "Speed-time graph of a car",
+        "marks": 3,
+        "source": {
+            "paper": "0580/23/M/J/21 Q18",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s21_qp_23.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s21_ms_23.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>A car starts from rest and accelerates at a rate of 3 \\(\\text{m/s}^2\\) for 4 seconds.</p><p>The car then travels at a constant speed for 10 seconds.</p><figure><svg viewBox=\"0 0 376 250\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"ig214b-t ig214b-d\" style=\"width:100%;max-width:376px;height:auto\"><title id=\"ig214b-t\">Speed-time graph of a car that accelerates from rest and then travels at constant speed</title><desc id=\"ig214b-d\">Speed in metres per second against time in seconds, not to scale. The speed rises in a straight line from 0 at time 0 to V at time 4, then stays at V until time 14. Dashed lines mark time 4, time 14 and speed V.</desc><line x1=\"126.8\" y1=\"204.0\" x2=\"126.8\" y2=\"49.3\" stroke=\"#1a1a1a\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><line x1=\"282.2\" y1=\"204.0\" x2=\"282.2\" y2=\"49.3\" stroke=\"#1a1a1a\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><line x1=\"78.0\" y1=\"49.3\" x2=\"126.8\" y2=\"49.3\" stroke=\"#1a1a1a\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><path d=\"M 78.0 204.0 L 126.8 49.3 L 282.2 49.3\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.6\"/><line x1=\"78.0\" y1=\"204.0\" x2=\"322.0\" y2=\"204.0\" stroke=\"#1a1a1a\" stroke-width=\"1.3\"/><path d=\"M 330.0 204.0 L 320.0 200.0 L 320.0 208.0 Z\" fill=\"#1a1a1a\"/><line x1=\"78.0\" y1=\"204.0\" x2=\"78.0\" y2=\"16.0\" stroke=\"#1a1a1a\" stroke-width=\"1.3\"/><path d=\"M 78.0 8.0 L 74.0 18.0 L 82.0 18.0 Z\" fill=\"#1a1a1a\"/><line x1=\"78.0\" y1=\"204.0\" x2=\"78.0\" y2=\"208.0\" stroke=\"#1a1a1a\" stroke-width=\"1\"/><text x=\"78.0\" y=\"220.0\" font-size=\"12\" font-family=\"serif\" text-anchor=\"middle\">0</text><line x1=\"126.8\" y1=\"204.0\" x2=\"126.8\" y2=\"208.0\" stroke=\"#1a1a1a\" stroke-width=\"1\"/><text x=\"126.8\" y=\"220.0\" font-size=\"12\" font-family=\"serif\" text-anchor=\"middle\">4</text><line x1=\"282.2\" y1=\"204.0\" x2=\"282.2\" y2=\"208.0\" stroke=\"#1a1a1a\" stroke-width=\"1\"/><text x=\"282.2\" y=\"220.0\" font-size=\"12\" font-family=\"serif\" text-anchor=\"middle\">14</text><line x1=\"74.0\" y1=\"204.0\" x2=\"78.0\" y2=\"204.0\" stroke=\"#1a1a1a\" stroke-width=\"1\"/><text x=\"71.0\" y=\"208.0\" font-size=\"12\" font-family=\"serif\" text-anchor=\"end\">0</text><line x1=\"74.0\" y1=\"49.3\" x2=\"78.0\" y2=\"49.3\" stroke=\"#1a1a1a\" stroke-width=\"1\"/><text x=\"71.0\" y=\"53.3\" font-size=\"12\" font-family=\"serif\" font-style=\"italic\" text-anchor=\"end\">V</text><text x=\"189.0\" y=\"238.0\" font-size=\"12\" font-family=\"serif\" text-anchor=\"middle\">Time (seconds)</text><text x=\"30\" y=\"109.0\" font-size=\"12\" font-family=\"serif\" text-anchor=\"middle\">Speed</text><text x=\"30\" y=\"124.0\" font-size=\"12\" font-family=\"serif\" text-anchor=\"middle\">(m/s)</text><text x=\"370\" y=\"62.0\" font-size=\"11\" font-family=\"serif\" text-anchor=\"end\">NOT TO</text><text x=\"370\" y=\"76.0\" font-size=\"11\" font-family=\"serif\" text-anchor=\"end\">SCALE</text></svg></figure><p>The diagram shows the speed–time graph for this journey.</p><p>(a) Find the value of \\(V\\). [1]</p><p>(b) Calculate the total distance travelled by the car during the 14 seconds. [2]</p>",
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-21.4"
+            ],
+            "topic": "Ratio, rate and proportion",
+            "chapter": "IGCSE-21",
+            "marks": 3,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-21-4.json",
+                "locator": "IGCSE-21.4-PP-0580-23-MJ21-Q18"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) \\(V=3\\times4=12\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: 1 mark for 12."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(b) Area under the graph: \\(\\dfrac{1}{2}\\times4\\times12+10\\times12\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1 for any relevant area, FT their V."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(b) \\(=24+120=144\\) m",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: 2 marks for 144, FT 12 × their V."
+            }
+        ]
+    }
+]

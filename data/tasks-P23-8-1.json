@@ -1,0 +1,353 @@
+[
+    {
+        "id": "P23-8.1-QC1-gen",
+        "section": "P23-8.1",
+        "kind": "generated",
+        "title": "Gradient of y = tan inverse of kx",
+        "marks": 2,
+        "source": "Theory P23-8.1 Quick check 1; derivative is k over 1 + k squared x squared",
+        "params": [
+            {
+                "name": "k",
+                "min": 2,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "c",
+                "min": 1,
+                "max": 4,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "K2": "k*k*c*c",
+            "Dn": "1+k*k*c*c",
+            "A": "k/(1+k*k*c*c)"
+        },
+        "constraints": [
+            "c>0"
+        ],
+        "original": {
+            "k": 2,
+            "c": 1
+        },
+        "stem": "Find the gradient of the curve \\(y=\\tan^{-1}({k|int}x)\\) at the point where \\(x={c|int}\\).",
+        "answer": {
+            "expression": "k/Dn",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}=\\dfrac{{k|int}}{1+({k|int}x)^2}\\)",
+                "result": "k",
+                "format": "int",
+                "mark": "M1",
+                "note": "Chain rule with the derivative of inverse tangent."
+            },
+            {
+                "name": "A",
+                "text_tex": "At \\(x={c|int}\\): \\(\\dfrac{{k|int}}{1+{K2|int}}={A|sf3z}\\)",
+                "result": "k/Dn",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Substitute and evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original k = 2 at x = 1, gradient 0.400"
+            },
+            {
+                "id": "deriv",
+                "stem": "Given that \\(y=\\tan^{-1}({k|int}x)\\), find the value of \\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\) when \\(x={c|int}\\)."
+            },
+            {
+                "id": "tangent",
+                "stem": "A curve has equation \\(y=\\tan^{-1}({k|int}x)\\). Find the gradient of the tangent to the curve at \\(x={c|int}\\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-8.1"
+            ],
+            "topic": "Further calculus",
+            "chapter": "P23-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-8-1.json",
+                "locator": "P23-8.1-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-8.1-QC2-gen",
+        "section": "P23-8.1",
+        "kind": "generated",
+        "title": "Gradient of y = tan inverse of x over a",
+        "marks": 2,
+        "source": "Theory P23-8.1 Quick check 2; derivative is a over a squared + x squared",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 1,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "Dn": "a*a+b*b",
+            "A": "a/(a*a+b*b)"
+        },
+        "constraints": [
+            "b>0"
+        ],
+        "original": {
+            "a": 3,
+            "b": 4
+        },
+        "stem": "Find the gradient of the curve \\(y=\\tan^{-1}\\left(\\dfrac{x}{{a|int}}\\right)\\) at the point where \\(x={b|int}\\).",
+        "answer": {
+            "expression": "a/Dn",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}=\\dfrac{1}{{a|int}}\\times\\dfrac{1}{1+x^2/{a|int}^2}=\\dfrac{{a|int}}{{a|int}^2+x^2}\\)",
+                "result": "a",
+                "format": "int",
+                "mark": "M1",
+                "note": "Chain rule, then simplify the fraction."
+            },
+            {
+                "name": "A",
+                "text_tex": "At \\(x={b|int}\\): \\(\\dfrac{{a|int}}{{Dn|int}}={A|sf3z}\\)",
+                "result": "a/Dn",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Substitute and evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original a = 3 at x = 4, gradient 0.120"
+            },
+            {
+                "id": "deriv",
+                "stem": "Given that \\(y=\\tan^{-1}\\left(\\dfrac{x}{{a|int}}\\right)\\), find the value of \\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\) when \\(x={b|int}\\)."
+            },
+            {
+                "id": "rate",
+                "stem": "Find the rate of change of \\(\\tan^{-1}\\left(\\dfrac{x}{{a|int}}\\right)\\) with respect to \\(x\\) when \\(x={b|int}\\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-8.1"
+            ],
+            "topic": "Further calculus",
+            "chapter": "P23-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-8-1.json",
+                "locator": "P23-8.1-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-8.1-QC3-gen",
+        "section": "P23-8.1",
+        "kind": "generated",
+        "title": "Gradient of y = tan inverse of k x squared",
+        "marks": 2,
+        "source": "Theory P23-8.1 Quick check 3; derivative is 2kx over 1 + k squared x to the 4",
+        "params": [
+            {
+                "name": "k",
+                "min": 2,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "c",
+                "min": 1,
+                "max": 3,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "Nm": "2*k*c",
+            "Dn": "1+k*k*c*c*c*c",
+            "A": "2*k*c/(1+k*k*c*c*c*c)"
+        },
+        "constraints": [
+            "c>0"
+        ],
+        "original": {
+            "k": 2,
+            "c": 1
+        },
+        "stem": "Find the gradient of the curve \\(y=\\tan^{-1}({k|int}x^2)\\) at the point where \\(x={c|int}\\).",
+        "answer": {
+            "expression": "Nm/Dn",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}=\\dfrac{2\\times{k|int}x}{1+({k|int}x^2)^2}\\)",
+                "result": "Nm",
+                "format": "int",
+                "mark": "M1",
+                "note": "Chain rule: the derivative of the inside is 2kx."
+            },
+            {
+                "name": "A",
+                "text_tex": "At \\(x={c|int}\\): \\(\\dfrac{{Nm|int}}{{Dn|int}}={A|sf3z}\\)",
+                "result": "Nm/Dn",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Substitute and evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original k = 2 at x = 1, gradient 0.800"
+            },
+            {
+                "id": "deriv",
+                "stem": "Given that \\(y=\\tan^{-1}({k|int}x^2)\\), find the value of \\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\) when \\(x={c|int}\\)."
+            },
+            {
+                "id": "tangent",
+                "stem": "A curve has equation \\(y=\\tan^{-1}({k|int}x^2)\\). Find the gradient of the tangent where \\(x={c|int}\\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-8.1"
+            ],
+            "topic": "Further calculus",
+            "chapter": "P23-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-8-1.json",
+                "locator": "P23-8.1-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-8.1-PP-9709-33-MJ20-Q4",
+        "section": "P23-8.1",
+        "kind": "pastpaper",
+        "title": "Tangent to y = x tan inverse of half x",
+        "marks": 6,
+        "source": {
+            "paper": "9709/33/M/J/20 Q4",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s20_qp_33.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s20_ms_33.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>The equation of a curve is \\(y=x\\tan^{-1}\\left(\\frac{1}{2}x\\right)\\).</p><p>(a) Find \\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\). [3]</p><p>(b) The tangent to the curve at the point where \\(x=2\\) meets the \\(y\\)-axis at the point with coordinates \\((0,p)\\). Find \\(p\\). [3]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-8.1"
+            ],
+            "topic": "Further calculus",
+            "chapter": "P23-8",
+            "marks": 6,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-8-1.json",
+                "locator": "P23-8.1-PP-9709-33-MJ20-Q4"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) Product rule: \\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}=\\tan^{-1}\\left(\\frac{1}{2}x\\right)+x\\times\\dfrac{\\mathrm{d} }{\\mathrm{d}x}\\tan^{-1}\\left(\\frac{1}{2}x\\right)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, use of the product rule."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(a) \\(\\dfrac{\\mathrm{d} }{\\mathrm{d}x}\\tan^{-1}\\left(\\frac{1}{2}x\\right)=\\dfrac{1/2}{1+x^2/4}=\\dfrac{2}{4+x^2}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, derivative of tan⁻¹(½x) of the form k/(4 + x²), where k = 2 or 4."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(a) \\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}=\\tan^{-1}\\left(\\frac{1}{2}x\\right)+\\dfrac{2x}{x^2+4}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 for the correct derivative."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(b) At \\(x=2\\): \\(y=2\\tan^{-1}1=\\frac{1}{2}\\pi\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, y-coordinate ½π."
+            },
+            {
+                "name": "s5",
+                "text_tex": "(b) Gradient at \\(x=2\\) is \\(\\frac{1}{4}\\pi+\\frac{4}{8}=\\frac{1}{4}\\pi+\\frac{1}{2}\\). Tangent: \\(y-\\frac{1}{2}\\pi=\\left(\\frac{1}{4}\\pi+\\frac{1}{2}\\right)(x-2)\\); put \\(x=0\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, complete method for p, e.g. equation of tangent with x = 0, or gradient at x = 2 equal to (½π − p)/2."
+            },
+            {
+                "name": "s6",
+                "text_tex": "(b) \\(p=\\frac{1}{2}\\pi-\\frac{1}{2}\\pi-1=-1\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, p = −1."
+            }
+        ]
+    }
+]

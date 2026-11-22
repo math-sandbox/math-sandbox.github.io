@@ -1,0 +1,403 @@
+[
+    {
+        "id": "P23-8.6-QC1-gen",
+        "section": "P23-8.6",
+        "kind": "generated",
+        "title": "Integral of x times e to the x",
+        "marks": 2,
+        "source": "Theory P23-8.6 Quick check 1; parts with u = x",
+        "params": [
+            {
+                "name": "a",
+                "min": 1,
+                "max": 8,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "Ea": "math.pow(2.718281828459045,a)",
+            "A": "(a-1)*math.pow(2.718281828459045,a)+1"
+        },
+        "constraints": [
+            "a>0"
+        ],
+        "original": {
+            "a": 1
+        },
+        "stem": "Use integration by parts to find the value of \\(\\displaystyle\\int_0^{ {a|int} }x\\mathrm{e}^x\\,\\mathrm{d}x\\), correct to 3 significant figures.",
+        "answer": {
+            "expression": "(a-1)*Ea+1",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(u=x\\), \\(\\dfrac{\\mathrm{d}v}{\\mathrm{d}x}=\\mathrm{e}^x\\): \\(\\displaystyle\\int x\\mathrm{e}^x\\,\\mathrm{d}x=x\\mathrm{e}^x-\\int\\mathrm{e}^x\\,\\mathrm{d}x=(x-1)\\mathrm{e}^x\\)",
+                "result": "Ea",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Integration by parts."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\bigl[(x-1)\\mathrm{e}^x\\bigr]_0^{ {a|int} }={A|sf3z}\\)",
+                "result": "(a-1)*Ea+1",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Use the limits; the lower limit gives -1."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original upper limit 1, value 1.00"
+            },
+            {
+                "id": "eval",
+                "stem": "Evaluate \\(\\displaystyle\\int_0^{ {a|int} }x\\mathrm{e}^x\\,\\mathrm{d}x\\) by parts, giving your answer to 3 significant figures."
+            },
+            {
+                "id": "area",
+                "stem": "Find the area under the curve \\(y=x\\mathrm{e}^x\\) from \\(x=0\\) to \\(x={a|int}\\), correct to 3 significant figures."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-8.6"
+            ],
+            "topic": "Further calculus",
+            "chapter": "P23-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-8-6.json",
+                "locator": "P23-8.6-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-8.6-QC2-gen",
+        "section": "P23-8.6",
+        "kind": "generated",
+        "title": "Integral of x ln x",
+        "marks": 2,
+        "source": "Theory P23-8.6 Quick check 2; parts with u = ln x",
+        "params": [
+            {
+                "name": "b",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "L": "math.log(b)",
+            "A": "0.5*b*b*math.log(b)-0.25*b*b+0.25"
+        },
+        "constraints": [
+            "b>1"
+        ],
+        "original": {
+            "b": 2
+        },
+        "stem": "Use integration by parts to find the value of \\(\\displaystyle\\int_1^{ {b|int} }x\\ln x\\,\\mathrm{d}x\\), correct to 3 significant figures.",
+        "answer": {
+            "expression": "0.5*b*b*L-0.25*b*b+0.25",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(u=\\ln x\\), \\(\\dfrac{\\mathrm{d}v}{\\mathrm{d}x}=x\\): \\(\\displaystyle\\int x\\ln x\\,\\mathrm{d}x=\\frac{1}{2}x^2\\ln x-\\int\\frac{1}{2}x\\,\\mathrm{d}x=\\frac{1}{2}x^2\\ln x-\\frac{1}{4}x^2\\)",
+                "result": "L",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Integration by parts, differentiating ln x."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\Bigl[\\frac{1}{2}x^2\\ln x-\\frac{1}{4}x^2\\Bigr]_1^{ {b|int} }={A|sf3z}\\)",
+                "result": "0.5*b*b*L-0.25*b*b+0.25",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Use the limits."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original upper limit 2, value 0.636"
+            },
+            {
+                "id": "eval",
+                "stem": "Evaluate \\(\\displaystyle\\int_1^{ {b|int} }x\\ln x\\,\\mathrm{d}x\\) by parts, giving your answer to 3 significant figures."
+            },
+            {
+                "id": "area",
+                "stem": "Find the area under the curve \\(y=x\\ln x\\) from \\(x=1\\) to \\(x={b|int}\\), correct to 3 significant figures."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-8.6"
+            ],
+            "topic": "Further calculus",
+            "chapter": "P23-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-8-6.json",
+                "locator": "P23-8.6-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-8.6-QC3-gen",
+        "section": "P23-8.6",
+        "kind": "generated",
+        "title": "Integral of x times e to the minus kx",
+        "marks": 2,
+        "source": "Theory P23-8.6 Quick check 3; parts with u = x",
+        "params": [
+            {
+                "name": "a",
+                "min": 1,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "k",
+                "min": 2,
+                "max": 3,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "Em": "math.pow(2.718281828459045,-k*a)",
+            "A": "1/(k*k)-math.pow(2.718281828459045,-k*a)*(a/k+1/(k*k))"
+        },
+        "constraints": [
+            "k>0"
+        ],
+        "original": {
+            "a": 1,
+            "k": 2
+        },
+        "stem": "Use integration by parts to find the value of \\(\\displaystyle\\int_0^{ {a|int} }x\\mathrm{e}^{-{k|int}x}\\,\\mathrm{d}x\\), correct to 3 significant figures.",
+        "answer": {
+            "expression": "1/(k*k)-Em*(a/k+1/(k*k))",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(u=x\\), \\(v=-\\dfrac{1}{{k|int}}\\mathrm{e}^{-{k|int}x}\\): the integral is \\(-\\dfrac{x}{{k|int}}\\mathrm{e}^{-{k|int}x}-\\dfrac{1}{{k|int}^2}\\mathrm{e}^{-{k|int}x}\\)",
+                "result": "Em",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Integration by parts, then integrate the exponential again."
+            },
+            {
+                "name": "A",
+                "text_tex": "Using the limits \\(0\\) and \\({a|int}\\): \\({A|sf3z}\\)",
+                "result": "1/(k*k)-Em*(a/k+1/(k*k))",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "The lower limit gives minus one over k squared."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original a = 1 and k = 2, value 1/4 - 3/(4e squared) = 0.148"
+            },
+            {
+                "id": "eval",
+                "stem": "Evaluate \\(\\displaystyle\\int_0^{ {a|int} }x\\mathrm{e}^{-{k|int}x}\\,\\mathrm{d}x\\) by parts, giving your answer to 3 significant figures."
+            },
+            {
+                "id": "area",
+                "stem": "Find the area under the curve \\(y=x\\mathrm{e}^{-{k|int}x}\\) from \\(x=0\\) to \\(x={a|int}\\), correct to 3 significant figures."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-8.6"
+            ],
+            "topic": "Further calculus",
+            "chapter": "P23-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-8-6.json",
+                "locator": "P23-8.6-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-8.6-PP-9709-32-MJ21-Q4",
+        "section": "P23-8.6",
+        "kind": "pastpaper",
+        "title": "Integral of tan inverse of half x by parts",
+        "marks": 5,
+        "source": {
+            "paper": "9709/32/M/J/21 Q4",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s21_qp_32.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s21_ms_32.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Using integration by parts, find the exact value of \\(\\displaystyle\\int_0^2\\tan^{-1}\\left(\\frac{1}{2}x\\right)\\mathrm{d}x\\). [5]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-8.6"
+            ],
+            "topic": "Further calculus",
+            "chapter": "P23-8",
+            "marks": 5,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-8-6.json",
+                "locator": "P23-8.6-PP-9709-32-MJ21-Q4"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "Take \\(u=\\tan^{-1}\\left(\\frac{1}{2}x\\right)\\) and \\(\\dfrac{\\mathrm{d}v}{\\mathrm{d}x}=1\\): the form \\(ax\\tan^{-1}\\left(\\frac{1}{2}x\\right)+b\\displaystyle\\int\\frac{x}{c+x^2}\\,\\mathrm{d}x\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: *M1."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(x\\tan^{-1}\\left(\\frac{1}{2}x\\right)-\\displaystyle\\int\\frac{2x}{4+x^2}\\,\\mathrm{d}x\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(x\\tan^{-1}\\left(\\frac{1}{2}x\\right)-\\ln(4+x^2)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1."
+            },
+            {
+                "name": "s4",
+                "text_tex": "Limits: \\(2\\tan^{-1}1-\\ln8+\\ln4\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: DM1, use limits correctly. An alternative method with θ = tan⁻¹(½x) is also given."
+            },
+            {
+                "name": "s5",
+                "text_tex": "\\(=\\frac{1}{2}\\pi-\\ln2\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1; needs a value for tan⁻¹1 and a single log term."
+            }
+        ]
+    },
+    {
+        "id": "P23-8.6-PP-9709-33-MJ20-Q2",
+        "section": "P23-8.6",
+        "kind": "pastpaper",
+        "title": "Integral of (2 - x) e to the minus 2x by parts",
+        "marks": 5,
+        "source": {
+            "paper": "9709/33/M/J/20 Q2",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s20_qp_33.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s20_ms_33.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Find the exact value of \\(\\displaystyle\\int_0^1(2-x)\\mathrm{e}^{-2x}\\,\\mathrm{d}x\\). [5]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-8.6"
+            ],
+            "topic": "Further calculus",
+            "chapter": "P23-8",
+            "marks": 5,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-8-6.json",
+                "locator": "P23-8.6-PP-9709-33-MJ20-Q2"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "Take \\(u=2-x\\): the form \\(a(2-x)\\mathrm{e}^{-2x}+b\\displaystyle\\int\\mathrm{e}^{-2x}\\,\\mathrm{d}x\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1*."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(-\\frac{1}{2}(2-x)\\mathrm{e}^{-2x}-\\displaystyle\\int\\frac{1}{2}\\mathrm{e}^{-2x}\\,\\mathrm{d}x\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(-\\frac{1}{2}(2-x)\\mathrm{e}^{-2x}+\\frac{1}{4}\\mathrm{e}^{-2x}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1."
+            },
+            {
+                "name": "s4",
+                "text_tex": "Limits: \\(\\left(-\\frac{1}{2}\\mathrm{e}^{-2}+\\frac{1}{4}\\mathrm{e}^{-2}\\right)-\\left(-1+\\frac{1}{4}\\right)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: DM1, use limits correctly, having integrated twice."
+            },
+            {
+                "name": "s5",
+                "text_tex": "\\(=\\frac{1}{4}\\left(3-\\mathrm{e}^{-2}\\right)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, or exact equivalent."
+            }
+        ]
+    }
+]

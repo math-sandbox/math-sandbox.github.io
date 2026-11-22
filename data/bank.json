@@ -1,17 +1,17 @@
 {
-  "generated": "2026-11-19",
+  "generated": "2026-11-22",
   "note": "Index only. Task text lives in the source files listed on each record.",
   "stats": {
-    "total": 1374,
+    "total": 1530,
     "byCourse": {
-      "IGCSE": 374,
-      "AS": 520,
-      "A2": 480
+      "IGCSE": 431,
+      "AS": 540,
+      "A2": 559
     },
     "byType": {
-      "pp": 148,
-      "fixed": 650,
-      "generator": 576
+      "pp": 180,
+      "fixed": 727,
+      "generator": 623
     },
     "mergedDuplicates": 9,
     "igcseP4SelfContained": 22,
@@ -33,13 +33,25 @@
     "IGCSE-18.5-q3": "IGCSE-18.5-we2",
     "P1-1.8-q2": "P1-1.8-we2",
     "S2-4.2-q4": "S2-4.2-we3",
+    "IGCSE-21.4-PP-0580-21-MJ18-Q17": "0580/21/M/J/18 Q17",
+    "IGCSE-21.6-PP-0580-21-MJ20-Q16": "0580/21/M/J/20 Q16",
     "IGCSE-13.3-PP-0580-22-FM20-Q18": "0580/22/F/M/20 Q18",
+    "IGCSE-21.1-PP-0580-22-FM21-Q2": "0580/22/F/M/21 Q2",
+    "IGCSE-21.3-PP-0580-22-FM24-Q14": "0580/22/F/M/24 Q14",
+    "IGCSE-21.2-PP-0580-22-MJ16-Q7": "0580/22/M/J/16 Q7",
     "IGCSE-15.2-PP-0580-22-ON19-Q8": "0580/22/O/N/19 Q8",
+    "IGCSE-21.1-PP-0580-22-ON20-Q12": "0580/22/O/N/20 Q12",
+    "IGCSE-21.5-PP-0580-22-ON22-Q5": "0580/22/O/N/22 Q5",
+    "IGCSE-21.6-PP-0580-22-ON23-Q22": "0580/22/O/N/23 Q22",
+    "IGCSE-21.4-PP-0580-23-MJ21-Q18": "0580/23/M/J/21 Q18",
+    "IGCSE-21.5-PP-0580-23-ON12-Q3": "0580/23/O/N/12 Q3",
     "IGCSE-18.4-PP-0580-23-ON21-Q22": "0580/23/O/N/21 Q22",
     "IGCSE-15.6-PP-0580-23-ON21-Q24": "0580/23/O/N/21 Q24",
     "IGCSE-13.5-PP-0580-23-ON21-Q5": "0580/23/O/N/21 Q5",
     "17.3-PP-0580-23-ON21-Q6": "0580/23/O/N/21 Q6",
     "IGCSE-17.3-PP-0580-23-ON21-Q6": "0580/23/O/N/21 Q6",
+    "IGCSE-21.3-PP-0580-23-ON21-Q8": "0580/23/O/N/21 Q8",
+    "IGCSE-21.2-PP-0580-23-ON22-Q14": "0580/23/O/N/22 Q14",
     "IGCSE-13.1-PP-0580-32-FM22-Q5c": "0580/32/F/M/22 Q5(c)",
     "IGCSE-14.1-PP-0580-32-MJ20-Q10b": "0580/32/M/J/20 Q10(b)",
     "IGCSE-18.3-PP-0580-32-MJ20-Q9": "0580/32/M/J/20 Q9",
@@ -85,7 +97,9 @@
     "P1-6.3-PP-9709-11-MJ21-Q2": "9709/11/M/J/21 Q2",
     "P1-5.8-PP-9709-11-MJ23-Q1": "9709/11/M/J/23 Q1",
     "P1-6.2-PP-9709-11-ON10-Q2": "9709/11/O/N/10 Q2",
+    "P1-6.6-PP-9709-11-ON15-Q8": "9709/11/O/N/15 Q8",
     "P1-6.1-PP-9709-11-ON23-Q1": "9709/11/O/N/23 Q1",
+    "P1-6.5-PP-9709-11-ON23-Q7": "9709/11/O/N/23 Q7",
     "P1-5.5-PP-9709-12-FM16-Q4": "9709/12/F/M/16 Q4",
     "P1-6.2-PP-9709-12-FM19-Q1": "9709/12/F/M/19 Q1",
     "P1-2.3-PP-9709-12-FM20-Q9b": "9709/12/F/M/20 Q9(b)",
@@ -101,9 +115,11 @@
     "P1-1.9-PP-9709-12-ON10-Q6": "9709/12/O/N/10 Q6",
     "P1-5.1-PP-9709-12-ON13-Q1": "9709/12/O/N/13 Q1",
     "P1-5.4-PP-9709-12-ON20-Q11": "9709/12/O/N/20 Q11",
+    "P1-6.5-PP-9709-12-ON21-Q6": "9709/12/O/N/21 Q6",
     "P1-1.8-PP-9709-12-ON22-Q3a": "9709/12/O/N/22 Q3(a)",
     "P1-6.4-PP-9709-12-ON22-Q4": "9709/12/O/N/22 Q4",
     "P1-1.2-PP-9709-12-ON22-Q6ab": "9709/12/O/N/22 Q6(a)(b)",
+    "P1-6.6-PP-9709-13-MJ14-Q2": "9709/13/M/J/14 Q2",
     "P1-1.6-PP-9709-13-MJ15-Q1": "9709/13/M/J/15 Q1",
     "P1-4.1-PP-9709-13-MJ15-Q11iii": "9709/13/M/J/15 Q11(iii)",
     "P1-5.8-PP-9709-13-MJ15-Q4": "9709/13/M/J/15 Q4",
@@ -145,10 +161,23 @@
     "P23-7.3-PP-9709-31-MJ17-Q2": "9709/31/M/J/17 Q2",
     "P23-4.6-PP-9709-31-MJ19-Q3": "9709/31/M/J/19 Q3",
     "P23-7.5-PP-9709-31-MJ19-Q8": "9709/31/M/J/19 Q8",
+    "P23-8.4-PP-9709-31-MJ24-Q8": "9709/31/M/J/24 Q8",
     "P23-7.5-PP-9709-31-ON20-Q9": "9709/31/O/N/20 Q9",
     "P23-7.3-PP-9709-32-MJ16-Q2": "9709/32/M/J/16 Q2",
+    "P23-8.3-PP-9709-32-MJ18-Q4": "9709/32/M/J/18 Q4",
+    "P23-8.6-PP-9709-32-MJ21-Q4": "9709/32/M/J/21 Q4",
+    "P23-8.3-PP-9709-32-ON18-Q7": "9709/32/O/N/18 Q7",
+    "P23-8.5-PP-9709-32-ON19-Q8": "9709/32/O/N/19 Q8",
+    "P23-8.7-PP-9709-32-ON20-Q9": "9709/32/O/N/20 Q9",
     "P23-7.4-PP-9709-33-MJ12-Q1": "9709/33/M/J/12 Q1",
     "P23-7.4-PP-9709-33-MJ17-Q2": "9709/33/M/J/17 Q2",
+    "P23-8.6-PP-9709-33-MJ20-Q2": "9709/33/M/J/20 Q2",
+    "P23-8.1-PP-9709-33-MJ20-Q4": "9709/33/M/J/20 Q4",
+    "P23-8.7-PP-9709-33-MJ23-Q7": "9709/33/M/J/23 Q7",
+    "P23-8.4-PP-9709-33-MJ26-Q6": "9709/33/M/J/26 Q6",
+    "P23-8.5-PP-9709-33-ON10-Q5": "9709/33/O/N/10 Q5",
+    "P23-8.2-PP-9709-33-ON22-Q11": "9709/33/O/N/22 Q11",
+    "P23-8.2-PP-9709-33-ON24-Q9": "9709/33/O/N/24 Q9",
     "S1-5.2-PP-9709-51-MJ20-Q2": "9709/51/M/J/20 Q2",
     "S1-5.3-PP-9709-51-MJ20-Q4": "9709/51/M/J/20 Q4",
     "S1-5.3-PP-9709-51-MJ21-Q1": "9709/51/M/J/21 Q1",
@@ -156,13 +185,16 @@
     "S1-5.4-PP-9709-52-FM22-Q5": "9709/52/F/M/22 Q5",
     "S1-5.4-PP-9709-52-MJ21-Q6": "9709/52/M/J/21 Q6",
     "S1-1.3-PP-9709-61-ON15-Q3i": "9709/61/O/N/15 Q3(i)",
+    "S2-5.1-PP-9709-62-ON21-Q2": "9709/62/O/N/21 Q2",
     "S1-4.3-PP-9709-63-MJ13-Q1": "9709/63/M/J/13 Q1",
     "S1-1.4-PP-9709-63-MJ13-Q6i-ii": "9709/63/M/J/13 Q6(i)(ii)",
     "S2-2.5-PP-9709-71-MJ17-Q6": "9709/71/M/J/17 Q6(i)(ii)(iii)",
     "S2-2.2-PP-9709-71-ON14-Q6i": "9709/71/O/N/14 Q6(i)",
     "S2-2.1-PP-9709-72-MJ11-Q3i": "9709/72/M/J/11 Q3(i)",
     "S2-2.2-PP-9709-72-MJ16-Q6i": "9709/72/M/J/16 Q6(i)",
+    "S2-5.1-PP-9709-73-MJ15-Q1": "9709/73/M/J/15 Q1",
     "S2-2.3-PP-9709-73-MJ18-Q1": "9709/73/M/J/18 Q1",
+    "S2-5.1-PP-9709-73-MJ19-Q3": "9709/73/M/J/19 Q3",
     "S2-2.4-PP-9709-73-ON16-Q7ii": "9709/73/O/N/16 Q7(ii)",
     "P1-3.2-PP-9709-13-MJ15-Q7ii": "A given line is perpendicular to AB",
     "IGCSE-15.9-PP-0580-43-ON20-Q6c": "Angles CAB and GAC in a cuboid",
@@ -172,11 +204,11 @@
     "P23-3.2-PP-9709-21-ON11-Q8i": "Expand cos(2x+x) to obtain the triple-angle formula",
     "P23-3.5-PP-9709-21-ON15-Q3i": "Express 8 sin theta + 15 cos theta in R-form",
     "IGCSE-15.8-PP-0580-22-MJ23-Q17": "Find the included angle from the area",
-    "QC1": "S2-4.3-q1",
-    "QC2": "S2-4.3-q2",
-    "QC3": "S2-4.3-q3",
-    "WE1": "S2-4.3-we1",
-    "WE2": "S2-4.3-we2",
+    "QC1": "S2-5.1-q1",
+    "QC2": "S2-5.1-q2",
+    "QC3": "S2-5.1-q3",
+    "WE1": "S2-5.1-we1",
+    "WE2": "S2-5.1-we2",
     "IGCSE-1-0": "IGCSE-14.1-g0",
     "IGCSE-1-1": "IGCSE-14.1-g1",
     "IGCSE-1-2": "IGCSE-14.1-g2",
@@ -341,6 +373,56 @@
   },
   "records": [
     {
+      "id": "0580/21/M/J/18 Q17",
+      "aliases": [
+        "IGCSE-21.4-PP-0580-21-MJ18-Q17"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.4"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 4,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": true,
+      "family": "IGCSE-21.4-PP-0580-21-MJ18::the speed time graph shows information about the journey of a tram between two s",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-21-4.json",
+        "locator": "IGCSE-21.4-PP-0580-21-MJ18-Q17",
+        "paper": "0580/21/M/J/18 Q17"
+      }
+    },
+    {
+      "id": "0580/21/M/J/20 Q16",
+      "aliases": [
+        "IGCSE-21.6-PP-0580-21-MJ20-Q16"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.6"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-21.6-PP-0580-21-MJ20::m is inversely proportional to the square of p n when p n m n find m when p n",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-21-6.json",
+        "locator": "IGCSE-21.6-PP-0580-21-MJ20-Q16",
+        "paper": "0580/21/M/J/20 Q16"
+      }
+    },
+    {
       "id": "0580/22/F/M/20 Q18",
       "aliases": [
         "IGCSE-13.3-PP-0580-22-FM20-Q18"
@@ -366,6 +448,81 @@
       }
     },
     {
+      "id": "0580/22/F/M/21 Q2",
+      "aliases": [
+        "IGCSE-21.1-PP-0580-22-FM21-Q2"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.1"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-21.1-PP-0580-22-FM21::sahil and anika share n in the ratio n n calculate the amount each receives",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-21-1.json",
+        "locator": "IGCSE-21.1-PP-0580-22-FM21-Q2",
+        "paper": "0580/22/F/M/21 Q2"
+      }
+    },
+    {
+      "id": "0580/22/F/M/24 Q14",
+      "aliases": [
+        "IGCSE-21.3-PP-0580-22-FM24-Q14"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.3"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-21.3-PP-0580-22-FM24::a train n metres long is travelling at n km h calculate how long it will take fo",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-21-3.json",
+        "locator": "IGCSE-21.3-PP-0580-22-FM24-Q14",
+        "paper": "0580/22/F/M/24 Q14"
+      }
+    },
+    {
+      "id": "0580/22/M/J/16 Q7",
+      "aliases": [
+        "IGCSE-21.2-PP-0580-22-MJ16-Q7"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.2"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-21.2-PP-0580-22-MJ16::a map is drawn to a scale of n n n n a forest on the map has an area of n n cm n",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-21-2.json",
+        "locator": "IGCSE-21.2-PP-0580-22-MJ16-Q7",
+        "paper": "0580/22/M/J/16 Q7"
+      }
+    },
+    {
       "id": "0580/22/O/N/19 Q8",
       "aliases": [
         "IGCSE-15.2-PP-0580-22-ON19-Q8"
@@ -388,6 +545,131 @@
         "path": "data/tasks-IGCSE-15-2.json",
         "locator": "IGCSE-15.2-PP-0580-22-ON19-Q8",
         "paper": "0580/22/O/N/19 Q8"
+      }
+    },
+    {
+      "id": "0580/22/O/N/20 Q12",
+      "aliases": [
+        "IGCSE-21.1-PP-0580-22-ON20-Q12"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.1"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-21.1-PP-0580-22-ON20::alex and chris share sweets in the ratio alex chris n n alex receives n more swe",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-21-1.json",
+        "locator": "IGCSE-21.1-PP-0580-22-ON20-Q12",
+        "paper": "0580/22/O/N/20 Q12"
+      }
+    },
+    {
+      "id": "0580/22/O/N/22 Q5",
+      "aliases": [
+        "IGCSE-21.5-PP-0580-22-ON22-Q5"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.5"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-21.5-PP-0580-22-ON22::jenna buys n n m of ribbon and n n m of fabric the total cost is n n ribbon cost",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-21-5.json",
+        "locator": "IGCSE-21.5-PP-0580-22-ON22-Q5",
+        "paper": "0580/22/O/N/22 Q5"
+      }
+    },
+    {
+      "id": "0580/22/O/N/23 Q22",
+      "aliases": [
+        "IGCSE-21.6-PP-0580-22-ON23-Q22"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.6"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-21.6-PP-0580-22-ON23::x is inversely proportional to the square root of w when w n x n find x in terms",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-21-6.json",
+        "locator": "IGCSE-21.6-PP-0580-22-ON23-Q22",
+        "paper": "0580/22/O/N/23 Q22"
+      }
+    },
+    {
+      "id": "0580/23/M/J/21 Q18",
+      "aliases": [
+        "IGCSE-21.4-PP-0580-23-MJ21-Q18"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.4"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": true,
+      "family": "IGCSE-21.4-PP-0580-23-MJ21::a car starts from rest and accelerates at a rate of n m s n for n seconds the ca",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-21-4.json",
+        "locator": "IGCSE-21.4-PP-0580-23-MJ21-Q18",
+        "paper": "0580/23/M/J/21 Q18"
+      }
+    },
+    {
+      "id": "0580/23/O/N/12 Q3",
+      "aliases": [
+        "IGCSE-21.5-PP-0580-23-ON12-Q3"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.5"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-21.5-PP-0580-23-ON12::jamie needs n g of flour to make n cakes how much flour does he need to make n c",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-21-5.json",
+        "locator": "IGCSE-21.5-PP-0580-23-ON12-Q3",
+        "paper": "0580/23/O/N/12 Q3"
       }
     },
     {
@@ -489,6 +771,56 @@
         "path": "data/tasks-17-3.json",
         "locator": "17.3-PP-0580-23-ON21-Q6",
         "paper": "0580/23/O/N/21 Q6"
+      }
+    },
+    {
+      "id": "0580/23/O/N/21 Q8",
+      "aliases": [
+        "IGCSE-21.3-PP-0580-23-ON21-Q8"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.3"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-21.3-PP-0580-23-ON21::beatrice walks n km at a speed of n km h and then n km at a speed of n n km h wo",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-21-3.json",
+        "locator": "IGCSE-21.3-PP-0580-23-ON21-Q8",
+        "paper": "0580/23/O/N/21 Q8"
+      }
+    },
+    {
+      "id": "0580/23/O/N/22 Q14",
+      "aliases": [
+        "IGCSE-21.2-PP-0580-23-ON22-Q14"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.2"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-21.2-PP-0580-23-ON22::a map has a scale of n n n find the area in square kilometres of a lake that has",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-21-2.json",
+        "locator": "IGCSE-21.2-PP-0580-23-ON22-Q14",
+        "paper": "0580/23/O/N/22 Q14"
       }
     },
     {
@@ -1497,6 +1829,31 @@
       }
     },
     {
+      "id": "9709/11/O/N/15 Q8",
+      "aliases": [
+        "P1-6.6-PP-9709-11-ON15-Q8"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-6.6"
+      ],
+      "topic": "Series",
+      "chapter": "P1-6",
+      "marks": 8,
+      "difficulty": "hard",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-6.6-PP-9709-11-ON15::the first term of a progression is nx and the second term is x n i for the case ",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-6-6.json",
+        "locator": "P1-6.6-PP-9709-11-ON15-Q8",
+        "paper": "9709/11/O/N/15 Q8"
+      }
+    },
+    {
       "id": "9709/11/O/N/23 Q1",
       "aliases": [
         "P1-6.1-PP-9709-11-ON23-Q1"
@@ -1519,6 +1876,31 @@
         "path": "data/tasks-P1-6-1.json",
         "locator": "P1-6.1-PP-9709-11-ON23-Q1",
         "paper": "9709/11/O/N/23 Q1"
+      }
+    },
+    {
+      "id": "9709/11/O/N/23 Q7",
+      "aliases": [
+        "P1-6.5-PP-9709-11-ON23-Q7"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-6.5"
+      ],
+      "topic": "Series",
+      "chapter": "P1-6",
+      "marks": 7,
+      "difficulty": "hard",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-6.5-PP-9709-11-ON23::the sum of the first two terms of a geometric progression is n and the sum to in",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-6-5.json",
+        "locator": "P1-6.5-PP-9709-11-ON23-Q7",
+        "paper": "9709/11/O/N/23 Q7"
       }
     },
     {
@@ -1897,6 +2279,31 @@
       }
     },
     {
+      "id": "9709/12/O/N/21 Q6",
+      "aliases": [
+        "P1-6.5-PP-9709-12-ON21-Q6"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-6.5"
+      ],
+      "topic": "Series",
+      "chapter": "P1-6",
+      "marks": 5,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-6.5-PP-9709-12-ON21::the second term of a geometric progression is n and the sum to infinity of the p",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-6-5.json",
+        "locator": "P1-6.5-PP-9709-12-ON21-Q6",
+        "paper": "9709/12/O/N/21 Q6"
+      }
+    },
+    {
       "id": "9709/12/O/N/22 Q3(a)",
       "aliases": [
         "P1-1.8-PP-9709-12-ON22-Q3a"
@@ -1969,6 +2376,31 @@
         "path": "data/tasks-P1-1-2.json",
         "locator": "P1-1.2-PP-9709-12-ON22-Q6ab",
         "paper": "9709/12/O/N/22 Q6(a)(b)"
+      }
+    },
+    {
+      "id": "9709/13/M/J/14 Q2",
+      "aliases": [
+        "P1-6.6-PP-9709-13-MJ14-Q2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-6.6"
+      ],
+      "topic": "Series",
+      "chapter": "P1-6",
+      "marks": 5,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-6.6-PP-9709-13-MJ14::the first term in a progression is n and the second term is n i given that the p",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-6-6.json",
+        "locator": "P1-6.6-PP-9709-13-MJ14-Q2",
+        "paper": "9709/13/M/J/14 Q2"
       }
     },
     {
@@ -3085,6 +3517,31 @@
       }
     },
     {
+      "id": "9709/31/M/J/24 Q8",
+      "aliases": [
+        "P23-8.4-PP-9709-31-MJ24-Q8"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.4"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 7,
+      "difficulty": "hard",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-8.4-PP-9709-31-MJ24::use the substitution u n x to find the exact value of n n nx n x d x give your a",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-4.json",
+        "locator": "P23-8.4-PP-9709-31-MJ24-Q8",
+        "paper": "9709/31/M/J/24 Q8"
+      }
+    },
+    {
       "id": "9709/31/O/N/20 Q9",
       "aliases": [
         "P23-7.5-PP-9709-31-ON20-Q9"
@@ -3135,6 +3592,131 @@
       }
     },
     {
+      "id": "9709/32/M/J/18 Q4",
+      "aliases": [
+        "P23-8.3-PP-9709-32-MJ18-Q4"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.3"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 8,
+      "difficulty": "hard",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-8.3-PP-9709-32-MJ18::show that n x nx n nx x n x hence showing all necessary working find n n n n n x",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-3.json",
+        "locator": "P23-8.3-PP-9709-32-MJ18-Q4",
+        "paper": "9709/32/M/J/18 Q4"
+      }
+    },
+    {
+      "id": "9709/32/M/J/21 Q4",
+      "aliases": [
+        "P23-8.6-PP-9709-32-MJ21-Q4"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.6"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 5,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-8.6-PP-9709-32-MJ21::using integration by parts find the exact value of n n n n n x d x",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-6.json",
+        "locator": "P23-8.6-PP-9709-32-MJ21-Q4",
+        "paper": "9709/32/M/J/21 Q4"
+      }
+    },
+    {
+      "id": "9709/32/O/N/18 Q7",
+      "aliases": [
+        "P23-8.3-PP-9709-32-ON18-Q7"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.3"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 10,
+      "difficulty": "hard",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-8.3-PP-9709-32-ON18::a curve has equation y n x n x for n n x n n i find the exact coordinates of the",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-3.json",
+        "locator": "P23-8.3-PP-9709-32-ON18-Q7",
+        "paper": "9709/32/O/N/18 Q7"
+      }
+    },
+    {
+      "id": "9709/32/O/N/19 Q8",
+      "aliases": [
+        "P23-8.5-PP-9709-32-ON19-Q8"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.5"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 10,
+      "difficulty": "hard",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-8.5-PP-9709-32-ON19::let f x nx n x n nx n x n n i express f x in partial fractions ii hence showing ",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-5.json",
+        "locator": "P23-8.5-PP-9709-32-ON19-Q8",
+        "paper": "9709/32/O/N/19 Q8"
+      }
+    },
+    {
+      "id": "9709/32/O/N/20 Q9",
+      "aliases": [
+        "P23-8.7-PP-9709-32-ON20-Q9"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.7"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 11,
+      "difficulty": "hard",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": true,
+      "family": "P23-8.7-PP-9709-32-ON20::let f x nx n nx n x n n a express f x in partial fractions b hence find the exac",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-7.json",
+        "locator": "P23-8.7-PP-9709-32-ON20-Q9",
+        "paper": "9709/32/O/N/20 Q9"
+      }
+    },
+    {
       "id": "9709/33/M/J/12 Q1",
       "aliases": [
         "P23-7.4-PP-9709-33-MJ12-Q1"
@@ -3182,6 +3764,181 @@
         "path": "data/tasks-P23-7-4.json",
         "locator": "P23-7.4-PP-9709-33-MJ17-Q2",
         "paper": "9709/33/M/J/17 Q2"
+      }
+    },
+    {
+      "id": "9709/33/M/J/20 Q2",
+      "aliases": [
+        "P23-8.6-PP-9709-33-MJ20-Q2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.6"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 5,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-8.6-PP-9709-33-MJ20::find the exact value of n n n x e nx d x",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-6.json",
+        "locator": "P23-8.6-PP-9709-33-MJ20-Q2",
+        "paper": "9709/33/M/J/20 Q2"
+      }
+    },
+    {
+      "id": "9709/33/M/J/20 Q4",
+      "aliases": [
+        "P23-8.1-PP-9709-33-MJ20-Q4"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.1"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 6,
+      "difficulty": "hard",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": true,
+      "family": "P23-8.1-PP-9709-33-MJ20::the equation of a curve is y x n n n x a find d y d x b the tangent to the curve",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-1.json",
+        "locator": "P23-8.1-PP-9709-33-MJ20-Q4",
+        "paper": "9709/33/M/J/20 Q4"
+      }
+    },
+    {
+      "id": "9709/33/M/J/23 Q7",
+      "aliases": [
+        "P23-8.7-PP-9709-33-MJ23-Q7"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.7"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 8,
+      "difficulty": "hard",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": true,
+      "family": "P23-8.7-PP-9709-33-MJ23::use the substitution u x to show that n nx e n x d x n n nu e nu d u hence find ",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-7.json",
+        "locator": "P23-8.7-PP-9709-33-MJ23-Q7",
+        "paper": "9709/33/M/J/23 Q7"
+      }
+    },
+    {
+      "id": "9709/33/M/J/26 Q6",
+      "aliases": [
+        "P23-8.4-PP-9709-33-MJ26-Q6"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.4"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 6,
+      "difficulty": "hard",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-8.4-PP-9709-33-MJ26::use the substitution u x to find the exact value of n n n n n n n x x d x",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-4.json",
+        "locator": "P23-8.4-PP-9709-33-MJ26-Q6",
+        "paper": "9709/33/M/J/26 Q6"
+      }
+    },
+    {
+      "id": "9709/33/O/N/10 Q5",
+      "aliases": [
+        "P23-8.5-PP-9709-33-ON10-Q5"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.5"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 7,
+      "difficulty": "hard",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-8.5-PP-9709-33-ON10::show that n n nx n nx n x n d x n",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-5.json",
+        "locator": "P23-8.5-PP-9709-33-ON10-Q5",
+        "paper": "9709/33/O/N/10 Q5"
+      }
+    },
+    {
+      "id": "9709/33/O/N/22 Q11",
+      "aliases": [
+        "P23-8.2-PP-9709-33-ON22-Q11"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.2"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 10,
+      "difficulty": "hard",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": true,
+      "family": "P23-8.2-PP-9709-33-ON22::let f x n x nx n n x n nx n a express f x in partial fractions b find the exact ",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-2.json",
+        "locator": "P23-8.2-PP-9709-33-ON22-Q11",
+        "paper": "9709/33/O/N/22 Q11"
+      }
+    },
+    {
+      "id": "9709/33/O/N/24 Q9",
+      "aliases": [
+        "P23-8.2-PP-9709-33-ON24-Q9"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.2"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 8,
+      "difficulty": "hard",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": true,
+      "family": "P23-8.2-PP-9709-33-ON24::find the quotient and remainder when x n n is divided by x n n hence show that n",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-2.json",
+        "locator": "P23-8.2-PP-9709-33-ON24-Q9",
+        "paper": "9709/33/O/N/24 Q9"
       }
     },
     {
@@ -3360,6 +4117,31 @@
       }
     },
     {
+      "id": "9709/62/O/N/21 Q2",
+      "aliases": [
+        "S2-5.1-PP-9709-62-ON21-Q2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "S2-5.1"
+      ],
+      "topic": "Sampling",
+      "chapter": "S2-5",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": true,
+      "family": "S2-5.1-PP-9709-62-ON21::andy and jessica are doing a survey about musical preferences they plan to choos",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-S2-5-1.json",
+        "locator": "S2-5.1-PP-9709-62-ON21-Q2",
+        "paper": "9709/62/O/N/21 Q2"
+      }
+    },
+    {
       "id": "9709/63/M/J/13 Q1",
       "aliases": [
         "S1-4.3-PP-9709-63-MJ13-Q1"
@@ -3532,6 +4314,31 @@
       }
     },
     {
+      "id": "9709/73/M/J/15 Q1",
+      "aliases": [
+        "S2-5.1-PP-9709-73-MJ15-Q1"
+      ],
+      "course": "A2",
+      "subsections": [
+        "S2-5.1"
+      ],
+      "topic": "Sampling",
+      "chapter": "S2-5",
+      "marks": 5,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "S2-5.1-PP-9709-73-MJ15::jyothi wishes to choose a representative sample of n students from the n members",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-S2-5-1.json",
+        "locator": "S2-5.1-PP-9709-73-MJ15-Q1",
+        "paper": "9709/73/M/J/15 Q1"
+      }
+    },
+    {
       "id": "9709/73/M/J/18 Q1",
       "aliases": [
         "S2-2.3-PP-9709-73-MJ18-Q1"
@@ -3554,6 +4361,31 @@
         "path": "data/tasks-S2-2-3.json",
         "locator": "S2-2.3-PP-9709-73-MJ18-Q1",
         "paper": "9709/73/M/J/18 Q1"
+      }
+    },
+    {
+      "id": "9709/73/M/J/19 Q3",
+      "aliases": [
+        "S2-5.1-PP-9709-73-MJ19-Q3"
+      ],
+      "course": "A2",
+      "subsections": [
+        "S2-5.1"
+      ],
+      "topic": "Sampling",
+      "chapter": "S2-5",
+      "marks": 4,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "S2-5.1-PP-9709-73-MJ19::luis has to choose one person at random from four people a b c and d he throws a",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-S2-5-1.json",
+        "locator": "S2-5.1-PP-9709-73-MJ19-Q3",
+        "paper": "9709/73/M/J/19 Q3"
       }
     },
     {
@@ -11648,6 +12480,1052 @@
       }
     },
     {
+      "id": "IGCSE-21.1-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.1"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::ravi and mei share n stickers in the ratio n n how many stickers does ravi recei",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-21.1.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "IGCSE-21.1-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.1"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::alex and chris share sweets in the ratio alex chris n n alex receives n more swe",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-21.1.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "IGCSE-21.1-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.1"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::in a choir the ratio of boys to girls is n n there are n boys how many girls are",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-21.1.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "IGCSE-21.1-QC1-gen",
+      "aliases": [],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.1"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-21.1::ravi and mei share t int stickers in the ratio a int b int how many stickers doe",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-21-1.json",
+        "locator": "IGCSE-21.1-QC1-gen"
+      }
+    },
+    {
+      "id": "IGCSE-21.1-QC2-gen",
+      "aliases": [],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.1"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-21.1::alex and chris share sweets in the ratio alex chris a int b int alex receives d ",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-21-1.json",
+        "locator": "IGCSE-21.1-QC2-gen"
+      }
+    },
+    {
+      "id": "IGCSE-21.1-QC3-gen",
+      "aliases": [],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.1"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-21.1::in a choir the ratio of boys to girls is a int b int there are bq int boys how m",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-21-1.json",
+        "locator": "IGCSE-21.1-QC3-gen"
+      }
+    },
+    {
+      "id": "IGCSE-21.1-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.1"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::orange juice and lemonade are mixed in the ratio n n a jug contains n ml of oran",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-21.1.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "IGCSE-21.2-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.2"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::a map has a scale of n n n two villages are n cm apart on the map find the actua",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-21.2.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "IGCSE-21.2-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.2"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::a map has a scale of n n n the real distance between two points is n km how far ",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-21.2.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "IGCSE-21.2-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.2"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::a map has a scale of n n n find the area in square kilometres of a lake that has",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-21.2.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "IGCSE-21.2-QC1-gen",
+      "aliases": [],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.2"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-21.2::a map has a scale of n n int two villages are d dpn cm apart on the map find the",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-21-2.json",
+        "locator": "IGCSE-21.2-QC1-gen"
+      }
+    },
+    {
+      "id": "IGCSE-21.2-QC2-gen",
+      "aliases": [],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.2"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-21.2::a map has a scale of n n int the real distance between two points is d int km ho",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-21-2.json",
+        "locator": "IGCSE-21.2-QC2-gen"
+      }
+    },
+    {
+      "id": "IGCSE-21.2-QC3-gen",
+      "aliases": [],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.2"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-21.2::a map has a scale of n n int find the area in square kilometres of a lake that h",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-21-2.json",
+        "locator": "IGCSE-21.2-QC3-gen"
+      }
+    },
+    {
+      "id": "IGCSE-21.2-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.2"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE1::a map has a scale of n n n a lake is n n cm long on the map find the real length",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-21.2.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "IGCSE-21.2-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.2"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::a map has a scale of n n n a farm has an area of n n cm n on the map find the re",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-21.2.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "IGCSE-21.3-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.3"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::ola walks n km at a speed of n km h and then n km at a speed of n km h work out ",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-21.3.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "IGCSE-21.3-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.3"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::water flows into a tank at a rate of n litres per minute how many minutes does i",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-21.3.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "IGCSE-21.3-QC2-gen",
+      "aliases": [],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.3"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-21.3::ola walks dn int km at a speed of vn int km h and then dn int km at a speed of v",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-21-3.json",
+        "locator": "IGCSE-21.3-QC2-gen"
+      }
+    },
+    {
+      "id": "IGCSE-21.3-QC3-gen",
+      "aliases": [],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.3"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-21.3::water flows into a tank at a rate of r int litres per minute how many minutes do",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-21-3.json",
+        "locator": "IGCSE-21.3-QC3-gen"
+      }
+    },
+    {
+      "id": "IGCSE-21.3-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.3"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE1::a bus travels n km in n minutes and then n km in n minutes find its average spee",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-21.3.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "IGCSE-21.3-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.3"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::nadia earns n dollars for n hours of work at the same rate how much does she ear",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-21.3.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "IGCSE-21.4-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.4"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::a car starts from rest and reaches a speed of n m s after n seconds accelerating",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-21.4.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "IGCSE-21.4-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.4"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::a tram starts from rest and accelerates steadily to n m s in n seconds it travel",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-21.4.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "IGCSE-21.4-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.4"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::a distance time graph shows a cyclist travelling n km in n minutes at a constant",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-21.4.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "IGCSE-21.4-QC1-gen",
+      "aliases": [],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.4"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-21.4::a car starts from rest and reaches a speed of v int m s after t int seconds acce",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-21-4.json",
+        "locator": "IGCSE-21.4-QC1-gen"
+      }
+    },
+    {
+      "id": "IGCSE-21.4-QC2-gen",
+      "aliases": [],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.4"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-21.4::a tram starts from rest and accelerates steadily to v int m s in tn int seconds ",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-21-4.json",
+        "locator": "IGCSE-21.4-QC2-gen"
+      }
+    },
+    {
+      "id": "IGCSE-21.4-QC3-gen",
+      "aliases": [],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.4"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-21.4::a distance time graph shows a cyclist travelling d int km in m int minutes at a ",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-21-4.json",
+        "locator": "IGCSE-21.4-QC3-gen"
+      }
+    },
+    {
+      "id": "IGCSE-21.4-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.4"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 4,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": true,
+      "family": "WE1::a find the acceleration in the first n seconds b find the deceleration in the la",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-21.4.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "IGCSE-21.4-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.4"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::a distance time graph for a walk is a straight line from n n to n minutes n km f",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-21.4.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "IGCSE-21.5-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.5"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::jamie needs n g of flour to make n cakes how much flour does he need to make n c",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-21.5.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "IGCSE-21.5-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.5"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::it takes n builders n days to build a wall how many days would it take n builder",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-21.5.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "IGCSE-21.5-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.5"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::jo buys n m of ribbon and n m of fabric for a total of n cents ribbon costs n ce",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-21.5.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "IGCSE-21.5-QC1-gen",
+      "aliases": [],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.5"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-21.5::jamie needs q int g of flour to make nn int cakes how much flour does he need to",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-21-5.json",
+        "locator": "IGCSE-21.5-QC1-gen"
+      }
+    },
+    {
+      "id": "IGCSE-21.5-QC2-gen",
+      "aliases": [],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.5"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-21.5::it takes wn int builders d int days to build a wall how many days would it take ",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-21-5.json",
+        "locator": "IGCSE-21.5-QC2-gen"
+      }
+    },
+    {
+      "id": "IGCSE-21.5-QC3-gen",
+      "aliases": [],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.5"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-21.5::jo buys m int m of ribbon and n int m of fabric for a total of t int cents ribbo",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-21-5.json",
+        "locator": "IGCSE-21.5-QC3-gen"
+      }
+    },
+    {
+      "id": "IGCSE-21.5-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.5"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE1::a car uses n litres of fuel to travel n km how much fuel does it use to travel n",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-21.5.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "IGCSE-21.5-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.5"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::a coach trip costs each of n passengers n dollars the total cost is shared equal",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-21.5.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "IGCSE-21.6-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.6"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::y is directly proportional to x n when x n y n find y when x n",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-21.6.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "IGCSE-21.6-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.6"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::y is inversely proportional to x when x n y n find y when x n",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-21.6.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "IGCSE-21.6-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.6"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::y is inversely proportional to the square of x when x n y n find y when x n",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-21.6.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "IGCSE-21.6-QC1-gen",
+      "aliases": [],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.6"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-21.6::y is directly proportional to x n when x xn int y yn int find y when x xn int",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-21-6.json",
+        "locator": "IGCSE-21.6-QC1-gen"
+      }
+    },
+    {
+      "id": "IGCSE-21.6-QC2-gen",
+      "aliases": [],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.6"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-21.6::y is inversely proportional to x when x xn int y yn int find y when x xn int",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-21-6.json",
+        "locator": "IGCSE-21.6-QC2-gen"
+      }
+    },
+    {
+      "id": "IGCSE-21.6-QC3-gen",
+      "aliases": [],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.6"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-21.6::y is inversely proportional to the square of x when x xn int y yn int find y whe",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-21-6.json",
+        "locator": "IGCSE-21.6-QC3-gen"
+      }
+    },
+    {
+      "id": "IGCSE-21.6-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.6"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE1::y is directly proportional to the cube of x when x n y n find y when x n",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-21.6.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "IGCSE-21.6-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-21.6"
+      ],
+      "topic": "Ratio, rate and proportion",
+      "chapter": "IGCSE-21",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::t is inversely proportional to the square root of d when d n t n find t when d n",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-21.6.html",
+        "locator": "WE2"
+      }
+    },
+    {
       "id": "Least possible interquartile range from a grouped table",
       "aliases": [
         "S1-3.2-PP-9709-61-MJ14-Q7iii"
@@ -18855,6 +20733,378 @@
       }
     },
     {
+      "id": "P1-6.5-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-6.5"
+      ],
+      "topic": "Series",
+      "chapter": "P1-6",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::a geometric progression has first term n and common ratio n n find the sum to in",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-6.5.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "P1-6.5-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-6.5"
+      ],
+      "topic": "Series",
+      "chapter": "P1-6",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::a geometric progression has first term n and sum to infinity n find the common r",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-6.5.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "P1-6.5-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-6.5"
+      ],
+      "topic": "Series",
+      "chapter": "P1-6",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::a geometric progression has common ratio n n and sum to infinity n find the firs",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-6.5.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "P1-6.5-QC1-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-6.5"
+      ],
+      "topic": "Series",
+      "chapter": "P1-6",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-6.5::a geometric progression has first term a int and common ratio r numn find the su",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-6-5.json",
+        "locator": "P1-6.5-QC1-gen"
+      }
+    },
+    {
+      "id": "P1-6.5-QC2-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-6.5"
+      ],
+      "topic": "Series",
+      "chapter": "P1-6",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-6.5::a geometric progression has first term a int and sum to infinity t int find the ",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-6-5.json",
+        "locator": "P1-6.5-QC2-gen"
+      }
+    },
+    {
+      "id": "P1-6.5-QC3-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-6.5"
+      ],
+      "topic": "Series",
+      "chapter": "P1-6",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-6.5::a geometric progression has common ratio r numn and sum to infinity t int find t",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-6-5.json",
+        "locator": "P1-6.5-QC3-gen"
+      }
+    },
+    {
+      "id": "P1-6.5-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-6.5"
+      ],
+      "topic": "Series",
+      "chapter": "P1-6",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE1::find the sum to infinity of the geometric series n n n n",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-6.5.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "P1-6.5-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-6.5"
+      ],
+      "topic": "Series",
+      "chapter": "P1-6",
+      "marks": 4,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::the second term of a geometric progression is n and the sum to infinity is n fin",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-6.5.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "P1-6.6-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-6.6"
+      ],
+      "topic": "Series",
+      "chapter": "P1-6",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::the first term of a progression is n and the second term is n given that the pro",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-6.6.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "P1-6.6-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-6.6"
+      ],
+      "topic": "Series",
+      "chapter": "P1-6",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::the first term of a progression is n and the second term is n given that the pro",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-6.6.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "P1-6.6-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-6.6"
+      ],
+      "topic": "Series",
+      "chapter": "P1-6",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::an arithmetic progression has first term n and common difference n a geometric p",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-6.6.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "P1-6.6-QC1-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-6.6"
+      ],
+      "topic": "Series",
+      "chapter": "P1-6",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-6.6::the first term of a progression is p int and the second term is q int given that",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-6-6.json",
+        "locator": "P1-6.6-QC1-gen"
+      }
+    },
+    {
+      "id": "P1-6.6-QC2-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-6.6"
+      ],
+      "topic": "Series",
+      "chapter": "P1-6",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-6.6::the first term of a progression is p int and the second term is q int given that",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-6-6.json",
+        "locator": "P1-6.6-QC2-gen"
+      }
+    },
+    {
+      "id": "P1-6.6-QC3-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-6.6"
+      ],
+      "topic": "Series",
+      "chapter": "P1-6",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-6.6::an arithmetic progression has first term a int and common difference d int a geo",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-6-6.json",
+        "locator": "P1-6.6-QC3-gen"
+      }
+    },
+    {
+      "id": "P1-6.6-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-6.6"
+      ],
+      "topic": "Series",
+      "chapter": "P1-6",
+      "marks": 5,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": true,
+      "family": "WE1::the first two terms of a progression are n and n a given that the progression is",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-6.6.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "P1-6.6-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-6.6"
+      ],
+      "topic": "Series",
+      "chapter": "P1-6",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::the first second and third terms of a geometric progression are the first fourth",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-6.6.html",
+        "locator": "WE2"
+      }
+    },
+    {
       "id": "P23-1.1-g0",
       "aliases": [
         "A2-0-0"
@@ -25856,6 +28106,1284 @@
       }
     },
     {
+      "id": "P23-8.1-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.1"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::find the gradient of the curve y n nx at the point where x n",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.1.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "P23-8.1-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.1"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::find the gradient of the curve y n x n at the point where x n",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.1.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "P23-8.1-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.1"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::find the gradient of the curve y n nx n at the point where x n",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.1.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "P23-8.1-QC1-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-8.1"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-8.1::find the gradient of the curve y n k int x at the point where x c int",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-1.json",
+        "locator": "P23-8.1-QC1-gen"
+      }
+    },
+    {
+      "id": "P23-8.1-QC2-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-8.1"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-8.1::find the gradient of the curve y n x a int at the point where x b int",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-1.json",
+        "locator": "P23-8.1-QC2-gen"
+      }
+    },
+    {
+      "id": "P23-8.1-QC3-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-8.1"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-8.1::find the gradient of the curve y n k int x n at the point where x c int",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-1.json",
+        "locator": "P23-8.1-QC3-gen"
+      }
+    },
+    {
+      "id": "P23-8.1-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.1"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::find the exact gradient of the curve y x n n x at the point where x n",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.1.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "P23-8.2-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.2"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::show that n n n n x n d x k and find the value of k",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.2.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "P23-8.2-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.2"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::find the exact value of n n n n x n d x in the form k and give the value of k",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.2.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "P23-8.2-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.2"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::let m n and n n find the exact value of n n m n n nx n d x in the form k and giv",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.2.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "P23-8.2-QC1-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-8.2"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-8.2::show that n a int n a int n x n d x k and find the value of k",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-2.json",
+        "locator": "P23-8.2-QC1-gen"
+      }
+    },
+    {
+      "id": "P23-8.2-QC2-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-8.2"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-8.2::find the exact value of n b int c int bn int x n d x in the form k and give the ",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-2.json",
+        "locator": "P23-8.2-QC2-gen"
+      }
+    },
+    {
+      "id": "P23-8.2-QC3-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-8.2"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-8.2::let m m int and n n int find the exact value of n n m n nn int mn int x n d x in",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-2.json",
+        "locator": "P23-8.2-QC3-gen"
+      }
+    },
+    {
+      "id": "P23-8.2-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.2"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE1::find n n x n d x",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.2.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "P23-8.2-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.2"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::find the exact value of n n n n n nx n d x",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.2.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "P23-8.3-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.3"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::find the value of n n nx x n n d x giving your answer correct to n significant f",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.3.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "P23-8.3-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.3"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::find the value of n n x x n n d x giving your answer correct to n significant fi",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.3.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "P23-8.3-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.3"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::find the value of n n nx n x n n d x giving your answer correct to n significant",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.3.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "P23-8.3-QC1-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-8.3"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-8.3::find the value of n a int nx x n c int d x giving your answer correct to n signi",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-3.json",
+        "locator": "P23-8.3-QC1-gen"
+      }
+    },
+    {
+      "id": "P23-8.3-QC2-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-8.3"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-8.3::find the value of n a int x x n c int d x giving your answer correct to n signif",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-3.json",
+        "locator": "P23-8.3-QC2-gen"
+      }
+    },
+    {
+      "id": "P23-8.3-QC3-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-8.3"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-8.3::find the value of n a int nx n x n c int d x giving your answer correct to n sig",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-3.json",
+        "locator": "P23-8.3-QC3-gen"
+      }
+    },
+    {
+      "id": "P23-8.3-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.3"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE1::find nx n x n nx n d x",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.3.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "P23-8.3-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.3"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::find the exact value of n n x d x",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.3.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "P23-8.4-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.4"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::use the substitution u x n n to find the value of n nx x n n n d x",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.4.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "P23-8.4-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.4"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::use the substitution u x n n to find the value of n nx x n n d x correct to n si",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.4.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "P23-8.4-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.4"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::use the substitution u x to find the value of n n x x d x correct to n significa",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.4.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "P23-8.4-QC1-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-8.4"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-8.4::use the substitution u x n c int to find the value of n a int nx x n c int n d x",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-4.json",
+        "locator": "P23-8.4-QC1-gen"
+      }
+    },
+    {
+      "id": "P23-8.4-QC2-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-8.4"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-8.4::use the substitution u x n c int to find the value of n b int x x n c int d x co",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-4.json",
+        "locator": "P23-8.4-QC2-gen"
+      }
+    },
+    {
+      "id": "P23-8.4-QC3-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-8.4"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-8.4::use the substitution u x to find the value of n b int x x d x correct to n signi",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-4.json",
+        "locator": "P23-8.4-QC3-gen"
+      }
+    },
+    {
+      "id": "P23-8.4-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.4"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 4,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE1::use the substitution u x n n to find x x n n n d x",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.4.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "P23-8.4-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.4"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 4,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::use the substitution u x n n to find n nx x n n d x",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.4.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "P23-8.5-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.5"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::find the value of n n n x n x n d x correct to n significant figures",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.5.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "P23-8.5-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.5"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::find the value of n n n x x n d x correct to n significant figures",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.5.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "P23-8.5-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.5"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::find the value of n n n x n n d x correct to n significant figures",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.5.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "P23-8.5-QC1-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-8.5"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-8.5::find the value of n c int d int x p int x q int d x correct to n significant fig",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-5.json",
+        "locator": "P23-8.5-QC1-gen"
+      }
+    },
+    {
+      "id": "P23-8.5-QC2-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-8.5"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-8.5::find the value of n c int a int x x a int d x correct to n significant figures",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-5.json",
+        "locator": "P23-8.5-QC2-gen"
+      }
+    },
+    {
+      "id": "P23-8.5-QC3-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-8.5"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-8.5::find the value of n c int n x n n d x correct to n significant figures",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-5.json",
+        "locator": "P23-8.5-QC3-gen"
+      }
+    },
+    {
+      "id": "P23-8.5-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.5"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE1::find n x n x n d x",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.5.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "P23-8.5-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.5"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::find the exact value of n n nx n x n nx n d x",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.5.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "P23-8.6-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.6"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::use integration by parts to find the value of n nx e x d x correct to n signific",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.6.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "P23-8.6-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.6"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::use integration by parts to find the value of n nx x d x correct to n significan",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.6.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "P23-8.6-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.6"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::use integration by parts to find the value of n nx e nx d x correct to n signifi",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.6.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "P23-8.6-QC1-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-8.6"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-8.6::use integration by parts to find the value of n a int x e x d x correct to n sig",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-6.json",
+        "locator": "P23-8.6-QC1-gen"
+      }
+    },
+    {
+      "id": "P23-8.6-QC2-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-8.6"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-8.6::use integration by parts to find the value of n b int x x d x correct to n signi",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-6.json",
+        "locator": "P23-8.6-QC2-gen"
+      }
+    },
+    {
+      "id": "P23-8.6-QC3-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-8.6"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-8.6::use integration by parts to find the value of n a int x e k int x d x correct to",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-6.json",
+        "locator": "P23-8.6-QC3-gen"
+      }
+    },
+    {
+      "id": "P23-8.6-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.6"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE1::find x x d x",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.6.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "P23-8.6-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.6"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 4,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::find the exact value of n e x n x d x",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.6.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "P23-8.7-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.7"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::find the exact value of n n x nx d x",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.7.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "P23-8.7-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.7"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::find the value of n n x x n d x correct to n significant figures",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.7.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "P23-8.7-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.7"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::find the value of n n x x n d x correct to n significant figures",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.7.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "P23-8.7-QC1-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-8.7"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-8.7::find the exact value of n n x n int x d x",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-7.json",
+        "locator": "P23-8.7-QC1-gen"
+      }
+    },
+    {
+      "id": "P23-8.7-QC2-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-8.7"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-8.7::find the value of n a int x x n d x correct to n significant figures",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-7.json",
+        "locator": "P23-8.7-QC2-gen"
+      }
+    },
+    {
+      "id": "P23-8.7-QC3-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-8.7"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-8.7::find the value of n b int x x n d x correct to n significant figures",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-8-7.json",
+        "locator": "P23-8.7-QC3-gen"
+      }
+    },
+    {
+      "id": "P23-8.7-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.7"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE1::find x nx d x",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.7.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "P23-8.7-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-8.7"
+      ],
+      "topic": "Further calculus",
+      "chapter": "P23-8",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::find the exact value of n n x x n d x",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-8.7.html",
+        "locator": "WE2"
+      }
+    },
+    {
       "id": "Probability for a linear combination of independent normals",
       "aliases": [
         "S2-3.3-PP-9709-73-MJ12-Q2"
@@ -32625,6 +36153,192 @@
       "source": {
         "kind": "theory",
         "path": "content/theory/S2-4.3.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "S2-5.1-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "A2",
+      "subsections": [
+        "S2-5.1"
+      ],
+      "topic": "Sampling",
+      "chapter": "S2-5",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::a random sample of size n is chosen from a population of n people so that every ",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/S2-5.1.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "S2-5.1-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "S2-5.1"
+      ],
+      "topic": "Sampling",
+      "chapter": "S2-5",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::a random sample of n students is chosen from the n students in a year group find",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/S2-5.1.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "S2-5.1-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "A2",
+      "subsections": [
+        "S2-5.1"
+      ],
+      "topic": "Sampling",
+      "chapter": "S2-5",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::the n members of a population are numbered n to n three digit random numbers fro",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/S2-5.1.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "S2-5.1-QC1-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "S2-5.1"
+      ],
+      "topic": "Sampling",
+      "chapter": "S2-5",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "S2-5.1::a random sample of size n is chosen from a population of n int people so that ev",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-S2-5-1.json",
+        "locator": "S2-5.1-QC1-gen"
+      }
+    },
+    {
+      "id": "S2-5.1-QC2-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "S2-5.1"
+      ],
+      "topic": "Sampling",
+      "chapter": "S2-5",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "S2-5.1::a random sample of n int students is chosen from the n int students in a year gr",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-S2-5-1.json",
+        "locator": "S2-5.1-QC2-gen"
+      }
+    },
+    {
+      "id": "S2-5.1-QC3-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "S2-5.1"
+      ],
+      "topic": "Sampling",
+      "chapter": "S2-5",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "S2-5.1::the n int members of a population are numbered n to m int three digit random num",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-S2-5-1.json",
+        "locator": "S2-5.1-QC3-gen"
+      }
+    },
+    {
+      "id": "S2-5.1-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "A2",
+      "subsections": [
+        "S2-5.1"
+      ],
+      "topic": "Sampling",
+      "chapter": "S2-5",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE1::find the numbers of the members chosen",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/S2-5.1.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "S2-5.1-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "S2-5.1"
+      ],
+      "topic": "Sampling",
+      "chapter": "S2-5",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::a head teacher wants to know how students travel to school she asks the first n ",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/S2-5.1.html",
         "locator": "WE2"
       }
     },

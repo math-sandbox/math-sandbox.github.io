@@ -1,0 +1,414 @@
+[
+    {
+        "id": "IGCSE-21.5-QC1-gen",
+        "section": "IGCSE-21.5",
+        "kind": "generated",
+        "title": "Direct proportion by the unitary method",
+        "marks": 2,
+        "source": "Theory IGCSE-21.5 Quick check 1; find the amount for one item",
+        "params": [
+            {
+                "name": "n1",
+                "min": 4,
+                "max": 24,
+                "step": 4
+            },
+            {
+                "name": "q",
+                "min": 100,
+                "max": 600,
+                "step": 20
+            },
+            {
+                "name": "n2",
+                "min": 2,
+                "max": 30,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "U": "q/n1",
+            "A": "q*n2/n1"
+        },
+        "constraints": [
+            "n2!=n1"
+        ],
+        "original": {
+            "n1": 20,
+            "q": 300,
+            "n2": 12
+        },
+        "stem": "Jamie needs {q|int} g of flour to make {n1|int} cakes. How much flour does he need to make {n2|int} cakes?",
+        "answer": {
+            "expression": "q*n2/n1",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "For one cake: \\({q|int}\\div{n1|int}={U|sf3z}\\) g",
+                "result": "U",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Find the amount for one cake."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\dfrac{{q|int}\\times{n2|int}}{{n1|int}}={A|sf3z}\\) g",
+                "result": "q*n2/n1",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Multiply by the new number of cakes."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 300 g for 20 cakes, giving 180 g for 12 cakes"
+            },
+            {
+                "id": "sugar",
+                "stem": "A recipe uses {q|int} g of sugar for {n1|int} biscuits. How much sugar is needed for {n2|int} biscuits?"
+            },
+            {
+                "id": "paint",
+                "stem": "To paint {n1|int} fence panels you need {q|int} ml of paint. Find the amount of paint needed for {n2|int} panels."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-21.5"
+            ],
+            "topic": "Ratio, rate and proportion",
+            "chapter": "IGCSE-21",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-21-5.json",
+                "locator": "IGCSE-21.5-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-21.5-QC2-gen",
+        "section": "IGCSE-21.5",
+        "kind": "generated",
+        "title": "Inverse proportion with workers and time",
+        "marks": 2,
+        "source": "Theory IGCSE-21.5 Quick check 2; the total work stays the same",
+        "params": [
+            {
+                "name": "w1",
+                "min": 2,
+                "max": 12,
+                "step": 1
+            },
+            {
+                "name": "d",
+                "min": 3,
+                "max": 30,
+                "step": 1
+            },
+            {
+                "name": "w2",
+                "min": 2,
+                "max": 16,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "W": "w1*d",
+            "A": "w1*d/w2"
+        },
+        "constraints": [
+            "w2!=w1"
+        ],
+        "original": {
+            "w1": 6,
+            "d": 10,
+            "w2": 4
+        },
+        "stem": "It takes {w1|int} builders {d|int} days to build a wall. How many days would it take {w2|int} builders, working at the same rate?",
+        "answer": {
+            "expression": "W/w2",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "Total work \\(={w1|int}\\times{d|int}={W|int}\\) builder-days",
+                "result": "W",
+                "format": "int",
+                "mark": "M1",
+                "note": "The product stays the same in inverse proportion."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\({W|int}\\div{w2|int}={A|sf3z}\\) days",
+                "result": "W/w2",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Divide by the new number of builders."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 6 builders taking 10 days, giving 15 days for 4 builders"
+            },
+            {
+                "id": "pumps",
+                "stem": "{w1|int} pumps can empty a tank in {d|int} hours. How long would {w2|int} identical pumps take? Give your answer in hours."
+            },
+            {
+                "id": "food",
+                "stem": "A supply of food lasts {w1|int} people for {d|int} days. For how many days would it last {w2|int} people eating at the same rate?"
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-21.5"
+            ],
+            "topic": "Ratio, rate and proportion",
+            "chapter": "IGCSE-21",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-21-5.json",
+                "locator": "IGCSE-21.5-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-21.5-QC3-gen",
+        "section": "IGCSE-21.5",
+        "kind": "generated",
+        "title": "Total cost when the cost of one part is found first",
+        "marks": 3,
+        "source": "Theory IGCSE-21.5 Quick check 3; subtract the known cost and divide",
+        "params": [
+            {
+                "name": "p",
+                "min": 50,
+                "max": 200,
+                "step": 5
+            },
+            {
+                "name": "m",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "n",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "f",
+                "min": 100,
+                "max": 900,
+                "step": 25
+            }
+        ],
+        "derived": {
+            "Kc": "m*p",
+            "T": "m*p+n*f",
+            "A": "f/100"
+        },
+        "constraints": [
+            "n>0"
+        ],
+        "original": {
+            "p": 85,
+            "m": 2,
+            "n": 5,
+            "f": 650
+        },
+        "stem": "Jo buys {m|int} m of ribbon and {n|int} m of fabric for a total of {T|int} cents. Ribbon costs {p|int} cents per metre. Find the cost, in dollars, of 1 m of fabric.",
+        "answer": {
+            "expression": "f/100",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "Ribbon costs \\({m|int}\\times{p|int}={Kc|int}\\) cents.",
+                "result": "Kc",
+                "format": "int",
+                "mark": "M1",
+                "note": "Cost of the ribbon."
+            },
+            {
+                "name": "L",
+                "text_tex": "Fabric costs \\({T|int}-{Kc|int}\\) cents for {n|int} m, so 1 m costs \\({f|int}\\) cents.",
+                "result": "f",
+                "format": "int",
+                "mark": "M1",
+                "note": "Subtract and divide by the number of metres."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\({f|int}\\) cents \\(={A|sf3z}\\) dollars",
+                "result": "f/100",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Convert to dollars."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 2 m of ribbon at 85 cents and 5 m of fabric, total 3420 cents, fabric 6.50 dollars per metre"
+            },
+            {
+                "id": "rope",
+                "stem": "Sam buys {m|int} m of rope and {n|int} m of chain for {T|int} cents altogether. Rope costs {p|int} cents per metre. How much does 1 m of chain cost, in dollars?"
+            },
+            {
+                "id": "wire",
+                "stem": "A shop sells {m|int} m of wire and {n|int} m of cable for a total of {T|int} cents. The wire costs {p|int} cents per metre. Find the price of 1 m of cable in dollars."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-21.5"
+            ],
+            "topic": "Ratio, rate and proportion",
+            "chapter": "IGCSE-21",
+            "marks": 3,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-21-5.json",
+                "locator": "IGCSE-21.5-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-21.5-PP-0580-23-ON12-Q3",
+        "section": "IGCSE-21.5",
+        "kind": "pastpaper",
+        "title": "Flour for cakes",
+        "marks": 2,
+        "source": {
+            "paper": "0580/23/O/N/12 Q3",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w12_qp_23.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w12_ms_23.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Jamie needs 300 g of flour to make 20 cakes.</p><p>How much flour does he need to make 12 cakes? [2]</p>",
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-21.5"
+            ],
+            "topic": "Ratio, rate and proportion",
+            "chapter": "IGCSE-21",
+            "marks": 2,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-21-5.json",
+                "locator": "IGCSE-21.5-PP-0580-23-ON12-Q3"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(\\dfrac{300\\times12}{20}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1 for (300 × 12)/20 oe."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(=180\\) g",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: 2 marks for 180."
+            }
+        ]
+    },
+    {
+        "id": "IGCSE-21.5-PP-0580-22-ON22-Q5",
+        "section": "IGCSE-21.5",
+        "kind": "pastpaper",
+        "title": "Cost of one metre of fabric",
+        "marks": 3,
+        "source": {
+            "paper": "0580/22/O/N/22 Q5",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w22_qp_22.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w22_ms_22.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Jenna buys 2.4 m of ribbon and 4.8 m of fabric.</p><p>The total cost is $33.48 .</p><p>Ribbon costs $0.85 per metre.</p><p>Find the cost of 1 m of fabric. [3]</p>",
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-21.5"
+            ],
+            "topic": "Ratio, rate and proportion",
+            "chapter": "IGCSE-21",
+            "marks": 3,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-21-5.json",
+                "locator": "IGCSE-21.5-PP-0580-22-ON22-Q5"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "Ribbon costs \\(2.4\\times0.85=2.04\\) dollars.",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1 for 2.4 × 0.85."
+            },
+            {
+                "name": "s2",
+                "text_tex": "Fabric costs \\(33.48-2.04=31.44\\) dollars for 4.8 m, so 1 m costs \\(31.44\\div4.8\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M2 for (33.48 − 2.4 × 0.85) oe, as printed; the division by 4.8 leads to the answer."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(=6.55\\) dollars",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: 3 marks for 6.55."
+            }
+        ]
+    }
+]

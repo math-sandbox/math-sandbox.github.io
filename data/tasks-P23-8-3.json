@@ -1,0 +1,481 @@
+[
+    {
+        "id": "P23-8.3-QC1-gen",
+        "section": "P23-8.3",
+        "kind": "generated",
+        "title": "Integral of 2x over x squared + c",
+        "marks": 2,
+        "source": "Theory P23-8.3 Quick check 1; numerator is the derivative of the denominator",
+        "params": [
+            {
+                "name": "a",
+                "min": 1,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "c",
+                "min": 1,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "U": "a*a+c",
+            "A": "math.log((a*a+c)/c)"
+        },
+        "constraints": [
+            "c>0"
+        ],
+        "original": {
+            "a": 2,
+            "c": 1
+        },
+        "stem": "Find the value of \\(\\displaystyle\\int_0^{ {a|int} }\\frac{2x}{x^2+{c|int}}\\,\\mathrm{d}x\\), giving your answer correct to 3 significant figures.",
+        "answer": {
+            "expression": "math.log(U/c)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "The numerator is the derivative of the denominator, so the integral is \\(\\ln(x^2+{c|int})\\).",
+                "result": "U",
+                "format": "int",
+                "mark": "M1",
+                "note": "Recognise f'(x) over f(x)."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\ln{U|int}-\\ln{c|int}={A|sf3z}\\)",
+                "result": "math.log(U/c)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Use the limits."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original a = 2 and c = 1, ln 5 = 1.61"
+            },
+            {
+                "id": "lnk",
+                "stem": "Evaluate \\(\\displaystyle\\int_0^{ {a|int} }\\frac{2x}{{c|int}+x^2}\\,\\mathrm{d}x\\) to 3 significant figures."
+            },
+            {
+                "id": "area",
+                "stem": "Find the area under the curve \\(y=\\dfrac{2x}{x^2+{c|int}}\\) between \\(x=0\\) and \\(x={a|int}\\), correct to 3 significant figures."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-8.3"
+            ],
+            "topic": "Further calculus",
+            "chapter": "P23-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-8-3.json",
+                "locator": "P23-8.3-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-8.3-QC2-gen",
+        "section": "P23-8.3",
+        "kind": "generated",
+        "title": "Integral of x over x squared + c",
+        "marks": 2,
+        "source": "Theory P23-8.3 Quick check 2; adjust by a factor of one half",
+        "params": [
+            {
+                "name": "a",
+                "min": 1,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "c",
+                "min": 1,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "U": "a*a+c",
+            "A": "0.5*math.log((a*a+c)/c)"
+        },
+        "constraints": [
+            "c>0"
+        ],
+        "original": {
+            "a": 3,
+            "c": 1
+        },
+        "stem": "Find the value of \\(\\displaystyle\\int_0^{ {a|int} }\\frac{x}{x^2+{c|int}}\\,\\mathrm{d}x\\), giving your answer correct to 3 significant figures.",
+        "answer": {
+            "expression": "0.5*math.log(U/c)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\dfrac{x}{x^2+{c|int}}=\\dfrac{1}{2}\\times\\dfrac{2x}{x^2+{c|int}}\\), so the integral is \\(\\dfrac{1}{2}\\ln(x^2+{c|int})\\).",
+                "result": "U",
+                "format": "int",
+                "mark": "M1",
+                "note": "Make the numerator the derivative of the denominator."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\dfrac{1}{2}\\bigl(\\ln{U|int}-\\ln{c|int}\\bigr)={A|sf3z}\\)",
+                "result": "0.5*math.log(U/c)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Use the limits."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original a = 3 and c = 1, half of ln 10 = 1.15"
+            },
+            {
+                "id": "lnk",
+                "stem": "Evaluate \\(\\displaystyle\\int_0^{ {a|int} }\\frac{x}{{c|int}+x^2}\\,\\mathrm{d}x\\) to 3 significant figures."
+            },
+            {
+                "id": "area",
+                "stem": "Find the area under the curve \\(y=\\dfrac{x}{x^2+{c|int}}\\) from \\(x=0\\) to \\(x={a|int}\\), correct to 3 significant figures."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-8.3"
+            ],
+            "topic": "Further calculus",
+            "chapter": "P23-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-8-3.json",
+                "locator": "P23-8.3-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-8.3-QC3-gen",
+        "section": "P23-8.3",
+        "kind": "generated",
+        "title": "Integral of 6x squared over x cubed + c",
+        "marks": 2,
+        "source": "Theory P23-8.3 Quick check 3; the numerator is twice the derivative of the denominator",
+        "params": [
+            {
+                "name": "a",
+                "min": 1,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "c",
+                "min": 1,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "U": "a*a*a+c",
+            "A": "2*math.log((a*a*a+c)/c)"
+        },
+        "constraints": [
+            "c>0"
+        ],
+        "original": {
+            "a": 2,
+            "c": 1
+        },
+        "stem": "Find the value of \\(\\displaystyle\\int_0^{ {a|int} }\\frac{6x^2}{x^3+{c|int}}\\,\\mathrm{d}x\\), giving your answer correct to 3 significant figures.",
+        "answer": {
+            "expression": "2*math.log(U/c)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(6x^2=2\\times3x^2\\), so the integral is \\(2\\ln(x^3+{c|int})\\).",
+                "result": "U",
+                "format": "int",
+                "mark": "M1",
+                "note": "The numerator is a multiple of the derivative of the denominator."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(2\\bigl(\\ln{U|int}-\\ln{c|int}\\bigr)={A|sf3z}\\)",
+                "result": "2*math.log(U/c)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Use the limits."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original a = 2 and c = 1, 2 ln 9 = 4.39"
+            },
+            {
+                "id": "lnk",
+                "stem": "Evaluate \\(\\displaystyle\\int_0^{ {a|int} }\\frac{6x^2}{{c|int}+x^3}\\,\\mathrm{d}x\\) to 3 significant figures."
+            },
+            {
+                "id": "area",
+                "stem": "Find the area under the curve \\(y=\\dfrac{6x^2}{x^3+{c|int}}\\) between \\(x=0\\) and \\(x={a|int}\\), correct to 3 significant figures."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-8.3"
+            ],
+            "topic": "Further calculus",
+            "chapter": "P23-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-8-3.json",
+                "locator": "P23-8.3-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-8.3-PP-9709-32-MJ18-Q4",
+        "section": "P23-8.3",
+        "kind": "pastpaper",
+        "title": "A trigonometric identity, then an integral giving ln k",
+        "marks": 8,
+        "source": {
+            "paper": "9709/32/M/J/18 Q4",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s18_qp_32.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s18_ms_32.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>(i) Show that \\(\\dfrac{2\\sin x-\\sin2x}{1-\\cos2x}\\equiv\\dfrac{\\sin x}{1+\\cos x}\\). [4]</p><p>(ii) Hence, showing all necessary working, find \\(\\displaystyle\\int_{\\frac{1}{3}\\pi}^{\\frac{1}{2}\\pi}\\frac{2\\sin x-\\sin2x}{1-\\cos2x}\\,\\mathrm{d}x\\), giving your answer in the form \\(\\ln k\\). [4]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-8.3"
+            ],
+            "topic": "Further calculus",
+            "chapter": "P23-8",
+            "marks": 8,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-8-3.json",
+                "locator": "P23-8.3-PP-9709-32-MJ18-Q4"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(i) Use \\(\\sin2x=2\\sin x\\cos x\\) and \\(\\cos2x=1-2\\sin^2x\\): \\(\\dfrac{2\\sin x-2\\sin x\\cos x}{2\\sin^2x}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, use correct double-angle formulae to express in terms of cos x and sin x."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(i) \\(=\\dfrac{1-\\cos x}{\\sin x}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, correct expression."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(i) Multiply top and bottom by \\(1+\\cos x\\): \\(\\dfrac{(1-\\cos x)(1+\\cos x)}{\\sin x(1+\\cos x)}=\\dfrac{\\sin^2x}{\\sin x(1+\\cos x)}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, complete method to obtain the correct denominator, e.g. factorise to remove 1 − cos x. Route R to L is also accepted with M1 A1 M1 A1."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(i) \\(=\\dfrac{\\sin x}{1+\\cos x}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, obtain the given right-hand side."
+            },
+            {
+                "name": "s5",
+                "text_tex": "(ii) The integral is of the form \\(a\\ln(1+\\cos x)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1*, a ln(1 + cos x). Substitution u = 1 + cos x allows M1 A1 for −ln u."
+            },
+            {
+                "name": "s6",
+                "text_tex": "(ii) \\(-\\ln(1+\\cos x)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1."
+            },
+            {
+                "name": "s7",
+                "text_tex": "(ii) \\(-\\ln\\left(1+\\cos\\frac{\\pi}{2}\\right)+\\ln\\left(1+\\cos\\frac{\\pi}{3}\\right)=-\\ln1+\\ln\\frac{3}{2}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1 (dep), use correct limits in the correct order."
+            },
+            {
+                "name": "s8",
+                "text_tex": "(ii) \\(=\\ln\\dfrac{3}{2}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, ln(3/2)."
+            }
+        ]
+    },
+    {
+        "id": "P23-8.3-PP-9709-32-ON18-Q7",
+        "section": "P23-8.3",
+        "kind": "pastpaper",
+        "title": "Stationary point and an integral of 3 cos x over 2 + sin x",
+        "marks": 10,
+        "source": {
+            "paper": "9709/32/O/N/18 Q7",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w18_qp_32.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w18_ms_32.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>A curve has equation \\(y=\\dfrac{3\\cos x}{2+\\sin x}\\), for \\(-\\frac{1}{2}\\pi\\le x\\le\\frac{1}{2}\\pi\\).</p><p>(i) Find the exact coordinates of the stationary point of the curve. [6]</p><p>(ii) The constant \\(a\\) is such that \\(\\displaystyle\\int_0^a\\frac{3\\cos x}{2+\\sin x}\\,\\mathrm{d}x=1\\). Find the value of \\(a\\), giving your answer correct to 3 significant figures. [4]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-8.3"
+            ],
+            "topic": "Further calculus",
+            "chapter": "P23-8",
+            "marks": 10,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-8-3.json",
+                "locator": "P23-8.3-PP-9709-32-ON18-Q7"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(i) Use the quotient rule (or the product rule).",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(i) \\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}=\\dfrac{-3\\sin x(2+\\sin x)-3\\cos^2x}{(2+\\sin x)^2}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, correct derivative."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(i) Equate the numerator to zero: \\(-6\\sin x-3\\sin^2x-3\\cos^2x=0\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(i) Use \\(\\cos^2x+\\sin^2x=1\\): \\(-6\\sin x-3=0\\), so \\(\\sin x=-\\frac{1}{2}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, use cos²x + sin²x = 1 and solve."
+            },
+            {
+                "name": "s5",
+                "text_tex": "(i) \\(x=-\\frac{1}{6}\\pi\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1."
+            },
+            {
+                "name": "s6",
+                "text_tex": "(i) \\(y=\\dfrac{3\\times\\frac{\\sqrt{3} }{2} }{3/2}=\\sqrt{3}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, y = √3."
+            },
+            {
+                "name": "s7",
+                "text_tex": "(ii) The integral is of the form \\(k\\ln(2+\\sin x)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1*, k ln(2 + sin x)."
+            },
+            {
+                "name": "s8",
+                "text_tex": "(ii) \\(3\\ln(2+\\sin a)-3\\ln2=1\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1."
+            },
+            {
+                "name": "s9",
+                "text_tex": "(ii) \\(2+\\sin a=2\\mathrm{e}^{1/3}\\), so \\(a=\\sin^{-1}\\bigl(2(\\mathrm{e}^{1/3}-1)\\bigr)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1 (dep), solve for a; can be implied by 52.3°."
+            },
+            {
+                "name": "s10",
+                "text_tex": "(ii) \\(a=0.913\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 0.913; must be in radians."
+            }
+        ]
+    }
+]

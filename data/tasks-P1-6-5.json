@@ -1,0 +1,433 @@
+[
+    {
+        "id": "P1-6.5-QC1-gen",
+        "section": "P1-6.5",
+        "kind": "generated",
+        "title": "Sum to infinity from the first term and the common ratio",
+        "marks": 2,
+        "source": "Theory P1-6.5 Quick check 1; sum to infinity is a over 1 - r",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 20,
+                "step": 1
+            },
+            {
+                "name": "r",
+                "min": 0.1,
+                "max": 0.9,
+                "step": 0.05
+            }
+        ],
+        "derived": {
+            "D": "1-r",
+            "A": "a/(1-r)"
+        },
+        "constraints": [
+            "r>0"
+        ],
+        "original": {
+            "a": 12,
+            "r": 0.25
+        },
+        "stem": "A geometric progression has first term \\({a|int}\\) and common ratio \\({r|num2}\\). Find the sum to infinity.",
+        "answer": {
+            "expression": "a/D",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "Since \\(-1\\lt r\\lt 1\\), \\(S_\\infty=\\dfrac{a}{1-r}=\\dfrac{{a|int}}{1-{r|num2}}\\)",
+                "result": "D",
+                "format": "num2",
+                "mark": "M1",
+                "note": "Use the sum to infinity formula with the given a and r."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(=\\dfrac{{a|int}}{{D|num2}}={A|sf3z}\\)",
+                "result": "a/D",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original first term 12 and common ratio 0.25, sum to infinity 16"
+            },
+            {
+                "id": "series",
+                "stem": "Find the sum to infinity of the geometric series whose first term is \\({a|int}\\) and whose common ratio is \\({r|num2}\\)."
+            },
+            {
+                "id": "each",
+                "stem": "A geometric progression has first term \\({a|int}\\). Each term is \\({r|num2}\\) times the term before it. Find the sum of all the terms of the progression."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-6.5"
+            ],
+            "topic": "Series",
+            "chapter": "P1-6",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-6-5.json",
+                "locator": "P1-6.5-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-6.5-QC2-gen",
+        "section": "P1-6.5",
+        "kind": "generated",
+        "title": "Common ratio from the first term and the sum to infinity",
+        "marks": 2,
+        "source": "Theory P1-6.5 Quick check 2; r is 1 - a over the sum to infinity",
+        "params": [
+            {
+                "name": "a",
+                "min": 4,
+                "max": 12,
+                "step": 1
+            },
+            {
+                "name": "d",
+                "min": 1,
+                "max": 15,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "T": "a+d",
+            "A": "d/(a+d)"
+        },
+        "constraints": [
+            "d>=1"
+        ],
+        "original": {
+            "a": 10,
+            "d": 15
+        },
+        "stem": "A geometric progression has first term \\({a|int}\\) and sum to infinity \\({T|int}\\). Find the common ratio.",
+        "answer": {
+            "expression": "d/T",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\dfrac{{a|int}}{1-r}={T|int}\\), so \\(1-r=\\dfrac{{a|int}}{{T|int}}\\)",
+                "result": "a/T",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Form and rearrange the sum to infinity equation."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(r=1-\\dfrac{{a|int}}{{T|int}}={A|sf3z}\\)",
+                "result": "d/T",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original first term 10 and sum to infinity 25, common ratio 0.6"
+            },
+            {
+                "id": "given",
+                "stem": "The sum to infinity of a geometric progression is \\({T|int}\\) and its first term is \\({a|int}\\). Find the common ratio of the progression."
+            },
+            {
+                "id": "conv",
+                "stem": "A convergent geometric progression has first term \\({a|int}\\). The sum of all its terms is \\({T|int}\\). Find its common ratio."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-6.5"
+            ],
+            "topic": "Series",
+            "chapter": "P1-6",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-6-5.json",
+                "locator": "P1-6.5-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-6.5-QC3-gen",
+        "section": "P1-6.5",
+        "kind": "generated",
+        "title": "First term from the sum to infinity and the common ratio",
+        "marks": 2,
+        "source": "Theory P1-6.5 Quick check 3; a is the sum to infinity times 1 - r",
+        "params": [
+            {
+                "name": "T",
+                "min": 10,
+                "max": 90,
+                "step": 5
+            },
+            {
+                "name": "r",
+                "min": 0.1,
+                "max": 0.9,
+                "step": 0.05
+            }
+        ],
+        "derived": {
+            "D": "1-r",
+            "A": "T*(1-r)"
+        },
+        "constraints": [
+            "r>0"
+        ],
+        "original": {
+            "T": 40,
+            "r": 0.75
+        },
+        "stem": "A geometric progression has common ratio \\({r|num2}\\) and sum to infinity \\({T|int}\\). Find the first term.",
+        "answer": {
+            "expression": "T*D",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\dfrac{a}{1-{r|num2}}={T|int}\\), so \\(a={T|int}\\times{D|num2}\\)",
+                "result": "D",
+                "format": "num2",
+                "mark": "M1",
+                "note": "Rearrange the sum to infinity formula for a."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(a={A|sf3z}\\)",
+                "result": "T*D",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original common ratio 0.75 and sum to infinity 40, first term 10"
+            },
+            {
+                "id": "first",
+                "stem": "The sum to infinity of a geometric progression is \\({T|int}\\) and the common ratio is \\({r|num2}\\). Find the first term of the progression."
+            },
+            {
+                "id": "series",
+                "stem": "An infinite geometric series has common ratio \\({r|num2}\\) and its sum is \\({T|int}\\). What is the first term of the series?"
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-6.5"
+            ],
+            "topic": "Series",
+            "chapter": "P1-6",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-6-5.json",
+                "locator": "P1-6.5-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-6.5-PP-9709-12-ON21-Q6",
+        "section": "P1-6.5",
+        "kind": "pastpaper",
+        "title": "Tenth term from the second term and the sum to infinity",
+        "marks": 5,
+        "source": {
+            "paper": "9709/12/O/N/21 Q6",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w21_qp_12.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w21_ms_12.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>The second term of a geometric progression is 54 and the sum to infinity of the progression is 243. The common ratio is greater than \\(\\dfrac{1}{2}\\).</p><p>Find the tenth term, giving your answer in exact form. [5]</p>",
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-6.5"
+            ],
+            "topic": "Series",
+            "chapter": "P1-6",
+            "marks": 5,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-6-5.json",
+                "locator": "P1-6.5-PP-9709-12-ON21-Q6"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(ar=54\\) and \\(\\dfrac{a}{1-r}=243\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, ar = 54 and a/(1 − r) = 243."
+            },
+            {
+                "name": "s2",
+                "text_tex": "Eliminate \\(a\\): \\(\\dfrac{54}{r}=243(1-r)\\), so \\(243r^2-243r+54=0\\), that is \\(9r^2-9r+2=0\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: *M1, form a 3-term quadratic, 243r² − 243r + 54 = 0 [9r² − 9r + 2 = 0] or a² − 243a + 13122 = 0. Allow ± sign errors."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\((3r-2)(3r-1)=0\\), so \\(r=\\dfrac{2}{3}\\) (since \\(r\\gt \\dfrac{1}{2}\\)).",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: DM1, solve, k(3r − 2)(3r − 1) or (a − 81)(a − 162)."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(a=54\\div\\dfrac{2}{3}=81\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: DM1, 54 ÷ their 2/3 = a, or 54 ÷ their 81 = r. May be implied by final answer."
+            },
+            {
+                "name": "s5",
+                "text_tex": "Tenth term \\(=81\\left(\\dfrac{2}{3}\\right)^9=\\dfrac{512}{243}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 OE, 512/243 (exact, e.g. 81 × (2/3)⁹ or 54 × (2/3)⁸). SC: if B1 M1 DM0 DM1 scored, SC B1 for correct final answer."
+            }
+        ]
+    },
+    {
+        "id": "P1-6.5-PP-9709-11-ON23-Q7",
+        "section": "P1-6.5",
+        "kind": "pastpaper",
+        "title": "Third term from the sum of two terms and the sum to infinity",
+        "marks": 7,
+        "source": {
+            "paper": "9709/11/O/N/23 Q7",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w23_qp_11.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w23_ms_11.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>The sum of the first two terms of a geometric progression is 15 and the sum to infinity is \\(\\dfrac{125}{7}\\). The common ratio of the progression is negative.</p><p>Find the third term of the progression. [7]</p>",
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-6.5"
+            ],
+            "topic": "Series",
+            "chapter": "P1-6",
+            "marks": 7,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-6-5.json",
+                "locator": "P1-6.5-PP-9709-11-ON23-Q7"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(a(1+r)=15\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, accept a(1 − r²)/(1 − r) = 15."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(\\dfrac{a}{1-r}=\\dfrac{125}{7}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1."
+            },
+            {
+                "name": "s3",
+                "text_tex": "Eliminate \\(a\\): \\(\\dfrac{125}{7}(1-r)(1+r)=15\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, eliminate a."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(1-r^2=\\dfrac{105}{125}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1."
+            },
+            {
+                "name": "s5",
+                "text_tex": "\\(r^2=\\dfrac{4}{25}\\), so \\(r=-\\dfrac{2}{5}\\) since the common ratio is negative.",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, r² = 4/25 leading to r = −2/5; condone 2/5 or ±."
+            },
+            {
+                "name": "s6",
+                "text_tex": "\\(a=\\dfrac{125}{7}\\times\\dfrac{7}{5}=25\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, a = 25; ignore a second answer."
+            },
+            {
+                "name": "s7",
+                "text_tex": "Third term \\(=25\\times\\dfrac{4}{25}=4\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 CAO, 3rd term = 4. An alternative method is also given in the MS."
+            }
+        ]
+    }
+]

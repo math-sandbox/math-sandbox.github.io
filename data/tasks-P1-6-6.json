@@ -1,0 +1,463 @@
+[
+    {
+        "id": "P1-6.6-QC1-gen",
+        "section": "P1-6.6",
+        "kind": "generated",
+        "title": "Sum to infinity when the first two terms are given",
+        "marks": 2,
+        "source": "Theory P1-6.6 Quick check 1; r is the second term over the first",
+        "params": [
+            {
+                "name": "p",
+                "min": 10,
+                "max": 40,
+                "step": 1
+            },
+            {
+                "name": "k",
+                "min": 1,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "q": "p-k",
+            "A": "p*p/k"
+        },
+        "constraints": [
+            "p-k>0"
+        ],
+        "original": {
+            "p": 18,
+            "k": 6
+        },
+        "stem": "The first term of a progression is \\({p|int}\\) and the second term is \\({q|int}\\). Given that the progression is geometric, find the sum to infinity.",
+        "answer": {
+            "expression": "p*p/k",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(r=\\dfrac{{q|int}}{{p|int}}\\), so \\(1-r=\\dfrac{{k|int}}{{p|int}}\\)",
+                "result": "k/p",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Find r and check that it lies between -1 and 1."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(S_\\infty={p|int}\\div\\dfrac{{k|int}}{{p|int}}={A|sf3z}\\)",
+                "result": "p*p/k",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Evaluate a divided by (1 - r)."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original first two terms 18 and 12, sum to infinity 54"
+            },
+            {
+                "id": "terms",
+                "stem": "A geometric progression begins \\({p|int}, {q|int}, \\dots\\) Find its sum to infinity."
+            },
+            {
+                "id": "gp",
+                "stem": "The first two terms of a geometric progression are \\({p|int}\\) and \\({q|int}\\). Find the sum of all the terms of the progression."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-6.6"
+            ],
+            "topic": "Series",
+            "chapter": "P1-6",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-6-6.json",
+                "locator": "P1-6.6-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-6.6-QC2-gen",
+        "section": "P1-6.6",
+        "kind": "generated",
+        "title": "A term of the arithmetic progression with the same first two terms",
+        "marks": 2,
+        "source": "Theory P1-6.6 Quick check 2; d is the second term minus the first",
+        "params": [
+            {
+                "name": "p",
+                "min": 12,
+                "max": 40,
+                "step": 1
+            },
+            {
+                "name": "k",
+                "min": 2,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "n",
+                "min": 5,
+                "max": 20,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "q": "p-k",
+            "m": "n-1",
+            "A": "p-(n-1)*k"
+        },
+        "constraints": [
+            "p-k>0"
+        ],
+        "original": {
+            "p": 18,
+            "k": 6,
+            "n": 6
+        },
+        "stem": "The first term of a progression is \\({p|int}\\) and the second term is \\({q|int}\\). Given that the progression is arithmetic, find term number \\({n|int}\\).",
+        "answer": {
+            "expression": "p-m*k",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(d={q|int}-{p|int}=-{k|int}\\)",
+                "result": "-k",
+                "format": "int",
+                "mark": "M1",
+                "note": "Common difference of the arithmetic progression."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(u_{ {n|int} }={p|int}+{m|int}\\times(-{k|int})={A|int}\\)",
+                "result": "p-m*k",
+                "format": "int",
+                "mark": "A1",
+                "note": "Use a + (n - 1)d."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original first two terms 18 and 12, sixth term -12"
+            },
+            {
+                "id": "ap",
+                "stem": "An arithmetic progression begins \\({p|int}, {q|int}, \\dots\\) Find term number \\({n|int}\\) of the progression."
+            },
+            {
+                "id": "seq",
+                "stem": "The first two terms of an arithmetic progression are \\({p|int}\\) and \\({q|int}\\). Find the value of term number \\({n|int}\\)."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-6.6"
+            ],
+            "topic": "Series",
+            "chapter": "P1-6",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-6-6.json",
+                "locator": "P1-6.6-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-6.6-QC3-gen",
+        "section": "P1-6.6",
+        "kind": "generated",
+        "title": "Geometric ratio from the sum of an arithmetic progression",
+        "marks": 3,
+        "source": "Theory P1-6.6 Quick check 3; r is 1 - a over S",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "d",
+                "min": 1,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "n",
+                "min": 3,
+                "max": 6,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "T": "n*(2*a+(n-1)*d)/2",
+            "A": "1-a/(n*(2*a+(n-1)*d)/2)"
+        },
+        "constraints": [
+            "d>=1"
+        ],
+        "original": {
+            "a": 4,
+            "d": 2,
+            "n": 4
+        },
+        "stem": "An arithmetic progression has first term \\({a|int}\\) and common difference \\({d|int}\\). A geometric progression also has first term \\({a|int}\\), and its sum to infinity is equal to the sum of the first \\({n|int}\\) terms of the arithmetic progression. Find the common ratio of the geometric progression.",
+        "answer": {
+            "expression": "1-a/T",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "Sum of the first \\({n|int}\\) terms of the arithmetic progression: \\(\\dfrac{n}{2}(2a+(n-1)d)={T|int}\\)",
+                "result": "T",
+                "format": "int",
+                "mark": "B1",
+                "note": "Use the AP sum formula."
+            },
+            {
+                "name": "L",
+                "text_tex": "\\(\\dfrac{{a|int}}{1-r}={T|int}\\), so \\(1-r=\\dfrac{{a|int}}{{T|int}}\\)",
+                "result": "a/T",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Equate the sum to infinity to this sum."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(r={A|sf3z}\\)",
+                "result": "1-a/T",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original a = 4, d = 2, n = 4, AP sum 28, common ratio 6/7"
+            },
+            {
+                "id": "same",
+                "stem": "The sum of the first \\({n|int}\\) terms of an arithmetic progression with first term \\({a|int}\\) and common difference \\({d|int}\\) is the same as the sum to infinity of a geometric progression with first term \\({a|int}\\). Find the common ratio of the geometric progression."
+            },
+            {
+                "id": "both",
+                "stem": "An arithmetic progression and a geometric progression both have first term \\({a|int}\\). The arithmetic progression has common difference \\({d|int}\\). The sum to infinity of the geometric progression equals the sum of the first \\({n|int}\\) terms of the arithmetic progression. Find the common ratio of the geometric progression."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-6.6"
+            ],
+            "topic": "Series",
+            "chapter": "P1-6",
+            "marks": 3,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-6-6.json",
+                "locator": "P1-6.6-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-6.6-PP-9709-13-MJ14-Q2",
+        "section": "P1-6.6",
+        "kind": "pastpaper",
+        "title": "Geometric or arithmetic with first terms 36 and 32",
+        "marks": 5,
+        "source": {
+            "paper": "9709/13/M/J/14 Q2",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s14_qp_13.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s14_ms_13.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>The first term in a progression is 36 and the second term is 32.</p><p>(i) Given that the progression is geometric, find the sum to infinity. [2]</p><p>(ii) Given instead that the progression is arithmetic, find the number of terms in the progression if the sum of all the terms is 0. [3]</p>",
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-6.6"
+            ],
+            "topic": "Series",
+            "chapter": "P1-6",
+            "marks": 5,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-6-6.json",
+                "locator": "P1-6.6-PP-9709-13-MJ14-Q2"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(i) \\(r=\\dfrac{32}{36}=\\dfrac{8}{9}\\) and \\(S_\\infty=\\dfrac{36}{1-\\frac{8}{9} }\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, method for r and S∞, with |r| less than 1."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(i) \\(S_\\infty=36\\div\\dfrac{1}{9}=324\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 324."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(ii) \\(d=-4\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, d = −4."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(ii) \\(0=\\dfrac{n}{2}\\bigl(72+(n-1)(-4)\\bigr)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, Sn formula with a value for d other than 8/9."
+            },
+            {
+                "name": "s5",
+                "text_tex": "(ii) \\(72-4n+4=0\\), so \\(n=19\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, n = 19; condone n = 0 but no other solution."
+            }
+        ]
+    },
+    {
+        "id": "P1-6.6-PP-9709-11-ON15-Q8",
+        "section": "P1-6.6",
+        "kind": "pastpaper",
+        "title": "Progression with first term 4x and second term x squared",
+        "marks": 8,
+        "source": {
+            "paper": "9709/11/O/N/15 Q8",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w15_qp_11.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w15_ms_11.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>The first term of a progression is \\(4x\\) and the second term is \\(x^2\\).</p><p>(i) For the case where the progression is arithmetic with a common difference of 12, find the possible values of \\(x\\) and the corresponding values of the third term. [4]</p><p>(ii) For the case where the progression is geometric with a sum to infinity of 8, find the third term. [4]</p>",
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-6.6"
+            ],
+            "topic": "Series",
+            "chapter": "P1-6",
+            "marks": 8,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-6-6.json",
+                "locator": "P1-6.6-PP-9709-11-ON15-Q8"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(i) \\(x^2-4x=12\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1; 4x − x² = 12 scores M1A0."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(i) \\((x-6)(x+2)=0\\), so \\(x=-2\\) or \\(x=6\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, x = −2 or 6."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(i) When \\(x=-2\\) the third term is \\((-2)^2+12=16\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, third term 16. SC1 for 16, 48 after x = 2, −6."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(i) When \\(x=6\\) the third term is \\(6^2+12=48\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, third term 48."
+            },
+            {
+                "name": "s5",
+                "text_tex": "(ii) \\(r=\\dfrac{x^2}{4x}=\\dfrac{x}{4}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, r = x/4 soi."
+            },
+            {
+                "name": "s6",
+                "text_tex": "(ii) \\(\\dfrac{4x}{1-\\frac{x}{4} }=8\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, sum to infinity equation."
+            },
+            {
+                "name": "s7",
+                "text_tex": "(ii) \\(4x=8-2x\\), so \\(x=\\dfrac{4}{3}\\) and \\(r=\\dfrac{1}{3}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, x = 4/3 or r = 1/3."
+            },
+            {
+                "name": "s8",
+                "text_tex": "(ii) Third term \\(=x^2\\times\\dfrac{x}{4}=\\dfrac{16}{9}\\times\\dfrac{1}{3}=\\dfrac{16}{27}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 16/27 or 0.593. An alternative method is also given in the MS."
+            }
+        ]
+    }
+]

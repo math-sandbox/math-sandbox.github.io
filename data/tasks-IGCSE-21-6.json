@@ -1,0 +1,398 @@
+[
+    {
+        "id": "IGCSE-21.6-QC1-gen",
+        "section": "IGCSE-21.6",
+        "kind": "generated",
+        "title": "y proportional to the square of x",
+        "marks": 2,
+        "source": "Theory IGCSE-21.6 Quick check 1; y = k x squared",
+        "params": [
+            {
+                "name": "x1",
+                "min": 2,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "y1",
+                "min": 8,
+                "max": 200,
+                "step": 4
+            },
+            {
+                "name": "x2",
+                "min": 2,
+                "max": 10,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "K": "y1/(x1*x1)",
+            "A": "y1*x2*x2/(x1*x1)"
+        },
+        "constraints": [
+            "x2!=x1"
+        ],
+        "original": {
+            "x1": 2,
+            "y1": 20,
+            "x2": 5
+        },
+        "stem": "\\(y\\) is directly proportional to \\(x^2\\). When \\(x={x1|int}\\), \\(y={y1|int}\\). Find \\(y\\) when \\(x={x2|int}\\).",
+        "answer": {
+            "expression": "K*x2*x2",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(y=kx^2\\) and \\({y1|int}=k\\times{x1|int}^2\\), so \\(k={K|sf3z}\\).",
+                "result": "K",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Write the proportion as an equation with a constant and find k."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(y={K|sf3z}\\times{x2|int}^2={A|sf3z}\\)",
+                "result": "K*x2*x2",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Substitute the new value of x."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original x = 2, y = 20, giving y = 125 when x = 5"
+            },
+            {
+                "id": "area",
+                "stem": "The area \\(A\\) of a design is proportional to the square of its width \\(w\\). When \\(w={x1|int}\\), \\(A={y1|int}\\). Find \\(A\\) when \\(w={x2|int}\\)."
+            },
+            {
+                "id": "vary",
+                "stem": "\\(y\\) varies directly as the square of \\(x\\), and \\(y={y1|int}\\) when \\(x={x1|int}\\). Calculate \\(y\\) when \\(x={x2|int}\\)."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-21.6"
+            ],
+            "topic": "Ratio, rate and proportion",
+            "chapter": "IGCSE-21",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-21-6.json",
+                "locator": "IGCSE-21.6-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-21.6-QC2-gen",
+        "section": "IGCSE-21.6",
+        "kind": "generated",
+        "title": "y inversely proportional to x",
+        "marks": 2,
+        "source": "Theory IGCSE-21.6 Quick check 2; y = k over x",
+        "params": [
+            {
+                "name": "x1",
+                "min": 2,
+                "max": 10,
+                "step": 1
+            },
+            {
+                "name": "y1",
+                "min": 3,
+                "max": 30,
+                "step": 1
+            },
+            {
+                "name": "x2",
+                "min": 2,
+                "max": 20,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "K": "x1*y1",
+            "A": "x1*y1/x2"
+        },
+        "constraints": [
+            "x2!=x1"
+        ],
+        "original": {
+            "x1": 4,
+            "y1": 9,
+            "x2": 6
+        },
+        "stem": "\\(y\\) is inversely proportional to \\(x\\). When \\(x={x1|int}\\), \\(y={y1|int}\\). Find \\(y\\) when \\(x={x2|int}\\).",
+        "answer": {
+            "expression": "K/x2",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(y=\\dfrac{k}{x}\\), so \\(k={x1|int}\\times{y1|int}={K|int}\\).",
+                "result": "K",
+                "format": "int",
+                "mark": "M1",
+                "note": "Find k from the given pair."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(y=\\dfrac{{K|int}}{{x2|int}}={A|sf3z}\\)",
+                "result": "K/x2",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Substitute the new value of x."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original x = 4, y = 9, giving y = 6 when x = 6"
+            },
+            {
+                "id": "vary",
+                "stem": "\\(y\\) varies inversely as \\(x\\), and \\(y={y1|int}\\) when \\(x={x1|int}\\). Calculate \\(y\\) when \\(x={x2|int}\\)."
+            },
+            {
+                "id": "pair",
+                "stem": "Given that \\(y\\) is inversely proportional to \\(x\\) and that \\(y={y1|int}\\) when \\(x={x1|int}\\), find the value of \\(y\\) when \\(x={x2|int}\\)."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-21.6"
+            ],
+            "topic": "Ratio, rate and proportion",
+            "chapter": "IGCSE-21",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-21-6.json",
+                "locator": "IGCSE-21.6-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-21.6-QC3-gen",
+        "section": "IGCSE-21.6",
+        "kind": "generated",
+        "title": "y inversely proportional to the square of x",
+        "marks": 2,
+        "source": "Theory IGCSE-21.6 Quick check 3; y = k over x squared",
+        "params": [
+            {
+                "name": "x1",
+                "min": 2,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "y1",
+                "min": 2,
+                "max": 40,
+                "step": 1
+            },
+            {
+                "name": "x2",
+                "min": 2,
+                "max": 10,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "K": "y1*x1*x1",
+            "A": "y1*x1*x1/(x2*x2)"
+        },
+        "constraints": [
+            "x2!=x1"
+        ],
+        "original": {
+            "x1": 3,
+            "y1": 5,
+            "x2": 5
+        },
+        "stem": "\\(y\\) is inversely proportional to the square of \\(x\\). When \\(x={x1|int}\\), \\(y={y1|int}\\). Find \\(y\\) when \\(x={x2|int}\\).",
+        "answer": {
+            "expression": "K/(x2*x2)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(y=\\dfrac{k}{x^2}\\), so \\(k={y1|int}\\times{x1|int}^2={K|int}\\).",
+                "result": "K",
+                "format": "int",
+                "mark": "M1",
+                "note": "Find k from the given pair."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(y=\\dfrac{{K|int}}{{x2|int}^2}={A|sf3z}\\)",
+                "result": "K/(x2*x2)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Substitute the new value of x."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original x = 3, y = 5, giving y = 1.80 when x = 5"
+            },
+            {
+                "id": "light",
+                "stem": "The brightness \\(y\\) of a lamp is inversely proportional to the square of the distance \\(x\\) from the lamp. When \\(x={x1|int}\\), \\(y={y1|int}\\). Find \\(y\\) when \\(x={x2|int}\\)."
+            },
+            {
+                "id": "vary",
+                "stem": "\\(y\\) varies inversely as \\(x^2\\). Given that \\(y={y1|int}\\) when \\(x={x1|int}\\), calculate \\(y\\) when \\(x={x2|int}\\)."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-21.6"
+            ],
+            "topic": "Ratio, rate and proportion",
+            "chapter": "IGCSE-21",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-21-6.json",
+                "locator": "IGCSE-21.6-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-21.6-PP-0580-21-MJ20-Q16",
+        "section": "IGCSE-21.6",
+        "kind": "pastpaper",
+        "title": "m inversely proportional to the square of (p - 1)",
+        "marks": 3,
+        "source": {
+            "paper": "0580/21/M/J/20 Q16",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s20_qp_21.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s20_ms_21.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>\\(m\\) is inversely proportional to the square of \\((p-1)\\).</p><p>When \\(p=4\\), \\(m=5\\).</p><p>Find \\(m\\) when \\(p=6\\). [3]</p>",
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-21.6"
+            ],
+            "topic": "Ratio, rate and proportion",
+            "chapter": "IGCSE-21",
+            "marks": 3,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-21-6.json",
+                "locator": "IGCSE-21.6-PP-0580-21-MJ20-Q16"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(m=\\dfrac{k}{(p-1)^2}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS (as printed): M2 for m = k/(p − 1)², or M1 for m = their k/(6 − 1)²; OR M2 for 5(4 − 1)² = m(6 − 1)² oe."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(5=\\dfrac{k}{3^2}\\), so \\(k=45\\), and \\(m=\\dfrac{45}{5^2}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M2 for the method with k found and used, or for 5(4 − 1)² = m(6 − 1)² oe."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(m=1.8\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: 3 marks for 1.8 or 1 4/5."
+            }
+        ]
+    },
+    {
+        "id": "IGCSE-21.6-PP-0580-22-ON23-Q22",
+        "section": "IGCSE-21.6",
+        "kind": "pastpaper",
+        "title": "x inversely proportional to the square root of w",
+        "marks": 2,
+        "source": {
+            "paper": "0580/22/O/N/23 Q22",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w23_qp_22.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w23_ms_22.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>\\(x\\) is inversely proportional to the square root of \\(w\\).</p><p>When \\(w=16\\), \\(x=3\\).</p><p>Find \\(x\\) in terms of \\(w\\). [2]</p>",
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-21.6"
+            ],
+            "topic": "Ratio, rate and proportion",
+            "chapter": "IGCSE-21",
+            "marks": 2,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-21-6.json",
+                "locator": "IGCSE-21.6-PP-0580-22-ON23-Q22"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(x=\\dfrac{k}{\\sqrt{w} }\\) and \\(3=\\dfrac{k}{\\sqrt{16} }\\), so \\(k=12\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1 for x = k/√w oe."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(x=\\dfrac{12}{\\sqrt{w} }\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: 2 marks for x = 12/√w oe final answer."
+            }
+        ]
+    }
+]

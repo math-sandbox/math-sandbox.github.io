@@ -1,0 +1,468 @@
+[
+    {
+        "id": "P23-8.7-QC1-gen",
+        "section": "P23-8.7",
+        "kind": "generated",
+        "title": "Integral of sin x times a power of cos x",
+        "marks": 2,
+        "source": "Theory P23-8.7 Quick check 1; reverse chain rule",
+        "params": [
+            {
+                "name": "n",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "m": "n+1",
+            "A": "1/(n+1)"
+        },
+        "constraints": [
+            "n>0"
+        ],
+        "original": {
+            "n": 3
+        },
+        "stem": "Find the exact value of \\(\\displaystyle\\int_0^{\\pi/2}\\sin x\\cos^{ {n|int} }x\\,\\mathrm{d}x\\).",
+        "answer": {
+            "expression": "1/m",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\displaystyle\\int\\sin x\\cos^{ {n|int} }x\\,\\mathrm{d}x=-\\frac{1}{{m|int}}\\cos^{ {m|int} }x\\)",
+                "result": "m",
+                "format": "int",
+                "mark": "M1",
+                "note": "Recognise the derivative of cos x alongside a power of cos x."
+            },
+            {
+                "name": "A",
+                "text_tex": "The upper limit gives \\(0\\) and the lower limit gives \\(-\\dfrac{1}{{m|int}}\\), so the value is \\(\\dfrac{1}{{m|int}}={A|sf3z}\\)",
+                "result": "1/m",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Use the limits."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original power 3, value 0.250"
+            },
+            {
+                "id": "eval",
+                "stem": "Evaluate \\(\\displaystyle\\int_0^{\\pi/2}\\cos^{ {n|int} }x\\sin x\\,\\mathrm{d}x\\)."
+            },
+            {
+                "id": "area",
+                "stem": "Find the area under the curve \\(y=\\sin x\\cos^{ {n|int} }x\\) between \\(x=0\\) and \\(x=\\dfrac{\\pi}{2}\\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-8.7"
+            ],
+            "topic": "Further calculus",
+            "chapter": "P23-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-8-7.json",
+                "locator": "P23-8.7-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-8.7-QC2-gen",
+        "section": "P23-8.7",
+        "kind": "generated",
+        "title": "Integral of x over x + 1",
+        "marks": 2,
+        "source": "Theory P23-8.7 Quick check 2; divide first",
+        "params": [
+            {
+                "name": "a",
+                "min": 1,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "Ap": "a+1",
+            "A": "a-math.log(a+1)"
+        },
+        "constraints": [
+            "a>0"
+        ],
+        "original": {
+            "a": 3
+        },
+        "stem": "Find the value of \\(\\displaystyle\\int_0^{ {a|int} }\\frac{x}{x+1}\\,\\mathrm{d}x\\), correct to 3 significant figures.",
+        "answer": {
+            "expression": "a-math.log(Ap)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\dfrac{x}{x+1}=1-\\dfrac{1}{x+1}\\), so the integral is \\(x-\\ln(x+1)\\).",
+                "result": "Ap",
+                "format": "int",
+                "mark": "M1",
+                "note": "Divide (or rewrite the numerator) before integrating."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\({a|int}-\\ln{Ap|int}={A|sf3z}\\)",
+                "result": "a-math.log(Ap)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Use the limits."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original upper limit 3, value 3 - ln 4 = 1.61"
+            },
+            {
+                "id": "eval",
+                "stem": "Evaluate \\(\\displaystyle\\int_0^{ {a|int} }\\frac{x}{1+x}\\,\\mathrm{d}x\\) to 3 significant figures."
+            },
+            {
+                "id": "area",
+                "stem": "Find the area under the curve \\(y=\\dfrac{x}{x+1}\\) from \\(x=0\\) to \\(x={a|int}\\), correct to 3 significant figures."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-8.7"
+            ],
+            "topic": "Further calculus",
+            "chapter": "P23-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-8-7.json",
+                "locator": "P23-8.7-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-8.7-QC3-gen",
+        "section": "P23-8.7",
+        "kind": "generated",
+        "title": "Integral of ln x over x squared",
+        "marks": 2,
+        "source": "Theory P23-8.7 Quick check 3; by parts with u = ln x",
+        "params": [
+            {
+                "name": "b",
+                "min": 2,
+                "max": 12,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "L": "math.log(b)",
+            "A": "1-(1+math.log(b))/b"
+        },
+        "constraints": [
+            "b>1"
+        ],
+        "original": {
+            "b": 2
+        },
+        "stem": "Find the value of \\(\\displaystyle\\int_1^{ {b|int} }\\frac{\\ln x}{x^2}\\,\\mathrm{d}x\\), correct to 3 significant figures.",
+        "answer": {
+            "expression": "1-(1+L)/b",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "By parts with \\(u=\\ln x\\), \\(v=-\\dfrac{1}{x}\\): \\(-\\dfrac{\\ln x}{x}+\\displaystyle\\int\\frac{1}{x^2}\\,\\mathrm{d}x=-\\frac{\\ln x}{x}-\\frac{1}{x}\\)",
+                "result": "L",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Choose u = ln x."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\Bigl[-\\dfrac{\\ln x+1}{x}\\Bigr]_1^{ {b|int} }={A|sf3z}\\)",
+                "result": "1-(1+L)/b",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Use the limits."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original upper limit 2, value 0.153"
+            },
+            {
+                "id": "eval",
+                "stem": "Evaluate \\(\\displaystyle\\int_1^{ {b|int} }x^{-2}\\ln x\\,\\mathrm{d}x\\) to 3 significant figures."
+            },
+            {
+                "id": "area",
+                "stem": "Find the area under the curve \\(y=\\dfrac{\\ln x}{x^2}\\) from \\(x=1\\) to \\(x={b|int}\\), correct to 3 significant figures."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-8.7"
+            ],
+            "topic": "Further calculus",
+            "chapter": "P23-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-8-7.json",
+                "locator": "P23-8.7-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-8.7-PP-9709-32-ON20-Q9",
+        "section": "P23-8.7",
+        "kind": "pastpaper",
+        "title": "Partial fractions with logarithm and inverse tangent terms",
+        "marks": 11,
+        "source": {
+            "paper": "9709/32/O/N/20 Q9",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w20_qp_32.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w20_ms_32.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Let \\(\\mathrm{f}(x)=\\dfrac{7x+18}{(3x+2)(x^2+4)}\\).</p><p>(a) Express \\(\\mathrm{f}(x)\\) in partial fractions. [5]</p><p>(b) Hence find the exact value of \\(\\displaystyle\\int_0^2\\mathrm{f}(x)\\,\\mathrm{d}x\\). [6]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-8.7"
+            ],
+            "topic": "Further calculus",
+            "chapter": "P23-8",
+            "marks": 11,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-8-7.json",
+                "locator": "P23-8.7-PP-9709-32-ON20-Q9"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) \\(\\dfrac{A}{3x+2}+\\dfrac{Bx+C}{x^2+4}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, correct form."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(a) \\(7x+18=A(x^2+4)+(Bx+C)(3x+2)\\); use a correct method to find a constant.",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(a) \\(A=3\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(a) \\(B=-1\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1."
+            },
+            {
+                "name": "s5",
+                "text_tex": "(a) \\(C=3\\), so \\(\\mathrm{f}(x)=\\dfrac{3}{3x+2}+\\dfrac{3-x}{x^2+4}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1."
+            },
+            {
+                "name": "s6",
+                "text_tex": "(b) \\(\\displaystyle\\int\\frac{3}{3x+2}\\,\\mathrm{d}x=\\ln(3x+2)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 FT."
+            },
+            {
+                "name": "s7",
+                "text_tex": "(b) \\(\\displaystyle\\int\\frac{-x}{x^2+4}\\,\\mathrm{d}x\\) is of the form \\(k\\ln(x^2+4)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1."
+            },
+            {
+                "name": "s8",
+                "text_tex": "(b) \\(-\\frac{1}{2}\\ln(x^2+4)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 FT."
+            },
+            {
+                "name": "s9",
+                "text_tex": "(b) \\(\\displaystyle\\int\\frac{3}{x^2+4}\\,\\mathrm{d}x=\\frac{3}{2}\\tan^{-1}\\left(\\frac{1}{2}x\\right)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 FT."
+            },
+            {
+                "name": "s10",
+                "text_tex": "(b) Limits: \\(\\ln8-\\frac{1}{2}\\ln8+\\frac{3}{2}\\times\\frac{\\pi}{4}-\\ln2+\\frac{1}{2}\\ln4\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, substitute limits correctly in at least two terms and subtract in the correct order."
+            },
+            {
+                "name": "s11",
+                "text_tex": "(b) \\(=\\frac{3}{2}\\ln2+\\frac{3}{8}\\pi\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, or exact equivalent."
+            }
+        ]
+    },
+    {
+        "id": "P23-8.7-PP-9709-33-MJ23-Q7",
+        "section": "P23-8.7",
+        "kind": "pastpaper",
+        "title": "Substitution u = cos x, then integration by parts",
+        "marks": 8,
+        "source": {
+            "paper": "9709/33/M/J/23 Q7",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s23_qp_33.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s23_ms_33.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>(a) Use the substitution \\(u=\\cos x\\) to show that \\(\\displaystyle\\int_0^{\\pi}\\sin2x\\,\\mathrm{e}^{2\\cos x}\\,\\mathrm{d}x=\\int_{-1}^{1}2u\\mathrm{e}^{2u}\\,\\mathrm{d}u\\). [4]</p><p>(b) Hence find the exact value of \\(\\displaystyle\\int_0^{\\pi}\\sin2x\\,\\mathrm{e}^{2\\cos x}\\,\\mathrm{d}x\\). [4]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-8.7"
+            ],
+            "topic": "Further calculus",
+            "chapter": "P23-8",
+            "marks": 8,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-8-7.json",
+                "locator": "P23-8.7-PP-9709-33-MJ23-Q7"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) \\(\\dfrac{\\mathrm{d}u}{\\mathrm{d}x}=-\\sin x\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 SOI."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(a) Use \\(\\sin2x=2\\sin x\\cos x\\) and substitute throughout: \\(2\\sin x\\cos x\\,\\mathrm{e}^{2\\cos x}\\,\\mathrm{d}x=-2u\\mathrm{e}^{2u}\\,\\mathrm{d}u\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(a) \\(\\displaystyle\\int_1^{-1}-2u\\mathrm{e}^{2u}\\,\\mathrm{d}u\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(a) \\(x=0\\) gives \\(u=1\\) and \\(x=\\pi\\) gives \\(u=-1\\); reversing the limits removes the minus sign: \\(\\displaystyle\\int_{-1}^{1}2u\\mathrm{e}^{2u}\\,\\mathrm{d}u\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 AG, justify the new limits and obtain the given result."
+            },
+            {
+                "name": "s5",
+                "text_tex": "(b) By parts: the form \\(au\\mathrm{e}^{2u}+b\\displaystyle\\int\\mathrm{e}^{2u}\\,\\mathrm{d}u\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1*."
+            },
+            {
+                "name": "s6",
+                "text_tex": "(b) \\(u\\mathrm{e}^{2u}-\\frac{1}{2}\\mathrm{e}^{2u}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1."
+            },
+            {
+                "name": "s7",
+                "text_tex": "(b) Limits: \\(\\left(\\mathrm{e}^2-\\frac{1}{2}\\mathrm{e}^2\\right)-\\left(-\\mathrm{e}^{-2}-\\frac{1}{2}\\mathrm{e}^{-2}\\right)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: DM1, use correct limits correctly, having integrated twice."
+            },
+            {
+                "name": "s8",
+                "text_tex": "(b) \\(=\\frac{1}{2}\\mathrm{e}^2+\\frac{3}{2}\\mathrm{e}^{-2}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1; ISW."
+            }
+        ]
+    }
+]

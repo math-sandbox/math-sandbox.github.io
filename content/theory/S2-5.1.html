@@ -1,0 +1,104 @@
+<script>if(location.hostname.endsWith('onrender.com'))location.replace('https://math-sandbox.github.io'+location.pathname+location.search+location.hash)</script>
+<section class="theory" data-section="S2-5.1">
+<h2>5.1 Introduction to sampling</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Probability &amp; Statistics 2 Coursebook (Jayne Kranat), Chapter 5 Sampling, printed pp.102–105. Own wording and new numbers, following the coursebook definitions of a population, a sample, a random sample and bias, and its method for using random numbers.</p>
+<p class="key-words"><strong>Key words:</strong> <em>population</em>, <em>sample</em>, <em>census</em>, <em>random sample</em>, <em>sampling frame</em>, <em>biased</em></p>
+<h3>Populations and samples</h3>
+<p>A population is the complete set of items that we are interested in, for example all the students in a school or all the light bulbs made by a factory in one day. A sample is part of a population. A survey of every member of the population is a census.</p>
+<p>We usually take a sample instead of a census because a census can take too long or cost too much, because the population may be very large, or because testing an item destroys it (for example, testing how long a battery lasts). Results from a sample are useful only if the sample is representative of the population.</p>
+<h3>Random samples</h3>
+<p>A random sample of size \(n\) is chosen so that every possible sample of size \(n\) from the population has the same chance of being chosen. In particular, every member of the population has the same chance of being chosen.</p>
+<p>To choose a random sample we need a complete list of the population, called the sampling frame. If there is no complete list, some members cannot be chosen and the sample may not represent the population.</p>
+<h3>Bias</h3>
+<p>A sampling method is biased if some members or groups of the population are more likely to be chosen than others, so that the sample is not representative. For example, asking only the people who are in a library about how often people read will over-represent keen readers. Choosing people who sit together, or people who arrive first, is also biased because their views may be similar.</p>
+<p>A random sampling method avoids bias in the choice, but it does not guarantee that a particular sample will be representative.</p>
+<h3>Using random numbers</h3>
+<p>To choose a random sample with random numbers:</p>
+<ol><li>Number every member of the sampling frame, using the same number of digits for every label (for example 00 to 79, or 000 to 499).</li><li>Read random digits from a table or a calculator in groups of that many digits.</li><li>Ignore any number that is not a label, and ignore repeats, until the sample is complete.</li></ol>
+<div class="ms-widget" data-widget="random-sample"></div>
+<script src="../../assets/widget-kinds-pkg16.js"></script>
+<div class="worked-example">
+<h4>Worked example 1: Choosing a sample with random numbers</h4>
+<p class="src">Coursebook, 5.1, use of random numbers. New numbers.</p>
+<p>The 64 members of a sports club are numbered 01 to 64. A random sample of 5 members is to be chosen using these random digits:</p><p>4712 8305 9627 1209</p><p>Find the numbers of the members chosen.</p>
+<ol class="steps">
+<li>Read the digits in pairs: 47, 12, 83, 05, 96, 27, 12, 09. <span class="mark">B1</span></li>
+<li>Ignore 83 and 96 because they are greater than 64. <span class="mark">B1</span></li>
+<li>Ignore the second 12 because it is a repeat. <span class="mark">B1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> 47, 12, 05, 27 and 09</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: Explaining bias</h4>
+<p class="src">Coursebook, 5.1, sources of bias. New context.</p>
+<p>A head teacher wants to know how students travel to school. She asks the first 10 students who arrive at the school gate one morning. Give two reasons why this sample may not be representative.</p>
+<ol class="steps">
+<li>Students who arrive early, for example those who come by school bus or by car, are more likely to be chosen, so the method is biased. <span class="mark">B1</span></li>
+<li>Students who arrive together are likely to travel in the same way, so the 10 answers are not independent of each other. <span class="mark">B1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> Two reasons, each in context, such as early arrivals are favoured and students who arrive together travel in the same way</p>
+</div>
+<h3>Common mistakes</h3>
+<ul>
+<li>Saying only that a sample is not representative. Always say which members are favoured or left out, in the context of the question.</li>
+<li>Using labels with different numbers of digits, such as 1 to 82, and then reading the random digits one at a time. Use two-digit labels 01 to 82 and read the digits in pairs.</li>
+<li>Forgetting to ignore repeats and numbers that are not labels.</li>
+</ul>
+<h3>Past paper</h3>
+<p class="src">9709/62/O/N/21 Q2, official QP and official MS.</p>
+<p>Andy and Jessica are doing a survey about musical preferences. They plan to choose a representative sample of six students from the 256 students at their college.</p><p>(a) Andy suggests that they go to the music building during the lunch hour and choose six students at random from the students who are there. Give a reason why this method is unsatisfactory. [1]</p><p>(b) Jessica decides to use another method. She numbers all the students in the college from 1 to 256. Then she uses her calculator and generates the following random numbers.</p><p>204393 &nbsp; 162007 &nbsp; 204028 &nbsp; 587119 &nbsp; 207395</p><p>From these numbers, she obtains six student numbers. The first three of her student numbers are 204, 162 and 7. Continue Jessica’s method to obtain the next three student numbers. [2]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(a) The sample is biased towards students who play instruments or study music, so it is not representative of all 256 students. <span class="mark">B1</span> Official MS: B1 OE, e.g. bias towards students who play instruments or only music students, or the six will possibly be friends or have similar music preferences. Or any reason that some are excluded, e.g. because it is lunchtime or because the music building is chosen, or any suggestion that opinions may not be independent. Note: not representative of all students needs qualifying.</li>
+<li>(b) Jessica reads the digits in groups of three, ignoring numbers above 256 and repeats: 204, 393 (ignore), 162, 007, 204 (repeat), 028, 587 (ignore), 119, 207. The next two numbers are 28 and 119. <span class="mark">B1</span> Official MS: B1 for 28, 119 (condone 028).</li>
+<li>(b) The sixth number is 207. <span class="mark">B1</span> Official MS: B1 for 207 and only 3 values stated.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/73/M/J/15 Q1, official QP and official MS.</p>
+<p>Jyothi wishes to choose a representative sample of 5 students from the 82 members of her school year.</p><p>(i) She considers going into the canteen and choosing a table with five students from her year sitting at it, and using these five people as her sample. Give two reasons why this method is unsatisfactory. [2]</p><p>(ii) Jyothi decides to use another method. She numbers all the students in her year from 1 to 82. Then she uses her calculator and generates the following random numbers.</p><p>231492 &nbsp; 762305 &nbsp; 346280</p><p>From these numbers, she obtains the student numbers 23, 14, 76, 5, 34 and 62. Explain how Jyothi obtained these student numbers from the list of random numbers. [3]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(i) Only students who use the canteen can be chosen. <span class="mark">B1</span> Official MS: B1, e.g. only students who use canteen, or any reason that some are excluded. Each sensible reason must be in context.</li>
+<li>(i) The five students at one table will probably be friends, so their views are not independent. <span class="mark">B1</span> Official MS: B1, the five will probably be friends. B1 each sensible reason, in context.</li>
+<li>(ii) She splits the digits into two-digit numbers: 23, 14, 92, 76, 23, 05, 34, 62, 80. <span class="mark">B1</span> Official MS: B1, 2-digits.</li>
+<li>(ii) She ignores 92 and 80 because they are greater than 82. <span class="mark">B1</span> Official MS: B1, ignore &gt; 82 (anything too big).</li>
+<li>(ii) She ignores the second 23 because it is a repeat. <span class="mark">B1</span> Official MS: B1, ignore repeats.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/73/M/J/19 Q3, official QP and official MS.</p>
+<p>Luis has to choose one person at random from four people, \(A\), \(B\), \(C\) and \(D\). He throws a fair six-sided die. If the score is 1, he will choose \(A\). If the score is 2 he will choose \(B\). If the score is 3, he will choose \(C\). If the score is 4 or more he will choose \(D\).</p><p>(i) Explain why the choice made by this method is not random. [1]</p><p>(ii) Describe how Luis could use a single throw of the die to make a random choice. [1]</p><p>On another day, Luis has to choose two people at random from the same four people, \(A\), \(B\), \(C\) and \(D\).</p><p>(iii) List the possible choices of two people and hence describe how Luis could use a single throw of the die to make this random choice. [2]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(i) \(D\) is more likely to be chosen: \(\mathrm{P}(A)=\mathrm{P}(B)=\mathrm{P}(C)=\dfrac{1}{6}\) but \(\mathrm{P}(D)=\dfrac{1}{2}\). <span class="mark">B1</span> Official MS: B1 oe, D more likely to be chosen, e.g. P(D) &gt; P(A), e.g. P(A) = P(B) = P(C) = 1/6, P(D) = 1/2, no contradictions.</li>
+<li>(ii) Choose \(D\) when the score is 4 and throw again (reject the throw) if the score is 5 or 6. <span class="mark">B1</span> Official MS: B1, reject scores of 5 or 6, or other correct: choose D when the score is 4.</li>
+<li>(iii) The possible pairs are \(AB\), \(AC\), \(AD\), \(BC\), \(BD\) and \(CD\). <span class="mark">B1</span> Official MS: B1, AB AC AD BC BD CD.</li>
+<li>(iii) Allocate one pair to each score: 1: \(AB\), 2: \(AC\), 3: \(AD\), 4: \(BC\), 5: \(BD\), 6: \(CD\). <span class="mark">B1</span> Official MS: B1 or similar, allocate as follows: 1: AB; 2: AC; 3: AD; 4: BC; 5: BD; 6: CD.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>A random sample of size 2 is chosen from a population of 10 people, so that every possible sample of size 2 is equally likely. How many different samples are possible?</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>The number of samples is \({}^{10}C_2=\dfrac{10\times9}{2}\).</li></ol>
+<p class="final"><strong>Answer:</strong> \(45\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>A random sample of 6 students is chosen from the 40 students in a year group. Find the probability that a particular student is in the sample.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>Every student has the same chance of being chosen, so the probability is \(\dfrac{6}{40}\).</li></ol>
+<p class="final"><strong>Answer:</strong> \(0.15\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>The 350 members of a population are numbered 000 to 349. Three-digit random numbers from 000 to 999 are used, and numbers greater than 349 are ignored. What proportion of the random numbers can be used?</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>There are 350 usable numbers out of 1000.</li><li>\(\dfrac{350}{1000}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(0.35\)</p>
+</details>
+</div>
+</section>

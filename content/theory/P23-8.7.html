@@ -1,0 +1,90 @@
+<script>if(location.hostname.endsWith('onrender.com'))location.replace('https://math-sandbox.github.io'+location.pathname+location.search+location.hash)</script>
+<section class="theory" data-section="P23-8.7">
+<h2>8.7 Further integration</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 2 &amp; 3 Coursebook (Sue Pemberton, series editor Julian Gilbey), Chapter 8 Further calculus, printed pp.201–202. Own wording and new numbers, following the coursebook advice on choosing a method of integration.</p>
+<p class="key-words"><strong>Key words:</strong> <em>integration by substitution</em>, <em>integration by parts</em>, <em>partial fractions</em></p>
+<h3>Choosing a method</h3>
+<p>Before integrating, look at the structure of the integrand and decide which method fits.</p>
+<ul><li>A standard integral: powers, \(\mathrm{e}^{ax+b}\), \(\dfrac{1}{ax+b}\), trigonometric functions and \(\dfrac{1}{a^2+x^2}\).</li><li>The numerator is a multiple of the derivative of the denominator: a logarithm (8.3).</li><li>A function and its derivative appear together, such as \(\sin x\cos^3x\): reverse the chain rule or use integration by substitution (8.4).</li><li>A rational function whose denominator factorises: partial fractions (8.5). Divide first if the fraction is improper.</li><li>A product of two different types of function, such as \(x\mathrm{e}^{2x}\) or \(x\ln x\): integration by parts (8.6).</li><li>Powers of trigonometric functions: use identities, such as \(\cos^2x=\frac{1}{2}(1+\cos2x)\).</li></ul>
+<p>Some questions need two methods, for example a substitution that leads to an integral done by parts.</p>
+<div class="worked-example">
+<h4>Worked example 1: Recognition</h4>
+<p class="src">Coursebook, 8.7, choosing a method. New numbers.</p>
+<p>Find \(\displaystyle\int\sin x\cos^3x\,\mathrm{d}x\).</p>
+<ol class="steps">
+<li>The derivative of \(\cos x\) is \(-\sin x\), so try \(\cos^4x\): \(\dfrac{\mathrm{d}}{\mathrm{d}x}\cos^4x=-4\sin x\cos^3x\). <span class="mark">M1</span></li>
+<li>\(-\dfrac{1}{4}\cos^4x+c\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(-\dfrac{1}{4}\cos^4x+c\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: An improper fraction</h4>
+<p class="src">Coursebook, 8.7, dividing before integrating. New numbers.</p>
+<p>Find the exact value of \(\displaystyle\int_0^1\frac{x}{x+1}\,\mathrm{d}x\).</p>
+<ol class="steps">
+<li>\(\dfrac{x}{x+1}=1-\dfrac{1}{x+1}\) <span class="mark">M1</span></li>
+<li>\(\bigl[x-\ln(x+1)\bigr]_0^1\) <span class="mark">A1</span></li>
+<li>\(=1-\ln2\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(1-\ln2\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Using integration by parts when a simple substitution or recognition works.</li><li>Trying partial fractions on an improper fraction without dividing first.</li><li>Forgetting to check a result by differentiating it.</li></ul>
+<h3>Past paper</h3>
+<p class="src">9709/32/O/N/20 Q9, official QP and official MS.</p>
+<p>Let \(\mathrm{f}(x)=\dfrac{7x+18}{(3x+2)(x^2+4)}\).</p><p>(a) Express \(\mathrm{f}(x)\) in partial fractions. [5]</p><p>(b) Hence find the exact value of \(\displaystyle\int_0^2\mathrm{f}(x)\,\mathrm{d}x\). [6]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(a) \(\dfrac{A}{3x+2}+\dfrac{Bx+C}{x^2+4}\) <span class="mark">B1</span> Official MS: B1, correct form.</li>
+<li>(a) \(7x+18=A(x^2+4)+(Bx+C)(3x+2)\); use a correct method to find a constant. <span class="mark">M1</span> Official MS: M1.</li>
+<li>(a) \(A=3\) <span class="mark">A1</span> Official MS: A1.</li>
+<li>(a) \(B=-1\) <span class="mark">A1</span> Official MS: A1.</li>
+<li>(a) \(C=3\), so \(\mathrm{f}(x)=\dfrac{3}{3x+2}+\dfrac{3-x}{x^2+4}\) <span class="mark">A1</span> Official MS: A1.</li>
+<li>(b) \(\displaystyle\int\frac{3}{3x+2}\,\mathrm{d}x=\ln(3x+2)\) <span class="mark">B1</span> Official MS: B1 FT.</li>
+<li>(b) \(\displaystyle\int\frac{-x}{x^2+4}\,\mathrm{d}x\) is of the form \(k\ln(x^2+4)\) <span class="mark">M1</span> Official MS: M1.</li>
+<li>(b) \(-\frac{1}{2}\ln(x^2+4)\) <span class="mark">A1</span> Official MS: A1 FT.</li>
+<li>(b) \(\displaystyle\int\frac{3}{x^2+4}\,\mathrm{d}x=\frac{3}{2}\tan^{-1}\left(\frac{1}{2}x\right)\) <span class="mark">B1</span> Official MS: B1 FT.</li>
+<li>(b) Limits: \(\ln8-\frac{1}{2}\ln8+\frac{3}{2}\times\frac{\pi}{4}-\ln2+\frac{1}{2}\ln4\) <span class="mark">M1</span> Official MS: M1, substitute limits correctly in at least two terms and subtract in the correct order.</li>
+<li>(b) \(=\frac{3}{2}\ln2+\frac{3}{8}\pi\) <span class="mark">A1</span> Official MS: A1, or exact equivalent.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/33/M/J/23 Q7, official QP and official MS.</p>
+<p>(a) Use the substitution \(u=\cos x\) to show that \(\displaystyle\int_0^{\pi}\sin2x\,\mathrm{e}^{2\cos x}\,\mathrm{d}x=\int_{-1}^{1}2u\mathrm{e}^{2u}\,\mathrm{d}u\). [4]</p><p>(b) Hence find the exact value of \(\displaystyle\int_0^{\pi}\sin2x\,\mathrm{e}^{2\cos x}\,\mathrm{d}x\). [4]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(a) \(\dfrac{\mathrm{d}u}{\mathrm{d}x}=-\sin x\) <span class="mark">B1</span> Official MS: B1 SOI.</li>
+<li>(a) Use \(\sin2x=2\sin x\cos x\) and substitute throughout: \(2\sin x\cos x\,\mathrm{e}^{2\cos x}\,\mathrm{d}x=-2u\mathrm{e}^{2u}\,\mathrm{d}u\) <span class="mark">M1</span> Official MS: M1.</li>
+<li>(a) \(\displaystyle\int_1^{-1}-2u\mathrm{e}^{2u}\,\mathrm{d}u\) <span class="mark">A1</span> Official MS: A1.</li>
+<li>(a) \(x=0\) gives \(u=1\) and \(x=\pi\) gives \(u=-1\); reversing the limits removes the minus sign: \(\displaystyle\int_{-1}^{1}2u\mathrm{e}^{2u}\,\mathrm{d}u\) <span class="mark">A1</span> Official MS: A1 AG, justify the new limits and obtain the given result.</li>
+<li>(b) By parts: the form \(au\mathrm{e}^{2u}+b\displaystyle\int\mathrm{e}^{2u}\,\mathrm{d}u\) <span class="mark">M1</span> Official MS: M1*.</li>
+<li>(b) \(u\mathrm{e}^{2u}-\frac{1}{2}\mathrm{e}^{2u}\) <span class="mark">A1</span> Official MS: A1.</li>
+<li>(b) Limits: \(\left(\mathrm{e}^2-\frac{1}{2}\mathrm{e}^2\right)-\left(-\mathrm{e}^{-2}-\frac{1}{2}\mathrm{e}^{-2}\right)\) <span class="mark">DM1</span> Official MS: DM1, use correct limits correctly, having integrated twice.</li>
+<li>(b) \(=\frac{1}{2}\mathrm{e}^2+\frac{3}{2}\mathrm{e}^{-2}\) <span class="mark">A1</span> Official MS: A1; ISW.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>Find the exact value of \(\displaystyle\int_0^{\pi/2}\sin x\cos^3x\,\mathrm{d}x\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(-\dfrac{1}{4}\cos^4x\)</li><li>\(-\dfrac{1}{4}\times(0-1)\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{1}{4}\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>Find the value of \(\displaystyle\int_0^3\frac{x}{x+1}\,\mathrm{d}x\), correct to 3 significant figures.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(x-\ln(x+1)\)</li><li>\(3-\ln4\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(1.61\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>Find the value of \(\displaystyle\int_1^2\frac{\ln x}{x^2}\,\mathrm{d}x\), correct to 3 significant figures.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(-\dfrac{\ln x+1}{x}\)</li><li>\(-\dfrac{\ln2+1}{2}+1\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(0.153\)</p>
+</details>
+</div>
+</section>

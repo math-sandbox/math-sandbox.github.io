@@ -1,0 +1,436 @@
+[
+    {
+        "id": "P23-8.4-QC1-gen",
+        "section": "P23-8.4",
+        "kind": "generated",
+        "title": "Substitution u = x squared + c for 2x times a cube",
+        "marks": 2,
+        "source": "Theory P23-8.4 Quick check 1; integrate u cubed",
+        "params": [
+            {
+                "name": "a",
+                "min": 1,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "c",
+                "min": 1,
+                "max": 4,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "U": "a*a+c",
+            "U4": "math.pow(a*a+c,4)",
+            "C4": "math.pow(c,4)",
+            "A": "(math.pow(a*a+c,4)-math.pow(c,4))/4"
+        },
+        "constraints": [
+            "c>0"
+        ],
+        "original": {
+            "a": 1,
+            "c": 1
+        },
+        "stem": "Use the substitution \\(u=x^2+{c|int}\\) to find the value of \\(\\displaystyle\\int_0^{ {a|int} }2x(x^2+{c|int})^3\\,\\mathrm{d}x\\).",
+        "answer": {
+            "expression": "(U4-C4)/4",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\mathrm{d}u=2x\\,\\mathrm{d}x\\); the limits become \\(u={c|int}\\) and \\(u={U|int}\\), so the integral is \\(\\displaystyle\\int_{ {c|int} }^{ {U|int} }u^3\\,\\mathrm{d}u\\).",
+                "result": "U",
+                "format": "int",
+                "mark": "M1",
+                "note": "Change the variable and the limits."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\left[\\dfrac{u^4}{4}\\right]=\\dfrac{{U4|int}-{C4|int}}{4}={A|sf3z}\\)",
+                "result": "(U4-C4)/4",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Integrate and use the new limits."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original a = 1 and c = 1, value 15/4 = 3.75"
+            },
+            {
+                "id": "eval",
+                "stem": "By using the substitution \\(u=x^2+{c|int}\\), evaluate \\(\\displaystyle\\int_0^{ {a|int} }2x(x^2+{c|int})^3\\,\\mathrm{d}x\\)."
+            },
+            {
+                "id": "area",
+                "stem": "Using \\(u=x^2+{c|int}\\), find the area under the curve \\(y=2x(x^2+{c|int})^3\\) between \\(x=0\\) and \\(x={a|int}\\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-8.4"
+            ],
+            "topic": "Further calculus",
+            "chapter": "P23-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-8-4.json",
+                "locator": "P23-8.4-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-8.4-QC2-gen",
+        "section": "P23-8.4",
+        "kind": "generated",
+        "title": "Substitution u = x squared + c for x times a square root",
+        "marks": 2,
+        "source": "Theory P23-8.4 Quick check 2; integrate one half of u to the power one half",
+        "params": [
+            {
+                "name": "b",
+                "min": 1,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "c",
+                "min": 1,
+                "max": 16,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "U": "b*b+c",
+            "A": "(math.pow(b*b+c,1.5)-math.pow(c,1.5))/3"
+        },
+        "constraints": [
+            "c>0"
+        ],
+        "original": {
+            "b": 4,
+            "c": 9
+        },
+        "stem": "Use the substitution \\(u=x^2+{c|int}\\) to find the value of \\(\\displaystyle\\int_0^{ {b|int} }x\\sqrt{x^2+{c|int}}\\,\\mathrm{d}x\\), correct to 3 significant figures.",
+        "answer": {
+            "expression": "(math.pow(U,1.5)-math.pow(c,1.5))/3",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(x\\,\\mathrm{d}x=\\frac{1}{2}\\mathrm{d}u\\); the limits become \\({c|int}\\) and \\({U|int}\\), so the integral is \\(\\displaystyle\\int_{ {c|int} }^{ {U|int} }\\frac{1}{2}u^{1/2}\\,\\mathrm{d}u=\\Bigl[\\frac{1}{3}u^{3/2}\\Bigr]\\).",
+                "result": "U",
+                "format": "int",
+                "mark": "M1",
+                "note": "Change the variable, integrate and keep the new limits."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\dfrac{1}{3}\\bigl({U|int}^{3/2}-{c|int}^{3/2}\\bigr)={A|sf3z}\\)",
+                "result": "(math.pow(U,1.5)-math.pow(c,1.5))/3",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Use the limits."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original b = 4 and c = 9, value 98/3 = 32.7"
+            },
+            {
+                "id": "eval",
+                "stem": "By using the substitution \\(u=x^2+{c|int}\\), evaluate \\(\\displaystyle\\int_0^{ {b|int} }x\\sqrt{x^2+{c|int}}\\,\\mathrm{d}x\\) to 3 significant figures."
+            },
+            {
+                "id": "area",
+                "stem": "Using \\(u=x^2+{c|int}\\), find the area under \\(y=x\\sqrt{x^2+{c|int}}\\) from \\(x=0\\) to \\(x={b|int}\\), correct to 3 significant figures."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-8.4"
+            ],
+            "topic": "Further calculus",
+            "chapter": "P23-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-8-4.json",
+                "locator": "P23-8.4-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-8.4-QC3-gen",
+        "section": "P23-8.4",
+        "kind": "generated",
+        "title": "Substitution u = ln x",
+        "marks": 2,
+        "source": "Theory P23-8.4 Quick check 3; the integral of ln x over x is a half of ln x squared",
+        "params": [
+            {
+                "name": "b",
+                "min": 2,
+                "max": 12,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "L": "math.log(b)",
+            "A": "0.5*math.log(b)*math.log(b)"
+        },
+        "constraints": [
+            "b>1"
+        ],
+        "original": {
+            "b": 4
+        },
+        "stem": "Use the substitution \\(u=\\ln x\\) to find the value of \\(\\displaystyle\\int_1^{ {b|int} }\\frac{\\ln x}{x}\\,\\mathrm{d}x\\), correct to 3 significant figures.",
+        "answer": {
+            "expression": "0.5*L*L",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\mathrm{d}u=\\dfrac{1}{x}\\,\\mathrm{d}x\\); the limits become \\(0\\) and \\(\\ln{b|int}={L|sf3z}\\), so the integral is \\(\\Bigl[\\frac{1}{2}u^2\\Bigr]\\).",
+                "result": "L",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Change the variable and the limits."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\dfrac{1}{2}(\\ln{b|int})^2={A|sf3z}\\)",
+                "result": "0.5*L*L",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Use the limits."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original b = 4, value 0.961"
+            },
+            {
+                "id": "eval",
+                "stem": "By using the substitution \\(u=\\ln x\\), evaluate \\(\\displaystyle\\int_1^{ {b|int} }\\frac{\\ln x}{x}\\,\\mathrm{d}x\\) to 3 significant figures."
+            },
+            {
+                "id": "area",
+                "stem": "Using \\(u=\\ln x\\), find the area under the curve \\(y=\\dfrac{\\ln x}{x}\\) from \\(x=1\\) to \\(x={b|int}\\), correct to 3 significant figures."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-8.4"
+            ],
+            "topic": "Further calculus",
+            "chapter": "P23-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-8-4.json",
+                "locator": "P23-8.4-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-8.4-PP-9709-31-MJ24-Q8",
+        "section": "P23-8.4",
+        "kind": "pastpaper",
+        "title": "Substitution u = 1 - sin x",
+        "marks": 7,
+        "source": {
+            "paper": "9709/31/M/J/24 Q8",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s24_qp_31.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s24_ms_31.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Use the substitution \\(u=1-\\sin x\\) to find the exact value of \\(\\displaystyle\\int_{\\pi}^{\\frac{3}{2}\\pi}\\frac{\\sin2x}{\\sqrt{1-\\sin x} }\\,\\mathrm{d}x\\).</p><p>Give your answer in the form \\(a+b\\sqrt{2}\\) where \\(a\\) and \\(b\\) are rational numbers to be determined. [7]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-8.4"
+            ],
+            "topic": "Further calculus",
+            "chapter": "P23-8",
+            "marks": 7,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-8-4.json",
+                "locator": "P23-8.4-PP-9709-31-MJ24-Q8"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(\\mathrm{d}u=-\\cos x\\,\\mathrm{d}x\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1."
+            },
+            {
+                "name": "s2",
+                "text_tex": "Use \\(\\sin2x=2\\sin x\\cos x\\) with \\(\\sin x=1-u\\): \\(\\dfrac{2\\sin x\\cos x}{\\sqrt{u} }\\,\\mathrm{d}x=-\\dfrac{2(1-u)}{\\sqrt{u} }\\,\\mathrm{d}u\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: *M1, use sin 2x = 2 sin x cos x and write the integral in terms of u."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(\\pm2\\displaystyle\\int\\frac{1-u}{\\sqrt{u} }\\,\\mathrm{d}u\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1."
+            },
+            {
+                "name": "s4",
+                "text_tex": "Integrate to the form \\(au^{1/2}+bu^{3/2}\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: DM1."
+            },
+            {
+                "name": "s5",
+                "text_tex": "\\(-4u^{1/2}+\\frac{4}{3}u^{3/2}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1."
+            },
+            {
+                "name": "s6",
+                "text_tex": "Limits: \\(x=\\pi\\) gives \\(u=1\\) and \\(x=\\frac{3}{2}\\pi\\) gives \\(u=2\\); \\(\\left(-4\\sqrt{2}+\\frac{8}{3}\\sqrt{2}\\right)-\\left(-4+\\frac{4}{3}\\right)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: DM1, use correct limits correctly, in u or in x. (The limits printed in the official note do not match this question; the correct u-limits are 1 and 2.)"
+            },
+            {
+                "name": "s7",
+                "text_tex": "\\(=\\dfrac{8}{3}-\\dfrac{4}{3}\\sqrt{2}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 8/3 − (4/3)√2."
+            }
+        ]
+    },
+    {
+        "id": "P23-8.4-PP-9709-33-MJ26-Q6",
+        "section": "P23-8.4",
+        "kind": "pastpaper",
+        "title": "Substitution u = square root of x",
+        "marks": 6,
+        "source": {
+            "paper": "9709/33/M/J/26 Q6",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s26_qp_33.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s26_ms_33.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Use the substitution \\(u=\\sqrt{x}\\) to find the exact value of \\(\\displaystyle\\int_{\\frac{1}{16}\\pi^2}^{\\frac{1}{4}\\pi^2}\\frac{\\cos(3\\sqrt{x})}{\\sqrt{x} }\\,\\mathrm{d}x\\). [6]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-8.4"
+            ],
+            "topic": "Further calculus",
+            "chapter": "P23-8",
+            "marks": 6,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-8-4.json",
+                "locator": "P23-8.4-PP-9709-33-MJ26-Q6"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(\\dfrac{\\mathrm{d}u}{\\mathrm{d}x}=\\frac{1}{2}x^{-1/2}\\), or \\(\\dfrac{\\mathrm{d}x}{\\mathrm{d}u}=2u\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 SOI."
+            },
+            {
+                "name": "s2",
+                "text_tex": "The integral becomes the form \\(\\displaystyle\\int A\\cos3u\\,\\mathrm{d}u\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: *M1; condone loss of du."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(\\displaystyle\\int2\\cos3u\\,\\mathrm{d}u\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(\\dfrac{2}{3}\\sin3u\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 FT."
+            },
+            {
+                "name": "s5",
+                "text_tex": "Limits \\(u=\\frac{1}{2}\\pi\\) and \\(u=\\frac{1}{4}\\pi\\): \\(\\dfrac{2}{3}\\sin\\dfrac{3\\pi}{2}-\\dfrac{2}{3}\\sin\\dfrac{3\\pi}{4}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: DM1, correct limits, u = ½π and ¼π, or x = ¼π² and π²/16."
+            },
+            {
+                "name": "s6",
+                "text_tex": "\\(=-\\dfrac{2}{3}-\\dfrac{1}{3}\\sqrt{2}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, accept −(2/3)(1 + 1/√2); ISW."
+            }
+        ]
+    }
+]

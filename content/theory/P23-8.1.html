@@ -1,0 +1,73 @@
+<script>if(location.hostname.endsWith('onrender.com'))location.replace('https://math-sandbox.github.io'+location.pathname+location.search+location.hash)</script>
+<section class="theory" data-section="P23-8.1">
+<h2>8.1 Derivative of \(\tan^{-1}x\)</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 2 &amp; 3 Coursebook (Sue Pemberton, series editor Julian Gilbey), Chapter 8 Further calculus, printed p.186. Own wording and new numbers, following the coursebook derivation of the derivative of the inverse tangent function.</p>
+<p class="key-words"><strong>Key words:</strong> <em>inverse tangent</em>, <em>chain rule</em></p>
+<h3>The result</h3>
+<p>Let \(y=\tan^{-1}x\). Then \(x=\tan y\), so \(\dfrac{\mathrm{d}x}{\mathrm{d}y}=\sec^2y=1+\tan^2y=1+x^2\). Therefore</p>
+<p>\[\frac{\mathrm{d}}{\mathrm{d}x}\bigl(\tan^{-1}x\bigr)=\frac{1}{1+x^2}.\]</p>
+<h3>Using the chain rule</h3>
+<p>For a function of \(x\) inside the inverse tangent, use the chain rule:</p>
+<p>\[\frac{\mathrm{d}}{\mathrm{d}x}\Bigl(\tan^{-1}f(x)\Bigr)=\frac{f'(x)}{1+\bigl(f(x)\bigr)^2}.\]</p>
+<p>For example, \(\dfrac{\mathrm{d}}{\mathrm{d}x}\tan^{-1}\left(\dfrac{x}{a}\right)=\dfrac{a}{a^2+x^2}\). The product and quotient rules work with \(\tan^{-1}x\) in the usual way. Angles are in radians, so \(\tan^{-1}1=\dfrac{\pi}{4}\).</p>
+<div class="worked-example">
+<h4>Worked example 1: The chain rule</h4>
+<p class="src">Coursebook, 8.1, derivative of the inverse tangent. New numbers.</p>
+<p>Differentiate \(y=\tan^{-1}(3x)\).</p>
+<ol class="steps">
+<li>\(\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{3}{1+(3x)^2}\) <span class="mark">M1</span></li>
+<li>\(=\dfrac{3}{1+9x^2}\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{3}{1+9x^2}\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: The product rule</h4>
+<p class="src">Coursebook, 8.1, products with the inverse tangent. New numbers.</p>
+<p>Find the exact gradient of the curve \(y=x^2\tan^{-1}x\) at the point where \(x=1\).</p>
+<ol class="steps">
+<li>Product rule: \(\dfrac{\mathrm{d}y}{\mathrm{d}x}=2x\tan^{-1}x+x^2\times\dfrac{1}{1+x^2}\) <span class="mark">M1</span></li>
+<li>\(=2x\tan^{-1}x+\dfrac{x^2}{1+x^2}\) <span class="mark">A1</span></li>
+<li>At \(x=1\): \(2\times\dfrac{\pi}{4}+\dfrac{1}{2}=\dfrac{\pi}{2}+\dfrac{1}{2}\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{\pi}{2}+\dfrac{1}{2}\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Forgetting to multiply by the derivative of the inside function, for example writing \(\dfrac{1}{1+9x^2}\) for the derivative of \(\tan^{-1}(3x)\).</li><li>Writing \(1+3x^2\) instead of \(1+(3x)^2=1+9x^2\).</li><li>Using degrees: \(\tan^{-1}1\) is \(\dfrac{\pi}{4}\), not 45, in calculus.</li></ul>
+<h3>Past paper</h3>
+<p class="src">9709/33/M/J/20 Q4, official QP and official MS.</p>
+<p>The equation of a curve is \(y=x\tan^{-1}\left(\frac{1}{2}x\right)\).</p><p>(a) Find \(\dfrac{\mathrm{d}y}{\mathrm{d}x}\). [3]</p><p>(b) The tangent to the curve at the point where \(x=2\) meets the \(y\)-axis at the point with coordinates \((0,p)\). Find \(p\). [3]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(a) Product rule: \(\dfrac{\mathrm{d}y}{\mathrm{d}x}=\tan^{-1}\left(\frac{1}{2}x\right)+x\times\dfrac{\mathrm{d}}{\mathrm{d}x}\tan^{-1}\left(\frac{1}{2}x\right)\) <span class="mark">M1</span> Official MS: M1, use of the product rule.</li>
+<li>(a) \(\dfrac{\mathrm{d}}{\mathrm{d}x}\tan^{-1}\left(\frac{1}{2}x\right)=\dfrac{1/2}{1+x^2/4}=\dfrac{2}{4+x^2}\) <span class="mark">M1</span> Official MS: M1, derivative of tan⁻¹(½x) of the form k/(4 + x²), where k = 2 or 4.</li>
+<li>(a) \(\dfrac{\mathrm{d}y}{\mathrm{d}x}=\tan^{-1}\left(\frac{1}{2}x\right)+\dfrac{2x}{x^2+4}\) <span class="mark">A1</span> Official MS: A1 for the correct derivative.</li>
+<li>(b) At \(x=2\): \(y=2\tan^{-1}1=\frac{1}{2}\pi\) <span class="mark">B1</span> Official MS: B1, y-coordinate ½π.</li>
+<li>(b) Gradient at \(x=2\) is \(\frac{1}{4}\pi+\frac{4}{8}=\frac{1}{4}\pi+\frac{1}{2}\). Tangent: \(y-\frac{1}{2}\pi=\left(\frac{1}{4}\pi+\frac{1}{2}\right)(x-2)\); put \(x=0\). <span class="mark">M1</span> Official MS: M1, complete method for p, e.g. equation of tangent with x = 0, or gradient at x = 2 equal to (½π − p)/2.</li>
+<li>(b) \(p=\frac{1}{2}\pi-\frac{1}{2}\pi-1=-1\) <span class="mark">A1</span> Official MS: A1, p = −1.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>Find the gradient of the curve \(y=\tan^{-1}(2x)\) at the point where \(x=1\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{2}{1+4x^2}\)</li><li>At \(x=1\): \(\dfrac{2}{5}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(0.4\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>Find the gradient of the curve \(y=\tan^{-1}\left(\dfrac{x}{3}\right)\) at the point where \(x=4\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{3}{9+x^2}\)</li><li>At \(x=4\): \(\dfrac{3}{25}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(0.12\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>Find the gradient of the curve \(y=\tan^{-1}(2x^2)\) at the point where \(x=1\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{4x}{1+4x^4}\)</li><li>At \(x=1\): \(\dfrac{4}{5}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(0.8\)</p>
+</details>
+</div>
+</section>

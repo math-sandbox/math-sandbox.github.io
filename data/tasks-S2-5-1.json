@@ -1,0 +1,451 @@
+[
+    {
+        "id": "S2-5.1-QC1-gen",
+        "section": "S2-5.1",
+        "kind": "generated",
+        "title": "Number of possible random samples of size 2",
+        "marks": 2,
+        "source": "Theory S2-5.1 Quick check 1; number of samples is N choose 2",
+        "params": [
+            {
+                "name": "N",
+                "min": 6,
+                "max": 30,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "M": "N-1",
+            "A": "N*(N-1)/2"
+        },
+        "constraints": [
+            "N>=6"
+        ],
+        "original": {
+            "N": 10
+        },
+        "stem": "A random sample of size 2 is chosen from a population of {N|int} people, so that every possible sample of size 2 is equally likely. How many different samples of size 2 are possible?",
+        "answer": {
+            "expression": "N*M/2",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "The number of samples is \\({}^{{N|int}}C_2=\\dfrac{{N|int}\\times{M|int}}{2}\\).",
+                "result": "N*M",
+                "format": "int",
+                "mark": "M1",
+                "note": "Order does not matter in a sample, so count combinations of 2 from N."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(=\\dfrac{{K|int}}{2}={A|int}\\)",
+                "result": "N*M/2",
+                "format": "int",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original population of 10, giving 45 samples"
+            },
+            {
+                "id": "club",
+                "stem": "Two members of a club with {N|int} members are chosen as a random sample. How many different samples of two members could be chosen?"
+            },
+            {
+                "id": "items",
+                "stem": "A sample of 2 items is to be taken at random from a batch of {N|int} items, with every possible sample equally likely. Find the number of possible samples."
+            }
+        ],
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-5.1"
+            ],
+            "topic": "Sampling",
+            "chapter": "S2-5",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-5-1.json",
+                "locator": "S2-5.1-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "S2-5.1-QC2-gen",
+        "section": "S2-5.1",
+        "kind": "generated",
+        "title": "Chance that a given member is in a random sample",
+        "marks": 2,
+        "source": "Theory S2-5.1 Quick check 2; probability is n divided by N",
+        "params": [
+            {
+                "name": "n",
+                "min": 3,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "N",
+                "min": 20,
+                "max": 60,
+                "step": 5
+            }
+        ],
+        "derived": {
+            "A": "n/N"
+        },
+        "constraints": [
+            "n<N"
+        ],
+        "original": {
+            "n": 6,
+            "N": 40
+        },
+        "stem": "A random sample of {n|int} students is chosen from the {N|int} students in a year group. Find the probability that a particular student, Lina, is in the sample.",
+        "answer": {
+            "expression": "n/N",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "In a random sample every member of the population has the same chance of being chosen, so the probability is \\(\\dfrac{{n|int}}{{N|int}}\\).",
+                "result": "n/N",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Each of the N members has the same chance and n places are filled."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(={A|sf3z}\\)",
+                "result": "n/N",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Evaluate to 3 significant figures."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original sample of 6 from 40, probability 0.150"
+            },
+            {
+                "id": "workers",
+                "stem": "A company has {N|int} employees. A random sample of {n|int} employees is chosen for a survey. Find the probability that a particular employee is chosen."
+            },
+            {
+                "id": "plants",
+                "stem": "A random sample of {n|int} plants is taken from a field of {N|int} plants. Find the probability that one particular plant is in the sample."
+            }
+        ],
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-5.1"
+            ],
+            "topic": "Sampling",
+            "chapter": "S2-5",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-5-1.json",
+                "locator": "S2-5.1-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "S2-5.1-QC3-gen",
+        "section": "S2-5.1",
+        "kind": "generated",
+        "title": "Proportion of three-digit random numbers that can be used",
+        "marks": 2,
+        "source": "Theory S2-5.1 Quick check 3; proportion is N divided by 1000",
+        "params": [
+            {
+                "name": "N",
+                "min": 150,
+                "max": 950,
+                "step": 10
+            }
+        ],
+        "derived": {
+            "M": "N-1",
+            "A": "N/1000"
+        },
+        "constraints": [
+            "N>=150"
+        ],
+        "original": {
+            "N": 350
+        },
+        "stem": "The {N|int} members of a population are numbered 000 to {M|int}. Three-digit random numbers from 000 to 999 are used to choose a sample, and any number greater than {M|int} is ignored. What proportion of the random numbers can be used?",
+        "answer": {
+            "expression": "N/1000",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "There are \\({N|int}\\) usable numbers, 000 to \\({M|int}\\), out of \\(1000\\) possible numbers.",
+                "result": "N",
+                "format": "int",
+                "mark": "M1",
+                "note": "Count the labels that are in range."
+            },
+            {
+                "name": "A",
+                "text_tex": "Proportion \\(=\\dfrac{{N|int}}{1000}={A|sf3z}\\)",
+                "result": "N/1000",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original population numbered 000 to 349, proportion 0.350"
+            },
+            {
+                "id": "labels",
+                "stem": "A list of {N|int} houses is numbered from 000 to {M|int}. A three-digit random number is chosen from 000 to 999. Find the probability that it can be used as a house number on the list."
+            },
+            {
+                "id": "frame",
+                "stem": "A sampling frame has {N|int} names, labelled 000 to {M|int}. Three-digit random numbers from 000 to 999 are read from a table, and numbers above {M|int} are rejected. Find the proportion of the random numbers that are kept."
+            }
+        ],
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-5.1"
+            ],
+            "topic": "Sampling",
+            "chapter": "S2-5",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-5-1.json",
+                "locator": "S2-5.1-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "S2-5.1-PP-9709-62-ON21-Q2",
+        "section": "S2-5.1",
+        "kind": "pastpaper",
+        "title": "Choosing a representative sample of six students",
+        "marks": 3,
+        "source": {
+            "paper": "9709/62/O/N/21 Q2",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w21_qp_62.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w21_ms_62.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Andy and Jessica are doing a survey about musical preferences. They plan to choose a representative sample of six students from the 256 students at their college.</p><p>(a) Andy suggests that they go to the music building during the lunch hour and choose six students at random from the students who are there. Give a reason why this method is unsatisfactory. [1]</p><p>(b) Jessica decides to use another method. She numbers all the students in the college from 1 to 256. Then she uses her calculator and generates the following random numbers.</p><p>204393 &nbsp; 162007 &nbsp; 204028 &nbsp; 587119 &nbsp; 207395</p><p>From these numbers, she obtains six student numbers. The first three of her student numbers are 204, 162 and 7. Continue Jessica’s method to obtain the next three student numbers. [2]</p>",
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-5.1"
+            ],
+            "topic": "Sampling",
+            "chapter": "S2-5",
+            "marks": 3,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-5-1.json",
+                "locator": "S2-5.1-PP-9709-62-ON21-Q2"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) The sample is biased towards students who play instruments or study music, so it is not representative of all 256 students.",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 OE, e.g. bias towards students who play instruments or only music students, or the six will possibly be friends or have similar music preferences. Or any reason that some are excluded, e.g. because it is lunchtime or because the music building is chosen, or any suggestion that opinions may not be independent. Note: not representative of all students needs qualifying."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(b) Jessica reads the digits in groups of three, ignoring numbers above 256 and repeats: 204, 393 (ignore), 162, 007, 204 (repeat), 028, 587 (ignore), 119, 207. The next two numbers are 28 and 119.",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 for 28, 119 (condone 028)."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(b) The sixth number is 207.",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 for 207 and only 3 values stated."
+            }
+        ]
+    },
+    {
+        "id": "S2-5.1-PP-9709-73-MJ15-Q1",
+        "section": "S2-5.1",
+        "kind": "pastpaper",
+        "title": "Choosing five students from a year group",
+        "marks": 5,
+        "source": {
+            "paper": "9709/73/M/J/15 Q1",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s15_qp_73.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s15_ms_73.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Jyothi wishes to choose a representative sample of 5 students from the 82 members of her school year.</p><p>(i) She considers going into the canteen and choosing a table with five students from her year sitting at it, and using these five people as her sample. Give two reasons why this method is unsatisfactory. [2]</p><p>(ii) Jyothi decides to use another method. She numbers all the students in her year from 1 to 82. Then she uses her calculator and generates the following random numbers.</p><p>231492 &nbsp; 762305 &nbsp; 346280</p><p>From these numbers, she obtains the student numbers 23, 14, 76, 5, 34 and 62. Explain how Jyothi obtained these student numbers from the list of random numbers. [3]</p>",
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-5.1"
+            ],
+            "topic": "Sampling",
+            "chapter": "S2-5",
+            "marks": 5,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-5-1.json",
+                "locator": "S2-5.1-PP-9709-73-MJ15-Q1"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(i) Only students who use the canteen can be chosen.",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, e.g. only students who use canteen, or any reason that some are excluded. Each sensible reason must be in context."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(i) The five students at one table will probably be friends, so their views are not independent.",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, the five will probably be friends. B1 each sensible reason, in context."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(ii) She splits the digits into two-digit numbers: 23, 14, 92, 76, 23, 05, 34, 62, 80.",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, 2-digits."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(ii) She ignores 92 and 80 because they are greater than 82.",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, ignore > 82 (anything too big)."
+            },
+            {
+                "name": "s5",
+                "text_tex": "(ii) She ignores the second 23 because it is a repeat.",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, ignore repeats."
+            }
+        ]
+    },
+    {
+        "id": "S2-5.1-PP-9709-73-MJ19-Q3",
+        "section": "S2-5.1",
+        "kind": "pastpaper",
+        "title": "Using a die to make a random choice",
+        "marks": 4,
+        "source": {
+            "paper": "9709/73/M/J/19 Q3",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s19_qp_73.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s19_ms_73.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Luis has to choose one person at random from four people, \\(A\\), \\(B\\), \\(C\\) and \\(D\\). He throws a fair six-sided die. If the score is 1, he will choose \\(A\\). If the score is 2 he will choose \\(B\\). If the score is 3, he will choose \\(C\\). If the score is 4 or more he will choose \\(D\\).</p><p>(i) Explain why the choice made by this method is not random. [1]</p><p>(ii) Describe how Luis could use a single throw of the die to make a random choice. [1]</p><p>On another day, Luis has to choose two people at random from the same four people, \\(A\\), \\(B\\), \\(C\\) and \\(D\\).</p><p>(iii) List the possible choices of two people and hence describe how Luis could use a single throw of the die to make this random choice. [2]</p>",
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-5.1"
+            ],
+            "topic": "Sampling",
+            "chapter": "S2-5",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-5-1.json",
+                "locator": "S2-5.1-PP-9709-73-MJ19-Q3"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(i) \\(D\\) is more likely to be chosen: \\(\\mathrm{P}(A)=\\mathrm{P}(B)=\\mathrm{P}(C)=\\dfrac{1}{6}\\) but \\(\\mathrm{P}(D)=\\dfrac{1}{2}\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 oe, D more likely to be chosen, e.g. P(D) > P(A), e.g. P(A) = P(B) = P(C) = 1/6, P(D) = 1/2, no contradictions."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(ii) Choose \\(D\\) when the score is 4 and throw again (reject the throw) if the score is 5 or 6.",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, reject scores of 5 or 6, or other correct: choose D when the score is 4."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(iii) The possible pairs are \\(AB\\), \\(AC\\), \\(AD\\), \\(BC\\), \\(BD\\) and \\(CD\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, AB AC AD BC BD CD."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(iii) Allocate one pair to each score: 1: \\(AB\\), 2: \\(AC\\), 3: \\(AD\\), 4: \\(BC\\), 5: \\(BD\\), 6: \\(CD\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 or similar, allocate as follows: 1: AB; 2: AC; 3: AD; 4: BC; 5: BD; 6: CD."
+            }
+        ]
+    }
+]
