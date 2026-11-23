@@ -1,0 +1,428 @@
+[
+    {
+        "id": "P23-9.2-QC1-gen",
+        "section": "P23-9.2",
+        "kind": "generated",
+        "title": "Distance between two points from position vectors",
+        "marks": 2,
+        "source": "Theory P23-9.2 Quick check 1; AB is b minus a",
+        "params": [
+            {
+                "name": "a1",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "a2",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "a3",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "b1",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "b2",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "b3",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "d1": "b1-a1",
+            "d2": "b2-a2",
+            "d3": "b3-a3",
+            "N": "(b1-a1)*(b1-a1)+(b2-a2)*(b2-a2)+(b3-a3)*(b3-a3)",
+            "A": "math.pow((b1-a1)*(b1-a1)+(b2-a2)*(b2-a2)+(b3-a3)*(b3-a3),0.5)"
+        },
+        "constraints": [
+            "b1>a1"
+        ],
+        "original": {
+            "a1": 1,
+            "a2": 2,
+            "a3": -1,
+            "b1": 3,
+            "b2": -1,
+            "b3": 5
+        },
+        "stem": "The points \\(A\\) and \\(B\\) have position vectors \\(\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}\\) and \\(\\begin{pmatrix}{b1|int}\\\\{b2|int}\\\\{b3|int}\\end{pmatrix}\\). Find the distance \\(AB\\).",
+        "answer": {
+            "expression": "math.pow(N,0.5)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\overrightarrow{AB}=\\mathbf{b}-\\mathbf{a}=\\begin{pmatrix}{d1|int}\\\\{d2|int}\\\\{d3|int}\\end{pmatrix}\\), so \\(AB^2={N|int}\\)",
+                "result": "N",
+                "format": "int",
+                "mark": "M1",
+                "note": "Subtract position vectors, then use Pythagoras."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(AB=\\sqrt{{N|int}}={A|sf3z}\\)",
+                "result": "math.pow(N,0.5)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Square root."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original A(1, 2, -1) and B(3, -1, 5), AB = 7"
+            },
+            {
+                "id": "pts",
+                "stem": "Relative to an origin \\(O\\), \\(\\overrightarrow{OA}=\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}\\) and \\(\\overrightarrow{OB}=\\begin{pmatrix}{b1|int}\\\\{b2|int}\\\\{b3|int}\\end{pmatrix}\\). Find \\(\\lvert \\overrightarrow{AB}\\rvert \\)."
+            },
+            {
+                "id": "len",
+                "stem": "Find the length of the line segment joining the points with position vectors \\(\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}\\) and \\(\\begin{pmatrix}{b1|int}\\\\{b2|int}\\\\{b3|int}\\end{pmatrix}\\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-9.2"
+            ],
+            "topic": "Vectors",
+            "chapter": "P23-9",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-9-2.json",
+                "locator": "P23-9.2-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-9.2-QC2-gen",
+        "section": "P23-9.2",
+        "kind": "generated",
+        "title": "Distance of a midpoint from the origin",
+        "marks": 2,
+        "source": "Theory P23-9.2 Quick check 2; midpoint is half of (a + b)",
+        "params": [
+            {
+                "name": "a1",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "a2",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "a3",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "b1",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "b2",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "b3",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "m1": "(a1+b1)/2",
+            "m2": "(a2+b2)/2",
+            "m3": "(a3+b3)/2",
+            "N": "((a1+b1)*(a1+b1)+(a2+b2)*(a2+b2)+(a3+b3)*(a3+b3))/4",
+            "A": "math.pow(((a1+b1)*(a1+b1)+(a2+b2)*(a2+b2)+(a3+b3)*(a3+b3))/4,0.5)"
+        },
+        "constraints": [
+            "a1+b1>0"
+        ],
+        "original": {
+            "a1": 1,
+            "a2": 4,
+            "a3": -2,
+            "b1": 3,
+            "b2": 0,
+            "b3": 6
+        },
+        "stem": "The points \\(A\\) and \\(B\\) have position vectors \\(\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}\\) and \\(\\begin{pmatrix}{b1|int}\\\\{b2|int}\\\\{b3|int}\\end{pmatrix}\\). \\(M\\) is the midpoint of \\(AB\\). Find \\(OM\\), the distance of \\(M\\) from the origin.",
+        "answer": {
+            "expression": "math.pow(N,0.5)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\overrightarrow{OM}=\\dfrac{1}{2}(\\mathbf{a}+\\mathbf{b})=\\begin{pmatrix}{m1|num}\\\\{m2|num}\\\\{m3|num}\\end{pmatrix}\\)",
+                "result": "N",
+                "format": "num",
+                "mark": "M1",
+                "note": "Midpoint is the mean of the position vectors."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(OM=\\sqrt{{N|num}}={A|sf3z}\\)",
+                "result": "math.pow(N,0.5)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Magnitude."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original A(1, 4, -2) and B(3, 0, 6), M(2, 2, 2), OM = root 12"
+            },
+            {
+                "id": "mid",
+                "stem": "Relative to the origin \\(O\\), \\(\\overrightarrow{OA}=\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}\\) and \\(\\overrightarrow{OB}=\\begin{pmatrix}{b1|int}\\\\{b2|int}\\\\{b3|int}\\end{pmatrix}\\). Find the magnitude of the position vector of the midpoint of \\(AB\\)."
+            },
+            {
+                "id": "om",
+                "stem": "\\(M\\) is the midpoint of the line joining \\(A\\) \\(\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}\\) and \\(B\\) \\(\\begin{pmatrix}{b1|int}\\\\{b2|int}\\\\{b3|int}\\end{pmatrix}\\). Calculate \\(\\lvert \\overrightarrow{OM}\\rvert \\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-9.2"
+            ],
+            "topic": "Vectors",
+            "chapter": "P23-9",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-9-2.json",
+                "locator": "P23-9.2-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-9.2-QC3-gen",
+        "section": "P23-9.2",
+        "kind": "generated",
+        "title": "Point C with AB = BC",
+        "marks": 2,
+        "source": "Theory P23-9.2 Quick check 3; OC = 2OB - OA",
+        "params": [
+            {
+                "name": "a1",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "a2",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "a3",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "b1",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "b2",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "b3",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "c1": "2*b1-a1",
+            "c2": "2*b2-a2",
+            "c3": "2*b3-a3",
+            "N": "(2*b1-a1)*(2*b1-a1)+(2*b2-a2)*(2*b2-a2)+(2*b3-a3)*(2*b3-a3)",
+            "A": "math.pow((2*b1-a1)*(2*b1-a1)+(2*b2-a2)*(2*b2-a2)+(2*b3-a3)*(2*b3-a3),0.5)"
+        },
+        "constraints": [
+            "b1>a1"
+        ],
+        "original": {
+            "a1": 2,
+            "a2": -5,
+            "a3": -2,
+            "b1": 4,
+            "b2": -4,
+            "b3": 2
+        },
+        "stem": "Relative to an origin \\(O\\), \\(\\overrightarrow{OA}=\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}\\) and \\(\\overrightarrow{OB}=\\begin{pmatrix}{b1|int}\\\\{b2|int}\\\\{b3|int}\\end{pmatrix}\\). The point \\(C\\) is such that \\(\\overrightarrow{AB}=\\overrightarrow{BC}\\). Find \\(\\lvert \\overrightarrow{OC}\\rvert \\).",
+        "answer": {
+            "expression": "math.pow(N,0.5)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\overrightarrow{OC}=2\\overrightarrow{OB}-\\overrightarrow{OA}=\\begin{pmatrix}{c1|int}\\\\{c2|int}\\\\{c3|int}\\end{pmatrix}\\)",
+                "result": "N",
+                "format": "int",
+                "mark": "M1",
+                "note": "C is the reflection of A in B."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\lvert \\overrightarrow{OC}\\rvert =\\sqrt{{N|int}}={A|sf3z}\\)",
+                "result": "math.pow(N,0.5)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Magnitude."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original A(2, -5, -2) and B(4, -4, 2), OC = 6i - 3j + 6k, |OC| = 9"
+            },
+            {
+                "id": "mid",
+                "stem": "\\(B\\) is the midpoint of \\(AC\\). Given \\(\\overrightarrow{OA}=\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}\\) and \\(\\overrightarrow{OB}=\\begin{pmatrix}{b1|int}\\\\{b2|int}\\\\{b3|int}\\end{pmatrix}\\), find the distance of \\(C\\) from the origin."
+            },
+            {
+                "id": "ext",
+                "stem": "The line segment \\(AB\\) is extended to \\(C\\) so that \\(BC=AB\\). With \\(\\overrightarrow{OA}=\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}\\) and \\(\\overrightarrow{OB}=\\begin{pmatrix}{b1|int}\\\\{b2|int}\\\\{b3|int}\\end{pmatrix}\\), find \\(OC\\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-9.2"
+            ],
+            "topic": "Vectors",
+            "chapter": "P23-9",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-9-2.json",
+                "locator": "P23-9.2-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-9.2-PP-9709-12-MJ16-Q3",
+        "section": "P23-9.2",
+        "kind": "pastpaper",
+        "title": "Unit vector in the direction of OC",
+        "marks": 4,
+        "source": {
+            "paper": "9709/12/M/J/16 Q3",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s16_qp_12.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s16_ms_12.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Relative to an origin \\(O\\), the position vectors of points \\(A\\) and \\(B\\) are given by</p><p>\\(\\overrightarrow{OA}=2\\mathbf{i}-5\\mathbf{j}-2\\mathbf{k}\\) and \\(\\overrightarrow{OB}=4\\mathbf{i}-4\\mathbf{j}+2\\mathbf{k}.\\)</p><p>The point \\(C\\) is such that \\(\\overrightarrow{AB}=\\overrightarrow{BC}\\). Find the unit vector in the direction of \\(\\overrightarrow{OC}\\). [4]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-9.2"
+            ],
+            "topic": "Vectors",
+            "chapter": "P23-9",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-9-2.json",
+                "locator": "P23-9.2-PP-9709-12-MJ16-Q3"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(\\overrightarrow{AB}=2\\mathbf{i}+\\mathbf{j}+4\\mathbf{k}\\) (or \\(\\overrightarrow{AC}=4\\mathbf{i}+2\\mathbf{j}+8\\mathbf{k}\\))",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, AB = 2i + j + 4k or AC = 4i + 2j + 8k."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(\\overrightarrow{OC}=\\overrightarrow{OA}+\\overrightarrow{AC}=6\\mathbf{i}-3\\mathbf{j}+6\\mathbf{k}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, correct method for OC (alternatives: OC = 2OB − OA)."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(\\lvert \\overrightarrow{OC}\\rvert =\\sqrt{36+9+36}=9\\); divide \\(\\overrightarrow{OC}\\) by 9",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, divides by their modulus of their OC."
+            },
+            {
+                "name": "s4",
+                "text_tex": "Unit vector \\(=\\dfrac{1}{9}(6\\mathbf{i}-3\\mathbf{j}+6\\mathbf{k})\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, correct unsimplified expression, (6i − 3j + 6k) ÷ 9."
+            }
+        ]
+    }
+]

@@ -1,0 +1,411 @@
+[
+    {
+        "id": "IGCSE-22.1-QC1-gen",
+        "section": "IGCSE-22.1",
+        "kind": "generated",
+        "title": "Rectangle perimeter equation",
+        "marks": 2,
+        "source": "Theory IGCSE-22.1 Quick check 1; perimeter is twice length plus twice width",
+        "params": [
+            {
+                "name": "x",
+                "min": 3,
+                "max": 20,
+                "step": 1
+            },
+            {
+                "name": "a",
+                "min": 1,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "P": "4*x+2*a",
+            "Q": "4*x",
+            "A": "x"
+        },
+        "constraints": [
+            "x>=3"
+        ],
+        "original": {
+            "x": 7,
+            "a": 5
+        },
+        "stem": "The length of a rectangle is \\({a|int}\\) cm more than its width. The perimeter is \\({P|int}\\) cm. The width is \\(x\\) cm. Write an equation in \\(x\\) and solve it to find the width.",
+        "answer": {
+            "expression": "(P-2*a)/4",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(2x+2(x+{a|int})={P|int}\\), so \\(4x={Q|int}\\)",
+                "result": "Q",
+                "format": "int",
+                "mark": "M1",
+                "note": "Form the equation and simplify."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(x={A|int}\\)",
+                "result": "Q/4",
+                "format": "int",
+                "mark": "A1",
+                "note": "Divide by 4."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original length 5 cm more than the width, perimeter 38 cm, width 7 cm"
+            },
+            {
+                "id": "garden",
+                "stem": "A rectangular garden is \\({a|int}\\) m longer than it is wide, and the distance all the way round it is \\({P|int}\\) m. Let the width be \\(x\\) m. Form and solve an equation to find \\(x\\)."
+            },
+            {
+                "id": "card",
+                "stem": "A rectangular card has width \\(x\\) cm and length \\((x+{a|int})\\) cm. Its perimeter is \\({P|int}\\) cm. Find the width of the card."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-22.1"
+            ],
+            "topic": "More equations, formulae and functions",
+            "chapter": "IGCSE-22",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-22-1.json",
+                "locator": "IGCSE-22.1-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-22.1-QC2-gen",
+        "section": "IGCSE-22.1",
+        "kind": "generated",
+        "title": "Three consecutive integers",
+        "marks": 2,
+        "source": "Theory IGCSE-22.1 Quick check 2; n, n + 1, n + 2",
+        "params": [
+            {
+                "name": "n",
+                "min": 5,
+                "max": 40,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "S": "3*n+3",
+            "T": "3*n",
+            "A": "n"
+        },
+        "constraints": [
+            "n>=5"
+        ],
+        "original": {
+            "n": 16
+        },
+        "stem": "The sum of three consecutive integers is \\({S|int}\\). Let the smallest integer be \\(n\\). Form an equation and solve it to find \\(n\\).",
+        "answer": {
+            "expression": "(S-3)/3",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(n+(n+1)+(n+2)={S|int}\\), so \\(3n={T|int}\\)",
+                "result": "T",
+                "format": "int",
+                "mark": "M1",
+                "note": "Form and simplify the equation."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(n={A|int}\\)",
+                "result": "T/3",
+                "format": "int",
+                "mark": "A1",
+                "note": "Solve."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original sum 51, smallest integer 16"
+            },
+            {
+                "id": "pages",
+                "stem": "A book is opened and three consecutive page numbers are added together. The total is \\({S|int}\\). Find the smallest of the three page numbers."
+            },
+            {
+                "id": "ints",
+                "stem": "Three whole numbers follow on one after another and add up to \\({S|int}\\). Write an equation and find the smallest number."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-22.1"
+            ],
+            "topic": "More equations, formulae and functions",
+            "chapter": "IGCSE-22",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-22-1.json",
+                "locator": "IGCSE-22.1-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-22.1-QC3-gen",
+        "section": "IGCSE-22.1",
+        "kind": "generated",
+        "title": "Angles of a triangle in terms of x",
+        "marks": 2,
+        "source": "Theory IGCSE-22.1 Quick check 3; angles in a triangle add to 180",
+        "params": [
+            {
+                "name": "x",
+                "min": 15,
+                "max": 40,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "a": "180-4*x",
+            "T": "4*x",
+            "A": "x"
+        },
+        "constraints": [
+            "x<=40"
+        ],
+        "original": {
+            "x": 30
+        },
+        "stem": "The angles of a triangle are \\(x^\\circ\\), \\((x+{a|int})^\\circ\\) and \\(2x^\\circ\\). Form an equation and solve it to find \\(x\\).",
+        "answer": {
+            "expression": "(180-a)/4",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(x+x+{a|int}+2x=180\\), so \\(4x={T|int}\\)",
+                "result": "T",
+                "format": "int",
+                "mark": "M1",
+                "note": "Angle sum of a triangle."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(x={A|int}\\)",
+                "result": "T/4",
+                "format": "int",
+                "mark": "A1",
+                "note": "Solve."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original angles x, x + 60 and 2x, x = 30"
+            },
+            {
+                "id": "tri",
+                "stem": "In triangle \\(ABC\\), angle \\(A=x^\\circ\\), angle \\(B\\) is \\({a|int}^\\circ\\) more than angle \\(A\\), and angle \\(C\\) is twice angle \\(A\\). Find \\(x\\)."
+            },
+            {
+                "id": "eq",
+                "stem": "A triangle has angles of size \\(x^\\circ\\), \\(2x^\\circ\\) and \\((x+{a|int})^\\circ\\). Write down an equation in \\(x\\) and solve it."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-22.1"
+            ],
+            "topic": "More equations, formulae and functions",
+            "chapter": "IGCSE-22",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-22-1.json",
+                "locator": "IGCSE-22.1-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-22.1-PP-0580-22-FM22-Q18",
+        "section": "IGCSE-22.1",
+        "kind": "pastpaper",
+        "title": "Cost of a jacket",
+        "marks": 3,
+        "source": {
+            "paper": "0580/22/F/M/22 Q18",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_m22_qp_22.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_m22_ms_22.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Mrs Kohli buys a jacket, 2 shirts and a hat.</p><p>The jacket costs $\\(x\\).</p><p>The shirts each cost $24 less than the jacket and the hat costs $16 less than the jacket.</p><p>Mrs Kohli spends exactly $100.</p><p>Write down an equation in terms of \\(x\\).</p><p>Solve this equation to find the cost of the jacket. [3]</p>",
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-22.1"
+            ],
+            "topic": "More equations, formulae and functions",
+            "chapter": "IGCSE-22",
+            "marks": 3,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-22-1.json",
+                "locator": "IGCSE-22.1-PP-0580-22-FM22-Q18"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(x+2(x-24)+x-16=100\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1 for x + 2(x − 24) + x − 16 = 100 OE."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(4x-64=100\\), so \\(4x=164\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M2 for 4x = 164 (or M1 for correctly simplifying their equation to the form kx = c, provided at least one part is correct from 2(x − 24) OE or x − 16)."
+            },
+            {
+                "name": "s3",
+                "text_tex": "Jacket costs $41.",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: 41 from a correct equation, 3 marks. B1 for answer 41 without an equation in x shown."
+            }
+        ]
+    },
+    {
+        "id": "IGCSE-22.1-PP-0580-21-MJ25-Q18",
+        "section": "IGCSE-22.1",
+        "kind": "pastpaper",
+        "title": "Running and walking times",
+        "marks": 10,
+        "source": {
+            "paper": "0580/21/M/J/25 Q18",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s25_qp_21.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s25_ms_21.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>One day, Anya runs 12 km at a speed of \\(x\\) km/h.</p><p>The next day she walks 10 km at a speed of \\((x-4)\\) km/h.</p><p>(a) Write down an expression, in terms of \\(x\\), for the time she spends running. [1]</p><p>(b) Write down an expression, in terms of \\(x\\), for the time she spends walking. [1]</p><p>(c) The time Anya spends walking is 1 hour more than the time she spends running.</p><p>Write an equation in terms of \\(x\\) and show that it simplifies to \\(x^2-2x-48=0\\). [4]</p><p>(d) Use factorisation to solve the equation \\(x^2-2x-48=0\\). [3]</p><p>(e) Find the time Anya spends running. [1]</p>",
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-22.1"
+            ],
+            "topic": "More equations, formulae and functions",
+            "chapter": "IGCSE-22",
+            "marks": 10,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-22-1.json",
+                "locator": "IGCSE-22.1-PP-0580-21-MJ25-Q18"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) \\(\\dfrac{12}{x}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: 12/x, 1 mark."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(b) \\(\\dfrac{10}{x-4}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: 10/(x − 4), 1 mark."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(c) \\(\\dfrac{10}{x-4}-\\dfrac{12}{x}=1\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, their 10/(x − 4) − their 12/x = 1 OE."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(c) \\(10x-12(x-4)=x(x-4)\\), so \\(10x-12x+48=x^2-4x\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M2",
+                "note": "Official MS: M2, correctly multiplying their brackets and clearing algebraic fractions; or M1 for correctly clearing, or correctly collecting into a single fraction, two fractions both with different algebraic denominators."
+            },
+            {
+                "name": "s5",
+                "text_tex": "(c) Leading to \\(0=x^2-2x-48\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, with no errors or omissions seen, dependent on M3."
+            },
+            {
+                "name": "s6",
+                "text_tex": "(d) \\((x+6)(x-8)=0\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M2",
+                "note": "Official MS: M2; M1 for x(x − 8) + 6(x − 8) or x(x + 6) − 8(x + 6), or (x + a)(x + b) where ab = −48 or a + b = −2."
+            },
+            {
+                "name": "s7",
+                "text_tex": "(d) \\(x=-6\\) or \\(x=8\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, −6, 8."
+            },
+            {
+                "name": "s8",
+                "text_tex": "(e) \\(\\dfrac{12}{8}=1.5\\) h",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: 1.5 or 1½, 1 mark; FT 12 ÷ their positive root from (d)."
+            }
+        ]
+    }
+]

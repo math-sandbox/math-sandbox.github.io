@@ -1,0 +1,83 @@
+<script>if(location.hostname.endsWith('onrender.com'))location.replace('https://math-sandbox.pages.dev'+location.pathname+location.search+location.hash)</script>
+<section class="theory" data-section="S1-6.2">
+<h2>6.2 Probability distributions</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Probability &amp; Statistics 1 Coursebook (Dean Chalmers), Chapter 6 Probability distributions, printed pp.150–155. Own wording and new numbers, following the coursebook method of listing values and finding their probabilities.</p>
+<p class="key-words"><strong>Key words:</strong> <em>probability distribution</em>, <em>discrete random variable</em>, <em>without replacement</em></p>
+<h3>Drawing up a probability distribution</h3>
+<p>The probability distribution of a discrete random variable \(X\) lists every possible value of \(X\) with its probability, usually in a table. To draw one up:</p>
+<ol><li>Decide which values \(X\) can take. Check the smallest and the largest possible value.</li><li>Find the probability of each value, using a sample space diagram, a tree diagram, or arrangements.</li><li>Check that the probabilities add up to 1.</li></ol>
+<p>When several arrangements give the same value, find the probability of one arrangement and multiply by the number of arrangements. For example, two heads in three tosses can happen as HHT, HTH or THH.</p>
+<p>When objects are taken without replacement, the denominators go down by 1 each time, because there is one object fewer left.</p>
+<div class="worked-example">
+<h4>Worked example 1: Taking counters</h4>
+<p class="src">Coursebook, 6.2, probability distributions. New numbers.</p>
+<p>A box contains 4 blue and 2 yellow discs. Two are taken at random without replacement. \(X\) is the number of yellow discs taken. Draw up the probability distribution of \(X\).</p>
+<ol class="steps">
+<li>\(X\) can be 0, 1 or 2. <span class="mark">B1</span></li>
+<li>\(P(X=0)=\dfrac{4}{6}\times\dfrac{3}{5}=\dfrac{6}{15}\) and \(P(X=2)=\dfrac{2}{6}\times\dfrac{1}{5}=\dfrac{1}{15}\) <span class="mark">M1</span></li>
+<li>\(P(X=1)=2\times\dfrac{4}{6}\times\dfrac{2}{5}=\dfrac{8}{15}\) <span class="mark">M1</span></li>
+<li>Check: \(\dfrac{6}{15}+\dfrac{8}{15}+\dfrac{1}{15}=1\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(P(X=0)=\dfrac{6}{15}\), \(P(X=1)=\dfrac{8}{15}\), \(P(X=2)=\dfrac{1}{15}\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: Scores on two spinners</h4>
+<p class="src">Coursebook, 6.2, sample space diagrams. New numbers.</p>
+<p>Two fair spinners, each numbered 1, 2, 3, are spun. \(X\) is the larger of the two scores (or the common score if they are equal). Find the probability distribution of \(X\).</p>
+<ol class="steps">
+<li>There are 9 equally likely outcomes. <span class="mark">B1</span></li>
+<li>Larger score 1: only (1, 1), so \(P(X=1)=\dfrac{1}{9}\) <span class="mark">M1</span></li>
+<li>Larger score 2: (1, 2), (2, 1), (2, 2), so \(P(X=2)=\dfrac{3}{9}\) <span class="mark">M1</span></li>
+<li>\(P(X=3)=1-\dfrac{1}{9}-\dfrac{3}{9}=\dfrac{5}{9}\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{1}{9}, \dfrac{3}{9}, \dfrac{5}{9}\) for \(x=1, 2, 3\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Missing a possible value, such as \(X=0\), from the table.</li><li>Forgetting to multiply by the number of arrangements when the order does not matter.</li><li>Keeping the same denominator for every pick when the objects are taken without replacement.</li></ul>
+<h3>Past paper</h3>
+<p class="src">9709/62/F/M/16 Q2, official QP and official MS.</p>
+<p>A flower shop has 5 yellow roses, 3 red roses and 2 white roses. Martin chooses 3 roses at random.</p><p>Draw up the probability distribution table for the number of white roses Martin chooses. [4]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>Number of white roses: 0, 1, 2 <span class="mark">B1</span> Official MS: B1, 0, 1, 2 seen in the table with an attempt at probabilities.</li>
+<li>\(P(0)=\dfrac{8}{10}\times\dfrac{7}{9}\times\dfrac{6}{8}=\dfrac{42}{90}\) <span class="mark">M1</span> Official MS: M1, a 3-factor probability seen with different denominators.</li>
+<li>\(P(1)=\dfrac{2}{10}\times\dfrac{8}{9}\times\dfrac{7}{8}\times 3=\dfrac{42}{90}\) and \(P(2)=\dfrac{2}{10}\times\dfrac{1}{9}\times\dfrac{8}{8}\times 3=\dfrac{6}{90}\) <span class="mark">M1</span> Official MS: M1, multiplying by 3.</li>
+<li>Table: \(P(0)=\dfrac{42}{90}\), \(P(1)=\dfrac{42}{90}\), \(P(2)=\dfrac{6}{90}\) <span class="mark">A1</span> Official MS: A1, all correct.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/61/O/N/12 Q1, official QP and official MS.</p>
+<p>Ashok has 3 green pens and 7 red pens. His friend Rod takes 3 of these pens at random, without replacement. Draw up a probability distribution table for the number of green pens Rod takes. [4]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>\(P(0)=\dfrac{7}{10}\times\dfrac{6}{9}\times\dfrac{5}{8}=\dfrac{210}{720}\) <span class="mark">B1</span> Official MS: B1, finding P(0), P(1), P(2), P(3) (values 0, 1, 2, 3 attempted).</li>
+<li>\(P(1)=\dfrac{3}{10}\times\dfrac{7}{9}\times\dfrac{6}{8}\times{}^3C_1=\dfrac{378}{720}\) <span class="mark">B1</span> Official MS: B1, 1 or 2 probabilities correct.</li>
+<li>\(P(2)=\dfrac{3}{10}\times\dfrac{2}{9}\times\dfrac{7}{8}\times{}^3C_2=\dfrac{126}{720}\) <span class="mark">B1</span> Official MS: B1, 3 probabilities correct.</li>
+<li>\(P(3)=\dfrac{3}{10}\times\dfrac{2}{9}\times\dfrac{1}{8}=\dfrac{6}{720}=\dfrac{1}{120}\) <span class="mark">B1</span> Official MS: B1, all correct.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>A bag contains 3 red and 5 blue counters. Two are taken at random without replacement. \(X\) is the number of red counters taken. Find \(P(X=1)\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(P(RB)=\dfrac{3}{8}\times\dfrac{5}{7}=\dfrac{15}{56}\)</li><li>\(P(X=1)=2\times\dfrac{15}{56}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{15}{28}=0.536\) (3 s.f.)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>Two fair six-sided spinners numbered 1 to 6 are spun and \(X\) is the sum of the scores. Find \(P(X=5)\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>36 equally likely outcomes; (1, 4), (2, 3), (3, 2), (4, 1) give 5.</li></ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{4}{36}=0.111\) (3 s.f.)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>A biased coin has \(P(\text{head})=0.6\). It is tossed three times. \(X\) is the number of heads. Find \(P(X=2)\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(P(HHT)=0.6\times0.6\times0.4=0.144\)</li><li>Three arrangements: \(3\times0.144\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(0.432\)</p>
+</details>
+</div>
+</section>

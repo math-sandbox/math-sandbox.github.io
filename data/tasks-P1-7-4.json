@@ -1,0 +1,277 @@
+[
+    {
+        "id": "P1-7.4-QC1-gen",
+        "section": "P1-7.4",
+        "kind": "generated",
+        "title": "Second derivative of a cubic at a point",
+        "marks": 2,
+        "source": "Theory P1-7.4 Quick check 1; differentiate twice",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 2,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "c",
+                "min": -3,
+                "max": 3,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "s": "6*a",
+            "t": "2*b",
+            "A": "6*a*c+2*b"
+        },
+        "constraints": [
+            "a>=2"
+        ],
+        "original": {
+            "a": 2,
+            "b": 3,
+            "c": 1
+        },
+        "stem": "Given that \\(y={a|int}x^3+{b|int}x^2\\), find the value of \\(\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2}\\) when \\(x={c|int}\\).",
+        "answer": {
+            "expression": "s*c+t",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}={a|int}\\times3x^2+{b|int}\\times2x\\), so \\(\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2}={s|int}x+{t|int}\\)",
+                "result": "s",
+                "format": "int",
+                "mark": "M1",
+                "note": "Differentiate twice."
+            },
+            {
+                "name": "A",
+                "text_tex": "At \\(x={c|int}\\): \\({s|int}\\times({c|int})+{t|int}={A|int}\\)",
+                "result": "s*c+t",
+                "format": "int",
+                "mark": "A1",
+                "note": "Substitute."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original y = 2x^3 + 3x^2 at x = 1, second derivative 18"
+            },
+            {
+                "id": "cubic",
+                "stem": "A curve has equation \\(y={a|int}x^3+{b|int}x^2\\). Evaluate \\(\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2}\\) at \\(x={c|int}\\)."
+            },
+            {
+                "id": "ff",
+                "stem": "\\(f(x)={a|int}x^3+{b|int}x^2\\). Find \\(f''({c|int})\\)."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-7.4"
+            ],
+            "topic": "Differentiation",
+            "chapter": "P1-7",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-7-4.json",
+                "locator": "P1-7.4-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-7.4-QC2-gen",
+        "section": "P1-7.4",
+        "kind": "generated",
+        "title": "Second derivative of a reciprocal",
+        "marks": 2,
+        "source": "Theory P1-7.4 Quick check 2; x to the power -1 differentiated twice",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "c",
+                "min": 1,
+                "max": 4,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "k": "2*a",
+            "A": "2*a/(c*c*c)"
+        },
+        "constraints": [
+            "c>=1"
+        ],
+        "original": {
+            "a": 4,
+            "c": 2
+        },
+        "stem": "Given that \\(y=\\dfrac{{a|int}}{x}\\), find the value of \\(\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2}\\) when \\(x={c|int}\\).",
+        "answer": {
+            "expression": "k/(c*c*c)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(y={a|int}x^{-1}\\), \\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}=-{a|int}x^{-2}\\), \\(\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2}={k|int}x^{-3}\\)",
+                "result": "k",
+                "format": "int",
+                "mark": "M1",
+                "note": "Differentiate twice."
+            },
+            {
+                "name": "A",
+                "text_tex": "At \\(x={c|int}\\): \\(\\dfrac{{k|int}}{{c|int}^3}={A|sf3z}\\)",
+                "result": "k/(c*c*c)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Substitute."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original y = 4/x at x = 2, second derivative 1"
+            },
+            {
+                "id": "rec",
+                "stem": "A curve has equation \\(y=\\dfrac{{a|int}}{x}\\). Find \\(\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2}\\) at the point where \\(x={c|int}\\)."
+            },
+            {
+                "id": "ff",
+                "stem": "\\(f(x)=\\dfrac{{a|int}}{x}\\). Find \\(f''({c|int})\\)."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-7.4"
+            ],
+            "topic": "Differentiation",
+            "chapter": "P1-7",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-7-4.json",
+                "locator": "P1-7.4-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-7.4-QC3-gen",
+        "section": "P1-7.4",
+        "kind": "generated",
+        "title": "Second derivative of a square root",
+        "marks": 2,
+        "source": "Theory P1-7.4 Quick check 3; powers one half, then minus one half",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 12,
+                "step": 2
+            },
+            {
+                "name": "k",
+                "min": 1,
+                "max": 3,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "x0": "k*k",
+            "q": "a/4",
+            "A": "-a/(4*k*k*k)"
+        },
+        "constraints": [
+            "k>=1"
+        ],
+        "original": {
+            "a": 8,
+            "k": 2
+        },
+        "stem": "Given that \\(y={a|int}\\sqrt{x}\\), find the value of \\(\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2}\\) when \\(x={x0|int}\\).",
+        "answer": {
+            "expression": "-q/(k*k*k)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(y={a|int}x^{\\frac{1}{2} }\\), \\(\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2}=-\\dfrac{1}{4}\\times{a|int}x^{-\\frac{3}{2} }=-{q|num}x^{-\\frac{3}{2} }\\)",
+                "result": "q",
+                "format": "num",
+                "mark": "M1",
+                "note": "Differentiate twice."
+            },
+            {
+                "name": "A",
+                "text_tex": "At \\(x={x0|int}\\): \\(x^{\\frac{3}{2} }={k|int}^3\\), so \\(\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2}={A|sf3z}\\)",
+                "result": "-q/(k*k*k)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Substitute."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original y = 8 root x at x = 4, second derivative -0.25"
+            },
+            {
+                "id": "root",
+                "stem": "A curve has equation \\(y={a|int}\\sqrt{x}\\). Find \\(\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2}\\) when \\(x={x0|int}\\)."
+            },
+            {
+                "id": "ff",
+                "stem": "\\(f(x)={a|int}\\sqrt{x}\\). Evaluate \\(f''({x0|int})\\)."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-7.4"
+            ],
+            "topic": "Differentiation",
+            "chapter": "P1-7",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-7-4.json",
+                "locator": "P1-7.4-QC3-gen"
+            }
+        }
+    }
+]

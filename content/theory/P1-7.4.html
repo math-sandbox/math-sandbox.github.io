@@ -1,0 +1,60 @@
+<script>if(location.hostname.endsWith('onrender.com'))location.replace('https://math-sandbox.pages.dev'+location.pathname+location.search+location.hash)</script>
+<section class="theory" data-section="P1-7.4">
+<h2>7.4 Second derivatives</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 1 Coursebook (Sue Pemberton, series editor Julian Gilbey), Chapter 7 Differentiation, printed pp.205–208. Own wording and new numbers, following the coursebook notation for the second derivative.</p>
+<p class="key-words"><strong>Key words:</strong> <em>second derivative</em>, <em>derivative</em></p>
+<h3>Differentiating twice</h3>
+<p>Differentiating \(\dfrac{\mathrm{d}y}{\mathrm{d}x}\) again gives the second derivative, written \(\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2}\) or \(f''(x)\). It measures how fast the gradient is changing.</p>
+<p>For example, if \(y=x^4-3x^2\), then \(\dfrac{\mathrm{d}y}{\mathrm{d}x}=4x^3-6x\) and \(\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2}=12x^2-6\).</p>
+<p>Write roots and fractions as powers before differentiating, and differentiate the simplified first derivative.</p>
+<p>In Chapter 8 the sign of the second derivative is used to decide whether a stationary point is a maximum or a minimum.</p>
+<div class="worked-example">
+<h4>Worked example 1: A polynomial</h4>
+<p class="src">Coursebook, 7.4, second derivatives. New numbers.</p>
+<p>Find \(\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2}\) for \(y=2x^4-x^3+5x\), and its value at \(x=-1\).</p>
+<ol class="steps">
+<li>\(\dfrac{\mathrm{d}y}{\mathrm{d}x}=8x^3-3x^2+5\) <span class="mark">M1</span></li>
+<li>\(\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2}=24x^2-6x\) <span class="mark">A1</span></li>
+<li>At \(x=-1\): \(24+6=30\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(24x^2-6x\); \(30\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: Negative and fractional powers</h4>
+<p class="src">Coursebook, 7.4, second derivatives of powers. New numbers.</p>
+<p>Find \(f''(x)\) for \(f(x)=\dfrac{6}{x^2}+4\sqrt{x}\).</p>
+<ol class="steps">
+<li>\(f(x)=6x^{-2}+4x^{\frac{1}{2}}\) <span class="mark">B1</span></li>
+<li>\(f'(x)=-12x^{-3}+2x^{-\frac{1}{2}}\) <span class="mark">M1</span></li>
+<li>\(f''(x)=36x^{-4}-x^{-\frac{3}{2}}\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{36}{x^4}-\dfrac{1}{x\sqrt{x}}\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Squaring the first derivative instead of differentiating it again.</li><li>Sign errors with negative powers: \(-12x^{-3}\) differentiates to \(+36x^{-4}\).</li><li>Forgetting that a constant term in the first derivative disappears.</li></ul>
+<p>Past paper questions use the second derivative together with stationary points, in Chapter 8.</p>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>Given \(y=2x^3+3x^2\), find \(\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2}\) at \(x=1\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{\mathrm{d}y}{\mathrm{d}x}=6x^2+6x\)</li><li>\(\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2}=12x+6\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(18\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>Given \(y=\dfrac{4}{x}\), find \(\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2}\) at \(x=2\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{\mathrm{d}y}{\mathrm{d}x}=-4x^{-2}\)</li><li>\(\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2}=8x^{-3}=\dfrac{8}{8}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(1\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>Given \(y=8\sqrt{x}\), find \(\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2}\) at \(x=4\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{\mathrm{d}y}{\mathrm{d}x}=4x^{-\frac{1}{2}}\)</li><li>\(\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2}=-2x^{-\frac{3}{2}}=-\dfrac{2}{8}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(-0.25\)</p>
+</details>
+</div>
+</section>

@@ -1,0 +1,417 @@
+[
+    {
+        "id": "S2-5.2-QC1-gen",
+        "section": "S2-5.2",
+        "kind": "generated",
+        "title": "Standard deviation of the sample mean",
+        "marks": 2,
+        "source": "Theory S2-5.2 Quick check 1; sigma over the square root of n",
+        "params": [
+            {
+                "name": "s",
+                "min": 2,
+                "max": 20,
+                "step": 1
+            },
+            {
+                "name": "k",
+                "min": 2,
+                "max": 10,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "n": "k*k",
+            "A": "s/k"
+        },
+        "constraints": [
+            "k>=2"
+        ],
+        "original": {
+            "s": 12,
+            "k": 6
+        },
+        "stem": "The random variable \\(X\\) has standard deviation \\({s|int}\\). Find the standard deviation of the mean of a random sample of \\({n|int}\\) values of \\(X\\).",
+        "answer": {
+            "expression": "s/k",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\mathrm{Var}(\\bar{X})=\\dfrac{{s|int}^2}{{n|int}}\\)",
+                "result": "s*s/n",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Variance of the sample mean is sigma squared over n."
+            },
+            {
+                "name": "A",
+                "text_tex": "Standard deviation \\(=\\dfrac{{s|int}}{\\sqrt{{n|int}} }={A|sf3z}\\)",
+                "result": "s/k",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Take the square root."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original sd 12 and sample size 36, sd of the sample mean 2"
+            },
+            {
+                "id": "mass",
+                "stem": "The masses of apples have standard deviation \\({s|int}\\) grams. A random sample of \\({n|int}\\) apples is taken. Find the standard deviation of the sample mean mass."
+            },
+            {
+                "id": "se",
+                "stem": "A population has standard deviation \\({s|int}\\). Random samples of size \\({n|int}\\) are taken and the mean of each sample is found. Find the standard deviation of the distribution of these sample means."
+            }
+        ],
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-5.2"
+            ],
+            "topic": "Sampling",
+            "chapter": "S2-5",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-5-2.json",
+                "locator": "S2-5.2-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "S2-5.2-QC2-gen",
+        "section": "S2-5.2",
+        "kind": "generated",
+        "title": "Sample size from the variance of the sample mean",
+        "marks": 2,
+        "source": "Theory S2-5.2 Quick check 2; n is sigma squared over Var of the sample mean",
+        "params": [
+            {
+                "name": "n",
+                "min": 10,
+                "max": 80,
+                "step": 5
+            },
+            {
+                "name": "k",
+                "min": 1,
+                "max": 10,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "v": "k/5",
+            "S": "n*k/5",
+            "A": "n"
+        },
+        "constraints": [
+            "k>=1"
+        ],
+        "original": {
+            "n": 20,
+            "k": 3
+        },
+        "stem": "The random variable \\(X\\) has variance \\({S|int}\\). The mean of a random sample of \\(n\\) values of \\(X\\) has variance \\({v|num2}\\). Find \\(n\\).",
+        "answer": {
+            "expression": "5*S/k",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\dfrac{{S|int}}{n}={v|num2}\\)",
+                "result": "S",
+                "format": "int",
+                "mark": "M1",
+                "note": "Var of the sample mean is the population variance over n."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(n=\\dfrac{{S|int}}{{v|num2}}={A|int}\\)",
+                "result": "5*S/k",
+                "format": "int",
+                "mark": "A1",
+                "note": "Rearrange for n."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original variance 12 and Var of the sample mean 0.6, n = 20"
+            },
+            {
+                "id": "time",
+                "stem": "Journey times have variance \\({S|int}\\) square minutes. For random samples of \\(n\\) journeys, the sample mean time has variance \\({v|num2}\\). Find \\(n\\)."
+            },
+            {
+                "id": "size",
+                "stem": "A population has variance \\({S|int}\\). How large must a random sample be for the variance of the sample mean to be \\({v|num2}\\)?"
+            }
+        ],
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-5.2"
+            ],
+            "topic": "Sampling",
+            "chapter": "S2-5",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-5-2.json",
+                "locator": "S2-5.2-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "S2-5.2-QC3-gen",
+        "section": "S2-5.2",
+        "kind": "generated",
+        "title": "Standardising a sample mean",
+        "marks": 2,
+        "source": "Theory S2-5.2 Quick check 3; z is the difference over sigma over root n",
+        "params": [
+            {
+                "name": "m",
+                "min": 20,
+                "max": 80,
+                "step": 1
+            },
+            {
+                "name": "s",
+                "min": 2,
+                "max": 12,
+                "step": 1
+            },
+            {
+                "name": "k",
+                "min": 3,
+                "max": 8,
+                "step": 1
+            },
+            {
+                "name": "d",
+                "min": 1,
+                "max": 6,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "n": "k*k",
+            "c": "m+d",
+            "se": "s/k",
+            "A": "d*k/s"
+        },
+        "constraints": [
+            "d*k<s*3"
+        ],
+        "original": {
+            "m": 50,
+            "s": 6,
+            "k": 4,
+            "d": 2
+        },
+        "stem": "The random variable \\(X\\) has mean \\({m|int}\\) and standard deviation \\({s|int}\\). The mean of a random sample of \\({n|int}\\) values is \\(\\bar{X}\\). Find the value of \\(z\\) used to calculate \\(P(\\bar{X}\\gt {c|int})\\) with the standard normal distribution.",
+        "answer": {
+            "expression": "d/se",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\bar{X}\\sim\\mathrm{N}\\Bigl({m|int}, \\dfrac{{s|int}^2}{{n|int}}\\Bigr)\\), so the standard deviation of \\(\\bar{X}\\) is \\(\\dfrac{{s|int}}{{k|int}}\\)",
+                "result": "se",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Distribution of the sample mean."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(z=\\dfrac{{c|int}-{m|int}}{{s|int}/{k|int}}={A|sf3z}\\)",
+                "result": "d/se",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Standardise."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original mean 50, sd 6, sample of 16, P(sample mean above 52), z = 1.33"
+            },
+            {
+                "id": "bags",
+                "stem": "Bags of rice have masses with mean \\({m|int}\\) g and standard deviation \\({s|int}\\) g. A random sample of \\({n|int}\\) bags is taken. To find the probability that the sample mean is more than \\({c|int}\\) g, find the standardised value \\(z\\)."
+            },
+            {
+                "id": "clt",
+                "stem": "A population has mean \\({m|int}\\) and standard deviation \\({s|int}\\). For a random sample of size \\({n|int}\\), find \\(z=\\dfrac{\\bar{x}-\\mu}{\\sigma/\\sqrt{n} }\\) when \\(\\bar{x}={c|int}\\)."
+            }
+        ],
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-5.2"
+            ],
+            "topic": "Sampling",
+            "chapter": "S2-5",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-5-2.json",
+                "locator": "S2-5.2-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "S2-5.2-PP-9709-72-MJ19-Q2",
+        "section": "S2-5.2",
+        "kind": "pastpaper",
+        "title": "Distribution of the mean of 36 values",
+        "marks": 4,
+        "source": {
+            "paper": "9709/72/M/J/19 Q2",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s19_qp_72.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s19_ms_72.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>The random variable \\(X\\) has mean 372 and standard deviation 54.</p><p>(i) Describe fully the distribution of the mean of a random sample of 36 values of \\(X\\). [3]</p><p>(ii) The distribution in part (i) might be either exact or approximate. State a condition under which the distribution is exact. [1]</p>",
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-5.2"
+            ],
+            "topic": "Sampling",
+            "chapter": "S2-5",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-5-2.json",
+                "locator": "S2-5.2-PP-9709-72-MJ19-Q2"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(i) Normal with mean 372",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, normal with mean 372."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(i) Standard deviation \\(=\\dfrac{54}{\\sqrt{36} }\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, sd = 54/√36, or variance = 54²/36."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(i) \\(=9\\) (variance 81)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 9 (or variance 81)."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(ii) The population (\\(X\\)) is normally distributed.",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, population normal; allow X is normal."
+            }
+        ]
+    },
+    {
+        "id": "S2-5.2-PP-9709-71-ON18-Q3",
+        "section": "S2-5.2",
+        "kind": "pastpaper",
+        "title": "Sample size from a probability for the sample mean",
+        "marks": 4,
+        "source": {
+            "paper": "9709/71/O/N/18 Q3",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w18_qp_71.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w18_ms_71.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>A population has mean 12 and standard deviation 2.5. A large random sample of size \\(n\\) is chosen from this population and the sample mean is denoted by \\(\\bar{X}\\). Given that \\(P(\\bar{X}\\lt 12.2)=0.975\\), correct to 3 significant figures, find the value of \\(n\\). [4]</p>",
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-5.2"
+            ],
+            "topic": "Sampling",
+            "chapter": "S2-5",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-5-2.json",
+                "locator": "S2-5.2-PP-9709-71-ON18-Q3"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(\\dfrac{12.2-12}{2.5/\\sqrt{n} }\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, standardisation; allow continuity correction; needs the correct form including the square root."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(=1.96\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, correct z."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(\\sqrt{n}=1.96\\times2.5\\div0.2=24.5\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, rearrange the equation in n or √n with numerical z to the stage n = or √n =; allow arithmetical slips only."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(n=600\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, accept 601. SR: a whole-number answer from 595 to 605 can score full marks if fully justified."
+            }
+        ]
+    }
+]

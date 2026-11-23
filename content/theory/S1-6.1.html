@@ -1,0 +1,81 @@
+<script>if(location.hostname.endsWith('onrender.com'))location.replace('https://math-sandbox.pages.dev'+location.pathname+location.search+location.hash)</script>
+<section class="theory" data-section="S1-6.1">
+<h2>6.1 Discrete random variables</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Probability &amp; Statistics 1 Coursebook (Dean Chalmers), Chapter 6 Probability distributions, printed p.150. Own wording and new numbers, following the coursebook introduction to discrete random variables.</p>
+<p class="key-words"><strong>Key words:</strong> <em>discrete random variable</em>, <em>probability distribution</em></p>
+<h3>What is a random variable?</h3>
+<p>A random variable is a quantity whose value depends on the outcome of a random experiment. We use a capital letter such as \(X\) for the random variable and a small letter such as \(x\) for a value it can take. For example, if two coins are tossed, the number of heads \(X\) can be 0, 1 or 2.</p>
+<p>A discrete random variable can take only particular separate values, often whole numbers that come from counting. The number of sixes in ten rolls of a die is discrete. A length or a time measured on a continuous scale is not.</p>
+<p>\(P(X=x)\) means the probability that \(X\) takes the value \(x\). Because exactly one value must occur, the probabilities of all the possible values add up to 1:</p>
+<p>\[\sum P(X=x)=1,\qquad 0\le P(X=x)\le 1.\]</p>
+<p>This fact is used to find an unknown constant in a probability distribution.</p>
+<div class="worked-example">
+<h4>Worked example 1: Finding a constant</h4>
+<p class="src">Coursebook, 6.1, discrete random variables. New numbers.</p>
+<p>\(X\) takes the values 2, 3 and 5 only, with \(P(X=x)=kx\). Find \(k\) and \(P(X\ge 3)\).</p>
+<ol class="steps">
+<li>\(2k+3k+5k=1\) <span class="mark">M1</span></li>
+<li>\(10k=1\), so \(k=0.1\) <span class="mark">A1</span></li>
+<li>\(P(X\ge 3)=0.3+0.5=0.8\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(k=0.1\), \(P(X\ge 3)=0.8\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: Rejecting an impossible value</h4>
+<p class="src">Coursebook, 6.1, discrete random variables. New numbers.</p>
+<p>The probabilities of the values of \(X\) are \(0.2\), \(3p\), \(p^2\) and \(0.4\). Find \(p\).</p>
+<ol class="steps">
+<li>\(0.2+3p+p^2+0.4=1\), so \(p^2+3p-0.4=0\) <span class="mark">M1</span></li>
+<li>\(p=\dfrac{-3\pm\sqrt{9+1.6}}{2}\), so \(p=0.128\) or \(p=-3.13\) <span class="mark">A1</span></li>
+<li>A probability cannot be negative, so \(p=0.128\) (3 s.f.). <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(p=0.128\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Forgetting to check that every probability is between 0 and 1. Reject any value of a constant that makes a probability negative or bigger than 1.</li><li>Writing \(P(X\gt 2)\) when the question means \(P(X\ge 2)\). Read the inequality carefully.</li><li>Adding the values of \(X\) instead of the probabilities when using \(\sum P(X=x)=1\).</li></ul>
+<h3>Past paper</h3>
+<p class="src">9709/62/O/N/10 Q1, official QP and official MS.</p>
+<p>The discrete random variable \(X\) takes the values 1, 4, 5, 7 and 9 only. The probability distribution of \(X\) is shown in the table.</p><table class="dist"><tr><th>\(x\)</th><th>\(P(X=x)\)</th></tr><tr><td>1</td><td>\(4p\)</td></tr><tr><td>4</td><td>\(5p^2\)</td></tr><tr><td>5</td><td>\(1.5p\)</td></tr><tr><td>7</td><td>\(2.5p\)</td></tr><tr><td>9</td><td>\(1.5p\)</td></tr></table><p>Find \(p\). [3]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>\(4p+5p^2+1.5p+2.5p+1.5p=1\), so \(10p^2+19p-2=0\) <span class="mark">M1</span> Official MS: M1, equating the sum of the probabilities to 1 (and attempting to solve).</li>
+<li>\((10p-1)(p+2)=0\), so \(p=0.1\) or \(p=-2\) <span class="mark">A1</span> Official MS: A1, p = 0.1 or −2 (correct solutions of the quadratic).</li>
+<li>A probability cannot be negative, so \(p=0.1\). <span class="mark">A1</span> Official MS: A1, p = 0.1 only, with −2 rejected.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/53/M/J/21 Q2, official QP and official MS.</p>
+<p>The random variable \(X\) can take only the values \(-2, -1, 0, 1, 2\). The probability distribution of \(X\) is given in the following table.</p><table class="dist"><tr><th>\(x\)</th><td>\(-2\)</td><td>\(-1\)</td><td>0</td><td>1</td><td>2</td></tr><tr><th>\(P(X=x)\)</th><td>\(p\)</td><td>\(p\)</td><td>0.1</td><td>\(q\)</td><td>\(q\)</td></tr></table><p>Given that \(P(X\ge 0)=3P(X&lt;0)\), find the values of \(p\) and \(q\). [4]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>\(2p+0.1+2q=1\) <span class="mark">B1</span> Official MS: B1, 2p + 0.1 + 2q = 1 or equivalent.</li>
+<li>\(0.1+2q=3\times 2p\) <span class="mark">B1</span> Official MS: B1, 0.1 + 2q = 3(2p) or equivalent.</li>
+<li>Subtract: \(2p+6p=1\), so \(8p=1\) and \(p=\dfrac{1}{8}\) <span class="mark">M1</span> Official MS: M1, attempt to solve the two equations (one variable eliminated).</li>
+<li>\(p=\dfrac{1}{8}=0.125\), \(q=\dfrac{13}{40}=0.325\) <span class="mark">A1</span> Official MS: A1, both values correct.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>\(X\) takes the values \(1, 2, 3, 4\) only, and \(P(X=x)=kx\). Find \(k\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(k(1+2+3+4)=1\), so \(10k=1\).</li></ol>
+<p class="final"><strong>Answer:</strong> \(k=0.1\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>\(X\) takes the values 0, 1, 2 and 3 only, with \(P(X=0)=0.15\), \(P(X=1)=0.35\) and \(P(X=2)=0.3\). Find \(P(X=3)\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(1-(0.15+0.35+0.3)=1-0.8\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(0.2\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>\(X\) takes the values \(1, 2, 3\) only, and \(P(X=x)=kx^2\). Find \(P(X=3)\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(k(1+4+9)=1\), so \(k=\dfrac{1}{14}\).</li><li>\(P(X=3)=\dfrac{9}{14}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{9}{14}=0.643\) (3 s.f.)</p>
+</details>
+</div>
+</section>

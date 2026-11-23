@@ -1,0 +1,87 @@
+<script>if(location.hostname.endsWith('onrender.com'))location.replace('https://math-sandbox.pages.dev'+location.pathname+location.search+location.hash)</script>
+<section class="theory" data-section="S1-6.3">
+<h2>6.3 Expectation and variance of a discrete random variable</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Probability &amp; Statistics 1 Coursebook (Dean Chalmers), Chapter 6 Probability distributions, printed pp.156–161. Own wording and new numbers, following the coursebook definitions of E(X) and Var(X).</p>
+<p class="key-words"><strong>Key words:</strong> <em>expected value</em>, <em>variance of a discrete random variable</em>, <em>probability distribution</em></p>
+<h3>Expectation</h3>
+<p>The expectation (mean) of a discrete random variable \(X\) is the long-run average value of \(X\) over many repetitions of the experiment:</p>
+<p>\[E(X)=\sum x\,P(X=x).\]</p>
+<p>\(E(X)\) is often called the expected value of \(X\). It does not have to be a value that \(X\) can actually take. The expected number of heads when a coin is tossed three times is 1.5.</p>
+<h3>Variance</h3>
+<p>The variance measures how spread out the values of \(X\) are about the mean. Find \(E(X^2)=\sum x^2P(X=x)\) first, then</p>
+<p>\[\mathrm{Var}(X)=E(X^2)-\bigl(E(X)\bigr)^2.\]</p>
+<p>The standard deviation is \(\sqrt{\mathrm{Var}(X)}\). A variance can never be negative; if you get a negative answer, check your working.</p>
+<div class="ms-widget" data-widget="discrete-ev"></div>
+<script src="../../assets/widget-kinds-pkg17.js"></script>
+<div class="worked-example">
+<h4>Worked example 1: Mean and variance</h4>
+<p class="src">Coursebook, 6.3, expectation and variance. New numbers.</p>
+<p>\(X\) takes the values 1, 2, 4 with probabilities 0.5, 0.3, 0.2. Find \(E(X)\) and \(\mathrm{Var}(X)\).</p>
+<ol class="steps">
+<li>\(E(X)=0.5+0.6+0.8=1.9\) <span class="mark">B1</span></li>
+<li>\(E(X^2)=1\times0.5+4\times0.3+16\times0.2=4.9\) <span class="mark">M1</span></li>
+<li>\(\mathrm{Var}(X)=4.9-1.9^2=1.29\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(E(X)=1.9\), \(\mathrm{Var}(X)=1.29\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: Using a given mean</h4>
+<p class="src">Coursebook, 6.3, unknown probabilities. New numbers.</p>
+<p>\(X\) takes the values 1, 2, 3 with probabilities \(a\), 0.3, \(b\). Given \(E(X)=2.2\), find \(a\) and \(b\).</p>
+<ol class="steps">
+<li>\(a+b=0.7\) <span class="mark">B1</span></li>
+<li>\(a+0.6+3b=2.2\), so \(a+3b=1.6\) <span class="mark">B1</span></li>
+<li>Subtract: \(2b=0.9\), so \(b=0.45\) and \(a=0.25\) <span class="mark">M1 A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(a=0.25\), \(b=0.45\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Using \(E(X^2)\) as the variance and forgetting to subtract \(\bigl(E(X)\bigr)^2\).</li><li>Squaring the probabilities instead of the values when finding \(E(X^2)\).</li><li>Taking \(E(X)\) as the mean of the values without weighting by the probabilities.</li></ul>
+<h3>Past paper</h3>
+<p class="src">9709/51/O/N/22 Q1, official QP and official MS.</p>
+<p>The probability distribution table for a random variable \(X\) is shown below.</p><table class="dist"><tr><th>\(x\)</th><th>\(P(X=x)\)</th></tr><tr><td>\(-2\)</td><td>0.12</td></tr><tr><td>\(-1\)</td><td>\(p\)</td></tr><tr><td>0.5</td><td>\(q\)</td></tr><tr><td>1</td><td>0.16</td></tr><tr><td>2</td><td>0.3</td></tr></table><p>Given that \(E(X)=0.28\), find the value of \(p\) and the value of \(q\). [4]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>\(0.12+p+q+0.16+0.3=1\), so \(p+q=0.42\) <span class="mark">B1</span> Official MS: B1, sum of probabilities = 1; p + q = 0.42 OE.</li>
+<li>\(-0.24-p+0.5q+0.16+0.6=0.28\), so \(-p+0.5q=-0.24\) <span class="mark">B1</span> Official MS: B1, form an equation using E(X) = 0.28; −p + 0.5q = −0.24 OE, accept unsimplified.</li>
+<li>Add the equations: \(1.5q=0.18\) <span class="mark">M1</span> Official MS: M1, attempt to solve their two equations, by substitution or elimination, finding values for both unknowns.</li>
+<li>\(q=0.12\), \(p=0.3\) <span class="mark">A1</span> Official MS: A1 CAO, both WWW. If M0 awarded, SC B1 for both correct WWW.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/52/O/N/23 Q1, official QP and official MS.</p>
+<p>A competitor in a throwing event has three attempts to throw a ball as far as possible. The random variable \(X\) denotes the number of throws that exceed 30 metres. The probability distribution table for \(X\) is shown below.</p><table class="dist"><tr><th>\(x\)</th><td>0</td><td>1</td><td>2</td><td>3</td></tr><tr><th>\(P(X=x)\)</th><td>0.4</td><td>\(p\)</td><td>\(r\)</td><td>0.15</td></tr></table><p>(a) Given that \(E(X)=1.1\), find the value of \(p\) and the value of \(r\). [3]</p><p>(b) Find the numerical value of \(\mathrm{Var}(X)\). [2]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(a) \(p+r+0.55=1\), so \(p+r=0.45\) <span class="mark">M1</span> Official MS: M1, use sum of probabilities = 1 to form an equation; accept p + r = 0.45 OE.</li>
+<li>(a) \(p+2r+0.45=1.1\), so \(p+2r=0.65\) <span class="mark">M1</span> Official MS: M1, use E(X) = 1.1 to form an equation; accept p + 2r = 0.65 OE. The two M marks can be gained in either order.</li>
+<li>(a) \(r=0.2\), \(p=0.25\) <span class="mark">A1</span> Official MS: A1. If both M marks are not awarded, SC B1 for p = 0.25, r = 0.2 stated.</li>
+<li>(b) \(\mathrm{Var}(X)=0.4\times0^2+0.25\times1^2+0.2\times2^2+0.15\times3^2-1.1^2\) <span class="mark">M1</span> Official MS: M1, correct variance formula using their probability distribution table, each of their P(x) strictly between 0 and 1.</li>
+<li>(b) \(=0.25+0.8+1.35-1.21=1.19\) <span class="mark">A1</span> Official MS: A1, 1.19 (119/100 is A0). If M0 awarded, SC B1 for 1.19 WWW.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>\(X\) takes the values 1, 2, 3 only, with \(P(X=1)=0.2\) and \(P(X=2)=0.5\). Find \(E(X)\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(P(X=3)=0.3\)</li><li>\(E(X)=0.2+1.0+0.9\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(2.1\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>\(P(X=0)=0.3\), \(P(X=1)=0.4\), \(P(X=2)=0.3\). Find \(\mathrm{Var}(X)\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(E(X)=0.4+0.6=1\)</li><li>\(E(X^2)=0.4+1.2=1.6\)</li><li>\(\mathrm{Var}(X)=1.6-1^2\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(0.6\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>\(X\) takes the values 0, 1, 2 with \(P(X=0)=0.2\), \(P(X=1)=p\), \(P(X=2)=q\), and \(E(X)=1.3\). Find \(p\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(p+q=0.8\) and \(p+2q=1.3\)</li><li>Subtract: \(q=0.5\), so \(p=0.3\).</li></ol>
+<p class="final"><strong>Answer:</strong> \(p=0.3\)</p>
+</details>
+</div>
+</section>

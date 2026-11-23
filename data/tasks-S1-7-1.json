@@ -1,0 +1,429 @@
+[
+    {
+        "id": "S1-7.1-QC1-gen",
+        "section": "S1-7.1",
+        "kind": "generated",
+        "title": "Binomial probability of exactly two successes",
+        "marks": 2,
+        "source": "Theory S1-7.1 Quick check 1; nC2 p squared q to the power n - 2",
+        "params": [
+            {
+                "name": "n",
+                "min": 4,
+                "max": 10,
+                "step": 1
+            },
+            {
+                "name": "p",
+                "min": 0.1,
+                "max": 0.5,
+                "step": 0.05
+            }
+        ],
+        "derived": {
+            "q": "1-p",
+            "m": "n-2",
+            "C": "n*(n-1)/2",
+            "A": "n*(n-1)/2*p*p*math.pow(1-p,n-2)"
+        },
+        "constraints": [
+            "p>0"
+        ],
+        "original": {
+            "n": 6,
+            "p": 0.3
+        },
+        "stem": "The random variable \\(X\\) has the distribution \\(\\mathrm{B}({n|int}, {p|num2})\\). Find \\(P(X=2)\\).",
+        "answer": {
+            "expression": "C*p*p*math.pow(q,m)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(P(X=2)={}^{{n|int}}C_2\\times{p|num2}^2\\times{q|num2}^{{m|int}}\\), with \\({}^{{n|int}}C_2={C|int}\\)",
+                "result": "C",
+                "format": "int",
+                "mark": "M1",
+                "note": "Binomial term nCr p^r q^(n - r)."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(P(X=2)={A|sf3z}\\)",
+                "result": "C*p*p*math.pow(q,m)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original B(6, 0.3), P(X = 2) = 0.324"
+            },
+            {
+                "id": "seeds",
+                "stem": "Each seed in a packet germinates with probability \\({p|num2}\\), independently. \\({n|int}\\) seeds are planted. Find the probability that exactly 2 seeds germinate."
+            },
+            {
+                "id": "calls",
+                "stem": "The probability that a phone call is answered is \\({p|num2}\\), independently for each call. A salesperson makes \\({n|int}\\) calls. Find the probability that exactly 2 of the calls are answered."
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-7.1"
+            ],
+            "topic": "The binomial and geometric distributions",
+            "chapter": "S1-7",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-7-1.json",
+                "locator": "S1-7.1-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-7.1-QC2-gen",
+        "section": "S1-7.1",
+        "kind": "generated",
+        "title": "Binomial probability of at least one success",
+        "marks": 2,
+        "source": "Theory S1-7.1 Quick check 2; one minus the probability of none",
+        "params": [
+            {
+                "name": "n",
+                "min": 3,
+                "max": 12,
+                "step": 1
+            },
+            {
+                "name": "p",
+                "min": 0.05,
+                "max": 0.4,
+                "step": 0.05
+            }
+        ],
+        "derived": {
+            "q": "1-p",
+            "Q": "math.pow(1-p,n)",
+            "A": "1-math.pow(1-p,n)"
+        },
+        "constraints": [
+            "p>0"
+        ],
+        "original": {
+            "n": 5,
+            "p": 0.2
+        },
+        "stem": "The random variable \\(X\\) has the distribution \\(\\mathrm{B}({n|int}, {p|num2})\\). Find \\(P(X\\ge 1)\\).",
+        "answer": {
+            "expression": "1-Q",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(P(X=0)={q|num2}^{{n|int}}\\)",
+                "result": "Q",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Probability of no successes."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(P(X\\ge 1)=1-{q|num2}^{{n|int}}={A|sf3z}\\)",
+                "result": "1-Q",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Complement."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original B(5, 0.2), P(X ≥ 1) = 0.672"
+            },
+            {
+                "id": "faulty",
+                "stem": "\\({n|int}\\) light bulbs are chosen from a large batch in which the probability that a bulb is faulty is \\({p|num2}\\). Find the probability that at least one of the bulbs is faulty."
+            },
+            {
+                "id": "rain",
+                "stem": "The probability of rain on any day is \\({p|num2}\\), independently of other days. Find the probability that it rains on at least one of \\({n|int}\\) days."
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-7.1"
+            ],
+            "topic": "The binomial and geometric distributions",
+            "chapter": "S1-7",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-7-1.json",
+                "locator": "S1-7.1-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-7.1-QC3-gen",
+        "section": "S1-7.1",
+        "kind": "generated",
+        "title": "Variance of a binomial distribution",
+        "marks": 2,
+        "source": "Theory S1-7.1 Quick check 3; Var(X) = np(1 - p)",
+        "params": [
+            {
+                "name": "n",
+                "min": 10,
+                "max": 50,
+                "step": 5
+            },
+            {
+                "name": "p",
+                "min": 0.1,
+                "max": 0.9,
+                "step": 0.1
+            }
+        ],
+        "derived": {
+            "q": "1-p",
+            "M": "n*p",
+            "A": "n*p*(1-p)"
+        },
+        "constraints": [
+            "p>0"
+        ],
+        "original": {
+            "n": 20,
+            "p": 0.3
+        },
+        "stem": "The random variable \\(X\\) has the distribution \\(\\mathrm{B}({n|int}, {p|num2})\\). Find \\(\\mathrm{Var}(X)\\).",
+        "answer": {
+            "expression": "n*p*q",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(E(X)=np={n|int}\\times{p|num2}={M|sf3z}\\)",
+                "result": "M",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Use np and q = 1 - p."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\mathrm{Var}(X)=npq={M|sf3z}\\times{q|num2}={A|sf3z}\\)",
+                "result": "n*p*q",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Multiply the mean by q."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original B(20, 0.3), Var(X) = 4.2"
+            },
+            {
+                "id": "quiz",
+                "stem": "A quiz has \\({n|int}\\) questions. For each question, the probability that Lin answers correctly is \\({p|num2}\\), independently. \\(X\\) is the number of correct answers. Find the variance of \\(X\\)."
+            },
+            {
+                "id": "bin",
+                "stem": "\\(X\\sim\\mathrm{B}({n|int}, {p|num2})\\). Calculate the variance of \\(X\\)."
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-7.1"
+            ],
+            "topic": "The binomial and geometric distributions",
+            "chapter": "S1-7",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-7-1.json",
+                "locator": "S1-7.1-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-7.1-PP-9709-63-ON14-Q3",
+        "section": "S1-7.1",
+        "kind": "pastpaper",
+        "title": "Books read by members of a book club",
+        "marks": 5,
+        "source": {
+            "paper": "9709/63/O/N/14 Q3",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w14_qp_63.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w14_ms_63.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>The number of books read by members of a book club each year has the binomial distribution \\(\\mathrm{B}(12, 0.7)\\).</p><p>(i) State the greatest number of books that could be read by a member of the book club in a particular year and find the probability that a member reads this number of books. [2]</p><p>(ii) Find the probability that a member reads fewer than 10 books in a particular year. [3]</p>",
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-7.1"
+            ],
+            "topic": "The binomial and geometric distributions",
+            "chapter": "S1-7",
+            "marks": 5,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-7-1.json",
+                "locator": "S1-7.1-PP-9709-63-ON14-Q3"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(i) Greatest number is 12.",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, max = 12 (implied by P(12) with power 12)."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(i) \\(P(12)=0.7^{12}=0.0138\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, 0.0138; accept 0.014."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(ii) \\(P(X\\lt 10)=1-P(10, 11, 12)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, binomial term 12Cr (0.7)^r (0.3)^(12−r) or 12Cr p^r q^(12−r) with p + q strictly between 0.99 and 1.00."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(ii) \\(=1-{}^{12}C_{10}(0.7)^{10}(0.3)^2-12(0.7)^{11}(0.3)-(0.7)^{12}=1-0.2528\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, correct unsimplified expression OE."
+            },
+            {
+                "name": "s5",
+                "text_tex": "(ii) \\(=0.747\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, correct answer."
+            }
+        ]
+    },
+    {
+        "id": "S1-7.1-PP-9709-52-FM22-Q2",
+        "section": "S1-7.1",
+        "kind": "pastpaper",
+        "title": "Days with more than 10 cm of rain",
+        "marks": 6,
+        "source": {
+            "paper": "9709/52/F/M/22 Q2",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m22_qp_52.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m22_ms_52.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>In a certain country, the probability of more than 10 cm of rain on any particular day is 0.18, independently of the weather on any other day.</p><p>(a) Find the probability that in any randomly chosen 7-day period, more than 2 days have more than 10 cm of rain. [3]</p><p>(b) For 3 randomly chosen 7-day periods, find the probability that exactly two of these periods have at least one day with more than 10 cm of rain. [3]</p>",
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-7.1"
+            ],
+            "topic": "The binomial and geometric distributions",
+            "chapter": "S1-7",
+            "marks": 6,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-7-1.json",
+                "locator": "S1-7.1-PP-9709-52-FM22-Q2"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) \\(P(X\\gt 2)=1-\\bigl({}^7C_0\\,0.18^0\\,0.82^7+{}^7C_1\\,0.18^1\\,0.82^6+{}^7C_2\\,0.18^2\\,0.82^5\\bigr)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, one term 7Cx p^x (1 − p)^(7−x), p strictly between 0 and 1, x strictly between 0 and 7."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(a) \\(=1-(0.249285+0.383048+0.252251)=1-0.88458\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, correct unsimplified expression or better; condone omission of brackets if recovered."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(a) \\(=0.115\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 WWW, 0.115 ≤ p, p below 0.1155, not from wrong working."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(b) \\(P(\\text{at least 1 day})=1-0.82^7=0.7507\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, AWRT 0.751 seen."
+            },
+            {
+                "name": "s5",
+                "text_tex": "(b) \\(P(\\text{exactly 2 periods})=0.7507^2\\times(1-0.7507)\\times 3\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, FT their 1 − p⁷ or their 0.7507 if identified (not 0.18 or 0.82); accept ×3Cr (r = 1, 2) or ×3P1 for ×3; condone ×2."
+            },
+            {
+                "name": "s6",
+                "text_tex": "(b) \\(=0.421\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, accept 0.421 ≤ p ≤ 0.4215. SC B1 if 0/3 scored for final answer only."
+            }
+        ]
+    }
+]

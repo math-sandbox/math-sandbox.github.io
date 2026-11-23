@@ -1,0 +1,80 @@
+<script>if(location.hostname.endsWith('onrender.com'))location.replace('https://math-sandbox.pages.dev'+location.pathname+location.search+location.hash)</script>
+<section class="theory" data-section="P1-7.1">
+<h2>7.1 Derivatives and gradient functions</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 1 Coursebook (Sue Pemberton, series editor Julian Gilbey), Chapter 7 Differentiation, printed pp.191–198. Own wording and new numbers, following the coursebook approach from gradients of chords to the derivative and the rule for powers of x.</p>
+<p class="key-words"><strong>Key words:</strong> <em>derivative</em>, <em>gradient function</em>, <em>chord</em></p>
+<h3>From chords to tangents</h3>
+<p>The gradient of a curve at a point \(P\) is the gradient of the tangent at \(P\). Take a second point \(Q\) on the curve close to \(P\). As \(Q\) moves towards \(P\), the gradient of the chord \(PQ\) gets closer and closer to the gradient of the tangent. The limit is the gradient of the curve at \(P\).</p>
+<p>The gradient function, or derivative, is written \(\dfrac{\mathrm{d}y}{\mathrm{d}x}\) or \(f'(x)\). It gives the gradient of the curve at any value of \(x\).</p>
+<h3>Rules</h3>
+<ul><li>If \(y=x^n\), then \(\dfrac{\mathrm{d}y}{\mathrm{d}x}=nx^{n-1}\). This works for any real \(n\), including negative and fractional powers.</li><li>If \(y=kx^n\), then \(\dfrac{\mathrm{d}y}{\mathrm{d}x}=knx^{n-1}\).</li><li>The derivative of a constant is 0.</li><li>Differentiate a sum term by term.</li></ul>
+<p>Before differentiating, write roots and fractions as powers: \(\sqrt{x}=x^{\frac{1}{2}}\) and \(\dfrac{1}{x^2}=x^{-2}\).</p>
+<div class="worked-example">
+<h4>Worked example 1: Differentiating powers</h4>
+<p class="src">Coursebook, 7.1, derivatives of powers. New numbers.</p>
+<p>Find \(\dfrac{\mathrm{d}y}{\mathrm{d}x}\) for \(y=4x^3-\dfrac{2}{x}+5\).</p>
+<ol class="steps">
+<li>\(y=4x^3-2x^{-1}+5\) <span class="mark">B1</span></li>
+<li>\(\dfrac{\mathrm{d}y}{\mathrm{d}x}=12x^2+2x^{-2}\) <span class="mark">M1 A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(12x^2+\dfrac{2}{x^2}\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: Gradient at a point</h4>
+<p class="src">Coursebook, 7.1, gradient of a curve. New numbers.</p>
+<p>Find the gradient of \(y=x^2(x-4)\) at the point \((1, -3)\).</p>
+<ol class="steps">
+<li>\(y=x^3-4x^2\) <span class="mark">B1</span></li>
+<li>\(\dfrac{\mathrm{d}y}{\mathrm{d}x}=3x^2-8x\) <span class="mark">M1</span></li>
+<li>At \(x=1\): \(3-8=-5\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(-5\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Differentiating a product term by term without expanding first: \(x^2(x-4)\) must be multiplied out.</li><li>Forgetting that the derivative of a constant is zero.</li><li>Errors with negative powers: the derivative of \(x^{-1}\) is \(-x^{-2}\), not \(-x^{0}\).</li></ul>
+<h3>Past paper</h3>
+<p class="src">9709/12/M/J/21 Q3, official QP and official MS.</p>
+<p>The equation of a curve is \(y=(x-3)\sqrt{x+1}+3\). The following points lie on the curve. Non-exact values are rounded to 4 decimal places.</p><p>\(A(2, k)\)&ensp; \( B(2.9, 2.8025)\)&ensp; \( C(2.99, 2.9800)\)&ensp; \( D(2.999, 2.9980)\)&ensp; \( E(3, 3)\)</p><p>(a) Find \(k\), giving your answer correct to 4 decimal places. [1]</p><p>(b) Find the gradient of \(AE\), giving your answer correct to 4 decimal places. [1]</p><p>The gradients of \(BE\), \(CE\) and \(DE\), rounded to 4 decimal places, are 1.9748, 1.9975 and 1.9997 respectively.</p><p>(c) State, giving a reason for your answer, what the values of the four gradients suggest about the gradient of the curve at the point \(E\). [2]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(a) \(k=(2-3)\sqrt{3}+3=3-\sqrt{3}=1.2679\) <span class="mark">B1</span> Official MS: B1, AWRT 1.2679; ISW if correct answer seen.</li>
+<li>(b) Gradient \(AE=\dfrac{3-1.2679}{3-2}=1.7321\) <span class="mark">B1</span> Official MS: B1, AWRT 1.7321; ISW if correct answer seen.</li>
+<li>(c) The gradient at \(E\) is 2. <span class="mark">*B1</span> Official MS: *B1, sight of 2 or 2.0000 or two in reference to the gradient.</li>
+<li>(c) Because the gradient at \(E\) is the limit of the gradients of the chords as the \(x\)-value tends to 3. <span class="mark">B1</span> Official MS: DB1, the gradient at E is the limit of the gradients of the chords as x tends to 3 or δx tends to 0; allow gets nearer, approaches, tends, almost, approximately.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/11/O/N/11 Q2, official QP and official MS.</p>
+<p>A curve has equation \(y=3x^3-6x^2+4x+2\). Show that the gradient of the curve is never negative. [3]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>\(\dfrac{\mathrm{d}y}{\mathrm{d}x}=9x^2-12x+4\) <span class="mark">M1</span> Official MS: M1, attempt to differentiate.</li>
+<li>Correct derivative \(9x^2-12x+4\) <span class="mark">A1</span> Official MS: A1, correct derivative.</li>
+<li>\(9x^2-12x+4=(3x-2)^2\ge 0\), so the gradient is never negative. <span class="mark">A1</span> Official MS: A1, (3x − 2)² ≥ 0.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>Find the gradient of \(y=2x^3-5x\) at \(x=2\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{\mathrm{d}y}{\mathrm{d}x}=6x^2-5\)</li><li>\(6\times4-5\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(19\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>Find the gradient of \(y=6\sqrt{x}+2x^2\) at \(x=9\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{\mathrm{d}y}{\mathrm{d}x}=3x^{-\frac{1}{2}}+4x\)</li><li>\(\dfrac{3}{3}+36\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(37\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>Find the \(x\)-coordinate of the point on \(y=x^2+3x\) where the gradient is 7.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(2x+3=7\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(x=2\)</p>
+</details>
+</div>
+</section>

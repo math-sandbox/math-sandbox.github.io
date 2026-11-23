@@ -1,0 +1,91 @@
+<script>if(location.hostname.endsWith('onrender.com'))location.replace('https://math-sandbox.pages.dev'+location.pathname+location.search+location.hash)</script>
+<section class="theory" data-section="S1-7.1">
+<h2>7.1 The binomial distribution</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Probability &amp; Statistics 1 Coursebook (Dean Chalmers), Chapter 7 The binomial and geometric distributions, printed pp.166–174. Own wording and new numbers, following the coursebook conditions for a binomial model and the formula for binomial probabilities.</p>
+<p class="key-words"><strong>Key words:</strong> <em>binomial distribution</em>, <em>trial</em>, <em>success</em>, <em>independent</em></p>
+<h3>When is a binomial model suitable?</h3>
+<p>A random variable \(X\) has a binomial distribution when it counts the number of successes in a fixed number of trials and:</p>
+<ul><li>there is a fixed number \(n\) of trials;</li><li>each trial has only two outcomes, success or failure;</li><li>the trials are independent;</li><li>the probability of success \(p\) is the same for every trial.</li></ul>
+<p>We write \(X\sim\mathrm{B}(n, p)\). The probability of failure is \(q=1-p\).</p>
+<h3>Binomial probabilities</h3>
+<p>Each particular arrangement of \(r\) successes and \(n-r\) failures has probability \(p^rq^{n-r}\), and there are \({}^nC_r\) such arrangements, so</p>
+<p>\[P(X=r)={}^nC_r\,p^r\,q^{n-r},\qquad r=0, 1, 2, \dots, n.\]</p>
+<p>For cumulative probabilities add terms, or use the complement. For example \(P(X\ge 1)=1-P(X=0)=1-q^n\).</p>
+<h3>Mean and variance</h3>
+<p>If \(X\sim\mathrm{B}(n, p)\), then \(E(X)=np\) and \(\mathrm{Var}(X)=np(1-p)=npq\).</p>
+<div class="ms-widget" data-widget="binomial-bars"></div>
+<script src="../../assets/widget-kinds-pkg17.js"></script>
+<div class="worked-example">
+<h4>Worked example 1: At most two</h4>
+<p class="src">Coursebook, 7.1, binomial probabilities. New numbers.</p>
+<p>\(X\sim\mathrm{B}(8, 0.25)\). Find \(P(X\le 2)\).</p>
+<ol class="steps">
+<li>\(P(X=0)=0.75^8=0.10011\) <span class="mark">M1</span></li>
+<li>\(P(X=1)=8\times0.25\times0.75^7=0.26697\) and \(P(X=2)=28\times0.25^2\times0.75^6=0.31146\) <span class="mark">M1</span></li>
+<li>\(P(X\le 2)=0.10011+0.26697+0.31146=0.679\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(0.679\) (3 s.f.)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: Mean and variance</h4>
+<p class="src">Coursebook, 7.1, expectation and variance. New numbers.</p>
+<p>A fair die is rolled 30 times. \(X\) is the number of sixes. Find \(E(X)\) and \(\mathrm{Var}(X)\).</p>
+<ol class="steps">
+<li>\(X\sim\mathrm{B}\bigl(30, \tfrac{1}{6}\bigr)\) <span class="mark">B1</span></li>
+<li>\(E(X)=30\times\dfrac{1}{6}=5\) <span class="mark">B1</span></li>
+<li>\(\mathrm{Var}(X)=5\times\dfrac{5}{6}=4.17\) (3 s.f.) <span class="mark">B1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(E(X)=5\), \(\mathrm{Var}(X)=\dfrac{25}{6}\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Forgetting the factor \({}^nC_r\).</li><li>Treating \(P(X\lt 10)\) as including 10. Fewer than 10 means 0 to 9.</li><li>Using a binomial model when the trials are not independent, for example when objects are taken without replacement from a small group.</li></ul>
+<h3>Past paper</h3>
+<p class="src">9709/63/O/N/14 Q3, official QP and official MS.</p>
+<p>The number of books read by members of a book club each year has the binomial distribution \(\mathrm{B}(12, 0.7)\).</p><p>(i) State the greatest number of books that could be read by a member of the book club in a particular year and find the probability that a member reads this number of books. [2]</p><p>(ii) Find the probability that a member reads fewer than 10 books in a particular year. [3]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(i) Greatest number is 12. <span class="mark">B1</span> Official MS: B1, max = 12 (implied by P(12) with power 12).</li>
+<li>(i) \(P(12)=0.7^{12}=0.0138\) <span class="mark">B1</span> Official MS: B1, 0.0138; accept 0.014.</li>
+<li>(ii) \(P(X&lt;10)=1-P(10, 11, 12)\) <span class="mark">M1</span> Official MS: M1, binomial term 12Cr (0.7)^r (0.3)^(12−r) or 12Cr p^r q^(12−r) with p + q strictly between 0.99 and 1.00.</li>
+<li>(ii) \(=1-{}^{12}C_{10}(0.7)^{10}(0.3)^2-12(0.7)^{11}(0.3)-(0.7)^{12}=1-0.2528\) <span class="mark">A1</span> Official MS: A1, correct unsimplified expression OE.</li>
+<li>(ii) \(=0.747\) <span class="mark">A1</span> Official MS: A1, correct answer.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/52/F/M/22 Q2, official QP and official MS.</p>
+<p>In a certain country, the probability of more than 10 cm of rain on any particular day is 0.18, independently of the weather on any other day.</p><p>(a) Find the probability that in any randomly chosen 7-day period, more than 2 days have more than 10 cm of rain. [3]</p><p>(b) For 3 randomly chosen 7-day periods, find the probability that exactly two of these periods have at least one day with more than 10 cm of rain. [3]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(a) \(P(X&gt;2)=1-\bigl({}^7C_0\,0.18^0\,0.82^7+{}^7C_1\,0.18^1\,0.82^6+{}^7C_2\,0.18^2\,0.82^5\bigr)\) <span class="mark">M1</span> Official MS: M1, one term 7Cx p^x (1 − p)^(7−x), p strictly between 0 and 1, x strictly between 0 and 7.</li>
+<li>(a) \(=1-(0.249285+0.383048+0.252251)=1-0.88458\) <span class="mark">A1</span> Official MS: A1, correct unsimplified expression or better; condone omission of brackets if recovered.</li>
+<li>(a) \(=0.115\) <span class="mark">B1</span> Official MS: B1 WWW, 0.115 ≤ p, p below 0.1155, not from wrong working.</li>
+<li>(b) \(P(\text{at least 1 day})=1-0.82^7=0.7507\) <span class="mark">B1</span> Official MS: B1, AWRT 0.751 seen.</li>
+<li>(b) \(P(\text{exactly 2 periods})=0.7507^2\times(1-0.7507)\times 3\) <span class="mark">M1</span> Official MS: M1, FT their 1 − p⁷ or their 0.7507 if identified (not 0.18 or 0.82); accept ×3Cr (r = 1, 2) or ×3P1 for ×3; condone ×2.</li>
+<li>(b) \(=0.421\) <span class="mark">A1</span> Official MS: A1, accept 0.421 ≤ p ≤ 0.4215. SC B1 if 0/3 scored for final answer only.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>\(X\sim\mathrm{B}(6, 0.3)\). Find \(P(X=2)\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(P(X=2)={}^6C_2\times0.3^2\times0.7^4=15\times0.09\times0.2401\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(0.324\) (3 s.f.)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>\(X\sim\mathrm{B}(5, 0.2)\). Find \(P(X\ge 1)\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(P(X=0)=0.8^5=0.32768\)</li><li>\(P(X\ge 1)=1-0.32768\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(0.672\) (3 s.f.)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>\(X\sim\mathrm{B}(20, 0.3)\). Find \(\mathrm{Var}(X)\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(np=6\)</li><li>\(npq=6\times0.7\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(4.2\)</p>
+</details>
+</div>
+</section>

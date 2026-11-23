@@ -1,0 +1,90 @@
+<script>if(location.hostname.endsWith('onrender.com'))location.replace('https://math-sandbox.pages.dev'+location.pathname+location.search+location.hash)</script>
+<section class="theory" data-section="P23-9.3">
+<h2>9.3 The scalar product</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 2 &amp; 3 Coursebook (Sue Pemberton, series editor Julian Gilbey), Chapter 9 Vectors, printed pp.225–230. Own wording and new numbers, following the coursebook definition of the scalar product and its use for angles and perpendicular vectors.</p>
+<p class="key-words"><strong>Key words:</strong> <em>scalar product</em>, <em>perpendicular vectors</em>, <em>angle between two vectors</em></p>
+<h3>Definition</h3>
+<p>The scalar product (dot product) of \(\mathbf{a}=a_1\mathbf{i}+a_2\mathbf{j}+a_3\mathbf{k}\) and \(\mathbf{b}=b_1\mathbf{i}+b_2\mathbf{j}+b_3\mathbf{k}\) is the number</p>
+<p>\[\mathbf{a}\cdot\mathbf{b}=a_1b_1+a_2b_2+a_3b_3=\lvert \mathbf{a}\rvert \lvert \mathbf{b}\rvert \cos\theta,\]</p>
+<p>where \(\theta\) is the angle between the two vectors when they both point away from the same point.</p>
+<h3>Using the scalar product</h3>
+<ul><li>Angle between two vectors: \(\cos\theta=\dfrac{\mathbf{a}\cdot\mathbf{b}}{\lvert \mathbf{a}\rvert \lvert \mathbf{b}\rvert }\).</li><li>Perpendicular vectors: \(\mathbf{a}\cdot\mathbf{b}=0\) (for non-zero vectors).</li><li>If \(\mathbf{a}\cdot\mathbf{b}\lt 0\), the angle is obtuse.</li></ul>
+<p>For an angle such as \(OAB\) in a triangle, use the two vectors that start at \(A\): \(\overrightarrow{AO}\) and \(\overrightarrow{AB}\).</p>
+<div class="ms-widget" data-widget="vector-angle"></div>
+<script src="../../assets/widget-kinds-pkg17.js"></script>
+<div class="worked-example">
+<h4>Worked example 1: Angle between two vectors</h4>
+<p class="src">Coursebook, 9.3, angle between vectors. New numbers.</p>
+<p>Find the angle between \(\mathbf{a}=\mathbf{i}+2\mathbf{j}+2\mathbf{k}\) and \(\mathbf{b}=3\mathbf{i}-4\mathbf{k}\).</p>
+<ol class="steps">
+<li>\(\mathbf{a}\cdot\mathbf{b}=3+0-8=-5\) <span class="mark">M1</span></li>
+<li>\(\lvert \mathbf{a}\rvert =3\), \(\lvert \mathbf{b}\rvert =5\), so \(\cos\theta=\dfrac{-5}{15}\) <span class="mark">M1</span></li>
+<li>\(\theta=109.5^\circ\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(109.5^\circ\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: Perpendicular vectors</h4>
+<p class="src">Coursebook, 9.3, perpendicular vectors. New numbers.</p>
+<p>Find \(k\) so that \(2\mathbf{i}+k\mathbf{j}-\mathbf{k}\) is perpendicular to \(\mathbf{i}-3\mathbf{j}+4\mathbf{k}\).</p>
+<ol class="steps">
+<li>\(2-3k-4=0\) <span class="mark">M1</span></li>
+<li>\(k=-\dfrac{2}{3}\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(k=-\dfrac{2}{3}\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Using \(\overrightarrow{OA}\) and \(\overrightarrow{OB}\) for angle \(OAB\). The angle at \(A\) needs vectors starting at \(A\).</li><li>Getting the acute angle instead of the obtuse one: keep the sign of the scalar product.</li><li>Writing the scalar product as a vector. It is a number.</li></ul>
+<h3>Past paper</h3>
+<p class="src">9709/12/F/M/17 Q6, official QP and official MS.</p>
+<p>Relative to an origin \(O\), the position vectors of the points \(A\) and \(B\) are given by</p><p>\[\overrightarrow{OA}=2\mathbf{i}+3\mathbf{j}+5\mathbf{k}\quad\text{and}\quad \overrightarrow{OB}=7\mathbf{i}+4\mathbf{j}+3\mathbf{k}.\]</p><p>(i) Use a scalar product to find angle \(OAB\). [5]</p><p>(ii) Find the area of triangle \(OAB\). [2]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(i) \(\overrightarrow{BA}=\overrightarrow{OA}-\overrightarrow{OB}=-5\mathbf{i}-\mathbf{j}+2\mathbf{k}\) <span class="mark">B1</span> Official MS: B1, allow vector reversed; ignore label BA or AB.</li>
+<li>(i) \(\overrightarrow{OA}\cdot\overrightarrow{BA}=-10-3+10=-3\) <span class="mark">M1</span> Official MS: M1, soi by ±3.</li>
+<li>(i) \(\lvert \overrightarrow{OA}\rvert \times\lvert \overrightarrow{BA}\rvert =\sqrt{2^2+3^2+5^2}\times\sqrt{5^2+1^2+2^2}=\sqrt{38}\times\sqrt{30}\) <span class="mark">M1</span> Official MS: M1, product of moduli for at least 1 correct vector or reverse.</li>
+<li>(i) \(\cos OAB=\dfrac{-3}{\sqrt{38}\sqrt{30}}\) <span class="mark">M1</span> Official MS: M1, cos OAB = ±3/(√38 × √30).</li>
+<li>(i) Angle \(OAB=95.1^\circ\) (or 1.66 radians) <span class="mark">A1</span> Official MS: A1, 95.1° or 1.66 rad.</li>
+<li>(ii) Area \(=\dfrac{1}{2}\sqrt{38}\sqrt{30}\sin95.1^\circ\) <span class="mark">M1</span> Official MS: M1, allow their moduli product from (i); also allow ½√38 × √74 sin 39.4.</li>
+<li>(ii) \(=16.8\) <span class="mark">A1</span> Official MS: A1 cao, but not from sin 84.9°.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/12/M/J/13 Q6, official QP and official MS.</p>
+<p>Relative to an origin \(O\), the position vectors of points \(A\) and \(B\) are given by</p><p>\[\overrightarrow{OA}=\mathbf{i}-2\mathbf{j}+2\mathbf{k}\quad\text{and}\quad \overrightarrow{OB}=3\mathbf{i}+p\mathbf{j}+q\mathbf{k},\]</p><p>where \(p\) and \(q\) are constants.</p><p>(i) State the values of \(p\) and \(q\) for which \(\overrightarrow{OA}\) is parallel to \(\overrightarrow{OB}\). [2]</p><p>(ii) In the case where \(q=2p\), find the value of \(p\) for which angle \(BOA\) is \(90^\circ\). [2]</p><p>(iii) In the case where \(p=1\) and \(q=8\), find the unit vector in the direction of \(\overrightarrow{AB}\). [3]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(i) \(p=-6\) <span class="mark">B1</span> Official MS: B1, p = −6.</li>
+<li>(i) \(q=6\) <span class="mark">B1</span> Official MS: B1, q = 6.</li>
+<li>(ii) \(3-2p+4p=0\) <span class="mark">M1</span> Official MS: M1, use of x₁x₂ + y₁y₂ + z₁z₂ = 0.</li>
+<li>(ii) \(p=-1.5\) <span class="mark">A1</span> Official MS: A1.</li>
+<li>(iii) \(\overrightarrow{AB}=\mathbf{b}-\mathbf{a}=2\mathbf{i}+3\mathbf{j}+6\mathbf{k}\) <span class="mark">B1</span> Official MS: B1, not for a − b.</li>
+<li>(iii) Divide by the modulus, \(\sqrt{4+9+36}=7\) <span class="mark">M1</span> Official MS: M1 for division by the modulus.</li>
+<li>(iii) Unit vector \(=\dfrac{1}{7}(2\mathbf{i}+3\mathbf{j}+6\mathbf{k})\) <span class="mark">A1</span> Official MS: A1, FT on the B1.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>Find the scalar product of \(\begin{pmatrix}3\\-1\\2\end{pmatrix}\) and \(\begin{pmatrix}1\\4\\5\end{pmatrix}\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(3-4+10\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(9\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>Find the cosine of the angle between \(\begin{pmatrix}2\\1\\-2\end{pmatrix}\) and \(\begin{pmatrix}4\\4\\2\end{pmatrix}\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\mathbf{a}\cdot\mathbf{b}=8+4-4=8\)</li><li>\(\lvert \mathbf{a}\rvert \lvert \mathbf{b}\rvert =3\times6=18\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{8}{18}=0.444\) (3 s.f.)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>The vectors \(\begin{pmatrix}2\\p\\1\end{pmatrix}\) and \(\begin{pmatrix}1\\2\\-8\end{pmatrix}\) are perpendicular. Find \(p\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(2+2p-8=0\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(p=3\)</p>
+</details>
+</div>
+</section>

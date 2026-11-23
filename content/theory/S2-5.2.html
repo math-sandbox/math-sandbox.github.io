@@ -1,0 +1,83 @@
+<script>if(location.hostname.endsWith('onrender.com'))location.replace('https://math-sandbox.pages.dev'+location.pathname+location.search+location.hash)</script>
+<section class="theory" data-section="S2-5.2">
+<h2>5.2 The distribution of sample means</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Probability &amp; Statistics 2 Coursebook (Jayne Kranat), Chapter 5 Sampling, printed pp.106–117. Own wording and new numbers, following the coursebook results for the mean and variance of the sample mean and the central limit theorem.</p>
+<p class="key-words"><strong>Key words:</strong> <em>sample mean</em>, <em>central limit theorem</em>, <em>standard error</em></p>
+<h3>The sample mean as a random variable</h3>
+<p>Take a random sample \(X_1, X_2, \dots, X_n\) from a population with mean \(\mu\) and variance \(\sigma^2\). The sample mean \(\bar{X}=\dfrac{X_1+X_2+\dots+X_n}{n}\) changes from sample to sample, so it is a random variable with</p>
+<p>\[E(\bar{X})=\mu,\qquad \mathrm{Var}(\bar{X})=\dfrac{\sigma^2}{n}.\]</p>
+<p>The standard deviation of \(\bar{X}\), \(\dfrac{\sigma}{\sqrt{n}}\), is called the standard error of the mean. Larger samples give sample means that are less spread out.</p>
+<h3>Exact or approximate?</h3>
+<ul><li>If the population is normal, \(\bar{X}\sim\mathrm{N}\Bigl(\mu, \dfrac{\sigma^2}{n}\Bigr)\) exactly, for any sample size.</li><li>If the population is not normal but \(n\) is large (as a guide, \(n\ge 30\)), the central limit theorem says \(\bar{X}\) is approximately \(\mathrm{N}\Bigl(\mu, \dfrac{\sigma^2}{n}\Bigr)\).</li></ul>
+<p>To find a probability, standardise using the standard error: \(z=\dfrac{\bar{x}-\mu}{\sigma/\sqrt{n}}\).</p>
+<div class="worked-example">
+<h4>Worked example 1: Describing the distribution</h4>
+<p class="src">Coursebook, 5.2, distribution of the sample mean. New numbers.</p>
+<p>\(X\) has mean 40 and standard deviation 15. Describe the distribution of the mean of a random sample of 50 values of \(X\).</p>
+<ol class="steps">
+<li>\(n=50\) is large, so by the central limit theorem \(\bar{X}\) is approximately normal. <span class="mark">B1</span></li>
+<li>Mean 40 <span class="mark">B1</span></li>
+<li>Variance \(\dfrac{15^2}{50}=4.5\) <span class="mark">B1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\bar{X}\sim\mathrm{N}(40, 4.5)\) approximately</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: A probability for the sample mean</h4>
+<p class="src">Coursebook, 5.2, normal population. New numbers.</p>
+<p>\(X\sim\mathrm{N}(80, 100)\). A random sample of 25 values is taken. Find \(P(\bar{X}\gt 83)\).</p>
+<ol class="steps">
+<li>\(\bar{X}\sim\mathrm{N}(80, 4)\), standard deviation 2 <span class="mark">B1</span></li>
+<li>\(z=\dfrac{83-80}{2}=1.5\) <span class="mark">M1</span></li>
+<li>\(P(\bar{X}\gt 83)=1-\Phi(1.5)=1-0.9332=0.0668\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(0.0668\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Dividing by \(n\) instead of \(\sqrt{n}\) for the standard deviation of \(\bar{X}\).</li><li>Saying the population must be normal for the central limit theorem to apply. The theorem is needed when the population is not normal.</li><li>Using \(\sigma\) instead of \(\dfrac{\sigma}{\sqrt{n}}\) when standardising a sample mean.</li></ul>
+<h3>Past paper</h3>
+<p class="src">9709/72/M/J/19 Q2, official QP and official MS.</p>
+<p>The random variable \(X\) has mean 372 and standard deviation 54.</p><p>(i) Describe fully the distribution of the mean of a random sample of 36 values of \(X\). [3]</p><p>(ii) The distribution in part (i) might be either exact or approximate. State a condition under which the distribution is exact. [1]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(i) Normal with mean 372 <span class="mark">B1</span> Official MS: B1, normal with mean 372.</li>
+<li>(i) Standard deviation \(=\dfrac{54}{\sqrt{36}}\) <span class="mark">M1</span> Official MS: M1, sd = 54/√36, or variance = 54²/36.</li>
+<li>(i) \(=9\) (variance 81) <span class="mark">A1</span> Official MS: A1, 9 (or variance 81).</li>
+<li>(ii) The population (\(X\)) is normally distributed. <span class="mark">B1</span> Official MS: B1, population normal; allow X is normal.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/71/O/N/18 Q3, official QP and official MS.</p>
+<p>A population has mean 12 and standard deviation 2.5. A large random sample of size \(n\) is chosen from this population and the sample mean is denoted by \(\bar{X}\). Given that \(P(\bar{X}&lt;12.2)=0.975\), correct to 3 significant figures, find the value of \(n\). [4]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>\(\dfrac{12.2-12}{2.5/\sqrt{n}}\) <span class="mark">M1</span> Official MS: M1, standardisation; allow continuity correction; needs the correct form including the square root.</li>
+<li>\(=1.96\) <span class="mark">B1</span> Official MS: B1, correct z.</li>
+<li>\(\sqrt{n}=1.96\times2.5\div0.2=24.5\) <span class="mark">M1</span> Official MS: M1, rearrange the equation in n or √n with numerical z to the stage n = or √n =; allow arithmetical slips only.</li>
+<li>\(n=600\) <span class="mark">A1</span> Official MS: A1, accept 601. SR: a whole-number answer from 595 to 605 can score full marks if fully justified.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>\(X\) has standard deviation 12. Find the standard deviation of the mean of a random sample of 36 values of \(X\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{12}{\sqrt{36}}=\dfrac{12}{6}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(2\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>\(X\) has variance 12. The mean of a random sample of \(n\) values has variance 0.6. Find \(n\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{12}{n}=0.6\)</li><li>\(n=\dfrac{12}{0.6}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(n=20\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>\(X\) has mean 50 and standard deviation 6. For a random sample of 16 values, find the \(z\)-value used for \(P(\bar{X}\gt 52)\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>Standard deviation of \(\bar{X}\) is \(\dfrac{6}{4}=1.5\)</li><li>\(z=\dfrac{52-50}{1.5}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(1.33\) (3 s.f.)</p>
+</details>
+</div>
+</section>

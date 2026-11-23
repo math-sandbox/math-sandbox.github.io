@@ -1,0 +1,297 @@
+[
+    {
+        "id": "P23-9.1-QC1-gen",
+        "section": "P23-9.1",
+        "kind": "generated",
+        "title": "Magnitude of a three-dimensional vector",
+        "marks": 2,
+        "source": "Theory P23-9.1 Quick check 1; square root of the sum of the squares",
+        "params": [
+            {
+                "name": "a",
+                "min": 1,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": -6,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "c",
+                "min": 1,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "N": "a*a+b*b+c*c",
+            "A": "math.pow(a*a+b*b+c*c,0.5)"
+        },
+        "constraints": [
+            "a>=1"
+        ],
+        "original": {
+            "a": 2,
+            "b": -3,
+            "c": 6
+        },
+        "stem": "Find the magnitude of the vector \\(\\mathbf{v}=\\begin{pmatrix}{a|int}\\\\{b|int}\\\\{c|int}\\end{pmatrix}\\).",
+        "answer": {
+            "expression": "math.pow(N,0.5)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\lvert \\mathbf{v}\\rvert ^2={a|int}^2+({b|int})^2+{c|int}^2={N|int}\\)",
+                "result": "N",
+                "format": "int",
+                "mark": "M1",
+                "note": "Sum of the squares of the components."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\lvert \\mathbf{v}\\rvert =\\sqrt{{N|int}}={A|sf3z}\\)",
+                "result": "math.pow(N,0.5)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Square root."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original vector (2, -3, 6), magnitude 7"
+            },
+            {
+                "id": "disp",
+                "stem": "A displacement is given by the column vector \\(\\begin{pmatrix}{a|int}\\\\{b|int}\\\\{c|int}\\end{pmatrix}\\). Find the length of the displacement."
+            },
+            {
+                "id": "ijk",
+                "stem": "The vector \\(\\mathbf{v}\\) has components \\({a|int}\\), \\({b|int}\\) and \\({c|int}\\) in the directions of \\(\\mathbf{i}\\), \\(\\mathbf{j}\\) and \\(\\mathbf{k}\\). Find \\(\\lvert \\mathbf{v}\\rvert \\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-9.1"
+            ],
+            "topic": "Vectors",
+            "chapter": "P23-9",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-9-1.json",
+                "locator": "P23-9.1-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-9.1-QC2-gen",
+        "section": "P23-9.1",
+        "kind": "generated",
+        "title": "Unknown component of a parallel vector",
+        "marks": 2,
+        "source": "Theory P23-9.1 Quick check 2; parallel vectors are scalar multiples",
+        "params": [
+            {
+                "name": "a",
+                "min": 1,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "c",
+                "min": 1,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "k",
+                "min": 2,
+                "max": 4,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "ka": "k*a",
+            "kc": "k*c",
+            "A": "k*b"
+        },
+        "constraints": [
+            "k>=2"
+        ],
+        "original": {
+            "a": 1,
+            "b": 3,
+            "c": 2,
+            "k": 3
+        },
+        "stem": "The vectors \\(\\begin{pmatrix}{a|int}\\\\{b|int}\\\\{c|int}\\end{pmatrix}\\) and \\(\\begin{pmatrix}{ka|int}\\\\p\\\\{kc|int}\\end{pmatrix}\\) are parallel. Find \\(p\\).",
+        "answer": {
+            "expression": "k*b",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "The second vector is \\({k|int}\\) times the first, since \\({ka|int}={k|int}\\times{a|int}\\)",
+                "result": "k",
+                "format": "int",
+                "mark": "M1",
+                "note": "Find the scalar multiple from a known component."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(p={k|int}\\times({b|int})={A|int}\\)",
+                "result": "k*b",
+                "format": "int",
+                "mark": "A1",
+                "note": "Apply the same multiple."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original (1, 3, 2) and (3, p, 6), p = 9"
+            },
+            {
+                "id": "par",
+                "stem": "Given that \\(\\begin{pmatrix}{ka|int}\\\\p\\\\{kc|int}\\end{pmatrix}\\) is parallel to \\(\\begin{pmatrix}{a|int}\\\\{b|int}\\\\{c|int}\\end{pmatrix}\\), find the value of \\(p\\)."
+            },
+            {
+                "id": "mult",
+                "stem": "The vector \\(\\begin{pmatrix}{ka|int}\\\\p\\\\{kc|int}\\end{pmatrix}\\) is a scalar multiple of \\(\\begin{pmatrix}{a|int}\\\\{b|int}\\\\{c|int}\\end{pmatrix}\\). Find \\(p\\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-9.1"
+            ],
+            "topic": "Vectors",
+            "chapter": "P23-9",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-9-1.json",
+                "locator": "P23-9.1-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-9.1-QC3-gen",
+        "section": "P23-9.1",
+        "kind": "generated",
+        "title": "Unknown component from a given magnitude",
+        "marks": 2,
+        "source": "Theory P23-9.1 Quick check 3; form an equation from the magnitude",
+        "params": [
+            {
+                "name": "t",
+                "min": 1,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "a",
+                "min": 2,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 2,
+                "max": 6,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "N": "t*t+a*a+b*b",
+            "R": "t*t",
+            "A": "t"
+        },
+        "constraints": [
+            "t>=1"
+        ],
+        "original": {
+            "t": 4,
+            "a": 2,
+            "b": 4
+        },
+        "stem": "The vector \\(\\begin{pmatrix}t\\\\{a|int}\\\\{b|int}\\end{pmatrix}\\), where \\(t\\gt 0\\), has magnitude \\(\\sqrt{{N|int}}\\). Find \\(t\\).",
+        "answer": {
+            "expression": "math.pow(N-a*a-b*b,0.5)",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(t^2+{a|int}^2+{b|int}^2={N|int}\\), so \\(t^2={R|int}\\)",
+                "result": "R",
+                "format": "int",
+                "mark": "M1",
+                "note": "Square the magnitude and rearrange."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(t={A|int}\\) (positive root)",
+                "result": "math.pow(R,0.5)",
+                "format": "int",
+                "mark": "A1",
+                "note": "Take the positive root."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original vector (t, 2, 4) with magnitude root 36, t = 4"
+            },
+            {
+                "id": "len",
+                "stem": "The length of the vector \\(t\\mathbf{i}+{a|int}\\mathbf{j}+{b|int}\\mathbf{k}\\) is \\(\\sqrt{{N|int}}\\), and \\(t\\) is positive. Find \\(t\\)."
+            },
+            {
+                "id": "mag",
+                "stem": "Given that \\(\\left\\lvert \\begin{pmatrix}t\\\\{a|int}\\\\{b|int}\\end{pmatrix}\\right\\rvert =\\sqrt{{N|int}}\\) and \\(t\\gt 0\\), find the value of \\(t\\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-9.1"
+            ],
+            "topic": "Vectors",
+            "chapter": "P23-9",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-9-1.json",
+                "locator": "P23-9.1-QC3-gen"
+            }
+        }
+    }
+]

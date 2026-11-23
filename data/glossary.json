@@ -5863,5 +5863,484 @@
     "match": [
       "integration by parts"
     ]
+  },
+  {
+    "id": "discrete-random-variable",
+    "term": "discrete random variable",
+    "definition": "A random variable that can take only particular separate values, usually whole numbers obtained by counting.",
+    "sections": [
+      "S1-6.1",
+      "S1-6.2"
+    ],
+    "first_section": "S1-6.1",
+    "type": "term",
+    "match": [
+      "discrete random variables",
+      "discrete random variable"
+    ]
+  },
+  {
+    "id": "probability-distribution",
+    "term": "probability distribution",
+    "definition": "A list or table of all the possible values of a discrete random variable together with their probabilities, which add up to 1.",
+    "sections": [
+      "S1-6.1",
+      "S1-6.2"
+    ],
+    "first_section": "S1-6.1",
+    "type": "term",
+    "match": [
+      "probability distributions",
+      "probability distribution"
+    ]
+  },
+  {
+    "id": "without-replacement",
+    "term": "without replacement",
+    "definition": "Selecting objects one after another without putting each one back, so the number of objects left goes down by 1 after each selection.",
+    "sections": [
+      "S1-6.2"
+    ],
+    "first_section": "S1-6.2",
+    "type": "term",
+    "match": [
+      "without replacement"
+    ]
+  },
+  {
+    "id": "expected-value",
+    "term": "expected value",
+    "definition": "The expectation (mean) of a random variable: the long-run average value, E(X) = Σ x P(X = x) for a discrete random variable.",
+    "sections": [
+      "S1-6.3"
+    ],
+    "first_section": "S1-6.3",
+    "type": "term",
+    "match": [
+      "expected value"
+    ]
+  },
+  {
+    "id": "variance-of-a-discrete-random-variable",
+    "term": "variance of a discrete random variable",
+    "definition": "Var(X) = E(X²) − (E(X))², where E(X²) = Σ x² P(X = x). It measures the spread of X about its mean.",
+    "sections": [],
+    "first_section": null,
+    "type": "term",
+    "match": [
+      "variance of a discrete random variable"
+    ]
+  },
+  {
+    "id": "binomial-distribution",
+    "term": "binomial distribution",
+    "definition": "The distribution B(n, p) of the number of successes in n independent trials, each with the same probability p of success: P(X = r) = nCr p^r (1 − p)^(n − r).",
+    "sections": [
+      "S1-7.1"
+    ],
+    "first_section": "S1-7.1",
+    "type": "term",
+    "match": [
+      "binomial distributions",
+      "binomial distribution"
+    ]
+  },
+  {
+    "id": "success",
+    "term": "success",
+    "definition": "In a binomial or geometric model, the outcome of a trial that is being counted. The other outcome is called failure.",
+    "sections": [
+      "S1-7.1"
+    ],
+    "first_section": "S1-7.1",
+    "type": "term",
+    "match": [
+      "successes",
+      "success"
+    ]
+  },
+  {
+    "id": "sample-mean",
+    "term": "sample mean",
+    "definition": "The mean of the values in a random sample. As a random variable it has mean μ and variance σ²/n.",
+    "sections": [
+      "S2-5.2",
+      "S2-6.1"
+    ],
+    "first_section": "S2-5.2",
+    "type": "term",
+    "match": [
+      "sample means",
+      "sample mean"
+    ]
+  },
+  {
+    "id": "central-limit-theorem",
+    "term": "central limit theorem",
+    "definition": "For a large random sample from any population with mean μ and variance σ², the sample mean is approximately normally distributed with mean μ and variance σ²/n.",
+    "sections": [
+      "S2-5.2"
+    ],
+    "first_section": "S2-5.2",
+    "type": "term",
+    "match": [
+      "central limit theorem"
+    ]
+  },
+  {
+    "id": "standard-error",
+    "term": "standard error",
+    "definition": "The standard deviation of the sample mean, σ/√n.",
+    "sections": [
+      "S2-5.2"
+    ],
+    "first_section": "S2-5.2",
+    "type": "term",
+    "match": [
+      "standard error"
+    ]
+  },
+  {
+    "id": "unbiased-estimate",
+    "term": "unbiased estimate",
+    "definition": "An estimate of a population parameter whose average over all possible samples equals the true value. The unbiased estimate of σ² divides by n − 1.",
+    "sections": [
+      "S2-6.1"
+    ],
+    "first_section": "S2-6.1",
+    "type": "term",
+    "match": [
+      "unbiased estimates",
+      "unbiased estimate"
+    ]
+  },
+  {
+    "id": "population-variance",
+    "term": "population variance",
+    "definition": "The variance σ² of the whole population. It is usually unknown and is estimated from a sample.",
+    "sections": [],
+    "first_section": null,
+    "type": "term",
+    "match": [
+      "population variance"
+    ]
+  },
+  {
+    "id": "equation",
+    "term": "equation",
+    "definition": "A statement that two expressions are equal, containing an unknown whose value can be found by solving.",
+    "sections": [
+      "IGCSE-22.1"
+    ],
+    "first_section": "IGCSE-22.1",
+    "type": "term",
+    "match": [
+      "equations",
+      "equation"
+    ]
+  },
+  {
+    "id": "unknown",
+    "term": "unknown",
+    "definition": "A quantity whose value is not known yet, represented by a letter in an equation.",
+    "sections": [
+      "IGCSE-22.1"
+    ],
+    "first_section": "IGCSE-22.1",
+    "type": "term",
+    "match": [
+      "unknown"
+    ]
+  },
+  {
+    "id": "solve",
+    "term": "solve",
+    "definition": "To find the value or values of the unknown that make an equation true.",
+    "sections": [
+      "IGCSE-22.1"
+    ],
+    "first_section": "IGCSE-22.1",
+    "type": "term",
+    "match": [
+      "solve"
+    ]
+  },
+  {
+    "id": "formula",
+    "term": "formula",
+    "definition": "A rule written with letters that shows how one quantity is related to others, such as v = u + at.",
+    "sections": [
+      "IGCSE-22.2"
+    ],
+    "first_section": "IGCSE-22.2",
+    "type": "term",
+    "match": [
+      "formulae",
+      "formula"
+    ]
+  },
+  {
+    "id": "subject-of-a-formula",
+    "term": "subject of a formula",
+    "definition": "The letter on its own on one side of a formula, such as v in v = u + at.",
+    "sections": [
+      "IGCSE-22.2"
+    ],
+    "first_section": "IGCSE-22.2",
+    "type": "term",
+    "match": [
+      "subject of a formula"
+    ]
+  },
+  {
+    "id": "function",
+    "term": "function",
+    "definition": "A rule that gives exactly one output for each input, written for example f(x) = 2x + 3.",
+    "sections": [
+      "IGCSE-22.3"
+    ],
+    "first_section": "IGCSE-22.3",
+    "type": "term",
+    "match": [
+      "functions",
+      "function"
+    ]
+  },
+  {
+    "id": "vector",
+    "term": "vector",
+    "definition": "A quantity with both magnitude and direction, such as a displacement, written as a column or with i, j and k.",
+    "sections": [
+      "P23-9.1"
+    ],
+    "first_section": "P23-9.1",
+    "type": "term",
+    "match": [
+      "vectors",
+      "vector"
+    ]
+  },
+  {
+    "id": "magnitude",
+    "term": "magnitude",
+    "definition": "The size or length of a vector: for ai + bj + ck it is √(a² + b² + c²).",
+    "sections": [
+      "P23-9.1"
+    ],
+    "first_section": "P23-9.1",
+    "type": "term",
+    "match": [
+      "magnitude"
+    ]
+  },
+  {
+    "id": "parallel-vectors",
+    "term": "parallel vectors",
+    "definition": "Vectors that are scalar multiples of each other, so they have the same or opposite directions.",
+    "sections": [],
+    "first_section": null,
+    "type": "term",
+    "match": [
+      "parallel vectors"
+    ]
+  },
+  {
+    "id": "unit-vector",
+    "term": "unit vector",
+    "definition": "A vector of magnitude 1. The unit vector in the direction of v is v divided by |v|.",
+    "sections": [
+      "P23-9.1",
+      "P23-9.2"
+    ],
+    "first_section": "P23-9.1",
+    "type": "term",
+    "match": [
+      "unit vectors",
+      "unit vector"
+    ]
+  },
+  {
+    "id": "position-vector",
+    "term": "position vector",
+    "definition": "The vector from the origin O to a point; the position vector of A is written a or OA.",
+    "sections": [
+      "P23-9.2"
+    ],
+    "first_section": "P23-9.2",
+    "type": "term",
+    "match": [
+      "position vectors",
+      "position vector"
+    ]
+  },
+  {
+    "id": "scalar-product",
+    "term": "scalar product",
+    "definition": "For a = a₁i + a₂j + a₃k and b = b₁i + b₂j + b₃k, a·b = a₁b₁ + a₂b₂ + a₃b₃ = |a||b|cos θ, a number.",
+    "sections": [
+      "P23-9.3"
+    ],
+    "first_section": "P23-9.3",
+    "type": "term",
+    "match": [
+      "scalar product"
+    ]
+  },
+  {
+    "id": "perpendicular-vectors",
+    "term": "perpendicular vectors",
+    "definition": "Non-zero vectors at right angles to each other; their scalar product is zero.",
+    "sections": [
+      "P23-9.3"
+    ],
+    "first_section": "P23-9.3",
+    "type": "term",
+    "match": [
+      "perpendicular vectors"
+    ]
+  },
+  {
+    "id": "angle-between-two-vectors",
+    "term": "angle between two vectors",
+    "definition": "The angle θ between two vectors that both point away from the same point, found from cos θ = a·b / (|a||b|).",
+    "sections": [
+      "P23-9.3"
+    ],
+    "first_section": "P23-9.3",
+    "type": "term",
+    "match": [
+      "angle between two vectors"
+    ]
+  },
+  {
+    "id": "vector-equation-of-a-line",
+    "term": "vector equation of a line",
+    "definition": "An equation r = a + λb giving the position vector r of any point on the line through a in the direction b.",
+    "sections": [],
+    "first_section": null,
+    "type": "term",
+    "match": [
+      "vector equation of a line"
+    ]
+  },
+  {
+    "id": "direction-vector",
+    "term": "direction vector",
+    "definition": "The vector b in the line equation r = a + λb, giving the direction of the line.",
+    "sections": [
+      "P23-9.4"
+    ],
+    "first_section": "P23-9.4",
+    "type": "term",
+    "match": [
+      "direction vectors",
+      "direction vector"
+    ]
+  },
+  {
+    "id": "foot-of-the-perpendicular",
+    "term": "foot of the perpendicular",
+    "definition": "The point N on a line such that the line from a given point to N is perpendicular to the line; it is the point of the line closest to the given point.",
+    "sections": [
+      "P23-9.4"
+    ],
+    "first_section": "P23-9.4",
+    "type": "term",
+    "match": [
+      "foot of the perpendicular"
+    ]
+  },
+  {
+    "id": "skew-lines",
+    "term": "skew lines",
+    "definition": "Lines in three dimensions that are not parallel and do not intersect.",
+    "sections": [
+      "P23-9.5"
+    ],
+    "first_section": "P23-9.5",
+    "type": "term",
+    "match": [
+      "skew lines"
+    ]
+  },
+  {
+    "id": "intersecting-lines",
+    "term": "intersecting lines",
+    "definition": "Lines that have a point in common.",
+    "sections": [],
+    "first_section": null,
+    "type": "term",
+    "match": [
+      "intersecting lines"
+    ]
+  },
+  {
+    "id": "gradient-function",
+    "term": "gradient function",
+    "definition": "The derivative dy/dx or f'(x), which gives the gradient of a curve at any value of x.",
+    "sections": [
+      "P1-7.1"
+    ],
+    "first_section": "P1-7.1",
+    "type": "term",
+    "match": [
+      "gradient function"
+    ]
+  },
+  {
+    "id": "chord",
+    "term": "chord",
+    "definition": "A straight line segment joining two points on a curve.",
+    "sections": [
+      "P1-7.1"
+    ],
+    "first_section": "P1-7.1",
+    "type": "term",
+    "match": [
+      "chords",
+      "chord"
+    ]
+  },
+  {
+    "id": "second-derivative",
+    "term": "second derivative",
+    "definition": "The result of differentiating a function twice, written d²y/dx² or f''(x).",
+    "sections": [
+      "P1-7.4"
+    ],
+    "first_section": "P1-7.4",
+    "type": "term",
+    "match": [
+      "second derivatives",
+      "second derivative"
+    ]
+  },
+  {
+    "id": "increasing-function",
+    "term": "increasing function",
+    "definition": "A function f is increasing on an interval if f(x) gets larger as x increases; f'(x) is positive there.",
+    "sections": [
+      "P1-8.1"
+    ],
+    "first_section": "P1-8.1",
+    "type": "term",
+    "match": [
+      "increasing functions",
+      "increasing function"
+    ]
+  },
+  {
+    "id": "decreasing-function",
+    "term": "decreasing function",
+    "definition": "A function f is decreasing on an interval if f(x) gets smaller as x increases; f'(x) is negative there.",
+    "sections": [
+      "P1-8.1"
+    ],
+    "first_section": "P1-8.1",
+    "type": "term",
+    "match": [
+      "decreasing functions",
+      "decreasing function"
+    ]
   }
 ]

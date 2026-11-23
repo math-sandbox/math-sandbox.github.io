@@ -1,0 +1,396 @@
+[
+    {
+        "id": "S1-6.2-QC1-gen",
+        "section": "S1-6.2",
+        "kind": "generated",
+        "title": "Two taken without replacement: probability of exactly one of a colour",
+        "marks": 2,
+        "source": "Theory S1-6.2 Quick check 1; two orders, each a product of two fractions",
+        "params": [
+            {
+                "name": "r",
+                "min": 2,
+                "max": 8,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 2,
+                "max": 8,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "N": "r+b",
+            "M": "r+b-1",
+            "A": "2*r*b/((r+b)*(r+b-1))"
+        },
+        "constraints": [
+            "r>=2"
+        ],
+        "original": {
+            "r": 3,
+            "b": 5
+        },
+        "stem": "A bag contains \\({r|int}\\) red counters and \\({b|int}\\) blue counters, \\({N|int}\\) counters in total. Two counters are taken at random without replacement. The random variable \\(X\\) is the number of red counters taken. Find \\(P(X=1)\\).",
+        "answer": {
+            "expression": "2*r*b/(N*M)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(P(RB)=\\dfrac{{r|int}}{{N|int}}\\times\\dfrac{{b|int}}{{M|int}}\\)",
+                "result": "r*b/(N*M)",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Product of two probabilities with the second denominator one less."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(P(X=1)=P(RB)+P(BR)=2\\times\\dfrac{{r|int}\\times{b|int}}{{N|int}\\times{M|int}}={A|sf3z}\\)",
+                "result": "2*r*b/(N*M)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Two orders, so multiply by 2."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 3 red and 5 blue counters, P(X = 1) = 15/28"
+            },
+            {
+                "id": "sweets",
+                "stem": "A jar holds \\({r|int}\\) red sweets and \\({b|int}\\) blue sweets. Ama takes two sweets at random, one after the other, without replacement. \\(X\\) is the number of red sweets she takes. Find \\(P(X=1)\\)."
+            },
+            {
+                "id": "team",
+                "stem": "A group has \\({r|int}\\) girls and \\({b|int}\\) boys. Two people are chosen at random. \\(X\\) is the number of girls chosen. Find the probability that exactly one girl is chosen."
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-6.2"
+            ],
+            "topic": "Probability distributions",
+            "chapter": "S1-6",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-6-2.json",
+                "locator": "S1-6.2-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-6.2-QC2-gen",
+        "section": "S1-6.2",
+        "kind": "generated",
+        "title": "Sum of two fair spinners",
+        "marks": 2,
+        "source": "Theory S1-6.2 Quick check 2; count the outcomes in the sample space",
+        "params": [
+            {
+                "name": "n",
+                "min": 4,
+                "max": 8,
+                "step": 1
+            },
+            {
+                "name": "s",
+                "min": 3,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "w": "s-1",
+            "N": "n*n",
+            "A": "(s-1)/(n*n)"
+        },
+        "constraints": [
+            "s<=n+1"
+        ],
+        "original": {
+            "n": 6,
+            "s": 5
+        },
+        "stem": "Two fair spinners each have sides numbered \\(1, 2, \\dots, {n|int}\\). Both are spun and \\(X\\) is the sum of the two scores. Find \\(P(X={s|int})\\).",
+        "answer": {
+            "expression": "w/N",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "There are \\({N|int}\\) equally likely outcomes, and \\({w|int}\\) of them give a sum of \\({s|int}\\)",
+                "result": "w",
+                "format": "int",
+                "mark": "M1",
+                "note": "Count the outcomes in the sample space table."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(P(X={s|int})=\\dfrac{{w|int}}{{N|int}}={A|sf3z}\\)",
+                "result": "w/N",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Favourable outcomes over total outcomes."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original two six-sided spinners and sum 5, P(X = 5) = 4/36"
+            },
+            {
+                "id": "dice",
+                "stem": "Two fair dice, each with faces numbered \\(1\\) to \\({n|int}\\), are thrown. \\(X\\) is the total score. Find \\(P(X={s|int})\\)."
+            },
+            {
+                "id": "cards",
+                "stem": "Two fair spinners, each numbered from 1 to \\({n|int}\\), are spun together and the scores are added to give \\(X\\). What is the probability that \\(X={s|int}\\)?"
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-6.2"
+            ],
+            "topic": "Probability distributions",
+            "chapter": "S1-6",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-6-2.json",
+                "locator": "S1-6.2-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-6.2-QC3-gen",
+        "section": "S1-6.2",
+        "kind": "generated",
+        "title": "Biased coin tossed three times: exactly two heads",
+        "marks": 2,
+        "source": "Theory S1-6.2 Quick check 3; three arrangements of HHT",
+        "params": [
+            {
+                "name": "p",
+                "min": 0.1,
+                "max": 0.9,
+                "step": 0.1
+            }
+        ],
+        "derived": {
+            "q": "1-p",
+            "A": "3*p*p*(1-p)"
+        },
+        "constraints": [
+            "p>0"
+        ],
+        "original": {
+            "p": 0.6
+        },
+        "stem": "A biased coin has \\(P(\\text{head})={p|num2}\\). The coin is tossed three times and \\(X\\) is the number of heads. Find \\(P(X=2)\\).",
+        "answer": {
+            "expression": "3*p*p*q",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(P(HHT)={p|num2}\\times{p|num2}\\times{q|num2}\\)",
+                "result": "p*p*q",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "One arrangement: two heads and one tail."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(P(X=2)=3\\times{p|num2}^2\\times{q|num2}={A|sf3z}\\)",
+                "result": "3*p*p*q",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "HHT, HTH and THH: multiply by 3."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original P(head) = 0.6, P(X = 2) = 0.432"
+            },
+            {
+                "id": "target",
+                "stem": "Each time Kofi shoots at a target, the probability that he hits it is \\({p|num2}\\), independently. He shoots three times and \\(X\\) is the number of hits. Find \\(P(X=2)\\)."
+            },
+            {
+                "id": "bus",
+                "stem": "On any day, the probability that a bus is late is \\({p|num2}\\), independently of other days. \\(X\\) is the number of late days in three days. Find the probability that the bus is late on exactly two of the three days."
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-6.2"
+            ],
+            "topic": "Probability distributions",
+            "chapter": "S1-6",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-6-2.json",
+                "locator": "S1-6.2-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-6.2-PP-9709-62-FM16-Q2",
+        "section": "S1-6.2",
+        "kind": "pastpaper",
+        "title": "Number of white roses chosen",
+        "marks": 4,
+        "source": {
+            "paper": "9709/62/F/M/16 Q2",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m16_qp_62.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m16_ms_62.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>A flower shop has 5 yellow roses, 3 red roses and 2 white roses. Martin chooses 3 roses at random.</p><p>Draw up the probability distribution table for the number of white roses Martin chooses. [4]</p>",
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-6.2"
+            ],
+            "topic": "Probability distributions",
+            "chapter": "S1-6",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-6-2.json",
+                "locator": "S1-6.2-PP-9709-62-FM16-Q2"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "Number of white roses: 0, 1, 2",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, 0, 1, 2 seen in the table with an attempt at probabilities."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(P(0)=\\dfrac{8}{10}\\times\\dfrac{7}{9}\\times\\dfrac{6}{8}=\\dfrac{42}{90}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, a 3-factor probability seen with different denominators."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(P(1)=\\dfrac{2}{10}\\times\\dfrac{8}{9}\\times\\dfrac{7}{8}\\times 3=\\dfrac{42}{90}\\) and \\(P(2)=\\dfrac{2}{10}\\times\\dfrac{1}{9}\\times\\dfrac{8}{8}\\times 3=\\dfrac{6}{90}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, multiplying by 3."
+            },
+            {
+                "name": "s4",
+                "text_tex": "Table: \\(P(0)=\\dfrac{42}{90}\\), \\(P(1)=\\dfrac{42}{90}\\), \\(P(2)=\\dfrac{6}{90}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, all correct."
+            }
+        ]
+    },
+    {
+        "id": "S1-6.2-PP-9709-61-ON12-Q1",
+        "section": "S1-6.2",
+        "kind": "pastpaper",
+        "title": "Number of green pens taken",
+        "marks": 4,
+        "source": {
+            "paper": "9709/61/O/N/12 Q1",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w12_qp_61.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w12_ms_61.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Ashok has 3 green pens and 7 red pens. His friend Rod takes 3 of these pens at random, without replacement. Draw up a probability distribution table for the number of green pens Rod takes. [4]</p>",
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-6.2"
+            ],
+            "topic": "Probability distributions",
+            "chapter": "S1-6",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-6-2.json",
+                "locator": "S1-6.2-PP-9709-61-ON12-Q1"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(P(0)=\\dfrac{7}{10}\\times\\dfrac{6}{9}\\times\\dfrac{5}{8}=\\dfrac{210}{720}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, finding P(0), P(1), P(2), P(3) (values 0, 1, 2, 3 attempted)."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(P(1)=\\dfrac{3}{10}\\times\\dfrac{7}{9}\\times\\dfrac{6}{8}\\times{}^3C_1=\\dfrac{378}{720}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, 1 or 2 probabilities correct."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(P(2)=\\dfrac{3}{10}\\times\\dfrac{2}{9}\\times\\dfrac{7}{8}\\times{}^3C_2=\\dfrac{126}{720}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, 3 probabilities correct."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(P(3)=\\dfrac{3}{10}\\times\\dfrac{2}{9}\\times\\dfrac{1}{8}=\\dfrac{6}{720}=\\dfrac{1}{120}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, all correct."
+            }
+        ]
+    }
+]

@@ -1,0 +1,416 @@
+[
+    {
+        "id": "S2-6.1-QC1-gen",
+        "section": "S2-6.1",
+        "kind": "generated",
+        "title": "Unbiased estimate of variance from summary statistics",
+        "marks": 2,
+        "source": "Theory S2-6.1 Quick check 1; n over n - 1 times the sample variance",
+        "params": [
+            {
+                "name": "n",
+                "min": 10,
+                "max": 60,
+                "step": 1
+            },
+            {
+                "name": "m",
+                "min": 2,
+                "max": 20,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 1,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "Sx": "n*m",
+            "Sxx": "n*(b+m*m)",
+            "n1": "n-1",
+            "A": "n*b/(n-1)"
+        },
+        "constraints": [
+            "n>=10"
+        ],
+        "original": {
+            "n": 40,
+            "m": 5,
+            "b": 3
+        },
+        "stem": "A random sample of \\({n|int}\\) values of \\(X\\) gives \\(\\sum x={Sx|int}\\) and \\(\\sum x^2={Sxx|int}\\). Find an unbiased estimate of the population variance of \\(X\\).",
+        "answer": {
+            "expression": "n/n1*(Sxx/n-(Sx/n)*(Sx/n))",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\bar{x}=\\dfrac{{Sx|int}}{{n|int}}={m|int}\\) and \\(\\dfrac{\\sum x^2}{n}-\\bar{x}^2=\\dfrac{{Sxx|int}}{{n|int}}-{m|int}^2={b|int}\\)",
+                "result": "b",
+                "format": "int",
+                "mark": "M1",
+                "note": "Sample (biased) variance."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(s^2=\\dfrac{{n|int}}{{n1|int}}\\times{b|int}={A|sf3z}\\)",
+                "result": "n*b/n1",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Multiply by n over n - 1."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original n = 40, sum 200, sum of squares 1120, estimate 3.08"
+            },
+            {
+                "id": "heights",
+                "stem": "The heights \\(x\\) cm of a random sample of \\({n|int}\\) plants give \\(\\sum x={Sx|int}\\) and \\(\\sum x^2={Sxx|int}\\). Calculate an unbiased estimate of the variance of the heights of all such plants."
+            },
+            {
+                "id": "est",
+                "stem": "From a random sample of size \\({n|int}\\), \\(\\sum x={Sx|int}\\) and \\(\\sum x^2={Sxx|int}\\). Find the unbiased estimate of \\(\\sigma^2\\)."
+            }
+        ],
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-6.1"
+            ],
+            "topic": "Estimation",
+            "chapter": "S2-6",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-6-1.json",
+                "locator": "S2-6.1-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "S2-6.1-QC2-gen",
+        "section": "S2-6.1",
+        "kind": "generated",
+        "title": "Unbiased estimate of the mean from coded data",
+        "marks": 2,
+        "source": "Theory S2-6.1 Quick check 2; add the mean of the coded values back on",
+        "params": [
+            {
+                "name": "a",
+                "min": 10,
+                "max": 50,
+                "step": 5
+            },
+            {
+                "name": "n",
+                "min": 20,
+                "max": 80,
+                "step": 10
+            },
+            {
+                "name": "s",
+                "min": -40,
+                "max": 60,
+                "step": 4
+            }
+        ],
+        "derived": {
+            "A": "a+s/n"
+        },
+        "constraints": [
+            "n>=20"
+        ],
+        "original": {
+            "a": 30,
+            "n": 40,
+            "s": 24
+        },
+        "stem": "A random sample of \\({n|int}\\) values of \\(X\\) gives \\(\\sum(x-{a|int})={s|int}\\). Find an unbiased estimate of the population mean of \\(X\\).",
+        "answer": {
+            "expression": "a+s/n",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "Mean of the coded values \\(=\\dfrac{{s|int}}{{n|int}}\\)",
+                "result": "s/n",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Divide the coded sum by n."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\bar{x}={a|int}+\\dfrac{{s|int}}{{n|int}}={A|sf3z}\\)",
+                "result": "a+s/n",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Add the coding constant back."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original n = 40, coded sum 24 about 30, estimate 30.6"
+            },
+            {
+                "id": "time",
+                "stem": "The times \\(x\\) minutes of \\({n|int}\\) randomly chosen journeys satisfy \\(\\sum(x-{a|int})={s|int}\\). Find an unbiased estimate of the mean journey time."
+            },
+            {
+                "id": "coded",
+                "stem": "For a random sample of size \\({n|int}\\), \\(\\sum(x-{a|int})={s|int}\\). Calculate the unbiased estimate of \\(\\mu\\)."
+            }
+        ],
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-6.1"
+            ],
+            "topic": "Estimation",
+            "chapter": "S2-6",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-6-1.json",
+                "locator": "S2-6.1-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "S2-6.1-QC3-gen",
+        "section": "S2-6.1",
+        "kind": "generated",
+        "title": "Unbiased estimate of variance from coded data",
+        "marks": 2,
+        "source": "Theory S2-6.1 Quick check 3; coding by subtraction does not change the variance",
+        "params": [
+            {
+                "name": "n",
+                "min": 20,
+                "max": 60,
+                "step": 10
+            },
+            {
+                "name": "a",
+                "min": 10,
+                "max": 90,
+                "step": 10
+            },
+            {
+                "name": "d",
+                "min": 1,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "v",
+                "min": 1,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "s": "n*d",
+            "t": "n*d*d+(n-1)*v",
+            "n1": "n-1",
+            "A": "v"
+        },
+        "constraints": [
+            "n>=20"
+        ],
+        "original": {
+            "n": 30,
+            "a": 50,
+            "d": 2,
+            "v": 4
+        },
+        "stem": "A random sample of \\({n|int}\\) values of \\(X\\) gives \\(\\sum(x-{a|int})={s|int}\\) and \\(\\sum(x-{a|int})^2={t|int}\\). Find an unbiased estimate of the population variance of \\(X\\).",
+        "answer": {
+            "expression": "(t-s*s/n)/n1",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(s^2=\\dfrac{1}{{n1|int}}\\Bigl({t|int}-\\dfrac{{s|int}^2}{{n|int}}\\Bigr)\\)",
+                "result": "t-s*s/n",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Use the coded sums; subtracting a constant does not change the variance."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(s^2={A|sf3z}\\)",
+                "result": "(t-s*s/n)/n1",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original n = 30, coded sums 60 and 236 about 50, estimate 4"
+            },
+            {
+                "id": "mass",
+                "stem": "The masses \\(x\\) g of \\({n|int}\\) randomly chosen eggs give \\(\\sum(x-{a|int})={s|int}\\) and \\(\\sum(x-{a|int})^2={t|int}\\). Find an unbiased estimate of the variance of the masses of all such eggs."
+            },
+            {
+                "id": "var",
+                "stem": "For a random sample of size \\({n|int}\\), \\(\\sum(x-{a|int})={s|int}\\) and \\(\\sum(x-{a|int})^2={t|int}\\). Calculate the unbiased estimate of \\(\\sigma^2\\)."
+            }
+        ],
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-6.1"
+            ],
+            "topic": "Estimation",
+            "chapter": "S2-6",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-6-1.json",
+                "locator": "S2-6.1-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "S2-6.1-PP-9709-71-MJ18-Q1",
+        "section": "S2-6.1",
+        "kind": "pastpaper",
+        "title": "Unbiased estimates from summary statistics",
+        "marks": 3,
+        "source": {
+            "paper": "9709/71/M/J/18 Q1",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s18_qp_71.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s18_ms_71.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>A random sample of 75 values of a variable \\(X\\) gave the following results.</p><p>\\(n=75\\)&ensp; \\(\\sum x=153.2\\)&ensp; \\(\\sum x^2=340.24\\)</p><p>Find unbiased estimates for the population mean and variance of \\(X\\). [3]</p>",
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-6.1"
+            ],
+            "topic": "Estimation",
+            "chapter": "S2-6",
+            "marks": 3,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-6-1.json",
+                "locator": "S2-6.1-PP-9709-71-MJ18-Q1"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "Estimate of \\(\\mu=153.2\\div75=2.04\\) (3 s.f.)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, 2.04 (3 sf)."
+            },
+            {
+                "name": "s2",
+                "text_tex": "Estimate of \\(\\sigma^2=\\dfrac{75}{74}\\Bigl(\\dfrac{340.24}{75}-2.04267^2\\Bigr)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, 75/74 × (340.24/75 − 2.04267²) OE."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(=0.369\\) (3 s.f.)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 0.369 (3 sf); accept 0.368."
+            }
+        ]
+    },
+    {
+        "id": "S2-6.1-PP-9709-73-MJ19-Q2",
+        "section": "S2-6.1",
+        "kind": "pastpaper",
+        "title": "Mean length of worms from the unbiased variance",
+        "marks": 3,
+        "source": {
+            "paper": "9709/73/M/J/19 Q2",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s19_qp_73.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s19_ms_73.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>The length of worms is denoted by \\(X\\) cm. The lengths of a random sample of 50 worms were measured. Some of the results were lost, but the following results are available.</p><ul><li>\\(\\sum x^2=4361\\)</li><li>An unbiased estimate of the population variance of \\(X\\) is 9.62.</li></ul><p>Calculate the mean length of the 50 worms. [3]</p>",
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-6.1"
+            ],
+            "topic": "Estimation",
+            "chapter": "S2-6",
+            "marks": 3,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-6-1.json",
+                "locator": "S2-6.1-PP-9709-73-MJ19-Q2"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(\\dfrac{50}{49}\\Bigl(\\dfrac{4361}{50}-\\bar{x}^2\\Bigr)=9.62\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, or (1/49)(4361 − (Σx)²/50) = 9.62; BOD regarding symbols used."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(\\bar{x}^2=\\dfrac{4361}{50}-\\dfrac{9.62\\times49}{50}=77.7924\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, x̄² = 77.7924, or (Σx)² = 194481 or Σx = 441; (Σx) or x̄ must be correctly identified."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(\\bar{x}=8.82\\) (3 s.f.)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 8.82 (3 sf). SC: use of the biased formula leading to 8.81 scores B1."
+            }
+        ]
+    }
+]

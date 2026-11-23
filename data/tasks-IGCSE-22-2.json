@@ -1,0 +1,424 @@
+[
+    {
+        "id": "IGCSE-22.2-QC1-gen",
+        "section": "IGCSE-22.2",
+        "kind": "generated",
+        "title": "Rearranging v = u + at",
+        "marks": 2,
+        "source": "Theory IGCSE-22.2 Quick check 1; t is (v - u) over a",
+        "params": [
+            {
+                "name": "u",
+                "min": 1,
+                "max": 20,
+                "step": 1
+            },
+            {
+                "name": "a",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "t",
+                "min": 2,
+                "max": 12,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "v": "u+a*t",
+            "d": "a*t",
+            "A": "t"
+        },
+        "constraints": [
+            "a>=2"
+        ],
+        "original": {
+            "u": 5,
+            "a": 3,
+            "t": 6
+        },
+        "stem": "Make \\(t\\) the subject of the formula \\(v=u+at\\). Use your formula to find \\(t\\) when \\(v={v|int}\\), \\(u={u|int}\\) and \\(a={a|int}\\).",
+        "answer": {
+            "expression": "(v-u)/a",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(t=\\dfrac{v-u}{a}=\\dfrac{{v|int}-{u|int}}{{a|int}}\\)",
+                "result": "d",
+                "format": "int",
+                "mark": "M1",
+                "note": "Subtract u, then divide by a."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(t=\\dfrac{{d|int}}{{a|int}}={A|int}\\)",
+                "result": "d/a",
+                "format": "int",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original v = 23, u = 5, a = 3, t = 6"
+            },
+            {
+                "id": "car",
+                "stem": "A car's speed is given by \\(v=u+at\\). Rearrange to make \\(t\\) the subject, then find \\(t\\) when \\(u={u|int}\\), \\(a={a|int}\\) and \\(v={v|int}\\)."
+            },
+            {
+                "id": "sub",
+                "stem": "Given \\(v=u+at\\), find \\(t\\) when \\(v={v|int}\\), \\(u={u|int}\\) and \\(a={a|int}\\), by first making \\(t\\) the subject."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-22.2"
+            ],
+            "topic": "More equations, formulae and functions",
+            "chapter": "IGCSE-22",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-22-2.json",
+                "locator": "IGCSE-22.2-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-22.2-QC2-gen",
+        "section": "IGCSE-22.2",
+        "kind": "generated",
+        "title": "Height of a trapezium from its area",
+        "marks": 2,
+        "source": "Theory IGCSE-22.2 Quick check 2; h is 2A over (a + b)",
+        "params": [
+            {
+                "name": "a",
+                "min": 3,
+                "max": 12,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 3,
+                "max": 12,
+                "step": 1
+            },
+            {
+                "name": "h",
+                "min": 2,
+                "max": 10,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "S": "a+b",
+            "A2": "h*(a+b)",
+            "Ar": "h*(a+b)/2",
+            "A": "h"
+        },
+        "constraints": [
+            "a<b"
+        ],
+        "original": {
+            "a": 5,
+            "b": 9,
+            "h": 6
+        },
+        "stem": "The area of a trapezium is \\(A=\\dfrac{1}{2}(a+b)h\\). Make \\(h\\) the subject of the formula, then find \\(h\\) when \\(A={Ar|num}\\), \\(a={a|int}\\) and \\(b={b|int}\\).",
+        "answer": {
+            "expression": "A2/S",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(h=\\dfrac{2A}{a+b}=\\dfrac{2\\times{Ar|num}}{{S|int}}\\)",
+                "result": "A2",
+                "format": "int",
+                "mark": "M1",
+                "note": "Multiply by 2, then divide by a + b."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(h=\\dfrac{{A2|int}}{{S|int}}={A|int}\\)",
+                "result": "A2/S",
+                "format": "int",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original A = 42, a = 5, b = 9, h = 6"
+            },
+            {
+                "id": "field",
+                "stem": "A field is in the shape of a trapezium with parallel sides \\({a|int}\\) m and \\({b|int}\\) m. Its area is \\({Ar|num}\\) m\\(^2\\). Using \\(A=\\dfrac{1}{2}(a+b)h\\), find the distance \\(h\\) between the parallel sides."
+            },
+            {
+                "id": "subj",
+                "stem": "Rearrange \\(A=\\dfrac{1}{2}(a+b)h\\) to make \\(h\\) the subject. Find \\(h\\) when \\(A={Ar|num}\\), \\(a={a|int}\\), \\(b={b|int}\\)."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-22.2"
+            ],
+            "topic": "More equations, formulae and functions",
+            "chapter": "IGCSE-22",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-22-2.json",
+                "locator": "IGCSE-22.2-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-22.2-QC3-gen",
+        "section": "IGCSE-22.2",
+        "kind": "generated",
+        "title": "Subject appearing twice",
+        "marks": 2,
+        "source": "Theory IGCSE-22.2 Quick check 3; collect, factorise, divide",
+        "params": [
+            {
+                "name": "a",
+                "min": 1,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 2,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "c",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "j",
+                "min": 1,
+                "max": 8,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "r": "b+j",
+            "N": "c*(b+j)-a",
+            "D": "j",
+            "A": "(c*(b+j)-a)/j"
+        },
+        "constraints": [
+            "j>=1"
+        ],
+        "original": {
+            "a": 5,
+            "b": 3,
+            "c": 8,
+            "j": 2
+        },
+        "stem": "Make \\(p\\) the subject of the formula \\(rp+{a|int}={b|int}p+{c|int}r\\). Then find \\(p\\) when \\(r={r|int}\\).",
+        "answer": {
+            "expression": "N/D",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(rp-{b|int}p={c|int}r-{a|int}\\), so \\(p(r-{b|int})={c|int}r-{a|int}\\) and \\(p=\\dfrac{{c|int}r-{a|int}}{r-{b|int}}\\)",
+                "result": "D",
+                "format": "int",
+                "mark": "M1",
+                "note": "Collect the p terms, factorise and divide."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(p=\\dfrac{{N|int}}{{D|int}}={A|sf3z}\\)",
+                "result": "N/D",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Substitute r and evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original rp + 5 = 3p + 8r with r = 5, p = 17.5"
+            },
+            {
+                "id": "form",
+                "stem": "The formula \\(rp+{a|int}={b|int}p+{c|int}r\\) connects \\(p\\) and \\(r\\). Rearrange it to make \\(p\\) the subject and use it to find \\(p\\) when \\(r={r|int}\\)."
+            },
+            {
+                "id": "twice",
+                "stem": "\\(p\\) appears on both sides of \\(rp+{a|int}={b|int}p+{c|int}r\\). Make \\(p\\) the subject, then calculate \\(p\\) for \\(r={r|int}\\)."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-22.2"
+            ],
+            "topic": "More equations, formulae and functions",
+            "chapter": "IGCSE-22",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-22-2.json",
+                "locator": "IGCSE-22.2-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-22.2-PP-0580-22-MJ16-Q10",
+        "section": "IGCSE-22.2",
+        "kind": "pastpaper",
+        "title": "Subject appearing on both sides",
+        "marks": 3,
+        "source": {
+            "paper": "0580/22/M/J/16 Q10",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s16_qp_22.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s16_ms_22.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Make \\(p\\) the subject of the formula.</p><p>\\[rp+5=3p+8r\\]</p><p>[3]</p>",
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-22.2"
+            ],
+            "topic": "More equations, formulae and functions",
+            "chapter": "IGCSE-22",
+            "marks": 3,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-22-2.json",
+                "locator": "IGCSE-22.2-PP-0580-22-MJ16-Q10"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(rp-3p=8r-5\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1 for correctly collecting terms in p on one side and terms not in p on the other side."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(p(r-3)=8r-5\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1 for correct factorising."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(p=\\dfrac{8r-5}{r-3}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: (8r − 5)/(r − 3) OE final answer, 3 marks; the third mark is M1 for correct division dependent on p appearing only once in a factorised expression. Maximum M2 for an incorrect final answer."
+            }
+        ]
+    },
+    {
+        "id": "IGCSE-22.2-PP-0580-22-ON18-Q20",
+        "section": "IGCSE-22.2",
+        "kind": "pastpaper",
+        "title": "Subject in a fraction",
+        "marks": 4,
+        "source": {
+            "paper": "0580/22/O/N/18 Q20",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w18_qp_22.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w18_ms_22.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Make \\(m\\) the subject of the formula.</p><p>\\(\\displaystyle x=\\frac{3m}{2-m}\\)</p><p>[4]</p>",
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-22.2"
+            ],
+            "topic": "More equations, formulae and functions",
+            "chapter": "IGCSE-22",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-22-2.json",
+                "locator": "IGCSE-22.2-PP-0580-22-ON18-Q20"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(x(2-m)=3m\\), so \\(2x-xm=3m\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1 for correctly clearing the denominator and expanding the bracket."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(2x=3m+xm\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1 for correctly collecting terms in m on one side and terms not in m on the other."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(2x=m(3+x)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1 for correct factorising."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(m=\\dfrac{2x}{3+x}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: 2x/(3 + x) OE final answer, 4 marks; the fourth mark is M1 for correct division dependent on m appearing only once in a factorised expression."
+            }
+        ]
+    }
+]

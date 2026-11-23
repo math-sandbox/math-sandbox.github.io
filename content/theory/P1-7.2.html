@@ -1,0 +1,61 @@
+<script>if(location.hostname.endsWith('onrender.com'))location.replace('https://math-sandbox.pages.dev'+location.pathname+location.search+location.hash)</script>
+<section class="theory" data-section="P1-7.2">
+<h2>7.2 The chain rule</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 1 Coursebook (Sue Pemberton, series editor Julian Gilbey), Chapter 7 Differentiation, printed pp.198–201. Own wording and new numbers, following the coursebook statement of the chain rule for composite functions.</p>
+<p class="key-words"><strong>Key words:</strong> <em>chain rule</em>, <em>composite function</em>, <em>derivative</em></p>
+<h3>The chain rule</h3>
+<p>To differentiate a function of a function, such as \(y=(3x-1)^5\), let \(u=3x-1\), so that \(y=u^5\). Then</p>
+<p>\[\dfrac{\mathrm{d}y}{\mathrm{d}x}=\frac{\mathrm{d}y}{\mathrm{d}u}\times\frac{\mathrm{d}u}{\mathrm{d}x}.\]</p>
+<p>Here \(\dfrac{\mathrm{d}y}{\mathrm{d}u}=5u^4\) and \(\dfrac{\mathrm{d}u}{\mathrm{d}x}=3\), so \(\dfrac{\mathrm{d}y}{\mathrm{d}x}=15(3x-1)^4\).</p>
+<h3>A quick form for linear inside functions</h3>
+<p>If \(y=(ax+b)^n\), then \(\dfrac{\mathrm{d}y}{\mathrm{d}x}=an(ax+b)^{n-1}\). The same idea works for roots and reciprocals once they are written as powers: \(\sqrt{ax+b}=(ax+b)^{\frac{1}{2}}\) and \(\dfrac{1}{ax+b}=(ax+b)^{-1}\).</p>
+<div class="worked-example">
+<h4>Worked example 1: A power of a quadratic</h4>
+<p class="src">Coursebook, 7.2, chain rule. New numbers.</p>
+<p>Differentiate \(y=(x^2+1)^4\).</p>
+<ol class="steps">
+<li>\(u=x^2+1\), \(y=u^4\) <span class="mark">B1</span></li>
+<li>\(\dfrac{\mathrm{d}y}{\mathrm{d}x}=4u^3\times2x\) <span class="mark">M1</span></li>
+<li>\(=8x(x^2+1)^3\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(8x(x^2+1)^3\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: A reciprocal of a root</h4>
+<p class="src">Coursebook, 7.2, chain rule with negative powers. New numbers.</p>
+<p>Find the gradient of \(y=\dfrac{4}{\sqrt{2x+5}}\) at \(x=2\).</p>
+<ol class="steps">
+<li>\(y=4(2x+5)^{-\frac{1}{2}}\) <span class="mark">B1</span></li>
+<li>\(\dfrac{\mathrm{d}y}{\mathrm{d}x}=4\times\left(-\dfrac{1}{2}\right)(2x+5)^{-\frac{3}{2}}\times2=-4(2x+5)^{-\frac{3}{2}}\) <span class="mark">M1</span></li>
+<li>At \(x=2\): \(-4\times9^{-\frac{3}{2}}=-\dfrac{4}{27}\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(-\dfrac{4}{27}\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Forgetting to multiply by the derivative of the inside function.</li><li>Reducing the power wrongly for negative or fractional powers, for example \(-\frac{1}{2}-1=-\frac{3}{2}\).</li><li>Expanding a high power instead of using the chain rule.</li></ul>
+<p>Past paper practice for the chain rule appears with tangents, normals and stationary points in 7.3 and Chapter 8.</p>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>Find \(\dfrac{\mathrm{d}y}{\mathrm{d}x}\) for \(y=(2x+1)^3\) when \(x=1\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{\mathrm{d}y}{\mathrm{d}x}=6(2x+1)^2\)</li><li>\(6\times3^2\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(54\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>Find the gradient of \(y=\sqrt{2x+5}\) at \(x=2\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{\mathrm{d}y}{\mathrm{d}x}=(2x+5)^{-\frac{1}{2}}\)</li><li>\(9^{-\frac{1}{2}}=\dfrac{1}{3}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{1}{3}=0.333\) (3 s.f.)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>Find the gradient of \(y=\dfrac{6}{2x+1}\) at \(x=1\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{\mathrm{d}y}{\mathrm{d}x}=-12(2x+1)^{-2}\)</li><li>\(-\dfrac{12}{9}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(-\dfrac{4}{3}=-1.33\) (3 s.f.)</p>
+</details>
+</div>
+</section>

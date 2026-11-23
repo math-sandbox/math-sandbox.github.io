@@ -1,0 +1,82 @@
+<script>if(location.hostname.endsWith('onrender.com'))location.replace('https://math-sandbox.pages.dev'+location.pathname+location.search+location.hash)</script>
+<section class="theory" data-section="P1-8.1">
+<h2>8.1 Increasing and decreasing functions</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 1 Coursebook (Sue Pemberton, series editor Julian Gilbey), Chapter 8 Further differentiation, printed pp.213–215. Own wording and new numbers, following the coursebook link between the sign of the derivative and increasing or decreasing functions.</p>
+<p class="key-words"><strong>Key words:</strong> <em>increasing function</em>, <em>decreasing function</em>, <em>derivative</em></p>
+<h3>The sign of the derivative</h3>
+<p>A function \(f\) is increasing on an interval if \(f(x)\) gets larger as \(x\) increases, and decreasing if \(f(x)\) gets smaller. The sign of the gradient tells us which:</p>
+<ul><li>\(f'(x)\gt 0\) for all \(x\) in an interval: \(f\) is increasing there.</li><li>\(f'(x)\lt 0\) for all \(x\) in an interval: \(f\) is decreasing there.</li></ul>
+<p>A function that is increasing for all values in its domain is called an increasing function. If \(f'(x)\) is positive for some \(x\) and negative for others, \(f\) is neither.</p>
+<h3>Showing the sign</h3>
+<p>To show that \(f'(x)\) is always positive, complete the square, for example \(3x^2-6x+5=3(x-1)^2+2\gt 0\), or show that a quadratic with positive leading coefficient has negative discriminant. For a restricted domain, check the sign of each term.</p>
+<div class="worked-example">
+<h4>Worked example 1: Finding where a function increases</h4>
+<p class="src">Coursebook, 8.1, increasing and decreasing. New numbers.</p>
+<p>Find the set of values of \(x\) for which \(f(x)=2x^3-9x^2+12x\) is decreasing.</p>
+<ol class="steps">
+<li>\(f'(x)=6x^2-18x+12=6(x-1)(x-2)\) <span class="mark">M1 A1</span></li>
+<li>\(f'(x)\lt 0\) between the roots <span class="mark">M1</span></li>
+<li>\(1\lt x\lt 2\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(1\lt x\lt 2\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: An increasing function</h4>
+<p class="src">Coursebook, 8.1, showing a function is increasing. New numbers.</p>
+<p>Show that \(f(x)=x^3+3x^2+5x\) is an increasing function.</p>
+<ol class="steps">
+<li>\(f'(x)=3x^2+6x+5\) <span class="mark">B1</span></li>
+<li>\(=3(x+1)^2+2\) <span class="mark">M1</span></li>
+<li>\(3(x+1)^2\ge 0\), so \(f'(x)\ge 2\gt 0\): increasing. <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(f'(x)\gt 0\) for all \(x\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Showing \(f'(x)\gt 0\) at one value only. You must show it for every \(x\) in the domain.</li><li>Ignoring a restricted domain such as \(x\lt -1\).</li><li>Giving the answer about \(f(x)\) instead of about \(f'(x)\): the sign that matters is the sign of the derivative.</li></ul>
+<h3>Past paper</h3>
+<p class="src">9709/12/F/M/20 Q1, official QP and official MS.</p>
+<p>The function \(f\) is defined by \(f(x)=\dfrac{1}{3x+2}+x^2\) for \(x&lt;-1\).</p><p>Determine whether \(f\) is an increasing function, a decreasing function or neither. [3]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>\(f'(x)=-(3x+2)^{-2}\times3\) <span class="mark">B1</span> Official MS: B2, 1, 0 for f′(x) = −(3x + 2)⁻² × [3] + [2x]; one mark for each correct bracketed part.</li>
+<li>\(+2x\) <span class="mark">B1</span> Official MS: second mark of the B2, 1, 0.</li>
+<li>For \(x&lt;-1\) both terms are negative, so \(f'(x)&lt;0\) and \(f\) is decreasing. <span class="mark">B1</span> Official MS: B1, dependent on at least B1 for f′(x) and must include ‘(always) negative’.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/13/O/N/21 Q3, official QP and official MS.</p>
+<p>(a) Express \(5y^2-30y+50\) in the form \(5(y+a)^2+b\), where \(a\) and \(b\) are constants. [2]</p><p>(b) The function \(f\) is defined by \(f(x)=x^5-10x^3+50x\) for \(x\in\mathbb{R}\).</p><p>Determine whether \(f\) is an increasing function, a decreasing function or neither. [3]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(a) \(5(y-3)^2\) <span class="mark">B1</span> Official MS: B1, 5(y − 3)²; accept a = −3.</li>
+<li>(a) \(+5\) <span class="mark">B1</span> Official MS: B1, +5; accept b = 5.</li>
+<li>(b) \(f'(x)=5x^4-30x^2+50\) <span class="mark">B1</span> Official MS: B1.</li>
+<li>(b) \(=5(x^2-3)^2+5\) <span class="mark">M1</span> Official MS: M1, 5(x² − 3)² + 5, or b² less than 4ac and at least one value of f′(x) positive.</li>
+<li>(b) \(f'(x)&gt;0\) for all \(x\), so \(f\) is increasing. <span class="mark">A1</span> Official MS: A1 WWW, positive and increasing.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>\(f(x)=x^2-6x+2\) is increasing for \(x\gt k\). Find \(k\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(f'(x)=2x-6\gt 0\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(k=3\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>\(f(x)=x^3-12x\) is decreasing for \(-p\lt x\lt p\). Find \(p\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(3x^2-12\lt 0\), so \(x^2\lt 4\).</li></ol>
+<p class="final"><strong>Answer:</strong> \(p=2\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>Find the least \(k\) for which \(f(x)=x^3-6x^2+kx\) is an increasing function.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(f'(x)=3x^2-12x+k\)</li><li>Discriminant \(144-12k\le 0\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(k=12\)</p>
+</details>
+</div>
+</section>

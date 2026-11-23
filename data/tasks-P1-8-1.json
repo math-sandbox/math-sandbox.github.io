@@ -1,0 +1,384 @@
+[
+    {
+        "id": "P1-8.1-QC1-gen",
+        "section": "P1-8.1",
+        "kind": "generated",
+        "title": "Where a quadratic function is increasing",
+        "marks": 2,
+        "source": "Theory P1-8.1 Quick check 1; f'(x) > 0",
+        "params": [
+            {
+                "name": "b",
+                "min": 2,
+                "max": 16,
+                "step": 2
+            },
+            {
+                "name": "c",
+                "min": 1,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "A": "b/2"
+        },
+        "constraints": [
+            "b>=2"
+        ],
+        "original": {
+            "b": 6,
+            "c": 2
+        },
+        "stem": "The function \\(f\\) is defined by \\(f(x)=x^2-{b|int}x+{c|int}\\). The set of values of \\(x\\) for which \\(f\\) is increasing is \\(x\\gt k\\). Find \\(k\\).",
+        "answer": {
+            "expression": "b/2",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(f'(x)=2x-{b|int}\\gt 0\\)",
+                "result": "b",
+                "format": "int",
+                "mark": "M1",
+                "note": "Increasing where the derivative is positive."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(x\\gt {A|int}\\), so \\(k={A|int}\\)",
+                "result": "b/2",
+                "format": "int",
+                "mark": "A1",
+                "note": "Solve the inequality."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original f(x) = x^2 - 6x + 2, increasing for x > 3"
+            },
+            {
+                "id": "inc",
+                "stem": "Find the value of \\(k\\) such that \\(f(x)=x^2-{b|int}x+{c|int}\\) is increasing exactly when \\(x\\gt k\\)."
+            },
+            {
+                "id": "dec",
+                "stem": "The function \\(f(x)=x^2-{b|int}x+{c|int}\\) is decreasing for \\(x\\lt k\\) and increasing for \\(x\\gt k\\). Find \\(k\\)."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-8.1"
+            ],
+            "topic": "Further differentiation",
+            "chapter": "P1-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-8-1.json",
+                "locator": "P1-8.1-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-8.1-QC2-gen",
+        "section": "P1-8.1",
+        "kind": "generated",
+        "title": "Interval where a cubic is decreasing",
+        "marks": 2,
+        "source": "Theory P1-8.1 Quick check 2; 3x^2 - k negative",
+        "params": [
+            {
+                "name": "a",
+                "min": 1,
+                "max": 6,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "k": "3*a*a",
+            "A": "a"
+        },
+        "constraints": [
+            "a>=1"
+        ],
+        "original": {
+            "a": 2
+        },
+        "stem": "The function \\(f\\) is defined by \\(f(x)=x^3-{k|int}x\\). \\(f\\) is decreasing for \\(-p\\lt x\\lt p\\). Find \\(p\\).",
+        "answer": {
+            "expression": "math.pow(k/3,0.5)",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(f'(x)=3x^2-{k|int}\\lt 0\\), so \\(x^2\\lt {A|int}^2\\)",
+                "result": "k/3",
+                "format": "int",
+                "mark": "M1",
+                "note": "Decreasing where the derivative is negative."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(-{A|int}\\lt x\\lt {A|int}\\), so \\(p={A|int}\\)",
+                "result": "math.pow(k/3,0.5)",
+                "format": "int",
+                "mark": "A1",
+                "note": "Solve the quadratic inequality."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original f(x) = x^3 - 12x, decreasing between -2 and 2"
+            },
+            {
+                "id": "dec",
+                "stem": "Find the positive number \\(p\\) such that \\(f(x)=x^3-{k|int}x\\) is decreasing exactly when \\(-p\\lt x\\lt p\\)."
+            },
+            {
+                "id": "int",
+                "stem": "For \\(f(x)=x^3-{k|int}x\\), the set of values of \\(x\\) for which \\(f\\) is decreasing is \\(-p\\lt x\\lt p\\). Find \\(p\\)."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-8.1"
+            ],
+            "topic": "Further differentiation",
+            "chapter": "P1-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-8-1.json",
+                "locator": "P1-8.1-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-8.1-QC3-gen",
+        "section": "P1-8.1",
+        "kind": "generated",
+        "title": "Least k for a cubic to be increasing for all x",
+        "marks": 2,
+        "source": "Theory P1-8.1 Quick check 3; discriminant of f'(x) at most zero",
+        "params": [
+            {
+                "name": "t",
+                "min": 1,
+                "max": 7,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "b": "3*t",
+            "B": "2*3*t",
+            "A": "3*t*t"
+        },
+        "constraints": [
+            "t>=1"
+        ],
+        "original": {
+            "t": 2
+        },
+        "stem": "The function \\(f\\) is defined by \\(f(x)=x^3-{b|int}x^2+kx\\), where \\(k\\) is a constant. Find the least value of \\(k\\) for which \\(f\\) is an increasing function.",
+        "answer": {
+            "expression": "b*b/3",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(f'(x)=3x^2-{B|int}x+k\\ge 0\\) for all \\(x\\) needs discriminant \\(\\le 0\\): \\({B|int}^2-12k\\le 0\\)",
+                "result": "B",
+                "format": "int",
+                "mark": "M1",
+                "note": "Use the discriminant of f'(x)."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(k\\ge {A|int}\\), so the least value is \\({A|int}\\)",
+                "result": "B*B/12",
+                "format": "int",
+                "mark": "A1",
+                "note": "Solve for k."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original f(x) = x^3 - 6x^2 + kx, least k = 12"
+            },
+            {
+                "id": "inc",
+                "stem": "Given that \\(f(x)=x^3-{b|int}x^2+kx\\) is increasing for all values of \\(x\\), find the smallest possible value of \\(k\\)."
+            },
+            {
+                "id": "never",
+                "stem": "The gradient of \\(y=x^3-{b|int}x^2+kx\\) is never negative. Find the least possible value of the constant \\(k\\)."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-8.1"
+            ],
+            "topic": "Further differentiation",
+            "chapter": "P1-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-8-1.json",
+                "locator": "P1-8.1-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-8.1-PP-9709-12-FM20-Q1",
+        "section": "P1-8.1",
+        "kind": "pastpaper",
+        "title": "Increasing, decreasing or neither",
+        "marks": 3,
+        "source": {
+            "paper": "9709/12/F/M/20 Q1",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m20_qp_12.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m20_ms_12.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>The function \\(f\\) is defined by \\(f(x)=\\dfrac{1}{3x+2}+x^2\\) for \\(x\\lt -1\\).</p><p>Determine whether \\(f\\) is an increasing function, a decreasing function or neither. [3]</p>",
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-8.1"
+            ],
+            "topic": "Further differentiation",
+            "chapter": "P1-8",
+            "marks": 3,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-8-1.json",
+                "locator": "P1-8.1-PP-9709-12-FM20-Q1"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(f'(x)=-(3x+2)^{-2}\\times3\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B2, 1, 0 for f′(x) = −(3x + 2)⁻² × [3] + [2x]; one mark for each correct bracketed part."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(+2x\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: second mark of the B2, 1, 0."
+            },
+            {
+                "name": "s3",
+                "text_tex": "For \\(x\\lt -1\\) both terms are negative, so \\(f'(x)\\lt 0\\) and \\(f\\) is decreasing.",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, dependent on at least B1 for f′(x) and must include ‘(always) negative’."
+            }
+        ]
+    },
+    {
+        "id": "P1-8.1-PP-9709-13-ON21-Q3",
+        "section": "P1-8.1",
+        "kind": "pastpaper",
+        "title": "Completing the square to show a function is increasing",
+        "marks": 5,
+        "source": {
+            "paper": "9709/13/O/N/21 Q3",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w21_qp_13.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w21_ms_13.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>(a) Express \\(5y^2-30y+50\\) in the form \\(5(y+a)^2+b\\), where \\(a\\) and \\(b\\) are constants. [2]</p><p>(b) The function \\(f\\) is defined by \\(f(x)=x^5-10x^3+50x\\) for \\(x\\in\\mathbb{R}\\).</p><p>Determine whether \\(f\\) is an increasing function, a decreasing function or neither. [3]</p>",
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-8.1"
+            ],
+            "topic": "Further differentiation",
+            "chapter": "P1-8",
+            "marks": 5,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-8-1.json",
+                "locator": "P1-8.1-PP-9709-13-ON21-Q3"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) \\(5(y-3)^2\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, 5(y − 3)²; accept a = −3."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(a) \\(+5\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, +5; accept b = 5."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(b) \\(f'(x)=5x^4-30x^2+50\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(b) \\(=5(x^2-3)^2+5\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, 5(x² − 3)² + 5, or b² less than 4ac and at least one value of f′(x) positive."
+            },
+            {
+                "name": "s5",
+                "text_tex": "(b) \\(f'(x)\\gt 0\\) for all \\(x\\), so \\(f\\) is increasing.",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 WWW, positive and increasing."
+            }
+        ]
+    }
+]

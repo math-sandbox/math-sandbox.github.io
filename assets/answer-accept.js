@@ -1,4 +1,8 @@
 (function (root) {
+  /* pkg17: typed answers may use U+2212 MINUS SIGN; treat it as "-". */
+  function normMinus(s) {
+    return String(s).replace(/\u2212/g, "-");
+  }
   function parseFraction(t) {
     var m = /^([+-]?\d+)\s*\/\s*(\d+)$/.exec(t);
     if (!m) return null;
@@ -7,7 +11,7 @@
     return Number(m[1]) / den;
   }
   function parseNum(s) {
-    var t = String(s || "").replace(/[$,%\s]/g, "").replace(/,/g, "");
+    var t = normMinus(String(s || "")).replace(/[$,%\s]/g, "").replace(/,/g, "");
     if (!t) return NaN;
     var frac = parseFraction(t);
     if (frac != null) return frac;
@@ -46,7 +50,7 @@
     };
   }
   function parseDecimalText(raw) {
-    var t = String(raw == null ? "" : raw).replace(/[$,%\s]/g, "");
+    var t = normMinus(String(raw == null ? "" : raw)).replace(/[$,%\s]/g, "");
     if (!t) return null;
     var sign = 1;
     if (t.charAt(0) === "+") t = t.slice(1);
@@ -169,7 +173,7 @@
     return acceptLegacy(g, spec, exact);
   }
   function near(got, want, tol) {
-    var a = Number(got);
+    var a = Number(typeof got === "string" ? normMinus(got).trim() : got);
     var b = Number(want);
     if (!isFinite(a) || !isFinite(b)) return false;
     return Math.abs(a - b) <= Number(tol);

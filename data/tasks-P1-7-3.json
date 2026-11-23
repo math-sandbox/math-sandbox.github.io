@@ -1,0 +1,468 @@
+[
+    {
+        "id": "P1-7.3-QC1-gen",
+        "section": "P1-7.3",
+        "kind": "generated",
+        "title": "Gradient of the normal to a quadratic curve",
+        "marks": 2,
+        "source": "Theory P1-7.3 Quick check 1; negative reciprocal of the tangent gradient",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 2,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "c",
+                "min": 1,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "p",
+                "min": 0,
+                "max": 3,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "m": "2*a*p+b",
+            "A": "-1/(2*a*p+b)"
+        },
+        "constraints": [
+            "p>=0"
+        ],
+        "original": {
+            "a": 2,
+            "b": 3,
+            "c": 1,
+            "p": 1
+        },
+        "stem": "Find the gradient of the normal to the curve \\(y={a|int}x^2+{b|int}x+{c|int}\\) at the point where \\(x={p|int}\\).",
+        "answer": {
+            "expression": "-1/m",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}={a|int}\\times2x+{b|int}\\); at \\(x={p|int}\\) the tangent gradient is \\({m|int}\\)",
+                "result": "m",
+                "format": "int",
+                "mark": "M1",
+                "note": "Differentiate and substitute."
+            },
+            {
+                "name": "A",
+                "text_tex": "Normal gradient \\(=-\\dfrac{1}{{m|int}}={A|sf3z}\\)",
+                "result": "-1/m",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Negative reciprocal."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original y = 2x^2 + 3x + 1 at x = 1, normal gradient -1/7"
+            },
+            {
+                "id": "perp",
+                "stem": "The normal to \\(y={a|int}x^2+{b|int}x+{c|int}\\) is drawn at the point with \\(x={p|int}\\). Find its gradient."
+            },
+            {
+                "id": "norm",
+                "stem": "Find the gradient of the line perpendicular to the tangent of \\(y={a|int}x^2+{b|int}x+{c|int}\\) at \\(x={p|int}\\)."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-7.3"
+            ],
+            "topic": "Differentiation",
+            "chapter": "P1-7",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-7-3.json",
+                "locator": "P1-7.3-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-7.3-QC2-gen",
+        "section": "P1-7.3",
+        "kind": "generated",
+        "title": "Where a tangent meets the y-axis",
+        "marks": 2,
+        "source": "Theory P1-7.3 Quick check 2; y - y1 = m(x - x1), then put x = 0",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 2,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "c",
+                "min": 1,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "p",
+                "min": 1,
+                "max": 4,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "y0": "a*p*p+b*p+c",
+            "m": "2*a*p+b",
+            "A": "c-a*p*p"
+        },
+        "constraints": [
+            "p>=1"
+        ],
+        "original": {
+            "a": 2,
+            "b": 3,
+            "c": 1,
+            "p": 1
+        },
+        "stem": "The tangent to the curve \\(y={a|int}x^2+{b|int}x+{c|int}\\) at the point where \\(x={p|int}\\) meets the \\(y\\)-axis at \\(Q\\). Find the \\(y\\)-coordinate of \\(Q\\).",
+        "answer": {
+            "expression": "y0-m*p",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "At \\(x={p|int}\\): \\(y={y0|int}\\) and \\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}={m|int}\\); tangent \\(y-{y0|int}={m|int}(x-{p|int})\\)",
+                "result": "m",
+                "format": "int",
+                "mark": "M1",
+                "note": "Point and gradient of the tangent."
+            },
+            {
+                "name": "A",
+                "text_tex": "At \\(x=0\\): \\(y={y0|int}-{m|int}\\times{p|int}={A|int}\\)",
+                "result": "y0-m*p",
+                "format": "int",
+                "mark": "A1",
+                "note": "Put x = 0."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original y = 2x^2 + 3x + 1 at x = 1, tangent y = 7x - 1, Q at y = -1"
+            },
+            {
+                "id": "int",
+                "stem": "Find the \\(y\\)-intercept of the tangent to \\(y={a|int}x^2+{b|int}x+{c|int}\\) at \\(x={p|int}\\)."
+            },
+            {
+                "id": "eq",
+                "stem": "Find the equation of the tangent to \\(y={a|int}x^2+{b|int}x+{c|int}\\) at the point with \\(x={p|int}\\), and state where it crosses the \\(y\\)-axis (give the \\(y\\)-coordinate)."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-7.3"
+            ],
+            "topic": "Differentiation",
+            "chapter": "P1-7",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-7-3.json",
+                "locator": "P1-7.3-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-7.3-QC3-gen",
+        "section": "P1-7.3",
+        "kind": "generated",
+        "title": "Where a normal meets the x-axis",
+        "marks": 2,
+        "source": "Theory P1-7.3 Quick check 3; normal gradient -1/m, then put y = 0",
+        "params": [
+            {
+                "name": "b",
+                "min": 2,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "c",
+                "min": 1,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "p",
+                "min": 1,
+                "max": 3,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "y0": "p*p+b*p+c",
+            "m": "2*p+b",
+            "A": "p+(2*p+b)*(p*p+b*p+c)"
+        },
+        "constraints": [
+            "p>=1"
+        ],
+        "original": {
+            "b": 2,
+            "c": 1,
+            "p": 1
+        },
+        "stem": "The normal to the curve \\(y=x^2+{b|int}x+{c|int}\\) at the point where \\(x={p|int}\\) meets the \\(x\\)-axis at \\(R\\). Find the \\(x\\)-coordinate of \\(R\\).",
+        "answer": {
+            "expression": "p+m*y0",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "At \\(x={p|int}\\): \\(y={y0|int}\\), tangent gradient \\({m|int}\\), normal \\(y-{y0|int}=-\\dfrac{1}{{m|int}}(x-{p|int})\\)",
+                "result": "m",
+                "format": "int",
+                "mark": "M1",
+                "note": "Normal through the point."
+            },
+            {
+                "name": "A",
+                "text_tex": "At \\(y=0\\): \\(x={p|int}+{m|int}\\times{y0|int}={A|int}\\)",
+                "result": "p+m*y0",
+                "format": "int",
+                "mark": "A1",
+                "note": "Put y = 0 and solve."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original y = x^2 + 2x + 1 at x = 1, normal meets the x-axis at x = 17"
+            },
+            {
+                "id": "xint",
+                "stem": "Find the \\(x\\)-intercept of the normal to \\(y=x^2+{b|int}x+{c|int}\\) at \\(x={p|int}\\)."
+            },
+            {
+                "id": "cross",
+                "stem": "The normal to \\(y=x^2+{b|int}x+{c|int}\\) at the point with \\(x={p|int}\\) crosses the \\(x\\)-axis. Find the \\(x\\)-coordinate of the crossing point."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-7.3"
+            ],
+            "topic": "Differentiation",
+            "chapter": "P1-7",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-7-3.json",
+                "locator": "P1-7.3-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-7.3-PP-9709-12-FM24-Q5",
+        "section": "P1-7.3",
+        "kind": "pastpaper",
+        "title": "Normal to a reciprocal curve",
+        "marks": 6,
+        "source": {
+            "paper": "9709/12/F/M/24 Q5",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m24_qp_12.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m24_ms_12.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>A curve has the equation \\(y=\\dfrac{3}{2x^2-5}\\).</p><p>Find the equation of the normal to the curve at the point \\((2, 1)\\), giving your answer in the form \\(ax+by+c=0\\), where \\(a\\), \\(b\\) and \\(c\\) are integers. [6]</p>",
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-7.3"
+            ],
+            "topic": "Differentiation",
+            "chapter": "P1-7",
+            "marks": 6,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-7-3.json",
+                "locator": "P1-7.3-PP-9709-12-FM24-Q5"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}=kx(2x^2-5)^{-2}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, differentiate to obtain the form kx(2x² − 5)⁻²."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}=-12x(2x^2-5)^{-2}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 OE."
+            },
+            {
+                "name": "s3",
+                "text_tex": "At \\((2, 1)\\): gradient \\(=-\\dfrac{24}{9}=-\\dfrac{8}{3}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 OE, −24/9 or −8/3; allow −2.67."
+            },
+            {
+                "name": "s4",
+                "text_tex": "Gradient of the normal \\(=\\dfrac{3}{8}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "*M1",
+                "note": "Official MS: *M1, apply the negative reciprocal to their numerical gradient; must have been some attempt at differentiation."
+            },
+            {
+                "name": "s5",
+                "text_tex": "\\(y-1=\\dfrac{3}{8}(x-2)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: DM1, attempt the equation of the normal using their normal gradient and (2, 1)."
+            },
+            {
+                "name": "s6",
+                "text_tex": "\\(3x-8y+2=0\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, allow multiples or equivalent of the requested form, e.g. 8y − 3x − 2 = 0."
+            }
+        ]
+    },
+    {
+        "id": "P1-7.3-PP-9709-13-MJ17-Q6",
+        "section": "P1-7.3",
+        "kind": "pastpaper",
+        "title": "A line that is normal to a curve",
+        "marks": 6,
+        "source": {
+            "paper": "9709/13/M/J/17 Q6",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s17_qp_13.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s17_ms_13.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>The line \\(3y+x=25\\) is a normal to the curve \\(y=x^2-5x+k\\). Find the value of the constant \\(k\\). [6]</p>",
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-7.3"
+            ],
+            "topic": "Differentiation",
+            "chapter": "P1-7",
+            "marks": 6,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-7-3.json",
+                "locator": "P1-7.3-PP-9709-13-MJ17-Q6"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "Gradient of the normal is \\(-\\dfrac{1}{3}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, gradient of normal −1/3 (SOI)."
+            },
+            {
+                "name": "s2",
+                "text_tex": "Gradient of the tangent is 3",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1FT, from their gradient of normal."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}=2x-5=3\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, differentiate and set equal to their 3 (numerical)."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(x=4\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "*A1",
+                "note": "Official MS: *A1."
+            },
+            {
+                "name": "s5",
+                "text_tex": "On the line, \\(x=4\\) gives \\(y=7\\); substitute \\((4, 7)\\) into the curve: \\(7=16-20+k\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: DM1, or substitute x = 4 into the curve to get y = k − 4 and use the line; other valid methods giving a linear equation in k."
+            },
+            {
+                "name": "s6",
+                "text_tex": "\\(k=11\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1."
+            }
+        ]
+    }
+]

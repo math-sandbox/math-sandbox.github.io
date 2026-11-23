@@ -1,0 +1,94 @@
+<script>if(location.hostname.endsWith('onrender.com'))location.replace('https://math-sandbox.pages.dev'+location.pathname+location.search+location.hash)</script>
+<section class="theory" data-section="P23-9.4">
+<h2>9.4 The vector equation of a line</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 2 &amp; 3 Coursebook (Sue Pemberton, series editor Julian Gilbey), Chapter 9 Vectors, printed pp.231–235. Own wording and new numbers, following the coursebook form r = a + λb and its use for points on a line and perpendicular distances.</p>
+<p class="key-words"><strong>Key words:</strong> <em>vector equation of a line</em>, <em>direction vector</em>, <em>foot of the perpendicular</em></p>
+<h3>The equation \(\mathbf{r}=\mathbf{a}+\lambda\mathbf{b}\)</h3>
+<p>A line through the point with position vector \(\mathbf{a}\), in the direction of the vector \(\mathbf{b}\), has vector equation</p>
+<p>\[\mathbf{r}=\mathbf{a}+\lambda\mathbf{b},\]</p>
+<p>where \(\lambda\) is a scalar parameter. Each value of \(\lambda\) gives the position vector of one point on the line. \(\mathbf{b}\) is called the direction vector.</p>
+<p>The line through \(A\) and \(B\) has equation \(\mathbf{r}=\mathbf{a}+\lambda(\mathbf{b}-\mathbf{a})\). The equation of a line is not unique: any point on the line and any multiple of the direction vector can be used.</p>
+<h3>Points on a line and the foot of a perpendicular</h3>
+<p>Write a general point \(P\) on the line in component form, for example \(P=(1+2\lambda,\;\lambda,\;2-3\lambda)\). To check whether a point lies on the line, find \(\lambda\) from one component and test the others.</p>
+<p>To find the foot \(N\) of the perpendicular from a point \(A\) to the line, use \(\overrightarrow{AN}\cdot\mathbf{b}=0\) to find \(\lambda\). The perpendicular distance is then \(AN\).</p>
+<div class="worked-example">
+<h4>Worked example 1: Does a point lie on a line?</h4>
+<p class="src">Coursebook, 9.4, points on a line. New numbers.</p>
+<p>Line \(l\): \(\mathbf{r}=2\mathbf{i}-\mathbf{j}+\lambda(\mathbf{i}+3\mathbf{j}-2\mathbf{k})\). Does \((5, 8, -6)\) lie on \(l\)?</p>
+<ol class="steps">
+<li>\(x\): \(2+\lambda=5\), so \(\lambda=3\) <span class="mark">M1</span></li>
+<li>Then \(y=-1+9=8\) and \(z=-6\), both correct <span class="mark">M1</span></li>
+<li>So the point lies on \(l\). <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> Yes, with \(\lambda=3\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: Perpendicular distance</h4>
+<p class="src">Coursebook, 9.4, foot of the perpendicular. New numbers.</p>
+<p>Find the perpendicular distance from \(A(3, 4, 0)\) to the line \(\mathbf{r}=\lambda(\mathbf{i}+\mathbf{j}+\mathbf{k})\).</p>
+<ol class="steps">
+<li>\(\overrightarrow{AN}=(\lambda-3)\mathbf{i}+(\lambda-4)\mathbf{j}+\lambda\mathbf{k}\) <span class="mark">B1</span></li>
+<li>\((\lambda-3)+(\lambda-4)+\lambda=0\), so \(\lambda=\dfrac{7}{3}\) <span class="mark">M1 A1</span></li>
+<li>\(\overrightarrow{AN}=-\dfrac{2}{3}\mathbf{i}-\dfrac{5}{3}\mathbf{j}+\dfrac{7}{3}\mathbf{k}\), so \(AN=\dfrac{\sqrt{78}}{3}=2.94\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(2.94\) (3 s.f.)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Using the position vector of a point as the direction vector.</li><li>Using \(\overrightarrow{ON}\cdot\mathbf{b}=0\) instead of \(\overrightarrow{AN}\cdot\mathbf{b}=0\).</li><li>Finding \(\lambda\) from one component and forgetting to check the other two.</li></ul>
+<h3>Past paper</h3>
+<p class="src">9709/33/M/J/21 Q9, official QP and official MS.</p>
+<p>The quadrilateral \(ABCD\) is a trapezium in which \(AB\) and \(DC\) are parallel. With respect to the origin \(O\), the position vectors of \(A\), \(B\) and \(C\) are given by \(\overrightarrow{OA}=-\mathbf{i}+2\mathbf{j}+3\mathbf{k}\), \(\overrightarrow{OB}=\mathbf{i}+3\mathbf{j}+\mathbf{k}\) and \(\overrightarrow{OC}=2\mathbf{i}+2\mathbf{j}-3\mathbf{k}\).</p><p>(a) Given that \(\overrightarrow{DC}=3\overrightarrow{AB}\), find the position vector of \(D\). [3]</p><p>(b) State a vector equation for the line through \(A\) and \(B\). [1]</p><p>(c) Find the distance between the parallel sides and hence find the area of the trapezium. [5]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(a) \(\overrightarrow{AB}=2\mathbf{i}+\mathbf{j}-2\mathbf{k}\) <span class="mark">B1</span> Official MS: B1, state or imply AB = 2i + j − 2k, OE.</li>
+<li>(a) \(\overrightarrow{OD}=\overrightarrow{OC}-3\overrightarrow{AB}\) <span class="mark">M1</span> Official MS: M1, carry out a correct method to find OD.</li>
+<li>(a) \(\overrightarrow{OD}=-4\mathbf{i}-\mathbf{j}+3\mathbf{k}\) <span class="mark">A1</span> Official MS: A1 OE.</li>
+<li>(b) \(\mathbf{r}=-\mathbf{i}+2\mathbf{j}+3\mathbf{k}+\lambda(2\mathbf{i}+\mathbf{j}-2\mathbf{k})\) <span class="mark">B1</span> Official MS: B1FT OE; the FT is on AB.</li>
+<li>(c) General point \(P\) on \(AB\): \(\overrightarrow{CP}=(-3+2\lambda)\mathbf{i}+\lambda\mathbf{j}+(6-2\lambda)\mathbf{k}\) <span class="mark">*M1</span> Official MS: *M1, for a general point P on AB, state CP or DP in component form, e.g. CP = (3 − 2λ, −λ, −6 + 2λ) (as printed, the reverse vector).</li>
+<li>(c) \(\overrightarrow{CP}\cdot(2\mathbf{i}+\mathbf{j}-2\mathbf{k})=9\lambda-18=0\) <span class="mark">M1</span> Official MS: DM1, equate a relevant scalar product to zero, or equate the derivative of CP to zero, or use Pythagoras in a relevant triangle, and solve for λ.</li>
+<li>(c) \(\lambda=2\) <span class="mark">A1</span> Official MS: A1.</li>
+<li>(c) \(\overrightarrow{CP}=\mathbf{i}+2\mathbf{j}+2\mathbf{k}\), so the perpendicular distance is 3 <span class="mark">A1</span> Official MS: A1, show the perpendicular is of length 3.</li>
+<li>(c) \(AB=3\), \(DC=9\), area \(=\dfrac{1}{2}(3+9)\times3=18\) <span class="mark">A1</span> Official MS: A1, correct method for the area of ABCD and obtain 18. An alternative method using a projection is also given in the MS.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/33/M/J/22 Q9, official QP and official MS.</p>
+<p>With respect to the origin \(O\), the point \(A\) has position vector given by \(\overrightarrow{OA}=\mathbf{i}+5\mathbf{j}+6\mathbf{k}\). The line \(l\) has vector equation \(\mathbf{r}=4\mathbf{i}+\mathbf{k}+\lambda(-\mathbf{i}+2\mathbf{j}+3\mathbf{k})\).</p><p>(a) Find in degrees the acute angle between the directions of \(OA\) and \(l\). [3]</p><p>(b) Find the position vector of the foot of the perpendicular from \(A\) to \(l\). [4]</p><p>(c) Hence find the position vector of the reflection of \(A\) in \(l\). [2]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(a) \((\mathbf{i}+5\mathbf{j}+6\mathbf{k})\cdot(-\mathbf{i}+2\mathbf{j}+3\mathbf{k})=-1+10+18=27\) <span class="mark">M1</span> Official MS: M1, correct process for the scalar product of the direction vectors of l and OA.</li>
+<li>(a) \(\cos\theta=\dfrac{27}{\sqrt{62}\sqrt{14}}\) <span class="mark">M1</span> Official MS: M1, divide the scalar product by the product of the moduli and find the inverse cosine.</li>
+<li>(a) \(\theta=23.6^\circ\) <span class="mark">A1</span> Official MS: A1, AWRT 23.6°; radians 0.412 scores A0.</li>
+<li>(b) \(\overrightarrow{AP}=(3-\lambda)\mathbf{i}+(-5+2\lambda)\mathbf{j}+(-5+3\lambda)\mathbf{k}\) <span class="mark">B1</span> Official MS: B1, AP (or PA) for a general point P on l in component form.</li>
+<li>(b) \(\overrightarrow{AP}\cdot(-\mathbf{i}+2\mathbf{j}+3\mathbf{k})=0\): \(-3+\lambda-10+4\lambda-15+9\lambda=0\) <span class="mark">M1</span> Official MS: M1, equate the scalar product of AP and the direction vector of l to zero and solve for λ (or Pythagoras, or minimise AP).</li>
+<li>(b) \(\lambda=2\) <span class="mark">A1</span> Official MS: A1.</li>
+<li>(b) Foot \(=2\mathbf{i}+4\mathbf{j}+7\mathbf{k}\) <span class="mark">A1</span> Official MS: A1 OE; condone coordinates.</li>
+<li>(c) \(\overrightarrow{OA'}=2\overrightarrow{OP}-\overrightarrow{OA}\) <span class="mark">M1</span> Official MS: M1, correct method for the reflection, e.g. OA′ = OP + (OP − OA) or the midpoint method; allow a sign error in one component only.</li>
+<li>(c) \(\overrightarrow{OA'}=3\mathbf{i}+3\mathbf{j}+8\mathbf{k}\) <span class="mark">A1</span> Official MS: A1 OE; condone coordinates. No method shown and correct answer scores 2/2.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>\(l\): \(\mathbf{r}=\begin{pmatrix}1\\0\\2\end{pmatrix}+\lambda\begin{pmatrix}2\\1\\-3\end{pmatrix}\). The point \(P\) on \(l\) has \(x=7\). Find the \(z\)-coordinate of \(P\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(1+2\lambda=7\), so \(\lambda=3\)</li><li>\(z=2+3\times(-3)\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(-7\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>\(l\): \(\mathbf{r}=\begin{pmatrix}2\\-1\\-4\end{pmatrix}+\lambda\begin{pmatrix}3\\1\\2\end{pmatrix}\). Find the \(x\)-coordinate where \(l\) meets the plane \(z=0\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(-4+2\lambda=0\), so \(\lambda=2\)</li><li>\(x=2+6\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(8\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>\(l\): \(\mathbf{r}=\begin{pmatrix}4\\0\\1\end{pmatrix}+\lambda\begin{pmatrix}1\\0\\0\end{pmatrix}\) and \(A\) is \((1, 5, 6)\). Find \(\lambda\) at the foot of the perpendicular from \(A\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\overrightarrow{AN}=(3+\lambda)\mathbf{i}-5\mathbf{j}-5\mathbf{k}\)</li><li>\(\overrightarrow{AN}\cdot\mathbf{i}=3+\lambda=0\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(\lambda=-3\)</p>
+</details>
+</div>
+</section>

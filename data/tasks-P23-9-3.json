@@ -1,0 +1,518 @@
+[
+    {
+        "id": "P23-9.3-QC1-gen",
+        "section": "P23-9.3",
+        "kind": "generated",
+        "title": "Scalar product of two vectors",
+        "marks": 2,
+        "source": "Theory P23-9.3 Quick check 1; multiply corresponding components and add",
+        "params": [
+            {
+                "name": "a1",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "a2",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "a3",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "b1",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "b2",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "b3",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "A": "a1*b1+a2*b2+a3*b3"
+        },
+        "constraints": [
+            "a1>=1"
+        ],
+        "original": {
+            "a1": 3,
+            "a2": -1,
+            "a3": 2,
+            "b1": 1,
+            "b2": 4,
+            "b3": 5
+        },
+        "stem": "Find the scalar product of \\(\\mathbf{a}=\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}\\) and \\(\\mathbf{b}=\\begin{pmatrix}{b1|int}\\\\{b2|int}\\\\{b3|int}\\end{pmatrix}\\).",
+        "answer": {
+            "expression": "a1*b1+a2*b2+a3*b3",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\mathbf{a}\\cdot\\mathbf{b}=({a1|int})({b1|int})+({a2|int})({b2|int})+({a3|int})({b3|int})\\)",
+                "result": "a1*b1",
+                "format": "int",
+                "mark": "M1",
+                "note": "Multiply corresponding components."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\mathbf{a}\\cdot\\mathbf{b}={A|int}\\)",
+                "result": "a1*b1+a2*b2+a3*b3",
+                "format": "int",
+                "mark": "A1",
+                "note": "Add."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original vectors (3, -1, 2) and (1, 4, 5), scalar product 9"
+            },
+            {
+                "id": "dot",
+                "stem": "\\(\\mathbf{a}=\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}\\) and \\(\\mathbf{b}=\\begin{pmatrix}{b1|int}\\\\{b2|int}\\\\{b3|int}\\end{pmatrix}\\). Work out \\(\\mathbf{a}\\cdot\\mathbf{b}\\)."
+            },
+            {
+                "id": "ijk",
+                "stem": "Calculate \\(({a1|int}\\mathbf{i}+({a2|int})\\mathbf{j}+({a3|int})\\mathbf{k})\\cdot({b1|int}\\mathbf{i}+({b2|int})\\mathbf{j}+({b3|int})\\mathbf{k})\\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-9.3"
+            ],
+            "topic": "Vectors",
+            "chapter": "P23-9",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-9-3.json",
+                "locator": "P23-9.3-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-9.3-QC2-gen",
+        "section": "P23-9.3",
+        "kind": "generated",
+        "title": "Cosine of the angle between two vectors",
+        "marks": 2,
+        "source": "Theory P23-9.3 Quick check 2; a.b over the product of the magnitudes",
+        "params": [
+            {
+                "name": "a1",
+                "min": 1,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "a2",
+                "min": -4,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "a3",
+                "min": -4,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "b1",
+                "min": -4,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "b2",
+                "min": 1,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "b3",
+                "min": -4,
+                "max": 4,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "D": "a1*b1+a2*b2+a3*b3",
+            "P": "(a1*a1+a2*a2+a3*a3)*(b1*b1+b2*b2+b3*b3)",
+            "A": "(a1*b1+a2*b2+a3*b3)/math.pow((a1*a1+a2*a2+a3*a3)*(b1*b1+b2*b2+b3*b3),0.5)"
+        },
+        "constraints": [
+            "a1>=1"
+        ],
+        "original": {
+            "a1": 2,
+            "a2": 1,
+            "a3": -2,
+            "b1": 4,
+            "b2": 4,
+            "b3": 2
+        },
+        "stem": "Find the cosine of the angle between the vectors \\(\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}\\) and \\(\\begin{pmatrix}{b1|int}\\\\{b2|int}\\\\{b3|int}\\end{pmatrix}\\).",
+        "answer": {
+            "expression": "D/math.pow(P,0.5)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\mathbf{a}\\cdot\\mathbf{b}={D|int}\\) and \\(\\lvert \\mathbf{a}\\rvert \\lvert \\mathbf{b}\\rvert =\\sqrt{{P|int}}\\)",
+                "result": "D",
+                "format": "int",
+                "mark": "M1",
+                "note": "Scalar product and product of magnitudes."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\cos\\theta=\\dfrac{{D|int}}{\\sqrt{{P|int}} }={A|sf3z}\\)",
+                "result": "D/math.pow(P,0.5)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Divide."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original vectors (2, 1, -2) and (4, 4, 2), cos = 8/18 = 0.444"
+            },
+            {
+                "id": "ang",
+                "stem": "The angle between \\(\\mathbf{u}=\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}\\) and \\(\\mathbf{v}=\\begin{pmatrix}{b1|int}\\\\{b2|int}\\\\{b3|int}\\end{pmatrix}\\) is \\(\\theta\\). Find \\(\\cos\\theta\\)."
+            },
+            {
+                "id": "oab",
+                "stem": "Relative to an origin \\(O\\), \\(\\overrightarrow{OA}=\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}\\) and \\(\\overrightarrow{OB}=\\begin{pmatrix}{b1|int}\\\\{b2|int}\\\\{b3|int}\\end{pmatrix}\\). Find the cosine of angle \\(AOB\\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-9.3"
+            ],
+            "topic": "Vectors",
+            "chapter": "P23-9",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-9-3.json",
+                "locator": "P23-9.3-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-9.3-QC3-gen",
+        "section": "P23-9.3",
+        "kind": "generated",
+        "title": "Unknown component for perpendicular vectors",
+        "marks": 2,
+        "source": "Theory P23-9.3 Quick check 3; perpendicular means scalar product zero",
+        "params": [
+            {
+                "name": "a1",
+                "min": 1,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "p",
+                "min": -6,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "b1",
+                "min": -4,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "b2",
+                "min": 2,
+                "max": 5,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "b3": "-(a1*b1+p*b2)",
+            "m": "p*b2",
+            "A": "p"
+        },
+        "constraints": [
+            "b2>=1"
+        ],
+        "original": {
+            "a1": 2,
+            "p": 3,
+            "b1": 1,
+            "b2": 2
+        },
+        "stem": "The vectors \\(\\begin{pmatrix}{a1|int}\\\\p\\\\1\\end{pmatrix}\\) and \\(\\begin{pmatrix}{b1|int}\\\\{b2|int}\\\\{b3|int}\\end{pmatrix}\\) are perpendicular. Find \\(p\\).",
+        "answer": {
+            "expression": "m/b2",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(({a1|int})({b1|int})+{b2|int}p+({b3|int})=0\\), so \\({b2|int}p={m|int}\\)",
+                "result": "m",
+                "format": "int",
+                "mark": "M1",
+                "note": "Scalar product equals zero."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(p={A|int}\\)",
+                "result": "m/b2",
+                "format": "int",
+                "mark": "A1",
+                "note": "Solve the linear equation."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original (2, p, 1) and (1, 2, -8), p = 3"
+            },
+            {
+                "id": "perp",
+                "stem": "Given that \\(\\begin{pmatrix}{a1|int}\\\\p\\\\1\\end{pmatrix}\\) is perpendicular to \\(\\begin{pmatrix}{b1|int}\\\\{b2|int}\\\\{b3|int}\\end{pmatrix}\\), find the value of \\(p\\)."
+            },
+            {
+                "id": "right",
+                "stem": "Relative to \\(O\\), \\(\\overrightarrow{OA}=\\begin{pmatrix}{a1|int}\\\\p\\\\1\\end{pmatrix}\\) and \\(\\overrightarrow{OB}=\\begin{pmatrix}{b1|int}\\\\{b2|int}\\\\{b3|int}\\end{pmatrix}\\). Angle \\(AOB\\) is \\(90^\\circ\\). Find \\(p\\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-9.3"
+            ],
+            "topic": "Vectors",
+            "chapter": "P23-9",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-9-3.json",
+                "locator": "P23-9.3-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-9.3-PP-9709-12-FM17-Q6",
+        "section": "P23-9.3",
+        "kind": "pastpaper",
+        "title": "Angle OAB and area of triangle OAB",
+        "marks": 7,
+        "source": {
+            "paper": "9709/12/F/M/17 Q6",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m17_qp_12.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m17_ms_12.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Relative to an origin \\(O\\), the position vectors of the points \\(A\\) and \\(B\\) are given by</p><p>\\(\\overrightarrow{OA}=2\\mathbf{i}+3\\mathbf{j}+5\\mathbf{k}\\) and \\(\\overrightarrow{OB}=7\\mathbf{i}+4\\mathbf{j}+3\\mathbf{k}.\\)</p><p>(i) Use a scalar product to find angle \\(OAB\\). [5]</p><p>(ii) Find the area of triangle \\(OAB\\). [2]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-9.3"
+            ],
+            "topic": "Vectors",
+            "chapter": "P23-9",
+            "marks": 7,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-9-3.json",
+                "locator": "P23-9.3-PP-9709-12-FM17-Q6"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(i) \\(\\overrightarrow{BA}=\\overrightarrow{OA}-\\overrightarrow{OB}=-5\\mathbf{i}-\\mathbf{j}+2\\mathbf{k}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, allow vector reversed; ignore label BA or AB."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(i) \\(\\overrightarrow{OA}\\cdot\\overrightarrow{BA}=-10-3+10=-3\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, soi by ±3."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(i) \\(\\lvert \\overrightarrow{OA}\\rvert \\times\\lvert \\overrightarrow{BA}\\rvert =\\sqrt{2^2+3^2+5^2}\\times\\sqrt{5^2+1^2+2^2}=\\sqrt{38}\\times\\sqrt{30}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, product of moduli for at least 1 correct vector or reverse."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(i) \\(\\cos OAB=\\dfrac{-3}{\\sqrt{38}\\sqrt{30} }\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, cos OAB = ±3/(√38 × √30)."
+            },
+            {
+                "name": "s5",
+                "text_tex": "(i) Angle \\(OAB=95.1^\\circ\\) (or 1.66 radians)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 95.1° or 1.66 rad."
+            },
+            {
+                "name": "s6",
+                "text_tex": "(ii) Area \\(=\\dfrac{1}{2}\\sqrt{38}\\sqrt{30}\\sin95.1^\\circ\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, allow their moduli product from (i); also allow ½√38 × √74 sin 39.4."
+            },
+            {
+                "name": "s7",
+                "text_tex": "(ii) \\(=16.8\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 cao, but not from sin 84.9°."
+            }
+        ]
+    },
+    {
+        "id": "P23-9.3-PP-9709-12-MJ13-Q6",
+        "section": "P23-9.3",
+        "kind": "pastpaper",
+        "title": "Parallel, perpendicular and unit vectors",
+        "marks": 7,
+        "source": {
+            "paper": "9709/12/M/J/13 Q6",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s13_qp_12.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s13_ms_12.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Relative to an origin \\(O\\), the position vectors of points \\(A\\) and \\(B\\) are given by</p><p>\\(\\overrightarrow{OA}=\\mathbf{i}-2\\mathbf{j}+2\\mathbf{k}\\) and \\(\\overrightarrow{OB}=3\\mathbf{i}+p\\mathbf{j}+q\\mathbf{k},\\)</p><p>where \\(p\\) and \\(q\\) are constants.</p><p>(i) State the values of \\(p\\) and \\(q\\) for which \\(\\overrightarrow{OA}\\) is parallel to \\(\\overrightarrow{OB}\\). [2]</p><p>(ii) In the case where \\(q=2p\\), find the value of \\(p\\) for which angle \\(BOA\\) is \\(90^\\circ\\). [2]</p><p>(iii) In the case where \\(p=1\\) and \\(q=8\\), find the unit vector in the direction of \\(\\overrightarrow{AB}\\). [3]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-9.3"
+            ],
+            "topic": "Vectors",
+            "chapter": "P23-9",
+            "marks": 7,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-9-3.json",
+                "locator": "P23-9.3-PP-9709-12-MJ13-Q6"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(i) \\(p=-6\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, p = −6."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(i) \\(q=6\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, q = 6."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(ii) \\(3-2p+4p=0\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, use of x₁x₂ + y₁y₂ + z₁z₂ = 0."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(ii) \\(p=-1.5\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1."
+            },
+            {
+                "name": "s5",
+                "text_tex": "(iii) \\(\\overrightarrow{AB}=\\mathbf{b}-\\mathbf{a}=2\\mathbf{i}+3\\mathbf{j}+6\\mathbf{k}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, not for a − b."
+            },
+            {
+                "name": "s6",
+                "text_tex": "(iii) Divide by the modulus, \\(\\sqrt{4+9+36}=7\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1 for division by the modulus."
+            },
+            {
+                "name": "s7",
+                "text_tex": "(iii) Unit vector \\(=\\dfrac{1}{7}(2\\mathbf{i}+3\\mathbf{j}+6\\mathbf{k})\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, FT on the B1."
+            }
+        ]
+    }
+]

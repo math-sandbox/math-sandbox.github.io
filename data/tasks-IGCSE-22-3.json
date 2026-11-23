@@ -1,0 +1,443 @@
+[
+    {
+        "id": "IGCSE-22.3-QC1-gen",
+        "section": "IGCSE-22.3",
+        "kind": "generated",
+        "title": "Value of a composite function",
+        "marks": 2,
+        "source": "Theory IGCSE-22.3 Quick check 1; work out g first, then f",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 1,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "c",
+                "min": 2,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "d",
+                "min": 1,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "k",
+                "min": 1,
+                "max": 6,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "g": "c*k+d",
+            "A": "a*(c*k+d)+b"
+        },
+        "constraints": [
+            "k>=1"
+        ],
+        "original": {
+            "a": 3,
+            "b": 4,
+            "c": 2,
+            "d": 1,
+            "k": 3
+        },
+        "stem": "\\(f(x)={a|int}x+{b|int}\\) and \\(g(x)={c|int}x+{d|int}\\). Find \\(fg({k|int})\\).",
+        "answer": {
+            "expression": "a*g+b",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(g({k|int})={c|int}\\times{k|int}+{d|int}={g|int}\\)",
+                "result": "g",
+                "format": "int",
+                "mark": "M1",
+                "note": "Apply g first."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(fg({k|int})=f({g|int})={a|int}\\times{g|int}+{b|int}={A|int}\\)",
+                "result": "a*g+b",
+                "format": "int",
+                "mark": "A1",
+                "note": "Then apply f."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original f(x) = 3x + 4, g(x) = 2x + 1, fg(3) = 25"
+            },
+            {
+                "id": "comp",
+                "stem": "The functions \\(f\\) and \\(g\\) are given by \\(f(x)={a|int}x+{b|int}\\) and \\(g(x)={c|int}x+{d|int}\\). Work out the value of \\(f\\bigl(g({k|int})\\bigr)\\)."
+            },
+            {
+                "id": "map",
+                "stem": "\\(g\\) maps \\(x\\) to \\({c|int}x+{d|int}\\) and \\(f\\) maps \\(x\\) to \\({a|int}x+{b|int}\\). Find \\(fg({k|int})\\)."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-22.3"
+            ],
+            "topic": "More equations, formulae and functions",
+            "chapter": "IGCSE-22",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-22-3.json",
+                "locator": "IGCSE-22.3-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-22.3-QC2-gen",
+        "section": "IGCSE-22.3",
+        "kind": "generated",
+        "title": "Value of an inverse function",
+        "marks": 2,
+        "source": "Theory IGCSE-22.3 Quick check 2; swap x and y, then rearrange",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 1,
+                "max": 12,
+                "step": 1
+            },
+            {
+                "name": "k",
+                "min": 1,
+                "max": 30,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "d": "k-b",
+            "A": "(k-b)/a"
+        },
+        "constraints": [
+            "k>b"
+        ],
+        "original": {
+            "a": 4,
+            "b": 3,
+            "k": 23
+        },
+        "stem": "\\(f(x)={a|int}x+{b|int}\\). Find \\(f^{-1}(x)\\) and hence find \\(f^{-1}({k|int})\\).",
+        "answer": {
+            "expression": "d/a",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(y={a|int}x+{b|int}\\), so \\(x=\\dfrac{y-{b|int}}{{a|int}}\\) and \\(f^{-1}(x)=\\dfrac{x-{b|int}}{{a|int}}\\)",
+                "result": "a",
+                "format": "int",
+                "mark": "M1",
+                "note": "Rearrange y = f(x) for x."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(f^{-1}({k|int})=\\dfrac{{d|int}}{{a|int}}={A|sf3z}\\)",
+                "result": "d/a",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Substitute."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original f(x) = 4x + 3, inverse at 23 equal to 5"
+            },
+            {
+                "id": "inv",
+                "stem": "The function \\(f\\) is defined by \\(f(x)={a|int}x+{b|int}\\). Work out \\(f^{-1}({k|int})\\)."
+            },
+            {
+                "id": "rev",
+                "stem": "\\(f(x)={a|int}x+{b|int}\\). Find the value of \\(x\\) for which \\(f(x)={k|int}\\), that is, find \\(f^{-1}({k|int})\\)."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-22.3"
+            ],
+            "topic": "More equations, formulae and functions",
+            "chapter": "IGCSE-22",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-22-3.json",
+                "locator": "IGCSE-22.3-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-22.3-QC3-gen",
+        "section": "IGCSE-22.3",
+        "kind": "generated",
+        "title": "Solving a composite function equation",
+        "marks": 2,
+        "source": "Theory IGCSE-22.3 Quick check 3; form fg(x) then solve",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 1,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "c",
+                "min": 2,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "d",
+                "min": 1,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "s",
+                "min": 1,
+                "max": 8,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "P": "a*c",
+            "Q": "a*d+b",
+            "T": "a*(c*s+d)+b",
+            "R": "a*c*s",
+            "A": "s"
+        },
+        "constraints": [
+            "s>=1"
+        ],
+        "original": {
+            "a": 2,
+            "b": 3,
+            "c": 3,
+            "d": 1,
+            "s": 4
+        },
+        "stem": "\\(f(x)={a|int}x+{b|int}\\) and \\(g(x)={c|int}x+{d|int}\\). Solve the equation \\(fg(x)={T|int}\\).",
+        "answer": {
+            "expression": "(T-Q)/P",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(fg(x)={a|int}({c|int}x+{d|int})+{b|int}={P|int}x+{Q|int}\\)",
+                "result": "Q",
+                "format": "int",
+                "mark": "M1",
+                "note": "Form fg(x) by substituting g(x) into f."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\({P|int}x={T|int}-{Q|int}={R|int}\\), so \\(x={A|int}\\)",
+                "result": "R/P",
+                "format": "int",
+                "mark": "A1",
+                "note": "Solve the linear equation."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original f(x) = 2x + 3, g(x) = 3x + 1, fg(x) = 29, x = 4"
+            },
+            {
+                "id": "find",
+                "stem": "Given \\(f(x)={a|int}x+{b|int}\\) and \\(g(x)={c|int}x+{d|int}\\), find the value of \\(x\\) for which \\(fg(x)={T|int}\\)."
+            },
+            {
+                "id": "comp",
+                "stem": "The functions \\(f(x)={a|int}x+{b|int}\\) and \\(g(x)={c|int}x+{d|int}\\) are combined to give \\(fg(x)\\). Find \\(x\\) when \\(fg(x)={T|int}\\)."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-22.3"
+            ],
+            "topic": "More equations, formulae and functions",
+            "chapter": "IGCSE-22",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-22-3.json",
+                "locator": "IGCSE-22.3-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-22.3-PP-0580-23-MJ17-Q12",
+        "section": "IGCSE-22.3",
+        "kind": "pastpaper",
+        "title": "Simplifying function expressions",
+        "marks": 3,
+        "source": {
+            "paper": "0580/23/M/J/17 Q12",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s17_qp_23.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s17_ms_23.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>\\(f(x)=3+4x\\qquad g(x)=6x+7\\)</p><p>Find, in its simplest form,</p><p>(a) \\(f(3x)\\), [1]</p><p>(b) \\(fg(x)\\). [2]</p>",
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-22.3"
+            ],
+            "topic": "More equations, formulae and functions",
+            "chapter": "IGCSE-22",
+            "marks": 3,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-22-3.json",
+                "locator": "IGCSE-22.3-PP-0580-23-MJ17-Q12"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) \\(f(3x)=3+12x\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: 3 + 12x final answer, 1 mark."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(b) \\(fg(x)=3+4(6x+7)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1 for 3 + 4(6x + 7)."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(b) \\(=24x+31\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: 24x + 31 final answer, 2 marks."
+            }
+        ]
+    },
+    {
+        "id": "IGCSE-22.3-PP-0580-21-ON19-Q24",
+        "section": "IGCSE-22.3",
+        "kind": "pastpaper",
+        "title": "Composite and inverse functions",
+        "marks": 4,
+        "source": {
+            "paper": "0580/21/O/N/19 Q24",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w19_qp_21.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w19_ms_21.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>\\(f(x)=3x-5\\qquad g(x)=2^x\\)</p><p>(a) Find \\(fg(3)\\). [2]</p><p>(b) Find \\(f^{-1}(x)\\). [2]</p>",
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-22.3"
+            ],
+            "topic": "More equations, formulae and functions",
+            "chapter": "IGCSE-22",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-22-3.json",
+                "locator": "IGCSE-22.3-PP-0580-21-ON19-Q24"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) \\(g(3)=2^3=8\\), \\(f(8)=3\\times8-5\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1 for 3(2^x) − 5 soi or for f(8)."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(a) \\(fg(3)=19\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: 19, 2 marks."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(b) \\(y=3x-5\\), so \\(y+5=3x\\) (or swap: \\(x=3y-5\\))",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1 for a correct first step, e.g. y + 5 = 3x or y/3 = x − 5/3 or x = 3y − 5."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(b) \\(f^{-1}(x)=\\dfrac{x+5}{3}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: (x + 5)/3 OE final answer, 2 marks."
+            }
+        ]
+    }
+]

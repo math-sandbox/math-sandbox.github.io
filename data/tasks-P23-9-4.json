@@ -1,0 +1,592 @@
+[
+    {
+        "id": "P23-9.4-QC1-gen",
+        "section": "P23-9.4",
+        "kind": "generated",
+        "title": "Coordinate of a point on a line",
+        "marks": 2,
+        "source": "Theory P23-9.4 Quick check 1; find lambda from one coordinate",
+        "params": [
+            {
+                "name": "a1",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "a2",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "a3",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "d1",
+                "min": 1,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "d2",
+                "min": -4,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "d3",
+                "min": -4,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "L",
+                "min": -3,
+                "max": 4,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "X": "a1+L*d1",
+            "A": "a3+L*d3"
+        },
+        "constraints": [
+            "d1>=1"
+        ],
+        "original": {
+            "a1": 1,
+            "a2": 0,
+            "a3": 2,
+            "d1": 2,
+            "d2": 1,
+            "d3": -3,
+            "L": 3
+        },
+        "stem": "The line \\(l\\) has equation \\(\\mathbf{r}=\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}+\\lambda\\begin{pmatrix}{d1|int}\\\\{d2|int}\\\\{d3|int}\\end{pmatrix}\\). The point \\(P\\) on \\(l\\) has \\(x\\)-coordinate \\({X|int}\\). Find the \\(z\\)-coordinate of \\(P\\).",
+        "answer": {
+            "expression": "a3+L*d3",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\({a1|int}+{d1|int}\\lambda={X|int}\\), so \\(\\lambda={L|int}\\)",
+                "result": "L",
+                "format": "int",
+                "mark": "M1",
+                "note": "Use the x-component to find lambda."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(z={a3|int}+({L|int})({d3|int})={A|int}\\)",
+                "result": "a3+L*d3",
+                "format": "int",
+                "mark": "A1",
+                "note": "Substitute into the z-component."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original line through (1, 0, 2) with direction (2, 1, -3), x = 7, z = -7"
+            },
+            {
+                "id": "pt",
+                "stem": "A point on the line \\(\\mathbf{r}=\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}+\\lambda\\begin{pmatrix}{d1|int}\\\\{d2|int}\\\\{d3|int}\\end{pmatrix}\\) has \\(x={X|int}\\). Find its \\(z\\)-coordinate."
+            },
+            {
+                "id": "lam",
+                "stem": "For the line \\(\\mathbf{r}=\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}+\\lambda\\begin{pmatrix}{d1|int}\\\\{d2|int}\\\\{d3|int}\\end{pmatrix}\\), find the value of \\(\\lambda\\) at the point where \\(x={X|int}\\), and hence the \\(z\\)-coordinate of that point."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-9.4"
+            ],
+            "topic": "Vectors",
+            "chapter": "P23-9",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-9-4.json",
+                "locator": "P23-9.4-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-9.4-QC2-gen",
+        "section": "P23-9.4",
+        "kind": "generated",
+        "title": "Where a line meets the plane z = 0",
+        "marks": 2,
+        "source": "Theory P23-9.4 Quick check 2; set the z-component to zero",
+        "params": [
+            {
+                "name": "a1",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "a2",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "d1",
+                "min": -4,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "d2",
+                "min": -4,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "d3",
+                "min": 1,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "L",
+                "min": -3,
+                "max": 4,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "a3": "-L*d3",
+            "A": "a1+L*d1"
+        },
+        "constraints": [
+            "d3>=1"
+        ],
+        "original": {
+            "a1": 2,
+            "a2": -1,
+            "d1": 3,
+            "d2": 1,
+            "d3": 2,
+            "L": 2
+        },
+        "stem": "The line \\(l\\) has equation \\(\\mathbf{r}=\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}+\\lambda\\begin{pmatrix}{d1|int}\\\\{d2|int}\\\\{d3|int}\\end{pmatrix}\\). Find the \\(x\\)-coordinate of the point where \\(l\\) meets the plane \\(z=0\\).",
+        "answer": {
+            "expression": "a1+L*d1",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\({a3|int}+{d3|int}\\lambda=0\\), so \\(\\lambda={L|int}\\)",
+                "result": "L",
+                "format": "int",
+                "mark": "M1",
+                "note": "Set the z-component to zero."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(x={a1|int}+({L|int})({d1|int})={A|int}\\)",
+                "result": "a1+L*d1",
+                "format": "int",
+                "mark": "A1",
+                "note": "Substitute into the x-component."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original line through (2, -1, -4) with direction (3, 1, 2), meets z = 0 at x = 8"
+            },
+            {
+                "id": "xy",
+                "stem": "Find the \\(x\\)-coordinate of the point where the line \\(\\mathbf{r}=\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}+\\lambda\\begin{pmatrix}{d1|int}\\\\{d2|int}\\\\{d3|int}\\end{pmatrix}\\) crosses the \\(xy\\)-plane."
+            },
+            {
+                "id": "meet",
+                "stem": "The line \\(\\mathbf{r}=\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}+\\lambda\\begin{pmatrix}{d1|int}\\\\{d2|int}\\\\{d3|int}\\end{pmatrix}\\) meets the plane \\(z=0\\) at the point \\(Q\\). Find the \\(x\\)-coordinate of \\(Q\\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-9.4"
+            ],
+            "topic": "Vectors",
+            "chapter": "P23-9",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-9-4.json",
+                "locator": "P23-9.4-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-9.4-QC3-gen",
+        "section": "P23-9.4",
+        "kind": "generated",
+        "title": "Parameter of the foot of the perpendicular",
+        "marks": 2,
+        "source": "Theory P23-9.4 Quick check 3; AP dot d equals zero",
+        "params": [
+            {
+                "name": "a1",
+                "min": -3,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "a2",
+                "min": -3,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "a3",
+                "min": -3,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "d1",
+                "min": 1,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "d2",
+                "min": -3,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "d3",
+                "min": -3,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "p1",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "p2",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "p3",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "S": "d1*d1+d2*d2+d3*d3",
+            "T": "(p1-a1)*d1+(p2-a2)*d2+(p3-a3)*d3",
+            "A": "((p1-a1)*d1+(p2-a2)*d2+(p3-a3)*d3)/(d1*d1+d2*d2+d3*d3)"
+        },
+        "constraints": [
+            "d1>=1"
+        ],
+        "original": {
+            "a1": 4,
+            "a2": 0,
+            "a3": 1,
+            "d1": 1,
+            "d2": 0,
+            "d3": 0,
+            "p1": 1,
+            "p2": 5,
+            "p3": 6
+        },
+        "stem": "The line \\(l\\) has equation \\(\\mathbf{r}=\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}+\\lambda\\begin{pmatrix}{d1|int}\\\\{d2|int}\\\\{d3|int}\\end{pmatrix}\\) and the point \\(A\\) has position vector \\(\\begin{pmatrix}{p1|int}\\\\{p2|int}\\\\{p3|int}\\end{pmatrix}\\). \\(N\\) is the foot of the perpendicular from \\(A\\) to \\(l\\). Find the value of \\(\\lambda\\) at \\(N\\).",
+        "answer": {
+            "expression": "T/S",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\overrightarrow{AN}\\cdot\\begin{pmatrix}{d1|int}\\\\{d2|int}\\\\{d3|int}\\end{pmatrix}=0\\) gives \\({S|int}\\lambda={T|int}\\)",
+                "result": "T",
+                "format": "int",
+                "mark": "M1",
+                "note": "AN is perpendicular to the direction of l."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\lambda=\\dfrac{{T|int}}{{S|int}}={A|sf3z}\\)",
+                "result": "T/S",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Solve."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes a line along the x-direction through (4, 0, 1) and A(1, 5, 6), lambda = -3"
+            },
+            {
+                "id": "foot",
+                "stem": "Find the value of the parameter \\(\\lambda\\) for the point \\(N\\) on the line \\(\\mathbf{r}=\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}+\\lambda\\begin{pmatrix}{d1|int}\\\\{d2|int}\\\\{d3|int}\\end{pmatrix}\\) that is closest to the point \\(A\\) \\(\\begin{pmatrix}{p1|int}\\\\{p2|int}\\\\{p3|int}\\end{pmatrix}\\)."
+            },
+            {
+                "id": "perp",
+                "stem": "The point \\(N\\) on the line \\(\\mathbf{r}=\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}+\\lambda\\begin{pmatrix}{d1|int}\\\\{d2|int}\\\\{d3|int}\\end{pmatrix}\\) is such that \\(AN\\) is perpendicular to the line, where \\(A\\) has position vector \\(\\begin{pmatrix}{p1|int}\\\\{p2|int}\\\\{p3|int}\\end{pmatrix}\\). Find \\(\\lambda\\) at \\(N\\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-9.4"
+            ],
+            "topic": "Vectors",
+            "chapter": "P23-9",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-9-4.json",
+                "locator": "P23-9.4-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-9.4-PP-9709-33-MJ21-Q9",
+        "section": "P23-9.4",
+        "kind": "pastpaper",
+        "title": "Trapezium ABCD",
+        "marks": 9,
+        "source": {
+            "paper": "9709/33/M/J/21 Q9",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s21_qp_33.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s21_ms_33.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>The quadrilateral \\(ABCD\\) is a trapezium in which \\(AB\\) and \\(DC\\) are parallel. With respect to the origin \\(O\\), the position vectors of \\(A\\), \\(B\\) and \\(C\\) are given by \\(\\overrightarrow{OA}=-\\mathbf{i}+2\\mathbf{j}+3\\mathbf{k}\\), \\(\\overrightarrow{OB}=\\mathbf{i}+3\\mathbf{j}+\\mathbf{k}\\) and \\(\\overrightarrow{OC}=2\\mathbf{i}+2\\mathbf{j}-3\\mathbf{k}\\).</p><p>(a) Given that \\(\\overrightarrow{DC}=3\\overrightarrow{AB}\\), find the position vector of \\(D\\). [3]</p><p>(b) State a vector equation for the line through \\(A\\) and \\(B\\). [1]</p><p>(c) Find the distance between the parallel sides and hence find the area of the trapezium. [5]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-9.4"
+            ],
+            "topic": "Vectors",
+            "chapter": "P23-9",
+            "marks": 9,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-9-4.json",
+                "locator": "P23-9.4-PP-9709-33-MJ21-Q9"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) \\(\\overrightarrow{AB}=2\\mathbf{i}+\\mathbf{j}-2\\mathbf{k}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, state or imply AB = 2i + j − 2k, OE."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(a) \\(\\overrightarrow{OD}=\\overrightarrow{OC}-3\\overrightarrow{AB}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, carry out a correct method to find OD."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(a) \\(\\overrightarrow{OD}=-4\\mathbf{i}-\\mathbf{j}+3\\mathbf{k}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 OE."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(b) \\(\\mathbf{r}=-\\mathbf{i}+2\\mathbf{j}+3\\mathbf{k}+\\lambda(2\\mathbf{i}+\\mathbf{j}-2\\mathbf{k})\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1FT OE; the FT is on AB."
+            },
+            {
+                "name": "s5",
+                "text_tex": "(c) General point \\(P\\) on \\(AB\\): \\(\\overrightarrow{CP}=(-3+2\\lambda)\\mathbf{i}+\\lambda\\mathbf{j}+(6-2\\lambda)\\mathbf{k}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "*M1",
+                "note": "Official MS: *M1, for a general point P on AB, state CP or DP in component form, e.g. CP = (3 − 2λ, −λ, −6 + 2λ) (as printed, the reverse vector)."
+            },
+            {
+                "name": "s6",
+                "text_tex": "(c) \\(\\overrightarrow{CP}\\cdot(2\\mathbf{i}+\\mathbf{j}-2\\mathbf{k})=9\\lambda-18=0\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: DM1, equate a relevant scalar product to zero, or equate the derivative of CP to zero, or use Pythagoras in a relevant triangle, and solve for λ."
+            },
+            {
+                "name": "s7",
+                "text_tex": "(c) \\(\\lambda=2\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1."
+            },
+            {
+                "name": "s8",
+                "text_tex": "(c) \\(\\overrightarrow{CP}=\\mathbf{i}+2\\mathbf{j}+2\\mathbf{k}\\), so the perpendicular distance is 3",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, show the perpendicular is of length 3."
+            },
+            {
+                "name": "s9",
+                "text_tex": "(c) \\(AB=3\\), \\(DC=9\\), area \\(=\\dfrac{1}{2}(3+9)\\times3=18\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, correct method for the area of ABCD and obtain 18. An alternative method using a projection is also given in the MS."
+            }
+        ]
+    },
+    {
+        "id": "P23-9.4-PP-9709-33-MJ22-Q9",
+        "section": "P23-9.4",
+        "kind": "pastpaper",
+        "title": "Foot of the perpendicular and reflection in a line",
+        "marks": 9,
+        "source": {
+            "paper": "9709/33/M/J/22 Q9",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s22_qp_33.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s22_ms_33.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>With respect to the origin \\(O\\), the point \\(A\\) has position vector given by \\(\\overrightarrow{OA}=\\mathbf{i}+5\\mathbf{j}+6\\mathbf{k}\\). The line \\(l\\) has vector equation \\(\\mathbf{r}=4\\mathbf{i}+\\mathbf{k}+\\lambda(-\\mathbf{i}+2\\mathbf{j}+3\\mathbf{k})\\).</p><p>(a) Find in degrees the acute angle between the directions of \\(OA\\) and \\(l\\). [3]</p><p>(b) Find the position vector of the foot of the perpendicular from \\(A\\) to \\(l\\). [4]</p><p>(c) Hence find the position vector of the reflection of \\(A\\) in \\(l\\). [2]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-9.4"
+            ],
+            "topic": "Vectors",
+            "chapter": "P23-9",
+            "marks": 9,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-9-4.json",
+                "locator": "P23-9.4-PP-9709-33-MJ22-Q9"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) \\((\\mathbf{i}+5\\mathbf{j}+6\\mathbf{k})\\cdot(-\\mathbf{i}+2\\mathbf{j}+3\\mathbf{k})=-1+10+18=27\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, correct process for the scalar product of the direction vectors of l and OA."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(a) \\(\\cos\\theta=\\dfrac{27}{\\sqrt{62}\\sqrt{14} }\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, divide the scalar product by the product of the moduli and find the inverse cosine."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(a) \\(\\theta=23.6^\\circ\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, AWRT 23.6°; radians 0.412 scores A0."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(b) \\(\\overrightarrow{AP}=(3-\\lambda)\\mathbf{i}+(-5+2\\lambda)\\mathbf{j}+(-5+3\\lambda)\\mathbf{k}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, AP (or PA) for a general point P on l in component form."
+            },
+            {
+                "name": "s5",
+                "text_tex": "(b) \\(\\overrightarrow{AP}\\cdot(-\\mathbf{i}+2\\mathbf{j}+3\\mathbf{k})=0\\): \\(-3+\\lambda-10+4\\lambda-15+9\\lambda=0\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, equate the scalar product of AP and the direction vector of l to zero and solve for λ (or Pythagoras, or minimise AP)."
+            },
+            {
+                "name": "s6",
+                "text_tex": "(b) \\(\\lambda=2\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1."
+            },
+            {
+                "name": "s7",
+                "text_tex": "(b) Foot \\(=2\\mathbf{i}+4\\mathbf{j}+7\\mathbf{k}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 OE; condone coordinates."
+            },
+            {
+                "name": "s8",
+                "text_tex": "(c) \\(\\overrightarrow{OA'}=2\\overrightarrow{OP}-\\overrightarrow{OA}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, correct method for the reflection, e.g. OA′ = OP + (OP − OA) or the midpoint method; allow a sign error in one component only."
+            },
+            {
+                "name": "s9",
+                "text_tex": "(c) \\(\\overrightarrow{OA'}=3\\mathbf{i}+3\\mathbf{j}+8\\mathbf{k}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 OE; condone coordinates. No method shown and correct answer scores 2/2."
+            }
+        ]
+    }
+]

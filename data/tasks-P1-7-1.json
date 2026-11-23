@@ -1,0 +1,415 @@
+[
+    {
+        "id": "P1-7.1-QC1-gen",
+        "section": "P1-7.1",
+        "kind": "generated",
+        "title": "Gradient of a polynomial curve at a point",
+        "marks": 2,
+        "source": "Theory P1-7.1 Quick check 1; differentiate each term, then substitute",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "n",
+                "min": 3,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 2,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "c",
+                "min": -3,
+                "max": 3,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "m": "n-1",
+            "k": "n*a",
+            "A": "n*a*math.pow(c,n-1)-b"
+        },
+        "constraints": [
+            "a>=1"
+        ],
+        "original": {
+            "a": 2,
+            "n": 3,
+            "b": 5,
+            "c": 2
+        },
+        "stem": "Find the gradient of the curve \\(y={a|int}x^{{n|int}}-{b|int}x\\) at the point where \\(x={c|int}\\).",
+        "answer": {
+            "expression": "k*math.pow(c,m)-b",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}={k|int}x^{{m|int}}-{b|int}\\)",
+                "result": "k",
+                "format": "int",
+                "mark": "M1",
+                "note": "Bring the power down and reduce it by 1."
+            },
+            {
+                "name": "A",
+                "text_tex": "At \\(x={c|int}\\): \\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}={k|int}\\times({c|int})^{{m|int}}-{b|int}={A|int}\\)",
+                "result": "k*math.pow(c,m)-b",
+                "format": "int",
+                "mark": "A1",
+                "note": "Substitute."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original y = 2x^3 - 5x at x = 2, gradient 19"
+            },
+            {
+                "id": "slope",
+                "stem": "A curve has equation \\(y={a|int}x^{{n|int}}-{b|int}x\\). Find the value of \\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\) when \\(x={c|int}\\)."
+            },
+            {
+                "id": "tan",
+                "stem": "Find the gradient of the tangent to \\(y={a|int}x^{{n|int}}-{b|int}x\\) at the point with \\(x\\)-coordinate \\({c|int}\\)."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-7.1"
+            ],
+            "topic": "Differentiation",
+            "chapter": "P1-7",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-7-1.json",
+                "locator": "P1-7.1-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-7.1-QC2-gen",
+        "section": "P1-7.1",
+        "kind": "generated",
+        "title": "Gradient of a curve with a square root term",
+        "marks": 2,
+        "source": "Theory P1-7.1 Quick check 2; write the root as a power of one half",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 12,
+                "step": 2
+            },
+            {
+                "name": "k",
+                "min": 1,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 2,
+                "max": 5,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "x0": "k*k",
+            "h": "a/2",
+            "A": "a/(2*k)+2*b*k*k"
+        },
+        "constraints": [
+            "k>=1"
+        ],
+        "original": {
+            "a": 6,
+            "k": 3,
+            "b": 2
+        },
+        "stem": "A curve has equation \\(y={a|int}\\sqrt{x}+{b|int}x^2\\). Find the gradient of the curve at the point where \\(x={x0|int}\\).",
+        "answer": {
+            "expression": "a/(2*k)+2*b*x0",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(y={a|int}x^{\\frac{1}{2} }+{b|int}x^2\\), so \\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}={h|num}x^{-\\frac{1}{2} }+2\\times{b|int}x\\)",
+                "result": "h",
+                "format": "num",
+                "mark": "M1",
+                "note": "Differentiate x to the power one half."
+            },
+            {
+                "name": "A",
+                "text_tex": "At \\(x={x0|int}\\): \\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}=\\dfrac{{h|num}}{{k|int}}+2\\times{b|int}\\times{x0|int}={A|sf3z}\\)",
+                "result": "a/(2*k)+2*b*x0",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Substitute."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original y = 6 root x + 2x^2 at x = 9, gradient 37"
+            },
+            {
+                "id": "dydx",
+                "stem": "Given \\(y={a|int}\\sqrt{x}+{b|int}x^2\\), find \\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}\\) when \\(x={x0|int}\\)."
+            },
+            {
+                "id": "pt",
+                "stem": "Find the gradient of \\(y={a|int}\\sqrt{x}+{b|int}x^2\\) at \\(x={x0|int}\\)."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-7.1"
+            ],
+            "topic": "Differentiation",
+            "chapter": "P1-7",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-7-1.json",
+                "locator": "P1-7.1-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-7.1-QC3-gen",
+        "section": "P1-7.1",
+        "kind": "generated",
+        "title": "Point where the gradient has a given value",
+        "marks": 2,
+        "source": "Theory P1-7.1 Quick check 3; set the derivative equal to the gradient",
+        "params": [
+            {
+                "name": "b",
+                "min": 2,
+                "max": 8,
+                "step": 1
+            },
+            {
+                "name": "x",
+                "min": -4,
+                "max": 6,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "m": "2*x+b",
+            "t": "2*x",
+            "A": "x"
+        },
+        "constraints": [
+            "b>=2"
+        ],
+        "original": {
+            "b": 3,
+            "x": 2
+        },
+        "stem": "Find the \\(x\\)-coordinate of the point on the curve \\(y=x^2+{b|int}x\\) at which the gradient is \\({m|int}\\).",
+        "answer": {
+            "expression": "(m-b)/2",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}=2x+{b|int}={m|int}\\), so \\(2x={t|int}\\)",
+                "result": "t",
+                "format": "int",
+                "mark": "M1",
+                "note": "Differentiate and equate to the gradient."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(x={A|int}\\)",
+                "result": "t/2",
+                "format": "int",
+                "mark": "A1",
+                "note": "Solve."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original y = x^2 + 3x with gradient 7, x = 2"
+            },
+            {
+                "id": "where",
+                "stem": "At which value of \\(x\\) does the curve \\(y=x^2+{b|int}x\\) have gradient \\({m|int}\\)?"
+            },
+            {
+                "id": "tan",
+                "stem": "The tangent to \\(y=x^2+{b|int}x\\) at the point \\(P\\) has gradient \\({m|int}\\). Find the \\(x\\)-coordinate of \\(P\\)."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-7.1"
+            ],
+            "topic": "Differentiation",
+            "chapter": "P1-7",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-7-1.json",
+                "locator": "P1-7.1-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-7.1-PP-9709-12-MJ21-Q3",
+        "section": "P1-7.1",
+        "kind": "pastpaper",
+        "title": "Gradients of chords approaching a tangent",
+        "marks": 4,
+        "source": {
+            "paper": "9709/12/M/J/21 Q3",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s21_qp_12.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s21_ms_12.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>The equation of a curve is \\(y=(x-3)\\sqrt{x+1}+3\\). The following points lie on the curve. Non-exact values are rounded to 4 decimal places.</p><p>\\(A(2, k)\\)&ensp; \\( B(2.9, 2.8025)\\)&ensp; \\( C(2.99, 2.9800)\\)&ensp; \\( D(2.999, 2.9980)\\)&ensp; \\( E(3, 3)\\)</p><p>(a) Find \\(k\\), giving your answer correct to 4 decimal places. [1]</p><p>(b) Find the gradient of \\(AE\\), giving your answer correct to 4 decimal places. [1]</p><p>The gradients of \\(BE\\), \\(CE\\) and \\(DE\\), rounded to 4 decimal places, are 1.9748, 1.9975 and 1.9997 respectively.</p><p>(c) State, giving a reason for your answer, what the values of the four gradients suggest about the gradient of the curve at the point \\(E\\). [2]</p>",
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-7.1"
+            ],
+            "topic": "Differentiation",
+            "chapter": "P1-7",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-7-1.json",
+                "locator": "P1-7.1-PP-9709-12-MJ21-Q3"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) \\(k=(2-3)\\sqrt{3}+3=3-\\sqrt{3}=1.2679\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, AWRT 1.2679; ISW if correct answer seen."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(b) Gradient \\(AE=\\dfrac{3-1.2679}{3-2}=1.7321\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, AWRT 1.7321; ISW if correct answer seen."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(c) The gradient at \\(E\\) is 2.",
+                "result": "None",
+                "format": "raw",
+                "mark": "*B1",
+                "note": "Official MS: *B1, sight of 2 or 2.0000 or two in reference to the gradient."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(c) Because the gradient at \\(E\\) is the limit of the gradients of the chords as the \\(x\\)-value tends to 3.",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: DB1, the gradient at E is the limit of the gradients of the chords as x tends to 3 or δx tends to 0; allow gets nearer, approaches, tends, almost, approximately."
+            }
+        ]
+    },
+    {
+        "id": "P1-7.1-PP-9709-11-ON11-Q2",
+        "section": "P1-7.1",
+        "kind": "pastpaper",
+        "title": "Gradient never negative",
+        "marks": 3,
+        "source": {
+            "paper": "9709/11/O/N/11 Q2",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w11_qp_11.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w11_ms_11.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>A curve has equation \\(y=3x^3-6x^2+4x+2\\). Show that the gradient of the curve is never negative. [3]</p>",
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-7.1"
+            ],
+            "topic": "Differentiation",
+            "chapter": "P1-7",
+            "marks": 3,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-7-1.json",
+                "locator": "P1-7.1-PP-9709-11-ON11-Q2"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}=9x^2-12x+4\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, attempt to differentiate."
+            },
+            {
+                "name": "s2",
+                "text_tex": "Correct derivative \\(9x^2-12x+4\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, correct derivative."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(9x^2-12x+4=(3x-2)^2\\ge 0\\), so the gradient is never negative.",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, (3x − 2)² ≥ 0."
+            }
+        ]
+    }
+]

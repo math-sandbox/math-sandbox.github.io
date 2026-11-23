@@ -1,0 +1,665 @@
+[
+    {
+        "id": "P23-9.5-QC1-gen",
+        "section": "P23-9.5",
+        "kind": "generated",
+        "title": "Parameter at the intersection of two lines",
+        "marks": 2,
+        "source": "Theory P23-9.5 Quick check 1; equate components and solve two of them",
+        "params": [
+            {
+                "name": "a1",
+                "min": -4,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "a2",
+                "min": -4,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "a3",
+                "min": -4,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "d1",
+                "min": 1,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "d2",
+                "min": -3,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "d3",
+                "min": -3,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "f1",
+                "min": -3,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "f2",
+                "min": 1,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "f3",
+                "min": -3,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "L",
+                "min": -3,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "M",
+                "min": -3,
+                "max": 3,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "b1": "a1+L*d1-M*f1",
+            "b2": "a2+L*d2-M*f2",
+            "b3": "a3+L*d3-M*f3",
+            "x0": "a1+L*d1",
+            "y0": "a2+L*d2",
+            "z0": "a3+L*d3",
+            "A": "L"
+        },
+        "constraints": [
+            "d1*f2>d2*f1"
+        ],
+        "original": {
+            "a1": 1,
+            "a2": 2,
+            "a3": 0,
+            "d1": 1,
+            "d2": -1,
+            "d3": 2,
+            "f1": 2,
+            "f2": 1,
+            "f3": -1,
+            "L": 2,
+            "M": 1
+        },
+        "stem": "The lines \\(l\\): \\(\\mathbf{r}=\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}+\\lambda\\begin{pmatrix}{d1|int}\\\\{d2|int}\\\\{d3|int}\\end{pmatrix}\\) and \\(m\\): \\(\\mathbf{r}=\\begin{pmatrix}{b1|int}\\\\{b2|int}\\\\{b3|int}\\end{pmatrix}+\\mu\\begin{pmatrix}{f1|int}\\\\{f2|int}\\\\{f3|int}\\end{pmatrix}\\) intersect. Find the value of \\(\\lambda\\) at the point of intersection.",
+        "answer": {
+            "expression": "L",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "Equate the \\(x\\)- and \\(y\\)-components: \\({a1|int}+{d1|int}\\lambda={b1|int}+({f1|int})\\mu\\) and \\({a2|int}+({d2|int})\\lambda={b2|int}+{f2|int}\\mu\\); solving gives \\(\\mu={M|int}\\)",
+                "result": "M",
+                "format": "int",
+                "mark": "M1",
+                "note": "Two component equations, solved simultaneously."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\lambda={A|int}\\) (the \\(z\\)-components agree)",
+                "result": "L",
+                "format": "int",
+                "mark": "A1",
+                "note": "Solve and check the third component."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original lines meeting at lambda = 2, mu = 1, point (3, 0, 4)"
+            },
+            {
+                "id": "meet",
+                "stem": "Lines \\(\\mathbf{r}=\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}+\\lambda\\begin{pmatrix}{d1|int}\\\\{d2|int}\\\\{d3|int}\\end{pmatrix}\\) and \\(\\mathbf{r}=\\begin{pmatrix}{b1|int}\\\\{b2|int}\\\\{b3|int}\\end{pmatrix}+\\mu\\begin{pmatrix}{f1|int}\\\\{f2|int}\\\\{f3|int}\\end{pmatrix}\\) meet at a point \\(P\\). Find the value of \\(\\lambda\\) at \\(P\\)."
+            },
+            {
+                "id": "solve",
+                "stem": "Given that the lines \\(\\mathbf{r}=\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}+\\lambda\\begin{pmatrix}{d1|int}\\\\{d2|int}\\\\{d3|int}\\end{pmatrix}\\) and \\(\\mathbf{r}=\\begin{pmatrix}{b1|int}\\\\{b2|int}\\\\{b3|int}\\end{pmatrix}+\\mu\\begin{pmatrix}{f1|int}\\\\{f2|int}\\\\{f3|int}\\end{pmatrix}\\) intersect, find \\(\\lambda\\) at their point of intersection."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-9.5"
+            ],
+            "topic": "Vectors",
+            "chapter": "P23-9",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-9-5.json",
+                "locator": "P23-9.5-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-9.5-QC2-gen",
+        "section": "P23-9.5",
+        "kind": "generated",
+        "title": "Coordinate of the point of intersection",
+        "marks": 2,
+        "source": "Theory P23-9.5 Quick check 2; substitute lambda back into l",
+        "params": [
+            {
+                "name": "a1",
+                "min": -4,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "a2",
+                "min": -4,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "a3",
+                "min": -4,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "d1",
+                "min": 1,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "d2",
+                "min": -3,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "d3",
+                "min": -3,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "f1",
+                "min": -3,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "f2",
+                "min": 1,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "f3",
+                "min": -3,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "L",
+                "min": -3,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "M",
+                "min": -3,
+                "max": 3,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "b1": "a1+L*d1-M*f1",
+            "b2": "a2+L*d2-M*f2",
+            "b3": "a3+L*d3-M*f3",
+            "x0": "a1+L*d1",
+            "y0": "a2+L*d2",
+            "z0": "a3+L*d3",
+            "A": "a3+L*d3"
+        },
+        "constraints": [
+            "d1*f2>d2*f1"
+        ],
+        "original": {
+            "a1": 1,
+            "a2": 2,
+            "a3": 0,
+            "d1": 1,
+            "d2": -1,
+            "d3": 2,
+            "f1": 2,
+            "f2": 1,
+            "f3": -1,
+            "L": 2,
+            "M": 1
+        },
+        "stem": "The lines \\(l\\): \\(\\mathbf{r}=\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}+\\lambda\\begin{pmatrix}{d1|int}\\\\{d2|int}\\\\{d3|int}\\end{pmatrix}\\) and \\(m\\): \\(\\mathbf{r}=\\begin{pmatrix}{b1|int}\\\\{b2|int}\\\\{b3|int}\\end{pmatrix}+\\mu\\begin{pmatrix}{f1|int}\\\\{f2|int}\\\\{f3|int}\\end{pmatrix}\\) intersect at the point \\(P\\). Find the \\(z\\)-coordinate of \\(P\\).",
+        "answer": {
+            "expression": "z0",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "Solving the \\(x\\)- and \\(y\\)-component equations gives \\(\\lambda={L|int}\\) and \\(\\mu={M|int}\\)",
+                "result": "L",
+                "format": "int",
+                "mark": "M1",
+                "note": "Equate components and solve simultaneously."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(z={a3|int}+({L|int})({d3|int})={A|int}\\)",
+                "result": "z0",
+                "format": "int",
+                "mark": "A1",
+                "note": "Substitute into l (check with m)."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original lines meeting at (3, 0, 4), z = 4"
+            },
+            {
+                "id": "pt",
+                "stem": "Find the \\(z\\)-coordinate of the point where the lines \\(\\mathbf{r}=\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}+\\lambda\\begin{pmatrix}{d1|int}\\\\{d2|int}\\\\{d3|int}\\end{pmatrix}\\) and \\(\\mathbf{r}=\\begin{pmatrix}{b1|int}\\\\{b2|int}\\\\{b3|int}\\end{pmatrix}+\\mu\\begin{pmatrix}{f1|int}\\\\{f2|int}\\\\{f3|int}\\end{pmatrix}\\) meet."
+            },
+            {
+                "id": "int",
+                "stem": "The lines \\(\\mathbf{r}=\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}+\\lambda\\begin{pmatrix}{d1|int}\\\\{d2|int}\\\\{d3|int}\\end{pmatrix}\\) and \\(\\mathbf{r}=\\begin{pmatrix}{b1|int}\\\\{b2|int}\\\\{b3|int}\\end{pmatrix}+\\mu\\begin{pmatrix}{f1|int}\\\\{f2|int}\\\\{f3|int}\\end{pmatrix}\\) have a common point. Find its \\(z\\)-coordinate."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-9.5"
+            ],
+            "topic": "Vectors",
+            "chapter": "P23-9",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-9-5.json",
+                "locator": "P23-9.5-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-9.5-QC3-gen",
+        "section": "P23-9.5",
+        "kind": "generated",
+        "title": "Cosine of the acute angle between two lines",
+        "marks": 2,
+        "source": "Theory P23-9.5 Quick check 3; use the direction vectors and the modulus of the scalar product",
+        "params": [
+            {
+                "name": "d1",
+                "min": 1,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "d2",
+                "min": -3,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "d3",
+                "min": -3,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "f1",
+                "min": -3,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "f2",
+                "min": 1,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "f3",
+                "min": -3,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "a1",
+                "min": -3,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "a2",
+                "min": -3,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "a3",
+                "min": -3,
+                "max": 3,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "D": "d1*f1+d2*f2+d3*f3",
+            "P": "(d1*d1+d2*d2+d3*d3)*(f1*f1+f2*f2+f3*f3)",
+            "A": "abs(d1*f1+d2*f2+d3*f3)/math.pow((d1*d1+d2*d2+d3*d3)*(f1*f1+f2*f2+f3*f3),0.5)"
+        },
+        "constraints": [
+            "d1*f2>d2*f1"
+        ],
+        "original": {
+            "d1": 1,
+            "d2": 2,
+            "d3": 2,
+            "f1": 0,
+            "f2": 3,
+            "f3": 4,
+            "a1": 1,
+            "a2": 0,
+            "a3": -1
+        },
+        "stem": "Find the cosine of the acute angle between the lines \\(\\mathbf{r}=\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}+\\lambda\\begin{pmatrix}{d1|int}\\\\{d2|int}\\\\{d3|int}\\end{pmatrix}\\) and \\(\\mathbf{r}=\\begin{pmatrix}{a2|int}\\\\{a3|int}\\\\{a1|int}\\end{pmatrix}+\\mu\\begin{pmatrix}{f1|int}\\\\{f2|int}\\\\{f3|int}\\end{pmatrix}\\).",
+        "answer": {
+            "expression": "abs(D)/math.pow(P,0.5)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "Direction vectors: scalar product \\({D|int}\\), product of magnitudes \\(\\sqrt{{P|int}}\\)",
+                "result": "D",
+                "format": "int",
+                "mark": "M1",
+                "note": "Use the direction vectors only."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\cos\\theta=\\dfrac{\\lvert {D|int}\\rvert }{\\sqrt{{P|int}} }={A|sf3z}\\)",
+                "result": "abs(D)/math.pow(P,0.5)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Take the modulus for the acute angle."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original directions (1, 2, 2) and (0, 3, 4), cos = 14/15 = 0.933"
+            },
+            {
+                "id": "ang",
+                "stem": "The acute angle between the lines \\(\\mathbf{r}=\\begin{pmatrix}{a1|int}\\\\{a2|int}\\\\{a3|int}\\end{pmatrix}+\\lambda\\begin{pmatrix}{d1|int}\\\\{d2|int}\\\\{d3|int}\\end{pmatrix}\\) and \\(\\mathbf{r}=\\begin{pmatrix}{a2|int}\\\\{a3|int}\\\\{a1|int}\\end{pmatrix}+\\mu\\begin{pmatrix}{f1|int}\\\\{f2|int}\\\\{f3|int}\\end{pmatrix}\\) is \\(\\theta\\). Find \\(\\cos\\theta\\)."
+            },
+            {
+                "id": "dir",
+                "stem": "Two lines have direction vectors \\(\\begin{pmatrix}{d1|int}\\\\{d2|int}\\\\{d3|int}\\end{pmatrix}\\) and \\(\\begin{pmatrix}{f1|int}\\\\{f2|int}\\\\{f3|int}\\end{pmatrix}\\). Find the cosine of the acute angle between the lines."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-9.5"
+            ],
+            "topic": "Vectors",
+            "chapter": "P23-9",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-9-5.json",
+                "locator": "P23-9.5-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-9.5-PP-9709-32-MJ23-Q11",
+        "section": "P23-9.5",
+        "kind": "pastpaper",
+        "title": "Non-intersecting lines and the foot of a perpendicular",
+        "marks": 9,
+        "source": {
+            "paper": "9709/32/M/J/23 Q11",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s23_qp_32.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s23_ms_32.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>The points \\(A\\) and \\(B\\) have position vectors \\(\\mathbf{i}+2\\mathbf{j}-2\\mathbf{k}\\) and \\(2\\mathbf{i}-\\mathbf{j}+\\mathbf{k}\\) respectively. The line \\(l\\) has equation \\(\\mathbf{r}=\\mathbf{i}-\\mathbf{j}+3\\mathbf{k}+\\mu(2\\mathbf{i}-3\\mathbf{j}+4\\mathbf{k})\\).</p><p>(a) Show that \\(l\\) does not intersect the line passing through \\(A\\) and \\(B\\). [5]</p><p>(b) Find the position vector of the foot of the perpendicular from \\(A\\) to \\(l\\). [4]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-9.5"
+            ],
+            "topic": "Vectors",
+            "chapter": "P23-9",
+            "marks": 9,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-9-5.json",
+                "locator": "P23-9.5-PP-9709-32-MJ23-Q11"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) Direction of \\(AB\\): \\(\\mathbf{b}-\\mathbf{a}=\\mathbf{i}-3\\mathbf{j}+3\\mathbf{k}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, carry out a correct method for finding a vector equation for AB."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(a) \\(\\mathbf{r}=\\mathbf{i}+2\\mathbf{j}-2\\mathbf{k}+\\lambda(\\mathbf{i}-3\\mathbf{j}+3\\mathbf{k})\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 OE, e.g. r = 2i − j + k + λ(i − 3j + 3k)."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(a) \\(j\\) and \\(k\\): \\(2-3\\lambda=-1-3\\mu\\) and \\(-2+3\\lambda=3+4\\mu\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, equate two pairs of components of general points on their AB and l and evaluate λ or μ."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(a) \\(\\lambda=-1\\), \\(\\mu=-2\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, correct value from two correct component equations."
+            },
+            {
+                "name": "s5",
+                "text_tex": "(a) \\(i\\): \\(1+\\lambda=0\\) but \\(1+2\\mu=-3\\); \\(0\\ne-3\\), so the lines do not intersect.",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, verify that all three equations are not satisfied and the lines fail to intersect (≠ is sufficient justification, e.g. 0 ≠ −3). Conclusion needs to follow correct values."
+            },
+            {
+                "name": "s6",
+                "text_tex": "(b) \\(\\overrightarrow{AP}=-3\\mathbf{j}+5\\mathbf{k}+\\mu(2\\mathbf{i}-3\\mathbf{j}+4\\mathbf{k})\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, AP for a general point P on l, or equivalent."
+            },
+            {
+                "name": "s7",
+                "text_tex": "(b) \\(\\overrightarrow{AP}\\cdot(2\\mathbf{i}-3\\mathbf{j}+4\\mathbf{k})=4\\mu+9+9\\mu+20+16\\mu=0\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, scalar product of their AP and a direction vector for l equated to zero (M0 if using OP or a parallel line through A)."
+            },
+            {
+                "name": "s8",
+                "text_tex": "(b) \\(\\mu=-1\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1."
+            },
+            {
+                "name": "s9",
+                "text_tex": "(b) Foot \\(=-\\mathbf{i}+2\\mathbf{j}-\\mathbf{k}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1; accept coordinates."
+            }
+        ]
+    },
+    {
+        "id": "P23-9.5-PP-9709-33-ON23-Q11",
+        "section": "P23-9.5",
+        "kind": "pastpaper",
+        "title": "Parallel, intersecting or skew",
+        "marks": 9,
+        "source": {
+            "paper": "9709/33/O/N/23 Q11",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w23_qp_33.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w23_ms_33.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>The line \\(l\\) has equation \\(\\mathbf{r}=\\mathbf{i}-2\\mathbf{j}-3\\mathbf{k}+\\lambda(-\\mathbf{i}+\\mathbf{j}+2\\mathbf{k})\\). The points \\(A\\) and \\(B\\) have position vectors \\(-2\\mathbf{i}+2\\mathbf{j}-\\mathbf{k}\\) and \\(3\\mathbf{i}-\\mathbf{j}+\\mathbf{k}\\) respectively.</p><p>(a) Find a unit vector in the direction of \\(l\\). [2]</p><p>The line \\(m\\) passes through the points \\(A\\) and \\(B\\).</p><p>(b) Find a vector equation for \\(m\\). [2]</p><p>(c) Determine whether lines \\(l\\) and \\(m\\) are parallel, intersect or are skew. [5]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-9.5"
+            ],
+            "topic": "Vectors",
+            "chapter": "P23-9",
+            "marks": 9,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-9-5.json",
+                "locator": "P23-9.5-PP-9709-33-ON23-Q11"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) \\(\\lvert -\\mathbf{i}+\\mathbf{j}+2\\mathbf{k}\\rvert =\\sqrt{1+1+4}=\\sqrt{6}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, correct process for the modulus of the direction vector of l."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(a) \\(\\dfrac{1}{\\sqrt{6} }(-\\mathbf{i}+\\mathbf{j}+2\\mathbf{k})\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 OE."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(b) Direction \\(\\mathbf{a}-\\mathbf{b}=-5\\mathbf{i}+3\\mathbf{j}-2\\mathbf{k}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, correct method to form an equation for m."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(b) \\(\\mathbf{r}=-2\\mathbf{i}+2\\mathbf{j}-\\mathbf{k}+\\mu(-5\\mathbf{i}+3\\mathbf{j}-2\\mathbf{k})\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 OE, e.g. r = 3i − j + k + μ(−5i + 3j − 2k); must have r = …"
+            },
+            {
+                "name": "s5",
+                "text_tex": "(c) \\((-5, 3, -2)\\) is not a multiple of \\((-1, 1, 2)\\), so the lines are not parallel.",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, justify the lines are not parallel."
+            },
+            {
+                "name": "s6",
+                "text_tex": "(c) \\(l\\): \\((1-\\lambda, -2+\\lambda, -3+2\\lambda)\\); \\(m\\): \\((-2-5\\mu, 2+3\\mu, -1-2\\mu)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, express l or m in component form."
+            },
+            {
+                "name": "s7",
+                "text_tex": "(c) \\(i\\) and \\(j\\): \\(1-\\lambda=-2-5\\mu\\), \\(-2+\\lambda=2+3\\mu\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, equate two pairs of components and solve simultaneously for λ or μ."
+            },
+            {
+                "name": "s8",
+                "text_tex": "(c) \\(\\lambda=\\dfrac{11}{2}\\), \\(\\mu=\\dfrac{1}{2}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, correct λ or μ."
+            },
+            {
+                "name": "s9",
+                "text_tex": "(c) \\(k\\): \\(-3+11=8\\) but \\(-1-1=-2\\); \\(8\\ne-2\\), so the lines do not intersect and are skew.",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, all three equations not satisfied, conclude skew; dependent on the 4 previous marks."
+            }
+        ]
+    }
+]

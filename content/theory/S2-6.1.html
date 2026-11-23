@@ -1,0 +1,81 @@
+<script>if(location.hostname.endsWith('onrender.com'))location.replace('https://math-sandbox.pages.dev'+location.pathname+location.search+location.hash)</script>
+<section class="theory" data-section="S2-6.1">
+<h2>6.1 Unbiased estimates of population mean and variance</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Probability &amp; Statistics 2 Coursebook (Jayne Kranat), Chapter 6 Estimation, printed pp.122–126. Own wording and new numbers, following the coursebook formulae for unbiased estimates from raw, summarised and coded data.</p>
+<p class="key-words"><strong>Key words:</strong> <em>unbiased estimate</em>, <em>population variance</em>, <em>sample mean</em></p>
+<h3>Estimating population parameters</h3>
+<p>The mean \(\mu\) and variance \(\sigma^2\) of a population are usually unknown. We estimate them from a random sample. An estimate is unbiased if, averaged over all possible samples, it equals the true value.</p>
+<p>The sample mean is an unbiased estimate of the population mean:</p><p>\[\hat{\mu}=\bar{x}=\frac{\sum x}{n}.\]</p>
+<p>The variance of the sample, \(\dfrac{\sum x^2}{n}-\bar{x}^2\), tends to underestimate \(\sigma^2\). Multiplying by \(\dfrac{n}{n-1}\) gives the unbiased estimate:</p>
+<p>\[s^2=\frac{n}{n-1}\left(\frac{\sum x^2}{n}-\bar{x}^2\right)=\frac{1}{n-1}\left(\sum x^2-\frac{(\sum x)^2}{n}\right).\]</p>
+<h3>Coded data</h3>
+<p>If you are given \(\sum(x-a)\) and \(\sum(x-a)^2\), work with \(y=x-a\). Then \(\bar{x}=a+\bar{y}\), and the variance of \(x\) equals the variance of \(y\), because subtracting a constant does not change the spread.</p>
+<div class="worked-example">
+<h4>Worked example 1: From summary statistics</h4>
+<p class="src">Coursebook, 6.1, unbiased estimates. New numbers.</p>
+<p>A random sample of 20 values gives \(\sum x=86\) and \(\sum x^2=410\). Find unbiased estimates of \(\mu\) and \(\sigma^2\).</p>
+<ol class="steps">
+<li>\(\bar{x}=\dfrac{86}{20}=4.3\) <span class="mark">B1</span></li>
+<li>\(s^2=\dfrac{1}{19}\Bigl(410-\dfrac{86^2}{20}\Bigr)=\dfrac{1}{19}(410-369.8)\) <span class="mark">M1</span></li>
+<li>\(s^2=2.12\) (3 s.f.) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\hat{\mu}=4.3\), \(s^2=2.12\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: Coded data</h4>
+<p class="src">Coursebook, 6.1, coded data. New numbers.</p>
+<p>For a random sample of 25 values, \(\sum(x-100)=-15\) and \(\sum(x-100)^2=129\). Find unbiased estimates of \(\mu\) and \(\sigma^2\).</p>
+<ol class="steps">
+<li>\(\bar{x}=100+\dfrac{-15}{25}=99.4\) <span class="mark">B1</span></li>
+<li>\(s^2=\dfrac{1}{24}\Bigl(129-\dfrac{(-15)^2}{25}\Bigr)=\dfrac{1}{24}(129-9)\) <span class="mark">M1</span></li>
+<li>\(s^2=5\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\hat{\mu}=99.4\), \(s^2=5\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Giving the sample variance (dividing by \(n\)) when an unbiased estimate is asked for.</li><li>Forgetting to add the coding constant back when estimating the mean from coded data.</li><li>Adding the coding constant to the variance. Subtracting a constant does not change the variance.</li></ul>
+<h3>Past paper</h3>
+<p class="src">9709/71/M/J/18 Q1, official QP and official MS.</p>
+<p>A random sample of 75 values of a variable \(X\) gave the following results.</p><p>\(n=75\)&ensp; \(\sum x=153.2\)&ensp; \(\sum x^2=340.24\)</p><p>Find unbiased estimates for the population mean and variance of \(X\). [3]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>Estimate of \(\mu=153.2\div75=2.04\) (3 s.f.) <span class="mark">B1</span> Official MS: B1, 2.04 (3 sf).</li>
+<li>Estimate of \(\sigma^2=\dfrac{75}{74}\Bigl(\dfrac{340.24}{75}-2.04267^2\Bigr)\) <span class="mark">M1</span> Official MS: M1, 75/74 × (340.24/75 − 2.04267²) OE.</li>
+<li>\(=0.369\) (3 s.f.) <span class="mark">A1</span> Official MS: A1, 0.369 (3 sf); accept 0.368.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/73/M/J/19 Q2, official QP and official MS.</p>
+<p>The length of worms is denoted by \(X\) cm. The lengths of a random sample of 50 worms were measured. Some of the results were lost, but the following results are available.</p><ul><li>\(\sum x^2=4361\)</li><li>An unbiased estimate of the population variance of \(X\) is 9.62.</li></ul><p>Calculate the mean length of the 50 worms. [3]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>\(\dfrac{50}{49}\Bigl(\dfrac{4361}{50}-\bar{x}^2\Bigr)=9.62\) <span class="mark">M1</span> Official MS: M1, or (1/49)(4361 − (Σx)²/50) = 9.62; BOD regarding symbols used.</li>
+<li>\(\bar{x}^2=\dfrac{4361}{50}-\dfrac{9.62\times49}{50}=77.7924\) <span class="mark">A1</span> Official MS: A1, x̄² = 77.7924, or (Σx)² = 194481 or Σx = 441; (Σx) or x̄ must be correctly identified.</li>
+<li>\(\bar{x}=8.82\) (3 s.f.) <span class="mark">A1</span> Official MS: A1, 8.82 (3 sf). SC: use of the biased formula leading to 8.81 scores B1.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>A random sample of 40 values gives \(\sum x=200\) and \(\sum x^2=1120\). Find an unbiased estimate of the population variance.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\bar{x}=5\) and \(\dfrac{1120}{40}-5^2=3\)</li><li>\(s^2=\dfrac{40}{39}\times3\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(3.08\) (3 s.f.)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>A random sample of 40 values gives \(\sum(x-30)=24\). Find an unbiased estimate of the population mean.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\bar{x}=30+\dfrac{24}{40}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(30.6\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>A random sample of 30 values gives \(\sum(x-50)=60\) and \(\sum(x-50)^2=236\). Find an unbiased estimate of the population variance.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(s^2=\dfrac{1}{29}\Bigl(236-\dfrac{60^2}{30}\Bigr)=\dfrac{1}{29}(236-120)\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(4\)</p>
+</details>
+</div>
+</section>

@@ -1,0 +1,390 @@
+[
+    {
+        "id": "S1-6.1-QC1-gen",
+        "section": "S1-6.1",
+        "kind": "generated",
+        "title": "Constant k when P(X = x) is proportional to x",
+        "marks": 2,
+        "source": "Theory S1-6.1 Quick check 1; the probabilities add up to 1",
+        "params": [
+            {
+                "name": "n",
+                "min": 3,
+                "max": 10,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "T": "n*(n+1)/2",
+            "A": "2/(n*(n+1))"
+        },
+        "constraints": [
+            "n>=3"
+        ],
+        "original": {
+            "n": 4
+        },
+        "stem": "The discrete random variable \\(X\\) takes the values \\(1, 2, \\dots, {n|int}\\) only, and \\(P(X=x)=kx\\). Find the value of \\(k\\).",
+        "answer": {
+            "expression": "1/T",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "The probabilities add up to 1: \\(k(1+2+\\dots+{n|int})=1\\), so \\({T|int}k=1\\)",
+                "result": "T",
+                "format": "int",
+                "mark": "M1",
+                "note": "Sum all the probabilities and equate to 1."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(k=\\dfrac{1}{{T|int}}={A|sf3z}\\)",
+                "result": "1/T",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Solve for k."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original values 1 to 4, k = 0.1"
+            },
+            {
+                "id": "prop",
+                "stem": "A random variable \\(X\\) can take only the values \\(1, 2, \\dots, {n|int}\\). The probability that \\(X=x\\) is proportional to \\(x\\), so \\(P(X=x)=kx\\). Find \\(k\\)."
+            },
+            {
+                "id": "spin",
+                "stem": "A biased spinner shows a whole number from 1 to \\({n|int}\\). The probability that it shows \\(x\\) is \\(kx\\). Find the constant \\(k\\)."
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-6.1"
+            ],
+            "topic": "Probability distributions",
+            "chapter": "S1-6",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-6-1.json",
+                "locator": "S1-6.1-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-6.1-QC2-gen",
+        "section": "S1-6.1",
+        "kind": "generated",
+        "title": "Missing probability in a distribution table",
+        "marks": 2,
+        "source": "Theory S1-6.1 Quick check 2; one minus the sum of the other probabilities",
+        "params": [
+            {
+                "name": "a",
+                "min": 5,
+                "max": 35,
+                "step": 5
+            },
+            {
+                "name": "b",
+                "min": 5,
+                "max": 35,
+                "step": 5
+            },
+            {
+                "name": "c",
+                "min": 5,
+                "max": 35,
+                "step": 5
+            }
+        ],
+        "derived": {
+            "pa": "a/100",
+            "pb": "b/100",
+            "pc": "c/100",
+            "s": "(a+b+c)/100",
+            "A": "1-(a+b+c)/100"
+        },
+        "constraints": [
+            "a+b+c<=85"
+        ],
+        "original": {
+            "a": 15,
+            "b": 35,
+            "c": 30
+        },
+        "stem": "The discrete random variable \\(X\\) takes the values 0, 1, 2 and 3 only. \\(P(X=0)={pa|num2}\\), \\(P(X=1)={pb|num2}\\) and \\(P(X=2)={pc|num2}\\). Find \\(P(X=3)\\).",
+        "answer": {
+            "expression": "1-s",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(P(X=3)=1-{pa|num2}-{pb|num2}-{pc|num2}\\)",
+                "result": "s",
+                "format": "num2",
+                "mark": "M1",
+                "note": "Use the fact that the probabilities add up to 1."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(=1-{s|num2}={A|sf3z}\\)",
+                "result": "1-s",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original probabilities 0.15, 0.35, 0.3, giving P(X = 3) = 0.2"
+            },
+            {
+                "id": "goals",
+                "stem": "The number of goals \\(X\\) scored by a team in a match is never more than 3. \\(P(X=0)={pa|num2}\\), \\(P(X=1)={pb|num2}\\) and \\(P(X=2)={pc|num2}\\). Find the probability that the team scores 3 goals."
+            },
+            {
+                "id": "left",
+                "stem": "For a discrete random variable \\(X\\) with possible values 0, 1, 2, 3, the first three probabilities are \\({pa|num2}\\), \\({pb|num2}\\) and \\({pc|num2}\\). What is \\(P(X=3)\\)?"
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-6.1"
+            ],
+            "topic": "Probability distributions",
+            "chapter": "S1-6",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-6-1.json",
+                "locator": "S1-6.1-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-6.1-QC3-gen",
+        "section": "S1-6.1",
+        "kind": "generated",
+        "title": "Largest-value probability when P(X = x) is proportional to x squared",
+        "marks": 2,
+        "source": "Theory S1-6.1 Quick check 3; find k from the sum of the squares first",
+        "params": [
+            {
+                "name": "n",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "T": "n*(n+1)*(2*n+1)/6",
+            "N": "n*n",
+            "A": "6*n/((n+1)*(2*n+1))"
+        },
+        "constraints": [
+            "n>=2"
+        ],
+        "original": {
+            "n": 3
+        },
+        "stem": "The discrete random variable \\(X\\) takes the values \\(1, 2, \\dots, {n|int}\\) only, and \\(P(X=x)=kx^2\\). Find \\(P(X={n|int})\\).",
+        "answer": {
+            "expression": "N/T",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(k(1^2+2^2+\\dots+{n|int}^2)=1\\), so \\({T|int}k=1\\) and \\(k=\\dfrac{1}{{T|int}}\\)",
+                "result": "T",
+                "format": "int",
+                "mark": "M1",
+                "note": "Sum the probabilities and equate to 1."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(P(X={n|int})=\\dfrac{{N|int}}{{T|int}}={A|sf3z}\\)",
+                "result": "N/T",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Multiply k by the square of the largest value."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original values 1 to 3, k = 1/14, P(X = 3) = 9/14"
+            },
+            {
+                "id": "die",
+                "stem": "A biased die-like counter shows a whole number from 1 to \\({n|int}\\), and the probability of showing \\(x\\) is \\(kx^2\\). Find the probability that it shows \\({n|int}\\)."
+            },
+            {
+                "id": "sq",
+                "stem": "For \\(x=1, 2, \\dots, {n|int}\\), the probability that the discrete random variable \\(X\\) equals \\(x\\) is proportional to \\(x^2\\). Find \\(P(X={n|int})\\)."
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-6.1"
+            ],
+            "topic": "Probability distributions",
+            "chapter": "S1-6",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-6-1.json",
+                "locator": "S1-6.1-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-6.1-PP-9709-62-ON10-Q1",
+        "section": "S1-6.1",
+        "kind": "pastpaper",
+        "title": "Probability distribution with a quadratic in p",
+        "marks": 3,
+        "source": {
+            "paper": "9709/62/O/N/10 Q1",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w10_qp_62.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w10_ms_62.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>The discrete random variable \\(X\\) takes the values 1, 4, 5, 7 and 9 only. The probability distribution of \\(X\\) is shown in the table.</p><table class=\"dist\"><tr><th>\\(x\\)</th><th>\\(P(X=x)\\)</th></tr><tr><td>1</td><td>\\(4p\\)</td></tr><tr><td>4</td><td>\\(5p^2\\)</td></tr><tr><td>5</td><td>\\(1.5p\\)</td></tr><tr><td>7</td><td>\\(2.5p\\)</td></tr><tr><td>9</td><td>\\(1.5p\\)</td></tr></table><p>Find \\(p\\). [3]</p>",
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-6.1"
+            ],
+            "topic": "Probability distributions",
+            "chapter": "S1-6",
+            "marks": 3,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-6-1.json",
+                "locator": "S1-6.1-PP-9709-62-ON10-Q1"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(4p+5p^2+1.5p+2.5p+1.5p=1\\), so \\(10p^2+19p-2=0\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, equating the sum of the probabilities to 1 (and attempting to solve)."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\((10p-1)(p+2)=0\\), so \\(p=0.1\\) or \\(p=-2\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, p = 0.1 or −2 (correct solutions of the quadratic)."
+            },
+            {
+                "name": "s3",
+                "text_tex": "A probability cannot be negative, so \\(p=0.1\\).",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, p = 0.1 only, with −2 rejected."
+            }
+        ]
+    },
+    {
+        "id": "S1-6.1-PP-9709-53-MJ21-Q2",
+        "section": "S1-6.1",
+        "kind": "pastpaper",
+        "title": "Two unknown probabilities from a condition",
+        "marks": 4,
+        "source": {
+            "paper": "9709/53/M/J/21 Q2",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s21_qp_53.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s21_ms_53.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>The random variable \\(X\\) can take only the values \\(-2, -1, 0, 1, 2\\). The probability distribution of \\(X\\) is given in the following table.</p><table class=\"dist\"><tr><th>\\(x\\)</th><td>\\(-2\\)</td><td>\\(-1\\)</td><td>0</td><td>1</td><td>2</td></tr><tr><th>\\(P(X=x)\\)</th><td>\\(p\\)</td><td>\\(p\\)</td><td>0.1</td><td>\\(q\\)</td><td>\\(q\\)</td></tr></table><p>Given that \\(P(X\\ge 0)=3P(X\\lt 0)\\), find the values of \\(p\\) and \\(q\\). [4]</p>",
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-6.1"
+            ],
+            "topic": "Probability distributions",
+            "chapter": "S1-6",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-6-1.json",
+                "locator": "S1-6.1-PP-9709-53-MJ21-Q2"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(2p+0.1+2q=1\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, 2p + 0.1 + 2q = 1 or equivalent."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(0.1+2q=3\\times 2p\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, 0.1 + 2q = 3(2p) or equivalent."
+            },
+            {
+                "name": "s3",
+                "text_tex": "Subtract: \\(2p+6p=1\\), so \\(8p=1\\) and \\(p=\\dfrac{1}{8}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, attempt to solve the two equations (one variable eliminated)."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(p=\\dfrac{1}{8}=0.125\\), \\(q=\\dfrac{13}{40}=0.325\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, both values correct."
+            }
+        ]
+    }
+]
