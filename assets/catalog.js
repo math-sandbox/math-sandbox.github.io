@@ -693,7 +693,7 @@
       var theory = pair[3] || { sections: {}, practice: {} };
       var pub = pair[4] || { PACKAGE2_DATE: "", windowDays: 7, sections: {} };
       var c = q.get("c") || "IGCSE";
-      if (page === "chapter.html") renderChapter(c, q.get("ch") || "", books, courses, theory, pub);
+      if (page === "chapter.html" || page === "chapter") renderChapter(c, q.get("ch") || "", books, courses, theory, pub);
       else renderCourse(c, books, courses, schedule, q.get("book") || "", theory, pub);
     })
     .catch(function () {

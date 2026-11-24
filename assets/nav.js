@@ -73,14 +73,14 @@
     document.querySelectorAll(".topnav a[href]").forEach((a) => {
       const href = a.getAttribute("href") || "";
       const pre = href.startsWith("../") ? "../" : "";
-      const name = href.replace(/.*\//, "").split("?")[0].split("#")[0];
-      if (name === "review.html") {
+      const name = href.replace(/.*\//, "").split("?")[0].split("#")[0].replace(/\.html$/i, "");
+      if (name === "review") {
         a.setAttribute("href", pre + "review.html" + (use ? "?class=" + encodeURIComponent(use) : ""));
       }
-      if (name === "worksheet.html") {
+      if (name === "worksheet") {
         a.setAttribute("href", pre + "worksheet.html" + (use ? "?class=" + encodeURIComponent(use) + (course ? "&c=" + course : "") : ""));
       }
-      if (name === "generator.html") {
+      if (name === "generator") {
         const task = firstTask(course || "IGCSE");
         a.setAttribute("href", pre + "generator.html?task=" + encodeURIComponent(task) + (use ? "&class=" + encodeURIComponent(use) : ""));
       }

@@ -23,8 +23,9 @@
     var params = new URLSearchParams(String(loc.search || "").replace(/^\?/, ""));
     var kept = new URLSearchParams();
     var pathName = String(loc.pathname || "");
+    var leaf = (pathName.split("/").pop() || "");
     params.forEach(function (val, key) {
-      if (DROP[key] && !(key === "ch" && /chapter\.html$/.test(pathName))) return;
+      if (DROP[key] && !(key === "ch" && (leaf === "chapter.html" || leaf === "chapter"))) return;
       kept.append(key, val);
     });
     var q = kept.toString();
