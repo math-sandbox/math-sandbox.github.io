@@ -36,6 +36,7 @@
       if (!href) return;
       var a = document.createElement("a");
       a.className = "pc-qpms-link";
+      if (!/^https?:\/\//i.test(href)) return;
       a.href = href;
       a.textContent = label;
       a.target = "_blank";
@@ -151,6 +152,134 @@
     if (cur) parts.push(cur);
     return parts;
   }
+  function arith(expr, env) {
+    var i = 0;
+    function skip() { while (expr.charAt(i) === " ") i++; }
+    function peek() { skip(); return expr.charAt(i); }
+    function eat(s) {
+      skip();
+      if (expr.slice(i, i + s.length) !== s) return false;
+      i += s.length;
+      return true;
+    }
+    function ident() {
+      skip();
+      var m = expr.slice(i).match(/^[A-Za-z_][A-Za-z0-9_]*/);
+      if (!m) throw new Error("name");
+      i += m[0].length;
+      return m[0];
+    }
+    function args() {
+      var out = [];
+      if (!eat(")")) {
+        out.push(or());
+        while (eat(",")) out.push(or());
+        if (!eat(")")) throw new Error(")");
+      }
+      return out;
+    }
+    function postfix(v) {
+      while (eat("[")) {
+        var k = or();
+        if (!eat("]")) throw new Error("]");
+        v = v[k];
+      }
+      return v;
+    }
+    function primary() {
+      var v;
+      skip();
+      if (eat("(")) {
+        v = or();
+        if (!eat(")")) throw new Error(")");
+        return postfix(v);
+      }
+      if (eat("[")) {
+        var arr = [];
+        if (!eat("]")) {
+          arr.push(or());
+          while (eat(",")) arr.push(or());
+          if (!eat("]")) throw new Error("]");
+        }
+        return postfix(arr);
+      }
+      var num = expr.slice(i).match(/^\d+(?:\.\d+)?(?:[eE][+-]?\d+)?/);
+      if (num) {
+        i += num[0].length;
+        return postfix(Number(num[0]));
+      }
+      var name = ident();
+      if (name === "math") {
+        if (!eat(".")) throw new Error("math");
+        var member = ident();
+        var table = { log: Math.log, floor: Math.floor, pow: Math.pow };
+        if (!table[member] || peek() !== "(") throw new Error(member);
+        eat("(");
+        v = table[member].apply(null, args());
+      } else if ((name === "abs" || name === "round") && peek() === "(") {
+        eat("(");
+        v = (name === "abs" ? Math.abs : pyRound).apply(null, args());
+      } else if (Object.prototype.hasOwnProperty.call(env, name)) v = env[name];
+      else throw new ReferenceError(name);
+      return postfix(v);
+    }
+    function unary() {
+      if (eat("+")) return +unary();
+      if (eat("-")) return -unary();
+      return primary();
+    }
+    function pow() {
+      var v = unary();
+      if (eat("**")) v = Math.pow(v, pow());
+      return v;
+    }
+    function mul() {
+      var v = pow();
+      for (;;) {
+        if (eat("*")) v = v * pow();
+        else if (eat("/")) v = v / pow();
+        else if (eat("%")) v = v % pow();
+        else break;
+      }
+      return v;
+    }
+    function add() {
+      var v = mul();
+      for (;;) {
+        if (eat("+")) v = v + mul();
+        else if (eat("-")) v = v - mul();
+        else break;
+      }
+      return v;
+    }
+    function cmp() {
+      var v = add();
+      for (;;) {
+        if (eat("<=")) v = v <= add();
+        else if (eat(">=")) v = v >= add();
+        else if (eat("==")) v = v == add();
+        else if (eat("!=")) v = v != add();
+        else if (eat("<")) v = v < add();
+        else if (eat(">")) v = v > add();
+        else break;
+      }
+      return v;
+    }
+    function and() {
+      var v = cmp();
+      while (eat("&&")) v = v && cmp();
+      return v;
+    }
+    function or() {
+      var v = and();
+      while (eat("||")) v = v || and();
+      return v;
+    }
+    var out = or();
+    skip();
+    if (i !== expr.length) throw new Error("tail");
+    return out;
+  }
   function pyEval(src, env) {
     var expr = String(src || "").split("#")[0].trim();
     if (!expr || expr === "None") return null;
@@ -169,15 +298,21 @@
       throw err;
     }
     if (expr.charAt(0) === "(" && expr.charAt(expr.length - 1) === ")") {
-      var inner = expr.slice(1, -1);
-      var bits = splitComma(inner);
-      if (bits.length > 1) return bits.map(function (p) { return pyEval(p, env); });
+      var depth = 0;
+      var wrapped = true;
+      var k;
+      for (k = 0; k < expr.length; k++) {
+        var ch = expr.charAt(k);
+        if (ch === "(" || ch === "[") depth++;
+        if (ch === ")" || ch === "]") depth--;
+        if (depth === 0 && k !== expr.length - 1) wrapped = false;
+      }
+      if (wrapped && depth === 0) {
+        var bits = splitComma(expr.slice(1, -1));
+        if (bits.length > 1) return bits.map(function (p) { return pyEval(p, env); });
+      }
     }
-    var names = Object.keys(env);
-    var vals = names.map(function (k) { return env[k]; });
-    var body = "return (" + expr + ");";
-    var fn = Function.apply(null, names.concat(["math", "abs", "round"], body));
-    return fn.apply(null, vals.concat([{ log: Math.log, floor: Math.floor, pow: Math.pow }, Math.abs, pyRound]));
+    return arith(expr, env);
   }
   function Mulberry(seed) {
     var s = Number(seed) >>> 0;
@@ -453,10 +588,19 @@
         parts[i].slice(2).split(",").forEach(function (bit) {
           var sp = bit.split(".");
           if (sp.length >= 3) {
-            var ctx = decodeURIComponent(sp.pop());
-            var seedRaw = decodeURIComponent(sp.pop());
-            var id = decodeURIComponent(sp.join("."));
-            var seed = seedRaw === "orig" ? "orig" : Number(seedRaw);
+            var ctxRaw = "";
+            var seedRaw = "";
+            var id = "";
+            try {
+              ctxRaw = decodeURIComponent(sp.pop());
+              seedRaw = decodeURIComponent(sp.pop());
+              id = decodeURIComponent(sp.join("."));
+            } catch (e) {
+              return;
+            }
+            if (!/^[A-Za-z0-9][A-Za-z0-9._-]{0,120}$/.test(id)) return;
+            var ctx = /^[A-Za-z0-9_-]{1,64}$/.test(ctxRaw) ? ctxRaw : "default";
+            var seed = seedRaw === "orig" ? "orig" : (/^\d{1,15}$/.test(seedRaw) ? Number(seedRaw) : 0);
             map[id] = { seed: seed, ctx: ctx };
           }
         });

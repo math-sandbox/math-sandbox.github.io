@@ -4,6 +4,9 @@
       return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
     });
   }
+  function safeKey(s) {
+    return /^[A-Za-z0-9]+(?:[.-][A-Za-z0-9]+)*$/.test(String(s || "")) ? String(s) : "";
+  }
   function getJSON(url) {
     return fetch(url, { cache: "no-store" }).then(function (r) {
       if (!r.ok) throw new Error(url);
@@ -385,6 +388,11 @@
       nested.remove();
     }
     el.querySelectorAll("script").forEach(function (old) {
+      var srcAttr = old.getAttribute("src") || "";
+      if (/(^|\/)assets\/redirect\.js(?:[?#]|$)/.test(srcAttr)) {
+        old.remove();
+        return;
+      }
       var s = document.createElement("script");
       if (old.src) s.src = old.src;
       s.textContent = old.textContent;
@@ -448,9 +456,9 @@
   }
   function applyHash() {
     var h = parseHash();
-    if (!h) return;
-    var sec = document.querySelector('#chapter .sec[data-sec="' + h.id + '"]');
     if (window.msPractice && window.msPractice.applyHash) window.msPractice.applyHash();
+    if (!h || !safeKey(h.id)) return;
+    var sec = document.querySelector('#chapter .sec[data-sec="' + safeKey(h.id) + '"]');
     if (sec) openSec(sec, h.tab);
   }
   function wireExample(we) {
@@ -692,9 +700,10 @@
       var schedule = pair[2];
       var theory = pair[3] || { sections: {}, practice: {} };
       var pub = pair[4] || { PACKAGE2_DATE: "", windowDays: 7, sections: {} };
-      var c = q.get("c") || "IGCSE";
-      if (page === "chapter.html" || page === "chapter") renderChapter(c, q.get("ch") || "", books, courses, theory, pub);
-      else renderCourse(c, books, courses, schedule, q.get("book") || "", theory, pub);
+      var rawC = q.get("c");
+      var c = rawC ? safeKey(rawC) : "IGCSE";
+      if (page === "chapter.html" || page === "chapter") renderChapter(c, safeKey(q.get("ch") || ""), books, courses, theory, pub);
+      else renderCourse(c, books, courses, schedule, safeKey(q.get("book") || ""), theory, pub);
     })
     .catch(function () {
       var el = document.getElementById("list") || document.getElementById("chapter");

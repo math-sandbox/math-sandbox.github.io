@@ -80,6 +80,10 @@
     return i >= 0 && i < 12 ? i : null;
   }
 
+  function safeToken(s) {
+    return /^[A-Za-z0-9]+(?:[.-][A-Za-z0-9]+)*$/.test(s) ? s : "";
+  }
+
   function parseQuery(qs) {
     const p = new URLSearchParams(String(qs || "").replace(/^\?/, ""));
     const rawCourse = p.get("c") || "IGCSE";
@@ -95,26 +99,30 @@
         const [raw, c] = part.split("*");
         const id = /^(IGCSE|AS|A2)-/.test(raw) ? raw : course + "-" + raw;
         return { id, count: Math.min(20, Math.max(1, Number(c) || 1)) };
-      });
+      })
+      .filter((item) => /^(IGCSE|AS|A2)-\d+-\d+$/.test(item.id));
+    const mix = ["mixed", "pp", "gen"].includes(p.get("mix")) ? p.get("mix") : "mixed";
+    const difficulty = ["any", "easy", "medium", "hard"].includes(p.get("diff")) ? p.get("diff") : "any";
+    const date = /^\d{4}-\d{2}-\d{2}$/.test(p.get("date") || "") ? p.get("date") : "";
     return {
       course,
       seed,
       versions,
       items,
-      title: p.get("title") || "",
-      className: p.get("class") || "",
-      date: p.get("date") || "",
+      title: String(p.get("title") || "").slice(0, 200),
+      className: String(p.get("class") || "").slice(0, 80),
+      date,
       answers: p.get("ans") === "1",
       only,
       mode,
-      sections: String(p.get("secs") || "").split(",").filter(Boolean),
-      chapters: String(p.get("ch") || "").split(",").filter(Boolean),
-      mix: p.get("mix") || "mixed",
-      difficulty: p.get("diff") || "any",
+      sections: String(p.get("secs") || "").split(",").map(safeToken).filter(Boolean),
+      chapters: String(p.get("ch") || "").split(",").map(safeToken).filter(Boolean),
+      mix,
+      difficulty,
       count: Math.max(0, Number(p.get("nq")) || 0),
       targetMarks: Math.max(0, Number(p.get("marks")) || 0),
-      paper: p.get("paper") || "",
-      upto: p.get("upto") || "",
+      paper: safeToken(p.get("paper") || ""),
+      upto: safeToken(p.get("upto") || ""),
     };
   }
 

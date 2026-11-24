@@ -418,8 +418,12 @@
       }).join("");
       if (window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise([host]);
       if (location.hash) {
-        var el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
-        if (el) el.scrollIntoView();
+        var id = "";
+        try { id = decodeURIComponent(location.hash.slice(1)); } catch (e) { id = ""; }
+        if (/^[A-Za-z0-9._-]+$/.test(id)) {
+          var el = document.getElementById(id);
+          if (el) el.scrollIntoView();
+        }
       }
     });
   }

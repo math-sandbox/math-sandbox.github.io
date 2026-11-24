@@ -1,15 +1,13 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <script>if(location.hostname.endsWith('onrender.com'))location.replace('https://math-sandbox.pages.dev'+location.pathname+location.search+location.hash)</script>
+  <script src="/assets/redirect.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Module template · Math Sandbox</title>
   <link rel="stylesheet" href="../assets/style.css">
-  <script>
-    window.MathJax = { tex: { inlineMath: [["$", "$"]], displayMath: [["$$", "$$"]] } };
-  </script>
-  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <script src="../assets/mathjax-dollar.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" integrity="sha384-AHAnt9ZhGeHIrydA1Kp1L7FN+2UosbF7RQg6C+9Is/a7kDpQ1684C2iH2VWil6r4" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -32,20 +30,13 @@
       <h3>Task</h3>
       <p>Choose a strategy for $\displaystyle\int x e^{2x}\,dx$:</p>
       $$\int u\,\frac{dv}{dx}\,dx = uv-\int v\,\frac{du}{dx}\,dx$$
-      <button class="tab" onclick="finish()">Mark as done (demo)</button>
+      <button class="tab">Mark as done (demo)</button>
       <span id="msg"></span>
     </div>
   </main>
   <script src="../assets/nav.js"></script>
   <script src="../assets/app.js"></script>
-  <script>
-    // File name, this constant, and the id in plan.json must be the same.
-    const MODULE_ID = "TEMPLATE";
-    function finish() {
-      Progress.set(MODULE_ID, { done: true, score: 1, total: 1 });
-      document.getElementById("msg").textContent = "Saved ✓";
-    }
-  </script>
+  <script src="_template.js"></script>
   <script src="../assets/analytics.js"></script>
   <script data-goatcounter="https://xomjak.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>

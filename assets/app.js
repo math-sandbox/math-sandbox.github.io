@@ -27,8 +27,9 @@ const Progress = {
 if (typeof window !== "undefined") window.Progress = Progress;
 
 const qs = new URLSearchParams(typeof location !== "undefined" ? location.search : "");
-const TODAY = qs.get("today") || new Date().toISOString().slice(0, 10);
-const CLASS_Q = qs.get("class");
+const rawToday = qs.get("today") || "";
+const TODAY = /^\d{4}-\d{2}-\d{2}$/.test(rawToday) ? rawToday : new Date().toISOString().slice(0, 10);
+const CLASS_Q = /^[A-Za-z0-9]+$/.test(qs.get("class") || "") ? qs.get("class") : "";
 
 function addDays(s, n) {
   const d = new Date(s + "T00:00:00Z");
@@ -240,8 +241,11 @@ if (typeof document !== "undefined" && document.getElementById("content") && doc
       const books = Object.fromEntries(textbooks.books.map((book) => [book.id, book]));
       document.getElementById("title").textContent = plan.title;
       document.getElementById("tagline").textContent = plan.tagline;
-      const startClass = CLASS_Q || localStorage.getItem("ms-class") || plan.classes[0].id;
-      if (CLASS_Q) {
+      const ids = plan.classes.map((item) => item.id);
+      let stored = "";
+      try { stored = localStorage.getItem("ms-class") || ""; } catch (e) {}
+      const startClass = [CLASS_Q, stored, ids[0]].find((id) => ids.includes(id)) || ids[0];
+      if (CLASS_Q && ids.includes(CLASS_Q)) {
         try { localStorage.setItem("ms-class", CLASS_Q); } catch (e) {}
       }
       render(plan, books, startClass);

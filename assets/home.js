@@ -3,7 +3,7 @@
   function go(map) {
     var q = new URLSearchParams(location.search);
     var cls = q.get("class");
-    if (!cls) return;
+    if (!cls || !/^[A-Za-z0-9]+$/.test(cls)) return;
     var course = map[cls];
     if (!course) return;
     try { localStorage.setItem("ms-class", cls); } catch (e) {}
