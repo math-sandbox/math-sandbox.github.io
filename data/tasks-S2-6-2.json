@@ -1,0 +1,466 @@
+[
+    {
+        "id": "S2-6.2-QC1-gen",
+        "section": "S2-6.2",
+        "kind": "generated",
+        "title": "Test statistic for a sample mean",
+        "marks": 2,
+        "source": "Theory S2-6.2 Quick check 1; z = (xbar - mu)/(sigma/sqrt n)",
+        "params": [
+            {
+                "name": "k",
+                "min": 4,
+                "max": 10,
+                "step": 1
+            },
+            {
+                "name": "mu",
+                "min": 20,
+                "max": 80,
+                "step": 1
+            },
+            {
+                "name": "s",
+                "min": 2,
+                "max": 12,
+                "step": 1
+            },
+            {
+                "name": "d",
+                "min": 1,
+                "max": 30,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "n": "k*k",
+            "xb": "mu+d/10",
+            "se": "s/k",
+            "A": "d/10*k/s"
+        },
+        "constraints": [
+            "s>1"
+        ],
+        "original": {
+            "k": 6,
+            "mu": 50,
+            "s": 4,
+            "d": 12
+        },
+        "stem": "In the past, a variable had mean \\({mu|int}\\) and standard deviation \\({s|int}\\). A random sample of \\({n|int}\\) values has mean \\({xb|raw}\\). Find the value of the test statistic for a test of \\(\\mathrm{H}_0\\colon\\mu={mu|int}\\).",
+        "answer": {
+            "expression": "d/10*k/s",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "Under \\(\\mathrm{H}_0\\), \\(\\bar{X}\\sim\\mathrm{N}\\Bigl({mu|int}, \\dfrac{{s|int}^2}{{n|int}}\\Bigr)\\), with standard deviation \\(\\dfrac{{s|int}}{\\sqrt{{n|int}} }={se|sf3z}\\)",
+                "result": "s/k",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Standardise with sigma over root n."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(z=\\dfrac{{xb|raw}-{mu|int}}{{se|sf3z}}={A|sf3z}\\)",
+                "result": "d/10*k/s",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original mean 50, sd 4, n = 36, sample mean 51.2, z = 1.8"
+            },
+            {
+                "id": "bolts",
+                "stem": "The lengths of bolts made by a machine had mean \\({mu|int}\\) mm and standard deviation \\({s|int}\\) mm. After the machine was serviced, a random sample of \\({n|int}\\) bolts had mean length \\({xb|raw}\\) mm. Find the value of the test statistic for a test of whether the mean length has increased, assuming the standard deviation is unchanged."
+            },
+            {
+                "id": "times",
+                "stem": "Reaction times have standard deviation \\({s|int}\\) ms. A researcher tests \\(\\mathrm{H}_0\\colon\\mu={mu|int}\\) against \\(\\mathrm{H}_1\\colon\\mu\\gt {mu|int}\\) using a random sample of \\({n|int}\\) times with mean \\({xb|raw}\\) ms. Calculate the test statistic \\(z\\)."
+            }
+        ],
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-6.2"
+            ],
+            "topic": "Estimation",
+            "chapter": "S2-6",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-6-2.json",
+                "locator": "S2-6.2-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "S2-6.2-QC2-gen",
+        "section": "S2-6.2",
+        "kind": "generated",
+        "title": "Critical value for the sample mean in a one-tailed test",
+        "marks": 2,
+        "source": "Theory S2-6.2 Quick check 2; reject H0 if xbar > mu + z sigma/sqrt n",
+        "params": [
+            {
+                "name": "k",
+                "min": 4,
+                "max": 10,
+                "step": 1
+            },
+            {
+                "name": "mu",
+                "min": 20,
+                "max": 80,
+                "step": 1
+            },
+            {
+                "name": "s",
+                "min": 2,
+                "max": 12,
+                "step": 1
+            },
+            {
+                "name": "i",
+                "min": 0,
+                "max": 3,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "n": "k*k",
+            "Z": "[1.645,2.326,1.282,2.054][i]",
+            "L": "[5,1,10,2][i]",
+            "A": "mu+[1.645,2.326,1.282,2.054][i]*s/k"
+        },
+        "constraints": [
+            "s>1"
+        ],
+        "original": {
+            "k": 5,
+            "mu": 30,
+            "s": 5,
+            "i": 0
+        },
+        "stem": "A test of \\(\\mathrm{H}_0\\colon\\mu={mu|int}\\) against \\(\\mathrm{H}_1\\colon\\mu\\gt {mu|int}\\) is carried out at the \\({L|int}\\)% significance level, using the mean of a random sample of \\({n|int}\\) values from a normal distribution with standard deviation \\({s|int}\\). The critical value of \\(z\\) is \\({Z|raw}\\). Find the smallest value of the sample mean for which \\(\\mathrm{H}_0\\) is rejected.",
+        "answer": {
+            "expression": "mu+Z*s/k",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "Reject \\(\\mathrm{H}_0\\) if \\(\\dfrac{\\bar{x}-{mu|int}}{{s|int}/\\sqrt{{n|int}} }\\gt {Z|raw}\\)",
+                "result": "Z",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Set the test statistic equal to the critical value."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\bar{x}={mu|int}+{Z|raw}\\times\\dfrac{{s|int}}{\\sqrt{{n|int}} }={A|sf3z}\\)",
+                "result": "mu+Z*s/k",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Rearrange."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original mean 30, sd 5, n = 25, 5% level, critical sample mean 31.6"
+            },
+            {
+                "id": "drinks",
+                "stem": "The volume of drink in a can is normally distributed with standard deviation \\({s|int}\\) ml. A test of whether the mean volume is more than \\({mu|int}\\) ml uses a random sample of \\({n|int}\\) cans at the \\({L|int}\\)% significance level, with critical value \\(z={Z|raw}\\). Find the critical value of the sample mean."
+            },
+            {
+                "id": "marks",
+                "stem": "Test marks are normally distributed with standard deviation \\({s|int}\\). A teacher tests \\(\\mathrm{H}_0\\colon\\mu={mu|int}\\) against \\(\\mathrm{H}_1\\colon\\mu\\gt {mu|int}\\) at the \\({L|int}\\)% level using \\({n|int}\\) randomly chosen marks. Using the critical value \\({Z|raw}\\), find the least sample mean that leads to rejecting \\(\\mathrm{H}_0\\)."
+            }
+        ],
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-6.2"
+            ],
+            "topic": "Estimation",
+            "chapter": "S2-6",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-6-2.json",
+                "locator": "S2-6.2-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "S2-6.2-QC3-gen",
+        "section": "S2-6.2",
+        "kind": "generated",
+        "title": "Test statistic from a sample total",
+        "marks": 2,
+        "source": "Theory S2-6.2 Quick check 3; xbar from the sum, then z",
+        "params": [
+            {
+                "name": "k",
+                "min": 4,
+                "max": 10,
+                "step": 1
+            },
+            {
+                "name": "mu",
+                "min": 20,
+                "max": 80,
+                "step": 1
+            },
+            {
+                "name": "s",
+                "min": 2,
+                "max": 12,
+                "step": 1
+            },
+            {
+                "name": "d",
+                "min": 1,
+                "max": 30,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "n": "k*k",
+            "xb": "mu-d/10",
+            "T": "k*k*(mu-d/10)",
+            "se": "s/k",
+            "A": "0-d/10*k/s"
+        },
+        "constraints": [
+            "s>1"
+        ],
+        "original": {
+            "k": 8,
+            "mu": 40,
+            "s": 6,
+            "d": 15
+        },
+        "stem": "A random sample of \\({n|int}\\) values from a population with standard deviation \\({s|int}\\) has sum \\({T|raw}\\). Find the value of the test statistic for a test of \\(\\mathrm{H}_0\\colon\\mu={mu|int}\\) against \\(\\mathrm{H}_1\\colon\\mu\\lt {mu|int}\\).",
+        "answer": {
+            "expression": "(T/n-mu)*k/s",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\bar{x}=\\dfrac{{T|raw}}{{n|int}}={xb|raw}\\)",
+                "result": "xb",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Sample mean from the total."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(z=\\dfrac{{xb|raw}-{mu|int}}{{s|int}/\\sqrt{{n|int}} }={A|sf3z}\\)",
+                "result": "(T/n-mu)*k/s",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Negative, because the sample mean is below the hypothesised mean."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original n = 64, sd 6, sum 2464, z = -2"
+            },
+            {
+                "id": "battery",
+                "stem": "The lifetimes of a type of battery had mean \\({mu|int}\\) hours and standard deviation \\({s|int}\\) hours. For a random sample of \\({n|int}\\) batteries of a new design, the total lifetime was \\({T|raw}\\) hours. Find the test statistic for a test of whether the mean lifetime has decreased."
+            },
+            {
+                "id": "fish",
+                "stem": "The masses of fish in a lake have standard deviation \\({s|int}\\) g. A biologist tests whether the mean mass is less than \\({mu|int}\\) g. A random sample of \\({n|int}\\) fish has total mass \\({T|raw}\\) g. Calculate the test statistic \\(z\\)."
+            }
+        ],
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-6.2"
+            ],
+            "topic": "Estimation",
+            "chapter": "S2-6",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-6-2.json",
+                "locator": "S2-6.2-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "S2-6.2-PP-9709-62-MJ22-Q2",
+        "section": "S2-6.2",
+        "kind": "pastpaper",
+        "title": "Heights of plants treated with fertiliser",
+        "marks": 5,
+        "source": {
+            "paper": "9709/62/M/J/22 Q2",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s22_qp_62.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s22_ms_62.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>In the past, the mean height of plants of a particular species has been 2.3 m. A random sample of 60 plants of this species was treated with fertiliser and the mean height of these 60 plants was found to be 2.4 m. Assume that the standard deviation of the heights of plants treated with fertiliser is 0.4 m.</p><p>Carry out a test at the 2.5% significance level of whether the mean height of plants treated with fertiliser is greater than 2.3 m. [5]</p>",
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-6.2"
+            ],
+            "topic": "Estimation",
+            "chapter": "S2-6",
+            "marks": 5,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-6-2.json",
+                "locator": "S2-6.2-PP-9709-62-MJ22-Q2"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(\\mathrm{H}_0\\colon\\) population mean height \\(=2.3\\); \\(\\mathrm{H}_1\\colon\\) population mean height \\(\\gt 2.3\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, H0: pop mean height = 2.3, H1: pop mean height > 2.3; not just ‘mean’, allow μ."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(z=\\dfrac{2.4-2.3}{0.4/\\sqrt{60} }\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, for standardising, must have √60."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(=1.936\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 1.936, 1.937 or 1.94."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(1.936\\lt 1.96\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, valid comparison with 1.96, or 2.64% > 2.5% OE; critical values method 2.4 < 2.401 accepted."
+            },
+            {
+                "name": "s5",
+                "text_tex": "Do not reject \\(\\mathrm{H}_0\\). No evidence that the mean height of plants treated with fertiliser is more than 2.3 m.",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 FT (FT their z), no evidence that (mean) height (with fertiliser) is more than without; in context, not definite; no FT for a two-tail test."
+            }
+        ]
+    },
+    {
+        "id": "S2-6.2-PP-9709-62-ON22-Q2",
+        "section": "S2-6.2",
+        "kind": "pastpaper",
+        "title": "Lengths of a variety of worm",
+        "marks": 5,
+        "source": {
+            "paper": "9709/62/O/N/22 Q2",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w22_qp_62.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w22_ms_62.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>In the past, the mean length of a particular variety of worm has been 10.3 cm, with standard deviation 2.6 cm. Following a change in the climate, it is thought that the mean length of this variety of worm has decreased. The lengths of a random sample of 100 worms of this variety are found and the mean of this sample is found to be 9.8 cm.</p><p>Assuming that the standard deviation remains at 2.6 cm, carry out a test at the 2% significance level of whether the mean length has decreased. [5]</p>",
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-6.2"
+            ],
+            "topic": "Estimation",
+            "chapter": "S2-6",
+            "marks": 5,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-6-2.json",
+                "locator": "S2-6.2-PP-9709-62-ON22-Q2"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(\\mathrm{H}_0\\colon\\) population mean length \\(=10.3\\); \\(\\mathrm{H}_1\\colon\\) population mean length \\(\\lt 10.3\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, H0: population mean length = 10.3 cm, H1: population mean length < 10.3 cm, or μ = 10.3, μ < 10.3 (not just ‘mean’)."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(z=\\dfrac{9.8-10.3}{2.6/\\sqrt{100} }\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, standardising; if ±1.923 (or 0.0272) seen allow M1 implied."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(=-1.923\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, −1.923; accept ±, accept 3 s.f."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(-1.923\\gt -2.054\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1 OE, valid comparison −1.923 > −2.054 or −2.055; or 0.0272 > 0.02; or critical value 9.8 > 9.766."
+            },
+            {
+                "name": "s5",
+                "text_tex": "Do not reject \\(\\mathrm{H}_0\\). No evidence that the mean length has decreased.",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 FT (FT their z), no evidence that (mean) length has decreased; no contradictions, not definite, in context."
+            }
+        ]
+    }
+]

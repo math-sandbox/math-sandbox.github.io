@@ -1,0 +1,420 @@
+[
+    {
+        "id": "IGCSE-23.3-QC1-gen",
+        "section": "IGCSE-23.3",
+        "kind": "generated",
+        "title": "Magnitude of a column vector",
+        "marks": 2,
+        "source": "Theory IGCSE-23.3 Quick check 1; |a| = square root of x squared plus y squared",
+        "params": [
+            {
+                "name": "a",
+                "min": 1,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 1,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "A": "math.pow(a*a+b*b,0.5)"
+        },
+        "constraints": [
+            "a>0"
+        ],
+        "original": {
+            "a": 4,
+            "b": 7
+        },
+        "stem": "Find the magnitude of the vector \\(\\begin{pmatrix}{a|int}\\\\{b|int}\\end{pmatrix}\\).",
+        "answer": {
+            "expression": "math.pow(a*a+b*b,0.5)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\sqrt{{a|int}^2+{b|int}^2}\\)",
+                "result": "a*a+b*b",
+                "format": "int",
+                "mark": "M1",
+                "note": "Pythagoras on the components."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(={A|sf3z}\\)",
+                "result": "math.pow(a*a+b*b,0.5)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original vector (4, 7), magnitude 8.06"
+            },
+            {
+                "id": "walk",
+                "stem": "A robot moves along the vector \\(\\begin{pmatrix}{a|int}\\\\{b|int}\\end{pmatrix}\\), in metres. Find the distance it moves."
+            },
+            {
+                "id": "pv",
+                "stem": "The point \\(A\\) has position vector \\(\\begin{pmatrix}{a|int}\\\\{b|int}\\end{pmatrix}\\). Find the distance of \\(A\\) from the origin."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-23.3"
+            ],
+            "topic": "Transformations and vectors",
+            "chapter": "IGCSE-23",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-23-3.json",
+                "locator": "IGCSE-23.3-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-23.3-QC2-gen",
+        "section": "IGCSE-23.3",
+        "kind": "generated",
+        "title": "Component of a combination of vectors",
+        "marks": 2,
+        "source": "Theory IGCSE-23.3 Quick check 2; 2m - n component by component",
+        "params": [
+            {
+                "name": "a",
+                "min": 1,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "c",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "d",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "A": "2*a-c"
+        },
+        "constraints": [
+            "a>0"
+        ],
+        "original": {
+            "a": 6,
+            "b": 2,
+            "c": -3,
+            "d": 4
+        },
+        "stem": "\\(\\mathbf{m}=\\begin{pmatrix}{a|int}\\\\{b|int}\\end{pmatrix}\\) and \\(\\mathbf{n}=\\begin{pmatrix}{c|int}\\\\{d|int}\\end{pmatrix}\\). Find the top component of \\(2\\mathbf{m}-\\mathbf{n}\\).",
+        "answer": {
+            "expression": "2*a-c",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "Top component of \\(2\\mathbf{m}\\) is \\(2\\times{a|int}\\).",
+                "result": "2*a",
+                "format": "int",
+                "mark": "M1",
+                "note": "Multiply each component by 2."
+            },
+            {
+                "name": "A",
+                "text_tex": "Top component of \\(2\\mathbf{m}-\\mathbf{n}\\) is \\({A|int}\\).",
+                "result": "2*a-c",
+                "format": "int",
+                "mark": "A1",
+                "note": "Subtract the top component of n."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original m = (6, 2), n = (-3, 4), top component 15"
+            },
+            {
+                "id": "forces",
+                "stem": "Two vectors are \\(\\mathbf{m}=\\begin{pmatrix}{a|int}\\\\{b|int}\\end{pmatrix}\\) and \\(\\mathbf{n}=\\begin{pmatrix}{c|int}\\\\{d|int}\\end{pmatrix}\\). Work out the first component of the vector \\(2\\mathbf{m}-\\mathbf{n}\\)."
+            },
+            {
+                "id": "pq",
+                "stem": "\\(\\overrightarrow{PQ}=\\begin{pmatrix}{a|int}\\\\{b|int}\\end{pmatrix}\\) and \\(\\overrightarrow{RS}=\\begin{pmatrix}{c|int}\\\\{d|int}\\end{pmatrix}\\). Find the top component of \\(2\\overrightarrow{PQ}-\\overrightarrow{RS}\\)."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-23.3"
+            ],
+            "topic": "Transformations and vectors",
+            "chapter": "IGCSE-23",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-23-3.json",
+                "locator": "IGCSE-23.3-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-23.3-QC3-gen",
+        "section": "IGCSE-23.3",
+        "kind": "generated",
+        "title": "Unknown component from a magnitude",
+        "marks": 2,
+        "source": "Theory IGCSE-23.3 Quick check 3; y squared = magnitude squared minus x squared",
+        "params": [
+            {
+                "name": "i",
+                "min": 0,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "s",
+                "min": 1,
+                "max": 3,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "x": "[3,5,8,7][i]*s",
+            "r": "[5,13,17,25][i]*s",
+            "A": "[4,12,15,24][i]*s"
+        },
+        "constraints": [
+            "s>0"
+        ],
+        "original": {
+            "i": 0,
+            "s": 2
+        },
+        "stem": "The vector \\(\\begin{pmatrix}{x|int}\\\\k\\end{pmatrix}\\) has magnitude \\({r|int}\\), and \\(k\\gt 0\\). Find the value of \\(k\\).",
+        "answer": {
+            "expression": "[4,12,15,24][i]*s",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\({x|int}^2+k^2={r|int}^2\\)",
+                "result": "r*r-x*x",
+                "format": "int",
+                "mark": "M1",
+                "note": "Magnitude squared equals the sum of the squares of the components."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(k={A|int}\\)",
+                "result": "[4,12,15,24][i]*s",
+                "format": "int",
+                "mark": "A1",
+                "note": "Positive square root."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original vector (6, k) with magnitude 10, k = 8"
+            },
+            {
+                "id": "ladder",
+                "stem": "The vector \\(\\overrightarrow{AB}=\\begin{pmatrix}{x|int}\\\\k\\end{pmatrix}\\), where \\(k\\gt 0\\), and the length of \\(AB\\) is \\({r|int}\\). Find \\(k\\)."
+            },
+            {
+                "id": "move",
+                "stem": "A point moves \\({x|int}\\) units to the right and \\(k\\) units up, a total distance of \\({r|int}\\) units in a straight line. Find \\(k\\)."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-23.3"
+            ],
+            "topic": "Transformations and vectors",
+            "chapter": "IGCSE-23",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-23-3.json",
+                "locator": "IGCSE-23.3-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-23.3-PP-0580-21-MJ25-Q8",
+        "section": "IGCSE-23.3",
+        "kind": "pastpaper",
+        "title": "Combining vectors and a magnitude",
+        "marks": 4,
+        "source": {
+            "paper": "0580/21/M/J/25 Q8",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s25_qp_21.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s25_ms_21.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>\\(\\mathbf{m}=\\begin{pmatrix}11\\\\5\\end{pmatrix}\\qquad\\mathbf{n}=\\begin{pmatrix}8\\\\-3\\end{pmatrix}\\)</p><p>(a) Find \\(2\\mathbf{m}-\\mathbf{n}\\). [2]</p><p>(b) The vector \\(\\begin{pmatrix}5\\\\\\sqrt{y}\\end{pmatrix}\\) has a magnitude of 7. Find the value of \\(y\\). [2]</p>",
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-23.3"
+            ],
+            "topic": "Transformations and vectors",
+            "chapter": "IGCSE-23",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-23-3.json",
+                "locator": "IGCSE-23.3-PP-0580-21-MJ25-Q8"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) \\(2\\mathbf{m}=\\begin{pmatrix}22\\\\10\\end{pmatrix}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: 2 marks for (14, 13); B1 for (14, k) or (k, 13) or for (22, 10)."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(a) \\(2\\mathbf{m}-\\mathbf{n}=\\begin{pmatrix}14\\\\13\\end{pmatrix}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: (14, 13), both marks."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(b) \\(5^2+\\bigl(\\sqrt{y}\\bigr)^2=7^2\\), so \\(y+5^2=7^2\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1 for y + 5² = 7² or better."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(b) \\(y=24\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: 24, 2 marks."
+            }
+        ]
+    },
+    {
+        "id": "IGCSE-23.3-PP-0580-22-MJ23-Q9",
+        "section": "IGCSE-23.3",
+        "kind": "pastpaper",
+        "title": "Vectors between points",
+        "marks": 5,
+        "source": {
+            "paper": "0580/22/M/J/23 Q9",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s23_qp_22.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s23_ms_22.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>\\(F\\) is the point \\((1, -4)\\), \\(\\overrightarrow{FG}=\\begin{pmatrix}8\\\\-3\\end{pmatrix}\\) and \\(\\overrightarrow{GH}=\\begin{pmatrix}-12\\\\35\\end{pmatrix}\\).</p><p>Find</p><p>(a) \\(3\\overrightarrow{FG}\\) [1]</p><p>(b) \\(\\overrightarrow{FG}+\\overrightarrow{GH}\\) [1]</p><p>(c) the coordinates of the point \\(G\\) [1]</p><p>(d) the magnitude of vector \\(\\overrightarrow{GH}\\). [2]</p>",
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-23.3"
+            ],
+            "topic": "Transformations and vectors",
+            "chapter": "IGCSE-23",
+            "marks": 5,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-23-3.json",
+                "locator": "IGCSE-23.3-PP-0580-22-MJ23-Q9"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) \\(\\begin{pmatrix}24\\\\-9\\end{pmatrix}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: (24, −9), 1 mark."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(b) \\(\\begin{pmatrix}-4\\\\32\\end{pmatrix}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: (−4, 32), 1 mark."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(c) \\(G=(1+8, -4-3)=(9, -7)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: (9, −7), 1 mark."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(d) \\(\\sqrt{(-12)^2+35^2}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1 for (−12)² + 35² oe."
+            },
+            {
+                "name": "s5",
+                "text_tex": "(d) \\(=37\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: 37, 2 marks."
+            }
+        ]
+    }
+]

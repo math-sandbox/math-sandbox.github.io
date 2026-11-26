@@ -1,0 +1,457 @@
+[
+    {
+        "id": "P23-10.2-QC1-gen",
+        "section": "P23-10.2",
+        "kind": "generated",
+        "title": "Finding the constant of proportionality",
+        "marks": 2,
+        "source": "Theory P23-10.2 Quick check 1; dN/dt = kN with a given rate",
+        "params": [
+            {
+                "name": "N0",
+                "min": 100,
+                "max": 900,
+                "step": 100
+            },
+            {
+                "name": "r",
+                "min": 2,
+                "max": 40,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "A": "r/N0"
+        },
+        "constraints": [
+            "r>1"
+        ],
+        "original": {
+            "N0": 400,
+            "r": 10
+        },
+        "stem": "The rate of increase of a population \\(N\\) is proportional to \\(N\\). When \\(N={N0|int}\\), the population is increasing at a rate of \\({r|int}\\) per year. Writing \\(\\dfrac{dN}{dt}=kN\\), find \\(k\\).",
+        "answer": {
+            "expression": "r/N0",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\dfrac{dN}{dt}=kN\\) with \\(\\dfrac{dN}{dt}={r|int}\\) when \\(N={N0|int}\\): \\({r|int}=k\\times{N0|int}\\)",
+                "result": "r",
+                "format": "int",
+                "mark": "M1",
+                "note": "Substitute the given rate and value."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(k=\\dfrac{{r|int}}{{N0|int}}={A|sf3z}\\)",
+                "result": "r/N0",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Solve for k."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original N = 400 increasing at 10 per year, k = 0.025"
+            },
+            {
+                "id": "fish",
+                "stem": "The number of fish \\(N\\) in a lake grows at a rate proportional to \\(N\\). When there are \\({N0|int}\\) fish, the number is increasing at \\({r|int}\\) fish per year. Treating \\(N\\) as continuous, with \\(\\dfrac{dN}{dt}=kN\\), find the value of \\(k\\)."
+            },
+            {
+                "id": "cells",
+                "stem": "A colony of cells has \\(N\\) cells at time \\(t\\) hours, and \\(N\\) increases at a rate proportional to \\(N\\). When \\(N={N0|int}\\), \\(\\dfrac{dN}{dt}={r|int}\\). Find the constant of proportionality \\(k\\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-10.2"
+            ],
+            "topic": "Differential equations",
+            "chapter": "P23-10",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-10-2.json",
+                "locator": "P23-10.2-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-10.2-QC2-gen",
+        "section": "P23-10.2",
+        "kind": "generated",
+        "title": "Doubling time for exponential growth",
+        "marks": 2,
+        "source": "Theory P23-10.2 Quick check 2; e^(kt) = 2 gives t = ln 2 / k",
+        "params": [
+            {
+                "name": "kk",
+                "min": 2,
+                "max": 20,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "k": "kk/100",
+            "A": "math.log(2)/(kk/100)"
+        },
+        "constraints": [
+            "kk>1"
+        ],
+        "original": {
+            "kk": 5
+        },
+        "stem": "A quantity \\(N\\) satisfies \\(\\dfrac{dN}{dt}={k|raw}N\\), where \\(t\\) is the time in years. Find the time taken for \\(N\\) to double.",
+        "answer": {
+            "expression": "math.log(2)/k",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\ln N={k|raw}t+c\\), so \\(N=N_0\\mathrm{e}^{{k|raw}t}\\). Doubling: \\(\\mathrm{e}^{{k|raw}t}=2\\)",
+                "result": "k",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Solve the equation, then set N = 2N0."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(t=\\dfrac{\\ln2}{{k|raw}}={A|sf3z}\\) years",
+                "result": "math.log(2)/k",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Take logarithms."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original dN/dt = 0.05N, doubling time 13.9 years"
+            },
+            {
+                "id": "money",
+                "stem": "An amount of money \\(N\\) grows so that \\(\\dfrac{dN}{dt}={k|raw}N\\), with \\(t\\) in years. Find how long it takes for the amount to double."
+            },
+            {
+                "id": "population",
+                "stem": "A population grows at a rate equal to \\({k|raw}\\) times its size, with time \\(t\\) in years. By forming and solving a differential equation, find how long the population takes to double."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-10.2"
+            ],
+            "topic": "Differential equations",
+            "chapter": "P23-10",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-10-2.json",
+                "locator": "P23-10.2-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-10.2-QC3-gen",
+        "section": "P23-10.2",
+        "kind": "generated",
+        "title": "Solution of dx/dt = k(a - x)",
+        "marks": 2,
+        "source": "Theory P23-10.2 Quick check 3; x = a(1 - e^(-kt))",
+        "params": [
+            {
+                "name": "a",
+                "min": 10,
+                "max": 90,
+                "step": 10
+            },
+            {
+                "name": "kk",
+                "min": 1,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "T",
+                "min": 1,
+                "max": 5,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "k": "kk/10",
+            "kT": "kk/10*T",
+            "A": "a*(1-math.pow(2.718281828459045,0-kk/10*T))"
+        },
+        "constraints": [
+            "a>9"
+        ],
+        "original": {
+            "a": 50,
+            "kk": 2,
+            "T": 3
+        },
+        "stem": "The variables \\(x\\) and \\(t\\) satisfy \\(\\dfrac{dx}{dt}={k|raw}({a|int}-x)\\), where \\(x\\lt {a|int}\\), and \\(x=0\\) when \\(t=0\\). Find the value of \\(x\\) when \\(t={T|int}\\).",
+        "answer": {
+            "expression": "a*(1-math.pow(2.718281828459045,0-kk/10*T))",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\displaystyle\\int\\frac{1}{{a|int}-x}\\,dx=\\int{k|raw}\\,dt\\), so \\(-\\ln({a|int}-x)={k|raw}t+c\\); \\(x=0\\), \\(t=0\\) gives \\(x={a|int}\\bigl(1-\\mathrm{e}^{-{k|raw}t}\\bigr)\\)",
+                "result": "kk/10*T",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Separate, integrate and use the initial condition."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(x={a|int}\\bigl(1-\\mathrm{e}^{-{kT|raw}}\\bigr)={A|sf3z}\\)",
+                "result": "a*(1-math.pow(2.718281828459045,0-kk/10*T))",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original dx/dt = 0.2(50 - x), x = 22.6 at t = 3"
+            },
+            {
+                "id": "tank",
+                "stem": "A tank holds \\({a|int}\\) litres when full. Water flows in so that the volume \\(x\\) litres at time \\(t\\) minutes satisfies \\(\\dfrac{dx}{dt}={k|raw}({a|int}-x)\\). The tank is empty when \\(t=0\\). Find \\(x\\) when \\(t={T|int}\\)."
+            },
+            {
+                "id": "learning",
+                "stem": "The score \\(x\\) of a learner on a skill test after \\(t\\) days of practice satisfies \\(\\dfrac{dx}{dt}={k|raw}({a|int}-x)\\), and \\(x=0\\) when \\(t=0\\). Find the score when \\(t={T|int}\\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-10.2"
+            ],
+            "topic": "Differential equations",
+            "chapter": "P23-10",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-10-2.json",
+                "locator": "P23-10.2-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-10.2-PP-9709-31-ON19-Q4",
+        "section": "P23-10.2",
+        "kind": "pastpaper",
+        "title": "A decreasing insect population",
+        "marks": 8,
+        "source": {
+            "paper": "9709/31/O/N/19 Q4",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w19_qp_31.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w19_ms_31.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>The number of insects in a population \\(t\\) weeks after the start of observations is denoted by \\(N\\). The population is decreasing at a rate proportional to \\(N\\mathrm{e}^{-0.02t}\\). The variables \\(N\\) and \\(t\\) are treated as continuous, and it is given that when \\(t=0\\), \\(N=1000\\) and \\(\\dfrac{dN}{dt}=-10\\).</p><p>(i) Show that \\(N\\) and \\(t\\) satisfy the differential equation</p><p>\\(\\displaystyle\\frac{dN}{dt}=-0.01\\mathrm{e}^{-0.02t}N.\\) [1]</p><p>(ii) Solve the differential equation and find the value of \\(t\\) when \\(N=800\\). [6]</p><p>(iii) State what happens to the value of \\(N\\) as \\(t\\) becomes large. [1]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-10.2"
+            ],
+            "topic": "Differential equations",
+            "chapter": "P23-10",
+            "marks": 8,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-10-2.json",
+                "locator": "P23-10.2-PP-9709-31-ON19-Q4"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(i) \\(\\dfrac{dN}{dt}=k\\mathrm{e}^{-0.02t}N\\) and \\(-10=k\\times1\\times1000\\), so \\(k=-0.01\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 OE, state dN/dt = ke^(−0.02t)N and show k = −0.01 (−10 = k × 1 × 1000)."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(ii) \\(\\displaystyle\\int\\frac{1}{N}\\,dN=\\int-0.01\\mathrm{e}^{-0.02t}\\,dt\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, separate variables correctly and integrate at least one side."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(ii) \\(\\ln N\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 OE, obtain term ln N."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(ii) \\(0.5\\mathrm{e}^{-0.02t}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 OE, obtain term 0.5e^(−0.02t)."
+            },
+            {
+                "name": "s5",
+                "text_tex": "(ii) \\(t=0\\), \\(N=1000\\): \\(\\ln1000=0.5+c\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, use N = 1000, t = 0 to evaluate a constant, or as limits, in a solution with terms a ln N and be^(−0.02t), where ab ≠ 0."
+            },
+            {
+                "name": "s6",
+                "text_tex": "(ii) \\(\\ln N-\\ln1000=0.5\\bigl(\\mathrm{e}^{-0.02t}-1\\bigr)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, obtain correct solution in any form, e.g. ln N − ln 1000 = 0.5(e^(−0.02t) − 1)."
+            },
+            {
+                "name": "s7",
+                "text_tex": "(ii) \\(N=800\\): \\(\\mathrm{e}^{-0.02t}=1+2\\ln0.8\\), \\(t=29.6\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, substitute N = 800 and obtain t = 29.6."
+            },
+            {
+                "name": "s8",
+                "text_tex": "(iii) \\(N\\) approaches \\(\\dfrac{1000}{\\sqrt{\\mathrm{e} } }\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, state that N approaches 1000/√e; accept 606 or 607 or 606.5."
+            }
+        ]
+    },
+    {
+        "id": "P23-10.2-PP-9709-32-MJ21-Q7",
+        "section": "P23-10.2",
+        "kind": "pastpaper",
+        "title": "Setting up a differential equation for a curve",
+        "marks": 7,
+        "source": {
+            "paper": "9709/32/M/J/21 Q7",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s21_qp_32.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s21_ms_32.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>A curve is such that the gradient at a general point with coordinates \\((x, y)\\) is proportional to \\(\\dfrac{y}{\\sqrt{x+1} }\\). The curve passes through the points with coordinates \\((0, 1)\\) and \\((3, \\mathrm{e})\\).</p><p>By setting up and solving a differential equation, find the equation of the curve, expressing \\(y\\) in terms of \\(x\\). [7]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-10.2"
+            ],
+            "topic": "Differential equations",
+            "chapter": "P23-10",
+            "marks": 7,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-10-2.json",
+                "locator": "P23-10.2-PP-9709-32-MJ21-Q7"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(\\dfrac{dy}{dx}=\\dfrac{ky}{\\sqrt{x+1} }\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 OE, state equation dy/dx = ky/√(x + 1); must be a differential equation."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(\\displaystyle\\int\\frac{1}{y}\\,dy=\\int\\frac{k}{\\sqrt{x+1} }\\,dx\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "*M1",
+                "note": "Official MS: *M1, separate variables correctly for their differential equation and integrate at least one side."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(\\ln y\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, obtain ln y; allow M1A1A1 if they have assumed k = 1 or are working with an incorrect value for k."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(2k\\sqrt{x+1}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, obtain 2[k]√(x + 1)."
+            },
+            {
+                "name": "s5",
+                "text_tex": "\\((0, 1)\\): \\(0=2k+c\\); \\((3, \\mathrm{e})\\): \\(1=4k+c\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: DM1 (dependent on *M1), use (0, 1) and (3, e) in an expression containing ln y and √(x + 1) and a constant of integration to determine k and/or c; stored as M1."
+            },
+            {
+                "name": "s6",
+                "text_tex": "\\(k=\\tfrac{1}{2}\\), \\(c=-1\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 OE, obtain k = ½ and c = −1 (ln y = √(x + 1) − 1); c depends on where it is placed in their equation."
+            },
+            {
+                "name": "s7",
+                "text_tex": "\\(y=\\exp\\bigl(\\sqrt{x+1}-1\\bigr)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 NFWW, OE, ISW, obtain y = exp(√(x + 1) − 1)."
+            }
+        ]
+    }
+]

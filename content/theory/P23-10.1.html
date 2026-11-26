@@ -1,0 +1,89 @@
+<script src="/assets/redirect.js"></script>
+<section class="theory" data-section="P23-10.1">
+<h2>10.1 The technique of separating the variables</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 2 &amp; 3 Coursebook (Sue Pemberton, series editor Julian Gilbey), Chapter 10 Differential equations, printed pp.245–251. Own wording and new numbers, following the coursebook method of separating the variables, finding the general solution and then a particular solution.</p>
+<p class="key-words"><strong>Key words:</strong> <em>differential equation</em>, <em>separating the variables</em>, <em>general solution</em>, <em>particular solution</em>, <em>constant of integration</em></p>
+<h3>Differential equations</h3>
+<p>A <strong>differential equation</strong> is an equation that contains a derivative such as \(\dfrac{dy}{dx}\). Solving it means finding \(y\) in terms of \(x\) without any derivatives.</p>
+<h3>Separating the variables</h3>
+<p>If the equation can be written as \(\dfrac{dy}{dx}=f(x)\,g(y)\), we solve it by <strong>separating the variables</strong>: put all the \(y\) terms with \(dy\) on one side and all the \(x\) terms with \(dx\) on the other, then integrate both sides.</p>
+<p>\[\int\frac{1}{g(y)}\,dy=\int f(x)\,dx\]</p>
+<p>Only one <strong>constant of integration</strong> is needed, written on the \(x\) side. The answer with this arbitrary constant is the <strong>general solution</strong>. A given condition, such as \(y=2\) when \(x=0\), fixes the constant and gives a <strong>particular solution</strong>. Then rearrange to give \(y\) in terms of \(x\) if the question asks for it.</p>
+<div class="worked-example">
+<h4>Worked example 1: An exponential solution</h4>
+<p class="src">Coursebook, 10.1, separating the variables. New numbers.</p>
+<p>Solve \(\dfrac{dy}{dx}=2xy\), given that \(y=3\) when \(x=0\). Give \(y\) in terms of \(x\).</p>
+<ol class="steps">
+<li>\(\displaystyle\int\frac{1}{y}\,dy=\int2x\,dx\) <span class="mark">B1</span></li>
+<li>\(\ln y=x^2+c\) <span class="mark">B1</span></li>
+<li>\(x=0\), \(y=3\): \(c=\ln3\) <span class="mark">M1</span></li>
+<li>\(y=\mathrm{e}^{x^2+\ln3}=3\mathrm{e}^{x^2}\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(y=3\mathrm{e}^{x^2}\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: A square-root solution</h4>
+<p class="src">Coursebook, 10.1, particular solution. New numbers.</p>
+<p>Solve \(\dfrac{dy}{dx}=\dfrac{6x^2}{y}\), where \(y\gt 0\), given that \(y=2\) when \(x=0\).</p>
+<ol class="steps">
+<li>\(\displaystyle\int y\,dy=\int6x^2\,dx\) <span class="mark">B1</span></li>
+<li>\(\tfrac{1}{2}y^2=2x^3+c\) <span class="mark">B1</span></li>
+<li>\(x=0\), \(y=2\): \(c=2\) <span class="mark">M1</span></li>
+<li>\(y^2=4x^3+4\), so \(y=2\sqrt{x^3+1}\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(y=2\sqrt{x^3+1}\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Integrating \(\dfrac{1}{y}\) as \(y^{-2}\) or forgetting that it gives \(\ln y\).</li><li>Adding the constant after rearranging, for example writing y = e^(x²) + c instead of finding c in ln y = x² + c.</li><li>Not using the given condition, so leaving a general solution when a particular solution is asked for.</li></ul>
+<h3>Past paper</h3>
+<p class="src">9709/32/M/J/12 Q5, official QP and official MS.</p>
+<p>The variables \(x\) and \(y\) satisfy the differential equation</p><p>\(\displaystyle\frac{dy}{dx}=\mathrm{e}^{2x+y},\)</p><p>and \(y=0\) when \(x=0\). Solve the differential equation, obtaining an expression for \(y\) in terms of \(x\). [6]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>\(\displaystyle\int\mathrm{e}^{-y}\,dy=\int\mathrm{e}^{2x}\,dx\) <span class="mark">B1</span> Official MS: B1, separate variables correctly and attempt integration of both sides.</li>
+<li>\(-\mathrm{e}^{-y}\) <span class="mark">B1</span> Official MS: B1, obtain term −e^(−y), or equivalent.</li>
+<li>\(\tfrac{1}{2}\mathrm{e}^{2x}\) <span class="mark">B1</span> Official MS: B1, obtain term ½e^(2x), or equivalent.</li>
+<li>\(x=0\), \(y=0\): \(-1=\tfrac{1}{2}+c\), so \(c=-\tfrac{3}{2}\) <span class="mark">M1</span> Official MS: M1, evaluate a constant, or use limits x = 0, y = 0 in a solution containing terms ae^(−y) and be^(2x).</li>
+<li>\(-\mathrm{e}^{-y}=\tfrac{1}{2}\mathrm{e}^{2x}-\tfrac{3}{2}\) <span class="mark">A1</span> Official MS: A1, obtain correct solution in any form, e.g. −e^(−y) = ½e^(2x) − 3/2.</li>
+<li>\(y=\ln\Bigl(\dfrac{2}{3-\mathrm{e}^{2x}}\Bigr)\) <span class="mark">A1</span> Official MS: A1, rearrange and obtain y = ln(2/(3 − e^(2x))), or equivalent.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/31/M/J/22 Q4, official QP and official MS.</p>
+<p>The variables \(x\) and \(y\) satisfy the differential equation</p><p>\(\displaystyle\frac{dy}{dx}=\frac{xy}{1+x^2},\)</p><p>and \(y=2\) when \(x=0\).</p><p>Solve the differential equation, obtaining a simplified expression for \(y\) in terms of \(x\). [7]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>\(\displaystyle\int\frac{1}{y}\,dy=\int\frac{x}{1+x^2}\,dx\) <span class="mark">B1</span> Official MS: B1, separate variables correctly; accept without integral signs.</li>
+<li>\(\ln y\) <span class="mark">B1</span> Official MS: B1, obtain term ln y.</li>
+<li>\(k\ln(1+x^2)\) <span class="mark">M1</span> Official MS: M1, state term of the form k ln(1 + x²).</li>
+<li>\(\tfrac{1}{2}\ln(1+x^2)\) <span class="mark">A1</span> Official MS: A1 OE, state correct term ½ ln(1 + x²).</li>
+<li>\(x=0\), \(y=2\): \(\ln2=\tfrac{1}{2}\ln1+c\), so \(c=\ln2\) <span class="mark">M1</span> Official MS: M1, evaluate a constant, or use limits x = 0, y = 2, in a solution containing terms a ln y and b ln(1 + x²) where ab ≠ 0; if logs are removed first the constant must be of the correct form.</li>
+<li>\(\ln y=\tfrac{1}{2}\ln(1+x^2)+\ln2\) <span class="mark">A1</span> Official MS: A1, obtain correct solution in any form.</li>
+<li>\(y=2\sqrt{1+x^2}\) <span class="mark">A1</span> Official MS: A1 OE, simplify and obtain y = 2√(1 + x²); the question asks for simplification, so exp(ln(…)) must be dealt with.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>The variables \(x\) and \(y\) satisfy \(\dfrac{dy}{dx}=0.3y\), and \(y=4\) when \(x=0\). Find the value of \(y\) when \(x=2\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\ln y=0.3x+C\), so \(y=4\mathrm{e}^{0.3x}\)</li><li>\(y=4\mathrm{e}^{0.6}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(7.29\) (3 s.f.)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>The variables \(x\) and \(y\) satisfy \(\dfrac{dy}{dx}=\dfrac{x}{y}\), where \(y\gt 0\), and \(y=3\) when \(x=0\). Find the value of \(y\) when \(x=4\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(y^2=x^2+9\)</li><li>\(y=\sqrt{16+9}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(5\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>The variables \(x\) and \(y\) satisfy \(\dfrac{dy}{dx}=\dfrac{2y}{x}\) for \(x\gt 0\), \(y\gt 0\), and \(y=3\) when \(x=1\). Find the value of \(y\) when \(x=2\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\ln y=2\ln x+C\), so \(y=3x^2\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(12\)</p>
+</details>
+</div>
+</section>

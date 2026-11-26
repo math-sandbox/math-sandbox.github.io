@@ -1,0 +1,390 @@
+[
+    {
+        "id": "P1-8.5-QC1-gen",
+        "section": "P1-8.5",
+        "kind": "generated",
+        "title": "Rate of increase of the radius of a sphere",
+        "marks": 2,
+        "source": "Theory P1-8.5 Quick check 1; dr/dt = (dV/dt) / (4 pi r^2)",
+        "params": [
+            {
+                "name": "c",
+                "min": 10,
+                "max": 100,
+                "step": 10
+            },
+            {
+                "name": "R",
+                "min": 2,
+                "max": 10,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "A": "c/(4*3.141592653589793*R*R)"
+        },
+        "constraints": [
+            "R>1"
+        ],
+        "original": {
+            "c": 50,
+            "R": 5
+        },
+        "stem": "The volume of a spherical balloon is increasing at a constant rate of \\({c|int}\\) cm\\(^3\\) per second. Find the rate at which the radius is increasing when the radius is \\({R|int}\\) cm.",
+        "answer": {
+            "expression": "c/(4*3.141592653589793*R*R)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(V=\\tfrac{4}{3}\\pi r^3\\), \\(\\dfrac{dV}{dr}=4\\pi r^2=4\\pi\\times{R|int}^2\\)",
+                "result": "4*3.141592653589793*R*R",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Differentiate the volume formula."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\dfrac{dr}{dt}=\\dfrac{dV/dt}{dV/dr}=\\dfrac{{c|int}}{4\\pi\\times{R|int}^2}={A|sf3z}\\) cm per second",
+                "result": "c/(4*3.141592653589793*R*R)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Chain rule."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 50 cm^3 per second, r = 5, dr/dt = 0.159"
+            },
+            {
+                "id": "bubble",
+                "stem": "A spherical bubble grows so that its volume increases at \\({c|int}\\) cm\\(^3\\) per second. Find the rate of increase of its radius at the instant when the radius is \\({R|int}\\) cm."
+            },
+            {
+                "id": "snowball",
+                "stem": "Snow is added to a spherical snowball so that its volume increases at a rate of \\({c|int}\\) cm\\(^3\\) per second. Find \\(\\dfrac{dr}{dt}\\) when \\(r={R|int}\\)."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-8.5"
+            ],
+            "topic": "Further differentiation",
+            "chapter": "P1-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-8-5.json",
+                "locator": "P1-8.5-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-8.5-QC2-gen",
+        "section": "P1-8.5",
+        "kind": "generated",
+        "title": "Rate of increase of the area of a circle",
+        "marks": 2,
+        "source": "Theory P1-8.5 Quick check 2; dA/dt = 2 pi r dr/dt",
+        "params": [
+            {
+                "name": "c",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "R",
+                "min": 2,
+                "max": 20,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "A": "2*3.141592653589793*R*c"
+        },
+        "constraints": [
+            "c>1"
+        ],
+        "original": {
+            "c": 3,
+            "R": 10
+        },
+        "stem": "The radius of a circular ripple increases at a constant rate of \\({c|int}\\) cm per second. Find the rate at which the area of the circle is increasing when the radius is \\({R|int}\\) cm.",
+        "answer": {
+            "expression": "2*3.141592653589793*R*c",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(A=\\pi r^2\\), \\(\\dfrac{dA}{dr}=2\\pi r=2\\pi\\times{R|int}\\)",
+                "result": "2*3.141592653589793*R",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Differentiate the area formula."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\dfrac{dA}{dt}=2\\pi\\times{R|int}\\times{c|int}={A|sf3z}\\) cm\\(^2\\) per second",
+                "result": "2*3.141592653589793*R*c",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Chain rule."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original dr/dt = 3, r = 10, dA/dt = 188"
+            },
+            {
+                "id": "oil",
+                "stem": "A circular patch of oil spreads so that its radius increases at \\({c|int}\\) cm per second. Find the rate of increase of its area when the radius is \\({R|int}\\) cm."
+            },
+            {
+                "id": "disc",
+                "stem": "A metal disc is heated so that its radius increases at a rate of \\({c|int}\\) cm per second. Find \\(\\dfrac{dA}{dt}\\) at the instant when \\(r={R|int}\\) cm."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-8.5"
+            ],
+            "topic": "Further differentiation",
+            "chapter": "P1-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-8-5.json",
+                "locator": "P1-8.5-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-8.5-QC3-gen",
+        "section": "P1-8.5",
+        "kind": "generated",
+        "title": "Rate of increase of the volume of a cube",
+        "marks": 2,
+        "source": "Theory P1-8.5 Quick check 3; dV/dt = 3x^2 dx/dt",
+        "params": [
+            {
+                "name": "x",
+                "min": 2,
+                "max": 10,
+                "step": 1
+            },
+            {
+                "name": "c",
+                "min": 0.1,
+                "max": 0.5,
+                "step": 0.1
+            }
+        ],
+        "derived": {
+            "A": "3*x*x*c"
+        },
+        "constraints": [
+            "x>1"
+        ],
+        "original": {
+            "x": 4,
+            "c": 0.2
+        },
+        "stem": "The edges of a cube are increasing at a constant rate of \\({c|raw}\\) cm per second. Find the rate at which the volume is increasing when the edge length is \\({x|int}\\) cm.",
+        "answer": {
+            "expression": "3*x*x*c",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(V=x^3\\), \\(\\dfrac{dV}{dx}=3x^2=3\\times{x|int}^2\\)",
+                "result": "3*x*x",
+                "format": "int",
+                "mark": "M1",
+                "note": "Differentiate the volume formula."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\dfrac{dV}{dt}=3\\times{x|int}^2\\times{c|raw}={A|sf3z}\\) cm\\(^3\\) per second",
+                "result": "3*x*x*c",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Chain rule."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original dx/dt = 0.2, x = 4, dV/dt = 9.6"
+            },
+            {
+                "id": "ice",
+                "stem": "A cube of metal expands when heated so that each edge increases at \\({c|raw}\\) cm per second. Find the rate of increase of its volume when each edge is \\({x|int}\\) cm long."
+            },
+            {
+                "id": "crystal",
+                "stem": "A crystal in the shape of a cube grows so that its edge length increases at \\({c|raw}\\) cm per second. Find \\(\\dfrac{dV}{dt}\\) when the edge length is \\({x|int}\\) cm."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-8.5"
+            ],
+            "topic": "Further differentiation",
+            "chapter": "P1-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-8-5.json",
+                "locator": "P1-8.5-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-8.5-PP-9709-11-ON20-Q3",
+        "section": "P1-8.5",
+        "kind": "pastpaper",
+        "title": "Air pumped into a spherical balloon",
+        "marks": 3,
+        "source": {
+            "paper": "9709/11/O/N/20 Q3",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w20_qp_11.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w20_ms_11.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Air is being pumped into a balloon in the shape of a sphere so that its volume is increasing at a constant rate of 50 cm\\(^3\\) s\\(^{-1}\\).</p><p>Find the rate at which the radius of the balloon is increasing when the radius is 10 cm. [3]</p>",
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-8.5"
+            ],
+            "topic": "Further differentiation",
+            "chapter": "P1-8",
+            "marks": 3,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-8-5.json",
+                "locator": "P1-8.5-PP-9709-11-ON20-Q3"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(\\dfrac{dV}{dr}=4\\pi r^2=400\\pi\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, 4πr² (400π), SOI; award for dr/dV."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(\\dfrac{dr}{dt}=\\dfrac{50}{400\\pi}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, 50 ÷ their derivative."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(=\\dfrac{1}{8\\pi}=0.0398\\) cm s\\(^{-1}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 1/(8π) or 0.0398 AWRT."
+            }
+        ]
+    },
+    {
+        "id": "P1-8.5-PP-9709-11-ON12-Q3",
+        "section": "P1-8.5",
+        "kind": "pastpaper",
+        "title": "A spreading patch of oil",
+        "marks": 4,
+        "source": {
+            "paper": "9709/11/O/N/12 Q3",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w12_qp_11.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w12_ms_11.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>An oil pipeline under the sea is leaking oil and a circular patch of oil has formed on the surface of the sea. At midday the radius of the patch of oil is 50 m and is increasing at a rate of 3 metres per hour. Find the rate at which the area of the oil is increasing at midday. [4]</p>",
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-8.5"
+            ],
+            "topic": "Further differentiation",
+            "chapter": "P1-8",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-8-5.json",
+                "locator": "P1-8.5-PP-9709-11-ON12-Q3"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(A=\\pi r^2\\), \\(\\dfrac{dA}{dr}=2\\pi r\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, dA/dr = 2πr."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(\\dfrac{dA}{dt}=\\dfrac{dA}{dr}\\times\\dfrac{dr}{dt}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, chain rule used."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(\\dfrac{dr}{dt}=3\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, 3 soi."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(\\dfrac{dA}{dt}=2\\pi\\times50\\times3=300\\pi\\) (942) m\\(^2\\) per hour",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 300π (or 942)."
+            }
+        ]
+    }
+]

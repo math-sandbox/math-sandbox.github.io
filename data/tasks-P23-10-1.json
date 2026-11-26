@@ -1,0 +1,453 @@
+[
+    {
+        "id": "P23-10.1-QC1-gen",
+        "section": "P23-10.1",
+        "kind": "generated",
+        "title": "Exponential solution of dy/dx = ky",
+        "marks": 2,
+        "source": "Theory P23-10.1 Quick check 1; ln y = kx + c gives y = y0 e^(kx)",
+        "params": [
+            {
+                "name": "k",
+                "min": 0.1,
+                "max": 0.5,
+                "step": 0.1
+            },
+            {
+                "name": "y0",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "c",
+                "min": 1,
+                "max": 5,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "kc": "k*c",
+            "A": "y0*math.pow(2.718281828459045,k*c)"
+        },
+        "constraints": [
+            "k>0"
+        ],
+        "original": {
+            "k": 0.3,
+            "y0": 4,
+            "c": 2
+        },
+        "stem": "The variables \\(x\\) and \\(y\\) satisfy \\(\\dfrac{dy}{dx}={k|raw}y\\), and \\(y={y0|int}\\) when \\(x=0\\). Find the value of \\(y\\) when \\(x={c|int}\\).",
+        "answer": {
+            "expression": "y0*math.pow(2.718281828459045,k*c)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\displaystyle\\int\\frac{1}{y}\\,dy=\\int{k|raw}\\,dx\\), so \\(\\ln y={k|raw}x+C\\); \\(x=0\\), \\(y={y0|int}\\) gives \\(y={y0|int}\\mathrm{e}^{{k|raw}x}\\)",
+                "result": "k*c",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Separate, integrate both sides and use the condition to find the constant."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(y={y0|int}\\mathrm{e}^{{kc|raw}}={A|sf3z}\\)",
+                "result": "y0*math.pow(2.718281828459045,k*c)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Evaluate at the given x."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original dy/dx = 0.3y, y = 4 at x = 0, y = 7.29 at x = 2"
+            },
+            {
+                "id": "bacteria",
+                "stem": "The number of bacteria \\(y\\) (in thousands) at time \\(x\\) hours satisfies \\(\\dfrac{dy}{dx}={k|raw}y\\), and \\(y={y0|int}\\) when \\(x=0\\). Treating \\(y\\) as continuous, find \\(y\\) when \\(x={c|int}\\)."
+            },
+            {
+                "id": "solve",
+                "stem": "Solve the differential equation \\(\\dfrac{dy}{dx}={k|raw}y\\), given that \\(y={y0|int}\\) when \\(x=0\\), and hence find \\(y\\) when \\(x={c|int}\\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-10.1"
+            ],
+            "topic": "Differential equations",
+            "chapter": "P23-10",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-10-1.json",
+                "locator": "P23-10.1-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-10.1-QC2-gen",
+        "section": "P23-10.1",
+        "kind": "generated",
+        "title": "Solution of dy/dx = x/y",
+        "marks": 2,
+        "source": "Theory P23-10.1 Quick check 2; y squared = x squared + a squared",
+        "params": [
+            {
+                "name": "a",
+                "min": 1,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 1,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "a2": "a*a",
+            "A": "math.pow(a*a+b*b,0.5)"
+        },
+        "constraints": [
+            "a>0"
+        ],
+        "original": {
+            "a": 3,
+            "b": 4
+        },
+        "stem": "The variables \\(x\\) and \\(y\\) satisfy \\(\\dfrac{dy}{dx}=\\dfrac{x}{y}\\), where \\(y\\gt 0\\), and \\(y={a|int}\\) when \\(x=0\\). Find the value of \\(y\\) when \\(x={b|int}\\).",
+        "answer": {
+            "expression": "math.pow(a*a+b*b,0.5)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\displaystyle\\int y\\,dy=\\int x\\,dx\\), so \\(\\tfrac{1}{2}y^2=\\tfrac{1}{2}x^2+C\\); \\(x=0\\), \\(y={a|int}\\) gives \\(y^2=x^2+{a2|int}\\)",
+                "result": "a*a",
+                "format": "int",
+                "mark": "M1",
+                "note": "Separate, integrate and find the constant."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(y=\\sqrt{{b|int}^2+{a2|int}}={A|sf3z}\\)",
+                "result": "math.pow(a*a+b*b,0.5)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Positive root since y > 0."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original y = 3 at x = 0, y = 5 at x = 4"
+            },
+            {
+                "id": "curve",
+                "stem": "A curve, with \\(y\\gt 0\\), has gradient \\(\\dfrac{x}{y}\\) at each point \\((x, y)\\) and passes through \\((0, {a|int})\\). Find the \\(y\\)-coordinate of the point on the curve where \\(x={b|int}\\)."
+            },
+            {
+                "id": "solve",
+                "stem": "Given that \\(y\\dfrac{dy}{dx}=x\\), \\(y\\gt 0\\), and \\(y={a|int}\\) when \\(x=0\\), find \\(y\\) when \\(x={b|int}\\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-10.1"
+            ],
+            "topic": "Differential equations",
+            "chapter": "P23-10",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-10-1.json",
+                "locator": "P23-10.1-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-10.1-QC3-gen",
+        "section": "P23-10.1",
+        "kind": "generated",
+        "title": "Solution of dy/dx = ky/x",
+        "marks": 2,
+        "source": "Theory P23-10.1 Quick check 3; ln y = k ln x + c gives y = y1 x^k",
+        "params": [
+            {
+                "name": "k",
+                "min": 2,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "y1",
+                "min": 2,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "a",
+                "min": 2,
+                "max": 4,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "A": "y1*math.pow(a,k)"
+        },
+        "constraints": [
+            "k>1"
+        ],
+        "original": {
+            "k": 2,
+            "y1": 3,
+            "a": 2
+        },
+        "stem": "The variables \\(x\\) and \\(y\\) satisfy \\(\\dfrac{dy}{dx}=\\dfrac{{k|int}y}{x}\\) for \\(x\\gt 0\\), \\(y\\gt 0\\), and \\(y={y1|int}\\) when \\(x=1\\). Find the value of \\(y\\) when \\(x={a|int}\\).",
+        "answer": {
+            "expression": "y1*math.pow(a,k)",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\displaystyle\\int\\frac{1}{y}\\,dy=\\int\\frac{{k|int}}{x}\\,dx\\), so \\(\\ln y={k|int}\\ln x+C\\); \\(x=1\\), \\(y={y1|int}\\) gives \\(y={y1|int}x^{{k|int}}\\)",
+                "result": "k",
+                "format": "int",
+                "mark": "M1",
+                "note": "Separate, integrate and use the condition."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(y={y1|int}\\times{a|int}^{{k|int}}={A|int}\\)",
+                "result": "y1*math.pow(a,k)",
+                "format": "int",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original dy/dx = 2y/x, y = 3 at x = 1, y = 12 at x = 2"
+            },
+            {
+                "id": "curve",
+                "stem": "A curve in the first quadrant has gradient \\(\\dfrac{{k|int}y}{x}\\) at the point \\((x, y)\\) and passes through \\((1, {y1|int})\\). Find \\(y\\) when \\(x={a|int}\\)."
+            },
+            {
+                "id": "solve",
+                "stem": "Solve \\(x\\dfrac{dy}{dx}={k|int}y\\), given that \\(y={y1|int}\\) when \\(x=1\\) and \\(x\\gt 0\\), \\(y\\gt 0\\). Hence find \\(y\\) when \\(x={a|int}\\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-10.1"
+            ],
+            "topic": "Differential equations",
+            "chapter": "P23-10",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-10-1.json",
+                "locator": "P23-10.1-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-10.1-PP-9709-32-MJ12-Q5",
+        "section": "P23-10.1",
+        "kind": "pastpaper",
+        "title": "Solving dy/dx = e^(2x + y)",
+        "marks": 6,
+        "source": {
+            "paper": "9709/32/M/J/12 Q5",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s12_qp_32.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s12_ms_32.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>The variables \\(x\\) and \\(y\\) satisfy the differential equation</p><p>\\(\\displaystyle\\frac{dy}{dx}=\\mathrm{e}^{2x+y},\\)</p><p>and \\(y=0\\) when \\(x=0\\). Solve the differential equation, obtaining an expression for \\(y\\) in terms of \\(x\\). [6]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-10.1"
+            ],
+            "topic": "Differential equations",
+            "chapter": "P23-10",
+            "marks": 6,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-10-1.json",
+                "locator": "P23-10.1-PP-9709-32-MJ12-Q5"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(\\displaystyle\\int\\mathrm{e}^{-y}\\,dy=\\int\\mathrm{e}^{2x}\\,dx\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, separate variables correctly and attempt integration of both sides."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(-\\mathrm{e}^{-y}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, obtain term −e^(−y), or equivalent."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(\\tfrac{1}{2}\\mathrm{e}^{2x}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, obtain term ½e^(2x), or equivalent."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(x=0\\), \\(y=0\\): \\(-1=\\tfrac{1}{2}+c\\), so \\(c=-\\tfrac{3}{2}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, evaluate a constant, or use limits x = 0, y = 0 in a solution containing terms ae^(−y) and be^(2x)."
+            },
+            {
+                "name": "s5",
+                "text_tex": "\\(-\\mathrm{e}^{-y}=\\tfrac{1}{2}\\mathrm{e}^{2x}-\\tfrac{3}{2}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, obtain correct solution in any form, e.g. −e^(−y) = ½e^(2x) − 3/2."
+            },
+            {
+                "name": "s6",
+                "text_tex": "\\(y=\\ln\\Bigl(\\dfrac{2}{3-\\mathrm{e}^{2x} }\\Bigr)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, rearrange and obtain y = ln(2/(3 − e^(2x))), or equivalent."
+            }
+        ]
+    },
+    {
+        "id": "P23-10.1-PP-9709-31-MJ22-Q4",
+        "section": "P23-10.1",
+        "kind": "pastpaper",
+        "title": "Solving dy/dx = xy/(1 + x^2)",
+        "marks": 7,
+        "source": {
+            "paper": "9709/31/M/J/22 Q4",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s22_qp_31.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s22_ms_31.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>The variables \\(x\\) and \\(y\\) satisfy the differential equation</p><p>\\(\\displaystyle\\frac{dy}{dx}=\\frac{xy}{1+x^2},\\)</p><p>and \\(y=2\\) when \\(x=0\\).</p><p>Solve the differential equation, obtaining a simplified expression for \\(y\\) in terms of \\(x\\). [7]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-10.1"
+            ],
+            "topic": "Differential equations",
+            "chapter": "P23-10",
+            "marks": 7,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-10-1.json",
+                "locator": "P23-10.1-PP-9709-31-MJ22-Q4"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(\\displaystyle\\int\\frac{1}{y}\\,dy=\\int\\frac{x}{1+x^2}\\,dx\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, separate variables correctly; accept without integral signs."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(\\ln y\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, obtain term ln y."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(k\\ln(1+x^2)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, state term of the form k ln(1 + x²)."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(\\tfrac{1}{2}\\ln(1+x^2)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 OE, state correct term ½ ln(1 + x²)."
+            },
+            {
+                "name": "s5",
+                "text_tex": "\\(x=0\\), \\(y=2\\): \\(\\ln2=\\tfrac{1}{2}\\ln1+c\\), so \\(c=\\ln2\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, evaluate a constant, or use limits x = 0, y = 2, in a solution containing terms a ln y and b ln(1 + x²) where ab ≠ 0; if logs are removed first the constant must be of the correct form."
+            },
+            {
+                "name": "s6",
+                "text_tex": "\\(\\ln y=\\tfrac{1}{2}\\ln(1+x^2)+\\ln2\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, obtain correct solution in any form."
+            },
+            {
+                "name": "s7",
+                "text_tex": "\\(y=2\\sqrt{1+x^2}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 OE, simplify and obtain y = 2√(1 + x²); the question asks for simplification, so exp(ln(…)) must be dealt with."
+            }
+        ]
+    }
+]

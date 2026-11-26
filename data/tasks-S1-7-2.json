@@ -1,0 +1,410 @@
+[
+    {
+        "id": "S1-7.2-QC1-gen",
+        "section": "S1-7.2",
+        "kind": "generated",
+        "title": "Geometric probability of the first success on trial r",
+        "marks": 2,
+        "source": "Theory S1-7.2 Quick check 1; P(X = r) = q^(r-1) p",
+        "params": [
+            {
+                "name": "p",
+                "min": 0.1,
+                "max": 0.5,
+                "step": 0.05
+            },
+            {
+                "name": "r",
+                "min": 2,
+                "max": 6,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "q": "1-p",
+            "m": "r-1",
+            "A": "math.pow(1-p,r-1)*p"
+        },
+        "constraints": [
+            "p>0"
+        ],
+        "original": {
+            "p": 0.3,
+            "r": 4
+        },
+        "stem": "The random variable \\(X\\) has the distribution \\(\\mathrm{Geo}({p|raw})\\). Find \\(P(X={r|int})\\).",
+        "answer": {
+            "expression": "math.pow(q,m)*p",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(P(X={r|int})=q^{r-1}p={q|raw}^{{m|int}}\\times{p|raw}\\)",
+                "result": "math.pow(q,m)",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "The first r - 1 trials are failures and trial r is the first success."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(P(X={r|int})={A|sf3z}\\)",
+                "result": "math.pow(q,m)*p",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original Geo(0.3), P(X = 4) = 0.103"
+            },
+            {
+                "id": "darts",
+                "stem": "Each time Ravi throws a dart, the probability that he hits the bullseye is \\({p|raw}\\), independently of other throws. He throws darts until he first hits the bullseye. Find the probability that he needs exactly \\({r|int}\\) throws."
+            },
+            {
+                "id": "spinner",
+                "stem": "A spinner lands on red with probability \\({p|raw}\\) on each spin, independently of other spins. It is spun until it first lands on red. Find the probability that the first red is obtained on spin number \\({r|int}\\)."
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-7.2"
+            ],
+            "topic": "The binomial and geometric distributions",
+            "chapter": "S1-7",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-7-2.json",
+                "locator": "S1-7.2-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-7.2-QC2-gen",
+        "section": "S1-7.2",
+        "kind": "generated",
+        "title": "Geometric probability that more than r trials are needed",
+        "marks": 2,
+        "source": "Theory S1-7.2 Quick check 2; P(X > r) = q^r",
+        "params": [
+            {
+                "name": "p",
+                "min": 0.1,
+                "max": 0.5,
+                "step": 0.05
+            },
+            {
+                "name": "r",
+                "min": 3,
+                "max": 8,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "q": "1-p",
+            "A": "math.pow(1-p,r)"
+        },
+        "constraints": [
+            "p>0"
+        ],
+        "original": {
+            "p": 0.25,
+            "r": 5
+        },
+        "stem": "The random variable \\(X\\) has the distribution \\(\\mathrm{Geo}({p|raw})\\). Find \\(P(X\\gt {r|int})\\).",
+        "answer": {
+            "expression": "math.pow(q,r)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(P(X\\gt {r|int})\\) is the probability that the first \\({r|int}\\) trials are all failures, with \\(q=1-{p|raw}={q|raw}\\).",
+                "result": "q",
+                "format": "raw",
+                "mark": "M1",
+                "note": "More than r trials are needed exactly when the first r trials all fail."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(P(X\\gt {r|int})={q|raw}^{{r|int}}={A|sf3z}\\)",
+                "result": "math.pow(q,r)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Evaluate q to the power r."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original Geo(0.25), P(X > 5) = 0.237"
+            },
+            {
+                "id": "machine",
+                "stem": "On any day, the probability that a certain machine breaks down is \\({p|raw}\\), independently of other days. Find the probability that the machine has not broken down by the end of day \\({r|int}\\)."
+            },
+            {
+                "id": "puzzle",
+                "stem": "Each time Mia attempts a puzzle, the probability that she solves it is \\({p|raw}\\), independently of other attempts. She keeps trying until she solves it. Find the probability that she needs more than \\({r|int}\\) attempts."
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-7.2"
+            ],
+            "topic": "The binomial and geometric distributions",
+            "chapter": "S1-7",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-7-2.json",
+                "locator": "S1-7.2-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-7.2-QC3-gen",
+        "section": "S1-7.2",
+        "kind": "generated",
+        "title": "Geometric probability of success within r trials",
+        "marks": 2,
+        "source": "Theory S1-7.2 Quick check 3; P(X <= r) = 1 - q^r with p = 1/k",
+        "params": [
+            {
+                "name": "k",
+                "min": 3,
+                "max": 8,
+                "step": 1
+            },
+            {
+                "name": "r",
+                "min": 2,
+                "max": 6,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "k1": "k-1",
+            "A": "1-math.pow((k-1)/k,r)"
+        },
+        "constraints": [
+            "k>2"
+        ],
+        "original": {
+            "k": 6,
+            "r": 3
+        },
+        "stem": "A fair spinner has \\({k|int}\\) equal sectors numbered 1 to \\({k|int}\\). It is spun repeatedly until a 1 is obtained. Find the probability that a 1 is obtained in at most \\({r|int}\\) spins.",
+        "answer": {
+            "expression": "1-math.pow(k1/k,r)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(P(X\\le {r|int})=1-P(X\\gt {r|int})=1-\\Bigl(\\dfrac{{k1|int}}{{k|int}}\\Bigr)^{{r|int}}\\)",
+                "result": "math.pow(k1/k,r)",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Use 1 - q to the power r, or add the first r geometric terms."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(P(X\\le {r|int})={A|sf3z}\\)",
+                "result": "1-math.pow(k1/k,r)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 6 sectors, at most 3 spins, 0.421"
+            },
+            {
+                "id": "geo",
+                "stem": "The random variable \\(X\\) has the distribution \\(\\mathrm{Geo}\\bigl(\\tfrac{1}{{k|int}}\\bigr)\\). Find \\(P(X\\le {r|int})\\)."
+            },
+            {
+                "id": "computer",
+                "stem": "Every second a computer chooses a whole number from 1 to \\({k|int}\\) at random, each number being equally likely. Find the probability that the number 1 is chosen for the first time within the first \\({r|int}\\) seconds."
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-7.2"
+            ],
+            "topic": "The binomial and geometric distributions",
+            "chapter": "S1-7",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-7-2.json",
+                "locator": "S1-7.2-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-7.2-PP-9709-52-MJ21-Q1",
+        "section": "S1-7.2",
+        "kind": "pastpaper",
+        "title": "Throwing a die until a 5 is obtained",
+        "marks": 5,
+        "source": {
+            "paper": "9709/52/M/J/21 Q1",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s21_qp_52.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s21_ms_52.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>An ordinary fair die is thrown repeatedly until a 5 is obtained. The number of throws taken is denoted by the random variable \\(X\\).</p><p>(a) Write down the mean of \\(X\\). [1]</p><p>(b) Find the probability that a 5 is first obtained after the 3rd throw but before the 8th throw. [2]</p><p>(c) Find the probability that a 5 is first obtained in fewer than 10 throws. [2]</p>",
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-7.2"
+            ],
+            "topic": "The binomial and geometric distributions",
+            "chapter": "S1-7",
+            "marks": 5,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-7-2.json",
+                "locator": "S1-7.2-PP-9709-52-MJ21-Q1"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) \\(X\\sim\\mathrm{Geo}\\bigl(\\tfrac{1}{6}\\bigr)\\), so \\(E(X)=\\dfrac{1}{1/6}=6\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 WWW, 6."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(b) \\(P(4\\le X\\le 7)=\\bigl(\\tfrac{5}{6}\\bigr)^3\\tfrac{1}{6}+\\bigl(\\tfrac{5}{6}\\bigr)^4\\tfrac{1}{6}+\\bigl(\\tfrac{5}{6}\\bigr)^5\\tfrac{1}{6}+\\bigl(\\tfrac{5}{6}\\bigr)^6\\tfrac{1}{6}\\), or \\(\\bigl(\\tfrac{5}{6}\\bigr)^3-\\bigl(\\tfrac{5}{6}\\bigr)^7\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, p³(1 – p) + p⁴(1 – p) + p⁵(1 – p) + p⁶(1 – p), 0 < p < 1 (here p = 5/6). Alternative method: M1 for p³ – p⁷, 0 < p < 1."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(b) \\(=0.300\\) (0.2996…)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 0.300 (0.2996…); at least 3 s.f., award at most accurate value."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(c) \\(P(X\\lt 10)=1-\\bigl(\\tfrac{5}{6}\\bigr)^9\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, 1 – pⁿ, 0 < p < 1, n = 9, 10; or the sum p + p(1 – p) + … + p(1 – p)⁸ (+ p(1 – p)⁹), as per answer for minimum terms shown."
+            },
+            {
+                "name": "s5",
+                "text_tex": "(c) \\(=0.806\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 0.806."
+            }
+        ]
+    },
+    {
+        "id": "S1-7.2-PP-9709-53-MJ23-Q1",
+        "section": "S1-7.2",
+        "kind": "pastpaper",
+        "title": "Throwing two coins until a pair of heads is obtained",
+        "marks": 4,
+        "source": {
+            "paper": "9709/53/M/J/23 Q1",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s23_qp_53.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s23_ms_53.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Two fair coins are thrown at the same time repeatedly until a pair of heads is obtained. The number of throws taken is denoted by the random variable \\(X\\).</p><p>(a) State the value of \\(E(X)\\). [1]</p><p>(b) Find the probability that exactly 5 throws are required to obtain a pair of heads. [1]</p><p>(c) Find the probability that fewer than 7 throws are required to obtain a pair of heads. [2]</p>",
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-7.2"
+            ],
+            "topic": "The binomial and geometric distributions",
+            "chapter": "S1-7",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-7-2.json",
+                "locator": "S1-7.2-PP-9709-53-MJ23-Q1"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) \\(P(HH)=\\tfrac{1}{4}\\), so \\(E(X)=4\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, E(X) = 4."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(b) \\(P(X=5)=\\bigl(\\tfrac{3}{4}\\bigr)^4\\times\\tfrac{1}{4}=\\dfrac{81}{1024}=0.0791\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, 81/1024 or 0.0791."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(c) \\(P(X\\lt 7)=1-\\bigl(\\tfrac{3}{4}\\bigr)^6\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, 1 – pⁿ, 0 < p < 1, n = 6, 7; or p + p(1 – p) + … + p(1 – p)ⁿ where n = 4, 5."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(c) \\(=\\dfrac{3367}{4096}=0.822\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 3367/4096 or 0.822; accept 0.82202148… to at least 3 s.f."
+            }
+        ]
+    }
+]

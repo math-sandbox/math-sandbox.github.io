@@ -837,7 +837,8 @@
     "term": "trial",
     "definition": "One repeat of an experiment.",
     "sections": [
-      "S1-4.1"
+      "S1-4.1",
+      "S1-7.2"
     ],
     "first_section": "S1-4.1",
     "type": "term",
@@ -1012,7 +1013,8 @@
     "term": "continuous random variable",
     "definition": "A random variable that can take any value in an interval, such as a time or a mass.",
     "sections": [
-      "S2-4.1"
+      "S2-4.1",
+      "S1-8.1"
     ],
     "first_section": "S2-4.1",
     "type": "term",
@@ -1038,7 +1040,8 @@
     "term": "probability density",
     "definition": "The height of a PDF or of a histogram scaled so that its total area is 1; it is not a probability and can be more than 1.",
     "sections": [
-      "S2-4.1"
+      "S2-4.1",
+      "S1-8.1"
     ],
     "first_section": "S2-4.1",
     "type": "term",
@@ -1280,7 +1283,8 @@
     "definition": "The arbitrary constant c added to an indefinite integral, because constants differentiate to zero.",
     "sections": [
       "P23-5.1",
-      "P23-5.3"
+      "P23-5.3",
+      "P23-10.1"
     ],
     "first_section": "P23-5.1",
     "type": "term",
@@ -1430,7 +1434,9 @@
     "sections": [
       "P23-4.1",
       "P23-4.3",
-      "IGCSE-18.7"
+      "IGCSE-18.7",
+      "P1-8.2",
+      "P1-8.3"
     ],
     "first_section": "P23-4.1",
     "type": "term",
@@ -1518,7 +1524,8 @@
       "P23-4.5",
       "P23-4.7",
       "P23-8.1",
-      "P23-8.3"
+      "P23-8.3",
+      "P1-8.4"
     ],
     "first_section": "P23-4.3",
     "type": "term",
@@ -2854,7 +2861,8 @@
     "definition": "A procedure that asks whether an observed result could reasonably have happened by chance under a stated claim, or whether the chance of such a result is small enough to be called statistically significant. A test cannot prove a claim with certainty.",
     "sections": [
       "S2-1.1",
-      "S2-2.5"
+      "S2-2.5",
+      "S2-6.2"
     ],
     "first_section": "S2-1.1",
     "type": "term",
@@ -2869,7 +2877,8 @@
     "definition": "The claim under test, written H0. In this subsection it is a stated value of a binomial probability p, and the test asks whether the data are consistent with that value.",
     "sections": [
       "S2-1.1",
-      "S2-2.5"
+      "S2-2.5",
+      "S2-6.2"
     ],
     "first_section": "S2-1.1",
     "type": "term",
@@ -2883,7 +2892,8 @@
     "definition": "The competing claim, written H1. In this subsection the alternative is one-tailed: either p is less than the value in H0, or p is greater than that value, but not both.",
     "sections": [
       "S2-1.1",
-      "S2-2.5"
+      "S2-2.5",
+      "S2-6.2"
     ],
     "first_section": "S2-1.1",
     "type": "term",
@@ -2897,7 +2907,8 @@
     "definition": "The threshold, often 5% or 10%, used to decide whether an observed tail probability is small enough to reject H0. It must be compared with the calculated tail, or used to read a critical value, before a conclusion is written.",
     "sections": [
       "S2-1.1",
-      "S2-2.5"
+      "S2-2.5",
+      "S2-6.2"
     ],
     "first_section": "S2-1.1",
     "type": "term",
@@ -2938,7 +2949,8 @@
     "term": "critical value",
     "definition": "The boundary value of the test statistic that marks the edge of the critical region. For a one-tailed binomial test it is the largest (or smallest) integer in that tail for which the tail probability is still no greater than the significance level.",
     "sections": [
-      "S2-1.1"
+      "S2-1.1",
+      "S2-6.2"
     ],
     "first_section": "S2-1.1",
     "type": "term",
@@ -2951,7 +2963,8 @@
     "term": "test statistic",
     "definition": "The observed quantity on which the test is based. In this subsection it is usually the number of successes X, or a continuity-corrected z-value when a normal approximation is used.",
     "sections": [
-      "S2-1.1"
+      "S2-1.1",
+      "S2-6.2"
     ],
     "first_section": "S2-1.1",
     "type": "term",
@@ -5950,7 +5963,8 @@
     "term": "success",
     "definition": "In a binomial or geometric model, the outcome of a trial that is being counted. The other outcome is called failure.",
     "sections": [
-      "S1-7.1"
+      "S1-7.1",
+      "S1-7.2"
     ],
     "first_section": "S1-7.1",
     "type": "term",
@@ -5979,7 +5993,8 @@
     "term": "central limit theorem",
     "definition": "For a large random sample from any population with mean μ and variance σ², the sample mean is approximately normally distributed with mean μ and variance σ²/n.",
     "sections": [
-      "S2-5.2"
+      "S2-5.2",
+      "S2-6.3"
     ],
     "first_section": "S2-5.2",
     "type": "term",
@@ -6111,7 +6126,8 @@
     "term": "vector",
     "definition": "A quantity with both magnitude and direction, such as a displacement, written as a column or with i, j and k.",
     "sections": [
-      "P23-9.1"
+      "P23-9.1",
+      "IGCSE-23.3"
     ],
     "first_section": "P23-9.1",
     "type": "term",
@@ -6125,7 +6141,8 @@
     "term": "magnitude",
     "definition": "The size or length of a vector: for ai + bj + ck it is √(a² + b² + c²).",
     "sections": [
-      "P23-9.1"
+      "P23-9.1",
+      "IGCSE-23.3"
     ],
     "first_section": "P23-9.1",
     "type": "term",
@@ -6164,7 +6181,8 @@
     "term": "position vector",
     "definition": "The vector from the origin O to a point; the position vector of A is written a or OA.",
     "sections": [
-      "P23-9.2"
+      "P23-9.2",
+      "IGCSE-23.3"
     ],
     "first_section": "P23-9.2",
     "type": "term",
@@ -6306,7 +6324,8 @@
     "term": "second derivative",
     "definition": "The result of differentiating a function twice, written d²y/dx² or f''(x).",
     "sections": [
-      "P1-7.4"
+      "P1-7.4",
+      "P1-8.2"
     ],
     "first_section": "P1-7.4",
     "type": "term",
@@ -6341,6 +6360,289 @@
     "match": [
       "decreasing functions",
       "decreasing function"
+    ]
+  },
+  {
+    "id": "geometric-distribution",
+    "term": "geometric distribution",
+    "definition": "The distribution of the number of independent trials, each with the same probability p of success, up to and including the first success. If X ~ Geo(p), then P(X = r) = (1 − p) to the power r − 1 times p, for r = 1, 2, 3, …, and E(X) = 1/p.",
+    "sections": [
+      "S1-7.2"
+    ],
+    "first_section": "S1-7.2",
+    "type": "term",
+    "match": [
+      "geometric distributions",
+      "geometric distribution"
+    ]
+  },
+  {
+    "id": "normal-distribution",
+    "term": "normal distribution",
+    "definition": "A continuous distribution whose probability density graph is a symmetrical bell-shaped curve centred on the mean μ. It is written N(μ, σ²), where σ² is the variance.",
+    "sections": [
+      "S1-8.2"
+    ],
+    "first_section": "S1-8.2",
+    "type": "term",
+    "match": [
+      "normal distributions",
+      "normal distribution"
+    ]
+  },
+  {
+    "id": "standard-normal-distribution",
+    "term": "standard normal distribution",
+    "definition": "The normal distribution with mean 0 and variance 1, written Z ~ N(0, 1). Its cumulative probabilities Φ(z) = P(Z < z) are given in tables.",
+    "sections": [
+      "S1-8.2"
+    ],
+    "first_section": "S1-8.2",
+    "type": "term",
+    "match": [
+      "standard normal distribution"
+    ]
+  },
+  {
+    "id": "standardise",
+    "term": "standardise",
+    "definition": "To change a value x of X ~ N(μ, σ²) into z = (x − μ)/σ, the corresponding value of the standard normal distribution.",
+    "sections": [
+      "S1-8.2"
+    ],
+    "first_section": "S1-8.2",
+    "type": "term",
+    "match": [
+      "standardising",
+      "standardised",
+      "standardise"
+    ]
+  },
+  {
+    "id": "confidence-interval",
+    "term": "confidence interval",
+    "definition": "An interval calculated from a sample that is expected to contain an unknown population parameter in a stated proportion of samples. For a population mean it is x̄ ± z σ/√n.",
+    "sections": [
+      "S2-6.3"
+    ],
+    "first_section": "S2-6.3",
+    "type": "term",
+    "match": [
+      "confidence intervals",
+      "confidence interval"
+    ]
+  },
+  {
+    "id": "reflection",
+    "term": "reflection",
+    "definition": "A transformation in which every point of the image is the same distance from a mirror line as the object point, on the opposite side. It is described by the equation of the mirror line.",
+    "sections": [
+      "IGCSE-23.1"
+    ],
+    "first_section": "IGCSE-23.1",
+    "type": "term",
+    "match": [
+      "reflections",
+      "reflection"
+    ]
+  },
+  {
+    "id": "rotation",
+    "term": "rotation",
+    "definition": "A transformation that turns a shape about a fixed point, the centre of rotation. It is described by the centre, the angle and the direction.",
+    "sections": [
+      "IGCSE-23.1"
+    ],
+    "first_section": "IGCSE-23.1",
+    "type": "term",
+    "match": [
+      "rotations",
+      "rotation"
+    ]
+  },
+  {
+    "id": "translation",
+    "term": "translation",
+    "definition": "A transformation that moves every point of a shape the same distance in the same direction. It is described by a column vector.",
+    "sections": [
+      "IGCSE-23.1"
+    ],
+    "first_section": "IGCSE-23.1",
+    "type": "term",
+    "match": [
+      "translations",
+      "translation"
+    ]
+  },
+  {
+    "id": "enlargement",
+    "term": "enlargement",
+    "definition": "A transformation that multiplies every distance from a fixed centre by the same scale factor. A scale factor between 0 and 1 makes the image smaller, and a negative scale factor puts the image on the other side of the centre, upside down.",
+    "sections": [
+      "IGCSE-23.1",
+      "IGCSE-23.2"
+    ],
+    "first_section": "IGCSE-23.1",
+    "type": "term",
+    "match": [
+      "enlargements",
+      "enlargement"
+    ]
+  },
+  {
+    "id": "scale-factor",
+    "term": "scale factor",
+    "definition": "The number by which every length is multiplied in an enlargement.",
+    "sections": [
+      "IGCSE-23.1",
+      "IGCSE-23.2"
+    ],
+    "first_section": "IGCSE-23.1",
+    "type": "term",
+    "match": [
+      "scale factors",
+      "scale factor"
+    ]
+  },
+  {
+    "id": "centre-of-enlargement",
+    "term": "centre of enlargement",
+    "definition": "The fixed point from which distances are multiplied by the scale factor in an enlargement. It is found where the lines joining corresponding points of the object and image meet.",
+    "sections": [
+      "IGCSE-23.1"
+    ],
+    "first_section": "IGCSE-23.1",
+    "type": "term",
+    "match": [
+      "centre of enlargement"
+    ]
+  },
+  {
+    "id": "column-vector",
+    "term": "column vector",
+    "definition": "A vector written as two numbers one above the other in brackets: the top number is the movement to the right and the bottom number the movement up.",
+    "sections": [
+      "IGCSE-23.3"
+    ],
+    "first_section": "IGCSE-23.3",
+    "type": "term",
+    "match": [
+      "column vectors",
+      "column vector"
+    ]
+  },
+  {
+    "id": "differential-equation",
+    "term": "differential equation",
+    "definition": "An equation that contains a derivative, such as dy/dx. Solving it means finding a relationship between the variables without derivatives.",
+    "sections": [
+      "P23-10.1",
+      "P23-10.2"
+    ],
+    "first_section": "P23-10.1",
+    "type": "term",
+    "match": [
+      "differential equations",
+      "differential equation"
+    ]
+  },
+  {
+    "id": "separating-the-variables",
+    "term": "separating the variables",
+    "definition": "A method for solving dy/dx = f(x)g(y): rewrite it as the integral of 1/g(y) with respect to y equal to the integral of f(x) with respect to x, then integrate both sides.",
+    "sections": [
+      "P23-10.1"
+    ],
+    "first_section": "P23-10.1",
+    "type": "term",
+    "match": [
+      "separating the variables",
+      "separate the variables"
+    ]
+  },
+  {
+    "id": "general-solution",
+    "term": "general solution",
+    "definition": "The solution of a differential equation that contains an arbitrary constant of integration.",
+    "sections": [
+      "P23-10.1"
+    ],
+    "first_section": "P23-10.1",
+    "type": "term",
+    "match": [
+      "general solutions",
+      "general solution"
+    ]
+  },
+  {
+    "id": "particular-solution",
+    "term": "particular solution",
+    "definition": "The solution of a differential equation found by using a given condition to fix the value of the constant of integration.",
+    "sections": [
+      "P23-10.1"
+    ],
+    "first_section": "P23-10.1",
+    "type": "term",
+    "match": [
+      "particular solutions",
+      "particular solution"
+    ]
+  },
+  {
+    "id": "rate-of-change",
+    "term": "rate of change",
+    "definition": "How fast a quantity changes with respect to another quantity, usually time; the rate of change of y with respect to t is dy/dt.",
+    "sections": [
+      "P23-10.2",
+      "P1-8.4",
+      "P1-8.5"
+    ],
+    "first_section": "P23-10.2",
+    "type": "term",
+    "match": [
+      "rates of change",
+      "rate of change"
+    ]
+  },
+  {
+    "id": "connected-rates-of-change",
+    "term": "connected rates of change",
+    "definition": "Rates of change of two quantities that are linked by a formula, so that the chain rule connects them, for example dV/dt = dV/dr × dr/dt.",
+    "sections": [
+      "P1-8.5"
+    ],
+    "first_section": "P1-8.5",
+    "type": "term",
+    "match": [
+      "connected rates of change"
+    ]
+  },
+  {
+    "id": "maximum-point",
+    "term": "maximum point",
+    "definition": "A stationary point where the gradient changes from positive to negative; there d²y/dx² is negative or zero.",
+    "sections": [
+      "P1-8.2"
+    ],
+    "first_section": "P1-8.2",
+    "type": "term",
+    "match": [
+      "maximum points",
+      "maximum point"
+    ]
+  },
+  {
+    "id": "minimum-point",
+    "term": "minimum point",
+    "definition": "A stationary point where the gradient changes from negative to positive; there d²y/dx² is positive or zero.",
+    "sections": [
+      "P1-8.2"
+    ],
+    "first_section": "P1-8.2",
+    "type": "term",
+    "match": [
+      "minimum points",
+      "minimum point"
     ]
   }
 ]

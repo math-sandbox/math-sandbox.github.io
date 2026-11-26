@@ -1,0 +1,433 @@
+[
+    {
+        "id": "IGCSE-23.2-QC1-gen",
+        "section": "IGCSE-23.2",
+        "kind": "generated",
+        "title": "Enlargement with a fractional scale factor",
+        "marks": 2,
+        "source": "Theory IGCSE-23.2 Quick check 1; scale factor 1/k shrinks the vector from the centre",
+        "params": [
+            {
+                "name": "k",
+                "min": 2,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "c1",
+                "min": -2,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "c2",
+                "min": 0,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "u",
+                "min": 1,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "v",
+                "min": 1,
+                "max": 3,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "x": "c1+k*u",
+            "y": "c2+k*v",
+            "ku": "k*u",
+            "A": "c1+u"
+        },
+        "constraints": [
+            "k>1"
+        ],
+        "original": {
+            "k": 3,
+            "c1": 1,
+            "c2": 1,
+            "u": 2,
+            "v": 1
+        },
+        "stem": "The point \\(P({x|int}, {y|int})\\) is enlarged with scale factor \\(\\tfrac{1}{{k|int}}\\) and centre \\(({c1|int}, {c2|int})\\). Find the \\(x\\)-coordinate of the image of \\(P\\).",
+        "answer": {
+            "expression": "c1+u",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "The horizontal distance from the centre to \\(P\\) is \\({ku|int}\\); multiply by \\(\\tfrac{1}{{k|int}}\\) to get \\({u|int}\\).",
+                "result": "u",
+                "format": "int",
+                "mark": "M1",
+                "note": "A fractional scale factor brings the image closer to the centre."
+            },
+            {
+                "name": "A",
+                "text_tex": "The image has \\(x\\)-coordinate \\({A|int}\\).",
+                "result": "c1+u",
+                "format": "int",
+                "mark": "A1",
+                "note": "Add to the centre's x-coordinate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original P(7, 4), scale factor 1/3, centre (1, 1), image x = 3"
+            },
+            {
+                "id": "vertex",
+                "stem": "A shape with a vertex at \\(({x|int}, {y|int})\\) is enlarged by scale factor \\(\\tfrac{1}{{k|int}}\\), centre \\(({c1|int}, {c2|int})\\). Find the \\(x\\)-coordinate of the image of this vertex."
+            },
+            {
+                "id": "reduce",
+                "stem": "An enlargement with centre \\(({c1|int}, {c2|int})\\) and scale factor \\(\\tfrac{1}{{k|int}}\\) maps the point \\(({x|int}, {y|int})\\) to \\(Q\\). Find the \\(x\\)-coordinate of \\(Q\\)."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-23.2"
+            ],
+            "topic": "Transformations and vectors",
+            "chapter": "IGCSE-23",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-23-2.json",
+                "locator": "IGCSE-23.2-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-23.2-QC2-gen",
+        "section": "IGCSE-23.2",
+        "kind": "generated",
+        "title": "Enlargement with a negative scale factor",
+        "marks": 2,
+        "source": "Theory IGCSE-23.2 Quick check 2; scale factor -k about the origin multiplies both coordinates by -k",
+        "params": [
+            {
+                "name": "k",
+                "min": 2,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "a",
+                "min": 1,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 1,
+                "max": 5,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "A": "0-k*b"
+        },
+        "constraints": [
+            "k>1"
+        ],
+        "original": {
+            "k": 2,
+            "a": 3,
+            "b": 4
+        },
+        "stem": "The point \\(P({a|int}, {b|int})\\) is enlarged with scale factor \\(-{k|int}\\) and centre \\((0, 0)\\). Find the \\(y\\)-coordinate of the image of \\(P\\).",
+        "answer": {
+            "expression": "0-k*b",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "With centre the origin, multiply both coordinates by \\(-{k|int}\\).",
+                "result": "k",
+                "format": "int",
+                "mark": "M1",
+                "note": "The image is on the opposite side of the centre."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(y\\)-coordinate \\(=-{k|int}\\times{b|int}={A|int}\\)",
+                "result": "0-k*b",
+                "format": "int",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original P(3, 4), scale factor -2, image y = -8"
+            },
+            {
+                "id": "triangle",
+                "stem": "A triangle has a vertex at \\(({a|int}, {b|int})\\). It is enlarged by scale factor \\(-{k|int}\\) with centre the origin. Find the \\(y\\)-coordinate of the image of this vertex."
+            },
+            {
+                "id": "negative",
+                "stem": "An enlargement, centre \\((0, 0)\\), has scale factor \\(-{k|int}\\). Find the \\(y\\)-coordinate of the image of the point \\(({a|int}, {b|int})\\)."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-23.2"
+            ],
+            "topic": "Transformations and vectors",
+            "chapter": "IGCSE-23",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-23-2.json",
+                "locator": "IGCSE-23.2-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-23.2-QC3-gen",
+        "section": "IGCSE-23.2",
+        "kind": "generated",
+        "title": "A reflection followed by a translation",
+        "marks": 2,
+        "source": "Theory IGCSE-23.2 Quick check 3; carry out the transformations in order",
+        "params": [
+            {
+                "name": "a",
+                "min": 1,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 1,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "p",
+                "min": -4,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "q",
+                "min": -3,
+                "max": 3,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "m": "0-a",
+            "A": "p-a"
+        },
+        "constraints": [
+            "a>0"
+        ],
+        "original": {
+            "a": 2,
+            "b": 3,
+            "p": 5,
+            "q": -1
+        },
+        "stem": "The point \\(P({a|int}, {b|int})\\) is reflected in the \\(y\\)-axis. The image is then translated by the vector \\(\\begin{pmatrix}{p|int}\\\\{q|int}\\end{pmatrix}\\). Find the \\(x\\)-coordinate of the final image.",
+        "answer": {
+            "expression": "p-a",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "Reflection in the \\(y\\)-axis: \\(({a|int}, {b|int})\\) maps to \\(({m|int}, {b|int})\\).",
+                "result": "0-a",
+                "format": "int",
+                "mark": "M1",
+                "note": "Change the sign of x."
+            },
+            {
+                "name": "A",
+                "text_tex": "The translation moves it \\({p|int}\\) units horizontally, so the final \\(x\\)-coordinate is \\({A|int}\\).",
+                "result": "p-a",
+                "format": "int",
+                "mark": "A1",
+                "note": "Add the top component of the vector."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original P(2, 3), translation (5, -1), final x = 3"
+            },
+            {
+                "id": "two-step",
+                "stem": "Transformation \\(\\mathbf{M}\\) is a reflection in the \\(y\\)-axis and transformation \\(\\mathbf{T}\\) is a translation by \\(\\begin{pmatrix}{p|int}\\\\{q|int}\\end{pmatrix}\\). The point \\(({a|int}, {b|int})\\) is transformed by \\(\\mathbf{M}\\) and then by \\(\\mathbf{T}\\). Find the \\(x\\)-coordinate of the final image."
+            },
+            {
+                "id": "game",
+                "stem": "In a computer game, a point at \\(({a|int}, {b|int})\\) is first reflected in the \\(y\\)-axis and then moved by the translation \\(\\begin{pmatrix}{p|int}\\\\{q|int}\\end{pmatrix}\\). Find its final \\(x\\)-coordinate."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-23.2"
+            ],
+            "topic": "Transformations and vectors",
+            "chapter": "IGCSE-23",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-23-2.json",
+                "locator": "IGCSE-23.2-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-23.2-PP-0580-21-ON17-Q16",
+        "section": "IGCSE-23.2",
+        "kind": "pastpaper",
+        "title": "Describing an enlargement with a fractional scale factor",
+        "marks": 3,
+        "source": {
+            "paper": "0580/21/O/N/17 Q16",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w17_qp_21.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w17_ms_21.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p><svg viewBox=\"0 0 336 310\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"ig232a-t ig232a-d\" style=\"width:100%;max-width:336px;height:auto\"><title id=\"ig232a-t\">Triangles A and B on a grid</title><desc id=\"ig232a-d\">Grid with x from 0 to 12 and y from 0 to 11. Shaded triangle A has vertices (5, 7), (8, 10) and (11, 1). Triangle B has vertices (3, 3), (4, 4) and (5, 1).</desc><line x1=\"26.0\" y1=\"286.0\" x2=\"26.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"50.0\" y1=\"286.0\" x2=\"50.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"74.0\" y1=\"286.0\" x2=\"74.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"98.0\" y1=\"286.0\" x2=\"98.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"122.0\" y1=\"286.0\" x2=\"122.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"146.0\" y1=\"286.0\" x2=\"146.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"170.0\" y1=\"286.0\" x2=\"170.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"194.0\" y1=\"286.0\" x2=\"194.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"218.0\" y1=\"286.0\" x2=\"218.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"242.0\" y1=\"286.0\" x2=\"242.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"266.0\" y1=\"286.0\" x2=\"266.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"290.0\" y1=\"286.0\" x2=\"290.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"314.0\" y1=\"286.0\" x2=\"314.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"286.0\" x2=\"314.0\" y2=\"286.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"262.0\" x2=\"314.0\" y2=\"262.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"238.0\" x2=\"314.0\" y2=\"238.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"214.0\" x2=\"314.0\" y2=\"214.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"190.0\" x2=\"314.0\" y2=\"190.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"166.0\" x2=\"314.0\" y2=\"166.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"142.0\" x2=\"314.0\" y2=\"142.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"118.0\" x2=\"314.0\" y2=\"118.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"94.0\" x2=\"314.0\" y2=\"94.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"70.0\" x2=\"314.0\" y2=\"70.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"46.0\" x2=\"314.0\" y2=\"46.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"22.0\" x2=\"314.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"286.0\" x2=\"326.0\" y2=\"286.0\" stroke=\"#1a1a1a\" stroke-width=\"1.2\"/><path d=\"M 332.0 286.0 L 324.0 282.5 L 324.0 289.5 Z\" fill=\"#1a1a1a\"/><line x1=\"26.0\" y1=\"286.0\" x2=\"26.0\" y2=\"10.0\" stroke=\"#1a1a1a\" stroke-width=\"1.2\"/><path d=\"M 26.0 4.0 L 22.5 12.0 L 29.5 12.0 Z\" fill=\"#1a1a1a\"/><text x=\"330.0\" y=\"300.0\" font-size=\"12\" font-family=\"serif\" font-style=\"italic\">x</text><text x=\"14.0\" y=\"14.0\" font-size=\"12\" font-family=\"serif\" font-style=\"italic\">y</text><text x=\"22.0\" y=\"299.0\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"end\">0</text><text x=\"50.0\" y=\"299.0\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"middle\">1</text><text x=\"74.0\" y=\"299.0\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"middle\">2</text><text x=\"98.0\" y=\"299.0\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"middle\">3</text><text x=\"122.0\" y=\"299.0\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"middle\">4</text><text x=\"146.0\" y=\"299.0\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"middle\">5</text><text x=\"170.0\" y=\"299.0\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"middle\">6</text><text x=\"194.0\" y=\"299.0\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"middle\">7</text><text x=\"218.0\" y=\"299.0\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"middle\">8</text><text x=\"242.0\" y=\"299.0\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"middle\">9</text><text x=\"266.0\" y=\"299.0\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"middle\">10</text><text x=\"290.0\" y=\"299.0\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"middle\">11</text><text x=\"314.0\" y=\"299.0\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"middle\">12</text><text x=\"22.0\" y=\"265.5\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"end\">1</text><text x=\"22.0\" y=\"241.5\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"end\">2</text><text x=\"22.0\" y=\"217.5\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"end\">3</text><text x=\"22.0\" y=\"193.5\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"end\">4</text><text x=\"22.0\" y=\"169.5\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"end\">5</text><text x=\"22.0\" y=\"145.5\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"end\">6</text><text x=\"22.0\" y=\"121.5\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"end\">7</text><text x=\"22.0\" y=\"97.5\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"end\">8</text><text x=\"22.0\" y=\"73.5\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"end\">9</text><text x=\"22.0\" y=\"49.5\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"end\">10</text><text x=\"22.0\" y=\"25.5\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"end\">11</text><polygon points=\"146.0,118.0 218.0,46.0 290.0,262.0\" fill=\"#bdbdbd\" fill-opacity=\"0.8\" stroke=\"#1a1a1a\" stroke-width=\"1.4\"/><text x=\"218.0\" y=\"146.0\" font-size=\"12\" font-family=\"serif\" font-style=\"italic\" text-anchor=\"middle\">A</text><polygon points=\"98.0,214.0 122.0,190.0 146.0,262.0\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.4\"/><text x=\"122.0\" y=\"225.2\" font-size=\"12\" font-family=\"serif\" font-style=\"italic\" text-anchor=\"middle\">B</text></svg></p><p>Describe fully the single transformation that maps triangle \\(A\\) onto triangle \\(B\\). [3]</p>",
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-23.2"
+            ],
+            "topic": "Transformations and vectors",
+            "chapter": "IGCSE-23",
+            "marks": 3,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-23-2.json",
+                "locator": "IGCSE-23.2-PP-0580-21-ON17-Q16"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "Enlargement",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: Enlargement, 1 mark."
+            },
+            {
+                "name": "s2",
+                "text_tex": "Scale factor \\(\\tfrac{1}{3}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: 1/3, 1 mark."
+            },
+            {
+                "name": "s3",
+                "text_tex": "Centre \\((2, 1)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: (2, 1), 1 mark."
+            }
+        ]
+    },
+    {
+        "id": "IGCSE-23.2-PP-0580-23-MJ21-Q10",
+        "section": "IGCSE-23.2",
+        "kind": "pastpaper",
+        "title": "Translation and a negative fractional enlargement",
+        "marks": 4,
+        "source": {
+            "paper": "0580/23/M/J/21 Q10",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s21_qp_23.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s21_ms_23.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p><svg viewBox=\"0 0 400 398\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"ig232b-t ig232b-d\" style=\"width:100%;max-width:400px;height:auto\"><title id=\"ig232b-t\">Triangles T and A on a grid</title><desc id=\"ig232b-d\">Grid with x from −8 to 8 and y from −8 to 8, labelled every 2 units. Shaded triangle T has vertices (2, 2), (2, 4) and (8, 2). Triangle A has vertices (1, −4), (1, −6) and (7, −6).</desc><line x1=\"26.0\" y1=\"374.0\" x2=\"26.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"48.0\" y1=\"374.0\" x2=\"48.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"70.0\" y1=\"374.0\" x2=\"70.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"92.0\" y1=\"374.0\" x2=\"92.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"114.0\" y1=\"374.0\" x2=\"114.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"136.0\" y1=\"374.0\" x2=\"136.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"158.0\" y1=\"374.0\" x2=\"158.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"180.0\" y1=\"374.0\" x2=\"180.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"202.0\" y1=\"374.0\" x2=\"202.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"224.0\" y1=\"374.0\" x2=\"224.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"246.0\" y1=\"374.0\" x2=\"246.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"268.0\" y1=\"374.0\" x2=\"268.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"290.0\" y1=\"374.0\" x2=\"290.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"312.0\" y1=\"374.0\" x2=\"312.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"334.0\" y1=\"374.0\" x2=\"334.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"356.0\" y1=\"374.0\" x2=\"356.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"378.0\" y1=\"374.0\" x2=\"378.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"374.0\" x2=\"378.0\" y2=\"374.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"352.0\" x2=\"378.0\" y2=\"352.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"330.0\" x2=\"378.0\" y2=\"330.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"308.0\" x2=\"378.0\" y2=\"308.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"286.0\" x2=\"378.0\" y2=\"286.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"264.0\" x2=\"378.0\" y2=\"264.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"242.0\" x2=\"378.0\" y2=\"242.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"220.0\" x2=\"378.0\" y2=\"220.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"198.0\" x2=\"378.0\" y2=\"198.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"176.0\" x2=\"378.0\" y2=\"176.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"154.0\" x2=\"378.0\" y2=\"154.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"132.0\" x2=\"378.0\" y2=\"132.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"110.0\" x2=\"378.0\" y2=\"110.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"88.0\" x2=\"378.0\" y2=\"88.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"66.0\" x2=\"378.0\" y2=\"66.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"44.0\" x2=\"378.0\" y2=\"44.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"22.0\" x2=\"378.0\" y2=\"22.0\" stroke=\"#9a9a9a\" stroke-width=\"0.6\" stroke-dasharray=\"2 2\"/><line x1=\"26.0\" y1=\"198.0\" x2=\"390.0\" y2=\"198.0\" stroke=\"#1a1a1a\" stroke-width=\"1.2\"/><path d=\"M 396.0 198.0 L 388.0 194.5 L 388.0 201.5 Z\" fill=\"#1a1a1a\"/><line x1=\"202.0\" y1=\"374.0\" x2=\"202.0\" y2=\"10.0\" stroke=\"#1a1a1a\" stroke-width=\"1.2\"/><path d=\"M 202.0 4.0 L 198.5 12.0 L 205.5 12.0 Z\" fill=\"#1a1a1a\"/><text x=\"394.0\" y=\"212.0\" font-size=\"12\" font-family=\"serif\" font-style=\"italic\">x</text><text x=\"190.0\" y=\"14.0\" font-size=\"12\" font-family=\"serif\" font-style=\"italic\">y</text><text x=\"26.0\" y=\"211.0\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"middle\">−8</text><text x=\"70.0\" y=\"211.0\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"middle\">−6</text><text x=\"114.0\" y=\"211.0\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"middle\">−4</text><text x=\"158.0\" y=\"211.0\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"middle\">−2</text><text x=\"198.0\" y=\"211.0\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"end\">0</text><text x=\"246.0\" y=\"211.0\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"middle\">2</text><text x=\"290.0\" y=\"211.0\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"middle\">4</text><text x=\"334.0\" y=\"211.0\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"middle\">6</text><text x=\"378.0\" y=\"211.0\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"middle\">8</text><text x=\"198.0\" y=\"377.5\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"end\">−8</text><text x=\"198.0\" y=\"333.5\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"end\">−6</text><text x=\"198.0\" y=\"289.5\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"end\">−4</text><text x=\"198.0\" y=\"245.5\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"end\">−2</text><text x=\"198.0\" y=\"157.5\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"end\">2</text><text x=\"198.0\" y=\"113.5\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"end\">4</text><text x=\"198.0\" y=\"69.5\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"end\">6</text><text x=\"198.0\" y=\"25.5\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"end\">8</text><polygon points=\"246.0,154.0 246.0,110.0 378.0,154.0\" fill=\"#bdbdbd\" fill-opacity=\"0.8\" stroke=\"#1a1a1a\" stroke-width=\"1.4\"/><text x=\"281.2\" y=\"144.8\" font-size=\"12\" font-family=\"serif\" font-style=\"italic\" text-anchor=\"middle\">T</text><polygon points=\"224.0,286.0 224.0,330.0 356.0,330.0\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.4\"/><text x=\"259.2\" y=\"320.8\" font-size=\"12\" font-family=\"serif\" font-style=\"italic\" text-anchor=\"middle\">A</text></svg></p><p>(a) Describe fully the single transformation that maps triangle \\(T\\) onto triangle \\(A\\). [2]</p><p>(b) Draw the image of triangle \\(T\\) after an enlargement, scale factor \\(-\\tfrac{1}{2}\\), centre \\((0, 0)\\). [2]</p>",
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-23.2"
+            ],
+            "topic": "Transformations and vectors",
+            "chapter": "IGCSE-23",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-23-2.json",
+                "locator": "IGCSE-23.2-PP-0580-23-MJ21-Q10"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) Translation",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: Translation, B1."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(a) \\(\\begin{pmatrix}-1\\\\-8\\end{pmatrix}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: column vector (−1, −8), B1."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(b) Image with the correct scale factor and orientation",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: 2 marks for the image at (−1, −1), (−4, −1), (−1, −2); B1 for image correct scale factor and orientation but wrong position, or for enlargement scale factor 1/2 centre (0, 0)."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(b) Image at \\((-1, -1)\\), \\((-4, -1)\\), \\((-1, -2)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: image at (−1, −1), (−4, −1), (−1, −2), both marks."
+            }
+        ]
+    }
+]

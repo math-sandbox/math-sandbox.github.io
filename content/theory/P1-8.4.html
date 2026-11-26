@@ -1,0 +1,82 @@
+<script src="/assets/redirect.js"></script>
+<section class="theory" data-section="P1-8.4">
+<h2>8.4 Rates of change</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 1 Coursebook (Sue Pemberton, series editor Julian Gilbey), Chapter 8 Further differentiation, printed pp.227–229. Own wording and new numbers, following the coursebook use of the chain rule to connect the rates of change of two variables with time.</p>
+<p class="key-words"><strong>Key words:</strong> <em>rate of change</em>, <em>chain rule</em></p>
+<h3>Rates with respect to time</h3>
+<p>When a quantity changes with time \(t\), its <strong>rate of change</strong> is its derivative with respect to \(t\). For example, if \(x\) increases at 3 units per second, then \(\dfrac{dx}{dt}=3\); a negative value means the quantity is decreasing.</p>
+<h3>Connecting two rates</h3>
+<p>If \(y\) is a function of \(x\) and \(x\) changes with time, the <strong>chain rule</strong> connects the rates:</p>
+<p>\[\frac{dy}{dt}=\frac{dy}{dx}\times\frac{dx}{dt}.\]</p>
+<p>So find \(\dfrac{dy}{dx}\) from the equation, substitute the value of \(x\) at that instant, then multiply by the given rate. If both rates are given, divide them to find \(\dfrac{dy}{dx}\), and solve for \(x\).</p>
+<div class="worked-example">
+<h4>Worked example 1: Finding dy/dt</h4>
+<p class="src">Coursebook, 8.4, connected rates on a curve. New numbers.</p>
+<p>A point moves along \(y=x^3+2x\) so that \(x\) increases at 0.5 units per second. Find the rate of increase of \(y\) when \(x=2\).</p>
+<ol class="steps">
+<li>\(\dfrac{dy}{dx}=3x^2+2=14\) at \(x=2\) <span class="mark">B1</span></li>
+<li>\(\dfrac{dy}{dt}=14\times0.5\) <span class="mark">M1</span></li>
+<li>\(=7\) units per second <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(7\) units per second</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: A decreasing quantity</h4>
+<p class="src">Coursebook, 8.4, rates of change. New numbers.</p>
+<p>A point moves along \(y=\dfrac{6}{x}\), \(x\gt 0\), so that \(x\) increases at 0.2 units per second. Find the rate of change of \(y\) when \(x=3\).</p>
+<ol class="steps">
+<li>\(\dfrac{dy}{dx}=-\dfrac{6}{x^2}=-\dfrac{2}{3}\) at \(x=3\) <span class="mark">B1</span></li>
+<li>\(\dfrac{dy}{dt}=-\dfrac{2}{3}\times0.2\) <span class="mark">M1</span></li>
+<li>\(=-0.133\) (3 s.f.), so \(y\) is decreasing <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(-0.133\) units per second</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Substituting the value of \(x\) before differentiating.</li><li>Dividing by \(\dfrac{dx}{dt}\) when you should multiply.</li><li>Giving a positive answer for a quantity that is decreasing.</li></ul>
+<h3>Past paper</h3>
+<p class="src">9709/12/F/M/20 Q4, official QP and official MS.</p>
+<p>A curve has equation \(y=x^2-2x-3\). A point is moving along the curve in such a way that at \(P\) the \(y\)-coordinate is increasing at 4 units per second and the \(x\)-coordinate is increasing at 6 units per second.</p><p>Find the \(x\)-coordinate of \(P\). [4]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>\(\dfrac{dy}{dx}=2x-2\) <span class="mark">B1</span> Official MS: B1, dy/dx = 2x − 2.</li>
+<li>\(\dfrac{dy}{dx}=\dfrac{4}{6}\) <span class="mark">B1</span> Official MS: B1 OE, SOI.</li>
+<li>\(2x-2=\dfrac{4}{6}\) <span class="mark">M1</span> Official MS: M1, their (2x − 2) = their 4/6; LHS and RHS must be their dy/dx expression and value.</li>
+<li>\(x=\dfrac{4}{3}\) <span class="mark">A1</span> Official MS: A1 OE, x = 4/3.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/11/M/J/18 Q2, official QP and official MS.</p>
+<p>A point is moving along the curve \(y=2x+\dfrac{5}{x}\) in such a way that the \(x\)-coordinate is increasing at a constant rate of 0.02 units per second. Find the rate of change of the \(y\)-coordinate when \(x=1\). [4]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>\(\dfrac{dy}{dx}=2-\dfrac{5}{x^2}\) <span class="mark">M1</span> Official MS: M1, reasonable attempt at differentiation.</li>
+<li>\(=-3\) when \(x=1\) <span class="mark">A1</span> Official MS: A1 CAO (−3), may be implied.</li>
+<li>\(\dfrac{dy}{dt}=\dfrac{dy}{dx}\times\dfrac{dx}{dt}=-3\times0.02\) <span class="mark">M1</span> Official MS: M1, ignore notation, but needs to multiply dy/dx by 0.02.</li>
+<li>\(=-0.06\) <span class="mark">A1</span> Official MS: A1, −0.06.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>A point moves along the curve \(y=x^2+4x\) so that its \(x\)-coordinate increases at a rate of 5 units per second. Find the rate of increase of the \(y\)-coordinate when \(x=3\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{dy}{dx}=2x+4=10\)</li><li>\(10\times5\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(50\) units per second</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>A point moves along the curve \(y=\dfrac{8}{x}\) so that its \(x\)-coordinate increases at a rate of 3 units per second. Find the rate of change of the \(y\)-coordinate when \(x=2\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{dy}{dx}=-\dfrac{8}{4}=-2\)</li><li>\(-2\times3\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(-6\) units per second</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>A point moves along the curve \(y=x^2-2x\). At the point \(P\), the \(y\)-coordinate is increasing at 12 units per second and the \(x\)-coordinate is increasing at 3 units per second. Find the \(x\)-coordinate of \(P\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{dy}{dx}=\dfrac{12}{3}=4\)</li><li>\(2x-2=4\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(3\)</p>
+</details>
+</div>
+</section>

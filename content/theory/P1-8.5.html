@@ -1,0 +1,81 @@
+<script src="/assets/redirect.js"></script>
+<section class="theory" data-section="P1-8.5">
+<h2>8.5 Practical applications of connected rates of change</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 1 Coursebook (Sue Pemberton, series editor Julian Gilbey), Chapter 8 Further differentiation, printed pp.230–234. Own wording and new numbers, following the coursebook use of formulae for area and volume with the chain rule to connect rates in practical problems.</p>
+<p class="key-words"><strong>Key words:</strong> <em>connected rates of change</em>, <em>rate of change</em></p>
+<h3>Connected rates of change</h3>
+<p>In practical problems two quantities are often linked by a formula, such as the area and radius of a circle. When one changes with time the other does too, and their rates are called <strong>connected rates of change</strong>. The chain rule links them, for example</p>
+<p>\[\frac{dV}{dt}=\frac{dV}{dr}\times\frac{dr}{dt}.\]</p>
+<h3>A method</h3>
+<ul><li>Write down the formula connecting the two quantities.</li><li>Differentiate it to get the derivative that links them.</li><li>Write the chain rule with the given rate of change and the one you want.</li><li>Substitute the values at the instant in question, and include units.</li></ul>
+<p>Useful formulae: circle \(A=\pi r^2\); sphere \(V=\tfrac{4}{3}\pi r^3\) and surface area \(4\pi r^2\); cube \(V=x^3\).</p>
+<div class="worked-example">
+<h4>Worked example 1: A spreading ripple</h4>
+<p class="src">Coursebook, 8.5, area of a circle. New numbers.</p>
+<p>The radius of a circular ripple increases at 2 cm per second. Find the rate of increase of its area when the radius is 5 cm.</p>
+<ol class="steps">
+<li>\(A=\pi r^2\), \(\dfrac{dA}{dr}=2\pi r=10\pi\) <span class="mark">B1</span></li>
+<li>\(\dfrac{dA}{dt}=10\pi\times2\) <span class="mark">M1</span></li>
+<li>\(=20\pi=62.8\) cm\(^2\) per second <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(20\pi\approx62.8\) cm\(^2\) per second</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: A growing sphere</h4>
+<p class="src">Coursebook, 8.5, volume of a sphere. New numbers.</p>
+<p>The volume of a sphere increases at 100 cm\(^3\) per second. Find the rate of increase of the radius when the radius is 5 cm.</p>
+<ol class="steps">
+<li>\(\dfrac{dV}{dr}=4\pi r^2=100\pi\) <span class="mark">B1</span></li>
+<li>\(\dfrac{dr}{dt}=\dfrac{100}{100\pi}\) <span class="mark">M1</span></li>
+<li>\(=\dfrac{1}{\pi}=0.318\) cm per second <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{1}{\pi}\approx0.318\) cm per second</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Using the volume formula's derivative upside down: \(\dfrac{dr}{dt}=\dfrac{dV}{dt}\div\dfrac{dV}{dr}\).</li><li>Substituting the value of r into the formula before differentiating.</li><li>Leaving out the units of a rate.</li></ul>
+<h3>Past paper</h3>
+<p class="src">9709/11/O/N/20 Q3, official QP and official MS.</p>
+<p>Air is being pumped into a balloon in the shape of a sphere so that its volume is increasing at a constant rate of 50 cm\(^3\) s\(^{-1}\).</p><p>Find the rate at which the radius of the balloon is increasing when the radius is 10 cm. [3]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>\(\dfrac{dV}{dr}=4\pi r^2=400\pi\) <span class="mark">B1</span> Official MS: B1, 4πr² (400π), SOI; award for dr/dV.</li>
+<li>\(\dfrac{dr}{dt}=\dfrac{50}{400\pi}\) <span class="mark">M1</span> Official MS: M1, 50 ÷ their derivative.</li>
+<li>\(=\dfrac{1}{8\pi}=0.0398\) cm s\(^{-1}\) <span class="mark">A1</span> Official MS: A1, 1/(8π) or 0.0398 AWRT.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/11/O/N/12 Q3, official QP and official MS.</p>
+<p>An oil pipeline under the sea is leaking oil and a circular patch of oil has formed on the surface of the sea. At midday the radius of the patch of oil is 50 m and is increasing at a rate of 3 metres per hour. Find the rate at which the area of the oil is increasing at midday. [4]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>\(A=\pi r^2\), \(\dfrac{dA}{dr}=2\pi r\) <span class="mark">B1</span> Official MS: B1, dA/dr = 2πr.</li>
+<li>\(\dfrac{dA}{dt}=\dfrac{dA}{dr}\times\dfrac{dr}{dt}\) <span class="mark">M1</span> Official MS: M1, chain rule used.</li>
+<li>\(\dfrac{dr}{dt}=3\) <span class="mark">B1</span> Official MS: B1, 3 soi.</li>
+<li>\(\dfrac{dA}{dt}=2\pi\times50\times3=300\pi\) (942) m\(^2\) per hour <span class="mark">A1</span> Official MS: A1, 300π (or 942).</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>The volume of a spherical balloon is increasing at a constant rate of 50 cm\(^3\) per second. Find the rate at which the radius is increasing when the radius is 5 cm.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{dV}{dr}=4\pi\times25=100\pi\)</li><li>\(\dfrac{dr}{dt}=\dfrac{50}{100\pi}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(0.159\) cm per second (3 s.f.)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>The radius of a circular ripple increases at a constant rate of 3 cm per second. Find the rate at which the area of the circle is increasing when the radius is 10 cm.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{dA}{dr}=20\pi\)</li><li>\(\dfrac{dA}{dt}=20\pi\times3=60\pi\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(188\) cm\(^2\) per second (3 s.f.)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>The edges of a cube are increasing at a constant rate of 0.2 cm per second. Find the rate at which the volume is increasing when the edge length is 4 cm.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{dV}{dx}=3\times16=48\)</li><li>\(48\times0.2\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(9.6\) cm\(^3\) per second</p>
+</details>
+</div>
+</section>

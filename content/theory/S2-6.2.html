@@ -1,0 +1,87 @@
+<script src="/assets/redirect.js"></script>
+<section class="theory" data-section="S2-6.2">
+<h2>6.2 Hypothesis testing of the population mean</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Probability &amp; Statistics 2 Coursebook (Jayne Kranat), Chapter 6 Estimation, printed pp.127–130. Own wording and new numbers, following the coursebook test of a population mean using the normal distribution of the sample mean, with known or large-sample standard deviation.</p>
+<p class="key-words"><strong>Key words:</strong> <em>hypothesis test</em>, <em>null hypothesis</em>, <em>alternative hypothesis</em>, <em>significance level</em>, <em>test statistic</em>, <em>critical value</em></p>
+<h3>Setting up the test</h3>
+<p>A <strong>hypothesis test</strong> about a population mean starts from a claimed value \(\mu_0\). The <strong>null hypothesis</strong> is \(\mathrm{H}_0\colon\mu=\mu_0\). The <strong>alternative hypothesis</strong> is \(\mathrm{H}_1\colon\mu\gt \mu_0\) or \(\mathrm{H}_1\colon\mu\lt \mu_0\) for a one-tailed test, or \(\mathrm{H}_1\colon\mu\ne\mu_0\) for a two-tailed test. The <strong>significance level</strong> is the probability of rejecting \(\mathrm{H}_0\) when it is true.</p>
+<h3>The test statistic</h3>
+<p>If \(\mathrm{H}_0\) is true, the mean of a random sample of size \(n\) has \(\bar{X}\sim\mathrm{N}\bigl(\mu_0, \tfrac{\sigma^2}{n}\bigr)\). This is exact when the population is normal; for a large sample it is approximately true by the Central Limit theorem, and an unbiased estimate from the sample may be used for \(\sigma^2\). The <strong>test statistic</strong> is</p>
+<p>\[z=\dfrac{\bar{x}-\mu_0}{\sigma/\sqrt{n}}.\]</p>
+<h3>Comparing and concluding</h3>
+<p>Compare \(z\) with the <strong>critical value</strong> from the table, for example 1.645 for a 5% one-tailed test, 1.96 for a 2.5% one-tailed test or a 5% two-tailed test, and 2.326 for a 1% one-tailed test. Equivalently, compare the tail probability with the significance level. State the conclusion in context and not definitely: there is, or is not, evidence that the mean has changed.</p>
+<div class="worked-example">
+<h4>Worked example 1: A one-tailed test</h4>
+<p class="src">Coursebook, 6.2, test of a population mean. New numbers.</p>
+<p>Bags of flour have masses with mean 500 g and standard deviation 8 g. After a machine change, a random sample of 50 bags has mean 497.6 g. Test at the 5% significance level whether the mean mass has decreased.</p>
+<ol class="steps">
+<li>\(\mathrm{H}_0\colon\mu=500\), \(\mathrm{H}_1\colon\mu\lt 500\) <span class="mark">B1</span></li>
+<li>\(z=\dfrac{497.6-500}{8/\sqrt{50}}\) <span class="mark">M1</span></li>
+<li>\(=-2.121\) <span class="mark">A1</span></li>
+<li>\(-2.121\lt -1.645\) <span class="mark">M1</span></li>
+<li>Reject \(\mathrm{H}_0\). There is evidence that the mean mass has decreased. <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> There is evidence at the 5% level that the mean mass has decreased.</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: A two-tailed test</h4>
+<p class="src">Coursebook, 6.2, two-tailed test. New numbers.</p>
+<p>A population has standard deviation 3. A random sample of 36 values has mean 20.8. Test \(\mathrm{H}_0\colon\mu=20\) against \(\mathrm{H}_1\colon\mu\ne20\) at the 5% significance level.</p>
+<ol class="steps">
+<li>\(z=\dfrac{20.8-20}{3/6}=1.6\) <span class="mark">M1</span></li>
+<li>Two-tailed 5%: critical value 1.96, and \(1.6\lt 1.96\) <span class="mark">M1</span></li>
+<li>Do not reject \(\mathrm{H}_0\). There is no evidence that the mean is not 20. <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> No evidence at the 5% level that the mean differs from 20.</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Dividing by \(\sigma\) instead of \(\sigma/\sqrt{n}\).</li><li>Writing the hypotheses in terms of \(\bar{x}\) instead of the population mean \(\mu\).</li><li>Giving a definite conclusion, such as 'the mean has increased'. A test gives evidence, not proof.</li></ul>
+<h3>Past paper</h3>
+<p class="src">9709/62/M/J/22 Q2, official QP and official MS.</p>
+<p>In the past, the mean height of plants of a particular species has been 2.3 m. A random sample of 60 plants of this species was treated with fertiliser and the mean height of these 60 plants was found to be 2.4 m. Assume that the standard deviation of the heights of plants treated with fertiliser is 0.4 m.</p><p>Carry out a test at the 2.5% significance level of whether the mean height of plants treated with fertiliser is greater than 2.3 m. [5]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>\(\mathrm{H}_0\colon\) population mean height \(=2.3\); \(\mathrm{H}_1\colon\) population mean height \(&gt;2.3\) <span class="mark">B1</span> Official MS: B1, H0: pop mean height = 2.3, H1: pop mean height &gt; 2.3; not just ‘mean’, allow μ.</li>
+<li>\(z=\dfrac{2.4-2.3}{0.4/\sqrt{60}}\) <span class="mark">M1</span> Official MS: M1, for standardising, must have √60.</li>
+<li>\(=1.936\) <span class="mark">A1</span> Official MS: A1, 1.936, 1.937 or 1.94.</li>
+<li>\(1.936&lt;1.96\) <span class="mark">M1</span> Official MS: M1, valid comparison with 1.96, or 2.64% &gt; 2.5% OE; critical values method 2.4 &lt; 2.401 accepted.</li>
+<li>Do not reject \(\mathrm{H}_0\). No evidence that the mean height of plants treated with fertiliser is more than 2.3 m. <span class="mark">A1</span> Official MS: A1 FT (FT their z), no evidence that (mean) height (with fertiliser) is more than without; in context, not definite; no FT for a two-tail test.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/62/O/N/22 Q2, official QP and official MS.</p>
+<p>In the past, the mean length of a particular variety of worm has been 10.3 cm, with standard deviation 2.6 cm. Following a change in the climate, it is thought that the mean length of this variety of worm has decreased. The lengths of a random sample of 100 worms of this variety are found and the mean of this sample is found to be 9.8 cm.</p><p>Assuming that the standard deviation remains at 2.6 cm, carry out a test at the 2% significance level of whether the mean length has decreased. [5]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>\(\mathrm{H}_0\colon\) population mean length \(=10.3\); \(\mathrm{H}_1\colon\) population mean length \(&lt;10.3\) <span class="mark">B1</span> Official MS: B1, H0: population mean length = 10.3 cm, H1: population mean length &lt; 10.3 cm, or μ = 10.3, μ &lt; 10.3 (not just ‘mean’).</li>
+<li>\(z=\dfrac{9.8-10.3}{2.6/\sqrt{100}}\) <span class="mark">M1</span> Official MS: M1, standardising; if ±1.923 (or 0.0272) seen allow M1 implied.</li>
+<li>\(=-1.923\) <span class="mark">A1</span> Official MS: A1, −1.923; accept ±, accept 3 s.f.</li>
+<li>\(-1.923&gt;-2.054\) <span class="mark">M1</span> Official MS: M1 OE, valid comparison −1.923 &gt; −2.054 or −2.055; or 0.0272 &gt; 0.02; or critical value 9.8 &gt; 9.766.</li>
+<li>Do not reject \(\mathrm{H}_0\). No evidence that the mean length has decreased. <span class="mark">A1</span> Official MS: A1 FT (FT their z), no evidence that (mean) length has decreased; no contradictions, not definite, in context.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>In the past, a variable had mean 50 and standard deviation 4. A random sample of 36 values has mean 51.2. Find the value of the test statistic for a test of \(\mathrm{H}_0\colon\mu=50\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{\sigma}{\sqrt{n}}=\dfrac{4}{6}\)</li><li>\(z=\dfrac{51.2-50}{4/6}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(1.8\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>A test of \(\mathrm{H}_0\colon\mu=30\) against \(\mathrm{H}_1\colon\mu\gt 30\) is carried out at the 5% significance level, using the mean of a random sample of 25 values from a normal distribution with standard deviation 5. The critical value of \(z\) is 1.645. Find the smallest value of the sample mean for which \(\mathrm{H}_0\) is rejected.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{\bar{x}-30}{5/5}=1.645\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(31.6\) (3 s.f.)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>A random sample of 64 values from a population with standard deviation 6 has sum 2464. Find the value of the test statistic for a test of \(\mathrm{H}_0\colon\mu=40\) against \(\mathrm{H}_1\colon\mu\lt 40\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\bar{x}=\dfrac{2464}{64}=38.5\)</li><li>\(z=\dfrac{38.5-40}{6/8}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(-2\)</p>
+</details>
+</div>
+</section>

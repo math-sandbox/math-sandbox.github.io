@@ -1,0 +1,88 @@
+<script src="/assets/redirect.js"></script>
+<section class="theory" data-section="P1-8.3">
+<h2>8.3 Practical maximum and minimum problems</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 1 Coursebook (Sue Pemberton, series editor Julian Gilbey), Chapter 8 Further differentiation, printed pp.221–226. Own wording and new numbers, following the coursebook steps for forming an expression in one variable from a constraint and finding its greatest or least value.</p>
+<p class="key-words"><strong>Key words:</strong> <em>stationary point</em></p>
+<h3>A method for practical problems</h3>
+<p>In a practical problem you usually want the greatest or least value of a quantity, such as an area, a volume or a cost.</p>
+<ul><li>Write the quantity in terms of two variables, then use the given constraint to rewrite it in terms of one variable.</li><li>Differentiate and solve the derivative equal to zero to find the stationary point.</li><li>Check whether it is a maximum or a minimum, usually with the second derivative.</li><li>Answer the question that was asked, with units, and reject values that make no sense, such as a negative length.</li></ul>
+<div class="worked-example">
+<h4>Worked example 1: A rectangle with a fixed perimeter</h4>
+<p class="src">Coursebook, 8.3, practical maximum. New numbers.</p>
+<p>A rectangle has perimeter 36 cm. Find the greatest possible area.</p>
+<ol class="steps">
+<li>Width \(x\), length \(18-x\), so \(A=18x-x^2\) <span class="mark">M1</span></li>
+<li>\(\dfrac{dA}{dx}=18-2x=0\), \(x=9\) <span class="mark">M1</span></li>
+<li>\(\dfrac{d^2A}{dx^2}=-2\lt 0\), maximum; \(A=81\) cm\(^2\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(81\) cm\(^2\), when the rectangle is a square</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: An open box</h4>
+<p class="src">Coursebook, 8.3, maximum volume. New numbers.</p>
+<p>Squares of side \(x\) cm are cut from the corners of a 12 cm by 12 cm sheet, and the sides are folded up to make an open box. Find the greatest volume.</p>
+<ol class="steps">
+<li>\(V=x(12-2x)^2=4x^3-48x^2+144x\) <span class="mark">M1</span></li>
+<li>\(\dfrac{dV}{dx}=12x^2-96x+144=12(x-2)(x-6)=0\) <span class="mark">M1</span></li>
+<li>\(x=6\) gives \(V=0\), so \(x=2\); \(\dfrac{d^2V}{dx^2}=24x-96=-48\lt 0\), maximum <span class="mark">A1</span></li>
+<li>\(V=2\times8^2=128\) cm\(^3\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(128\) cm\(^3\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Differentiating an expression that still has two variables in it.</li><li>Giving the value of x when the question asks for the greatest area or volume.</li><li>Not checking that the stationary point is the kind of point (maximum or minimum) the question wants.</li></ul>
+<h3>Past paper</h3>
+<p class="src">9709/12/M/J/10 Q8, official QP and official MS.</p>
+<p>A solid rectangular block has a square base of side \(x\) cm. The height of the block is \(h\) cm and the total surface area of the block is 96 cm\(^2\).</p><p>(i) Express \(h\) in terms of \(x\) and show that the volume, \(V\) cm\(^3\), of the block is given by</p><p>\(V=24x-\tfrac{1}{2}x^3.\) [3]</p><p>Given that \(x\) can vary,</p><p>(ii) find the stationary value of \(V\), [3]</p><p>(iii) determine whether this stationary value is a maximum or a minimum. [2]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(i) \(4xh+2x^2=96\) <span class="mark">M1</span> Official MS: M1, needs to consider at least 5 areas.</li>
+<li>(i) \(h=\dfrac{24}{x}-\dfrac{x}{2}\) <span class="mark">A1</span> Official MS: A1 co.</li>
+<li>(i) \(V=x^2h=24x-\tfrac{1}{2}x^3\) <span class="mark">M1</span> Official MS: M1, for V = x²h with h as f(x).</li>
+<li>(ii) \(\dfrac{dV}{dx}=24-\dfrac{3x^2}{2}\) <span class="mark">B1</span> Official MS: B1 co.</li>
+<li>(ii) \(=0\) when \(x=4\) <span class="mark">M1</span> Official MS: M1, sets differential to 0 and solves.</li>
+<li>(ii) \(V=64\) <span class="mark">A1</span> Official MS: A1 co.</li>
+<li>(iii) \(\dfrac{d^2V}{dx^2}=-3x\) <span class="mark">M1</span> Official MS: M1, any valid method.</li>
+<li>(iii) \(-12&lt;0\), so maximum <span class="mark">A1</span> Official MS: A1√ (follow through), co; maximum.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/12/F/M/16 Q6, official QP and official MS.</p>
+<p>A vacuum flask (for keeping drinks hot) is modelled as a closed cylinder in which the internal radius is \(r\) cm and the internal height is \(h\) cm. The volume of the flask is 1000 cm\(^3\). A flask is most efficient when the total internal surface area, \(A\) cm\(^2\), is a minimum.</p><p>(i) Show that \(A=2\pi r^2+\dfrac{2000}{r}\). [3]</p><p>(ii) Given that \(r\) can vary, find the value of \(r\), correct to 1 decimal place, for which \(A\) has a stationary value and verify that the flask is most efficient when \(r\) takes this value. [5]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(i) \(A=2\pi r^2+2\pi rh\) <span class="mark">B1</span> Official MS: B1, A = 2πr² + 2πrh.</li>
+<li>(i) \(\pi r^2h=1000\), so \(h=\dfrac{1000}{\pi r^2}\) <span class="mark">M1</span> Official MS: M1, πr²h = 1000 → h = 1000/(πr²).</li>
+<li>(i) \(A=2\pi r^2+\dfrac{2000}{r}\) <span class="mark">A1</span> Official MS: A1 AG, sub for h into A.</li>
+<li>(ii) \(\dfrac{dA}{dr}=4\pi r-\dfrac{2000}{r^2}\), set \(=0\) <span class="mark">M1</span> Official MS: M1, attempt differentiation and set = 0.</li>
+<li>(ii) \(4\pi r-\dfrac{2000}{r^2}=0\) <span class="mark">A1</span> Official MS: A1, correct equation.</li>
+<li>(ii) \(r^3=\dfrac{500}{\pi}\) <span class="mark">M1</span> Official MS: DM1 (dependent), reasonable attempt to solve to r³ = …; stored as M1.</li>
+<li>(ii) \(r=5.4\) <span class="mark">A1</span> Official MS: A1, r = 5.4.</li>
+<li>(ii) \(\dfrac{d^2A}{dr^2}=4\pi+\dfrac{4000}{r^3}&gt;0\), hence minimum, hence most efficient <span class="mark">B1</span> Official MS: B1 AG, or convincing alternative method.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>A rectangle has perimeter 40 cm. Its width is \(x\) cm. Show that its area is \(x(20-x)\) cm\(^2\) and use differentiation to find the greatest possible area.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{dA}{dx}=20-2x=0\), \(x=10\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(100\) cm\(^2\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>A square sheet of card of side 12 cm has a square of side \(x\) cm cut from each corner, and the sides are folded up to make an open box. Find the greatest possible volume of the box.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(x=2\) (see Worked example 2)</li><li>\(V=2\times8^2\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(128\) cm\(^3\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>A farmer has 20 m of fencing to make a rectangular pen against a long straight wall, so that only three sides need fencing. The two sides at right angles to the wall are each \(x\) m long. Find the greatest possible area of the pen.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(A=x(20-2x)\), \(\dfrac{dA}{dx}=20-4x=0\), \(x=5\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(50\) m\(^2\)</p>
+</details>
+</div>
+</section>

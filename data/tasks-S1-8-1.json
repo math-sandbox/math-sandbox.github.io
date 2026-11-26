@@ -1,0 +1,276 @@
+[
+    {
+        "id": "S1-8.1-QC1-gen",
+        "section": "S1-8.1",
+        "kind": "generated",
+        "title": "Probability from a constant probability density",
+        "marks": 2,
+        "source": "Theory S1-8.1 Quick check 1; rectangle of width a and height 1/a",
+        "params": [
+            {
+                "name": "a",
+                "min": 4,
+                "max": 20,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 1,
+                "max": 19,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "A": "b/a"
+        },
+        "constraints": [
+            "b<a"
+        ],
+        "original": {
+            "a": 10,
+            "b": 3
+        },
+        "stem": "The continuous random variable \\(X\\) takes values from 0 to \\({a|int}\\), and its probability density is the same for every value in this interval. Find \\(P(X\\lt {b|int})\\).",
+        "answer": {
+            "expression": "b/a",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "The graph of the probability density is a rectangle of width \\({a|int}\\) and area 1, so its height is \\(\\dfrac{1}{{a|int}}\\).",
+                "result": "1/a",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Total area under the graph is 1."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(P(X\\lt {b|int})={b|int}\\times\\dfrac{1}{{a|int}}={A|sf3z}\\)",
+                "result": "b/a",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Probability is the area to the left of b."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original width 10, P(X < 3) = 0.3"
+            },
+            {
+                "id": "bus",
+                "stem": "Buses leave a stop every \\({a|int}\\) minutes. A passenger arrives at a random time, so the waiting time \\(X\\) minutes is equally likely to be anywhere from 0 to \\({a|int}\\). Find the probability that the passenger waits less than \\({b|int}\\) minutes."
+            },
+            {
+                "id": "rod",
+                "stem": "A rod of length \\({a|int}\\) cm is cut at a random point, every point being equally likely. \\(X\\) cm is the distance of the cut from the left-hand end. Find \\(P(X\\lt {b|int})\\)."
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-8.1"
+            ],
+            "topic": "The normal distribution",
+            "chapter": "S1-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-8-1.json",
+                "locator": "S1-8.1-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-8.1-QC2-gen",
+        "section": "S1-8.1",
+        "kind": "generated",
+        "title": "Probability from a triangular probability density",
+        "marks": 2,
+        "source": "Theory S1-8.1 Quick check 2; density rising in a straight line from 0 to a",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 10,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 1,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "h": "2/a",
+            "A": "b*b/(a*a)"
+        },
+        "constraints": [
+            "b<a"
+        ],
+        "original": {
+            "a": 4,
+            "b": 2
+        },
+        "stem": "The graph of the probability density of a continuous random variable \\(X\\) is a straight line from \\((0, 0)\\) to \\(({a|int}, h)\\), and the density is zero outside \\(0\\le x\\le {a|int}\\). Find \\(P(X\\lt {b|int})\\).",
+        "answer": {
+            "expression": "b*b/(a*a)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "Total area 1: \\(\\tfrac{1}{2}\\times{a|int}\\times h=1\\), so \\(h=\\dfrac{2}{{a|int}}\\).",
+                "result": "2/a",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Find the height from total area 1."
+            },
+            {
+                "name": "A",
+                "text_tex": "The area to the left of \\({b|int}\\) is a triangle of height \\(\\dfrac{{b|int}}{{a|int}}\\times h\\): \\(P(X\\lt {b|int})=\\tfrac{1}{2}\\times{b|int}\\times\\dfrac{2\\times{b|int}}{{a|int}^2}={A|sf3z}\\)",
+                "result": "b*b/(a*a)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Similar triangles give the height at b."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original a = 4, P(X < 2) = 0.25"
+            },
+            {
+                "id": "time",
+                "stem": "The time \\(T\\) hours that a task takes is modelled by a continuous random variable whose probability density rises in a straight line from 0 at \\(t=0\\) to its greatest value at \\(t={a|int}\\), and is zero outside \\(0\\le t\\le {a|int}\\). Find \\(P(T\\lt {b|int})\\)."
+            },
+            {
+                "id": "graph",
+                "stem": "A continuous random variable \\(Y\\) has probability density zero outside \\(0\\le y\\le {a|int}\\). Inside this interval the graph is a straight line through the origin. Find the probability that \\(Y\\lt {b|int}\\)."
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-8.1"
+            ],
+            "topic": "The normal distribution",
+            "chapter": "S1-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-8-1.json",
+                "locator": "S1-8.1-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-8.1-QC3-gen",
+        "section": "S1-8.1",
+        "kind": "generated",
+        "title": "Probability as density times width",
+        "marks": 2,
+        "source": "Theory S1-8.1 Quick check 3; area of a rectangle under the density graph",
+        "params": [
+            {
+                "name": "d",
+                "min": 1,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "w",
+                "min": 2,
+                "max": 10,
+                "step": 1
+            },
+            {
+                "name": "lo",
+                "min": 10,
+                "max": 40,
+                "step": 10
+            }
+        ],
+        "derived": {
+            "f": "d/100",
+            "hi": "lo+w",
+            "A": "d*w/100"
+        },
+        "constraints": [
+            "w>1"
+        ],
+        "original": {
+            "d": 4,
+            "w": 5,
+            "lo": 20
+        },
+        "stem": "For a continuous random variable \\(X\\), the probability density is constant and equal to \\({f|raw}\\) for \\({lo|int}\\le x\\le {hi|int}\\). Find \\(P({lo|int}\\lt X\\lt {hi|int})\\).",
+        "answer": {
+            "expression": "d*w/100",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "The probability is the area of a rectangle of width \\({hi|int}-{lo|int}={w|int}\\) and height \\({f|raw}\\).",
+                "result": "w",
+                "format": "int",
+                "mark": "M1",
+                "note": "Probability is area under the density graph."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(P({lo|int}\\lt X\\lt {hi|int})={w|int}\\times{f|raw}={A|sf3z}\\)",
+                "result": "d*w/100",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Width times height."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original density 0.04 on 20 to 25, probability 0.2"
+            },
+            {
+                "id": "lengths",
+                "stem": "In a model for the lengths \\(X\\) mm of some leaves, the probability density is \\({f|raw}\\) for every length from \\({lo|int}\\) mm to \\({hi|int}\\) mm. Find the probability that a leaf has a length between \\({lo|int}\\) mm and \\({hi|int}\\) mm."
+            },
+            {
+                "id": "masses",
+                "stem": "The mass \\(M\\) grams of an item is a continuous random variable. Between \\({lo|int}\\) and \\({hi|int}\\) the graph of its probability density is horizontal at height \\({f|raw}\\). Find \\(P({lo|int}\\lt M\\lt {hi|int})\\)."
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-8.1"
+            ],
+            "topic": "The normal distribution",
+            "chapter": "S1-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-8-1.json",
+                "locator": "S1-8.1-QC3-gen"
+            }
+        }
+    }
+]

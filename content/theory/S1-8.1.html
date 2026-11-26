@@ -1,0 +1,60 @@
+<script src="/assets/redirect.js"></script>
+<section class="theory" data-section="S1-8.1">
+<h2>8.1 Continuous random variables</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Probability &amp; Statistics 1 Coursebook (Dean Chalmers), Chapter 8 The normal distribution, printed pp.188–192. Own wording and new numbers, following the coursebook link between relative frequency histograms and a probability density graph, with probability as area and total area 1.</p>
+<p class="key-words"><strong>Key words:</strong> <em>continuous random variable</em>, <em>probability density</em></p>
+<h3>Discrete and continuous</h3>
+<p>A discrete random variable takes separate values, such as a number of goals. A <strong>continuous random variable</strong> can take any value in an interval, such as a length, a mass or a time. Measurements are rounded, but the quantity itself is continuous.</p>
+<h3>From histograms to a probability density graph</h3>
+<p>If the relative frequencies of a large set of measurements are shown in a histogram, the area of each bar is the proportion of values in that class, and the total area is 1. As the data set grows and the classes get narrower, the tops of the bars approach a smooth curve. This curve is the graph of the <strong>probability density</strong>.</p>
+<ul><li>The probability that \(X\) lies between two values is the area under the graph between them.</li><li>The total area under the graph is 1, and the graph is never below the \(x\)-axis.</li><li>For a continuous random variable \(P(X=a)=0\), so \(P(X\lt a)=P(X\le a)\).</li></ul>
+<div class="worked-example">
+<h4>Worked example 1: A constant density</h4>
+<p class="src">Coursebook, 8.1, probability as area. New numbers.</p>
+<p>\(X\) takes values from 0 to 12 and its probability density is the same for every value in this interval. Find \(P(3\lt X\lt 7)\).</p>
+<ol class="steps">
+<li>Height of the rectangle \(=\dfrac{1}{12}\), because the total area is 1. <span class="mark">M1</span></li>
+<li>\(P(3\lt X\lt 7)=4\times\dfrac{1}{12}=\dfrac{1}{3}\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{1}{3}\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: A triangular density</h4>
+<p class="src">Coursebook, 8.1, total area 1. New numbers.</p>
+<p>The probability density of \(X\) is a straight line from \((0, 0)\) to \((2, h)\) and is zero outside \(0\le x\le 2\). Find \(h\) and \(P(X\lt 1)\).</p>
+<ol class="steps">
+<li>\(\tfrac{1}{2}\times2\times h=1\), so \(h=1\) <span class="mark">B1</span></li>
+<li>At \(x=1\) the height is \(\tfrac{1}{2}\), so \(P(X\lt 1)=\tfrac{1}{2}\times1\times\tfrac{1}{2}\) <span class="mark">M1</span></li>
+<li>\(=\tfrac{1}{4}\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(h=1\), \(P(X\lt 1)=\tfrac{1}{4}\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Reading the height of the graph as a probability. Only areas are probabilities.</li><li>Forgetting that the total area is 1 when a height is unknown.</li><li>Giving a non-zero answer for \(P(X=a)\) when \(X\) is continuous.</li></ul>
+<h3>Past paper</h3>
+<p>There is no whole past-paper question on this subsection alone. The past papers for this chapter are in 8.2.</p>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>\(X\) takes values from 0 to 10, and its probability density is the same for every value in this interval. Find \(P(X\lt 3)\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>Height \(=\dfrac{1}{10}\)</li><li>\(P(X\lt 3)=3\times\dfrac{1}{10}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(0.3\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>The probability density of \(X\) is a straight line from \((0, 0)\) to \((4, h)\) and zero outside \(0\le x\le 4\). Find \(P(X\lt 2)\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\tfrac{1}{2}\times4\times h=1\), so \(h=0.5\)</li><li>Height at 2 is \(0.25\), so \(P(X\lt 2)=\tfrac{1}{2}\times2\times0.25\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(0.25\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>The probability density of \(X\) is constant and equal to 0.04 for \(20\le x\le 25\). Find \(P(20\lt X\lt 25)\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>Area \(=5\times0.04\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(0.2\)</p>
+</details>
+</div>
+</section>

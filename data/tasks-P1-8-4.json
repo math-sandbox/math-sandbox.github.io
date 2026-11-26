@@ -1,0 +1,421 @@
+[
+    {
+        "id": "P1-8.4-QC1-gen",
+        "section": "P1-8.4",
+        "kind": "generated",
+        "title": "Rate of change of y on a quadratic curve",
+        "marks": 2,
+        "source": "Theory P1-8.4 Quick check 1; dy/dt = (2x + b) dx/dt",
+        "params": [
+            {
+                "name": "a",
+                "min": 1,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "r",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "g": "2*a+b",
+            "A": "(2*a+b)*r"
+        },
+        "constraints": [
+            "r>1"
+        ],
+        "original": {
+            "a": 3,
+            "b": 4,
+            "r": 5
+        },
+        "stem": "A point moves along the curve \\(y=x^2+{b|int}x\\) so that its \\(x\\)-coordinate increases at a rate of \\({r|int}\\) units per second. Find the rate of increase of the \\(y\\)-coordinate when \\(x={a|int}\\).",
+        "answer": {
+            "expression": "(2*a+b)*r",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\dfrac{dy}{dx}=2x+{b|int}={g|int}\\) at \\(x={a|int}\\)",
+                "result": "2*a+b",
+                "format": "int",
+                "mark": "M1",
+                "note": "Differentiate and substitute."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\dfrac{dy}{dt}=\\dfrac{dy}{dx}\\times\\dfrac{dx}{dt}={g|int}\\times{r|int}={A|int}\\) units per second",
+                "result": "(2*a+b)*r",
+                "format": "int",
+                "mark": "A1",
+                "note": "Chain rule."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original y = x^2 + 4x, dx/dt = 5, x = 3, dy/dt = 50"
+            },
+            {
+                "id": "particle",
+                "stem": "A particle moves on the curve \\(y=x^2+{b|int}x\\). At the instant when \\(x={a|int}\\), \\(\\dfrac{dx}{dt}={r|int}\\). Find \\(\\dfrac{dy}{dt}\\) at this instant."
+            },
+            {
+                "id": "graph",
+                "stem": "The variables \\(x\\) and \\(y\\) are related by \\(y=x^2+{b|int}x\\), and \\(x\\) is increasing at \\({r|int}\\) units per second. Find the rate at which \\(y\\) is increasing when \\(x={a|int}\\)."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-8.4"
+            ],
+            "topic": "Further differentiation",
+            "chapter": "P1-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-8-4.json",
+                "locator": "P1-8.4-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-8.4-QC2-gen",
+        "section": "P1-8.4",
+        "kind": "generated",
+        "title": "Rate of change of y on y = k/x",
+        "marks": 2,
+        "source": "Theory P1-8.4 Quick check 2; dy/dt = -k/x^2 times dx/dt",
+        "params": [
+            {
+                "name": "k",
+                "min": 2,
+                "max": 12,
+                "step": 1
+            },
+            {
+                "name": "a",
+                "min": 1,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "r",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "A": "0-k*r/(a*a)"
+        },
+        "constraints": [
+            "r>1"
+        ],
+        "original": {
+            "k": 8,
+            "a": 2,
+            "r": 3
+        },
+        "stem": "A point moves along the curve \\(y=\\dfrac{{k|int}}{x}\\) so that its \\(x\\)-coordinate increases at a rate of \\({r|int}\\) units per second. Find the rate of change of the \\(y\\)-coordinate when \\(x={a|int}\\).",
+        "answer": {
+            "expression": "0-k*r/(a*a)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\dfrac{dy}{dx}=-\\dfrac{{k|int}}{x^2}=-\\dfrac{{k|int}}{{a|int}^2}\\) at \\(x={a|int}\\)",
+                "result": "0-k/(a*a)",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Differentiate k x to the power -1."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\dfrac{dy}{dt}=-\\dfrac{{k|int}}{{a|int}^2}\\times{r|int}={A|sf3z}\\) units per second",
+                "result": "0-k*r/(a*a)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Negative, so y is decreasing."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original y = 8/x, dx/dt = 3, x = 2, dy/dt = -6"
+            },
+            {
+                "id": "bead",
+                "stem": "A bead slides along the curve \\(y=\\dfrac{{k|int}}{x}\\), with \\(x\\gt 0\\). When \\(x={a|int}\\), \\(x\\) is increasing at \\({r|int}\\) units per second. Find \\(\\dfrac{dy}{dt}\\) at this moment."
+            },
+            {
+                "id": "relation",
+                "stem": "The variables are related by \\(xy={k|int}\\), and \\(x\\) increases at a constant rate of \\({r|int}\\) units per second. Find the rate of change of \\(y\\) when \\(x={a|int}\\)."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-8.4"
+            ],
+            "topic": "Further differentiation",
+            "chapter": "P1-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-8-4.json",
+                "locator": "P1-8.4-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-8.4-QC3-gen",
+        "section": "P1-8.4",
+        "kind": "generated",
+        "title": "Finding x from two rates",
+        "marks": 2,
+        "source": "Theory P1-8.4 Quick check 3; dy/dx = (dy/dt) / (dx/dt)",
+        "params": [
+            {
+                "name": "c",
+                "min": 1,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "h",
+                "min": 1,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "r",
+                "min": 2,
+                "max": 5,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "c2": "2*c",
+            "R": "2*r*h",
+            "g": "2*h",
+            "A": "c+h"
+        },
+        "constraints": [
+            "r>1"
+        ],
+        "original": {
+            "c": 1,
+            "h": 2,
+            "r": 3
+        },
+        "stem": "A point moves along the curve \\(y=x^2-{c2|int}x\\). At the point \\(P\\), the \\(y\\)-coordinate is increasing at \\({R|int}\\) units per second and the \\(x\\)-coordinate is increasing at \\({r|int}\\) units per second. Find the \\(x\\)-coordinate of \\(P\\).",
+        "answer": {
+            "expression": "c+h",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\dfrac{dy}{dx}=\\dfrac{dy/dt}{dx/dt}=\\dfrac{{R|int}}{{r|int}}={g|int}\\)",
+                "result": "2*h",
+                "format": "int",
+                "mark": "M1",
+                "note": "Divide the rates."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(2x-{c2|int}={g|int}\\), so \\(x={A|int}\\)",
+                "result": "c+h",
+                "format": "int",
+                "mark": "A1",
+                "note": "Solve for x."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original y = x^2 - 2x, dy/dt = 12, dx/dt = 3, x = 3"
+            },
+            {
+                "id": "particle",
+                "stem": "A particle moves on the curve \\(y=x^2-{c2|int}x\\). At one instant \\(\\dfrac{dy}{dt}={R|int}\\) and \\(\\dfrac{dx}{dt}={r|int}\\). Find the value of \\(x\\) at this instant."
+            },
+            {
+                "id": "graph",
+                "stem": "The variables \\(x\\) and \\(y\\) satisfy \\(y=x^2-{c2|int}x\\), and both are increasing with time. When \\(y\\) is increasing at \\({R|int}\\) units per second, \\(x\\) is increasing at \\({r|int}\\) units per second. Find \\(x\\) at that time."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-8.4"
+            ],
+            "topic": "Further differentiation",
+            "chapter": "P1-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-8-4.json",
+                "locator": "P1-8.4-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-8.4-PP-9709-12-FM20-Q4",
+        "section": "P1-8.4",
+        "kind": "pastpaper",
+        "title": "Two rates on a quadratic curve",
+        "marks": 4,
+        "source": {
+            "paper": "9709/12/F/M/20 Q4",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m20_qp_12.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m20_ms_12.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>A curve has equation \\(y=x^2-2x-3\\). A point is moving along the curve in such a way that at \\(P\\) the \\(y\\)-coordinate is increasing at 4 units per second and the \\(x\\)-coordinate is increasing at 6 units per second.</p><p>Find the \\(x\\)-coordinate of \\(P\\). [4]</p>",
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-8.4"
+            ],
+            "topic": "Further differentiation",
+            "chapter": "P1-8",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-8-4.json",
+                "locator": "P1-8.4-PP-9709-12-FM20-Q4"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(\\dfrac{dy}{dx}=2x-2\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, dy/dx = 2x − 2."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(\\dfrac{dy}{dx}=\\dfrac{4}{6}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 OE, SOI."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(2x-2=\\dfrac{4}{6}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, their (2x − 2) = their 4/6; LHS and RHS must be their dy/dx expression and value."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(x=\\dfrac{4}{3}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 OE, x = 4/3."
+            }
+        ]
+    },
+    {
+        "id": "P1-8.4-PP-9709-11-MJ18-Q2",
+        "section": "P1-8.4",
+        "kind": "pastpaper",
+        "title": "Rate of change of the y-coordinate",
+        "marks": 4,
+        "source": {
+            "paper": "9709/11/M/J/18 Q2",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s18_qp_11.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s18_ms_11.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>A point is moving along the curve \\(y=2x+\\dfrac{5}{x}\\) in such a way that the \\(x\\)-coordinate is increasing at a constant rate of 0.02 units per second. Find the rate of change of the \\(y\\)-coordinate when \\(x=1\\). [4]</p>",
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-8.4"
+            ],
+            "topic": "Further differentiation",
+            "chapter": "P1-8",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-8-4.json",
+                "locator": "P1-8.4-PP-9709-11-MJ18-Q2"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(\\dfrac{dy}{dx}=2-\\dfrac{5}{x^2}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, reasonable attempt at differentiation."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(=-3\\) when \\(x=1\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 CAO (−3), may be implied."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(\\dfrac{dy}{dt}=\\dfrac{dy}{dx}\\times\\dfrac{dx}{dt}=-3\\times0.02\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, ignore notation, but needs to multiply dy/dx by 0.02."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(=-0.06\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, −0.06."
+            }
+        ]
+    }
+]

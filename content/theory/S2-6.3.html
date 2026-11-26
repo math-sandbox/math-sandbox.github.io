@@ -1,0 +1,86 @@
+<script src="/assets/redirect.js"></script>
+<section class="theory" data-section="S2-6.3">
+<h2>6.3 Confidence intervals for population mean</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Probability &amp; Statistics 2 Coursebook (Jayne Kranat), Chapter 6 Estimation, printed pp.131–137. Own wording and new numbers, following the coursebook confidence intervals for a population mean from a normal population or a large sample.</p>
+<p class="key-words"><strong>Key words:</strong> <em>confidence interval</em>, <em>central limit theorem</em></p>
+<h3>What a confidence interval is</h3>
+<p>A single sample mean \(\bar{x}\) estimates the population mean \(\mu\), but it is unlikely to be exactly right. A <strong>confidence interval</strong> is a range of values calculated from the sample. For a 95% interval, if many samples were taken and an interval calculated from each, about 95% of those intervals would contain \(\mu\).</p>
+<h3>The formula</h3>
+<p>If \(\bar{X}\sim\mathrm{N}\bigl(\mu, \tfrac{\sigma^2}{n}\bigr)\), the interval is</p>
+<p>\[\bar{x}-z\dfrac{\sigma}{\sqrt{n}}\lt \mu\lt \bar{x}+z\dfrac{\sigma}{\sqrt{n}},\]</p>
+<table class="dist"><tr><th>Confidence level</th><th>\(z\)</th></tr><tr><td>90%</td><td>1.645</td></tr><tr><td>95%</td><td>1.96</td></tr><tr><td>98%</td><td>2.326</td></tr><tr><td>99%</td><td>2.576</td></tr></table>
+<p>The width of the interval is \(2z\dfrac{\sigma}{\sqrt{n}}\). A higher confidence level gives a wider interval; a larger sample gives a narrower one.</p>
+<h3>When the population is not normal</h3>
+<p>If the population is not known to be normal, the <strong>Central Limit theorem</strong> says that for a large sample \(\bar{X}\) is approximately normal, so the same formula can be used. If \(\sigma\) is unknown, a large sample also lets us use the unbiased estimate \(s\) in place of \(\sigma\).</p>
+<div class="worked-example">
+<h4>Worked example 1: A 95% interval</h4>
+<p class="src">Coursebook, 6.3, confidence interval with known variance. New numbers.</p>
+<p>The masses of some parcels have standard deviation 0.8 kg. A random sample of 64 parcels has mean mass 5.2 kg. Find a 95% confidence interval for the population mean mass.</p>
+<ol class="steps">
+<li>\(z=1.96\) <span class="mark">B1</span></li>
+<li>\(5.2\pm1.96\times\dfrac{0.8}{\sqrt{64}}=5.2\pm0.196\) <span class="mark">M1</span></li>
+<li>\(5.00\lt \mu\lt 5.40\) (3 s.f.) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \((5.00, 5.40)\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: Using a large sample</h4>
+<p class="src">Coursebook, 6.3, large-sample interval with an estimated variance. New numbers.</p>
+<p>For a random sample of 150 adults, the times spent travelling to work have \(\bar{x}=34.0\) minutes and unbiased variance estimate \(s^2=90\). Find a 90% confidence interval for the population mean time, and say why a normal model for the population is not needed.</p>
+<ol class="steps">
+<li>\(z=1.645\) <span class="mark">B1</span></li>
+<li>\(34.0\pm1.645\times\sqrt{\dfrac{90}{150}}=34.0\pm1.274\) <span class="mark">M1</span></li>
+<li>\(32.7\lt \mu\lt 35.3\) <span class="mark">A1</span></li>
+<li>The sample is large, so by the Central Limit theorem the sample mean is approximately normal. <span class="mark">B1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \((32.7, 35.3)\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Using \(\sigma\) instead of \(\sigma/\sqrt{n}\).</li><li>Using the one-tailed value 1.645 for a 95% interval. A 95% interval uses 1.96.</li><li>Giving a single value instead of an interval, or rounding the limits too early.</li></ul>
+<h3>Past paper</h3>
+<p class="src">9709/72/F/M/19 Q1, official QP and official MS.</p>
+<p>The masses of a certain variety of plums are known to have standard deviation 13.2 g. A random sample of 200 of these plums is taken and the mean mass of the plums in the sample is found to be 62.3 g.</p><p>(i) Calculate a 98% confidence interval for the population mean mass. [3]</p><p>(ii) State with a reason whether it was necessary to use the Central Limit theorem in the calculation in part (i). [1]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(i) \(z=2.326\) <span class="mark">B1</span> Official MS: B1, z = 2.326.</li>
+<li>(i) \(62.3\pm2.326\times\dfrac{13.2}{\sqrt{200}}\) <span class="mark">M1</span> Official MS: M1, any z; expression of correct form; must be a ‘z’.</li>
+<li>(i) \(60.1\) to \(64.5\) (3 s.f.) <span class="mark">A1</span> Official MS: A1, 60.1 to 64.5 (3 s.f.); must be an interval.</li>
+<li>(ii) Yes, because the population is not given to be normal (the population distribution is unknown). <span class="mark">B1</span> Official MS: B1, yes, because pop not (given to be) normal, or pop distribution unknown; no contradictions.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/73/M/J/12 Q1, official QP and official MS.</p>
+<p>Leaves from a certain type of tree have lengths that are distributed with standard deviation 3.2 cm. A random sample of 250 of these leaves is taken and the mean length of this sample is found to be 12.5 cm.</p><p>(i) Calculate a 99% confidence interval for the population mean length. [3]</p><p>(ii) Write down the probability that the whole of a 99% confidence interval will lie below the population mean. [1]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(i) \(z=2.576\) <span class="mark">B1</span> Official MS: B1, z in the range 2.574 to 2.576.</li>
+<li>(i) \(12.5\pm2.576\times\dfrac{3.2}{\sqrt{250}}\) <span class="mark">M1</span> Official MS: M1, any z, correct form.</li>
+<li>(i) \(12.0\) to \(13.0\) <span class="mark">A1</span> Official MS: A1, 12.0 to 13.0 (3 s.f.); allow 12 to 13.</li>
+<li>(ii) \(0.005\) <span class="mark">B1</span> Official MS: B1, 0.005 or 0.5% (not just 0.5).</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>A random sample of 100 values from a population with standard deviation 6 has mean 25. Find the upper limit of a 95% confidence interval for the population mean, using \(z=1.96\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(1.96\times\dfrac{6}{10}=1.176\)</li><li>\(25+1.176\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(26.2\) (3 s.f.)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>A 99% confidence interval for a population mean is calculated from a random sample of 64 values from a population with standard deviation 4. Using \(z=2.576\), find the width of the interval.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>Half-width \(=2.576\times\dfrac{4}{8}=1.288\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(2.58\) (3 s.f.)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>A 95% confidence interval for a population mean, calculated from a random sample of 49 values, is \((27.2, 32.8)\). Using \(z=1.96\), find the population standard deviation.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>Half-width \(=2.8\)</li><li>\(1.96\times\dfrac{\sigma}{7}=2.8\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(\sigma=10.0\)</p>
+</details>
+</div>
+</section>

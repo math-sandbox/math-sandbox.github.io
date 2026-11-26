@@ -1,0 +1,89 @@
+<script src="/assets/redirect.js"></script>
+<section class="theory" data-section="S1-7.2">
+<h2>7.2 The geometric distribution</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Probability &amp; Statistics 1 Coursebook (Dean Chalmers), Chapter 7 The binomial and geometric distributions, printed pp.175–184. Own wording and new numbers, following the coursebook conditions for a geometric model, the formula for geometric probabilities, the results for P(X &gt; r) and the mean 1/p.</p>
+<p class="key-words"><strong>Key words:</strong> <em>geometric distribution</em>, <em>success</em>, <em>trial</em></p>
+<h3>When is a geometric model suitable?</h3>
+<p>Sometimes we repeat a trial until the first success and count how many trials are needed. If the trials are independent and the probability of success \(p\) is the same for every trial, the number of trials \(X\) up to and including the first success has a <strong>geometric distribution</strong>. We write \(X\sim\mathrm{Geo}(p)\).</p>
+<p>There is no fixed number of trials, so \(X\) can take any of the values \(1, 2, 3, \dots\). This is the main difference from a binomial model.</p>
+<h3>Geometric probabilities</h3>
+<p>For the first success to be on trial \(r\), the first \(r-1\) trials must be failures and then trial \(r\) a success. With \(q=1-p\),</p>
+<p>\[P(X=r)=q^{r-1}p,\qquad r=1, 2, 3, \dots\]</p>
+<p>More than \(r\) trials are needed exactly when the first \(r\) trials are all failures, so \(P(X\gt r)=q^r\) and \(P(X\le r)=1-q^r\). The most likely value (the mode) is always \(X=1\).</p>
+<h3>The mean</h3>
+<p>If \(X\sim\mathrm{Geo}(p)\), then \(E(X)=\dfrac{1}{p}\). For example, the mean number of throws of a fair die needed to obtain a six is 6.</p>
+<div class="ms-widget" data-widget="geometric-bars"></div>
+<script src="../../assets/widget-kinds-pkg18.js"></script>
+<div class="worked-example">
+<h4>Worked example 1: The first success on the third trial</h4>
+<p class="src">Coursebook, 7.2, geometric probabilities. New numbers.</p>
+<p>\(X\sim\mathrm{Geo}(0.2)\). Find \(P(X=3)\) and \(P(X\le 3)\).</p>
+<ol class="steps">
+<li>\(P(X=3)=0.8^2\times0.2\) <span class="mark">M1</span></li>
+<li>\(=0.128\) <span class="mark">A1</span></li>
+<li>\(P(X\le 3)=1-0.8^3=1-0.512=0.488\) <span class="mark">B1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(P(X=3)=0.128\), \(P(X\le 3)=0.488\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: Waiting for a six</h4>
+<p class="src">Coursebook, 7.2, P(X &gt; r) and the mean. New numbers.</p>
+<p>A fair die is thrown until a six is obtained. Find the probability that more than 4 throws are needed, and the mean number of throws.</p>
+<ol class="steps">
+<li>\(X\sim\mathrm{Geo}\bigl(\tfrac{1}{6}\bigr)\) <span class="mark">B1</span></li>
+<li>\(P(X\gt 4)=\bigl(\tfrac{5}{6}\bigr)^4\) <span class="mark">M1</span></li>
+<li>\(=0.482\) (3 s.f.) <span class="mark">A1</span></li>
+<li>\(E(X)=\dfrac{1}{1/6}=6\) <span class="mark">B1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(P(X\gt 4)=0.482\), \(E(X)=6\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Writing \(P(X=r)=q^rp\). Only \(r-1\) failures come before the first success.</li><li>Mixing up \(P(X\gt r)=q^r\) and \(P(X\ge r)=q^{r-1}\).</li><li>Using a geometric model when the number of trials is fixed. Then the number of successes is binomial.</li></ul>
+<h3>Past paper</h3>
+<p class="src">9709/52/M/J/21 Q1, official QP and official MS.</p>
+<p>An ordinary fair die is thrown repeatedly until a 5 is obtained. The number of throws taken is denoted by the random variable \(X\).</p><p>(a) Write down the mean of \(X\). [1]</p><p>(b) Find the probability that a 5 is first obtained after the 3rd throw but before the 8th throw. [2]</p><p>(c) Find the probability that a 5 is first obtained in fewer than 10 throws. [2]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(a) \(X\sim\mathrm{Geo}\bigl(\tfrac{1}{6}\bigr)\), so \(E(X)=\dfrac{1}{1/6}=6\) <span class="mark">B1</span> Official MS: B1 WWW, 6.</li>
+<li>(b) \(P(4\le X\le 7)=\bigl(\tfrac{5}{6}\bigr)^3\tfrac{1}{6}+\bigl(\tfrac{5}{6}\bigr)^4\tfrac{1}{6}+\bigl(\tfrac{5}{6}\bigr)^5\tfrac{1}{6}+\bigl(\tfrac{5}{6}\bigr)^6\tfrac{1}{6}\), or \(\bigl(\tfrac{5}{6}\bigr)^3-\bigl(\tfrac{5}{6}\bigr)^7\) <span class="mark">M1</span> Official MS: M1, p³(1 – p) + p⁴(1 – p) + p⁵(1 – p) + p⁶(1 – p), 0 &lt; p &lt; 1 (here p = 5/6). Alternative method: M1 for p³ – p⁷, 0 &lt; p &lt; 1.</li>
+<li>(b) \(=0.300\) (0.2996…) <span class="mark">A1</span> Official MS: A1, 0.300 (0.2996…); at least 3 s.f., award at most accurate value.</li>
+<li>(c) \(P(X&lt;10)=1-\bigl(\tfrac{5}{6}\bigr)^9\) <span class="mark">M1</span> Official MS: M1, 1 – pⁿ, 0 &lt; p &lt; 1, n = 9, 10; or the sum p + p(1 – p) + … + p(1 – p)⁸ (+ p(1 – p)⁹), as per answer for minimum terms shown.</li>
+<li>(c) \(=0.806\) <span class="mark">A1</span> Official MS: A1, 0.806.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/53/M/J/23 Q1, official QP and official MS.</p>
+<p>Two fair coins are thrown at the same time repeatedly until a pair of heads is obtained. The number of throws taken is denoted by the random variable \(X\).</p><p>(a) State the value of \(E(X)\). [1]</p><p>(b) Find the probability that exactly 5 throws are required to obtain a pair of heads. [1]</p><p>(c) Find the probability that fewer than 7 throws are required to obtain a pair of heads. [2]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(a) \(P(HH)=\tfrac{1}{4}\), so \(E(X)=4\) <span class="mark">B1</span> Official MS: B1, E(X) = 4.</li>
+<li>(b) \(P(X=5)=\bigl(\tfrac{3}{4}\bigr)^4\times\tfrac{1}{4}=\dfrac{81}{1024}=0.0791\) <span class="mark">B1</span> Official MS: B1, 81/1024 or 0.0791.</li>
+<li>(c) \(P(X&lt;7)=1-\bigl(\tfrac{3}{4}\bigr)^6\) <span class="mark">M1</span> Official MS: M1, 1 – pⁿ, 0 &lt; p &lt; 1, n = 6, 7; or p + p(1 – p) + … + p(1 – p)ⁿ where n = 4, 5.</li>
+<li>(c) \(=\dfrac{3367}{4096}=0.822\) <span class="mark">A1</span> Official MS: A1, 3367/4096 or 0.822; accept 0.82202148… to at least 3 s.f.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>\(X\sim\mathrm{Geo}(0.3)\). Find \(P(X=4)\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(P(X=4)=0.7^3\times0.3=0.343\times0.3\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(0.103\) (3 s.f.)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>\(X\sim\mathrm{Geo}(0.25)\). Find \(P(X\gt 5)\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>The first 5 trials are all failures.</li><li>\(P(X\gt 5)=0.75^5\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(0.237\) (3 s.f.)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>A fair spinner has 6 equal sectors numbered 1 to 6. It is spun repeatedly until a 1 is obtained. Find the probability that a 1 is obtained in at most 3 spins.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(P(X\le 3)=1-\bigl(\tfrac{5}{6}\bigr)^3=1-\dfrac{125}{216}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{91}{216}=0.421\) (3 s.f.)</p>
+</details>
+</div>
+</section>

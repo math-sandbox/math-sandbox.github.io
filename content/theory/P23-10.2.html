@@ -1,0 +1,90 @@
+<script src="/assets/redirect.js"></script>
+<section class="theory" data-section="P23-10.2">
+<h2>10.2 Forming a differential equation from a problem</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 2 &amp; 3 Coursebook (Sue Pemberton, series editor Julian Gilbey), Chapter 10 Differential equations, printed pp.252–261. Own wording and new numbers, following the coursebook translation of statements about rates of change into differential equations, then solving them with the given conditions.</p>
+<p class="key-words"><strong>Key words:</strong> <em>differential equation</em>, <em>rate of change</em></p>
+<h3>From words to an equation</h3>
+<p>Many problems describe a <strong>rate of change</strong>. The rate of change of \(N\) with respect to time \(t\) is \(\dfrac{dN}{dt}\). Translate the words carefully:</p>
+<ul><li>'\(N\) increases at a rate proportional to \(N\)' gives \(\dfrac{dN}{dt}=kN\) with \(k\gt 0\).</li><li>'\(N\) decreases at a rate proportional to \(N\)' gives \(\dfrac{dN}{dt}=-kN\) with \(k\gt 0\), or \(\dfrac{dN}{dt}=kN\) with \(k\lt 0\).</li><li>'the gradient of a curve is proportional to \(xy\)' gives \(\dfrac{dy}{dx}=kxy\).</li></ul>
+<p>The constant \(k\) is unknown. A given rate at a known value lets you find \(k\), either straight away or after solving the <strong>differential equation</strong>. You then need a second condition for the constant of integration.</p>
+<h3>Exponential growth and decay</h3>
+<p>Solving \(\dfrac{dN}{dt}=kN\) by separating the variables gives \(\ln N=kt+c\), so \(N=N_0\mathrm{e}^{kt}\), where \(N_0\) is the value when \(t=0\). For example, the time to double is \(\dfrac{\ln2}{k}\). When an answer is found, interpret it in context, for example what happens to \(N\) as \(t\) becomes large.</p>
+<div class="worked-example">
+<h4>Worked example 1: Forming and solving</h4>
+<p class="src">Coursebook, 10.2, forming a differential equation. New numbers.</p>
+<p>The mass \(m\) grams of a substance decreases at a rate proportional to \(m\). When \(t=0\), \(m=80\) and the mass is decreasing at 4 grams per day. Find \(m\) in terms of \(t\), and the time when \(m=40\).</p>
+<ol class="steps">
+<li>\(\dfrac{dm}{dt}=-km\), and \(4=k\times80\) gives \(k=0.05\) <span class="mark">B1</span></li>
+<li>\(\displaystyle\int\frac{1}{m}\,dm=\int-0.05\,dt\), so \(\ln m=-0.05t+c\) <span class="mark">M1</span></li>
+<li>\(t=0\), \(m=80\): \(m=80\mathrm{e}^{-0.05t}\) <span class="mark">A1</span></li>
+<li>\(40=80\mathrm{e}^{-0.05t}\) gives \(t=\dfrac{\ln2}{0.05}=13.9\) days <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(m=80\mathrm{e}^{-0.05t}\); \(t=13.9\) days (3 s.f.)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: A gradient condition</h4>
+<p class="src">Coursebook, 10.2, finding a curve from its gradient. New numbers.</p>
+<p>The gradient of a curve at \((x, y)\) is proportional to \(xy\), where \(y\gt 0\). The curve passes through \((0, 2)\), and the gradient at \((1, 2\mathrm{e})\) is \(4\mathrm{e}\). Find \(y\) in terms of \(x\).</p>
+<ol class="steps">
+<li>\(\dfrac{dy}{dx}=kxy\); at \((1, 2\mathrm{e})\): \(4\mathrm{e}=k\times1\times2\mathrm{e}\), so \(k=2\) <span class="mark">B1</span></li>
+<li>\(\displaystyle\int\frac{1}{y}\,dy=\int2x\,dx\), so \(\ln y=x^2+c\) <span class="mark">M1</span></li>
+<li>\((0, 2)\): \(c=\ln2\), so \(y=2\mathrm{e}^{x^2}\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(y=2\mathrm{e}^{x^2}\), which also passes through \((1, 2\mathrm{e})\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Leaving out the minus sign for a quantity that is decreasing.</li><li>Using the same letter \(k\) for the constant of proportionality and the constant of integration.</li><li>Finding k from a rate but forgetting to use the second condition for the constant of integration.</li></ul>
+<h3>Past paper</h3>
+<p class="src">9709/31/O/N/19 Q4, official QP and official MS.</p>
+<p>The number of insects in a population \(t\) weeks after the start of observations is denoted by \(N\). The population is decreasing at a rate proportional to \(N\mathrm{e}^{-0.02t}\). The variables \(N\) and \(t\) are treated as continuous, and it is given that when \(t=0\), \(N=1000\) and \(\dfrac{dN}{dt}=-10\).</p><p>(i) Show that \(N\) and \(t\) satisfy the differential equation</p><p>\(\displaystyle\frac{dN}{dt}=-0.01\mathrm{e}^{-0.02t}N.\) [1]</p><p>(ii) Solve the differential equation and find the value of \(t\) when \(N=800\). [6]</p><p>(iii) State what happens to the value of \(N\) as \(t\) becomes large. [1]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(i) \(\dfrac{dN}{dt}=k\mathrm{e}^{-0.02t}N\) and \(-10=k\times1\times1000\), so \(k=-0.01\) <span class="mark">B1</span> Official MS: B1 OE, state dN/dt = ke^(−0.02t)N and show k = −0.01 (−10 = k × 1 × 1000).</li>
+<li>(ii) \(\displaystyle\int\frac{1}{N}\,dN=\int-0.01\mathrm{e}^{-0.02t}\,dt\) <span class="mark">B1</span> Official MS: B1, separate variables correctly and integrate at least one side.</li>
+<li>(ii) \(\ln N\) <span class="mark">B1</span> Official MS: B1 OE, obtain term ln N.</li>
+<li>(ii) \(0.5\mathrm{e}^{-0.02t}\) <span class="mark">B1</span> Official MS: B1 OE, obtain term 0.5e^(−0.02t).</li>
+<li>(ii) \(t=0\), \(N=1000\): \(\ln1000=0.5+c\) <span class="mark">M1</span> Official MS: M1, use N = 1000, t = 0 to evaluate a constant, or as limits, in a solution with terms a ln N and be^(−0.02t), where ab ≠ 0.</li>
+<li>(ii) \(\ln N-\ln1000=0.5\bigl(\mathrm{e}^{-0.02t}-1\bigr)\) <span class="mark">A1</span> Official MS: A1, obtain correct solution in any form, e.g. ln N − ln 1000 = 0.5(e^(−0.02t) − 1).</li>
+<li>(ii) \(N=800\): \(\mathrm{e}^{-0.02t}=1+2\ln0.8\), \(t=29.6\) <span class="mark">A1</span> Official MS: A1, substitute N = 800 and obtain t = 29.6.</li>
+<li>(iii) \(N\) approaches \(\dfrac{1000}{\sqrt{\mathrm{e}}}\) <span class="mark">B1</span> Official MS: B1, state that N approaches 1000/√e; accept 606 or 607 or 606.5.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/32/M/J/21 Q7, official QP and official MS.</p>
+<p>A curve is such that the gradient at a general point with coordinates \((x, y)\) is proportional to \(\dfrac{y}{\sqrt{x+1}}\). The curve passes through the points with coordinates \((0, 1)\) and \((3, \mathrm{e})\).</p><p>By setting up and solving a differential equation, find the equation of the curve, expressing \(y\) in terms of \(x\). [7]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>\(\dfrac{dy}{dx}=\dfrac{ky}{\sqrt{x+1}}\) <span class="mark">B1</span> Official MS: B1 OE, state equation dy/dx = ky/√(x + 1); must be a differential equation.</li>
+<li>\(\displaystyle\int\frac{1}{y}\,dy=\int\frac{k}{\sqrt{x+1}}\,dx\) <span class="mark">*M1</span> Official MS: *M1, separate variables correctly for their differential equation and integrate at least one side.</li>
+<li>\(\ln y\) <span class="mark">A1</span> Official MS: A1, obtain ln y; allow M1A1A1 if they have assumed k = 1 or are working with an incorrect value for k.</li>
+<li>\(2k\sqrt{x+1}\) <span class="mark">A1</span> Official MS: A1, obtain 2[k]√(x + 1).</li>
+<li>\((0, 1)\): \(0=2k+c\); \((3, \mathrm{e})\): \(1=4k+c\) <span class="mark">M1</span> Official MS: DM1 (dependent on *M1), use (0, 1) and (3, e) in an expression containing ln y and √(x + 1) and a constant of integration to determine k and/or c; stored as M1.</li>
+<li>\(k=\tfrac{1}{2}\), \(c=-1\) <span class="mark">A1</span> Official MS: A1 OE, obtain k = ½ and c = −1 (ln y = √(x + 1) − 1); c depends on where it is placed in their equation.</li>
+<li>\(y=\exp\bigl(\sqrt{x+1}-1\bigr)\) <span class="mark">A1</span> Official MS: A1 NFWW, OE, ISW, obtain y = exp(√(x + 1) − 1).</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>The rate of increase of a population \(N\) is proportional to \(N\). When \(N=400\), the population is increasing at a rate of 10 per year. Writing \(\dfrac{dN}{dt}=kN\), find \(k\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(10=400k\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(0.025\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>A quantity \(N\) satisfies \(\dfrac{dN}{dt}=0.05N\), where \(t\) is the time in years. Find the time taken for \(N\) to double.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(N=N_0\mathrm{e}^{0.05t}\)</li><li>\(\mathrm{e}^{0.05t}=2\), \(t=\dfrac{\ln2}{0.05}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(13.9\) years (3 s.f.)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>The variables \(x\) and \(t\) satisfy \(\dfrac{dx}{dt}=0.2(50-x)\), where \(x\lt 50\), and \(x=0\) when \(t=0\). Find the value of \(x\) when \(t=3\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(-\ln(50-x)=0.2t+c\), \(c=-\ln50\)</li><li>\(x=50\bigl(1-\mathrm{e}^{-0.2t}\bigr)\), so \(x=50\bigl(1-\mathrm{e}^{-0.6}\bigr)\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(22.6\) (3 s.f.)</p>
+</details>
+</div>
+</section>

@@ -1,0 +1,420 @@
+[
+    {
+        "id": "S1-8.2-QC1-gen",
+        "section": "S1-8.2",
+        "kind": "generated",
+        "title": "Standardising a value of a normal variable",
+        "marks": 2,
+        "source": "Theory S1-8.2 Quick check 1; z = (x - mu)/sigma",
+        "params": [
+            {
+                "name": "mu",
+                "min": 20,
+                "max": 80,
+                "step": 1
+            },
+            {
+                "name": "s",
+                "min": 2,
+                "max": 12,
+                "step": 1
+            },
+            {
+                "name": "d",
+                "min": 1,
+                "max": 15,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "v": "s*s",
+            "x": "mu+d",
+            "A": "d/s"
+        },
+        "constraints": [
+            "s>1"
+        ],
+        "original": {
+            "mu": 60,
+            "s": 5,
+            "d": 8
+        },
+        "stem": "The random variable \\(X\\) has the distribution \\(\\mathrm{N}({mu|int}, {v|int})\\). Find the value of \\(z\\) such that \\(P(X\\lt {x|int})=\\Phi(z)\\).",
+        "answer": {
+            "expression": "d/s",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\sigma=\\sqrt{{v|int}}={s|int}\\) and \\(z=\\dfrac{x-\\mu}{\\sigma}=\\dfrac{{x|int}-{mu|int}}{{s|int}}\\)",
+                "result": "d",
+                "format": "int",
+                "mark": "M1",
+                "note": "Standardise with the standard deviation, not the variance."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(z={A|sf3z}\\)",
+                "result": "d/s",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original N(60, 25), x = 68, z = 1.6"
+            },
+            {
+                "id": "heights",
+                "stem": "The heights of some plants are normally distributed with mean \\({mu|int}\\) cm and standard deviation \\({s|int}\\) cm. Find the standardised value \\(z\\) that corresponds to a height of \\({x|int}\\) cm."
+            },
+            {
+                "id": "times",
+                "stem": "The time taken to complete a task is normally distributed with mean \\({mu|int}\\) seconds and variance \\({v|int}\\) seconds squared. Find the value of \\(z\\) for which the probability of a time less than \\({x|int}\\) seconds is \\(\\Phi(z)\\)."
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-8.2"
+            ],
+            "topic": "The normal distribution",
+            "chapter": "S1-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-8-2.json",
+                "locator": "S1-8.2-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-8.2-QC2-gen",
+        "section": "S1-8.2",
+        "kind": "generated",
+        "title": "Finding the standard deviation from a probability",
+        "marks": 2,
+        "source": "Theory S1-8.2 Quick check 2; (x - mu)/sigma = z from the table",
+        "params": [
+            {
+                "name": "mu",
+                "min": 20,
+                "max": 80,
+                "step": 1
+            },
+            {
+                "name": "d",
+                "min": 2,
+                "max": 30,
+                "step": 1
+            },
+            {
+                "name": "i",
+                "min": 0,
+                "max": 4,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "x": "mu+d",
+            "Z": "[0.842,1.036,1.282,1.645,2.054][i]",
+            "P": "[0.8,0.85,0.9,0.95,0.98][i]",
+            "A": "d/[0.842,1.036,1.282,1.645,2.054][i]"
+        },
+        "constraints": [
+            "d>1"
+        ],
+        "original": {
+            "mu": 50,
+            "d": 10,
+            "i": 2
+        },
+        "stem": "The random variable \\(X\\) has the distribution \\(\\mathrm{N}({mu|int}, \\sigma^2)\\), and \\(P(X\\lt {x|int})={P|raw}\\). Given that \\(\\Phi({Z|raw})={P|raw}\\), find \\(\\sigma\\).",
+        "answer": {
+            "expression": "d/Z",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\dfrac{{x|int}-{mu|int}}{\\sigma}={Z|raw}\\)",
+                "result": "Z",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Form an equation with the z-value."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\sigma=\\dfrac{{d|int}}{{Z|raw}}={A|sf3z}\\)",
+                "result": "d/Z",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Solve for sigma."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original mean 50, P(X < 60) = 0.9, sigma = 7.80"
+            },
+            {
+                "id": "bags",
+                "stem": "The masses of bags of rice are normally distributed with mean \\({mu|int}\\) g. The proportion of bags with mass less than \\({x|int}\\) g is \\({P|raw}\\). Using \\(\\Phi({Z|raw})={P|raw}\\), find the standard deviation of the masses."
+            },
+            {
+                "id": "scores",
+                "stem": "Scores in a test are modelled by a normal distribution with mean \\({mu|int}\\). The probability that a score is below \\({x|int}\\) is \\({P|raw}\\). Given that \\(\\Phi({Z|raw})={P|raw}\\), find the standard deviation of the scores."
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-8.2"
+            ],
+            "topic": "The normal distribution",
+            "chapter": "S1-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-8-2.json",
+                "locator": "S1-8.2-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-8.2-QC3-gen",
+        "section": "S1-8.2",
+        "kind": "generated",
+        "title": "Finding a value with a given upper-tail probability",
+        "marks": 2,
+        "source": "Theory S1-8.2 Quick check 3; x = mu + z sigma",
+        "params": [
+            {
+                "name": "mu",
+                "min": 20,
+                "max": 80,
+                "step": 1
+            },
+            {
+                "name": "s",
+                "min": 2,
+                "max": 12,
+                "step": 1
+            },
+            {
+                "name": "i",
+                "min": 0,
+                "max": 4,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "v": "s*s",
+            "Z": "[0.842,1.036,1.282,1.645,2.054][i]",
+            "P": "[0.8,0.85,0.9,0.95,0.98][i]",
+            "T": "[0.2,0.15,0.1,0.05,0.02][i]",
+            "A": "mu+[0.842,1.036,1.282,1.645,2.054][i]*s"
+        },
+        "constraints": [
+            "s>1"
+        ],
+        "original": {
+            "mu": 40,
+            "s": 6,
+            "i": 3
+        },
+        "stem": "The random variable \\(X\\) has the distribution \\(\\mathrm{N}({mu|int}, {v|int})\\). Given that \\(\\Phi({Z|raw})={P|raw}\\), find the value of \\(x\\) such that \\(P(X\\gt x)={T|raw}\\).",
+        "answer": {
+            "expression": "mu+Z*s",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(P(X\\lt x)={P|raw}\\), so \\(\\dfrac{x-{mu|int}}{{s|int}}={Z|raw}\\)",
+                "result": "Z",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Use the complement and the z-value."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(x={Z|raw}\\times{s|int}+{mu|int}={A|sf3z}\\)",
+                "result": "mu+Z*s",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Rearrange for x."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original N(40, 36), P(X > x) = 0.05, x = 49.9"
+            },
+            {
+                "id": "eggs",
+                "stem": "The masses of eggs are normally distributed with mean \\({mu|int}\\) g and standard deviation \\({s|int}\\) g. Eggs heavier than \\(w\\) g are labelled extra large, and the proportion labelled extra large is \\({T|raw}\\). Given that \\(\\Phi({Z|raw})={P|raw}\\), find \\(w\\)."
+            },
+            {
+                "id": "journey",
+                "stem": "Journey times are normally distributed with mean \\({mu|int}\\) minutes and standard deviation \\({s|int}\\) minutes. A proportion \\({T|raw}\\) of journeys take longer than \\(t\\) minutes. Use \\(\\Phi({Z|raw})={P|raw}\\) to find \\(t\\)."
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-8.2"
+            ],
+            "topic": "The normal distribution",
+            "chapter": "S1-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-8-2.json",
+                "locator": "S1-8.2-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-8.2-PP-9709-61-MJ14-Q1",
+        "section": "S1-8.2",
+        "kind": "pastpaper",
+        "title": "Petrol consumption of a type of car",
+        "marks": 4,
+        "source": {
+            "paper": "9709/61/M/J/14 Q1",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s14_qp_61.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s14_ms_61.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>The petrol consumption of a certain type of car has a normal distribution with mean 24 kilometres per litre and standard deviation 4.7 kilometres per litre. Find the probability that the petrol consumption of a randomly chosen car of this type is between 21.6 kilometres per litre and 28.7 kilometres per litre. [4]</p>",
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-8.2"
+            ],
+            "topic": "The normal distribution",
+            "chapter": "S1-8",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-8-2.json",
+                "locator": "S1-8.2-PP-9709-61-MJ14-Q1"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(P(21.6\\lt X\\lt 28.7)=P\\Bigl(\\dfrac{21.6-24}{4.7}\\lt Z\\lt \\dfrac{28.7-24}{4.7}\\Bigr)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, standardising; no continuity correction, no square root."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(=P(-0.5106\\lt Z\\lt 1)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, one rounding to Φ (0.841 or 0.695)."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(=\\Phi(1)-\\Phi(-0.5106)=\\Phi(1)+\\Phi(0.5106)-1\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, Φ1 + Φ2 – 1."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(=0.8413-(1-0.6953)=0.537\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 0.537 (0.5366), correct answer."
+            }
+        ]
+    },
+    {
+        "id": "S1-8.2-PP-9709-63-ON12-Q1",
+        "section": "S1-8.2",
+        "kind": "pastpaper",
+        "title": "Standard deviation from a given probability",
+        "marks": 3,
+        "source": {
+            "paper": "9709/63/O/N/12 Q1",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w12_qp_63.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w12_ms_63.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>In a normal distribution with mean 9.3, the probability of a randomly chosen value being greater than 5.6 is 0.85. Find the standard deviation. [3]</p>",
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-8.2"
+            ],
+            "topic": "The normal distribution",
+            "chapter": "S1-8",
+            "marks": 3,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-8-2.json",
+                "locator": "S1-8.2-PP-9709-63-ON12-Q1"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(P(X\\gt 5.6)=0.85\\), so \\(z=-1.036\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, ±(1.036 to 1.037) seen."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(\\dfrac{5.6-9.3}{\\sigma}=-1.036\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, equation with 5.6 (or 13.0), 9.3, σ and a z-value; no continuity correction."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(\\sigma=3.57\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 3.57, correct final answer."
+            }
+        ]
+    }
+]

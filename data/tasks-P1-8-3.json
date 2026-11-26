@@ -1,0 +1,442 @@
+[
+    {
+        "id": "P1-8.3-QC1-gen",
+        "section": "P1-8.3",
+        "kind": "generated",
+        "title": "Greatest area of a rectangle with a fixed perimeter",
+        "marks": 2,
+        "source": "Theory P1-8.3 Quick check 1; A = x(2s - x)",
+        "params": [
+            {
+                "name": "s",
+                "min": 2,
+                "max": 25,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "P": "4*s",
+            "s2": "2*s",
+            "A": "s*s"
+        },
+        "constraints": [
+            "s>1"
+        ],
+        "original": {
+            "s": 10
+        },
+        "stem": "A rectangle has perimeter \\({P|int}\\) cm. Its width is \\(x\\) cm. Show that its area is \\(x({s2|int}-x)\\) cm\\(^2\\) and use differentiation to find the greatest possible area.",
+        "answer": {
+            "expression": "s*s",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "Length \\(={s2|int}-x\\), \\(A={s2|int}x-x^2\\), \\(\\dfrac{dA}{dx}={s2|int}-2x=0\\), so \\(x={s|int}\\) (and \\(\\dfrac{d^2A}{dx^2}=-2\\lt 0\\), maximum)",
+                "result": "s",
+                "format": "int",
+                "mark": "M1",
+                "note": "Area in one variable, differentiate, set to zero."
+            },
+            {
+                "name": "A",
+                "text_tex": "Greatest area \\(={s|int}\\times{s|int}={A|int}\\) cm\\(^2\\)",
+                "result": "s*s",
+                "format": "int",
+                "mark": "A1",
+                "note": "Substitute."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original perimeter 40 cm, greatest area 100 cm^2"
+            },
+            {
+                "id": "garden",
+                "stem": "A rectangular garden is to be enclosed by \\({P|int}\\) m of fencing. Find, by differentiation, the greatest area of the garden in square metres."
+            },
+            {
+                "id": "wire",
+                "stem": "A piece of wire \\({P|int}\\) cm long is bent into a rectangle. Use calculus to find the largest area, in cm\\(^2\\), that the rectangle can enclose."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-8.3"
+            ],
+            "topic": "Further differentiation",
+            "chapter": "P1-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-8-3.json",
+                "locator": "P1-8.3-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-8.3-QC2-gen",
+        "section": "P1-8.3",
+        "kind": "generated",
+        "title": "Volume of an open box from a square sheet",
+        "marks": 2,
+        "source": "Theory P1-8.3 Quick check 2; V = x(L - 2x)^2",
+        "params": [
+            {
+                "name": "k",
+                "min": 1,
+                "max": 6,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "L": "6*k",
+            "A": "16*k*k*k"
+        },
+        "constraints": [
+            "k>0"
+        ],
+        "original": {
+            "k": 2
+        },
+        "stem": "A square sheet of card of side \\({L|int}\\) cm has a square of side \\(x\\) cm cut from each corner, and the sides are folded up to make an open box. Find the greatest possible volume of the box.",
+        "answer": {
+            "expression": "16*k*k*k",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(V=x({L|int}-2x)^2\\); \\(\\dfrac{dV}{dx}=({L|int}-2x)({L|int}-6x)=0\\) gives \\(x={k|int}\\), since \\(x=\\tfrac{1}{2}\\times{L|int}\\) gives zero volume",
+                "result": "k",
+                "format": "int",
+                "mark": "M1",
+                "note": "Differentiate the product or expand first; reject the value that gives V = 0."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(V={k|int}\\times({L|int}-2\\times{k|int})^2={A|int}\\) cm\\(^3\\)",
+                "result": "16*k*k*k",
+                "format": "int",
+                "mark": "A1",
+                "note": "Substitute."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 12 cm sheet, greatest volume 128 cm^3"
+            },
+            {
+                "id": "tray",
+                "stem": "An open tray is made from a square sheet of metal of side \\({L|int}\\) cm by cutting a square of side \\(x\\) cm from each corner and folding. Find the maximum volume of the tray."
+            },
+            {
+                "id": "box",
+                "stem": "Squares of side \\(x\\) cm are removed from the corners of a \\({L|int}\\) cm by \\({L|int}\\) cm square of cardboard, and the remaining flaps are turned up to form an open box. Use differentiation to find the largest volume."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-8.3"
+            ],
+            "topic": "Further differentiation",
+            "chapter": "P1-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-8-3.json",
+                "locator": "P1-8.3-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-8.3-QC3-gen",
+        "section": "P1-8.3",
+        "kind": "generated",
+        "title": "Enclosure against a wall",
+        "marks": 2,
+        "source": "Theory P1-8.3 Quick check 3; A = x(L - 2x)",
+        "params": [
+            {
+                "name": "m",
+                "min": 2,
+                "max": 20,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "L": "4*m",
+            "A": "2*m*m"
+        },
+        "constraints": [
+            "m>1"
+        ],
+        "original": {
+            "m": 5
+        },
+        "stem": "A farmer has \\({L|int}\\) m of fencing to make a rectangular pen against a long straight wall, so that only three sides need fencing. The two sides at right angles to the wall are each \\(x\\) m long. Find the greatest possible area of the pen.",
+        "answer": {
+            "expression": "2*m*m",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(A=x({L|int}-2x)\\), \\(\\dfrac{dA}{dx}={L|int}-4x=0\\), so \\(x={m|int}\\) (and \\(\\dfrac{d^2A}{dx^2}=-4\\lt 0\\), maximum)",
+                "result": "m",
+                "format": "int",
+                "mark": "M1",
+                "note": "Form the area in x, differentiate, set to zero."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(A={m|int}\\times({L|int}-2\\times{m|int})={A|int}\\) m\\(^2\\)",
+                "result": "2*m*m",
+                "format": "int",
+                "mark": "A1",
+                "note": "Substitute."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 20 m of fencing, greatest area 50 m^2"
+            },
+            {
+                "id": "hens",
+                "stem": "A rectangular run for hens is built against a wall using \\({L|int}\\) m of fencing for the other three sides. Find, by differentiation, the largest possible area of the run."
+            },
+            {
+                "id": "beach",
+                "stem": "A rectangular area on a beach is marked out with \\({L|int}\\) m of rope on three sides, the fourth side being a straight sea wall. Find the maximum area that can be enclosed."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-8.3"
+            ],
+            "topic": "Further differentiation",
+            "chapter": "P1-8",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-8-3.json",
+                "locator": "P1-8.3-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-8.3-PP-9709-12-MJ10-Q8",
+        "section": "P1-8.3",
+        "kind": "pastpaper",
+        "title": "Volume of a block with a given surface area",
+        "marks": 8,
+        "source": {
+            "paper": "9709/12/M/J/10 Q8",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s10_qp_12.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s10_ms_12.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>A solid rectangular block has a square base of side \\(x\\) cm. The height of the block is \\(h\\) cm and the total surface area of the block is 96 cm\\(^2\\).</p><p>(i) Express \\(h\\) in terms of \\(x\\) and show that the volume, \\(V\\) cm\\(^3\\), of the block is given by</p><p>\\(V=24x-\\tfrac{1}{2}x^3.\\) [3]</p><p>Given that \\(x\\) can vary,</p><p>(ii) find the stationary value of \\(V\\), [3]</p><p>(iii) determine whether this stationary value is a maximum or a minimum. [2]</p>",
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-8.3"
+            ],
+            "topic": "Further differentiation",
+            "chapter": "P1-8",
+            "marks": 8,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-8-3.json",
+                "locator": "P1-8.3-PP-9709-12-MJ10-Q8"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(i) \\(4xh+2x^2=96\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, needs to consider at least 5 areas."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(i) \\(h=\\dfrac{24}{x}-\\dfrac{x}{2}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 co."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(i) \\(V=x^2h=24x-\\tfrac{1}{2}x^3\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, for V = x²h with h as f(x)."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(ii) \\(\\dfrac{dV}{dx}=24-\\dfrac{3x^2}{2}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 co."
+            },
+            {
+                "name": "s5",
+                "text_tex": "(ii) \\(=0\\) when \\(x=4\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, sets differential to 0 and solves."
+            },
+            {
+                "name": "s6",
+                "text_tex": "(ii) \\(V=64\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 co."
+            },
+            {
+                "name": "s7",
+                "text_tex": "(iii) \\(\\dfrac{d^2V}{dx^2}=-3x\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, any valid method."
+            },
+            {
+                "name": "s8",
+                "text_tex": "(iii) \\(-12\\lt 0\\), so maximum",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1√ (follow through), co; maximum."
+            }
+        ]
+    },
+    {
+        "id": "P1-8.3-PP-9709-12-FM16-Q6",
+        "section": "P1-8.3",
+        "kind": "pastpaper",
+        "title": "The most efficient vacuum flask",
+        "marks": 8,
+        "source": {
+            "paper": "9709/12/F/M/16 Q6",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m16_qp_12.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m16_ms_12.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>A vacuum flask (for keeping drinks hot) is modelled as a closed cylinder in which the internal radius is \\(r\\) cm and the internal height is \\(h\\) cm. The volume of the flask is 1000 cm\\(^3\\). A flask is most efficient when the total internal surface area, \\(A\\) cm\\(^2\\), is a minimum.</p><p>(i) Show that \\(A=2\\pi r^2+\\dfrac{2000}{r}\\). [3]</p><p>(ii) Given that \\(r\\) can vary, find the value of \\(r\\), correct to 1 decimal place, for which \\(A\\) has a stationary value and verify that the flask is most efficient when \\(r\\) takes this value. [5]</p>",
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-8.3"
+            ],
+            "topic": "Further differentiation",
+            "chapter": "P1-8",
+            "marks": 8,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-8-3.json",
+                "locator": "P1-8.3-PP-9709-12-FM16-Q6"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(i) \\(A=2\\pi r^2+2\\pi rh\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, A = 2πr² + 2πrh."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(i) \\(\\pi r^2h=1000\\), so \\(h=\\dfrac{1000}{\\pi r^2}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, πr²h = 1000 → h = 1000/(πr²)."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(i) \\(A=2\\pi r^2+\\dfrac{2000}{r}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 AG, sub for h into A."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(ii) \\(\\dfrac{dA}{dr}=4\\pi r-\\dfrac{2000}{r^2}\\), set \\(=0\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, attempt differentiation and set = 0."
+            },
+            {
+                "name": "s5",
+                "text_tex": "(ii) \\(4\\pi r-\\dfrac{2000}{r^2}=0\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, correct equation."
+            },
+            {
+                "name": "s6",
+                "text_tex": "(ii) \\(r^3=\\dfrac{500}{\\pi}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: DM1 (dependent), reasonable attempt to solve to r³ = …; stored as M1."
+            },
+            {
+                "name": "s7",
+                "text_tex": "(ii) \\(r=5.4\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, r = 5.4."
+            },
+            {
+                "name": "s8",
+                "text_tex": "(ii) \\(\\dfrac{d^2A}{dr^2}=4\\pi+\\dfrac{4000}{r^3}\\gt 0\\), hence minimum, hence most efficient",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 AG, or convincing alternative method."
+            }
+        ]
+    }
+]

@@ -1,0 +1,455 @@
+[
+    {
+        "id": "S2-6.3-QC1-gen",
+        "section": "S2-6.3",
+        "kind": "generated",
+        "title": "Upper limit of a confidence interval for a mean",
+        "marks": 2,
+        "source": "Theory S2-6.3 Quick check 1; xbar + z sigma/sqrt n",
+        "params": [
+            {
+                "name": "k",
+                "min": 5,
+                "max": 12,
+                "step": 1
+            },
+            {
+                "name": "m",
+                "min": 20,
+                "max": 80,
+                "step": 1
+            },
+            {
+                "name": "t",
+                "min": 0,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "s",
+                "min": 2,
+                "max": 12,
+                "step": 1
+            },
+            {
+                "name": "i",
+                "min": 0,
+                "max": 3,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "n": "k*k",
+            "xb": "m+t/10",
+            "Z": "[1.645,1.96,2.326,2.576][i]",
+            "C": "[90,95,98,99][i]",
+            "h": "[1.645,1.96,2.326,2.576][i]*s/k",
+            "A": "m+t/10+[1.645,1.96,2.326,2.576][i]*s/k"
+        },
+        "constraints": [
+            "s>1"
+        ],
+        "original": {
+            "k": 10,
+            "m": 25,
+            "t": 0,
+            "s": 6,
+            "i": 1
+        },
+        "stem": "A random sample of \\({n|int}\\) values from a population with standard deviation \\({s|int}\\) has mean \\({xb|raw}\\). Find the upper limit of a \\({C|int}\\)% confidence interval for the population mean, using \\(z={Z|raw}\\).",
+        "answer": {
+            "expression": "xb+Z*s/k",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\({Z|raw}\\times\\dfrac{{s|int}}{\\sqrt{{n|int}} }={h|sf3z}\\)",
+                "result": "Z*s/k",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "z times sigma over root n."
+            },
+            {
+                "name": "A",
+                "text_tex": "Upper limit: \\({xb|raw}\\) plus \\({h|sf3z}\\), which is \\({A|sf3z}\\)",
+                "result": "xb+Z*s/k",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Add to the sample mean."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original n = 100, sd 6, mean 25, 95%, upper limit 26.2"
+            },
+            {
+                "id": "apples",
+                "stem": "The masses of apples have standard deviation \\({s|int}\\) g. A random sample of \\({n|int}\\) apples has mean mass \\({xb|raw}\\) g. Using \\(z={Z|raw}\\), find the upper limit of a \\({C|int}\\)% confidence interval for the mean mass of all apples."
+            },
+            {
+                "id": "journeys",
+                "stem": "Journey times have standard deviation \\({s|int}\\) minutes. For a random sample of \\({n|int}\\) journeys the mean time is \\({xb|raw}\\) minutes. Calculate the upper end of a \\({C|int}\\)% confidence interval for the population mean, taking \\(z={Z|raw}\\)."
+            }
+        ],
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-6.3"
+            ],
+            "topic": "Estimation",
+            "chapter": "S2-6",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-6-3.json",
+                "locator": "S2-6.3-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "S2-6.3-QC2-gen",
+        "section": "S2-6.3",
+        "kind": "generated",
+        "title": "Width of a confidence interval",
+        "marks": 2,
+        "source": "Theory S2-6.3 Quick check 2; width 2 z sigma/sqrt n",
+        "params": [
+            {
+                "name": "k",
+                "min": 5,
+                "max": 12,
+                "step": 1
+            },
+            {
+                "name": "s",
+                "min": 2,
+                "max": 12,
+                "step": 1
+            },
+            {
+                "name": "i",
+                "min": 0,
+                "max": 3,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "n": "k*k",
+            "Z": "[1.645,1.96,2.326,2.576][i]",
+            "C": "[90,95,98,99][i]",
+            "h": "[1.645,1.96,2.326,2.576][i]*s/k",
+            "A": "2*[1.645,1.96,2.326,2.576][i]*s/k"
+        },
+        "constraints": [
+            "s>1"
+        ],
+        "original": {
+            "k": 8,
+            "s": 4,
+            "i": 3
+        },
+        "stem": "A \\({C|int}\\)% confidence interval for a population mean is calculated from a random sample of \\({n|int}\\) values from a population with standard deviation \\({s|int}\\). Using \\(z={Z|raw}\\), find the width of the interval.",
+        "answer": {
+            "expression": "2*Z*s/k",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "Half-width \\(={Z|raw}\\times\\dfrac{{s|int}}{\\sqrt{{n|int}} }={h|sf3z}\\)",
+                "result": "Z*s/k",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "The interval is xbar plus or minus the half-width."
+            },
+            {
+                "name": "A",
+                "text_tex": "Width \\(=2\\times{h|sf3z}={A|sf3z}\\)",
+                "result": "2*Z*s/k",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Double the half-width."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original n = 64, sd 4, 99%, width 2.58"
+            },
+            {
+                "id": "lengths",
+                "stem": "Lengths of cables have standard deviation \\({s|int}\\) cm. A \\({C|int}\\)% confidence interval for the mean length is found from a random sample of \\({n|int}\\) cables. Taking \\(z={Z|raw}\\), find the width of this interval."
+            },
+            {
+                "id": "survey",
+                "stem": "In a survey, the standard deviation of the times spent is known to be \\({s|int}\\) minutes. A random sample of \\({n|int}\\) people is used to find a \\({C|int}\\)% confidence interval for the mean time. Using \\(z={Z|raw}\\), find the difference between the upper and lower limits."
+            }
+        ],
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-6.3"
+            ],
+            "topic": "Estimation",
+            "chapter": "S2-6",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-6-3.json",
+                "locator": "S2-6.3-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "S2-6.3-QC3-gen",
+        "section": "S2-6.3",
+        "kind": "generated",
+        "title": "Standard deviation from a confidence interval",
+        "marks": 2,
+        "source": "Theory S2-6.3 Quick check 3; half-width = z sigma/sqrt n",
+        "params": [
+            {
+                "name": "k",
+                "min": 5,
+                "max": 12,
+                "step": 1
+            },
+            {
+                "name": "m",
+                "min": 20,
+                "max": 80,
+                "step": 1
+            },
+            {
+                "name": "hh",
+                "min": 5,
+                "max": 40,
+                "step": 1
+            },
+            {
+                "name": "i",
+                "min": 0,
+                "max": 3,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "n": "k*k",
+            "lo": "m-hh/10",
+            "hi": "m+hh/10",
+            "h": "hh/10",
+            "Z": "[1.645,1.96,2.326,2.576][i]",
+            "C": "[90,95,98,99][i]",
+            "A": "hh/10*k/[1.645,1.96,2.326,2.576][i]"
+        },
+        "constraints": [
+            "hh>4"
+        ],
+        "original": {
+            "k": 7,
+            "m": 30,
+            "hh": 28,
+            "i": 1
+        },
+        "stem": "A \\({C|int}\\)% confidence interval for a population mean, calculated from a random sample of \\({n|int}\\) values, is \\(({lo|raw}, {hi|raw})\\). Using \\(z={Z|raw}\\), find the population standard deviation.",
+        "answer": {
+            "expression": "h*k/Z",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "Half-width \\(=\\dfrac{{hi|raw}-{lo|raw}}{2}={h|raw}\\)",
+                "result": "h",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Half the width of the interval."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\({Z|raw}\\times\\dfrac{\\sigma}{\\sqrt{{n|int}} }={h|raw}\\), so \\(\\sigma={A|sf3z}\\)",
+                "result": "h*k/Z",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Solve for sigma."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original n = 49, 95% interval (27.2, 32.8), sigma = 10.0"
+            },
+            {
+                "id": "heights",
+                "stem": "From the heights of a random sample of \\({n|int}\\) students, a \\({C|int}\\)% confidence interval for the mean height in cm is \\(({lo|raw}, {hi|raw})\\). Taking \\(z={Z|raw}\\), find the standard deviation of the heights."
+            },
+            {
+                "id": "weights",
+                "stem": "A researcher gives the \\({C|int}\\)% confidence interval \\(({lo|raw}, {hi|raw})\\) for a population mean, based on \\({n|int}\\) randomly chosen values. Using \\(z={Z|raw}\\), find the value of the population standard deviation that was used."
+            }
+        ],
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-6.3"
+            ],
+            "topic": "Estimation",
+            "chapter": "S2-6",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-6-3.json",
+                "locator": "S2-6.3-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "S2-6.3-PP-9709-72-FM19-Q1",
+        "section": "S2-6.3",
+        "kind": "pastpaper",
+        "title": "Masses of plums",
+        "marks": 4,
+        "source": {
+            "paper": "9709/72/F/M/19 Q1",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m19_qp_72.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m19_ms_72.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>The masses of a certain variety of plums are known to have standard deviation 13.2 g. A random sample of 200 of these plums is taken and the mean mass of the plums in the sample is found to be 62.3 g.</p><p>(i) Calculate a 98% confidence interval for the population mean mass. [3]</p><p>(ii) State with a reason whether it was necessary to use the Central Limit theorem in the calculation in part (i). [1]</p>",
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-6.3"
+            ],
+            "topic": "Estimation",
+            "chapter": "S2-6",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-6-3.json",
+                "locator": "S2-6.3-PP-9709-72-FM19-Q1"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(i) \\(z=2.326\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, z = 2.326."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(i) \\(62.3\\pm2.326\\times\\dfrac{13.2}{\\sqrt{200} }\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, any z; expression of correct form; must be a ‘z’."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(i) \\(60.1\\) to \\(64.5\\) (3 s.f.)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 60.1 to 64.5 (3 s.f.); must be an interval."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(ii) Yes, because the population is not given to be normal (the population distribution is unknown).",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, yes, because pop not (given to be) normal, or pop distribution unknown; no contradictions."
+            }
+        ]
+    },
+    {
+        "id": "S2-6.3-PP-9709-73-MJ12-Q1",
+        "section": "S2-6.3",
+        "kind": "pastpaper",
+        "title": "Lengths of leaves",
+        "marks": 4,
+        "source": {
+            "paper": "9709/73/M/J/12 Q1",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s12_qp_73.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s12_ms_73.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Leaves from a certain type of tree have lengths that are distributed with standard deviation 3.2 cm. A random sample of 250 of these leaves is taken and the mean length of this sample is found to be 12.5 cm.</p><p>(i) Calculate a 99% confidence interval for the population mean length. [3]</p><p>(ii) Write down the probability that the whole of a 99% confidence interval will lie below the population mean. [1]</p>",
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-6.3"
+            ],
+            "topic": "Estimation",
+            "chapter": "S2-6",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-6-3.json",
+                "locator": "S2-6.3-PP-9709-73-MJ12-Q1"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(i) \\(z=2.576\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, z in the range 2.574 to 2.576."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(i) \\(12.5\\pm2.576\\times\\dfrac{3.2}{\\sqrt{250} }\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, any z, correct form."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(i) \\(12.0\\) to \\(13.0\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 12.0 to 13.0 (3 s.f.); allow 12 to 13."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(ii) \\(0.005\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, 0.005 or 0.5% (not just 0.5)."
+            }
+        ]
+    }
+]
