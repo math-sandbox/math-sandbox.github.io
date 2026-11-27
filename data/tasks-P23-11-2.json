@@ -1,0 +1,487 @@
+[
+    {
+        "id": "P23-11.2-QC1-gen",
+        "section": "P23-11.2",
+        "kind": "generated",
+        "title": "Real part of a product",
+        "marks": 2,
+        "source": "Theory P23-11.2 Quick check 1; (a + bi)(c - di) = (ac + bd) + (bc - ad)i",
+        "params": [
+            {
+                "name": "a",
+                "min": 1,
+                "max": 7,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 2,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "c",
+                "min": 1,
+                "max": 7,
+                "step": 1
+            },
+            {
+                "name": "d",
+                "min": 2,
+                "max": 6,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "ac": "a*c",
+            "bd": "b*d",
+            "A": "a*c+b*d"
+        },
+        "constraints": [
+            "a>0"
+        ],
+        "original": {
+            "a": 3,
+            "b": 2,
+            "c": 1,
+            "d": 4
+        },
+        "stem": "Given that \\(z={a|int}+{b|int}\\mathrm{i}\\) and \\(w={c|int}-{d|int}\\mathrm{i}\\), find the real part of \\(zw\\).",
+        "answer": {
+            "expression": "a*c+b*d",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(zw={ac|int}-{a|int}\\times{d|int}\\mathrm{i}+{b|int}\\times{c|int}\\mathrm{i}-{bd|int}\\mathrm{i}^2\\)",
+                "result": "ac",
+                "format": "int",
+                "mark": "M1",
+                "note": "Expand the brackets."
+            },
+            {
+                "name": "A",
+                "text_tex": "Using \\(\\mathrm{i}^2=-1\\), the real part is \\({ac|int}+{bd|int}={A|int}\\)",
+                "result": "a*c+b*d",
+                "format": "int",
+                "mark": "A1",
+                "note": "Collect the real terms."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original (3 + 2i)(1 − 4i), real part 11"
+            },
+            {
+                "id": "product",
+                "stem": "Express \\(({a|int}+{b|int}\\mathrm{i})({c|int}-{d|int}\\mathrm{i})\\) in the form \\(x+\\mathrm{i}y\\) and state the value of \\(x\\)."
+            },
+            {
+                "id": "re",
+                "stem": "The complex numbers \\(u={a|int}+{b|int}\\mathrm{i}\\) and \\(v={c|int}-{d|int}\\mathrm{i}\\) are given. Find \\(\\mathrm{Re}(uv)\\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-11.2"
+            ],
+            "topic": "Complex numbers",
+            "chapter": "P23-11",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-11-2.json",
+                "locator": "P23-11.2-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-11.2-QC2-gen",
+        "section": "P23-11.2",
+        "kind": "generated",
+        "title": "Real part of a quotient",
+        "marks": 3,
+        "source": "Theory P23-11.2 Quick check 2; multiply by the conjugate of the denominator",
+        "params": [
+            {
+                "name": "a",
+                "min": 1,
+                "max": 7,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 2,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "c",
+                "min": 1,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "d",
+                "min": 2,
+                "max": 6,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "den": "c*c+d*d",
+            "num": "a*c+b*d",
+            "A": "(a*c+b*d)/(c*c+d*d)"
+        },
+        "constraints": [
+            "a>0"
+        ],
+        "original": {
+            "a": 1,
+            "b": 3,
+            "c": 1,
+            "d": 2
+        },
+        "stem": "Given that \\(z={a|int}+{b|int}\\mathrm{i}\\) and \\(w={c|int}+{d|int}\\mathrm{i}\\), find the real part of \\(\\dfrac{z}{w}\\).",
+        "answer": {
+            "expression": "num/den",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\dfrac{z}{w}=\\dfrac{({a|int}+{b|int}\\mathrm{i})({c|int}-{d|int}\\mathrm{i})}{({c|int}+{d|int}\\mathrm{i})({c|int}-{d|int}\\mathrm{i})}\\), denominator \\({c|int}^2+{d|int}^2={den|int}\\)",
+                "result": "den",
+                "format": "int",
+                "mark": "M1",
+                "note": "Multiply numerator and denominator by the conjugate of the denominator."
+            },
+            {
+                "name": "N",
+                "text_tex": "Real part of the numerator \\(={a|int}\\times{c|int}+{b|int}\\times{d|int}={num|int}\\)",
+                "result": "num",
+                "format": "int",
+                "mark": "M1",
+                "note": "Expand the numerator and use i² = −1."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\mathrm{Re}\\Bigl(\\dfrac{z}{w}\\Bigr)=\\dfrac{{num|int}}{{den|int}}={A|sf3z}\\)",
+                "result": "num/den",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Divide."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original (1 + 3i)/(1 + 2i), real part 7/5 = 1.40"
+            },
+            {
+                "id": "divide",
+                "stem": "Express \\(\\dfrac{{a|int}+{b|int}\\mathrm{i} }{{c|int}+{d|int}\\mathrm{i} }\\) in the form \\(x+\\mathrm{i}y\\), and give the value of \\(x\\)."
+            },
+            {
+                "id": "showing",
+                "stem": "Showing your working, find the real part of \\(\\dfrac{{a|int}+{b|int}\\mathrm{i} }{{c|int}+{d|int}\\mathrm{i} }\\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-11.2"
+            ],
+            "topic": "Complex numbers",
+            "chapter": "P23-11",
+            "marks": 3,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-11-2.json",
+                "locator": "P23-11.2-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-11.2-QC3-gen",
+        "section": "P23-11.2",
+        "kind": "generated",
+        "title": "Equating real and imaginary parts with a conjugate",
+        "marks": 3,
+        "source": "Theory P23-11.2 Quick check 3; z + a z* = (1 + a)x + (1 - a)y i",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "n",
+                "min": 1,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "m",
+                "min": -9,
+                "max": -2,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "p": "(1+a)*n",
+            "q": "(1-a)*m",
+            "a1": "1+a",
+            "b1": "1-a",
+            "A": "m"
+        },
+        "constraints": [
+            "a>1"
+        ],
+        "original": {
+            "a": 2,
+            "n": 1,
+            "m": -2
+        },
+        "stem": "The complex number \\(z=x+\\mathrm{i}y\\), where \\(x\\) and \\(y\\) are real, satisfies \\(z+{a|int}z^*={p|int}+{q|int}\\mathrm{i}\\). Find the value of \\(y\\).",
+        "answer": {
+            "expression": "m",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(x+\\mathrm{i}y+{a|int}(x-\\mathrm{i}y)={a1|int}x+({b1|int})y\\,\\mathrm{i}\\)",
+                "result": "a1",
+                "format": "int",
+                "mark": "B1",
+                "note": "Substitute z = x + iy and z* = x − iy."
+            },
+            {
+                "name": "E",
+                "text_tex": "Equate parts: \\({a1|int}x={p|int}\\) and \\(({b1|int})y={q|int}\\)",
+                "result": "b1",
+                "format": "int",
+                "mark": "M1",
+                "note": "Equate real parts and imaginary parts."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(y={A|int}\\) (and \\(x={n|int}\\))",
+                "result": "m",
+                "format": "int",
+                "mark": "A1",
+                "note": "Solve."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original z + 2z* = 3 + 2i, z = 1 − 2i"
+            },
+            {
+                "id": "solve",
+                "stem": "Solve the equation \\(z+{a|int}z^*={p|int}+{q|int}\\mathrm{i}\\), giving \\(z\\) in the form \\(x+\\mathrm{i}y\\). State the value of \\(y\\)."
+            },
+            {
+                "id": "find",
+                "stem": "Find the imaginary part of the complex number \\(z\\) for which \\(z+{a|int}z^*={p|int}+{q|int}\\mathrm{i}\\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-11.2"
+            ],
+            "topic": "Complex numbers",
+            "chapter": "P23-11",
+            "marks": 3,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-11-2.json",
+                "locator": "P23-11.2-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-11.2-PP-9709-32-ON21-Q3",
+        "section": "P23-11.2",
+        "kind": "pastpaper",
+        "title": "Conjugates and an equation with a conjugate",
+        "marks": 6,
+        "source": {
+            "paper": "9709/32/O/N/21 Q3",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w21_qp_32.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w21_ms_32.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>(a) Given the complex numbers \\(u=a+\\mathrm{i}b\\) and \\(w=c+\\mathrm{i}d\\), where \\(a\\), \\(b\\), \\(c\\) and \\(d\\) are real, prove that \\((u+w)^*=u^*+w^*\\). [2]</p><p>(b) Solve the equation \\((z+2+\\mathrm{i})^*+(2+\\mathrm{i})z=0\\), giving your answer in the form \\(x+\\mathrm{i}y\\) where \\(x\\) and \\(y\\) are real. [4]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-11.2"
+            ],
+            "topic": "Complex numbers",
+            "chapter": "P23-11",
+            "marks": 6,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-11-2.json",
+                "locator": "P23-11.2-PP-9709-32-ON21-Q3"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) \\((u+w)^*=\\bigl((a+c)+\\mathrm{i}(b+d)\\bigr)^*=(a+c)-\\mathrm{i}(b+d)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, substitute for u and w and state correct conjugate of one side."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(a) \\(u^*+w^*=(a-\\mathrm{i}b)+(c-\\mathrm{i}d)=(a+c)-\\mathrm{i}(b+d)\\), so \\((u+w)^*=u^*+w^*\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, express the other side without conjugates and confirm (u + w)* = u* + w*; given answer, needs explicit reference to conjugate of both sides."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(b) \\(x+2-(y+1)\\mathrm{i}+(2+\\mathrm{i})(x+\\mathrm{i}y)=0\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, substitute and remove conjugates to obtain a correct equation in x and y."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(b) Use \\(\\mathrm{i}^2=-1\\) and equate real and imaginary parts to zero",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1."
+            },
+            {
+                "name": "s5",
+                "text_tex": "(b) \\(3x-y+2=0\\) and \\(x+y-1=0\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, obtain two correct equations in x and y."
+            },
+            {
+                "name": "s6",
+                "text_tex": "(b) \\(z=-\\tfrac{1}{4}+\\tfrac{5}{4}\\mathrm{i}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, solve and obtain answer z = −1/4 + 5/4 i; allow for real and imaginary parts stated separately."
+            }
+        ]
+    },
+    {
+        "id": "P23-11.2-PP-9709-32-FM22-Q6",
+        "section": "P23-11.2",
+        "kind": "pastpaper",
+        "title": "Solving an equation with w and its conjugate",
+        "marks": 6,
+        "source": {
+            "paper": "9709/32/F/M/22 Q6",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m22_qp_32.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m22_ms_32.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Find the complex numbers \\(w\\) which satisfy the equation \\(w^2+2\\mathrm{i}w^*=1\\) and are such that \\(\\mathrm{Re}\\,w\\le 0\\).</p><p>Give your answers in the form \\(x+\\mathrm{i}y\\), where \\(x\\) and \\(y\\) are real. [6]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-11.2"
+            ],
+            "topic": "Complex numbers",
+            "chapter": "P23-11",
+            "marks": 6,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-11-2.json",
+                "locator": "P23-11.2-PP-9709-32-FM22-Q6"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\((x+\\mathrm{i}y)^2+2\\mathrm{i}(x-\\mathrm{i}y)=1\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, substitute and obtain a correct equation in x and y."
+            },
+            {
+                "name": "s2",
+                "text_tex": "Use \\(\\mathrm{i}^2=-1\\) and equate real and imaginary parts",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, use i² = −1 at least once and equate real and imaginary parts."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(x^2-y^2+2y=1\\) and \\(2xy+2x=0\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, obtain two correct equations."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(2x(y+1)=0\\), so \\(x=0\\) or \\(y=-1\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, solve for x or for y."
+            },
+            {
+                "name": "s5",
+                "text_tex": "\\(y=-1\\): \\(x^2=4\\), \\(\\mathrm{Re}\\,w\\le0\\) gives \\(w=-2-\\mathrm{i}\\) only",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, using y = −1, obtain answer w = −2 − i only; A0 if w = 2 − i as well."
+            },
+            {
+                "name": "s6",
+                "text_tex": "\\(x=0\\): \\(-(y-1)^2=0\\), so \\(w=\\mathrm{i}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, using x = 0, obtain answer w = i."
+            }
+        ]
+    }
+]

@@ -1,0 +1,79 @@
+<script src="/assets/redirect.js"></script>
+<section class="theory" data-section="P1-9.2">
+<h2>9.2 Finding the constant of integration</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 1 Coursebook (Sue Pemberton, series editor Julian Gilbey), Chapter 9 Integration, printed pp.244–247. Own wording and new numbers, following the coursebook method of using a point on a curve to find the constant of integration.</p>
+<p class="key-words"><strong>Key words:</strong> <em>constant of integration</em>, <em>integration</em>, <em>gradient function</em></p>
+<h3>Using a point on the curve</h3>
+<p>Integrating the <strong>gradient function</strong> \(\dfrac{dy}{dx}\) gives a family of curves, \(y=\mathrm{F}(x)+c\). If one point on the curve is known, substitute its coordinates to find the <strong>constant of integration</strong> \(c\). This picks out the one curve that passes through the point.</p>
+<ul><li>Rewrite the gradient as powers of \(x\).</li><li>Integrate term by term and include \(+c\).</li><li>Substitute the given \(x\) and \(y\) and solve for \(c\).</li><li>Write the final equation \(y=\ldots\) in full.</li></ul>
+<div class="worked-example">
+<h4>Worked example 1: A polynomial gradient</h4>
+<p class="src">Coursebook, 9.2, finding the equation of a curve. New numbers.</p>
+<p>A curve has \(\dfrac{dy}{dx}=6x^2-4\) and passes through \((1, 3)\). Find its equation.</p>
+<ol class="steps">
+<li>\(y=2x^3-4x+c\) <span class="mark">B1</span></li>
+<li>\(3=2-4+c\) <span class="mark">M1</span></li>
+<li>\(c=5\), so \(y=2x^3-4x+5\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(y=2x^3-4x+5\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: A root in the gradient</h4>
+<p class="src">Coursebook, 9.2, using powers of x. New numbers.</p>
+<p>A curve has \(\dfrac{dy}{dx}=\dfrac{2}{\sqrt{x}}\) and passes through \((9, 10)\). Find its equation.</p>
+<ol class="steps">
+<li>\(y=\displaystyle\int2x^{-\frac{1}{2}}\,dx=4x^{\frac{1}{2}}+c\) <span class="mark">B1</span></li>
+<li>\(10=4\times3+c\) <span class="mark">M1</span></li>
+<li>\(c=-2\), so \(y=4\sqrt{x}-2\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(y=4\sqrt{x}-2\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Substituting the point into \(\dfrac{dy}{dx}\) instead of into the integrated expression.</li><li>Leaving out \(+c\) before substituting, so the curve cannot pass through the point.</li><li>Giving only the value of \(c\) when the question asks for the equation of the curve.</li></ul>
+<h3>Past paper</h3>
+<p class="src">9709/12/F/M/16 Q2, official QP and official MS.</p>
+<p>A curve for which \(\dfrac{dy}{dx}=3x^2-\dfrac{2}{x^3}\) passes through \((-1, 3)\). Find the equation of the curve. [4]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>\(y=\dfrac{3x^3}{3}\ldots\) <span class="mark">B1</span> Official MS: B1 B1 for y = 3x³/3 − 2x^(−2)/(−2) (+c); this is the first term.</li>
+<li>\(\ldots-\dfrac{2x^{-2}}{-2}\ (+c)\) <span class="mark">B1</span> Official MS: second B1, for the second term.</li>
+<li>\(3=-1+1+c\) <span class="mark">M1</span> Official MS: M1, sub x = −1, y = 3; c must be present.</li>
+<li>\(y=x^3+x^{-2}+3\) <span class="mark">A1</span> Official MS: A1, accept c = 3 www.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/13/O/N/23 Q1, official QP and official MS.</p>
+<p>A curve is such that its gradient at a point \((x, y)\) is given by \(\dfrac{dy}{dx}=x-3x^{-\frac{1}{2}}\). It is given that the curve passes through the point \((4, 1)\).</p><p>Find the equation of the curve. [4]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>\(y=\dfrac{x^2}{2}\ldots\) <span class="mark">B1</span> Official MS: B1 B1 for {x²/2} {−3x^(1/2)/(1/2)} [+c]; any unsimplified correct form; this is the first term.</li>
+<li>\(\ldots-\dfrac{3x^{\frac{1}{2}}}{\frac{1}{2}}\ [+c]\) <span class="mark">B1</span> Official MS: second B1, for the second term.</li>
+<li>\(1=8-12+c\) <span class="mark">M1</span> Official MS: M1, substitute (into an integrated expression) x = 4, y = 1; c must be present; expect c = 5.</li>
+<li>\(y=\tfrac{1}{2}x^2-6x^{\frac{1}{2}}+5\) <span class="mark">A1</span> Official MS: A1, allow f(x) =; condone c = 5 as the final line so long as 'y =' present.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>A curve has \(\dfrac{dy}{dx}=6x^2+6x\) and passes through \((1, 10)\). Find the constant term in its equation.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(y=2x^3+3x^2+c\)</li><li>\(10=2+3+c\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(c=5\), \(y=2x^3+3x^2+5\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>A curve has \(\dfrac{dy}{dx}=\dfrac{6}{x^2}\) and passes through \((2, 4)\). Find \(c\) in \(y=-\dfrac{6}{x}+c\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(4=-3+c\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(c=7\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>A curve has \(\dfrac{dy}{dx}=\dfrac{3}{\sqrt{x}}\) and passes through \((4, 10)\). Find its equation.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(y=6\sqrt{x}+c\)</li><li>\(10=12+c\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(y=6\sqrt{x}-2\)</p>
+</details>
+</div>
+</section>

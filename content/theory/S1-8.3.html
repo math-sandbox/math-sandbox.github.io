@@ -1,0 +1,87 @@
+<script src="/assets/redirect.js"></script>
+<section class="theory" data-section="S1-8.3">
+<h2>8.3 Modelling with the normal distribution</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Probability &amp; Statistics 1 Coursebook (Dean Chalmers), Chapter 8 The normal distribution, printed pp.205–207. Own wording and new numbers, following the coursebook use of a normal model to estimate numbers in a sample, to combine a normal probability with a binomial probability, and to find an unknown parameter from observed data.</p>
+<p class="key-words"><strong>Key words:</strong> <em>normal distribution</em>, <em>standardise</em>, <em>expected number</em>, <em>relative frequency</em></p>
+<h3>Using a normal model</h3>
+<p>Many real quantities, such as lengths, masses and times, are well modelled by a <strong>normal distribution</strong>. Once the model \(X\sim\mathrm{N}(\mu, \sigma^2)\) is chosen, every probability is found by the method of 8.2: <strong>standardise</strong> with \(z=\dfrac{x-\mu}{\sigma}\) and read \(\Phi(z)\) from the table. A sketch of the curve with the required area shaded shows whether you need \(\Phi(z)\), \(1-\Phi(z)\) or a difference of two values.</p>
+<h3>Expected numbers</h3>
+<p>A probability from the model is a long-run <strong>relative frequency</strong>. In a sample of \(n\) items the <strong>expected number</strong> with a property of probability \(p\) is \(np\). The model only gives an estimate, so a count of items is usually rounded to a whole number.</p>
+<p>For values within \(d\) of the mean, the symmetry of the curve gives</p>
+<p>\[P(\mu-d\lt X\lt \mu+d)=P(-z\lt Z\lt z)=2\Phi(z)-1,\qquad z=\dfrac{d}{\sigma}.\]</p>
+<h3>Combining with the binomial distribution</h3>
+<p>If each of several independent items has the same probability \(p\) of a property, found from the normal model, the number of items with that property has the binomial distribution \(\mathrm{B}(m, p)\). For example, the probability that exactly one of \(m\) items has the property is \(m\,p\,(1-p)^{m-1}\).</p>
+<h3>Finding an unknown parameter from data</h3>
+<p>If \(c\) out of \(N\) observed values are greater than \(x\), use \(\dfrac{c}{N}\) as an estimate of \(P(X\gt x)\). Read the \(z\)-value from the table and solve \(\dfrac{x-\mu}{\sigma}=z\) for the unknown \(\mu\) or \(\sigma\).</p>
+<div class="worked-example">
+<h4>Worked example 1: An expected number</h4>
+<p class="src">Coursebook, 8.3, estimating a number from a normal model. New numbers.</p>
+<p>The masses of apples are normally distributed with mean 150 g and standard deviation 12 g. Estimate how many of a batch of 800 apples have a mass less than 165 g.</p>
+<ol class="steps">
+<li>\(z=\dfrac{165-150}{12}=1.25\) <span class="mark">M1</span></li>
+<li>\(P(X\lt 165)=\Phi(1.25)=0.8944\) <span class="mark">A1</span></li>
+<li>Expected number \(=800\times0.8944=715.52\), so about 716 apples <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> about 716 apples</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: Normal and binomial together</h4>
+<p class="src">Coursebook, 8.3, a normal probability used in a binomial probability. New numbers.</p>
+<p>The volume of oil in a can is normally distributed with mean 502 ml and standard deviation 2.5 ml. Find the probability that exactly 2 of 4 randomly chosen cans contain less than 500 ml.</p>
+<ol class="steps">
+<li>\(z=\dfrac{500-502}{2.5}=-0.8\), so \(P(X\lt 500)=1-\Phi(0.8)=1-0.7881=0.2119\) <span class="mark">M1</span></li>
+<li>\(P(\text{exactly 2})=\binom{4}{2}(0.2119)^2(0.7881)^2\) <span class="mark">M1</span></li>
+<li>\(=6\times0.044902\times0.621102=0.167\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(0.167\) (3 s.f.)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Giving a probability when the question asks for a number of items, or a decimal such as 715.52 when a whole number is expected.</li><li>Using \(\Phi(z)\) instead of \(2\Phi(z)-1\) for 'within \(d\) of the mean'.</li><li>Using the number of items \(c\) instead of the relative frequency \(\dfrac{c}{N}\) when finding \(z\).</li></ul>
+<h3>Past paper</h3>
+<p class="src">9709/51/M/J/21 Q2, official QP and official MS.</p>
+<p>A company produces a particular type of metal rod. The lengths of these rods are normally distributed with mean 25.2 cm and standard deviation 0.4 cm. A random sample of 500 of these rods is chosen.</p><p>How many rods in this sample would you expect to have a length that is within 0.5 cm of the mean length? [5]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>\(P\Bigl(\dfrac{24.7-25.2}{0.4}&lt;Z&lt;\dfrac{25.7-25.2}{0.4}\Bigr)=P(-1.25&lt;Z&lt;1.25)\) <span class="mark">M1</span> Official MS: M1, use of ± standardisation formula once; no continuity correction, σ², √σ.</li>
+<li>\(\Phi(1.25)=0.8944\) <span class="mark">A1</span> Official MS: A1, for AWRT 0.8944 SOI.</li>
+<li>\(2\Phi(1.25)-1=2\times0.8944-1\) <span class="mark">M1</span> Official MS: M1, appropriate area 2Φ − 1 OE, from final process, must be probability.</li>
+<li>\(=0.7888\) <span class="mark">A1</span> Official MS: A1, accept AWRT 0.789.</li>
+<li>Number of rods \(=0.7888\times500=394\) or \(395\) <span class="mark">B1</span> Official MS: B1FT, correct or FT their 4 s.f. (or better) probability; final answer must be a positive integer, not 394.0 or 395.0, only 1 answer.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/52/M/J/21 Q2, official QP and official MS.</p>
+<p>The weights of bags of sugar are normally distributed with mean 1.04 kg and standard deviation \(\sigma\) kg. In a random sample of 2000 bags of sugar, 72 weighed more than 1.10 kg.</p><p>Find the value of \(\sigma\). [4]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>\(P(X&gt;1.1)=\dfrac{72}{2000}=0.036\), so \(z=1.798\) <span class="mark">B1</span> Official MS: B1, 1.79 &lt; z ⩽ 1.80 (or −1.80 ⩽ z &lt; −1.79) seen.</li>
+<li>\(\dfrac{1.1-1.04}{\sigma}=1.798\) <span class="mark">B1</span> Official MS: B1, 1.1 and 1.04 substituted in ± standardisation formula; allow continuity correction, not σ² or √σ.</li>
+<li>\(\sigma=\dfrac{0.06}{1.798}\) <span class="mark">M1</span> Official MS: M1, equate their ± standardisation formula to a z-value and solve for the appropriate area leading to final answer (expect σ &lt; 0.5).</li>
+<li>\(\sigma=0.0334\) <span class="mark">A1</span> Official MS: A1, 0.03335 ⩽ σ ⩽ 0.0334, at least 3 s.f.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>\(X\sim\mathrm{N}(25, 4^2)\). Given that \(\Phi(1)=0.8413\), find the expected number of values within 4 of the mean in a random sample of 500 values, correct to 3 significant figures.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(z=\dfrac{4}{4}=1\)</li><li>\(2\Phi(1)-1=0.6826\)</li><li>\(500\times0.6826=341.3\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(341\) (3 s.f.)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>\(X\sim\mathrm{N}(50, 5^2)\). Given that \(\Phi(1)=0.8413\), find the probability that exactly one of 3 independent values of \(X\) is greater than 55.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(P(X\gt 55)=1-0.8413=0.1587\)</li><li>\(3\times0.1587\times0.8413^2\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(0.337\) (3 s.f.)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>The values of a variable are normally distributed with mean 40 and standard deviation \(\sigma\). In a sample of 400 values, 40 were greater than 46. Given that \(\Phi(1.282)=0.9\), estimate \(\sigma\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(P(X\gt 46)=\dfrac{40}{400}=0.1\), so \(z=1.282\)</li><li>\(\dfrac{46-40}{\sigma}=1.282\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(\sigma=4.68\) (3 s.f.)</p>
+</details>
+</div>
+</section>

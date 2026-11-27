@@ -1,0 +1,447 @@
+[
+    {
+        "id": "P1-9.2-QC1-gen",
+        "section": "P1-9.2",
+        "kind": "generated",
+        "title": "Constant of integration from a point",
+        "marks": 3,
+        "source": "Theory P1-9.2 Quick check 1; y = a x^3 + b x^2 + c through (1, y1)",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 2,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "y1",
+                "min": -10,
+                "max": 10,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "A3": "3*a",
+            "B2": "2*b",
+            "ab": "a+b",
+            "A": "y1-a-b"
+        },
+        "constraints": [
+            "a>1"
+        ],
+        "original": {
+            "a": 2,
+            "b": 3,
+            "y1": 10
+        },
+        "stem": "A curve has gradient \\(\\dfrac{dy}{dx}={A3|int}x^2+{B2|int}x\\) and passes through the point \\((1, {y1|int})\\). Its equation is \\(y=px^3+qx^2+c\\). Find the value of \\(c\\).",
+        "answer": {
+            "expression": "y1-a-b",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "I",
+                "text_tex": "\\(y=\\dfrac{{A3|int}x^3}{3}+\\dfrac{{B2|int}x^2}{2}+c={a|int}x^3+{b|int}x^2+c\\)",
+                "result": "ab",
+                "format": "int",
+                "mark": "B1",
+                "note": "Integrate each term."
+            },
+            {
+                "name": "K",
+                "text_tex": "At \\((1, {y1|int})\\): \\({y1|int}={a|int}+{b|int}+c\\)",
+                "result": "y1",
+                "format": "int",
+                "mark": "M1",
+                "note": "Substitute the point into the integrated expression, including c."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(c={A|int}\\)",
+                "result": "y1-a-b",
+                "format": "int",
+                "mark": "A1",
+                "note": "Solve for c."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original dy/dx = 6x^2 + 6x through (1, 10), y = 2x^3 + 3x^2 + 5"
+            },
+            {
+                "id": "curve",
+                "stem": "The gradient of a curve at \\((x, y)\\) is \\({A3|int}x^2+{B2|int}x\\), and the curve passes through \\((1, {y1|int})\\). Find the equation of the curve and state its constant term."
+            },
+            {
+                "id": "find",
+                "stem": "Given that \\(\\dfrac{dy}{dx}={A3|int}x^2+{B2|int}x\\) and that \\(y={y1|int}\\) when \\(x=1\\), find the constant term in the expression for \\(y\\)."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-9.2"
+            ],
+            "topic": "Integration",
+            "chapter": "P1-9",
+            "marks": 3,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-9-2.json",
+                "locator": "P1-9.2-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-9.2-QC2-gen",
+        "section": "P1-9.2",
+        "kind": "generated",
+        "title": "Constant of integration for k/x^2",
+        "marks": 3,
+        "source": "Theory P1-9.2 Quick check 2; y = -k/x + c",
+        "params": [
+            {
+                "name": "p",
+                "min": 1,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "m",
+                "min": 2,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "q",
+                "min": -5,
+                "max": 10,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "k": "p*m",
+            "A": "q+m"
+        },
+        "constraints": [
+            "p>0"
+        ],
+        "original": {
+            "p": 2,
+            "m": 3,
+            "q": 4
+        },
+        "stem": "A curve is such that \\(\\dfrac{dy}{dx}=\\dfrac{{k|int}}{x^2}\\) and the curve passes through the point \\(({p|int}, {q|int})\\). Its equation is \\(y=-\\dfrac{{k|int}}{x}+c\\). Find \\(c\\).",
+        "answer": {
+            "expression": "q+m",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "I",
+                "text_tex": "\\(y=\\dfrac{{k|int}x^{-1} }{-1}+c=-\\dfrac{{k|int}}{x}+c\\)",
+                "result": "k",
+                "format": "int",
+                "mark": "B1",
+                "note": "Integrate k x^(−2)."
+            },
+            {
+                "name": "K",
+                "text_tex": "\\({q|int}=-\\dfrac{{k|int}}{{p|int}}+c\\), so \\({q|int}=-{m|int}+c\\)",
+                "result": "m",
+                "format": "int",
+                "mark": "M1",
+                "note": "Substitute the point."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(c={A|int}\\)",
+                "result": "q+m",
+                "format": "int",
+                "mark": "A1",
+                "note": "Solve."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original dy/dx = 6/x^2 through (2, 4), y = −6/x + 7"
+            },
+            {
+                "id": "eq",
+                "stem": "Find the equation of the curve with gradient \\(\\dfrac{{k|int}}{x^2}\\) that passes through \\(({p|int}, {q|int})\\). State the value of the constant term."
+            },
+            {
+                "id": "given",
+                "stem": "Given that \\(\\dfrac{dy}{dx}=\\dfrac{{k|int}}{x^2}\\) and \\(y={q|int}\\) when \\(x={p|int}\\), find the constant of integration."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-9.2"
+            ],
+            "topic": "Integration",
+            "chapter": "P1-9",
+            "marks": 3,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-9-2.json",
+                "locator": "P1-9.2-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-9.2-QC3-gen",
+        "section": "P1-9.2",
+        "kind": "generated",
+        "title": "Constant of integration for a/sqrt(x)",
+        "marks": 3,
+        "source": "Theory P1-9.2 Quick check 3; y = 2a sqrt(x) + c",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "s",
+                "min": 1,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "q",
+                "min": -10,
+                "max": 10,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "X": "s*s",
+            "a2": "2*a",
+            "t": "2*a*s",
+            "A": "q-2*a*s"
+        },
+        "constraints": [
+            "a>1"
+        ],
+        "original": {
+            "a": 3,
+            "s": 2,
+            "q": 10
+        },
+        "stem": "A curve is such that \\(\\dfrac{dy}{dx}=\\dfrac{{a|int}}{\\sqrt{x} }\\) for \\(x\\gt 0\\), and it passes through \\(({X|int}, {q|int})\\). Its equation is \\(y=k\\sqrt{x}+c\\). Find \\(c\\).",
+        "answer": {
+            "expression": "q-2*a*s",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "I",
+                "text_tex": "\\(\\displaystyle\\int{a|int}x^{-\\frac{1}{2} }\\,dx=\\dfrac{{a|int}x^{\\frac{1}{2} } }{\\frac{1}{2} }={a2|int}\\sqrt{x}+c\\)",
+                "result": "a2",
+                "format": "int",
+                "mark": "B1",
+                "note": "Integrate a x^(−1/2)."
+            },
+            {
+                "name": "K",
+                "text_tex": "\\({q|int}={a2|int}\\sqrt{{X|int}}+c={t|int}+c\\)",
+                "result": "t",
+                "format": "int",
+                "mark": "M1",
+                "note": "Substitute the point."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(c={A|int}\\)",
+                "result": "q-2*a*s",
+                "format": "int",
+                "mark": "A1",
+                "note": "Solve."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original dy/dx = 3/√x through (4, 10), y = 6√x − 2"
+            },
+            {
+                "id": "eq",
+                "stem": "The gradient of a curve is \\(\\dfrac{{a|int}}{\\sqrt{x} }\\), and the curve passes through \\(({X|int}, {q|int})\\). Find the equation of the curve, and state the constant term."
+            },
+            {
+                "id": "given",
+                "stem": "Given that \\(\\dfrac{dy}{dx}=\\dfrac{{a|int}}{\\sqrt{x} }\\) and \\(y={q|int}\\) when \\(x={X|int}\\), find the constant of integration."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-9.2"
+            ],
+            "topic": "Integration",
+            "chapter": "P1-9",
+            "marks": 3,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-9-2.json",
+                "locator": "P1-9.2-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-9.2-PP-9709-12-FM16-Q2",
+        "section": "P1-9.2",
+        "kind": "pastpaper",
+        "title": "Equation of a curve from its gradient",
+        "marks": 4,
+        "source": {
+            "paper": "9709/12/F/M/16 Q2",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m16_qp_12.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m16_ms_12.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>A curve for which \\(\\dfrac{dy}{dx}=3x^2-\\dfrac{2}{x^3}\\) passes through \\((-1, 3)\\). Find the equation of the curve. [4]</p>",
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-9.2"
+            ],
+            "topic": "Integration",
+            "chapter": "P1-9",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-9-2.json",
+                "locator": "P1-9.2-PP-9709-12-FM16-Q2"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(y=\\dfrac{3x^3}{3}\\ldots\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 B1 for y = 3x³/3 − 2x^(−2)/(−2) (+c); this is the first term."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(\\ldots-\\dfrac{2x^{-2} }{-2}\\ (+c)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: second B1, for the second term."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(3=-1+1+c\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, sub x = −1, y = 3; c must be present."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(y=x^3+x^{-2}+3\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, accept c = 3 www."
+            }
+        ]
+    },
+    {
+        "id": "P1-9.2-PP-9709-13-ON23-Q1",
+        "section": "P1-9.2",
+        "kind": "pastpaper",
+        "title": "A curve through (4, 1)",
+        "marks": 4,
+        "source": {
+            "paper": "9709/13/O/N/23 Q1",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w23_qp_13.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w23_ms_13.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>A curve is such that its gradient at a point \\((x, y)\\) is given by \\(\\dfrac{dy}{dx}=x-3x^{-\\frac{1}{2} }\\). It is given that the curve passes through the point \\((4, 1)\\).</p><p>Find the equation of the curve. [4]</p>",
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-9.2"
+            ],
+            "topic": "Integration",
+            "chapter": "P1-9",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-9-2.json",
+                "locator": "P1-9.2-PP-9709-13-ON23-Q1"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(y=\\dfrac{x^2}{2}\\ldots\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 B1 for {x²/2} {−3x^(1/2)/(1/2)} [+c]; any unsimplified correct form; this is the first term."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(\\ldots-\\dfrac{3x^{\\frac{1}{2} } }{\\frac{1}{2} }\\ [+c]\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: second B1, for the second term."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(1=8-12+c\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, substitute (into an integrated expression) x = 4, y = 1; c must be present; expect c = 5."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(y=\\tfrac{1}{2}x^2-6x^{\\frac{1}{2} }+5\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, allow f(x) =; condone c = 5 as the final line so long as 'y =' present."
+            }
+        ]
+    }
+]

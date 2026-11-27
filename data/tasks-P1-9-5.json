@@ -1,0 +1,482 @@
+[
+    {
+        "id": "P1-9.5-QC1-gen",
+        "section": "P1-9.5",
+        "kind": "generated",
+        "title": "Definite integral of a quadratic",
+        "marks": 3,
+        "source": "Theory P1-9.5 Quick check 1; [a x^3 + b x^2] from p to q",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 2,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "p",
+                "min": 0,
+                "max": 2,
+                "step": 1
+            },
+            {
+                "name": "q",
+                "min": 1,
+                "max": 4,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "A3": "3*a",
+            "B2": "2*b",
+            "Fq": "a*q*q*q+b*q*q",
+            "Fp": "a*p*p*p+b*p*p",
+            "A": "a*(q*q*q-p*p*p)+b*(q*q-p*p)"
+        },
+        "constraints": [
+            "q>p"
+        ],
+        "original": {
+            "a": 2,
+            "b": 3,
+            "p": 1,
+            "q": 2
+        },
+        "stem": "Evaluate \\(\\displaystyle\\int_{{p|int}}^{{q|int}}({A3|int}x^2+{B2|int}x)\\,dx\\).",
+        "answer": {
+            "expression": "a*(q*q*q-p*p*p)+b*(q*q-p*p)",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "I",
+                "text_tex": "\\(\\Bigl[{a|int}x^3+{b|int}x^2\\Bigr]_{{p|int}}^{{q|int}}\\)",
+                "result": "a",
+                "format": "int",
+                "mark": "B1",
+                "note": "Integrate; no constant is needed for a definite integral."
+            },
+            {
+                "name": "K",
+                "text_tex": "\\(={Fq|int}-{Fp|int}\\)",
+                "result": "Fq",
+                "format": "int",
+                "mark": "M1",
+                "note": "Upper limit minus lower limit."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(={A|int}\\)",
+                "result": "a*(q*q*q-p*p*p)+b*(q*q-p*p)",
+                "format": "int",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original integral from 1 to 2 of (6x^2 + 6x) = 23"
+            },
+            {
+                "id": "find",
+                "stem": "Find the value of \\(\\displaystyle\\int_{{p|int}}^{{q|int}}({A3|int}x^2+{B2|int}x)\\,dx\\)."
+            },
+            {
+                "id": "show",
+                "stem": "Showing all necessary working, evaluate the definite integral of \\({A3|int}x^2+{B2|int}x\\) with respect to \\(x\\) from \\(x={p|int}\\) to \\(x={q|int}\\)."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-9.5"
+            ],
+            "topic": "Integration",
+            "chapter": "P1-9",
+            "marks": 3,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-9-5.json",
+                "locator": "P1-9.5-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-9.5-QC2-gen",
+        "section": "P1-9.5",
+        "kind": "generated",
+        "title": "Definite integral of k/sqrt(x)",
+        "marks": 3,
+        "source": "Theory P1-9.5 Quick check 2; [2k sqrt(x)] from 1 to s^2",
+        "params": [
+            {
+                "name": "k",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "s",
+                "min": 2,
+                "max": 5,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "S2": "s*s",
+            "k2": "2*k",
+            "Fq": "2*k*s",
+            "A": "2*k*(s-1)"
+        },
+        "constraints": [
+            "s>1"
+        ],
+        "original": {
+            "k": 3,
+            "s": 3
+        },
+        "stem": "Evaluate \\(\\displaystyle\\int_1^{{S2|int}}\\dfrac{{k|int}}{\\sqrt{x} }\\,dx\\).",
+        "answer": {
+            "expression": "2*k*(s-1)",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "I",
+                "text_tex": "\\(\\Bigl[{k2|int}\\sqrt{x}\\Bigr]_1^{{S2|int}}\\)",
+                "result": "k2",
+                "format": "int",
+                "mark": "B1",
+                "note": "Integrate k x^(−1/2)."
+            },
+            {
+                "name": "K",
+                "text_tex": "\\(={Fq|int}-{k2|int}\\)",
+                "result": "Fq",
+                "format": "int",
+                "mark": "M1",
+                "note": "Substitute the limits."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(={A|int}\\)",
+                "result": "2*k*(s-1)",
+                "format": "int",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original integral from 1 to 9 of 3/√x = 12"
+            },
+            {
+                "id": "find",
+                "stem": "Find the exact value of \\(\\displaystyle\\int_1^{{S2|int}}{k|int}x^{-\\frac{1}{2} }\\,dx\\)."
+            },
+            {
+                "id": "show",
+                "stem": "Showing all necessary working, find \\(\\displaystyle\\int_1^{{S2|int}}\\dfrac{{k|int}}{\\sqrt{x} }\\,dx\\)."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-9.5"
+            ],
+            "topic": "Integration",
+            "chapter": "P1-9",
+            "marks": 3,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-9-5.json",
+                "locator": "P1-9.5-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-9.5-QC3-gen",
+        "section": "P1-9.5",
+        "kind": "generated",
+        "title": "Definite integral of (ax + b)^2",
+        "marks": 3,
+        "source": "Theory P1-9.5 Quick check 3; [(ax + b)^3 / (3a)] from p to q",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 1,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "p",
+                "min": 0,
+                "max": 1,
+                "step": 1
+            },
+            {
+                "name": "q",
+                "min": 2,
+                "max": 3,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "a3": "3*a",
+            "U": "a*q+b",
+            "V": "a*p+b",
+            "A": "(math.pow(a*q+b,3)-math.pow(a*p+b,3))/(3*a)"
+        },
+        "constraints": [
+            "q>p"
+        ],
+        "original": {
+            "a": 2,
+            "b": 1,
+            "p": 0,
+            "q": 2
+        },
+        "stem": "Evaluate \\(\\displaystyle\\int_{{p|int}}^{{q|int}}({a|int}x+{b|int})^2\\,dx\\), giving your answer correct to 3 significant figures.",
+        "answer": {
+            "expression": "(math.pow(U,3)-math.pow(V,3))/a3",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "I",
+                "text_tex": "\\(\\Bigl[\\dfrac{({a|int}x+{b|int})^3}{{a3|int}}\\Bigr]_{{p|int}}^{{q|int}}\\)",
+                "result": "a3",
+                "format": "int",
+                "mark": "B1",
+                "note": "Integrate using the rule for (ax + b)^n."
+            },
+            {
+                "name": "K",
+                "text_tex": "\\(=\\dfrac{{U|int}^3-{V|int}^3}{{a3|int}}\\)",
+                "result": "U",
+                "format": "int",
+                "mark": "M1",
+                "note": "Substitute the limits."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(={A|sf3z}\\)",
+                "result": "(math.pow(U,3)-math.pow(V,3))/a3",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original integral from 0 to 2 of (2x + 1)^2 = 124/6 = 20.7"
+            },
+            {
+                "id": "find",
+                "stem": "Find the value of \\(\\displaystyle\\int_{{p|int}}^{{q|int}}({a|int}x+{b|int})^2\\,dx\\), correct to 3 significant figures."
+            },
+            {
+                "id": "noexp",
+                "stem": "Without expanding the bracket, evaluate \\(\\displaystyle\\int_{{p|int}}^{{q|int}}({a|int}x+{b|int})^2\\,dx\\), correct to 3 significant figures."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-9.5"
+            ],
+            "topic": "Integration",
+            "chapter": "P1-9",
+            "marks": 3,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-9-5.json",
+                "locator": "P1-9.5-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-9.5-PP-9709-12-ON18-Q2",
+        "section": "P1-9.5",
+        "kind": "pastpaper",
+        "title": "A definite integral with square roots",
+        "marks": 4,
+        "source": {
+            "paper": "9709/12/O/N/18 Q2",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w18_qp_12.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w18_ms_12.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Showing all necessary working, find \\(\\displaystyle\\int_1^4\\Bigl(\\sqrt{x}+\\frac{2}{\\sqrt{x} }\\Bigr)\\,dx\\). [4]</p>",
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-9.5"
+            ],
+            "topic": "Integration",
+            "chapter": "P1-9",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-9-5.json",
+                "locator": "P1-9.5-PP-9709-12-ON18-Q2"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(\\dfrac{x^{\\frac{3}{2} } }{\\frac{3}{2} }\\ldots\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 B1, integrate → x^(3/2)/(3/2) + 2x^(1/2)/(1/2) (+C); B1 for each term correct; this is the first term."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(\\ldots+\\dfrac{2x^{\\frac{1}{2} } }{\\frac{1}{2} }\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: second B1, for the second term."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(\\Bigl[\\dfrac{x^{\\frac{3}{2} } }{\\frac{3}{2} }+\\dfrac{2x^{\\frac{1}{2} } }{\\frac{1}{2} }\\Bigr]_1^4\\to\\dfrac{40}{3}-\\dfrac{14}{3}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, evidence of 4 and 1 substituted into an integrated expression (at least one power increased)."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(=\\dfrac{26}{3}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 26/3 oe; allow 8.67 awrt."
+            }
+        ]
+    },
+    {
+        "id": "P1-9.5-PP-9709-13-MJ11-Q4",
+        "section": "P1-9.5",
+        "kind": "pastpaper",
+        "title": "Differentiating a quotient and a definite integral of (3x − 2)^5",
+        "marks": 7,
+        "source": {
+            "paper": "9709/13/M/J/11 Q4",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s11_qp_13.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s11_ms_13.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>(a) Differentiate \\(\\dfrac{2x^3+5}{x}\\) with respect to \\(x\\). [3]</p><p>(b) Find \\(\\displaystyle\\int(3x-2)^5\\,dx\\) and hence find the value of \\(\\displaystyle\\int_0^1(3x-2)^5\\,dx\\). [4]</p>",
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-9.5"
+            ],
+            "topic": "Integration",
+            "chapter": "P1-9",
+            "marks": 7,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-9-5.json",
+                "locator": "P1-9.5-PP-9709-13-MJ11-Q4"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) \\(y=\\dfrac{2x^3+5}{x}=2x^2+\\dfrac{5}{x}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, knows to divide numerator by x."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(a) \\(\\dfrac{dy}{dx}=4x\\ldots\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 + A1 for 4x − 5/x² or 4x − 5x^(−2); this is the first term."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(a) \\(\\ldots-\\dfrac{5}{x^2}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: second A1, for the second term; co."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(b) \\(\\displaystyle\\int(3x-2)^5\\,dx=\\dfrac{(3x-2)^6}{6}\\ldots\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 B1, B1 without '÷3'."
+            },
+            {
+                "name": "s5",
+                "text_tex": "(b) \\(\\ldots\\div3\\ (+c)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 for '÷3' (ignore +c)."
+            },
+            {
+                "name": "s6",
+                "text_tex": "(b) \\(\\Bigl[\\dfrac{(3x-2)^6}{18}\\Bigr]_0^1\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, uses limits after integration."
+            },
+            {
+                "name": "s7",
+                "text_tex": "(b) \\(\\dfrac{1}{18}-\\dfrac{64}{18}=-3\\tfrac{1}{2}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, limits used correctly → −3½; co."
+            }
+        ]
+    }
+]

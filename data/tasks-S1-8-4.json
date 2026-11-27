@@ -1,0 +1,458 @@
+[
+    {
+        "id": "S1-8.4-QC1-gen",
+        "section": "S1-8.4",
+        "kind": "generated",
+        "title": "Standardised value for 'fewer than k' with a continuity correction",
+        "marks": 3,
+        "source": "Theory S1-8.4 Quick check 1; P(X < k) = P(X <= k - 1), so use k - 0.5",
+        "params": [
+            {
+                "name": "n",
+                "min": 40,
+                "max": 200,
+                "step": 10
+            },
+            {
+                "name": "pc",
+                "min": 20,
+                "max": 80,
+                "step": 5
+            },
+            {
+                "name": "d",
+                "min": -6,
+                "max": 6,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "pr": "pc/100",
+            "mu": "n*pc/100",
+            "va": "n*pc*(100-pc)/10000",
+            "k": "math.floor(n*pc/100)+d",
+            "kc": "math.floor(n*pc/100)+d-0.5",
+            "A": "(math.floor(n*pc/100)+d-0.5-n*pc/100)/math.pow(n*pc*(100-pc)/10000,0.5)"
+        },
+        "constraints": [
+            "d!=0"
+        ],
+        "original": {
+            "n": 60,
+            "pc": 40,
+            "d": -4
+        },
+        "stem": "The random variable \\(X\\) has the distribution \\(\\mathrm{B}({n|int}, {pr|raw})\\). A normal approximation is used to find \\(P(X\\lt {k|int})\\). Find the standardised value \\(z\\) such that this probability is approximately \\(\\Phi(z)\\).",
+        "answer": {
+            "expression": "(kc-mu)/math.pow(va,0.5)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "M",
+                "text_tex": "\\(np={n|int}\\times{pr|raw}={mu|raw}\\) and \\(npq={n|int}\\times{pr|raw}\\times(1-{pr|raw})={va|raw}\\)",
+                "result": "va",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Mean np and variance npq of the approximating normal distribution."
+            },
+            {
+                "name": "C",
+                "text_tex": "\\(P(X\\lt {k|int})=P(X\\le {k|int}-1)\\), so use \\({kc|raw}\\)",
+                "result": "kc",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Continuity correction: 'fewer than k' ends at k − 0.5."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(z=\\dfrac{{kc|raw}-{mu|raw}}{\\sqrt{{va|raw}} }={A|sf3z}\\)",
+                "result": "(kc-mu)/math.pow(va,0.5)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Standardise with the standard deviation √(npq)."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original B(60, 0.4), P(X < 20), z = −1.19"
+            },
+            {
+                "id": "eyes",
+                "stem": "In a large town, \\({pc|int}\\%\\) of adults wear glasses. A random sample of \\({n|int}\\) adults is chosen. A normal approximation is used to find the probability that fewer than \\({k|int}\\) of them wear glasses. Find the value of \\(z\\) such that this probability is approximately \\(\\Phi(z)\\)."
+            },
+            {
+                "id": "seeds",
+                "stem": "Each seed in a packet germinates with probability \\({pr|raw}\\), independently. For a packet of \\({n|int}\\) seeds, a normal approximation with a continuity correction is used for the probability that fewer than \\({k|int}\\) seeds germinate. Find the standardised value \\(z\\)."
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-8.4"
+            ],
+            "topic": "The normal distribution",
+            "chapter": "S1-8",
+            "marks": 3,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-8-4.json",
+                "locator": "S1-8.4-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-8.4-QC2-gen",
+        "section": "S1-8.4",
+        "kind": "generated",
+        "title": "Least number of trials for the normal approximation",
+        "marks": 3,
+        "source": "Theory S1-8.4 Quick check 2; need np > 5 and nq > 5",
+        "params": [
+            {
+                "name": "pc",
+                "min": 5,
+                "max": 95,
+                "step": 5
+            }
+        ],
+        "derived": {
+            "pr": "pc/100",
+            "mp": "50-abs(50-pc)",
+            "mq": "(50-abs(50-pc))/100",
+            "L": "500/(50-abs(50-pc))",
+            "A": "math.floor(500/(50-abs(50-pc)))+1"
+        },
+        "constraints": [
+            "pc!=50"
+        ],
+        "original": {
+            "pc": 15
+        },
+        "stem": "The random variable \\(X\\) has the distribution \\(\\mathrm{B}(n, {pr|raw})\\). Find the least value of \\(n\\) for which the conditions \\(np\\gt 5\\) and \\(nq\\gt 5\\) for using a normal approximation are both satisfied.",
+        "answer": {
+            "expression": "math.floor(500/(50-abs(50-pc)))+1",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "The smaller of \\(p\\) and \\(q\\) is \\({mq|raw}\\), so we need \\(n\\times{mq|raw}\\gt 5\\)",
+                "result": "mq",
+                "format": "raw",
+                "mark": "M1",
+                "note": "The condition with the smaller of p and q is the one that matters."
+            },
+            {
+                "name": "L",
+                "text_tex": "\\(n\\gt \\dfrac{5}{{mq|raw}}={L|sf3z}\\)",
+                "result": "L",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Solve the inequality."
+            },
+            {
+                "name": "A",
+                "text_tex": "Least \\(n={A|int}\\)",
+                "result": "math.floor(500/(50-abs(50-pc)))+1",
+                "format": "int",
+                "mark": "A1",
+                "note": "Smallest integer strictly greater than 5/p (or 5/q)."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original B(n, 0.15), least n = 34"
+            },
+            {
+                "id": "faulty",
+                "stem": "Each item from a machine is faulty with probability \\({pr|raw}\\), independently. The number of faulty items in a batch of \\(n\\) items is to be approximated by a normal distribution. Find the smallest batch size \\(n\\) for which \\(np\\gt 5\\) and \\(nq\\gt 5\\)."
+            },
+            {
+                "id": "survey",
+                "stem": "In a survey, each person asked says yes with probability \\({pr|raw}\\), independently. Find the least number \\(n\\) of people who must be asked so that a normal approximation to the number who say yes satisfies both \\(np\\gt 5\\) and \\(nq\\gt 5\\)."
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-8.4"
+            ],
+            "topic": "The normal distribution",
+            "chapter": "S1-8",
+            "marks": 3,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-8-4.json",
+                "locator": "S1-8.4-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-8.4-QC3-gen",
+        "section": "S1-8.4",
+        "kind": "generated",
+        "title": "Standardised value for 'more than k' with a continuity correction",
+        "marks": 3,
+        "source": "Theory S1-8.4 Quick check 3; P(X > k) = P(X >= k + 1), so use k + 0.5",
+        "params": [
+            {
+                "name": "n",
+                "min": 40,
+                "max": 200,
+                "step": 10
+            },
+            {
+                "name": "pc",
+                "min": 20,
+                "max": 80,
+                "step": 5
+            },
+            {
+                "name": "d",
+                "min": -6,
+                "max": 8,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "pr": "pc/100",
+            "mu": "n*pc/100",
+            "va": "n*pc*(100-pc)/10000",
+            "k": "math.floor(n*pc/100)+d",
+            "kc": "math.floor(n*pc/100)+d+0.5",
+            "A": "(math.floor(n*pc/100)+d+0.5-n*pc/100)/math.pow(n*pc*(100-pc)/10000,0.5)"
+        },
+        "constraints": [
+            "d!=0"
+        ],
+        "original": {
+            "n": 100,
+            "pc": 30,
+            "d": 5
+        },
+        "stem": "The random variable \\(X\\) has the distribution \\(\\mathrm{B}({n|int}, {pr|raw})\\). Using a normal approximation, \\(P(X\\gt {k|int})\\approx1-\\Phi(z)\\). Find \\(z\\).",
+        "answer": {
+            "expression": "(kc-mu)/math.pow(va,0.5)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "M",
+                "text_tex": "\\(np={mu|raw}\\) and \\(npq={va|raw}\\), so \\(X\\) is approximated by \\(\\mathrm{N}({mu|raw}, {va|raw})\\)",
+                "result": "va",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Mean and variance of the approximating normal distribution."
+            },
+            {
+                "name": "C",
+                "text_tex": "\\(P(X\\gt {k|int})=P(X\\ge {k|int}+1)\\), so use \\({kc|raw}\\)",
+                "result": "kc",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Continuity correction: 'more than k' starts at k + 0.5."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(z=\\dfrac{{kc|raw}-{mu|raw}}{\\sqrt{{va|raw}} }={A|sf3z}\\)",
+                "result": "(kc-mu)/math.pow(va,0.5)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Standardise."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original B(100, 0.3), P(X > 35), z = 1.20"
+            },
+            {
+                "id": "components",
+                "stem": "It is known that \\({pc|int}\\%\\) of the components made by a factory are faulty. A random sample of \\({n|int}\\) components is chosen. A normal approximation is used to find the probability that more than \\({k|int}\\) of them are faulty. This probability is approximately \\(1-\\Phi(z)\\). Find \\(z\\)."
+            },
+            {
+                "id": "coins",
+                "stem": "A biased coin shows heads with probability \\({pr|raw}\\). It is thrown \\({n|int}\\) times. Using a normal approximation with a continuity correction, the probability of more than \\({k|int}\\) heads is approximately \\(1-\\Phi(z)\\). Find the value of \\(z\\)."
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-8.4"
+            ],
+            "topic": "The normal distribution",
+            "chapter": "S1-8",
+            "marks": 3,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-8-4.json",
+                "locator": "S1-8.4-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-8.4-PP-9709-53-ON22-Q2",
+        "section": "S1-8.4",
+        "kind": "pastpaper",
+        "title": "Students with blue eyes",
+        "marks": 5,
+        "source": {
+            "paper": "9709/53/O/N/22 Q2",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w22_qp_53.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w22_ms_53.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>In a large college, 32% of the students have blue eyes. A random sample of 80 students is chosen.</p><p>Use an approximation to find the probability that fewer than 20 of these students have blue eyes. [5]</p>",
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-8.4"
+            ],
+            "topic": "The normal distribution",
+            "chapter": "S1-8",
+            "marks": 5,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-8-4.json",
+                "locator": "S1-8.4-PP-9709-53-ON22-Q2"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "Mean \\(=80\\times0.32=25.6\\), variance \\(=80\\times0.32\\times0.68=17.408\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, 25.6 and 17.4[08] seen, allow unsimplified; 4.172… implies correct variance."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(P(X\\lt 20)=P\\Bigl(Z\\lt \\dfrac{19.5-25.6}{\\sqrt{17.408} }\\Bigr)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, substituting their 25.6 and 17.408 into ± standardisation formula (any number for 19.5), not σ², √σ."
+            },
+            {
+                "name": "s3",
+                "text_tex": "Continuity correction: \\(19.5\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, using continuity correction 19.5 or 20.5 in their standardisation formula."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(=P(Z\\lt -1.462)=1-\\Phi(1.462)=1-0.9282\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, appropriate area Φ, from final process, must be probability (expect final answer < 0.5)."
+            },
+            {
+                "name": "s5",
+                "text_tex": "\\(=0.0718\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 0.0718 ⩽ p ⩽ 0.0719."
+            }
+        ]
+    },
+    {
+        "id": "S1-8.4-PP-9709-52-ON23-Q3",
+        "section": "S1-8.4",
+        "kind": "pastpaper",
+        "title": "Faulty electrical components",
+        "marks": 5,
+        "source": {
+            "paper": "9709/52/O/N/23 Q3",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w23_qp_52.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w23_ms_52.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>A factory produces a certain type of electrical component. It is known that 15% of the components produced are faulty. A random sample of 200 components is chosen.</p><p>Use an approximation to find the probability that more than 40 of these components are faulty. [5]</p>",
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-8.4"
+            ],
+            "topic": "The normal distribution",
+            "chapter": "S1-8",
+            "marks": 5,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-8-4.json",
+                "locator": "S1-8.4-PP-9709-52-ON23-Q3"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "Mean \\(=200\\times0.15=30\\), variance \\(=200\\times0.15\\times0.85=25.5\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, 30 and 25.5 seen, allow unsimplified; 5.049 ⩽ σ ⩽ 5.050 implies correct variance."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(P(X\\gt 40)=P\\Bigl(Z\\gt \\dfrac{40.5-30}{\\sqrt{25.5} }\\Bigr)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, substituting their mean and their positive 5.04975 into ± standardisation formula (any number for 40.5), not their σ²."
+            },
+            {
+                "name": "s3",
+                "text_tex": "Continuity correction: \\(40.5\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, using continuity correction 39.5 or 40.5 in their standardisation formula."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(=1-\\Phi(2.079)=1-0.9812\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, appropriate area Φ, from final process, must be a probability."
+            },
+            {
+                "name": "s5",
+                "text_tex": "\\(=0.0188\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 0.01875 < p ⩽ 0.0188."
+            }
+        ]
+    }
+]

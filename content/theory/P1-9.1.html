@@ -1,0 +1,62 @@
+<script src="/assets/redirect.js"></script>
+<section class="theory" data-section="P1-9.1">
+<h2>9.1 Integration as the reverse of differentiation</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 1 Coursebook (Sue Pemberton, series editor Julian Gilbey), Chapter 9 Integration, printed pp.239–243. Own wording and new numbers, following the coursebook idea of integration as the reverse of differentiation, the rule for integrating powers of x and the constant of integration.</p>
+<p class="key-words"><strong>Key words:</strong> <em>integration</em>, <em>indefinite integral</em>, <em>constant of integration</em></p>
+<h3>Reversing differentiation</h3>
+<p>If \(\dfrac{dy}{dx}=3x^2\), then \(y\) could be \(x^3\), \(x^3+5\) or \(x^3-2\): differentiating any constant gives 0. Finding \(y\) from \(\dfrac{dy}{dx}\) is called <strong>integration</strong>, and we write</p>
+<p>\[\int 3x^2\,dx=x^3+c,\]</p>
+<p>where \(c\) is the <strong>constant of integration</strong>. This is an <strong>indefinite integral</strong>: it is a family of functions, not a single one.</p>
+<h3>The rule for powers of x</h3>
+<p>\[\int x^n\,dx=\frac{x^{n+1}}{n+1}+c,\qquad n\ne-1.\]</p>
+<p>Add one to the power, then divide by the new power. Constant multiples stay in front, and sums are integrated term by term: \(\int(\mathrm{f}(x)+\mathrm{g}(x))\,dx=\int\mathrm{f}(x)\,dx+\int\mathrm{g}(x)\,dx\). Before integrating, write roots and fractions as powers of \(x\), and expand brackets.</p>
+<div class="worked-example">
+<h4>Worked example 1: A polynomial</h4>
+<p class="src">Coursebook, 9.1, integrating term by term. New numbers.</p>
+<p>Find \(\displaystyle\int(4x^3-6x+2)\,dx\).</p>
+<ol class="steps">
+<li>\(\dfrac{4x^4}{4}-\dfrac{6x^2}{2}+2x\) <span class="mark">M1</span></li>
+<li>\(=x^4-3x^2+2x+c\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(x^4-3x^2+2x+c\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: Rewriting first</h4>
+<p class="src">Coursebook, 9.1, dividing before integrating. New numbers.</p>
+<p>Find \(\displaystyle\int\frac{x^2+3}{x^2}\,dx\).</p>
+<ol class="steps">
+<li>\(\dfrac{x^2+3}{x^2}=1+3x^{-2}\) <span class="mark">M1</span></li>
+<li>\(\displaystyle\int(1+3x^{-2})\,dx=x+\dfrac{3x^{-1}}{-1}\) <span class="mark">M1</span></li>
+<li>\(=x-\dfrac{3}{x}+c\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(x-\dfrac{3}{x}+c\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Forgetting the constant of integration \(c\).</li><li>Dividing by the old power instead of the new power.</li><li>Integrating a fraction or product without first writing it as a sum of powers of \(x\).</li></ul>
+<h3>Past paper</h3>
+<p>There is no whole past-paper question on this subsection alone. The first past papers on integration use a point on the curve, so they are in 9.2.</p>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>Find \(\displaystyle\int 6x^2\,dx\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{6x^3}{3}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(2x^3+c\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>Find \(\displaystyle\int\frac{4}{x^3}\,dx\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\displaystyle\int4x^{-3}\,dx=\dfrac{4x^{-2}}{-2}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(-2x^{-2}+c\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>Find \(\displaystyle\int6\sqrt{x}\,dx\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{6x^{\frac{3}{2}}}{\frac{3}{2}}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(4x^{\frac{3}{2}}+c\)</p>
+</details>
+</div>
+</section>

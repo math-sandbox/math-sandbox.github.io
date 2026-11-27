@@ -1,0 +1,442 @@
+[
+    {
+        "id": "P23-11.4-QC1-gen",
+        "section": "P23-11.4",
+        "kind": "generated",
+        "title": "Square root of a complex number",
+        "marks": 3,
+        "source": "Theory P23-11.4 Quick check 1; (p + qi)^2 = (p^2 - q^2) + 2pq i",
+        "params": [
+            {
+                "name": "p",
+                "min": 1,
+                "max": 8,
+                "step": 1
+            },
+            {
+                "name": "q",
+                "min": 2,
+                "max": 8,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "u": "p*p-q*q",
+            "v": "2*p*q",
+            "A": "q"
+        },
+        "constraints": [
+            "p!=q"
+        ],
+        "original": {
+            "p": 3,
+            "q": 2
+        },
+        "stem": "Find the square root of \\({u|int}+{v|int}\\mathrm{i}\\) that has a positive real part. Give its imaginary part.",
+        "answer": {
+            "expression": "q",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\((x+\\mathrm{i}y)^2={u|int}+{v|int}\\mathrm{i}\\): \\(x^2-y^2={u|int}\\) and \\(2xy={v|int}\\)",
+                "result": "v",
+                "format": "int",
+                "mark": "M1",
+                "note": "Square x + iy, use i² = −1 and equate real and imaginary parts."
+            },
+            {
+                "name": "E",
+                "text_tex": "Eliminate \\(y\\): \\(x^4-({u|int})x^2-\\dfrac{{v|int}^2}{4}=0\\), so \\(x^2={p|int}^2\\)",
+                "result": "p",
+                "format": "int",
+                "mark": "M1",
+                "note": "Solve the quadratic in x² and take the positive root."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(x={p|int}\\), \\(y={A|int}\\): the root is \\({p|int}+{A|int}\\mathrm{i}\\)",
+                "result": "q",
+                "format": "int",
+                "mark": "A1",
+                "note": "Find y from 2xy."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 5 + 12i, square roots ±(3 + 2i)"
+            },
+            {
+                "id": "roots",
+                "stem": "The square roots of \\({u|int}+{v|int}\\mathrm{i}\\) are \\(\\pm(a+b\\mathrm{i})\\), where \\(a\\gt 0\\). Find \\(b\\)."
+            },
+            {
+                "id": "solve",
+                "stem": "Solve \\(z^2={u|int}+{v|int}\\mathrm{i}\\). For the root with positive real part, state the imaginary part."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-11.4"
+            ],
+            "topic": "Complex numbers",
+            "chapter": "P23-11",
+            "marks": 3,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-11-4.json",
+                "locator": "P23-11.4-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-11.4-QC2-gen",
+        "section": "P23-11.4",
+        "kind": "generated",
+        "title": "Quadratic with a given complex root",
+        "marks": 2,
+        "source": "Theory P23-11.4 Quick check 2; roots a +/- bi give x^2 - 2ax + (a^2 + b^2)",
+        "params": [
+            {
+                "name": "a",
+                "min": -6,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "m2a": "-2*a",
+            "A": "a*a+b*b"
+        },
+        "constraints": [
+            "a!=0"
+        ],
+        "original": {
+            "a": 2,
+            "b": 3
+        },
+        "stem": "The quadratic equation \\(x^2+px+q=0\\), where \\(p\\) and \\(q\\) are real, has a root \\({a|int}+{b|int}\\mathrm{i}\\). Find the value of \\(q\\).",
+        "answer": {
+            "expression": "a*a+b*b",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "The other root is the conjugate \\({a|int}-{b|int}\\mathrm{i}\\)",
+                "result": "b",
+                "format": "int",
+                "mark": "B1",
+                "note": "Complex roots of a real polynomial occur in conjugate pairs."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(q=\\) product of roots \\(=({a|int})^2+{b|int}^2={A|int}\\)",
+                "result": "a*a+b*b",
+                "format": "int",
+                "mark": "A1",
+                "note": "(a + bi)(a − bi) = a² + b²."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original root 2 + 3i, x^2 − 4x + 13 = 0"
+            },
+            {
+                "id": "find",
+                "stem": "Given that \\({a|int}+{b|int}\\mathrm{i}\\) is a root of \\(x^2+px+q=0\\), where \\(p\\) and \\(q\\) are real constants, find \\(q\\)."
+            },
+            {
+                "id": "form",
+                "stem": "Find the quadratic equation with real coefficients, in the form \\(x^2+px+q=0\\), that has \\({a|int}+{b|int}\\mathrm{i}\\) as a root, and state \\(q\\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-11.4"
+            ],
+            "topic": "Complex numbers",
+            "chapter": "P23-11",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-11-4.json",
+                "locator": "P23-11.4-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-11.4-QC3-gen",
+        "section": "P23-11.4",
+        "kind": "generated",
+        "title": "Real root of a cubic with a known complex root",
+        "marks": 3,
+        "source": "Theory P23-11.4 Quick check 3; divide by the quadratic factor from the conjugate pair",
+        "params": [
+            {
+                "name": "a",
+                "min": -4,
+                "max": -1,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 2,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "r",
+                "min": -8,
+                "max": -1,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "C": "a*a+b*b",
+            "m2a": "-2*a",
+            "P": "-(2*a+r)",
+            "Q": "a*a+b*b+2*a*r",
+            "R": "-r*(a*a+b*b)",
+            "A": "r"
+        },
+        "constraints": [
+            "b>0"
+        ],
+        "original": {
+            "a": -1,
+            "b": 2,
+            "r": -3
+        },
+        "stem": "It is given that \\({a|int}+{b|int}\\mathrm{i}\\) is a root of the equation \\(x^3+{P|int}x^2+{Q|int}x+{R|int}=0\\). Find the real root of the equation.",
+        "answer": {
+            "expression": "r",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\({a|int}-{b|int}\\mathrm{i}\\) is also a root",
+                "result": "b",
+                "format": "int",
+                "mark": "B1",
+                "note": "Conjugate pair, since the coefficients are real."
+            },
+            {
+                "name": "F",
+                "text_tex": "Quadratic factor \\(x^2+{m2a|int}x+{C|int}\\)",
+                "result": "C",
+                "format": "int",
+                "mark": "M1",
+                "note": "Multiply (x − (a + bi))(x − (a − bi))."
+            },
+            {
+                "name": "A",
+                "text_tex": "Cubic \\(=(x^2+{m2a|int}x+{C|int})(x-k)\\); constant terms: \\(-{C|int}k={R|int}\\), so the real root is \\(k={A|int}\\)",
+                "result": "r",
+                "format": "int",
+                "mark": "A1",
+                "note": "Or divide the cubic by the quadratic factor."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original root −1 + 2i of x^3 + 5x^2 + 11x + 15 = 0, real root −3"
+            },
+            {
+                "id": "cubic",
+                "stem": "The polynomial \\(\\mathrm{p}(x)=x^3+{P|int}x^2+{Q|int}x+{R|int}\\) has a root \\({a|int}+{b|int}\\mathrm{i}\\). Find the real root of \\(\\mathrm{p}(x)=0\\)."
+            },
+            {
+                "id": "factor",
+                "stem": "Given that \\(x={a|int}+{b|int}\\mathrm{i}\\) satisfies \\(x^3+{P|int}x^2+{Q|int}x+{R|int}=0\\), find the other two roots and state the real one."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-11.4"
+            ],
+            "topic": "Complex numbers",
+            "chapter": "P23-11",
+            "marks": 3,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-11-4.json",
+                "locator": "P23-11.4-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-11.4-PP-9709-32-MJ21-Q5",
+        "section": "P23-11.4",
+        "kind": "pastpaper",
+        "title": "Square roots of 10 − 4√6 i",
+        "marks": 5,
+        "source": {
+            "paper": "9709/32/M/J/21 Q5",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s21_qp_32.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s21_ms_32.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>The complex number \\(u\\) is given by \\(u=10-4\\sqrt6\\,\\mathrm{i}\\).</p><p>Find the two square roots of \\(u\\), giving your answers in the form \\(a+\\mathrm{i}b\\), where \\(a\\) and \\(b\\) are real and exact. [5]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-11.4"
+            ],
+            "topic": "Complex numbers",
+            "chapter": "P23-11",
+            "marks": 5,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-11-4.json",
+                "locator": "P23-11.4-PP-9709-32-MJ21-Q5"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\((a+\\mathrm{i}b)^2=a^2-b^2+2ab\\mathrm{i}\\); equate to \\(10\\) and \\(-4\\sqrt6\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, square a + ib, use i² = −1 and equate real and imaginary parts to 10 and −4√6 respectively."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(a^2-b^2=10\\) and \\(2ab=-4\\sqrt6\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1."
+            },
+            {
+                "name": "s3",
+                "text_tex": "Eliminate one unknown",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, eliminate one unknown and find an equation in the other."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(a^4-10a^2-24=0\\) (or \\(b^4+10b^2-24=0\\))",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, or 3-term equivalent."
+            },
+            {
+                "name": "s5",
+                "text_tex": "\\(\\pm\\bigl(2\\sqrt3-\\sqrt2\\,\\mathrm{i}\\bigr)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, obtain final answers ±(2√3 − √2 i), or exact equivalents."
+            }
+        ]
+    },
+    {
+        "id": "P23-11.4-PP-9709-33-ON23-Q4",
+        "section": "P23-11.4",
+        "kind": "pastpaper",
+        "title": "A quadratic with complex coefficients",
+        "marks": 5,
+        "source": {
+            "paper": "9709/33/O/N/23 Q4",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w23_qp_33.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w23_ms_33.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Solve the quadratic equation \\((3+\\mathrm{i})w^2-2w+3-\\mathrm{i}=0\\), giving your answers in the form \\(x+\\mathrm{i}y\\), where \\(x\\) and \\(y\\) are real. [5]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-11.4"
+            ],
+            "topic": "Complex numbers",
+            "chapter": "P23-11",
+            "marks": 5,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-11-4.json",
+                "locator": "P23-11.4-PP-9709-33-ON23-Q4"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(w=\\dfrac{2\\pm\\sqrt{(-2)^2-4(3+\\mathrm{i})(3-\\mathrm{i})} }{2(3+\\mathrm{i})}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, use quadratic formula to solve for w."
+            },
+            {
+                "name": "s2",
+                "text_tex": "Use \\(\\mathrm{i}^2=-1\\) in \\((3+\\mathrm{i})(3-\\mathrm{i})=10\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(w=\\dfrac{2+6\\mathrm{i} }{6+2\\mathrm{i} }\\) or \\(w=\\dfrac{2-6\\mathrm{i} }{6+2\\mathrm{i} }\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, obtain one of the answers; must be simplified to this form."
+            },
+            {
+                "name": "s4",
+                "text_tex": "Multiply numerator and denominator by \\(6-2\\mathrm{i}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, show intention to multiply numerator and denominator by conjugate of their denominator."
+            },
+            {
+                "name": "s5",
+                "text_tex": "\\(w=\\tfrac{3}{5}+\\tfrac{4}{5}\\mathrm{i}\\) and \\(w=-\\mathrm{i}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, obtain final answers 3/5 + 4/5 i and −i; accept 0.6 + 0.8i and 0 − i."
+            }
+        ]
+    }
+]

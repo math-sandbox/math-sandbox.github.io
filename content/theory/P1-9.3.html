@@ -1,0 +1,77 @@
+<script src="/assets/redirect.js"></script>
+<section class="theory" data-section="P1-9.3">
+<h2>9.3 Integration of expressions of the form (ax + b)^n</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 1 Coursebook (Sue Pemberton, series editor Julian Gilbey), Chapter 9 Integration, printed pp.247–248. Own wording and new numbers, following the coursebook rule for integrating (ax + b)^n as the reverse of the chain rule.</p>
+<p class="key-words"><strong>Key words:</strong> <em>integration</em>, <em>chain rule</em>, <em>constant of integration</em></p>
+<h3>Reversing the chain rule</h3>
+<p>By the <strong>chain rule</strong>, \(\dfrac{d}{dx}(ax+b)^{n+1}=a(n+1)(ax+b)^n\). Reversing this gives</p>
+<p>\[\int(ax+b)^n\,dx=\frac{(ax+b)^{n+1}}{a(n+1)}+c,\qquad n\ne-1.\]</p>
+<p>Add one to the power, divide by the new power, and also divide by \(a\), the coefficient of \(x\). The rule works for negative and fractional powers, so write \(\dfrac{1}{\sqrt{2x+1}}\) as \((2x+1)^{-\frac{1}{2}}\) first. Do not expand the bracket.</p>
+<div class="worked-example">
+<h4>Worked example 1: A positive power</h4>
+<p class="src">Coursebook, 9.3, integrating (ax + b)^n. New numbers.</p>
+<p>Find \(\displaystyle\int(3x-1)^5\,dx\).</p>
+<ol class="steps">
+<li>\(\dfrac{(3x-1)^6}{6\times3}\) <span class="mark">M1</span></li>
+<li>\(=\dfrac{(3x-1)^6}{18}+c\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{1}{18}(3x-1)^6+c\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: A negative power</h4>
+<p class="src">Coursebook, 9.3, a power in the denominator. New numbers.</p>
+<p>Find \(\displaystyle\int\frac{6}{(2x+1)^2}\,dx\).</p>
+<ol class="steps">
+<li>\(\displaystyle\int6(2x+1)^{-2}\,dx=\dfrac{6(2x+1)^{-1}}{-1\times2}\) <span class="mark">M1</span></li>
+<li>\(=-\dfrac{3}{2x+1}+c\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(-\dfrac{3}{2x+1}+c\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Forgetting to divide by \(a\).</li><li>Multiplying by \(a\) instead of dividing (that is the rule for differentiating).</li><li>Expanding the bracket for a large power instead of using the rule.</li></ul>
+<h3>Past paper</h3>
+<p class="src">9709/12/O/N/16 Q1, official QP and official MS.</p>
+<p>A curve is such that \(\dfrac{dy}{dx}=\dfrac{8}{\sqrt{(4x+1)}}\). The point \((2, 5)\) lies on the curve. Find the equation of the curve. [4]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>\(y=\dfrac{8(4x+1)^{\frac{1}{2}}}{\frac{1}{2}}\ldots\) <span class="mark">B1</span> Official MS: B1, correct integrand (unsimplified) without ÷4.</li>
+<li>\(\ldots\div4\ (+c)\) <span class="mark">B1</span> Official MS: B1, for ÷4; ignore c.</li>
+<li>\(5=4\sqrt{9}+c\) <span class="mark">M1</span> Official MS: M1, substitution of correct values into an integrand to find c (uses x = 2 and y = 5).</li>
+<li>\(c=-7\), so \(y=4\sqrt{4x+1}-7\) <span class="mark">A1</span> Official MS: A1, c = −7; y = 4√(4x + 1) − 7.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/12/M/J/23 Q1, official QP and official MS.</p>
+<p>The equation of a curve is such that \(\dfrac{dy}{dx}=\dfrac{4}{(x-3)^3}\) for \(x&gt;3\). The curve passes through the point \((4, 5)\).</p><p>Find the equation of the curve. [3]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>\(y=\dfrac{4}{-2}(x-3)^{-2}\ [+c]\) <span class="mark">B1</span> Official MS: B1 OE; allow 4/(−3 + 1) and −3 + 1 for the power.</li>
+<li>\(5=\dfrac{4}{-2}(4-3)^{-2}+c\), leading to \(c=\) <span class="mark">M1</span> Official MS: M1, correct use of (4, 5) to find c in an integrated expression (defined by the correct power and no extra x's or terms).</li>
+<li>\(y=-\dfrac{2}{(x-3)^2}+7\) <span class="mark">A1</span> Official MS: A1 OE; −4/2 must be simplified to −2; condone c = 7 as their final line as long as y = or f(x) = is seen elsewhere.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>\(\displaystyle\int(2x+3)^4\,dx=\dfrac{(2x+3)^5}{K}+c\). Find \(K\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>New power 5; the coefficient of \(x\) is 2</li></ol>
+<p class="final"><strong>Answer:</strong> \(K=10\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>A curve has \(\dfrac{dy}{dx}=\dfrac{4}{\sqrt{4x+1}}\) and passes through \((2, 5)\). Find its equation.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(y=\dfrac{4(4x+1)^{\frac{1}{2}}}{\frac{1}{2}\times4}+C=2\sqrt{4x+1}+C\)</li><li>\(5=6+C\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(y=2\sqrt{4x+1}-1\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>Find \(\displaystyle\int\frac{12}{(2x+1)^3}\,dx\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{12(2x+1)^{-2}}{-2\times2}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(-3(2x+1)^{-2}+c\)</p>
+</details>
+</div>
+</section>

@@ -1,0 +1,268 @@
+[
+    {
+        "id": "P23-11.1-QC1-gen",
+        "section": "P23-11.1",
+        "kind": "generated",
+        "title": "Complex roots of a quadratic by completing the square",
+        "marks": 2,
+        "source": "Theory P23-11.1 Quick check 1; (x + h)^2 = -k^2 gives x = -h +/- k i",
+        "params": [
+            {
+                "name": "h",
+                "min": 1,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "k",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "b": "2*h",
+            "c": "h*h+k*k",
+            "k2": "k*k",
+            "A": "k"
+        },
+        "constraints": [
+            "k>1"
+        ],
+        "original": {
+            "h": 1,
+            "k": 2
+        },
+        "stem": "Solve the equation \\(x^2+{b|int}x+{c|int}=0\\). Give the imaginary part of the root whose imaginary part is positive.",
+        "answer": {
+            "expression": "k",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\((x+{h|int})^2=-{k2|int}\\)",
+                "result": "k2",
+                "format": "int",
+                "mark": "M1",
+                "note": "Complete the square."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(x=-{h|int}\\pm{k|int}\\mathrm{i}\\), so the imaginary part is \\({A|int}\\)",
+                "result": "k",
+                "format": "int",
+                "mark": "A1",
+                "note": "Use the square root of a negative number: √(−k²) = ki."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original x^2 + 2x + 5 = 0, roots −1 ± 2i"
+            },
+            {
+                "id": "formula",
+                "stem": "Use the quadratic formula to solve \\(x^2+{b|int}x+{c|int}=0\\). The roots are \\(p\\pm q\\mathrm{i}\\) with \\(q\\gt 0\\). Find \\(q\\)."
+            },
+            {
+                "id": "roots",
+                "stem": "The roots of \\(x^2+{b|int}x+{c|int}=0\\) are complex. Find the positive value of \\(q\\) such that one root is \\(-{h|int}+q\\mathrm{i}\\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-11.1"
+            ],
+            "topic": "Complex numbers",
+            "chapter": "P23-11",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-11-1.json",
+                "locator": "P23-11.1-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-11.1-QC2-gen",
+        "section": "P23-11.1",
+        "kind": "generated",
+        "title": "Solving x^2 + a = 0",
+        "marks": 2,
+        "source": "Theory P23-11.1 Quick check 2; x = +/- sqrt(a) i",
+        "params": [
+            {
+                "name": "m",
+                "min": 2,
+                "max": 15,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "a": "m*m",
+            "A": "m"
+        },
+        "constraints": [
+            "m>1"
+        ],
+        "original": {
+            "m": 3
+        },
+        "stem": "Solve the equation \\(x^2+{a|int}=0\\). The roots are \\(\\pm b\\mathrm{i}\\), where \\(b\\gt 0\\). Find \\(b\\).",
+        "answer": {
+            "expression": "m",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(x^2=-{a|int}\\), so \\(x=\\pm\\sqrt{-{a|int}}=\\pm\\sqrt{{a|int}}\\,\\sqrt{-1}\\)",
+                "result": "a",
+                "format": "int",
+                "mark": "M1",
+                "note": "Write the square root of a negative number using i = √(−1)."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(x=\\pm{A|int}\\mathrm{i}\\)",
+                "result": "m",
+                "format": "int",
+                "mark": "A1",
+                "note": "Evaluate the square root."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original x^2 + 9 = 0, roots ±3i"
+            },
+            {
+                "id": "sqrt",
+                "stem": "Write \\(\\sqrt{-{a|int}}\\) in the form \\(b\\mathrm{i}\\), where \\(b\\) is a positive real number, and state \\(b\\)."
+            },
+            {
+                "id": "square",
+                "stem": "Find the positive real number \\(b\\) such that \\((b\\mathrm{i})^2=-{a|int}\\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-11.1"
+            ],
+            "topic": "Complex numbers",
+            "chapter": "P23-11",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-11-1.json",
+                "locator": "P23-11.1-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-11.1-QC3-gen",
+        "section": "P23-11.1",
+        "kind": "generated",
+        "title": "Discriminant of a quadratic with complex roots",
+        "marks": 2,
+        "source": "Theory P23-11.1 Quick check 3; b^2 - 4ac < 0 gives complex roots",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 2,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "c",
+                "min": 1,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "A": "b*b-4*a*c",
+            "ac4": "4*a*c"
+        },
+        "constraints": [
+            "b*b<4*a*c"
+        ],
+        "original": {
+            "a": 2,
+            "b": 2,
+            "c": 5
+        },
+        "stem": "Find the value of the discriminant of \\({a|int}x^2+{b|int}x+{c|int}=0\\), and hence state whether the roots are real or complex.",
+        "answer": {
+            "expression": "b*b-4*a*c",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(b^2-4ac={b|int}^2-4\\times{a|int}\\times{c|int}\\)",
+                "result": "ac4",
+                "format": "int",
+                "mark": "M1",
+                "note": "Substitute into b² − 4ac."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(={A|int}\\lt 0\\), so the roots are complex (a conjugate pair)",
+                "result": "b*b-4*a*c",
+                "format": "int",
+                "mark": "A1",
+                "note": "A negative discriminant gives two complex conjugate roots."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 2x^2 + 2x + 5 = 0, discriminant −36"
+            },
+            {
+                "id": "nature",
+                "stem": "For the equation \\({a|int}x^2+{b|int}x+{c|int}=0\\), calculate \\(b^2-4ac\\) and describe the roots."
+            },
+            {
+                "id": "check",
+                "stem": "Show that \\({a|int}x^2+{b|int}x+{c|int}=0\\) has no real roots by finding the value of its discriminant."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-11.1"
+            ],
+            "topic": "Complex numbers",
+            "chapter": "P23-11",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-11-1.json",
+                "locator": "P23-11.1-QC3-gen"
+            }
+        }
+    }
+]

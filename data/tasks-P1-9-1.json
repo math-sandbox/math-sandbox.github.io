@@ -1,0 +1,261 @@
+[
+    {
+        "id": "P1-9.1-QC1-gen",
+        "section": "P1-9.1",
+        "kind": "generated",
+        "title": "Integrating a power of x",
+        "marks": 2,
+        "source": "Theory P1-9.1 Quick check 1; integral of a x^n is a x^(n+1)/(n+1)",
+        "params": [
+            {
+                "name": "n",
+                "min": 2,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "k",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "a": "k*(n+1)",
+            "n1": "n+1",
+            "A": "k"
+        },
+        "constraints": [
+            "k>1"
+        ],
+        "original": {
+            "n": 2,
+            "k": 2
+        },
+        "stem": "Find \\(\\displaystyle\\int {a|int}x^{{n|int}}\\,dx\\), and give the coefficient of \\(x^{{n1|int}}\\) in your answer.",
+        "answer": {
+            "expression": "k",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "Add 1 to the power and divide by the new power: \\(\\dfrac{{a|int}x^{{n1|int}} }{{n1|int}}\\)",
+                "result": "n1",
+                "format": "int",
+                "mark": "M1",
+                "note": "Reverse of differentiation: x^n integrates to x^(n+1)/(n+1)."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(={A|int}x^{{n1|int}}+c\\)",
+                "result": "k",
+                "format": "int",
+                "mark": "A1",
+                "note": "Simplify; include the constant of integration."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original integral of 6x^2 = 2x^3 + c"
+            },
+            {
+                "id": "deriv",
+                "stem": "Given that \\(\\dfrac{dy}{dx}={a|int}x^{{n|int}}\\), find \\(y\\) in terms of \\(x\\) and a constant \\(c\\). State the coefficient of \\(x^{{n1|int}}\\)."
+            },
+            {
+                "id": "anti",
+                "stem": "Integrate \\({a|int}x^{{n|int}}\\) with respect to \\(x\\). What is the coefficient of \\(x^{{n1|int}}\\)?"
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-9.1"
+            ],
+            "topic": "Integration",
+            "chapter": "P1-9",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-9-1.json",
+                "locator": "P1-9.1-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-9.1-QC2-gen",
+        "section": "P1-9.1",
+        "kind": "generated",
+        "title": "Integrating a negative power of x",
+        "marks": 2,
+        "source": "Theory P1-9.1 Quick check 2; x^(-m) integrates to x^(1-m)/(1-m)",
+        "params": [
+            {
+                "name": "m",
+                "min": 2,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "k",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "a": "k*(m-1)",
+            "e": "1-m",
+            "A": "0-k"
+        },
+        "constraints": [
+            "k>1"
+        ],
+        "original": {
+            "m": 3,
+            "k": 2
+        },
+        "stem": "Find \\(\\displaystyle\\int\\dfrac{{a|int}}{x^{{m|int}} }\\,dx\\), and give the coefficient of \\(x^{{e|int}}\\) in your answer.",
+        "answer": {
+            "expression": "0-k",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\displaystyle\\int {a|int}x^{-{m|int}}\\,dx=\\dfrac{{a|int}x^{{e|int}} }{{e|int}}\\)",
+                "result": "e",
+                "format": "int",
+                "mark": "M1",
+                "note": "Write as a power of x first, then add 1 to the power and divide by the new power."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(={A|int}x^{{e|int}}+c\\)",
+                "result": "0-k",
+                "format": "int",
+                "mark": "A1",
+                "note": "The new power is negative, so the coefficient is negative."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original integral of 4/x^3 = −2x^(−2) + c"
+            },
+            {
+                "id": "deriv",
+                "stem": "Given that \\(\\dfrac{dy}{dx}=\\dfrac{{a|int}}{x^{{m|int}} }\\), find \\(y\\) in terms of \\(x\\) and a constant. State the coefficient of \\(x^{{e|int}}\\)."
+            },
+            {
+                "id": "power",
+                "stem": "By first writing \\(\\dfrac{{a|int}}{x^{{m|int}} }\\) as a power of \\(x\\), integrate it with respect to \\(x\\) and state the coefficient of \\(x^{{e|int}}\\)."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-9.1"
+            ],
+            "topic": "Integration",
+            "chapter": "P1-9",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-9-1.json",
+                "locator": "P1-9.1-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-9.1-QC3-gen",
+        "section": "P1-9.1",
+        "kind": "generated",
+        "title": "Integrating a multiple of the square root of x",
+        "marks": 2,
+        "source": "Theory P1-9.1 Quick check 3; x^(1/2) integrates to (2/3) x^(3/2)",
+        "params": [
+            {
+                "name": "k",
+                "min": 1,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "a": "3*k",
+            "A": "2*k"
+        },
+        "constraints": [
+            "k>0"
+        ],
+        "original": {
+            "k": 2
+        },
+        "stem": "Find \\(\\displaystyle\\int {a|int}\\sqrt{x}\\,dx\\), and give the coefficient of \\(x^{\\frac{3}{2} }\\) in your answer.",
+        "answer": {
+            "expression": "2*k",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\displaystyle\\int {a|int}x^{\\frac{1}{2} }\\,dx=\\dfrac{{a|int}x^{\\frac{3}{2} } }{\\frac{3}{2} }\\)",
+                "result": "a",
+                "format": "int",
+                "mark": "M1",
+                "note": "Write √x as x^(1/2)."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(={A|int}x^{\\frac{3}{2} }+c\\)",
+                "result": "2*k",
+                "format": "int",
+                "mark": "A1",
+                "note": "Dividing by 3/2 is multiplying by 2/3."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original integral of 6√x = 4x^(3/2) + c"
+            },
+            {
+                "id": "deriv",
+                "stem": "Given that \\(\\dfrac{dy}{dx}={a|int}\\sqrt{x}\\), find \\(y\\). State the coefficient of \\(x^{\\frac{3}{2} }\\)."
+            },
+            {
+                "id": "anti",
+                "stem": "Integrate \\({a|int}x^{\\frac{1}{2} }\\) with respect to \\(x\\), and state the coefficient of \\(x^{\\frac{3}{2} }\\)."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-9.1"
+            ],
+            "topic": "Integration",
+            "chapter": "P1-9",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-9-1.json",
+                "locator": "P1-9.1-QC3-gen"
+            }
+        }
+    }
+]

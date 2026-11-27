@@ -1,0 +1,85 @@
+<script src="/assets/redirect.js"></script>
+<section class="theory" data-section="P1-9.5">
+<h2>9.5 Definite integration</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 1 Coursebook (Sue Pemberton, series editor Julian Gilbey), Chapter 9 Integration, printed pp.250–252. Own wording and new numbers, following the coursebook notation for definite integrals, square-bracket working and substituting the upper and lower limits.</p>
+<p class="key-words"><strong>Key words:</strong> <em>definite integral</em>, <em>limits</em>, <em>integration</em></p>
+<h3>Definite integrals</h3>
+<p>If \(\mathrm{F}(x)\) is an integral of \(\mathrm{f}(x)\), the <strong>definite integral</strong> from \(a\) to \(b\) is</p>
+<p>\[\int_a^b\mathrm{f}(x)\,dx=\Bigl[\mathrm{F}(x)\Bigr]_a^b=\mathrm{F}(b)-\mathrm{F}(a).\]</p>
+<p>The numbers \(a\) and \(b\) are the lower and upper <strong>limits</strong>. The constant of integration cancels, so it is not written. A definite integral is a number.</p>
+<h3>Setting out</h3>
+<ul><li>Integrate and write the result in square brackets with the limits.</li><li>Substitute the upper limit, then subtract the value at the lower limit. Use brackets: \(\mathrm{F}(b)-\bigl(\mathrm{F}(a)\bigr)\).</li><li>Show the working: many questions say 'showing all necessary working', so a calculator value alone scores no marks.</li></ul>
+<div class="worked-example">
+<h4>Worked example 1: A polynomial</h4>
+<p class="src">Coursebook, 9.5, evaluating a definite integral. New numbers.</p>
+<p>Evaluate \(\displaystyle\int_1^3(x^2+2)\,dx\).</p>
+<ol class="steps">
+<li>\(\Bigl[\dfrac{x^3}{3}+2x\Bigr]_1^3\) <span class="mark">B1</span></li>
+<li>\(=(9+6)-\Bigl(\dfrac{1}{3}+2\Bigr)\) <span class="mark">M1</span></li>
+<li>\(=\dfrac{38}{3}\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{38}{3}\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: A root</h4>
+<p class="src">Coursebook, 9.5, a definite integral of (ax + b)^n. New numbers.</p>
+<p>Evaluate \(\displaystyle\int_0^4\sqrt{2x+1}\,dx\).</p>
+<ol class="steps">
+<li>\(\Bigl[\dfrac{(2x+1)^{\frac{3}{2}}}{\frac{3}{2}\times2}\Bigr]_0^4=\Bigl[\dfrac{(2x+1)^{\frac{3}{2}}}{3}\Bigr]_0^4\) <span class="mark">B1</span></li>
+<li>\(=\dfrac{27}{3}-\dfrac{1}{3}\) <span class="mark">M1</span></li>
+<li>\(=\dfrac{26}{3}\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{26}{3}\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Subtracting the wrong way round: it is upper limit minus lower limit.</li><li>Assuming the value at a lower limit of 0 is 0: for \((2x+1)^{\frac{3}{2}}\) it is 1.</li><li>Substituting the limits into \(\mathrm{f}(x)\) instead of into the integral \(\mathrm{F}(x)\).</li></ul>
+<h3>Past paper</h3>
+<p class="src">9709/12/O/N/18 Q2, official QP and official MS.</p>
+<p>Showing all necessary working, find \(\displaystyle\int_1^4\Bigl(\sqrt{x}+\frac{2}{\sqrt{x}}\Bigr)\,dx\). [4]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>\(\dfrac{x^{\frac{3}{2}}}{\frac{3}{2}}\ldots\) <span class="mark">B1</span> Official MS: B1 B1, integrate → x^(3/2)/(3/2) + 2x^(1/2)/(1/2) (+C); B1 for each term correct; this is the first term.</li>
+<li>\(\ldots+\dfrac{2x^{\frac{1}{2}}}{\frac{1}{2}}\) <span class="mark">B1</span> Official MS: second B1, for the second term.</li>
+<li>\(\Bigl[\dfrac{x^{\frac{3}{2}}}{\frac{3}{2}}+\dfrac{2x^{\frac{1}{2}}}{\frac{1}{2}}\Bigr]_1^4\to\dfrac{40}{3}-\dfrac{14}{3}\) <span class="mark">M1</span> Official MS: M1, evidence of 4 and 1 substituted into an integrated expression (at least one power increased).</li>
+<li>\(=\dfrac{26}{3}\) <span class="mark">A1</span> Official MS: A1, 26/3 oe; allow 8.67 awrt.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/13/M/J/11 Q4, official QP and official MS.</p>
+<p>(a) Differentiate \(\dfrac{2x^3+5}{x}\) with respect to \(x\). [3]</p><p>(b) Find \(\displaystyle\int(3x-2)^5\,dx\) and hence find the value of \(\displaystyle\int_0^1(3x-2)^5\,dx\). [4]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(a) \(y=\dfrac{2x^3+5}{x}=2x^2+\dfrac{5}{x}\) <span class="mark">M1</span> Official MS: M1, knows to divide numerator by x.</li>
+<li>(a) \(\dfrac{dy}{dx}=4x\ldots\) <span class="mark">A1</span> Official MS: A1 + A1 for 4x − 5/x² or 4x − 5x^(−2); this is the first term.</li>
+<li>(a) \(\ldots-\dfrac{5}{x^2}\) <span class="mark">A1</span> Official MS: second A1, for the second term; co.</li>
+<li>(b) \(\displaystyle\int(3x-2)^5\,dx=\dfrac{(3x-2)^6}{6}\ldots\) <span class="mark">B1</span> Official MS: B1 B1, B1 without '÷3'.</li>
+<li>(b) \(\ldots\div3\ (+c)\) <span class="mark">B1</span> Official MS: B1 for '÷3' (ignore +c).</li>
+<li>(b) \(\Bigl[\dfrac{(3x-2)^6}{18}\Bigr]_0^1\) <span class="mark">M1</span> Official MS: M1, uses limits after integration.</li>
+<li>(b) \(\dfrac{1}{18}-\dfrac{64}{18}=-3\tfrac{1}{2}\) <span class="mark">A1</span> Official MS: A1, limits used correctly → −3½; co.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>Evaluate \(\displaystyle\int_1^2(6x^2+6x)\,dx\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\Bigl[2x^3+3x^2\Bigr]_1^2=28-5\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(23\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>Evaluate \(\displaystyle\int_1^9\frac{3}{\sqrt{x}}\,dx\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\Bigl[6\sqrt{x}\Bigr]_1^9=18-6\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(12\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>Evaluate \(\displaystyle\int_0^2(2x+1)^2\,dx\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\Bigl[\dfrac{(2x+1)^3}{6}\Bigr]_0^2=\dfrac{125-1}{6}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{62}{3}=20.7\) (3 s.f.)</p>
+</details>
+</div>
+</section>

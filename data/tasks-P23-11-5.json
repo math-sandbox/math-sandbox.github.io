@@ -1,0 +1,443 @@
+[
+    {
+        "id": "P23-11.5-QC1-gen",
+        "section": "P23-11.5",
+        "kind": "generated",
+        "title": "Least value of the modulus of z on a circle",
+        "marks": 2,
+        "source": "Theory P23-11.5 Quick check 1; least mod(z) = distance of centre from O - radius",
+        "params": [
+            {
+                "name": "a",
+                "min": -8,
+                "max": 8,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 2,
+                "max": 8,
+                "step": 1
+            },
+            {
+                "name": "r",
+                "min": 1,
+                "max": 5,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "s": "a*a+b*b",
+            "A": "math.pow(a*a+b*b,0.5)-r"
+        },
+        "constraints": [
+            "r*r<a*a+b*b",
+            "a!=0"
+        ],
+        "original": {
+            "a": 4,
+            "b": 3,
+            "r": 2
+        },
+        "stem": "The complex number \\(z\\) satisfies \\(\\lvert z-({a|int}+{b|int}\\mathrm{i})\\rvert ={r|int}\\). Find the least value of \\(\\lvert z\\rvert \\).",
+        "answer": {
+            "expression": "math.pow(s,0.5)-r",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "Circle with centre \\(({a|int}, {b|int})\\) and radius \\({r|int}\\); distance of centre from \\(O\\) is \\(\\sqrt{{s|int}}\\)",
+                "result": "s",
+                "format": "int",
+                "mark": "M1",
+                "note": "Identify the locus as a circle and find the distance of its centre from the origin."
+            },
+            {
+                "name": "A",
+                "text_tex": "Least \\(\\lvert z\\rvert =\\sqrt{{s|int}}-{r|int}={A|sf3z}\\)",
+                "result": "math.pow(s,0.5)-r",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Subtract the radius along the line through O and the centre."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original mod(z − (4 + 3i)) = 2, least mod(z) = 3"
+            },
+            {
+                "id": "circle",
+                "stem": "On an Argand diagram, the locus of \\(z\\) is given by \\(\\lvert z-({a|int}+{b|int}\\mathrm{i})\\rvert ={r|int}\\). Find the least distance of a point on the locus from the origin."
+            },
+            {
+                "id": "sketch",
+                "stem": "Sketch the locus \\(\\lvert z-({a|int}+{b|int}\\mathrm{i})\\rvert ={r|int}\\) and hence find the minimum value of \\(\\lvert z\\rvert \\) for points on it."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-11.5"
+            ],
+            "topic": "Complex numbers",
+            "chapter": "P23-11",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-11-5.json",
+                "locator": "P23-11.5-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-11.5-QC2-gen",
+        "section": "P23-11.5",
+        "kind": "generated",
+        "title": "Greatest value of the modulus of z on a circle",
+        "marks": 2,
+        "source": "Theory P23-11.5 Quick check 2; greatest mod(z) = distance of centre from O + radius",
+        "params": [
+            {
+                "name": "a",
+                "min": -8,
+                "max": 8,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 2,
+                "max": 8,
+                "step": 1
+            },
+            {
+                "name": "r",
+                "min": 1,
+                "max": 5,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "s": "a*a+b*b",
+            "A": "math.pow(a*a+b*b,0.5)+r"
+        },
+        "constraints": [
+            "a!=0"
+        ],
+        "original": {
+            "a": -6,
+            "b": 8,
+            "r": 3
+        },
+        "stem": "The complex number \\(z\\) satisfies \\(\\lvert z-({a|int}+{b|int}\\mathrm{i})\\rvert ={r|int}\\). Find the greatest value of \\(\\lvert z\\rvert \\).",
+        "answer": {
+            "expression": "math.pow(s,0.5)+r",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "Centre \\(({a|int}, {b|int})\\), radius \\({r|int}\\); distance of centre from \\(O\\) is \\(\\sqrt{{s|int}}\\)",
+                "result": "s",
+                "format": "int",
+                "mark": "M1",
+                "note": "Distance of the centre from the origin."
+            },
+            {
+                "name": "A",
+                "text_tex": "Greatest \\(\\lvert z\\rvert =\\sqrt{{s|int}}+{r|int}={A|sf3z}\\)",
+                "result": "math.pow(s,0.5)+r",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Add the radius."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original mod(z − (−6 + 8i)) = 3, greatest mod(z) = 13"
+            },
+            {
+                "id": "circle",
+                "stem": "Find the greatest distance from the origin of a point on the locus \\(\\lvert z-({a|int}+{b|int}\\mathrm{i})\\rvert ={r|int}\\)."
+            },
+            {
+                "id": "max",
+                "stem": "For complex numbers \\(z\\) with \\(\\lvert z-({a|int}+{b|int}\\mathrm{i})\\rvert ={r|int}\\), find the maximum value of \\(\\lvert z\\rvert \\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-11.5"
+            ],
+            "topic": "Complex numbers",
+            "chapter": "P23-11",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-11-5.json",
+                "locator": "P23-11.5-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-11.5-QC3-gen",
+        "section": "P23-11.5",
+        "kind": "generated",
+        "title": "Where a perpendicular bisector crosses the real axis",
+        "marks": 3,
+        "source": "Theory P23-11.5 Quick check 3; mod(z - z1) = mod(z - z2) with y = 0",
+        "params": [
+            {
+                "name": "a",
+                "min": -5,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 2,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "e",
+                "min": 1,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "d",
+                "min": 2,
+                "max": 6,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "c": "a+e",
+            "s1": "a*a+b*b",
+            "s2": "c*c+d*d",
+            "ca2": "2*(c-a)",
+            "nm": "c*c+d*d-a*a-b*b",
+            "A": "(c*c+d*d-a*a-b*b)/(2*(c-a))"
+        },
+        "constraints": [
+            "e>0",
+            "c*c+d*d!=a*a+b*b"
+        ],
+        "original": {
+            "a": 1,
+            "b": 2,
+            "e": 2,
+            "d": 4
+        },
+        "stem": "The locus of \\(z\\) is given by \\(\\lvert z-({a|int}+{b|int}\\mathrm{i})\\rvert =\\lvert z-({c|int}+{d|int}\\mathrm{i})\\rvert \\). Find the real number \\(x\\) such that \\(z=x\\) lies on the locus.",
+        "answer": {
+            "expression": "nm/ca2",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(z=x\\): \\((x-({a|int}))^2+{b|int}^2=(x-({c|int}))^2+{d|int}^2\\)",
+                "result": "s1",
+                "format": "int",
+                "mark": "M1",
+                "note": "The locus is the perpendicular bisector; put y = 0 and square both moduli."
+            },
+            {
+                "name": "E",
+                "text_tex": "\\({ca2|int}x={nm|int}\\)",
+                "result": "nm",
+                "format": "int",
+                "mark": "M1",
+                "note": "The x² terms cancel."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(x={A|sf3z}\\)",
+                "result": "nm/ca2",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Solve."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original mod(z − (1 + 2i)) = mod(z − (3 + 4i)), crosses the real axis at x = 5"
+            },
+            {
+                "id": "bisector",
+                "stem": "The perpendicular bisector of the points representing \\({a|int}+{b|int}\\mathrm{i}\\) and \\({c|int}+{d|int}\\mathrm{i}\\) on an Argand diagram meets the real axis at \\(P\\). Find the real number represented by \\(P\\)."
+            },
+            {
+                "id": "equal",
+                "stem": "Find the real value of \\(z\\) for which \\(\\lvert z-({a|int}+{b|int}\\mathrm{i})\\rvert =\\lvert z-({c|int}+{d|int}\\mathrm{i})\\rvert \\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-11.5"
+            ],
+            "topic": "Complex numbers",
+            "chapter": "P23-11",
+            "marks": 3,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-11-5.json",
+                "locator": "P23-11.5-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-11.5-PP-9709-32-MJ23-Q3",
+        "section": "P23-11.5",
+        "kind": "pastpaper",
+        "title": "A circle locus and the least modulus",
+        "marks": 4,
+        "source": {
+            "paper": "9709/32/M/J/23 Q3",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s23_qp_32.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s23_ms_32.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>(a) On an Argand diagram, sketch the locus of points representing complex numbers \\(z\\) satisfying \\(\\lvert z+3-2\\mathrm{i}\\rvert =2\\). [2]</p><p>(b) Find the least value of \\(\\lvert z\\rvert \\) for points on this locus, giving your answer in an exact form. [2]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-11.5"
+            ],
+            "topic": "Complex numbers",
+            "chapter": "P23-11",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-11-5.json",
+                "locator": "P23-11.5-PP-9709-32-MJ23-Q3"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) A circle with centre \\(-3+2\\mathrm{i}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, show a circle with centre −3 + 2i."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(a) Radius \\(2\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 FT, show a circle with radius 2; FT centre not at the origin."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(b) Distance of centre from \\(O\\) minus radius: \\(\\sqrt{3^2+2^2}-2\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, carry out a correct method for finding the least value of mod(z), e.g. distance of centre from origin − radius."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(b) \\(\\sqrt{13}-2\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, obtain answer √13 − 2 or √(17 − 4√13), or exact equivalent."
+            }
+        ]
+    },
+    {
+        "id": "P23-11.5-PP-9709-31-ON20-Q2",
+        "section": "P23-11.5",
+        "kind": "pastpaper",
+        "title": "Shading a region between two circles",
+        "marks": 4,
+        "source": {
+            "paper": "9709/31/O/N/20 Q2",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w20_qp_31.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w20_ms_31.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>On a sketch of an Argand diagram, shade the region whose points represent complex numbers \\(z\\) satisfying the inequalities \\(\\lvert z\\rvert \\ge 2\\) and \\(\\lvert z-1+\\mathrm{i}\\rvert \\le 1\\). [4]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-11.5"
+            ],
+            "topic": "Complex numbers",
+            "chapter": "P23-11",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-11-5.json",
+                "locator": "P23-11.5-PP-9709-31-ON20-Q2"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "A circle with centre the origin and radius 2",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1."
+            },
+            {
+                "name": "s2",
+                "text_tex": "The point representing \\(1-\\mathrm{i}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1."
+            },
+            {
+                "name": "s3",
+                "text_tex": "A circle with centre \\(1-\\mathrm{i}\\) and radius 1",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 FT; the FT is on the position of 1 − i."
+            },
+            {
+                "name": "s4",
+                "text_tex": "Shade the region inside the circle centre \\(1-\\mathrm{i}\\) and outside the circle \\(\\lvert z\\rvert =2\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 FT; the FT is on the position of 1 − i."
+            }
+        ]
+    }
+]

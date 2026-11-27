@@ -1,0 +1,88 @@
+<script src="/assets/redirect.js"></script>
+<section class="theory" data-section="S1-8.4">
+<h2>8.4 The normal approximation to the binomial distribution</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Probability &amp; Statistics 1 Coursebook (Dean Chalmers), Chapter 8 The normal distribution, printed pp.208–214. Own wording and new numbers, following the coursebook conditions np &gt; 5 and nq &gt; 5, the mean np and variance npq, and continuity corrections.</p>
+<p class="key-words"><strong>Key words:</strong> <em>normal approximation</em>, <em>continuity correction</em>, <em>binomial distribution</em>, <em>normal distribution</em></p>
+<h3>When can a normal distribution be used?</h3>
+<p>For large \(n\), the bar chart of \(X\sim\mathrm{B}(n, p)\) has a bell shape. If \(np\gt 5\) and \(nq\gt 5\), where \(q=1-p\), the <strong>binomial distribution</strong> can be approximated by the <strong>normal distribution</strong> with the same mean and variance:</p>
+<p>\[X\sim\mathrm{B}(n, p)\quad\text{is approximated by}\quad\mathrm{N}(np,\ npq).\]</p>
+<p>This <strong>normal approximation</strong> saves adding many binomial probabilities, for example \(P(X\lt 20)\) when \(n=80\).</p>
+<h3>Continuity corrections</h3>
+<p>A binomial variable takes only whole-number values, but a normal variable is continuous. Each whole number \(r\) is represented by the interval from \(r-0.5\) to \(r+0.5\). This adjustment is called a <strong>continuity correction</strong>.</p>
+<table class="dist"><tr><th>Binomial</th><th>Normal (after correction)</th></tr><tr><td>\(P(X\le 20)\)</td><td>\(P(Y\lt 20.5)\)</td></tr><tr><td>\(P(X\lt 20)\)</td><td>\(P(Y\lt 19.5)\)</td></tr><tr><td>\(P(X\ge 20)\)</td><td>\(P(Y\gt 19.5)\)</td></tr><tr><td>\(P(X\gt 20)\)</td><td>\(P(Y\gt 20.5)\)</td></tr><tr><td>\(P(X=20)\)</td><td>\(P(19.5\lt Y\lt 20.5)\)</td></tr></table>
+<p>To decide the correction, list the whole numbers that are included and take the edge of the first or last one.</p>
+<div class="ms-widget" data-widget="normal-approx"></div>
+<script src="../../assets/widget-kinds-pkg19.js"></script>
+<div class="worked-example">
+<h4>Worked example 1: Fewer than</h4>
+<p class="src">Coursebook, 8.4, normal approximation with a continuity correction. New numbers.</p>
+<p>\(X\sim\mathrm{B}(50, 0.4)\). Use a suitable approximation to find \(P(X\lt 17)\).</p>
+<ol class="steps">
+<li>\(np=20\gt 5\), \(nq=30\gt 5\); \(np=20\), \(npq=12\) <span class="mark">B1</span></li>
+<li>\(P(X\lt 17)=P(X\le 16)\approx P\Bigl(Z\lt \dfrac{16.5-20}{\sqrt{12}}\Bigr)\) <span class="mark">M1 M1</span></li>
+<li>\(=P(Z\lt -1.010)=1-\Phi(1.010)=1-0.8438=0.156\) <span class="mark">M1 A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(0.156\) (3 s.f.)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: A range of values</h4>
+<p class="src">Coursebook, 8.4, a two-sided interval. New numbers.</p>
+<p>A fair coin is thrown 100 times. Use a suitable approximation to find the probability of obtaining from 45 to 55 heads inclusive.</p>
+<ol class="steps">
+<li>\(np=50\), \(npq=25\), \(\sigma=5\) <span class="mark">B1</span></li>
+<li>\(P(45\le X\le 55)\approx P(44.5\lt Y\lt 55.5)=P(-1.1\lt Z\lt 1.1)\) <span class="mark">M1 M1</span></li>
+<li>\(=2\Phi(1.1)-1=2\times0.8643-1=0.729\) <span class="mark">M1 A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(0.729\) (3 s.f.)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Forgetting the continuity correction, or moving it the wrong way: 'fewer than 20' is \(19.5\), 'more than 20' is \(20.5\).</li><li>Using the variance \(npq\) instead of the standard deviation \(\sqrt{npq}\) when standardising.</li><li>Not checking \(np\gt 5\) and \(nq\gt 5\) before using the approximation.</li></ul>
+<h3>Past paper</h3>
+<p class="src">9709/53/O/N/22 Q2, official QP and official MS.</p>
+<p>In a large college, 32% of the students have blue eyes. A random sample of 80 students is chosen.</p><p>Use an approximation to find the probability that fewer than 20 of these students have blue eyes. [5]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>Mean \(=80\times0.32=25.6\), variance \(=80\times0.32\times0.68=17.408\) <span class="mark">B1</span> Official MS: B1, 25.6 and 17.4[08] seen, allow unsimplified; 4.172… implies correct variance.</li>
+<li>\(P(X&lt;20)=P\Bigl(Z&lt;\dfrac{19.5-25.6}{\sqrt{17.408}}\Bigr)\) <span class="mark">M1</span> Official MS: M1, substituting their 25.6 and 17.408 into ± standardisation formula (any number for 19.5), not σ², √σ.</li>
+<li>Continuity correction: \(19.5\) <span class="mark">M1</span> Official MS: M1, using continuity correction 19.5 or 20.5 in their standardisation formula.</li>
+<li>\(=P(Z&lt;-1.462)=1-\Phi(1.462)=1-0.9282\) <span class="mark">M1</span> Official MS: M1, appropriate area Φ, from final process, must be probability (expect final answer &lt; 0.5).</li>
+<li>\(=0.0718\) <span class="mark">A1</span> Official MS: A1, 0.0718 ⩽ p ⩽ 0.0719.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/52/O/N/23 Q3, official QP and official MS.</p>
+<p>A factory produces a certain type of electrical component. It is known that 15% of the components produced are faulty. A random sample of 200 components is chosen.</p><p>Use an approximation to find the probability that more than 40 of these components are faulty. [5]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>Mean \(=200\times0.15=30\), variance \(=200\times0.15\times0.85=25.5\) <span class="mark">B1</span> Official MS: B1, 30 and 25.5 seen, allow unsimplified; 5.049 ⩽ σ ⩽ 5.050 implies correct variance.</li>
+<li>\(P(X&gt;40)=P\Bigl(Z&gt;\dfrac{40.5-30}{\sqrt{25.5}}\Bigr)\) <span class="mark">M1</span> Official MS: M1, substituting their mean and their positive 5.04975 into ± standardisation formula (any number for 40.5), not their σ².</li>
+<li>Continuity correction: \(40.5\) <span class="mark">M1</span> Official MS: M1, using continuity correction 39.5 or 40.5 in their standardisation formula.</li>
+<li>\(=1-\Phi(2.079)=1-0.9812\) <span class="mark">M1</span> Official MS: M1, appropriate area Φ, from final process, must be a probability.</li>
+<li>\(=0.0188\) <span class="mark">A1</span> Official MS: A1, 0.01875 &lt; p ⩽ 0.0188.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>\(X\sim\mathrm{B}(60, 0.4)\). A normal approximation is used to find \(P(X\lt 20)\). Find the standardised value \(z\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(np=24\), \(npq=14.4\)</li><li>\(P(X\lt 20)=P(X\le 19)\), use \(19.5\)</li><li>\(z=\dfrac{19.5-24}{\sqrt{14.4}}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(-1.19\) (3 s.f.)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>\(X\sim\mathrm{B}(n, 0.15)\). Find the least value of \(n\) for which \(np\gt 5\) and \(nq\gt 5\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>The smaller of \(p\) and \(q\) is \(0.15\)</li><li>\(n\gt \dfrac{5}{0.15}=33.3\ldots\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(34\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>\(X\sim\mathrm{B}(100, 0.3)\). Using a normal approximation, \(P(X\gt 35)\approx1-\Phi(z)\). Find \(z\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(np=30\), \(npq=21\)</li><li>Use \(35.5\)</li><li>\(z=\dfrac{35.5-30}{\sqrt{21}}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(1.20\) (3 s.f.)</p>
+</details>
+</div>
+</section>

@@ -1,0 +1,451 @@
+[
+    {
+        "id": "P23-11.3-QC1-gen",
+        "section": "P23-11.3",
+        "kind": "generated",
+        "title": "Modulus of a complex number",
+        "marks": 2,
+        "source": "Theory P23-11.3 Quick check 1; mod(x + iy) = sqrt(x^2 + y^2)",
+        "params": [
+            {
+                "name": "a",
+                "min": -8,
+                "max": 8,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 2,
+                "max": 8,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "s": "a*a+b*b",
+            "A": "math.pow(a*a+b*b,0.5)"
+        },
+        "constraints": [
+            "a!=0"
+        ],
+        "original": {
+            "a": 3,
+            "b": 4
+        },
+        "stem": "Find the modulus of the complex number \\({a|int}+{b|int}\\mathrm{i}\\).",
+        "answer": {
+            "expression": "math.pow(s,0.5)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\lvert z\\rvert =\\sqrt{({a|int})^2+{b|int}^2}=\\sqrt{{s|int}}\\)",
+                "result": "s",
+                "format": "int",
+                "mark": "M1",
+                "note": "Use the distance from the origin on the Argand diagram."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(={A|sf3z}\\)",
+                "result": "math.pow(s,0.5)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 3 + 4i, modulus 5"
+            },
+            {
+                "id": "distance",
+                "stem": "On an Argand diagram, the point \\(P\\) represents \\({a|int}+{b|int}\\mathrm{i}\\). Find the distance \\(OP\\)."
+            },
+            {
+                "id": "abs",
+                "stem": "Given that \\(z={a|int}+{b|int}\\mathrm{i}\\), find \\(\\lvert z\\rvert \\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-11.3"
+            ],
+            "topic": "Complex numbers",
+            "chapter": "P23-11",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-11-3.json",
+                "locator": "P23-11.3-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-11.3-QC2-gen",
+        "section": "P23-11.3",
+        "kind": "generated",
+        "title": "Argument of a product in exponential form",
+        "marks": 2,
+        "source": "Theory P23-11.3 Quick check 2; arg(uw) = arg u + arg w, adjusted to (-pi, pi]",
+        "params": [
+            {
+                "name": "r",
+                "min": 2,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "s",
+                "min": 2,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "al",
+                "min": -11,
+                "max": 11,
+                "step": 1
+            },
+            {
+                "name": "be",
+                "min": -11,
+                "max": 11,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "rs": "r*s",
+            "S": "al+be",
+            "k": "al+be-24*math.floor((al+be+11)/24)",
+            "A": "(al+be-24*math.floor((al+be+11)/24))*3.141592653589793/12"
+        },
+        "constraints": [
+            "al*al>1",
+            "be*be>1",
+            "(al+be)*(al+be)>1"
+        ],
+        "original": {
+            "r": 2,
+            "s": 3,
+            "al": 3,
+            "be": 4
+        },
+        "stem": "The complex numbers \\(u\\) and \\(w\\) are given by \\(u={r|int}\\mathrm{e}^{{al|int}\\pi\\mathrm{i}/12}\\) and \\(w={s|int}\\mathrm{e}^{{be|int}\\pi\\mathrm{i}/12}\\). Find \\(\\arg(uw)\\) in radians, where \\(-\\pi\\lt\\arg(uw)\\le\\pi\\), giving your answer correct to 3 significant figures.",
+        "answer": {
+            "expression": "k*3.141592653589793/12",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "Multiply the moduli and add the arguments: \\(uw={rs|int}\\mathrm{e}^{{S|int}\\pi\\mathrm{i}/12}\\)",
+                "result": "S",
+                "format": "int",
+                "mark": "M1",
+                "note": "Multiply the moduli and add the arguments."
+            },
+            {
+                "name": "A",
+                "text_tex": "In the range \\(-\\pi\\lt\\theta\\le\\pi\\): \\(\\theta=\\dfrac{{k|int}\\pi}{12}={A|sf3z}\\)",
+                "result": "k*3.141592653589793/12",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Add or subtract 2π if needed."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 2e^(πi/4) × 3e^(πi/3), argument 7π/12 = 1.83"
+            },
+            {
+                "id": "product",
+                "stem": "Given \\(u={r|int}\\mathrm{e}^{{al|int}\\pi\\mathrm{i}/12}\\) and \\(w={s|int}\\mathrm{e}^{{be|int}\\pi\\mathrm{i}/12}\\), express \\(uw\\) in the form \\(R\\mathrm{e}^{\\mathrm{i}\\theta}\\), where \\(-\\pi\\lt\\theta\\le\\pi\\), and give \\(\\theta\\) correct to 3 significant figures."
+            },
+            {
+                "id": "polar",
+                "stem": "The complex numbers \\(u\\) and \\(w\\) have moduli \\({r|int}\\) and \\({s|int}\\) and arguments \\(\\dfrac{{al|int}\\pi}{12}\\) and \\(\\dfrac{{be|int}\\pi}{12}\\). Find the argument of \\(uw\\) in the interval \\(-\\pi\\lt\\theta\\le\\pi\\), correct to 3 significant figures."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-11.3"
+            ],
+            "topic": "Complex numbers",
+            "chapter": "P23-11",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-11-3.json",
+                "locator": "P23-11.3-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-11.3-QC3-gen",
+        "section": "P23-11.3",
+        "kind": "generated",
+        "title": "Modulus of a quotient",
+        "marks": 2,
+        "source": "Theory P23-11.3 Quick check 3; mod(z/w) = mod(z)/mod(w)",
+        "params": [
+            {
+                "name": "a",
+                "min": -8,
+                "max": 8,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 2,
+                "max": 8,
+                "step": 1
+            },
+            {
+                "name": "c",
+                "min": -6,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "d",
+                "min": 2,
+                "max": 6,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "s": "a*a+b*b",
+            "t": "c*c+d*d",
+            "A": "math.pow((a*a+b*b)/(c*c+d*d),0.5)"
+        },
+        "constraints": [
+            "a!=0",
+            "c!=0"
+        ],
+        "original": {
+            "a": 3,
+            "b": 4,
+            "c": 1,
+            "d": 2
+        },
+        "stem": "Find \\(\\left\\lvert \\dfrac{z}{w}\\right\\rvert \\), where \\(z={a|int}+{b|int}\\mathrm{i}\\) and \\(w={c|int}+{d|int}\\mathrm{i}\\).",
+        "answer": {
+            "expression": "math.pow(s/t,0.5)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(\\lvert z\\rvert =\\sqrt{{s|int}}\\) and \\(\\lvert w\\rvert =\\sqrt{{t|int}}\\)",
+                "result": "s",
+                "format": "int",
+                "mark": "M1",
+                "note": "Find each modulus."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\left\\lvert \\dfrac{z}{w}\\right\\rvert =\\dfrac{\\lvert z\\rvert }{\\lvert w\\rvert }=\\sqrt{\\dfrac{{s|int}}{{t|int}} }={A|sf3z}\\)",
+                "result": "math.pow(s/t,0.5)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "The modulus of a quotient is the quotient of the moduli."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original (3 + 4i)/(1 + 2i), modulus √5 = 2.24"
+            },
+            {
+                "id": "quotient",
+                "stem": "The complex numbers \\(z={a|int}+{b|int}\\mathrm{i}\\) and \\(w={c|int}+{d|int}\\mathrm{i}\\) are given. Without finding \\(\\dfrac{z}{w}\\) in the form \\(x+\\mathrm{i}y\\), find its modulus."
+            },
+            {
+                "id": "distance",
+                "stem": "Find the modulus of \\(\\dfrac{{a|int}+{b|int}\\mathrm{i} }{{c|int}+{d|int}\\mathrm{i} }\\)."
+            }
+        ],
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-11.3"
+            ],
+            "topic": "Complex numbers",
+            "chapter": "P23-11",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-11-3.json",
+                "locator": "P23-11.3-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P23-11.3-PP-9709-32-MJ23-Q5",
+        "section": "P23-11.3",
+        "kind": "pastpaper",
+        "title": "A cubic expression in a complex number",
+        "marks": 6,
+        "source": {
+            "paper": "9709/32/M/J/23 Q5",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s23_qp_32.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s23_ms_32.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>The complex number \\(2+y\\mathrm{i}\\) is denoted by \\(a\\), where \\(y\\) is a real number and \\(y\\lt 0\\). It is given that \\(\\mathrm{f}(a)=a^3-a^2-2a\\).</p><p>(a) Find a simplified expression for \\(\\mathrm{f}(a)\\) in terms of \\(y\\). [3]</p><p>(b) Given that \\(\\mathrm{Re}\\bigl(\\mathrm{f}(a)\\bigr)=-20\\), find \\(\\arg a\\). [3]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-11.3"
+            ],
+            "topic": "Complex numbers",
+            "chapter": "P23-11",
+            "marks": 6,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-11-3.json",
+                "locator": "P23-11.3-PP-9709-32-MJ23-Q5"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) \\(a^2=4+4y\\mathrm{i}-y^2\\), \\(a^3=8+12y\\mathrm{i}-6y^2-y^3\\mathrm{i}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, substitute 2 + yi in a³ − a² − 2a and attempt expansions of a² and a³; must see working."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(a) Use \\(\\mathrm{i}^2=-1\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, seen at least once (e.g. in squaring)."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(a) \\(\\mathrm{f}(a)=-5y^2+(6y-y^3)\\mathrm{i}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, obtain final answer −5y² + (6y − y³)i, or simplified equivalent; do not ISW."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(b) \\(-5y^2=-20\\), so \\(y^2=4\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, equate their −5y² to −20 and solve for y."
+            },
+            {
+                "name": "s5",
+                "text_tex": "(b) \\(y=-2\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, from correct work (must have rejected y positive)."
+            },
+            {
+                "name": "s6",
+                "text_tex": "(b) \\(a=2-2\\mathrm{i}\\), so \\(\\arg a=-\\dfrac{\\pi}{4}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, obtain final answer arg a = −π/4 OE; accept −0.785, 5.50; accept degrees."
+            }
+        ]
+    },
+    {
+        "id": "P23-11.3-PP-9709-31-ON22-Q5",
+        "section": "P23-11.3",
+        "kind": "pastpaper",
+        "title": "Complex numbers in exponential form",
+        "marks": 4,
+        "source": {
+            "paper": "9709/31/O/N/22 Q5",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w22_qp_31.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w22_ms_31.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>The complex numbers \\(u\\) and \\(w\\) are defined by \\(u=2\\mathrm{e}^{\\frac{1}{4}\\pi\\mathrm{i} }\\) and \\(w=3\\mathrm{e}^{\\frac{1}{3}\\pi\\mathrm{i} }\\).</p><p>(a) Find \\(\\dfrac{u^2}{w}\\), giving your answer in the form \\(r\\mathrm{e}^{\\mathrm{i}\\theta}\\), where \\(r\\gt 0\\) and \\(-\\pi\\lt\\theta\\le\\pi\\). Give the exact values of \\(r\\) and \\(\\theta\\). [3]</p><p>(b) State the least positive integer \\(n\\) such that both \\(\\mathrm{Im}\\,w^n=0\\) and \\(\\mathrm{Re}\\,w^n\\gt 0\\). [1]</p>",
+        "tags": {
+            "course": "P23",
+            "subsections": [
+                "P23-11.3"
+            ],
+            "topic": "Complex numbers",
+            "chapter": "P23-11",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P23-11-3.json",
+                "locator": "P23-11.3-PP-9709-31-ON22-Q5"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) \\(u^2=4\\mathrm{e}^{\\frac{1}{2}\\pi\\mathrm{i} }\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, state or imply u² = 4e^(πi/2)."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(a) Modulus \\(r=\\dfrac{4}{3}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 + B1 for the answer (4/3)e^(πi/6), for the modulus and the argument; this is the modulus mark."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(a) Argument \\(\\theta=\\dfrac{1}{2}\\pi-\\dfrac{1}{3}\\pi=\\dfrac{1}{6}\\pi\\), so \\(\\dfrac{u^2}{w}=\\dfrac{4}{3}\\mathrm{e}^{\\frac{1}{6}\\pi\\mathrm{i} }\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 + B1, this is the argument mark."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(b) \\(n=6\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, state n = 6."
+            }
+        ]
+    }
+]

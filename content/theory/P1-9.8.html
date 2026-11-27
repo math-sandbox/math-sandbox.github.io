@@ -1,0 +1,71 @@
+<script src="/assets/redirect.js"></script>
+<section class="theory" data-section="P1-9.8">
+<h2>9.8 Improper integrals</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 1 Coursebook (Sue Pemberton, series editor Julian Gilbey), Chapter 9 Integration, printed pp.264–268. Own wording and new numbers, following the coursebook treatment of an infinite limit and of an integrand that is undefined at a limit, as limits of definite integrals.</p>
+<p class="key-words"><strong>Key words:</strong> <em>improper integral</em>, <em>definite integral</em>, <em>asymptote</em></p>
+<h3>Two kinds of improper integral</h3>
+<p>An <strong>improper integral</strong> is a definite integral where either a limit is infinite, or the function is not defined at one of the limits. It is found as the limit of an ordinary definite integral, if that limit exists.</p>
+<h3>An infinite limit</h3>
+<p>\[\int_a^{\infty}\mathrm{f}(x)\,dx=\lim_{X\to\infty}\int_a^X\mathrm{f}(x)\,dx.\]</p>
+<p>For example, \(\dfrac{k}{X}\to0\) as \(X\to\infty\). Show clearly that the term from the infinite limit tends to 0.</p>
+<h3>A function undefined at a limit</h3>
+<p>\(\dfrac{1}{\sqrt{x}}\) is not defined at \(x=0\), and the \(y\)-axis is an <strong>asymptote</strong>. Integrate from a small positive number \(t\) and let \(t\to0\). If the limit is not finite, for example \(\displaystyle\int_0^1\frac{1}{x^2}\,dx\), the integral has no value.</p>
+<div class="worked-example">
+<h4>Worked example 1: To infinity</h4>
+<p class="src">Coursebook, 9.8, an infinite upper limit. New numbers.</p>
+<p>Evaluate \(\displaystyle\int_1^{\infty}\frac{6}{x^4}\,dx\).</p>
+<ol class="steps">
+<li>\(\Bigl[-\dfrac{2}{x^3}\Bigr]_1^X=-\dfrac{2}{X^3}+2\) <span class="mark">B1</span></li>
+<li>As \(X\to\infty\), \(\dfrac{2}{X^3}\to0\) <span class="mark">M1</span></li>
+<li>\(=2\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(2\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: Undefined at 0</h4>
+<p class="src">Coursebook, 9.8, an integrand undefined at a limit. New numbers.</p>
+<p>Evaluate \(\displaystyle\int_0^9\frac{1}{\sqrt{x}}\,dx\).</p>
+<ol class="steps">
+<li>\(\Bigl[2\sqrt{x}\Bigr]_t^9=6-2\sqrt{t}\) <span class="mark">B1</span></li>
+<li>As \(t\to0\), \(2\sqrt{t}\to0\) <span class="mark">M1</span></li>
+<li>\(=6\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(6\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Substituting \(\infty\) as if it were a number, without explaining that the term tends to 0.</li><li>Not noticing that the function is undefined at a limit.</li><li>Giving a value when the limit does not exist.</li></ul>
+<h3>Past paper</h3>
+<p class="src">9709/12/F/M/24 Q1, official QP and official MS.</p>
+<p>Find the exact value of \(\displaystyle\int_3^{\infty}\frac{2}{x^2}\,dx\). [3]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>\(\displaystyle\int\frac{2}{x^2}\,dx=-2x^{-1}\) <span class="mark">B1</span> Official MS: B1 OE, integrate to obtain −2x^(−1).</li>
+<li>\(\Bigl[-\dfrac{2}{x}\Bigr]_3^{\infty}=0-\Bigl(-\dfrac{2}{3}\Bigr)\) <span class="mark">M1</span> Official MS: M1, substitute limits correctly with clear indication seen that upper limit gives 0 (for an integral of the form −kx^(−n), k &gt; 0, n &gt; 0).</li>
+<li>\(=\dfrac{2}{3}\) <span class="mark">A1</span> Official MS: A1 WWW; accept 0.667.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>Evaluate \(\displaystyle\int_2^{\infty}\frac{5}{x^2}\,dx\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\Bigl[-\dfrac{5}{x}\Bigr]_2^{X}=-\dfrac{5}{X}+\dfrac{5}{2}\to\dfrac{5}{2}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(2.5\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>Evaluate \(\displaystyle\int_0^4\frac{3}{\sqrt{x}}\,dx\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\Bigl[6\sqrt{x}\Bigr]_t^4=12-6\sqrt{t}\to12\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(12\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>Evaluate \(\displaystyle\int_1^{\infty}\frac{4}{x^3}\,dx\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\Bigl[-\dfrac{2}{x^2}\Bigr]_1^{X}=-\dfrac{2}{X^2}+2\to2\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(2\)</p>
+</details>
+</div>
+</section>

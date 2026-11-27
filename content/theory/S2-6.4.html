@@ -1,0 +1,87 @@
+<script src="/assets/redirect.js"></script>
+<section class="theory" data-section="S2-6.4">
+<h2>6.4 Confidence intervals for population proportion</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Probability &amp; Statistics 2 Coursebook (Jayne Kranat), Chapter 6 Estimation, printed pp.138–142. Own wording and new numbers, following the coursebook use of the sample proportion as an estimate, the approximate interval p̂ ± z√(p̂(1 − p̂)/n) and how to use an interval to comment on a claim.</p>
+<p class="key-words"><strong>Key words:</strong> <em>confidence interval</em>, <em>sample proportion</em>, <em>population proportion</em>, <em>standard error</em></p>
+<h3>Estimating a population proportion</h3>
+<p>Suppose a proportion \(p\) of a large population has some property. In a random sample of size \(n\), let \(X\) be the number with the property, so \(X\sim\mathrm{B}(n, p)\). The <strong>sample proportion</strong> \(\hat p=\dfrac{X}{n}\) is an unbiased estimate of the <strong>population proportion</strong> \(p\).</p>
+<p>For large \(n\), \(\hat p\) is approximately normally distributed with mean \(p\) and variance \(\dfrac{p(1-p)}{n}\). Since \(p\) is unknown, its estimate \(\hat p\) is used in the variance. The square root of this estimated variance is the <strong>standard error</strong>.</p>
+<h3>The approximate confidence interval</h3>
+<p>An approximate <strong>confidence interval</strong> for \(p\) is</p>
+<p>\[\hat p-z\sqrt{\frac{\hat p(1-\hat p)}{n}}\ \ \text{to}\ \ \hat p+z\sqrt{\frac{\hat p(1-\hat p)}{n}},\]</p>
+<p>where \(z\) is the same value as for a mean, for example:</p>
+<table class="dist"><tr><th>Level</th><th>90%</th><th>95%</th><th>96%</th><th>98%</th><th>99%</th></tr><tr><th>\(z\)</th><td>1.645</td><td>1.96</td><td>2.054</td><td>2.326</td><td>2.576</td></tr></table>
+<p>The interval is approximate for two reasons: the normal distribution is used in place of the binomial, and \(\hat p\) is used in place of \(p\) in the standard error. The sample must be large.</p>
+<h3>Commenting on a claim</h3>
+<p>If a claimed value of \(p\) lies outside the interval, the claim is unlikely to be true. If it lies inside, there is no reason to doubt it. Do not say the claim is definitely true or false: the interval is only a range of plausible values.</p>
+<div class="worked-example">
+<h4>Worked example 1: A 95% interval</h4>
+<p class="src">Coursebook, 6.4, an approximate confidence interval for a proportion. New numbers.</p>
+<p>In a random sample of 400 adults, 120 cycle to work. Calculate an approximate 95% confidence interval for the proportion of all adults who cycle to work.</p>
+<ol class="steps">
+<li>\(\hat p=\dfrac{120}{400}=0.3\) <span class="mark">B1</span></li>
+<li>\(0.3\pm1.96\sqrt{\dfrac{0.3\times0.7}{400}}=0.3\pm1.96\times0.022913\) <span class="mark">M1 B1</span></li>
+<li>\(=0.3\pm0.0449\), so \(0.255\) to \(0.345\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(0.255\) to \(0.345\) (3 s.f.)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: Using an interval</h4>
+<p class="src">Coursebook, 6.4, using an interval to comment on a claim. New numbers.</p>
+<p>Of 150 randomly chosen customers, 45 used a discount code. Calculate an approximate 99% confidence interval for the proportion of all customers who use a discount code, and comment on a claim that 40% of customers use one.</p>
+<ol class="steps">
+<li>\(\hat p=0.3\), \(0.3\pm2.576\sqrt{\dfrac{0.3\times0.7}{150}}=0.3\pm2.576\times0.037417\) <span class="mark">M1 B1</span></li>
+<li>\(=0.3\pm0.0964\), so \(0.204\) to \(0.396\) <span class="mark">A1</span></li>
+<li>\(0.4\) is not in the interval, so the claim is unlikely to be true <span class="mark">B1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(0.204\) to \(0.396\); the claim of 40% is unlikely to be true</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Using the number \(x\) instead of the proportion \(\dfrac{x}{n}\) in the formula.</li><li>Forgetting the square root, or dividing by \(n-1\) instead of \(n\).</li><li>Saying a claim is definitely true because the value lies inside the interval.</li></ul>
+<h3>Past paper</h3>
+<p class="src">9709/62/F/M/24 Q2, official QP and official MS.</p>
+<p>A random sample of 250 people living in Barapet was chosen. It was found that 78 of these people owned a BETEC phone.</p><p>(a) Calculate an approximate 98% confidence interval for the proportion of people living in Barapet who own a BETEC phone. [3]</p><p>(b) Manjit claims that more than 40% of the people living in Barapet own a BETEC phone.</p><p>Use your answer to part (a) to comment on this claim. [1]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(a) \(\dfrac{78}{250}\pm z\times\sqrt{\dfrac{\frac{78}{250}\left(1-\frac{78}{250}\right)}{250}}\) <span class="mark">M1</span> Official MS: M1, use of a correct formula (any z).</li>
+<li>(a) \(z=2.326\) <span class="mark">B1</span> Official MS: B1, z = 2.326.</li>
+<li>(a) \(0.244\) to \(0.380\) <span class="mark">A1</span> Official MS: A1, 0.244 to 0.38[0] (3 s.f.); must be an interval.</li>
+<li>(b) Unlikely to be true because the confidence interval does not contain \(0.4\) <span class="mark">B1</span> Official MS: B1ft, FT their confidence interval; must include this reason and 'unlikely', oe.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/62/O/N/20 Q2, official QP and official MS.</p>
+<p>A six-sided die has faces marked 1, 2, 3, 4, 5, 6. When the die is thrown 300 times it shows a six on 56 throws.</p><p>(a) Calculate an approximate 96% confidence interval for the probability that the die shows a six on one throw. [3]</p><p>(b) Maroulla claims that the die is biased.</p><p>Use your answer to part (a) to comment on this claim. [1]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(a) \(\dfrac{56}{300}\pm z\times\sqrt{\dfrac{\frac{56}{300}\times\frac{244}{300}}{300}}\) <span class="mark">M1</span> Official MS: M1, for expression of the correct form; must be a z value.</li>
+<li>(a) \(z=2.054\) or \(2.055\) <span class="mark">B1</span> Official MS: B1, z = 2.054 or 2.055.</li>
+<li>(a) \(0.140\) to \(0.233\) <span class="mark">A1</span> Official MS: A1, 0.14(0) to 0.233 (3 s.f.) or 0.141 to 0.233 (3 s.f.); must be an interval.</li>
+<li>(b) \(\dfrac{1}{6}\ (=0.167)\) is within the confidence interval, so there is no reason to believe the die is biased <span class="mark">B1</span> Official MS: B1FT, FT their confidence interval; not definite, e.g. not 'Die not biased'.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>In a random sample of 200 people, 60 were left-handed. Using \(z=1.96\), find the upper limit of an approximate 95% confidence interval for the proportion of people who are left-handed.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\hat p=0.3\)</li><li>\(\sqrt{\dfrac{0.3\times0.7}{200}}=0.032404\)</li><li>\(0.3+1.96\times0.032404\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(0.364\) (3 s.f.)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>A die is thrown 300 times and shows a six on 60 throws. Using \(z=2.326\), find the lower limit of an approximate 98% confidence interval for the probability of a six.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\hat p=0.2\)</li><li>\(\sqrt{\dfrac{0.2\times0.8}{300}}=0.023094\)</li><li>\(0.2-2.326\times0.023094\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(0.146\) (3 s.f.)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>In a random sample of 400 items, 160 were faulty. Using \(z=1.645\), find the width of an approximate 90% confidence interval for the proportion of faulty items.</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\hat p=0.4\)</li><li>\(\sqrt{\dfrac{0.4\times0.6}{400}}=0.024495\)</li><li>\(2\times1.645\times0.024495\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(0.0806\) (3 s.f.)</p>
+</details>
+</div>
+</section>

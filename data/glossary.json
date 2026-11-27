@@ -757,7 +757,8 @@
     "term": "outcome",
     "definition": "One possible result of an experiment.",
     "sections": [
-      "S1-4.1"
+      "S1-4.1",
+      "IGCSE-24.1"
     ],
     "first_section": "S1-4.1",
     "type": "term",
@@ -811,7 +812,8 @@
     "term": "complement",
     "definition": "The event that A does not happen, written A′; P(A′) = 1 − P(A).",
     "sections": [
-      "S1-4.1"
+      "S1-4.1",
+      "IGCSE-24.3"
     ],
     "first_section": "S1-4.1",
     "type": "term",
@@ -851,7 +853,8 @@
     "term": "relative frequency",
     "definition": "The proportion of trials in which an event happens; an estimate of its probability.",
     "sections": [
-      "S1-4.1"
+      "S1-4.1",
+      "S1-8.3"
     ],
     "first_section": "S1-4.1",
     "type": "term",
@@ -904,7 +907,9 @@
     "definition": "A diagram that shows events as circles inside a rectangle of all outcomes.",
     "sections": [
       "S1-4.2",
-      "S1-4.4"
+      "S1-4.4",
+      "IGCSE-24.3",
+      "IGCSE-24.4"
     ],
     "first_section": "S1-4.2",
     "type": "term",
@@ -917,7 +922,8 @@
     "term": "union",
     "definition": "A ∪ B: A or B or both.",
     "sections": [
-      "S1-4.2"
+      "S1-4.2",
+      "IGCSE-24.3"
     ],
     "first_section": "S1-4.2",
     "type": "term",
@@ -930,7 +936,8 @@
     "term": "intersection",
     "definition": "A ∩ B: both A and B.",
     "sections": [
-      "S1-4.2"
+      "S1-4.2",
+      "IGCSE-24.3"
     ],
     "first_section": "S1-4.2",
     "type": "term",
@@ -1269,7 +1276,8 @@
     "definition": "An integral with no limits; the answer is a family of functions written with + c.",
     "sections": [
       "P23-5.1",
-      "P23-5.3"
+      "P23-5.3",
+      "P1-9.1"
     ],
     "first_section": "P23-5.1",
     "type": "term",
@@ -1284,7 +1292,9 @@
     "sections": [
       "P23-5.1",
       "P23-5.3",
-      "P23-10.1"
+      "P23-10.1",
+      "P1-9.1",
+      "P1-9.2"
     ],
     "first_section": "P23-5.1",
     "type": "term",
@@ -1328,7 +1338,10 @@
     "sections": [
       "P23-5.2",
       "P23-5.3",
-      "P23-8.4"
+      "P23-8.4",
+      "P1-9.5",
+      "P1-9.6",
+      "P1-9.8"
     ],
     "first_section": "P23-5.2",
     "type": "term",
@@ -1525,7 +1538,9 @@
       "P23-4.7",
       "P23-8.1",
       "P23-8.3",
-      "P1-8.4"
+      "P1-8.4",
+      "P1-9.3",
+      "P1-9.4"
     ],
     "first_section": "P23-4.3",
     "type": "term",
@@ -1739,7 +1754,8 @@
     "definition": "A line that a graph approaches but does not meet. For y = a/x the asymptotes are the coordinate axes; for y = a/x + q they are the y-axis (x = 0) and the horizontal line y = q. The graph of y = tan x has vertical asymptotes at odd multiples of 90 degrees, or of π/2 radians.",
     "sections": [
       "IGCSE-18.2",
-      "P1-5.4"
+      "P1-5.4",
+      "P1-9.8"
     ],
     "first_section": "IGCSE-18.2",
     "type": "term",
@@ -1769,7 +1785,8 @@
     "sections": [
       "P1-3.5",
       "P1-1.8",
-      "P1-1.9"
+      "P1-1.9",
+      "P23-11.1"
     ],
     "first_section": "P1-3.5",
     "type": "term",
@@ -1797,7 +1814,8 @@
     "term": "perpendicular bisector",
     "definition": "The line that cuts a segment in half at right angles. The perpendicular bisector of a chord of a circle always passes through the centre of the circle.",
     "sections": [
-      "P1-3.5"
+      "P1-3.5",
+      "P23-11.5"
     ],
     "first_section": "P1-3.5",
     "type": "term",
@@ -1948,7 +1966,10 @@
     "term": "tree diagram",
     "definition": "A diagram of successive outcomes with a probability on each branch. For independent events, multiply along a path and add mutually exclusive paths.",
     "sections": [
-      "S1-4.3"
+      "S1-4.3",
+      "IGCSE-24.1",
+      "IGCSE-24.2",
+      "IGCSE-24.4"
     ],
     "first_section": "S1-4.3",
     "type": "term",
@@ -1988,7 +2009,8 @@
     "term": "conditional probability",
     "definition": "A probability that depends on additional information about an outcome or event, written P(A | B) and read as the probability of A given that B has occurred.",
     "sections": [
-      "S1-4.4"
+      "S1-4.4",
+      "IGCSE-24.4"
     ],
     "first_section": "S1-4.4",
     "type": "term",
@@ -2270,7 +2292,8 @@
       "P1-1.3",
       "P1-1.4",
       "P1-1.5",
-      "IGCSE-14.5"
+      "IGCSE-14.5",
+      "P23-11.4"
     ],
     "first_section": "IGCSE-18.3",
     "type": "term",
@@ -2343,7 +2366,8 @@
     "term": "dependent events",
     "definition": "Two events are dependent when the occurrence of one affects the probability of the other, as in selections without replacement.",
     "sections": [
-      "S1-4.5"
+      "S1-4.5",
+      "IGCSE-24.4"
     ],
     "first_section": "S1-4.5",
     "type": "term",
@@ -4405,7 +4429,8 @@
     "term": "continuity correction",
     "definition": "The adjustment used when a discrete distribution is approximated by a continuous one: P(X less than or equal to k) is replaced by P(Y less than k plus one half), and P(X less than k) is replaced by P(Y less than k minus one half).",
     "sections": [
-      "S2-2.4"
+      "S2-2.4",
+      "S1-8.4"
     ],
     "first_section": "S2-2.4",
     "type": "term",
@@ -5912,7 +5937,8 @@
     "term": "without replacement",
     "definition": "Selecting objects one after another without putting each one back, so the number of objects left goes down by 1 after each selection.",
     "sections": [
-      "S1-6.2"
+      "S1-6.2",
+      "IGCSE-24.4"
     ],
     "first_section": "S1-6.2",
     "type": "term",
@@ -5949,7 +5975,8 @@
     "term": "binomial distribution",
     "definition": "The distribution B(n, p) of the number of successes in n independent trials, each with the same probability p of success: P(X = r) = nCr p^r (1 − p)^(n − r).",
     "sections": [
-      "S1-7.1"
+      "S1-7.1",
+      "S1-8.4"
     ],
     "first_section": "S1-7.1",
     "type": "term",
@@ -6007,7 +6034,8 @@
     "term": "standard error",
     "definition": "The standard deviation of the sample mean, σ/√n.",
     "sections": [
-      "S2-5.2"
+      "S2-5.2",
+      "S2-6.4"
     ],
     "first_section": "S2-5.2",
     "type": "term",
@@ -6297,7 +6325,8 @@
     "term": "gradient function",
     "definition": "The derivative dy/dx or f'(x), which gives the gradient of a curve at any value of x.",
     "sections": [
-      "P1-7.1"
+      "P1-7.1",
+      "P1-9.2"
     ],
     "first_section": "P1-7.1",
     "type": "term",
@@ -6381,7 +6410,9 @@
     "term": "normal distribution",
     "definition": "A continuous distribution whose probability density graph is a symmetrical bell-shaped curve centred on the mean μ. It is written N(μ, σ²), where σ² is the variance.",
     "sections": [
-      "S1-8.2"
+      "S1-8.2",
+      "S1-8.3",
+      "S1-8.4"
     ],
     "first_section": "S1-8.2",
     "type": "term",
@@ -6408,7 +6439,8 @@
     "term": "standardise",
     "definition": "To change a value x of X ~ N(μ, σ²) into z = (x − μ)/σ, the corresponding value of the standard normal distribution.",
     "sections": [
-      "S1-8.2"
+      "S1-8.2",
+      "S1-8.3"
     ],
     "first_section": "S1-8.2",
     "type": "term",
@@ -6423,7 +6455,8 @@
     "term": "confidence interval",
     "definition": "An interval calculated from a sample that is expected to contain an unknown population parameter in a stated proportion of samples. For a population mean it is x̄ ± z σ/√n.",
     "sections": [
-      "S2-6.3"
+      "S2-6.3",
+      "S2-6.4"
     ],
     "first_section": "S2-6.3",
     "type": "term",
@@ -6643,6 +6676,399 @@
     "match": [
       "minimum points",
       "minimum point"
+    ]
+  },
+  {
+    "id": "expected-number",
+    "term": "expected number",
+    "definition": "The number of items expected to have a property: the total number multiplied by the probability that one item has it.",
+    "sections": [
+      "S1-8.3"
+    ],
+    "first_section": "S1-8.3",
+    "type": "term",
+    "match": [
+      "expected number"
+    ]
+  },
+  {
+    "id": "normal-approximation",
+    "term": "normal approximation",
+    "definition": "Using a normal distribution N(np, npq) to estimate binomial probabilities when n is large; it is suitable when np > 5 and nq > 5, and a continuity correction is needed.",
+    "sections": [
+      "S1-8.4"
+    ],
+    "first_section": "S1-8.4",
+    "type": "term",
+    "match": [
+      "normal approximations",
+      "normal approximation"
+    ]
+  },
+  {
+    "id": "sample-proportion",
+    "term": "sample proportion",
+    "definition": "The proportion of a sample that has a property, p̂ = x/n; it is used as an estimate of the population proportion.",
+    "sections": [
+      "S2-6.4"
+    ],
+    "first_section": "S2-6.4",
+    "type": "term",
+    "match": [
+      "sample proportions",
+      "sample proportion"
+    ]
+  },
+  {
+    "id": "population-proportion",
+    "term": "population proportion",
+    "definition": "The proportion p of the whole population that has a property; it is usually unknown and estimated from a sample.",
+    "sections": [
+      "S2-6.4"
+    ],
+    "first_section": "S2-6.4",
+    "type": "term",
+    "match": [
+      "population proportions",
+      "population proportion"
+    ]
+  },
+  {
+    "id": "combined-events",
+    "term": "combined events",
+    "definition": "Two or more events considered together, such as a result on a first spin followed by a result on a second spin.",
+    "sections": [
+      "IGCSE-24.1"
+    ],
+    "first_section": "IGCSE-24.1",
+    "type": "term",
+    "match": [
+      "combined events"
+    ]
+  },
+  {
+    "id": "independent-events",
+    "term": "independent events",
+    "definition": "Events where the outcome of one does not affect the probability of the other; then P(A and B) = P(A) × P(B).",
+    "sections": [
+      "IGCSE-24.1",
+      "IGCSE-24.2"
+    ],
+    "first_section": "IGCSE-24.1",
+    "type": "term",
+    "match": [
+      "independent events"
+    ]
+  },
+  {
+    "id": "at-least-one",
+    "term": "at least one",
+    "definition": "One or more. P(at least one) = 1 − P(none), which is often the quickest method.",
+    "sections": [
+      "IGCSE-24.2"
+    ],
+    "first_section": "IGCSE-24.2",
+    "type": "term",
+    "match": [
+      "at least one"
+    ]
+  },
+  {
+    "id": "universal-set",
+    "term": "universal set",
+    "definition": "The set of all the elements being considered, shown by the rectangle in a Venn diagram and written ℰ.",
+    "sections": [
+      "IGCSE-24.3"
+    ],
+    "first_section": "IGCSE-24.3",
+    "type": "term",
+    "match": [
+      "universal set"
+    ]
+  },
+  {
+    "id": "imaginary-number",
+    "term": "imaginary number",
+    "definition": "A number of the form bi, where b is real and i² = −1.",
+    "sections": [
+      "P23-11.1"
+    ],
+    "first_section": "P23-11.1",
+    "type": "term",
+    "match": [
+      "imaginary numbers",
+      "imaginary number"
+    ]
+  },
+  {
+    "id": "complex-number",
+    "term": "complex number",
+    "definition": "A number of the form x + iy, where x and y are real and i² = −1.",
+    "sections": [
+      "P23-11.1",
+      "P23-11.2",
+      "P23-11.3",
+      "P23-11.4",
+      "P23-11.5"
+    ],
+    "first_section": "P23-11.1",
+    "type": "term",
+    "match": [
+      "complex numbers",
+      "complex number"
+    ]
+  },
+  {
+    "id": "real-part",
+    "term": "real part",
+    "definition": "For z = x + iy, the real part is Re(z) = x.",
+    "sections": [
+      "P23-11.2"
+    ],
+    "first_section": "P23-11.2",
+    "type": "term",
+    "match": [
+      "real parts",
+      "real part"
+    ]
+  },
+  {
+    "id": "imaginary-part",
+    "term": "imaginary part",
+    "definition": "For z = x + iy, the imaginary part is Im(z) = y, a real number.",
+    "sections": [
+      "P23-11.2"
+    ],
+    "first_section": "P23-11.2",
+    "type": "term",
+    "match": [
+      "imaginary parts",
+      "imaginary part"
+    ]
+  },
+  {
+    "id": "complex-conjugate",
+    "term": "complex conjugate",
+    "definition": "The conjugate of z = x + iy is z* = x − iy; z z* = x² + y² is real.",
+    "sections": [
+      "P23-11.2",
+      "P23-11.4"
+    ],
+    "first_section": "P23-11.2",
+    "type": "term",
+    "match": [
+      "complex conjugates",
+      "complex conjugate"
+    ]
+  },
+  {
+    "id": "argand-diagram",
+    "term": "Argand diagram",
+    "definition": "A diagram in which the complex number x + iy is shown as the point (x, y): the horizontal axis is the real axis and the vertical axis the imaginary axis.",
+    "sections": [
+      "P23-11.3",
+      "P23-11.5"
+    ],
+    "first_section": "P23-11.3",
+    "type": "term",
+    "match": [
+      "Argand diagrams",
+      "Argand diagram"
+    ]
+  },
+  {
+    "id": "modulus-of-a-complex-number",
+    "term": "modulus of a complex number",
+    "definition": "For z = x + iy, |z| = √(x² + y²), the distance of the point representing z from the origin.",
+    "sections": [
+      "P23-11.3"
+    ],
+    "first_section": "P23-11.3",
+    "type": "term",
+    "match": [
+      "modulus of a complex number"
+    ]
+  },
+  {
+    "id": "argument-of-a-complex-number",
+    "term": "argument (of a complex number)",
+    "definition": "The angle arg z from the positive real axis to the line joining the origin to the point representing z, measured anticlockwise, with −π < arg z ≤ π.",
+    "sections": [
+      "P23-11.3"
+    ],
+    "first_section": "P23-11.3",
+    "type": "term",
+    "match": [
+      "arguments",
+      "argument"
+    ]
+  },
+  {
+    "id": "modulus-argument-form",
+    "term": "modulus-argument form",
+    "definition": "The form z = r(cos θ + i sin θ), where r = |z| and θ = arg z.",
+    "sections": [
+      "P23-11.3"
+    ],
+    "first_section": "P23-11.3",
+    "type": "term",
+    "match": [
+      "modulus–argument form",
+      "modulus-argument form"
+    ]
+  },
+  {
+    "id": "exponential-form",
+    "term": "exponential form",
+    "definition": "The form z = r e^(iθ), where r = |z| and θ = arg z.",
+    "sections": [
+      "P23-11.3"
+    ],
+    "first_section": "P23-11.3",
+    "type": "term",
+    "match": [
+      "exponential form"
+    ]
+  },
+  {
+    "id": "conjugate-pair",
+    "term": "conjugate pair",
+    "definition": "Two complex numbers x + iy and x − iy. The non-real roots of a polynomial equation with real coefficients occur in conjugate pairs.",
+    "sections": [
+      "P23-11.4"
+    ],
+    "first_section": "P23-11.4",
+    "type": "term",
+    "match": [
+      "conjugate pairs",
+      "conjugate pair",
+      "conjugate-pair"
+    ]
+  },
+  {
+    "id": "square-root-of-a-complex-number",
+    "term": "square root",
+    "definition": "A square root of a complex number w is a complex number z with z² = w; every non-zero complex number has two square roots, z and −z.",
+    "sections": [
+      "P23-11.4"
+    ],
+    "first_section": "P23-11.4",
+    "type": "term",
+    "match": [
+      "square roots",
+      "square root"
+    ]
+  },
+  {
+    "id": "locus",
+    "term": "locus",
+    "definition": "The set of all points that satisfy a given condition, such as |z − a| = r (a circle) or |z − a| = |z − b| (a perpendicular bisector).",
+    "sections": [
+      "P23-11.5"
+    ],
+    "first_section": "P23-11.5",
+    "type": "term",
+    "match": [
+      "locus",
+      "loci"
+    ]
+  },
+  {
+    "id": "integration",
+    "term": "integration",
+    "definition": "The reverse process of differentiation: finding a function from its derivative.",
+    "sections": [
+      "P1-9.1",
+      "P1-9.4",
+      "P1-9.5"
+    ],
+    "first_section": "P1-9.1",
+    "type": "term",
+    "match": [
+      "integration"
+    ]
+  },
+  {
+    "id": "limits-of-integration",
+    "term": "limits",
+    "definition": "The numbers a and b in a definite integral from a to b: the lower and the upper limit.",
+    "sections": [
+      "P1-9.5",
+      "P1-9.6"
+    ],
+    "first_section": "P1-9.5",
+    "type": "term",
+    "match": [
+      "limits"
+    ]
+  },
+  {
+    "id": "area-under-a-curve",
+    "term": "area",
+    "definition": "The area between a curve and the x-axis from x = a to x = b, found as the definite integral of y from a to b when the curve is above the axis.",
+    "sections": [
+      "P1-9.6",
+      "P1-9.7"
+    ],
+    "first_section": "P1-9.6",
+    "type": "term",
+    "match": [
+      "area"
+    ]
+  },
+  {
+    "id": "points-of-intersection",
+    "term": "points of intersection",
+    "definition": "The points where two graphs meet, found by solving their equations simultaneously.",
+    "sections": [
+      "P1-9.7"
+    ],
+    "first_section": "P1-9.7",
+    "type": "term",
+    "match": [
+      "points of intersection"
+    ]
+  },
+  {
+    "id": "improper-integral",
+    "term": "improper integral",
+    "definition": "A definite integral with an infinite limit, or whose integrand is undefined at a limit; it is found as a limit of ordinary definite integrals, if that limit exists.",
+    "sections": [
+      "P1-9.8"
+    ],
+    "first_section": "P1-9.8",
+    "type": "term",
+    "match": [
+      "improper integrals",
+      "improper integral"
+    ]
+  },
+  {
+    "id": "volume-of-revolution",
+    "term": "volume of revolution",
+    "definition": "The volume of the solid formed when a region is rotated through 360° about an axis: π times the integral of y² dx about the x-axis, or of x² dy about the y-axis.",
+    "sections": [
+      "P1-9.9"
+    ],
+    "first_section": "P1-9.9",
+    "type": "term",
+    "match": [
+      "volumes of revolution",
+      "volume of revolution"
+    ]
+  },
+  {
+    "id": "solid-of-revolution",
+    "term": "solid of revolution",
+    "definition": "A solid formed by rotating a region through 360° about an axis.",
+    "sections": [
+      "P1-9.9"
+    ],
+    "first_section": "P1-9.9",
+    "type": "term",
+    "match": [
+      "solids of revolution",
+      "solid of revolution"
     ]
   }
 ]

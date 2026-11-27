@@ -1,0 +1,395 @@
+[
+    {
+        "id": "P1-9.9-QC1-gen",
+        "section": "P1-9.9",
+        "kind": "generated",
+        "title": "Volume of a cone by rotating y = kx",
+        "marks": 2,
+        "source": "Theory P1-9.9 Quick check 1; pi integral of k^2 x^2 from 0 to h",
+        "params": [
+            {
+                "name": "k",
+                "min": 2,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "h",
+                "min": 1,
+                "max": 6,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "k2": "k*k",
+            "A": "3.141592653589793*k*k*h*h*h/3"
+        },
+        "constraints": [
+            "k>1"
+        ],
+        "original": {
+            "k": 2,
+            "h": 3
+        },
+        "stem": "The region bounded by the line \\(y={k|int}x\\), the \\(x\\)-axis and the line \\(x={h|int}\\) is rotated through \\(360^\\circ\\) about the \\(x\\)-axis. Find the volume obtained, correct to 3 significant figures.",
+        "answer": {
+            "expression": "3.141592653589793*k2*h*h*h/3",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(V=\\pi\\displaystyle\\int_0^{{h|int}}({k|int}x)^2\\,dx=\\pi\\int_0^{{h|int}}{k2|int}x^2\\,dx\\)",
+                "result": "k2",
+                "format": "int",
+                "mark": "M1",
+                "note": "Use V = π∫y² dx."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(=\\pi\\Bigl[\\dfrac{{k2|int}x^3}{3}\\Bigr]_0^{{h|int}}={A|sf3z}\\)",
+                "result": "3.141592653589793*k2*h*h*h/3",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Integrate and evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original y = 2x, 0 to 3, volume 36π = 113"
+            },
+            {
+                "id": "cone",
+                "stem": "A cone is formed by rotating the region under \\(y={k|int}x\\) from \\(x=0\\) to \\(x={h|int}\\) completely about the \\(x\\)-axis. Use integration to find its volume, correct to 3 significant figures."
+            },
+            {
+                "id": "solid",
+                "stem": "Find, correct to 3 significant figures, the volume of the solid generated when the region between \\(y={k|int}x\\), the \\(x\\)-axis and \\(x={h|int}\\) is rotated through \\(2\\pi\\) about the \\(x\\)-axis."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-9.9"
+            ],
+            "topic": "Integration",
+            "chapter": "P1-9",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-9-9.json",
+                "locator": "P1-9.9-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-9.9-QC2-gen",
+        "section": "P1-9.9",
+        "kind": "generated",
+        "title": "Volume from rotating y = sqrt(x)",
+        "marks": 2,
+        "source": "Theory P1-9.9 Quick check 2; pi integral of x from 0 to b",
+        "params": [
+            {
+                "name": "b",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "b2": "b*b",
+            "A": "3.141592653589793*b*b/2"
+        },
+        "constraints": [
+            "b>1"
+        ],
+        "original": {
+            "b": 4
+        },
+        "stem": "The region bounded by the curve \\(y=\\sqrt{x}\\), the \\(x\\)-axis and the line \\(x={b|int}\\) is rotated through \\(360^\\circ\\) about the \\(x\\)-axis. Find the volume obtained, correct to 3 significant figures.",
+        "answer": {
+            "expression": "3.141592653589793*b2/2",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(V=\\pi\\displaystyle\\int_0^{{b|int}}x\\,dx=\\pi\\Bigl[\\dfrac{x^2}{2}\\Bigr]_0^{{b|int}}\\)",
+                "result": "b2",
+                "format": "int",
+                "mark": "M1",
+                "note": "y² = x."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(=\\dfrac{{b2|int}\\pi}{2}={A|sf3z}\\)",
+                "result": "3.141592653589793*b2/2",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original y = √x, 0 to 4, volume 8π = 25.1"
+            },
+            {
+                "id": "solid",
+                "stem": "Find, correct to 3 significant figures, the volume of the solid formed when the region under \\(y=\\sqrt{x}\\) for \\(0\\le x\\le{b|int}\\) is rotated completely about the \\(x\\)-axis."
+            },
+            {
+                "id": "bowl",
+                "stem": "The region between \\(y=\\sqrt{x}\\), the \\(x\\)-axis and \\(x={b|int}\\) is rotated through \\(2\\pi\\) about the \\(x\\)-axis to form a solid. Find its volume, correct to 3 significant figures."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-9.9"
+            ],
+            "topic": "Integration",
+            "chapter": "P1-9",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-9-9.json",
+                "locator": "P1-9.9-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-9.9-QC3-gen",
+        "section": "P1-9.9",
+        "kind": "generated",
+        "title": "Volume about the y-axis",
+        "marks": 2,
+        "source": "Theory P1-9.9 Quick check 3; pi integral of (y - c) dy from c to c + h",
+        "params": [
+            {
+                "name": "c",
+                "min": 1,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "h",
+                "min": 2,
+                "max": 8,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "d": "c+h",
+            "h2": "h*h",
+            "A": "3.141592653589793*h*h/2"
+        },
+        "constraints": [
+            "h>1"
+        ],
+        "original": {
+            "c": 3,
+            "h": 2
+        },
+        "stem": "The region enclosed by the curve \\(y=x^2+{c|int}\\) for \\(x\\ge 0\\), the \\(y\\)-axis and the line \\(y={d|int}\\) is rotated through \\(360^\\circ\\) about the \\(y\\)-axis. Find the volume obtained, correct to 3 significant figures.",
+        "answer": {
+            "expression": "3.141592653589793*h2/2",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(x^2=y-{c|int}\\), so \\(V=\\pi\\displaystyle\\int_{{c|int}}^{{d|int}}(y-{c|int})\\,dy\\)",
+                "result": "c",
+                "format": "int",
+                "mark": "M1",
+                "note": "Use V = π∫x² dy with x² in terms of y."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(=\\pi\\Bigl[\\dfrac{y^2}{2}-{c|int}y\\Bigr]_{{c|int}}^{{d|int}}=\\dfrac{{h2|int}\\pi}{2}={A|sf3z}\\)",
+                "result": "3.141592653589793*h2/2",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Integrate and evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original y = x^2 + 3 up to y = 5, volume 2π = 6.28"
+            },
+            {
+                "id": "yaxis",
+                "stem": "The curve \\(y=x^2+{c|int}\\), \\(x\\ge0\\), the \\(y\\)-axis and the line \\(y={d|int}\\) enclose a region. Find, correct to 3 significant figures, the volume of the solid formed when this region is rotated completely about the \\(y\\)-axis."
+            },
+            {
+                "id": "solid",
+                "stem": "Find, correct to 3 significant figures, the volume generated when the region between \\(y=x^2+{c|int}\\) (\\(x\\ge0\\)), the \\(y\\)-axis and \\(y={d|int}\\) is rotated through \\(2\\pi\\) about the \\(y\\)-axis."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-9.9"
+            ],
+            "topic": "Integration",
+            "chapter": "P1-9",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-9-9.json",
+                "locator": "P1-9.9-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-9.9-PP-9709-12-FM20-Q3",
+        "section": "P1-9.9",
+        "kind": "pastpaper",
+        "title": "Volume of revolution about the y-axis",
+        "marks": 4,
+        "source": {
+            "paper": "9709/12/F/M/20 Q3",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m20_qp_12.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m20_ms_12.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p><svg viewBox=\"0 0 300 280\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"p199a-t p199a-d\" style=\"width:100%;max-width:300px;height:auto\"><title id=\"p199a-t\">Curve y = x² + 1 and the line y = 5</title><desc id=\"p199a-d\">Graph of y = x² + 1 for x ≥ 0, crossing the y-axis at 1, and the line y = 5. The region between the curve, the y-axis and the line y = 5 is shaded.</desc><path d=\"M 72.1 65.6 L 73.3 65.6 L 74.6 65.6 L 75.8 65.6 L 77.0 65.6 L 78.2 65.6 L 79.5 65.6 L 80.7 65.6 L 81.9 65.6 L 83.1 65.6 L 84.4 65.6 L 85.6 65.6 L 86.8 65.6 L 88.0 65.6 L 89.3 65.6 L 90.5 65.6 L 91.7 65.6 L 93.0 65.6 L 94.2 65.6 L 95.4 65.6 L 96.6 65.6 L 97.9 65.6 L 99.1 65.6 L 100.3 65.6 L 101.5 65.6 L 102.8 65.6 L 104.0 65.6 L 105.2 65.6 L 106.4 65.6 L 107.7 65.6 L 108.9 65.6 L 110.1 65.6 L 111.3 65.6 L 112.6 65.6 L 113.8 65.6 L 115.0 65.6 L 116.2 65.6 L 117.5 65.6 L 118.7 65.6 L 119.9 65.6 L 121.1 65.6 L 122.4 65.6 L 123.6 65.6 L 124.8 65.6 L 126.0 65.6 L 127.3 65.6 L 128.5 65.6 L 129.7 65.6 L 130.9 65.6 L 132.2 65.6 L 133.4 65.6 L 134.6 65.6 L 135.8 65.6 L 137.1 65.6 L 138.3 65.6 L 139.5 65.6 L 140.7 65.6 L 142.0 65.6 L 143.2 65.6 L 144.4 65.6 L 145.6 65.6 L 146.9 65.6 L 148.1 65.6 L 149.3 65.6 L 150.5 65.6 L 151.8 65.6 L 153.0 65.6 L 154.2 65.6 L 155.5 65.6 L 156.7 65.6 L 157.9 65.6 L 159.1 65.6 L 160.4 65.6 L 161.6 65.6 L 162.8 65.6 L 164.0 65.6 L 165.3 65.6 L 166.5 65.6 L 167.7 65.6 L 168.9 65.6 L 170.2 65.6 L 171.4 65.6 L 172.6 65.6 L 173.8 65.6 L 175.1 65.6 L 176.3 65.6 L 177.5 65.6 L 178.7 65.6 L 180.0 65.6 L 181.2 65.6 L 182.4 65.6 L 183.6 65.6 L 184.9 65.6 L 186.1 65.6 L 187.3 65.6 L 188.5 65.6 L 189.8 65.6 L 191.0 65.6 L 192.2 65.6 L 193.4 65.6 L 194.7 65.6 L 195.9 65.6 L 197.1 65.6 L 198.3 65.6 L 199.6 65.6 L 200.8 65.6 L 202.0 65.6 L 203.2 65.6 L 204.5 65.6 L 205.7 65.6 L 206.9 65.6 L 208.1 65.6 L 209.4 65.6 L 210.6 65.6 L 211.8 65.6 L 213.0 65.6 L 214.3 65.6 L 215.5 65.6 L 216.7 65.6 L 218.0 65.6 L 219.2 65.6 L 219.2 65.6 L 218.0 67.9 L 216.7 70.1 L 215.5 72.3 L 214.3 74.5 L 213.0 76.7 L 211.8 78.9 L 210.6 81.0 L 209.4 83.1 L 208.1 85.2 L 206.9 87.3 L 205.7 89.4 L 204.5 91.4 L 203.2 93.5 L 202.0 95.5 L 200.8 97.5 L 199.6 99.4 L 198.3 101.4 L 197.1 103.3 L 195.9 105.3 L 194.7 107.2 L 193.4 109.0 L 192.2 110.9 L 191.0 112.7 L 189.8 114.6 L 188.5 116.4 L 187.3 118.1 L 186.1 119.9 L 184.9 121.7 L 183.6 123.4 L 182.4 125.1 L 181.2 126.8 L 180.0 128.5 L 178.7 130.1 L 177.5 131.7 L 176.3 133.4 L 175.1 135.0 L 173.8 136.5 L 172.6 138.1 L 171.4 139.6 L 170.2 141.2 L 168.9 142.7 L 167.7 144.1 L 166.5 145.6 L 165.3 147.0 L 164.0 148.5 L 162.8 149.9 L 161.6 151.3 L 160.4 152.6 L 159.1 154.0 L 157.9 155.3 L 156.7 156.6 L 155.5 157.9 L 154.2 159.2 L 153.0 160.5 L 151.8 161.7 L 150.5 162.9 L 149.3 164.1 L 148.1 165.3 L 146.9 166.5 L 145.6 167.6 L 144.4 168.7 L 143.2 169.8 L 142.0 170.9 L 140.7 172.0 L 139.5 173.0 L 138.3 174.1 L 137.1 175.1 L 135.8 176.1 L 134.6 177.0 L 133.4 178.0 L 132.2 178.9 L 130.9 179.8 L 129.7 180.7 L 128.5 181.6 L 127.3 182.5 L 126.0 183.3 L 124.8 184.1 L 123.6 184.9 L 122.4 185.7 L 121.1 186.5 L 119.9 187.2 L 118.7 188.0 L 117.5 188.7 L 116.2 189.4 L 115.0 190.0 L 113.8 190.7 L 112.6 191.3 L 111.3 191.9 L 110.1 192.5 L 108.9 193.1 L 107.7 193.7 L 106.4 194.2 L 105.2 194.7 L 104.0 195.2 L 102.8 195.7 L 101.5 196.2 L 100.3 196.6 L 99.1 197.0 L 97.9 197.4 L 96.6 197.8 L 95.4 198.2 L 94.2 198.5 L 93.0 198.9 L 91.7 199.2 L 90.5 199.5 L 89.3 199.7 L 88.0 200.0 L 86.8 200.2 L 85.6 200.5 L 84.4 200.7 L 83.1 200.8 L 81.9 201.0 L 80.7 201.1 L 79.5 201.3 L 78.2 201.4 L 77.0 201.4 L 75.8 201.5 L 74.6 201.6 L 73.3 201.6 L 72.1 201.6 Z\" fill=\"#bdbdbd\" fill-opacity=\"0.8\" stroke=\"none\"/><line x1=\"28.0\" y1=\"235.6\" x2=\"286.0\" y2=\"235.6\" stroke=\"#1a1a1a\" stroke-width=\"1.2\"/><path d=\"M 292.0 235.6 L 284.0 232.1 L 284.0 239.1 Z\" fill=\"#1a1a1a\"/><line x1=\"72.1\" y1=\"256.0\" x2=\"72.1\" y2=\"10.0\" stroke=\"#1a1a1a\" stroke-width=\"1.2\"/><path d=\"M 72.1 4.0 L 68.6 12.0 L 75.6 12.0 Z\" fill=\"#1a1a1a\"/><text x=\"290.0\" y=\"250.6\" font-size=\"12\" font-family=\"serif\" font-style=\"italic\">x</text><text x=\"78.1\" y=\"14.0\" font-size=\"12\" font-family=\"serif\" font-style=\"italic\">y</text><text x=\"67.1\" y=\"249.6\" font-size=\"12\" font-family=\"serif\" font-style=\"italic\" text-anchor=\"end\">O</text><text x=\"67.1\" y=\"69.6\" font-size=\"11\" font-family=\"serif\" text-anchor=\"end\">5</text><text x=\"67.1\" y=\"205.6\" font-size=\"11\" font-family=\"serif\" text-anchor=\"end\">1</text><path d=\"M 72.1 201.6 L 72.9 201.6 L 73.8 201.6 L 74.6 201.6 L 75.4 201.5 L 76.3 201.5 L 77.1 201.4 L 77.9 201.4 L 78.7 201.3 L 79.6 201.3 L 80.4 201.2 L 81.2 201.1 L 82.0 201.0 L 82.9 200.9 L 83.7 200.8 L 84.5 200.6 L 85.4 200.5 L 86.2 200.4 L 87.0 200.2 L 87.8 200.0 L 88.7 199.9 L 89.5 199.7 L 90.3 199.5 L 91.1 199.3 L 92.0 199.1 L 92.8 198.9 L 93.6 198.7 L 94.5 198.5 L 95.3 198.2 L 96.1 198.0 L 96.9 197.7 L 97.8 197.5 L 98.6 197.2 L 99.4 196.9 L 100.2 196.6 L 101.1 196.3 L 101.9 196.0 L 102.7 195.7 L 103.6 195.4 L 104.4 195.1 L 105.2 194.7 L 106.0 194.4 L 106.9 194.0 L 107.7 193.6 L 108.5 193.3 L 109.3 192.9 L 110.2 192.5 L 111.0 192.1 L 111.8 191.7 L 112.7 191.3 L 113.5 190.8 L 114.3 190.4 L 115.1 190.0 L 116.0 189.5 L 116.8 189.1 L 117.6 188.6 L 118.4 188.1 L 119.3 187.6 L 120.1 187.1 L 120.9 186.6 L 121.8 186.1 L 122.6 185.6 L 123.4 185.1 L 124.2 184.5 L 125.1 184.0 L 125.9 183.4 L 126.7 182.9 L 127.5 182.3 L 128.4 181.7 L 129.2 181.1 L 130.0 180.5 L 130.8 179.9 L 131.7 179.3 L 132.5 178.7 L 133.3 178.0 L 134.2 177.4 L 135.0 176.7 L 135.8 176.1 L 136.6 175.4 L 137.5 174.7 L 138.3 174.1 L 139.1 173.4 L 139.9 172.7 L 140.8 172.0 L 141.6 171.2 L 142.4 170.5 L 143.3 169.8 L 144.1 169.0 L 144.9 168.3 L 145.7 167.5 L 146.6 166.7 L 147.4 166.0 L 148.2 165.2 L 149.0 164.4 L 149.9 163.6 L 150.7 162.8 L 151.5 161.9 L 152.4 161.1 L 153.2 160.3 L 154.0 159.4 L 154.8 158.6 L 155.7 157.7 L 156.5 156.8 L 157.3 155.9 L 158.1 155.1 L 159.0 154.2 L 159.8 153.3 L 160.6 152.3 L 161.5 151.4 L 162.3 150.5 L 163.1 149.5 L 163.9 148.6 L 164.8 147.6 L 165.6 146.7 L 166.4 145.7 L 167.2 144.7 L 168.1 143.7 L 168.9 142.7 L 169.7 141.7 L 170.6 140.7 L 171.4 139.6 L 172.2 138.6 L 173.0 137.6 L 173.9 136.5 L 174.7 135.4 L 175.5 134.4 L 176.3 133.3 L 177.2 132.2 L 178.0 131.1 L 178.8 130.0 L 179.7 128.9 L 180.5 127.8 L 181.3 126.6 L 182.1 125.5 L 183.0 124.3 L 183.8 123.2 L 184.6 122.0 L 185.4 120.8 L 186.3 119.7 L 187.1 118.5 L 187.9 117.3 L 188.8 116.0 L 189.6 114.8 L 190.4 113.6 L 191.2 112.4 L 192.1 111.1 L 192.9 109.9 L 193.7 108.6 L 194.5 107.3 L 195.4 106.1 L 196.2 104.8 L 197.0 103.5 L 197.9 102.2 L 198.7 100.9 L 199.5 99.5 L 200.3 98.2 L 201.2 96.9 L 202.0 95.5 L 202.8 94.2 L 203.6 92.8 L 204.5 91.4 L 205.3 90.1 L 206.1 88.7 L 207.0 87.3 L 207.8 85.9 L 208.6 84.4 L 209.4 83.0 L 210.3 81.6 L 211.1 80.1 L 211.9 78.7 L 212.7 77.2 L 213.6 75.8 L 214.4 74.3 L 215.2 72.8 L 216.1 71.3 L 216.9 69.8 L 217.7 68.3 L 218.5 66.8 L 219.4 65.3 L 220.2 63.7 L 221.0 62.2 L 221.8 60.6 L 222.7 59.1 L 223.5 57.5 L 224.3 55.9 L 225.2 54.3 L 226.0 52.7 L 226.8 51.1 L 227.6 49.5 L 228.5 47.9 L 229.3 46.3 L 230.1 44.6 L 230.9 43.0 L 231.8 41.3 L 232.6 39.6 L 233.4 38.0 L 234.2 36.3 L 235.1 34.6 L 235.9 32.9 L 236.7 31.2 L 237.6 29.5\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.5\"/><text x=\"200.8\" y=\"133.6\" font-size=\"12\" font-family=\"serif\" font-style=\"italic\" text-anchor=\"start\">y = x<tspan baseline-shift=\"super\" font-size=\"8\">2</tspan> + 1</text><path d=\"M 72.1 65.6 L 73.1 65.6 L 74.0 65.6 L 75.0 65.6 L 75.9 65.6 L 76.9 65.6 L 77.9 65.6 L 78.8 65.6 L 79.8 65.6 L 80.7 65.6 L 81.7 65.6 L 82.6 65.6 L 83.6 65.6 L 84.5 65.6 L 85.5 65.6 L 86.5 65.6 L 87.4 65.6 L 88.4 65.6 L 89.3 65.6 L 90.3 65.6 L 91.2 65.6 L 92.2 65.6 L 93.1 65.6 L 94.1 65.6 L 95.1 65.6 L 96.0 65.6 L 97.0 65.6 L 97.9 65.6 L 98.9 65.6 L 99.8 65.6 L 100.8 65.6 L 101.8 65.6 L 102.7 65.6 L 103.7 65.6 L 104.6 65.6 L 105.6 65.6 L 106.5 65.6 L 107.5 65.6 L 108.4 65.6 L 109.4 65.6 L 110.4 65.6 L 111.3 65.6 L 112.3 65.6 L 113.2 65.6 L 114.2 65.6 L 115.1 65.6 L 116.1 65.6 L 117.0 65.6 L 118.0 65.6 L 119.0 65.6 L 119.9 65.6 L 120.9 65.6 L 121.8 65.6 L 122.8 65.6 L 123.7 65.6 L 124.7 65.6 L 125.6 65.6 L 126.6 65.6 L 127.6 65.6 L 128.5 65.6 L 129.5 65.6 L 130.4 65.6 L 131.4 65.6 L 132.3 65.6 L 133.3 65.6 L 134.2 65.6 L 135.2 65.6 L 136.2 65.6 L 137.1 65.6 L 138.1 65.6 L 139.0 65.6 L 140.0 65.6 L 140.9 65.6 L 141.9 65.6 L 142.9 65.6 L 143.8 65.6 L 144.8 65.6 L 145.7 65.6 L 146.7 65.6 L 147.6 65.6 L 148.6 65.6 L 149.5 65.6 L 150.5 65.6 L 151.5 65.6 L 152.4 65.6 L 153.4 65.6 L 154.3 65.6 L 155.3 65.6 L 156.2 65.6 L 157.2 65.6 L 158.1 65.6 L 159.1 65.6 L 160.1 65.6 L 161.0 65.6 L 162.0 65.6 L 162.9 65.6 L 163.9 65.6 L 164.8 65.6 L 165.8 65.6 L 166.8 65.6 L 167.7 65.6 L 168.7 65.6 L 169.6 65.6 L 170.6 65.6 L 171.5 65.6 L 172.5 65.6 L 173.4 65.6 L 174.4 65.6 L 175.4 65.6 L 176.3 65.6 L 177.3 65.6 L 178.2 65.6 L 179.2 65.6 L 180.1 65.6 L 181.1 65.6 L 182.0 65.6 L 183.0 65.6 L 184.0 65.6 L 184.9 65.6 L 185.9 65.6 L 186.8 65.6 L 187.8 65.6 L 188.7 65.6 L 189.7 65.6 L 190.6 65.6 L 191.6 65.6 L 192.6 65.6 L 193.5 65.6 L 194.5 65.6 L 195.4 65.6 L 196.4 65.6 L 197.3 65.6 L 198.3 65.6 L 199.2 65.6 L 200.2 65.6 L 201.2 65.6 L 202.1 65.6 L 203.1 65.6 L 204.0 65.6 L 205.0 65.6 L 205.9 65.6 L 206.9 65.6 L 207.9 65.6 L 208.8 65.6 L 209.8 65.6 L 210.7 65.6 L 211.7 65.6 L 212.6 65.6 L 213.6 65.6 L 214.5 65.6 L 215.5 65.6 L 216.5 65.6 L 217.4 65.6 L 218.4 65.6 L 219.3 65.6 L 220.3 65.6 L 221.2 65.6 L 222.2 65.6 L 223.1 65.6 L 224.1 65.6 L 225.1 65.6 L 226.0 65.6 L 227.0 65.6 L 227.9 65.6 L 228.9 65.6 L 229.8 65.6 L 230.8 65.6 L 231.8 65.6 L 232.7 65.6 L 233.7 65.6 L 234.6 65.6 L 235.6 65.6 L 236.5 65.6 L 237.5 65.6 L 238.4 65.6 L 239.4 65.6 L 240.4 65.6 L 241.3 65.6 L 242.3 65.6 L 243.2 65.6 L 244.2 65.6 L 245.1 65.6 L 246.1 65.6 L 247.0 65.6 L 248.0 65.6 L 249.0 65.6 L 249.9 65.6 L 250.9 65.6 L 251.8 65.6 L 252.8 65.6 L 253.7 65.6 L 254.7 65.6 L 255.6 65.6 L 256.6 65.6 L 257.6 65.6 L 258.5 65.6 L 259.5 65.6 L 260.4 65.6 L 261.4 65.6 L 262.3 65.6 L 263.3 65.6\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.5\"/><text x=\"72.1\" y=\"235.6\" font-size=\"12\" font-family=\"serif\" font-style=\"italic\" text-anchor=\"start\"></text></svg></p><p>The diagram shows part of the curve with equation \\(y=x^2+1\\). The shaded region enclosed by the curve, the \\(y\\)-axis and the line \\(y=5\\) is rotated through \\(360^\\circ\\) about the \\(y\\)-axis.</p><p>Find the volume obtained. [4]</p>",
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-9.9"
+            ],
+            "topic": "Integration",
+            "chapter": "P1-9",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-9-9.json",
+                "locator": "P1-9.9-PP-9709-12-FM20-Q3"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\((\\pi)\\displaystyle\\int(y-1)\\,dy\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: *M1, SOI; attempt to integrate x² or (y − 1)."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\((\\pi)\\Bigl[\\dfrac{y^2}{2}-y\\Bigr]\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\((\\pi)\\Bigl[\\Bigl(\\dfrac{25}{2}-5\\Bigr)-\\Bigl(\\dfrac{1}{2}-1\\Bigr)\\Bigr]\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: DM1, apply limits 1 → 5 to an integrated expression."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(8\\pi\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 8π or AWRT 25.1."
+            }
+        ]
+    },
+    {
+        "id": "P1-9.9-PP-9709-12-MJ12-Q1",
+        "section": "P1-9.9",
+        "kind": "pastpaper",
+        "title": "Volume of revolution about the x-axis",
+        "marks": 4,
+        "source": {
+            "paper": "9709/12/M/J/12 Q1",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s12_qp_12.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s12_ms_12.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p><svg viewBox=\"0 0 300 260\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"p199b-t p199b-d\" style=\"width:100%;max-width:300px;height:auto\"><title id=\"p199b-t\">Curve y = 6/(2x − 3) between x = 2 and x = 3</title><desc id=\"p199b-d\">Graph of y = 6/(2x − 3) between x = 2 and x = 3, with vertical lines at x = 2 and x = 3; the region enclosed by the curve, the x-axis and the two lines is shaded.</desc><path d=\"M 164.4 47.1 L 164.8 49.9 L 165.3 52.7 L 165.8 55.4 L 166.3 58.0 L 166.7 60.5 L 167.2 62.9 L 167.7 65.3 L 168.2 67.6 L 168.6 69.8 L 169.1 72.0 L 169.6 74.1 L 170.0 76.1 L 170.5 78.1 L 171.0 80.1 L 171.5 81.9 L 171.9 83.8 L 172.4 85.6 L 172.9 87.3 L 173.4 89.0 L 173.8 90.7 L 174.3 92.3 L 174.8 93.9 L 175.3 95.4 L 175.7 96.9 L 176.2 98.4 L 176.7 99.8 L 177.1 101.2 L 177.6 102.6 L 178.1 103.9 L 178.6 105.2 L 179.0 106.5 L 179.5 107.7 L 180.0 109.0 L 180.5 110.1 L 180.9 111.3 L 181.4 112.5 L 181.9 113.6 L 182.4 114.7 L 182.8 115.8 L 183.3 116.8 L 183.8 117.9 L 184.2 118.9 L 184.7 119.9 L 185.2 120.9 L 185.7 121.8 L 186.1 122.7 L 186.6 123.7 L 187.1 124.6 L 187.6 125.5 L 188.0 126.3 L 188.5 127.2 L 189.0 128.0 L 189.5 128.9 L 189.9 129.7 L 190.4 130.5 L 190.9 131.3 L 191.4 132.0 L 191.8 132.8 L 192.3 133.5 L 192.8 134.3 L 193.2 135.0 L 193.7 135.7 L 194.2 136.4 L 194.7 137.1 L 195.1 137.8 L 195.6 138.4 L 196.1 139.1 L 196.6 139.7 L 197.0 140.4 L 197.5 141.0 L 198.0 141.6 L 198.5 142.2 L 198.9 142.8 L 199.4 143.4 L 199.9 144.0 L 200.3 144.5 L 200.8 145.1 L 201.3 145.6 L 201.8 146.2 L 202.2 146.7 L 202.7 147.3 L 203.2 147.8 L 203.7 148.3 L 204.1 148.8 L 204.6 149.3 L 205.1 149.8 L 205.6 150.3 L 206.0 150.8 L 206.5 151.2 L 207.0 151.7 L 207.5 152.2 L 207.9 152.6 L 208.4 153.1 L 208.9 153.5 L 209.3 154.0 L 209.8 154.4 L 210.3 154.8 L 210.8 155.2 L 211.2 155.7 L 211.7 156.1 L 212.2 156.5 L 212.7 156.9 L 213.1 157.3 L 213.6 157.7 L 214.1 158.0 L 214.6 158.4 L 215.0 158.8 L 215.5 159.2 L 216.0 159.5 L 216.4 159.9 L 216.9 160.3 L 217.4 160.6 L 217.9 161.0 L 218.3 161.3 L 218.8 161.7 L 219.3 162.0 L 219.8 162.3 L 220.2 162.7 L 220.7 163.0 L 221.2 163.3 L 221.2 221.5 L 220.7 221.5 L 220.2 221.5 L 219.8 221.5 L 219.3 221.5 L 218.8 221.5 L 218.3 221.5 L 217.9 221.5 L 217.4 221.5 L 216.9 221.5 L 216.4 221.5 L 216.0 221.5 L 215.5 221.5 L 215.0 221.5 L 214.6 221.5 L 214.1 221.5 L 213.6 221.5 L 213.1 221.5 L 212.7 221.5 L 212.2 221.5 L 211.7 221.5 L 211.2 221.5 L 210.8 221.5 L 210.3 221.5 L 209.8 221.5 L 209.3 221.5 L 208.9 221.5 L 208.4 221.5 L 207.9 221.5 L 207.5 221.5 L 207.0 221.5 L 206.5 221.5 L 206.0 221.5 L 205.6 221.5 L 205.1 221.5 L 204.6 221.5 L 204.1 221.5 L 203.7 221.5 L 203.2 221.5 L 202.7 221.5 L 202.2 221.5 L 201.8 221.5 L 201.3 221.5 L 200.8 221.5 L 200.3 221.5 L 199.9 221.5 L 199.4 221.5 L 198.9 221.5 L 198.5 221.5 L 198.0 221.5 L 197.5 221.5 L 197.0 221.5 L 196.6 221.5 L 196.1 221.5 L 195.6 221.5 L 195.1 221.5 L 194.7 221.5 L 194.2 221.5 L 193.7 221.5 L 193.2 221.5 L 192.8 221.5 L 192.3 221.5 L 191.8 221.5 L 191.4 221.5 L 190.9 221.5 L 190.4 221.5 L 189.9 221.5 L 189.5 221.5 L 189.0 221.5 L 188.5 221.5 L 188.0 221.5 L 187.6 221.5 L 187.1 221.5 L 186.6 221.5 L 186.1 221.5 L 185.7 221.5 L 185.2 221.5 L 184.7 221.5 L 184.2 221.5 L 183.8 221.5 L 183.3 221.5 L 182.8 221.5 L 182.4 221.5 L 181.9 221.5 L 181.4 221.5 L 180.9 221.5 L 180.5 221.5 L 180.0 221.5 L 179.5 221.5 L 179.0 221.5 L 178.6 221.5 L 178.1 221.5 L 177.6 221.5 L 177.1 221.5 L 176.7 221.5 L 176.2 221.5 L 175.7 221.5 L 175.3 221.5 L 174.8 221.5 L 174.3 221.5 L 173.8 221.5 L 173.4 221.5 L 172.9 221.5 L 172.4 221.5 L 171.9 221.5 L 171.5 221.5 L 171.0 221.5 L 170.5 221.5 L 170.0 221.5 L 169.6 221.5 L 169.1 221.5 L 168.6 221.5 L 168.2 221.5 L 167.7 221.5 L 167.2 221.5 L 166.7 221.5 L 166.3 221.5 L 165.8 221.5 L 165.3 221.5 L 164.8 221.5 L 164.4 221.5 Z\" fill=\"#bdbdbd\" fill-opacity=\"0.8\" stroke=\"none\"/><line x1=\"28.0\" y1=\"221.5\" x2=\"286.0\" y2=\"221.5\" stroke=\"#1a1a1a\" stroke-width=\"1.2\"/><path d=\"M 292.0 221.5 L 284.0 218.0 L 284.0 225.0 Z\" fill=\"#1a1a1a\"/><line x1=\"50.7\" y1=\"236.0\" x2=\"50.7\" y2=\"10.0\" stroke=\"#1a1a1a\" stroke-width=\"1.2\"/><path d=\"M 50.7 4.0 L 47.2 12.0 L 54.2 12.0 Z\" fill=\"#1a1a1a\"/><text x=\"290.0\" y=\"236.5\" font-size=\"12\" font-family=\"serif\" font-style=\"italic\">x</text><text x=\"56.7\" y=\"14.0\" font-size=\"12\" font-family=\"serif\" font-style=\"italic\">y</text><text x=\"45.7\" y=\"235.5\" font-size=\"12\" font-family=\"serif\" font-style=\"italic\" text-anchor=\"end\">O</text><text x=\"164.4\" y=\"235.5\" font-size=\"11\" font-family=\"serif\" text-anchor=\"middle\">2</text><text x=\"221.2\" y=\"235.5\" font-size=\"11\" font-family=\"serif\" text-anchor=\"middle\">3</text><line x1=\"164.4\" y1=\"221.5\" x2=\"164.4\" y2=\"47.1\" stroke=\"#1a1a1a\" stroke-width=\"1.2\"/><line x1=\"221.2\" y1=\"221.5\" x2=\"221.2\" y2=\"163.3\" stroke=\"#1a1a1a\" stroke-width=\"1.2\"/><path d=\"M 164.4 47.1 L 164.6 48.8 L 164.9 50.5 L 165.2 52.1 L 165.5 53.8 L 165.8 55.4 L 166.1 56.9 L 166.4 58.5 L 166.6 60.0 L 166.9 61.5 L 167.2 62.9 L 167.5 64.3 L 167.8 65.8 L 168.1 67.1 L 168.3 68.5 L 168.6 69.8 L 168.9 71.1 L 169.2 72.4 L 169.5 73.7 L 169.8 74.9 L 170.0 76.1 L 170.3 77.3 L 170.6 78.5 L 170.9 79.7 L 171.2 80.8 L 171.5 81.9 L 171.8 83.1 L 172.0 84.1 L 172.3 85.2 L 172.6 86.3 L 172.9 87.3 L 173.2 88.3 L 173.5 89.3 L 173.7 90.3 L 174.0 91.3 L 174.3 92.3 L 174.6 93.2 L 174.9 94.2 L 175.2 95.1 L 175.4 96.0 L 175.7 96.9 L 176.0 97.8 L 176.3 98.6 L 176.6 99.5 L 176.9 100.4 L 177.1 101.2 L 177.4 102.0 L 177.7 102.8 L 178.0 103.6 L 178.3 104.4 L 178.6 105.2 L 178.9 106.0 L 179.1 106.7 L 179.4 107.5 L 179.7 108.2 L 180.0 109.0 L 180.3 109.7 L 180.6 110.4 L 180.8 111.1 L 181.1 111.8 L 181.4 112.5 L 181.7 113.1 L 182.0 113.8 L 182.3 114.5 L 182.5 115.1 L 182.8 115.8 L 183.1 116.4 L 183.4 117.0 L 183.7 117.7 L 184.0 118.3 L 184.2 118.9 L 184.5 119.5 L 184.8 120.1 L 185.1 120.7 L 185.4 121.2 L 185.7 121.8 L 186.0 122.4 L 186.2 122.9 L 186.5 123.5 L 186.8 124.0 L 187.1 124.6 L 187.4 125.1 L 187.7 125.6 L 187.9 126.2 L 188.2 126.7 L 188.5 127.2 L 188.8 127.7 L 189.1 128.2 L 189.4 128.7 L 189.6 129.2 L 189.9 129.7 L 190.2 130.2 L 190.5 130.6 L 190.8 131.1 L 191.1 131.6 L 191.4 132.0 L 191.6 132.5 L 191.9 132.9 L 192.2 133.4 L 192.5 133.8 L 192.8 134.3 L 193.1 134.7 L 193.3 135.1 L 193.6 135.6 L 193.9 136.0 L 194.2 136.4 L 194.5 136.8 L 194.8 137.2 L 195.0 137.6 L 195.3 138.0 L 195.6 138.4 L 195.9 138.8 L 196.2 139.2 L 196.5 139.6 L 196.7 140.0 L 197.0 140.4 L 197.3 140.7 L 197.6 141.1 L 197.9 141.5 L 198.2 141.8 L 198.5 142.2 L 198.7 142.6 L 199.0 142.9 L 199.3 143.3 L 199.6 143.6 L 199.9 144.0 L 200.2 144.3 L 200.4 144.6 L 200.7 145.0 L 201.0 145.3 L 201.3 145.6 L 201.6 146.0 L 201.9 146.3 L 202.1 146.6 L 202.4 146.9 L 202.7 147.3 L 203.0 147.6 L 203.3 147.9 L 203.6 148.2 L 203.9 148.5 L 204.1 148.8 L 204.4 149.1 L 204.7 149.4 L 205.0 149.7 L 205.3 150.0 L 205.6 150.3 L 205.8 150.6 L 206.1 150.9 L 206.4 151.1 L 206.7 151.4 L 207.0 151.7 L 207.3 152.0 L 207.5 152.3 L 207.8 152.5 L 208.1 152.8 L 208.4 153.1 L 208.7 153.3 L 209.0 153.6 L 209.2 153.9 L 209.5 154.1 L 209.8 154.4 L 210.1 154.6 L 210.4 154.9 L 210.7 155.2 L 211.0 155.4 L 211.2 155.7 L 211.5 155.9 L 211.8 156.1 L 212.1 156.4 L 212.4 156.6 L 212.7 156.9 L 212.9 157.1 L 213.2 157.3 L 213.5 157.6 L 213.8 157.8 L 214.1 158.0 L 214.4 158.3 L 214.6 158.5 L 214.9 158.7 L 215.2 159.0 L 215.5 159.2 L 215.8 159.4 L 216.1 159.6 L 216.4 159.8 L 216.6 160.1 L 216.9 160.3 L 217.2 160.5 L 217.5 160.7 L 217.8 160.9 L 218.1 161.1 L 218.3 161.3 L 218.6 161.5 L 218.9 161.7 L 219.2 161.9 L 219.5 162.1 L 219.8 162.3 L 220.0 162.5 L 220.3 162.7 L 220.6 162.9 L 220.9 163.1 L 221.2 163.3\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.5\"/><text x=\"204.1\" y=\"87.8\" font-size=\"12\" font-family=\"serif\" font-style=\"italic\" text-anchor=\"start\">y = 6/(2x − 3)</text></svg></p><p>The diagram shows the region enclosed by the curve \\(y=\\dfrac{6}{2x-3}\\), the \\(x\\)-axis and the lines \\(x=2\\) and \\(x=3\\). Find, in terms of \\(\\pi\\), the volume obtained when this region is rotated through \\(360^\\circ\\) about the \\(x\\)-axis. [4]</p>",
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-9.9"
+            ],
+            "topic": "Integration",
+            "chapter": "P1-9",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-9-9.json",
+                "locator": "P1-9.9-PP-9709-12-MJ12-Q1"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "Integral of \\(y^2=\\dfrac{-36}{(2x-3)}\\ldots\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 B1 for integral of y² = −36/(2x − 3) ÷ 2; allow the 2nd B1 independent of the 1st; this is the first mark."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(\\ldots\\div2\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: second B1, for ÷ 2."
+            },
+            {
+                "name": "s3",
+                "text_tex": "Use of limits 2, 3",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, used as 2 to 3 or 3 to 2 in the integral of y²."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(12\\pi\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 12π or 37.7; co (uses area 0/4; no π max 3/4)."
+            }
+        ]
+    }
+]

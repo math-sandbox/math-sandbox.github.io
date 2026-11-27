@@ -1,0 +1,461 @@
+[
+    {
+        "id": "S2-6.4-QC1-gen",
+        "section": "S2-6.4",
+        "kind": "generated",
+        "title": "Upper limit of a confidence interval for a proportion",
+        "marks": 3,
+        "source": "Theory S2-6.4 Quick check 1; p-hat + z sqrt(p-hat q-hat / n)",
+        "params": [
+            {
+                "name": "n",
+                "min": 100,
+                "max": 500,
+                "step": 50
+            },
+            {
+                "name": "pc",
+                "min": 10,
+                "max": 90,
+                "step": 2
+            },
+            {
+                "name": "i",
+                "min": 0,
+                "max": 4,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "x": "n*pc/100",
+            "ph": "pc/100",
+            "Z": "[1.645,1.96,2.054,2.326,2.576][i]",
+            "cl": "[90,95,96,98,99][i]",
+            "q": "1-pc/100",
+            "E": "math.pow(pc/100*(1-pc/100)/n,0.5)",
+            "A": "pc/100+[1.645,1.96,2.054,2.326,2.576][i]*math.pow(pc/100*(1-pc/100)/n,0.5)"
+        },
+        "constraints": [
+            "n>99"
+        ],
+        "original": {
+            "n": 200,
+            "pc": 30,
+            "i": 1
+        },
+        "stem": "In a random sample of \\({n|int}\\) people, \\({x|int}\\) were left-handed. Calculate the upper limit of an approximate \\({cl|int}\\%\\) confidence interval for the proportion of all people who are left-handed. Use \\(z={Z|raw}\\).",
+        "answer": {
+            "expression": "ph+Z*E",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "P",
+                "text_tex": "\\(\\hat p=\\dfrac{{x|int}}{{n|int}}={ph|raw}\\)",
+                "result": "ph",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Sample proportion."
+            },
+            {
+                "name": "E",
+                "text_tex": "Standard error \\(\\sqrt{\\dfrac{{ph|raw}\\times(1-{ph|raw})}{{n|int}} }={E|sf3z}\\)",
+                "result": "E",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Use the correct form p̂ ± z √(p̂(1 − p̂)/n)."
+            },
+            {
+                "name": "A",
+                "text_tex": "Upper limit \\(={ph|raw}+{Z|raw}\\times{E|sf3z}={A|sf3z}\\)",
+                "result": "ph+Z*E",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Add z times the standard error."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 60 of 200, 95%, upper limit 0.364"
+            },
+            {
+                "id": "phones",
+                "stem": "A random sample of \\({n|int}\\) students was asked whether they own a tablet, and \\({x|int}\\) said yes. Find the upper limit of an approximate \\({cl|int}\\%\\) confidence interval for the proportion of all students who own a tablet, using \\(z={Z|raw}\\)."
+            },
+            {
+                "id": "seeds",
+                "stem": "Of \\({n|int}\\) randomly chosen seeds, \\({x|int}\\) failed to germinate. Using \\(z={Z|raw}\\), calculate the upper end of an approximate \\({cl|int}\\%\\) confidence interval for the proportion of seeds of this type that fail to germinate."
+            }
+        ],
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-6.4"
+            ],
+            "topic": "Estimation",
+            "chapter": "S2-6",
+            "marks": 3,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-6-4.json",
+                "locator": "S2-6.4-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "S2-6.4-QC2-gen",
+        "section": "S2-6.4",
+        "kind": "generated",
+        "title": "Lower limit of a confidence interval for a proportion",
+        "marks": 3,
+        "source": "Theory S2-6.4 Quick check 2; p-hat - z sqrt(p-hat q-hat / n)",
+        "params": [
+            {
+                "name": "n",
+                "min": 100,
+                "max": 500,
+                "step": 50
+            },
+            {
+                "name": "pc",
+                "min": 10,
+                "max": 90,
+                "step": 2
+            },
+            {
+                "name": "i",
+                "min": 0,
+                "max": 4,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "x": "n*pc/100",
+            "ph": "pc/100",
+            "Z": "[1.645,1.96,2.054,2.326,2.576][i]",
+            "cl": "[90,95,96,98,99][i]",
+            "q": "1-pc/100",
+            "E": "math.pow(pc/100*(1-pc/100)/n,0.5)",
+            "A": "pc/100-[1.645,1.96,2.054,2.326,2.576][i]*math.pow(pc/100*(1-pc/100)/n,0.5)"
+        },
+        "constraints": [
+            "n>99"
+        ],
+        "original": {
+            "n": 300,
+            "pc": 20,
+            "i": 3
+        },
+        "stem": "A die is thrown \\({n|int}\\) times and shows a six on \\({x|int}\\) throws. Calculate the lower limit of an approximate \\({cl|int}\\%\\) confidence interval for the probability that the die shows a six on one throw. Use \\(z={Z|raw}\\).",
+        "answer": {
+            "expression": "ph-Z*E",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "P",
+                "text_tex": "\\(\\hat p=\\dfrac{{x|int}}{{n|int}}={ph|raw}\\)",
+                "result": "ph",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Sample proportion."
+            },
+            {
+                "name": "E",
+                "text_tex": "Standard error \\(\\sqrt{\\dfrac{{ph|raw}\\times(1-{ph|raw})}{{n|int}} }={E|sf3z}\\)",
+                "result": "E",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Correct formula for the standard error of a proportion."
+            },
+            {
+                "name": "A",
+                "text_tex": "Lower limit \\(={ph|raw}-{Z|raw}\\times{E|sf3z}={A|sf3z}\\)",
+                "result": "ph-Z*E",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Subtract z times the standard error."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 60 sixes in 300 throws, 98%, lower limit 0.146"
+            },
+            {
+                "id": "voters",
+                "stem": "In a random sample of \\({n|int}\\) voters, \\({x|int}\\) said they would vote for candidate B. Using \\(z={Z|raw}\\), find the lower limit of an approximate \\({cl|int}\\%\\) confidence interval for the proportion of all voters who would vote for B."
+            },
+            {
+                "id": "bus",
+                "stem": "On \\({x|int}\\) of \\({n|int}\\) randomly chosen days a bus was late. Find the lower end of an approximate \\({cl|int}\\%\\) confidence interval for the probability that the bus is late on a randomly chosen day. Use \\(z={Z|raw}\\)."
+            }
+        ],
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-6.4"
+            ],
+            "topic": "Estimation",
+            "chapter": "S2-6",
+            "marks": 3,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-6-4.json",
+                "locator": "S2-6.4-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "S2-6.4-QC3-gen",
+        "section": "S2-6.4",
+        "kind": "generated",
+        "title": "Width of a confidence interval for a proportion",
+        "marks": 3,
+        "source": "Theory S2-6.4 Quick check 3; width = 2 z sqrt(p-hat q-hat / n)",
+        "params": [
+            {
+                "name": "n",
+                "min": 100,
+                "max": 500,
+                "step": 50
+            },
+            {
+                "name": "pc",
+                "min": 10,
+                "max": 90,
+                "step": 2
+            },
+            {
+                "name": "i",
+                "min": 0,
+                "max": 4,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "x": "n*pc/100",
+            "ph": "pc/100",
+            "Z": "[1.645,1.96,2.054,2.326,2.576][i]",
+            "cl": "[90,95,96,98,99][i]",
+            "q": "1-pc/100",
+            "E": "math.pow(pc/100*(1-pc/100)/n,0.5)",
+            "A": "2*[1.645,1.96,2.054,2.326,2.576][i]*math.pow(pc/100*(1-pc/100)/n,0.5)"
+        },
+        "constraints": [
+            "n>99"
+        ],
+        "original": {
+            "n": 400,
+            "pc": 40,
+            "i": 0
+        },
+        "stem": "In a random sample of \\({n|int}\\) items, \\({x|int}\\) were faulty. Find the width of an approximate \\({cl|int}\\%\\) confidence interval for the proportion of all items that are faulty. Use \\(z={Z|raw}\\).",
+        "answer": {
+            "expression": "2*Z*E",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "P",
+                "text_tex": "\\(\\hat p=\\dfrac{{x|int}}{{n|int}}={ph|raw}\\)",
+                "result": "ph",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Sample proportion."
+            },
+            {
+                "name": "E",
+                "text_tex": "Standard error \\(\\sqrt{\\dfrac{{ph|raw}\\times(1-{ph|raw})}{{n|int}} }={E|sf3z}\\)",
+                "result": "E",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "Correct formula for the standard error."
+            },
+            {
+                "name": "A",
+                "text_tex": "Width \\(=2\\times{Z|raw}\\times{E|sf3z}={A|sf3z}\\)",
+                "result": "2*Z*E",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "The interval runs from p̂ − zE to p̂ + zE, so its width is 2zE."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 160 of 400, 90%, width 0.0806"
+            },
+            {
+                "id": "survey",
+                "stem": "A survey of \\({n|int}\\) randomly chosen households found that \\({x|int}\\) had a pet. Using \\(z={Z|raw}\\), find the width of an approximate \\({cl|int}\\%\\) confidence interval for the proportion of all households with a pet."
+            },
+            {
+                "id": "coin",
+                "stem": "A coin is spun \\({n|int}\\) times and lands heads \\({x|int}\\) times. Find the width of an approximate \\({cl|int}\\%\\) confidence interval for the probability of heads, using \\(z={Z|raw}\\)."
+            }
+        ],
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-6.4"
+            ],
+            "topic": "Estimation",
+            "chapter": "S2-6",
+            "marks": 3,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-6-4.json",
+                "locator": "S2-6.4-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "S2-6.4-PP-9709-62-FM24-Q2",
+        "section": "S2-6.4",
+        "kind": "pastpaper",
+        "title": "People who own a BETEC phone",
+        "marks": 4,
+        "source": {
+            "paper": "9709/62/F/M/24 Q2",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m24_qp_62.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m24_ms_62.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>A random sample of 250 people living in Barapet was chosen. It was found that 78 of these people owned a BETEC phone.</p><p>(a) Calculate an approximate 98% confidence interval for the proportion of people living in Barapet who own a BETEC phone. [3]</p><p>(b) Manjit claims that more than 40% of the people living in Barapet own a BETEC phone.</p><p>Use your answer to part (a) to comment on this claim. [1]</p>",
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-6.4"
+            ],
+            "topic": "Estimation",
+            "chapter": "S2-6",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-6-4.json",
+                "locator": "S2-6.4-PP-9709-62-FM24-Q2"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) \\(\\dfrac{78}{250}\\pm z\\times\\sqrt{\\dfrac{\\frac{78}{250}\\left(1-\\frac{78}{250}\\right)}{250} }\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, use of a correct formula (any z)."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(a) \\(z=2.326\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, z = 2.326."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(a) \\(0.244\\) to \\(0.380\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 0.244 to 0.38[0] (3 s.f.); must be an interval."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(b) Unlikely to be true because the confidence interval does not contain \\(0.4\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1ft, FT their confidence interval; must include this reason and 'unlikely', oe."
+            }
+        ]
+    },
+    {
+        "id": "S2-6.4-PP-9709-62-ON20-Q2",
+        "section": "S2-6.4",
+        "kind": "pastpaper",
+        "title": "Sixes on a six-sided die",
+        "marks": 4,
+        "source": {
+            "paper": "9709/62/O/N/20 Q2",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w20_qp_62.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_w20_ms_62.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>A six-sided die has faces marked 1, 2, 3, 4, 5, 6. When the die is thrown 300 times it shows a six on 56 throws.</p><p>(a) Calculate an approximate 96% confidence interval for the probability that the die shows a six on one throw. [3]</p><p>(b) Maroulla claims that the die is biased.</p><p>Use your answer to part (a) to comment on this claim. [1]</p>",
+        "tags": {
+            "course": "S2",
+            "subsections": [
+                "S2-6.4"
+            ],
+            "topic": "Estimation",
+            "chapter": "S2-6",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S2-6-4.json",
+                "locator": "S2-6.4-PP-9709-62-ON20-Q2"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) \\(\\dfrac{56}{300}\\pm z\\times\\sqrt{\\dfrac{\\frac{56}{300}\\times\\frac{244}{300} }{300} }\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, for expression of the correct form; must be a z value."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(a) \\(z=2.054\\) or \\(2.055\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, z = 2.054 or 2.055."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(a) \\(0.140\\) to \\(0.233\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 0.14(0) to 0.233 (3 s.f.) or 0.141 to 0.233 (3 s.f.); must be an interval."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(b) \\(\\dfrac{1}{6}\\ (=0.167)\\) is within the confidence interval, so there is no reason to believe the die is biased",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1FT, FT their confidence interval; not definite, e.g. not 'Die not biased'."
+            }
+        ]
+    }
+]

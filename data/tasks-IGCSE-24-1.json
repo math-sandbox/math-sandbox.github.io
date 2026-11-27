@@ -1,0 +1,265 @@
+[
+    {
+        "id": "IGCSE-24.1-QC1-gen",
+        "section": "IGCSE-24.1",
+        "kind": "generated",
+        "title": "Missing probability on a pair of branches",
+        "marks": 2,
+        "source": "Theory IGCSE-24.1 Quick check 1; the probabilities on branches from one point add to 1",
+        "params": [
+            {
+                "name": "pc",
+                "min": 5,
+                "max": 95,
+                "step": 5
+            }
+        ],
+        "derived": {
+            "p": "pc/100",
+            "A": "(100-pc)/100"
+        },
+        "constraints": [
+            "pc>0"
+        ],
+        "original": {
+            "pc": 30
+        },
+        "stem": "On a tree diagram, the two branches for whether a train is late at a station have probabilities \\({p|raw}\\) (late) and \\(x\\) (not late). Find \\(x\\).",
+        "answer": {
+            "expression": "(100-pc)/100",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "The branches from one point show all the outcomes, so \\({p|raw}+x=1\\)",
+                "result": "p",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Probabilities on branches from the same point add to 1."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(x=1-{p|raw}={A|sf3z}\\)",
+                "result": "(100-pc)/100",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Subtract from 1."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original late 0.3, not late 0.7"
+            },
+            {
+                "id": "rain",
+                "stem": "The probability that it rains on a given day is \\({p|raw}\\). On a tree diagram, find the probability written on the branch for 'no rain'."
+            },
+            {
+                "id": "spinner",
+                "stem": "A biased spinner lands on red with probability \\({p|raw}\\); otherwise it lands on blue. Write down the probability on the 'blue' branch of a tree diagram."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-24.1"
+            ],
+            "topic": "Probability using tree diagrams and Venn diagrams",
+            "chapter": "IGCSE-24",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-24-1.json",
+                "locator": "IGCSE-24.1-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-24.1-QC2-gen",
+        "section": "IGCSE-24.1",
+        "kind": "generated",
+        "title": "Number of outcomes for two stages",
+        "marks": 2,
+        "source": "Theory IGCSE-24.1 Quick check 2; m branches then k branches give m x k outcomes",
+        "params": [
+            {
+                "name": "m",
+                "min": 2,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "k",
+                "min": 2,
+                "max": 8,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "A": "m*k"
+        },
+        "constraints": [
+            "m>1"
+        ],
+        "original": {
+            "m": 2,
+            "k": 6
+        },
+        "stem": "A spinner with \\({m|int}\\) equal sections is spun and then a fair dice with \\({k|int}\\) faces is rolled. A tree diagram is drawn to show all the possible outcomes. How many outcomes are there at the end of the tree?",
+        "answer": {
+            "expression": "m*k",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "Each of the \\({m|int}\\) first branches splits into \\({k|int}\\) branches",
+                "result": "k",
+                "format": "int",
+                "mark": "M1",
+                "note": "Multiply the numbers of branches at each stage."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\({m|int}\\times{k|int}={A|int}\\)",
+                "result": "m*k",
+                "format": "int",
+                "mark": "A1",
+                "note": "Count the end points."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 2 then 6, 12 outcomes"
+            },
+            {
+                "id": "menu",
+                "stem": "A café offers \\({m|int}\\) starters and \\({k|int}\\) main courses. A tree diagram shows every choice of one starter followed by one main course. How many different meals are shown?"
+            },
+            {
+                "id": "bags",
+                "stem": "Bag P holds \\({m|int}\\) different coloured counters and bag Q holds \\({k|int}\\) different coloured counters. One counter is taken from P and then one from Q. How many end points does the tree diagram of outcomes have?"
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-24.1"
+            ],
+            "topic": "Probability using tree diagrams and Venn diagrams",
+            "chapter": "IGCSE-24",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-24-1.json",
+                "locator": "IGCSE-24.1-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-24.1-QC3-gen",
+        "section": "IGCSE-24.1",
+        "kind": "generated",
+        "title": "Number of outcomes for three stages",
+        "marks": 2,
+        "source": "Theory IGCSE-24.1 Quick check 3; a x b x c outcomes",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 2,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "c",
+                "min": 2,
+                "max": 4,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "A": "a*b*c"
+        },
+        "constraints": [
+            "a>1"
+        ],
+        "original": {
+            "a": 2,
+            "b": 2,
+            "c": 2
+        },
+        "stem": "An experiment has three stages, with \\({a|int}\\), \\({b|int}\\) and \\({c|int}\\) possible outcomes at the first, second and third stages. How many outcomes are shown at the end of a full tree diagram?",
+        "answer": {
+            "expression": "a*b*c",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\({a|int}\\) branches, each splitting into \\({b|int}\\), each splitting into \\({c|int}\\)",
+                "result": "b",
+                "format": "int",
+                "mark": "M1",
+                "note": "Multiply the numbers of branches at each stage."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\({a|int}\\times{b|int}\\times{c|int}={A|int}\\)",
+                "result": "a*b*c",
+                "format": "int",
+                "mark": "A1",
+                "note": "Count the end points."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original three coins, 8 outcomes"
+            },
+            {
+                "id": "lights",
+                "stem": "On a journey there are three sets of traffic lights with \\({a|int}\\), \\({b|int}\\) and \\({c|int}\\) possible signals respectively. How many end points does a tree diagram of all the possible signals have?"
+            },
+            {
+                "id": "quiz",
+                "stem": "A quiz has three questions with \\({a|int}\\), \\({b|int}\\) and \\({c|int}\\) answer choices. A tree diagram shows every way of answering all three questions. How many ways are shown?"
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-24.1"
+            ],
+            "topic": "Probability using tree diagrams and Venn diagrams",
+            "chapter": "IGCSE-24",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-24-1.json",
+                "locator": "IGCSE-24.1-QC3-gen"
+            }
+        }
+    }
+]

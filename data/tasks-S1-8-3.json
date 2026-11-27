@@ -1,0 +1,486 @@
+[
+    {
+        "id": "S1-8.3-QC1-gen",
+        "section": "S1-8.3",
+        "kind": "generated",
+        "title": "Expected number within a distance of the mean",
+        "marks": 3,
+        "source": "Theory S1-8.3 Quick check 1; P(mod(X - mu) < d) = 2 Phi(z) - 1, expected number = n p",
+        "params": [
+            {
+                "name": "mu",
+                "min": 20,
+                "max": 80,
+                "step": 1
+            },
+            {
+                "name": "s",
+                "min": 2,
+                "max": 10,
+                "step": 1
+            },
+            {
+                "name": "i",
+                "min": 0,
+                "max": 3,
+                "step": 1
+            },
+            {
+                "name": "n",
+                "min": 100,
+                "max": 1000,
+                "step": 100
+            }
+        ],
+        "derived": {
+            "Z": "[0.5,1,1.5,2][i]",
+            "PH": "[0.6915,0.8413,0.9332,0.9772][i]",
+            "d": "[1,2,3,4][i]*s/2",
+            "Q": "[0.383,0.6826,0.8664,0.9544][i]",
+            "A": "n*[0.383,0.6826,0.8664,0.9544][i]"
+        },
+        "constraints": [
+            "s>1"
+        ],
+        "original": {
+            "mu": 25,
+            "s": 4,
+            "i": 1,
+            "n": 500
+        },
+        "stem": "The random variable \\(X\\) has the distribution \\(\\mathrm{N}({mu|int}, {s|int}^2)\\). A random sample of \\({n|int}\\) values of \\(X\\) is taken. Given that \\(\\Phi({Z|raw})={PH|raw}\\), find the expected number of these values that lie within \\({d|raw}\\) of the mean, giving your answer correct to 3 significant figures.",
+        "answer": {
+            "expression": "n*Q",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "Z",
+                "text_tex": "\\(z=\\dfrac{{d|raw}}{{s|int}}={Z|raw}\\)",
+                "result": "Z",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Standardise the distance from the mean."
+            },
+            {
+                "name": "P",
+                "text_tex": "\\(P(-{Z|raw}\\lt Z\\lt {Z|raw})=2\\Phi({Z|raw})-1=2\\times{PH|raw}-1={Q|raw}\\)",
+                "result": "Q",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Use the symmetry of the normal curve: 2Φ(z) − 1."
+            },
+            {
+                "name": "A",
+                "text_tex": "Expected number \\(={n|int}\\times{Q|raw}={A|sf3z}\\)",
+                "result": "n*Q",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Multiply the probability by the sample size."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original N(25, 4^2), sample of 500, within 4 of the mean, 341 (3 s.f.)"
+            },
+            {
+                "id": "rods",
+                "stem": "The lengths of metal rods are normally distributed with mean \\({mu|int}\\) cm and standard deviation \\({s|int}\\) cm. A random sample of \\({n|int}\\) rods is chosen. Given that \\(\\Phi({Z|raw})={PH|raw}\\), find the expected number of rods in the sample whose length is within \\({d|raw}\\) cm of the mean, correct to 3 significant figures."
+            },
+            {
+                "id": "bottles",
+                "stem": "The volume of juice in a bottle is normally distributed with mean \\({mu|int}\\) ml and standard deviation \\({s|int}\\) ml. In a batch of \\({n|int}\\) bottles, how many would you expect to contain a volume that differs from the mean by less than \\({d|raw}\\) ml? Use \\(\\Phi({Z|raw})={PH|raw}\\) and give your answer correct to 3 significant figures."
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-8.3"
+            ],
+            "topic": "The normal distribution",
+            "chapter": "S1-8",
+            "marks": 3,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-8-3.json",
+                "locator": "S1-8.3-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-8.3-QC2-gen",
+        "section": "S1-8.3",
+        "kind": "generated",
+        "title": "A normal probability inside a binomial probability",
+        "marks": 3,
+        "source": "Theory S1-8.3 Quick check 2; p = P(X > x), then P(exactly one of m) = m p (1 - p)^(m - 1)",
+        "params": [
+            {
+                "name": "mu",
+                "min": 20,
+                "max": 80,
+                "step": 1
+            },
+            {
+                "name": "s",
+                "min": 2,
+                "max": 10,
+                "step": 1
+            },
+            {
+                "name": "i",
+                "min": 0,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "m",
+                "min": 3,
+                "max": 4,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "Z": "[0.5,0.8,1,1.2,1.5,2][i]",
+            "PH": "[0.6915,0.7881,0.8413,0.8849,0.9332,0.9772][i]",
+            "x": "(mu*10+[5,8,10,12,15,20][i]*s)/10",
+            "p": "[0.3085,0.2119,0.1587,0.1151,0.0668,0.0228][i]",
+            "m1": "m-1",
+            "A": "m*[0.3085,0.2119,0.1587,0.1151,0.0668,0.0228][i]*math.pow(1-[0.3085,0.2119,0.1587,0.1151,0.0668,0.0228][i],m-1)"
+        },
+        "constraints": [
+            "s>1"
+        ],
+        "original": {
+            "mu": 50,
+            "s": 5,
+            "i": 2,
+            "m": 3
+        },
+        "stem": "The random variable \\(X\\) has the distribution \\(\\mathrm{N}({mu|int}, {s|int}^2)\\). Given that \\(\\Phi({Z|raw})={PH|raw}\\), find the probability that, of \\({m|int}\\) independent values of \\(X\\), exactly one is greater than \\({x|raw}\\).",
+        "answer": {
+            "expression": "m*p*math.pow(1-p,m-1)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "p",
+                "text_tex": "\\(P(X\\gt {x|raw})=1-\\Phi\\Bigl(\\dfrac{{x|raw}-{mu|int}}{{s|int}}\\Bigr)=1-\\Phi({Z|raw})={p|raw}\\)",
+                "result": "p",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Standardise and use the upper tail."
+            },
+            {
+                "name": "K",
+                "text_tex": "\\(P(\\text{exactly one})={m|int}\\times{p|raw}\\times(1-{p|raw})^{{m1|int}}\\)",
+                "result": "m",
+                "format": "int",
+                "mark": "M1",
+                "note": "Binomial probability with m trials: m p (1 − p)^(m − 1)."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(={A|sf3z}\\)",
+                "result": "m*p*math.pow(1-p,m-1)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original N(50, 5^2), 3 values, exactly one greater than 55, 0.337"
+            },
+            {
+                "id": "tins",
+                "stem": "The volume of paint in a tin is normally distributed with mean \\({mu|int}\\) ml and standard deviation \\({s|int}\\) ml. \\({m|int}\\) tins are chosen at random. Using \\(\\Phi({Z|raw})={PH|raw}\\), find the probability that exactly one of them contains more than \\({x|raw}\\) ml."
+            },
+            {
+                "id": "runners",
+                "stem": "The times taken by runners to complete a course are normally distributed with mean \\({mu|int}\\) minutes and standard deviation \\({s|int}\\) minutes. Given that \\(\\Phi({Z|raw})={PH|raw}\\), find the probability that exactly one of \\({m|int}\\) randomly chosen runners takes longer than \\({x|raw}\\) minutes."
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-8.3"
+            ],
+            "topic": "The normal distribution",
+            "chapter": "S1-8",
+            "marks": 3,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-8-3.json",
+                "locator": "S1-8.3-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-8.3-QC3-gen",
+        "section": "S1-8.3",
+        "kind": "generated",
+        "title": "Standard deviation from an observed count",
+        "marks": 3,
+        "source": "Theory S1-8.3 Quick check 3; c/N = P(X > x) gives z, then (x - mu)/sigma = z",
+        "params": [
+            {
+                "name": "mu",
+                "min": 20,
+                "max": 80,
+                "step": 1
+            },
+            {
+                "name": "d",
+                "min": 2,
+                "max": 20,
+                "step": 1
+            },
+            {
+                "name": "i",
+                "min": 0,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "name": "N",
+                "min": 200,
+                "max": 1000,
+                "step": 200
+            }
+        ],
+        "derived": {
+            "x": "mu+d",
+            "c": "N/200*[40,30,20,10,5,4][i]",
+            "T": "[0.2,0.15,0.1,0.05,0.025,0.02][i]",
+            "Z": "[0.842,1.036,1.282,1.645,1.96,2.054][i]",
+            "PH": "[0.8,0.85,0.9,0.95,0.975,0.98][i]",
+            "A": "d/[0.842,1.036,1.282,1.645,1.96,2.054][i]"
+        },
+        "constraints": [
+            "d>1"
+        ],
+        "original": {
+            "mu": 40,
+            "d": 6,
+            "i": 2,
+            "N": 400
+        },
+        "stem": "The values of a variable are normally distributed with mean \\({mu|int}\\) and standard deviation \\(\\sigma\\). In a random sample of \\({N|int}\\) values, \\({c|int}\\) were greater than \\({x|int}\\). Given that \\(\\Phi({Z|raw})={PH|raw}\\), estimate \\(\\sigma\\).",
+        "answer": {
+            "expression": "d/Z",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "T",
+                "text_tex": "\\(P(X\\gt {x|int})=\\dfrac{{c|int}}{{N|int}}={T|raw}\\), so \\(\\Phi(z)={PH|raw}\\) and \\(z={Z|raw}\\)",
+                "result": "Z",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Use the relative frequency as the probability and find z from the table."
+            },
+            {
+                "name": "K",
+                "text_tex": "\\(\\dfrac{{x|int}-{mu|int}}{\\sigma}={Z|raw}\\)",
+                "result": "d",
+                "format": "int",
+                "mark": "M1",
+                "note": "Equate the standardised value to z."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\sigma=\\dfrac{{d|int}}{{Z|raw}}={A|sf3z}\\)",
+                "result": "d/Z",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Solve for sigma."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original mean 40, 40 of 400 greater than 46, sigma = 4.68"
+            },
+            {
+                "id": "sugar",
+                "stem": "The masses, in grams, of bags of flour are normally distributed with mean \\({mu|int}\\) and standard deviation \\(\\sigma\\). In a random sample of \\({N|int}\\) bags, \\({c|int}\\) weighed more than \\({x|int}\\) grams. Using \\(\\Phi({Z|raw})={PH|raw}\\), estimate \\(\\sigma\\)."
+            },
+            {
+                "id": "exercise",
+                "stem": "The time, in minutes, that Lina spends reading each day is normally distributed with mean \\({mu|int}\\) and standard deviation \\(\\sigma\\). Over \\({N|int}\\) days she read for more than \\({x|int}\\) minutes on \\({c|int}\\) days. Given that \\(\\Phi({Z|raw})={PH|raw}\\), estimate \\(\\sigma\\)."
+            }
+        ],
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-8.3"
+            ],
+            "topic": "The normal distribution",
+            "chapter": "S1-8",
+            "marks": 3,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-8-3.json",
+                "locator": "S1-8.3-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "S1-8.3-PP-9709-51-MJ21-Q2",
+        "section": "S1-8.3",
+        "kind": "pastpaper",
+        "title": "Expected number of rods within 0.5 cm of the mean",
+        "marks": 5,
+        "source": {
+            "paper": "9709/51/M/J/21 Q2",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s21_qp_51.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s21_ms_51.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>A company produces a particular type of metal rod. The lengths of these rods are normally distributed with mean 25.2 cm and standard deviation 0.4 cm. A random sample of 500 of these rods is chosen.</p><p>How many rods in this sample would you expect to have a length that is within 0.5 cm of the mean length? [5]</p>",
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-8.3"
+            ],
+            "topic": "The normal distribution",
+            "chapter": "S1-8",
+            "marks": 5,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-8-3.json",
+                "locator": "S1-8.3-PP-9709-51-MJ21-Q2"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(P\\Bigl(\\dfrac{24.7-25.2}{0.4}\\lt Z\\lt \\dfrac{25.7-25.2}{0.4}\\Bigr)=P(-1.25\\lt Z\\lt 1.25)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, use of ± standardisation formula once; no continuity correction, σ², √σ."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(\\Phi(1.25)=0.8944\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, for AWRT 0.8944 SOI."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(2\\Phi(1.25)-1=2\\times0.8944-1\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, appropriate area 2Φ − 1 OE, from final process, must be probability."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(=0.7888\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, accept AWRT 0.789."
+            },
+            {
+                "name": "s5",
+                "text_tex": "Number of rods \\(=0.7888\\times500=394\\) or \\(395\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1FT, correct or FT their 4 s.f. (or better) probability; final answer must be a positive integer, not 394.0 or 395.0, only 1 answer."
+            }
+        ]
+    },
+    {
+        "id": "S1-8.3-PP-9709-52-MJ21-Q2",
+        "section": "S1-8.3",
+        "kind": "pastpaper",
+        "title": "Standard deviation from the number of heavy bags",
+        "marks": 4,
+        "source": {
+            "paper": "9709/52/M/J/21 Q2",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s21_qp_52.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_s21_ms_52.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>The weights of bags of sugar are normally distributed with mean 1.04 kg and standard deviation \\(\\sigma\\) kg. In a random sample of 2000 bags of sugar, 72 weighed more than 1.10 kg.</p><p>Find the value of \\(\\sigma\\). [4]</p>",
+        "tags": {
+            "course": "S1",
+            "subsections": [
+                "S1-8.3"
+            ],
+            "topic": "The normal distribution",
+            "chapter": "S1-8",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-S1-8-3.json",
+                "locator": "S1-8.3-PP-9709-52-MJ21-Q2"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(P(X\\gt 1.1)=\\dfrac{72}{2000}=0.036\\), so \\(z=1.798\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, 1.79 < z ⩽ 1.80 (or −1.80 ⩽ z < −1.79) seen."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(\\dfrac{1.1-1.04}{\\sigma}=1.798\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1, 1.1 and 1.04 substituted in ± standardisation formula; allow continuity correction, not σ² or √σ."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(\\sigma=\\dfrac{0.06}{1.798}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, equate their ± standardisation formula to a z-value and solve for the appropriate area leading to final answer (expect σ < 0.5)."
+            },
+            {
+                "name": "s4",
+                "text_tex": "\\(\\sigma=0.0334\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1, 0.03335 ⩽ σ ⩽ 0.0334, at least 3 s.f."
+            }
+        ]
+    }
+]

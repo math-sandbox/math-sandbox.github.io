@@ -1,0 +1,488 @@
+[
+    {
+        "id": "IGCSE-24.4-QC1-gen",
+        "section": "IGCSE-24.4",
+        "kind": "generated",
+        "title": "Conditional probability from a Venn diagram",
+        "marks": 2,
+        "source": "Theory IGCSE-24.4 Quick check 1; P(B given A) = n(A and B) / n(A)",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 12,
+                "step": 1
+            },
+            {
+                "name": "i",
+                "min": 1,
+                "max": 8,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 2,
+                "max": 12,
+                "step": 1
+            },
+            {
+                "name": "o",
+                "min": 1,
+                "max": 6,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "N": "a+i+b+o",
+            "nA": "a+i",
+            "nB": "b+i",
+            "u": "a+i+b",
+            "A": "i/(a+i)"
+        },
+        "constraints": [
+            "i>0"
+        ],
+        "original": {
+            "a": 9,
+            "i": 5,
+            "b": 4,
+            "o": 2
+        },
+        "stem": "A Venn diagram shows \\({a|int}\\) elements in \\(A\\) only, \\({i|int}\\) in \\(A\\cap B\\), \\({b|int}\\) in \\(B\\) only and \\({o|int}\\) outside \\(A\\cup B\\). An element is chosen at random from \\(A\\). Find the probability that it is also in \\(B\\).",
+        "answer": {
+            "expression": "i/nA",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "The choice is only from \\(A\\): \\(\\mathrm{n}(A)={a|int}+{i|int}={nA|int}\\)",
+                "result": "nA",
+                "format": "int",
+                "mark": "M1",
+                "note": "The given condition reduces the set of possible outcomes to A."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(P(B\\mid A)=\\dfrac{{i|int}}{{nA|int}}={A|sf3z}\\)",
+                "result": "i/nA",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Elements of A that are also in B."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 9, 5, 4, 2, probability 5/14"
+            },
+            {
+                "id": "films",
+                "stem": "In a group, \\({a|int}\\) people like films only, \\({i|int}\\) like films and music, \\({b|int}\\) like music only and \\({o|int}\\) like neither. A person is chosen at random from the people who like films. Find the probability that this person also likes music."
+            },
+            {
+                "id": "languages",
+                "stem": "Of some students, \\({a|int}\\) study French only, \\({i|int}\\) study French and Spanish, \\({b|int}\\) study Spanish only and \\({o|int}\\) study neither. One of the students who study French is picked at random. Find the probability that this student also studies Spanish."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-24.4"
+            ],
+            "topic": "Probability using tree diagrams and Venn diagrams",
+            "chapter": "IGCSE-24",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-24-4.json",
+                "locator": "IGCSE-24.4-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-24.4-QC2-gen",
+        "section": "IGCSE-24.4",
+        "kind": "generated",
+        "title": "Two of the same colour without replacement",
+        "marks": 2,
+        "source": "Theory IGCSE-24.4 Quick check 2; r/N x (r - 1)/(N - 1)",
+        "params": [
+            {
+                "name": "r",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "g",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "N": "r+g",
+            "r1": "r-1",
+            "N1": "r+g-1",
+            "A": "r*(r-1)/((r+g)*(r+g-1))"
+        },
+        "constraints": [
+            "r>1"
+        ],
+        "original": {
+            "r": 4,
+            "g": 6
+        },
+        "stem": "A bag contains \\({r|int}\\) red counters and \\({g|int}\\) green counters only. Two counters are taken at random without replacement. Find the probability that both counters are red.",
+        "answer": {
+            "expression": "r*(r-1)/(N*N1)",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "K",
+                "text_tex": "\\(P(\\text{red, red})=\\dfrac{{r|int}}{{N|int}}\\times\\dfrac{{r1|int}}{{N1|int}}\\)",
+                "result": "r1",
+                "format": "int",
+                "mark": "M1",
+                "note": "After one red is taken there is one fewer red and one fewer counter."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(={A|sf3z}\\)",
+                "result": "r*(r-1)/(N*N1)",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 4 red, 6 green, probability 12/90"
+            },
+            {
+                "id": "pens",
+                "stem": "A box contains \\({r|int}\\) black pens and \\({g|int}\\) blue pens only. Two pens are chosen at random without replacement. Find the probability that both pens are black."
+            },
+            {
+                "id": "sweets",
+                "stem": "A packet has \\({r|int}\\) strawberry sweets and \\({g|int}\\) lemon sweets. Mia eats two sweets chosen at random, one after the other. Find the probability that she eats two strawberry sweets."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-24.4"
+            ],
+            "topic": "Probability using tree diagrams and Venn diagrams",
+            "chapter": "IGCSE-24",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-24-4.json",
+                "locator": "IGCSE-24.4-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-24.4-QC3-gen",
+        "section": "IGCSE-24.4",
+        "kind": "generated",
+        "title": "Two different colours without replacement",
+        "marks": 3,
+        "source": "Theory IGCSE-24.4 Quick check 3; 2 x r/N x g/(N - 1)",
+        "params": [
+            {
+                "name": "r",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            },
+            {
+                "name": "g",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "N": "r+g",
+            "N1": "r+g-1",
+            "U": "r*g/((r+g)*(r+g-1))",
+            "A": "2*r*g/((r+g)*(r+g-1))"
+        },
+        "constraints": [
+            "r>1"
+        ],
+        "original": {
+            "r": 3,
+            "g": 5
+        },
+        "stem": "A bag contains \\({r|int}\\) red balls and \\({g|int}\\) white balls only. Two balls are taken at random without replacement. Find the probability that the two balls are different colours.",
+        "answer": {
+            "expression": "2*U",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "U",
+                "text_tex": "\\(P(\\text{red, white})=\\dfrac{{r|int}}{{N|int}}\\times\\dfrac{{g|int}}{{N1|int}}\\)",
+                "result": "U",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "One of the two paths."
+            },
+            {
+                "name": "V",
+                "text_tex": "\\(P(\\text{white, red})=\\dfrac{{g|int}}{{N|int}}\\times\\dfrac{{r|int}}{{N1|int}}\\)",
+                "result": "U",
+                "format": "sf3z",
+                "mark": "M1",
+                "note": "The other path has the same probability."
+            },
+            {
+                "name": "A",
+                "text_tex": "Total \\(=2\\times\\dfrac{{r|int}\\times{g|int}}{{N|int}\\times{N1|int}}={A|sf3z}\\)",
+                "result": "2*U",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Add the two paths."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 3 red, 5 white, probability 30/56"
+            },
+            {
+                "id": "socks",
+                "stem": "A drawer contains \\({r|int}\\) grey socks and \\({g|int}\\) black socks. Two socks are taken out at random without replacement. Find the probability that they are different colours."
+            },
+            {
+                "id": "cards",
+                "stem": "A set of cards has \\({r|int}\\) red cards and \\({g|int}\\) blue cards. Two cards are dealt at random without replacement. Find the probability that one card is red and the other is blue."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-24.4"
+            ],
+            "topic": "Probability using tree diagrams and Venn diagrams",
+            "chapter": "IGCSE-24",
+            "marks": 3,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-24-4.json",
+                "locator": "IGCSE-24.4-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-24.4-PP-0580-22-ON16-Q15",
+        "section": "IGCSE-24.4",
+        "kind": "pastpaper",
+        "title": "Films, music and reading",
+        "marks": 4,
+        "source": {
+            "paper": "0580/22/O/N/16 Q15",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w16_qp_22.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w16_ms_22.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p><svg viewBox=\"0 0 380 260\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"ig244a-t ig244a-d\" style=\"width:100%;max-width:380px;height:auto\"><title id=\"ig244a-t\">Venn diagram for films, music and reading</title><desc id=\"ig244a-d\">Venn diagram with sets F, M and R. F only 8, F and M only 2, M only 4, all three 3, F and R only 1, M and R only 0, R only 2, outside 2.</desc><rect x=\"10\" y=\"10\" width=\"360\" height=\"240\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.3\"/><text x=\"18\" y=\"30\" font-size=\"14\" font-family=\"serif\">ℰ</text><circle cx=\"150\" cy=\"95\" r=\"62\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.3\"/><circle cx=\"230\" cy=\"95\" r=\"62\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.3\"/><circle cx=\"190\" cy=\"160\" r=\"62\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.3\"/><text x=\"92\" y=\"44\" font-size=\"14\" font-family=\"serif\" font-style=\"italic\">F</text><text x=\"280\" y=\"44\" font-size=\"14\" font-family=\"serif\" font-style=\"italic\">M</text><text x=\"196\" y=\"240\" font-size=\"14\" font-family=\"serif\" font-style=\"italic\">R</text><text x=\"122.0\" y=\"84.0\" font-size=\"14\" font-family=\"serif\" text-anchor=\"middle\">8</text><text x=\"190.0\" y=\"74.0\" font-size=\"14\" font-family=\"serif\" text-anchor=\"middle\">2</text><text x=\"258.0\" y=\"84.0\" font-size=\"14\" font-family=\"serif\" text-anchor=\"middle\">4</text><text x=\"155.0\" y=\"139.0\" font-size=\"14\" font-family=\"serif\" text-anchor=\"middle\">1</text><text x=\"190.0\" y=\"119.0\" font-size=\"14\" font-family=\"serif\" text-anchor=\"middle\">3</text><text x=\"225.0\" y=\"139.0\" font-size=\"14\" font-family=\"serif\" text-anchor=\"middle\">0</text><text x=\"190.0\" y=\"189.0\" font-size=\"14\" font-family=\"serif\" text-anchor=\"middle\">2</text><text x=\"340.0\" y=\"204.0\" font-size=\"14\" font-family=\"serif\" text-anchor=\"middle\">2</text></svg></p><p>The Venn diagram shows the number of people who like films \\((F)\\), music \\((M)\\) and reading \\((R)\\).</p><p>(a) Find</p><p>(i) \\(\\mathrm{n}(M)\\), [1]</p><p>(ii) \\(\\mathrm{n}(R\\cup M)\\). [1]</p><p>(b) A person is chosen at random from the people who like films.</p><p>Write down the probability that this person also likes music. [1]</p><p>(c) On the Venn diagram, shade \\(M'\\cap(F\\cup R)\\). [1]</p>",
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-24.4"
+            ],
+            "topic": "Probability using tree diagrams and Venn diagrams",
+            "chapter": "IGCSE-24",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-24-4.json",
+                "locator": "IGCSE-24.4-PP-0580-22-ON16-Q15"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a)(i) \\(2+4+3+0=9\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: 9, 1."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(a)(ii) \\(12\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: 12, 1."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(b) \\(\\dfrac{2+3}{8+2+3+1}=\\dfrac{5}{14}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: 5/14, 1."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(c) The regions of \\(F\\) and \\(R\\) that are outside \\(M\\) shaded (\\(F\\) only, \\(R\\) only, and \\(F\\cap R\\) outside \\(M\\))",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: 1; diagram with F only, R only and the part of F ∩ R outside M shaded."
+            }
+        ]
+    },
+    {
+        "id": "IGCSE-24.4-PP-0580-22-MJ24-Q23",
+        "section": "IGCSE-24.4",
+        "kind": "pastpaper",
+        "title": "Students studying three languages",
+        "marks": 3,
+        "source": {
+            "paper": "0580/22/M/J/24 Q23",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s24_qp_22.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s24_ms_22.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p><svg viewBox=\"0 0 380 260\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"ig244b-t ig244b-d\" style=\"width:100%;max-width:380px;height:auto\"><title id=\"ig244b-t\">Venn diagram for English, French and Spanish</title><desc id=\"ig244b-d\">Venn diagram with sets E, F and S. E only 8, E and F only 1, F only 6, all three 1, E and S only 2, F and S only 3, S only 4, outside 5.</desc><rect x=\"10\" y=\"10\" width=\"360\" height=\"240\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.3\"/><text x=\"18\" y=\"30\" font-size=\"14\" font-family=\"serif\">ℰ</text><circle cx=\"150\" cy=\"95\" r=\"62\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.3\"/><circle cx=\"230\" cy=\"95\" r=\"62\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.3\"/><circle cx=\"190\" cy=\"160\" r=\"62\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.3\"/><text x=\"92\" y=\"44\" font-size=\"14\" font-family=\"serif\" font-style=\"italic\">E</text><text x=\"280\" y=\"44\" font-size=\"14\" font-family=\"serif\" font-style=\"italic\">F</text><text x=\"196\" y=\"240\" font-size=\"14\" font-family=\"serif\" font-style=\"italic\">S</text><text x=\"122.0\" y=\"84.0\" font-size=\"14\" font-family=\"serif\" text-anchor=\"middle\">8</text><text x=\"190.0\" y=\"74.0\" font-size=\"14\" font-family=\"serif\" text-anchor=\"middle\">1</text><text x=\"258.0\" y=\"84.0\" font-size=\"14\" font-family=\"serif\" text-anchor=\"middle\">6</text><text x=\"155.0\" y=\"139.0\" font-size=\"14\" font-family=\"serif\" text-anchor=\"middle\">2</text><text x=\"190.0\" y=\"119.0\" font-size=\"14\" font-family=\"serif\" text-anchor=\"middle\">1</text><text x=\"225.0\" y=\"139.0\" font-size=\"14\" font-family=\"serif\" text-anchor=\"middle\">3</text><text x=\"190.0\" y=\"189.0\" font-size=\"14\" font-family=\"serif\" text-anchor=\"middle\">4</text><text x=\"340.0\" y=\"204.0\" font-size=\"14\" font-family=\"serif\" text-anchor=\"middle\">5</text></svg></p><p>The Venn diagram shows information about the number of students in a class.</p><p>Some study English \\((E)\\), some study French \\((F)\\), some study Spanish \\((S)\\) and some do not study any of these languages.</p><p>(a) Find \\(\\mathrm{n}\\bigl((E\\cup F)'\\cup S\\bigr)\\). [1]</p><p>(b) One student is picked at random from those who study Spanish.</p><p>Find the probability that this student studies exactly two languages. [2]</p>",
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-24.4"
+            ],
+            "topic": "Probability using tree diagrams and Venn diagrams",
+            "chapter": "IGCSE-24",
+            "marks": 3,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-24-4.json",
+                "locator": "IGCSE-24.4-PP-0580-22-MJ24-Q23"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) \\(4+5+2+1+3=15\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: 15, 1."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(b) \\(\\dfrac{2+3}{2+1+3+4}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1 for (2 + 3)/(2 + 1 + 3 + 4) oe or 1 − (4 + 1)/(2 + 1 + 3 + 4) oe, with either the numerator or denominator correct."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(b) \\(=\\dfrac{1}{2}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: 1/2 oe nfww, 2 marks."
+            }
+        ]
+    },
+    {
+        "id": "IGCSE-24.4-PP-0580-21-MJ18-Q20",
+        "section": "IGCSE-24.4",
+        "kind": "pastpaper",
+        "title": "Pens chosen without replacement",
+        "marks": 4,
+        "source": {
+            "paper": "0580/21/M/J/18 Q20",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s18_qp_21.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_s18_ms_21.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>(a) A box contains 3 blue pens, 4 red pens and 8 green pens only.</p><p>A pen is chosen at random from the box.</p><p>Find the probability that this pen is green. [1]</p><p>(b) Another box contains 7 black pens and 8 orange pens only.</p><p>Two pens are chosen at random from this box without replacement.</p><p>Calculate the probability that at least one orange pen is chosen. [3]</p>",
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-24.4"
+            ],
+            "topic": "Probability using tree diagrams and Venn diagrams",
+            "chapter": "IGCSE-24",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-24-4.json",
+                "locator": "IGCSE-24.4-PP-0580-21-MJ18-Q20"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a) \\(\\dfrac{8}{15}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: 8/15 oe, 1."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(b) \\(P(\\text{no orange})=\\dfrac{7}{15}\\times\\dfrac{6}{14}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: 168/210 oe, 3 marks; M2 for 1 − 7/15 × 6/14 oe or 3(7 × 8/(15 × 14)) oe; or M1 for 7/15 × 6/14 or 7/15 × 8/14 or 8/15 × 7/14 oe."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(b) \\(1-\\dfrac{7}{15}\\times\\dfrac{6}{14}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: second method mark of M2 for 1 − 7/15 × 6/14 oe."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(b) \\(=\\dfrac{168}{210}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: 168/210 oe."
+            }
+        ]
+    }
+]

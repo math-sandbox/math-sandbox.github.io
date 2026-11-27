@@ -2,21 +2,22 @@
   "generated": "2026-11-26",
   "note": "Index only. Task text lives in the source files listed on each record.",
   "stats": {
-    "total": 1841,
+    "total": 2038,
     "byCourse": {
-      "IGCSE": 488,
-      "AS": 689,
-      "A2": 664
+      "IGCSE": 525,
+      "AS": 791,
+      "A2": 722
     },
     "byType": {
-      "pp": 231,
-      "fixed": 888,
-      "generator": 722
+      "pp": 263,
+      "fixed": 991,
+      "generator": 784
     },
     "mergedDuplicates": 9,
-    "igcseP4SelfContained": 22,
+    "igcseP4SelfContained": 23,
     "igcseP4ByChapter": {
       "IGCSE-18": 5,
+      "IGCSE-24": 1,
       "IGCSE-14": 6,
       "IGCSE-19": 3,
       "IGCSE-20": 5,
@@ -33,10 +34,13 @@
     "IGCSE-18.5-q3": "IGCSE-18.5-we2",
     "P1-1.8-q2": "P1-1.8-we2",
     "S2-4.2-q4": "S2-4.2-we3",
+    "IGCSE-24.2-PP-0580-21-MJ16-Q19": "0580/21/M/J/16 Q19",
     "IGCSE-21.4-PP-0580-21-MJ18-Q17": "0580/21/M/J/18 Q17",
+    "IGCSE-24.4-PP-0580-21-MJ18-Q20": "0580/21/M/J/18 Q20",
     "IGCSE-21.6-PP-0580-21-MJ20-Q16": "0580/21/M/J/20 Q16",
     "IGCSE-22.1-PP-0580-21-MJ25-Q18": "0580/21/M/J/25 Q18",
     "IGCSE-23.3-PP-0580-21-MJ25-Q8": "0580/21/M/J/25 Q8",
+    "IGCSE-24.3-PP-0580-21-ON16-Q22": "0580/21/O/N/16 Q22",
     "IGCSE-23.2-PP-0580-21-ON17-Q16": "0580/21/O/N/17 Q16",
     "IGCSE-22.3-PP-0580-21-ON19-Q24": "0580/21/O/N/19 Q24",
     "IGCSE-23.1-PP-0580-21-ON25-Q5": "0580/21/O/N/25 Q5",
@@ -46,6 +50,8 @@
     "IGCSE-21.3-PP-0580-22-FM24-Q14": "0580/22/F/M/24 Q14",
     "IGCSE-21.2-PP-0580-22-MJ16-Q7": "0580/22/M/J/16 Q7",
     "IGCSE-23.3-PP-0580-22-MJ23-Q9": "0580/22/M/J/23 Q9",
+    "IGCSE-24.4-PP-0580-22-MJ24-Q23": "0580/22/M/J/24 Q23",
+    "IGCSE-24.4-PP-0580-22-ON16-Q15": "0580/22/O/N/16 Q15",
     "IGCSE-15.2-PP-0580-22-ON19-Q8": "0580/22/O/N/19 Q8",
     "IGCSE-21.1-PP-0580-22-ON20-Q12": "0580/22/O/N/20 Q12",
     "IGCSE-21.5-PP-0580-22-ON22-Q5": "0580/22/O/N/22 Q5",
@@ -73,6 +79,7 @@
     "17.1-PP-0580-33-MJ22-Q9a1": "0580/33/M/J/22 Q9(a)(i)",
     "IGCSE-17.1-PP-0580-33-MJ22-Q9a1": "0580/33/M/J/22 Q9(a)(i)",
     "IGCSE-18.7-PP-0580-41-MJ21-Q7": "0580/41/M/J/21 Q7",
+    "IGCSE-24.2-PP-0580-41-ON16-Q7": "0580/41/O/N/16 Q7",
     "IGCSE-14.6-PP-0580-41-ON19-Q7cii": "0580/41/O/N/19 Q7(c)(ii)",
     "IGCSE-14.3-PP-0580-41-ON19-Q9a": "0580/41/O/N/19 Q9(a)",
     "IGCSE-18.7-PP-0580-41-ON20-Q10": "0580/41/O/N/20 Q10",
@@ -98,6 +105,7 @@
     "IGCSE-19.4-PP-0580-43-ON21-Q2": "0580/43/O/N/21 Q2",
     "IGCSE-14.7-PP-0580-43-ON21-Q4e": "0580/43/O/N/21 Q4(e)",
     "P1-5.3-PP-9709-11-MJ10-Q1": "9709/11/M/J/10 Q1",
+    "P1-9.7-PP-9709-11-MJ10-Q4": "9709/11/M/J/10 Q4",
     "P1-5.3-PP-9709-11-MJ15-Q1": "9709/11/M/J/15 Q1",
     "P1-5.4-PP-9709-11-MJ17-Q5": "9709/11/M/J/17 Q5",
     "P1-8.4-PP-9709-11-MJ18-Q2": "9709/11/M/J/18 Q2",
@@ -115,16 +123,20 @@
     "P1-8.2-PP-9709-11-ON22-Q3": "9709/11/O/N/22 Q3",
     "P1-6.1-PP-9709-11-ON23-Q1": "9709/11/O/N/23 Q1",
     "P1-6.5-PP-9709-11-ON23-Q7": "9709/11/O/N/23 Q7",
+    "P1-9.2-PP-9709-12-FM16-Q2": "9709/12/F/M/16 Q2",
     "P1-5.5-PP-9709-12-FM16-Q4": "9709/12/F/M/16 Q4",
     "P1-8.3-PP-9709-12-FM16-Q6": "9709/12/F/M/16 Q6",
     "P23-9.3-PP-9709-12-FM17-Q6": "9709/12/F/M/17 Q6",
     "P1-6.2-PP-9709-12-FM19-Q1": "9709/12/F/M/19 Q1",
+    "P1-9.9-PP-9709-12-FM20-Q3": "9709/12/F/M/20 Q3",
     "P1-8.4-PP-9709-12-FM20-Q4": "9709/12/F/M/20 Q4",
     "P1-2.3-PP-9709-12-FM20-Q9b": "9709/12/F/M/20 Q9(b)",
     "P1-2.8-PP-9709-12-FM23-Q2": "9709/12/F/M/23 Q2",
     "P1-6.4-PP-9709-12-FM23-Q4": "9709/12/F/M/23 Q4",
+    "P1-9.8-PP-9709-12-FM24-Q1": "9709/12/F/M/24 Q1",
     "P1-7.3-PP-9709-12-FM24-Q5": "9709/12/F/M/24 Q5",
     "P1-8.3-PP-9709-12-MJ10-Q8": "9709/12/M/J/10 Q8",
+    "P1-9.9-PP-9709-12-MJ12-Q1": "9709/12/M/J/12 Q1",
     "P23-9.3-PP-9709-12-MJ13-Q6": "9709/12/M/J/13 Q6",
     "P1-5.3-PP-9709-12-MJ14-Q3": "9709/12/M/J/14 Q3",
     "P1-1.7-PP-9709-12-MJ16-Q11i": "9709/12/M/J/16 Q11(i)",
@@ -132,16 +144,22 @@
     "P1-5.6-PP-9709-12-MJ18-Q10": "9709/12/M/J/18 Q10",
     "P1-7.1-PP-9709-12-MJ21-Q3": "9709/12/M/J/21 Q3",
     "P1-2.2-PP-9709-12-MJ21-Q5a": "9709/12/M/J/21 Q5(a)",
+    "P1-9.7-PP-9709-12-MJ22-Q6": "9709/12/M/J/22 Q6",
+    "P1-9.3-PP-9709-12-MJ23-Q1": "9709/12/M/J/23 Q1",
+    "P1-9.6-PP-9709-12-MJ23-Q5": "9709/12/M/J/23 Q5",
     "P1-6.1-PP-9709-12-ON10-Q1": "9709/12/O/N/10 Q1",
     "P1-5.7-PP-9709-12-ON10-Q2": "9709/12/O/N/10 Q2",
     "P1-4.1-PP-9709-12-ON10-Q4i": "9709/12/O/N/10 Q4(i)",
     "P1-1.9-PP-9709-12-ON10-Q6": "9709/12/O/N/10 Q6",
     "P1-5.1-PP-9709-12-ON13-Q1": "9709/12/O/N/13 Q1",
+    "P1-9.3-PP-9709-12-ON16-Q1": "9709/12/O/N/16 Q1",
+    "P1-9.5-PP-9709-12-ON18-Q2": "9709/12/O/N/18 Q2",
     "P1-5.4-PP-9709-12-ON20-Q11": "9709/12/O/N/20 Q11",
     "P1-6.5-PP-9709-12-ON21-Q6": "9709/12/O/N/21 Q6",
     "P1-1.8-PP-9709-12-ON22-Q3a": "9709/12/O/N/22 Q3(a)",
     "P1-6.4-PP-9709-12-ON22-Q4": "9709/12/O/N/22 Q4",
     "P1-1.2-PP-9709-12-ON22-Q6ab": "9709/12/O/N/22 Q6(a)(b)",
+    "P1-9.5-PP-9709-13-MJ11-Q4": "9709/13/M/J/11 Q4",
     "P1-6.6-PP-9709-13-MJ14-Q2": "9709/13/M/J/14 Q2",
     "P1-1.6-PP-9709-13-MJ15-Q1": "9709/13/M/J/15 Q1",
     "P1-4.1-PP-9709-13-MJ15-Q11iii": "9709/13/M/J/15 Q11(iii)",
@@ -153,6 +171,7 @@
     "P1-5.6-PP-9709-13-ON22-Q1": "9709/13/O/N/22 Q1",
     "P1-2.1-PP-9709-13-ON22-Q2ab": "9709/13/O/N/22 Q2(a)(b)",
     "P1-5.5-PP-9709-13-ON22-Q6": "9709/13/O/N/22 Q6",
+    "P1-9.2-PP-9709-13-ON23-Q1": "9709/13/O/N/23 Q1",
     "P23-4.4-PP-9709-21-MJ16-Q1": "9709/21/M/J/16 Q1",
     "P23-5.3-PP-9709-21-MJ16-Q7a": "9709/21/M/J/16 Q7(a)",
     "P23-5.4-PP-9709-21-MJ19-Q4a": "9709/21/M/J/19 Q4(a)",
@@ -189,16 +208,23 @@
     "P23-10.1-PP-9709-31-MJ22-Q4": "9709/31/M/J/22 Q4",
     "P23-8.4-PP-9709-31-MJ24-Q8": "9709/31/M/J/24 Q8",
     "P23-10.2-PP-9709-31-ON19-Q4": "9709/31/O/N/19 Q4",
+    "P23-11.5-PP-9709-31-ON20-Q2": "9709/31/O/N/20 Q2",
     "P23-7.5-PP-9709-31-ON20-Q9": "9709/31/O/N/20 Q9",
+    "P23-11.3-PP-9709-31-ON22-Q5": "9709/31/O/N/22 Q5",
+    "P23-11.2-PP-9709-32-FM22-Q6": "9709/32/F/M/22 Q6",
     "P23-10.1-PP-9709-32-MJ12-Q5": "9709/32/M/J/12 Q5",
     "P23-7.3-PP-9709-32-MJ16-Q2": "9709/32/M/J/16 Q2",
     "P23-8.3-PP-9709-32-MJ18-Q4": "9709/32/M/J/18 Q4",
     "P23-8.6-PP-9709-32-MJ21-Q4": "9709/32/M/J/21 Q4",
+    "P23-11.4-PP-9709-32-MJ21-Q5": "9709/32/M/J/21 Q5",
     "P23-10.2-PP-9709-32-MJ21-Q7": "9709/32/M/J/21 Q7",
     "P23-9.5-PP-9709-32-MJ23-Q11": "9709/32/M/J/23 Q11",
+    "P23-11.5-PP-9709-32-MJ23-Q3": "9709/32/M/J/23 Q3",
+    "P23-11.3-PP-9709-32-MJ23-Q5": "9709/32/M/J/23 Q5",
     "P23-8.3-PP-9709-32-ON18-Q7": "9709/32/O/N/18 Q7",
     "P23-8.5-PP-9709-32-ON19-Q8": "9709/32/O/N/19 Q8",
     "P23-8.7-PP-9709-32-ON20-Q9": "9709/32/O/N/20 Q9",
+    "P23-11.2-PP-9709-32-ON21-Q3": "9709/32/O/N/21 Q3",
     "P23-7.4-PP-9709-33-MJ12-Q1": "9709/33/M/J/12 Q1",
     "P23-7.4-PP-9709-33-MJ17-Q2": "9709/33/M/J/17 Q2",
     "P23-8.6-PP-9709-33-MJ20-Q2": "9709/33/M/J/20 Q2",
@@ -210,23 +236,30 @@
     "P23-8.5-PP-9709-33-ON10-Q5": "9709/33/O/N/10 Q5",
     "P23-8.2-PP-9709-33-ON22-Q11": "9709/33/O/N/22 Q11",
     "P23-9.5-PP-9709-33-ON23-Q11": "9709/33/O/N/23 Q11",
+    "P23-11.4-PP-9709-33-ON23-Q4": "9709/33/O/N/23 Q4",
     "P23-8.2-PP-9709-33-ON24-Q9": "9709/33/O/N/24 Q9",
     "S1-5.2-PP-9709-51-MJ20-Q2": "9709/51/M/J/20 Q2",
     "S1-5.3-PP-9709-51-MJ20-Q4": "9709/51/M/J/20 Q4",
     "S1-5.3-PP-9709-51-MJ21-Q1": "9709/51/M/J/21 Q1",
+    "S1-8.3-PP-9709-51-MJ21-Q2": "9709/51/M/J/21 Q2",
     "S1-6.3-PP-9709-51-ON22-Q1": "9709/51/O/N/22 Q1",
     "S1-5.2-PP-9709-52-FM20-Q4": "9709/52/F/M/20 Q4",
     "S1-7.1-PP-9709-52-FM22-Q2": "9709/52/F/M/22 Q2",
     "S1-5.4-PP-9709-52-FM22-Q5": "9709/52/F/M/22 Q5",
     "S1-7.2-PP-9709-52-MJ21-Q1": "9709/52/M/J/21 Q1",
+    "S1-8.3-PP-9709-52-MJ21-Q2": "9709/52/M/J/21 Q2",
     "S1-5.4-PP-9709-52-MJ21-Q6": "9709/52/M/J/21 Q6",
     "S1-6.3-PP-9709-52-ON23-Q1": "9709/52/O/N/23 Q1",
+    "S1-8.4-PP-9709-52-ON23-Q3": "9709/52/O/N/23 Q3",
     "S1-6.1-PP-9709-53-MJ21-Q2": "9709/53/M/J/21 Q2",
     "S1-7.2-PP-9709-53-MJ23-Q1": "9709/53/M/J/23 Q1",
+    "S1-8.4-PP-9709-53-ON22-Q2": "9709/53/O/N/22 Q2",
     "S1-8.2-PP-9709-61-MJ14-Q1": "9709/61/M/J/14 Q1",
     "S1-6.2-PP-9709-61-ON12-Q1": "9709/61/O/N/12 Q1",
     "S1-1.3-PP-9709-61-ON15-Q3i": "9709/61/O/N/15 Q3(i)",
+    "S2-6.4-PP-9709-62-FM24-Q2": "9709/62/F/M/24 Q2",
     "S1-6.1-PP-9709-62-ON10-Q1": "9709/62/O/N/10 Q1",
+    "S2-6.4-PP-9709-62-ON20-Q2": "9709/62/O/N/20 Q2",
     "S2-5.1-PP-9709-62-ON21-Q2": "9709/62/O/N/21 Q2",
     "S2-6.2-PP-9709-62-ON22-Q2": "9709/62/O/N/22 Q2",
     "S1-4.3-PP-9709-63-MJ13-Q1": "9709/63/M/J/13 Q1",
@@ -255,11 +288,11 @@
     "P23-3.2-PP-9709-21-ON11-Q8i": "Expand cos(2x+x) to obtain the triple-angle formula",
     "P23-3.5-PP-9709-21-ON15-Q3i": "Express 8 sin theta + 15 cos theta in R-form",
     "IGCSE-15.8-PP-0580-22-MJ23-Q17": "Find the included angle from the area",
-    "QC1": "S2-6.3-q1",
-    "QC2": "S2-6.3-q2",
-    "QC3": "S2-6.3-q3",
-    "WE1": "S2-6.3-we1",
-    "WE2": "S2-6.3-we2",
+    "QC1": "S2-6.4-q1",
+    "QC2": "S2-6.4-q2",
+    "QC3": "S2-6.4-q3",
+    "WE1": "S2-6.4-we1",
+    "WE2": "S2-6.4-we2",
     "IGCSE-1-0": "IGCSE-14.1-g0",
     "IGCSE-1-1": "IGCSE-14.1-g1",
     "IGCSE-1-2": "IGCSE-14.1-g2",
@@ -424,6 +457,31 @@
   },
   "records": [
     {
+      "id": "0580/21/M/J/16 Q19",
+      "aliases": [
+        "IGCSE-24.2-PP-0580-21-MJ16-Q19"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.2"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-24.2-PP-0580-21-MJ16::the probability of a cricket team winning or losing in their first two matches i",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-24-2.json",
+        "locator": "IGCSE-24.2-PP-0580-21-MJ16-Q19",
+        "paper": "0580/21/M/J/16 Q19"
+      }
+    },
+    {
       "id": "0580/21/M/J/18 Q17",
       "aliases": [
         "IGCSE-21.4-PP-0580-21-MJ18-Q17"
@@ -446,6 +504,31 @@
         "path": "data/tasks-IGCSE-21-4.json",
         "locator": "IGCSE-21.4-PP-0580-21-MJ18-Q17",
         "paper": "0580/21/M/J/18 Q17"
+      }
+    },
+    {
+      "id": "0580/21/M/J/18 Q20",
+      "aliases": [
+        "IGCSE-24.4-PP-0580-21-MJ18-Q20"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.4"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 4,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": true,
+      "family": "IGCSE-24.4-PP-0580-21-MJ18::a box contains n blue pens n red pens and n green pens only a pen is chosen at r",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-24-4.json",
+        "locator": "IGCSE-24.4-PP-0580-21-MJ18-Q20",
+        "paper": "0580/21/M/J/18 Q20"
       }
     },
     {
@@ -521,6 +604,31 @@
         "path": "data/tasks-IGCSE-23-3.json",
         "locator": "IGCSE-23.3-PP-0580-21-MJ25-Q8",
         "paper": "0580/21/M/J/25 Q8"
+      }
+    },
+    {
+      "id": "0580/21/O/N/16 Q22",
+      "aliases": [
+        "IGCSE-24.3-PP-0580-21-ON16-Q22"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.3"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 4,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": true,
+      "family": "IGCSE-24.3-PP-0580-21-ON16::n e n n a n n b n n a b n empty venn diagram for sets a and b venn diagram with ",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-24-3.json",
+        "locator": "IGCSE-24.3-PP-0580-21-ON16-Q22",
+        "paper": "0580/21/O/N/16 Q22"
       }
     },
     {
@@ -746,6 +854,56 @@
         "path": "data/tasks-IGCSE-23-3.json",
         "locator": "IGCSE-23.3-PP-0580-22-MJ23-Q9",
         "paper": "0580/22/M/J/23 Q9"
+      }
+    },
+    {
+      "id": "0580/22/M/J/24 Q23",
+      "aliases": [
+        "IGCSE-24.4-PP-0580-22-MJ24-Q23"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.4"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": true,
+      "family": "IGCSE-24.4-PP-0580-22-MJ24::venn diagram for english french and spanish venn diagram with sets e f and s e o",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-24-4.json",
+        "locator": "IGCSE-24.4-PP-0580-22-MJ24-Q23",
+        "paper": "0580/22/M/J/24 Q23"
+      }
+    },
+    {
+      "id": "0580/22/O/N/16 Q15",
+      "aliases": [
+        "IGCSE-24.4-PP-0580-22-ON16-Q15"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.4"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 4,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": true,
+      "family": "IGCSE-24.4-PP-0580-22-ON16::venn diagram for films music and reading venn diagram with sets f m and r f only",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-24-4.json",
+        "locator": "IGCSE-24.4-PP-0580-22-ON16-Q15",
+        "paper": "0580/22/O/N/16 Q15"
       }
     },
     {
@@ -1352,6 +1510,31 @@
       }
     },
     {
+      "id": "0580/41/O/N/16 Q7",
+      "aliases": [
+        "IGCSE-24.2-PP-0580-41-ON16-Q7"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.2"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 7,
+      "difficulty": "hard",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": true,
+      "family": "IGCSE-24.2-PP-0580-41-ON16::a train stops at station a and then at station b if the train is late at station",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-24-2.json",
+        "locator": "IGCSE-24.2-PP-0580-41-ON16-Q7",
+        "paper": "0580/41/O/N/16 Q7"
+      }
+    },
+    {
       "id": "0580/41/O/N/19 Q7(c)(ii)",
       "aliases": [
         "IGCSE-14.6-PP-0580-41-ON19-Q7cii"
@@ -1905,6 +2088,31 @@
       }
     },
     {
+      "id": "9709/11/M/J/10 Q4",
+      "aliases": [
+        "P1-9.7-PP-9709-11-MJ10-Q4"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.7"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 6,
+      "difficulty": "hard",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.7-PP-9709-11-MJ10::curve y nx x and the line y n graph of y nx x and the line y n the region above ",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-7.json",
+        "locator": "P1-9.7-PP-9709-11-MJ10-Q4",
+        "paper": "9709/11/M/J/10 Q4"
+      }
+    },
+    {
       "id": "9709/11/M/J/15 Q1",
       "aliases": [
         "P1-5.3-PP-9709-11-MJ15-Q1"
@@ -2330,6 +2538,31 @@
       }
     },
     {
+      "id": "9709/12/F/M/16 Q2",
+      "aliases": [
+        "P1-9.2-PP-9709-12-FM16-Q2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.2"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 4,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.2-PP-9709-12-FM16::a curve for which dy dx nx n n x n passes through n n find the equation of the c",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-2.json",
+        "locator": "P1-9.2-PP-9709-12-FM16-Q2",
+        "paper": "9709/12/F/M/16 Q2"
+      }
+    },
+    {
       "id": "9709/12/F/M/16 Q4",
       "aliases": [
         "P1-5.5-PP-9709-12-FM16-Q4"
@@ -2427,6 +2660,31 @@
         "path": "data/tasks-P1-6-2.json",
         "locator": "P1-6.2-PP-9709-12-FM19-Q1",
         "paper": "9709/12/F/M/19 Q1"
+      }
+    },
+    {
+      "id": "9709/12/F/M/20 Q3",
+      "aliases": [
+        "P1-9.9-PP-9709-12-FM20-Q3"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.9"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 4,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.9-PP-9709-12-FM20::curve y x n and the line y n graph of y x n for x n crossing the y axis at n and",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-9.json",
+        "locator": "P1-9.9-PP-9709-12-FM20-Q3",
+        "paper": "9709/12/F/M/20 Q3"
       }
     },
     {
@@ -2530,6 +2788,31 @@
       }
     },
     {
+      "id": "9709/12/F/M/24 Q1",
+      "aliases": [
+        "P1-9.8-PP-9709-12-FM24-Q1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.8"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.8-PP-9709-12-FM24::find the exact value of n n x n dx",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-8.json",
+        "locator": "P1-9.8-PP-9709-12-FM24-Q1",
+        "paper": "9709/12/F/M/24 Q1"
+      }
+    },
+    {
       "id": "9709/12/F/M/24 Q5",
       "aliases": [
         "P1-7.3-PP-9709-12-FM24-Q5"
@@ -2577,6 +2860,31 @@
         "path": "data/tasks-P1-8-3.json",
         "locator": "P1-8.3-PP-9709-12-MJ10-Q8",
         "paper": "9709/12/M/J/10 Q8"
+      }
+    },
+    {
+      "id": "9709/12/M/J/12 Q1",
+      "aliases": [
+        "P1-9.9-PP-9709-12-MJ12-Q1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.9"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 4,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.9-PP-9709-12-MJ12::curve y n nx n between x n and x n graph of y n nx n between x n and x n with ve",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-9.json",
+        "locator": "P1-9.9-PP-9709-12-MJ12-Q1",
+        "paper": "9709/12/M/J/12 Q1"
       }
     },
     {
@@ -2755,6 +3063,81 @@
       }
     },
     {
+      "id": "9709/12/M/J/22 Q6",
+      "aliases": [
+        "P1-9.7-PP-9709-12-MJ22-Q6"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.7"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 5,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.7-PP-9709-12-MJ22::curve y nx n n and the line y nx n graph of y nx n n and the line y nx n which m",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-7.json",
+        "locator": "P1-9.7-PP-9709-12-MJ22-Q6",
+        "paper": "9709/12/M/J/22 Q6"
+      }
+    },
+    {
+      "id": "9709/12/M/J/23 Q1",
+      "aliases": [
+        "P1-9.3-PP-9709-12-MJ23-Q1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.3"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.3-PP-9709-12-MJ23::the equation of a curve is such that dy dx n x n n for x n the curve passes thro",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-3.json",
+        "locator": "P1-9.3-PP-9709-12-MJ23-Q1",
+        "paper": "9709/12/M/J/23 Q1"
+      }
+    },
+    {
+      "id": "9709/12/M/J/23 Q5",
+      "aliases": [
+        "P1-9.6-PP-9709-12-MJ23-Q5"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.6"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 4,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.6-PP-9709-12-MJ23::curve y nx n n n n x n n graph of y nx n n n n x n n for x n meeting the x axis ",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-6.json",
+        "locator": "P1-9.6-PP-9709-12-MJ23-Q5",
+        "paper": "9709/12/M/J/23 Q5"
+      }
+    },
+    {
       "id": "9709/12/O/N/10 Q1",
       "aliases": [
         "P1-6.1-PP-9709-12-ON10-Q1"
@@ -2880,6 +3263,56 @@
       }
     },
     {
+      "id": "9709/12/O/N/16 Q1",
+      "aliases": [
+        "P1-9.3-PP-9709-12-ON16-Q1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.3"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 4,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.3-PP-9709-12-ON16::a curve is such that dy dx n nx n the point n n lies on the curve find the equat",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-3.json",
+        "locator": "P1-9.3-PP-9709-12-ON16-Q1",
+        "paper": "9709/12/O/N/16 Q1"
+      }
+    },
+    {
+      "id": "9709/12/O/N/18 Q2",
+      "aliases": [
+        "P1-9.5-PP-9709-12-ON18-Q2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.5"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 4,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.5-PP-9709-12-ON18::showing all necessary working find n n x n x dx",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-5.json",
+        "locator": "P1-9.5-PP-9709-12-ON18-Q2",
+        "paper": "9709/12/O/N/18 Q2"
+      }
+    },
+    {
       "id": "9709/12/O/N/20 Q11",
       "aliases": [
         "P1-5.4-PP-9709-12-ON20-Q11"
@@ -3002,6 +3435,31 @@
         "path": "data/tasks-P1-1-2.json",
         "locator": "P1-1.2-PP-9709-12-ON22-Q6ab",
         "paper": "9709/12/O/N/22 Q6(a)(b)"
+      }
+    },
+    {
+      "id": "9709/13/M/J/11 Q4",
+      "aliases": [
+        "P1-9.5-PP-9709-13-MJ11-Q4"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.5"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 7,
+      "difficulty": "hard",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": true,
+      "family": "P1-9.5-PP-9709-13-MJ11::differentiate nx n n x with respect to x find nx n n dx and hence find the value",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-5.json",
+        "locator": "P1-9.5-PP-9709-13-MJ11-Q4",
+        "paper": "9709/13/M/J/11 Q4"
       }
     },
     {
@@ -3277,6 +3735,31 @@
         "path": "data/tasks-P1-5-5.json",
         "locator": "P1-5.5-PP-9709-13-ON22-Q6",
         "paper": "9709/13/O/N/22 Q6"
+      }
+    },
+    {
+      "id": "9709/13/O/N/23 Q1",
+      "aliases": [
+        "P1-9.2-PP-9709-13-ON23-Q1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.2"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 4,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.2-PP-9709-13-ON23::a curve is such that its gradient at a point x y is given by dy dx x nx n n it i",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-2.json",
+        "locator": "P1-9.2-PP-9709-13-ON23-Q1",
+        "paper": "9709/13/O/N/23 Q1"
       }
     },
     {
@@ -4268,6 +4751,31 @@
       }
     },
     {
+      "id": "9709/31/O/N/20 Q2",
+      "aliases": [
+        "P23-11.5-PP-9709-31-ON20-Q2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.5"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 4,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-11.5-PP-9709-31-ON20::on a sketch of an argand diagram shade the region whose points represent complex",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-11-5.json",
+        "locator": "P23-11.5-PP-9709-31-ON20-Q2",
+        "paper": "9709/31/O/N/20 Q2"
+      }
+    },
+    {
       "id": "9709/31/O/N/20 Q9",
       "aliases": [
         "P23-7.5-PP-9709-31-ON20-Q9"
@@ -4290,6 +4798,56 @@
         "path": "data/tasks-P23-7-5.json",
         "locator": "P23-7.5-PP-9709-31-ON20-Q9",
         "paper": "9709/31/O/N/20 Q9"
+      }
+    },
+    {
+      "id": "9709/31/O/N/22 Q5",
+      "aliases": [
+        "P23-11.3-PP-9709-31-ON22-Q5"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.3"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 4,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": true,
+      "family": "P23-11.3-PP-9709-31-ON22::the complex numbers u and w are defined by u n e n n i and w n e n n i a find u ",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-11-3.json",
+        "locator": "P23-11.3-PP-9709-31-ON22-Q5",
+        "paper": "9709/31/O/N/22 Q5"
+      }
+    },
+    {
+      "id": "9709/32/F/M/22 Q6",
+      "aliases": [
+        "P23-11.2-PP-9709-32-FM22-Q6"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.2"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 6,
+      "difficulty": "hard",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-11.2-PP-9709-32-FM22::find the complex numbers w which satisfy the equation w n n i w n and are such t",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-11-2.json",
+        "locator": "P23-11.2-PP-9709-32-FM22-Q6",
+        "paper": "9709/32/F/M/22 Q6"
       }
     },
     {
@@ -4393,6 +4951,31 @@
       }
     },
     {
+      "id": "9709/32/M/J/21 Q5",
+      "aliases": [
+        "P23-11.4-PP-9709-32-MJ21-Q5"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.4"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 5,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-11.4-PP-9709-32-MJ21::the complex number u is given by u n n n i find the two square roots of u giving",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-11-4.json",
+        "locator": "P23-11.4-PP-9709-32-MJ21-Q5",
+        "paper": "9709/32/M/J/21 Q5"
+      }
+    },
+    {
       "id": "9709/32/M/J/21 Q7",
       "aliases": [
         "P23-10.2-PP-9709-32-MJ21-Q7"
@@ -4440,6 +5023,56 @@
         "path": "data/tasks-P23-9-5.json",
         "locator": "P23-9.5-PP-9709-32-MJ23-Q11",
         "paper": "9709/32/M/J/23 Q11"
+      }
+    },
+    {
+      "id": "9709/32/M/J/23 Q3",
+      "aliases": [
+        "P23-11.5-PP-9709-32-MJ23-Q3"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.5"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 4,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": true,
+      "family": "P23-11.5-PP-9709-32-MJ23::on an argand diagram sketch the locus of points representing complex numbers z s",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-11-5.json",
+        "locator": "P23-11.5-PP-9709-32-MJ23-Q3",
+        "paper": "9709/32/M/J/23 Q3"
+      }
+    },
+    {
+      "id": "9709/32/M/J/23 Q5",
+      "aliases": [
+        "P23-11.3-PP-9709-32-MJ23-Q5"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.3"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 6,
+      "difficulty": "hard",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": true,
+      "family": "P23-11.3-PP-9709-32-MJ23::the complex number n y i is denoted by a where y is a real number and y n it is ",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-11-3.json",
+        "locator": "P23-11.3-PP-9709-32-MJ23-Q5",
+        "paper": "9709/32/M/J/23 Q5"
       }
     },
     {
@@ -4515,6 +5148,31 @@
         "path": "data/tasks-P23-8-7.json",
         "locator": "P23-8.7-PP-9709-32-ON20-Q9",
         "paper": "9709/32/O/N/20 Q9"
+      }
+    },
+    {
+      "id": "9709/32/O/N/21 Q3",
+      "aliases": [
+        "P23-11.2-PP-9709-32-ON21-Q3"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.2"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 6,
+      "difficulty": "hard",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": true,
+      "family": "P23-11.2-PP-9709-32-ON21::given the complex numbers u a i b and w c i d where a b c and d are real prove t",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-11-2.json",
+        "locator": "P23-11.2-PP-9709-32-ON21-Q3",
+        "paper": "9709/32/O/N/21 Q3"
       }
     },
     {
@@ -4793,6 +5451,31 @@
       }
     },
     {
+      "id": "9709/33/O/N/23 Q4",
+      "aliases": [
+        "P23-11.4-PP-9709-33-ON23-Q4"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.4"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 5,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-11.4-PP-9709-33-ON23::solve the quadratic equation n i w n nw n i n giving your answers in the form x ",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-11-4.json",
+        "locator": "P23-11.4-PP-9709-33-ON23-Q4",
+        "paper": "9709/33/O/N/23 Q4"
+      }
+    },
+    {
       "id": "9709/33/O/N/24 Q9",
       "aliases": [
         "P23-8.2-PP-9709-33-ON24-Q9"
@@ -4890,6 +5573,31 @@
         "path": "data/tasks-S1-5-3.json",
         "locator": "S1-5.3-PP-9709-51-MJ21-Q1",
         "paper": "9709/51/M/J/21 Q1"
+      }
+    },
+    {
+      "id": "9709/51/M/J/21 Q2",
+      "aliases": [
+        "S1-8.3-PP-9709-51-MJ21-Q2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "S1-8.3"
+      ],
+      "topic": "The normal distribution",
+      "chapter": "S1-8",
+      "marks": 5,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "S1-8.3-PP-9709-51-MJ21::a company produces a particular type of metal rod the lengths of these rods are ",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-S1-8-3.json",
+        "locator": "S1-8.3-PP-9709-51-MJ21-Q2",
+        "paper": "9709/51/M/J/21 Q2"
       }
     },
     {
@@ -5018,6 +5726,31 @@
       }
     },
     {
+      "id": "9709/52/M/J/21 Q2",
+      "aliases": [
+        "S1-8.3-PP-9709-52-MJ21-Q2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "S1-8.3"
+      ],
+      "topic": "The normal distribution",
+      "chapter": "S1-8",
+      "marks": 4,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "S1-8.3-PP-9709-52-MJ21::the weights of bags of sugar are normally distributed with mean n n kg and stand",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-S1-8-3.json",
+        "locator": "S1-8.3-PP-9709-52-MJ21-Q2",
+        "paper": "9709/52/M/J/21 Q2"
+      }
+    },
+    {
       "id": "9709/52/M/J/21 Q6",
       "aliases": [
         "S1-5.4-PP-9709-52-MJ21-Q6"
@@ -5068,6 +5801,31 @@
       }
     },
     {
+      "id": "9709/52/O/N/23 Q3",
+      "aliases": [
+        "S1-8.4-PP-9709-52-ON23-Q3"
+      ],
+      "course": "AS",
+      "subsections": [
+        "S1-8.4"
+      ],
+      "topic": "The normal distribution",
+      "chapter": "S1-8",
+      "marks": 5,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "S1-8.4-PP-9709-52-ON23::a factory produces a certain type of electrical component it is known that n of ",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-S1-8-4.json",
+        "locator": "S1-8.4-PP-9709-52-ON23-Q3",
+        "paper": "9709/52/O/N/23 Q3"
+      }
+    },
+    {
       "id": "9709/53/M/J/21 Q2",
       "aliases": [
         "S1-6.1-PP-9709-53-MJ21-Q2"
@@ -5115,6 +5873,31 @@
         "path": "data/tasks-S1-7-2.json",
         "locator": "S1-7.2-PP-9709-53-MJ23-Q1",
         "paper": "9709/53/M/J/23 Q1"
+      }
+    },
+    {
+      "id": "9709/53/O/N/22 Q2",
+      "aliases": [
+        "S1-8.4-PP-9709-53-ON22-Q2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "S1-8.4"
+      ],
+      "topic": "The normal distribution",
+      "chapter": "S1-8",
+      "marks": 5,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "S1-8.4-PP-9709-53-ON22::in a large college n of the students have blue eyes a random sample of n student",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-S1-8-4.json",
+        "locator": "S1-8.4-PP-9709-53-ON22-Q2",
+        "paper": "9709/53/O/N/22 Q2"
       }
     },
     {
@@ -5193,6 +5976,31 @@
       }
     },
     {
+      "id": "9709/62/F/M/24 Q2",
+      "aliases": [
+        "S2-6.4-PP-9709-62-FM24-Q2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "S2-6.4"
+      ],
+      "topic": "Estimation",
+      "chapter": "S2-6",
+      "marks": 4,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": true,
+      "family": "S2-6.4-PP-9709-62-FM24::a random sample of n people living in barapet was chosen it was found that n of ",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-S2-6-4.json",
+        "locator": "S2-6.4-PP-9709-62-FM24-Q2",
+        "paper": "9709/62/F/M/24 Q2"
+      }
+    },
+    {
       "id": "9709/62/O/N/10 Q1",
       "aliases": [
         "S1-6.1-PP-9709-62-ON10-Q1"
@@ -5215,6 +6023,31 @@
         "path": "data/tasks-S1-6-1.json",
         "locator": "S1-6.1-PP-9709-62-ON10-Q1",
         "paper": "9709/62/O/N/10 Q1"
+      }
+    },
+    {
+      "id": "9709/62/O/N/20 Q2",
+      "aliases": [
+        "S2-6.4-PP-9709-62-ON20-Q2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "S2-6.4"
+      ],
+      "topic": "Estimation",
+      "chapter": "S2-6",
+      "marks": 4,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "pp",
+      "has_markscheme": true,
+      "structured": true,
+      "family": "S2-6.4-PP-9709-62-ON20::a six sided die has faces marked n n n n n n when the die is thrown n times it s",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-S2-6-4.json",
+        "locator": "S2-6.4-PP-9709-62-ON20-Q2",
+        "paper": "9709/62/O/N/20 Q2"
       }
     },
     {
@@ -15944,6 +16777,726 @@
       }
     },
     {
+      "id": "IGCSE-24.1-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.1"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::on a tree diagram the branches for a train being late or not late at a station h",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-24.1.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "IGCSE-24.1-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.1"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::a spinner with n equal sections is spun and then a fair n sided dice is rolled h",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-24.1.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "IGCSE-24.1-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.1"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::three coins are thrown one after another how many outcomes are shown at the end ",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-24.1.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "IGCSE-24.1-QC1-gen",
+      "aliases": [],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.1"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-24.1::on a tree diagram the two branches for whether a train is late at a station have",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-24-1.json",
+        "locator": "IGCSE-24.1-QC1-gen"
+      }
+    },
+    {
+      "id": "IGCSE-24.1-QC2-gen",
+      "aliases": [],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.1"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-24.1::a spinner with m int equal sections is spun and then a fair dice with k int face",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-24-1.json",
+        "locator": "IGCSE-24.1-QC2-gen"
+      }
+    },
+    {
+      "id": "IGCSE-24.1-QC3-gen",
+      "aliases": [],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.1"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-24.1::an experiment has three stages with a int b int and c int possible outcomes at t",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-24-1.json",
+        "locator": "IGCSE-24.1-QC3-gen"
+      }
+    },
+    {
+      "id": "IGCSE-24.1-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.1"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::a fair dice is rolled and then a coin is thrown how many outcomes does the tree ",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-24.1.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "IGCSE-24.2-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.2"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::the probability that ana is late on monday is n n and on tuesday is n n independ",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-24.2.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "IGCSE-24.2-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.2"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::a train is late at station a with probability n n and at station b with probabil",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-24.2.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "IGCSE-24.2-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.2"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::amir scores a penalty with probability n n and bella with probability n n indepe",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-24.2.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "IGCSE-24.2-QC1-gen",
+      "aliases": [],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.2"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-24.2::the probability that ana is late on monday is p raw and the probability that she",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-24-2.json",
+        "locator": "IGCSE-24.2-QC1-gen"
+      }
+    },
+    {
+      "id": "IGCSE-24.2-QC2-gen",
+      "aliases": [],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.2"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-24.2::the probability that a train is late at station a is p raw and the probability t",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-24-2.json",
+        "locator": "IGCSE-24.2-QC2-gen"
+      }
+    },
+    {
+      "id": "IGCSE-24.2-QC3-gen",
+      "aliases": [],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.2"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-24.2::amir and bella each take a penalty amir scores with probability p raw and bella ",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-24-2.json",
+        "locator": "IGCSE-24.2-QC3-gen"
+      }
+    },
+    {
+      "id": "IGCSE-24.2-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.2"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE1::the probability that it rains on any day is n n independently of other days find",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-24.2.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "IGCSE-24.2-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.2"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::two independent alarms each fail to ring with probability n n find the probabili",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-24.2.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "IGCSE-24.3-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.3"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": true,
+      "family": "QC1::n e n n a n n b n and n a b n find n a b",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-24.3.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "IGCSE-24.3-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.3"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::a venn diagram has n elements in a only n in a b n in b only and n outside find ",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-24.3.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "IGCSE-24.3-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.3"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::a venn diagram has n elements in a only n in a b n in b only and n outside find ",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-24.3.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "IGCSE-24.3-QC1-gen",
+      "aliases": [],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.3"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": true,
+      "family": "IGCSE-24.3::n e n int n a na int n b nb int and n a b o int find n a b",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-24-3.json",
+        "locator": "IGCSE-24.3-QC1-gen"
+      }
+    },
+    {
+      "id": "IGCSE-24.3-QC2-gen",
+      "aliases": [],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.3"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-24.3::a venn diagram shows a int elements in a only i int in a b b int in b only and o",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-24-3.json",
+        "locator": "IGCSE-24.3-QC2-gen"
+      }
+    },
+    {
+      "id": "IGCSE-24.3-QC3-gen",
+      "aliases": [],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.3"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-24.3::a venn diagram shows a int elements in a only i int in a b b int in b only and o",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-24-3.json",
+        "locator": "IGCSE-24.3-QC3-gen"
+      }
+    },
+    {
+      "id": "IGCSE-24.3-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.3"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": true,
+      "family": "WE1::the venn diagram shows the numbers of students in a class who play football f an",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-24.3.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "IGCSE-24.3-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.3"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::in a group of n people n like tea n like coffee and n like neither find the prob",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-24.3.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "IGCSE-24.4-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.4"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::a venn diagram has n elements in a only n in a b n in b only and n outside an el",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-24.4.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "IGCSE-24.4-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.4"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::a bag has n red and n green counters two are taken at random without replacement",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-24.4.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "IGCSE-24.4-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.4"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::a bag has n red and n white balls two are taken at random without replacement fi",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-24.4.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "IGCSE-24.4-QC1-gen",
+      "aliases": [],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.4"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-24.4::a venn diagram shows a int elements in a only i int in a b b int in b only and o",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-24-4.json",
+        "locator": "IGCSE-24.4-QC1-gen"
+      }
+    },
+    {
+      "id": "IGCSE-24.4-QC2-gen",
+      "aliases": [],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.4"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-24.4::a bag contains r int red counters and g int green counters only two counters are",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-24-4.json",
+        "locator": "IGCSE-24.4-QC2-gen"
+      }
+    },
+    {
+      "id": "IGCSE-24.4-QC3-gen",
+      "aliases": [],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.4"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "IGCSE-24.4::a bag contains r int red balls and g int white balls only two balls are taken at",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-IGCSE-24-4.json",
+        "locator": "IGCSE-24.4-QC3-gen"
+      }
+    },
+    {
+      "id": "IGCSE-24.4-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.4"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE1::in a class of n n study art n study music and n study both a student who studies",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-24.4.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "IGCSE-24.4-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "IGCSE",
+      "subsections": [
+        "IGCSE-24.4"
+      ],
+      "topic": "Probability using tree diagrams and Venn diagrams",
+      "chapter": "IGCSE-24",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::a bag contains n red and n blue beads two beads are taken at random without repl",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/IGCSE-24.4.html",
+        "locator": "WE2"
+      }
+    },
+    {
       "id": "Least possible interquartile range from a grouped table",
       "aliases": [
         "S1-3.2-PP-9709-61-MJ14-Q7iii"
@@ -25173,6 +26726,1680 @@
       }
     },
     {
+      "id": "P1-9.1-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.1"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::find nx n dx",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.1.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "P1-9.1-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.1"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::find n x n dx",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.1.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "P1-9.1-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.1"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::find n x dx",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.1.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "P1-9.1-QC1-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-9.1"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.1::find a int x n int dx and give the coefficient of x nn int in your answer",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-1.json",
+        "locator": "P1-9.1-QC1-gen"
+      }
+    },
+    {
+      "id": "P1-9.1-QC2-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-9.1"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.1::find a int x m int dx and give the coefficient of x e int in your answer",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-1.json",
+        "locator": "P1-9.1-QC2-gen"
+      }
+    },
+    {
+      "id": "P1-9.1-QC3-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-9.1"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.1::find a int x dx and give the coefficient of x n n in your answer",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-1.json",
+        "locator": "P1-9.1-QC3-gen"
+      }
+    },
+    {
+      "id": "P1-9.1-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.1"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE1::find nx n nx n dx",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.1.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "P1-9.1-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.1"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::find x n n x n dx",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.1.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "P1-9.2-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.2"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::a curve has dy dx nx n nx and passes through n n find the constant term in its e",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.2.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "P1-9.2-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.2"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::a curve has dy dx n x n and passes through n n find c in y n x c",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.2.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "P1-9.2-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.2"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::a curve has dy dx n x and passes through n n find its equation",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.2.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "P1-9.2-QC1-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-9.2"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.2::a curve has gradient dy dx an int x n bn int x and passes through the point n yn",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-2.json",
+        "locator": "P1-9.2-QC1-gen"
+      }
+    },
+    {
+      "id": "P1-9.2-QC2-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-9.2"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.2::a curve is such that dy dx k int x n and the curve passes through the point p in",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-2.json",
+        "locator": "P1-9.2-QC2-gen"
+      }
+    },
+    {
+      "id": "P1-9.2-QC3-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-9.2"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.2::a curve is such that dy dx a int x for x n and it passes through x int q int its",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-2.json",
+        "locator": "P1-9.2-QC3-gen"
+      }
+    },
+    {
+      "id": "P1-9.2-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.2"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE1::a curve has dy dx nx n n and passes through n n find its equation",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.2.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "P1-9.2-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.2"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::a curve has dy dx n x and passes through n n find its equation",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.2.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "P1-9.3-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.3"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::nx n n dx nx n n k c find k",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.3.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "P1-9.3-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.3"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::a curve has dy dx n nx n and passes through n n find its equation",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.3.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "P1-9.3-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.3"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::find n nx n n dx",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.3.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "P1-9.3-QC1-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-9.3"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.3::given that a int x b int n int dx a int x b int nn int k c find the value of k",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-3.json",
+        "locator": "P1-9.3-QC1-gen"
+      }
+    },
+    {
+      "id": "P1-9.3-QC2-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-9.3"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.3::a curve is such that dy dx k int a int x b int the point xn int yn int lies on t",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-3.json",
+        "locator": "P1-9.3-QC2-gen"
+      }
+    },
+    {
+      "id": "P1-9.3-QC3-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-9.3"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.3::find k int a int x b int n dx and give the coefficient of a int x b int n in you",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-3.json",
+        "locator": "P1-9.3-QC3-gen"
+      }
+    },
+    {
+      "id": "P1-9.3-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.3"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE1::find nx n n dx",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.3.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "P1-9.3-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.3"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::find n nx n n dx",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.3.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "P1-9.4-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.4"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::given d dx nx n n n kx nx n n n find k",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.4.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "P1-9.4-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.4"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::given d dx x n n n nx x n n n find nx x n n n dx",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.4.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "P1-9.4-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.4"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::given d dx nx n n nx nx n n find nx nx n n dx",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.4.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "P1-9.4-QC1-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-9.4"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.4::given that d dx b int x n a int n int kx b int x n a int nn int find k",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-4.json",
+        "locator": "P1-9.4-QC1-gen"
+      }
+    },
+    {
+      "id": "P1-9.4-QC2-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-9.4"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.4::given that d dx x n a int n int nn int x x n a int nn int find m int x x n a int",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-4.json",
+        "locator": "P1-9.4-QC2-gen"
+      }
+    },
+    {
+      "id": "P1-9.4-QC3-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-9.4"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.4::given that d dx b int x n a int b int x b int x n a int find m int x b int x n a",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-4.json",
+        "locator": "P1-9.4-QC3-gen"
+      }
+    },
+    {
+      "id": "P1-9.4-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.4"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 4,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": true,
+      "family": "WE1::a differentiate x n n n b hence find x x n n n dx",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.4.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "P1-9.4-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.4"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::given that d dx x n n x x n n find nx x n n dx",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.4.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "P1-9.5-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.5"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::evaluate n n nx n nx dx",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.5.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "P1-9.5-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.5"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::evaluate n n n x dx",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.5.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "P1-9.5-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.5"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::evaluate n n nx n n dx",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.5.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "P1-9.5-QC1-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-9.5"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.5::evaluate p int q int an int x n bn int x dx",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-5.json",
+        "locator": "P1-9.5-QC1-gen"
+      }
+    },
+    {
+      "id": "P1-9.5-QC2-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-9.5"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.5::evaluate n sn int k int x dx",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-5.json",
+        "locator": "P1-9.5-QC2-gen"
+      }
+    },
+    {
+      "id": "P1-9.5-QC3-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-9.5"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.5::evaluate p int q int a int x b int n dx giving your answer correct to n signific",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-5.json",
+        "locator": "P1-9.5-QC3-gen"
+      }
+    },
+    {
+      "id": "P1-9.5-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.5"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE1::evaluate n n x n n dx",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.5.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "P1-9.5-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.5"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::evaluate n n nx n dx",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.5.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "P1-9.6-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.6"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::find the area enclosed by y nx x n and the x axis",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.6.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "P1-9.6-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.6"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::find the area under y nx n from x n to x n",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.6.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "P1-9.6-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.6"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::find the area under y n x n from x n to x n",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.6.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "P1-9.6-QC1-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-9.6"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.6::find the area of the region enclosed by the curve y q int x x n and the x axis c",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-6.json",
+        "locator": "P1-9.6-QC1-gen"
+      }
+    },
+    {
+      "id": "P1-9.6-QC2-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-9.6"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.6::find the area of the region bounded by the curve y k int x n the x axis and the ",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-6.json",
+        "locator": "P1-9.6-QC2-gen"
+      }
+    },
+    {
+      "id": "P1-9.6-QC3-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-9.6"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.6::find the area of the region bounded by the curve y k int x n the x axis and the ",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-6.json",
+        "locator": "P1-9.6-QC3-gen"
+      }
+    },
+    {
+      "id": "P1-9.6-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.6"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE1::find the area enclosed by y x n x and the x axis",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.6.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "P1-9.6-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.6"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::find the area enclosed by y x n nx and the x axis",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.6.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "P1-9.7-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.7"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::find the area enclosed by y n x n x n and y n",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.7.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "P1-9.7-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.7"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::find the area enclosed by y x n and y nx",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.7.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "P1-9.7-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.7"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::find the area enclosed by y nx n and y n nx n",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.7.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "P1-9.7-QC1-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-9.7"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.7::the curve y c int x p int x q int meets the line y c int at two points find the ",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-7.json",
+        "locator": "P1-9.7-QC1-gen"
+      }
+    },
+    {
+      "id": "P1-9.7-QC2-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-9.7"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.7::find the area of the region enclosed by the curve y x n and the line y k int x c",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-7.json",
+        "locator": "P1-9.7-QC2-gen"
+      }
+    },
+    {
+      "id": "P1-9.7-QC3-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-9.7"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.7::find the area of the region enclosed by the curves y a int x n and y h int a int",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-7.json",
+        "locator": "P1-9.7-QC3-gen"
+      }
+    },
+    {
+      "id": "P1-9.7-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.7"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE1::find the area enclosed by y x n and y x n",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.7.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "P1-9.7-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.7"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::find the area enclosed by y x n and y n x n",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.7.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "P1-9.8-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.8"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::evaluate n n x n dx",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.8.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "P1-9.8-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.8"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::evaluate n n n x dx",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.8.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "P1-9.8-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.8"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::evaluate n n x n dx",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.8.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "P1-9.8-QC1-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-9.8"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.8::evaluate a int k int x n dx correct to n significant figures",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-8.json",
+        "locator": "P1-9.8-QC1-gen"
+      }
+    },
+    {
+      "id": "P1-9.8-QC2-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-9.8"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.8::evaluate n b int k int x dx",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-8.json",
+        "locator": "P1-9.8-QC2-gen"
+      }
+    },
+    {
+      "id": "P1-9.8-QC3-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-9.8"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.8::evaluate a int k int x n dx correct to n significant figures",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-8.json",
+        "locator": "P1-9.8-QC3-gen"
+      }
+    },
+    {
+      "id": "P1-9.8-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.8"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE1::evaluate n n x n dx",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.8.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "P1-9.8-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.8"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::evaluate n n n x dx",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.8.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "P1-9.9-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.9"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::the region under y nx from x n to x n is rotated through n about the x axis find",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.9.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "P1-9.9-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.9"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::the region under y x from x n to x n is rotated through n about the x axis find ",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.9.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "P1-9.9-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.9"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::the region between y x n n x n the y axis and y n is rotated through n about the",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.9.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "P1-9.9-QC1-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-9.9"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.9::the region bounded by the line y k int x the x axis and the line x h int is rota",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-9.json",
+        "locator": "P1-9.9-QC1-gen"
+      }
+    },
+    {
+      "id": "P1-9.9-QC2-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-9.9"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.9::the region bounded by the curve y x the x axis and the line x b int is rotated t",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-9.json",
+        "locator": "P1-9.9-QC2-gen"
+      }
+    },
+    {
+      "id": "P1-9.9-QC3-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "P1-9.9"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P1-9.9::the region enclosed by the curve y x n c int for x n the y axis and the line y d",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P1-9-9.json",
+        "locator": "P1-9.9-QC3-gen"
+      }
+    },
+    {
+      "id": "P1-9.9-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.9"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE1::the region under y x n n from x n to x n is rotated through n about the x axis f",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.9.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "P1-9.9-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "P1-9.9"
+      ],
+      "topic": "Integration",
+      "chapter": "P1-9",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::the region between y x n for x n the y axis and the line y n is rotated through ",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P1-9.9.html",
+        "locator": "WE2"
+      }
+    },
+    {
       "id": "P23-1.1-g0",
       "aliases": [
         "A2-0-0"
@@ -26450,6 +29677,936 @@
       "source": {
         "kind": "theory",
         "path": "content/theory/P23-10.2.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "P23-11.1-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.1"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::solve x n nx n n and give the imaginary part of the root with positive imaginary",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-11.1.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "P23-11.1-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.1"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::solve x n n n",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-11.1.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "P23-11.1-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.1"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::find the discriminant of nx n nx n n",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-11.1.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "P23-11.1-QC1-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-11.1"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-11.1::solve the equation x n b int x c int n give the imaginary part of the root whose",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-11-1.json",
+        "locator": "P23-11.1-QC1-gen"
+      }
+    },
+    {
+      "id": "P23-11.1-QC2-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-11.1"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-11.1::solve the equation x n a int n the roots are b i where b n find b",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-11-1.json",
+        "locator": "P23-11.1-QC2-gen"
+      }
+    },
+    {
+      "id": "P23-11.1-QC3-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-11.1"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-11.1::find the value of the discriminant of a int x n b int x c int n and hence state ",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-11-1.json",
+        "locator": "P23-11.1-QC3-gen"
+      }
+    },
+    {
+      "id": "P23-11.1-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.1"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE1::solve x n nx n n",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-11.1.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "P23-11.1-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.1"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::solve nx n nx n n",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-11.1.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "P23-11.2-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.2"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::given z n n i and w n n i find the real part of zw",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-11.2.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "P23-11.2-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.2"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::find the real part of n n i n n i",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-11.2.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "P23-11.2-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.2"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::find z given that z nz n n i",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-11.2.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "P23-11.2-QC1-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-11.2"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-11.2::given that z a int b int i and w c int d int i find the real part of zw",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-11-2.json",
+        "locator": "P23-11.2-QC1-gen"
+      }
+    },
+    {
+      "id": "P23-11.2-QC2-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-11.2"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-11.2::given that z a int b int i and w c int d int i find the real part of z w",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-11-2.json",
+        "locator": "P23-11.2-QC2-gen"
+      }
+    },
+    {
+      "id": "P23-11.2-QC3-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-11.2"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-11.2::the complex number z x i y where x and y are real satisfies z a int z p int q in",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-11-2.json",
+        "locator": "P23-11.2-QC3-gen"
+      }
+    },
+    {
+      "id": "P23-11.2-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.2"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE1::express n i n n i in the form x i y",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-11.2.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "P23-11.2-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.2"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::find the complex number z such that nz n i z n i",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-11.2.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "P23-11.3-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.3"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::find the modulus of n n i",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-11.3.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "P23-11.3-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.3"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::given u n e n i n and w n e n i n find uw correct to n significant figures",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-11.3.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "P23-11.3-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.3"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::find n n i n n i",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-11.3.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "P23-11.3-QC1-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-11.3"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-11.3::find the modulus of the complex number a int b int i",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-11-3.json",
+        "locator": "P23-11.3-QC1-gen"
+      }
+    },
+    {
+      "id": "P23-11.3-QC2-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-11.3"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-11.3::the complex numbers u and w are given by u r int e al int i n and w s int e be i",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-11-3.json",
+        "locator": "P23-11.3-QC2-gen"
+      }
+    },
+    {
+      "id": "P23-11.3-QC3-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-11.3"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-11.3::find z w where z a int b int i and w c int d int i",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-11-3.json",
+        "locator": "P23-11.3-QC3-gen"
+      }
+    },
+    {
+      "id": "P23-11.3-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.3"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE1::find the modulus and argument of z n n i",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-11.3.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "P23-11.3-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.3"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::given u n e n n i and w n e n n i find u w in the form r e i where",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-11.3.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "P23-11.4-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.4"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::find the square roots of n n i",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-11.4.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "P23-11.4-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.4"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::x n px q n with p and q real has a root n n i find q",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-11.4.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "P23-11.4-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.4"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::given that n n i is a root of x n nx n nx n n find the real root",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-11.4.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "P23-11.4-QC1-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-11.4"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-11.4::find the square root of u int v int i that has a positive real part give its ima",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-11-4.json",
+        "locator": "P23-11.4-QC1-gen"
+      }
+    },
+    {
+      "id": "P23-11.4-QC2-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-11.4"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-11.4::the quadratic equation x n px q n where p and q are real has a root a int b int ",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-11-4.json",
+        "locator": "P23-11.4-QC2-gen"
+      }
+    },
+    {
+      "id": "P23-11.4-QC3-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-11.4"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-11.4::it is given that a int b int i is a root of the equation x n p int x n q int x r",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-11-4.json",
+        "locator": "P23-11.4-QC3-gen"
+      }
+    },
+    {
+      "id": "P23-11.4-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.4"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 4,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE1::find the square roots of n n i",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-11.4.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "P23-11.4-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.4"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 4,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::given that n n i is a root of x n x n nx n n find the other roots",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-11.4.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "P23-11.5-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.5"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::find the least value of z for z n n i n",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-11.5.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "P23-11.5-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.5"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::find the greatest value of z for z n n i n",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-11.5.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "P23-11.5-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.5"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::find the real value of z on the locus z n n i z n n i",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-11.5.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "P23-11.5-QC1-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-11.5"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-11.5::the complex number z satisfies z a int b int i r int find the least value of z",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-11-5.json",
+        "locator": "P23-11.5-QC1-gen"
+      }
+    },
+    {
+      "id": "P23-11.5-QC2-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-11.5"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 2,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-11.5::the complex number z satisfies z a int b int i r int find the greatest value of ",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-11-5.json",
+        "locator": "P23-11.5-QC2-gen"
+      }
+    },
+    {
+      "id": "P23-11.5-QC3-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "P23-11.5"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "P23-11.5::the locus of z is given by z a int b int i z c int d int i find the real number ",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-P23-11-5.json",
+        "locator": "P23-11.5-QC3-gen"
+      }
+    },
+    {
+      "id": "P23-11.5-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.5"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 4,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE1::sketch the locus z n i n and find the greatest value of z on it",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-11.5.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "P23-11.5-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "P23-11.5"
+      ],
+      "topic": "Complex numbers",
+      "chapter": "P23-11",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::find the cartesian equation of the locus z n z n i",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/P23-11.5.html",
         "locator": "WE2"
       }
     },
@@ -39931,6 +44088,332 @@
       }
     },
     {
+      "id": "S1-8.3-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "S1-8.3"
+      ],
+      "topic": "The normal distribution",
+      "chapter": "S1-8",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::x n n n n given that n n n find the expected number of values within n of the me",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/S1-8.3.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "S1-8.3-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "S1-8.3"
+      ],
+      "topic": "The normal distribution",
+      "chapter": "S1-8",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::x n n n n given that n n n find the probability that exactly one of n independen",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/S1-8.3.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "S1-8.3-QC1-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "S1-8.3"
+      ],
+      "topic": "The normal distribution",
+      "chapter": "S1-8",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "S1-8.3::the random variable x has the distribution n mu int s int n a random sample of n",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-S1-8-3.json",
+        "locator": "S1-8.3-QC1-gen"
+      }
+    },
+    {
+      "id": "S1-8.3-QC2-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "S1-8.3"
+      ],
+      "topic": "The normal distribution",
+      "chapter": "S1-8",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "S1-8.3::the random variable x has the distribution n mu int s int n given that z raw ph ",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-S1-8-3.json",
+        "locator": "S1-8.3-QC2-gen"
+      }
+    },
+    {
+      "id": "S1-8.3-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "S1-8.3"
+      ],
+      "topic": "The normal distribution",
+      "chapter": "S1-8",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE1::the masses of apples are normally distributed with mean n g and standard deviati",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/S1-8.3.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "S1-8.3-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "S1-8.3"
+      ],
+      "topic": "The normal distribution",
+      "chapter": "S1-8",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::the volume of oil in a can is normally distributed with mean n ml and standard d",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/S1-8.3.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "S1-8.4-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "S1-8.4"
+      ],
+      "topic": "The normal distribution",
+      "chapter": "S1-8",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::x b n n n a normal approximation is used to find p x n find the standardised val",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/S1-8.4.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "S1-8.4-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "S1-8.4"
+      ],
+      "topic": "The normal distribution",
+      "chapter": "S1-8",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::x b n n n find the least value of n for which np n and nq n",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/S1-8.4.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "S1-8.4-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "AS",
+      "subsections": [
+        "S1-8.4"
+      ],
+      "topic": "The normal distribution",
+      "chapter": "S1-8",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::x b n n n using a normal approximation p x n n z find z",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/S1-8.4.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "S1-8.4-QC1-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "S1-8.4"
+      ],
+      "topic": "The normal distribution",
+      "chapter": "S1-8",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "S1-8.4::the random variable x has the distribution b n int pr raw a normal approximation",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-S1-8-4.json",
+        "locator": "S1-8.4-QC1-gen"
+      }
+    },
+    {
+      "id": "S1-8.4-QC2-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "S1-8.4"
+      ],
+      "topic": "The normal distribution",
+      "chapter": "S1-8",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "S1-8.4::the random variable x has the distribution b n pr raw find the least value of n ",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-S1-8-4.json",
+        "locator": "S1-8.4-QC2-gen"
+      }
+    },
+    {
+      "id": "S1-8.4-QC3-gen",
+      "aliases": [],
+      "course": "AS",
+      "subsections": [
+        "S1-8.4"
+      ],
+      "topic": "The normal distribution",
+      "chapter": "S1-8",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "S1-8.4::the random variable x has the distribution b n int pr raw using a normal approxi",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-S1-8-4.json",
+        "locator": "S1-8.4-QC3-gen"
+      }
+    },
+    {
+      "id": "S1-8.4-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "AS",
+      "subsections": [
+        "S1-8.4"
+      ],
+      "topic": "The normal distribution",
+      "chapter": "S1-8",
+      "marks": 5,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE1::x b n n n use a suitable approximation to find p x n",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/S1-8.4.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "S1-8.4-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "AS",
+      "subsections": [
+        "S1-8.4"
+      ],
+      "topic": "The normal distribution",
+      "chapter": "S1-8",
+      "marks": 5,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::a fair coin is thrown n times use a suitable approximation to find the probabili",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/S1-8.4.html",
+        "locator": "WE2"
+      }
+    },
+    {
       "id": "S2-1.1-q1",
       "aliases": [
         "QC1"
@@ -43707,6 +48190,192 @@
       "source": {
         "kind": "theory",
         "path": "content/theory/S2-6.3.html",
+        "locator": "WE2"
+      }
+    },
+    {
+      "id": "S2-6.4-q1",
+      "aliases": [
+        "QC1"
+      ],
+      "course": "A2",
+      "subsections": [
+        "S2-6.4"
+      ],
+      "topic": "Estimation",
+      "chapter": "S2-6",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC1::in a random sample of n people n were left handed using z n n find the upper lim",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/S2-6.4.html",
+        "locator": "QC1"
+      }
+    },
+    {
+      "id": "S2-6.4-q2",
+      "aliases": [
+        "QC2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "S2-6.4"
+      ],
+      "topic": "Estimation",
+      "chapter": "S2-6",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC2::a die is thrown n times and shows a six on n throws using z n n find the lower l",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/S2-6.4.html",
+        "locator": "QC2"
+      }
+    },
+    {
+      "id": "S2-6.4-q3",
+      "aliases": [
+        "QC3"
+      ],
+      "course": "A2",
+      "subsections": [
+        "S2-6.4"
+      ],
+      "topic": "Estimation",
+      "chapter": "S2-6",
+      "marks": 1,
+      "difficulty": "easy",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "QC3::in a random sample of n items n were faulty using z n n find the width of an app",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/S2-6.4.html",
+        "locator": "QC3"
+      }
+    },
+    {
+      "id": "S2-6.4-QC1-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "S2-6.4"
+      ],
+      "topic": "Estimation",
+      "chapter": "S2-6",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "S2-6.4::in a random sample of n int people x int were left handed calculate the upper li",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-S2-6-4.json",
+        "locator": "S2-6.4-QC1-gen"
+      }
+    },
+    {
+      "id": "S2-6.4-QC2-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "S2-6.4"
+      ],
+      "topic": "Estimation",
+      "chapter": "S2-6",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "S2-6.4::a die is thrown n int times and shows a six on x int throws calculate the lower ",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-S2-6-4.json",
+        "locator": "S2-6.4-QC2-gen"
+      }
+    },
+    {
+      "id": "S2-6.4-QC3-gen",
+      "aliases": [],
+      "course": "A2",
+      "subsections": [
+        "S2-6.4"
+      ],
+      "topic": "Estimation",
+      "chapter": "S2-6",
+      "marks": 3,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "generator",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "S2-6.4::in a random sample of n int items x int were faulty find the width of an approxi",
+      "source": {
+        "kind": "tasks",
+        "path": "data/tasks-S2-6-4.json",
+        "locator": "S2-6.4-QC3-gen"
+      }
+    },
+    {
+      "id": "S2-6.4-we1",
+      "aliases": [
+        "WE1"
+      ],
+      "course": "A2",
+      "subsections": [
+        "S2-6.4"
+      ],
+      "topic": "Estimation",
+      "chapter": "S2-6",
+      "marks": 4,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE1::in a random sample of n adults n cycle to work calculate an approximate n confid",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/S2-6.4.html",
+        "locator": "WE1"
+      }
+    },
+    {
+      "id": "S2-6.4-we2",
+      "aliases": [
+        "WE2"
+      ],
+      "course": "A2",
+      "subsections": [
+        "S2-6.4"
+      ],
+      "topic": "Estimation",
+      "chapter": "S2-6",
+      "marks": 4,
+      "difficulty": "medium",
+      "difficulty_estimated": true,
+      "type": "fixed",
+      "has_markscheme": true,
+      "structured": false,
+      "family": "WE2::of n randomly chosen customers n used a discount code calculate an approximate n",
+      "source": {
+        "kind": "theory",
+        "path": "content/theory/S2-6.4.html",
         "locator": "WE2"
       }
     },

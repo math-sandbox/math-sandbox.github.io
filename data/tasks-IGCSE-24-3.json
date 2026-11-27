@@ -1,0 +1,385 @@
+[
+    {
+        "id": "IGCSE-24.3-QC1-gen",
+        "section": "IGCSE-24.3",
+        "kind": "generated",
+        "title": "Number in the intersection from set sizes",
+        "marks": 2,
+        "source": "Theory IGCSE-24.3 Quick check 1; n(A and B) = n(A) + n(B) - n(A or B)",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 12,
+                "step": 1
+            },
+            {
+                "name": "i",
+                "min": 1,
+                "max": 8,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 2,
+                "max": 12,
+                "step": 1
+            },
+            {
+                "name": "o",
+                "min": 1,
+                "max": 6,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "N": "a+i+b+o",
+            "nA": "a+i",
+            "nB": "b+i",
+            "u": "a+i+b",
+            "A": "i"
+        },
+        "constraints": [
+            "i>0"
+        ],
+        "original": {
+            "a": 3,
+            "i": 4,
+            "b": 2,
+            "o": 1
+        },
+        "stem": "\\(\\mathrm{n}(\\mathscr{E})={N|int}\\), \\(\\mathrm{n}(A)={nA|int}\\), \\(\\mathrm{n}(B)={nB|int}\\) and \\(\\mathrm{n}(A\\cup B)'={o|int}\\). Find \\(\\mathrm{n}(A\\cap B)\\).",
+        "answer": {
+            "expression": "i",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "U",
+                "text_tex": "\\(\\mathrm{n}(A\\cup B)={N|int}-{o|int}={u|int}\\)",
+                "result": "u",
+                "format": "int",
+                "mark": "M1",
+                "note": "Elements in A or B or both."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(\\mathrm{n}(A\\cap B)={nA|int}+{nB|int}-{u|int}={A|int}\\)",
+                "result": "i",
+                "format": "int",
+                "mark": "A1",
+                "note": "Elements counted twice are in both sets."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original n(E) = 10, n(A) = 7, n(B) = 6, n(A or B)' = 1, intersection 4"
+            },
+            {
+                "id": "clubs",
+                "stem": "In a class of \\({N|int}\\) students, \\({nA|int}\\) play chess, \\({nB|int}\\) play the piano and \\({o|int}\\) do neither. Find the number of students who do both."
+            },
+            {
+                "id": "pets",
+                "stem": "Of \\({N|int}\\) households, \\({nA|int}\\) have a cat, \\({nB|int}\\) have a dog and \\({o|int}\\) have neither. Using a Venn diagram, find how many households have both a cat and a dog."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-24.3"
+            ],
+            "topic": "Probability using tree diagrams and Venn diagrams",
+            "chapter": "IGCSE-24",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-24-3.json",
+                "locator": "IGCSE-24.3-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-24.3-QC2-gen",
+        "section": "IGCSE-24.3",
+        "kind": "generated",
+        "title": "Probability of one set only",
+        "marks": 2,
+        "source": "Theory IGCSE-24.3 Quick check 2; P(A' and B) = n(B only) / n(E)",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 12,
+                "step": 1
+            },
+            {
+                "name": "i",
+                "min": 1,
+                "max": 8,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 2,
+                "max": 12,
+                "step": 1
+            },
+            {
+                "name": "o",
+                "min": 1,
+                "max": 6,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "N": "a+i+b+o",
+            "nA": "a+i",
+            "nB": "b+i",
+            "u": "a+i+b",
+            "A": "b/(a+i+b+o)"
+        },
+        "constraints": [
+            "i>0"
+        ],
+        "original": {
+            "a": 3,
+            "i": 4,
+            "b": 2,
+            "o": 1
+        },
+        "stem": "A Venn diagram shows \\({a|int}\\) elements in \\(A\\) only, \\({i|int}\\) in \\(A\\cap B\\), \\({b|int}\\) in \\(B\\) only and \\({o|int}\\) outside \\(A\\cup B\\). An element is chosen at random. Find the probability that it is an element of \\(A'\\cap B\\).",
+        "answer": {
+            "expression": "b/N",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "N",
+                "text_tex": "\\(\\mathrm{n}(\\mathscr{E})={a|int}+{i|int}+{b|int}+{o|int}={N|int}\\)",
+                "result": "N",
+                "format": "int",
+                "mark": "M1",
+                "note": "Total of all four regions."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(P(A'\\cap B)=\\dfrac{{b|int}}{{N|int}}={A|sf3z}\\)",
+                "result": "b/N",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "A′ ∩ B is the region in B but not in A."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 3, 4, 2, 1, probability 2/10"
+            },
+            {
+                "id": "sport",
+                "stem": "In a group, \\({a|int}\\) people play football only, \\({i|int}\\) play football and tennis, \\({b|int}\\) play tennis only and \\({o|int}\\) play neither. One person is chosen at random. Find the probability that this person plays tennis but not football."
+            },
+            {
+                "id": "music",
+                "stem": "Of a group of students, \\({a|int}\\) learn guitar only, \\({i|int}\\) learn guitar and drums, \\({b|int}\\) learn drums only and \\({o|int}\\) learn neither. A student is picked at random. Find the probability that the student learns drums and not guitar."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-24.3"
+            ],
+            "topic": "Probability using tree diagrams and Venn diagrams",
+            "chapter": "IGCSE-24",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-24-3.json",
+                "locator": "IGCSE-24.3-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-24.3-QC3-gen",
+        "section": "IGCSE-24.3",
+        "kind": "generated",
+        "title": "Probability of the union",
+        "marks": 2,
+        "source": "Theory IGCSE-24.3 Quick check 3; P(A or B) = n(A or B) / n(E)",
+        "params": [
+            {
+                "name": "a",
+                "min": 2,
+                "max": 12,
+                "step": 1
+            },
+            {
+                "name": "i",
+                "min": 1,
+                "max": 8,
+                "step": 1
+            },
+            {
+                "name": "b",
+                "min": 2,
+                "max": 12,
+                "step": 1
+            },
+            {
+                "name": "o",
+                "min": 1,
+                "max": 6,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "N": "a+i+b+o",
+            "nA": "a+i",
+            "nB": "b+i",
+            "u": "a+i+b",
+            "A": "(a+i+b)/(a+i+b+o)"
+        },
+        "constraints": [
+            "o>0"
+        ],
+        "original": {
+            "a": 12,
+            "i": 5,
+            "b": 8,
+            "o": 5
+        },
+        "stem": "A Venn diagram shows \\({a|int}\\) elements in \\(A\\) only, \\({i|int}\\) in \\(A\\cap B\\), \\({b|int}\\) in \\(B\\) only and \\({o|int}\\) outside \\(A\\cup B\\). An element is chosen at random. Find \\(P(A\\cup B)\\).",
+        "answer": {
+            "expression": "u/N",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "U",
+                "text_tex": "\\(\\mathrm{n}(A\\cup B)={a|int}+{i|int}+{b|int}={u|int}\\) and \\(\\mathrm{n}(\\mathscr{E})={N|int}\\)",
+                "result": "u",
+                "format": "int",
+                "mark": "M1",
+                "note": "Count every element in A or B or both, and the total."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(P(A\\cup B)=\\dfrac{{u|int}}{{N|int}}={A|sf3z}\\)",
+                "result": "u/N",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Divide by the total."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original 12, 5, 8, 5, probability 25/30"
+            },
+            {
+                "id": "sport",
+                "stem": "In a class, \\({a|int}\\) students play football only, \\({i|int}\\) play football and tennis, \\({b|int}\\) play tennis only and \\({o|int}\\) play neither. A student is chosen at random. Find the probability that the student plays football or tennis or both."
+            },
+            {
+                "id": "languages",
+                "stem": "Of a group of people, \\({a|int}\\) speak Lao only, \\({i|int}\\) speak Lao and Thai, \\({b|int}\\) speak Thai only and \\({o|int}\\) speak neither. A person is chosen at random. Find the probability that the person speaks at least one of the two languages."
+            }
+        ],
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-24.3"
+            ],
+            "topic": "Probability using tree diagrams and Venn diagrams",
+            "chapter": "IGCSE-24",
+            "marks": 2,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-24-3.json",
+                "locator": "IGCSE-24.3-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "IGCSE-24.3-PP-0580-21-ON16-Q22",
+        "section": "IGCSE-24.3",
+        "kind": "pastpaper",
+        "title": "Completing a Venn diagram and shading a region",
+        "marks": 4,
+        "source": {
+            "paper": "0580/21/O/N/16 Q22",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w16_qp_21.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0580_w16_ms_21.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>(a) \\(\\mathrm{n}(\\mathscr{E})=10\\), \\(\\mathrm{n}(A)=7\\), \\(\\mathrm{n}(B)=6\\), \\(\\mathrm{n}(A\\cup B)'=1\\).</p><p><svg viewBox=\"0 0 360 210\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"ig243a-t ig243a-d\" style=\"width:100%;max-width:360px;height:auto\"><title id=\"ig243a-t\">Empty Venn diagram for sets A and B</title><desc id=\"ig243a-d\">Venn diagram with universal set and two overlapping sets A and B, regions empty.</desc><rect x=\"10\" y=\"10\" width=\"340\" height=\"190\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.3\"/><text x=\"18\" y=\"30\" font-size=\"14\" font-family=\"serif\">ℰ</text><ellipse cx=\"140\" cy=\"108\" rx=\"80\" ry=\"62\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.3\"/><ellipse cx=\"222\" cy=\"108\" rx=\"80\" ry=\"62\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.3\"/><text x=\"80\" y=\"48\" font-size=\"14\" font-family=\"serif\" font-style=\"italic\">A</text><text x=\"272\" y=\"48\" font-size=\"14\" font-family=\"serif\" font-style=\"italic\">B</text></svg></p><p>(i) Complete the Venn diagram by writing the number of elements in each subset. [2]</p><p>(ii) An element of \\(\\mathscr{E}\\) is chosen at random.</p><p>Find the probability that this element is an element of \\(A'\\cap B\\). [1]</p><p>(b) On the Venn diagram below, shade the region \\(C'\\cap D'\\). [1]</p><p><svg viewBox=\"0 0 360 210\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"ig243b-t ig243b-d\" style=\"width:100%;max-width:360px;height:auto\"><title id=\"ig243b-t\">Empty Venn diagram for sets C and D</title><desc id=\"ig243b-d\">Venn diagram with universal set and two overlapping sets C and D, regions empty.</desc><rect x=\"10\" y=\"10\" width=\"340\" height=\"190\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.3\"/><text x=\"18\" y=\"30\" font-size=\"14\" font-family=\"serif\">ℰ</text><ellipse cx=\"140\" cy=\"108\" rx=\"80\" ry=\"62\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.3\"/><ellipse cx=\"222\" cy=\"108\" rx=\"80\" ry=\"62\" fill=\"none\" stroke=\"#1a1a1a\" stroke-width=\"1.3\"/><text x=\"80\" y=\"48\" font-size=\"14\" font-family=\"serif\" font-style=\"italic\">C</text><text x=\"272\" y=\"48\" font-size=\"14\" font-family=\"serif\" font-style=\"italic\">D</text></svg></p>",
+        "tags": {
+            "course": "IGCSE",
+            "subsections": [
+                "IGCSE-24.3"
+            ],
+            "topic": "Probability using tree diagrams and Venn diagrams",
+            "chapter": "IGCSE-24",
+            "marks": 4,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-IGCSE-24-3.json",
+                "locator": "IGCSE-24.3-PP-0580-21-ON16-Q22"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "(a)(i) \\(\\mathrm{n}(A\\cap B)=4\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: 2 marks for the completed diagram 3, 4, 2, 1; B1 for n(A ∩ B) = 4."
+            },
+            {
+                "name": "s2",
+                "text_tex": "(a)(i) \\(A\\) only 3, \\(B\\) only 2, outside 1",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: completed Venn diagram 3, 4, 2, 1 for both marks."
+            },
+            {
+                "name": "s3",
+                "text_tex": "(a)(ii) \\(\\dfrac{2}{10}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: 2/10 oe, 1FT; allow correct answer or FT their 2 / 10."
+            },
+            {
+                "name": "s4",
+                "text_tex": "(b) The region outside both \\(C\\) and \\(D\\) shaded",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: 1; diagram with only the region outside both circles shaded."
+            }
+        ]
+    }
+]

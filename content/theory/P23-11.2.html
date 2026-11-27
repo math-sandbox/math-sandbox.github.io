@@ -1,0 +1,88 @@
+<script src="/assets/redirect.js"></script>
+<section class="theory" data-section="P23-11.2">
+<h2>11.2 Complex numbers</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 2 &amp; 3 Coursebook (Sue Pemberton, series editor Julian Gilbey), Chapter 11 Complex numbers, printed pp.269–272. Own wording and new numbers, following the coursebook rules for adding, subtracting, multiplying and dividing complex numbers, complex conjugates and equal complex numbers.</p>
+<p class="key-words"><strong>Key words:</strong> <em>complex number</em>, <em>real part</em>, <em>imaginary part</em>, <em>complex conjugate</em></p>
+<h3>The form x + iy</h3>
+<p>A <strong>complex number</strong> is \(z=x+\mathrm{i}y\), where \(x\) and \(y\) are real. \(x\) is the <strong>real part</strong>, \(\mathrm{Re}\,z\), and \(y\) is the <strong>imaginary part</strong>, \(\mathrm{Im}\,z\). Note that the imaginary part is the real number \(y\), not \(\mathrm{i}y\).</p>
+<h3>Adding, subtracting and multiplying</h3>
+<p>Add or subtract the real parts and the imaginary parts separately. Multiply out brackets as in algebra and replace \(\mathrm{i}^2\) by \(-1\):</p>
+<p>\[(a+b\mathrm{i})(c+d\mathrm{i})=(ac-bd)+(ad+bc)\mathrm{i}.\]</p>
+<h3>The complex conjugate</h3>
+<p>The <strong>complex conjugate</strong> of \(z=x+\mathrm{i}y\) is \(z^*=x-\mathrm{i}y\). The product \(zz^*=x^2+y^2\) is real. To divide by a complex number, multiply the numerator and the denominator by the conjugate of the denominator.</p>
+<h3>Equal complex numbers</h3>
+<p>Two complex numbers are equal only if their real parts are equal and their imaginary parts are equal. So one equation between complex numbers gives two equations between real numbers. This is how we solve equations such as \(z+2z^*=3+2\mathrm{i}\): substitute \(z=x+\mathrm{i}y\) and equate parts.</p>
+<div class="worked-example">
+<h4>Worked example 1: Division</h4>
+<p class="src">Coursebook, 11.2, dividing by multiplying by the conjugate. New numbers.</p>
+<p>Express \(\dfrac{5+\mathrm{i}}{2-3\mathrm{i}}\) in the form \(x+\mathrm{i}y\).</p>
+<ol class="steps">
+<li>\(\dfrac{(5+\mathrm{i})(2+3\mathrm{i})}{(2-3\mathrm{i})(2+3\mathrm{i})}\) <span class="mark">M1</span></li>
+<li>\(=\dfrac{10+15\mathrm{i}+2\mathrm{i}+3\mathrm{i}^2}{4+9}=\dfrac{7+17\mathrm{i}}{13}\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\tfrac{7}{13}+\tfrac{17}{13}\mathrm{i}\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: Equating parts</h4>
+<p class="src">Coursebook, 11.2, equal complex numbers. New numbers.</p>
+<p>Find the complex number \(z\) such that \(3z-2\mathrm{i}z^*=4+\mathrm{i}\).</p>
+<ol class="steps">
+<li>\(3(x+\mathrm{i}y)-2\mathrm{i}(x-\mathrm{i}y)=(3x-2y)+(3y-2x)\mathrm{i}\) <span class="mark">B1</span></li>
+<li>\(3x-2y=4\) and \(-2x+3y=1\) <span class="mark">M1</span></li>
+<li>\(x=\tfrac{14}{5}\), \(y=\tfrac{11}{5}\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(z=\tfrac{14}{5}+\tfrac{11}{5}\mathrm{i}\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Forgetting that \(\mathrm{i}^2=-1\) when multiplying out.</li><li>Multiplying only the denominator by the conjugate when dividing.</li><li>Writing \(z^*=-x+\mathrm{i}y\): only the sign of the imaginary part changes.</li></ul>
+<h3>Past paper</h3>
+<p class="src">9709/32/O/N/21 Q3, official QP and official MS.</p>
+<p>(a) Given the complex numbers \(u=a+\mathrm{i}b\) and \(w=c+\mathrm{i}d\), where \(a\), \(b\), \(c\) and \(d\) are real, prove that \((u+w)^*=u^*+w^*\). [2]</p><p>(b) Solve the equation \((z+2+\mathrm{i})^*+(2+\mathrm{i})z=0\), giving your answer in the form \(x+\mathrm{i}y\) where \(x\) and \(y\) are real. [4]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>(a) \((u+w)^*=\bigl((a+c)+\mathrm{i}(b+d)\bigr)^*=(a+c)-\mathrm{i}(b+d)\) <span class="mark">B1</span> Official MS: B1, substitute for u and w and state correct conjugate of one side.</li>
+<li>(a) \(u^*+w^*=(a-\mathrm{i}b)+(c-\mathrm{i}d)=(a+c)-\mathrm{i}(b+d)\), so \((u+w)^*=u^*+w^*\) <span class="mark">B1</span> Official MS: B1, express the other side without conjugates and confirm (u + w)* = u* + w*; given answer, needs explicit reference to conjugate of both sides.</li>
+<li>(b) \(x+2-(y+1)\mathrm{i}+(2+\mathrm{i})(x+\mathrm{i}y)=0\) <span class="mark">B1</span> Official MS: B1, substitute and remove conjugates to obtain a correct equation in x and y.</li>
+<li>(b) Use \(\mathrm{i}^2=-1\) and equate real and imaginary parts to zero <span class="mark">M1</span> Official MS: M1.</li>
+<li>(b) \(3x-y+2=0\) and \(x+y-1=0\) <span class="mark">A1</span> Official MS: A1, obtain two correct equations in x and y.</li>
+<li>(b) \(z=-\tfrac{1}{4}+\tfrac{5}{4}\mathrm{i}\) <span class="mark">A1</span> Official MS: A1, solve and obtain answer z = −1/4 + 5/4 i; allow for real and imaginary parts stated separately.</li>
+</ol>
+</details>
+<h3>Past paper</h3>
+<p class="src">9709/32/F/M/22 Q6, official QP and official MS.</p>
+<p>Find the complex numbers \(w\) which satisfy the equation \(w^2+2\mathrm{i}w^*=1\) and are such that \(\mathrm{Re}\,w\le 0\).</p><p>Give your answers in the form \(x+\mathrm{i}y\), where \(x\) and \(y\) are real. [6]</p>
+<details><summary>Mark scheme</summary>
+<ol class="steps">
+<li>\((x+\mathrm{i}y)^2+2\mathrm{i}(x-\mathrm{i}y)=1\) <span class="mark">B1</span> Official MS: B1, substitute and obtain a correct equation in x and y.</li>
+<li>Use \(\mathrm{i}^2=-1\) and equate real and imaginary parts <span class="mark">M1</span> Official MS: M1, use i² = −1 at least once and equate real and imaginary parts.</li>
+<li>\(x^2-y^2+2y=1\) and \(2xy+2x=0\) <span class="mark">A1</span> Official MS: A1, obtain two correct equations.</li>
+<li>\(2x(y+1)=0\), so \(x=0\) or \(y=-1\) <span class="mark">M1</span> Official MS: M1, solve for x or for y.</li>
+<li>\(y=-1\): \(x^2=4\), \(\mathrm{Re}\,w\le0\) gives \(w=-2-\mathrm{i}\) only <span class="mark">A1</span> Official MS: A1, using y = −1, obtain answer w = −2 − i only; A0 if w = 2 − i as well.</li>
+<li>\(x=0\): \(-(y-1)^2=0\), so \(w=\mathrm{i}\) <span class="mark">A1</span> Official MS: A1, using x = 0, obtain answer w = i.</li>
+</ol>
+</details>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>Given \(z=3+2\mathrm{i}\) and \(w=1-4\mathrm{i}\), find the real part of \(zw\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(3-12\mathrm{i}+2\mathrm{i}-8\mathrm{i}^2\)</li><li>\(3+8\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(11\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>Find the real part of \(\dfrac{1+3\mathrm{i}}{1+2\mathrm{i}}\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(\dfrac{(1+3\mathrm{i})(1-2\mathrm{i})}{1^2+2^2}=\dfrac{7+\mathrm{i}}{5}\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{7}{5}=1.40\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>Find \(z\) given that \(z+2z^*=3+2\mathrm{i}\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(3x-\mathrm{i}y=3+2\mathrm{i}\)</li><li>\(x=1\), \(y=-2\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(z=1-2\mathrm{i}\)</p>
+</details>
+</div>
+</section>

@@ -1,0 +1,59 @@
+<script src="/assets/redirect.js"></script>
+<section class="theory" data-section="P1-9.4">
+<h2>9.4 Further indefinite integration</h2>
+<p class="src">Based on Cambridge International AS &amp; A Level Mathematics: Pure Mathematics 1 Coursebook (Sue Pemberton, series editor Julian Gilbey), Chapter 9 Integration, printed pp.249–250. Own wording and new numbers, following the coursebook idea of using a given derivative to integrate a more complicated expression.</p>
+<p class="key-words"><strong>Key words:</strong> <em>integration</em>, <em>chain rule</em>, <em>indefinite integral</em></p>
+<h3>Using a derivative to integrate</h3>
+<p>Integration is the reverse of differentiation, so every result \(\dfrac{d}{dx}\mathrm{F}(x)=\mathrm{f}(x)\) gives an integral:</p>
+<p>\[\text{if }\ \frac{d}{dx}\mathrm{F}(x)=\mathrm{f}(x),\ \text{ then }\ \int\mathrm{f}(x)\,dx=\mathrm{F}(x)+c.\]</p>
+<p>Questions often say 'differentiate ... hence find ...'. Use the <strong>chain rule</strong> for the first part, then compare the expression to be integrated with the derivative: it is usually the derivative multiplied by a constant. Divide or multiply by that constant.</p>
+<div class="worked-example">
+<h4>Worked example 1: Differentiate, hence integrate</h4>
+<p class="src">Coursebook, 9.4, using a derivative to integrate. New numbers.</p>
+<p>(a) Differentiate \((x^2+4)^5\). (b) Hence find \(\displaystyle\int x(x^2+4)^4\,dx\).</p>
+<ol class="steps">
+<li>(a) \(5(x^2+4)^4\times2x=10x(x^2+4)^4\) <span class="mark">M1 A1</span></li>
+<li>(b) \(\displaystyle\int x(x^2+4)^4\,dx=\dfrac{1}{10}\int10x(x^2+4)^4\,dx\) <span class="mark">M1</span></li>
+<li>\(=\dfrac{1}{10}(x^2+4)^5+c\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(\dfrac{1}{10}(x^2+4)^5+c\)</p>
+</div>
+<div class="worked-example">
+<h4>Worked example 2: A square root</h4>
+<p class="src">Coursebook, 9.4, a derivative with a root. New numbers.</p>
+<p>Given that \(\dfrac{d}{dx}\sqrt{x^2+9}=\dfrac{x}{\sqrt{x^2+9}}\), find \(\displaystyle\int\frac{3x}{\sqrt{x^2+9}}\,dx\).</p>
+<ol class="steps">
+<li>\(\dfrac{3x}{\sqrt{x^2+9}}=3\times\dfrac{x}{\sqrt{x^2+9}}\) <span class="mark">M1</span></li>
+<li>\(\displaystyle\int\dfrac{3x}{\sqrt{x^2+9}}\,dx=3\sqrt{x^2+9}+c\) <span class="mark">A1</span></li>
+</ol>
+<p class="final"><strong>Answer:</strong> \(3\sqrt{x^2+9}+c\)</p>
+</div>
+<h3>Common mistakes</h3>
+<ul><li>Using the rule for \((ax+b)^n\) when the bracket is not linear, such as \((x^2+4)^4\).</li><li>Multiplying by the constant instead of dividing when matching the derivative.</li><li>Forgetting \(+c\) in the 'hence' part.</li></ul>
+<h3>Past paper</h3>
+<p>There is no whole past-paper question on this subsection alone. The past papers that use this method are parts of longer questions on other topics.</p>
+<div class="quick-check">
+<h4>Quick check 1</h4>
+<p>Given \(\dfrac{d}{dx}(2x^2+1)^3=kx(2x^2+1)^2\), find \(k\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(3(2x^2+1)^2\times4x\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(k=12\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 2</h4>
+<p>Given \(\dfrac{d}{dx}(x^2+3)^4=8x(x^2+3)^3\), find \(\displaystyle\int16x(x^2+3)^3\,dx\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(16x(x^2+3)^3=2\times8x(x^2+3)^3\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(2(x^2+3)^4+c\)</p>
+</details>
+</div>
+<div class="quick-check">
+<h4>Quick check 3</h4>
+<p>Given \(\dfrac{d}{dx}\sqrt{2x^2+5}=\dfrac{2x}{\sqrt{2x^2+5}}\), find \(\displaystyle\int\frac{6x}{\sqrt{2x^2+5}}\,dx\).</p>
+<details><summary>Worked solution</summary>
+<ol class="steps"><li>\(6x=3\times2x\)</li></ol>
+<p class="final"><strong>Answer:</strong> \(3\sqrt{2x^2+5}+c\)</p>
+</details>
+</div>
+</section>

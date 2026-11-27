@@ -1,0 +1,350 @@
+[
+    {
+        "id": "P1-9.8-QC1-gen",
+        "section": "P1-9.8",
+        "kind": "generated",
+        "title": "Improper integral of k/x^2 to infinity",
+        "marks": 3,
+        "source": "Theory P1-9.8 Quick check 1; [-k/x] from a to infinity = k/a",
+        "params": [
+            {
+                "name": "a",
+                "min": 1,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "k",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "A": "k/a"
+        },
+        "constraints": [
+            "a>0"
+        ],
+        "original": {
+            "a": 2,
+            "k": 5
+        },
+        "stem": "Evaluate \\(\\displaystyle\\int_{{a|int}}^{\\infty}\\dfrac{{k|int}}{x^2}\\,dx\\), correct to 3 significant figures.",
+        "answer": {
+            "expression": "k/a",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "I",
+                "text_tex": "\\(\\Bigl[-\\dfrac{{k|int}}{x}\\Bigr]_{{a|int}}^{X}=-\\dfrac{{k|int}}{X}+\\dfrac{{k|int}}{{a|int}}\\)",
+                "result": "k",
+                "format": "int",
+                "mark": "B1",
+                "note": "Integrate up to a finite upper limit X."
+            },
+            {
+                "name": "K",
+                "text_tex": "As \\(X\\to\\infty\\), \\(\\dfrac{{k|int}}{X}\\to0\\)",
+                "result": "a",
+                "format": "int",
+                "mark": "M1",
+                "note": "Take the limit: the upper limit gives 0."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(=\\dfrac{{k|int}}{{a|int}}={A|sf3z}\\)",
+                "result": "k/a",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original integral from 2 to infinity of 5/x^2 = 2.5"
+            },
+            {
+                "id": "area",
+                "stem": "Find the area of the region under \\(y=\\dfrac{{k|int}}{x^2}\\) to the right of the line \\(x={a|int}\\), correct to 3 significant figures."
+            },
+            {
+                "id": "exact",
+                "stem": "Find the value of the improper integral \\(\\displaystyle\\int_{{a|int}}^{\\infty}{k|int}x^{-2}\\,dx\\), correct to 3 significant figures."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-9.8"
+            ],
+            "topic": "Integration",
+            "chapter": "P1-9",
+            "marks": 3,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-9-8.json",
+                "locator": "P1-9.8-QC1-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-9.8-QC2-gen",
+        "section": "P1-9.8",
+        "kind": "generated",
+        "title": "Improper integral of k/sqrt(x) from 0",
+        "marks": 3,
+        "source": "Theory P1-9.8 Quick check 2; [2k sqrt(x)] from 0 to s^2",
+        "params": [
+            {
+                "name": "s",
+                "min": 1,
+                "max": 6,
+                "step": 1
+            },
+            {
+                "name": "k",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "b": "s*s",
+            "k2": "2*k",
+            "A": "2*k*s"
+        },
+        "constraints": [
+            "s>0"
+        ],
+        "original": {
+            "s": 2,
+            "k": 3
+        },
+        "stem": "Evaluate \\(\\displaystyle\\int_0^{{b|int}}\\dfrac{{k|int}}{\\sqrt{x} }\\,dx\\).",
+        "answer": {
+            "expression": "2*k*s",
+            "format": "{A|int}",
+            "accept_as": "integer"
+        },
+        "steps": [
+            {
+                "name": "I",
+                "text_tex": "\\(\\Bigl[{k2|int}\\sqrt{x}\\Bigr]_{t}^{{b|int}}={k2|int}\\sqrt{{b|int}}-{k2|int}\\sqrt{t}\\)",
+                "result": "k2",
+                "format": "int",
+                "mark": "B1",
+                "note": "The integrand is undefined at 0, so integrate from t > 0."
+            },
+            {
+                "name": "K",
+                "text_tex": "As \\(t\\to0\\), \\({k2|int}\\sqrt{t}\\to0\\)",
+                "result": "s",
+                "format": "int",
+                "mark": "M1",
+                "note": "Take the limit."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(={A|int}\\)",
+                "result": "2*k*s",
+                "format": "int",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original integral from 0 to 4 of 3/√x = 12"
+            },
+            {
+                "id": "area",
+                "stem": "The curve \\(y=\\dfrac{{k|int}}{\\sqrt{x} }\\) has the \\(y\\)-axis as an asymptote. Find the area between the curve, the \\(x\\)-axis, the \\(y\\)-axis and the line \\(x={b|int}\\)."
+            },
+            {
+                "id": "show",
+                "stem": "Show that \\(\\displaystyle\\int_0^{{b|int}}{k|int}x^{-\\frac{1}{2} }\\,dx\\) has a finite value and find it."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-9.8"
+            ],
+            "topic": "Integration",
+            "chapter": "P1-9",
+            "marks": 3,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-9-8.json",
+                "locator": "P1-9.8-QC2-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-9.8-QC3-gen",
+        "section": "P1-9.8",
+        "kind": "generated",
+        "title": "Improper integral of k/x^3 to infinity",
+        "marks": 3,
+        "source": "Theory P1-9.8 Quick check 3; [-k/(2x^2)] from a to infinity = k/(2a^2)",
+        "params": [
+            {
+                "name": "a",
+                "min": 1,
+                "max": 4,
+                "step": 1
+            },
+            {
+                "name": "k",
+                "min": 2,
+                "max": 9,
+                "step": 1
+            }
+        ],
+        "derived": {
+            "a2": "2*a*a",
+            "A": "k/(2*a*a)"
+        },
+        "constraints": [
+            "a>0"
+        ],
+        "original": {
+            "a": 1,
+            "k": 4
+        },
+        "stem": "Evaluate \\(\\displaystyle\\int_{{a|int}}^{\\infty}\\dfrac{{k|int}}{x^3}\\,dx\\), correct to 3 significant figures.",
+        "answer": {
+            "expression": "k/a2",
+            "format": "{A|sf3z}",
+            "accept_as": "sf",
+            "sf": 3
+        },
+        "steps": [
+            {
+                "name": "I",
+                "text_tex": "\\(\\Bigl[-\\dfrac{{k|int}}{2x^2}\\Bigr]_{{a|int}}^{X}\\)",
+                "result": "k",
+                "format": "int",
+                "mark": "B1",
+                "note": "Integrate k x^(−3)."
+            },
+            {
+                "name": "K",
+                "text_tex": "As \\(X\\to\\infty\\) the upper value tends to 0, leaving \\(\\dfrac{{k|int}}{2\\times{a|int}^2}\\)",
+                "result": "a2",
+                "format": "int",
+                "mark": "M1",
+                "note": "Take the limit."
+            },
+            {
+                "name": "A",
+                "text_tex": "\\(={A|sf3z}\\)",
+                "result": "k/a2",
+                "format": "sf3z",
+                "mark": "A1",
+                "note": "Evaluate."
+            }
+        ],
+        "contexts": [
+            {
+                "id": "default",
+                "note": "Includes the original integral from 1 to infinity of 4/x^3 = 2"
+            },
+            {
+                "id": "area",
+                "stem": "Find the area under \\(y=\\dfrac{{k|int}}{x^3}\\) for \\(x\\ge{a|int}\\), correct to 3 significant figures."
+            },
+            {
+                "id": "exact",
+                "stem": "Find the value of \\(\\displaystyle\\int_{{a|int}}^{\\infty}{k|int}x^{-3}\\,dx\\), correct to 3 significant figures."
+            }
+        ],
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-9.8"
+            ],
+            "topic": "Integration",
+            "chapter": "P1-9",
+            "marks": 3,
+            "difficulty": "easy",
+            "type": "generator",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-9-8.json",
+                "locator": "P1-9.8-QC3-gen"
+            }
+        }
+    },
+    {
+        "id": "P1-9.8-PP-9709-12-FM24-Q1",
+        "section": "P1-9.8",
+        "kind": "pastpaper",
+        "title": "An improper integral",
+        "marks": 3,
+        "source": {
+            "paper": "9709/12/F/M/24 Q1",
+            "qp_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m24_qp_12.pdf",
+            "ms_url": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9709_m24_ms_12.pdf",
+            "note": "Stem verbatim from the official QP; marks from the official MS. Question number checked against the QP."
+        },
+        "stem": "<p>Find the exact value of \\(\\displaystyle\\int_3^{\\infty}\\frac{2}{x^2}\\,dx\\). [3]</p>",
+        "tags": {
+            "course": "P1",
+            "subsections": [
+                "P1-9.8"
+            ],
+            "topic": "Integration",
+            "chapter": "P1-9",
+            "marks": 3,
+            "difficulty": "hard",
+            "type": "pp",
+            "has_markscheme": true,
+            "source": {
+                "kind": "tasks",
+                "path": "data/tasks-P1-9-8.json",
+                "locator": "P1-9.8-PP-9709-12-FM24-Q1"
+            }
+        },
+        "marking": "manual",
+        "steps": [
+            {
+                "name": "s1",
+                "text_tex": "\\(\\displaystyle\\int\\frac{2}{x^2}\\,dx=-2x^{-1}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "B1",
+                "note": "Official MS: B1 OE, integrate to obtain −2x^(−1)."
+            },
+            {
+                "name": "s2",
+                "text_tex": "\\(\\Bigl[-\\dfrac{2}{x}\\Bigr]_3^{\\infty}=0-\\Bigl(-\\dfrac{2}{3}\\Bigr)\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "M1",
+                "note": "Official MS: M1, substitute limits correctly with clear indication seen that upper limit gives 0 (for an integral of the form −kx^(−n), k > 0, n > 0)."
+            },
+            {
+                "name": "s3",
+                "text_tex": "\\(=\\dfrac{2}{3}\\)",
+                "result": "None",
+                "format": "raw",
+                "mark": "A1",
+                "note": "Official MS: A1 WWW; accept 0.667."
+            }
+        ]
+    }
+]
