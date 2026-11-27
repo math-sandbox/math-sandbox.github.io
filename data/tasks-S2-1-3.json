@@ -144,8 +144,8 @@
     "params": [
       {
         "name": "n",
-        "min": 8,
-        "max": 8,
+        "min": 6,
+        "max": 12,
         "step": 1
       }
     ],
@@ -155,7 +155,8 @@
       "E": "1-(n*math.pow(0.8,n-1)*0.2+math.pow(0.8,n))"
     },
     "constraints": [
-      "n==8"
+      "n>=6",
+      "n<=12"
     ],
     "original": {
       "n": 8

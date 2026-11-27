@@ -631,6 +631,12 @@
           if (B && B.polishGenerated) {
             picked.out.q = B.polishGenerated(picked.out.q);
             if (picked.out.answer) picked.out.answer = B.polishGenerated(picked.out.answer);
+            if (Array.isArray(picked.out.solution)) {
+              picked.out.solution.forEach((row) => {
+                if (row && row.answer) row.answer = B.polishGenerated(row.answer);
+                if (row && row.guidance) row.guidance = B.polishGenerated(row.guidance);
+              });
+            }
           }
           used.add(picked.out.q);
           atPos[index].add(picked.out.q);

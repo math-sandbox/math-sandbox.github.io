@@ -214,51 +214,36 @@
       }
       return a || 1;
     }
-    if (frac.concat(slash).some((m) => gcd(m[1], m[2]) > 1)) hits.push("unreduced-frac");
+    if (frac.concat(slash).some((m) => gcd(m[1], m[2]) > 1 && !/^\s*=/.test(t.slice(m.index + m[0].length)))) hits.push("unreduced-frac");
     return hits;
   }
 
   function polishGenerated(s) {
     let t = String(s || "");
-    t = t.replace(/\\\(\((\d+(?:\.\d+)?)\)\\\)/g, "\\($1\\)");
-    t = t.replace(/(^|[\s,;:])\((\d+(?:\.\d+)?)\)(?!\s*,)/g, "$1$2");
-    t = t.replace(/([+\-−=])\s*1x\b/g, function (_, op) {
-      if (op === "+") return "+x";
-      if (op === "=") return "=x";
-      return op + "x";
+    t = t.replace(/\\\(\(([+\-−]?\d+(?:\.\d+)?)\)\\\)/g, "\\($1\\)");
+    t = t.replace(/(^|[\s=+\-−,;:{(.\/])\(([+\-−]?\d+(?:\.\d+)?)\)(?!\s*[,)])/g, function (m, pre, num, off, str) {
+      const rest = str.slice(off + m.length);
+      if (/^[-−]/.test(num) && /^\s*\^/.test(rest)) return m;
+      return pre + num;
     });
-    t = t.replace(/(^|[^0-9A-Za-z])1x\b/g, "$1x");
-    t = t.replace(/\+\s*[-−]/g, "−");
-    t = t.replace(/\\(?:d?frac)\{(\d+)\}\{(\d+)\}/g, function (_, a, b) {
-      let x = Number(a),
-        y = Number(b);
-      let g = x,
-        h = y;
-      while (h) {
-        const k = g % h;
-        g = h;
-        h = k;
-      }
-      g = g || 1;
-      x /= g;
-      y /= g;
-      if (y === 1) return String(x);
-      return "\\frac{" + x + "}{" + y + "}";
+    t = t.replace(/(\\times|\\cdot)\(([+\-−]?\d+(?:\.\d+)?)\)(?!\s*\^)/g, "$1$2");
+    let prev;
+    do {
+      prev = t;
+      t = t.replace(/\+\s*\+/g, "+");
+      t = t.replace(/\+\s*[-−]/g, "-");
+      t = t.replace(/[-−]\s*\+/g, "-");
+      t = t.replace(/[-−]\s*[-−]/g, "+");
+    } while (t !== prev);
+    t = t.replace(/\{\+/g, "{");
+    t = t.replace(/=\+/g, "=");
+    t = t.replace(/(^|[^0-9A-Za-z.\\])1([A-Za-z])(?![0-9A-Za-z])/g, function (_, pre, v) {
+      if (v === "e" || v === "E") return pre + "1" + v;
+      return pre + v;
     });
-    t = t.replace(/(\d+)\s*\/\s*(\d+)/g, function (m, a, b) {
-      let x = Number(a),
-        y = Number(b);
-      let g = x,
-        h = y;
-      while (h) {
-        const k = g % h;
-        g = h;
-        h = k;
-      }
-      if (!g || g === 1) return m;
-      x /= g;
-      y /= g;
-      return y === 1 ? String(x) : x + "/" + y;
+    t = t.replace(/(^|[^0-9A-Za-z.\\])(\d+)?([A-Za-z])\^0(?![0-9.])/g, function (_, pre, digits) {
+      if (!digits || digits === "1") return pre + "1";
+      return pre + digits;
     });
     return t;
   }
@@ -949,6 +934,12 @@
         out = publicOut(ctx.gens[rec.source.locator](ctx.mulberry ? ctx.mulberry(start) : mulberry(start)));
         if (out && out.q) out.q = polishGenerated(out.q);
         if (out && out.answer) out.answer = polishGenerated(out.answer);
+        if (out && Array.isArray(out.solution)) {
+          out.solution.forEach((row) => {
+            if (row && row.answer) row.answer = polishGenerated(row.answer);
+            if (row && row.guidance) row.guidance = polishGenerated(row.guidance);
+          });
+        }
         applyCleanOut(out, rec);
         if (out && out.q && uglyGenerated(out.q).length) continue;
         if (!used.has(out.q)) break;

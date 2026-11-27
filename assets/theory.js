@@ -60,7 +60,8 @@
   }
   function near(got, want, tol) {
     if (want == null || want === "") return false;
-    var a = Number(got);
+    var raw = typeof got === "string" ? String(got).replace(/\u2212/g, "-").trim() : "";
+    var a = /^[+-]?\d+,\d+$/.test(raw) ? AA.parseNum(got) : Number(got);
     var b = Number(want);
     if (!isFinite(a) || !isFinite(b)) return false;
     return Math.abs(a - b) <= Number(tol);
@@ -864,7 +865,7 @@
         if (lab) wrap.appendChild(document.createTextNode(lab + " "));
         var inp = document.createElement("input");
         inp.type = "text";
-        inp.inputMode = "decimal";
+        inp.inputMode = "text";
         inp.setAttribute("data-q", part.q);
         wrap.appendChild(inp);
         if (showPartFb) {

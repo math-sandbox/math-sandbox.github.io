@@ -129,11 +129,19 @@
     }
     return String(v);
   }
-  function render(t, env) {
+  function polishOut(s) {
+    var bk = root.msBank;
+    if (!bk && typeof require === "function") {
+      try { bk = require("./bank.js"); } catch (e) { bk = null; }
+    }
+    return bk && bk.polishGenerated ? bk.polishGenerated(s) : s;
+  }
+  function render(t, env, kind) {
     var out = String(t || "").replace(/\{(\w+)\|(\w+)\}/g, function (_, name, f) {
       return fmt(env[name], f);
     });
-    return out.replace(/\{\{/g, "{").replace(/\}\}/g, "}");
+    out = out.replace(/\{\{/g, "{").replace(/\}\}/g, "}");
+    return kind === "generated" ? polishOut(out) : out;
   }
   function splitComma(s) {
     var parts = [];
@@ -445,6 +453,56 @@
     });
     return { task: t, env: env, parts: parts, ctx: t._ctx, seed: seed };
   }
+  function questionVaries(task) {
+    var bits = [task.stem || ""];
+    (task.parts || []).forEach(function (p) { bits.push(p.stem || ""); });
+    (task.contexts || []).forEach(function (c) { if (c && c.stem) bits.push(c.stem); });
+    return /\{\w+\|\w+\}/.test(bits.join("\n"));
+  }
+  function randCtx(task) {
+    var ctxs = task.contexts && task.contexts.length ? task.contexts : [{ id: "default" }];
+    var c = ctxs[AA.randomSeed() % ctxs.length];
+    return (c && c.id) || "default";
+  }
+  function paramSig(inst) {
+    var o = {};
+    ((inst.task && inst.task.params) || []).forEach(function (q) { o[q.name] = inst.env[q.name]; });
+    return JSON.stringify(o);
+  }
+  function seenLoad(id) {
+    try {
+      var raw = sessionStorage.getItem("ms-seen:" + id);
+      var arr = raw ? JSON.parse(raw) : [];
+      return Array.isArray(arr) ? arr : [];
+    } catch (e) {
+      return [];
+    }
+  }
+  function seenSave(id, sig) {
+    var arr = seenLoad(id).filter(function (s) { return s !== sig; });
+    arr.push(sig);
+    if (arr.length > 5) arr = arr.slice(arr.length - 5);
+    try { sessionStorage.setItem("ms-seen:" + id, JSON.stringify(arr)); } catch (e) {}
+  }
+  function pickFresh(base, inst) {
+    if (!base || base.kind !== "generated") return null;
+    if (!questionVaries(base)) return { jump: true };
+    var cur = inst ? paramSig(inst) : "";
+    var seen = seenLoad(base.id);
+    var loose = null;
+    var i;
+    for (i = 0; i < 30; i++) {
+      var seed = AA.randomSeed();
+      var ctx = randCtx(base);
+      var next = generate(base, seed, ctx);
+      if (!next) continue;
+      var sig = paramSig(next);
+      if (sig === cur) continue;
+      loose = { inst: next, sig: sig };
+      if (seen.indexOf(sig) < 0) return loose;
+    }
+    return loose || { jump: true };
+  }
   function parseNum(s) {
     return AA.parseNum(s);
   }
@@ -569,11 +627,28 @@
       if (root.msFitMath) root.msFitMath();
     });
   }
+  var openedHash = null;
+  function openedMap() {
+    if (!openedHash) openedHash = readHashMap();
+    return openedHash;
+  }
+  function mergedHash() {
+    var map = {};
+    var base = openedMap();
+    Object.keys(base).forEach(function (id) { map[id] = base[id]; });
+    Object.keys(states).forEach(function (id) {
+      var st = states[id];
+      if (!st) return;
+      map[id] = { seed: st.seed, ctx: st.ctx || "default" };
+    });
+    return map;
+  }
   function hashTail() {
-    var ids = Object.keys(states);
+    var map = mergedHash();
+    var ids = Object.keys(map);
     if (!ids.length) return "";
     var bits = ids.map(function (id) {
-      var st = states[id];
+      var st = map[id];
       return encodeURIComponent(id) + "." + String(st.seed) + "." + encodeURIComponent(st.ctx || "default");
     });
     return "&p=" + bits.join(",");
@@ -615,6 +690,7 @@
     history.replaceState(null, "", location.pathname + location.search + "#" + head + hashTail());
   }
   function paintCard(card, inst, base) {
+    if (base.kind === "generated") seenSave(base.id, paramSig(inst));
     var task = inst.task;
     var env = inst.env;
     card.innerHTML = "";
@@ -641,7 +717,7 @@
     appendQpMsLinks(head, base);
     card.appendChild(head);
     var stem = el("div", "pc-stem");
-    var stemRaw = render(task.stem, env);
+    var stemRaw = render(task.stem, env, base.kind);
     if (task.kind === "pastpaper") {
       stemRaw = stemRaw.replace(/^This question is\s+[\s\S]+?(?:,|\.)\s*(?:taken from the official QP[^.]*\.\s*)?/i, "");
       stemRaw = stemRaw.replace(/^(?:\s)*(?:\(([a-z]|[ivxl]+)\)\s*)+/i, "");
@@ -684,7 +760,7 @@
       } else {
         var inp = document.createElement("input");
         inp.type = "text";
-        inp.inputMode = "decimal";
+        inp.inputMode = "text";
         inp.setAttribute("aria-label", "Answer " + name);
         inp.autocomplete = "off";
         wrap.appendChild(inp);
@@ -730,21 +806,20 @@
       var again = el("button", "pc-btn", "Another version");
       again.type = "button";
       again.addEventListener("click", function () {
-        var ctxs = base.contexts || [{ id: "default" }];
-        var seed = typeof inst.seed === "number" ? inst.seed + 1 : 1;
-        var rng = new Mulberry(seed + 17);
-        var ctx = inst.ctx || "default";
-        if (ctxs.length > 1) {
-          var others = ctxs.filter(function (c) { return c.id !== ctx; });
-          ctx = others[rng.randint(0, others.length - 1)].id;
-        } else {
-          ctx = ctxs[0].id;
+        var picked = pickFresh(base, inst);
+        if (!picked) return;
+        if (picked.jump) {
+          var cards = card.parentNode ? [].slice.call(card.parentNode.querySelectorAll(".practice-card")) : [];
+          var others = cards.filter(function (n) { return n !== card; });
+          if (!others.length) return;
+          var dest = others[AA.randomSeed() % others.length];
+          if (dest.focus) dest.focus();
+          if (dest.scrollIntoView) dest.scrollIntoView({ block: "nearest" });
+          return;
         }
-        var next = generate(base, seed, ctx);
-        if (!next) return;
-        states[base.id] = { seed: seed, ctx: ctx };
+        states[base.id] = { seed: picked.inst.seed, ctx: picked.inst.ctx };
         writeHash();
-        paintCard(card, next, base);
+        paintCard(card, picked.inst, base);
         jax(card);
       });
       acts.appendChild(again);
@@ -777,11 +852,11 @@
       li.hidden = true;
       var row = el("div", "pc-step-row");
       var tx = el("div", "pc-step-tex");
-      tx.innerHTML = render(s.text_tex, env);
+      tx.innerHTML = render(s.text_tex, env, base.kind);
       row.appendChild(tx);
       row.appendChild(el("span", "mark", s.mark));
       li.appendChild(row);
-      if (studentNote(s.note)) li.appendChild(el("p", "pc-note", render(studentNote(s.note), env)));
+      if (studentNote(s.note)) li.appendChild(el("p", "pc-note", render(studentNote(s.note), env, base.kind)));
       var tick = el("label", "tick");
       var cb = document.createElement("input");
       cb.type = "checkbox";
@@ -875,23 +950,29 @@
     panel.querySelectorAll(".practice-card").forEach(function (n) { n.remove(); });
     var soon = panel.querySelector(".soon");
     if (soon) soon.remove();
-    var hash = readHashMap();
+    var hash = openedMap();
     tasks.forEach(function (task) { byId[task.id] = task; });
     tasks.forEach(function (task) {
       var card = el("article", "practice-card");
       card.tabIndex = 0;
       var want = hash[task.id];
-      var seed = want ? want.seed : task.kind === "generated" ? "orig" : 0;
-      var ctx = want ? want.ctx : "default";
-      var inst;
+      var inst = null;
       if (task.kind === "pastpaper") {
         var env = {};
         runSteps(allSteps(task), env);
         var parts = answerParts(task);
         parts.forEach(function (pa) { pa._value = pyEval(pa.expression, env); });
         inst = { task: task, env: env, parts: parts, ctx: "default", seed: 0 };
+      } else if (want) {
+        inst = generate(task, want.seed, want.ctx);
+      } else if (task.kind === "generated") {
+        var tries = 0;
+        while (!inst && tries < 30) {
+          inst = generate(task, AA.randomSeed(), randCtx(task));
+          tries++;
+        }
       } else {
-        inst = generate(task, seed, ctx);
+        inst = generate(task, 0, "default");
       }
       if (!inst) return;
       states[task.id] = { seed: inst.seed, ctx: inst.ctx };
@@ -922,6 +1003,7 @@
   }
   function mount(secEl, secId, url) {
     if (!url) return Promise.resolve();
+    openedMap();
     hostSec = secEl;
     var panel = secEl.querySelector('[data-panel="practice"]') || secEl;
     return loadSiteConfig().then(function () {
@@ -942,6 +1024,7 @@
     hashTail: hashTail,
     applyHash: applyHash,
     generate: generate,
+    pickFresh: pickFresh,
     mountPanel: mountPanel,
     fmt: fmt,
     parseNum: AA.parseNum,

@@ -11,11 +11,21 @@
     return Number(m[1]) / den;
   }
   function parseNum(s) {
-    var t = normMinus(String(s || "")).replace(/[$,%\s]/g, "").replace(/,/g, "");
+    var t = normMinus(String(s || "")).replace(/[$%\s]/g, "");
     if (!t) return NaN;
+    if (/,/.test(t)) {
+      if (/^[+-]?\d{1,3}(,\d{3})+(\.\d+)?$/.test(t)) t = t.replace(/,/g, "");
+      else if (/^[+-]?\d+,\d+$/.test(t)) t = t.replace(",", ".");
+      else t = t.replace(/,/g, "");
+    }
     var frac = parseFraction(t);
     if (frac != null) return frac;
     return Number(t);
+  }
+  function randomSeed() {
+    var buf = new Uint32Array(1);
+    if (root.crypto && root.crypto.getRandomValues) root.crypto.getRandomValues(buf);
+    return buf[0] || 1;
   }
   function sfTol(av, sf) {
     if (!isFinite(av) || av === 0) return 0;
@@ -50,7 +60,7 @@
     };
   }
   function parseDecimalText(raw) {
-    var t = normMinus(String(raw == null ? "" : raw)).replace(/[$,%\s]/g, "");
+    var t = normMinus(String(raw == null ? "" : raw)).replace(/[$%\s]/g, "");
     if (!t) return null;
     var sign = 1;
     if (t.charAt(0) === "+") t = t.slice(1);
@@ -62,8 +72,9 @@
     var frac = parseFraction(t);
     if (frac != null) return payloadFromNumber(frac);
     if (/,/.test(t)) {
-      if (!/^\d{1,3}(,\d{3})+(\.\d*)?(e[+-]?\d+)?$/i.test(t)) return null;
-      t = t.replace(/,/g, "");
+      if (/^\d{1,3}(,\d{3})+(\.\d*)?(e[+-]?\d+)?$/i.test(t)) t = t.replace(/,/g, "");
+      else if (/^\d+,\d+$/.test(t)) t = t.replace(",", ".");
+      else return null;
     }
     return parsePlainDecimal(t, sign);
   }
@@ -173,7 +184,8 @@
     return acceptLegacy(g, spec, exact);
   }
   function near(got, want, tol) {
-    var a = Number(typeof got === "string" ? normMinus(got).trim() : got);
+    var src = typeof got === "string" ? normMinus(got).trim() : got;
+    var a = typeof src === "string" && /^[+-]?\d+,\d+$/.test(src) ? parseNum(src) : Number(src);
     var b = Number(want);
     if (!isFinite(a) || !isFinite(b)) return false;
     return Math.abs(a - b) <= Number(tol);
@@ -186,6 +198,7 @@
   }
   var api = {
     parseNum: parseNum,
+    randomSeed: randomSeed,
     sfTol: sfTol,
     roundSf: roundSf,
     isOptIn: isOptIn,

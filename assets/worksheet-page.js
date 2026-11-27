@@ -23,7 +23,7 @@
     const taskCache = {};
 
     function randomSeed() {
-      return 1 + Math.floor(Math.random() * 1e9);
+      return msAnswerAccept.randomSeed();
     }
 
     function drawCourses() {
@@ -273,6 +273,10 @@
       history.replaceState(null, "", "?" + W.toQuery(readState()));
     };
     document.getElementById("build").onclick = build;
+    document.getElementById("new-set").onclick = () => {
+      seed.value = String(randomSeed());
+      build();
+    };
     document.getElementById("print").onclick = () => window.print();
     ans.onchange = () => {
       if (!lastData) {

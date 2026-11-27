@@ -54,7 +54,7 @@
     const cq = cls ? "&class=" + encodeURIComponent(cls) : "";
     return {
       review: "review.html?class=" + encodeURIComponent(reviewCls) + "#t-" + p.id,
-      gen: "generator.html?task=" + encodeURIComponent(p.id) + "&seed=1" + cq,
+      gen: "generator.html?task=" + encodeURIComponent(p.id) + cq,
       sheet: "worksheet.html?c=" + encodeURIComponent(p.course) + "&sel=" + p.bi + "-" + p.ti + (reviewCls ? "&class=" + encodeURIComponent(reviewCls) : ""),
     };
   }
